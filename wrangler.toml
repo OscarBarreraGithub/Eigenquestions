@@ -1,0 +1,15 @@
+name = "eigenquestions"
+main = ".open-next/worker.js"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+route = { pattern = "eigenquestions.com/*", zone_name = "eigenquestions.com" }
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "eigenquestions"
+database_id = "e394b253-91ee-4ef4-bab1-7fdabee600a2"

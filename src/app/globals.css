@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-source-serif-4);
+  --font-handwritten: var(--font-caveat);
+  --font-chalk: var(--font-chalk-title);
+
+  /* Chalkboard palette */
+  --color-board: #0d1a0d;
+  --color-board-light: #142514;
+  --color-board-dark: #091209;
+  --color-chalk: #e8e0d4;
+  --color-chalk-yellow: #fcd34d;
+  --color-chalk-blue: #93c5fd;
+  --color-chalk-pink: #f9a8d4;
+  --color-chalk-gray: #a8a29e;
+  --color-chalk-red: #fca5a5;
+
+  --color-background: #0d1a0d;
+  --color-foreground: #e8e0d4;
+
+  --animate-slide-in-left: slide-in-left 0.35s ease-out;
+  --animate-slide-in-right: slide-in-right 0.35s ease-out;
+  --animate-fade-in: fade-in 0.25s ease-out;
+  --animate-fade-out: fade-out 0.25s ease-out;
+  --animate-subtle-bounce: subtle-bounce 0.15s ease-out;
+  --animate-chalk-write: chalk-write 0.4s ease-out;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes subtle-bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes chalk-write {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Chalkboard noise texture via SVG filter */
+svg#chalk-noise {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+body {
+  background-color: var(--color-board);
+  background-image:
+    /* Erased chalk streaks - horizontal smears */
+    linear-gradient(
+      2deg,
+      transparent 0%,
+      rgba(232, 224, 212, 0.02) 20%,
+      transparent 21%,
+      transparent 44%,
+      rgba(232, 224, 212, 0.015) 45%,
+      transparent 46%,
+      transparent 72%,
+      rgba(232, 224, 212, 0.025) 73%,
+      transparent 74%
+    ),
+    linear-gradient(
+      178deg,
+      transparent 0%,
+      rgba(232, 224, 212, 0.018) 35%,
+      transparent 36%,
+      transparent 60%,
+      rgba(232, 224, 212, 0.012) 61%,
+      transparent 62%,
+      transparent 85%,
+      rgba(232, 224, 212, 0.02) 86%,
+      transparent 87%
+    ),
+    /* Subtle tonal variation across the board */
+    radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 60%, rgba(0, 0, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 0.1) 0%, transparent 40%),
+    /* Fine grain texture */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.025) 2px,
+      rgba(0, 0, 0, 0.025) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 3px,
+      rgba(0, 0, 0, 0.02) 3px,
+      rgba(0, 0, 0, 0.02) 6px
+    );
+  color: var(--color-foreground);
+}
+
+/* Subtle chalk dust overlay for the whole page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+.overflow-wrap-anywhere {
+  overflow-wrap: anywhere;
+}
+
+/* Question text font — disable ligatures so chalk font renders all character pairs */
+.font-question {
+  font-family: var(--font-chalk-board);
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0;
+  font-feature-settings: "liga" 0, "clig" 0;
+}
+
+/* Selection colors matching chalkboard theme */
+::selection {
+  background-color: rgba(252, 211, 77, 0.3);
+  color: var(--color-chalk);
+}
