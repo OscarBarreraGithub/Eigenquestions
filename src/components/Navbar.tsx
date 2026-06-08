@@ -31,6 +31,11 @@ export default function Navbar() {
         <Link href="/submit" className={linkClass("/submit")}>
           Submit
         </Link>
+        {/* Static topic explorer (vanilla page under /public/explore). Plain <a> = full document navigation, not client routing.
+            Link to the explicit index.html so relative assets resolve at /explore/* regardless of trailing-slash handling. */}
+        <a href="/explore/index.html" className={linkClass("/explore")}>
+          Explore
+        </a>
       </div>
     </nav>
   );
