@@ -9,8 +9,8 @@ export default function Navbar() {
   const linkClass = (href: string) => {
     const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
     return isActive
-      ? "font-[family-name:var(--font-pigment)] text-[var(--color-chalk-yellow)] text-base border-b border-[var(--color-chalk-yellow)]"
-      : "font-[family-name:var(--font-pigment)] text-[var(--color-chalk)] opacity-70 hover:opacity-100 text-base transition-opacity";
+      ? "font-[family-name:var(--font-pigment)] text-[var(--color-chalk-yellow)] text-lg border-b border-[var(--color-chalk-yellow)]"
+      : "font-[family-name:var(--font-pigment)] text-[var(--color-chalk)] opacity-70 hover:opacity-100 text-lg transition-opacity";
   };
 
   return (

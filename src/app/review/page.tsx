@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { SubmissionRow } from "@/lib/types";
 
-export default function AdminPage() {
+export default function ReviewPage() {
   const [submissions, setSubmissions] = useState<SubmissionRow[]>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "error">(
     "loading"
@@ -15,7 +15,7 @@ export default function AdminPage() {
     setStatus("loading");
     setErrorMessage("");
     try {
-      const res = await fetch("/api/admin/submissions");
+      const res = await fetch("/api/review/submissions");
       if (!res.ok) {
         const data = await res.json().catch(() => null);
         throw new Error(data?.error || "Failed to load submissions");
@@ -37,7 +37,7 @@ export default function AdminPage() {
 
   async function handleAction(id: number, action: "approve" | "reject") {
     try {
-      const res = await fetch(`/api/admin/${action}`, {
+      const res = await fetch(`/api/review/${action}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id }),
@@ -66,10 +66,10 @@ export default function AdminPage() {
   const pendingCount = submissions.length;
 
   return (
-    <main className="max-w-3xl mx-auto px-4 pt-20 pb-12 w-full">
+    <main className="max-w-3xl mx-auto px-4 pt-28 pb-12 w-full">
       <div className="mb-8">
         <h1 className="font-[family-name:var(--font-chalk-title)] text-3xl md:text-5xl text-[var(--color-chalk)] mb-3">
-          Admin
+          Review
         </h1>
       </div>
 
