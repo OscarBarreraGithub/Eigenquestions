@@ -23,7 +23,7 @@ body{
 a{color:var(--link);text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-#app{display:flex;flex-direction:column;height:100vh;overflow:hidden;}
+#app{display:flex;flex-direction:column;min-height:100vh;}
 
 /* ---------------- header ---------------- */
 .site-head{
@@ -111,7 +111,7 @@ a:hover{text-decoration:underline;}
 .col-arrow{flex:0 0 auto;color:var(--muted);font-size:12px;width:9px;text-align:right;}
 
 /* ---------------- detail ---------------- */
-.detail{flex:1 1 auto;overflow-y:auto;}
+.detail{flex:0 0 auto;}
 .detail-inner{max-width:780px;margin:0 auto;padding:26px 24px 80px;}
 
 .node-title{font-size:21px;font-weight:700;line-height:1.2;margin:0 0 5px;color:var(--text);}
