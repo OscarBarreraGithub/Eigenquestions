@@ -173,3 +173,9 @@
 **Visual interpretation.** Root inspected desktop and mobile screenshots. The flat document styling, source buttons and column structure are legible, but the control stack places the first desktop directions about 558px down and occupies too much of a phone screen. Narrow select labels also truncate. Passing interaction checks did not establish the best use of space.
 
 **Next/contributors.** Astra site and the independent design reviewer are making a bounded compact-layout decision; Astra protocol will exercise the resulting phone disclosure and a real cached historical-choice branch. Preserve these screenshots as the before-state. No engine or corpus change is needed.
+
+## 2026-11-06 UTC — Q-002: Give the research choices more room
+
+**Decision/change.** Independent Astra review agreed with the screenshot finding. Astra site added a large phone Search options disclosure with a visible settings summary; opened selectors span the available width. It reduced surrounding spacing, removed the repeated current-column query and shortened the empty New path frame to 210px. Scientific text and main controls keep their readable size. The numerical construction is unchanged.
+
+**Observed/next.** Root reran all 23 tests and the static/shard checks successfully. Astra protocol added actual historical-column branching, source reveal and mobile-disclosure checks without weakening the earlier assertions. Freeze this corrected version, inspect its true top-of-phone and desktop screenshots, then release if the visual and interaction gates pass. The first browser evidence checkpoint `3e8309f` is pushed and remotely verified.

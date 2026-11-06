@@ -26,7 +26,10 @@ column arrow controls scroll within their own bands without moving the document.
 **New path** resets the canonical history, query, focus and constraints, and focuses
 an empty question input. It preserves an attached companion. Sources are displayed
 by default; **Geometric view** is a presentational tab that uses the existing view.
-The source button beside a current direction narrows the reading list immediately.
+The source button beside a current direction narrows and reveals the reading list
+immediately. On phones, **Search options** keeps the current approach and changed
+setting count visible; opening it reveals full-width, readable controls. An empty
+new path uses a compact placeholder.
 The classic arXiv-inspired treatment uses white, burgundy, blue destinations and
 Lucida Grande/Helvetica/Arial throughout, with Eigenquestions' own identity.
 

@@ -128,7 +128,7 @@ function render() {
   });
   $('corpus-scope').textContent = `Eigenquestions v2 · ${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
   $('evidence-count').textContent = `${view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId)).size}`;
-  renderColumns(); renderEvidence();
+  updateOptionsSummary(); renderColumns(); renderEvidence();
   if (activePanel === 'geometry') { renderChart(); renderDetails(); }
   status(view.nodes.length ? `${view.directions.length} next directions · ${view.diagnostics?.distinctPapers || new Set(view.nodes.map(n => n.paperId)).size} papers in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'A new path is ready. Enter your first question.');
   document.documentElement.dataset.ready = 'true';
@@ -137,6 +137,7 @@ function render() {
 }
 function renderColumns() {
   const host = $('columns'); host.replaceChildren();
+  host.classList.toggle('empty-path', !currentState(session).query && !view.directions.length);
   $('directions-count').textContent = `${view.directions.length} directions`;
   const states = session.states.slice(0, session.cursor + 1);
   for (let index = 0; index < states.length; index++) {
@@ -144,7 +145,9 @@ function renderColumns() {
     const cached = columnViews.get(state.id);
     const directions = current ? view.directions : cached?.computationId === state.computationId ? cached.directions : null;
     const column = el('section', 'miller-column'); column.dataset.stateId = state.id; column.dataset.historyIndex = index; column.dataset.current = String(current);
-    const heading = el('div', 'column-heading'); heading.append(el('span', 'column-step', current ? `Step ${index + 1} · Choose a direction` : `Step ${index + 1}`), el('h3', '', short(state.query || 'Your first question', 80))); heading.title = state.query; column.append(heading);
+    const heading = el('div', `column-heading${current ? ' current-column-heading' : ''}`); heading.append(el('span', 'column-step', current ? `Step ${index + 1} · Choose a direction` : `Step ${index + 1}`));
+    if (!current) heading.append(el('h3', '', short(state.query || 'Your first question', 80)));
+    heading.title = state.query; column.append(heading);
     const list = el('div', 'directions'); if (current) list.id = 'directions';
     if (directions?.length) {
       let selected = false;
@@ -362,7 +365,14 @@ async function startBrowser(initial = {}) {
   try { const result = await loadingTask; if (source === sourceEpoch && ticket === userIntent) accept(result); }
   finally { if (source === sourceEpoch && ticket === userIntent) setBusy(false); }
 }
-const markDraft = () => { draftDirty = true; draftVersion++; };
+function updateOptionsSummary() {
+  const defaults = { intent: 'explore', lens: 'combined', 'work-relation': 'either', transition: 'refine' };
+  const changed = Object.entries(defaults).filter(([id, value]) => $(id).value !== value).length;
+  const approach = $('intent').selectedOptions[0]?.textContent || 'Explore connections';
+  $('options-summary').textContent = `${approach} · ${changed ? `${changed} changed` : '4 settings'}`;
+}
+$('options-toggle').addEventListener('click', () => { const open = $('options-toggle').getAttribute('aria-expanded') !== 'true'; $('options-toggle').setAttribute('aria-expanded', String(open)); $('options-toggle').closest('.search-workbench').classList.toggle('options-open', open); });
+const markDraft = () => { draftDirty = true; draftVersion++; updateOptionsSummary(); };
 $('question').addEventListener('input', markDraft);
 for (const id of ['intent', 'lens', 'work-relation', 'transition']) $(id).addEventListener('change', markDraft);
 $('question-form').addEventListener('submit', event => {
@@ -370,7 +380,7 @@ $('question-form').addEventListener('submit', event => {
   if (!query) { status('Enter a physics question or concept.', true); $('question').focus(); return; }
   action({ type: $('transition').value, query, intent: $('intent').value, lens: $('lens').value, workRelation: $('work-relation').value }, { clearForm: true });
 });
-$('intent').addEventListener('change', () => { if ($('intent').value === 'using') $('work-relation').value = 'using'; });
+$('intent').addEventListener('change', () => { if ($('intent').value === 'using') $('work-relation').value = 'using'; updateOptionsSummary(); });
 $('show-sources').addEventListener('change', () => { if (view && activePanel === 'geometry') renderChart(); });
 $('view-sources').addEventListener('click', () => switchPanel('sources'));
 $('view-geometry').addEventListener('click', () => switchPanel('geometry'));

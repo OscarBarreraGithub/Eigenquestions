@@ -130,11 +130,11 @@ def main():
             def wait_changed(previous,target=page):target.wait_for_function('(id)=>document.documentElement.dataset.stateId!==id',arg=previous,timeout=60000)
             def wait_idle(target=page):target.wait_for_function("!document.body.classList.contains('busy')",timeout=60000)
             def current_directions(target=page):return target.locator('.miller-column[data-current="true"] #directions .direction')
-            def export_ui(target=page):
-                with target.expect_download() as info:target.locator('#export').click()
+            def export_ui(target=page,include_view=False):
+                with target.expect_download() as info:target.locator('#export-view' if include_view else '#export').click()
                 filename=temp/f'export-{time.monotonic_ns()}.json';info.value.save_as(str(filename))
                 exported=json.loads(filename.read_text());assert connection['token'] not in json.dumps(exported)
-                return exported['session']
+                return exported if include_view else exported['session']
             def submit(query,intent='explore',transition='pivot',target=page):
                 before=state_id(target)
                 target.locator('#question').fill(query);target.locator('#intent').select_option(intent)
@@ -160,7 +160,23 @@ def main():
             assert dm_session['states'][dm_cursor]['focusIds']
             page.locator('.miller-column[data-current="true"]').scroll_into_view_if_needed()
             page.screenshot(path=str(output/'multicolumn-path-viewport.png'),full_page=False)
+            source_view=export_ui(include_view=True)['view'];selected_direction=source_view['directions'][0]
+            page.locator('#view-geometry').click()
+            inspect=page.locator('.miller-column[data-current="true"] .direction-evidence').first
+            inspect.click()
+            assert inspect.get_attribute('aria-pressed')=='true'
+            assert page.locator('#sources-panel').is_visible() and page.locator('#chartpanel').is_hidden()
+            assert selected_direction['label'] in page.locator('#evidence-description').inner_text()
+            expected_sources=[n['id'] for n in source_view['nodes'] if n['id'] in selected_direction['memberIds']][:7]
+            assert page.locator('.evidence-card').evaluate_all('(nodes)=>nodes.map(n=>n.dataset.sourceId)')==expected_sources
+            page.wait_for_function("()=>{const r=document.querySelector('#reading-heading').getBoundingClientRect();return r.top>=0&&r.bottom<innerHeight}")
+            assert state_id()==dm and export_ui()==dm_session
+            source_details=page.locator('.evidence-card details summary')
+            if source_details.count():
+                source_details.first.click();source_details.first.scroll_into_view_if_needed()
+                page.screenshot(path=str(output/'source-provenance-viewport.png'),full_page=False)
             passed('new context changes labels/evidence and appends a navigable column path')
+            passed('current Sources control reveals its exact direction evidence without changing the canonical path')
 
             current_directions().first.click();wait_changed(dm);wait_idle()
             selected=state_id();assert page.locator('.miller-column[data-current="true"]').get_attribute('data-state-id')==selected
@@ -232,6 +248,24 @@ def main():
             assert result_state['focusIds']==base_focus
             passed('latest submit replaces unseen queued question without contaminating history or scientific focus')
 
+            # Choose an actual cached option in an earlier column. The click
+            # must replay that parent before selecting, truncating its old future.
+            branch_parent_index=replaced['cursor']-1
+            branch_parent=replaced['states'][branch_parent_index]
+            historical=page.locator(f'.miller-column[data-history-index="{branch_parent_index}"] .direction').first
+            branch_direction_id=historical.get_attribute('data-direction-id')
+            page.wait_for_function("id=>JSON.parse(localStorage.getItem('eigenquestions:columns:v2')||'[]').some(item=>item.stateId===id)",arg=branch_parent['id'])
+            branch_direction=page.evaluate("""({stateId,directionId})=>JSON.parse(localStorage.getItem('eigenquestions:columns:v2')).find(item=>item.stateId===stateId).directions.find(item=>item.id===directionId)""",{'stateId':branch_parent['id'],'directionId':branch_direction_id})
+            before_branch=state_id();historical.click();wait_changed(before_branch);wait_idle()
+            branched=export_ui();branch_state=branched['states'][branched['cursor']]
+            assert branched['cursor']==branch_parent_index+1 and len(branched['states'])==branch_parent_index+2
+            assert branched['states'][:-1]==replaced['states'][:branch_parent_index+1]
+            assert branch_state['query']==branch_direction['query']
+            assert branch_state['focusIds']==sorted(set(branch_direction['seedIds']))
+            assert branch_state['computationId']==branch_parent['computationId']
+            assert page.locator('.miller-column').count()==len(branched['states'])
+            passed('cached historical-column choice branches from its exact parent and removes the old future')
+
             # Warm presentation-only work: no worker delay or numerical request.
             page.evaluate('window.__eqQa.frames=[];window.__eqQa.longTasks=[]')
             for _ in range(5):
@@ -257,6 +291,7 @@ def main():
             connected.wait_for_function('window.__eqQa.heldWorkerResults.length>0')
             attached=tool('navigator_navigate',{'type':'navigate','query':'black hole evaporation'})
             connected.locator('#agent-open').click();connected.locator('#agent-dialog details summary').click()
+            connected.screenshot(path=str(output/'agent-dialog-viewport.png'),full_page=False)
             connected.locator('#bridge-origin').fill(connection['url']);connected.locator('#bridge-token').fill(connection['token'])
             connected.locator('#bridge-form button[type="submit"]').click()
             connected.wait_for_function("document.querySelector('#connection-status').textContent.includes('Agent connected')")
@@ -333,7 +368,12 @@ def main():
             page.screenshot(path=str(output/'narrow-desktop-viewport.png'),full_page=False)
             page.set_viewport_size({'width':390,'height':844})
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
-            controls=page.locator('#reset,#explore-button,#view-sources,#view-geometry,.miller-column[data-current="true"] .direction')
+            assert page.locator('#options-toggle').is_visible()
+            assert page.locator('#options-toggle').get_attribute('aria-expanded')=='false'
+            assert page.locator('#search-options').is_hidden()
+            page.locator('#options-toggle').click()
+            assert page.locator('#search-options').is_visible()
+            controls=page.locator('#reset,#explore-button,#view-sources,#view-geometry,#back,#broaden,#options-toggle,#intent,#lens,#work-relation,#transition,#browse-prev,#browse-next,#path button,.miller-column[data-current="true"] .direction,.miller-column[data-current="true"] .direction-evidence')
             small=[]
             for index in range(controls.count()):
                 control=controls.nth(index)
@@ -341,13 +381,41 @@ def main():
                 box=control.bounding_box()
                 if box['height']<43:small.append({'id':control.get_attribute('id'),'height':round(box['height'],2)})
             assert not small
+            page.locator('#options-toggle').click();assert page.locator('#search-options').is_hidden()
             page.locator('#reset').focus();page.keyboard.press('Enter')
             page.wait_for_function("document.activeElement?.id==='question'&&document.querySelector('#question').value===''")
             wait_idle();page.locator('#question').fill('axions');before=state_id();page.keyboard.press('Enter');wait_changed(before);wait_idle()
             assert current_directions().count()==5
+            page.evaluate("scrollTo({top:0,behavior:'instant'})")
+            assert page.locator('#options-toggle').get_attribute('aria-expanded')=='false'
+            for selector in ('#reset','#question','#explore-button','#options-toggle'):
+                box=page.locator(selector).bounding_box();assert box['y']>=0 and box['y']+box['height']<=844
+            page.screenshot(path=str(output/'mobile-top-viewport.png'),full_page=False)
             page.screenshot(path=str(output/'text-primary-mobile.png'),full_page=True)
             page.locator('.miller-column[data-current="true"]').scroll_into_view_if_needed();page.screenshot(path=str(output/'mobile-column-viewport.png'),full_page=False)
             passed('mobile primary controls have 44px-scale hit areas and keyboard New path/Enter navigation works')
+
+            # Disclosure and its fields stay usable during a real held result.
+            page.evaluate('window.__eqQa.holdWorkerResults=true')
+            before=state_id();page.locator('#question').fill('axion dark matter');page.locator('#explore-button').click()
+            page.wait_for_function('window.__eqQa.heldWorkerResults.length>0')
+            page.locator('#options-toggle').click()
+            assert page.locator('#options-toggle').get_attribute('aria-expanded')=='true'
+            assert page.locator('#search-options').is_visible() and current_directions().count()==5
+            assert page.locator('html').get_attribute('data-busy')=='true'
+            mobile_draft='Draft kept while Search options are open'
+            page.locator('#question').fill(mobile_draft);page.locator('#intent').select_option('derive')
+            for selector in ('#intent','#lens','#work-relation','#transition'):
+                control=page.locator(selector);assert control.is_visible() and control.bounding_box()['height']>=44
+            page.locator('#options-toggle').click();assert page.locator('#search-options').is_hidden()
+            page.locator('#options-toggle').click();assert page.locator('#search-options').is_visible()
+            page.evaluate('window.__eqQa.holdWorkerResults=false;window.__eqQa.releaseWorker()')
+            wait_changed(before);wait_idle()
+            assert page.locator('#question').input_value()==mobile_draft and page.locator('#intent').input_value()=='derive'
+            assert page.locator('#options-toggle').get_attribute('aria-expanded')=='true'
+            page.locator('#options-toggle').click()
+            passed('mobile Search options disclosure and full-size fields remain usable during compute and preserve drafts')
+
             page.set_viewport_size({'width':320,'height':740})
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
             assert current_directions().count()==5 and page.locator('#reset').is_visible()

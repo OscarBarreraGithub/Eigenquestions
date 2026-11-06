@@ -4,7 +4,8 @@ Reviewer: `/root/v2_design_review`. Initial source inspection: 2026-11-06 UTC.
 This document distinguishes observed reference facts from proposed Eigenquestions
 design choices. Reference screenshots and computed styles were captured in the
 authorized Slurm environment and independently inspected; no local browser was
-launched. Product screenshot review is pending.
+launched. The first product screenshot review is complete; a bounded vertical
+compaction pass and its screenshots remain to be checked.
 
 ## References inspected
 
@@ -179,8 +180,8 @@ The bounded capture helper is
 It refuses browser launch outside Slurm, records public page status and computed
 styles, and captures 1440×1000 and 390×844 viewports. Historical viewers are
 optional loopback URLs staged by the coordinator. HTTP/CSS inspection is complete;
-rendered-reference inspection is complete; product aesthetic acceptance remains
-pending.
+rendered-reference inspection is complete; final product aesthetic acceptance
+remains pending the compaction review below.
 
 ## Captured reference inspection and pre-screenshot product review
 
@@ -236,3 +237,59 @@ review. These are source-based risks, not claims of observed rendering failures:
 
 Root and the site owner received these findings before the product screenshots.
 No web code, integration test, or runtime behavior was changed by the reviewer.
+
+## First product screenshot review: bounded compaction recommended
+
+Independently reviewed the actual
+[desktop viewport](evidence/q002/browser-v1/desktop-viewport.png),
+[multi-column path](evidence/q002/browser-v1/multicolumn-path-viewport.png),
+[mobile column](evidence/q002/browser-v1/mobile-column-viewport.png),
+[narrow desktop](evidence/q002/browser-v1/narrow-desktop-viewport.png),
+[narrow mobile](evidence/q002/browser-v1/narrow-mobile-viewport.png),
+[New path](evidence/q002/browser-v1/new-path-viewport.png), and
+[full mobile document](evidence/q002/browser-v1/text-primary-mobile.png).
+The associated [runtime report](evidence/q002/browser-v1/q002-browser-acceptance.json)
+passes 16 checks; those checks support interaction correctness and measured
+responsiveness, not aesthetic acceptance by themselves.
+
+**What works.** The burgundy Eigenquestions masthead, white surface, blue links,
+consistent sans-serif text, quiet rules, and plain evidence list achieve the
+intended scholarly quality. The multi-column view is recognizable as the old
+interaction with larger, readable rows. The active step has clear emphasis,
+Back/New path are comfortable controls, and the source list is readable rather
+than presented as a marketing-card grid. The phone header now wraps deliberately,
+resolving the earlier fit concern. Sources now has a readable text label rather
+than the ambiguous arrow-only treatment. No broad redesign is justified.
+
+**Decisive remaining improvement.** Too much vertical space precedes the primary
+choices. On the desktop capture the column strip begins near y=558. The full
+phone document likewise spends a long stretch on masthead, instructions, four
+selectors, status, path, and repeated current-question headings before a choice.
+The narrow viewport also clips selected option names. This makes a clean screen
+feel more like a form with results beneath it than an immediately usable explorer.
+
+The reviewer approves the site's bounded proposal before release:
+
+- On phones, use a 44px Search options disclosure whose closed summary retains
+  the current approach and indicates nondefault settings. Opening it exposes
+  full-width 16px selectors, so selected values remain readable.
+- Reduce excess surrounding padding in masthead, search, status, and current
+  context; omit the secondary introductory helper sentence on phones.
+- Shorten the **current** column heading to the step/choose-direction cue,
+  because the query is already directly above it. Preserve the query in historical
+  column headings, where it explains the path.
+- Preserve 16px direction text and 44px interactive targets. Recover space from
+  layout and redundant text, not by shrinking the scientific content.
+
+Expected savings of roughly 140–190px on phones and 70px on desktop are the site
+owner's implementation estimate, not a measured result. Confirm the actual
+improvement with an unscrolled phone viewport and a desktop viewport after the
+change. Expanded options must remain readable and retain their selected values.
+
+**Optional polish only.** The New path state reserves the full tall column frame
+around one short prompt. A compact empty-state height, roughly 180–220px, would
+look more deliberate. This is lower priority than exposing the primary choices;
+it does not justify changing navigation semantics or the scientific engine.
+
+No new algorithm, source-label rewrite, chart redesign, or additional decoration
+is recommended. Root and the site owner received this conclusion before edits.
