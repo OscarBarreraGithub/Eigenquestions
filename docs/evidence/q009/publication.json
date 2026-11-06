@@ -1,0 +1,423 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "eigenquestions-publication-check",
+  "checkedAt": "2026-11-06T20:16:03.969Z",
+  "origin": "https://eigenquestions.com",
+  "expected": {
+    "releaseFingerprint": "3f6e05b9a0a0edff6b47c08590ff460bca3e034ef4a37df55b32a577c8778613",
+    "corpusId": "swampland-navigation-20261105-minilm-v1",
+    "computationId": "1.0.0:c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34:848832f277bbc1c24806aa235b0b37625e1dcdc4709c443fd6fc9813f5227ae9:ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839"
+  },
+  "assets": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 9698,
+      "expectedSha256": "3367d2bd9dc54e3491f7a01aab933623d4cc3732447775e8f477b56a14879c39",
+      "observedSha256": "3367d2bd9dc54e3491f7a01aab933623d4cc3732447775e8f477b56a14879c39",
+      "passed": true
+    },
+    {
+      "path": "/build-info.json",
+      "status": 200,
+      "bytes": 265,
+      "expectedSha256": "786b2d6f7dc91c36c2b758e464d05fee1a660b444ed4c4ce696a25c572cf9669",
+      "observedSha256": "786b2d6f7dc91c36c2b758e464d05fee1a660b444ed4c4ce696a25c572cf9669",
+      "passed": true
+    },
+    {
+      "path": "/data/manifest.json",
+      "status": 200,
+      "bytes": 10631,
+      "expectedSha256": "ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839",
+      "observedSha256": "ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839",
+      "passed": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 72618,
+      "expectedSha256": "e23816fbef99d8a44c0e2509b810f86d295753ca781f52c0b8ab470dca68d17d",
+      "observedSha256": "e23816fbef99d8a44c0e2509b810f86d295753ca781f52c0b8ab470dca68d17d",
+      "passed": true
+    },
+    {
+      "path": "/compute-worker.js",
+      "status": 200,
+      "bytes": 3017,
+      "expectedSha256": "2c2889d43160a64b58a1fdcbfb824f4dbc0e88b2cf37e0e9879311d86cd69c1b",
+      "observedSha256": "2c2889d43160a64b58a1fdcbfb824f4dbc0e88b2cf37e0e9879311d86cd69c1b",
+      "passed": true
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "bytes": 23884,
+      "expectedSha256": "8ee8f9eabc8109f709d8a9dffc4c46ff4482b4e9fb845bd709ed170815562701",
+      "observedSha256": "8ee8f9eabc8109f709d8a9dffc4c46ff4482b4e9fb845bd709ed170815562701",
+      "passed": true
+    },
+    {
+      "path": "/lib/geometry/index.mjs",
+      "status": 200,
+      "bytes": 28043,
+      "expectedSha256": "c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34",
+      "observedSha256": "c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34",
+      "passed": true
+    },
+    {
+      "path": "/lib/geometry/identity.mjs",
+      "status": 200,
+      "bytes": 271,
+      "expectedSha256": "1df7b44d35f2e2b6a8e05dd2aa0c189b0ab8b734a9eeb658ef34d7a77b13b718",
+      "observedSha256": "1df7b44d35f2e2b6a8e05dd2aa0c189b0ab8b734a9eeb658ef34d7a77b13b718",
+      "passed": true
+    },
+    {
+      "path": "/lib/protocol/session.mjs",
+      "status": 200,
+      "bytes": 10094,
+      "expectedSha256": "cda5155316d6ed3ee2daf18c01aefc34ee34fe3f1db64fc49902815934037856",
+      "observedSha256": "cda5155316d6ed3ee2daf18c01aefc34ee34fe3f1db64fc49902815934037856",
+      "passed": true
+    },
+    {
+      "path": "/lib/protocol/capsule.mjs",
+      "status": 200,
+      "bytes": 12028,
+      "expectedSha256": "66a906e476aa5fd3c0140dbe1c75ab44062c6f71463b3b3baea7bcb46c168071",
+      "observedSha256": "66a906e476aa5fd3c0140dbe1c75ab44062c6f71463b3b3baea7bcb46c168071",
+      "passed": true
+    },
+    {
+      "path": "/lib/protocol/presentation.mjs",
+      "status": 200,
+      "bytes": 1505,
+      "expectedSha256": "5ea37ca61ef23c01a70282928b0070d063f32b1f7e55329d0fd1da57a68932c6",
+      "observedSha256": "5ea37ca61ef23c01a70282928b0070d063f32b1f7e55329d0fd1da57a68932c6",
+      "passed": true
+    },
+    {
+      "path": "/schemas/contextual-view.schema.json",
+      "status": 200,
+      "bytes": 3707,
+      "expectedSha256": "9c6e654200741901055deaa65022b393d0975267b77afc23f79e5b5582f0e44c",
+      "observedSha256": "9c6e654200741901055deaa65022b393d0975267b77afc23f79e5b5582f0e44c",
+      "passed": true
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "bytes": 1774,
+      "expectedSha256": "bd656069ff65c9c031950e9cbec55503e3ba634837a6a05211f9d2cbf38e4551",
+      "observedSha256": "bd656069ff65c9c031950e9cbec55503e3ba634837a6a05211f9d2cbf38e4551",
+      "passed": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 71,
+      "expectedSha256": "4e2ce44b5c704067d8cd4ba122c16a3cfb106dc036b9acc0214faf07d6be8e0c",
+      "observedSha256": "4e2ce44b5c704067d8cd4ba122c16a3cfb106dc036b9acc0214faf07d6be8e0c",
+      "passed": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 533,
+      "expectedSha256": "cb344b6ed5114f2db88a787f3ea812ca67f6366ea8858ed03223dae276847c28",
+      "observedSha256": "cb344b6ed5114f2db88a787f3ea812ca67f6366ea8858ed03223dae276847c28",
+      "passed": true
+    },
+    {
+      "path": "/docs/agent-interface.md",
+      "status": 200,
+      "bytes": 16732,
+      "expectedSha256": "e22a6a6409aae2851cec6e755311fffb6a3b14f5efde9b69374eb96775f3de12",
+      "observedSha256": "e22a6a6409aae2851cec6e755311fffb6a3b14f5efde9b69374eb96775f3de12",
+      "passed": true
+    },
+    {
+      "path": "/skills/physics-navigator/SKILL.md",
+      "status": 200,
+      "bytes": 9305,
+      "expectedSha256": "23c149d8dbe8fcd3616dad1740bdc905f4b4e439c73875128b57059816f10c79",
+      "observedSha256": "23c149d8dbe8fcd3616dad1740bdc905f4b4e439c73875128b57059816f10c79",
+      "passed": true
+    },
+    {
+      "path": "/overview.html",
+      "status": 200,
+      "bytes": 4629,
+      "expectedSha256": "a5750488d76c2f457789cf4aaf3585a4b8963802d465f5db212daa2cdc290b93",
+      "observedSha256": "a5750488d76c2f457789cf4aaf3585a4b8963802d465f5db212daa2cdc290b93",
+      "passed": true
+    },
+    {
+      "path": "/overview.js",
+      "status": 200,
+      "bytes": 31678,
+      "expectedSha256": "53f17eb244ce630b96e053382f3cc948c71fe2d290fdf6ba7e3eba7d35ca9c95",
+      "observedSha256": "53f17eb244ce630b96e053382f3cc948c71fe2d290fdf6ba7e3eba7d35ca9c95",
+      "passed": true
+    },
+    {
+      "path": "/overview.css",
+      "status": 200,
+      "bytes": 8806,
+      "expectedSha256": "c3dd9ce18883d48e158ba48183b16a6e73947b69364c2d7387a6c286646c294a",
+      "observedSha256": "c3dd9ce18883d48e158ba48183b16a6e73947b69364c2d7387a6c286646c294a",
+      "passed": true
+    },
+    {
+      "path": "/data/overview/manifest.json",
+      "status": 200,
+      "bytes": 6070,
+      "expectedSha256": "eec8095619349a8ba60745d74c7d2a65c6f7e005ede45671dfecc7a103fa2a5c",
+      "observedSha256": "eec8095619349a8ba60745d74c7d2a65c6f7e005ede45671dfecc7a103fa2a5c",
+      "passed": true
+    },
+    {
+      "path": "/data/overview/map.json",
+      "status": 200,
+      "bytes": 1852731,
+      "expectedSha256": "64d25f86b2477a34779b5ea5365b34ccfd093899db5c6b40816c8515a5a7d929",
+      "observedSha256": "64d25f86b2477a34779b5ea5365b34ccfd093899db5c6b40816c8515a5a7d929",
+      "passed": true
+    }
+  ],
+  "retiredRoutes": [
+    {
+      "path": "/quiz/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/quiz/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/taste/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/taste/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/tree/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/tree/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/review/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/review/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/submit/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/submit/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/leaderboard/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/leaderboard/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/pair",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/pair",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/stats",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/stats",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/vote",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/vote",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/submit",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/submit",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/leaderboard",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/leaderboard",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/submissions",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/submissions",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/approve",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/approve",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/reject",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/reject",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "assetChecks": 22,
+    "matchedAssets": 22,
+    "retiredRouteChecks": 32,
+    "retiredRoutePasses": 32
+  },
+  "passed": true,
+  "scope": "Checks exact deployed entrypoint/module/manifest hashes and retired route status. Full corpus shard hashes are verified by the local build and browser loader; this bounded check does not redownload all shards or prove browser rendering."
+}

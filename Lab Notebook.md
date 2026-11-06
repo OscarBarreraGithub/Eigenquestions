@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions Q-009: replace “Awaiting a better home” with “Uncategorized excerpts” while retaining the 13 records.
 - **Known:** This is a three-line display/search/About change from live main `d93a402`. All original data, IDs, memberships and provenance remain intact; the 13 records are listed in a saved evidence file.
-- **Unfinished/running:** Existing 43 local tests and static checks pass. Publication is next. The larger Q-007 drilldown draft remains paused on its separate working branch; it is excluded from this release. Local-only Q-008 plot files are also excluded.
-- **Next:** Publish only this label fix and verify the public asset hashes.
+- **Unfinished/running:** Q-009 is live and verified; all 43 local tests, 22 published asset hashes and 32 retired-route checks pass. The larger Q-007 drilldown draft remains paused on its separate working branch; it is excluded from this release. Local-only Q-008 plot files are also excluded.
+- **Next:** Keep the 13 records for later categorization; wait for permission to resume the larger UI draft.
 - **Save:** Root owns the release from isolated branch `agent/uncategorized-label`; Astra protocol made the minimal display edit. [Tracked records](docs/evidence/q009/uncategorized-records.json).
 
 ## Requests
@@ -455,3 +455,5 @@
 **Observed.** All 43 existing local tests and static asset/hash checks pass. The data file hash is unchanged and all 13 source-unit/paper references are saved in [the tracking file](docs/evidence/q009/uncategorized-records.json). This is a copy change, with no new layout, grouping or scientific computation.
 
 **Next.** Publish the narrow change through the existing main workflow and verify deployed assets. No new browser interaction claim is inferred from the text-only checks.
+
+**Completed release.** Commit `de0cfa3974ef2a18e66d3ee78adb3346e33065d4` is on main; [deployment 42286692012](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42286692012) succeeded. All 22 published asset hashes and 32 retired-route checks pass. “Uncategorized excerpts” is now the displayed label. [Public evidence](docs/evidence/q009/publication.json). Closure changes documentation/evidence only.
