@@ -1,0 +1,35 @@
+{
+  "request": "Q-005",
+  "jobId": "58365554",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "e784d94e4d008aab3e116891a00ba1191598bd8f",
+  "archiveSha256": "f4b5ee069098933e9c17f60e0e0b03a7b0611c2441207e120ca4de5d8ad2ccaf",
+  "archiveHashMatched": true,
+  "submittedUtc": "2026-11-06T19:10:40.920042+00:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-005/browser-v3",
+  "statusAtReceipt": "completed_with_legacy_test_failure",
+  "suites": [
+    "q005_navigation_acceptance.py",
+    "stored_views_browser_acceptance.py",
+    "q002_browser_acceptance.py",
+    "browser_acceptance.py"
+  ],
+  "scope": "Exact source archive. Stable column geometry and preservation of deliberately viewed history are separately asserted; full MCP data is compared with full browser data.",
+  "suiteResults": {
+    "focused": {
+      "passed": 10
+    },
+    "storedViews": {
+      "passed": 14
+    },
+    "interactions": {
+      "passed": 19
+    },
+    "legacy": {
+      "passedBeforeFailure": 13,
+      "failure": "Assertion read innerText inside a closed details disclosure. Diagnostic confirms exact query, textContent and selected state."
+    }
+  },
+  "visualReview": "Sol and root accept desktop and phone columns, earlier choices, followed/return markers, breadcrumbs and explicit Resume."
+}

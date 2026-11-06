@@ -69,3 +69,19 @@ native direction selection. This is a second defect, beyond duplicate rendering.
 The bounded repair should reuse identical canonical history states and label
 returns; suppressing source evidence or changing retrieval to manufacture novelty
 is not justified by this finding. [Audit](Q-005-navigation-audit.md).
+
+## Release gate
+
+All nine requirements are implemented at the stated source-based scope. The
+10-check focused browser suite covers the reported method, exact returns,
+authored-history protection, explicit entry and stable phone/desktop navigation.
+The 14-check stored-view and 19-check interaction suites pass, as does the amended
+14-check legacy/MCP/geometry suite (57 browser checks in total). All 35 local tests
+and 41 corpus-shard checks pass. Sol and root accept the screenshots. See
+[evidence](evidence/q005/browser-v3/), [legacy completion](evidence/q005/legacy-final/)
+and [visual review](Q-005-ui-review.md). Public release verification follows.
+
+The fix identifies exact state returns and distinguishes representative source
+facets; it does not claim optimal semantic clusters or synthesized research
+question labels. Old scientific sessions are preserved, with recorded returns
+identified in their presentation.

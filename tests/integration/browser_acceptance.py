@@ -95,11 +95,22 @@ def main():
                 if target.locator('#view-geometry').count():
                     target.locator('#view-geometry').click()
 
+            def read_full_question(target):
+                details=target.locator('#full-question-details')
+                text=target.locator('#full-question-text')
+                if details.is_visible():
+                    if details.get_attribute('open') is None:details.locator('summary').click()
+                    assert text.is_visible()
+                    return text.inner_text()
+                # Short questions are displayed in the heading; their retained
+                # complete text is data inside an intentionally hidden disclosure.
+                return text.text_content()
+
             def navigate(action, label):
                 result = tool('navigator_navigate', action)
                 state = result['state']
                 page.wait_for_function('(id) => document.documentElement.dataset.stateId === id', arg=state['id'])
-                assert page.locator('#full-question-text').inner_text() == state['query']
+                assert read_full_question(page) == state['query']
                 show_geometry(page)
                 if result['view']['chart'].get('fitScope') == 'direction-centroids':
                     assert page.locator('.chart-direction').count() == len(result['view']['directions'])
@@ -174,9 +185,28 @@ def main():
             report['checks'].append({'name': 'five mobile markers have legible numbers, touch targets and matching full direction cards', 'passed': True})
             selected_query = mobile_state['view']['directions'][0]['query']
             selected_from = mobile_state['state']['id']
+            clicked_direction_id=page.locator('.chart-direction').first.get_attribute('data-direction-id')
             page.locator('.chart-direction .direction-dot').first.click()
             page.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=selected_from)
-            assert page.locator('#full-question-text').inner_text() == selected_query
+            selected_export=page.evaluate('window.eigenquestionsNavigator.export()')
+            selected_session=selected_export['snapshot']['session']
+            report['mobileSelectionDiagnostic']={
+                'expectedDirectionId':mobile_state['view']['directions'][0]['id'],
+                'clickedDirectionId':clicked_direction_id,
+                'expectedQuery':selected_query,
+                'displayedFullText':page.locator('#full-question-text').inner_text(),
+                'fullTextContent':page.locator('#full-question-text').text_content(),
+                'exportedContext':selected_export['context'],
+                'exportedState':selected_session['states'][selected_session['cursor']],
+                'beforeStateId':selected_from,
+            }
+            assert clicked_direction_id==mobile_state['view']['directions'][0]['id']
+            assert page.locator('#full-question-text').text_content()==selected_query
+            assert selected_export['context']['question']==selected_query
+            assert selected_session['states'][selected_session['cursor']]['query']==selected_query
+            readable_selected=read_full_question(page)
+            report['mobileSelectionDiagnostic']['displayedAfterOpening']=readable_selected
+            assert readable_selected==selected_query
             page.locator('#back').click()
             page.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=selected_from)
             report['checks'].append({'name': 'human mobile marker selection changes the question and Back restores the state', 'passed': True})
@@ -289,7 +319,7 @@ def main():
                     standalone.locator('#transition').select_option(transition)
                     standalone.locator('#explore-button').click()
                     standalone.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=old_id, timeout=60000)
-                    assert standalone.locator('#full-question-text').inner_text() == query
+                    assert read_full_question(standalone) == query
                     assert standalone.locator('#directions .direction').count() == 5
                     return standalone.locator('html').get_attribute('data-state-id')
 

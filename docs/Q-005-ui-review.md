@@ -115,3 +115,37 @@ with the controller's explicit column targeting. Native snap animation must not
 override the accepted current column, a deliberate arrow action or the viewed
 column retained during resize. The next screenshots must verify the integrated
 controller positioning rather than treating this CSS change alone as a fix.
+
+## Final actual visual acceptance
+
+**Accepted:** source `e784d94`, Slurm job `58365554`, Chromium 145.0.7632.6.
+Inspected the v3 [reported-method desktop](evidence/q005/browser-v3/q005_navigation_acceptance/q005-reported-method-1440-viewport.png)
+and [390px phone](evidence/q005/browser-v3/q005_navigation_acceptance/q005-reported-method-390-viewport.png),
+[current 390px](evidence/q005/browser-v3/q005_navigation_acceptance/q005-390-current-viewport.png)
+and [320px](evidence/q005/browser-v3/q005_navigation_acceptance/q005-320-current-viewport.png),
+[earlier 390px](evidence/q005/browser-v3/q005_navigation_acceptance/q005-390-earlier-viewport.png)
+and [320px](evidence/q005/browser-v3/q005_navigation_acceptance/q005-320-earlier-viewport.png),
+the [full phone history](evidence/q005/browser-v3/q005_navigation_acceptance/q005-390-earlier-full.png)
+and [neutral saved home](evidence/q005/browser-v3/q005_navigation_acceptance/q005-saved-neutral-home-390.png).
+
+The material mobile defect is resolved: current captures show the actual Step 5
+list at full reading width; arrow navigation reveals a coherent earlier Step 1.
+There are no intermediate column slices or clipped scientific text. Breadcrumbs
+retain their opening words. The desktop reported-method view now keeps the
+fourth selected row and **Followed** marker visible alongside genuine neighboring
+choices. The full phone capture confirms the same marker remains readable within
+its scrollable column. Ordinary page/column scrolling exposes the remaining
+choices without reducing the text size.
+
+Choices then/Next choices, Method/Question facets, genuine paper titles and
+Return to step labels communicate navigation and its limits. The neutral home
+offers a meaningful explicit Resume action while leaving the new search blank.
+Full context remains a separate accessible disclosure; the long source paragraph
+is no longer repeated in the input and every navigation surface.
+
+The [focused runtime report](evidence/q005/browser-v3/q005_navigation_acceptance/q005-navigation-acceptance.json)
+passes all ten checks with no page errors, including settled arrow positioning,
+remembered columns on resize, exact history/evidence preservation and explicit
+destination priority. No further visual changes requested. This signoff covers
+the current text interface; the separate legacy chart-click assertion and hosted
+storage operations retain their own acceptance scope.

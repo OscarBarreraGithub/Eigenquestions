@@ -4,9 +4,9 @@
 
 - **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
 - **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
-- **Unfinished/running:** Implementation and 35 local tests pass. The reported phone alignment is repaired. Final harness expectations are corrected and 35 local tests pass; the next integrated browser run is being prepared. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
+- **Unfinished/running:** Implementation and 35 local tests pass. The reported phone alignment is repaired. All 35 local and 57 browser checks pass for repaired Q-005, with desktop/phone visual approval. No validation job remains running; public release checks are next. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
 - **Next:** Freeze the repaired entry/choices/return behavior and verify the reported journey in a real browser, including authored-history safety and phone layouts. [Q-005 plan](docs/Q-005-plan.md).
-- **Git:** Corrected prototype `bbea301` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
+- **Git:** Corrected prototype `e784d94` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
 
 ## Requests
 
@@ -371,3 +371,15 @@
 **Observed.** Job `58364357` passed the 14 stored-view and 19 interaction checks again. The reported method now has a fully visible phone column and a bounded breadcrumb; its stable geometry checks pass. Later, the focused test expected the current step after resizing while an earlier step was deliberately remembered. The renderer correctly preserved that earlier step. The legacy test also compared a full browser group against a compact MCP response that intentionally omits memberships. [Second-run evidence](docs/evidence/q005/browser-v2/).
 
 **Amendment/next.** Correct those test expectations: first verify the remembered column survives resize, then use the real arrows to verify current; request the full MCP snapshot for exact group equality. Preserve the strong visibility and full-data assertions. At root’s request, Astra removed unreadable stemmed diagnostic tokens from the visible subtitle without changing exported diagnostics. Freeze a final candidate and rerun the integrated suites. These failures do not establish a new numerical or source-data defect.
+
+**Third submission.** Job `58365554` received hash-matched source `e784d94e4d008aab3e116891a00ba1191598bd8f`, verified on the working GitHub branch. All four browser suites run again. [Receipt](docs/evidence/q005/browser-v3-job.json).
+
+## 2026-11-06 UTC — Q-005: Approve the visible navigation and isolate the last test issue
+
+**Observed.** Source `e784d94` passes all 10 focused checks, 14 full-view checks and 19 interaction checks. Root and Sol inspected the final desktop, 390px and 320px images: current columns are fully visible, earlier alternatives remain navigable, followed choices are visible within their columns, return labels are clear, and home offers explicit Resume. [Final visual review](docs/Q-005-ui-review.md) · [focused evidence](docs/evidence/q005/browser-v3/q005_navigation_acceptance/q005-navigation-acceptance.json).
+
+**Last diagnostic.** The legacy chart test stopped after 13 checks when reading the long selected query. Job `58366743` proved the intended direction was selected and the canonical query, exported context and DOM text were all exact. Chromium returns empty `innerText` inside the closed Full context disclosure. Correct the test to open that disclosure before checking readable text, preserving exact data assertions. This is not missing scientific data. [Diagnostic receipt](docs/evidence/q005/legacy-diagnostic-job.json).
+
+**Next.** Finish the isolated legacy test, publish the visually accepted runtime through the existing main workflow, and check actual public hashes and navigation. No numerical engine or frozen corpus changed during these repairs.
+
+**Release gate passed.** The corrected isolated legacy suite completed in job `58367541` (17 seconds), with all 14 checks passing and no local browser errors. Together with the final focused, capsule and interaction suites, all 57 browser checks pass. The runtime remains `e784d94`; only test visibility handling changed. Publish this verified navigation repair before introducing the separately requested overview. [Legacy receipt](docs/evidence/q005/legacy-final-job.json).
