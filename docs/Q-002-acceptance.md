@@ -88,6 +88,29 @@ chart the primary interaction again.
 
 ## Evidence status
 
-Pending the implementation freeze and authorized Slurm browser run. The reviewer
-will not launch a local browser, SSH to the cluster, commit, push or deploy.
-Root owns execution receipts, visual review, notebook and release decisions.
+The first authorized Slurm run, job `58205898`, passed all 16 Q-002 checks and
+all 14 retained Q-001 checks against source
+`dfb26ff86c8d699015ce6ec06fb1114f18b5de16`. The
+[Q-002 report](evidence/q002/browser-v1/q002-browser-acceptance.json),
+[retained suite](evidence/q002/browser-v1-legacy/browser-acceptance.json) and
+[execution receipt](evidence/q002/browser-v1-job.json) record the result. Both
+the actual standalone worker and MCP companion were exercised; the Q-002 page
+reported no uncaught browser errors. Gated races verified that an unseen A
+cannot contaminate B's history/focus and that a newer MCP mutation survives a
+stale UI rebase, with the draft and explicit conflict message retained.
+
+In Chromium `145.0.7632.6`, this unthrottled two-core headless run reached the
+local initial view in 2.795 seconds. Eleven warm local input/tab samples had a
+27.5 ms median and 28.5 ms p95 to a double-animation-frame opportunity, with no
+observed main-thread long tasks in that measurement window. These are small,
+environment-specific samples, not a guarantee about network loading, every
+interaction, real display painting, mobile hardware or continuous frame rate.
+
+Root's screenshot review requested a bounded mobile refinement: collapse Search
+options to reduce the initial control stack while preserving easy access. The
+final follow-up must exercise that disclosure, expanded targets, a top-of-page
+mobile viewport, historical-column branching, and the added provenance/dialog
+screenshots. Those additions were **not** in the first frozen archive and are
+not covered by its passing receipt. Public v2 release and final visual acceptance
+remain pending. Root owns execution, visual review, notebook and release; this
+reviewer does not launch a local browser, SSH, commit, push or deploy.

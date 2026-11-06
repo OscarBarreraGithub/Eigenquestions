@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": "Q-002",
+  "checks": [
+    {
+      "name": "text-first default exposes five computed choices and a prominent New path",
+      "passed": true
+    },
+    {
+      "name": "new context changes labels/evidence and appends a navigable column path",
+      "passed": true
+    },
+    {
+      "name": "human direction click followed by Back restores the exact canonical state",
+      "passed": true
+    },
+    {
+      "name": "typing and reading tabs stay responsive during delayed compute; result preserves draft and tab",
+      "passed": true
+    },
+    {
+      "name": "Back during computation supersedes the pending result using the displayed path",
+      "passed": true
+    },
+    {
+      "name": "New path immediately focuses an empty query and stale computation cannot restore old focus/history",
+      "passed": true
+    },
+    {
+      "name": "rapid repeated submit does not create duplicate path entries",
+      "passed": true
+    },
+    {
+      "name": "latest submit replaces unseen queued question without contaminating history or scientific focus",
+      "passed": true
+    },
+    {
+      "name": "warm local input/tab work stays below measured 250ms acceptance ceilings; not a 60fps guarantee",
+      "passed": true
+    },
+    {
+      "name": "transport generation suppresses a delayed standalone worker response after agent attachment",
+      "passed": true
+    },
+    {
+      "name": "MCP and Miller columns agree; external update preserves draft; New path clears shared session but keeps attachment",
+      "passed": true
+    },
+    {
+      "name": "delayed old bridge response cannot overwrite a newer MCP/SSE revision",
+      "passed": true
+    },
+    {
+      "name": "atomic revision guard preserves intervening MCP state and the UI draft during a rebase conflict",
+      "passed": true,
+      "status": "Your agent changed the path while this request was pending. The newer path is shown; your draft is preserved. Review it and search again."
+    },
+    {
+      "name": "attachment reload and exact rendered-state acknowledgement survive the new layout",
+      "passed": true
+    },
+    {
+      "name": "mobile primary controls have 44px-scale hit areas and keyboard New path/Enter navigation works",
+      "passed": true
+    },
+    {
+      "name": "1024px, 390px and 320px layouts contain horizontal scrolling within navigation strips",
+      "passed": true
+    }
+  ],
+  "performanceScope": "Headless Slurm, no CPU/network throttling; next-frame opportunities are measured, not guaranteed display frames. Real response delivery is delayed only for race checks.",
+  "browserVersion": "145.0.7632.6",
+  "coldReadySeconds": 2.795,
+  "styles": {
+    "bodyFont": "\"Lucida Grande\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "bodyColor": "rgb(34, 34, 34)",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "hardwareConcurrency": 2
+  },
+  "delayedWorkerResults": 5,
+  "warmLocalInteraction": {
+    "samples": 11,
+    "medianPaintOpportunityMs": 27.5,
+    "p95PaintOpportunityMs": 28.5,
+    "maxLongTaskMs": 0,
+    "longTaskCount": 0
+  },
+  "delayedBridgeResponses": 1,
+  "pageErrors": [],
+  "passed": true
+}

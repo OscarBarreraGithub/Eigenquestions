@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions v2 — can the dynamic graph/vector navigator feel like the old text explorer, with classic arXiv clarity and immediate controls?
 - **Known:** Verified v1 is live. The old viewer used text/Miller columns with burgundy, white and blue links. The numerical engine and corpus can stay fixed while the interface changes. Review found draft-overwrite, dropped-action and stale-response hazards to fix.
-- **Unfinished/running:** The first Astra v2 prototype is frozen and all 23 Node tests pass. Browser interaction and visual acceptance remain pending. Reference-capture job `58203240` completed successfully; desktop/mobile references are saved. A stale browser rebase needs an atomic bridge revision guard. No owner answer is required.
-- **Next:** Run both interaction suites on the frozen prototype under Slurm; inspect desktop, mobile, path and empty-state screenshots before release.
+- **Unfinished/running:** Browser job `58205898` passed 16 v2 interaction checks and 14 retained geometry/agent checks. A bounded visual iteration is reducing the tall control stack before final acceptance. Reference-capture job `58203240` completed successfully; desktop/mobile references are saved. A stale browser rebase needs an atomic bridge revision guard. No owner answer is required.
+- **Next:** Compact the mobile controls based on screenshots, verify the final layouts and historical branching, then publish through the existing workflow.
 - **Git:** Work on `agent/arxiv-text-explorer-v2` from `4e14ab8`; use the existing repository and main deployment. Coordinator: `/root`.
 
 ## Requests
@@ -163,3 +163,13 @@
 **Next.** Run the Q-002 delayed-interaction suite and the retained Q-001 geometry/agent suite on this exact checkpoint in Slurm. Review 1440, 1024, 390 and 320px layouts; revise observed problems before publication.
 
 **Pre-browser design amendment.** The frozen source review led to two small repairs: the phone masthead now deliberately wraps, and a readable Sources button explicitly reveals its reading pane. Unsolicited incoming updates still preserve vertical reading position. Site build, static checks and all four site tests pass after these bounded changes. Prototype `99c91d7` was pushed and its remote SHA verified; the corrected checkpoint will be the browser input.
+
+**Browser submission.** Corrected checkpoint `dfb26ff86c8d699015ce6ec06fb1114f18b5de16` is pushed and remotely verified. Job `58205898` runs both suites from its exact, hash-matched archive under `randall_lab`. [Receipt](docs/evidence/q002/browser-v1-job.json). No other cluster workload was modified.
+
+## 2026-11-06 UTC — Q-002: Interactions pass; refine the space given to directions
+
+**Observed.** Job `58205898` completed in 51 seconds, exit 0: all 16 v2 checks and 14 retained geometry/agent checks pass. Real delayed worker/bridge results preserve drafts and visible scientific context; an intervening MCP update survives a browser rebase conflict. No page errors occurred. Warm typing/tab measurements had a 28.5ms p95 next-frame opportunity and no observed long tasks in the sample; this is headless Slurm evidence, not a universal device guarantee. [V2 report](docs/evidence/q002/browser-v1/q002-browser-acceptance.json) · [retained checks](docs/evidence/q002/browser-v1-legacy/browser-acceptance.json).
+
+**Visual interpretation.** Root inspected desktop and mobile screenshots. The flat document styling, source buttons and column structure are legible, but the control stack places the first desktop directions about 558px down and occupies too much of a phone screen. Narrow select labels also truncate. Passing interaction checks did not establish the best use of space.
+
+**Next/contributors.** Astra site and the independent design reviewer are making a bounded compact-layout decision; Astra protocol will exercise the resulting phone disclosure and a real cached historical-choice branch. Preserve these screenshots as the before-state. No engine or corpus change is needed.
