@@ -2,10 +2,10 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. V2 text-first interface is live; Q-003 asks what structured object lets an agent orient itself and deliver a reproducible view to the browser, potentially through a URL.
+- **Project/question:** Eigenquestions. V2 text-first interface is live; Q-003 now evaluates agent-uploaded contextual views, stored on Cloudflare with durable short links, while numerical work stays in the agent/browser.
 - **Known:** V2 passed 23 Node tests, 19 public v2 browser checks and 19 retained/public checks. Public assets match the release. The same deterministic engine/corpus are preserved.
-- **Unfinished/running:** No cluster jobs remain running. Q-003 is architecture and measurement only; no new agent API/URL protocol is implemented. The full contextual view includes grouping, labels, relations and continuation context; a matrix alone is insufficient.
-- **Next:** Review the contextual-view proposal and size measurements; implement only after the transport/continuation contract is settled. Preserve independent agent research.
+- **Unfinished/running:** No cluster jobs remain running. The upload service remains a proposal. Published free allowances and measured payloads support a roughly 61,000-view inventory at 128 KiB/view with 20% storage headroom. Account remaining quotas and endpoint throughput are unmeasured.
+- **Next:** Use the saved capacity model to choose storage/admission limits; preserve the full contextual-view contract and benchmark the upload endpoint before deployment.
 - **Git:** V2 closure `2929dd4` is verified on main and deployment succeeded. Q-003 discussion branch: `agent/contextual-view-contract-q003`. Coordinator `/root`; Astra owns implementation.
 
 ## Requests
@@ -225,3 +225,13 @@
 **Meaning.** These are measured examples, not lower bounds or universal URL limits. Small links work when shared data and a deterministic builder supply the omitted information. Arbitrary new labels, groups, relations or context cannot be recovered unless recorded or specified reproducibly. The independent audit distinguishes displaying a view, reconstructing it and continuing from it; only the last requires sufficient scientific continuation context. The authoritative representation must be the complete contextual object, with URL delivery optional. [Proposal and next checks](docs/Q-003-contextual-view-proposal.md).
 
 **Status.** This checkpoint saves the discussion, failed matrix-only simplification, actual size evidence and bounded next steps. No new view protocol, agent-written grouping importer or URL update loader is claimed implemented.
+
+## 2026-11-06 UTC — Q-003: Price stored views instead of forcing them into URLs
+
+**Request refinement (summary).** The owner proposes automatic agent uploads or manual drag-and-drop, a stored full/reduced view on Cloudflare, a returned random durable link, and a responsive browser while upload completes. They ask how many queries/users the free tier can support. This extends the Q-003 transport proposal; it requests a calculation, not infrastructure provisioning.
+
+**Tried/contributors.** Root used current Cloudflare documentation and the measured view payloads; Astra protocol independently audited quotas and arithmetic. The proposed route is a small upload Worker plus R2 object storage, with public/unlisted reads through a production R2 custom domain. Random-ID lookup needs no SQL database, and this flow needs no persistent socket.
+
+**Observed/calculated.** At 128 KiB per compressed view, an 8 GB planning inventory holds 61,035 views. With 20% operation headroom and no caching assumed, direct R2 reads support roughly 26,666 new saves/day and 266,666 openings/day averaged over a 30-day month; these are quotas, not throughput benchmarks. One hundred daily users saving 20 views each day retain 7.864 GB after 30 days. Permanent links keep accumulating; at 500 such daily users the 8 GB target is reached in about six days. Extra R2 storage is inexpensive, but free allowance is not a hard spending cap.
+
+**Meaning/next.** Storage retention, payload size and the distinction between saving and opening dominate the answer. Keep scientific computation/compression out of the 10 ms Free Worker CPU path, and measure a real lightweight upload endpoint before calling its capacity reliable. The account's remaining shared allowances were not inspected; no subscription, bucket or deployment was changed. [Capacity note](docs/Q-003-cloudflare-capacity.md) · [calculation inputs/results](docs/evidence/q003/cloudflare-capacity-20261106.json). Preserve existing links when planning storage growth rather than silently assuming a deletion policy.

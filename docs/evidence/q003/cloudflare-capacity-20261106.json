@@ -1,0 +1,167 @@
+{
+  "request": "Q-003",
+  "kind": "capacity-estimate-not-load-test",
+  "checkedUtc": "2026-11-06T06:49:24.776818+00:00",
+  "accountRemainingAllowancesVerified": false,
+  "sources": {
+    "r2_pricing": "https://developers.cloudflare.com/r2/pricing/",
+    "workers_pricing": "https://developers.cloudflare.com/workers/platform/pricing/",
+    "workers_limits": "https://developers.cloudflare.com/workers/platform/limits/",
+    "r2_public_buckets": "https://developers.cloudflare.com/r2/buckets/public-buckets/",
+    "r2_consistency": "https://developers.cloudflare.com/r2/reference/consistency/",
+    "r2_subscription": "https://developers.cloudflare.com/r2/get-started/",
+    "d1_pricing": "https://developers.cloudflare.com/d1/platform/pricing/",
+    "d1_limits": "https://developers.cloudflare.com/d1/platform/limits/",
+    "kv_pricing": "https://developers.cloudflare.com/kv/platform/pricing/"
+  },
+  "publishedFree": {
+    "workerRequestsPerDay": 100000,
+    "workerCpuMsPerInvocation": 10,
+    "r2StorageGBMonth": 10,
+    "r2ClassAPerMonth": 1000000,
+    "r2ClassBPerMonth": 10000000,
+    "r2EgressPerGBUsd": 0,
+    "r2ExtraStoragePerGBMonthUsd": 0.015,
+    "workersPaidMinimumUsdPerMonth": 5
+  },
+  "assumptions": {
+    "storedBytesPerView": 131072,
+    "gbBytes": 1000000000,
+    "monthDays": 30,
+    "headroomFraction": 0.2,
+    "workerRequestsPerUpload": 1,
+    "r2PutsPerUpload": 1,
+    "r2GetsPerOpen": 1,
+    "workerRequestsPerDirectR2Open": 0,
+    "cacheHitFraction": 0,
+    "freeAllowanceAvailableToProject": true,
+    "extraRequestsNotCounted": [
+      "authentication",
+      "preflight",
+      "retries",
+      "HEAD",
+      "listing",
+      "polling"
+    ],
+    "storedObject": "compressed binary JSON; no base64; no PDFs or duplicate full corpus"
+  },
+  "planningBudgets": {
+    "workerRequestsDaily": 80000,
+    "r2ClassAMonthly": 800000,
+    "r2ClassBMonthly": 8000000,
+    "retainedBytes": 8000000000
+  },
+  "retainedViews": {
+    "at8GB": 61035,
+    "at10GB": 76293
+  },
+  "directR2ReadModel": {
+    "maxUploadPostDailyBudget": 80000,
+    "averageNewViewsDailyBudget": 26666.666666666668,
+    "averageNewViewsHourlyBudget": 1111.111111111111,
+    "averageUncachedOpensDailyBudget": 266666.6666666667,
+    "averageUncachedOpensHourlyBudget": 11111.111111111111
+  },
+  "workerProxiedReadScenarios": [
+    {
+      "opensPerSavedView": 1,
+      "planningNewViewsPerDay": 26666
+    },
+    {
+      "opensPerSavedView": 5,
+      "planningNewViewsPerDay": 13333
+    },
+    {
+      "opensPerSavedView": 10,
+      "planningNewViewsPerDay": 7272
+    }
+  ],
+  "retentionScenarios": [
+    {
+      "days": 7,
+      "sustainableNewViewsPerDay": 8719,
+      "dailyUsersAt20Saves": 435.9654017857143
+    },
+    {
+      "days": 30,
+      "sustainableNewViewsPerDay": 2034,
+      "dailyUsersAt20Saves": 101.72526041666667
+    },
+    {
+      "days": 90,
+      "sustainableNewViewsPerDay": 678,
+      "dailyUsersAt20Saves": 33.908420138888886
+    },
+    {
+      "days": 365,
+      "sustainableNewViewsPerDay": 167,
+      "dailyUsersAt20Saves": 8.360980308219178
+    }
+  ],
+  "permanentRetentionExamples": [
+    {
+      "dailyUsers": 100,
+      "savesPerUserPerDay": 20,
+      "newViewsDaily": 2000,
+      "opensPerNewView": 5,
+      "objectOpensDaily": 10000,
+      "workerPostDaily": 2000,
+      "retainedGBAt30Days": 7.86432,
+      "daysTo8GB": 30.517578125
+    },
+    {
+      "dailyUsers": 500,
+      "savesPerUserPerDay": 20,
+      "newViewsDaily": 10000,
+      "opensPerNewView": 5,
+      "objectOpensDaily": 50000,
+      "workerPostDaily": 10000,
+      "retainedGBAt30Days": 39.3216,
+      "daysTo8GB": 6.103515625
+    }
+  ],
+  "sizeSensitivity": [
+    {
+      "storedKiB": 32,
+      "retainedAt8GB": 244140,
+      "sustainableNewViewsDailyFor30dRetention": 8138
+    },
+    {
+      "storedKiB": 128,
+      "retainedAt8GB": 61035,
+      "sustainableNewViewsDailyFor30dRetention": 2034
+    },
+    {
+      "storedKiB": 512,
+      "retainedAt8GB": 15258,
+      "sustainableNewViewsDailyFor30dRetention": 508
+    },
+    {
+      "storedKiB": 1024,
+      "retainedAt8GB": 7629,
+      "sustainableNewViewsDailyFor30dRetention": 254
+    }
+  ],
+  "upgradeExamples": [
+    {
+      "constantStorageGB": 40,
+      "monthlyStorageUsdAfter10GBFree": 0.44999999999999996
+    },
+    {
+      "constantStorageGB": 100,
+      "monthlyStorageUsdAfter10GBFree": 1.3499999999999999
+    },
+    {
+      "constantStorageGB": 1000,
+      "monthlyStorageUsdAfter10GBFree": 14.85
+    }
+  ],
+  "limits": [
+    "Not an SLA or requests-per-second benchmark",
+    "Storage is averaged daily peak GB-month, not a hard capacity cutoff",
+    "Permanent retention accumulates; free allowance is not refreshed space",
+    "Client/browser compression and scientific calculation assumed; lightweight Worker must be CPU-tested",
+    "Public custom-domain reads assume unlisted shareable views; authenticated reads need another model",
+    "R2 subscription enables metered overages; project-side admission budgets needed for strict zero spend"
+  ]
+}
