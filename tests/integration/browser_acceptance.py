@@ -89,11 +89,18 @@ def main():
             page.wait_for_function("document.documentElement.dataset.ready === 'true'")
             page.wait_for_function("document.querySelector('#connection-status').textContent.includes('Agent connected')")
 
+            def show_geometry(target):
+                # Q-002 makes text primary; Q-001 geometry checks explicitly
+                # open its optional tab rather than requiring a primary chart.
+                if target.locator('#view-geometry').count():
+                    target.locator('#view-geometry').click()
+
             def navigate(action, label):
                 result = tool('navigator_navigate', action)
                 state = result['state']
                 page.wait_for_function('(id) => document.documentElement.dataset.stateId === id', arg=state['id'])
                 assert page.locator('#current-question').inner_text() == state['query']
+                show_geometry(page)
                 if result['view']['chart'].get('fitScope') == 'direction-centroids':
                     assert page.locator('.chart-direction').count() == len(result['view']['directions'])
                 else:
@@ -234,6 +241,7 @@ def main():
                 public_page.goto(args.public_origin + '/#bridge=' + quote(connection['url'], safe='') + '&token=' + quote(connection['token']), wait_until='domcontentloaded', timeout=60000)
                 public_page.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
                 assert public_page.locator('#connection-status').inner_text() == 'Browser session'
+                show_geometry(public_page)
                 assert public_page.locator('.chart-direction').count() == 5
                 public_page.locator('#agent-open').click()
                 public_page.locator('#agent-dialog details summary').click()
@@ -255,6 +263,7 @@ def main():
                 standalone.goto(args.public_origin, wait_until='domcontentloaded', timeout=60000)
                 standalone.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
                 assert standalone.locator('#connection-status').inner_text() == 'Browser session'
+                show_geometry(standalone)
                 assert standalone.locator('.chart-direction').count() == 5
 
                 def public_question(query, intent='explore', relation='either', transition='refine'):

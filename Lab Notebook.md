@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions v2 — can the dynamic graph/vector navigator feel like the old text explorer, with classic arXiv clarity and immediate controls?
 - **Known:** Verified v1 is live. The old viewer used text/Miller columns with burgundy, white and blue links. The numerical engine and corpus can stay fixed while the interface changes. Review found draft-overwrite, dropped-action and stale-response hazards to fix.
-- **Unfinished/running:** Astra site implements; Astra protocol tests interactions; a separate Astra reviewer studies references and visual quality. No Q-002 cluster job is submitted yet. No owner answer is required.
-- **Next:** Establish the text-first layout, repair async interaction semantics, then inspect real desktop/mobile browser results and measured responsiveness.
+- **Unfinished/running:** The first Astra v2 prototype is frozen and all 23 Node tests pass. Browser interaction and visual acceptance remain pending. Reference-capture job `58203240` completed successfully; desktop/mobile references are saved. A stale browser rebase needs an atomic bridge revision guard. No owner answer is required.
+- **Next:** Run both interaction suites on the frozen prototype under Slurm; inspect desktop, mobile, path and empty-state screenshots before release.
 - **Git:** Work on `agent/arxiv-text-explorer-v2` from `4e14ab8`; use the existing repository and main deployment. Coordinator: `/root`.
 
 ## Requests
@@ -141,3 +141,23 @@
 **Observed/decision.** The old viewer supplies the intended text navigation structure. Use classic burgundy/white/blue links and familiar sans-serif typography, with more readable rows and larger controls. Current arXiv styling differs; the reference note will distinguish the classic choice from a claim of exact current-site copying. Keep the real engine/corpus and canonical sessions. Cache only actually computed historical directions; show Restore for uncached past steps. Geometry becomes secondary.
 
 **Interaction finding/next.** Current results can overwrite typed drafts; busy guards can silently drop Back/Reset, and a late worker result can overwrite a newly attached agent state. These are concrete v2 requirements, not merely cosmetic changes. Fix and test those races alongside the new design. [Q-002 plan](docs/Q-002-plan.md).
+
+**Reference capture.** Slurm job `58203240` captures the actual arXiv pages and archived old viewer at desktop/mobile sizes. [Receipt](docs/evidence/q002/reference-job.json). The original request, atomic plan and initial reference research are committed as `fe682dd`; implementation and visual acceptance remain unfinished.
+
+## 2026-11-06 UTC — Q-002: Protect a newer agent path during rapid browser input
+
+**Question.** Can the browser replace an unseen pending search without overwriting an intervening agent update?
+
+**Tried/contributors.** Astra site uses the last visibly accepted session as the base for a newer search. Root identified that rebasing the bridge to this session could race with an external MCP action. Astra protocol reproduced the risk and added an optional revision precondition checked immediately before mutation, after the request body is read. Existing MCP behavior and the scientific engine/schema stay unchanged.
+
+**Observed.** The protocol owner reports a passing real-MCP test: an import body held open across a newer agent update returns a conflict and retains that newer state. This server result still needs the integrated browser check. The UI must retain the draft and explain the conflict rather than rewind silently.
+
+**Reference evidence.** Job `58203240` completed in 11 seconds, exit 0. Root inspected the archived text-column path and live arXiv abstract screenshots; these support the chosen flat rules, blue links and bibliographic typography. [Reference captures](docs/evidence/q002/references/reference-capture.json) · [receipt](docs/evidence/q002/reference-job.json). Next: validate the finished interface under delays and review actual product screenshots.
+
+## 2026-11-06 UTC — Q-002: Freeze the text-first prototype for real browser review
+
+**Change/contributors.** Astra site implemented dynamic Miller columns, a visible current path, prominent New path, source listings and optional geometry in the classic arXiv visual style. Historical columns store only accepted computations. Drafts, tabs and the last displayed scientific context survive delayed responses; the bridge uses Astra protocol's revision guard. Root reviewed the combined design and requested horizontal-only path scrolling to avoid moving a reader unexpectedly.
+
+**Observed.** Root ran the complete local verification: 23 tests pass, the static build has 64 assets, and all 41 corpus shards match. The numerical engine/corpus/session schema are unchanged. This is a frozen prototype, not a visual acceptance claim. The design reviewer flagged possible mobile masthead crowding and vertical density to inspect in screenshots. [Validation](docs/evidence/q002/prototype-validation.json).
+
+**Next.** Run the Q-002 delayed-interaction suite and the retained Q-001 geometry/agent suite on this exact checkpoint in Slurm. Review 1440, 1024, 390 and 320px layouts; revise observed problems before publication.

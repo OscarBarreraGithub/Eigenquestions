@@ -21,7 +21,11 @@ test('static HTTP server serves the new product and retires old pages and APIs',
     for (let i = 0; i < 40; i++) { try { ready = (await fetch(origin)).ok; if (ready) break; } catch {} await delay(50); }
     assert.ok(ready, error || 'Static preview failed to start');
     const page = await fetch(origin);
-    assert.match(await page.text(), /Where does your question lead/);
+    const html = await page.text();
+    assert.match(html, /Follow a question through physics/);
+    assert.ok(html.indexOf('id="columns"') < html.indexOf('id="chartpanel"'), 'Text columns must precede optional geometry');
+    assert.match(html, /id="chartpanel"[^>]+hidden/);
+    assert.match(html, /id="reset"[^>]*>New path/);
     for (const route of ['/api/pair', '/api/vote', '/api/stats', '/api/submit', '/api/leaderboard', '/api/review/approve', '/quiz', '/quiz/index.html', '/taste/index.html', '/explore/tree/index.html', '/leaderboard', '/submit', '/review', '/unknown-page']) {
       const response = await fetch(origin + route);
       assert.equal(response.status, 404, route);

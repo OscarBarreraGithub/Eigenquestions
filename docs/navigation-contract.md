@@ -34,6 +34,20 @@ The Node CLI and stdio MCP server use the same modules. A local bridge binds onl
 
 Snapshots additionally expose `browserStatus`: `acknowledgedCurrent`, `acknowledgingViewers`, `knownViewers`, and `lastRenderedStateId`. After rendering, a browser sends authenticated `POST /api/viewer` with its random tab-scoped `viewerId`, `stateId`, and `revision`. Stale acknowledgements are rejected. This is process-local confirmation of a past render, not proof that a user is still viewing the tab; it is not part of exported/reproducible state. Agent summaries show the first 12 ranked sources and up to 20 edges, with full counts; `navigator_state {full:true}` returns the entire object. MCP never claims that an SSE subscriber alone rendered a view.
 
+Q-002 adds an optional transport precondition for `POST /api/action` and
+`POST /api/import`: `If-Match: "REVISION"` (an unquoted nonnegative safe integer
+is also accepted). The server parses the JSON body, then compares the revision
+and performs the synchronous mutation without an intervening await. A stale
+revision returns HTTP 409 with `{error:"Revision conflict",current:snapshot}`;
+the caller must preserve that newer state and its own draft, report the conflict,
+and avoid automatically retrying an old import against the new revision. An
+invalid precondition returns HTTP 400 and changes nothing. An absent precondition
+preserves existing unconditional CLI/MCP behavior. CORS permits `If-Match`.
+If a UI operation needs an import followed by an action, both requests must be
+guarded using the revision returned by the preceding accepted operation. A prior
+GET alone is not concurrency protection. Session schemas, engine/data identity
+and the numerical computation are unchanged by this transport guard.
+
 Every API request needs the unpredictable session token: `Authorization: Bearer TOKEN` for fetch, or `?token=TOKEN` for EventSource. Tokens stay in URL fragments in browser launch links. The server accepts its exact loopback origin and configured exact public origins, by default `https://eigenquestions.com`; it rejects arbitrary origins and non-loopback Host headers. API clients without Origin still need the token. Requests and bodies are bounded. Static files never expose arbitrary filesystem paths.
 
 Public HTTPS pages may be blocked from loopback by browser private-network/mixed-content permissions. The interface attempts explicit attachment and reports failure; a link to the **same-origin local renderer** is the supported fallback. A network unit test does not establish browser compatibility. Public-origin success/blocking and same-origin browser behavior must be recorded separately in acceptance evidence.

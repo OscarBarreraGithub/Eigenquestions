@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {spawn} from 'node:child_process';
 import {createInterface} from 'node:readline';
+import http from 'node:http';
 import {loadLocalNavigator,createRuntime,bridgeCall,PROJECT_ROOT} from '../../lib/protocol/runtime.mjs';
 import {startBridge} from '../../lib/protocol/bridge.mjs';
 import {createSession,currentState,applyAction,exportSession,importSession} from '../../lib/protocol/session.mjs';
@@ -102,6 +103,7 @@ test('MCP stdio action reaches bridge SSE and origin/session checks reject outsi
     const publicResponse=await fetch(new URL('/api/session',bridge.url),{headers:{Origin:'https://eigenquestions.com',Authorization:`Bearer ${bridge.token}`}});
     assert.equal(publicResponse.status,200);assert.equal(publicResponse.headers.get('access-control-allow-origin'),'https://eigenquestions.com');
     const preflight=await fetch(new URL('/api/action',bridge.url),{method:'OPTIONS',headers:{Origin:'https://eigenquestions.com','Access-Control-Request-Private-Network':'true'}});assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-private-network'),'true');
+    assert.match(preflight.headers.get('access-control-allow-headers'),/If-Match/);
     const events=await fetch(new URL(`/api/events?token=${bridge.token}`,bridge.url));reader=events.body.getReader();await reader.read();
     const init=await rpc('initialize',{protocolVersion:'2025-06-18',clientInfo:{name:'integration',version:'1'}});assert.equal(init.result.serverInfo.name,'eigenquestions-navigator');
     assert.equal((await rpc('tools/list',{})).result.tools.length,6);
@@ -114,5 +116,23 @@ test('MCP stdio action reaches bridge SSE and origin/session checks reject outsi
     assert.equal((await bridgeCall(connection,'/api/session')).browserStatus.lastRenderedStateId,event.view.stateId);
     const exported=await bridgeCall(connection,'/api/export');assert.equal(exported.kind,'eigenquestions-session');assert.equal(JSON.stringify(exported).includes(bridge.token),false);
     const bad=await rpc('tools/call',{name:'navigator_navigate',arguments:{type:'select',directionId:'stale'}});assert.equal(bad.result.isError,true);assert.equal((await bridgeCall(connection,'/api/session')).revision,1);
+    // Deterministic TOCTOU interleave: an import with revision 1 is already
+    // arriving, then a real MCP action commits revision 2 before its body ends.
+    const importBody=JSON.stringify(exported),split=Math.floor(importBody.length/2);
+    let importRequest;
+    const importResponse=new Promise((resolve,reject)=>{
+      importRequest=http.request(new URL('/api/import',bridge.url),{method:'POST',headers:{Authorization:`Bearer ${bridge.token}`,'Content-Type':'application/json','Content-Length':Buffer.byteLength(importBody),'If-Match':'"1"'}},response=>{
+        const chunks=[];response.on('data',chunk=>chunks.push(chunk));response.on('end',()=>resolve({status:response.statusCode,value:JSON.parse(Buffer.concat(chunks).toString('utf8'))}));
+      });importRequest.on('error',reject);
+    });
+    await new Promise(resolve=>importRequest.write(importBody.slice(0,split),resolve));
+    const external=await rpc('tools/call',{name:'navigator_navigate',arguments:{type:'pivot',query:'axion weak gravity conjecture'}});assert.equal(external.result.isError,false);
+    importRequest.end(importBody.slice(split));const conflict=await importResponse;
+    assert.equal(conflict.status,409);assert.equal(conflict.value.error,'Revision conflict');
+    assert.equal(conflict.value.current.revision,2);assert.equal(conflict.value.current.view.stateId,external.result.structuredContent.state.id);
+    assert.equal((await bridgeCall(connection,'/api/session')).view.stateId,external.result.structuredContent.state.id);
+    const staleAction=await fetch(new URL('/api/action',bridge.url),{method:'POST',headers:{Authorization:`Bearer ${bridge.token}`,'Content-Type':'application/json','If-Match':'"1"'},body:JSON.stringify({type:'reset'})});assert.equal(staleAction.status,409);
+    const currentAction=await fetch(new URL('/api/action',bridge.url),{method:'POST',headers:{Authorization:`Bearer ${bridge.token}`,'Content-Type':'application/json','If-Match':'"2"'},body:JSON.stringify({type:'back'})});assert.equal(currentAction.status,200);assert.equal((await currentAction.json()).revision,3);
+    const invalidGuard=await fetch(new URL('/api/action',bridge.url),{method:'POST',headers:{Authorization:`Bearer ${bridge.token}`,'Content-Type':'application/json','If-Match':'not-a-revision'},body:JSON.stringify({type:'reset'})});assert.equal(invalidGuard.status,400);assert.equal((await bridgeCall(connection,'/api/session')).revision,3);
   }finally{await reader?.cancel();child.stdin.end();child.kill();lines.close();await bridge.close();await rm(directory,{recursive:true,force:true});}
 });

@@ -1,4 +1,4 @@
-# Eigenquestions static explorer
+# Eigenquestions v2 · live text explorer
 
 Eigenquestions draws a new local view of source-linked physics descriptions for
 each question. The v1 collection contains 6,478 papers and 26,410 extracted
@@ -8,14 +8,40 @@ dated inputs, not a live literature search.
 
 Enter a concept or question, choose an approach, and follow one of approximately
 five computed directions. **Refine this context** carries forward source anchors;
-**Pivot to a new focus** clears them. **Broaden** releases those anchors and
+**Start a different focus** clears them. **Broaden** releases those anchors and
 exclusions. The history path and **Back** restore exact prior states. The approach,
 question/method perspective and on/using relation all enter the shared engine.
 The browser performs deterministic retrieval; it is not a conversational language
 model. Your own agent can resolve conversational references and navigate the
 same object using the [agent interface](agent-interface.md).
 
-The primary chart projects approximately five weighted direction-group centers
+V2 makes a live Miller-column text explorer the primary view. Each visited question
+has a column of its actually computed directions; a selected row marks the path.
+The rightmost column holds the current choices. Historical choices are cached only
+from views received for the same state and computation identity. An uncached old
+step offers **Restore step**, which recomputes it through the canonical session.
+Following an old choice restores that step before branching. The breadcrumb and
+column arrow controls scroll within their own bands without moving the document.
+
+**New path** resets the canonical history, query, focus and constraints, and focuses
+an empty question input. It preserves an attached companion. Sources are displayed
+by default; **Geometric view** is a presentational tab that uses the existing view.
+The source button beside a current direction narrows the reading list immediately.
+The classic arXiv-inspired treatment uses white, burgundy, blue destinations and
+Lucida Grande/Helvetica/Arial throughout, with Eigenquestions' own identity.
+
+Typing, tabs, disclosures and horizontal scrolling remain available during
+computation. A newer browser submission replaces a pending submission using the
+last visibly accepted session, so it cannot inherit an unseen intermediate focus.
+Back targets the preceding visible history step. Delayed results from a superseded
+intent or transport cannot overwrite the active view, and incoming results preserve
+an edited search draft. The browser caches at most 24 computed views and 24 compact
+historical column descriptions; these caches do not change the numerical engine.
+Companion mutations/rebases use revision preconditions. If an agent advances the
+session concurrently, the newer path is kept, the draft remains, and the UI asks
+the user to review and resubmit instead of silently rewinding the agent's work.
+
+The secondary **Geometric view** projects approximately five weighted direction-group centers
 onto a local affine plane in the real embedding space. An optional overlay shows
 the individual source descriptions in that same plane. Its caption separately
 reports variation retained between group centers and among individual sources:
@@ -85,7 +111,7 @@ quiz, taste and fixed-tree pages are not present in the build.
 
 GitHub Actions validates and publishes `dist/` on authorized pushes to `main`,
 using the repository's existing Cloudflare secrets. Implementation work stays on
-`agent/question-conditioned-navigation`; the coordinator owns release.
+`agent/arxiv-text-explorer-v2`; the coordinator owns release.
 `npm run deploy:check` performs local build/validation and Wrangler dry-run only.
 It does not establish live-domain behavior or account permissions.
 

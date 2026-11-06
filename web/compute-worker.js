@@ -8,14 +8,26 @@ self.onmessage = async ({ data: message }) => {
     if (type === 'init') {
       const corpus = await loadCorpus('/data/', { onProgress: progress => self.postMessage({ type: 'progress', ...progress }) });
       self.postMessage({ type: 'progress', stage: 'index' });
-      navigator = createNavigator(corpus);
+      const engine = createNavigator(corpus), viewCache = new Map();
+      navigator = { ...engine, computeView(state) {
+        if (viewCache.has(state.id)) return viewCache.get(state.id);
+        const computed = engine.computeView(state);
+        viewCache.set(state.id, computed);
+        while (viewCache.size > 24) viewCache.delete(viewCache.keys().next().value);
+        return computed;
+      } };
       session = payload?.session ? importSession(payload.session, { corpusId: corpus.manifest.corpusId, computationId: navigator.computationId }) : createSession({ corpusId: corpus.manifest.corpusId, computationId: navigator.computationId, query: 'Kaluza-Klein towers', ...payload?.state });
       view = navigator.computeView(currentState(session));
       self.postMessage({ id, result: { session, view, manifest: corpus.manifest } });
       return;
     }
     if (!navigator) throw new Error('The corpus is still loading. Please wait before navigating.');
-    if (type === 'action') ({ session, view } = applyAction(session, payload, navigator));
+    if (type === 'action') {
+      // Each UI intent is rooted in the last visibly accepted session. A newer
+      // search therefore never inherits an unseen, superseded worker result.
+      const base = payload.baseSession ? validateSession(payload.baseSession, { corpusId: session.corpusId, computationId: navigator.computationId }) : session;
+      ({ session, view } = applyAction(base, payload.action, navigator));
+    }
     else if (type === 'import') {
       session = payload.kind === 'eigenquestions-session'
         ? importSession(payload, { corpusId: session.corpusId, computationId: navigator.computationId })

@@ -56,3 +56,15 @@ No numerical engine, corpus or session-schema change is planned.
    tests and visual review; revise only for observed shortcomings.
 4. Commit the verified version, deploy via existing GitHub workflow, verify exact
    public assets and interaction behavior, and close the notebook/audit.
+
+## 2026-11-06 integration amendment
+
+The UI's latest-submission behavior requires rebasing from the last visibly
+accepted session when an earlier unseen action has advanced the bridge. Root
+identified a race with external MCP updates. A bounded optional `If-Match`
+revision guard for browser import/action is authorized; stale mutations return
+409 with the current snapshot, which the UI must preserve along with its draft.
+The check occurs after parsing the request body and immediately before mutation.
+This is a transport correction, not a change to the engine, corpus or scientific
+session schema. Protocol owns the guard and its real-MCP interleaving test; site
+owns the conflict presentation.

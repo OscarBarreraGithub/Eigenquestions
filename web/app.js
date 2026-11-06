@@ -4,8 +4,14 @@ import { placeChartLabel } from '/chart-labels.mjs';
 const $ = id => document.getElementById(id);
 const svgNS = 'http://www.w3.org/2000/svg';
 const labels = { explore: 'Explore connections', derive: 'How is it derived?', phenomenology: 'Physical implications', recent: 'Recent within this corpus', using: 'Work using this idea', combined: 'Question + method', physical_question: 'Physical question', method: 'Methods', on: 'work on this idea', either: 'work on or using this idea' };
-const colors = ['#3f7866', '#5b7d9d', '#a48a50', '#96758c', '#7a8e53'];
-let session, view, worker, selectedId, bridge, events, revision = -1, busy = false, allEvidence = false;
+const colors = ['#a82a2a', '#3f6788', '#786854', '#76617c', '#5a796e'];
+let session, view, worker, selectedId, selectedDirectionId, bridge, events, revision = -1, busy = false, allEvidence = false;
+let activePanel = 'sources', sourceEpoch = 0, userIntent = 0, draftVersion = 0, draftDirty = false;
+let actionQueue = Promise.resolve(), loadingTask = Promise.resolve(), queuedBridgeSnapshot = null, bridgeNeedsRebase = false;
+let bridgeRebaseRevision = null;
+const columnViews = new Map();
+const columnStorageKey = 'eigenquestions:columns:v2';
+try { for (const item of JSON.parse(localStorage.getItem(columnStorageKey) || '[]')) if (item?.stateId && Array.isArray(item.directions)) columnViews.set(item.stateId, item); } catch {}
 let requestId = 0;
 const pending = new Map();
 const fragment = new URLSearchParams(location.hash.slice(1));
@@ -21,57 +27,157 @@ function status(message, error = false) { $('status').textContent = message; $('
 function safeUrl(value) { try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) ? u.href : null; } catch { return null; } }
 function short(value, max = 90) { const str = String(value || ''); return str.length > max ? `${str.slice(0, max - 1).replace(/\s+\S*$/, '')}…` : str; }
 function readable(value) { return typeof value === 'number' ? Number(value.toPrecision(4)).toString() : typeof value === 'object' ? JSON.stringify(value) : String(value ?? 'not supplied'); }
-function setBusy(value) { busy = value; document.body.classList.toggle('busy', value); $('explore-button').disabled = value; $('chart').setAttribute('aria-busy', String(value)); }
+function setBusy(value, message = 'Updating directions…') {
+  busy = value; document.body.classList.toggle('busy', value);
+  document.body.dataset.busy = document.documentElement.dataset.busy = String(value);
+  $('pending-indicator').hidden = !value; $('pending-label').textContent = message;
+  $('explore-button').setAttribute('aria-busy', String(value));
+  $('chart').setAttribute('aria-busy', String(value));
+}
 function callWorker(type, payload) { return new Promise((resolve, reject) => { const id = ++requestId; pending.set(id, { resolve, reject }); worker.postMessage({ id, type, payload }); }); }
-function save() { if (!session) return; try { localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch { /* Storage may be disabled; exports still work. */ } }
-function accept(snapshot) {
+function save() {
+  if (!session) return;
+  try { localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
+  const cached = [...columnViews.values()].slice(-24);
+  setTimeout(() => { try { localStorage.setItem(columnStorageKey, JSON.stringify(cached)); } catch {} }, 0);
+}
+function rememberView(result) {
+  columnViews.delete(result.stateId);
+  columnViews.set(result.stateId, { stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(({ id, label, query, seedIds, sourceCount, evidenceIds }) => ({ id, label, query, seedIds, sourceCount, evidenceIds })) });
+  while (columnViews.size > 24) columnViews.delete(columnViews.keys().next().value);
+}
+function accept(snapshot, { formVersion } = {}) {
   if (!snapshot?.session || !snapshot?.view) throw new Error('The companion returned an incomplete session.');
   const next = validateSession(snapshot.session);
   if (snapshot.view.corpusId !== next.corpusId || snapshot.view.computationId !== next.computationId || snapshot.view.stateId !== currentState(next).id) throw new Error('The view does not match the current question or computation. Reconnect or import a fresh session.');
   if (!Array.isArray(snapshot.view.nodes) || !Array.isArray(snapshot.view.directions)) throw new Error('The companion returned an invalid view.');
-  if (snapshot.revision !== undefined && snapshot.revision < revision) return;
+  if (snapshot.revision !== undefined && snapshot.revision <= revision) return false;
   if (snapshot.revision !== undefined) revision = snapshot.revision;
-  session = next; view = snapshot.view; selectedId = null; allEvidence = false;
-  render(); save();
+  session = next; view = snapshot.view; selectedId = null; selectedDirectionId = null; allEvidence = false;
+  if (formVersion !== undefined && formVersion === draftVersion) draftDirty = false;
+  rememberView(view); render(); save();
   if (bridge && Number.isInteger(snapshot.revision)) {
-    const renderedState = currentState(next).id;
-    // Acknowledgement follows a paint opportunity, not merely an open SSE socket.
+    const renderedState = currentState(next).id, source = sourceEpoch;
     requestAnimationFrame(() => requestAnimationFrame(() => {
-      if (bridge && document.documentElement.dataset.stateId === renderedState) bridgeFetch('/api/viewer', { method: 'POST', body: JSON.stringify({ viewerId, stateId: renderedState, revision: snapshot.revision }) }).catch(() => {});
+      if (bridge && source === sourceEpoch && document.documentElement.dataset.stateId === renderedState) bridgeFetch('/api/viewer', { method: 'POST', body: JSON.stringify({ viewerId, stateId: renderedState, revision: snapshot.revision }) }).catch(() => {});
     }));
   }
+  return true;
 }
-async function action(payload) {
-  if (busy || !session) return;
-  setBusy(true); status('Drawing a new view around your question…');
-  try {
-    const result = bridge ? await bridgeFetch('/api/action', { method: 'POST', body: JSON.stringify(payload) }) : await callWorker('action', payload);
-    accept(result);
-  } catch (error) { status(error.message, true); }
-  finally { setBusy(false); }
+function action(payload, { followup, operation = 'action', clearForm = false } = {}) {
+  const ticket = ++userIntent, source = sourceEpoch, formVersion = draftVersion;
+  const baseSession = session ? structuredClone(session) : null, baseRevision = revision;
+  const transport = bridge;
+  setBusy(true, payload.type === 'reset' ? 'Starting a new path…' : 'Updating directions…');
+  status('Computing directions from the current sources…');
+  const run = async () => {
+    try {
+      await loadingTask;
+      if (ticket !== userIntent || source !== sourceEpoch) return;
+      let result;
+      if (transport) {
+        let expectedRevision = baseRevision < 0 ? revision : baseRevision;
+        if (bridgeNeedsRebase && baseSession && payload.type !== 'reset') {
+          const restored = await bridgeFetch('/api/import', { method: 'POST', headers: { 'If-Match': `"${bridgeRebaseRevision}"` }, body: JSON.stringify(exportSession(baseSession)) }, transport);
+          expectedRevision = restored.revision;
+          if (ticket !== userIntent || source !== sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = restored.revision; return; }
+        } else if (bridgeNeedsRebase && payload.type === 'reset') {
+          expectedRevision = bridgeRebaseRevision;
+        }
+        bridgeNeedsRebase = false;
+        result = await bridgeFetch(operation === 'import' ? '/api/import' : '/api/action', { method: 'POST', headers: { 'If-Match': `"${expectedRevision}"` }, body: JSON.stringify(payload) }, transport);
+      } else result = await callWorker(operation, operation === 'action' ? { action: payload, baseSession } : payload);
+      if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
+      if (followup) result = transport ? await bridgeFetch('/api/action', { method: 'POST', headers: { 'If-Match': `"${result.revision}"` }, body: JSON.stringify(followup) }, transport) : await callWorker('action', { action: followup, baseSession: result.session });
+      if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
+      // Agent changes may have arrived while this request's response was delayed.
+      if (queuedBridgeSnapshot && queuedBridgeSnapshot.revision > (result.revision ?? -1)) result = queuedBridgeSnapshot;
+      queuedBridgeSnapshot = null;
+      accept(result, { formVersion: clearForm ? formVersion : undefined });
+    } catch (error) {
+      if (ticket === userIntent && source === sourceEpoch) {
+        if (error.current) { draftDirty = true; bridgeNeedsRebase = false; const latest = queuedBridgeSnapshot?.revision > error.current.revision ? queuedBridgeSnapshot : error.current; queuedBridgeSnapshot = null; accept(latest); }
+        status(error.message, true);
+      }
+    }
+    finally {
+      if (ticket === userIntent && source === sourceEpoch) {
+        setBusy(false);
+        if (queuedBridgeSnapshot) { const queued = queuedBridgeSnapshot; queuedBridgeSnapshot = null; accept(queued); }
+      }
+    }
+  };
+  actionQueue = actionQueue.catch(() => {}).then(run);
+  return actionQueue;
 }
 function render() {
   const state = currentState(session), scope = view.diagnostics?.scope || {};
-  $('current-question').textContent = state.query || 'Choose a physics question';
-  $('question').value = state.query;
-  $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation;
+  $('current-question').textContent = state.query || 'Start a new path';
+  if (!draftDirty) { $('question').value = state.query; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
   const context = view.diagnostics?.contextTerms || [];
-  $('current-context').textContent = `${labels[state.intent]} · ${labels[state.lens]}${state.focusIds.length ? ` · Building on ${state.focusIds.length} source descriptions${context.length ? ` about ${context.slice(0, 4).join(', ')}` : ''}` : ' · Searching across the corpus'}`;
-  $('back').disabled = session.cursor === 0; $('broaden').disabled = !state.focusIds.length && !state.constraints?.excludeIds?.length;
+  $('current-context').textContent = state.query ? `${labels[state.intent]} · ${labels[state.lens]}${state.focusIds.length ? ` · Building on ${state.focusIds.length} sources${context.length ? ` about ${context.slice(0, 3).join(', ')}` : ''}` : ' · Across the corpus'}` : 'Enter a concept or question above. This path has no inherited focus.';
+  $('back').disabled = session.cursor === 0;
+  $('broaden').disabled = !state.focusIds.length && !state.constraints?.excludeIds?.length;
   $('path').replaceChildren();
   session.states.forEach((item, index) => {
     if (index) $('path').append(el('span', 'path-arrow', '›'));
-    const button = el('button', '', short(item.query || 'Starting point', 44)); button.type = 'button'; button.title = `${item.query} · ${labels[item.intent]}`;
+    const button = el('button', '', short(item.query || 'New path', 35)); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
+    button.setAttribute('aria-label', `Step ${index + 1}: ${item.query || 'New path'}`);
     if (index === session.cursor) button.setAttribute('aria-current', 'step');
     button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
   });
-  $('corpus-scope').textContent = `${(scope.paperCount || 0).toLocaleString()} papers · ${(scope.unitCount || 0).toLocaleString()} source descriptions · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this frozen Swampland-centered collection.`;
-  $('evidence-count').textContent = `${view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId)).size} papers`;
-  renderChart(); renderDirections(); renderEvidence(); renderDetails();
-  status(view.nodes.length ? `${view.nodes.length} source descriptions, ${view.directions.length} suggested directions. Your question changes both the selection and the view.` : view.warnings?.[0] || 'No supported sources found. Try a more specific term or pivot to a different focus.');
+  $('corpus-scope').textContent = `Eigenquestions v2 · ${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
+  $('evidence-count').textContent = `${view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId)).size}`;
+  renderColumns(); renderEvidence();
+  if (activePanel === 'geometry') { renderChart(); renderDetails(); }
+  status(view.nodes.length ? `${view.directions.length} next directions · ${view.diagnostics?.distinctPapers || new Set(view.nodes.map(n => n.paperId)).size} papers in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'A new path is ready. Enter your first question.');
   document.documentElement.dataset.ready = 'true';
   document.documentElement.dataset.stateId = state.id;
   document.documentElement.dataset.corpusId = state.corpusId;
+}
+function renderColumns() {
+  const host = $('columns'); host.replaceChildren();
+  $('directions-count').textContent = `${view.directions.length} directions`;
+  const states = session.states.slice(0, session.cursor + 1);
+  for (let index = 0; index < states.length; index++) {
+    const state = states[index], current = index === session.cursor, next = states[index + 1];
+    const cached = columnViews.get(state.id);
+    const directions = current ? view.directions : cached?.computationId === state.computationId ? cached.directions : null;
+    const column = el('section', 'miller-column'); column.dataset.stateId = state.id; column.dataset.historyIndex = index; column.dataset.current = String(current);
+    const heading = el('div', 'column-heading'); heading.append(el('span', 'column-step', current ? `Step ${index + 1} · Choose a direction` : `Step ${index + 1}`), el('h3', '', short(state.query || 'Your first question', 80))); heading.title = state.query; column.append(heading);
+    const list = el('div', 'directions'); if (current) list.id = 'directions';
+    if (directions?.length) {
+      let selected = false;
+      directions.forEach((direction, directionIndex) => {
+        const row = el('div', 'direction-row'), button = el('button', 'direction'); button.type = 'button'; button.dataset.directionId = direction.id;
+        button.title = direction.label; button.setAttribute('aria-label', `Direction ${directionIndex + 1}: ${direction.label}`);
+        if (next && next.query === direction.query && direction.seedIds?.every(id => next.focusIds.includes(id))) { button.setAttribute('aria-current', 'step'); selected = true; }
+        button.append(el('span', 'direction-number', String(directionIndex + 1).padStart(2, '0')));
+        const content = el('span', 'direction-content'); content.append(el('h3', '', direction.label), el('span', 'direction-meta', `${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} source descriptions`));
+        button.append(content, el('span', 'direction-arrow', '›'));
+        button.addEventListener('click', () => current ? action({ type: 'select', directionId: direction.id }) : action({ type: 'replay', index }, { followup: { type: 'select', directionId: direction.id } }));
+        row.append(button);
+        if (current) {
+          const inspect = el('button', 'direction-evidence', '↗'); inspect.type = 'button'; inspect.setAttribute('aria-label', `Inspect sources for direction ${directionIndex + 1}`); inspect.title = 'Inspect sources'; inspect.setAttribute('aria-pressed', String(selectedDirectionId === direction.id)); inspect.append(el('span', '', 'sources'));
+          inspect.addEventListener('click', () => { selectedDirectionId = direction.id; selectedId = null; allEvidence = false; switchPanel('sources'); renderEvidence(); host.querySelectorAll('.direction-evidence').forEach(item => item.setAttribute('aria-pressed', String(item === inspect))); }); row.append(inspect);
+        }
+        list.append(row);
+      });
+      if (next && !selected) { const follow = el('div', 'column-followup'); follow.append(el('strong', '', 'Follow-up question →'), el('span', '', short(next.query, 120))); list.append(follow); }
+    } else if (!current && !directions) {
+      const restore = el('div', 'column-restore'); restore.append(el('p', '', 'This step is in your path. Restore it to recompute its directions.'));
+      const button = el('button', '', 'Restore step →'); button.type = 'button'; button.addEventListener('click', () => action({ type: 'replay', index })); restore.append(button); list.append(restore);
+    } else list.append(el('p', 'empty-state', state.query ? 'No supported directions for this question. Try another focus or broaden the context.' : 'Begin with a physics concept. Your first question will open approximately five directions here.'));
+    column.append(list); host.append(column);
+  }
+  requestAnimationFrame(() => { host.scrollLeft = host.scrollWidth; const crumb = $('path').querySelector('[aria-current]'); if (crumb) $('path').scrollLeft = crumb.offsetLeft - $('path').offsetLeft; updateColumnControls(); });
+}
+function updateColumnControls() { const host = $('columns'); $('browse-prev').disabled = host.scrollLeft < 2; $('browse-next').disabled = host.scrollLeft + host.clientWidth >= host.scrollWidth - 2; }
+function switchPanel(panel) {
+  activePanel = panel; document.documentElement.dataset.view = panel;
+  $('sources-panel').hidden = panel !== 'sources'; $('chartpanel').hidden = panel !== 'geometry';
+  $('view-sources').setAttribute('aria-selected', String(panel === 'sources')); $('view-geometry').setAttribute('aria-selected', String(panel === 'geometry'));
+  if (view && panel === 'geometry') { renderChart(); renderDetails(); }
 }
 function renderChart() {
   const host = $('chart'); host.replaceChildren();
@@ -108,7 +214,7 @@ function renderChart() {
     const r = seedIds.has(node.id) ? 6 : 3.7;
     group.append(svg('circle', { cx: x(node.x), cy: y(node.y), r, fill: node.inSlab === false ? '#fffef9' : color, stroke: color, 'stroke-width': 1.3, 'fill-opacity': .86 }));
     group.append(svg('title', {}, `${node.title}\n${node.label}\nResidual from plane: ${readable(node.residual)}`));
-    const select = () => { selectedId = node.id; renderChart(); renderEvidence(); };
+    const select = () => { selectedId = node.id; selectedDirectionId = null; switchPanel('sources'); renderEvidence(); };
     group.addEventListener('click', select); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); } });
     plot.append(group);
     if (!compact && !aggregate && (seedIds.has(node.id) || node.id === selectedId)) {
@@ -154,21 +260,13 @@ function renderChart() {
     ? `${compact ? 'Numbers match the full directions below. ' : ''}These ${view.directions.length} points are weighted centers of source groups, sized by retrieval weight. This plane retains ${explained}% of variation between those centers, versus ${Math.round((view.chart.sourceDiagnostics?.explainedVariance || 0) * 100)}% across individual source descriptions. Groups can be broad; proximity is a reading suggestion, not a physical claim.`
     : `This local 2D projection retains ${explained}% of the selected variation. Filled points meet the current residual cutoff; hollow points lie farther from the plane. Lines show retrieval affinity or the same paper, not established physical connections.`;
 }
-function renderDirections() {
-  $('directions').replaceChildren(); $('directions-count').textContent = `${view.directions.length} directions`;
-  view.directions.forEach((direction, index) => {
-    const button = el('button', 'direction'); button.type = 'button'; button.dataset.directionId = direction.id;
-    button.append(el('span', 'direction-number', String(index + 1).padStart(2, '0')));
-    const body = el('span'); body.append(el('h3', '', direction.label), el('p', '', direction.summary));
-    body.append(el('span', 'direction-meta', `${direction.evidenceIds.length} supporting source description${direction.evidenceIds.length === 1 ? '' : 's'} · suggested connection`));
-    button.append(body, el('span', 'direction-arrow', '↗'));
-    button.addEventListener('click', () => action({ type: 'select', directionId: direction.id })); $('directions').append(button);
-  });
-  if (!view.directions.length) $('directions').append(el('p', 'empty-state', 'No supported directions in this context. Pivot to another question, broaden the current view, or ask your agent to find a source anchor.'));
-}
 function renderEvidence() {
   $('evidence').replaceChildren();
   let nodes = [...view.nodes];
+  const direction = view.directions.find(item => item.id === selectedDirectionId);
+  if (direction) { const ids = new Set(direction.memberIds || direction.evidenceIds); nodes = nodes.filter(node => ids.has(node.id)); }
+  $('clear-evidence').hidden = !direction;
+  $('evidence-description').textContent = direction ? `Sources behind: ${direction.label}` : 'Read the extracted descriptions, then check the original papers.';
   if (selectedId) nodes.sort((a, b) => Number(b.id === selectedId) - Number(a.id === selectedId));
   const shown = allEvidence ? nodes : nodes.slice(0, 7);
   for (const node of shown) {
@@ -176,7 +274,8 @@ function renderEvidence() {
     card.dataset.sourceId = node.id;
     const relation = node.retrieval?.workRelation?.kind;
     card.append(el('p', 'source-meta', `${evidence.date || evidence.year || node.year || 'date unavailable'} · ${labels[evidence.lens || node.lens] || 'Source'}${relation ? ` · ${relation === 'ambiguous' ? 'role uncertain' : relation}` : ''}`));
-    card.append(el('h3', '', node.title));
+    const title = el('h3'), paperUrl = safeUrl(node.sourceUrl || evidence.url);
+    if (paperUrl) { const link = el('a', '', node.title); link.href = paperUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; title.append(link); } else title.textContent = node.title; card.append(title);
     card.append(el('p', 'passage', evidence.text || node.label));
     const details = el('details'); details.append(el('summary', '', 'Source scope & provenance'));
     details.append(el('p', '', 'Extracted source description, not a direct quotation or independently verified result.'));
@@ -204,49 +303,85 @@ function renderDetails() {
 function download(name, payload) { const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })); const a = el('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
 function encodeFocus(state) { return btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(state)))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
 function decodeFocus(value) { if (value.length > 16000) throw new Error('Shared focus is too large. Import a session file instead.'); return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(value.replace(/-/g, '+').replace(/_/g, '/')), c => c.charCodeAt(0)))); }
-async function bridgeFetch(route, options = {}) {
-  const response = await fetch(new URL(route, bridge.origin), { ...options, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${bridge.token}` }, signal: AbortSignal.timeout(20000) });
-  if (!response.ok) throw new Error(`Companion returned HTTP ${response.status}. Check the origin and session token.`);
-  return response.json();
+async function bridgeFetch(route, options = {}, connection = bridge) {
+  const response = await fetch(new URL(route, connection.origin), { ...options, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${connection.token}`, ...options.headers }, signal: AbortSignal.timeout(20000) });
+  const result = await response.json();
+  if (!response.ok) {
+    const error = new Error(response.status === 409 ? 'Your agent changed the path while this request was pending. The newer path is shown; your draft is preserved. Review it and search again.' : `Companion returned HTTP ${response.status}. Check the origin and session token.`);
+    if (response.status === 409) error.current = result.current;
+    throw error;
+  }
+  return result;
 }
 async function connect(origin, token) {
   const url = new URL(origin);
   if (!['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname) || !['http:', 'https:'].includes(url.protocol)) throw new Error('The companion must use a loopback origin on your computer.');
   if (!token) throw new Error('A session token is required. Use the companion launch link.');
+  const source = ++sourceEpoch, connectionIntent = ++userIntent; events?.close(); queuedBridgeSnapshot = null; bridgeNeedsRebase = false;
+  actionQueue = Promise.resolve(); loadingTask = Promise.resolve();
   bridge = { origin: url.origin, token }; revision = -1;
+  const connection = bridge;
   try {
-    accept(await bridgeFetch('/api/session'));
-    events?.close();
+    loadingTask = bridgeFetch('/api/session', {}, connection);
+    const snapshot = await loadingTask;
+    if (source !== sourceEpoch) return;
+    accept(snapshot); if (connectionIntent === userIntent) setBusy(false);
     const eventUrl = new URL('/api/events', bridge.origin); eventUrl.searchParams.set('token', token);
     events = new EventSource(eventUrl);
-    events.onmessage = ({ data }) => { try { accept(JSON.parse(data)); $('connection-status').textContent = 'Agent connected · live updates'; } catch (error) { status(error.message, true); } };
-    events.onopen = () => { $('connection-status').textContent = 'Agent connected · live updates'; };
-    events.onerror = () => { $('connection-status').textContent = 'Companion reconnecting…'; status('The companion connection interrupted. Updates will resume when it reconnects.', true); };
+    events.onmessage = ({ data }) => {
+      if (source !== sourceEpoch) return;
+      try { const snapshot = JSON.parse(data); if (busy) { if (!queuedBridgeSnapshot || snapshot.revision > queuedBridgeSnapshot.revision) queuedBridgeSnapshot = snapshot; } else accept(snapshot); $('connection-status').textContent = 'Agent connected · live updates'; } catch (error) { status(error.message, true); }
+    };
+    events.onopen = () => { if (source === sourceEpoch) $('connection-status').textContent = 'Agent connected · live updates'; };
+    events.onerror = () => { if (source === sourceEpoch) { $('connection-status').textContent = 'Companion reconnecting…'; status('The companion connection interrupted. Updates resume when it reconnects.', true); } };
     $('connection-status').textContent = 'Agent connected · live updates'; $('bridge-message').textContent = 'Connected. Agent actions update this view automatically.';
-    // Tab-scoped storage preserves attachment across reload; never export this token.
     let savedToken = false;
-    try { sessionStorage.setItem(bridgeStorageKey, JSON.stringify(bridge)); savedToken = true; } catch { /* Keep launch fragment if storage is unavailable. */ }
+    try { sessionStorage.setItem(bridgeStorageKey, JSON.stringify(bridge)); savedToken = true; } catch {}
     if (fragment.has('token') && savedToken) history.replaceState(null, '', location.pathname + location.search);
-  } catch (error) { bridge = null; events?.close(); throw error; }
+  } catch (error) { if (source === sourceEpoch) { bridge = null; events?.close(); setBusy(false); } throw error; }
 }
 async function startBrowser(initial = {}) {
-  setBusy(true); worker?.terminate(); worker = new Worker('/compute-worker.js', { type: 'module' });
+  const source = ++sourceEpoch, ticket = userIntent;
+  actionQueue = Promise.resolve();
+  revision = -1; queuedBridgeSnapshot = null; bridgeNeedsRebase = false;
+  setBusy(true, 'Preparing the corpus…'); worker?.terminate();
+  for (const request of pending.values()) request.reject(new Error('Computation source changed.'));
+  pending.clear();
+  worker = new Worker('/compute-worker.js', { type: 'module' });
   worker.onmessage = ({ data }) => {
-    if (data.type === 'progress') { status(data.stage === 'index' ? 'Preparing the source index on your device…' : `Loading corpus: ${data.completed}/${data.total} files. The first visit downloads the frozen corpus; subsequent views use local data.`); return; }
+    if (data.type === 'progress') { if (source === sourceEpoch) status(data.stage === 'index' ? 'Preparing the source index on your device…' : `Loading corpus: ${data.completed}/${data.total} files. The first visit downloads the collection; later questions use local data.`); return; }
     const request = pending.get(data.id); if (!request) return; pending.delete(data.id); data.error ? request.reject(new Error(data.error)) : request.resolve(data.result);
   };
-  worker.onerror = event => { for (const request of pending.values()) request.reject(new Error(event.message || 'The computation worker failed to load. Reload the page to retry.')); pending.clear(); };
-  try { accept(await callWorker('init', initial)); }
-  finally { setBusy(false); }
+  worker.onerror = event => { for (const request of pending.values()) request.reject(new Error(event.message || 'The computation worker failed to load. Reload to retry.')); pending.clear(); };
+  loadingTask = callWorker('init', initial);
+  try { const result = await loadingTask; if (source === sourceEpoch && ticket === userIntent) accept(result); }
+  finally { if (source === sourceEpoch && ticket === userIntent) setBusy(false); }
 }
-$('question-form').addEventListener('submit', event => { event.preventDefault(); const query = $('question').value.trim(); if (!query) { status('Enter a physics question or concept.', true); return; } action({ type: $('transition').value, query, intent: $('intent').value, lens: $('lens').value, workRelation: $('work-relation').value }); });
+const markDraft = () => { draftDirty = true; draftVersion++; };
+$('question').addEventListener('input', markDraft);
+for (const id of ['intent', 'lens', 'work-relation', 'transition']) $(id).addEventListener('change', markDraft);
+$('question-form').addEventListener('submit', event => {
+  event.preventDefault(); const query = $('question').value.trim();
+  if (!query) { status('Enter a physics question or concept.', true); $('question').focus(); return; }
+  action({ type: $('transition').value, query, intent: $('intent').value, lens: $('lens').value, workRelation: $('work-relation').value }, { clearForm: true });
+});
 $('intent').addEventListener('change', () => { if ($('intent').value === 'using') $('work-relation').value = 'using'; });
-$('show-sources').addEventListener('change', () => { if (view) renderChart(); });
+$('show-sources').addEventListener('change', () => { if (view && activePanel === 'geometry') renderChart(); });
+$('view-sources').addEventListener('click', () => switchPanel('sources'));
+$('view-geometry').addEventListener('click', () => switchPanel('geometry'));
+for (const id of ['view-sources', 'view-geometry']) $(id).addEventListener('keydown', event => { if (['ArrowLeft', 'ArrowRight'].includes(event.key)) { event.preventDefault(); const panel = activePanel === 'sources' ? 'geometry' : 'sources'; switchPanel(panel); $(`view-${panel}`).focus(); } });
+$('clear-evidence').addEventListener('click', () => { selectedDirectionId = null; selectedId = null; allEvidence = false; renderEvidence(); $('columns').querySelectorAll('.direction-evidence').forEach(button => button.setAttribute('aria-pressed', 'false')); });
+$('columns').addEventListener('scroll', updateColumnControls, { passive: true });
+for (const [id, sign] of [['browse-prev', -1], ['browse-next', 1]]) $(id).addEventListener('click', () => $('columns').scrollBy({ left: sign * Math.max(300, $('columns').clientWidth * .75), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }));
 let chartResizeFrame;
-window.addEventListener('resize', () => { cancelAnimationFrame(chartResizeFrame); chartResizeFrame = requestAnimationFrame(() => { if (view) renderChart(); }); });
-$('back').addEventListener('click', () => action({ type: 'back' }));
+window.addEventListener('resize', () => { cancelAnimationFrame(chartResizeFrame); chartResizeFrame = requestAnimationFrame(() => { if (view && activePanel === 'geometry') renderChart(); updateColumnControls(); }); });
+$('back').addEventListener('click', () => { if (session) action({ type: 'replay', index: Math.max(0, session.cursor - 1) }); });
 $('broaden').addEventListener('click', () => action({ type: 'broaden' }));
-$('reset').addEventListener('click', () => action({ type: 'reset', query: 'Kaluza-Klein towers' }));
+$('reset').addEventListener('click', () => {
+  $('question').value = ''; $('intent').value = 'explore'; $('lens').value = 'combined'; $('work-relation').value = 'either'; $('transition').value = 'refine';
+  markDraft(); $('question').focus(); selectedDirectionId = null; switchPanel('sources');
+  action({ type: 'reset', query: '' }, { clearForm: true });
+});
 $('export').addEventListener('click', () => { if (session) download('eigenquestions-session.json', exportSession(session)); });
 $('export-view').addEventListener('click', () => { if (session) download('eigenquestions-view.json', { session, view, revision: Math.max(0, revision) }); });
 $('share').addEventListener('click', async () => { if (!session) return; const url = new URL(location.href); url.hash = `focus=${encodeFocus(currentState(session))}`; try { await navigator.clipboard.writeText(url.href); status('Current focus link copied. It preserves this question, source anchors, and approach; export a session for the full path.'); } catch { history.replaceState(null, '', url); status('The address bar now contains your shareable focus link. Copy it to share.'); } });
@@ -256,12 +391,12 @@ $('import-file').addEventListener('change', async event => {
   try {
     if (file.size > 8 * 1024 * 1024) throw new Error('Session file is too large (maximum 8 MiB).');
     if (bridge) throw new Error('Disconnect from the local companion before importing a separate browser session.');
-    const payload = JSON.parse(await file.text()); setBusy(true); accept(await callWorker('import', payload)); status('Session imported. This view was recomputed from the frozen corpus.');
-  } catch (error) { status(error.message, true); } finally { setBusy(false); event.target.value = ''; }
+    const payload = JSON.parse(await file.text()); draftDirty = false; await action(payload, { operation: 'import', clearForm: true });
+  } catch (error) { status(error.message, true); } finally { event.target.value = ''; }
 });
 $('agent-open').addEventListener('click', () => $('agent-dialog').showModal()); $('agent-close').addEventListener('click', () => $('agent-dialog').close());
 $('bridge-form').addEventListener('submit', async event => { event.preventDefault(); try { await connect($('bridge-origin').value, $('bridge-token').value); } catch (error) { $('bridge-message').textContent = `${error.message} If browser network policy blocks attachment, open the companion’s same-origin local link.`; } });
-$('bridge-disconnect').addEventListener('click', async () => { events?.close(); bridge = null; revision = -1; try { sessionStorage.removeItem(bridgeStorageKey); } catch {} history.replaceState(null, '', location.pathname + location.search); $('connection-status').textContent = 'Browser session'; $('bridge-message').textContent = 'Disconnected. Continuing this session in the browser.'; try { await startBrowser(session ? { session: exportSession(session) } : {}); } catch (error) { status(error.message, true); } });
+$('bridge-disconnect').addEventListener('click', async () => { ++userIntent; events?.close(); bridge = null; revision = -1; try { sessionStorage.removeItem(bridgeStorageKey); } catch {} history.replaceState(null, '', location.pathname + location.search); $('connection-status').textContent = 'Browser session'; $('bridge-message').textContent = 'Disconnected. Continuing this session in the browser.'; try { await startBrowser(session ? { session: exportSession(session) } : {}); } catch (error) { status(error.message, true); } });
 
 async function boot() {
   let savedBridge;
@@ -279,4 +414,4 @@ async function boot() {
     else throw error;
   }
 }
-boot().catch(error => { setBusy(false); status(`Unable to load the explorer: ${error.message} Reload to retry.`, true); $('chart').replaceChildren(el('p', 'empty-state', 'The corpus or computation could not load. Check your connection and reload the page. Your exported sessions remain portable.')); });
+boot().catch(error => { setBusy(false); status(`Unable to load the explorer: ${error.message} Reload to retry.`, true); $('directions')?.replaceChildren(el('p', 'empty-state', 'The corpus could not load. Check your connection and reload. Your exported sessions remain portable.')); });

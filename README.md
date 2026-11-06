@@ -1,9 +1,10 @@
-# Eigenquestions
+# Eigenquestions v2
 
 [Eigenquestions](https://eigenquestions.com) is a static physics explorer. A
 question selects a source-grounded neighborhood of real graph and embedding
-objects; deterministic local code recomputes a two-dimensional chart and about
-five directions to consider next. Refinement can introduce connections from
+objects; deterministic local code recomputes about five directions to consider
+next. A live text-column explorer makes those choices and the path primary, with
+source reading and an optional geometric view below. Refinement can introduce connections from
 across the corpus. It is not a fixed topic tree or a language-model chatbot.
 
 The first corpus is a frozen Swampland-centered collection of **6,478 papers**
@@ -23,7 +24,9 @@ npm start
 
 Open `http://127.0.0.1:4173`. Choose a concept, approach and perspective. Refine
 keeps source context, pivot starts another focus, and back/path controls replay
-prior views. The public page and local page use the same engine and corpus.
+prior views. **New path** clears the inherited context and focuses a fresh question.
+Sources/Geometry tabs and path scrolling remain available during computation.
+The public page and local page use the same engine and corpus.
 Computation runs in a browser worker; the first load downloads the corpus, so
 watch the loading progress. There is no public database, chat server or model
 credential.
