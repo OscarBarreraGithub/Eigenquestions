@@ -49,3 +49,19 @@ balanced HTML and unique IDs in both documents, including every agreed map ID.
 No Mac browser was used. Integrated build, actual Slurm desktop/phone screenshots,
 label legibility, source selection and explorer-state isolation remain pending.
 No visual acceptance is claimed from this source review.
+
+## First actual fit view
+
+Source `50e5804`, Slurm job `58373333`, Chromium 145.0.7632.6;
+[job receipt](evidence/q006/browser-v1-job.json). Inspected the actual
+[1440px fit view](evidence/q006/browser-v1/q006_overview_acceptance/overview-fit-1440.png).
+The opening presentation is acceptable: five readable, nonoverlapping Swampland
+captions; distinct excerpt/paper counts; a dominant quiet dark dot map; matching
+group colors in the text list; and discoverable Find/zoom/Fit controls. There is
+no borrowed IAIFI subject matter or decorative visual treatment.
+
+No UI correction requested from this image. The focused browser run stopped at
+a pointer-centered wheel-coordinate assertion after its initial load check;
+the separate Q-005 suite passed ten checks. Fine-group/source and phone captures
+are not yet available. This approves the desktop fit composition only, not the
+whole map's interactions or final visual acceptance.

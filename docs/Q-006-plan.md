@@ -61,3 +61,7 @@ collection. Reuse no IAIFI data, coordinates, memberships or topic taxonomy.
 No application code is shared with the contextual controller. The fixed map is
 an independent useful picture of the same research collection; its shallow
 stored hierarchy and provisional labels must remain honest.
+
+## Validation status
+
+Implemented with frozen runtime `50e5804`: 43 local tests, 12 overview browser checks, and 10 existing navigation regression checks pass. Real desktop and phone screenshots are recorded in [browser evidence](evidence/q006/browser-v2/q006_overview_acceptance/). The initial wheel-test failure was measured as browser input quantization; actual-pointer preservation is exact. Public deployment and verification remain pending.
