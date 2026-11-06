@@ -2,8 +2,9 @@
 
 Reviewer: `/root/v2_design_review`. Initial source inspection: 2026-11-06 UTC.
 This document distinguishes observed reference facts from proposed Eigenquestions
-design choices. Browser screenshots and computed styles are pending an authorized
-Slurm capture; no local browser was launched.
+design choices. Reference screenshots and computed styles were captured in the
+authorized Slurm environment and independently inspected; no local browser was
+launched. Product screenshot review is pending.
 
 ## References inspected
 
@@ -178,4 +179,60 @@ The bounded capture helper is
 It refuses browser launch outside Slurm, records public page status and computed
 styles, and captures 1440×1000 and 390×844 viewports. Historical viewers are
 optional loopback URLs staged by the coordinator. HTTP/CSS inspection is complete;
-rendered-reference and product aesthetic acceptance remain pending.
+rendered-reference inspection is complete; product aesthetic acceptance remains
+pending.
+
+## Captured reference inspection and pre-screenshot product review
+
+The coordinator's Slurm job `58203240` produced eight successful reference visits
+(three arXiv pages and the archived tree, each at desktop/mobile size), all HTTP
+200, with no recorded page errors. The [capture report](evidence/q002/references/reference-capture.json)
+preserves computed styles and dimensions. The v4 prototype was inspected as
+source; it was not included in this rendered capture.
+
+Independently inspected images include the old desktop/mobile path, arXiv
+desktop list, desktop/mobile abstract, and desktop/mobile search. The
+[old desktop path](evidence/q002/references/old-tree-desktop-path.png) puts the
+column strip at approximately y=124 and the detail area after y=464. The
+[old mobile path](evidence/q002/references/old-tree-mobile-path.png) exposes the
+active column immediately under the path. It also demonstrates defects to avoid:
+tiny controls, clipped path text, and an unnecessarily empty lower column region.
+The continuity and readable active selection are useful; its exact density is
+not a standard to copy.
+
+The arXiv captures confirm the CSS reading: the newer dark header coexists with
+a compact classic sans-serif body. Its
+[abstract](evidence/q002/references/arxiv-abstract-desktop.png) and
+[list](evidence/q002/references/arxiv-list-desktop.png) use confident title weight,
+plain blue links, sparse decoration, and clear supporting metadata. The
+[mobile abstract](evidence/q002/references/arxiv-abstract-mobile.png) shows that
+large obvious actions can coexist with a sober scholarly document. The
+[search page on mobile](evidence/q002/references/arxiv-search-mobile.png) has a
+long control preamble; this is not a reason to bury Eigenquestions' primary
+navigator below its first viewport.
+
+Read-only inspection of `web/index.html`, `web/styles.css`, and the rendering
+functions in `web/app.js` found the chosen palette, uniform sans family, ruled
+rows, cached historical columns, and text-first reading order consistent with
+the requested direction. Three points should guide the first product screenshot
+review. These are source-based risks, not claims of observed rendering failures:
+
+1. **Phone header fit.** The masthead and action group have no wrap rule while
+   containing an unbreakable wordmark, Connect your agent, and New path. Confirm
+   their combined intrinsic widths fit 390px and 360px. If needed, use a deliberate
+   second action row; do not solve this by making labels microscopic.
+2. **Directions in the initial viewport.** Masthead, search heading, input,
+   four selectors, status, path, and current-question heading all precede the
+   strip. Confirm a phone shows useful choices without a long control-only
+   preamble. A collapsed optional-search-controls disclosure could recover
+   space if necessary while preserving readable controls and their values.
+3. **Explicit source inspection.** A row's source button currently filters the
+   reading area without bringing it into view or focusing/announcing that
+   destination. Because it sits below the column strip, a click could appear
+   ineffective. The `↗` mark also usually suggests external navigation. Prefer
+   a clear Sources label at a readable size and reveal/focus the relevant
+   reading heading after this explicit action. Keep ordinary direction selection
+   spatially stable.
+
+Root and the site owner received these findings before the product screenshots.
+No web code, integration test, or runtime behavior was changed by the reviewer.

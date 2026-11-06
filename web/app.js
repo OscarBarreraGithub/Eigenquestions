@@ -158,8 +158,13 @@ function renderColumns() {
         button.addEventListener('click', () => current ? action({ type: 'select', directionId: direction.id }) : action({ type: 'replay', index }, { followup: { type: 'select', directionId: direction.id } }));
         row.append(button);
         if (current) {
-          const inspect = el('button', 'direction-evidence', '↗'); inspect.type = 'button'; inspect.setAttribute('aria-label', `Inspect sources for direction ${directionIndex + 1}`); inspect.title = 'Inspect sources'; inspect.setAttribute('aria-pressed', String(selectedDirectionId === direction.id)); inspect.append(el('span', '', 'sources'));
-          inspect.addEventListener('click', () => { selectedDirectionId = direction.id; selectedId = null; allEvidence = false; switchPanel('sources'); renderEvidence(); host.querySelectorAll('.direction-evidence').forEach(item => item.setAttribute('aria-pressed', String(item === inspect))); }); row.append(inspect);
+          const inspect = el('button', 'direction-evidence', 'Sources'); inspect.type = 'button'; inspect.setAttribute('aria-label', `Inspect sources for direction ${directionIndex + 1}`); inspect.title = 'Inspect sources'; inspect.setAttribute('aria-pressed', String(selectedDirectionId === direction.id));
+          inspect.addEventListener('click', () => {
+            selectedDirectionId = direction.id; selectedId = null; allEvidence = false; switchPanel('sources'); renderEvidence();
+            host.querySelectorAll('.direction-evidence').forEach(item => item.setAttribute('aria-pressed', String(item === inspect)));
+            const heading = $('reading-heading'); heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true });
+            heading.closest('.reading-pane').scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+          }); row.append(inspect);
         }
         list.append(row);
       });

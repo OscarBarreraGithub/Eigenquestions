@@ -161,3 +161,5 @@
 **Observed.** Root ran the complete local verification: 23 tests pass, the static build has 64 assets, and all 41 corpus shards match. The numerical engine/corpus/session schema are unchanged. This is a frozen prototype, not a visual acceptance claim. The design reviewer flagged possible mobile masthead crowding and vertical density to inspect in screenshots. [Validation](docs/evidence/q002/prototype-validation.json).
 
 **Next.** Run the Q-002 delayed-interaction suite and the retained Q-001 geometry/agent suite on this exact checkpoint in Slurm. Review 1440, 1024, 390 and 320px layouts; revise observed problems before publication.
+
+**Pre-browser design amendment.** The frozen source review led to two small repairs: the phone masthead now deliberately wraps, and a readable Sources button explicitly reveals its reading pane. Unsolicited incoming updates still preserve vertical reading position. Site build, static checks and all four site tests pass after these bounded changes. Prototype `99c91d7` was pushed and its remote SHA verified; the corrected checkpoint will be the browser input.
