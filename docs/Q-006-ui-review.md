@@ -65,3 +65,25 @@ a pointer-centered wheel-coordinate assertion after its initial load check;
 the separate Q-005 suite passed ten checks. Fine-group/source and phone captures
 are not yet available. This approves the desktop fit composition only, not the
 whole map's interactions or final visual acceptance.
+
+## Final actual visual acceptance
+
+**Accepted as the minimal collaborator demo:** source `50e5804`, Slurm job
+`58374108`, Chromium 145.0.7632.6. The wheel test was corrected to observe the
+actual dispatched pointer coordinate; no runtime change was needed.
+
+Inspected actual [390px](evidence/q006/browser-v2/q006_overview_acceptance/overview-390-map.png)
+and [320px](evidence/q006/browser-v2/q006_overview_acceptance/overview-320-map.png)
+map views, the [finer-group view](evidence/q006/browser-v2/q006_overview_acceptance/overview-finer-group-1440.png)
+and [source selection](evidence/q006/browser-v2/q006_overview_acceptance/overview-source-1440.png).
+Both phone widths retain readable, nonoverlapping captions and visible zoom/Fit
+controls. The 320px view uses a leader line to place the crowded neutrino caption
+clearly. Selecting a genuine finer group highlights its members and gives its
+name priority. Deeper source labels remain legible; the selected paper title,
+exact question description and original-paper link are readable in the text
+panel. No material visual blocker or additional refinement requested.
+
+The [focused browser report](evidence/q006/browser-v2/q006_overview_acceptance/q006-overview-acceptance.json)
+passes all twelve checks. This signoff is for the fixed Swampland overview and
+its separate entry; it does not upgrade provisional topic labels to verified
+physics or change the contextual explorer's scientific behavior.

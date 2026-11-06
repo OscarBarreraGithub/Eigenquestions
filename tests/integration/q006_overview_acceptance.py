@@ -60,11 +60,33 @@ def main():
             report['browserVersion'] = browser.version
             context = browser.new_context(viewport={'width': 1440, 'height': 1000}, has_touch=True)
             context.add_init_script("""window.__overviewPerf={longTasks:[]};try{new PerformanceObserver(list=>{for(const e of list.getEntries())window.__overviewPerf.longTasks.push({start:e.startTime,duration:e.duration});}).observe({type:'longtask',buffered:true})}catch{}""")
-            requests, errors = {}, {}
+            requests, errors, network_policies = {}, {}, {}
 
             def watch(page):
-                requests[page], errors[page] = [], []
-                page.on('request', lambda request: requests[page].append({'url': request.url, 'method': request.method}))
+                requests[page], errors[page], network_policies[page] = [], [], []
+                def record_request(request):
+                    item = {'url': request.url, 'method': request.method, 'contentType': request.headers.get('content-type', '')}
+                    if request.method != 'GET':
+                        try:
+                            body = json.loads(request.post_data or 'null')
+                            item['reportTypes'] = [entry.get('type') for entry in body if isinstance(entry, dict)] if isinstance(body, list) else []
+                        except Exception:
+                            item['reportTypes'] = []
+                    requests[page].append(item)
+                def record_policy(response):
+                    if response.request.resource_type != 'document' or urlparse(response.url).netloc != urlparse(origin).netloc:
+                        return
+                    try:
+                        headers = response.headers
+                        reporting = json.loads(headers.get('report-to', '{}'))
+                        nel = json.loads(headers.get('nel', '{}'))
+                        if isinstance(reporting, dict) and nel.get('report_to') == reporting.get('group'):
+                            network_policies[page].append({'group': reporting.get('group'), 'sourcePath': urlparse(response.url).path,
+                                'endpoints': [{'scheme': urlparse(entry['url']).scheme, 'host': urlparse(entry['url']).netloc, 'path': urlparse(entry['url']).path} for entry in reporting.get('endpoints', [])]})
+                    except Exception:
+                        pass
+                page.on('request', record_request)
+                page.on('response', record_policy)
                 page.on('pageerror', lambda error: errors[page].append(str(error)))
 
             context.on('page', watch)
@@ -284,7 +306,23 @@ def main():
             # Camera controls must not download data, compute layout or mutate
             # the original tab. Back proves the authored entry stayed alive.
             overview_paths = [urlparse(item['url']).path for item in requests[page]]
-            assert all(item['method'] == 'GET' for item in requests[page])
+            def sanitized_requests():
+                return [{'host': urlparse(item['url']).netloc, 'path': urlparse(item['url']).path, 'method': item['method'],
+                    'contentType': item.get('contentType', ''), 'reportTypes': item.get('reportTypes', [])} for item in requests[page]]
+            report['overviewRequests'] = sanitized_requests()
+            report['networkReportingPolicies'] = network_policies[page]
+            def is_advertised_nel(item):
+                parsed = urlparse(item['url'])
+                endpoint = {'scheme': parsed.scheme, 'host': parsed.netloc, 'path': parsed.path}
+                # Only browser network-error reporting to the host-advertised
+                # Cloudflare NEL endpoint is separate from application traffic.
+                # No API, graph, storage or unknown POST receives an exception.
+                return item['method'] == 'POST' and parsed.scheme == 'https' and parsed.netloc == 'a.nel.cloudflare.com' and parsed.path == '/report/v4' \
+                    and item.get('contentType', '').split(';')[0] == 'application/reports+json' \
+                    and item.get('reportTypes') and all(kind == 'network-error' for kind in item['reportTypes']) \
+                    and any(policy['group'] == 'cf-nel' and endpoint in policy['endpoints'] for policy in network_policies[page])
+            report['classifiedPlatformReports'] = [item for item, raw in zip(report['overviewRequests'], requests[page]) if is_advertised_nel(raw)]
+            assert all(item['method'] == 'GET' or is_advertised_nel(item) for item in requests[page]), report['overviewRequests']
             assert not any(path in ['/app.js','/compute-worker.js'] or path.startswith(('/lib/','/api/')) or (path.startswith('/data/') and not path.startswith('/data/overview/')) for path in overview_paths)
             after = explorer.evaluate('({capsule:window.eigenquestionsNavigator.export(),revision:window.eigenquestionsNavigator.read().revision,local:{...localStorage},session:{...sessionStorage},draft:document.querySelector("#question").value})')
             assert after == before
@@ -307,12 +345,17 @@ def main():
             report['performance'] = page.evaluate("""async()=>{const frames=[];let last=performance.now(),start=last;await new Promise(resolve=>{function step(now){frames.push(now-last);last=now;if(now-start<500)requestAnimationFrame(step);else resolve()}requestAnimationFrame(step)});return{longTasks:window.__overviewPerf.longTasks,idleFrameIntervalsMs:frames,navigation:performance.getEntriesByType('navigation').map(e=>({domContentLoaded:e.domContentLoadedEventEnd,load:e.loadEventEnd})),resources:performance.getEntriesByType('resource').map(e=>({path:new URL(e.name).pathname,transferBytes:e.transferSize,decodedBytes:e.decodedBodySize,durationMs:e.duration}))}}""")
             report['browserErrors'] = {'overview': errors[page], 'explorer': errors[explorer], 'corruptDataPage': errors[bad]}
             assert not any(report['browserErrors'].values())
-            report['overviewRequests'] = [{'path': urlparse(item['url']).path, 'method': item['method']} for item in requests[page]]
+            report['overviewRequests'] = sanitized_requests()
             report['passed'] = True
             browser.close()
     except Exception as error:
         report['passed'] = False
         report['failure'] = {'type': type(error).__name__, 'message': str(error), 'traceback': traceback.format_exc()}
+        try:
+            report['overviewRequests'] = sanitized_requests()
+            report['networkReportingPolicies'] = network_policies[page]
+        except Exception:
+            pass
         try:
             report['lastState'] = read()
             page.screenshot(path=str(out/'overview-failure.png'), full_page=True)

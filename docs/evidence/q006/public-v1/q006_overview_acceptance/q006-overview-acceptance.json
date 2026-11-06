@@ -1,0 +1,113 @@
+{
+  "request": "Q-006",
+  "checks": [
+    {
+      "name": "new-tab overview loads the pinned Swampland map and five genuine broad groups without source shards or query corpus",
+      "passed": true,
+      "initialDataBytes": 1852731,
+      "initialLabels": 5
+    },
+    {
+      "name": "wheel zoom is pointer-centered; real drag, keyboard pan and Home restore the fixed full-map camera",
+      "passed": true,
+      "wheelFeedbackMs": 86.94
+    },
+    {
+      "name": "topic labels and reliable text list select actual descendant memberships; only genuine finer groups are offered",
+      "passed": true
+    },
+    {
+      "name": "local Find selects genuine source coordinates and exact lazy excerpt; late older details cannot overwrite a newer source",
+      "passed": true
+    },
+    {
+      "name": "overlapping homes and the thirteen unresolved source descriptions remain explicitly reachable",
+      "passed": true
+    },
+    {
+      "name": "1440px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "1024px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "390px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "320px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "real two-touch pinch zooms without accidental point selection",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "overview-fit-1440.png",
+    "overview-finer-group-1440.png",
+    "overview-source-1440.png",
+    "overview-1440-top.png",
+    "overview-1440-map.png",
+    "overview-1440-full.png",
+    "overview-1024-top.png",
+    "overview-1024-map.png",
+    "overview-1024-full.png",
+    "overview-390-top.png",
+    "overview-390-map.png",
+    "overview-390-full.png",
+    "overview-320-top.png",
+    "overview-320-map.png",
+    "overview-320-full.png",
+    "overview-touch-390-map.png"
+  ],
+  "scope": "Real fixed Swampland data, browser Canvas and input events. Headless Slurm timings are observations, not a 60-fps or production-latency guarantee.",
+  "origin": "https://eigenquestions.com",
+  "browserVersion": "145.0.7632.6",
+  "wheelDiagnostic": {
+    "requestedLocal": {
+      "x": 381.1,
+      "y": 295.84
+    },
+    "deliveredLocal": {
+      "x": 381,
+      "y": 295.515625
+    },
+    "beforeCamera": {
+      "x": 0.18234404823479056,
+      "y": 0.8202714477442129,
+      "k": 111.85201419744503
+    },
+    "afterCamera": {
+      "x": -0.2743578347353599,
+      "y": 0.9855170101108613,
+      "k": 180.761176978207
+    },
+    "requestedWorldError": {
+      "x": -0.0003408223007244082,
+      "y": 0.001105542337973331
+    },
+    "deliveredWorldError": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "eventRect": {
+      "left": 25,
+      "top": 315.484375,
+      "width": 1030,
+      "height": 688
+    }
+  },
+  "passed": false,
+  "failure": {
+    "type": "AssertionError",
+    "message": "",
+    "traceback": "Traceback (most recent call last):\n  File \"/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-006/browser-v2/q006_overview_acceptance.py\", line 287, in main\n    assert all(item['method'] == 'GET' for item in requests[page])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+}
