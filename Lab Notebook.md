@@ -4,7 +4,7 @@
 
 - **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
 - **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
-- **Unfinished/running:** Implementation and 35 local tests pass. Slurm job `58361795` is validating frozen source `d87bb2b` with four browser suites. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
+- **Unfinished/running:** Implementation and 35 local tests pass. Slurm job `58361795` finished: two suites passed; two test assumptions need correction, and visual review found a real mobile column-alignment problem. Astra/Sol are correcting it; no job is running. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
 - **Next:** Freeze the repaired entry/choices/return behavior and verify the reported journey in a real browser, including authored-history safety and phone layouts. [Q-005 plan](docs/Q-005-plan.md).
 - **Git:** Prototype `d87bb2b` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
 
@@ -353,3 +353,11 @@
 **Meaning/next.** This fixes exact repetition and presentation, not all semantic redundancy or the synthesis of higher-level research questions. Preserve old session data and mark older recorded returns; do not rewrite scientific history. Freeze this prototype and run the reported path plus existing race/authored-view suites in Slurm Chromium, then inspect the screenshots before publishing.
 
 **Browser submission.** Frozen source `d87bb2b0e2b6e88765e2d3158275fb49c5885684` is pushed and remotely verified. Its Git archive matched SHA-256 on FASRC before extraction; Slurm job `58361795` runs the new regression and three existing browser suites. No browser outcome is claimed yet. [Receipt](docs/evidence/q005/browser-v1-job.json).
+
+## 2026-11-06 UTC — Q-005: Reject a visually misleading phone result
+
+**Observed.** Job `58361795` finished in 74 seconds. Stored-view and interaction suites passed all 14 and 19 checks. The focused suite passed nine checks, including the quoted method, exact returns, authored-history protection and explicit Resume; its final initial-focus test mistakenly reused a same-document fragment navigation. The legacy suite reached eleven checks before an obsolete full-label assertion. Those test assumptions are being corrected without weakening source/context checks. [Run evidence](docs/evidence/q005/browser-v1/).
+
+**Visual result.** Root and Sol accepted the neutral home and desktop source distinctions, but the phone captures show the current choices partly off-screen or an older column in their place. Outer-page overflow checks missed this. The cause may involve scroll-snap settling and resize anchoring; it is not yet established. The selected historical fourth choice also needs to remain discoverable inside its column. [Visual review](docs/Q-005-ui-review.md).
+
+**Decision/next.** Withhold release. Astra will anchor the actual intended column reliably, Sol will bound the current breadcrumb, and the focused browser test will check column rectangles and settled arrow/resize behavior before capturing images. Preserve the failed pictures and source version rather than relabeling them as a pass.

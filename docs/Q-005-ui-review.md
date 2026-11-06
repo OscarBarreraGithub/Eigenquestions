@@ -61,3 +61,51 @@ stale presentation helper even when all other 16 assets and 32 retired-route
 checks pass. A fresh `npm run build`, `npm run check:site` (71 assets, 41 verified
 corpus shards), and the targeted publication test all pass. This does not replace
 the pending browser/visual acceptance.
+
+## First actual screenshots: accept home/desktop, withhold mobile signoff
+
+Reviewed source `d87bb2b`, Slurm job `58361795`, Chromium 145.0.7632.6;
+[job receipt](evidence/q005/browser-v1-job.json). Viewed the reported-method
+desktop/390px captures, current and earlier columns at 390/320px, the longer
+desktop path, and the saved neutral home. The
+[runtime report](evidence/q005/browser-v1/q005_navigation_acceptance/q005-navigation-acceptance.json)
+records nine passed checks before a separate direct-route harness assertion
+failed; these screenshots do not constitute a fully passed run.
+
+The [neutral home](evidence/q005/browser-v1/q005_navigation_acceptance/q005-saved-neutral-home-390.png)
+is clear: search leads, the saved method is a meaningful optional resume entry,
+and it is not silently selected. The
+[desktop method](evidence/q005/browser-v1/q005_navigation_acceptance/q005-reported-method-1440-viewport.png)
+has a blank new draft, concise current excerpt, one Full context disclosure, real
+adjacent directions and useful paper-title/Method facets. The longer
+[desktop history](evidence/q005/browser-v1/q005_navigation_acceptance/q005-1440-current-viewport.png)
+distinguishes Choices then/Next choices, Followed and Return to step labels.
+The displayed scientific evidence is more informative than a count alone.
+
+**Material issue:** the
+[reported-method phone](evidence/q005/browser-v1/q005_navigation_acceptance/q005-reported-method-390-viewport.png)
+is captured between columns, with earlier text clipped on the left and only a
+narrow sliver of the current list on the right. The
+[390px current capture](evidence/q005/browser-v1/q005_navigation_acceptance/q005-390-current-viewport.png)
+shows historical Step 2 rather than the current Step 5. The
+[320px capture](evidence/q005/browser-v1/q005_navigation_acceptance/q005-320-current-viewport.png)
+has the same alignment problem. Earlier-column captures are readable, with
+obvious source facets and targets, so the underlying typography is sound.
+
+Requested bounded runtime corrections: anchor a real visible column after
+resize/programmatic navigation; wait for and assert settled current-column
+geometry in the harness; keep the selected historical row visible below its
+sticky heading. The fourth selected choice in the first desktop column is
+otherwise below the viewport, hiding its Followed marker. Do not fix these by
+shrinking text. The evidence cannot yet distinguish an intermediate snap
+animation from a persistent resize defect; either requires a stable new capture
+before mobile visual acceptance. No unrelated cosmetic changes requested.
+
+The first phone capture also exposed an unbounded current breadcrumb inherited
+from Q-004. Its beginning could be clipped when the strip was scrolled to its
+end. The path now takes the remaining row width explicitly, and its current
+button is bounded to that width (up to 300px), using an ending ellipsis. The
+first words and 44px target remain available; full context is still in the
+disclosure. Protocol was asked to verify the application's actual breadcrumb
+alignment rather than relying on an arbitrary forced scroll position. This
+small CSS correction awaits the next actual screenshots.

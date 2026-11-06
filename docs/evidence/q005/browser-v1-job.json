@@ -8,12 +8,31 @@
   "archiveHashMatched": true,
   "submittedUtc": "2026-11-06T18:56:17.804622+00:00",
   "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-005/browser-v1",
-  "statusAtReceipt": "submitted",
+  "statusAtReceipt": "failed",
   "suites": [
     "q005_navigation_acceptance.py",
     "stored_views_browser_acceptance.py",
     "q002_browser_acceptance.py",
     "browser_acceptance.py"
   ],
-  "scope": "Frozen source; Slurm Chromium with real browser worker. Stored-view suite uses an HTTP adapter, not production R2."
+  "scope": "Frozen source; Slurm Chromium with real browser worker. Stored-view suite uses an HTTP adapter, not production R2.",
+  "elapsed": "00:01:14",
+  "exitCode": "1:0",
+  "suiteResults": {
+    "q005": {
+      "passedBeforeFailure": 9,
+      "failure": "Final initial-focus test reused the same document; corrected test opens a fresh tab."
+    },
+    "storedViews": {
+      "passed": 14
+    },
+    "interactions": {
+      "passed": 19
+    },
+    "legacy": {
+      "passedBeforeFailure": 11,
+      "failure": "Old direction-label assertion still expected full labels instead of intentional display excerpts."
+    }
+  },
+  "visualReview": "Neutral home and desktop accepted; mobile images show offscreen/mid-column current choices. Runtime alignment repair and settled-geometry assertions required before release."
 }
