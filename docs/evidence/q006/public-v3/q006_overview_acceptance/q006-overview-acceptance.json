@@ -1,0 +1,301 @@
+{
+  "request": "Q-006",
+  "checks": [
+    {
+      "name": "new-tab overview loads the pinned Swampland map and five genuine broad groups without source shards or query corpus",
+      "passed": true,
+      "initialDataBytes": 1852731,
+      "initialLabels": 5
+    },
+    {
+      "name": "wheel zoom is pointer-centered; real drag, keyboard pan and Home restore the fixed full-map camera",
+      "passed": true,
+      "wheelFeedbackMs": 74.93
+    },
+    {
+      "name": "topic labels and reliable text list select actual descendant memberships; only genuine finer groups are offered",
+      "passed": true
+    },
+    {
+      "name": "local Find selects genuine source coordinates and exact lazy excerpt; late older details cannot overwrite a newer source",
+      "passed": true
+    },
+    {
+      "name": "overlapping homes and the thirteen unresolved source descriptions remain explicitly reachable",
+      "passed": true
+    },
+    {
+      "name": "1440px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "1024px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "390px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "320px view keeps readable nonoverlapping labels, accessible controls and no page overflow",
+      "passed": true,
+      "labels": 5
+    },
+    {
+      "name": "real two-touch pinch zooms without accidental point selection",
+      "passed": true
+    },
+    {
+      "name": "overview has no query engine/API/storage side effects; original draft, session and exact authored Back restoration survive in its live tab",
+      "passed": true
+    },
+    {
+      "name": "mismatched static data fails visibly before an invented or partial map is accepted",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "overview-fit-1440.png",
+    "overview-finer-group-1440.png",
+    "overview-source-1440.png",
+    "overview-1440-top.png",
+    "overview-1440-map.png",
+    "overview-1440-full.png",
+    "overview-1024-top.png",
+    "overview-1024-map.png",
+    "overview-1024-full.png",
+    "overview-390-top.png",
+    "overview-390-map.png",
+    "overview-390-full.png",
+    "overview-320-top.png",
+    "overview-320-map.png",
+    "overview-320-full.png",
+    "overview-touch-390-map.png"
+  ],
+  "scope": "Real fixed Swampland data, browser Canvas and input events. Headless Slurm timings are observations, not a 60-fps or production-latency guarantee.",
+  "origin": "https://eigenquestions.com",
+  "browserVersion": "145.0.7632.6",
+  "wheelDiagnostic": {
+    "requestedLocal": {
+      "x": 381.1,
+      "y": 295.84
+    },
+    "deliveredLocal": {
+      "x": 381,
+      "y": 295.515625
+    },
+    "beforeCamera": {
+      "x": 0.18234404823479056,
+      "y": 0.8202714477442129,
+      "k": 111.85201419744503
+    },
+    "afterCamera": {
+      "x": -0.2743578347353599,
+      "y": 0.9855170101108613,
+      "k": 180.761176978207
+    },
+    "requestedWorldError": {
+      "x": -0.0003408223007244082,
+      "y": 0.001105542337973331
+    },
+    "deliveredWorldError": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "eventRect": {
+      "left": 25,
+      "top": 315.484375,
+      "width": 1030,
+      "height": 688
+    }
+  },
+  "overviewRequests": [
+    {
+      "host": "eigenquestions.com",
+      "path": "/overview.css",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/overview.js",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "static.cloudflareinsights.com",
+      "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/data/overview/manifest.json",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/cdn-cgi/rum",
+      "method": "POST",
+      "contentType": "application/json",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/data/overview/map.json",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/data/overview/details-001.json",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/data/overview/details-008.json",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    },
+    {
+      "host": "eigenquestions.com",
+      "path": "/data/overview/details-000.json",
+      "method": "GET",
+      "contentType": "",
+      "reportTypes": []
+    }
+  ],
+  "networkReportingPolicies": [],
+  "classifiedPlatformReports": [
+    {
+      "host": "eigenquestions.com",
+      "path": "/cdn-cgi/rum",
+      "method": "POST",
+      "contentType": "application/json",
+      "reportTypes": [],
+      "classification": "Cloudflare RUM with observed injected beacon"
+    }
+  ],
+  "performance": {
+    "longTasks": [
+      {
+        "start": 372.3000000715256,
+        "duration": 76
+      }
+    ],
+    "idleFrameIntervalsMs": [
+      -1.0579999999999927,
+      16.557999999999993,
+      16.699999999999818,
+      16.699999999999818,
+      16.600000000000364,
+      16.699999999999818,
+      16.699999999999818,
+      16.600000000000364,
+      16.800000000000182,
+      16.599999999999454,
+      16.600000000000364,
+      16.699999999999818,
+      16.699999999999818,
+      16.700000000000728,
+      16.599999999999454,
+      16.699999999999818,
+      16.700000000000728,
+      16.699999999999818,
+      16.5,
+      16.699999999999818,
+      16.699999999999818,
+      16.600000000000364,
+      16.699999999999818,
+      16.800000000000182,
+      16.5,
+      16.699999999999818,
+      16.699999999999818,
+      16.600000000000364,
+      16.699999999999818,
+      16.699999999999818,
+      16.600000000000364,
+      16.699999999999818
+    ],
+    "navigation": [
+      {
+        "domContentLoaded": 205.30000007152557,
+        "load": 205.5
+      }
+    ],
+    "resources": [
+      {
+        "path": "/overview.css",
+        "transferBytes": 2915,
+        "decodedBytes": 8806,
+        "durationMs": 43.799999952316284
+      },
+      {
+        "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+        "transferBytes": 0,
+        "decodedBytes": 0,
+        "durationMs": 33.299999952316284
+      },
+      {
+        "path": "/overview.js",
+        "transferBytes": 10589,
+        "decodedBytes": 31580,
+        "durationMs": 120.89999997615814
+      },
+      {
+        "path": "/data/overview/manifest.json",
+        "transferBytes": 3192,
+        "decodedBytes": 6070,
+        "durationMs": 39.89999997615814
+      },
+      {
+        "path": "/cdn-cgi/rum",
+        "transferBytes": 300,
+        "decodedBytes": 0,
+        "durationMs": 19.5
+      },
+      {
+        "path": "/data/overview/map.json",
+        "transferBytes": 706086,
+        "decodedBytes": 1852731,
+        "durationMs": 117.89999997615814
+      },
+      {
+        "path": "/data/overview/details-001.json",
+        "transferBytes": 114996,
+        "decodedBytes": 114696,
+        "durationMs": 275.2000000476837
+      },
+      {
+        "path": "/data/overview/details-008.json",
+        "transferBytes": 34651,
+        "decodedBytes": 102435,
+        "durationMs": 68.5
+      },
+      {
+        "path": "/data/overview/details-000.json",
+        "transferBytes": 36022,
+        "decodedBytes": 108305,
+        "durationMs": 36.89999997615814
+      }
+    ]
+  },
+  "browserErrors": {
+    "overview": [],
+    "explorer": [],
+    "corruptDataPage": []
+  },
+  "passed": true
+}

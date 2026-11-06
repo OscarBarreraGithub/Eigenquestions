@@ -2,11 +2,12 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. Q-005 repairs startup/repeated paths; Q-006 adds a separate fixed, zoomable overview for a collaborator demo.
-- **Known:** Q-005 passes 35 local and 57 browser checks, with desktop/phone visual approval; release `f0e782d` deployed successfully. The actual IAIFI renderer is verified. A pinned existing question map covers 8,473 excerpts from 6,477 papers with a shallow, overlapping hierarchy.
-- **Unfinished/running:** Q-006 passes 43 local tests, 12 overview browser checks and 10 navigation regression checks. Q-005 is verified live with 43 public browser checks. The map is live; job `58376328` performs the final public browser check. Hosted storage remains inactive; this addition needs no hosted compute or storage API.
-- **Next:** Finish the public browser record and save closure. [Q-006 plan](docs/Q-006-plan.md).
-- **Git:** Main and the working branch contain `f0e782d`; new overview work stays on the working branch until verified. Coordinator `/root` owns checkpoints/release.
+- **Project/question:** Eigenquestions. Q-006 delivers a separate fixed Swampland overview for a collaborator demo; Q-005 navigation repairs remain intact.
+- **Known:** The [overview is live](https://eigenquestions.com/overview): 8,473 source question excerpts from 6,477 papers, five broad groups and the genuine finer hierarchy. All geometry, memberships, topics and affinities are Swampland data; IAIFI supplies UI style only. Runtime `50e5804`, release `edeb241`.
+- **Verified:** 43 local tests, 12 local overview browser checks, 10 explorer regression checks and all 12 final public overview checks pass. Desktop/phone visuals accepted; 22 public asset hashes and 32 retired routes verified.
+- **Unfinished/running:** Q-006 is complete; no cluster validation jobs remain. Hosted shared-view storage (Q-003) remains inactive under the earlier connector restriction. The live host injects Cloudflare performance telemetry, recorded separately from application traffic.
+- **Next:** Show the fixed demo to collaborators and record their feedback. The contextual explorer remains the separate path-dependent navigation tool; topic captions are provisional.
+- **Save:** Notebook, meaningful failures, source/harness receipts and public evidence are committed to the configured repository. Coordinator `/root` owns checkpoints and release. [Q-006 plan](docs/Q-006-plan.md).
 
 ## Requests
 
@@ -435,3 +436,13 @@
 **Public rerun.** Job `58376328` uses hash-matched harness `2a6fb89` against the unchanged live release. Network evidence is saved before assertions, and only a POST with Cloudflare NEL endpoint, declared document policy, correct MIME type and network-error-only payload is classified as a platform report. Unknown POSTs and any graph/API or explorer-state side effects still fail. [Receipt](docs/evidence/q006/public-v2-job.json).
 
 **Amendment from the actual network trace.** Job `58376328` passed the same ten public UI checks. Its saved trace identifies Cloudflare Web Analytics, not NEL: an injected `static.cloudflareinsights.com/beacon.min.js` script POSTs JSON to the same-origin `/cdn-cgi/rum`. The source HTML and curl response do not include that injected script, so those checks alone did not reveal it. This is existing host telemetry, not graph computation or a submitted map view. Recognize only that proven script/endpoint combination in the browser harness and retain unknown-request/API/state checks. Do not change hosting configuration as part of this demo. [Trace](docs/evidence/q006/public-v2/q006_overview_acceptance/q006-overview-acceptance.json).
+
+**Final public submission.** Job `58377007` received the hash-matched harness at `e3079b9`, with only the proven host-beacon classification added. Public runtime remains the visually accepted `50e5804` implementation deployed through `edeb241`. [Receipt](docs/evidence/q006/public-v3-job.json).
+
+## 2026-11-06 UTC — Q-006 complete and publicly verified
+
+**Outcome.** Final public job `58377007` completed in 17 seconds with all 12 checks passing and no browser errors. The actual domain preserves exact source descriptions, fixed coordinates, overlapping/unresolved homes, phone controls, native touch/keyboard behavior and the original explorer's draft, storage and authored-history restoration. Its observed Cloudflare beacon is recorded explicitly; no graph computation/API traffic occurs. [Final public report](docs/evidence/q006/public-v3/q006_overview_acceptance/q006-overview-acceptance.json).
+
+**Meaning.** The minimal fixed overview is ready for collaborator use at [eigenquestions.com/overview](https://eigenquestions.com/overview), with a new-tab entry on the text explorer. It is a legible global picture of this Swampland collection, using its real shallow hierarchy and provisional labels. It does not replace the contextual navigation construction.
+
+**Save/resume.** This closure changes only documentation, tests and saved evidence; runtime assets remain the publicly verified release. Preserve the failed wheel-coordinate and host-telemetry assumptions as useful reproducibility findings. No cluster job remains. The next substantive work is collaborator feedback, not another speculative UI rewrite.
