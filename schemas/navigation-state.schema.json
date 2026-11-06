@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eigenquestions.com/schemas/navigation-state.schema.json",
+  "title": "Eigenquestions navigation state 1.0.0",
+  "type": "object",
+  "required": ["schemaVersion", "id", "corpusId", "computationId", "query", "focusIds", "intent", "workRelation", "lens", "constraints"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "id": {"type": "string", "minLength": 1},
+    "corpusId": {"type": "string", "minLength": 1},
+    "computationId": {"type": "string", "minLength": 1},
+    "query": {"type": "string", "maxLength": 4000},
+    "focusIds": {"type": "array", "maxItems": 100, "uniqueItems": true, "items": {"type": "string"}},
+    "intent": {"enum": ["explore", "derive", "phenomenology", "recent", "using"]},
+    "workRelation": {"enum": ["on", "using", "either"]},
+    "lens": {"enum": ["physical_question", "method", "combined"]},
+    "constraints": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "excludeIds": {"type": "array", "maxItems": 1000, "uniqueItems": true, "items": {"type": "string"}},
+        "yearMin": {"type": "integer", "minimum": 1000, "maximum": 3000},
+        "yearMax": {"type": "integer", "minimum": 1000, "maximum": 3000}
+      }
+    }
+  },
+  "additionalProperties": false
+}

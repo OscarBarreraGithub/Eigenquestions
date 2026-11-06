@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eigenquestions.com/schemas/navigation-view.schema.json",
+  "title": "Eigenquestions computed local chart 1.0.0",
+  "type": "object",
+  "required": ["schemaVersion", "corpusId", "computationId", "stateId", "nodes", "edges", "directions", "chart", "diagnostics", "warnings"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"}, "corpusId": {"type": "string"}, "computationId": {"type": "string"}, "stateId": {"type": "string"}, "query": {"type": "string"},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "paperId", "x", "y", "score", "residual", "evidence"], "properties": {"id": {"type": "string"}, "paperId": {"type": "string"}, "x": {"type": "number"}, "y": {"type": "number"}, "score": {"type": "number"}, "residual": {"type": "number"}, "evidence": {"type": "object"}}}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["source", "target", "type", "weight"], "properties": {"source": {"type": "string"}, "target": {"type": "string"}, "type": {"type": "string"}, "weight": {"type": "number"}}}},
+    "directions": {"type": "array", "maxItems": 6, "items": {"type": "object", "required": ["id", "label", "query", "seedIds", "evidenceIds"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "query": {"type": "string"}, "seedIds": {"type": "array", "items": {"type": "string"}}, "evidenceIds": {"type": "array", "items": {"type": "string"}}}}},
+    "chart": {"type": "object"}, "diagnostics": {"type": "object"}, "warnings": {"type": "array", "items": {"type": "string"}}
+  }
+}
