@@ -1,8 +1,9 @@
 # Q-006 — Fixed overview data audit
 
-Read-only discovery by `/root/stored_view_backend`, 2026-11-06. This records
-existing artifacts and a proposed compact projection. No source corpus, layout,
-membership, runtime, or deployment was changed; no browser was launched locally.
+Initial read-only discovery by `/root/stored_view_backend`, 2026-11-06, followed
+by the authorized deterministic export recorded below. Original source corpus,
+coordinates, hierarchy and memberships remain unchanged. No runtime or deployment
+was edited by this owner, and no browser was launched locally.
 
 ## Recommendation
 
@@ -273,5 +274,98 @@ finite coordinates. Then test the standalone overview in Slurm Chromium at
 desktop and phone widths: fixed initial camera, readable zoom labels, actual
 point/source inspection, overlap disclosure, and repeatable region zoom. Confirm
 the contextual page, saved state, computation identity and network-loading policy
-remain unchanged. The present audit establishes data reuse and a feasible size
-bound; it does not claim that the new overview has been built or browser-tested.
+remain unchanged. The initial audit established data reuse and a feasible size
+bound. The data implementation below is complete; browser verification belongs
+to the subsequent renderer integration and is not claimed here.
+
+## Implemented data handoff — 2026-11-06
+
+The deterministic [exporter](../scripts/data/build-overview.py) now produces
+[manifest.json](../data/overview/manifest.json),
+[map.json](../data/overview/map.json), and seventeen exact-text detail shards in
+`data/overview/`. The final schema is the one agreed with the standalone renderer:
+
+- Point columns: `[unitId, paperIndex, x, y, mass, homes]`.
+- Paper columns: `[paperId, title, url]`.
+- Topic objects preserve original `label`, parent/children indices, supplied
+  coordinates, mass/counts, review status/summary/limitations, fresh concern flag,
+  and representative point indices. `caption` and `captionRationale` are separate.
+- Link objects preserve indexed endpoints, exact weight, and `text_similarity`
+  kind. The manifest preserves the complete original coarse-affinity provenance.
+- Detail files contain `{schemaVersion, start, texts}` in exact point order;
+  their byte lengths, SHA-256 hashes, start and count are in the manifest.
+
+The manifest pins the original release/map and current corpus, records dated
+scope, every derived-file hash, all overlap/internal/unresolved counts, the
+original layout convention, and the exact exporter source hash.
+
+| Produced files | Actual raw bytes |
+| --- | ---: |
+| Initial map | 1,852,731 |
+| Initial manifest | 6,070 |
+| Initial total | **1,858,801** |
+| Largest lazy detail shard | 115,474 |
+| All nineteen generated files | 3,671,240 |
+
+Independent gzip compression of the initial map and manifest totals 732,026
+bytes. This is a local transport-size estimate, not a measurement of the host's
+compression choice or browser performance.
+
+All 8,473 facets and 6,477 paper records are retained. All ten overlapping facets,
+the one internal direct home, and thirteen unresolved descriptions remain in
+place. All 42 source topic affinities are retained without recomputation. The
+exporter checks every original membership weight equals `mass / homes.length`
+exactly before using the compact encoding. It also derives the closure of every
+topic's actual memberships and verifies all supplied facet and distinct-paper
+counts against that closure.
+
+The broad black-hole umbrella receives the display caption **“Quantum gravity,
+horizons & consistency.”** Its original label is preserved verbatim. Its actual
+six children include de Sitter, EFT consistency, holography, wormholes and
+extremality, so the wider caption describes the supplied umbrella more faithfully
+than implying that all children are black-hole calculations. This is a recorded
+presentation edit, not a regrouping or an endorsement of every membership. The
+other eleven captions likewise retain source-derived concepts and an individual
+rationale. No IAIFI topics, memberships, coordinates, or edges were imported;
+IAIFI supplies an interaction reference only.
+
+Reproduce or verify the generated files:
+
+```sh
+python3 scripts/data/build-overview.py --source /path/to/publication-v1/map-data.json
+python3 scripts/data/build-overview.py --source /path/to/publication-v1/map-data.json --check
+node --test tests/geometry/overview.test.mjs
+```
+
+The second command passed with byte-identical output. All five focused Node tests
+passed. They verify the complete file inventory/hashes and size bound; every exact
+excerpt/paper mapping against the frozen navigation corpus; independent semantic
+hashes of the entire upstream coordinate/membership, topic and link projections;
+overlap/ancestor/unresolved conservation; and the separation of original labels
+from concise display captions. The tests do not require the external source
+repository, but regenerating the data requires its exact pinned publication.
+
+## Coordinate extent and density check — 2026-11-06
+
+The supplied layout is suitable for an all-source initial Fit. Full bounds are
+`x = [-1.982583, 2.347271]` and `y = [-1.942307, 3.582850]`. The central 1–99%
+range occupies **85.9% of the full x extent and 81.1% of the full y extent**.
+Outliers therefore do not compress almost all points into a small central blob.
+No clipping, cropping, nonlinear transform, or replacement layout is needed.
+
+| Broad region | x: 1%, median, 99% | y: 1%, median, 99% |
+| --- | --- | --- |
+| String compactifications | −0.086, 1.105, 2.079 | −1.457, −0.229, 0.917 |
+| Quantum gravity, horizons & consistency | −1.005, −0.296, 0.726 | 0.039, 1.286, 3.222 |
+| Inflation & scalar dark-sector cosmology | −1.873, −1.036, 0.332 | −1.583, −0.618, 0.652 |
+| Neutrino mass: origins & tests | −1.412, −0.764, 0.450 | −1.904, −1.434, −0.350 |
+| Awaiting a better home | −0.699, −0.056, 0.879 | −0.967, 0.249, 2.063 |
+
+Quantiles use linear interpolation in sorted coordinates. Region samples include
+all direct homes and descendants, retaining overlaps. The inspected archived
+`publication-v1/qa/desktop-overview.png` shows a broadly filled triangular cloud:
+three large spatial regions and a small lower neutrino region, with meaningful
+overlap near their boundaries. This agrees with the quantitative extents. The
+unresolved region is dispersed, as its membership meaning suggests; do not draw
+it as a falsely isolated physical island. The new renderer still needs actual
+desktop/phone camera and label verification in Slurm.

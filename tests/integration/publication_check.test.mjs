@@ -21,7 +21,7 @@ test('publication helper detects exact release and rejects stale module or survi
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   try{
     const origin=`http://127.0.0.1:${server.address().port}`;
-    const good=await checkPublication({origin,dist});assert.equal(good.passed,true);assert.equal(good.summary.assetChecks,17);assert.equal(good.summary.retiredRouteChecks,32);
+    const good=await checkPublication({origin,dist});assert.equal(good.passed,true);assert.equal(good.summary.assetChecks,22);assert.equal(good.summary.retiredRouteChecks,32);
     assert.equal(good.assets.find(item=>item.path==='/lib/protocol/presentation.mjs').passed,true);
     assert.ok(good.expected.computationId.startsWith('1.0.0:'));
     assert.equal(JSON.stringify(good).includes(dist),false);
@@ -31,7 +31,7 @@ test('publication helper detects exact release and rejects stale module or survi
     stale=false;stalePresentation=true;
     const staleHelper=await checkPublication({origin,dist});assert.equal(staleHelper.passed,false);
     assert.equal(staleHelper.assets.find(item=>item.path==='/lib/protocol/presentation.mjs').passed,false);
-    assert.equal(staleHelper.summary.matchedAssets,16);
+    assert.equal(staleHelper.summary.matchedAssets,21);
     assert.equal(staleHelper.summary.retiredRoutePasses,32);
   }finally{server.closeIdleConnections();await new Promise(resolve=>server.close(resolve));}
 });

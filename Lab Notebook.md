@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions. Q-005 repairs startup/repeated paths; Q-006 adds a separate fixed, zoomable overview for a collaborator demo.
 - **Known:** Q-005 passes 35 local and 57 browser checks, with desktop/phone visual approval; release `f0e782d` deployed successfully. The actual IAIFI renderer is verified. A pinned existing question map covers 8,473 excerpts from 6,477 papers with a shallow, overlapping hierarchy.
-- **Unfinished/running:** Q-005 public verification is underway. Astra/Sol are beginning the isolated overview. Hosted storage remains inactive under the previously recorded connector restriction; this addition needs no hosted compute or storage API.
-- **Next:** Export the compact fixed map, connect its standalone renderer and controls, then inspect real browser views. [Q-006 plan](docs/Q-006-plan.md).
+- **Unfinished/running:** Q-006 implementation passes 43 local tests and static checks; its real-browser validation is next. Q-005 is verified live with 43 public browser checks. No validation job is currently running. Hosted storage remains inactive; this addition needs no hosted compute or storage API.
+- **Next:** Freeze the overview, inspect desktop/phone browser evidence in Slurm, then publish and verify the public map. [Q-006 plan](docs/Q-006-plan.md).
 - **Git:** Main and the working branch contain `f0e782d`; new overview work stays on the working branch until verified. Coordinator `/root` owns checkpoints/release.
 
 ## Requests
@@ -397,3 +397,17 @@
 **Q-006 clarification (summary).** The owner confirmed that IAIFI is a UI-style reference only. The cuts, connections and topics must belong to the Swampland map. Root confirmed this boundary and passed it to all three implementers; the chosen Swampland publication artifact already meets it. Rendering patterns are the only part borrowed from IAIFI.
 
 **Q-005 public release.** Main and the working branch are verified at `f0e782d7baecf6f45a5eb5fa59a9cdb328aa68a2`; deployment `42278851870` succeeded. All 17 published asset hashes and 32 retired-route checks pass. Slurm job `58370368` checks the actual published UI while Q-006 is developed separately. [Publication](docs/evidence/q005/publication-v1.json) · [public browser receipt](docs/evidence/q005/public-v1-job.json).
+
+## 2026-11-06 UTC — Q-005 complete; Q-006 fixed export verified
+
+**Q-005 outcome.** Public job `58370368` completed in 70 seconds with all 43 checks passing: focused 10, capsule 14 and legacy/public 19. The released repair is verified at the actual domain, including the exact quoted path, explicit Resume, real returns, source preservation and responsive columns. No validation jobs remain. [Public evidence](docs/evidence/q005/public-v1/).
+
+**Q-006 progress.** Astra exported all 8,473 exact Swampland question facets, 6,477 papers, 42 topic affinities, 10 overlapping facets and 13 unresolved facets. The initial map plus manifest totals 1,858,219 bytes; all 19 files total 3,670,658 bytes, with individual detail shards below 116 KB. Quantiles show the central 98% covers roughly 86% of x extent and 81% of y extent; the existing preview shows distinct large regions rather than outliers compressing the map. Preserve exact coordinates and fit all sources. Renderer/UI integration and browser checks remain unfinished.
+
+## 2026-11-06 UTC — Q-006: Complete the isolated overview candidate
+
+**Tried/contributors.** Astra data exported and independently checked every question, membership, coordinate and affinity against the pinned Swampland source. Astra protocol implemented fixed Canvas rendering, local Find, progressive labels, camera controls and exact lazy source descriptions. Sol supplied the quiet standalone interface and the new-tab entry. Root checked the integrated boundary and requested full-member Fit rather than an arbitrary crop.
+
+**Observed.** All 43 local tests pass, alongside 94 built assets, 41 original corpus shard hashes and 18 derived overview file hashes. Regeneration is byte-identical. Final initial JSON is 1,858,801 bytes; all 19 overview files total 3,671,240 bytes (amending the earlier preliminary manifest-size measurement). Topic captions preserve originals and rationales. No IAIFI scientific data or geometry is used. [Data audit](docs/Q-006-overview-data-audit.md) · [UI notes](docs/Q-006-ui-review.md).
+
+**Meaning/next.** This is ready for real-browser inspection, not yet a public release. The owner requested immediate deployment; run the focused overview acceptance and existing navigation regression on a frozen snapshot, inspect the pictures, and publish through the existing workflow if they pass.

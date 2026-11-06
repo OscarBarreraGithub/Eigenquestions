@@ -16,9 +16,10 @@ export async function checkSite(directory = path.join(root, 'dist')) {
   await visit(directory);
   assert.ok(entries.length <= 20000, 'Too many static assets for a free-plan deployment');
   for (const required of ['index.html', '404.html', 'app.js', 'compute-worker.js', 'styles.css', 'lib/protocol/session.mjs', 'lib/protocol/capsule.mjs', 'lib/protocol/presentation.mjs', 'lib/geometry/index.mjs', 'data/manifest.json', 'docs/site.md', 'docs/agent-interface.md', 'docs/navigation-contract.md', 'docs/geometry.md', 'docs/geometry-experiments.md', 'docs/stored-views-operations.md']) assert.ok(entries.includes(required), `Missing product asset ${required}`);
+  for (const required of ['overview.html', 'overview.js', 'overview.css', 'data/overview/manifest.json', 'data/overview/map.json']) assert.ok(entries.includes(required), `Missing fixed overview asset ${required}`);
   for (const file of entries) assert.ok(!/^(api|quiz|taste|submit|review|leaderboard|explore|_next|\.git)\//.test(file), `Retired route in static output: ${file}`);
   assert.ok(!entries.some(file => file.includes('Q-001-original') || file.includes('Lab Notebook') || file.includes('.env')), 'Private planning/runtime material must not enter the public build');
-  const html = await readFile(path.join(directory, 'index.html'), 'utf8');
+  const html = (await Promise.all(['index.html', 'overview.html'].map(file => readFile(path.join(directory, file), 'utf8')))).join('\n');
   for (const match of html.matchAll(/(?:href|src)="(\/(?!\/)[^"#?]+)"/g)) {
     const target = match[1].slice(1);
     if (target) assert.ok(entries.includes(target), `Broken HTML asset link: ${match[1]}`);
@@ -62,6 +63,18 @@ export async function checkSite(directory = path.join(root, 'dist')) {
     assert.equal(buffer.byteLength, shard.bytes, `Size mismatch: ${shard.path}`);
     assert.equal(createHash('sha256').update(buffer).digest('hex'), shard.sha256, `Hash mismatch: ${shard.path}`);
   }
-  return { assets: entries.length, corpusId: manifest.corpusId, verifiedShards: shards.length, staticAssets: true, assetsOnly: false, apiRoutes: ['/api/views'], oldRoutesAbsent: true };
+  const overview = JSON.parse(await readFile(path.join(directory, 'data/overview/manifest.json'), 'utf8'));
+  const overviewFiles = [overview.files.map, ...overview.files.details];
+  assert.equal(overview.corpusId, manifest.corpusId, 'Overview must identify the frozen Swampland corpus');
+  assert.ok(overview.files.map.bytes < 3 * 1024 * 1024, 'Overview initial data exceeds 3 MiB');
+  for (const file of overviewFiles) {
+    assert.match(file.path, /^[a-z0-9-]+\.json$/);
+    const buffer = await readFile(path.join(directory, 'data/overview', file.path));
+    assert.equal(buffer.length, file.bytes, `Overview size mismatch: ${file.path}`);
+    assert.equal(createHash('sha256').update(buffer).digest('hex'), file.sha256, `Overview hash mismatch: ${file.path}`);
+  }
+  const renderer = await readFile(path.join(directory, 'overview.js'), 'utf8');
+  assert.doesNotMatch(renderer, /(?:localStorage|sessionStorage|compute-worker|lib\/geometry|eigenquestionsNavigator)/, 'Overview must remain isolated from the contextual controller');
+  return { assets: entries.length, corpusId: manifest.corpusId, verifiedShards: shards.length, verifiedOverviewFiles: overviewFiles.length, staticAssets: true, assetsOnly: false, apiRoutes: ['/api/views'], oldRoutesAbsent: true };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) console.log(JSON.stringify(await checkSite(), null, 2));

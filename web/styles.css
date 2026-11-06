@@ -407,3 +407,8 @@ body.busy #explore-button { cursor: progress; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+.explorer-modes { display: flex; align-items: center; gap: 22px; max-width: 1496px; margin: auto; padding: 0 28px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.explorer-modes > * { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; border-bottom: 2px solid transparent; }
+.explorer-modes [aria-current] { color: var(--ink); border-bottom-color: #555; font-weight: 600; }
+@media (max-width: 760px) { .explorer-modes { padding: 0 16px; gap: 20px; } }
+@media (max-width: 380px) { .explorer-modes { padding: 0 12px; } }

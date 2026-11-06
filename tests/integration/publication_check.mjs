@@ -18,6 +18,8 @@ const ASSETS=[
   ['/llms.txt','llms.txt'], ['/robots.txt','robots.txt'], ['/sitemap.xml','sitemap.xml'],
   ['/docs/agent-interface.md','docs/agent-interface.md'],
   ['/skills/physics-navigator/SKILL.md','skills/physics-navigator/SKILL.md'],
+  ['/overview.html','overview.html'], ['/overview.js','overview.js'], ['/overview.css','overview.css'],
+  ['/data/overview/manifest.json','data/overview/manifest.json'], ['/data/overview/map.json','data/overview/map.json'],
 ];
 const RETIRED=[
   '/quiz/','/taste/','/explore/','/explore/tree/','/review/','/submit/','/leaderboard/',

@@ -1,0 +1,21 @@
+{
+  "request": "Q-006",
+  "date": "2026-11-06",
+  "commands": [
+    "npm run build",
+    "npm test",
+    "npm run check:site",
+    "git diff --check"
+  ],
+  "passed": true,
+  "tests": 43,
+  "assets": 94,
+  "corpusShardsVerified": 41,
+  "overviewDerivedFilesVerified": 18,
+  "browserStatus": "pending",
+  "contributors": [
+    "/root/stored_view_backend",
+    "/root/navigator_protocol",
+    "/root/quiet_ui_review_sol"
+  ]
+}

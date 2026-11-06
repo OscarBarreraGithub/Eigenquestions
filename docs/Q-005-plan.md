@@ -85,3 +85,8 @@ The fix identifies exact state returns and distinguishes representative source
 facets; it does not claim optimal semantic clusters or synthesized research
 question labels. Old scientific sessions are preserved, with recorded returns
 identified in their presentation.
+
+Public release `f0e782d` is verified: deployment 42278851870 succeeded, all 17 asset
+hashes and 32 retired routes match, and public Slurm job 58370368 passed all 43 checks
+(focused 10, full-view 14, legacy/public 19). Q-005 is complete at this scope.
+[Public evidence](evidence/q005/public-v1/) · [receipt](evidence/q005/public-v1-job.json).

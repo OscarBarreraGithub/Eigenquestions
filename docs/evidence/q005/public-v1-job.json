@@ -11,11 +11,19 @@
   "legacyHarnessSha256": "bcd29d2255c8d8d159599f5ac0a02f5307f31d6cbd2f8039ca78cfa5c2ea0a84",
   "submittedUtc": "2026-11-06T19:29:18.222121+00:00",
   "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-005/public-v1",
-  "statusAtReceipt": "submitted",
+  "statusAtReceipt": "completed",
   "suites": [
     "q005_navigation_acceptance.py --origin https://eigenquestions.com",
     "stored_views_browser_acceptance.py --origin https://eigenquestions.com",
     "browser_acceptance.py --public-ui"
   ],
-  "scope": "Actual published UI; capsule suite intercepts storage HTTP for roundtrip checks and does not activate production storage."
+  "scope": "Actual published UI; capsule suite intercepts storage HTTP for roundtrip checks and does not activate production storage.",
+  "elapsed": "00:01:10",
+  "exitCode": "0:0",
+  "checksPassed": 43,
+  "suiteResults": {
+    "focused": 10,
+    "capsules": 14,
+    "legacyPublic": 19
+  }
 }

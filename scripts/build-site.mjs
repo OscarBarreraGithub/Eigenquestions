@@ -6,13 +6,13 @@ const out = path.join(root, 'dist');
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 await cp(path.join(root, 'web'), out, { recursive: true });
-for (const [from, to] of [['lib/geometry', 'lib/geometry'], ['lib/protocol/session.mjs', 'lib/protocol/session.mjs'], ['lib/protocol/capsule.mjs', 'lib/protocol/capsule.mjs'], ['lib/protocol/presentation.mjs', 'lib/protocol/presentation.mjs'], ['data/navigation', 'data'], ['schemas', 'schemas'], ['skills', 'skills']]) {
+for (const [from, to] of [['lib/geometry', 'lib/geometry'], ['lib/protocol/session.mjs', 'lib/protocol/session.mjs'], ['lib/protocol/capsule.mjs', 'lib/protocol/capsule.mjs'], ['lib/protocol/presentation.mjs', 'lib/protocol/presentation.mjs'], ['data/navigation', 'data'], ['data/overview', 'data/overview'], ['schemas', 'schemas'], ['skills', 'skills']]) {
   await mkdir(path.dirname(path.join(out, to)), { recursive: true });
   try { await cp(path.join(root, from), path.join(out, to), { recursive: true }); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
 }
 await mkdir(path.join(out, 'docs'), { recursive: true });
-for (const name of ['site.md', 'agent-interface.md', 'navigation-contract.md', 'geometry.md', 'geometry-experiments.md', 'stored-views-operations.md']) {
+for (const name of ['site.md', 'agent-interface.md', 'navigation-contract.md', 'geometry.md', 'geometry-experiments.md', 'stored-views-operations.md', 'Q-006-overview-contract.md']) {
   try { await cp(path.join(root, 'docs', name), path.join(out, 'docs', name)); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
 }

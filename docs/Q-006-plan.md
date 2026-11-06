@@ -34,8 +34,7 @@ collection. Reuse no IAIFI data, coordinates, memberships or topic taxonomy.
    under 3 MB initial JSON; fetch excerpt details in bounded static shards.
    Avoid bundling the 145 MB source release or the numerical query corpus.
 6. Explain the fixed layout briefly in About: text-affinity geometry, provisional
-   agent-proposed topic labels, limited hierarchy, and display-only offsets for
-   disconnected components. Actual coarse affinity links are not citations or
+   agent-proposed topic labels, limited hierarchy, and the chosen single connected component. Actual coarse affinity links are not citations or
    physical implications. This context should not compete with the map.
 7. Keep camera interaction smooth and deterministic on desktop and phone. Resize,
    wheel/pinch, dragging, Fit, cluster selection, point details and search must
