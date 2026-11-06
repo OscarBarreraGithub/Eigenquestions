@@ -3,6 +3,7 @@ import {CAPSULE_KIND, NATIVE_BUILDER, MAX_JSON_BYTES, MAX_COMPRESSED_BYTES, crea
 import { placeChartLabel } from '/chart-labels.mjs';
 
 const $ = id => document.getElementById(id);
+const initialCorpusScope = $('corpus-scope').textContent;
 const svgNS = 'http://www.w3.org/2000/svg';
 const labels = { explore: 'Explore connections', derive: 'How is it derived?', phenomenology: 'Physical implications', recent: 'Recent within this corpus', using: 'Work using this idea', combined: 'Question + method', physical_question: 'Physical question', method: 'Methods', on: 'work on this idea', either: 'work on or using this idea' };
 const colors = ['#a82a2a', '#3f6788', '#786854', '#76617c', '#5a796e'];
@@ -229,7 +230,7 @@ function render() {
     if (index === session.cursor) button.setAttribute('aria-current', 'step');
     button.disabled = !canAttemptContinuation(); button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
   });
-  $('corpus-scope').textContent = `${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
+  $('corpus-scope').textContent = activeCapsule.builder.id === 'browser-empty' ? initialCorpusScope : `${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
   const paperCount = view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId).filter(Boolean)).size;
   $('evidence-count').textContent = String(activeCapsule.builder.id === NATIVE_BUILDER ? paperCount : view.nodes.length);
   const authored = activeCapsule.builder.id !== NATIVE_BUILDER;

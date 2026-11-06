@@ -1,0 +1,22 @@
+{
+  "request": ["Q-003", "Q-004"],
+  "jobId": "58244320",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "a00c40eddb96da392f60f19dcd07b012c412a091",
+  "publishedCommit": "af2aa86d3e1844535964299256bc948d4f545cd6",
+  "deploymentRun": "42182497990",
+  "sourceArchiveSha256": "67dee4a37a1608419b8419654c1ef34856fb6f4a499b9cbe04aa4725c05f9497",
+  "sourceArchiveHashMatched": true,
+  "submittedUtc": "2026-11-06T07:43:20Z",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-004/public-v1",
+  "sourceDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-004/final-v1/project",
+  "statusAtReceipt": "completed",
+  "exitCode": "0:0",
+  "elapsed": "00:01:16",
+  "storedViewChecksPassed": 14,
+  "interactionChecksPassed": 19,
+  "legacyPublicChecksPassed": 19,
+  "suites": ["stored_views_browser_acceptance.py --origin", "q002_browser_acceptance.py --standalone-origin", "browser_acceptance.py --public-ui"],
+  "scope": "Actual public renderer; stored-view HTTP remains a browser adapter. Actual public API is separately verified inactive."
+}

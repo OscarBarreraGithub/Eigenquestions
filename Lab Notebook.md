@@ -4,9 +4,9 @@
 
 - **Project/question:** Eigenquestions. Implement the authorized Q-003 stored-view journey and Q-004 quieter text interface. Can an agent's complete contextual view travel intact into a responsive browser?
 - **Known:** Integrated browser source `3fe979f` passed 45 checks and 18 captures; Sol approved the ordinary interface. Current Node/Worker tests pass 32/32; both deployment profiles package locally. These do not establish live stored sharing.
-- **Unfinished/running:** Final bounded stored-view job `58243580` tests remotely verified source `a00c40e`. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
-- **Next:** Inspect the final anchor/drop check, publish the verified frontend through the existing workflow, and verify the actual public domain. Storage needs authorized account access and a separate live save/open/CPU check.
-- **Git:** Working branch `agent/stored-views-quiet-ui`, from remotely verified Q-003 research checkpoint `31aaa00`. Coordinator `/root`; agents own implementation. Existing main deployment remains authorized.
+- **Unfinished/running:** Public browser job `58244320` checks the deployed frontend; all local jobs passed. Hosted storage activation is approval-blocked; no subscription/bucket changed. Actual public upload/read correctly report unavailable storage.
+- **Next:** Inspect the public browser results and save closure. Storage needs authorized Cloudflare account access and a separate live save/open/CPU check using the prepared activation profile.
+- **Git:** `af2aa86` is verified on main and `agent/stored-views-quiet-ui`; deployment `42182497990` succeeded. Coordinator `/root`; Astra/Sol contributed the implementation and independent review.
 
 ## Requests
 
@@ -299,3 +299,17 @@
 **Observed.** Final job `58243580` completed in 24 seconds, exit 0; all 14 checks pass with no page errors. Actual drop, unavailable anchor rejection, exact authored history, no-corpus display, empty startup and guarded independent imports all pass. [Final report](docs/evidence/q004/final-v1/stored-views-browser-acceptance.json). The existing 19 interaction and 14 retained local checks remain valid; the final changes are limited to authored-view handling and tested wording.
 
 **Release decision.** Publish the verified frontend through the existing main workflow, using the default profile with no storage bindings. This does not provision R2 or bypass the blocked connector. The live API must honestly report unavailable storage, while file import/export and page-agent navigation work. Verify the public assets, retired routes, actual API response and public browser behavior before closure. [Showcase note](docs/contextual-view-showcase.md) now distinguishes implemented/tested behavior from pending live sharing.
+
+## 2026-11-06 UTC — Q-003 / Q-004: Publish the verified frontend
+
+**Observed.** Release `af2aa86d3e1844535964299256bc948d4f545cd6` is verified on both remote branches; [deployment 42182497990](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42182497990) succeeded. The actual domain matches all 16 checked assets, including the new capsule codec/schema, discovery files and portable instructions. All 32 retired-route checks pass. [Publication receipt](docs/evidence/q004/publication-v1.json).
+
+**Storage boundary.** The activation repository variable is absent. Actual POST and GET requests return HTTP 503 `storage_unavailable`, with useful file-import guidance and no cached error. This is expected and verified, not a live stored-sharing success. [Public API evidence](docs/evidence/q004/public-storage-status.json).
+
+**Next.** Job `58244320` runs the three suites against the actual public renderer, using frozen `a00c40e` product/test source; the release adds only notebook/review/evidence changes. [Receipt](docs/evidence/q004/public-v1-job.json). Finish public verification, then request only the blocked account-access prerequisite for storage activation.
+
+## 2026-11-06 UTC — Q-003 / Q-004: Public tests pass; correct unloaded metadata
+
+**Observed.** Public job `58244320` completed in 1m16s, exit 0. All 52 checks pass: 14 full-view, 19 interaction and 19 retained/public checks. The empty public page became ready in 0.612s; the small warm presentation sample had p95 29.6ms and no observed long tasks. These headless observations are not device/network guarantees. [Public reports](docs/evidence/q004/public-v1).
+
+**Visual finding/correction.** Root inspected the real public fresh-page screenshot after the tests passed. The unloaded corpus footer incorrectly displayed “0 papers” and unknown dates; the earlier empty-path capture had already loaded data and did not expose it. Astra protocol now preserves the known HTML corpus description while keeping the corpus lazy, and adds the missing fresh-page assertion. [Before screenshot](docs/evidence/q004/public-v1/stored-artifacts/empty-mobile-viewport.png). This is the only runtime change after the 52-check public pass; recheck the focused public view suite on the correction.

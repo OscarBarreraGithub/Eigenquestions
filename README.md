@@ -1,6 +1,6 @@
 # Eigenquestions v2
 
-[Eigenquestions](https://eigenquestions.com) is a static physics explorer. A
+[Eigenquestions](https://eigenquestions.com) is a physics explorer with a static frontend. A
 question selects a source-grounded neighborhood of real graph and embedding
 objects; deterministic local code recomputes about five directions to consider
 next. A live text-column explorer makes those choices and the path primary, with
@@ -27,19 +27,39 @@ keeps source context, pivot starts another focus, and back/path controls replay
 prior views. **New path** clears the inherited context and focuses a fresh question.
 Sources/Geometry tabs and path scrolling remain available during computation.
 The public page and local page use the same engine and corpus.
-Computation runs in a browser worker; the first load downloads the corpus, so
-watch the loading progress. There is no public database, chat server or model
-credential.
+Computation runs in a browser worker; the first native query downloads the
+corpus. Empty startup and complete saved views do not require that download.
+The public service performs no model inference or scientific graph computation.
 
-Export a **session** to preserve the path, or a **view** to include its computed
-coordinates and evidence. Import either file to validate and recompute it against
-the matching frozen engine/data version. Share focus creates a URL fragment for
-the current question and anchors, without uploading your navigation session.
+Export a **session** for native replay, or a **view** for the complete accepted
+scientific object: context, groups, labels, sources, relationships and optional
+geometry. Import or drop a view file to display it exactly, including another
+builder's authored groups. Compatible recorded actions can continue locally;
+display does not imply that an outside builder can be reproduced. JSON and gzip
+files use the same contract. Share focus creates a compact native recipe URL;
+it does not preserve arbitrary authored organization.
+
+The bounded upload service prepares immutable full-view links of the form
+`/#view=ID`. **Hosted storage activation is currently pending:** Save link
+reports unavailable storage and preserves the downloadable view. Local Worker
+and browser-adapter tests pass; they are not a claim of live R2 activation.
+See [storage operations](docs/stored-views-operations.md) and the
+[mechanism showcase](docs/contextual-view-showcase.md).
 
 ## Navigate with your own agent
 
-Read or install [`skills/physics-navigator/SKILL.md`](skills/physics-navigator/SKILL.md),
-then start a local companion:
+Ask an agent to “use the physics graph from Eigenquestions.” The public
+[instructions](docs/agent-interface.md) and `/llms.txt` describe the supported
+capabilities. A browser agent able to execute page JavaScript can use
+`window.eigenquestionsNavigator`: `orient` computes without moving the human's
+path; `apply` and `navigate` explicitly update it with revision guards. This
+route needs no checkout or companion. HTTP-only agents can read sources and
+capsules, but cannot execute arbitrary browser queries. Graph orientation always
+supplements independent research and original-paper checking.
+
+For optional local CLI/MCP access, read or install
+[`skills/physics-navigator/SKILL.md`](skills/physics-navigator/SKILL.md), then start
+a local companion:
 
 ```sh
 node bin/navigate.mjs serve --port 4317 --connection /tmp/eigenquestions-session.json
@@ -76,13 +96,16 @@ npm run deploy:check
 
 The build copies explicitly selected product files to `dist/`. Checks verify
 shard hashes, limits, links and retired routes; geometry/protocol tests exercise
-real navigation and replay. Wrangler dry-run checks assets-only packaging.
+real navigation, replay, full-view fidelity and bounded storage. Wrangler dry-run
+checks local packaging without provisioning resources.
 Browser rendering and live-domain behavior require their separate integration
 checks.
 
 The existing GitHub Actions workflow validates and deploys authorized pushes to
 `main` to the `eigenquestions` Cloudflare Worker and `eigenquestions.com/*` route.
-No worker entrypoint or database binding is deployed. Unknown paths return 404;
+The default profile serves static assets directly and a small unbound storage
+API. The separate activation profile adds a dedicated R2 bucket and a SQLite
+budget coordinator; it is not enabled yet. Unknown paths return 404;
 the former voting, leaderboard, submission, quiz, taste and fixed-tree app is
 retired. Its source is preserved at Git baseline
 `9b7305541ca18ffd34bbe3786ee0cce75dea5633`, and its D1 database is left intact.

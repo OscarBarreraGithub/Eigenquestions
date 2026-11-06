@@ -190,6 +190,9 @@ def main():
             fresh=browser.new_context(viewport={'width':390,'height':844});cold=fresh.new_page();cold_requests=[];cold.on('request',lambda r:cold_requests.append(r.url));cold.on('pageerror',lambda e:errors.append(str(e)))
             cold.goto(origin,wait_until='domcontentloaded');cold.wait_for_function("document.documentElement.dataset.ready==='true'")
             assert cold.locator('#question').input_value()=='' and not any('/data/' in u for u in cold_requests)
+            cold_scope=cold.locator('#corpus-scope').inner_text()
+            assert '0 papers' not in cold_scope and '?–?' not in cold_scope and 'dated in manifest' not in cold_scope
+            assert 'Swampland-centered corpus' in cold_scope and 'Snapshot' in cold_scope
             assert cold.locator('.reading-pane').is_hidden() and cold.locator('.column-navigation').is_hidden()
             cold.screenshot(path=str(output/'empty-mobile-viewport.png'),full_page=False)
             cold.evaluate('(value)=>localStorage.setItem("eigenquestions:view:v1",JSON.stringify(value))',b)
