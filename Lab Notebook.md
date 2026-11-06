@@ -2,12 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. Q-006 delivers a separate fixed Swampland overview for a collaborator demo; Q-005 navigation repairs remain intact.
-- **Known:** The [overview is live](https://eigenquestions.com/overview): 8,473 source question excerpts from 6,477 papers, five broad groups and the genuine finer hierarchy. All geometry, memberships, topics and affinities are Swampland data; IAIFI supplies UI style only. Runtime `50e5804`, release `edeb241`.
-- **Verified:** 43 local tests, 12 local overview browser checks, 10 explorer regression checks and all 12 final public overview checks pass. Desktop/phone visuals accepted; 22 public asset hashes and 32 retired routes verified.
-- **Unfinished/running:** Q-006 is complete; no cluster validation jobs remain. Hosted shared-view storage (Q-003) remains inactive under the earlier connector restriction. The live host injects Cloudflare performance telemetry, recorded separately from application traffic.
-- **Next:** Show the fixed demo to collaborators and record their feedback. The contextual explorer remains the separate path-dependent navigation tool; topic captions are provisional.
-- **Save:** Notebook, meaningful failures, source/harness receipts and public evidence are committed to the configured repository. Coordinator `/root` owns checkpoints and release. [Q-006 plan](docs/Q-006-plan.md).
+- **Project/question:** Eigenquestions Q-009: replace “Awaiting a better home” with “Uncategorized excerpts” while retaining the 13 records.
+- **Known:** This is a three-line display/search/About change from live main `d93a402`. All original data, IDs, memberships and provenance remain intact; the 13 records are listed in a saved evidence file.
+- **Unfinished/running:** Existing 43 local tests and static checks pass. Publication is next. The larger Q-007 drilldown draft remains paused on its separate working branch; it is excluded from this release. Local-only Q-008 plot files are also excluded.
+- **Next:** Publish only this label fix and verify the public asset hashes.
+- **Save:** Root owns the release from isolated branch `agent/uncategorized-label`; Astra protocol made the minimal display edit. [Tracked records](docs/evidence/q009/uncategorized-records.json).
 
 ## Requests
 
@@ -22,6 +21,8 @@
 **Q-005 (summary):** Fix the unsolicited start at the long KK one-loop method, repeated copies of that paragraph, and unclear adjacent choices at each visited level. Keep full scientific context while making navigation concise and each branch understandable. [Atomic plan](docs/Q-005-plan.md).
 
 **Q-006 (summary):** Add a separate fixed overview map, styled after the owner's IAIFI paperscape, with zoomable clusters and legible labels for a collaborator demo. Preserve the current explorer; the overview does not update with queries. [Atomic plan](docs/Q-006-plan.md).
+
+**Q-009 (summary):** Quickly remove the “Awaiting a better home” wording, use a clearer label, and keep the underlying records tracked. This authorizes the label fix only; broader UI work stays paused.
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -446,3 +447,11 @@
 **Meaning.** The minimal fixed overview is ready for collaborator use at [eigenquestions.com/overview](https://eigenquestions.com/overview), with a new-tab entry on the text explorer. It is a legible global picture of this Swampland collection, using its real shallow hierarchy and provisional labels. It does not replace the contextual navigation construction.
 
 **Save/resume.** This closure changes only documentation, tests and saved evidence; runtime assets remain the publicly verified release. Preserve the failed wheel-coordinate and host-telemetry assumptions as useful reproducibility findings. No cluster job remains. The next substantive work is collaborator feedback, not another speculative UI rewrite.
+
+## 2026-11-06 UTC — Q-009: Rename the unresolved bucket without removing sources
+
+**Change/contributors.** Root isolated the live main revision so the paused drilldown draft and local plot cannot be deployed accidentally. Astra protocol changed only the overview caption lookup, Find matching and About sentence to use “Uncategorized excerpts”. Original source labels remain in provenance.
+
+**Observed.** All 43 existing local tests and static asset/hash checks pass. The data file hash is unchanged and all 13 source-unit/paper references are saved in [the tracking file](docs/evidence/q009/uncategorized-records.json). This is a copy change, with no new layout, grouping or scientific computation.
+
+**Next.** Publish the narrow change through the existing main workflow and verify deployed assets. No new browser interaction claim is inferred from the text-only checks.

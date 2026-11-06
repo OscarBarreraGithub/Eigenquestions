@@ -85,7 +85,7 @@ async function startOverview() {
   const shardPromises = new Map(), pointers = new Map(); let moved = false, dragStart, searchTimer;
   const text = (tag, value, className) => { const node = document.createElement(tag); node.textContent = value; if (className) node.className = className; return node; };
   const message = value => { status.textContent = value; };
-  const caption = index => map.topics[index].caption || map.topics[index].label;
+  const caption = index => index === manifest.membershipRule.unresolvedTopicIndex ? 'Uncategorized excerpts' : map.topics[index].caption || map.topics[index].label;
   const excerpt = (value, limit = 64) => value.length > limit ? `${value.slice(0, limit - 1).trimEnd()}…` : value;
   const selectedPoint = () => state.selectedPoint === null ? null : map.points[state.selectedPoint];
   const pointScreen = point => screenPoint([point[2], point[3]], state.camera, state.width, state.height);
@@ -204,7 +204,7 @@ async function startOverview() {
     if (!state.ready) return;
     const value = $('overview-find').value.trim().toLowerCase(), host = $('overview-results'); host.replaceChildren(); host.hidden = value.length < 2;
     if (value.length < 2) return;
-    const topicHits = map.topics.map((t, i) => ({t, i})).filter(({t, i}) => i !== manifest.rootTopicIndex && `${t.caption} ${t.label}`.toLowerCase().includes(value)).slice(0, 5);
+    const topicHits = map.topics.map((t, i) => ({t, i})).filter(({t, i}) => i !== manifest.rootTopicIndex && `${caption(i)} ${t.caption} ${t.label}`.toLowerCase().includes(value)).slice(0, 5);
     const paperHits = map.papers.map((p, i) => ({p, i})).filter(({p}) => `${p[0]} ${p[1]}`.toLowerCase().includes(value)).slice(0, 10);
     const row = child => { const li = document.createElement('li'); li.append(child); host.append(li); };
     for (const {i} of topicHits) row(topicButton(i, 'result-button'));
