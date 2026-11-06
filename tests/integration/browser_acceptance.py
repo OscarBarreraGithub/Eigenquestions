@@ -11,12 +11,13 @@ import argparse
 import json
 import os
 from pathlib import Path
+import re
 import select
 import shutil
 import subprocess
 import tempfile
 import time
-from urllib.parse import quote
+from urllib.parse import quote, urlsplit
 from playwright.sync_api import sync_playwright
 
 
@@ -48,6 +49,9 @@ def main():
             if not connection_file.exists():
                 raise RuntimeError('Bridge start timed out')
         connection = json.loads(connection_file.read_text())
+        def sanitize(value):
+            text = str(value).replace(connection['token'], '[redacted]')
+            return re.sub(r'https?://[^\s\"\'<>]+', '[url]', text)[:700]
         mcp = subprocess.Popen([args.node, str(root / 'bin/mcp-navigator.mjs'), '--connection', str(connection_file)], cwd=root, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1)
         sequence = 0
 
@@ -76,6 +80,7 @@ def main():
         with sync_playwright() as playwright:
             # No mixed-content/private-network security bypass flags.
             browser = playwright.chromium.launch(headless=True)
+            report['browserVersion'] = browser.version
             context = browser.new_context(viewport={'width': 1440, 'height': 1080}, accept_downloads=True)
             page = context.new_page()
             page_errors = []
@@ -166,15 +171,41 @@ def main():
             # Run an actual browser fetch from the public HTTPS origin. A Node
             # Origin header test cannot establish private-network browser policy.
             public_page = context.new_page()
+            diagnostics = {'console': [], 'requestFailures': [], 'permissionChanges': 'None: read-only queries; no permission grants or browser security bypasses.'}
+            def public_console(message):
+                if message.type in ('warning', 'error') and len(diagnostics['console']) < 12:
+                    diagnostics['console'].append({'type': message.type, 'text': sanitize(message.text)})
+            def public_request_failed(request):
+                if len(diagnostics['requestFailures']) < 12:
+                    target = 'loopback' if urlsplit(request.url).hostname in ('127.0.0.1', 'localhost', '::1') else 'public-or-other'
+                    diagnostics['requestFailures'].append({'target': target, 'resourceType': request.resource_type, 'reason': sanitize(request.failure)})
+            public_page.on('console', public_console)
+            public_page.on('requestfailed', public_request_failed)
+            def permission_states():
+                return public_page.evaluate("""async () => {
+                  const out={};
+                  for(const name of ['local-network-access','local-network','loopback-network']) {
+                    try {out[name]=(await navigator.permissions.query({name})).state;}
+                    catch(e) {out[name]='unsupported:'+e.name;}
+                  }
+                  return out;
+                }""")
+            report['publicOriginDiagnostics'] = diagnostics
             outcome = None
             try:
-                public_page.goto(args.public_origin, wait_until='domcontentloaded', timeout=60000)
+                public_response = public_page.goto(args.public_origin, wait_until='domcontentloaded', timeout=60000)
+                diagnostics['contentSecurityPolicy'] = sanitize(public_response.headers.get('content-security-policy', 'absent'))
+                diagnostics['permissionsPolicy'] = sanitize(public_response.headers.get('permissions-policy', 'absent'))
+                diagnostics['permissionsBefore'] = permission_states()
                 outcome = public_page.evaluate("""async ({url,token}) => {
                   try {
                     const r = await fetch(new URL('/api/session',url), {headers:{Authorization:`Bearer ${token}`}, signal:AbortSignal.timeout(15000)});
                     return {reachable:r.ok,httpStatus:r.status};
-                  } catch(e) { return {reachable:false,errorName:e.name}; }
+                  } catch(e) { return {reachable:false,errorName:e.name,errorMessage:e.message}; }
                 }""", {'url': connection['url'], 'token': connection['token']})
+                if 'errorMessage' in outcome:
+                    outcome['errorMessage'] = sanitize(outcome['errorMessage'])
+                diagnostics['permissionsAfter'] = permission_states()
                 report['publicOriginProbe'] = outcome
                 if outcome.get('reachable') and args.public_ui:
                     public_page.goto(args.public_origin + '/#bridge=' + quote(connection['url'], safe='') + '&token=' + quote(connection['token']), wait_until='domcontentloaded')
@@ -189,6 +220,21 @@ def main():
                     raise
                 # No token/URL-bearing error text is published.
                 report['publicOriginProbe'] = {'reachable': False, 'errorType': type(error).__name__, 'interpretation': 'Public-origin probe could not complete in this browser environment; same-origin fallback was separately verified.'}
+
+            if args.public_ui and not report['publicOriginProbe'].get('reachable'):
+                public_page.goto(args.public_origin + '/#bridge=' + quote(connection['url'], safe='') + '&token=' + quote(connection['token']), wait_until='domcontentloaded', timeout=60000)
+                public_page.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
+                assert public_page.locator('#connection-status').inner_text() == 'Browser session'
+                assert public_page.locator('.chart-direction').count() == 5
+                public_page.locator('#agent-open').click()
+                public_page.locator('#agent-dialog details summary').click()
+                fallback_message = public_page.locator('#bridge-message')
+                assert fallback_message.is_visible()
+                assert re.search(r'local URL|same.origin|loopback', fallback_message.inner_text(), re.I)
+                assert 'Agent connected' not in public_page.locator('#connection-status').inner_text()
+                diagnostics['blockedLaunchFallback'] = {'connectionStatus': 'Browser session', 'messageAfterOpeningAgentDetails': sanitize(fallback_message.inner_text()), 'neverClaimedConnected': True}
+                diagnostics['permissionsAfterBlockedLaunch'] = permission_states()
+                report['checks'].append({'name': 'blocked public launch recovers browser computation and shows same-origin guidance without claiming connection', 'passed': True})
 
             # The public static app must work independently even when its origin
             # cannot reach loopback. Use a clean context without bridge state.
@@ -223,6 +269,25 @@ def main():
                 using_sources = standalone.locator('.evidence-card').evaluate_all('(nodes) => nodes.map(n => n.dataset.sourceId)')
                 assert on_id != using_id and on_sources != using_sources
                 report['checks'].append({'name': 'public ON versus USING controls change ranked evidence', 'passed': True})
+                label_layout = standalone.evaluate("""() => {
+                  const box=el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};};
+                  const overlaps=(a,b,pad=1)=>a.x<b.x+b.w+pad&&a.x+a.w+pad>b.x&&a.y<b.y+b.h+pad&&a.y+a.h+pad>b.y;
+                  const labels=[...document.querySelectorAll('.direction-label')];
+                  const markers=[...document.querySelectorAll('.direction-dot')];
+                  const labelBoxes=labels.map(box),markerBoxes=markers.map(box);
+                  return {
+                    labelCount:labels.length,markerCount:markers.length,
+                    markerNumberCount:document.querySelectorAll('.direction-marker').length,
+                    labelMarkerOverlap:labelBoxes.some(a=>markerBoxes.some(b=>overlaps(a,b))),
+                    labelLabelOverlap:labelBoxes.some((a,i)=>labelBoxes.slice(i+1).some(b=>overlaps(a,b))),
+                    labelsPaintedBeforeMarkers:labels.every(label=>markers.every(marker=>Boolean(label.compareDocumentPosition(marker)&Node.DOCUMENT_POSITION_FOLLOWING)))
+                  };
+                }""")
+                assert label_layout['markerCount'] == 5 and label_layout['markerNumberCount'] == 5
+                assert not label_layout['labelMarkerOverlap'] and not label_layout['labelLabelOverlap']
+                assert label_layout['labelsPaintedBeforeMarkers']
+                report['publicUsingLabelLayout'] = label_layout
+                report['checks'].append({'name': 'public USING chart labels avoid every marker and label with markers painted on top', 'passed': True})
                 before_select = using_id
                 standalone.locator('#directions .direction').first.click()
                 standalone.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=before_select)

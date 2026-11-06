@@ -1,4 +1,5 @@
 import { currentState, exportSession, validateSession } from '/lib/protocol/session.mjs';
+import { placeChartLabel } from '/chart-labels.mjs';
 
 const $ = id => document.getElementById(id);
 const svgNS = 'http://www.w3.org/2000/svg';
@@ -91,6 +92,7 @@ function renderChart() {
   const scale = Math.min((width - margin * 2) / Math.max(xmax - xmin, .1), (height - margin * 2) / Math.max(ymax - ymin, .1));
   const x = val => width / 2 + (val - (xmin + xmax) / 2) * scale, y = val => height / 2 - (val - (ymin + ymax) / 2) * scale;
   const plot = svg('svg', { viewBox: `0 0 ${width} ${height}`, class: compact ? 'compact-chart' : '', role: 'group', 'aria-label': aggregate ? 'Computed two-dimensional view of five directions. Numbered markers match the full direction cards below. Select a marker to follow its direction.' : 'Computed two-dimensional view. Select a source point to read its evidence. The same sources are listed after the directions.' });
+  host.append(plot); // Actual SVG text metrics are available for placement below.
   for (let i = 1; i < 7; i++) plot.append(svg('line', { x1: i * width / 7, y1: 25, x2: i * width / 7, y2: height - 25, stroke: '#edf0e7', 'stroke-width': 1 }));
   for (let i = 1; i < 5; i++) plot.append(svg('line', { x1: 30, y1: i * height / 5, x2: width - 30, y2: i * height / 5, stroke: '#edf0e7', 'stroke-width': 1 }));
   const byId = new Map(view.nodes.map(n => [n.id, n]));
@@ -109,7 +111,7 @@ function renderChart() {
     const select = () => { selectedId = node.id; renderChart(); renderEvidence(); };
     group.addEventListener('click', select); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); } });
     plot.append(group);
-    if (!compact && ((!aggregate && seedIds.has(node.id)) || node.id === selectedId)) {
+    if (!compact && !aggregate && (seedIds.has(node.id) || node.id === selectedId)) {
       const text = short(node.title, 47), labelWidth = Math.min(text.length * 5.6, 280);
       let lx = Math.min(width - labelWidth - 12, Math.max(12, x(node.x) + 10)), ly = y(node.y) - 11;
       for (let attempt = 0; attempt < 8 && labelBoxes.some(b => lx < b.x + b.w && lx + labelWidth > b.x && Math.abs(ly - b.y) < 16); attempt++) ly += 17;
@@ -117,10 +119,16 @@ function renderChart() {
       group.append(svg('text', { x: lx, y: ly }, text));
     }
   }
+  const directionMarkers = view.directions.map(direction => ({ x: x(direction.x), y: y(direction.y), radius: Math.max(compact ? 16 : 0, 10 + 18 * Math.sqrt(direction.massFraction || .2)) }));
+  const markerObstacles = directionMarkers.map(marker => ({ ...marker, radius: Math.max(marker.radius, 22) + 4 }));
+  if (showSources) markerObstacles.push(...view.nodes.map(node => ({ x: x(node.x), y: y(node.y), radius: 9 })));
+  const directionLabelLayer = svg('g', { class: 'direction-label-layer', 'aria-hidden': 'true', 'pointer-events': 'none' });
+  const directionMarkerLayer = svg('g', { class: 'direction-marker-layer' });
+  plot.append(directionLabelLayer);
   if (aggregate) view.directions.forEach((direction, index) => {
     const color = colors[index % colors.length], cx = x(direction.x), cy = y(direction.y);
     const group = svg('g', { class: 'chart-node chart-direction', tabindex: 0, role: 'button', 'aria-label': `Follow direction ${index + 1}: ${direction.label}`, 'data-direction-id': direction.id });
-    const radius = Math.max(compact ? 16 : 0, 10 + 18 * Math.sqrt(direction.massFraction || .2));
+    const radius = directionMarkers[index].radius;
     group.append(svg('circle', { cx, cy, r: Math.max(radius, 22), fill: 'transparent', stroke: 'none', class: 'direction-hit-target' }));
     group.append(svg('circle', { cx, cy, r: radius, fill: color, stroke: '#fffef9', 'stroke-width': 3, 'fill-opacity': .95, class: 'direction-dot' }));
     group.append(svg('text', { x: cx, y: cy + 4, 'text-anchor': 'middle', class: 'direction-marker' }, String(index + 1)));
@@ -128,19 +136,19 @@ function renderChart() {
     const words = short(direction.label, 85).split(' '), lines = []; let line = '';
     for (const word of words) { if ((line + ' ' + word).length > 31 && line) { lines.push(line); line = word; } else line += (line ? ' ' : '') + word; }
     if (line) lines.push(line);
-    const labelWidth = Math.min(210, Math.max(...lines.map(t => t.length)) * 5.6);
-    let lx = Math.min(width - labelWidth - 14, Math.max(14, cx + radius + 8)), ly = cy - 12;
-    const labelHeight = lines.length * 15;
-    for (let attempt = 0; attempt < 12 && labelBoxes.some(b => lx < b.x + b.w && lx + labelWidth > b.x && ly < b.y + (b.h || 16) && ly + labelHeight > b.y); attempt++) {
-      ly += 18;
-      if (ly + labelHeight > height - 15) { ly = Math.max(20, cy - labelHeight - radius); lx = Math.max(14, cx - radius - labelWidth - 8); }
+    if (!compact) {
+      const text = svg('text', { x: 0, y: 0, class: 'direction-label', 'data-direction-id': direction.id });
+      lines.forEach((line, i) => text.append(svg('tspan', { x: 0, dy: i ? 15 : 0 }, line)));
+      directionLabelLayer.append(text);
+      const measured = text.getBBox(), padding = 3;
+      const box = placeChartLabel({ anchor: directionMarkers[index], width: measured.width + padding * 2, height: measured.height + padding * 2, bounds: { width, height }, circles: markerObstacles, labels: labelBoxes });
+      if (box) { text.setAttribute('transform', `translate(${box.x + padding - measured.x} ${box.y + padding - measured.y})`); labelBoxes.push(box); }
+      else text.remove(); // Full label remains in the numbered direction card.
     }
-    ly = Math.min(height - labelHeight - 12, Math.max(18, ly)); labelBoxes.push({ x: lx, y: ly, w: labelWidth, h: labelHeight });
-    if (!compact) { const text = svg('text', { x: lx, y: ly, class: 'direction-label' }); lines.forEach((t, i) => text.append(svg('tspan', { x: lx, dy: i ? 15 : 0 }, t))); group.append(text); }
     const follow = () => action({ type: 'select', directionId: direction.id }); group.addEventListener('click', follow); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); follow(); } });
-    plot.append(group);
+    directionMarkerLayer.append(group);
   });
-  host.append(plot);
+  plot.append(directionMarkerLayer); // Numbers and tap targets always paint last.
   const explained = Math.round((view.chart.explainedVariance || 0) * 100);
   $('chart-caption').textContent = aggregate
     ? `${compact ? 'Numbers match the full directions below. ' : ''}These ${view.directions.length} points are weighted centers of source groups, sized by retrieval weight. This plane retains ${explained}% of variation between those centers, versus ${Math.round((view.chart.sourceDiagnostics?.explainedVariance || 0) * 100)}% across individual source descriptions. Groups can be broad; proximity is a reading suggestion, not a physical claim.`

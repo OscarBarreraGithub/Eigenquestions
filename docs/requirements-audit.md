@@ -158,3 +158,109 @@ paper checks for substantive claims, source anchors substitute for a live query
 encoder, and proximity/group membership does not prove a physical relationship.
 The local bridge is process-local and exports sessions for durable replay;
 public HTTPS access may require permissions or the same-origin fallback.
+
+### Integrated R40 audit — 2026-11-06 UTC, validated release source; public check pending
+
+The corrected [second browser run](evidence/browser-v2/browser-acceptance.json)
+(Slurm job 58187676, exit 0) passes **14 checks** with zero page errors. In addition
+to the earlier complete agent journey, it measures readable mobile markers and
+touch targets, clicks an actual marker, and restores the exact prior state with
+Back. The coordinator inspected the [viewport screenshot](evidence/browser-v2/mobile-chart-viewport.png).
+Source `ad144254b51f103d89e0080f67e0a60097ee29e9` is verified on remote `main`;
+runtime source is unchanged from the tested `f9e4e50` checkpoint. The deployment
+workflow is running; this statement is not yet a claim about served public bytes.
+
+The implemented behavior satisfies the owner's broader picture through one
+connected path, rather than separate geometry and UI demonstrations:
+
+1. **Conversation chooses the question.** A fresh external agent uses the skill
+   to turn a request into query, intent, ON/USING relation and optional source
+   anchors. Derivation, phenomenology and recent work are separate operations,
+   with date and role limits exposed. The agent can ask a clarification where
+   ambiguity matters; the public static site itself does not interpret dialogue
+   with a model.
+2. **Context becomes reproducible state.** Refine refreshes bounded source
+   anchors from the current view, so KK towers → “what if they are dark matter?”
+   → “how do they decay?” carries evolving context. Explicit anchors permit
+   recovery; pivot and broaden release it. History, back/replay, portable exports
+   and a computation fingerprint make the same resolved question recoverable.
+3. **The graph and real vectors select new material.** Every operation searches
+   the whole frozen corpus, combining source-term anchors, 384-dimensional
+   embedding scores and graph diffusion. It does not restrict a child to an
+   inherited cluster. Dark Dimension work becomes salient in the dark-matter
+   context, and held-out black-hole questions bring in sources outside their
+   initial chart. Removing vector or graph contributions changes retrieval.
+4. **The local chart is recomputed.** About five representatives and their
+   memberships are recomputed from that neighborhood. Weighted PCA fits their
+   weighted means in the same ambient space; the optional source overlay uses
+   the same affine plane. Changed intent changes both selected sources and the
+   fitted basis. Metric, center, basis, residual thickness, distortion and
+   source/group diagnostics remain inspectable. This is a question-conditioned
+   local projection, not a unique global map or literal exact intersection of
+   a plane with every discrete source vector.
+5. **Agent operations reach the displayed object.** The CLI and actual stdio MCP
+   tools call the same session/engine code as the browser. The local companion
+   publishes the computed snapshot; the static renderer updates; an exact
+   state/revision acknowledgement confirms the render. The 14-check browser run
+   follows this complete route, including deeper refinement, held-out navigation,
+   reload and a human selection. There is no manual JSON-editing handoff.
+
+This is a useful v1 with bounded scientific reach. Five proposed directions are
+not five guaranteed valid deductions or a pre-certified curriculum. Selection of
+a mathematical method can drift away from the physical application; the fresh
+trial demonstrated that failure and an explicit recovery. High direction-mean
+fidelity does not remove large source-level distortion, and a source nomination
+can omit consequential caveats. The dataset covers 6,478 catalogued papers,
+6,477 with vectors, and 26,410 extracted facets in a Swampland-centered snapshot;
+it is neither all physics nor a live latest-paper service. Another small fixture
+demonstrates interface reuse, not validated relevance throughout every subfield.
+
+No additional omitted clause was found on the final prompt/plan comparison.
+R01–R28 and R31–R35 have implementation or process evidence at the scope stated
+above. R29, the new-origin part of R30, the public part of R33, and final release
+publication verification remain open until the coordinator supplies deployed
+hashes/routes and the clean public-browser result. R36 has verified release-source
+publication; the final evidence checkpoint still needs its ordinary Git save.
+
+### Public replacement verified — 2026-11-06 UTC; public-browser run pending
+
+The coordinator reports successful deployment workflow
+[42161918681](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42161918681)
+for remote-main source `ad144254b51f103d89e0080f67e0a60097ee29e9`. The independently
+read [publication receipt](evidence/Q-001-publication.json) confirms **9/9 exact
+public asset hashes** and **32/32 retired-route GET/POST checks** at
+`https://eigenquestions.com`. The served entrypoint, renderer, worker, geometry,
+protocol and corpus manifest match the expected release; old quiz/taste/explore,
+voting/review/submission and other checked API routes return retired statuses.
+R29's deployed-replacement condition is now met.
+
+The clean public-browser job 58188305 has been submitted with `--public-ui` to
+test browser-local computation and interactions independently of bridge access,
+and to probe the new public origin's loopback behavior. Its result is still
+pending at this update; exact served bytes alone are not counted as a public UI
+or public-to-loopback browser pass.
+
+### Public-browser result — 2026-11-06 UTC; bounded diagnostics still pending
+
+Slurm job 58188305 completed with all **17 checks** passing and no local or public
+page errors. The [public-browser result](evidence/public-v1/browser-acceptance.json)
+adds clean public-site computation, contextual form submission, changed ON/USING
+source rankings, direction selection, Back, export/import and reload to the
+previous local-agent checks. Thus the static public product is demonstrated
+independently of the local bridge.
+
+The new public origin still returned `TypeError` for a loopback request. The
+coordinator checked that this response has no CSP restriction, while the bridge
+provides its expected CORS/private-network headers. The evidence currently
+supports a tested public-site-to-loopback limitation, not a proven diagnosis or
+a claim of universally working attachment. A final bounded browser run will read
+permission states, retain sanitized console/network failures and test graceful
+failed-attachment recovery without granting permissions or disabling browser
+security. The same-origin live-update path is already verified.
+
+Visual review of the public screenshot also found a desktop direction label
+covering a marker. The site owner corrected label placement without changing
+the computed geometry. Its source tests pass; the final browser run will measure
+label/marker separation on the actual public USING view. These pending checks
+are targeted follow-up to observed failures, not additional unbounded product
+scope.

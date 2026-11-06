@@ -3,10 +3,10 @@
 ## Now
 
 - **Project/question:** Eigenquestions — can a conversation select useful, reproducible local views of a physics graph/vector space, with about five directions at a time?
-- **Known:** Real graph/vector navigation, five-direction charts and local agent updates work in the tested browser. Slurm job `58185518` completed with all 12 browser checks passing. The independent axion trial succeeded with explicit recovery from context drift. Coarse geometry is useful for navigation; source-level distances remain substantially distorted.
-- **Unfinished/running:** Astra site has corrected tiny mobile chart labels; Astra protocol added readability/tap tests and public verification checks. The corrected mobile view passed its actual-browser rerun (job `58187676`, 14 checks, exit 0). No cluster job remains running. Public deployment and a new-public-origin browser test remain pending via the existing GitHub workflow. No owner answer is required.
-- **Next:** Release the verified snapshot through GitHub, then verify the live site and public/local connection behavior.
-- **Git:** Work on `agent/question-conditioned-navigation`, push checkpoints to `OscarBarreraGithub/Eigenquestions`; release to `main` after validation. Coordinator: `/root`.
+- **Known:** The new static site is live. Exact public asset/retired-route checks pass; public-browser job `58188305` passed 17 checks. Local MCP updates and independent public navigation both work. Direct public HTTPS-to-loopback attachment is blocked in the test browser; the local companion remains the verified route.
+- **Unfinished/running:** Astra site is correcting a desktop label that obscured a numbered marker in the public screenshot. Astra protocol is diagnosing the attachment restriction and testing its recovery message. No cluster job is currently running. No owner answer is required.
+- **Next:** Validate and release the bounded display correction, record exact attachment behavior, and save the final coverage audit.
+- **Git:** Implementation checkpoints are on `agent/question-conditioned-navigation`; the validated release is fast-forwarded and pushed to `main` in `OscarBarreraGithub/Eigenquestions`. Coordinator: `/root`.
 
 ## Requests
 
@@ -93,3 +93,21 @@
 **Observed.** Slurm job `58187676` completed in 27 seconds with all 14 checks passing, including readable mobile marker/font/tap dimensions and an actual marker selection followed by exact Back restoration. Root inspected the [mobile viewport screenshot](docs/evidence/browser-v2/mobile-chart-viewport.png); the fixed chart is readable. The engine/corpus still match the independent fresh-agent session. [Full result](docs/evidence/browser-v2/browser-acceptance.json).
 
 **Decision/next.** Release this validated static v1 using the configured GitHub main workflow. Public deployment and new-origin behavior are not yet claimed; verify exact served hashes, retired routes and a clean public-browser journey after the workflow succeeds.
+
+## 2026-11-06 UTC — Q-001: Replace the public application
+
+**Observed.** Main was fast-forwarded to `ad144254b51f103d89e0080f67e0a60097ee29e9`, pushed and remotely verified. The existing [GitHub deployment run](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42161918681) completed successfully, including build/tests and static asset deployment. The actual domain matches all nine checked entrypoint/module/manifest hashes; all 32 GET/POST checks for former quiz, taste, explorer, voting and management routes return the expected retired status. The old database was not modified. [Deployment receipt](docs/evidence/Q-001-deployment.json) · [publication evidence](docs/evidence/Q-001-publication.json).
+
+**Next.** Slurm job `58188305` runs the published-origin test and an independent clean public-browser session. Its outcome will distinguish public attachment compatibility from the already verified local companion. [Job receipt](docs/evidence/Q-001-public-browser-job.json).
+
+## 2026-11-06 UTC — Q-001: Public browser works; inspect beyond pass/fail
+
+**Observed.** Public-browser job `58188305` completed in 31 seconds, passing 17 checks with no local or public page errors. The clean public page loaded/verified its corpus, computed a new contextual query, changed ranked evidence for ON versus USING, followed a direction and restored Back, then exported/imported/reloaded the same state. Direct public-origin attachment to loopback still failed with `TypeError`; the live response has no CSP header, so a bounded diagnostic will distinguish browser policy from an implementation failure. [Public result](docs/evidence/public-v1/browser-acceptance.json).
+
+**Visual finding/next.** Root inspected the [public screenshot](docs/evidence/public-v1/public-static-view.png): one recent-USING chart label overlapped its numbered marker. Astra site is fixing label placement without changing point coordinates. A passing navigation test alone did not establish legibility. Preserve this screenshot and verify the revised view before completion.
+
+## 2026-11-06 UTC — Q-001: Preserve coordinates while repairing legibility
+
+**Tried/contributors.** Astra site added deterministic text placement using measured SVG bounds, obstacles around every marker, and label collision checks. Labels are omitted if no safe slot exists; numbered markers render above them. The point coordinates and numerical engine are unchanged. A regression uses the exact public recent-USING session that exposed the issue. Astra protocol added actual-browser overlap/paint-order assertions plus sanitized diagnostics and blocked-attachment recovery checks.
+
+**Observed/next.** All 23 local tests and 41 corpus shard checks pass. Release this bounded correction, then run the full public-browser check against its exact source before closing the audit.

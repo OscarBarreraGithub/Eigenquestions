@@ -1,0 +1,319 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "eigenquestions-publication-check",
+  "checkedAt": "2026-11-06T04:21:31.276Z",
+  "origin": "https://eigenquestions.com",
+  "expected": {
+    "releaseFingerprint": "43d906269efdb56a71f56c41271d4eef747307e3524c2d27062eecbe23523080",
+    "corpusId": "swampland-navigation-20261105-minilm-v1",
+    "computationId": "1.0.0:c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34:848832f277bbc1c24806aa235b0b37625e1dcdc4709c443fd6fc9813f5227ae9:ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839"
+  },
+  "assets": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 7768,
+      "expectedSha256": "16f2242481d9cab23dc8364d653470a57078e3334f87a80bc4ef5fbbc2babfad",
+      "observedSha256": "16f2242481d9cab23dc8364d653470a57078e3334f87a80bc4ef5fbbc2babfad",
+      "passed": true
+    },
+    {
+      "path": "/build-info.json",
+      "status": 200,
+      "bytes": 189,
+      "expectedSha256": "e7159343a4e50a89386c38e0bdcff45cf82e989c6c53f1f81311203f6629af41",
+      "observedSha256": "e7159343a4e50a89386c38e0bdcff45cf82e989c6c53f1f81311203f6629af41",
+      "passed": true
+    },
+    {
+      "path": "/data/manifest.json",
+      "status": 200,
+      "bytes": 10631,
+      "expectedSha256": "ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839",
+      "observedSha256": "ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839",
+      "passed": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 28711,
+      "expectedSha256": "d750d9c77ce81dc32722bfacca4a0e9c557e68bc64852540ae589b575d581c32",
+      "observedSha256": "d750d9c77ce81dc32722bfacca4a0e9c557e68bc64852540ae589b575d581c32",
+      "passed": true
+    },
+    {
+      "path": "/compute-worker.js",
+      "status": 200,
+      "bytes": 1802,
+      "expectedSha256": "5f7be98af1d5ce29e495445129c39cf72b66f702a08638f9b1cf37937f1560e4",
+      "observedSha256": "5f7be98af1d5ce29e495445129c39cf72b66f702a08638f9b1cf37937f1560e4",
+      "passed": true
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "bytes": 12304,
+      "expectedSha256": "cb528fc23411a1f44f11afcd34dda199edf365b8ee45207a1d4531ac32b28e4b",
+      "observedSha256": "cb528fc23411a1f44f11afcd34dda199edf365b8ee45207a1d4531ac32b28e4b",
+      "passed": true
+    },
+    {
+      "path": "/lib/geometry/index.mjs",
+      "status": 200,
+      "bytes": 28043,
+      "expectedSha256": "c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34",
+      "observedSha256": "c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34",
+      "passed": true
+    },
+    {
+      "path": "/lib/geometry/identity.mjs",
+      "status": 200,
+      "bytes": 271,
+      "expectedSha256": "1df7b44d35f2e2b6a8e05dd2aa0c189b0ab8b734a9eeb658ef34d7a77b13b718",
+      "observedSha256": "1df7b44d35f2e2b6a8e05dd2aa0c189b0ab8b734a9eeb658ef34d7a77b13b718",
+      "passed": true
+    },
+    {
+      "path": "/lib/protocol/session.mjs",
+      "status": 200,
+      "bytes": 9277,
+      "expectedSha256": "9329fd210461c552be326fc7d0b4168b771902382513a468fe28489d73c7c1a6",
+      "observedSha256": "9329fd210461c552be326fc7d0b4168b771902382513a468fe28489d73c7c1a6",
+      "passed": true
+    }
+  ],
+  "retiredRoutes": [
+    {
+      "path": "/quiz/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/quiz/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/taste/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/taste/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/tree/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/explore/tree/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/review/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/review/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/submit/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/submit/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/leaderboard/",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/leaderboard/",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/pair",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/pair",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/stats",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/stats",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/vote",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/vote",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/submit",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/submit",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/leaderboard",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/leaderboard",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/submissions",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/submissions",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/approve",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/approve",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/reject",
+      "method": "GET",
+      "status": 404,
+      "redirected": false,
+      "passed": true
+    },
+    {
+      "path": "/api/review/reject",
+      "method": "POST",
+      "status": 405,
+      "redirected": false,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "assetChecks": 9,
+    "matchedAssets": 9,
+    "retiredRouteChecks": 32,
+    "retiredRoutePasses": 32
+  },
+  "passed": true,
+  "scope": "Checks exact deployed entrypoint/module/manifest hashes and retired route status. Full corpus shard hashes are verified by the local build and browser loader; this bounded check does not redownload all shards or prove browser rendering."
+}

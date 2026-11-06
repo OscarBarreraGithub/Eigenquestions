@@ -39,13 +39,13 @@ that exact revision; a successful action alone does not prove a render. `search`
 and `evidence` inspect without navigation:
 
 ```sh
-node bin/navigate.mjs search --query 'KK towers' --intent recent --relation using
-node bin/navigate.mjs evidence --ids 'unit:ID_FROM_SEARCH'
-node bin/navigate.mjs select --direction 'direction:ID_FROM_CURRENT_VIEW'
-node bin/navigate.mjs back
-node bin/navigate.mjs replay --index 1
-node bin/navigate.mjs export --out navigation-session.json
-node bin/navigate.mjs import --file navigation-session.json
+node bin/navigate.mjs search --query 'KK towers' --intent recent --relation using --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs evidence --ids 'unit:ID_FROM_SEARCH' --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs select --direction 'direction:ID_FROM_CURRENT_VIEW' --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs back --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs replay --index 1 --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs export --out navigation-session.json --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs import --file navigation-session.json --connection /tmp/eigenquestions-session.json
 ```
 
 Commands without `--connection` use the connection file printed by `serve` when
@@ -108,13 +108,26 @@ ON/USING views, a held-out black-hole journey, back/replay/import, empty and
 unsupported queries, another corpus fixture, and actual MCP → bridge → SSE.
 HTTP tests verify exact allowed origins, authentication and private-network
 preflight. They do **not** establish browser permission behavior; browser results
-are tracked separately in the acceptance evidence.
+are tracked separately in the acceptance evidence. The authorized Chromium run
+on 2026-11-06 passed 14 actual-browser checks: MCP-driven owner/held-out journeys,
+render acknowledgements, export/import and reload, mobile readability/tap sizes,
+and a human marker click with exact Back restoration. A subsequent public run
+passed 17 checks, including clean public-site computation, changed ON/USING
+evidence, and selection/back/export/import/reload. Public HTTPS → loopback still
+returned `TypeError` in that headless browser; it is not claimed to work without
+browser permission. The local same-origin companion is the verified live-update
+path. A final diagnostic run is examining the rejection reason and failed-attach
+recovery; the public site itself remains usable independently.
 
 The v1 corpus is Swampland-centered. Query anchors are retrieved source vectors;
 no new query embedding is invented. The primary 2D view fits five dynamic direction
 means, with source vectors overlaid in the same plane. Group and source variance,
 residuals and within-group spread are reported separately: high group fidelity
 does not mean all source variation is preserved. Adjacency is retrieval
-affinity or same-paper incidence, not a theorem or physical causal link. Session
+affinity or same-paper incidence, not a theorem or physical causal link. An
+independent agent completed an eight-step axion journey but observed drift after
+selecting a long method description; explicit application wording and source
+anchors recovered it. Read competing sources' roles before treating a direction
+as a continuation of the same physical application. Session
 state is process-local until exported; restarting the bridge creates a fresh
 token and requires reattachment. Export before stopping to retain navigation.
