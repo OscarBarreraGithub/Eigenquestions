@@ -2,11 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. Implement the authorized Q-003 stored-view journey and Q-004 quieter text interface. Can an agent's complete contextual view travel intact into a responsive browser?
-- **Known:** Integrated browser source `3fe979f` passed 45 checks and 18 captures; Sol approved the ordinary interface. Current Node/Worker tests pass 32/32; both deployment profiles package locally. These do not establish live stored sharing.
-- **Unfinished/running:** Public browser job `58244320` checks the deployed frontend; all local jobs passed. Hosted storage activation is approval-blocked; no subscription/bucket changed. Actual public upload/read correctly report unavailable storage.
-- **Next:** Inspect the public browser results and save closure. Storage needs authorized Cloudflare account access and a separate live save/open/CPU check using the prepared activation profile.
-- **Git:** `af2aa86` is verified on main and `agent/stored-views-quiet-ui`; deployment `42182497990` succeeded. Coordinator `/root`; Astra/Sol contributed the implementation and independent review.
+- **Project/question:** Eigenquestions. Q-004's quiet text interface is live. Q-003's complete agent-authored view now survives file, browser and continuation workflows; hosted sharing awaits activation.
+- **Known:** All 32 Node/Worker tests, 52 public browser checks and 14 final focused public checks pass. Sol approved desktop/phone layouts. All 16 deployed asset hashes and 32 retired routes match. Storage tests use local emulation/browser adapters, not live R2.
+- **Unfinished/running:** No jobs for this update remain running. Hosted storage is inactive: the Cloudflare connector requires approval, but this session's approval policy is `never`. No bucket/subscription changed; the public API honestly returns 503 with file guidance.
+- **Next:** Once connector access is enabled, inspect actual account allowances, activate the dedicated R2/SQLite profile through the existing workflow, and verify durable save/retry/open plus production CPU. [Activation instructions](docs/stored-views-operations.md). Do not bypass the access restriction.
+- **Git:** Released runtime `7600613` is on main and `agent/stored-views-quiet-ui`; deployment `42183241426` succeeded. This closure preserves final evidence and the remaining prerequisite. Coordinator `/root`; Astra/Sol implemented and independently reviewed the work.
 
 ## Requests
 
@@ -313,3 +313,13 @@
 **Observed.** Public job `58244320` completed in 1m16s, exit 0. All 52 checks pass: 14 full-view, 19 interaction and 19 retained/public checks. The empty public page became ready in 0.612s; the small warm presentation sample had p95 29.6ms and no observed long tasks. These headless observations are not device/network guarantees. [Public reports](docs/evidence/q004/public-v1).
 
 **Visual finding/correction.** Root inspected the real public fresh-page screenshot after the tests passed. The unloaded corpus footer incorrectly displayed “0 papers” and unknown dates; the earlier empty-path capture had already loaded data and did not expose it. Astra protocol now preserves the known HTML corpus description while keeping the corpus lazy, and adds the missing fresh-page assertion. [Before screenshot](docs/evidence/q004/public-v1/stored-artifacts/empty-mobile-viewport.png). This is the only runtime change after the 52-check public pass; recheck the focused public view suite on the correction.
+
+**Corrected release.** `7600613d7f04d444c6bd403037f7a7d846705265` is verified on both remote branches; [deployment 42183241426](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42183241426) succeeded. All 16 assets and 32 retired routes match again. [Receipt](docs/evidence/q004/publication-v2.json). Job `58245303` uses the exact committed harness, hash-verified on the cluster, against those public assets. [Job receipt](docs/evidence/q004/public-v2-job.json).
+
+## 2026-11-06 UTC — Q-003 / Q-004: Close frontend work with a precise storage handoff
+
+**Observed/outcome.** Final public job `58245303` completed in 13 seconds, exit 0; all 14 focused checks pass with no page errors. Root inspected the corrected [fresh phone page](docs/evidence/q004/public-v2/empty-mobile-viewport.png): known corpus scope remains visible, no false zero count or placeholder topic appears, and no corpus data is requested before a query. [Final report](docs/evidence/q004/public-v2/stored-views-browser-acceptance.json). Q-004 is complete. The full-view file/page-agent portion of Q-003 is implemented and publicly verified.
+
+**What remains.** Hosted shared links are not active. The configured Cloudflare connector refused account discovery with “MCP tool call requires approval, but approval policy is never.” The implementation, admission limits, activation profile and verification procedure are ready; enabling connector access is the remaining owner-dependent prerequisite. After activation, test real durable storage and production CPU before claiming live/free-tier sharing. Existing D1 and unrelated cluster work were untouched; no job for this update remains running.
+
+**Save.** The vision, exact latest request, atomic requirements, useful failed approaches, independent reviews and mechanism showcase are in the project. This ordinary Git checkpoint includes closure/evidence only; runtime assets are unchanged from the verified release. Push both agreed branches and verify their remote heads before reporting completion. [Showcase](docs/contextual-view-showcase.md) · [reproducible plan/status](docs/Q-003-Q-004-implementation-plan.md).

@@ -85,10 +85,18 @@ step until the restriction is resolved; no subscription has been changed.
   failure/retry, admission limits and restart behavior. Both profiles package.
   S06/S07/S13 still require **real account activation and live save/open/CPU
   verification** before hosted sharing is declared operational.
-- S14 public release verification is next; D01/D02 are saved with the notebook,
-  showcase, evidence and remotely verified Git checkpoints.
+- S14 passes on the public frontend: all 16 checked assets and 32 retired routes
+  match; all 52 public browser checks pass, followed by 14 focused checks on the
+  final unloaded-footer correction at `7600613`. D01/D02 are saved with the
+  notebook, showcase, evidence and remotely verified Git checkpoints.
 
 Evidence: [final view report](evidence/q004/final-v1/stored-views-browser-acceptance.json),
 [integrated reports](evidence/q004/integrated-v1), [visual review](Q-004-ui-review.md),
 [activation procedure](stored-views-operations.md). These are observed checks,
 not a claim that external builders' science is verified or universally replayable.
+
+**Remaining owner-dependent step:** enable access through the Cloudflare
+connector, then follow the prepared activation procedure. Do not bypass the
+approval restriction, provision a paid plan, or describe stored sharing as live
+before a real durable save/open and production CPU check. Frontend Q-004 is
+complete; the hosted-storage portion of Q-003 remains pending this prerequisite.
