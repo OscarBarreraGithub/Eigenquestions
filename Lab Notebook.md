@@ -2,11 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
-- **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
-- **Unfinished/running:** Implementation and 35 local tests pass. The reported phone alignment is repaired. All 35 local and 57 browser checks pass for repaired Q-005, with desktop/phone visual approval. No validation job remains running; public release checks are next. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
-- **Next:** Freeze the repaired entry/choices/return behavior and verify the reported journey in a real browser, including authored-history safety and phone layouts. [Q-005 plan](docs/Q-005-plan.md).
-- **Git:** Corrected prototype `e784d94` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
+- **Project/question:** Eigenquestions. Q-005 repairs startup/repeated paths; Q-006 adds a separate fixed, zoomable overview for a collaborator demo.
+- **Known:** Q-005 passes 35 local and 57 browser checks, with desktop/phone visual approval; release `f0e782d` deployed successfully. The actual IAIFI renderer is verified. A pinned existing question map covers 8,473 excerpts from 6,477 papers with a shallow, overlapping hierarchy.
+- **Unfinished/running:** Q-005 public verification is underway. Astra/Sol are beginning the isolated overview. Hosted storage remains inactive under the previously recorded connector restriction; this addition needs no hosted compute or storage API.
+- **Next:** Export the compact fixed map, connect its standalone renderer and controls, then inspect real browser views. [Q-006 plan](docs/Q-006-plan.md).
+- **Git:** Main and the working branch contain `f0e782d`; new overview work stays on the working branch until verified. Coordinator `/root` owns checkpoints/release.
 
 ## Requests
 
@@ -19,6 +19,8 @@
 **Q-004 (summary):** Implement Q-003's stored-view proposal, preserve the vision and a concise future showcase of the mechanism, fix the KK-to-restored-topic startup jump, and have Sol agents iterate toward a familiar, minimal, sharp text-first interface with less competing for attention. [Original request](docs/requests/Q-004-original.md) · [Joint atomic plan](docs/Q-003-Q-004-implementation-plan.md).
 
 **Q-005 (summary):** Fix the unsolicited start at the long KK one-loop method, repeated copies of that paragraph, and unclear adjacent choices at each visited level. Keep full scientific context while making navigation concise and each branch understandable. [Atomic plan](docs/Q-005-plan.md).
+
+**Q-006 (summary):** Add a separate fixed overview map, styled after the owner's IAIFI paperscape, with zoomable clusters and legible labels for a collaborator demo. Preserve the current explorer; the overview does not update with queries. [Atomic plan](docs/Q-006-plan.md).
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -383,3 +385,15 @@
 **Next.** Finish the isolated legacy test, publish the visually accepted runtime through the existing main workflow, and check actual public hashes and navigation. No numerical engine or frozen corpus changed during these repairs.
 
 **Release gate passed.** The corrected isolated legacy suite completed in job `58367541` (17 seconds), with all 14 checks passing and no local browser errors. Together with the final focused, capsule and interaction suites, all 57 browser checks pass. The runtime remains `e784d94`; only test visibility handling changed. Publish this verified navigation repair before introducing the separately requested overview. [Legacy receipt](docs/evidence/q005/legacy-final-job.json).
+
+## 2026-11-06 UTC — Q-006: Reuse an actual map and the owner's actual paperscape
+
+**Question.** Can we show the collection's overall structure without rebuilding or entangling the contextual explorer?
+
+**Observed/contributors.** Sol verified IAIFI-Paperscape GitHub main `e3d55af` against the local executable renderer and data; it uses Canvas2D with fixed coordinates and progressive labels, despite stale README wording. Astra found the already pinned publication map: reviewed question units match all current source IDs/text hashes, and the question view covers 8,473 facets from 6,477 papers. It has five root children and only one finer branch, with overlaps and unresolved entries; all topic cards remain agent-proposed. [Reference audit](docs/Q-006-paperscape-reference.md).
+
+**Decision/next.** Use that one fixed question view, preserve its actual hierarchy and memberships, and avoid inventing deeper clusters. A compact initial export is estimated at 1.87 MB; full excerpts can load from small detail shards. Open the overview in its own browser tab so live authored history remains intact. Astra owns export/renderer, Sol owns the quiet paperscape interface, and root verifies the integrated demo. [Plan](docs/Q-006-plan.md). These are source findings and a plan, not a completed overview.
+
+**Q-006 clarification (summary).** The owner confirmed that IAIFI is a UI-style reference only. The cuts, connections and topics must belong to the Swampland map. Root confirmed this boundary and passed it to all three implementers; the chosen Swampland publication artifact already meets it. Rendering patterns are the only part borrowed from IAIFI.
+
+**Q-005 public release.** Main and the working branch are verified at `f0e782d7baecf6f45a5eb5fa59a9cdb328aa68a2`; deployment `42278851870` succeeded. All 17 published asset hashes and 32 retired-route checks pass. Slurm job `58370368` checks the actual published UI while Q-006 is developed separately. [Publication](docs/evidence/q005/publication-v1.json) · [public browser receipt](docs/evidence/q005/public-v1-job.json).

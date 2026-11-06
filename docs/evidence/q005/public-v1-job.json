@@ -1,0 +1,21 @@
+{
+  "request": "Q-005",
+  "jobId": "58370368",
+  "releaseCommit": "f0e782d7baecf6f45a5eb5fa59a9cdb328aa68a2",
+  "runtimeCommit": "e784d94e4d008aab3e116891a00ba1191598bd8f",
+  "deploymentRun": "42278851870",
+  "deploymentConclusion": "success",
+  "publishedAssetChecks": 17,
+  "matchedPublishedAssets": 17,
+  "retiredRouteChecksPassed": 32,
+  "legacyHarnessSha256": "bcd29d2255c8d8d159599f5ac0a02f5307f31d6cbd2f8039ca78cfa5c2ea0a84",
+  "submittedUtc": "2026-11-06T19:29:18.222121+00:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-005/public-v1",
+  "statusAtReceipt": "submitted",
+  "suites": [
+    "q005_navigation_acceptance.py --origin https://eigenquestions.com",
+    "stored_views_browser_acceptance.py --origin https://eigenquestions.com",
+    "browser_acceptance.py --public-ui"
+  ],
+  "scope": "Actual published UI; capsule suite intercepts storage HTTP for roundtrip checks and does not activate production storage."
+}
