@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions — can a conversation select useful, reproducible local views of a physics graph/vector space, with about five directions at a time?
 - **Known:** Real graph/vector navigation, five-direction charts and local agent updates work in the tested browser. Slurm job `58185518` completed with all 12 browser checks passing. The independent axion trial succeeded with explicit recovery from context drift. Coarse geometry is useful for navigation; source-level distances remain substantially distorted.
-- **Unfinished/running:** Astra site has corrected tiny mobile chart labels; Astra protocol added readability/tap tests and public verification checks. The corrected mobile view awaits a new browser run. No cluster job is running. Public deployment and a new-public-origin browser test remain pending via the existing GitHub workflow. No owner answer is required.
-- **Next:** Save acceptance evidence and the mobile fix, release through GitHub, and verify the live site and public/local connection behavior.
+- **Unfinished/running:** Astra site has corrected tiny mobile chart labels; Astra protocol added readability/tap tests and public verification checks. The corrected mobile view passed its actual-browser rerun (job `58187676`, 14 checks, exit 0). No cluster job remains running. Public deployment and a new-public-origin browser test remain pending via the existing GitHub workflow. No owner answer is required.
+- **Next:** Release the verified snapshot through GitHub, then verify the live site and public/local connection behavior.
 - **Git:** Work on `agent/question-conditioned-navigation`, push checkpoints to `OscarBarreraGithub/Eigenquestions`; release to `main` after validation. Coordinator: `/root`.
 
 ## Requests
@@ -85,3 +85,11 @@
 **Change.** Astra site preserves the same projected coordinates on mobile while using readable numbered markers and full direction cards. Astra protocol now checks marker/font/tap-target sizes, clicks a real marker and restores Back, and separately tests public browser computation even if public-to-localhost attachment is blocked. The portable skill now explicitly preserves the physical application after following a mathematical method.
 
 **Observed/next.** All 21 local tests and 41 shard checks pass. The engine and corpus remain unchanged, so the earlier independent session is still replayable. The earlier screenshot and failed query-shortening experiment remain preserved. Run the amended browser check on a frozen checkpoint before release; then verify public asset identity and retirement of the old routes.
+
+**Submission.** Corrected snapshot `f9e4e50718ef6c04b9517de804a920d15780b1b6` is pushed and remotely verified. Slurm job `58187676` received its exact Git archive with matching SHA-256; see [second browser receipt](docs/evidence/Q-001-browser-v2-job.json).
+
+## 2026-11-06 UTC — Q-001: Release gate passed
+
+**Observed.** Slurm job `58187676` completed in 27 seconds with all 14 checks passing, including readable mobile marker/font/tap dimensions and an actual marker selection followed by exact Back restoration. Root inspected the [mobile viewport screenshot](docs/evidence/browser-v2/mobile-chart-viewport.png); the fixed chart is readable. The engine/corpus still match the independent fresh-agent session. [Full result](docs/evidence/browser-v2/browser-acceptance.json).
+
+**Decision/next.** Release this validated static v1 using the configured GitHub main workflow. Public deployment and new-origin behavior are not yet claimed; verify exact served hashes, retired routes and a clean public-browser journey after the workflow succeeds.
