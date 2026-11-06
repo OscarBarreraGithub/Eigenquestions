@@ -22,10 +22,10 @@ research record. Astra implements; root coordinates, reviews and releases.
 | V2-10 | Make buttons, toggles and options large and discoverable. | Primary interactive targets are at least 44 CSS px; visible focus, selected and disabled states; comfortable readable labels and keyboard operation. | Verified: expanded phone controls + keyboard |
 | V2-11 | Make the layout responsive. | Screens at 1440, 1024 and 390 px (plus narrow overflow check) retain readable current choices/path and accessible controls without page-level horizontal overflow. | Verified: 1440/1024/390/320px |
 | V2-12 | Preserve source access and optional geometry. | Source rows/provenance remain accessible; geometry is a secondary view using the same computed result, with its limitations intact. | Verified: source reveal + retained geometry suite |
-| V2-13 | Preserve standalone and agent-driven navigation. | Both a public worker session and actual MCP/companion updates exercise v2 rows/path; revision acknowledgements and established permission fallback remain valid. | Local verified; public verification pending |
+| V2-13 | Preserve standalone and agent-driven navigation. | Both a public worker session and actual MCP/companion updates exercise v2 rows/path; revision acknowledgements and established permission fallback remain valid. | Verified: local + actual public browser |
 | V2-14 | Preserve import/export and v1 computational identity. | Existing sessions replay; corpus/engine/schema are unchanged unless an independently justified correction is coordinated. | Verified: import/replay and unchanged identity |
-| V2-15 | Call this v2 and deploy it to the existing domain. | Product shows v2, current domain serves the checked renderer, previous retired routes stay retired; no new hosting project or identity. | Ready for existing main deployment |
-| V2-16 | Keep a concise record and verified Git checkpoints. | Q-002 summary, meaningful decisions/failures, evidence and final state are in the one notebook; intended changes committed/pushed with Request/Agent credit and remote/deployment verification. | Active: checkpoints remotely verified; release pending |
+| V2-15 | Call this v2 and deploy it to the existing domain. | Product shows v2, current domain serves the checked renderer, previous retired routes stay retired; no new hosting project or identity. | Verified: deployed and exact public assets match |
+| V2-16 | Keep a concise record and verified Git checkpoints. | Q-002 summary, meaningful decisions/failures, evidence and final state are in the one notebook; intended changes committed/pushed with Request/Agent credit and remote/deployment verification. | Verified: checkpoints, release and evidence saved |
 
 ## Design and integration decisions
 
@@ -76,4 +76,4 @@ all 41 shard hashes, 19 v2 browser checks and the retained 14 geometry/agent
 checks. Independent visual review approves the compacted desktop and phone
 layouts. Evidence: [v2 report](evidence/q002/browser-v2/q002-browser-acceptance.json),
 [retained report](evidence/q002/browser-v2-legacy/browser-acceptance.json),
-[design review](Q-002-design-reference.md). Public verification remains pending.
+[design review](Q-002-design-reference.md). Public verification passed: [19 v2 checks](evidence/q002/public-v1/q002-browser-acceptance.json), [19 retained/public checks](evidence/q002/public-v1-legacy/browser-acceptance.json), and [exact assets/routes](evidence/q002/publication-v1.json).

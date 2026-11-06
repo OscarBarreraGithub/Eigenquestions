@@ -2,11 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions v2 — can the dynamic graph/vector navigator feel like the old text explorer, with classic arXiv clarity and immediate controls?
-- **Known:** Verified v1 is live. The old viewer used text/Miller columns with burgundy, white and blue links. The numerical engine and corpus can stay fixed while the interface changes. Review found draft-overwrite, dropped-action and stale-response hazards to fix.
-- **Unfinished/running:** Compacted v2 passed 19 browser interaction checks plus the retained 14 geometry/agent checks in job `58207325`; final visual review/publication is next. Q-003 agent access is in read-only architecture review. Reference-capture job `58203240` completed successfully; desktop/mobile references are saved. A stale browser rebase needs an atomic bridge revision guard. No owner answer is required.
-- **Next:** Compact the mobile controls based on screenshots, verify the final layouts and historical branching, then publish through the existing workflow.
-- **Git:** Work on `agent/arxiv-text-explorer-v2` from `4e14ab8`; use the existing repository and main deployment. Coordinator: `/root`.
+- **Project/question:** Eigenquestions. V2 text-first interface is live; Q-003 asks what structured object lets an agent orient itself and deliver a reproducible view to the browser, potentially through a URL.
+- **Known:** V2 passed 23 Node tests, 19 public v2 browser checks and 19 retained/public checks. Public assets match the release. The same deterministic engine/corpus are preserved.
+- **Unfinished/running:** No cluster jobs remain running. Q-003 is architecture discussion only; no new agent API/URL protocol has been implemented. The owner is clarifying agent-computed neighborhood/plane objects versus browser reconstruction.
+- **Next:** Refine and save the mathematical view contract, preserving independent agent research and the distinction between discovery, computation and delivery.
+- **Git:** V2 release `dbb7d0e` is verified on main and deployed. Coordinator `/root`; Astra owns implementation.
 
 ## Requests
 
@@ -189,3 +189,15 @@
 **Next.** Independent visual signoff and the saved retained-suite result complete the local release gate. Publish v2 through the existing main workflow, then verify the actual public renderer. Q-003 remains a separate addition; the owner clarified that its primary path must be agent actions on a shared machine-readable object, with deterministic computation and automatic browser rendering. Crawling is discovery/fallback, not a replacement for that object.
 
 **Release decision.** The retained suite also passes all 14 checks. Independent Astra design review approves the compacted desktop, top-of-phone, narrow-phone and empty-path views with no remaining visual blocker. Release the verified v2; the primary browser/agent object remains the foundation for Q-003.
+
+## 2026-11-06 UTC — Q-002: Publish the verified v2 interface
+
+**Observed.** Main now contains `dbb7d0e7f00e23ef41e251b9577a622ee9110992`, verified remotely. [Deployment 42168891783](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42168891783) succeeded. The actual domain matches all nine checked assets; all 32 retired-route status checks pass. [Publication receipt](docs/evidence/q002/publication-v1.json).
+
+**Next.** Public browser job `58208591` tests both suites against the actual domain. It reuses frozen `cb0b412` product source; the published checkpoint adds only notebook/audit/evidence files. [Job receipt](docs/evidence/q002/public-v1-job.json). No source/runtime changes are being mixed into this verification while Q-003 architecture is discussed.
+
+## 2026-11-06 UTC — Q-002: Complete public v2 verification
+
+**Observed.** Public job `58208591` completed in 2m06s, exit 0. All 19 v2 checks and 19 retained/public checks pass against the actual domain, including independent browser computation, guarded live-agent updates, replay/import, source reveal, historical branching, mobile settings, geometry legibility and permission-blocked companion recovery. The public first-load measurement was 9.285s; warm presentation p95 was 30.1ms with no observed long tasks in that sample. These are measurements on the tested headless environment, not promises for every connection. [V2 public report](docs/evidence/q002/public-v1/q002-browser-acceptance.json) · [retained/public report](docs/evidence/q002/public-v1-legacy/browser-acceptance.json).
+
+**Outcome.** Q-002 is complete at the requested v2 scope: a live text-column explorer, classic arXiv visual treatment, clear path/New path, large controls and tested asynchronous behavior. All release assets and retired routes match. No cluster job is left running. Q-003 discussion continues separately; it must preserve the original agent → structured object → deterministic computation → rendered view architecture.

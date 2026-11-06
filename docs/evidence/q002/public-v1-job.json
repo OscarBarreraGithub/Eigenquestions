@@ -1,0 +1,21 @@
+{
+  "request": "Q-002",
+  "jobId": "58208591",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "cb0b412a2cd64c8fbc96c76180a3e7967a54beb7",
+  "publishedCommit": "dbb7d0e7f00e23ef41e251b9577a622ee9110992",
+  "productSourceUnchanged": true,
+  "note": "Reuse frozen project; published checkpoint adds notebook, acceptance and evidence only. Public assets independently hash-verified.",
+  "submittedUtc": "2026-11-06T05:35:13.156005+00:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-002/public-v1",
+  "statusAtReceipt": "completed",
+  "suites": [
+    "q002_browser_acceptance.py --standalone-origin https://eigenquestions.com",
+    "browser_acceptance.py --public-ui"
+  ],
+  "elapsed": "00:02:06",
+  "exitCode": "0:0",
+  "v2ChecksPassed": 19,
+  "legacyPublicChecksPassed": 19
+}
