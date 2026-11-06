@@ -3,9 +3,9 @@
 ## Now
 
 - **Project/question:** Eigenquestions — can a conversation select useful, reproducible local views of a physics graph/vector space, with about five directions at a time?
-- **Known:** Real 384-dimensional question/method vectors and graph layers drive contextual navigation. The selected chart shows five dynamic direction-group means; source overlays remain substantially distorted. Context refresh, exact replay and computation identity are implemented. Component/integration checks pass; the old public site remains until release validation.
-- **Unfinished/running:** Astra geometry/protocol owners are finishing evidence; the site owner has delivered a stable build. A fresh Astra agent is independently trying the portable skill on an axion journey. Authorized Slurm browser acceptance is being prepared; no Q-001 cluster job submitted yet. Deployment remains pending via the existing GitHub workflow. No owner answer is required.
-- **Next:** Save the working prototype checkpoint, run actual MCP → browser acceptance, inspect screenshots and the independent trial, then release after resolving observed defects.
+- **Known:** Real graph/vector navigation, five-direction charts and local agent updates work in the tested browser. Slurm job `58185518` completed with all 12 browser checks passing. The independent axion trial succeeded with explicit recovery from context drift. Coarse geometry is useful for navigation; source-level distances remain substantially distorted.
+- **Unfinished/running:** Astra site has corrected tiny mobile chart labels; Astra protocol added readability/tap tests and public verification checks. The corrected mobile view awaits a new browser run. No cluster job is running. Public deployment and a new-public-origin browser test remain pending via the existing GitHub workflow. No owner answer is required.
+- **Next:** Save acceptance evidence and the mobile fix, release through GitHub, and verify the live site and public/local connection behavior.
 - **Git:** Work on `agent/question-conditioned-navigation`, push checkpoints to `OscarBarreraGithub/Eigenquestions`; release to `main` after validation. Coordinator: `/root`.
 
 ## Requests
@@ -61,3 +61,27 @@
 **Observed.** Across seven comparison contexts, the centroid chart retained about 59–70% of between-group variance, versus about 13–17% for the source-point chart. Between-group nearest-neighbor retention still ranged from 20% to 100%; better coarse variance does not establish reliable adjacency. The site owner reports 16 passing tests, 41 verified corpus shard hashes, static route checks and a successful local hosting dry-run. These are not yet live browser or deployment results. [Numerical evidence](tests/geometry/direction-chart-results.json) · [navigation contract](docs/navigation-contract.md) · [agent skill](skills/physics-navigator/SKILL.md).
 
 **Decision/next.** Use the five-group chart, disclose source distortion separately and keep labels/evidence central. Preserve prior unsuccessful approaches. A browser must acknowledge a specific rendered revision before an agent reports that its update was displayed. The first saved planning checkpoint is verified on the configured GitHub branch at `b28c9dbf8b09da4c2cafea4ecef49cdeac307f41`; the next checkpoint will preserve the working prototype before Slurm browser validation. The old public deployment baseline is recorded in [the release evidence](docs/evidence/Q-001-public-baseline.json).
+
+## 2026-11-06 UTC — Q-001: Freeze a version for independent browser acceptance
+
+**Question.** Does the full agent-to-browser chain work beyond Node-level tests?
+
+**Tried/contributors.** `/root` verified 20 passing tests and all 41 shard hashes, committed the Astra implementation as `47374b8812649a758ff891833ab4ca389864cfcc`, pushed the working branch and checked the remote SHA. A Git archive with matching local/cluster SHA-256 was submitted as Slurm job `58185518` under `randall_lab`. The job builds that exact source and runs Astra protocol's real MCP/browser journey tests without browser-security bypasses.
+
+**Observed/next.** Submission succeeded; browser results are pending. A separate fresh Astra skill trial found that selecting a long extraction can dilute the scientific question; explicit question/source anchors recovered the intended axion/EDE route. A bounded comparison of shorter direction queries is underway before deciding whether to change that behavior. [Job receipt](docs/evidence/Q-001-browser-job.json) · [local validation](docs/evidence/Q-001-prototype-validation.json).
+
+## 2026-11-06 UTC — Q-001: Full browser chain passes; preserve the limits
+
+**Question.** Are the integrated navigation behavior and portable skill useful outside their implementers' tests?
+
+**Observed.** Slurm job `58185518` completed in 27 seconds with exit 0. Its 12 browser checks passed, including real MCP-driven owner and held-out journeys, current-render acknowledgements, five markers/source overlay, replay/import, reload and mobile overflow; no page errors occurred. Root inspected both screenshots. The desktop view was readable; narrow-screen chart labels were too small despite the overflow test, so Astra site is correcting that. The public-origin probe was blocked while the old site was live; it does not establish the replacement's policy behavior. [Browser report and screenshots](docs/evidence/browser-v1/browser-acceptance.json).
+
+**Independent trial/decision.** Fresh Astra agent `/root/fresh_navigator_trial` used the skill for eight axion/WGC/EDE steps, inspected actual papers and saved a replayable session. It recovered context drift with explicit physical questions and source anchors. A proposed generic first-sentence shortening failed to improve EDE, KK and entropy comparisons; retain full source queries and teach deliberate physical-context recovery. Paper reading also exposed a lattice-WGC counterexample caveat absent from a short nomination. These are reasons to preserve evidence access, not claims of a new physics discovery. [Trial](docs/evidence/fresh-agent-trial.md) · [session](docs/evidence/fresh-agent-session.json) · [failed alternative](tests/geometry/selection-query-results.json).
+
+**Next.** Complete the small mobile/instruction changes, publish the static replacement and test the actual public renderer. No scientific correctness claim is inferred from passing transport or browser checks.
+
+## 2026-11-06 UTC — Q-001: Turn visual and independent-agent findings into checks
+
+**Change.** Astra site preserves the same projected coordinates on mobile while using readable numbered markers and full direction cards. Astra protocol now checks marker/font/tap-target sizes, clicks a real marker and restores Back, and separately tests public browser computation even if public-to-localhost attachment is blocked. The portable skill now explicitly preserves the physical application after following a mathematical method.
+
+**Observed/next.** All 21 local tests and 41 shard checks pass. The engine and corpus remain unchanged, so the earlier independent session is still replayable. The earlier screenshot and failed query-shortening experiment remain preserved. Run the amended browser check on a frozen checkpoint before release; then verify public asset identity and retirement of the old routes.

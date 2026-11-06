@@ -1,0 +1,960 @@
+{
+  "computationId": "1.0.0:c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34:848832f277bbc1c24806aa235b0b37625e1dcdc4709c443fd6fc9813f5227ae9:ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839",
+  "method": "Same source seed vector, derive intent and method lens; only selected query wording changes. Current exact-self-direction guard is unchanged. Context-term mentions are qualitative aids, not judged retrieval precision. The EDE source and full query were supplied by an independent evaluator after finding drift.",
+  "records": [
+    {
+      "name": "independent EDE source",
+      "seedId": "unit:3fa3b7d19670eb7682119b977121ccbfae92ca74387fefb633cc52010086e3c3",
+      "contextTerms": [
+        "axion",
+        "early dark energy",
+        "EDE",
+        "weak gravity"
+      ],
+      "selectedSource": {
+        "id": "unit:3fa3b7d19670eb7682119b977121ccbfae92ca74387fefb633cc52010086e3c3",
+        "paperId": "2203.05575",
+        "title": "Constraints on early dark energy from the axion weak gravity conjecture",
+        "text": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff². Substitution into the axion WGC produces an n-independent inequality involving feff and a logarithm of ΛUV⁴/(feff²mχ²). The bound is evaluated for representative EDE parameters.",
+        "lens": "method",
+        "url": "https://arxiv.org/abs/2203.05575",
+        "year": 2022,
+        "date": "2022-03",
+        "datePrecision": "month",
+        "kind": "source_scoped_extraction",
+        "facetIds": [
+          "facet:005a156a8b05cd347a8e9cd0682dd30b"
+        ],
+        "sourceRecordIds": [
+          "record:1a2209398541ee3c1bc1b7a5b8a66592"
+        ],
+        "sourceNodeIds": [
+          "obj:91d2624fc86c18b015eb:method:31e6c493a8bc9b4f4a25d063"
+        ],
+        "textSha256": "a7313545506ae72c1ae7aebbb20aa20b36cf14e97ea5607372a0d6fe226c8d64",
+        "originalEmbeddingRows": [
+          207347
+        ],
+        "anchors": [
+          "ev:2f8cc4e60a228fbeba15e7bf7fd9ca4e",
+          "ev:48776c82803e234c64b1bc80f44f55d1",
+          "ev:b201404696b0c52cade00c1159af2636"
+        ],
+        "sourceSha256": "ec43d068936b42cb343bb216635c06aa2a0eee7e96906175a2a3ed0e8c9d0626",
+        "reviewStatus": "source_backed_first_pass",
+        "readingScopeId": "a63e6294fa029429c6b59ffdeb434ed8ab9981d35ce6ef71568a5db44310ed3f",
+        "claimStatus": "retrieval_nomination_only; not independent scientific certification",
+        "readingScope": {
+          "derivation_reproduction": false,
+          "low_text_pages": [],
+          "omitted_pages": [],
+          "paper_page_count": 7,
+          "supplied_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "text_coverage": "all_text_pages",
+          "visual_verification": false
+        }
+      },
+      "queryLengths": {
+        "full": 266,
+        "firstSentence": 88
+      },
+      "top10Overlap": 0.5,
+      "allText": {
+        "query": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff². Substitution into the axion WGC produces an n-independent inequality involving feff and a logarithm of ΛUV⁴/(feff²mχ²). The bound is evaluated for representative EDE parameters.",
+        "contextTerms": [
+          "early",
+          "dark",
+          "constraint",
+          "energy"
+        ],
+        "selectedSourceRank": 1,
+        "selectedSourceOfferedAgain": false,
+        "top": [
+          {
+            "id": "unit:3fa3b7d19670eb7682119b977121ccbfae92ca74387fefb633cc52010086e3c3",
+            "paperId": "2203.05575",
+            "title": "Constraints on early dark energy from the axion weak gravity conjecture",
+            "text": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff². Substitution into the axion WGC produces an n-independent inequality involving feff and a logarithm of ΛUV⁴/(feff²mχ²). The bound is evaluated for representative EDE parameters.",
+            "score": 1.0152674674074638
+          },
+          {
+            "id": "unit:b71a5fde1aec94b5c4ced257ba094ee3eeb0db525fbcd83a214ace6d4cd7a467",
+            "paperId": "2302.04962",
+            "title": "Quantum cosmology, eternal inflation, and swampland conjectures",
+            "text": "Leading semiclassical instanton comparison using P_nuc ∝ exp(−|S_E|), so the smallest action magnitude dominates. Near the transition, a domain-wall ansatz and illustrative quartic potential supplement the negative-mode argument.",
+            "score": 0.11641972023319874
+          },
+          {
+            "id": "unit:89c11e984279e463a2196487ec3b176a82228ea20efc9f0cd9206abfaa4cb64f",
+            "paperId": "1910.08691",
+            "title": "Electroweak Quintessence Axion as Dark Energy",
+            "text": "Constrained-instanton calculus estimates the electroweak vacuum energy after inserting higher-dimensional B+L-violating operators. The instanton-size integral is dominated by small instantons near the assumed Planck cutoff.",
+            "score": 0.09537755727507698
+          },
+          {
+            "id": "unit:a475d818f1c31ee98e50542f55ae3970b1244a87a1ed6fd525b6a8b1fb7904ee",
+            "paperId": "0912.1341",
+            "title": "Dante's Inferno",
+            "text": "Estimate instanton amplitudes through Λ⁴ proportional to e^(−SED1), and assess decay-constant hierarchies using cycle geometry and warping. Compare induced D3 charge and NS5 worldvolume KK masses parametrically with the single-axion monodromy construction.",
+            "score": 0.09068372666831896
+          },
+          {
+            "id": "unit:1fd372a9d25d5ba0727c825ad6565298601e8f6610f6ecb188e1071c95d8c356",
+            "paperId": "hep-th/0607086",
+            "title": "Cosmological Constant and Axions in String Theory",
+            "text": "Dimensional reduction of higher-form kinetic terms on normalized harmonic forms estimates axion decay constants; wrapped worldsheet, membrane and D-brane actions connect these constants to instanton suppression.",
+            "score": 0.08785463198894423
+          },
+          {
+            "id": "unit:5f177209df434b281ecd2e0079c72eb1d0c076f378d499eaaa256b878e6c1120",
+            "paperId": "1509.06374",
+            "title": "Sharpening the Weak Gravity Conjecture with Dimensional Reduction",
+            "text": "Evaluate Euclidean instanton actions with Gibbons–Hawking–York boundary terms, reduce the on-shell action to boundary contributions, and minimize over the core parameter. Compare the resulting boundary expression with the higher-dimensional ADM mass.",
+            "score": 0.0867653450093917
+          },
+          {
+            "id": "unit:862146f06a32a0342980194e6b2456779bbf59ce7f90edc163b08189ae2da0d8",
+            "paperId": "1605.05311",
+            "title": "Axion Experiments to Algebraic Geometry: Testing Quantum Gravity via the Weak Gravity Conjecture",
+            "text": "Translate weak-gravity bounds into instanton-action constraints, CFT charge/dimension conditions, and wrapped-brane requirements on effective curve classes. These are sketches of applications rather than reproduced derivations.",
+            "score": 0.08576163497614239
+          },
+          {
+            "id": "unit:ad46d81fb29245212729be66d46b976384182b1731b3bd098c3317903dac0f12",
+            "paperId": "2406.09752",
+            "title": "Swampland bounds on magnetized extra dimensions",
+            "text": "Evaluate Euclidean instanton and background actions, including membrane, gravitational and boundary terms. The imported semiclassical decay prescription is Γ=P exp(−B), with B=S_E[instanton]−S_E[background] and P accounting for quantum fluctuations.",
+            "score": 0.08444558566596236
+          },
+          {
+            "id": "unit:ac66700758bb0103e0dbb3be665c8b406b32779f059eb469ae9148e2d5736df2",
+            "paperId": "1811.07378",
+            "title": "Axion Hilltops, Kahler Modulus Quintessence and the Swampland Criteria",
+            "text": "Sum dilute, widely separated instanton and anti-instanton saddles, then extract the axionic potential from the logarithm. This separates the universal combinatorics from the compactification-dependent action and prefactors.",
+            "score": 0.08307884513019179
+          },
+          {
+            "id": "unit:c3cee23ef90510d820c7ffdbdfe8c27fcd6ff7c6bd02ddacdbe5a82de7f65fa6",
+            "paperId": "1607.01203",
+            "title": "Weak Gravity Conjecture as a Razor Criterium for Exotic D-brane instantons",
+            "text": "The author applies the generalized tension bound T_p ≤ M_Pl^(p+1) Q, with Q described as a sum of D-brane charges, to E2 instantons. The resulting geometric bounds are combined with semiclassical and proposed quantum-gravity calculability bounds.",
+            "score": 0.08254516204546876
+          }
+        ],
+        "directions": [
+          {
+            "label": "Leading semiclassical instanton comparison using P_nuc ∝ exp(−|S_E|), so the smallest action magnitude dominates.",
+            "seedIds": [
+              "unit:b71a5fde1aec94b5c4ced257ba094ee3eeb0db525fbcd83a214ace6d4cd7a467"
+            ],
+            "query": "Leading semiclassical instanton comparison using P_nuc ∝ exp(−|S_E|), so the smallest action magnitude dominates. Near the transition, a domain-wall ansatz and illustrative quartic potential supplement the negative-mode argument."
+          },
+          {
+            "label": "Combine the electric axion WGC, an assumed gauge-instanton action, and the WGC for the dual two-form to bound string tension.",
+            "seedIds": [
+              "unit:c6186ab72e52e30e39e2ce551ab5c9eca699ce2b21ab18e6f597f01ffc6aa0d6"
+            ],
+            "query": "Combine the electric axion WGC, an assumed gauge-instanton action, and the WGC for the dual two-form to bound string tension. Apply anomaly inflow to relate axion strings to charged excitations."
+          },
+          {
+            "label": "Combine the thermal-equilibrium lower bound on λ with the imported neutrino-streaming constraint gs < 10⁻⁷/κ², the…",
+            "seedIds": [
+              "unit:ed34dd36f4e48c4e43ca5686752969d62855b65f0d8dcfe11ab0401bb0bd3514"
+            ],
+            "query": "Combine the thermal-equilibrium lower bound on λ with the imported neutrino-streaming constraint gs < 10⁻⁷/κ², the generated mass ms = gs vΨ, and m3 ≃ msκ². This produces a consistency bound tying the heaviest active-neutrino mass to phenomenological NEDE parameters."
+          },
+          {
+            "label": "Constrained-instanton calculus estimates the electroweak vacuum energy after inserting higher-dimensional B+L-violating…",
+            "seedIds": [
+              "unit:89c11e984279e463a2196487ec3b176a82228ea20efc9f0cd9206abfaa4cb64f"
+            ],
+            "query": "Constrained-instanton calculus estimates the electroweak vacuum energy after inserting higher-dimensional B+L-violating operators. The instanton-size integral is dominated by small instantons near the assumed Planck cutoff."
+          },
+          {
+            "label": "Dimensional reduction of higher-form kinetic terms on normalized harmonic forms estimates axion decay constants; wrapped…",
+            "seedIds": [
+              "unit:1fd372a9d25d5ba0727c825ad6565298601e8f6610f6ecb188e1071c95d8c356"
+            ],
+            "query": "Dimensional reduction of higher-form kinetic terms on normalized harmonic forms estimates axion decay constants; wrapped worldsheet, membrane and D-brane actions connect these constants to instanton suppression."
+          }
+        ]
+      },
+      "firstSentence": {
+        "query": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff².",
+        "contextTerms": [
+          "feff2m",
+          "uv4",
+          "feff",
+          "ede",
+          "substitution",
+          "logarithm"
+        ],
+        "selectedSourceRank": 1,
+        "selectedSourceOfferedAgain": true,
+        "top": [
+          {
+            "id": "unit:3fa3b7d19670eb7682119b977121ccbfae92ca74387fefb633cc52010086e3c3",
+            "paperId": "2203.05575",
+            "title": "Constraints on early dark energy from the axion weak gravity conjecture",
+            "text": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff². Substitution into the axion WGC produces an n-independent inequality involving feff and a logarithm of ΛUV⁴/(feff²mχ²). The bound is evaluated for representative EDE parameters.",
+            "score": 1.1298180111863292
+          },
+          {
+            "id": "unit:b71a5fde1aec94b5c4ced257ba094ee3eeb0db525fbcd83a214ace6d4cd7a467",
+            "paperId": "2302.04962",
+            "title": "Quantum cosmology, eternal inflation, and swampland conjectures",
+            "text": "Leading semiclassical instanton comparison using P_nuc ∝ exp(−|S_E|), so the smallest action magnitude dominates. Near the transition, a domain-wall ansatz and illustrative quartic potential supplement the negative-mode argument.",
+            "score": 0.14585627581711533
+          },
+          {
+            "id": "unit:e407f2d5d0699eb1072bbd30c4569aa5f0584c4549c0ac9d9289686d454c2590",
+            "paperId": "2112.04503",
+            "title": "PQ axiverse",
+            "text": "Estimate instanton amplitudes from divisor volumes, with action S=2πq·τ and leading BPS amplitudes proportional to (m3/2/V)|Aq|exp(−2πq·τ). Estimate Δθ using the first instanton whose charge, together with more dominant charges, spans the QCD charge.",
+            "score": 0.11959714854345685
+          },
+          {
+            "id": "unit:ac66700758bb0103e0dbb3be665c8b406b32779f059eb469ae9148e2d5736df2",
+            "paperId": "1811.07378",
+            "title": "Axion Hilltops, Kahler Modulus Quintessence and the Swampland Criteria",
+            "text": "Sum dilute, widely separated instanton and anti-instanton saddles, then extract the axionic potential from the logarithm. This separates the universal combinatorics from the compactification-dependent action and prefactors.",
+            "score": 0.11195642125492773
+          },
+          {
+            "id": "unit:3baf005412d0178ec0a5c4ff0bdd74d4e15245088fafcd63c1d0094298bdf4fd",
+            "paperId": "2404.05801",
+            "title": "Reflections on an M-theoretic Emergence Proposal",
+            "text": "Use Poisson resummation and modified Bessel functions to extract instanton actions. For Calabi–Yau topological amplitudes, sum D0/transverse-M2 contributions weighted by Gopakumar–Vafa indices.",
+            "score": 0.10898080863423343
+          },
+          {
+            "id": "unit:76ca609e6cca848cd98cedad332f62ec4b9c1757ceadf902382a35b9b8bd5777",
+            "paperId": "1508.00009",
+            "title": "On Natural Inflation and Moduli Stabilisation in String Theory",
+            "text": "Euclidean D2-instanton actions determine axion potentials and mass hierarchies. Heavy fields are integrated out, while the axion kinetic matrix is canonically normalized using DᵀK″D=I before projecting onto the light direction.",
+            "score": 0.10364709443958431
+          },
+          {
+            "id": "unit:a475d818f1c31ee98e50542f55ae3970b1244a87a1ed6fd525b6a8b1fb7904ee",
+            "paperId": "0912.1341",
+            "title": "Dante's Inferno",
+            "text": "Estimate instanton amplitudes through Λ⁴ proportional to e^(−SED1), and assess decay-constant hierarchies using cycle geometry and warping. Compare induced D3 charge and NS5 worldvolume KK masses parametrically with the single-axion monodromy construction.",
+            "score": 0.1035038072335874
+          },
+          {
+            "id": "unit:25537933f34c3c78e4b72a2055b64829f10b55c5b689d412f73d267176014313",
+            "paperId": "1603.01259",
+            "title": "Systematics of Axion Inflation in Calabi-Yau Hypersurfaces",
+            "text": "From W = W0 + Σ Aα exp(−2πqα_i T^i), the potential charge matrix includes both 2πqα_i and pairwise differences. Dominant instantons are selected by decreasing amplitude, retaining linearly independent rows until a square full-rank matrix is obtained.",
+            "score": 0.10177936905418278
+          },
+          {
+            "id": "unit:adcd3475991272c07cddea389fc3d5ce8a696e11a0a44ced4d6f264120c41639",
+            "paperId": "2401.01939",
+            "title": "The Standard Model from String Theory: What Have We Learned?",
+            "text": "Dimensional reduction of higher-dimensional actions computes axionic couplings and instanton effects. For Euclidean Dp-branes wrapping compact (p+1)-cycles, the displayed action has real part 2πV(Σ)/g_s and an RR-potential integral supplying the axion phase.",
+            "score": 0.10085033724221645
+          },
+          {
+            "id": "unit:ad46d81fb29245212729be66d46b976384182b1731b3bd098c3317903dac0f12",
+            "paperId": "2406.09752",
+            "title": "Swampland bounds on magnetized extra dimensions",
+            "text": "Evaluate Euclidean instanton and background actions, including membrane, gravitational and boundary terms. The imported semiclassical decay prescription is Γ=P exp(−B), with B=S_E[instanton]−S_E[background] and P accounting for quantum fluctuations.",
+            "score": 0.09987016398633179
+          }
+        ],
+        "directions": [
+          {
+            "label": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff².",
+            "seedIds": [
+              "unit:3fa3b7d19670eb7682119b977121ccbfae92ca74387fefb633cc52010086e3c3"
+            ],
+            "query": "The instanton action is related to the potential amplitude through mχ²=ΛUV⁴e^(−S)/feff². Substitution into the axion WGC produces an n-independent inequality involving feff and a logarithm of ΛUV⁴/(feff²mχ²). The bound is evaluated for representative EDE parameters."
+          },
+          {
+            "label": "Open-string disc interactions implement bosonic and fermionic ADHM constraints for gauge instantons.",
+            "seedIds": [
+              "unit:f3b762805e2410686f4660961069065c93bcffb1d2105e1b91464bf2bc60b1c0"
+            ],
+            "query": "Open-string disc interactions implement bosonic and fermionic ADHM constraints for gauge instantons. Annulus/Möbius amplitudes are related to auxiliary-brane gauge thresholds through the Kaplunovsky–Louis formula, with explicitly integrated zero modes removed from determinants to prevent double counting."
+          },
+          {
+            "label": "Uses holomorphy of supersymmetric Euclidean D3 instanton actions to identify real parts of chiral coordinates from their…",
+            "seedIds": [
+              "unit:531b0962296fb2c27708766bcf49011692666380c6e87b4a342fca8f80b6c301"
+            ],
+            "query": "Uses holomorphy of supersymmetric Euclidean D3 instanton actions to identify real parts of chiral coordinates from their on-shell DBI actions. This avoids directly reconstructing globally problematic Chern–Simons potentials; vertical M5 instantons provide the dual interpretation."
+          },
+          {
+            "label": "Evaluate the on-shell half-wormhole action and resum a dilute gas of unit-charge instantons and anti-instantons.",
+            "seedIds": [
+              "unit:e9eab31a9adaa54142f0bf44428689524020aa2484769e4b79aefca6729dd9bb"
+            ],
+            "query": "Evaluate the on-shell half-wormhole action and resum a dilute gas of unit-charge instantons and anti-instantons. A Fourier representation of the constraint on charge change yields the η-dependent transition amplitude."
+          },
+          {
+            "label": "Dimensional reduction expands form potentials in harmonic forms and computes kinetic terms, wrapped-brane masses and…",
+            "seedIds": [
+              "unit:329e142a5c9b4bd1a2b34b34690a332460b78a106235b5649fb29fd33d3209b7"
+            ],
+            "query": "Dimensional reduction expands form potentials in harmonic forms and computes kinetic terms, wrapped-brane masses and instanton actions. The authors identify the same geometric ratio in e²MP²/m² and MP²/(Sf)², transferring the dipole FL constraint through this ratio without T-duality."
+          }
+        ]
+      }
+    },
+    {
+      "name": "KK derivation direction",
+      "seedId": "unit:a7d261186c94ec3c5487308e7d73fac851a2d2c885edb41d89580a10349b2524",
+      "contextTerms": [
+        "KK",
+        "Kaluza",
+        "tower",
+        "dimensional"
+      ],
+      "selectedSource": {
+        "id": "unit:a7d261186c94ec3c5487308e7d73fac851a2d2c885edb41d89580a10349b2524",
+        "paperId": "2306.15714",
+        "title": "On asymptotic dark energy in string theory",
+        "text": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle. Retaining its zero mode and first KK mode produces modified Bessel I0 interactions and permits illustrative nonzero KK-field extrema.",
+        "lens": "method",
+        "url": "https://arxiv.org/abs/2306.15714",
+        "year": 2023,
+        "date": "2023-06",
+        "datePrecision": "month",
+        "kind": "source_scoped_extraction",
+        "facetIds": [
+          "facet:da8e4490aa3522698308fa3144c1e6bc"
+        ],
+        "sourceRecordIds": [
+          "record:2f58e872a39551cbac2e3e66cb8c6b4d"
+        ],
+        "sourceNodeIds": [
+          "obj:4a31f303eab3eadfdeca:method:9d78ebb99d257d3039a62e46"
+        ],
+        "textSha256": "8f185a528de12211f76b49c00fb1ba8a248e2faa70b823905444295851bfc10a",
+        "originalEmbeddingRows": [
+          229348
+        ],
+        "anchors": [
+          "ev:274edee40d58020e73810ac666fd4403",
+          "ev:ad9b25a95ef92f2071d543ea122bb963"
+        ],
+        "sourceSha256": "58fd199508b7befd0d1b5806f0ac24804178263c025730ad72c600a6d6a87ecd",
+        "reviewStatus": "source_backed_first_pass",
+        "readingScopeId": "ee9d5d92b3bb29d7493958bcd8eed35b02997a9b3fbaa726eff3e065c6445144",
+        "claimStatus": "retrieval_nomination_only; not independent scientific certification",
+        "readingScope": {
+          "derivation_reproduction": false,
+          "low_text_pages": [],
+          "omitted_pages": [],
+          "paper_page_count": 29,
+          "supplied_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "text_coverage": "all_text_pages",
+          "visual_verification": false
+        }
+      },
+      "queryLengths": {
+        "full": 255,
+        "firstSentence": 121
+      },
+      "top10Overlap": 0.6,
+      "allText": {
+        "query": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle. Retaining its zero mode and first KK mode produces modified Bessel I0 interactions and permits illustrative nonzero KK-field extrema.",
+        "contextTerms": [
+          "asymptotic",
+          "dark",
+          "string",
+          "energy"
+        ],
+        "selectedSourceRank": 1,
+        "selectedSourceOfferedAgain": false,
+        "top": [
+          {
+            "id": "unit:a7d261186c94ec3c5487308e7d73fac851a2d2c885edb41d89580a10349b2524",
+            "paperId": "2306.15714",
+            "title": "On asymptotic dark energy in string theory",
+            "text": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle. Retaining its zero mode and first KK mode produces modified Bessel I0 interactions and permits illustrative nonzero KK-field extrema.",
+            "score": 1.000775356946029
+          },
+          {
+            "id": "unit:28c15f4090969131d3e7e652381b70f875a7b747f4b772400857e739415d4eb7",
+            "paperId": "hep-ph/0008333",
+            "title": "Theories in more than four dimensions",
+            "text": "Fourier expansion on a circle of circumference 2πR produces a four-dimensional KK tower. The displayed scalar expansion distinguishes zero-mode normalization 1/√(2πR) from excited-mode normalization 1/√(πR); brane interactions consequently distinguish their coupling strengths.",
+            "score": 0.13357618693382703
+          },
+          {
+            "id": "unit:6d9f06a6356b4d11a546302be6a392332e0f990eb04fb464400700c511bbd562",
+            "paperId": "2512.16389",
+            "title": "Compactified 2HDM under the Non-SUSY AdS instability conjecture",
+            "text": "Circle dimensional reduction and scalar KK expansion are followed by a Coleman–Weinberg tower contribution with field-dependent masses Meff,n² = Mi²(Φ) + n²/R². Only scalar fluctuations enter the implemented loop potential.",
+            "score": 0.10262410674203466
+          },
+          {
+            "id": "unit:10a3eed15e416dd0664a6cd5a510ee82b8d606aba9eb55e103451c5f144a4ab6",
+            "paperId": "1606.08437",
+            "title": "Evidence for a sublattice weak gravity conjecture",
+            "text": "Fourier-expand KK fields, impose orbifold projections and identify surviving zero-internal-mode towers. Compare their masses with black-hole extremality bounds obtained through consistent truncations and toroidal reduction.",
+            "score": 0.08522026263899066
+          },
+          {
+            "id": "unit:0886c0c117521149cd7687fcf766e9314712be363ad0f5a61f0fdf63c854208d",
+            "paperId": "1812.09714",
+            "title": "Stability and vacuum energy in open string models with broken supersymmetry",
+            "text": "One-loop vacuum amplitudes combine torus, Klein bottle, annulus and Möbius strip contributions. Poisson resummation, unfolding the modular fundamental domain, and modified-Bessel-function asymptotics isolate dominant KK contributions from exponentially suppressed heavy states.",
+            "score": 0.08359196123734908
+          },
+          {
+            "id": "unit:157bb747726b8a53468bf565a6c2e94f5e5b0c0b6c57254b6bf31dc2692c9752",
+            "paperId": "hep-ph/0205237",
+            "title": "Natural Theories of Ultralow Mass PNGB's: Axions and Quintessence",
+            "text": "Wilson latticization regulates the extra-dimensional theory; Fourier diagonalization produces a finite KK tower with M_p^2 = 4v^2 sin^2(πp/N), together with the gauge and scalar zero modes.",
+            "score": 0.08311782545627416
+          },
+          {
+            "id": "unit:3949351ff2eace3a77a72b2259232f2d5d3b45faa1277e31c755e30ac88a9338",
+            "paperId": "2306.07335",
+            "title": "Aspects of dynamical cobordism in AdS/CFT",
+            "text": "Reduce first on S²×S² to six dimensions, then project the remaining angular dependence onto asymptotic KK zero modes to extract five-dimensional metric and scalar profiles. Use analytic single-stack examples and numerical breathing/squashing profiles to characterize the ETW region.",
+            "score": 0.0811258811031156
+          },
+          {
+            "id": "unit:03021dbd30993f8a1d068e60a6282933eaa215a13cf1eb313243bf3f117a5dfb",
+            "paperId": "2408.12302",
+            "title": "Emergent potentials and non-perturbative open topological strings",
+            "text": "Model each domain wall by an auxiliary field Y with superpotential −zY−exp(−Y); eliminating Y gives z(log z−1). Sum the KK tower using regularization, then represent its leading contribution by a contour that includes the zero pole in the conifold case.",
+            "score": 0.07859370324157043
+          },
+          {
+            "id": "unit:d02f335f85415f49576721cad80b8700576f0c60e2100f119228b86e26fbd73d",
+            "paperId": "2202.04489",
+            "title": "4D dS vacua from AdS vacua of type IIB string theory and the AdS distance conjecture",
+            "text": "For KK fields, expand the Λ4 = 0 profile through order κ² at small κ. Solve the resulting mode equations using even Hermite polynomials and confluent hypergeometric functions, imposing equal endpoint values.",
+            "score": 0.07718558765279186
+          },
+          {
+            "id": "unit:92d9a0cab14727fbafafff4d535034cdf91c434de50b1c14f7ab5214a0942f52",
+            "paperId": "2511.19392",
+            "title": "Constraining strongly warped extra dimensions with rotating black holes",
+            "text": "Apply imported polynomial fits for the dominant spin-2 dipole frequency to compute τinst=1/ωI. Exclude Regge-plane points using τinst < τS, with Salpeter time τS≈4.5×10^7 yr as an accretion spin-up proxy; sum unstable-mode rates for the KK tower.",
+            "score": 0.07450291957461665
+          }
+        ],
+        "directions": [
+          {
+            "label": "Fourier expansion on a circle of circumference 2πR produces a four-dimensional KK tower.",
+            "seedIds": [
+              "unit:28c15f4090969131d3e7e652381b70f875a7b747f4b772400857e739415d4eb7"
+            ],
+            "query": "Fourier expansion on a circle of circumference 2πR produces a four-dimensional KK tower. The displayed scalar expansion distinguishes zero-mode normalization 1/√(2πR) from excited-mode normalization 1/√(πR); brane interactions consequently distinguish their coupling strengths."
+          },
+          {
+            "label": "Circle dimensional reduction and scalar KK expansion are followed by a Coleman–Weinberg tower contribution with…",
+            "seedIds": [
+              "unit:6d9f06a6356b4d11a546302be6a392332e0f990eb04fb464400700c511bbd562"
+            ],
+            "query": "Circle dimensional reduction and scalar KK expansion are followed by a Coleman–Weinberg tower contribution with field-dependent masses Meff,n² = Mi²(Φ) + n²/R². Only scalar fluctuations enter the implemented loop potential."
+          },
+          {
+            "label": "Model each domain wall by an auxiliary field Y with superpotential −zY−exp(−Y); eliminating Y gives z(log z−1).",
+            "seedIds": [
+              "unit:03021dbd30993f8a1d068e60a6282933eaa215a13cf1eb313243bf3f117a5dfb"
+            ],
+            "query": "Model each domain wall by an auxiliary field Y with superpotential −zY−exp(−Y); eliminating Y gives z(log z−1). Sum the KK tower using regularization, then represent its leading contribution by a contour that includes the zero pole in the conifold case."
+          },
+          {
+            "label": "Reduce first on S²×S² to six dimensions, then project the remaining angular dependence onto asymptotic KK zero modes to…",
+            "seedIds": [
+              "unit:3949351ff2eace3a77a72b2259232f2d5d3b45faa1277e31c755e30ac88a9338"
+            ],
+            "query": "Reduce first on S²×S² to six dimensions, then project the remaining angular dependence onto asymptotic KK zero modes to extract five-dimensional metric and scalar profiles. Use analytic single-stack examples and numerical breathing/squashing profiles to characterize the ETW region."
+          },
+          {
+            "label": "Fourier-expand KK fields, impose orbifold projections and identify surviving zero-internal-mode towers.",
+            "seedIds": [
+              "unit:10a3eed15e416dd0664a6cd5a510ee82b8d606aba9eb55e103451c5f144a4ab6"
+            ],
+            "query": "Fourier-expand KK fields, impose orbifold projections and identify surviving zero-internal-mode towers. Compare their masses with black-hole extremality bounds obtained through consistent truncations and toroidal reduction."
+          }
+        ]
+      },
+      "firstSentence": {
+        "query": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle.",
+        "contextTerms": [
+          "i0",
+          "illustrative",
+          "bessel",
+          "extrema",
+          "nonzero",
+          "permit"
+        ],
+        "selectedSourceRank": 1,
+        "selectedSourceOfferedAgain": true,
+        "top": [
+          {
+            "id": "unit:a7d261186c94ec3c5487308e7d73fac851a2d2c885edb41d89580a10349b2524",
+            "paperId": "2306.15714",
+            "title": "On asymptotic dark energy in string theory",
+            "text": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle. Retaining its zero mode and first KK mode produces modified Bessel I0 interactions and permits illustrative nonzero KK-field extrema.",
+            "score": 1.0799284710116934
+          },
+          {
+            "id": "unit:28c15f4090969131d3e7e652381b70f875a7b747f4b772400857e739415d4eb7",
+            "paperId": "hep-ph/0008333",
+            "title": "Theories in more than four dimensions",
+            "text": "Fourier expansion on a circle of circumference 2πR produces a four-dimensional KK tower. The displayed scalar expansion distinguishes zero-mode normalization 1/√(2πR) from excited-mode normalization 1/√(πR); brane interactions consequently distinguish their coupling strengths.",
+            "score": 0.14233066754207657
+          },
+          {
+            "id": "unit:6d9f06a6356b4d11a546302be6a392332e0f990eb04fb464400700c511bbd562",
+            "paperId": "2512.16389",
+            "title": "Compactified 2HDM under the Non-SUSY AdS instability conjecture",
+            "text": "Circle dimensional reduction and scalar KK expansion are followed by a Coleman–Weinberg tower contribution with field-dependent masses Meff,n² = Mi²(Φ) + n²/R². Only scalar fluctuations enter the implemented loop potential.",
+            "score": 0.11469804501491691
+          },
+          {
+            "id": "unit:315ac03ed03cac81160e59a8359fb6dcc3b966d1d404c5543bc814b70935474f",
+            "paperId": "2005.12935",
+            "title": "6d $ \\mathcal{N} $ = (1, 0) anomalies on S$^{1}$ and F-theory implications",
+            "text": "Integrate out massive Kaluza-Klein towers through parity-violating triangle amplitudes. Compare zeta regularization and mode-by-mode five-dimensional Pauli-Villars regulators with the circle reduction of a six-dimensional Pauli-Villars regulator.",
+            "score": 0.08036551462842662
+          },
+          {
+            "id": "unit:f80c795bd18ef5c67be3ba932cc9957f8cecbbadb47634f1778c62b23a2b8faf",
+            "paperId": "1709.09159",
+            "title": "Double-Trace Flows and the Swampland",
+            "text": "Compare probe-M2 self-energies or forces using the two phi2 quantizations. Residual flat directions may require higher-loop interactions with the entire KK tower.",
+            "score": 0.07816106492834395
+          },
+          {
+            "id": "unit:10a3eed15e416dd0664a6cd5a510ee82b8d606aba9eb55e103451c5f144a4ab6",
+            "paperId": "1606.08437",
+            "title": "Evidence for a sublattice weak gravity conjecture",
+            "text": "Fourier-expand KK fields, impose orbifold projections and identify surviving zero-internal-mode towers. Compare their masses with black-hole extremality bounds obtained through consistent truncations and toroidal reduction.",
+            "score": 0.07770518928479944
+          },
+          {
+            "id": "unit:e7e4ff88dafdcb3a92076c58c256477385d105ce7781a2e696df614e29fe0302",
+            "paperId": "1705.11071",
+            "title": "Extranatural Inflation Redux",
+            "text": "The potential is obtained from Coleman–Weinberg contributions of the charged matter KK tower. The reviewed massive-field expression contains exponential suppression; the light-mass limit gives cosine harmonics weighted by n^−5.",
+            "score": 0.07522378956944718
+          },
+          {
+            "id": "unit:3949351ff2eace3a77a72b2259232f2d5d3b45faa1277e31c755e30ac88a9338",
+            "paperId": "2306.07335",
+            "title": "Aspects of dynamical cobordism in AdS/CFT",
+            "text": "Reduce first on S²×S² to six dimensions, then project the remaining angular dependence onto asymptotic KK zero modes to extract five-dimensional metric and scalar profiles. Use analytic single-stack examples and numerical breathing/squashing profiles to characterize the ETW region.",
+            "score": 0.0744451925884357
+          },
+          {
+            "id": "unit:157bb747726b8a53468bf565a6c2e94f5e5b0c0b6c57254b6bf31dc2692c9752",
+            "paperId": "hep-ph/0205237",
+            "title": "Natural Theories of Ultralow Mass PNGB's: Axions and Quintessence",
+            "text": "Wilson latticization regulates the extra-dimensional theory; Fourier diagonalization produces a finite KK tower with M_p^2 = 4v^2 sin^2(πp/N), together with the gauge and scalar zero modes.",
+            "score": 0.07280667887919276
+          },
+          {
+            "id": "unit:8c9a960e15c7c1b831a3a48f891ee8dbdfd5aa02750ef9da8daa451daa13647e",
+            "paperId": "1812.07548",
+            "title": "The Swampland Distance Conjecture for Kähler moduli",
+            "text": "Separate the quadratic scale of unconstrained tensor coordinates, insert the KK ansatz, and reduce self-duality. The supplied procedure stops before eliminating two-forms or deriving the five-dimensional action and quantum corrections.",
+            "score": 0.07173454314841703
+          }
+        ],
+        "directions": [
+          {
+            "label": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle.",
+            "seedIds": [
+              "unit:a7d261186c94ec3c5487308e7d73fac851a2d2c885edb41d89580a10349b2524"
+            ],
+            "query": "For the conjectural tower mechanism, reduce a real five-dimensional scalar with two exponential interactions on a circle. Retaining its zero mode and first KK mode produces modified Bessel I0 interactions and permits illustrative nonzero KK-field extrema."
+          },
+          {
+            "label": "The authors linearize the five-dimensional Einstein equations, choose δϕ=E=F=0, eliminate the constrained fields Φ, B and…",
+            "seedIds": [
+              "unit:28a76b0927660360e33215f04ad26a74565677311ae8b63d4604c6b677d935be"
+            ],
+            "query": "The authors linearize the five-dimensional Einstein equations, choose δϕ=E=F=0, eliminate the constrained fields Φ, B and C, and use background identities to isolate two propagating scalar combinations, Θ and Ω."
+          },
+          {
+            "label": "Light-cone momentum integrals separate a kinematic exponential from an interaction kernel.",
+            "seedIds": [
+              "unit:09f2bd5651138327f0037a395b145833eb2a02670664cbdf1a1a9dff39903167"
+            ],
+            "query": "Light-cone momentum integrals separate a kinematic exponential from an interaction kernel. Large-q+ asymptotics and contour rotations establish a vanishing region. Nonplanar transverse integrals are analyzed with θ in canonical two-dimensional blocks to extract the changed exponential behavior."
+          },
+          {
+            "label": "Separate Chern-Simons couplings obtainable by classical circle reduction from couplings generated by integrating out…",
+            "seedIds": [
+              "unit:85cb214a14ae7781ae19d9b43c245bf8f187ea9945f54f671ac276579a05da0f"
+            ],
+            "query": "Separate Chern-Simons couplings obtainable by classical circle reduction from couplings generated by integrating out massive charged spin-1/2 fields, spin-3/2 fields and two-forms. Compare the resulting five-dimensional coefficients with six-dimensional Green-Schwarz and anomaly data."
+          },
+          {
+            "label": "The c-map reduces D=4 vector multiplets on a circle and dualizes the D=3 vectors into scalars, producing QK geometry from…",
+            "seedIds": [
+              "unit:318914be0a2f7313b8385118f11ab4f26db12bdd2f4663362aa1862c8979519f"
+            ],
+            "query": "The c-map reduces D=4 vector multiplets on a circle and dualizes the D=3 vectors into scalars, producing QK geometry from special Kähler geometry. Its string interpretation is IIA/IIB T-duality; the input prepotential is homogeneous of degree two, with classical cubic coefficients supplied by CY triple intersections."
+          }
+        ]
+      }
+    },
+    {
+      "name": "black-hole entropy derivation direction",
+      "seedId": "unit:b08c2922657563a8e2b2d77d3e7be40b81901723335cb382b4a48ac8049dc607",
+      "contextTerms": [
+        "black hole",
+        "entropy",
+        "Wald",
+        "horizon"
+      ],
+      "selectedSource": {
+        "id": "unit:b08c2922657563a8e2b2d77d3e7be40b81901723335cb382b4a48ac8049dc607",
+        "paperId": "2109.05571",
+        "title": "Entropy and Black Holes in the Very Early Universe",
+        "text": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space. For a small black hole, the statistical weight is approximately exp(−2πMR), identifying localized objects as constrained states and yielding the de Sitter temperature.",
+        "lens": "method",
+        "url": "https://arxiv.org/abs/2109.05571",
+        "year": 2021,
+        "date": "2021-09",
+        "datePrecision": "month",
+        "kind": "source_scoped_extraction",
+        "facetIds": [
+          "facet:e8cb2242351755f09d146d9955e49209"
+        ],
+        "sourceRecordIds": [
+          "record:33cdab99d0148a15a7b8c59072553dca"
+        ],
+        "sourceNodeIds": [
+          "obj:341fc64f21d4a945f3ac:method:9f45d564e2ec3c2549bf9ba4"
+        ],
+        "textSha256": "c90bed446095334972558d62b1ed4eb445370d9d22e68c0eb602e554b4e3fe7c",
+        "originalEmbeddingRows": [
+          195597
+        ],
+        "anchors": [
+          "ev:8591fa9cd407d3f871edac4adbd2b0eb"
+        ],
+        "sourceSha256": "34b7d6d4504441ed8d2c072ecfe4d63083990d8956d7b544c3df3b3629fdaf81",
+        "reviewStatus": "source_backed_first_pass",
+        "readingScopeId": "2d5a39acc52a633416f4cd5546f587f598c12a2486f2e4e63fcd77e98b35a255",
+        "claimStatus": "retrieval_nomination_only; not independent scientific certification",
+        "readingScope": {
+          "derivation_reproduction": false,
+          "low_text_pages": [],
+          "omitted_pages": [],
+          "paper_page_count": 19,
+          "supplied_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "text_coverage": "all_text_pages",
+          "visual_verification": false
+        }
+      },
+      "queryLengths": {
+        "full": 276,
+        "firstSentence": 108
+      },
+      "top10Overlap": 0.7,
+      "allText": {
+        "query": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space. For a small black hole, the statistical weight is approximately exp(−2πMR), identifying localized objects as constrained states and yielding the de Sitter temperature.",
+        "contextTerms": [
+          "very",
+          "early",
+          "universe"
+        ],
+        "selectedSourceRank": 1,
+        "selectedSourceOfferedAgain": false,
+        "top": [
+          {
+            "id": "unit:b08c2922657563a8e2b2d77d3e7be40b81901723335cb382b4a48ac8049dc607",
+            "paperId": "2109.05571",
+            "title": "Entropy and Black Holes in the Very Early Universe",
+            "text": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space. For a small black hole, the statistical weight is approximately exp(−2πMR), identifying localized objects as constrained states and yielding the de Sitter temperature.",
+            "score": 0.981619878308698
+          },
+          {
+            "id": "unit:59df1ca32604feb069d746dda5b96b2576ce529eb366b3faa0325d19abb63494",
+            "paperId": "1811.00130",
+            "title": "Why The Cosmological Constant is a Boundary Condition",
+            "text": "Compare gravitational entropy changes when a small mass enters a large black hole or is introduced into de Sitter space. The latter gives an entropy deficit 2πRM, interpreted through thermal probability as evidence that localized states impose constraints.",
+            "score": 0.19691669704527737
+          },
+          {
+            "id": "unit:0ffb2fb8ce3b4ff7928d145026d8c81006de09fdbcc262397032e1f4dbbdbbf9",
+            "paperId": "hep-th/0205177",
+            "title": "Adventures in de Sitter space",
+            "text": "The survey reviews Euclidean derivation of de Sitter temperature and generalized-second-law arguments comparing initial matter-plus-horizon entropy with the final empty-de-Sitter entropy. The black-hole comparison uses the Geroch process.",
+            "score": 0.18553768635298898
+          },
+          {
+            "id": "unit:7e9f099e788978469198fe4d8351143ec9627f7afeebc17df1afc2c0e2874b73",
+            "paperId": "hep-th/0205080",
+            "title": "Unbounded entropy in space-times with positive cosmological constant",
+            "text": "Compute product-horizon entropy from one quarter of its area, compare its ratio to empty D-dimensional de Sitter entropy, and examine large-black-hole and near-Minkowski limits.",
+            "score": 0.16688687852019657
+          },
+          {
+            "id": "unit:07b706f6a0a8f6d7f0e280e702edc664271343c86ce1726d0355d419cc01e3df",
+            "paperId": "hep-th/9803132",
+            "title": "Effective field theory, black holes, and the cosmological constant",
+            "text": "Compare extensive field-theory entropy and thermal energy with black-hole entropy and Schwarzschild-radius estimates. Thermal scaling M ∼ L³T⁴ and S ∼ L³T³ shows why saturating the area entropy bound includes states larger than the box in Schwarzschild radius.",
+            "score": 0.1316286315462578
+          },
+          {
+            "id": "unit:233d1f7bec2c29761ee04ad28fe3bce97a2205d3af76c33e6b7a01f90fa7aed4",
+            "paperId": "1611.08953",
+            "title": "Note on a Paper by Ooguri and Vafa",
+            "text": "The de Sitter appendix interprets black-hole entropy and Coleman–De Luccia detailed balance through a conjectural finite-dimensional Hilbert space. Transitions to crunching regions are distinguished by whether the corresponding zero-CC limit admits a positive-energy theorem.",
+            "score": 0.1284817078631888
+          },
+          {
+            "id": "unit:e3a33dac1e4fe7a2a97d79bdaf90b92f02b817ebb87d58181f47becd1870973e",
+            "paperId": "2210.02475",
+            "title": "The dark universe: Primordial black hole ⇋ dark graviton gas connection",
+            "text": "Higher-dimensional Schwarzschild thermodynamics supplies T_BH=(n+1)/(4πrs) and S=4πMBH rs/(n+2), with n=1 for five dimensions. The authors compare horizon and temperature scalings and use a graviton-bound-state identification to relate constituent mass to Hawking temperature.",
+            "score": 0.12740788774062603
+          },
+          {
+            "id": "unit:e1a8ce385f695c0c07674a8bda911a7e83c9d848ee01625977f0a76a19660169",
+            "paperId": "2109.05571",
+            "title": "Entropy and Black Holes in the Very Early Universe",
+            "text": "Applies black-hole entropy fluctuations, including the imported modular-Hamiltonian variance relation, to cosmological perturbations. Estimates subsequent density growth, evaporation, reheating and the PBH abundance required at matter–radiation equality, without calculating a merger distribution.",
+            "score": 0.11889947668887418
+          },
+          {
+            "id": "unit:d1b5914a91b6ad62684f5688b6e079978e24f3cc728cf0dc8dbe277c7224fe20",
+            "paperId": "2608.00590",
+            "title": "IR Black Hole Instabilities Trigger Species-Scale Particle Production",
+            "text": "The authors combine previously published classical cascade simulations with black-hole entropy comparisons. For d≥4 and D≥5, their entropy scaling favors fewer localized higher-dimensional holes; the closed-system comparison assumes gravitational radiation can be reabsorbed.",
+            "score": 0.1176530019392929
+          },
+          {
+            "id": "unit:f65440a26f02615c1f883529a0f42dee244297648d8492510164be44a0dbc990",
+            "paperId": "2208.08959",
+            "title": "Old Ideas for New Physicists:1",
+            "text": "Use semiclassical black-hole entropy deficits and infall entropy increases to motivate localized energy as constraints on horizon variables. Interpret Einstein equations as hydrodynamics, then construct quantum evolution matching a chosen FRW entropy and energy-density scaling.",
+            "score": 0.11764950072361272
+          }
+        ],
+        "directions": [
+          {
+            "label": "Compare gravitational entropy changes when a small mass enters a large black hole or is introduced into de Sitter space.",
+            "seedIds": [
+              "unit:59df1ca32604feb069d746dda5b96b2576ce529eb366b3faa0325d19abb63494"
+            ],
+            "query": "Compare gravitational entropy changes when a small mass enters a large black hole or is introduced into de Sitter space. The latter gives an entropy deficit 2πRM, interpreted through thermal probability as evidence that localized states impose constraints."
+          },
+          {
+            "label": "The survey reviews Euclidean derivation of de Sitter temperature and generalized-second-law arguments comparing initial…",
+            "seedIds": [
+              "unit:0ffb2fb8ce3b4ff7928d145026d8c81006de09fdbcc262397032e1f4dbbdbbf9"
+            ],
+            "query": "The survey reviews Euclidean derivation of de Sitter temperature and generalized-second-law arguments comparing initial matter-plus-horizon entropy with the final empty-de-Sitter entropy. The black-hole comparison uses the Geroch process."
+          },
+          {
+            "label": "Compute product-horizon entropy from one quarter of its area, compare its ratio to empty D-dimensional de Sitter entropy,…",
+            "seedIds": [
+              "unit:7e9f099e788978469198fe4d8351143ec9627f7afeebc17df1afc2c0e2874b73"
+            ],
+            "query": "Compute product-horizon entropy from one quarter of its area, compare its ratio to empty D-dimensional de Sitter entropy, and examine large-black-hole and near-Minkowski limits."
+          },
+          {
+            "label": "Applies black-hole entropy fluctuations, including the imported modular-Hamiltonian variance relation, to cosmological…",
+            "seedIds": [
+              "unit:e1a8ce385f695c0c07674a8bda911a7e83c9d848ee01625977f0a76a19660169"
+            ],
+            "query": "Applies black-hole entropy fluctuations, including the imported modular-Hamiltonian variance relation, to cosmological perturbations. Estimates subsequent density growth, evaporation, reheating and the PBH abundance required at matter–radiation equality, without calculating a merger distribution."
+          },
+          {
+            "label": "Higher-dimensional Schwarzschild thermodynamics supplies T_BH=(n+1)/(4πrs) and S=4πMBH rs/(n+2), with n=1 for five…",
+            "seedIds": [
+              "unit:e3a33dac1e4fe7a2a97d79bdaf90b92f02b817ebb87d58181f47becd1870973e"
+            ],
+            "query": "Higher-dimensional Schwarzschild thermodynamics supplies T_BH=(n+1)/(4πrs) and S=4πMBH rs/(n+2), with n=1 for five dimensions. The authors compare horizon and temperature scalings and use a graviton-bound-state identification to relate constituent mass to Hawking temperature."
+          }
+        ]
+      },
+      "firstSentence": {
+        "query": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space.",
+        "contextTerms": [
+          "mr",
+          "very",
+          "yielding",
+          "identifying",
+          "statistical",
+          "object"
+        ],
+        "selectedSourceRank": 1,
+        "selectedSourceOfferedAgain": true,
+        "top": [
+          {
+            "id": "unit:b08c2922657563a8e2b2d77d3e7be40b81901723335cb382b4a48ac8049dc607",
+            "paperId": "2109.05571",
+            "title": "Entropy and Black Holes in the Very Early Universe",
+            "text": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space. For a small black hole, the statistical weight is approximately exp(−2πMR), identifying localized objects as constrained states and yielding the de Sitter temperature.",
+            "score": 1.079707657134218
+          },
+          {
+            "id": "unit:0ffb2fb8ce3b4ff7928d145026d8c81006de09fdbcc262397032e1f4dbbdbbf9",
+            "paperId": "hep-th/0205177",
+            "title": "Adventures in de Sitter space",
+            "text": "The survey reviews Euclidean derivation of de Sitter temperature and generalized-second-law arguments comparing initial matter-plus-horizon entropy with the final empty-de-Sitter entropy. The black-hole comparison uses the Geroch process.",
+            "score": 0.23082894969971735
+          },
+          {
+            "id": "unit:59df1ca32604feb069d746dda5b96b2576ce529eb366b3faa0325d19abb63494",
+            "paperId": "1811.00130",
+            "title": "Why The Cosmological Constant is a Boundary Condition",
+            "text": "Compare gravitational entropy changes when a small mass enters a large black hole or is introduced into de Sitter space. The latter gives an entropy deficit 2πRM, interpreted through thermal probability as evidence that localized states impose constraints.",
+            "score": 0.22013673105953876
+          },
+          {
+            "id": "unit:7e9f099e788978469198fe4d8351143ec9627f7afeebc17df1afc2c0e2874b73",
+            "paperId": "hep-th/0205080",
+            "title": "Unbounded entropy in space-times with positive cosmological constant",
+            "text": "Compute product-horizon entropy from one quarter of its area, compare its ratio to empty D-dimensional de Sitter entropy, and examine large-black-hole and near-Minkowski limits.",
+            "score": 0.21224981900376833
+          },
+          {
+            "id": "unit:6b73a1a6f499a1a41efff173f56ca1284db2deebf432946047be5cccd8be005a",
+            "paperId": "hep-th/0012052",
+            "title": "Bekenstein bounds in de Sitter and flat space",
+            "text": "Use Birkhoff's theorem to define an equivalent Schwarzschild–de Sitter black hole for spherical matter. Eliminate the empty-de-Sitter radius through the cosmological-horizon equation and expand in the small gravitational-radius ratio.",
+            "score": 0.1587588972390019
+          },
+          {
+            "id": "unit:073ea6c9f738a613482ca2ee8acc01e587c9c90fd856e14c60a5c8873a60c31b",
+            "paperId": "hep-th/0010252",
+            "title": "Positive vacuum energy and the N bound",
+            "text": "Derives the D-bound through a generalized-second-law process: the observer moves into an asymptotically empty de Sitter region, losing access to matter while cosmological horizon entropy increases by (A₀−A_c)/4.",
+            "score": 0.15167772878926042
+          },
+          {
+            "id": "unit:233d1f7bec2c29761ee04ad28fe3bce97a2205d3af76c33e6b7a01f90fa7aed4",
+            "paperId": "1611.08953",
+            "title": "Note on a Paper by Ooguri and Vafa",
+            "text": "The de Sitter appendix interprets black-hole entropy and Coleman–De Luccia detailed balance through a conjectural finite-dimensional Hilbert space. Transitions to crunching regions are distinguished by whether the corresponding zero-CC limit admits a positive-energy theorem.",
+            "score": 0.14916934598222542
+          },
+          {
+            "id": "unit:07b706f6a0a8f6d7f0e280e702edc664271343c86ce1726d0355d419cc01e3df",
+            "paperId": "hep-th/9803132",
+            "title": "Effective field theory, black holes, and the cosmological constant",
+            "text": "Compare extensive field-theory entropy and thermal energy with black-hole entropy and Schwarzschild-radius estimates. Thermal scaling M ∼ L³T⁴ and S ∼ L³T³ shows why saturating the area entropy bound includes states larger than the box in Schwarzschild radius.",
+            "score": 0.1328631204206897
+          },
+          {
+            "id": "unit:f65440a26f02615c1f883529a0f42dee244297648d8492510164be44a0dbc990",
+            "paperId": "2208.08959",
+            "title": "Old Ideas for New Physicists:1",
+            "text": "Use semiclassical black-hole entropy deficits and infall entropy increases to motivate localized energy as constraints on horizon variables. Interpret Einstein equations as hydrodynamics, then construct quantum evolution matching a chosen FRW entropy and energy-density scaling.",
+            "score": 0.13035631341698317
+          },
+          {
+            "id": "unit:a783f471156c3b676e6235ecf7ecd3775b54b159c95ea9ac606be254968d34b0",
+            "paperId": "hep-th/9907115",
+            "title": "Holographic cosmology and its relevant degrees of freedom",
+            "text": "Estimates maximal entropy using a hypothetical black hole containing the horizon's energy, with Mmax(t)∼ρ(t)H⁻³∼ρ(t)Ep³, then compares its entropy with horizon area using cosmological scaling laws.",
+            "score": 0.1195599023202629
+          }
+        ],
+        "directions": [
+          {
+            "label": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space.",
+            "seedIds": [
+              "unit:b08c2922657563a8e2b2d77d3e7be40b81901723335cb382b4a48ac8049dc607"
+            ],
+            "query": "Uses Schwarzschild–de Sitter horizon entropy to obtain an entropy deficit relative to empty de Sitter space. For a small black hole, the statistical weight is approximately exp(−2πMR), identifying localized objects as constrained states and yielding the de Sitter temperature."
+          },
+          {
+            "label": "For departures from the ideal radiation model, use the causality condition dP/de ≤ 1 to obtain P < e and bound the…",
+            "seedIds": [
+              "unit:cb2203f2f907b0f459b51a2ae685506b856cecd1db4a05db8f16b6b14c732590"
+            ],
+            "query": "For departures from the ideal radiation model, use the causality condition dP/de ≤ 1 to obtain P < e and bound the buoyant energy. Statistical extensions optimize cavity entropy including empty-box energy and evaluate D-dimensional thermal integrals."
+          },
+          {
+            "label": "Impose a Dirichlet brick wall at r=r_H−ε, count near-horizon modes using WKB and large-angular-momentum approximations,…",
+            "seedIds": [
+              "unit:2af4c3612af2098d06ac41ead24df8b20420837ad17e5b673a5d497c604184da"
+            ],
+            "query": "Impose a Dirichlet brick wall at r=r_H−ε, count near-horizon modes using WKB and large-angular-momentum approximations, obtain the thermal free energy, and calculate S=β²∂F/∂β before evaluating it at the de Sitter temperature."
+          },
+          {
+            "label": "A Schwarzschild–de Sitter fitting argument imposes a Gauss-constraint exterior on a virtual fuzzball.",
+            "seedIds": [
+              "unit:d373fcf16603a618823522f94c8ed479febfac108d66423607e30a382c5d3f6e"
+            ],
+            "query": "A Schwarzschild–de Sitter fitting argument imposes a Gauss-constraint exterior on a virtual fuzzball. Coincidence of the two metric horizons is used to constrain the largest allowed object and infer a bound involving Λ and the virtual-fuzzball size cutoff."
+          },
+          {
+            "label": "Relate de Sitter axion fluctuations to inflationary tensor power, propagate axion entropy perturbations using a…",
+            "seedIds": [
+              "unit:5c50a470e0b3e53bd3920e1ca9c7de2fbd19e0f3dc7e7540c5c73d9179003e51"
+            ],
+            "query": "Relate de Sitter axion fluctuations to inflationary tensor power, propagate axion entropy perturbations using a large-angle Sachs–Wolfe approximation, and evaluate Gaussian-field moments to obtain isocurvature power and temperature skewness."
+          }
+        ]
+      }
+    }
+  ]
+}

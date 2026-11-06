@@ -139,3 +139,38 @@ raw** after lossless reading-scope deduplication, down from 111 MB. These are lo
 measurements; the site owner separately verifies browser transfer, rendering and
 live-agent updates. Public-browser compatibility and scientific reading quality
 are integrated acceptance gates, not inferred from these numerical tests.
+
+## Independent source-selection drift: shortening is not a general repair
+
+After the stable engine checkpoint, a fresh evaluator selected the method source
+2203.05575 (*Constraints on early dark energy from the axion weak gravity
+conjecture*) during an axion/quantum-gravity exploration. The selected EDE source
+remained first, but a generic quantum-cosmology instanton comparison became second
+and the leading next direction. A later explicit EDE question plus source anchors
+recovered the intended application. This is a real limitation of adopting a
+method paragraph as the new question: shared methods can redirect the neighborhood
+toward other physical applications.
+
+A bounded, **non-mutating** comparison is saved in
+[`selection-query-results.json`](../tests/geometry/selection-query-results.json)
+and reproduced by `node scripts/data/compare-selection-queries.mjs`. It holds the
+selected real-vector seed, method lens and derivation intent fixed, and compares
+all source text against its first complete sentence for EDE, a multi-sentence KK
+direction and a black-hole entropy direction.
+
+For EDE, shortening 266 to 88 characters removes the application, which appears
+only in sentence three. The same generic quantum-cosmology paper remains second;
+the next directions become still more generic instanton/ADHM/D3/wormhole methods.
+Top-ten source overlap is 50%. For black-hole entropy, overlap is 70%: both remain
+broadly about gravitational entropy, while the shorter version also admits more
+generic radiation and axion-fluctuation calculations. The KK comparison likewise
+changes which details are emphasized rather than establishing a universal repair.
+
+The evidence does **not** support replacing every selected description with its
+first sentence. The stable engine is unchanged. An agent should carry a concise,
+self-contained physical question through source selection, explicitly state the
+application (for example EDE rather than just an instanton formula), retain the
+selected source ID, and inspect whether the next proposed directions still answer
+that question. Shared-method similarity is useful discovery evidence but does not
+itself preserve the intended physical problem. Automatic application-preserving
+question synthesis remains a v1 limitation; no EDE-specific routing rule was added.

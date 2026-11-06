@@ -128,11 +128,38 @@ def main():
             report['checks'].append({'name': 'MCP export/import restores geometry and browser', 'passed': True})
             page.reload(wait_until='domcontentloaded')
             page.wait_for_function("document.querySelector('#connection-status').textContent.includes('Agent connected')")
-            navigate({'type': 'refine', 'query': 'KK dark matter cosmological constraints'}, 'reload reconnects and subsequent agent operation updates browser')
+            mobile_state = navigate({'type': 'refine', 'query': 'KK dark matter cosmological constraints'}, 'reload reconnects and subsequent agent operation updates browser')
             page.set_viewport_size({'width': 390, 'height': 844})
+            page.locator('.compact-chart').wait_for()
             assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
+            markers = page.locator('.chart-direction')
+            assert markers.count() == 5
+            chart_box = page.locator('#chart').bounding_box()
+            for index in range(markers.count()):
+                marker = markers.nth(index)
+                assert marker.is_visible()
+                box = marker.locator('.direction-dot').bounding_box()
+                assert box['width'] >= 30 and box['height'] >= 30
+                hit = marker.locator('.direction-hit-target').bounding_box()
+                assert hit['width'] >= 43 and hit['height'] >= 43
+                assert marker.locator('.direction-marker').evaluate('(el) => parseFloat(getComputedStyle(el).fontSize)') >= 12
+                assert box['x'] >= max(0, chart_box['x']) - 1
+                assert box['x'] + box['width'] <= min(390, chart_box['x'] + chart_box['width']) + 1
+                assert box['y'] >= chart_box['y'] - 1 and box['y'] + box['height'] <= chart_box['y'] + chart_box['height'] + 1
+            assert page.locator('#directions h3').all_inner_texts() == [direction['label'] for direction in mobile_state['view']['directions']]
             page.screenshot(path=str(output / 'mobile-view.png'), full_page=True)
+            page.locator('#chart').scroll_into_view_if_needed()
+            page.screenshot(path=str(output / 'mobile-chart-viewport.png'), full_page=False)
             report['checks'].append({'name': 'mobile viewport has no horizontal overflow', 'passed': True})
+            report['checks'].append({'name': 'five mobile markers have legible numbers, touch targets and matching full direction cards', 'passed': True})
+            selected_query = mobile_state['view']['directions'][0]['query']
+            selected_from = mobile_state['state']['id']
+            page.locator('.chart-direction .direction-dot').first.click()
+            page.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=selected_from)
+            assert page.locator('#current-question').inner_text() == selected_query
+            page.locator('#back').click()
+            page.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=selected_from)
+            report['checks'].append({'name': 'human mobile marker selection changes the question and Back restores the state', 'passed': True})
             report['localBrowserErrors'] = page_errors
             assert not page_errors
 
@@ -156,12 +183,66 @@ def main():
                     public_page.wait_for_function('(id) => document.documentElement.dataset.stateId === id', arg=result['state']['id'])
                     report['checks'].append({'name': 'public-origin attached renderer visibly updates', 'passed': True})
                 elif not outcome.get('reachable'):
-                    report['publicOriginProbe']['interpretation'] = 'Browser policy or network blocked public-to-loopback access; same-origin fallback was separately verified.'
+                    report['publicOriginProbe']['interpretation'] = 'Browser policy, CSP or network blocked public-to-loopback access; same-origin fallback was separately verified.'
             except Exception as error:
                 if args.public_ui and outcome and outcome.get('reachable'):
                     raise
                 # No token/URL-bearing error text is published.
                 report['publicOriginProbe'] = {'reachable': False, 'errorType': type(error).__name__, 'interpretation': 'Public-origin probe could not complete in this browser environment; same-origin fallback was separately verified.'}
+
+            # The public static app must work independently even when its origin
+            # cannot reach loopback. Use a clean context without bridge state.
+            if args.public_ui:
+                public_context = browser.new_context(viewport={'width': 1440, 'height': 1080}, accept_downloads=True)
+                standalone = public_context.new_page()
+                public_errors = []
+                standalone.on('pageerror', lambda error: public_errors.append(str(error)))
+                standalone.goto(args.public_origin, wait_until='domcontentloaded', timeout=60000)
+                standalone.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
+                assert standalone.locator('#connection-status').inner_text() == 'Browser session'
+                assert standalone.locator('.chart-direction').count() == 5
+
+                def public_question(query, intent='explore', relation='either', transition='refine'):
+                    old_id = standalone.locator('html').get_attribute('data-state-id')
+                    standalone.locator('#question').fill(query)
+                    standalone.locator('#intent').select_option(intent)
+                    standalone.locator('#work-relation').select_option(relation)
+                    standalone.locator('#transition').select_option(transition)
+                    standalone.locator('#explore-button').click()
+                    standalone.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=old_id, timeout=60000)
+                    assert standalone.locator('#current-question').inner_text() == query
+                    assert standalone.locator('#directions .direction').count() == 5
+                    return standalone.locator('html').get_attribute('data-state-id')
+
+                public_question('KK towers as dark matter', 'phenomenology')
+                assert 'dark dimension' in standalone.locator('#evidence').inner_text().lower()
+                report['checks'].append({'name': 'public static app independently loads corpus and computes contextual UI question', 'passed': True})
+                on_id = public_question('KK towers', 'recent', 'on', 'pivot')
+                on_sources = standalone.locator('.evidence-card').evaluate_all('(nodes) => nodes.map(n => n.dataset.sourceId)')
+                using_id = public_question('KK towers', 'recent', 'using', 'pivot')
+                using_sources = standalone.locator('.evidence-card').evaluate_all('(nodes) => nodes.map(n => n.dataset.sourceId)')
+                assert on_id != using_id and on_sources != using_sources
+                report['checks'].append({'name': 'public ON versus USING controls change ranked evidence', 'passed': True})
+                before_select = using_id
+                standalone.locator('#directions .direction').first.click()
+                standalone.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=before_select)
+                standalone.locator('#back').click()
+                standalone.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=using_id)
+                with standalone.expect_download() as download_info:
+                    standalone.locator('#export').click()
+                export_path = output / 'public-browser-session.json'
+                download_info.value.save_as(str(export_path))
+                assert connection['token'] not in export_path.read_text()
+                public_question('black hole evaporation', transition='pivot')
+                standalone.locator('#import-file').set_input_files(str(export_path))
+                standalone.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=using_id)
+                standalone.reload(wait_until='domcontentloaded')
+                standalone.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=using_id, timeout=180000)
+                report['checks'].append({'name': 'public direction selection, backtracking, export/import and reload reproduce the same state', 'passed': True})
+                standalone.screenshot(path=str(output / 'public-static-view.png'), full_page=True)
+                report['publicBrowserErrors'] = public_errors
+                assert not public_errors
+                public_context.close()
             browser.close()
         report['passed'] = True
     except Exception as error:

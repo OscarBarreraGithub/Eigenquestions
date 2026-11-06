@@ -44,7 +44,7 @@ No owner clause is absent from R01–R40. The important under-specified detail w
 
 ## Completion audit
 
-### Observed protocol checkpoint — 2026-11-06 UTC
+### Historical protocol checkpoint — 2026-11-06 UTC, before browser/fresh-agent trials
 
 The independent [integration suite](../tests/integration/navigation.test.mjs)
 passes six tests against the real corpus and common geometry engine. It verifies:
@@ -68,8 +68,8 @@ passes six tests against the real corpus and common geometry engine. It verifies
 
 These are technical acceptance results, not independent validation of every
 indexed physics claim. The portable [skill](../skills/physics-navigator/SKILL.md)
-passes the skill validator; fresh-agent behavioral evaluation remains a separate
-gate. [Agent setup](agent-interface.md) documents the commands and limitations.
+passed the skill validator; fresh-agent behavioral evaluation was then a separate
+pending gate. [Agent setup](agent-interface.md) documents the commands and limitations.
 
 Two useful failures changed the implementation. The initial weak focus blend
 ranked generic dark-matter sources ahead of the intended contextual connection
@@ -94,9 +94,63 @@ updates, five direction markers and optional full source overlays, a deeper owne
 journey, held-out navigation, import/replay, reload reattachment, render
 acknowledgements, mobile overflow and a real HTTPS-public-origin loopback probe.
 An HTTP test that merely sends an Origin header is not counted as browser-policy
-evidence. At this checkpoint that browser run, fresh-agent skill test, final
-computation pin, public replacement and remote Git verification remain pending
-under the coordinator's plan.
+evidence. At that checkpoint the browser run, fresh-agent skill test, final
+computation pin, public replacement and remote Git verification were pending.
+
+### Independent acceptance update — 2026-11-06 UTC, before public replacement
+
+The authorized Slurm Chromium run (job 58185518, exit 0) completed all **12 actual
+browser checks**, with zero page errors. The [machine-readable result](evidence/browser-v1/browser-acceptance.json)
+records MCP → geometry → visible renderer changes with current-state render
+acknowledgements across the owner and held-out journeys, five primary directions
+and the optional source overlay, backtracking, export/import and reload
+reattachment. The coordinator visually inspected the screenshots. This establishes
+the same-origin local fallback end to end; it is no longer merely a prepared test.
+
+The old public origin's loopback fetch returned `TypeError`. That result does not
+isolate browser private-network restrictions from the old site's CSP or network
+policy. The new deployed origin still needs its own probe. The first mobile view
+passed overflow checks but its screenshot exposed tiny labels; the site owner
+revised mobile markers and labels, and the test now measures marker diameter,
+touch area, number font size and retained direction-card text. That visual fix
+still requires its rerun at this update.
+
+The [fresh-agent trial](evidence/fresh-agent-trial.md) is a qualified success:
+an independent agent loaded the portable instructions, used the real CLI for
+eight axion/WGC/EDE/axion–dilaton navigation actions, inspected source evidence,
+compared a same-query pivot and saved a [portable nine-state session](evidence/fresh-agent-session.json).
+It did not test first-time installation or browser rendering, and correctly
+reported its absent viewer acknowledgement. Those limits are distinct from the
+separate browser pass.
+
+The trial found a residual quality failure: selecting a long EDE method paragraph
+let generic instanton methods dominate subsequent context. Explicit application
+wording plus source anchors recovered a useful path; both changed, so the trial
+does not isolate one as the cause. A [separate query-length comparison](geometry-experiments.md)
+found that blindly shortening selections to their first sentence could erase the
+physical application and worsen retrieval. The engine is therefore unchanged;
+the skill now tells an agent to retain the physical application explicitly after
+a method selection and distinguish shared-method neighbors from application
+evidence. Directions are useful nearby proposals, not a certified ontology or
+curriculum, and the engine does not automatically diagnose scientific topic drift.
+
+Source reading also exposed a substantive caveat missing from a short nomination:
+the evaluator found that 1605.05311's added note reports counterexamples to its
+precise lattice-WGC formulation. Its nomination is therefore not a proof of a
+universal axion bound. This observed example supports the existing requirement to
+read original papers before making consequential physics claims. In the fresh
+trial, group retained variance was 66.3–75.1%, while source-overlay retention was
+12.6–21.1%; a high five-group recall@5 is trivial and not independent validation.
+
+The engine and full data fingerprint are now pinned. Coordinator checkpoint
+`47374b8812649a758ff891833ab4ca389864cfcc` was pushed and verified. Remaining release
+gates are the mobile rerun, replacing the public app, an independent public-browser
+compute/UI journey even if loopback is blocked, exact deployed asset hashes,
+GET/POST retirement of old routes, and release-branch remote verification. The
+[publication helper](../tests/integration/publication_check.mjs) performs bounded
+hash/route checks after deployment; its fixture test detects both stale modules
+and a surviving legacy API. It does not publish anything or substitute for a
+browser run.
 
 Scientific limits are explicit: this is a frozen Swampland-centered corpus, ON vs
 USING is inferred from question/method facets, extracted descriptions require

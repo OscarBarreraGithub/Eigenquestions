@@ -36,6 +36,10 @@ Eigenquestions checkout with Node and its corpus; locate it from user context or
    you supply explicit `focusIds`; this supports deeper contextual follow-ups.
    Use `pivot` for an unrelated topic, `broaden` to release focus/constraints,
    `select` with a current direction ID, or `back/replay` to revisit a state.
+   After selecting a method-specific direction, retain the user's physical
+   application explicitly in the next resolved query and source anchors. Inspect
+   whether competing sources address that application or merely share a method;
+   the five choices are nearby proposals, not a guaranteed deeper topic hierarchy.
 2. Invoke the interface and wait for its computed result. Never invent vectors,
    chart coordinates, basis directions or graph edges, and never hand-edit a
    state ID. The same frozen corpus and state must reproduce the chart.

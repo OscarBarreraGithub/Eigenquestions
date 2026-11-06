@@ -75,7 +75,11 @@ function render() {
 function renderChart() {
   const host = $('chart'); host.replaceChildren();
   if (!view.nodes.length) { host.append(el('p', 'empty-state', 'No source-supported view for this question yet. Try a physics term used in the corpus, or ask your agent to identify a relevant source.')); return; }
-  const width = 760, height = 420, margin = 54;
+  const compact = host.clientWidth < 560;
+  // Use CSS-pixel dimensions on narrow charts; geometry still gets one common
+  // x/y scale, while numbered controls remain legible and large enough to tap.
+  const width = compact ? Math.max(host.clientWidth, 240) : 760;
+  const height = compact ? 300 : 420, margin = compact ? 36 : 54;
   const aggregate = view.chart.fitScope === 'direction-centroids';
   const showSources = !aggregate || $('show-sources').checked;
   $('chart-controls').hidden = !aggregate;
@@ -86,7 +90,7 @@ function renderChart() {
   const xmin = Math.min(...xs), xmax = Math.max(...xs), ymin = Math.min(...ys), ymax = Math.max(...ys);
   const scale = Math.min((width - margin * 2) / Math.max(xmax - xmin, .1), (height - margin * 2) / Math.max(ymax - ymin, .1));
   const x = val => width / 2 + (val - (xmin + xmax) / 2) * scale, y = val => height / 2 - (val - (ymin + ymax) / 2) * scale;
-  const plot = svg('svg', { viewBox: `0 0 ${width} ${height}`, role: 'group', 'aria-label': 'Computed two-dimensional view. Select a source point to read its evidence. The same sources are listed after the directions.' });
+  const plot = svg('svg', { viewBox: `0 0 ${width} ${height}`, class: compact ? 'compact-chart' : '', role: 'group', 'aria-label': aggregate ? 'Computed two-dimensional view of five directions. Numbered markers match the full direction cards below. Select a marker to follow its direction.' : 'Computed two-dimensional view. Select a source point to read its evidence. The same sources are listed after the directions.' });
   for (let i = 1; i < 7; i++) plot.append(svg('line', { x1: i * width / 7, y1: 25, x2: i * width / 7, y2: height - 25, stroke: '#edf0e7', 'stroke-width': 1 }));
   for (let i = 1; i < 5; i++) plot.append(svg('line', { x1: 30, y1: i * height / 5, x2: width - 30, y2: i * height / 5, stroke: '#edf0e7', 'stroke-width': 1 }));
   const byId = new Map(view.nodes.map(n => [n.id, n]));
@@ -105,7 +109,7 @@ function renderChart() {
     const select = () => { selectedId = node.id; renderChart(); renderEvidence(); };
     group.addEventListener('click', select); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); } });
     plot.append(group);
-    if ((!aggregate && seedIds.has(node.id)) || node.id === selectedId) {
+    if (!compact && ((!aggregate && seedIds.has(node.id)) || node.id === selectedId)) {
       const text = short(node.title, 47), labelWidth = Math.min(text.length * 5.6, 280);
       let lx = Math.min(width - labelWidth - 12, Math.max(12, x(node.x) + 10)), ly = y(node.y) - 11;
       for (let attempt = 0; attempt < 8 && labelBoxes.some(b => lx < b.x + b.w && lx + labelWidth > b.x && Math.abs(ly - b.y) < 16); attempt++) ly += 17;
@@ -116,8 +120,9 @@ function renderChart() {
   if (aggregate) view.directions.forEach((direction, index) => {
     const color = colors[index % colors.length], cx = x(direction.x), cy = y(direction.y);
     const group = svg('g', { class: 'chart-node chart-direction', tabindex: 0, role: 'button', 'aria-label': `Follow direction ${index + 1}: ${direction.label}`, 'data-direction-id': direction.id });
-    const radius = 10 + 18 * Math.sqrt(direction.massFraction || .2);
-    group.append(svg('circle', { cx, cy, r: radius, fill: color, stroke: '#fffef9', 'stroke-width': 3, 'fill-opacity': .95 }));
+    const radius = Math.max(compact ? 16 : 0, 10 + 18 * Math.sqrt(direction.massFraction || .2));
+    group.append(svg('circle', { cx, cy, r: Math.max(radius, 22), fill: 'transparent', stroke: 'none', class: 'direction-hit-target' }));
+    group.append(svg('circle', { cx, cy, r: radius, fill: color, stroke: '#fffef9', 'stroke-width': 3, 'fill-opacity': .95, class: 'direction-dot' }));
     group.append(svg('text', { x: cx, y: cy + 4, 'text-anchor': 'middle', class: 'direction-marker' }, String(index + 1)));
     group.append(svg('title', {}, `${direction.label}\n${direction.sourceCount} source descriptions; ${(100 * direction.massFraction).toFixed(1)}% of retrieval weight.\nWithin-group RMS spread in embedding space: ${readable(direction.withinGroupRms)}. Group proximity is not a physical implication.`));
     const words = short(direction.label, 85).split(' '), lines = []; let line = '';
@@ -131,14 +136,14 @@ function renderChart() {
       if (ly + labelHeight > height - 15) { ly = Math.max(20, cy - labelHeight - radius); lx = Math.max(14, cx - radius - labelWidth - 8); }
     }
     ly = Math.min(height - labelHeight - 12, Math.max(18, ly)); labelBoxes.push({ x: lx, y: ly, w: labelWidth, h: labelHeight });
-    const text = svg('text', { x: lx, y: ly, class: 'direction-label' }); lines.forEach((t, i) => text.append(svg('tspan', { x: lx, dy: i ? 15 : 0 }, t))); group.append(text);
+    if (!compact) { const text = svg('text', { x: lx, y: ly, class: 'direction-label' }); lines.forEach((t, i) => text.append(svg('tspan', { x: lx, dy: i ? 15 : 0 }, t))); group.append(text); }
     const follow = () => action({ type: 'select', directionId: direction.id }); group.addEventListener('click', follow); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); follow(); } });
     plot.append(group);
   });
   host.append(plot);
   const explained = Math.round((view.chart.explainedVariance || 0) * 100);
   $('chart-caption').textContent = aggregate
-    ? `These ${view.directions.length} points are weighted centers of source groups, sized by retrieval weight. This plane retains ${explained}% of variation between those centers, versus ${Math.round((view.chart.sourceDiagnostics?.explainedVariance || 0) * 100)}% across individual source descriptions. Groups can be broad; proximity is a reading suggestion, not a physical claim.`
+    ? `${compact ? 'Numbers match the full directions below. ' : ''}These ${view.directions.length} points are weighted centers of source groups, sized by retrieval weight. This plane retains ${explained}% of variation between those centers, versus ${Math.round((view.chart.sourceDiagnostics?.explainedVariance || 0) * 100)}% across individual source descriptions. Groups can be broad; proximity is a reading suggestion, not a physical claim.`
     : `This local 2D projection retains ${explained}% of the selected variation. Filled points meet the current residual cutoff; hollow points lie farther from the plane. Lines show retrieval affinity or the same paper, not established physical connections.`;
 }
 function renderDirections() {
@@ -229,6 +234,8 @@ async function startBrowser(initial = {}) {
 $('question-form').addEventListener('submit', event => { event.preventDefault(); const query = $('question').value.trim(); if (!query) { status('Enter a physics question or concept.', true); return; } action({ type: $('transition').value, query, intent: $('intent').value, lens: $('lens').value, workRelation: $('work-relation').value }); });
 $('intent').addEventListener('change', () => { if ($('intent').value === 'using') $('work-relation').value = 'using'; });
 $('show-sources').addEventListener('change', () => { if (view) renderChart(); });
+let chartResizeFrame;
+window.addEventListener('resize', () => { cancelAnimationFrame(chartResizeFrame); chartResizeFrame = requestAnimationFrame(() => { if (view) renderChart(); }); });
 $('back').addEventListener('click', () => action({ type: 'back' }));
 $('broaden').addEventListener('click', () => action({ type: 'broaden' }));
 $('reset').addEventListener('click', () => action({ type: 'reset', query: 'Kaluza-Klein towers' }));
