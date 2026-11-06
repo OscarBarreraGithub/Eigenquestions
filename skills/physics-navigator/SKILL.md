@@ -26,6 +26,13 @@ Read [the interface reference](references/interface.md) for the available mode:
   and corpus are available. Locate them from user context or
   `EIGENQUESTIONS_DIR`; the copied skill alone installs neither data nor tools.
 
+Bare home intentionally starts neutral. Resume the saved view or reconnect the
+companion explicitly when that is the intended context; do not assume a reload
+restored it. Read the machine object after choosing. Visible titles are concise
+excerpts; full authoritative context/query/evidence remain in the capsule. A
+native choice labeled Return to step N revisits an identical active-prefix state,
+not a deeper topic. Method/Question metadata describes its representative source.
+
 ## Resolve the conversation
 
 - Inspect page `read()` (or local `navigator_state`/CLI `state`) first: current question, active

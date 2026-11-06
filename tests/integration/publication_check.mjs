@@ -13,6 +13,7 @@ const ASSETS=[
   ['/lib/geometry/identity.mjs','lib/geometry/identity.mjs'],
   ['/lib/protocol/session.mjs','lib/protocol/session.mjs'],
   ['/lib/protocol/capsule.mjs','lib/protocol/capsule.mjs'],
+  ['/lib/protocol/presentation.mjs','lib/protocol/presentation.mjs'],
   ['/schemas/contextual-view.schema.json','schemas/contextual-view.schema.json'],
   ['/llms.txt','llms.txt'], ['/robots.txt','robots.txt'], ['/sitemap.xml','sitemap.xml'],
   ['/docs/agent-interface.md','docs/agent-interface.md'],

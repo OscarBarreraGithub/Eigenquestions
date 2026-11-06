@@ -80,7 +80,9 @@ def main():
             file=temp/'authored.json.gz';file.write_bytes(gzip.compress(json.dumps(b).encode()));page.locator('#import-file').set_input_files(str(file));page.wait_for_function("document.documentElement.dataset.stateId==='authored-b'")
             assert page.evaluate('window.eigenquestionsNavigator.export()')==b
             assert page.evaluate('location.hash')==''
-            page.reload(wait_until='domcontentloaded');page.wait_for_function("document.documentElement.dataset.stateId==='authored-b'")
+            page.reload(wait_until='domcontentloaded');page.wait_for_function("document.documentElement.dataset.ready==='true'")
+            assert page.locator('#home-heading').is_visible()
+            page.locator('#resume-view').click();page.wait_for_function("document.documentElement.dataset.stateId==='authored-b'")
             assert page.evaluate('window.eigenquestionsNavigator.export()')==b
             page.locator('.session-tools > summary').click()
             page.locator('#publish-view').click();page.wait_for_function("document.querySelector('#stored-view-link').hidden===false")
@@ -183,7 +185,10 @@ def main():
             assert reset['snapshot']['session']['states'][0]['focusIds']==[]
             assert page.evaluate('location.hash')==''
             page.reload(wait_until='domcontentloaded');page.wait_for_function("document.documentElement.dataset.ready==='true'")
-            assert page.evaluate('window.eigenquestionsNavigator.export()')==reset
+            assert page.locator('#home-heading').is_visible()
+            assert page.evaluate('window.eigenquestionsNavigator.export().context.question')==''
+            assert page.locator('#resume-view').is_visible()
+            assert page.evaluate('JSON.parse(localStorage.getItem("eigenquestions:view:v1")).context.question')=='black hole evaporation'
             passed('New path clears inherited scientific context and canonical anchors')
             # Fresh boot starts empty and ready without corpus; a stored route wins
             # over prior local capsule, with no transient acceptance of that capsule.

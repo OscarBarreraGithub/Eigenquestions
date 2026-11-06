@@ -15,7 +15,7 @@ export async function checkSite(directory = path.join(root, 'dist')) {
   }
   await visit(directory);
   assert.ok(entries.length <= 20000, 'Too many static assets for a free-plan deployment');
-  for (const required of ['index.html', '404.html', 'app.js', 'compute-worker.js', 'styles.css', 'lib/protocol/session.mjs', 'lib/protocol/capsule.mjs', 'lib/geometry/index.mjs', 'data/manifest.json', 'docs/site.md', 'docs/agent-interface.md', 'docs/navigation-contract.md', 'docs/geometry.md', 'docs/geometry-experiments.md', 'docs/stored-views-operations.md']) assert.ok(entries.includes(required), `Missing product asset ${required}`);
+  for (const required of ['index.html', '404.html', 'app.js', 'compute-worker.js', 'styles.css', 'lib/protocol/session.mjs', 'lib/protocol/capsule.mjs', 'lib/protocol/presentation.mjs', 'lib/geometry/index.mjs', 'data/manifest.json', 'docs/site.md', 'docs/agent-interface.md', 'docs/navigation-contract.md', 'docs/geometry.md', 'docs/geometry-experiments.md', 'docs/stored-views-operations.md']) assert.ok(entries.includes(required), `Missing product asset ${required}`);
   for (const file of entries) assert.ok(!/^(api|quiz|taste|submit|review|leaderboard|explore|_next|\.git)\//.test(file), `Retired route in static output: ${file}`);
   assert.ok(!entries.some(file => file.includes('Q-001-original') || file.includes('Lab Notebook') || file.includes('.env')), 'Private planning/runtime material must not enter the public build');
   const html = await readFile(path.join(directory, 'index.html'), 'utf8');

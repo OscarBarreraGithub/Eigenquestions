@@ -245,7 +245,7 @@ def main():
             assert state_id()==base_id
             page.locator('#question').fill('axion early dark energy');page.locator('#explore-button').click()
             page.evaluate('window.__eqQa.holdWorkerResults=false;window.__eqQa.releaseWorker()')
-            page.wait_for_function("document.querySelector('#current-question').textContent==='axion early dark energy'");wait_idle()
+            page.wait_for_function("document.querySelector('#full-question-text').textContent==='axion early dark energy'");wait_idle()
             replaced=export_ui();result_state=replaced['states'][replaced['cursor']]
             assert len(replaced['states'])==base['cursor']+2
             assert all(state['query']!='axion instanton action' for state in replaced['states'])
@@ -360,12 +360,14 @@ def main():
             passed('atomic revision guard preserves intervening MCP state and the UI draft during a rebase conflict',status=conflict_status)
             external=intervening
 
-            connected.reload(wait_until='domcontentloaded');wait_id(external['state']['id'],connected)
+            connected.reload(wait_until='domcontentloaded');connected.wait_for_function("document.documentElement.dataset.ready==='true'")
+            assert connected.locator('#home-heading').is_visible()
+            connected.locator('#resume-companion').click();wait_id(external['state']['id'],connected)
             connected.wait_for_function("document.querySelector('#connection-status').textContent.includes('Agent connected')")
             deadline=time.monotonic()+10
             while not tool('navigator_state')['browserStatus']['acknowledgedCurrent'] and time.monotonic()<deadline:connected.wait_for_timeout(100)
             assert tool('navigator_state')['browserStatus']['acknowledgedCurrent']
-            passed('attachment reload and exact rendered-state acknowledgement survive the new layout')
+            passed('explicit reconnect after neutral reload restores attachment and exact rendered-state acknowledgement')
 
             page.set_viewport_size({'width':1024,'height':900});page.locator('#view-sources').click()
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')

@@ -13,6 +13,13 @@ collection must not limit the questions, sources or conclusions you consider.
 A short orientation should usually take one query and inspection of a few source
 IDs. Expand only when it helps the user's task.
 
+A bare homepage starts a neutral path even when prior browser data exists.
+Use **Resume last view** or **Reconnect agent** explicitly to recover a previous
+exploration/companion. Opening home does not erase the saved view. An explicit
+`#view`, `#focus` or companion token link opens its intended destination. After a
+companion token has been removed from the address bar, reloading the bare page
+requires explicit Reconnect; a saved token is not permission to reconnect silently.
+
 An agent with permission and tools to execute JavaScript in the page can use
 `window.eigenquestionsNavigator`. It shares the human UI's controller and worker;
 there is no second engine, server computation, model backend or required install.
@@ -209,7 +216,15 @@ neighbors. “Recent” means recent within the frozen manifest date.
 context through pronouns without concatenating all ancestor queries. Prefer a
 self-contained resolved query in agent calls. Supply `focusIds` for precise
 source anchors; use `pivot` for a new topic and `broaden` to release anchors and
-exclusions. All these operations recompute, rather than zoom a fixed tree.
+exclusions. These operations use the actual computed source neighborhood rather than a fixed
+tree. Native selection of an exactly matching active-prefix state returns to that
+step without inventing another level; its source remains a valid offered choice.
+The check uses the full normalized state and never removes evidence merely to
+force novelty. Old exported histories remain intact. Short visible labels are
+presentation excerpts only: use `capsule.context.question`, canonical state,
+full direction queries and evidence for reasoning. Native row Method/Question
+labels describe the representative source facet; they do not certify a newly
+synthesized question cluster.
 
 ## Tested behavior and limits
 

@@ -1,0 +1,19 @@
+{
+  "request": "Q-005",
+  "checkedUtc": "2026-11-06T18:53:46.524677+00:00",
+  "tests": {
+    "passed": 35,
+    "failed": 0
+  },
+  "build": {
+    "assets": 71,
+    "verifiedCorpusShards": 41
+  },
+  "checks": [
+    "npm run build",
+    "npm test",
+    "npm run check:site",
+    "git diff --check"
+  ],
+  "scope": "Pre-freeze local unit/Worker/protocol/static checks. Browser validation and deployment pending. Initial publication test correctly detected a stale built presentation helper; a fresh build resolved it."
+}

@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
 - **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
-- **Unfinished/running:** Astra is repairing entry/history behavior, Sol is refining the text interface, and an independent Astra audit is checking real-data repetition. No Slurm job yet. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
-- **Next:** Separate concise display labels from full scientific context; expose explicit Resume and actual alternatives at each visited step, then verify the reported journey in a real browser. [Q-005 plan](docs/Q-005-plan.md).
+- **Unfinished/running:** Implementation and 35 local tests pass; final browser harness checks are being prepared. No Slurm job yet. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
+- **Next:** Freeze the repaired entry/choices/return behavior and verify the reported journey in a real browser, including authored-history safety and phone layouts. [Q-005 plan](docs/Q-005-plan.md).
 - **Git:** Starting from clean published `8a9a00d` on main and `agent/stored-views-quiet-ui`; coordinator `/root` owns checkpoints and release.
 
 ## Requests
@@ -335,3 +335,19 @@
 **Amendment to Q-004.** The earlier startup correction removed the hardcoded first KK view and its subsequent jump. It did not remove automatic resumption on a bare visit. Q-005 changes that policy to explicit Resume; the earlier clean-profile tests did not cover this expectation.
 
 **Tried/next.** `/root` assigned Astra controller/history work, Sol interface refinement and an independent Astra real-data audit with shared requirements. Preserve full queries and evidence while shortening their display, and show the actual alternatives and choice taken at each step. A prior failed query-shortening experiment rules out treating this as a casual scientific-input edit. [Plan](docs/Q-005-plan.md). No implementation or new browser validation is claimed at this checkpoint.
+
+## 2026-11-06 UTC — Q-005: Find genuine navigation cycles
+
+**Tried/contributor.** Astra `/root/stored_view_backend` ran real-data multi-step native selection routes starting from KK towers, including the reported one-loop method, and compared canonical state and source identities.
+
+**Observed.** Repeated selections alternate between the same two canonical views on several routes. The immediate self-source guard does not prevent returning to an older source. The five choices after the quoted method are all method facets, not synthesized physical questions. [Audit evidence](docs/evidence/q005/navigation-audit.json).
+
+**Decision/next.** Shorter text alone is insufficient. Recognize an identical native destination as a return to an earlier step, retaining the actual source-based choices rather than manufacturing new depth or deleting relevant evidence. Label representative facet types and exact revisits; preserve full source evidence and authored views. Astra protocol will implement and regress this shared browser/CLI behavior after checking history implications. Semantic topic synthesis is a separate agent-authored interpretation, not something the static renderer currently supplies.
+
+## 2026-11-06 UTC — Q-005: Repair entry, choices and exact returns
+
+**Tried/contributors.** Astra protocol separated display excerpts from scientific state, made saved-state resumption explicit and added shared exact-state return behavior to native selection. Sol supplied the neutral entry, full-context disclosure, paper/facet metadata and clear historical-choice markers. Astra audit supplied the real-data cycle and a focused browser regression. Root reviewed integrated semantics and required preservation of source provenance, exact authored returns and truthful action history during concurrent agent updates.
+
+**Observed.** All 35 local Node/Worker/protocol tests pass, with 71 built assets and 41 verified corpus shards. Six real selections now retain five unique history states and recognize two return visits; full method text and numerical computation remain unchanged. A stale built helper initially failed the publication test; rebuilding resolved it. Build precedes tests in the documented verification order. [Local validation](docs/evidence/q005/local-validation.json).
+
+**Meaning/next.** This fixes exact repetition and presentation, not all semantic redundancy or the synthesis of higher-level research questions. Preserve old session data and mark older recorded returns; do not rewrite scientific history. Freeze this prototype and run the reported path plus existing race/authored-view suites in Slurm Chromium, then inspect the screenshots before publishing.

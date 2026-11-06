@@ -25,6 +25,13 @@ npm start
 Open `http://127.0.0.1:4173`. Choose a concept, approach and perspective. Refine
 keeps source context, pivot starts another focus, and back/path controls replay
 prior views. **New path** clears the inherited context and focuses a fresh question.
+Opening the bare homepage is always neutral. **Resume last view** explicitly
+opens the previous exploration; explicit view/focus/companion links still open
+their destinations. Short navigation excerpts leave the full **context** and
+source text accessible. Earlier columns retain their actual choices and mark
+the choice followed. An exact native revisit returns to its earlier step instead
+of adding apparent depth. Method and question facets remain distinguishable;
+these representative excerpts are not automatically synthesized topic names.
 Sources/Geometry tabs and path scrolling remain available during computation.
 The public page and local page use the same engine and corpus.
 Computation runs in a browser worker; the first native query downloads the

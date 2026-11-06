@@ -99,7 +99,7 @@ def main():
                 result = tool('navigator_navigate', action)
                 state = result['state']
                 page.wait_for_function('(id) => document.documentElement.dataset.stateId === id', arg=state['id'])
-                assert page.locator('#current-question').inner_text() == state['query']
+                assert page.locator('#full-question-text').inner_text() == state['query']
                 show_geometry(page)
                 if result['view']['chart'].get('fitScope') == 'direction-centroids':
                     assert page.locator('.chart-direction').count() == len(result['view']['directions'])
@@ -139,8 +139,11 @@ def main():
             assert imported['state']['id'] == decay['state']['id']
             report['checks'].append({'name': 'MCP export/import restores geometry and browser', 'passed': True})
             page.reload(wait_until='domcontentloaded')
+            page.wait_for_function("document.documentElement.dataset.ready==='true'")
+            assert page.locator('#home-heading').is_visible()
+            page.locator('#resume-companion').click()
             page.wait_for_function("document.querySelector('#connection-status').textContent.includes('Agent connected')")
-            mobile_state = navigate({'type': 'refine', 'query': 'KK dark matter cosmological constraints'}, 'reload reconnects and subsequent agent operation updates browser')
+            mobile_state = navigate({'type': 'refine', 'query': 'KK dark matter cosmological constraints'}, 'explicit reconnect after neutral reload restores subsequent agent updates')
             page.set_viewport_size({'width': 390, 'height': 844})
             page.locator('.compact-chart').wait_for()
             assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth + 1')
@@ -168,7 +171,7 @@ def main():
             selected_from = mobile_state['state']['id']
             page.locator('.chart-direction .direction-dot').first.click()
             page.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=selected_from)
-            assert page.locator('#current-question').inner_text() == selected_query
+            assert page.locator('#full-question-text').inner_text() == selected_query
             page.locator('#back').click()
             page.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=selected_from)
             report['checks'].append({'name': 'human mobile marker selection changes the question and Back restores the state', 'passed': True})
@@ -245,7 +248,7 @@ def main():
                 assert public_page.locator('#directions .direction').count()==0
                 public_page.locator('#question').fill('KK towers')
                 public_page.locator('#explore-button').click()
-                public_page.wait_for_function("document.querySelector('#current-question').textContent==='KK towers'&&!document.body.classList.contains('busy')",timeout=180000)
+                public_page.wait_for_function("document.querySelector('#full-question-text').textContent==='KK towers'&&!document.body.classList.contains('busy')",timeout=180000)
                 show_geometry(public_page)
                 assert public_page.locator('.chart-direction').count() == 5
                 public_page.locator('#agent-open').click()
@@ -281,7 +284,7 @@ def main():
                     standalone.locator('#transition').select_option(transition)
                     standalone.locator('#explore-button').click()
                     standalone.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=old_id, timeout=60000)
-                    assert standalone.locator('#current-question').inner_text() == query
+                    assert standalone.locator('#full-question-text').inner_text() == query
                     assert standalone.locator('#directions .direction').count() == 5
                     return standalone.locator('html').get_attribute('data-state-id')
 
@@ -330,6 +333,9 @@ def main():
                 standalone.locator('#import-file').set_input_files(str(export_path))
                 standalone.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=using_id)
                 standalone.reload(wait_until='domcontentloaded')
+                standalone.wait_for_function("document.documentElement.dataset.ready==='true'")
+                assert standalone.locator('#home-heading').is_visible()
+                standalone.locator('#resume-view').click()
                 standalone.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=using_id, timeout=180000)
                 report['checks'].append({'name': 'public direction selection, backtracking, export/import and reload reproduce the same state', 'passed': True})
                 standalone.screenshot(path=str(output / 'public-static-view.png'), full_page=True)

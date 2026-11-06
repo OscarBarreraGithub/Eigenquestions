@@ -1,5 +1,6 @@
-import { currentState, exportSession, validateSession } from '/lib/protocol/session.mjs';
+import { currentState, exportSession, importSession, validateSession, selectionTarget } from '/lib/protocol/session.mjs';
 import {CAPSULE_KIND, NATIVE_BUILDER, MAX_JSON_BYTES, MAX_COMPRESSED_BYTES, createCapsule, validateCapsule, capsuleCapabilities, decodeCapsuleBytes, encodeCapsuleBytes} from '/lib/protocol/capsule.mjs';
+import {displayExcerpt,representativeInfo,previousVisitIndex} from '/lib/protocol/presentation.mjs';
 import { placeChartLabel } from '/chart-labels.mjs';
 
 const $ = id => document.getElementById(id);
@@ -12,7 +13,7 @@ let activePanel = 'sources', sourceEpoch = 0, userIntent = 0, draftVersion = 0, 
 let actionQueue = Promise.resolve(), loadingTask = Promise.resolve(), queuedBridgeSnapshot = null, bridgeNeedsRebase = false;
 let bridgeRebaseRevision = null;
 let activeCapsule, uiRevision = 0, nativeComputationId, nativeEmptySnapshot, workerReady, routeGeneration = 0, routeAbort;
-let acceptedCount = 0, renderedRevision = -1;
+let acceptedCount = 0, renderedRevision = -1, resumeCandidate, resumeCompanion;
 const observers = new Set(), readyWaiters = [];
 const capsuleStorageKey = 'eigenquestions:view:v1';
 const columnViews = new Map(), acceptedCapsules = new Map();
@@ -48,10 +49,17 @@ function readableSession(capsule) {
 }
 function canAttemptContinuation() { return activeCapsule?.continuation.mode === 'native-actions' && Boolean(activeCapsule.snapshot.session); }
 function historicalAction(stateId, direction) { const capsule = acceptedCapsules.get(stateId); return capsule?.continuation.actions.find(item => item.id === direction.id)?.action || (columnViews.get(stateId)?.authored ? null : {type:'select',directionId:direction.id}); }
+function stateQuestion(state) { return acceptedCapsules.get(state.id)?.context.question || columnViews.get(state.id)?.question || state.query; }
+function stepNumber(index) { return Math.max(1,session.states.slice(0,index+1).filter(state=>stateQuestion(state).trim()).length); }
+function revisitFor(direction, atSession = session) {
+  if (activeCapsule?.builder.id !== NATIVE_BUILDER || !atSession?.schemaVersion) return -1;
+  try { return selectionTarget(atSession,direction).revisitIndex; } catch { return -1; }
+}
 function followDirection(direction) {
   const next = activeCapsule.continuation.actions.find(item => item.id === direction.id);
   if (!next || !canAttemptContinuation()) { status('This supplied group has no executable next action. Inspect its sources, or start a new path.', true); return; }
-  return action(next.action, { explicitContinuation: true });
+  const revisit = next.action.type === 'select' ? revisitFor(direction) : -1;
+  return action(revisit >= 0 ? {type:'replay',index:revisit} : next.action, { explicitContinuation: true, viaDirectionId:direction.id });
 }
 function capabilities() { return activeCapsule ? capsuleCapabilities(activeCapsule, nativeComputationId) : {display: false, recompute: false, continue: false}; }
 function machineRead() {
@@ -80,14 +88,15 @@ function assertRevision(expected) {
 }
 function save() {
   if (!session) return;
-  try { if (activeCapsule) localStorage.setItem(capsuleStorageKey, JSON.stringify(activeCapsule)); if (activeCapsule?.snapshot.session) localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
+  try { if (activeCapsule && (activeCapsule.context.question.trim() || view.nodes.length)) localStorage.setItem(capsuleStorageKey, JSON.stringify(activeCapsule)); if (activeCapsule?.snapshot.session && (activeCapsule.context.question.trim() || view.nodes.length)) localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
   const cached = [...columnViews.values()].slice(-24);
   setTimeout(() => { try { localStorage.setItem(columnStorageKey, JSON.stringify(cached)); } catch {} }, 0);
 }
 function rememberView(result) {
   if (activeCapsule) { acceptedCapsules.delete(result.stateId); acceptedCapsules.set(result.stateId, structuredClone(activeCapsule)); while (acceptedCapsules.size > 24) acceptedCapsules.delete(acceptedCapsules.keys().next().value); }
+  const previous = columnViews.get(result.stateId);
   columnViews.delete(result.stateId);
-  columnViews.set(result.stateId, { authored: activeCapsule?.builder.id !== NATIVE_BUILDER, stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(({ id, label, query, seedIds, sourceCount, evidenceIds }) => ({ id, label, query, seedIds, sourceCount, evidenceIds })) });
+  columnViews.set(result.stateId, { question: activeCapsule?.context.question || result.query, transitions: previous?.transitions || {}, authored: activeCapsule?.builder.id !== NATIVE_BUILDER, stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(direction => {const {id,label,query,seedIds,sourceCount,evidenceIds,intent,lens,workRelation}=direction;return {id,label,query,seedIds,sourceCount,evidenceIds,intent,lens,workRelation,...representativeInfo(direction,result.nodes,activeCapsule?.builder.id!==NATIVE_BUILDER)};}) });
   while (columnViews.size > 24) columnViews.delete(columnViews.keys().next().value);
 }
 function clearViewRoute() { const hash = new URLSearchParams(location.hash.slice(1)); if (hash.has('view') || hash.has('focus')) history.replaceState(null, '', location.pathname + location.search); }
@@ -113,19 +122,19 @@ function accept(snapshot, { formVersion, keepRoute = false, preserveContext = fa
   }
   return true;
 }
-function acceptCapsule(input, {expectedRevision, clearForm = false, keepRoute = false} = {}) {
+function acceptCapsule(input, {expectedRevision, clearForm = false, keepRoute = false, persist = true, preserveCompanion = false} = {}) {
   if (expectedRevision !== undefined) assertRevision(expectedRevision);
   const capsule = structuredClone(validateCapsule(input));
   if (!keepRoute) clearViewRoute();
   ++routeGeneration; routeAbort?.abort();
   ++userIntent; ++sourceEpoch; events?.close(); bridge = null; revision = -1;
-  try { sessionStorage.removeItem(bridgeStorageKey); } catch {}
+  if (!preserveCompanion) { try { sessionStorage.removeItem(bridgeStorageKey); } catch {} }
   queuedBridgeSnapshot = null; bridgeNeedsRebase = false; actionQueue = Promise.resolve(); loadingTask = Promise.resolve();
   activeCapsule = capsule; session = readableSession(capsule); view = capsule.snapshot.view;
   selectedId = null; selectedDirectionId = null; allEvidence = false;
   if (clearForm) draftDirty = false;
   $('connection-status').textContent = 'Browser session';
-  rememberView(view); render(); save(); setBusy(false); notifyAccepted();
+  rememberView(view); render(); if(persist)save(); setBusy(false); notifyAccepted();
   return machineRead();
 }
 async function verifyAuthoredAnchors(capsule, payload) {
@@ -135,7 +144,7 @@ async function verifyAuthoredAnchors(capsule, payload) {
   const missing = evidence.filter(source => source.error).map(source => source.id);
   if (missing.length) throw new Error(`Cannot continue this authored view: ${missing.slice(0,3).join(', ')} is not a source in the loaded corpus. The supplied view is unchanged; use genuine source anchors.`);
 }
-function action(payload, { followup, operation = 'action', clearForm = false, explicitContinuation = false } = {}) {
+function action(payload, { followup, operation = 'action', clearForm = false, explicitContinuation = false, viaDirectionId } = {}) {
   ++routeGeneration; routeAbort?.abort();
   const ticket = ++userIntent, source = sourceEpoch, formVersion = draftVersion;
   const baseCapsule = activeCapsule;
@@ -186,10 +195,23 @@ function action(payload, { followup, operation = 'action', clearForm = false, ex
       if (followup && !followed) result = transport ? await bridgeFetch('/api/action', { method: 'POST', headers: { 'If-Match': `"${result.revision}"` }, body: JSON.stringify(followup) }, transport) : await callWorker('action', { action: followup, baseSession: result.session });
       if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
       // Agent changes may have arrived while this request's response was delayed.
-      if (queuedBridgeSnapshot && queuedBridgeSnapshot.revision > (result.revision ?? -1)) result = queuedBridgeSnapshot;
+      const externalReplacement = queuedBridgeSnapshot && queuedBridgeSnapshot.revision > (result.revision ?? -1);
+      if (externalReplacement) result = queuedBridgeSnapshot;
       queuedBridgeSnapshot = null;
+      const fromIndex = payload.type === 'replay' && followup ? payload.index : baseSession?.cursor;
+      const fromState = baseSession?.states[fromIndex];
+      if (!externalReplacement && fromState && result.view.stateId !== fromState.id && operation === 'action' && !['reset','back','forward','replay'].includes(followup?.type || payload.type)) {
+        const parent = columnViews.get(fromState.id);
+        if (parent) parent.transitions = {...parent.transitions,[result.view.stateId]:{type:followup?.type || payload.type,directionId:viaDirectionId || followup?.directionId || payload.directionId || null}};
+      }
+      // A native return may land on a prior authored display sharing this exact
+      // canonical state. Restore that object, not newly computed native groups.
+      const returning = !transport && (payload.type === 'select' || followup?.type === 'select') && baseSession?.states.slice(0,baseSession.cursor+1).some(state=>JSON.stringify(state)===JSON.stringify(currentState(result.session)));
+      const retained = returning && acceptedCapsules.get(result.view.stateId);
+      if(returning && !retained && columnViews.get(result.view.stateId)?.authored)throw new Error('The exact authored return view is no longer cached. Reopen its full view file; native recomputation would replace its grouping.');
+      if (retained && retained.builder.id !== NATIVE_BUILDER) {const restored=structuredClone(retained);restored.snapshot.session=result.session;return acceptCapsule(restored);}
       if (payload.type === 'reset') activeCapsule = null;
-      accept(result, { formVersion: clearForm ? formVersion : undefined, context: branchContext || (['replay','back','forward'].includes(payload.type) && !followup ? acceptedCapsules.get(result.view.stateId)?.context : undefined), preserveContext: operation === 'action' && !['reset','pivot','replay','back','forward'].includes(payload.type) });
+      accept(result, { formVersion: clearForm ? formVersion : undefined, context: branchContext || (['replay','back','forward'].includes(payload.type) && !followup ? acceptedCapsules.get(result.view.stateId)?.context : undefined), preserveContext: !externalReplacement && operation === 'action' && !['reset','pivot','replay','back','forward'].includes(payload.type) });
       return machineRead();
     } catch (error) {
       if (ticket === userIntent && source === sourceEpoch) {
@@ -210,13 +232,21 @@ function action(payload, { followup, operation = 'action', clearForm = false, ex
 }
 function render() {
   const state = currentState(session), scope = view.diagnostics?.scope || {}, displayQuestion = activeCapsule.context.question;
-  const empty = !state.query.trim() && !view.nodes.length;
+  const empty = !displayQuestion.trim() && !view.nodes.length;
+  $('home-heading').hidden = !empty; $('exploration-workspace').hidden = empty;
+  refreshResume(empty);
   document.querySelector('.column-navigation').hidden = empty;
   document.querySelector('.reading-pane').hidden = empty;
   document.querySelector('.navigator-note').hidden = empty || !canAttemptContinuation();
   $('current-context').hidden = empty;
-  $('current-question').textContent = displayQuestion || 'Start a new path';
-  if (!draftDirty) { $('question').value = displayQuestion; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
+  $('current-question').textContent = displayExcerpt(displayQuestion,90) || 'Start a new path';
+  $('full-question-details').hidden = !displayQuestion || $('current-question').textContent === displayQuestion;
+  $('full-question-text').textContent = displayQuestion;
+  const normalizedQuestion = displayQuestion.trim().replace(/\s+/g,' ');
+  const knownSource = activeCapsule.builder.id === NATIVE_BUILDER && [...acceptedCapsules.values()].flatMap(capsule=>capsule.snapshot.view.nodes).find(node=>state.focusIds.includes(node.id) && String(node.evidence?.text || '').slice(0,3900).trim().replace(/\s+/g,' ')===normalizedQuestion);
+  const sourceLink = safeUrl(knownSource?.sourceUrl || knownSource?.evidence?.url);
+  $('full-question-source').hidden = !sourceLink; if(sourceLink){$('full-question-source').href=sourceLink;$('full-question-source').textContent=`Source: ${knownSource.title}`;}
+  if (!draftDirty) { $('question').value = ''; $('question').placeholder = empty ? 'Physics question or concept' : 'Ask a follow-up or explore another concept'; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
   const context = view.diagnostics?.contextTerms || [];
   $('current-context').textContent = state.query ? `${labels[state.intent]} · ${labels[state.lens]}${state.focusIds.length ? ` · Building on ${state.focusIds.length} sources${context.length ? ` about ${context.slice(0, 3).join(', ')}` : ''}` : ' · Across the corpus'}` : 'Enter a concept or question above. This path has no inherited focus.';
   $('back').disabled = session.cursor === 0 || !canAttemptContinuation();
@@ -224,9 +254,10 @@ function render() {
   $('path').replaceChildren();
   session.states.forEach((item, index) => {
     if (index) $('path').append(el('span', 'path-arrow', '›'));
-    const pathQuestion = (!bridge && acceptedCapsules.get(item.id)?.context.question) || item.query;
-    const button = el('button', '', pathQuestion || 'New path'); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
-    button.setAttribute('aria-label', `Step ${index + 1}: ${item.query || 'New path'}`);
+    const pathQuestion = bridge ? item.query : stateQuestion(item);
+    const earlier = activeCapsule.builder.id===NATIVE_BUILDER && !columnViews.get(item.id)?.authored ? previousVisitIndex(session,index) : -1;
+    const button = el('button', '', earlier>=0 ? `Return to step ${stepNumber(earlier)}` : displayExcerpt(pathQuestion,48) || 'New path'); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
+    button.setAttribute('aria-label', pathQuestion ? `Step ${stepNumber(index)}: ${pathQuestion}` : 'New path');
     if (index === session.cursor) button.setAttribute('aria-current', 'step');
     button.disabled = !canAttemptContinuation(); button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
   });
@@ -255,25 +286,38 @@ function renderColumns() {
   const states = session.states.slice(0, session.cursor + 1);
   for (let index = 0; index < states.length; index++) {
     const state = states[index], current = index === session.cursor, next = states[index + 1];
-    if (!current && !state.query.trim()) continue;
+    if (!current && !stateQuestion(state).trim()) continue;
     const cached = columnViews.get(state.id);
     const directions = current ? view.directions : cached?.computationId === state.computationId && !(bridge && cached.authored) ? cached.directions : null;
     const column = el('section', 'miller-column'); column.dataset.stateId = state.id; column.dataset.historyIndex = index; column.dataset.current = String(current);
-    const heading = el('div', `column-heading${current ? ' current-column-heading' : ''}`); heading.append(el('span', 'column-step', `Step ${index + 1}`));
-    if (!current) heading.append(el('h3', '', short(state.query || 'Your first question', 80)));
+    const legacyReturn = activeCapsule.builder.id===NATIVE_BUILDER && !cached?.authored ? previousVisitIndex(session,index) : -1;
+    const heading = el('div', `column-heading${current ? ' current-column-heading' : ''}`); heading.append(el('span', 'column-step', `Step ${stepNumber(index)} · ${current ? 'Next choices' : 'Choices then'}`));
+    if (!current) heading.append(el('h3', '', displayExcerpt(stateQuestion(state) || 'Your first question',72)));
+    if(legacyReturn>=0)heading.append(el('span','direction-state',`Return to step ${stepNumber(legacyReturn)}`));
     heading.title = state.query; column.append(heading);
     const list = el('div', 'directions'); if (current) list.id = 'directions';
     if (directions?.length) {
       let selected = false;
       directions.forEach((direction, directionIndex) => {
         const row = el('div', 'direction-row'), button = el('button', 'direction'); button.type = 'button'; button.dataset.directionId = direction.id;
-        button.title = direction.label; button.setAttribute('aria-label', `Direction ${directionIndex + 1}: ${direction.label}`);
-        if (next && next.query === direction.query && direction.seedIds?.every(id => next.focusIds.includes(id))) { button.setAttribute('aria-current', 'step'); selected = true; }
+        const fullLabel = direction.label, label = displayExcerpt(fullLabel,72);
+        button.title = direction.query || fullLabel; button.setAttribute('aria-label', `Direction ${directionIndex + 1}: ${direction.query || fullLabel}`);
+        const transition = next && cached?.transitions?.[next.id];
+        const followed = Boolean(transition?.directionId === direction.id && ['select','refine','pivot','navigate'].includes(transition.type));
+        if (followed) { button.setAttribute('aria-current','step');selected=true; }
+        const priorSession = session.schemaVersion ? {...session,cursor:index} : null;
+        const revisit = (current || !cached?.authored) ? revisitFor(direction,priorSession) : -1;
+        const info = current ? representativeInfo(direction,view.nodes,activeCapsule.builder.id!==NATIVE_BUILDER) : {kind:direction.kind || 'Source direction',sourceTitle:direction.sourceTitle || ''};
         button.append(el('span', 'direction-number', String(directionIndex + 1).padStart(2, '0')));
-        const content = el('span', 'direction-content'); content.append(el('h3', '', direction.label), el('span', 'direction-meta', `${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} source descriptions`));
+        const content = el('span', 'direction-content'); content.append(el('h3', '', label));
+        if(info.sourceTitle && !fullLabel.includes(info.sourceTitle))content.append(el('span','direction-source direction-source-title',displayExcerpt(info.sourceTitle,72)));
+        const meta=el('span','direction-meta');meta.append(el('span','direction-kind',info.kind),document.createTextNode(` · ${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} sources`));
+        if(followed)meta.append(el('span','direction-state','Followed'));
+        if(revisit>=0)meta.append(el('span','direction-state',`Return to step ${stepNumber(revisit)}`));
+        content.append(meta);
         button.append(content, el('span', 'direction-arrow', '›'));
         button.disabled = !canAttemptContinuation() || (!current && !historicalAction(state.id,direction)) || (current && !activeCapsule.continuation.actions.some(item => item.id === direction.id && (activeCapsule.builder.id === NATIVE_BUILDER || item.action.type !== 'select')));
-        button.addEventListener('click', () => current ? followDirection(direction) : action({ type: 'replay', index }, { followup: historicalAction(state.id,direction) }));
+        button.addEventListener('click', () => current ? followDirection(direction) : action({ type: 'replay', index }, { followup: historicalAction(state.id,direction), viaDirectionId:direction.id }));
         row.append(button);
         if (current) {
           const inspect = el('button', 'direction-evidence', 'Sources'); inspect.type = 'button'; inspect.setAttribute('aria-label', `Inspect sources for direction ${directionIndex + 1}`); inspect.title = 'Inspect sources'; inspect.setAttribute('aria-pressed', String(selectedDirectionId === direction.id));
@@ -286,13 +330,15 @@ function renderColumns() {
         }
         list.append(row);
       });
-      if (next && !selected) { const follow = el('div', 'column-followup'); follow.append(el('strong', '', 'Follow-up question →'), el('span', '', short(next.query, 120))); list.append(follow); }
+      if(!current && cached?.authored && !acceptedCapsules.has(state.id))list.append(el('p','column-restore','These authored choices are a saved reference. Reopen the full view file to restore their exact context and continue.'));
+      if (next && !selected) { const follow = el('div', 'column-followup'); follow.append(el('strong', '', cached?.transitions?.[next.id]?.type === 'refine' ? 'Refined question →' : 'Follow-up →'), el('span', '', displayExcerpt(acceptedCapsules.get(next.id)?.context.question || next.query,72))); list.append(follow); }
     } else if (!current && !directions) {
       const restore = el('div', 'column-restore'); restore.append(el('p', '', 'This step is in your path. Restore it to recompute its directions.'));
       const button = el('button', '', 'Restore step →'); button.type = 'button'; button.addEventListener('click', () => action({ type: 'replay', index })); restore.append(button); list.append(restore);
     } else list.append(el('p', 'empty-state', state.query ? 'No supported directions for this question. Try another focus or broaden the context.' : 'Begin with a physics concept. Your first question will open approximately five directions here.'));
     column.append(list); host.append(column);
   }
+  $('navigator-note').hidden = host.children.length < 2 || !canAttemptContinuation();
   requestAnimationFrame(() => { host.scrollLeft = host.scrollWidth; const crumb = $('path').querySelector('[aria-current]'); if (crumb) $('path').scrollLeft = crumb.offsetLeft - $('path').offsetLeft; updateColumnControls(); });
 }
 function updateColumnControls() { const host = $('columns'); $('browse-prev').disabled = host.scrollLeft < 2; $('browse-next').disabled = host.scrollLeft + host.clientWidth >= host.scrollWidth - 2; }
@@ -488,8 +534,8 @@ async function startBrowser(initial = {}, {keepRoute = false} = {}) {
   finally { if (source === sourceEpoch && ticket === userIntent) setBusy(false); }
 }
 function emptyPath() {
-  if (nativeEmptySnapshot) return acceptCapsule(createCapsule(nativeEmptySnapshot));
-  return acceptCapsule({schemaVersion:'1.0.0',kind:CAPSULE_KIND,builder:{id:'browser-empty',version:'1.0.0'},context:{question:''},snapshot:{view:{stateId:'empty',corpusId:'not-loaded',computationId:'not-loaded',query:'',nodes:[],directions:[],edges:[],warnings:[],diagnostics:{},chart:null}},continuation:{mode:'snapshot-only',originStateId:'empty',description:'Enter a question to load the collection and compute a new path on this device.',actions:[]}});
+  if (nativeEmptySnapshot) return acceptCapsule(createCapsule(nativeEmptySnapshot),{persist:false,preserveCompanion:true});
+  return acceptCapsule({schemaVersion:'1.0.0',kind:CAPSULE_KIND,builder:{id:'browser-empty',version:'1.0.0'},context:{question:''},snapshot:{view:{stateId:'empty',corpusId:'not-loaded',computationId:'not-loaded',query:'',nodes:[],directions:[],edges:[],warnings:[],diagnostics:{},chart:null}},continuation:{mode:'snapshot-only',originStateId:'empty',description:'Enter a question to load the collection and compute a new path on this device.',actions:[]}},{persist:false,preserveCompanion:true});
 }
 function updateOptionsSummary() {
   const defaults = { intent: 'explore', lens: 'combined', 'work-relation': 'either', transition: 'refine' };
@@ -574,6 +620,21 @@ $('agent-open').addEventListener('click', () => $('agent-dialog').showModal()); 
 $('bridge-form').addEventListener('submit', async event => { event.preventDefault(); try { await connect($('bridge-origin').value, $('bridge-token').value); } catch (error) { $('bridge-message').textContent = `${error.message} If browser network policy blocks attachment, open the companion’s same-origin local link.`; } });
 $('bridge-disconnect').addEventListener('click', async () => { ++userIntent; events?.close(); bridge = null; revision = -1; try { sessionStorage.removeItem(bridgeStorageKey); } catch {} history.replaceState(null, '', location.pathname + location.search); $('connection-status').textContent = 'Browser session'; $('bridge-message').textContent = 'Disconnected. Continuing this session in the browser.'; try { await startBrowser(session ? { session: exportSession(session) } : {}); } catch (error) { status(error.message, true); } });
 
+function refreshResume(home = $('exploration-workspace').hidden) {
+  resumeCandidate = null; resumeCompanion = null; let invalid = false;
+  try {
+    const stored=localStorage.getItem(capsuleStorageKey),legacy=localStorage.getItem(storageKey);
+    if(stored){const capsule=validateCapsule(JSON.parse(stored));if(capsule.context.question.trim()||capsule.snapshot.view.nodes.length)resumeCandidate={kind:'capsule',payload:capsule,label:capsule.context.question};}
+    else if(legacy){const payload=JSON.parse(legacy),previous=importSession(payload);if(currentState(previous).query.trim())resumeCandidate={kind:'session',payload,label:currentState(previous).query};}
+  } catch { invalid = true; }
+  try {const saved=JSON.parse(sessionStorage.getItem(bridgeStorageKey)||'null');if(saved&&typeof saved.origin==='string'&&typeof saved.token==='string'&&saved.token)resumeCompanion=saved;}catch{invalid=true;}
+  $('resume-prior').hidden = !home || (!resumeCandidate && !resumeCompanion && !invalid);
+  $('resume-view').hidden = !resumeCandidate; $('resume-companion').hidden = !resumeCompanion;
+  $('resume-label').textContent = invalid ? 'A saved exploration could not be read. It has been kept; open a valid file or begin a new question.' : resumeCandidate ? `Saved exploration: ${displayExcerpt(resumeCandidate.label,90)}` : 'A previous local agent connection is available. Reconnect explicitly to inspect its current state.';
+}
+$('resume-view').addEventListener('click',async()=>{const candidate=resumeCandidate;if(!candidate)return;try{if(candidate.kind==='capsule')acceptCapsule(candidate.payload,{preserveCompanion:true});else await startBrowser({session:candidate.payload});}catch(error){status(`Unable to resume: ${error.message} The saved data is unchanged.`,true);}});
+$('resume-companion').addEventListener('click',async()=>{const connection=resumeCompanion;if(!connection)return;try{await connect(connection.origin,connection.token);}catch(error){status(`Unable to reconnect: ${error.message} Open the companion’s local URL or resume the saved view.`,true);}});
+
 async function loadRoute({initial = false} = {}) {
   const generation = ++routeGeneration; routeAbort?.abort(); routeAbort = new AbortController();
   ++userIntent; ++sourceEpoch; queuedBridgeSnapshot = null;
@@ -593,15 +654,9 @@ async function loadRoute({initial = false} = {}) {
       return;
     }
     if (fragment.has('focus')) { await startBrowser({state:decodeFocus(fragment.get('focus'))}, {keepRoute:true}); return; }
-    let savedBridge; try { savedBridge=JSON.parse(sessionStorage.getItem(bridgeStorageKey)||'null'); } catch {}
-    if (fragment.has('token') || (initial && savedBridge)) {
-      try { await connect(fragment.get('bridge') || (fragment.has('token') ? location.origin : savedBridge.origin), fragment.get('token') || savedBridge.token); return; }
+    if (fragment.has('token')) {
+      try { await connect(fragment.get('bridge') || location.origin, fragment.get('token')); return; }
       catch (error) { try {sessionStorage.removeItem(bridgeStorageKey);}catch{} $('bridge-message').textContent=`${error.message} Open the companion’s local URL for same-origin operation.`; }
-    }
-    if (initial) {
-      const stored = localStorage.getItem(capsuleStorageKey);
-      if (stored) { acceptCapsule(JSON.parse(stored)); return; }
-      const legacy=localStorage.getItem(storageKey);if(legacy){await startBrowser({session:JSON.parse(legacy)});return;}
     }
     emptyPath();
   } catch (error) { if(generation===routeGeneration && error.name!=='AbortError') {status(`Unable to open this view: ${error.message} Start a new path or open a file to continue.`,true);document.documentElement.dataset.ready='true';} }

@@ -26,7 +26,7 @@ The chart declares method, center, basis, dimension, metric, scale, thickness, e
 - `exportSession(session)` → `{schemaVersion,kind:'eigenquestions-session',corpusId,computationId,session}`.
 - `importSession(payload,{corpusId,computationId}?)` → validated session; rejects unknown versions, mismatched corpus/computation and executable/non-JSON values.
 
-Action `type` is `navigate|refine|pivot|broaden|select|back|forward|replay|reset`; it may supply `query,focusIds,intent,workRelation,lens,constraints`. `refine` deterministically refreshes focus from the top five current-view nodes before replacing the query, unless explicit `focusIds` are supplied. Refreshing carries the latest context through deeper follow-ups without locking all descendants to the first topic. This stores resolved context in the new state even for a pronoun follow-up from a UI-created query. The external agent should also resolve pronouns into a self-contained query. `select` uses `directionId` from the current recomputed view; stale choices fail. `replay` selects existing `index`. `pivot` clears inherited focus unless supplied; `broaden` clears focus and exclusions unless supplied. `back`, `forward` and `replay` restore exact states. A new action after backtracking truncates forward history. State IDs exclude navigation position, enabling stable replay checks.
+Action `type` is `navigate|refine|pivot|broaden|select|back|forward|replay|reset`; it may supply `query,focusIds,intent,workRelation,lens,constraints`. `refine` deterministically refreshes focus from the top five current-view nodes before replacing the query, unless explicit `focusIds` are supplied. Refreshing carries the latest context through deeper follow-ups without locking all descendants to the first topic. This stores resolved context in the new state even for a pronoun follow-up from a UI-created query. The external agent should also resolve pronouns into a self-contained query. `select` uses `directionId` from the current recomputed view; stale choices fail. The shared `selectionTarget(session,direction)` predicts its full normalized target. If that exact target already occurs in the active history prefix, native selection replays the earliest matching step instead of appending another copy. Equality compares the complete normalized state, including corpus/computation, query, anchors, intent and constraints, rather than trusting the short state ID alone. Abandoned forward history is not searched. This rule applies only to native `select`; a typed `refine` or an imported history is not silently collapsed. `replay` selects existing `index`. `pivot` clears inherited focus unless supplied; `broaden` clears focus and exclusions unless supplied. `back`, `forward` and `replay` restore exact states. A new appended action after backtracking truncates forward history; an exact selection return only moves the cursor and preserves the existing history. State IDs exclude navigation position, enabling stable replay checks.
 
 ## Transport and browser update
 
@@ -103,3 +103,40 @@ The installed `window.eigenquestionsNavigator` controller exposes read-only
 UI, history or draft. Full API and transport details are in the
 [agent interface](agent-interface.md). Local CLI/MCP transport stays available;
 the page object is not an HTTP MCP endpoint.
+
+## Q-005 entry, labels and actual earlier choices
+
+A bare browser URL accepts a neutral empty display object without downloading the
+corpus, accepting a saved capsule, or contacting a saved companion. **Resume last
+view** and **Reconnect agent** are explicit actions. Opening home or choosing New
+path does not replace the last nonempty saved exploration with an empty one.
+Malformed saved data remains stored and is described as unreadable; it is not
+silently replaced by a different topic. Explicit `#view`, `#focus` and token links
+retain precedence over saved state.
+
+`lib/protocol/presentation.mjs` derives bounded display excerpts and representative
+source metadata. It does not alter `context.question`, a canonical state query,
+source evidence, direction membership, or engine inputs/identity. The complete
+authoritative question is retained in the Full question disclosure and exported
+capsule; an authored question may differ from its native continuation seed. The
+search input is a draft, left blank after an accepted operation unless the user
+has edited it during the operation. Native rows identify the representative seed's
+actual Method/Question facet and paper title; they do not infer facet kind from
+the direction's inherited retrieval lens. Author labels remain author statements.
+These are source-based directions, not synthesized semantic topic clusters.
+
+Historical columns retain the actual accepted sibling choices. A separate
+compact presentation cache records accepted UI selection/refinement provenance
+so a typed follow-up is not falsely marked as a clicked source direction. Known
+selected rows show Followed; missing provenance is described as Follow-up. This
+metadata never changes scientific state. Step numbers count visible nonempty
+scientific steps while internal history indices remain canonical.
+
+A current native choice that would replay an active-prefix state says Return to
+step N. Exact authored snapshots at that canonical state use the existing exact
+restore path; if only an authored cache reference remains, continuation rejects
+and asks for the full file instead of replacing author groups with native groups.
+Legacy native histories with duplicate states remain intact and export unchanged;
+repeated entries can be labeled as returns for presentation. No claim is made
+that different states or sources are semantically novel, or that all scientific
+redundancy has been eliminated.

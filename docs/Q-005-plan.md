@@ -23,6 +23,9 @@ text interface; it does not introduce a fixed topic tree.
    hide distinct evidence or call method descriptions physical questions. Record
    the limitations of representative-source labels and any unresolved semantic
    redundancy rather than pretending the static renderer synthesizes topics.
+   An exact native return to an already visited state must be recognized as a
+   revisit, not appended as apparent additional depth. Keep the scientifically
+   relevant direction/evidence available and label its destination honestly.
 7. Preserve exact authored capsule views and history, unknown-builder safety,
    stale-request guards, user drafts, source links, optional graph orientation,
    frozen corpus hashes, and scientific computation identity. Do not substitute
@@ -60,3 +63,9 @@ An earlier experiment shortening scientific selection queries did not improve
 context retention; do not repeat that as an untested display fix. Historical
 groups must be the ones actually accepted, not a reconstruction from today's
 current selection. Completion evidence will be linked here after validation.
+
+The independent audit subsequently reproduced two-state cycles after repeated
+native direction selection. This is a second defect, beyond duplicate rendering.
+The bounded repair should reuse identical canonical history states and label
+returns; suppressing source evidence or changing retrieval to manufacture novelty
+is not justified by this finding. [Audit](Q-005-navigation-audit.md).

@@ -4,7 +4,7 @@ This is a question-conditioned physics explorer with a static frontend. Browser
 and local agent share the deterministic geometry engine and canonical session.
 
 - Read `Lab Notebook.md` and the active request/plan before resuming work.
-- Use Node 22 or newer. `npm ci`, `npm test`, `npm run build`, and
+- Use Node 22 or newer. `npm ci`, `npm run build`, `npm test`, and
   `npm run check:site` are the normal verification sequence. `npm start` serves
   the built site at `http://127.0.0.1:4173`.
 - `web/` owns rendering; `lib/geometry/` owns retrieval and chart construction;
