@@ -1,20 +1,34 @@
 ---
 name: physics-navigator
-description: Navigate the Eigenquestions physics graph and source embeddings from a conversation, compute deterministic local views, and update its browser through the local CLI or MCP interface. Use for contextual exploration, source comparison, or a requested navigation journey; not as proof of a physics claim or a live literature index.
+description: Use the physics graph from Eigenquestions for optional source-linked orientation, contextual exploration, authored view sharing, or a navigation journey. Prefer its installed browser object when available; local CLI/MCP and HTTP-only reading are capability-dependent fallbacks. Always supplement with independent research.
 ---
 
 # Physics navigator
 
-Use the real navigation object. Interpret the conversation into a current
-question, intent, source focus and constraints; let the engine compute candidates,
-directions and coordinates. Read [the command reference](references/interface.md)
-when connecting or choosing an operation. A copied skill needs a separate
-Eigenquestions checkout with Node and its corpus; locate it from user context or
-`EIGENQUESTIONS_DIR`, and ask for its location only if it cannot be found.
+Use the real navigation object as a supplement to independent research and native
+reasoning. The frozen graph must not constrain what physics questions or outside
+sources you consider. For an ordinary answer, start cheaply: one read-only
+orientation and a few relevant source links, then return to the underlying task.
+Do not move the human's path merely to gather background.
+
+Read [the interface reference](references/interface.md) for the available mode:
+
+- **Browser execution:** open `https://eigenquestions.com/`, read its agent
+  instructions, and use `window.eigenquestionsNavigator`. No repository, skill
+  install or companion is required. `orient` is read-only; `apply` and `navigate`
+  explicitly commit to the shared page/UI. Respect the browser tool's execution
+  permissions; a page object does not grant capabilities the tool lacks.
+- **HTTP only:** read the manifest, source-linked static descriptions, or an
+  existing saved capsule. This mode cannot run an arbitrary native query or
+  update someone else's browser. Continue independent research, explain the
+  boundary, and supply a source-grounded authored capsule/file if useful.
+- **Local companion:** use the existing Node22 CLI or stdio MCP when a checkout
+  and corpus are available. Locate them from user context or
+  `EIGENQUESTIONS_DIR`; the copied skill alone installs neither data nor tools.
 
 ## Resolve the conversation
 
-- Inspect `navigator_state` (or CLI `state`) first: current question, active
+- Inspect page `read()` (or local `navigator_state`/CLI `state`) first: current question, active
   history, corpus scope/date, evidence IDs, warnings and proposed directions.
 - Translate pronouns and shorthand into a self-contained query. For “what if
   they are dark matter?” after KK towers, use “KK towers as dark matter” with
@@ -40,9 +54,13 @@ Eigenquestions checkout with Node and its corpus; locate it from user context or
    application explicitly in the next resolved query and source anchors. Inspect
    whether competing sources address that application or merely share a method;
    the five choices are nearby proposals, not a guaranteed deeper topic hierarchy.
-2. Invoke the interface and wait for its computed result. Never invent vectors,
-   chart coordinates, basis directions or graph edges, and never hand-edit a
-   state ID. The same frozen corpus and state must reproduce the chart.
+2. Invoke the interface and wait for its computed result. Never invent embedding
+   vectors, affine planes, retrieval edges or evidence, and never hand-edit a
+   native state ID. The same pinned engine/data/state must reproduce native math.
+   Agent-authored names, overlapping groups and typed interpretive relationships
+   may be supplied in a full capsule; distinguish them from computed results.
+   Omit geometry if no real projection was computed, or explicitly type an
+   authored display layout. Preserve evidence separately from interpretation.
 3. Inspect ranked sources and about five directions, then read evidence for the
    connection you describe. Distinguish the source's claim, your interpretation,
    and an unanswered question. Cite stable paper/source links. Extracted facets
@@ -56,12 +74,39 @@ Eigenquestions checkout with Node and its corpus; locate it from user context or
    fidelity from source-overlay fidelity and within-group spread; retained group
    variance does not certify source-level geometry. Slab thickness is not a
    physical scale.
-5. Confirm the render with a subsequent state inspection: the bridge reports
+5. For a requested visible update, re-read the page revision immediately before
+   `apply`/`navigate`; preserve a newer state on conflict, rather than blindly
+   retrying. Confirm `read().renderedRevision === read().revision` after the
+   accepted update. The local bridge instead reports
    `browserStatus.acknowledgedCurrent` only after a browser acknowledges that
    state/revision. This confirms a past render, not that the user still sees the
    tab. Otherwise report that the update was computed but its display is not
    confirmed. A JSON result without attachment is only an artifact.
-   Export the session before stopping when the user wants to retain the journey.
+   Export the full capsule when the user wants to retain authored names, groups,
+   explicit context and evidence. A canonical session alone supports native
+   replay, not arbitrary authored grouping. Publish only when a saved/shareable
+   view is part of the task; saved links are public and unlisted. If storage is
+   unavailable/full, preserve the file and report that no durable link was made.
+
+## Preserve the full view's meaning
+
+Display, recompute and continue are different capabilities. Import/apply must
+show the exact supplied capsule, including an unknown builder's groups. Do not
+replace it by silently recomputing a small recipe. The displayed author question
+may be broader than the canonical native seed query. For continuation, resolve
+that question into an explicit native query plus genuine anchors; richer prose
+context is preserved data, not automatically an input to the current math.
+
+Follow only supported recorded actions. A custom group ID cannot be passed to
+native `select`; use the author's explicit `refine`/`pivot` query and source IDs.
+An unsupported builder remains a readable snapshot. The browser retains 24 full
+accepted capsules in memory for exact authored Back/branch behavior; after reload
+or eviction, reopen the exported view instead of substituting native labels.
+
+A saved URL identifies a full object. Sending the URL alone does not notify an
+already-open tab: open it, change that tab's route, or apply through its controller.
+Files and gzip files use the same capsule. Keep connection tokens and unrelated
+private conversation data out of exports and public uploads.
 
 ## Scope and recovery
 

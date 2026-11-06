@@ -127,6 +127,13 @@ function acceptCapsule(input, {expectedRevision, clearForm = false, keepRoute = 
   rememberView(view); render(); save(); setBusy(false); notifyAccepted();
   return machineRead();
 }
+async function verifyAuthoredAnchors(capsule, payload) {
+  if (!capsule || (capsule.builder.id === NATIVE_BUILDER && capsule.builder.version === '1.0.0')) return;
+  if (!payload.focusIds?.length) return;
+  const evidence = await callWorker('evidence', {ids:payload.focusIds});
+  const missing = evidence.filter(source => source.error).map(source => source.id);
+  if (missing.length) throw new Error(`Cannot continue this authored view: ${missing.slice(0,3).join(', ')} is not a source in the loaded corpus. The supplied view is unchanged; use genuine source anchors.`);
+}
 function action(payload, { followup, operation = 'action', clearForm = false, explicitContinuation = false } = {}) {
   ++routeGeneration; routeAbort?.abort();
   const ticket = ++userIntent, source = sourceEpoch, formVersion = draftVersion;
@@ -149,6 +156,8 @@ function action(payload, { followup, operation = 'action', clearForm = false, ex
           await ensureWorker();
           if (ticket !== userIntent || source !== sourceEpoch) return {superseded:true};
           if (!capsuleCapabilities(restored,nativeComputationId).continue) throw new Error('This authored historical view has no compatible continuation. Reopen its file to inspect it.');
+          await verifyAuthoredAnchors(restored,followup);
+          if (ticket !== userIntent || source !== sourceEpoch) return {superseded:true};
           result = await callWorker('action',{action:followup,baseSession:restored.snapshot.session}); followed = true; branchContext = restored.context;
         } else if (target && columnViews.get(target.id)?.authored && !saved) throw new Error('The exact authored historical view is no longer cached. Reopen its full view file; native recomputation would replace its grouping.');
       }
@@ -168,6 +177,8 @@ function action(payload, { followup, operation = 'action', clearForm = false, ex
         if (ticket !== userIntent || source !== sourceEpoch) return {superseded: true};
         if (baseSession && payload.type !== 'reset' && !capsuleCapabilities(baseCapsule, nativeComputationId).continue) throw new Error('This snapshot cannot continue with the installed engine. Start a new path; its original view remains exportable.');
         if (explicitContinuation && baseCapsule.builder.id !== NATIVE_BUILDER && payload.type === 'select') throw new Error('Authored groups need an explicit query and source anchors for native continuation; an authored group ID cannot select a newly computed group.');
+        if (operation === 'action') await verifyAuthoredAnchors(baseCapsule,payload);
+        if (ticket !== userIntent || source !== sourceEpoch) return {superseded:true};
         result = await callWorker(operation, operation === 'action' ? { action: payload, baseSession: baseSession || initialized.session } : payload);
       }
       if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
@@ -201,7 +212,7 @@ function render() {
   const empty = !state.query.trim() && !view.nodes.length;
   document.querySelector('.column-navigation').hidden = empty;
   document.querySelector('.reading-pane').hidden = empty;
-  document.querySelector('.navigator-note').hidden = empty;
+  document.querySelector('.navigator-note').hidden = empty || !canAttemptContinuation();
   $('current-context').hidden = empty;
   $('current-question').textContent = displayQuestion || 'Start a new path';
   if (!draftDirty) { $('question').value = displayQuestion; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
@@ -219,7 +230,8 @@ function render() {
     button.disabled = !canAttemptContinuation(); button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
   });
   $('corpus-scope').textContent = `${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
-  $('evidence-count').textContent = `${view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId)).size}`;
+  const paperCount = view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId).filter(Boolean)).size;
+  $('evidence-count').textContent = String(activeCapsule.builder.id === NATIVE_BUILDER ? paperCount : view.nodes.length);
   const authored = activeCapsule.builder.id !== NATIVE_BUILDER;
   $('snapshot-notice').hidden = !authored || activeCapsule.builder.id === 'browser-empty';
   $('snapshot-notice').textContent = authored ? `Supplied view · ${activeCapsule.builder.id} ${activeCapsule.builder.version}. Labels and relationships are author interpretations, not verified corpus results. ${activeCapsule.continuation.description}` : '';
@@ -230,7 +242,7 @@ function render() {
   if (!view.chart && activePanel === 'geometry') switchPanel('sources');
   updateOptionsSummary(); renderColumns(); renderEvidence();
   if (activePanel === 'geometry') { renderChart(); renderDetails(); }
-  status(view.nodes.length ? `${view.directions.length} next directions · ${view.diagnostics?.distinctPapers || new Set(view.nodes.map(n => n.paperId)).size} papers in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
+  status(view.nodes.length ? `${view.directions.length} ${canAttemptContinuation() ? 'next directions' : 'supplied groups'} · ${authored ? `${view.nodes.length} source descriptions` : `${paperCount} papers`} in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
   document.documentElement.dataset.ready = 'true';
   document.documentElement.dataset.stateId = state.id;
   document.documentElement.dataset.corpusId = state.corpusId;

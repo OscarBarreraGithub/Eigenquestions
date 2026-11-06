@@ -65,6 +65,8 @@ def main():
             assert page.locator('.miller-column[data-current="true"] .direction').count()==2
             assert page.locator('.miller-column[data-current="true"] .direction').first.is_disabled()
             assert page.locator('#snapshot-notice').is_visible()
+            assert '2 source descriptions' in page.locator('#status').inner_text() and '1 papers' not in page.locator('#status').inner_text()
+            assert page.locator('.navigator-note').is_hidden()
             assert page.locator('#directions img,#directions b,.evidence-card img,a[href^="javascript:"]').count()==0
             page.screenshot(path=str(output/'authored-desktop-viewport.png'),full_page=False)
             passed('cold stored view displays exact authored overlap/evidence without corpus, fake topic, executable labels or draft overwrite',seconds=round(time.monotonic()-start,3))
@@ -88,6 +90,11 @@ def main():
             page.evaluate("location.hash='view='+'P'.repeat(22)");page.wait_for_function('revision=>window.eigenquestionsNavigator.read().revision>revision',arg=route_revision)
             assert page.evaluate('window.eigenquestionsNavigator.export()')==b
             passed('gzip file, full-view download, HTTP publication and URL reopening preserve every authored field')
+            for dropped in (a,b):
+                page.evaluate("""capsule=>{const data=new DataTransfer();data.items.add(new File([JSON.stringify(capsule)],'dropped-view.json',{type:'application/json'}));document.dispatchEvent(new DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:data}));}""",dropped)
+                page.wait_for_function('id=>document.documentElement.dataset.stateId===id',arg=dropped['snapshot']['view']['stateId'])
+                assert page.evaluate('window.eigenquestionsNavigator.export()')==dropped
+            passed('actual DataTransfer drop opens the same exact capsule as file import')
             before=page.evaluate('window.eigenquestionsNavigator.read().revision');storage_off=True
             page.locator('#publish-view').click();page.wait_for_function("document.querySelector('#stored-view-status').textContent.includes('not enabled')")
             assert page.evaluate('window.eigenquestionsNavigator.read().revision')==before
@@ -136,6 +143,13 @@ def main():
             for edge in authored['snapshot']['view']['edges']:
                 if edge['source']==old_id:edge['source']=group['id']
                 if edge['target']==old_id:edge['target']=group['id']
+            invalid_anchor=json.loads(json.dumps(authored));invalid_anchor['continuation']['actions'][0]['action']['focusIds']=['absent-authored-anchor']
+            page.evaluate('capsule=>window.eigenquestionsNavigator.apply(capsule,{expectedRevision:window.eigenquestionsNavigator.read().revision})',invalid_anchor)
+            page.locator('.direction[data-direction-id="custom-agent-group"]').click()
+            page.wait_for_function("document.querySelector('#status').textContent.includes('not a source in the loaded corpus')")
+            assert page.evaluate('window.eigenquestionsNavigator.export()')==invalid_anchor
+            after=page.evaluate('window.eigenquestionsNavigator.read()')
+            passed('unknown authored continuation anchors reject visibly without changing the supplied view')
             revision=after['revision'];page.evaluate('({capsule,revision})=>window.eigenquestionsNavigator.apply(capsule,{expectedRevision:revision})',{'capsule':authored,'revision':revision})
             assert page.evaluate('window.eigenquestionsNavigator.export()')==authored
             assert page.locator('#current-question').inner_text()==authored['context']['question']

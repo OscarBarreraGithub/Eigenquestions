@@ -241,6 +241,11 @@ def main():
                 public_page.goto(args.public_origin + '/#bridge=' + quote(connection['url'], safe='') + '&token=' + quote(connection['token']), wait_until='domcontentloaded', timeout=60000)
                 public_page.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
                 assert public_page.locator('#connection-status').inner_text() == 'Browser session'
+                assert public_page.locator('#question').input_value()==''
+                assert public_page.locator('#directions .direction').count()==0
+                public_page.locator('#question').fill('KK towers')
+                public_page.locator('#explore-button').click()
+                public_page.wait_for_function("document.querySelector('#current-question').textContent==='KK towers'&&!document.body.classList.contains('busy')",timeout=180000)
                 show_geometry(public_page)
                 assert public_page.locator('.chart-direction').count() == 5
                 public_page.locator('#agent-open').click()
@@ -263,8 +268,9 @@ def main():
                 standalone.goto(args.public_origin, wait_until='domcontentloaded', timeout=60000)
                 standalone.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
                 assert standalone.locator('#connection-status').inner_text() == 'Browser session'
-                show_geometry(standalone)
-                assert standalone.locator('.chart-direction').count() == 5
+                assert standalone.locator('#question').input_value()==''
+                assert standalone.locator('#directions .direction').count()==0
+                assert standalone.locator('.reading-pane').is_hidden()
 
                 def public_question(query, intent='explore', relation='either', transition='refine'):
                     old_id = standalone.locator('html').get_attribute('data-state-id')
@@ -280,6 +286,8 @@ def main():
                     return standalone.locator('html').get_attribute('data-state-id')
 
                 public_question('KK towers as dark matter', 'phenomenology')
+                show_geometry(standalone)
+                assert standalone.locator('.chart-direction').count()==5
                 assert 'dark dimension' in standalone.locator('#evidence').inner_text().lower()
                 report['checks'].append({'name': 'public static app independently loads corpus and computes contextual UI question', 'passed': True})
                 on_id = public_question('KK towers', 'recent', 'on', 'pivot')

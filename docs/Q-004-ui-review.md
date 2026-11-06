@@ -112,3 +112,32 @@ The phone context wraps beside the arrow group, but remains readable; it does no
 justify a broader redesign. These screenshots establish visual fit only. Startup
 restoration, stored links, file-drop imports and the amended runtime still need
 their separate acceptance evidence.
+
+## Integrated visual signoff
+
+Source `3fe979f`; authorized Slurm job `58241697`. Inspected the integrated
+[KK desktop](evidence/q004/integrated-v1/visual-artifacts/kk-1440.png),
+[dark-matter desktop](evidence/q004/integrated-v1/visual-artifacts/dark-matter-1440.png),
+[390px dark matter](evidence/q004/integrated-v1/visual-artifacts/dark-matter-390.png),
+[320px dark matter](evidence/q004/integrated-v1/visual-artifacts/dark-matter-320.png),
+[empty path](evidence/q004/integrated-v1/visual-artifacts/new-path-390.png) and
+[agent dialog](evidence/q004/integrated-v1/visual-artifacts/agent-dialog-390.png).
+
+The two material findings from the first screenshots are resolved. The blank
+historical column is gone, while the actual KK history column remains visible
+beside dark matter. The empty path now has a compact prompt, focused input and
+reachable Save/load disclosure, without an empty source-reading section.
+
+The mobile grid change also succeeds: the 44px arrow pair fits into the plain
+Step header at both widths, leaving the current question and context full width.
+There is no visible overlap with the Step label or scientific text. Dark matter's
+first direction now begins at y=383 on 390px (previously 432), and y=395 on 320px
+(previously 443), with 17px direction text retained. Links, separate Sources
+actions and the compact dialog remain clear. The integrated
+[capture report](evidence/q004/integrated-v1/visual-artifacts/q004-visual-capture.json)
+again records no page errors, horizontal overflow or measured sub-44px targets.
+
+**Decision:** ordinary-UI visual signoff, with no further cosmetic changes
+requested. This signoff does not cover the separately identified authored-view
+paper-count/footer wording correction or imply a claim about storage-service
+capacity. Runtime and stored-view acceptance have their own saved reports.

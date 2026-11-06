@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions. Implement the authorized Q-003 stored-view journey and Q-004 quieter text interface. Can an agent's complete contextual view travel intact into a responsive browser?
 - **Known:** The quiet visual prototype passed Slurm capture with no page errors, overflow or measured sub-44px controls. Integrated Node/Worker tests pass 32/32 and both deployment profiles package locally. These do not establish live stored sharing.
-- **Unfinished/running:** Astra protocol is finishing browser/discovery integration; Sol is refining observed empty-state/mobile details. Visual job `58236895` is complete. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
-- **Next:** Freeze the complete runtime and run stored-view/startup plus retained interaction suites in Slurm; inspect the revised screenshots, then release the verified frontend. Preserve exact authored scientific decisions.
+- **Unfinished/running:** Integrated browser job `58241697` tests frozen source `3fe979f`; visual job `58236895` is complete. Portable-skill and public-test updates are saved for the next checkpoint. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
+- **Next:** Inspect all four browser-suite reports and revised screenshots, fix observed failures, then release the verified frontend. Preserve exact authored scientific decisions.
 - **Git:** Working branch `agent/stored-views-quiet-ui`, from remotely verified Q-003 research checkpoint `31aaa00`. Coordinator `/root`; agents own implementation. Existing main deployment remains authorized.
 
 ## Requests
@@ -281,3 +281,13 @@
 **Decision.** The complete capsule remains authoritative. Authored questions and groups display as supplied; a bounded in-memory history restores accepted authored views and their explicit next actions. Evicted authored results require reopening their file rather than pretending native reconstruction is equivalent. Independent loads start with independent assumptions. Saved views render without loading the full corpus; native continuation loads that data only when needed.
 
 **Observed/next.** Root rebuilt and reran all 32 Node/Worker tests successfully; 70 product assets and all 41 frozen corpus shards pass site checks. No scientific engine/data change was made. This checkpoint freezes the integrated runtime for four real-browser suites, including delayed operations and exact authored-file roundtrips. Browser evidence is still pending; [local receipt](docs/evidence/q004/integration-node-validation.json).
+
+**Submission.** Integrated checkpoint `3fe979f6e1ac48c2bbc957be62721628969e9218` is pushed and remotely verified. Slurm job `58241697` runs four suites from the exact, hash-matched archive. [Receipt](docs/evidence/q004/integrated-v1-job.json). Browser HTTP storage uses a deterministic adapter; actual durable storage is tested separately in local workerd, and production activation remains pending.
+
+## 2026-11-06 UTC — Q-003 / Q-004: Integrated browser behavior passes
+
+**Observed.** Job `58241697` completed in 1m07s, exit 0: 12 stored-view checks, 19 delayed-interaction checks, 14 retained geometry/agent checks and all 18 visual captures pass. Authored overlap, labels, evidence and context survive file/HTTP-adapter roundtrips; Back restores authored grouping; unrelated imports clear prior assumptions; late operations do not replace newer intent. Cold stored views load with no corpus requests and no fake KK state. [Stored-view report](docs/evidence/q004/integrated-v1/stored-artifacts/stored-views-browser-acceptance.json) · [interaction report](docs/evidence/q004/integrated-v1/interaction-artifacts/q002-browser-acceptance.json) · [retained report](docs/evidence/q004/integrated-v1/legacy-artifacts/browser-acceptance.json).
+
+**Visual decision.** Root and independent Sol approve the revised ordinary interface at desktop, 390px and 320px. Phone controls fit the Step header without squeezing the question. The empty page is compact and the blank historical column is gone. [Final visual review](docs/Q-004-ui-review.md) · [phone](docs/evidence/q004/integrated-v1/visual-artifacts/dark-matter-390.png) · [empty path](docs/evidence/q004/integrated-v1/visual-artifacts/new-path-390.png).
+
+**Final bounded correction.** An external continuation now checks that its source anchors actually exist before native computation; the native engine's warning-and-ignore behavior is insufficient for an authored scientific action. Authored snapshots also report source descriptions rather than inventing paper counts from missing IDs, and omit unavailable continuation instructions. The final harness adds actual drag-and-drop and invalid-anchor rejection. All 32 local tests/build/shard checks pass again. Recheck this bounded stored-view journey, then publish; no more visual redesign is planned.

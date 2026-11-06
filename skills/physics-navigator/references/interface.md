@@ -1,4 +1,48 @@
-# Local interface reference
+# Interface reference
+
+The maintained [agent interface](../../../docs/agent-interface.md) is published at
+`https://eigenquestions.com/docs/agent-interface.md`. Read it for full schemas,
+limits and capabilities. The browser controller is the primary no-install route
+when your tool can execute JavaScript in that page:
+
+```js
+const graph = window.eigenquestionsNavigator;
+await graph.ready();
+const before = graph.read();
+const orientation = await graph.orient('KK towers as dark matter', {
+  intent: 'phenomenology', lens: 'combined', workRelation: 'either'
+});
+// Inspect orientation.snapshot.view.nodes/directions and original paper links.
+// Independent research continues; orient did not move the human's path.
+const latest = graph.read();
+graph.apply(orientation, {expectedRevision: latest.revision}); // only for a visible update
+const capsule = graph.export();
+// When a saved link is requested: await graph.publish(capsule).
+```
+
+`read()` returns controller revision, renderedRevision, busy, capabilities and
+capsule. `navigate(action,{expectedRevision})` uses the shared native worker and
+canonical session. `evidence(ids)` inspects source IDs; `subscribe(callback)`
+observes accepted changes. `apply` accepts a complete capsule exactly and
+switches this page away from a local companion. Check the latest revision before
+mutating; a stale operation must not replace a newer human/agent view.
+
+Capsule fields are `schemaVersion`, `kind: eigenquestions-contextual-view`,
+`builder`, explicit scientific `context`, `snapshot:{view,session?}`, and
+`continuation:{mode,originStateId,description,actions}`. Never collapse an authored
+capsule to just query/anchors and claim all meaning survived. Native actions use
+canonical fields, not arbitrary assumptions or unimplemented builder algorithms.
+
+An HTTP-only agent can GET saved view bytes at `/api/views/ID` and inspect static
+source data from `/data/manifest.json`; it cannot execute the browser engine by
+HTTP. POST `/api/views` accepts a validated capsule as `application/json` or raw
+`application/gzip`, without `Content-Encoding`. The response contains
+`{id,url,readUrl,sha256,bytes,createdAt}` after durable save. Limits:512KiB stored,
+2MiB decoded; storage may be disabled or full. GET returns exact bytes, including
+raw gzip when saved that way. Links are public/unlisted. JSON/gzip file import is
+the fallback. No HTTP route computes arbitrary questions or mutates a user's tab.
+
+## Optional local interface
 
 Run from the Eigenquestions checkout, with Node 22+. First build its static
 renderer (`npm run build`), then keep this process running:
@@ -57,6 +101,7 @@ The full bridge result contains the canonical session and full numeric chart;
 CLI `state --full` returns it. No browser click is needed for any agent operation.
 
 To compute without a live bridge: `node bin/navigate.mjs compute --query 'KK
-towers' --out snapshot.json`. This creates a deterministic JSON artifact; to
-update a browser, start/attach the bridge. Portable exports contain the session,
-not executable code or session tokens, and can be imported into the static app.
+towers' --out snapshot.json`. This creates a deterministic JSON artifact that the page can open as a view.
+To update an attached local browser automatically, use the bridge. Session
+exports contain canonical native state; full contextual capsules preserve more
+authored meaning. Neither format should contain executable code or session tokens.

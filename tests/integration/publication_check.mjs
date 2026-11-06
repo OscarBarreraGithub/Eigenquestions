@@ -12,6 +12,11 @@ const ASSETS=[
   ['/lib/geometry/index.mjs','lib/geometry/index.mjs'],
   ['/lib/geometry/identity.mjs','lib/geometry/identity.mjs'],
   ['/lib/protocol/session.mjs','lib/protocol/session.mjs'],
+  ['/lib/protocol/capsule.mjs','lib/protocol/capsule.mjs'],
+  ['/schemas/contextual-view.schema.json','schemas/contextual-view.schema.json'],
+  ['/llms.txt','llms.txt'], ['/robots.txt','robots.txt'], ['/sitemap.xml','sitemap.xml'],
+  ['/docs/agent-interface.md','docs/agent-interface.md'],
+  ['/skills/physics-navigator/SKILL.md','skills/physics-navigator/SKILL.md'],
 ];
 const RETIRED=[
   '/quiz/','/taste/','/explore/','/explore/tree/','/review/','/submit/','/leaderboard/',

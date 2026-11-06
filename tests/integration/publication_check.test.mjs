@@ -19,7 +19,7 @@ test('publication helper detects exact release and rejects stale module or survi
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   try{
     const origin=`http://127.0.0.1:${server.address().port}`;
-    const good=await checkPublication({origin,dist});assert.equal(good.passed,true);assert.equal(good.summary.assetChecks,9);assert.equal(good.summary.retiredRouteChecks,32);
+    const good=await checkPublication({origin,dist});assert.equal(good.passed,true);assert.equal(good.summary.assetChecks,16);assert.equal(good.summary.retiredRouteChecks,32);
     assert.ok(good.expected.computationId.startsWith('1.0.0:'));
     assert.equal(JSON.stringify(good).includes(dist),false);
     stale=true;const bad=await checkPublication({origin,dist});assert.equal(bad.passed,false);
