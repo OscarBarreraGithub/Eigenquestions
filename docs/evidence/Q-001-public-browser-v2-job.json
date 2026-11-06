@@ -1,0 +1,18 @@
+{
+  "request": "Q-001",
+  "jobId": "58190279",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "90fcdd239adb5c0b32eb083d6f60fffcfdb2ace6",
+  "sourceArchiveSha256": "e8c18ef93470afeb551fe8d63c4f1f58eb0b097531fadaafd2e25eda8c045154",
+  "deploymentRun": 42162700961,
+  "purpose": "Exact corrected public render: label/marker separation, complete navigation, permission diagnostics and failed-attachment recovery",
+  "artifactDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-001/public-v2/artifacts",
+  "submittedUtc": "2026-11-06T04:31:04.177318+00:00",
+  "statusAtReceipt": "submitted",
+  "statusAtLatestCheck": "FAILED",
+  "elapsedSeconds": 22,
+  "exitCode": "1:0",
+  "failure": "Blocked-launch test reused an existing document with a new fragment; fallback message assertion failed before public layout checks.",
+  "acceptanceReport": "public-v2/browser-acceptance.json"
+}

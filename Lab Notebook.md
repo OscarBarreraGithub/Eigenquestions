@@ -3,9 +3,10 @@
 ## Now
 
 - **Project/question:** Eigenquestions — can a conversation select useful, reproducible local views of a physics graph/vector space, with about five directions at a time?
-- **Known:** The new static site is live. Exact public asset/retired-route checks pass; public-browser job `58188305` passed 17 checks. Local MCP updates and independent public navigation both work. Direct public HTTPS-to-loopback attachment is blocked in the test browser; the local companion remains the verified route.
-- **Unfinished/running:** Astra site is correcting a desktop label that obscured a numbered marker in the public screenshot. Astra protocol is diagnosing the attachment restriction and testing its recovery message. No cluster job is currently running. No owner answer is required.
-- **Next:** Validate and release the bounded display correction, record exact attachment behavior, and save the final coverage audit.
+- **Known:** V1 is live at [eigenquestions.com](https://eigenquestions.com). Questions recompute real graph/vector neighborhoods and five-direction charts. Final acceptance: 23 local tests, 19 browser checks, 9 deployed asset hashes and 32 retired-route checks. Independent agent use succeeds with deliberate context recovery.
+- **Limits:** Source-level 2D distances remain lossy; suggestions need source checking. The tested Chromium requires loopback permission for public-page attachment; same-origin local agent updates and graceful fallback are verified.
+- **Unfinished/running:** V1 implementation and acceptance are complete. No research jobs remain and no owner input is required. This completion checkpoint preserves the evidence; release verification is checked before reporting completion.
+- **Next:** Review a scientist-guided journey and record the next substantive request here. Stronger semantic retrieval and richer scientific relations are future research, not claims of this v1.
 - **Git:** Implementation checkpoints are on `agent/question-conditioned-navigation`; the validated release is fast-forwarded and pushed to `main` in `OscarBarreraGithub/Eigenquestions`. Coordinator: `/root`.
 
 ## Requests
@@ -111,3 +112,19 @@
 **Tried/contributors.** Astra site added deterministic text placement using measured SVG bounds, obstacles around every marker, and label collision checks. Labels are omitted if no safe slot exists; numbered markers render above them. The point coordinates and numerical engine are unchanged. A regression uses the exact public recent-USING session that exposed the issue. Astra protocol added actual-browser overlap/paint-order assertions plus sanitized diagnostics and blocked-attachment recovery checks.
 
 **Observed/next.** All 23 local tests and 41 corpus shard checks pass. Release this bounded correction, then run the full public-browser check against its exact source before closing the audit.
+
+**Release/submission.** Corrected source `90fcdd239adb5c0b32eb083d6f60fffcfdb2ace6` is remotely verified and deployment [42162700961](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42162700961) succeeded. The first public comparison found only a build-info mismatch: local `dist/` predated the last documentation edit. Rebuilding from the exact commit resolved it, with all 9 asset hashes and 32 route checks passing. The [failed comparison](docs/evidence/Q-001-publication-v2-stale-local-build.json) and [correct comparison](docs/evidence/Q-001-publication-v2.json) are retained. Final browser job `58190279` received the exact source archive; [receipt](docs/evidence/Q-001-public-browser-v2-job.json).
+
+## 2026-11-06 UTC — Q-001: Identify the browser permission boundary
+
+**Observed.** Job `58190279` passed its 14 local checks, then failed the new blocked-launch message assertion. Its sanitized browser console identifies the attachment cause: Chromium 145 denied a request into the loopback address space while local-network permissions remained `prompt`; no CSP or permission override was used. [Failed run and diagnostics](docs/evidence/public-v2/browser-acceptance.json).
+
+**Interpretation/repair.** The harness reused an already loaded public page and changed only its fragment; that is a same-document navigation, so application startup did not read the launch token or try attaching. Astra protocol corrected the test to open the printed launch URL in a genuinely fresh tab and retained all assertions. No runtime code changed. Job `58191305` runs the patched, hash-verified script against the same published source; [receipt](docs/evidence/Q-001-public-browser-v3-job.json).
+
+## 2026-11-06 UTC — Q-001: Complete the connected v1
+
+**Observed.** The corrected fresh-launch test completed in job `58191305` (32 seconds, exit 0), passing all 19 browser checks. The blocked public launch renders an independent browser session and visibly directs the user to the local companion, without claiming an agent connection. The exact recent-USING public view has five labels and five numbered markers with no label/marker or label/label overlap; root inspected the resulting screenshot. Public query/intent changes, selection, backtracking, export/import and reload all pass with no page errors. [Final browser evidence](docs/evidence/public-v3/browser-acceptance.json) · [public view](docs/evidence/public-v3/public-static-view.png).
+
+**Meaning.** Conversation interpretation, reproducible context, global graph/vector retrieval, dynamic directions and affine charts, and the displayed state now form one tested path. The independent axion trial and failed alternatives keep its scientific limits visible. The literal public-to-localhost connection is permission-blocked in the tested Chromium; the verified local renderer is the supported live-agent path. No permissions were silently granted or browser protections disabled.
+
+**Save/resume.** This ordinary Git checkpoint records completion of the bounded Q-001 v1; its push and configured deployment are verified before the completion report. The [40-requirement plan](docs/Q-001-plan.md) and [independent audit](docs/requirements-audit.md) identify evidence and limits; no cluster jobs remain running. Resume with expert-guided usage feedback rather than repeating completed extraction or geometry experiments.

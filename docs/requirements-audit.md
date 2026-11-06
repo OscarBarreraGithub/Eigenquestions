@@ -1,7 +1,12 @@
 # Q-001 independent requirements audit
 
 Auditor: Astra `navigator_protocol`. Authority: [original request](requests/Q-001-original.md).
-This audit distinguishes owner requirements from implementation choices; status is not a claim of completion.
+This audit distinguishes owner requirements from implementation choices and preserves dated intermediate findings.
+Current conclusion: the scoped v1 passes integrated acceptance (19 final browser
+checks, 9 deployed asset hashes, 32 retired-route checks). Direct public-to-loopback
+attachment was denied by the tested browser; the verified same-origin companion
+and graceful public fallback are the supported path. The final evidence save is
+the coordinator's remaining action. See the final acceptance entry below.
 
 | Distinct request clause | Plan coverage | Interpretation / acceptance risk |
 |---|---|---|
@@ -159,7 +164,7 @@ encoder, and proximity/group membership does not prove a physical relationship.
 The local bridge is process-local and exports sessions for durable replay;
 public HTTPS access may require permissions or the same-origin fallback.
 
-### Integrated R40 audit — 2026-11-06 UTC, validated release source; public check pending
+### Historical R40 audit — 2026-11-06 UTC, validated release source before public checks
 
 The corrected [second browser run](evidence/browser-v2/browser-acceptance.json)
 (Slurm job 58187676, exit 0) passes **14 checks** with zero page errors. In addition
@@ -222,7 +227,7 @@ publication verification remain open until the coordinator supplies deployed
 hashes/routes and the clean public-browser result. R36 has verified release-source
 publication; the final evidence checkpoint still needs its ordinary Git save.
 
-### Public replacement verified — 2026-11-06 UTC; public-browser run pending
+### Historical public replacement check — 2026-11-06 UTC, before public-browser result
 
 The coordinator reports successful deployment workflow
 [42161918681](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42161918681)
@@ -240,7 +245,7 @@ and to probe the new public origin's loopback behavior. Its result is still
 pending at this update; exact served bytes alone are not counted as a public UI
 or public-to-loopback browser pass.
 
-### Public-browser result — 2026-11-06 UTC; bounded diagnostics still pending
+### Historical public-browser result — 2026-11-06 UTC, before final diagnostics
 
 Slurm job 58188305 completed with all **17 checks** passing and no local or public
 page errors. The [public-browser result](evidence/public-v1/browser-acceptance.json)
@@ -264,3 +269,60 @@ the computed geometry. Its source tests pass; the final browser run will measure
 label/marker separation on the actual public USING view. These pending checks
 are targeted follow-up to observed failures, not additional unbounded product
 scope.
+
+### Final integrated acceptance — 2026-11-06 UTC
+
+The corrected release `90fcdd239adb5c0b32eb083d6f60fffcfdb2ace6` deployed
+successfully through [workflow 42162700961](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42162700961).
+After rebuilding the matching local static output, the public verification again
+passed all **9 exact asset hashes and 32 retired-route checks**. The earlier
+build-info mismatch came from comparing against stale local generated output;
+the coordinator retained that failed receipt rather than treating it as a served
+runtime failure.
+
+Final Slurm job **58191305** completed in 32 seconds with all **19 browser checks
+passing**, no local page errors and no public page errors. The [final report](evidence/public-v3/browser-acceptance.json)
+confirms the complete agent/browser path and clean standalone public UI, including
+ON/USING changes, export/import/reload, real marker/card selection, readable mobile
+targets and the desktop label fix. The public USING view has five labels, five
+markers and five numbers; no label intersects a marker or another label, and
+markers are painted above the label layer. The computation fingerprint and
+scientific navigation engine are unchanged from the independent trial.
+
+The public-to-loopback boundary is now diagnosed as a browser-reported permission
+rejection in the tested environment. Chromium **145.0.7632.6** explicitly reported
+denied access to the `loopback` address space while all queried local/loopback
+permission states remained `prompt`. The public response had no CSP; the test
+did not grant permissions or disable security. This is consistent with Chrome's
+documented [Local Network Access permission boundary](https://developer.chrome.com/docs/modern-web-guidance/guides/security/local-network-access).
+It is **not** a successful direct public-domain attachment test, nor a claim that
+all interactive browsers deny an explicit user grant.
+
+Opening the printed attachment link in a fresh tab correctly recovered to
+**Browser session**, computed five directions, and exposed a visible instruction
+to use the companion's local URL when the agent details were opened. It never
+claimed **Agent connected**. The separately verified same-origin companion
+provides the actual live agent-update path, and the public site independently
+computes and navigates without it. These observed success/failure paths satisfy
+R30's permission/fallback requirement without pretending that CORS alone removes
+browser permission controls.
+
+The retained [public-v2 failure](evidence/public-v2/browser-acceptance.json) was a
+test setup error: changing only the fragment of an already loaded URL did not
+rerun app startup. The final test opens a genuinely fresh document, matching the
+printed-link workflow; its visibility and connection-status assertions were not
+weakened. That correction changed test setup only, not the released runtime.
+
+Together with the R40 trace above, this closes the implementation and integrated
+acceptance gates for the scoped v1: conversation resolves active context;
+source-linked graph/vector computation selects a new neighborhood; five dynamic
+directions and a fresh affine chart are produced; and the same object is rendered
+and acknowledged through the agent interface. The public replacement and retired
+routes are verified. Scientific coverage, source-level distortion, inferred
+ON/USING roles, method-selection drift and untested permission-granted public
+attachment remain explicit product limits, not hidden completion claims.
+
+No further implementation blocker or omitted original requirement was found.
+The coordinator's remaining action is the ordinary final evidence/notebook/doc
+checkpoint and remote-SHA verification; this audit does not claim that future
+save has already happened.

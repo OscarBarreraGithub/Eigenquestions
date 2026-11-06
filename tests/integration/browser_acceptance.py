@@ -208,6 +208,9 @@ def main():
                 diagnostics['permissionsAfter'] = permission_states()
                 report['publicOriginProbe'] = outcome
                 if outcome.get('reachable') and args.public_ui:
+                    public_page = context.new_page()
+                    public_page.on('console', public_console)
+                    public_page.on('requestfailed', public_request_failed)
                     public_page.goto(args.public_origin + '/#bridge=' + quote(connection['url'], safe='') + '&token=' + quote(connection['token']), wait_until='domcontentloaded')
                     public_page.wait_for_function("document.querySelector('#connection-status')?.textContent.includes('Agent connected')")
                     result = tool('navigator_navigate', {'type': 'refine', 'query': 'KK dark matter observational bounds'})
@@ -222,6 +225,12 @@ def main():
                 report['publicOriginProbe'] = {'reachable': False, 'errorType': type(error).__name__, 'interpretation': 'Public-origin probe could not complete in this browser environment; same-origin fallback was separately verified.'}
 
             if args.public_ui and not report['publicOriginProbe'].get('reachable'):
+                # Opening a printed launch link creates a new document. Changing
+                # only the fragment on the already-loaded probe page would not
+                # rerun the app's startup code and would test a different action.
+                public_page = context.new_page()
+                public_page.on('console', public_console)
+                public_page.on('requestfailed', public_request_failed)
                 public_page.goto(args.public_origin + '/#bridge=' + quote(connection['url'], safe='') + '&token=' + quote(connection['token']), wait_until='domcontentloaded', timeout=60000)
                 public_page.wait_for_function("document.documentElement.dataset.ready === 'true'", timeout=180000)
                 assert public_page.locator('#connection-status').inner_text() == 'Browser session'
@@ -229,10 +238,10 @@ def main():
                 public_page.locator('#agent-open').click()
                 public_page.locator('#agent-dialog details summary').click()
                 fallback_message = public_page.locator('#bridge-message')
+                diagnostics['blockedLaunchFallback'] = {'documentLaunch': 'fresh-tab', 'connectionStatus': public_page.locator('#connection-status').inner_text(), 'messageAfterOpeningAgentDetails': sanitize(fallback_message.inner_text()), 'messageVisible': fallback_message.is_visible(), 'neverClaimedConnected': 'Agent connected' not in public_page.locator('#connection-status').inner_text()}
                 assert fallback_message.is_visible()
                 assert re.search(r'local URL|same.origin|loopback', fallback_message.inner_text(), re.I)
                 assert 'Agent connected' not in public_page.locator('#connection-status').inner_text()
-                diagnostics['blockedLaunchFallback'] = {'connectionStatus': 'Browser session', 'messageAfterOpeningAgentDetails': sanitize(fallback_message.inner_text()), 'neverClaimedConnected': True}
                 diagnostics['permissionsAfterBlockedLaunch'] = permission_states()
                 report['checks'].append({'name': 'blocked public launch recovers browser computation and shows same-origin guidance without claiming connection', 'passed': True})
 

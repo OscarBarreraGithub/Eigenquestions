@@ -108,16 +108,22 @@ ON/USING views, a held-out black-hole journey, back/replay/import, empty and
 unsupported queries, another corpus fixture, and actual MCP → bridge → SSE.
 HTTP tests verify exact allowed origins, authentication and private-network
 preflight. They do **not** establish browser permission behavior; browser results
-are tracked separately in the acceptance evidence. The authorized Chromium run
-on 2026-11-06 passed 14 actual-browser checks: MCP-driven owner/held-out journeys,
-render acknowledgements, export/import and reload, mobile readability/tap sizes,
-and a human marker click with exact Back restoration. A subsequent public run
-passed 17 checks, including clean public-site computation, changed ON/USING
-evidence, and selection/back/export/import/reload. Public HTTPS → loopback still
-returned `TypeError` in that headless browser; it is not claimed to work without
-browser permission. The local same-origin companion is the verified live-update
-path. A final diagnostic run is examining the rejection reason and failed-attach
-recovery; the public site itself remains usable independently.
+are tracked separately in the acceptance evidence. The final authorized Chromium
+run on 2026-11-06 passed **19 actual-browser checks**: MCP-driven owner/held-out
+journeys and render acknowledgements; mobile readability and real marker clicks;
+public-site computation, changed ON/USING evidence, selection/back/export/import/
+reload; non-overlapping desktop labels; and recovery after blocked attachment.
+
+The permission boundary is observed, not hypothetical. Headless Chromium
+145.0.7632.6 reported that permission was denied to access the loopback address
+space. Its permission states remained `prompt`, no CSP was present, and the test
+granted no permissions or security exceptions. A fresh public launch link then
+recovered to **Browser session**, computed five directions and showed the local
+companion guidance when agent details were opened; it never claimed an agent
+connection. Chrome documents this [Local Network Access permission boundary](https://developer.chrome.com/docs/modern-web-guidance/guides/security/local-network-access).
+Successful public attachment after a permission grant was not tested. Use the
+printed same-origin local link for the verified live-update path; the public
+site remains independently usable without the bridge.
 
 The v1 corpus is Swampland-centered. Query anchors are retrieved source vectors;
 no new query embedding is invented. The primary 2D view fits five dynamic direction
