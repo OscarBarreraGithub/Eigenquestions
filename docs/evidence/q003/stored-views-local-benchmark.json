@@ -1,0 +1,277 @@
+{
+  "measuredAt": "2026-11-06T07:14:01.712Z",
+  "node": "v26.7.0",
+  "platform": "darwin",
+  "runtime": "Miniflare pinned by Wrangler 4.95.0; local workerd compatibility 2026-05-26",
+  "caveat": "Node process CPU measures only local validation. Miniflare numbers are HTTP wall time including local SQLite/R2, not Worker CPU. These measurements do not establish the production Workers Free 10 ms CPU limit or throughput.",
+  "rows": [
+    {
+      "name": "representative-native",
+      "decodedBytes": 282374,
+      "storedBytes": 81070,
+      "nodeValidation": [
+        {
+          "wallMs": 5.134708000000046,
+          "nodeProcessCpuMs": 6.451,
+          "valid": true
+        },
+        {
+          "wallMs": 2.6527090000000726,
+          "nodeProcessCpuMs": 6.036,
+          "valid": true
+        },
+        {
+          "wallMs": 2.123540999999932,
+          "nodeProcessCpuMs": 6.134,
+          "valid": true
+        },
+        {
+          "wallMs": 1.938415999999961,
+          "nodeProcessCpuMs": 2.203,
+          "valid": true
+        },
+        {
+          "wallMs": 2.010458999999969,
+          "nodeProcessCpuMs": 2.441,
+          "valid": true
+        },
+        {
+          "wallMs": 2.0395839999999907,
+          "nodeProcessCpuMs": 2.239,
+          "valid": true
+        },
+        {
+          "wallMs": 2.1227079999999887,
+          "nodeProcessCpuMs": 2.85,
+          "valid": true
+        },
+        {
+          "wallMs": 1.910792000000015,
+          "nodeProcessCpuMs": 1.993,
+          "valid": true
+        }
+      ],
+      "miniflareEndpointWallMs": [
+        54.558625000000006,
+        6.679417000000058,
+        5.6593749999999545,
+        4.403291999999965,
+        5.045208000000002,
+        4.583374999999933,
+        4.662249999999972,
+        6.21066600000006
+      ],
+      "statuses": [
+        201,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "name": "maximum-decoded-string",
+      "decodedBytes": 2097152,
+      "storedBytes": 84339,
+      "nodeValidation": [
+        {
+          "wallMs": 6.052083000000039,
+          "nodeProcessCpuMs": 7.497,
+          "valid": true
+        },
+        {
+          "wallMs": 5.735249999999951,
+          "nodeProcessCpuMs": 7.848,
+          "valid": true
+        },
+        {
+          "wallMs": 5.1749999999999545,
+          "nodeProcessCpuMs": 7.378,
+          "valid": true
+        },
+        {
+          "wallMs": 5.088999999999942,
+          "nodeProcessCpuMs": 5.525,
+          "valid": true
+        },
+        {
+          "wallMs": 5.004625000000033,
+          "nodeProcessCpuMs": 5.222,
+          "valid": true
+        },
+        {
+          "wallMs": 5.374042000000031,
+          "nodeProcessCpuMs": 5.67,
+          "valid": true
+        },
+        {
+          "wallMs": 5.3270840000000135,
+          "nodeProcessCpuMs": 15.542,
+          "valid": true
+        },
+        {
+          "wallMs": 4.812999999999988,
+          "nodeProcessCpuMs": 5.017,
+          "valid": true
+        }
+      ],
+      "miniflareEndpointWallMs": [
+        13.153874999999971,
+        12.937374999999975,
+        10.176333999999997,
+        9.925375000000031,
+        11.349624999999946,
+        16.97045899999989,
+        9.614332999999988,
+        9.70308399999999
+      ],
+      "statuses": [
+        201,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "name": "maximum-decoded-many-values",
+      "decodedBytes": 2097144,
+      "storedBytes": 84339,
+      "nodeValidation": [
+        {
+          "wallMs": 7.038000000000011,
+          "nodeProcessCpuMs": 7.188,
+          "valid": false
+        },
+        {
+          "wallMs": 7.666957999999909,
+          "nodeProcessCpuMs": 8.46,
+          "valid": false
+        },
+        {
+          "wallMs": 7.836540999999897,
+          "nodeProcessCpuMs": 8.49,
+          "valid": false
+        },
+        {
+          "wallMs": 6.69012500000008,
+          "nodeProcessCpuMs": 6.779,
+          "valid": false
+        },
+        {
+          "wallMs": 6.561500000000024,
+          "nodeProcessCpuMs": 6.823,
+          "valid": false
+        },
+        {
+          "wallMs": 7.049792000000025,
+          "nodeProcessCpuMs": 7.238,
+          "valid": false
+        },
+        {
+          "wallMs": 8.107500000000073,
+          "nodeProcessCpuMs": 8.768,
+          "valid": false
+        },
+        {
+          "wallMs": 7.009874999999965,
+          "nodeProcessCpuMs": 7.167,
+          "valid": false
+        }
+      ],
+      "miniflareEndpointWallMs": [
+        9.787707999999952,
+        10.60695799999985,
+        10.526083999999855,
+        9.207916999999952,
+        10.269416999999976,
+        9.082916000000068,
+        9.63299999999981,
+        9.053334000000177
+      ],
+      "statuses": [
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400
+      ]
+    },
+    {
+      "name": "oversized-decoded-bomb",
+      "decodedBytes": 2097153,
+      "storedBytes": 2067,
+      "nodeValidation": [
+        {
+          "wallMs": 1.6102499999999509,
+          "nodeProcessCpuMs": 1.69,
+          "valid": false
+        },
+        {
+          "wallMs": 1.472541000000092,
+          "nodeProcessCpuMs": 1.55,
+          "valid": false
+        },
+        {
+          "wallMs": 1.4428750000001855,
+          "nodeProcessCpuMs": 1.612,
+          "valid": false
+        },
+        {
+          "wallMs": 15.495916999999963,
+          "nodeProcessCpuMs": 64.277,
+          "valid": false
+        },
+        {
+          "wallMs": 1.5204579999999623,
+          "nodeProcessCpuMs": 2.101,
+          "valid": false
+        },
+        {
+          "wallMs": 1.6767500000000837,
+          "nodeProcessCpuMs": 2.13,
+          "valid": false
+        },
+        {
+          "wallMs": 1.6405829999998787,
+          "nodeProcessCpuMs": 1.866,
+          "valid": false
+        },
+        {
+          "wallMs": 1.6996659999999792,
+          "nodeProcessCpuMs": 2.453,
+          "valid": false
+        }
+      ],
+      "miniflareEndpointWallMs": [
+        3.304540999999972,
+        3.117625000000089,
+        3.0010839999999916,
+        4.67770900000005,
+        4.816082999999935,
+        3.1304580000000897,
+        3.0982080000001133,
+        3.020582999999988
+      ],
+      "statuses": [
+        413,
+        413,
+        413,
+        413,
+        413,
+        413,
+        413,
+        413
+      ]
+    }
+  ]
+}

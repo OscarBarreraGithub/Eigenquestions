@@ -1,9 +1,18 @@
 name = "eigenquestions"
+main = "backend/views.mjs"
 compatibility_date = "2026-11-05"
 workers_dev = true
 route = { pattern = "eigenquestions.com/*", zone_name = "eigenquestions.com" }
 
 [assets]
 directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/api/views", "/api/views/*"]
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
+
+# Default deployment has no storage resources. The API returns an honest 503
+# until the owner activates wrangler.views.toml through ENABLE_STORED_VIEWS.
+[observability]
+enabled = true
+head_sampling_rate = 0.1

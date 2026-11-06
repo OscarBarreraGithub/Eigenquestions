@@ -6,13 +6,13 @@ const out = path.join(root, 'dist');
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 await cp(path.join(root, 'web'), out, { recursive: true });
-for (const [from, to] of [['lib/geometry', 'lib/geometry'], ['lib/protocol/session.mjs', 'lib/protocol/session.mjs'], ['data/navigation', 'data'], ['schemas', 'schemas'], ['skills', 'skills']]) {
+for (const [from, to] of [['lib/geometry', 'lib/geometry'], ['lib/protocol/session.mjs', 'lib/protocol/session.mjs'], ['lib/protocol/capsule.mjs', 'lib/protocol/capsule.mjs'], ['data/navigation', 'data'], ['schemas', 'schemas'], ['skills', 'skills']]) {
   await mkdir(path.dirname(path.join(out, to)), { recursive: true });
   try { await cp(path.join(root, from), path.join(out, to), { recursive: true }); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
 }
 await mkdir(path.join(out, 'docs'), { recursive: true });
-for (const name of ['site.md', 'agent-interface.md', 'navigation-contract.md', 'geometry.md', 'geometry-experiments.md']) {
+for (const name of ['site.md', 'agent-interface.md', 'navigation-contract.md', 'geometry.md', 'geometry-experiments.md', 'stored-views-operations.md']) {
   try { await cp(path.join(root, 'docs', name), path.join(out, 'docs', name)); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
 }
@@ -65,6 +65,6 @@ async function audit(dir) {
 }
 await audit(out);
 if (count > 19999) throw new Error(`Static asset count ${count} exceeds the conservative 20,000-file hosting limit.`);
-const report = { format: 'eigenquestions-static-build-v1', files: count + 1, bytes: totalBytes, largestAsset: largest, assetsOnly: true };
+const report = { format: 'eigenquestions-static-build-v1', files: count + 1, bytes: totalBytes, largestAsset: largest, staticAssets: true, serverIncludedInAssets: false, apiRoutes: ['/api/views'] };
 await writeFile(path.join(out, 'build-info.json'), `${JSON.stringify(report, null, 2)}\n`);
 console.log(`Static site: ${report.files} files, ${(totalBytes / 1024 / 1024).toFixed(1)} MiB → dist/`);

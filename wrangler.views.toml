@@ -1,0 +1,34 @@
+# Activation profile: use only after checking the account's available free
+# allowances and creating the dedicated bucket. See docs/stored-views-operations.md.
+name = "eigenquestions"
+main = "backend/index.mjs"
+compatibility_date = "2026-11-05"
+workers_dev = true
+route = { pattern = "eigenquestions.com/*", zone_name = "eigenquestions.com" }
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/api/views", "/api/views/*"]
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+
+[vars]
+VIEW_SITE_ORIGIN = "https://eigenquestions.com"
+VIEW_UPLOADS_ENABLED = "true"
+
+[[r2_buckets]]
+binding = "VIEWS"
+bucket_name = "eigenquestions-views"
+
+[[durable_objects.bindings]]
+name = "VIEW_BUDGET"
+class_name = "ViewBudget"
+
+[[migrations]]
+tag = "stored-views-v1"
+new_sqlite_classes = ["ViewBudget"]
+
+[observability]
+enabled = true
+head_sampling_rate = 0.1

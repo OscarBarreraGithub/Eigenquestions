@@ -60,3 +60,20 @@ HTML/CSS, and captures KK, dark matter, empty path, settings, agent instructions
 and source reading. That early fixture does not establish the new startup or
 stored-view behavior. No local Mac browser was used. Browser layout and
 drop/import behavior remain unverified until their evidence is saved.
+
+## First real capture and bounded follow-up
+
+The [first Slurm captures](evidence/q004/visual-v1/q004-visual-capture.json)
+show no page overflow or primary targets below 44px at the tested widths. KK's
+first choice starts around 384px on desktop and 383px on the phone, compared with
+roughly 480/540px in the prior screenshots. These are observed fixture layouts;
+the capture used the prior runtime and does not verify new startup or storage.
+
+The [390px](evidence/q004/visual-v1/dark-matter-390.png) and
+[320px](evidence/q004/visual-v1/dark-matter-320.png) dark-matter views exposed one
+remaining fit issue: the arrow block squeezed the current question and context.
+The bounded follow-up gives that text the full phone width and places the same
+44px arrows in the existing Step header row. It adds no row above the choices.
+The current breadcrumb now keeps its full query inside the horizontally
+scrolling path. Empty navigation uses content height; runtime hides the empty
+reading/navigation chrome. These follow-up changes await integrated screenshots.

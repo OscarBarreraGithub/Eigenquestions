@@ -4,9 +4,9 @@ import { spawn } from 'node:child_process';
 import { setTimeout as delay } from 'node:timers/promises';
 import { checkSite } from '../../scripts/site-check.mjs';
 
-test('built assets preserve corpus hashes, complete imports and static-only hosting', async () => {
+test('built assets preserve corpus hashes and complete imports alongside the bounded storage API', async () => {
   const result = await checkSite();
-  assert.equal(result.assetsOnly, true);
+  assert.equal(result.staticAssets, true);
   assert.ok(result.verifiedShards > 1);
 });
 
@@ -22,7 +22,9 @@ test('static HTTP server serves the new product and retires old pages and APIs',
     assert.ok(ready, error || 'Static preview failed to start');
     const page = await fetch(origin);
     const html = await page.text();
-    assert.match(html, /Follow a question through physics/);
+    assert.match(html, /<title>Eigenquestions/);
+    assert.match(html, /id="current-question">Loading exploration/);
+    assert.doesNotMatch(html, /value="Kaluza-Klein towers"/, 'Static startup must not show an unrelated default before restoring a saved view');
     assert.ok(html.indexOf('id="columns"') < html.indexOf('id="chartpanel"'), 'Text columns must precede optional geometry');
     assert.match(html, /id="chartpanel"[^>]+hidden/);
     assert.match(html, /id="reset"[^>]*>New path/);

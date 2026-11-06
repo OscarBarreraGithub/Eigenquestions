@@ -269,6 +269,7 @@ def main():
                 def public_question(query, intent='explore', relation='either', transition='refine'):
                     old_id = standalone.locator('html').get_attribute('data-state-id')
                     standalone.locator('#question').fill(query)
+                    if standalone.locator('#options-toggle').get_attribute('aria-expanded')!='true':standalone.locator('#options-toggle').click()
                     standalone.locator('#intent').select_option(intent)
                     standalone.locator('#work-relation').select_option(relation)
                     standalone.locator('#transition').select_option(transition)
@@ -311,6 +312,7 @@ def main():
                 standalone.wait_for_function('(old) => document.documentElement.dataset.stateId !== old', arg=before_select)
                 standalone.locator('#back').click()
                 standalone.wait_for_function('(expected) => document.documentElement.dataset.stateId === expected', arg=using_id)
+                if standalone.locator('.session-tools').get_attribute('open') is None:standalone.locator('.session-tools > summary').click()
                 with standalone.expect_download() as download_info:
                     standalone.locator('#export').click()
                 export_path = output / 'public-browser-session.json'

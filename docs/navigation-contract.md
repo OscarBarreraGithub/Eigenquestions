@@ -51,3 +51,55 @@ and the numerical computation are unchanged by this transport guard.
 Every API request needs the unpredictable session token: `Authorization: Bearer TOKEN` for fetch, or `?token=TOKEN` for EventSource. Tokens stay in URL fragments in browser launch links. The server accepts its exact loopback origin and configured exact public origins, by default `https://eigenquestions.com`; it rejects arbitrary origins and non-loopback Host headers. API clients without Origin still need the token. Requests and bodies are bounded. Static files never expose arbitrary filesystem paths.
 
 Public HTTPS pages may be blocked from loopback by browser private-network/mixed-content permissions. The interface attempts explicit attachment and reports failure; a link to the **same-origin local renderer** is the supported fallback. A network unit test does not establish browser compatibility. Public-origin success/blocking and same-origin browser behavior must be recorded separately in acceptance evidence.
+
+## Q-003 full contextual-view capsule
+
+`lib/protocol/capsule.mjs` is the shared browser/Worker validator and codec.
+`schemas/contextual-view.schema.json` describes the JSON envelope; runtime checks
+also verify graph references, coordinate types, plane orthogonality and budgets.
+
+```
+{schemaVersion:"1.0.0", kind:"eigenquestions-contextual-view",
+ builder:{id,version}, context:{question,...explicitScientificContext},
+ snapshot:{view,session?},
+ continuation:{mode:"native-actions"|"snapshot-only",originStateId,
+               description,actions:[{id,label,action}]}}
+```
+
+The snapshot is authoritative for display. Import must not discard it and run a
+recipe in its place. Existing native view fields remain intact; groups can have
+authored labels and overlapping `memberIds`, and typed edges may link sources or
+groups. `evidenceIds` distinguish supporting source references from interpretation.
+Extra bounded JSON context/provenance is preserved. This is data, never executable
+code. Strings render as text and only HTTP(S) links become destinations.
+
+`chart` is optional. `affine-plane` requires finite numeric `center`, two finite
+orthonormal `basis` rows (explicit degeneracy allowed), dimension, metric, scale
+and thickness. `display-layout` is an author's position layout, not an inferred
+embedding plane. Every point in a supplied chart needs finite x/y. The native
+centroid engine and its identity remain unchanged; the capsule wrapper adds its
+explicit affine type.
+
+Limits are 2 MiB decoded JSON, 512 KiB gzip/stored bytes, depth32, 100,000 visited
+JSON values, 500 sources, 50 groups, 5,000 edges, 100 continuation actions and
+2,048 projection dimensions. The backend additionally enforces storage budgets.
+A valid capsule does not certify its physics or its author: unknown builders are
+visibly identified and remain exportable even when numerical continuation is
+unavailable. Native recomputation requires supported builder version1.0.0 and
+exact computation identity. An author's `native-actions` continuation also needs
+that matching canonical session; custom group IDs cannot be resolved by native
+`select`. Record explicit query/anchors instead. The engine reads canonical
+fields, not arbitrary prose assumptions; continuation is not a claim that richer
+context was numerically folded into the current v1 method.
+
+`createCapsule` wraps a native `{session,view}` without recomputation.
+`validateCapsule` returns the same object without relabeling or normalization.
+`encodeCapsuleBytes`/`decodeCapsuleBytes` use standard gzip streams and preserve
+all data. `capsuleCapabilities` separates display, recompute and continue.
+
+The installed `window.eigenquestionsNavigator` controller exposes read-only
+`orient` separately from revision-checked committing `apply`/`navigate`.
+`orient` uses the existing worker/engine without replacing its canonical session,
+UI, history or draft. Full API and transport details are in the
+[agent interface](agent-interface.md). Local CLI/MCP transport stays available;
+the page object is not an HTTP MCP endpoint.

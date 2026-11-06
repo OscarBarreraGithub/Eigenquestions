@@ -1,4 +1,5 @@
 import { currentState, exportSession, validateSession } from '/lib/protocol/session.mjs';
+import {CAPSULE_KIND, NATIVE_BUILDER, MAX_JSON_BYTES, MAX_COMPRESSED_BYTES, createCapsule, validateCapsule, capsuleCapabilities, decodeCapsuleBytes, encodeCapsuleBytes} from '/lib/protocol/capsule.mjs';
 import { placeChartLabel } from '/chart-labels.mjs';
 
 const $ = id => document.getElementById(id);
@@ -9,12 +10,16 @@ let session, view, worker, selectedId, selectedDirectionId, bridge, events, revi
 let activePanel = 'sources', sourceEpoch = 0, userIntent = 0, draftVersion = 0, draftDirty = false;
 let actionQueue = Promise.resolve(), loadingTask = Promise.resolve(), queuedBridgeSnapshot = null, bridgeNeedsRebase = false;
 let bridgeRebaseRevision = null;
-const columnViews = new Map();
+let activeCapsule, uiRevision = 0, nativeComputationId, nativeEmptySnapshot, workerReady, routeGeneration = 0, routeAbort;
+let acceptedCount = 0, renderedRevision = -1;
+const observers = new Set(), readyWaiters = [];
+const capsuleStorageKey = 'eigenquestions:view:v1';
+const columnViews = new Map(), acceptedCapsules = new Map();
 const columnStorageKey = 'eigenquestions:columns:v2';
 try { for (const item of JSON.parse(localStorage.getItem(columnStorageKey) || '[]')) if (item?.stateId && Array.isArray(item.directions)) columnViews.set(item.stateId, item); } catch {}
 let requestId = 0;
 const pending = new Map();
-const fragment = new URLSearchParams(location.hash.slice(1));
+let fragment = new URLSearchParams(location.hash.slice(1));
 const storageKey = 'eigenquestions:session:v1';
 const bridgeStorageKey = 'eigenquestions:companion:v1';
 let viewerId;
@@ -35,27 +40,70 @@ function setBusy(value, message = 'Updating directions…') {
   $('chart').setAttribute('aria-busy', String(value));
 }
 function callWorker(type, payload) { return new Promise((resolve, reject) => { const id = ++requestId; pending.set(id, { resolve, reject }); worker.postMessage({ id, type, payload }); }); }
+function readableSession(capsule) {
+  if (capsule.snapshot.session) return capsule.snapshot.session;
+  const v = capsule.snapshot.view;
+  return {cursor: 0, states: [{id: v.stateId, corpusId: v.corpusId, computationId: v.computationId, query: capsule.context.question, focusIds: [], constraints: {excludeIds: []}, intent: 'explore', lens: 'combined', workRelation: 'either'}]};
+}
+function canAttemptContinuation() { return activeCapsule?.continuation.mode === 'native-actions' && Boolean(activeCapsule.snapshot.session); }
+function historicalAction(stateId, direction) { const capsule = acceptedCapsules.get(stateId); return capsule?.continuation.actions.find(item => item.id === direction.id)?.action || (columnViews.get(stateId)?.authored ? null : {type:'select',directionId:direction.id}); }
+function followDirection(direction) {
+  const next = activeCapsule.continuation.actions.find(item => item.id === direction.id);
+  if (!next || !canAttemptContinuation()) { status('This supplied group has no executable next action. Inspect its sources, or start a new path.', true); return; }
+  return action(next.action, { explicitContinuation: true });
+}
+function capabilities() { return activeCapsule ? capsuleCapabilities(activeCapsule, nativeComputationId) : {display: false, recompute: false, continue: false}; }
+function machineRead() {
+  return structuredClone({apiVersion: '1.0.0', revision: uiRevision, busy, mode: bridge ? 'local-companion' : 'browser', renderedRevision,
+    capabilities: capabilities(), capsule: activeCapsule ?? null});
+}
+function notifyAccepted() {
+  $('stored-view-link').hidden = true; $('stored-view-url').value = ''; $('stored-view-status').textContent = '';
+  ++uiRevision; ++acceptedCount;
+  document.documentElement.dataset.uiRevision = String(uiRevision);
+  document.documentElement.dataset.acceptedCount = String(acceptedCount);
+  const accepted = uiRevision;
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (uiRevision !== accepted) return;
+    renderedRevision = accepted; document.documentElement.dataset.renderedRevision = String(accepted);
+  }));
+  const snapshot = machineRead();
+  for (const resolve of readyWaiters.splice(0)) resolve(snapshot);
+  for (const callback of observers) { try { callback(structuredClone(snapshot)); } catch { /* Observer errors do not change the scientific state. */ } }
+  window.dispatchEvent(new CustomEvent('eigenquestions:state', {detail: snapshot}));
+}
+function assertRevision(expected) {
+  if (!Number.isInteger(expected) || expected !== uiRevision) {
+    const error = new Error('The visible view changed. Read the current revision before applying another view.'); error.code = 'revision_conflict'; error.current = machineRead(); throw error;
+  }
+}
 function save() {
   if (!session) return;
-  try { localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
+  try { if (activeCapsule) localStorage.setItem(capsuleStorageKey, JSON.stringify(activeCapsule)); if (activeCapsule?.snapshot.session) localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
   const cached = [...columnViews.values()].slice(-24);
   setTimeout(() => { try { localStorage.setItem(columnStorageKey, JSON.stringify(cached)); } catch {} }, 0);
 }
 function rememberView(result) {
+  if (activeCapsule) { acceptedCapsules.delete(result.stateId); acceptedCapsules.set(result.stateId, structuredClone(activeCapsule)); while (acceptedCapsules.size > 24) acceptedCapsules.delete(acceptedCapsules.keys().next().value); }
   columnViews.delete(result.stateId);
-  columnViews.set(result.stateId, { stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(({ id, label, query, seedIds, sourceCount, evidenceIds }) => ({ id, label, query, seedIds, sourceCount, evidenceIds })) });
+  columnViews.set(result.stateId, { authored: activeCapsule?.builder.id !== NATIVE_BUILDER, stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(({ id, label, query, seedIds, sourceCount, evidenceIds }) => ({ id, label, query, seedIds, sourceCount, evidenceIds })) });
   while (columnViews.size > 24) columnViews.delete(columnViews.keys().next().value);
 }
-function accept(snapshot, { formVersion } = {}) {
+function clearViewRoute() { const hash = new URLSearchParams(location.hash.slice(1)); if (hash.has('view') || hash.has('focus')) history.replaceState(null, '', location.pathname + location.search); }
+function accept(snapshot, { formVersion, keepRoute = false, preserveContext = false, context: suppliedContext } = {}) {
   if (!snapshot?.session || !snapshot?.view) throw new Error('The companion returned an incomplete session.');
   const next = validateSession(snapshot.session);
   if (snapshot.view.corpusId !== next.corpusId || snapshot.view.computationId !== next.computationId || snapshot.view.stateId !== currentState(next).id) throw new Error('The view does not match the current question or computation. Reconnect or import a fresh session.');
   if (!Array.isArray(snapshot.view.nodes) || !Array.isArray(snapshot.view.directions)) throw new Error('The companion returned an invalid view.');
   if (snapshot.revision !== undefined && snapshot.revision <= revision) return false;
   if (snapshot.revision !== undefined) revision = snapshot.revision;
-  session = next; view = snapshot.view; selectedId = null; selectedDirectionId = null; allEvidence = false;
+  nativeComputationId = snapshot.view.computationId;
+  if (!keepRoute) clearViewRoute();
+  const previousContext = suppliedContext || (preserveContext ? activeCapsule?.context : null);
+  activeCapsule = createCapsule(snapshot, previousContext ? {context: {...structuredClone(previousContext), question: currentState(next).query, history: next.states.map((s, index) => ({question: s.query, focusIds: s.focusIds, active: index === next.cursor}))}} : {});
+  session = next; view = activeCapsule.snapshot.view; selectedId = null; selectedDirectionId = null; allEvidence = false;
   if (formVersion !== undefined && formVersion === draftVersion) draftDirty = false;
-  rememberView(view); render(); save();
+  rememberView(view); render(); save(); notifyAccepted();
   if (bridge && Number.isInteger(snapshot.revision)) {
     const renderedState = currentState(next).id, source = sourceEpoch;
     requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -64,9 +112,26 @@ function accept(snapshot, { formVersion } = {}) {
   }
   return true;
 }
-function action(payload, { followup, operation = 'action', clearForm = false } = {}) {
+function acceptCapsule(input, {expectedRevision, clearForm = false, keepRoute = false} = {}) {
+  if (expectedRevision !== undefined) assertRevision(expectedRevision);
+  const capsule = structuredClone(validateCapsule(input));
+  if (!keepRoute) clearViewRoute();
+  ++routeGeneration; routeAbort?.abort();
+  ++userIntent; ++sourceEpoch; events?.close(); bridge = null; revision = -1;
+  try { sessionStorage.removeItem(bridgeStorageKey); } catch {}
+  queuedBridgeSnapshot = null; bridgeNeedsRebase = false; actionQueue = Promise.resolve(); loadingTask = Promise.resolve();
+  activeCapsule = capsule; session = readableSession(capsule); view = capsule.snapshot.view;
+  selectedId = null; selectedDirectionId = null; allEvidence = false;
+  if (clearForm) draftDirty = false;
+  $('connection-status').textContent = 'Browser session';
+  rememberView(view); render(); save(); setBusy(false); notifyAccepted();
+  return machineRead();
+}
+function action(payload, { followup, operation = 'action', clearForm = false, explicitContinuation = false } = {}) {
+  ++routeGeneration; routeAbort?.abort();
   const ticket = ++userIntent, source = sourceEpoch, formVersion = draftVersion;
-  const baseSession = session ? structuredClone(session) : null, baseRevision = revision;
+  const baseCapsule = activeCapsule;
+  const baseSession = activeCapsule?.snapshot.session ? structuredClone(activeCapsule.snapshot.session) : null, baseRevision = revision;
   const transport = bridge;
   setBusy(true, payload.type === 'reset' ? 'Starting a new path…' : 'Updating directions…');
   status('Computing directions from the current sources…');
@@ -74,8 +139,20 @@ function action(payload, { followup, operation = 'action', clearForm = false } =
     try {
       await loadingTask;
       if (ticket !== userIntent || source !== sourceEpoch) return;
-      let result;
-      if (transport) {
+      let result, followed = false, branchContext;
+      if (!transport && baseSession && ['back','forward','replay'].includes(payload.type)) {
+        const index = payload.type === 'back' ? Math.max(0, baseSession.cursor - 1) : payload.type === 'forward' ? Math.min(baseSession.states.length - 1, baseSession.cursor + 1) : payload.index;
+        const target = baseSession.states[index], saved = target && acceptedCapsules.get(target.id);
+        if (saved && saved.builder.id !== NATIVE_BUILDER) {
+          const restored = structuredClone(saved); restored.snapshot.session = {...baseSession,cursor:index};
+          if (!followup) return acceptCapsule(restored);
+          await ensureWorker();
+          if (ticket !== userIntent || source !== sourceEpoch) return {superseded:true};
+          if (!capsuleCapabilities(restored,nativeComputationId).continue) throw new Error('This authored historical view has no compatible continuation. Reopen its file to inspect it.');
+          result = await callWorker('action',{action:followup,baseSession:restored.snapshot.session}); followed = true; branchContext = restored.context;
+        } else if (target && columnViews.get(target.id)?.authored && !saved) throw new Error('The exact authored historical view is no longer cached. Reopen its full view file; native recomputation would replace its grouping.');
+      }
+      if (result) { /* Exact authored historical branch was resolved above. */ } else if (transport) {
         let expectedRevision = baseRevision < 0 ? revision : baseRevision;
         if (bridgeNeedsRebase && baseSession && payload.type !== 'reset') {
           const restored = await bridgeFetch('/api/import', { method: 'POST', headers: { 'If-Match': `"${bridgeRebaseRevision}"` }, body: JSON.stringify(exportSession(baseSession)) }, transport);
@@ -86,19 +163,28 @@ function action(payload, { followup, operation = 'action', clearForm = false } =
         }
         bridgeNeedsRebase = false;
         result = await bridgeFetch(operation === 'import' ? '/api/import' : '/api/action', { method: 'POST', headers: { 'If-Match': `"${expectedRevision}"` }, body: JSON.stringify(payload) }, transport);
-      } else result = await callWorker(operation, operation === 'action' ? { action: payload, baseSession } : payload);
+      } else {
+        const initialized = await ensureWorker();
+        if (ticket !== userIntent || source !== sourceEpoch) return {superseded: true};
+        if (baseSession && payload.type !== 'reset' && !capsuleCapabilities(baseCapsule, nativeComputationId).continue) throw new Error('This snapshot cannot continue with the installed engine. Start a new path; its original view remains exportable.');
+        if (explicitContinuation && baseCapsule.builder.id !== NATIVE_BUILDER && payload.type === 'select') throw new Error('Authored groups need an explicit query and source anchors for native continuation; an authored group ID cannot select a newly computed group.');
+        result = await callWorker(operation, operation === 'action' ? { action: payload, baseSession: baseSession || initialized.session } : payload);
+      }
       if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
-      if (followup) result = transport ? await bridgeFetch('/api/action', { method: 'POST', headers: { 'If-Match': `"${result.revision}"` }, body: JSON.stringify(followup) }, transport) : await callWorker('action', { action: followup, baseSession: result.session });
+      if (followup && !followed) result = transport ? await bridgeFetch('/api/action', { method: 'POST', headers: { 'If-Match': `"${result.revision}"` }, body: JSON.stringify(followup) }, transport) : await callWorker('action', { action: followup, baseSession: result.session });
       if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
       // Agent changes may have arrived while this request's response was delayed.
       if (queuedBridgeSnapshot && queuedBridgeSnapshot.revision > (result.revision ?? -1)) result = queuedBridgeSnapshot;
       queuedBridgeSnapshot = null;
-      accept(result, { formVersion: clearForm ? formVersion : undefined });
+      if (payload.type === 'reset') activeCapsule = null;
+      accept(result, { formVersion: clearForm ? formVersion : undefined, context: branchContext || (['replay','back','forward'].includes(payload.type) && !followup ? acceptedCapsules.get(result.view.stateId)?.context : undefined), preserveContext: operation === 'action' && !['reset','pivot','replay','back','forward'].includes(payload.type) });
+      return machineRead();
     } catch (error) {
       if (ticket === userIntent && source === sourceEpoch) {
         if (error.current) { draftDirty = true; bridgeNeedsRebase = false; const latest = queuedBridgeSnapshot?.revision > error.current.revision ? queuedBridgeSnapshot : error.current; queuedBridgeSnapshot = null; accept(latest); }
         status(error.message, true);
       }
+      return {error: error.message, code: error.code || 'action_failed'};
     }
     finally {
       if (ticket === userIntent && source === sourceEpoch) {
@@ -111,26 +197,40 @@ function action(payload, { followup, operation = 'action', clearForm = false } =
   return actionQueue;
 }
 function render() {
-  const state = currentState(session), scope = view.diagnostics?.scope || {};
-  $('current-question').textContent = state.query || 'Start a new path';
-  if (!draftDirty) { $('question').value = state.query; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
+  const state = currentState(session), scope = view.diagnostics?.scope || {}, displayQuestion = activeCapsule.context.question;
+  const empty = !state.query.trim() && !view.nodes.length;
+  document.querySelector('.column-navigation').hidden = empty;
+  document.querySelector('.reading-pane').hidden = empty;
+  document.querySelector('.navigator-note').hidden = empty;
+  $('current-context').hidden = empty;
+  $('current-question').textContent = displayQuestion || 'Start a new path';
+  if (!draftDirty) { $('question').value = displayQuestion; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
   const context = view.diagnostics?.contextTerms || [];
   $('current-context').textContent = state.query ? `${labels[state.intent]} · ${labels[state.lens]}${state.focusIds.length ? ` · Building on ${state.focusIds.length} sources${context.length ? ` about ${context.slice(0, 3).join(', ')}` : ''}` : ' · Across the corpus'}` : 'Enter a concept or question above. This path has no inherited focus.';
-  $('back').disabled = session.cursor === 0;
-  $('broaden').disabled = !state.focusIds.length && !state.constraints?.excludeIds?.length;
+  $('back').disabled = session.cursor === 0 || !canAttemptContinuation();
+  $('broaden').disabled = !canAttemptContinuation() || (!state.focusIds.length && !state.constraints?.excludeIds?.length);
   $('path').replaceChildren();
   session.states.forEach((item, index) => {
     if (index) $('path').append(el('span', 'path-arrow', '›'));
-    const button = el('button', '', short(item.query || 'New path', 35)); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
+    const pathQuestion = (!bridge && acceptedCapsules.get(item.id)?.context.question) || item.query;
+    const button = el('button', '', pathQuestion || 'New path'); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
     button.setAttribute('aria-label', `Step ${index + 1}: ${item.query || 'New path'}`);
     if (index === session.cursor) button.setAttribute('aria-current', 'step');
-    button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
+    button.disabled = !canAttemptContinuation(); button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
   });
-  $('corpus-scope').textContent = `Eigenquestions v2 · ${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
+  $('corpus-scope').textContent = `${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
   $('evidence-count').textContent = `${view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId)).size}`;
+  const authored = activeCapsule.builder.id !== NATIVE_BUILDER;
+  $('snapshot-notice').hidden = !authored || activeCapsule.builder.id === 'browser-empty';
+  $('snapshot-notice').textContent = authored ? `Supplied view · ${activeCapsule.builder.id} ${activeCapsule.builder.version}. Labels and relationships are author interpretations, not verified corpus results. ${activeCapsule.continuation.description}` : '';
+  if (authored && activeCapsule.builder.id !== 'browser-empty') { $('current-context').textContent = activeCapsule.context.summary || 'The supplied scientific context and source groups are preserved in this view.'; $('corpus-scope').textContent = `Supplied corpus: ${view.corpusId}`; }
+  $('view-geometry').disabled = !view.chart;
+  $('export').disabled = !activeCapsule.snapshot.session;
+  $('share').disabled = authored || !activeCapsule.snapshot.session;
+  if (!view.chart && activePanel === 'geometry') switchPanel('sources');
   updateOptionsSummary(); renderColumns(); renderEvidence();
   if (activePanel === 'geometry') { renderChart(); renderDetails(); }
-  status(view.nodes.length ? `${view.directions.length} next directions · ${view.diagnostics?.distinctPapers || new Set(view.nodes.map(n => n.paperId)).size} papers in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'A new path is ready. Enter your first question.');
+  status(view.nodes.length ? `${view.directions.length} next directions · ${view.diagnostics?.distinctPapers || new Set(view.nodes.map(n => n.paperId)).size} papers in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
   document.documentElement.dataset.ready = 'true';
   document.documentElement.dataset.stateId = state.id;
   document.documentElement.dataset.corpusId = state.corpusId;
@@ -138,14 +238,15 @@ function render() {
 function renderColumns() {
   const host = $('columns'); host.replaceChildren();
   host.classList.toggle('empty-path', !currentState(session).query && !view.directions.length);
-  $('directions-count').textContent = `${view.directions.length} directions`;
+  $('directions-count').textContent = '';
   const states = session.states.slice(0, session.cursor + 1);
   for (let index = 0; index < states.length; index++) {
     const state = states[index], current = index === session.cursor, next = states[index + 1];
+    if (!current && !state.query.trim()) continue;
     const cached = columnViews.get(state.id);
-    const directions = current ? view.directions : cached?.computationId === state.computationId ? cached.directions : null;
+    const directions = current ? view.directions : cached?.computationId === state.computationId && !(bridge && cached.authored) ? cached.directions : null;
     const column = el('section', 'miller-column'); column.dataset.stateId = state.id; column.dataset.historyIndex = index; column.dataset.current = String(current);
-    const heading = el('div', `column-heading${current ? ' current-column-heading' : ''}`); heading.append(el('span', 'column-step', current ? `Step ${index + 1} · Choose a direction` : `Step ${index + 1}`));
+    const heading = el('div', `column-heading${current ? ' current-column-heading' : ''}`); heading.append(el('span', 'column-step', `Step ${index + 1}`));
     if (!current) heading.append(el('h3', '', short(state.query || 'Your first question', 80)));
     heading.title = state.query; column.append(heading);
     const list = el('div', 'directions'); if (current) list.id = 'directions';
@@ -158,14 +259,15 @@ function renderColumns() {
         button.append(el('span', 'direction-number', String(directionIndex + 1).padStart(2, '0')));
         const content = el('span', 'direction-content'); content.append(el('h3', '', direction.label), el('span', 'direction-meta', `${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} source descriptions`));
         button.append(content, el('span', 'direction-arrow', '›'));
-        button.addEventListener('click', () => current ? action({ type: 'select', directionId: direction.id }) : action({ type: 'replay', index }, { followup: { type: 'select', directionId: direction.id } }));
+        button.disabled = !canAttemptContinuation() || (!current && !historicalAction(state.id,direction)) || (current && !activeCapsule.continuation.actions.some(item => item.id === direction.id && (activeCapsule.builder.id === NATIVE_BUILDER || item.action.type !== 'select')));
+        button.addEventListener('click', () => current ? followDirection(direction) : action({ type: 'replay', index }, { followup: historicalAction(state.id,direction) }));
         row.append(button);
         if (current) {
           const inspect = el('button', 'direction-evidence', 'Sources'); inspect.type = 'button'; inspect.setAttribute('aria-label', `Inspect sources for direction ${directionIndex + 1}`); inspect.title = 'Inspect sources'; inspect.setAttribute('aria-pressed', String(selectedDirectionId === direction.id));
           inspect.addEventListener('click', () => {
             selectedDirectionId = direction.id; selectedId = null; allEvidence = false; switchPanel('sources'); renderEvidence();
             host.querySelectorAll('.direction-evidence').forEach(item => item.setAttribute('aria-pressed', String(item === inspect)));
-            const heading = $('reading-heading'); heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true });
+            const heading = $('view-sources'); heading.focus({ preventScroll: true });
             heading.closest('.reading-pane').scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
           }); row.append(inspect);
         }
@@ -189,16 +291,18 @@ function switchPanel(panel) {
 }
 function renderChart() {
   const host = $('chart'); host.replaceChildren();
+  if (!view.chart) { host.append(el('p', 'empty-state', 'This supplied view has no projection.')); return; }
   if (!view.nodes.length) { host.append(el('p', 'empty-state', 'No source-supported view for this question yet. Try a physics term used in the corpus, or ask your agent to identify a relevant source.')); return; }
   const compact = host.clientWidth < 560;
   // Use CSS-pixel dimensions on narrow charts; geometry still gets one common
   // x/y scale, while numbered controls remain legible and large enough to tap.
   const width = compact ? Math.max(host.clientWidth, 240) : 760;
   const height = compact ? 300 : 420, margin = compact ? 36 : 54;
-  const aggregate = view.chart.fitScope === 'direction-centroids';
-  const showSources = !aggregate || $('show-sources').checked;
-  $('chart-controls').hidden = !aggregate;
-  $('chart-key').textContent = aggregate ? `${view.directions.length} computed directions` : 'Source descriptions';
+  const layout = view.chart.kind === 'display-layout';
+  const aggregate = layout || view.chart.fitScope === 'direction-centroids';
+  const showSources = layout || !aggregate || $('show-sources').checked;
+  $('chart-controls').hidden = layout || !aggregate;
+  $('chart-key').textContent = layout ? 'Authored groups and sources' : aggregate ? `${view.directions.length} computed directions` : 'Source descriptions';
   const plotted = aggregate ? (showSources ? [...view.nodes, ...view.directions] : view.directions) : view.nodes;
   const xs = plotted.map(n => Number(n.x)), ys = plotted.map(n => Number(n.y));
   if (![...xs, ...ys].every(Number.isFinite)) throw new Error('The view contains invalid coordinates.');
@@ -209,12 +313,12 @@ function renderChart() {
   host.append(plot); // Actual SVG text metrics are available for placement below.
   for (let i = 1; i < 7; i++) plot.append(svg('line', { x1: i * width / 7, y1: 25, x2: i * width / 7, y2: height - 25, stroke: '#edf0e7', 'stroke-width': 1 }));
   for (let i = 1; i < 5; i++) plot.append(svg('line', { x1: 30, y1: i * height / 5, x2: width - 30, y2: i * height / 5, stroke: '#edf0e7', 'stroke-width': 1 }));
-  const byId = new Map(view.nodes.map(n => [n.id, n]));
+  const byId = new Map([...view.nodes, ...view.directions].map(n => [n.id, n]));
   for (const edge of (showSources ? view.edges.slice(0, 180) : [])) {
     const a = byId.get(edge.source), b = byId.get(edge.target); if (!a || !b) continue;
-    plot.append(svg('line', { x1: x(a.x), y1: y(a.y), x2: x(b.x), y2: y(b.y), stroke: edge.type === 'same_paper' ? '#8da78f' : '#c1cec1', 'stroke-opacity': edge.type === 'same_paper' ? .48 : .28, 'stroke-width': .8, ...(edge.type === 'same_paper' ? {} : { 'stroke-dasharray': '2 4' }) }));
+    const edgeLine = svg('line', { x1: x(a.x), y1: y(a.y), x2: x(b.x), y2: y(b.y), stroke: edge.type === 'same_paper' ? '#8da78f' : '#c1cec1', 'stroke-opacity': edge.type === 'same_paper' ? .48 : .28, 'stroke-width': .8, ...(edge.type === 'same_paper' ? {} : { 'stroke-dasharray': '2 4' }) }); edgeLine.append(svg('title', {}, `Supplied relation: ${edge.type}`)); plot.append(edgeLine);
   }
-  const seedIds = new Set(view.directions.map(d => d.seedIds[0]));
+  const seedIds = new Set(view.directions.map(d => d.seedIds?.[0]));
   const labelBoxes = [];
   for (const node of (showSources ? view.nodes : [])) {
     const index = view.directions.findIndex(d => d.id === node.directionId), color = colors[Math.max(index, 0) % colors.length];
@@ -246,7 +350,7 @@ function renderChart() {
     group.append(svg('circle', { cx, cy, r: Math.max(radius, 22), fill: 'transparent', stroke: 'none', class: 'direction-hit-target' }));
     group.append(svg('circle', { cx, cy, r: radius, fill: color, stroke: '#fffef9', 'stroke-width': 3, 'fill-opacity': .95, class: 'direction-dot' }));
     group.append(svg('text', { x: cx, y: cy + 4, 'text-anchor': 'middle', class: 'direction-marker' }, String(index + 1)));
-    group.append(svg('title', {}, `${direction.label}\n${direction.sourceCount} source descriptions; ${(100 * direction.massFraction).toFixed(1)}% of retrieval weight.\nWithin-group RMS spread in embedding space: ${readable(direction.withinGroupRms)}. Group proximity is not a physical implication.`));
+    group.append(svg('title', {}, layout ? `${direction.label}\nAuthor-supplied display position; not an embedding-space distance.` : `${direction.label}\n${direction.sourceCount} source descriptions; ${(100 * direction.massFraction).toFixed(1)}% of retrieval weight.\nWithin-group RMS spread in embedding space: ${readable(direction.withinGroupRms)}. Group proximity is not a physical implication.`));
     const words = short(direction.label, 85).split(' '), lines = []; let line = '';
     for (const word of words) { if ((line + ' ' + word).length > 31 && line) { lines.push(line); line = word; } else line += (line ? ' ' : '') + word; }
     if (line) lines.push(line);
@@ -259,10 +363,11 @@ function renderChart() {
       if (box) { text.setAttribute('transform', `translate(${box.x + padding - measured.x} ${box.y + padding - measured.y})`); labelBoxes.push(box); }
       else text.remove(); // Full label remains in the numbered direction card.
     }
-    const follow = () => action({ type: 'select', directionId: direction.id }); group.addEventListener('click', follow); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); follow(); } });
+    const follow = () => followDirection(direction); group.addEventListener('click', follow); group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); follow(); } });
     directionMarkerLayer.append(group);
   });
   plot.append(directionMarkerLayer); // Numbers and tap targets always paint last.
+  if (view.chart.kind === 'display-layout') { $('chart-caption').textContent = 'Author-supplied display layout. These positions do not claim to be an affine projection or a physical distance.'; return; }
   const explained = Math.round((view.chart.explainedVariance || 0) * 100);
   $('chart-caption').textContent = aggregate
     ? `${compact ? 'Numbers match the full directions below. ' : ''}These ${view.directions.length} points are weighted centers of source groups, sized by retrieval weight. This plane retains ${explained}% of variation between those centers, versus ${Math.round((view.chart.sourceDiagnostics?.explainedVariance || 0) * 100)}% across individual source descriptions. Groups can be broad; proximity is a reading suggestion, not a physical claim.`
@@ -291,15 +396,17 @@ function renderEvidence() {
     if (evidence.sourceNotice) details.append(el('p', '', evidence.sourceNotice));
     details.append(el('p', '', `Source ID: ${node.id}`));
     if (evidence.sourceRecordIds?.length) details.append(el('p', '', `Source records: ${evidence.sourceRecordIds.join(', ')}`));
-    details.append(el('p', '', `Distance from this local plane: ${readable(node.residual)}. ${node.inSlab === false ? 'Outside' : 'Within'} the chosen residual cutoff.`)); card.append(details);
+    if (view.chart?.kind === 'affine-plane') details.append(el('p', '', `Distance from this local plane: ${readable(node.residual)}. ${node.inSlab === false ? 'Outside' : 'Within'} the chosen residual cutoff.`)); card.append(details);
     const actions = el('div', 'source-actions'), url = safeUrl(node.sourceUrl || evidence.url);
     if (url) { const link = el('a', '', 'Read paper ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; actions.append(link); }
-    const focus = el('button', '', 'Explore this source'); focus.type = 'button'; focus.addEventListener('click', () => action({ type: 'refine', query: String(evidence.text || node.label).slice(0, 2000), focusIds: [node.id] })); actions.append(focus); card.append(actions); $('evidence').append(card);
+    const focus = el('button', '', 'Explore this source'); focus.type = 'button'; focus.disabled = !canAttemptContinuation() || activeCapsule.builder.id !== NATIVE_BUILDER; focus.addEventListener('click', () => action({ type: 'refine', query: String(evidence.text || node.label).slice(0, 2000), focusIds: [node.id] })); actions.append(focus); card.append(actions); $('evidence').append(card);
   }
   if (!allEvidence && nodes.length > shown.length) { const more = el('button', '', `Show all ${nodes.length} source descriptions`); more.type = 'button'; more.addEventListener('click', () => { allEvidence = true; renderEvidence(); }); $('evidence').append(more); }
 }
 function renderDetails() {
   const host = $('chart-details'); host.replaceChildren();
+  if (!view.chart) return;
+  if (view.chart.kind === 'display-layout') { host.append(el('p', '', 'This is a supplied display layout, without a claimed embedding-plane construction.')); return; }
   const dl = el('dl');
   for (const [key, value] of [['Construction', view.chart.method], ['Fitted objects', view.chart.fitScope || 'source descriptions'], ['Vector dimensions', view.chart.dimension], ['Metric', view.chart.metric], ['Variation retained', `${((view.chart.explainedVariance || 0) * 100).toFixed(1)}%`], ['Residual cutoff', view.chart.thickness], ['Nearest-group recall', view.chart.neighborRecallAt1 ?? view.chart.neighborRecallAt5], ['Projection stress', view.chart.stress], ['Source variation retained', view.chart.sourceDiagnostics ? `${(view.chart.sourceDiagnostics.explainedVariance * 100).toFixed(1)}%` : 'same as above'], ['Source neighborhood recall', view.chart.sourceDiagnostics?.neighborRecallAt5], ['Global candidates', view.diagnostics?.globalCandidateCount], ['State', view.stateId], ['Corpus', view.corpusId]]) { dl.append(el('dt', '', key), el('dd', '', readable(value))); }
   host.append(dl);
@@ -309,7 +416,7 @@ function renderDetails() {
   const list = el('ul'); for (const warning of view.warnings || []) list.append(el('li', '', warning)); host.append(list);
 }
 function download(name, payload) { const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })); const a = el('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
-function encodeFocus(state) { return btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(state)))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+function encodeFocus(state) { const encoded = btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(state)))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); if (encoded.length > 16000) throw new Error('Focus is too large for a link. Save or download the full view instead.'); return encoded; }
 function decodeFocus(value) { if (value.length > 16000) throw new Error('Shared focus is too large. Import a session file instead.'); return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(value.replace(/-/g, '+').replace(/_/g, '/')), c => c.charCodeAt(0)))); }
 async function bridgeFetch(route, options = {}, connection = bridge) {
   const response = await fetch(new URL(route, connection.origin), { ...options, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${connection.token}`, ...options.headers }, signal: AbortSignal.timeout(20000) });
@@ -348,28 +455,34 @@ async function connect(origin, token) {
     if (fragment.has('token') && savedToken) history.replaceState(null, '', location.pathname + location.search);
   } catch (error) { if (source === sourceEpoch) { bridge = null; events?.close(); setBusy(false); } throw error; }
 }
-async function startBrowser(initial = {}) {
-  const source = ++sourceEpoch, ticket = userIntent;
-  actionQueue = Promise.resolve();
-  revision = -1; queuedBridgeSnapshot = null; bridgeNeedsRebase = false;
-  setBusy(true, 'Preparing the corpus…'); worker?.terminate();
-  for (const request of pending.values()) request.reject(new Error('Computation source changed.'));
-  pending.clear();
-  worker = new Worker('/compute-worker.js', { type: 'module' });
-  worker.onmessage = ({ data }) => {
-    if (data.type === 'progress') { if (source === sourceEpoch) status(data.stage === 'index' ? 'Preparing the source index on your device…' : `Loading corpus: ${data.completed}/${data.total} files. The first visit downloads the collection; later questions use local data.`); return; }
+async function ensureWorker() {
+  if (workerReady) return workerReady;
+  worker = new Worker('/compute-worker.js', {type: 'module'});
+  worker.onmessage = ({data}) => {
+    if (data.type === 'progress') { if (busy && !bridge) status(data.stage === 'index' ? 'Preparing the source index on your device…' : `Loading corpus: ${data.completed}/${data.total} files. Questions compute on your device.`); return; }
     const request = pending.get(data.id); if (!request) return; pending.delete(data.id); data.error ? request.reject(new Error(data.error)) : request.resolve(data.result);
   };
-  worker.onerror = event => { for (const request of pending.values()) request.reject(new Error(event.message || 'The computation worker failed to load. Reload to retry.')); pending.clear(); };
-  loadingTask = callWorker('init', initial);
-  try { const result = await loadingTask; if (source === sourceEpoch && ticket === userIntent) accept(result); }
+  worker.onerror = event => { for (const request of pending.values()) request.reject(new Error(event.message || 'The computation worker failed.')); pending.clear(); workerReady = null; };
+  workerReady = callWorker('init', {}).then(result => { nativeComputationId = result.view.computationId; nativeEmptySnapshot = result; return result; }).catch(error => { workerReady = null; worker?.terminate(); throw error; });
+  return workerReady;
+}
+async function startBrowser(initial = {}, {keepRoute = false} = {}) {
+  const source = ++sourceEpoch, ticket = userIntent;
+  actionQueue = Promise.resolve(); revision = -1; queuedBridgeSnapshot = null; bridgeNeedsRebase = false;
+  setBusy(true, 'Preparing the corpus…');
+  loadingTask = (async () => { const initialized = await ensureWorker(); return initial.session ? callWorker('import', initial.session) : initial.state ? callWorker('orient', initial.state) : initialized; })();
+  try { const result = await loadingTask; if (source === sourceEpoch && ticket === userIntent) accept(result, {keepRoute}); }
   finally { if (source === sourceEpoch && ticket === userIntent) setBusy(false); }
+}
+function emptyPath() {
+  if (nativeEmptySnapshot) return acceptCapsule(createCapsule(nativeEmptySnapshot));
+  return acceptCapsule({schemaVersion:'1.0.0',kind:CAPSULE_KIND,builder:{id:'browser-empty',version:'1.0.0'},context:{question:''},snapshot:{view:{stateId:'empty',corpusId:'not-loaded',computationId:'not-loaded',query:'',nodes:[],directions:[],edges:[],warnings:[],diagnostics:{},chart:null}},continuation:{mode:'snapshot-only',originStateId:'empty',description:'Enter a question to load the collection and compute a new path on this device.',actions:[]}});
 }
 function updateOptionsSummary() {
   const defaults = { intent: 'explore', lens: 'combined', 'work-relation': 'either', transition: 'refine' };
   const changed = Object.entries(defaults).filter(([id, value]) => $(id).value !== value).length;
   const approach = $('intent').selectedOptions[0]?.textContent || 'Explore connections';
-  $('options-summary').textContent = `${approach} · ${changed ? `${changed} changed` : '4 settings'}`;
+  $('options-summary').textContent = changed ? `${approach} · customized` : approach;
 }
 $('options-toggle').addEventListener('click', () => { const open = $('options-toggle').getAttribute('aria-expanded') !== 'true'; $('options-toggle').setAttribute('aria-expanded', String(open)); $('options-toggle').closest('.search-workbench').classList.toggle('options-open', open); });
 const markDraft = () => { draftDirty = true; draftVersion++; updateOptionsSummary(); };
@@ -395,38 +508,103 @@ $('broaden').addEventListener('click', () => action({ type: 'broaden' }));
 $('reset').addEventListener('click', () => {
   $('question').value = ''; $('intent').value = 'explore'; $('lens').value = 'combined'; $('work-relation').value = 'either'; $('transition').value = 'refine';
   markDraft(); $('question').focus(); selectedDirectionId = null; switchPanel('sources');
-  action({ type: 'reset', query: '' }, { clearForm: true });
+  if (bridge) action({ type: 'reset', query: '' }, { clearForm: true }); else { draftDirty = false; emptyPath(); }
 });
-$('export').addEventListener('click', () => { if (session) download('eigenquestions-session.json', exportSession(session)); });
-$('export-view').addEventListener('click', () => { if (session) download('eigenquestions-view.json', { session, view, revision: Math.max(0, revision) }); });
-$('share').addEventListener('click', async () => { if (!session) return; const url = new URL(location.href); url.hash = `focus=${encodeFocus(currentState(session))}`; try { await navigator.clipboard.writeText(url.href); status('Current focus link copied. It preserves this question, source anchors, and approach; export a session for the full path.'); } catch { history.replaceState(null, '', url); status('The address bar now contains your shareable focus link. Copy it to share.'); } });
-$('import-open').addEventListener('click', () => $('import-file').click());
-$('import-file').addEventListener('change', async event => {
-  const file = event.target.files[0]; if (!file) return;
+$('export').addEventListener('click', () => { if (activeCapsule?.snapshot.session) download('eigenquestions-session.json', exportSession(activeCapsule.snapshot.session)); });
+$('export-view').addEventListener('click', () => { if (activeCapsule) download('eigenquestions-view.json', activeCapsule); });
+$('share').addEventListener('click', async () => { try { if (!activeCapsule?.snapshot.session) return; const url = new URL(location.href); url.hash = `focus=${encodeFocus(currentState(session))}`; try { await navigator.clipboard.writeText(url.href); status('Focus link copied. Save or download the full view to preserve groups and context.'); } catch { history.replaceState(null, '', url); status('The address bar contains the focus link. Copy it to share.'); } } catch (error) { status(error.message, true); } });
+async function importFile(file) {
+  if (!file) return;
+  const ticket = ++userIntent; ++routeGeneration; routeAbort?.abort();
+  setBusy(true, 'Opening view file…');
   try {
-    if (file.size > 8 * 1024 * 1024) throw new Error('Session file is too large (maximum 8 MiB).');
-    if (bridge) throw new Error('Disconnect from the local companion before importing a separate browser session.');
-    const payload = JSON.parse(await file.text()); draftDirty = false; await action(payload, { operation: 'import', clearForm: true });
-  } catch (error) { status(error.message, true); } finally { event.target.value = ''; }
+    if (file.size > MAX_JSON_BYTES) throw new Error('View file exceeds the 2 MiB decoded limit.');
+    const bytes = new Uint8Array(await file.arrayBuffer());
+    if (ticket !== userIntent) return {superseded:true};
+    if (bytes[0] === 0x1f && bytes[1] === 0x8b) { const capsule = await decodeCapsuleBytes(bytes); if(ticket!==userIntent)return {superseded:true}; return acceptCapsule(capsule); }
+    const payload = JSON.parse(new TextDecoder('utf-8', {fatal:true}).decode(bytes));
+    if (payload.kind === CAPSULE_KIND) return acceptCapsule(payload);
+    if (payload.view && payload.session) return acceptCapsule(createCapsule(payload));
+    if (payload.kind === 'eigenquestions-session') { if (bridge) throw new Error('Disconnect before restoring a separate session.'); return action(payload, {operation:'import'}); }
+    throw new Error('This file is not a supported contextual view or navigation session.');
+  } catch(error) { if(ticket===userIntent)throw error; return {superseded:true}; }
+  finally { if(ticket===userIntent){setBusy(false);if(queuedBridgeSnapshot){const latest=queuedBridgeSnapshot;queuedBridgeSnapshot=null;accept(latest);}} }
+}
+$('import-open').addEventListener('click', () => $('import-file').click());
+$('view-drop').addEventListener('click', () => $('import-file').click());
+$('import-file').addEventListener('change', async event => { try { await importFile(event.target.files[0]); } catch (error) { status(error.message, true); } finally { event.target.value = ''; } });
+window.addEventListener('dragover', event => { if (event.dataTransfer.types.includes('Files')) event.preventDefault(); });
+window.addEventListener('drop', async event => { if (!event.dataTransfer.files.length) return; event.preventDefault(); try { await importFile(event.dataTransfer.files[0]); } catch (error) { status(error.message, true); } });
+async function publish(capsule = activeCapsule) {
+  if (!capsule) throw new Error('There is no view to save.');
+  const bytes = await encodeCapsuleBytes(capsule);
+  const response = await fetch('/api/views', {method:'POST',headers:{'Content-Type':'application/gzip'},body:bytes,signal:AbortSignal.timeout(30000)});
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.error?.message || `Saving is unavailable (HTTP ${response.status}). Download the view to keep it.`);
+  if (!/^[A-Za-z0-9_-]{22}$/.test(result.id) || !safeUrl(result.url)) throw new Error('Storage returned an invalid saved-view receipt.');
+  return result;
+}
+$('publish-view').addEventListener('click', async () => {
+  const savingRevision = uiRevision;
+  $('stored-view-status').textContent = 'Saving… Anyone with the link can open this view.'; $('publish-view').disabled = true;
+  try {
+    const receipt = await publish();
+    $('stored-view-url').value = receipt.url; $('stored-view-link').hidden = false;
+    const previous = savingRevision !== uiRevision;
+    $('stored-view-link').querySelector('label').textContent = previous ? 'Earlier view link' : 'Saved link';
+    $('stored-view-status').textContent = previous ? 'Your earlier view was saved; this link belongs to that earlier view. The current view has not been saved. Anyone with the link can open it.' : 'Saved. Anyone with the link can open this view.';
+  } catch(error) { $('stored-view-status').textContent = `${error.message} Your current view is unchanged; Download view keeps a local copy.`; }
+  finally { $('publish-view').disabled = false; }
 });
+$('copy-view-link').addEventListener('click', async () => { try { await navigator.clipboard.writeText($('stored-view-url').value); $('stored-view-status').textContent = 'Link copied.'; } catch { $('stored-view-url').focus(); $('stored-view-url').select(); $('stored-view-status').textContent = 'Select and copy the saved link.'; } });
 $('agent-open').addEventListener('click', () => $('agent-dialog').showModal()); $('agent-close').addEventListener('click', () => $('agent-dialog').close());
 $('bridge-form').addEventListener('submit', async event => { event.preventDefault(); try { await connect($('bridge-origin').value, $('bridge-token').value); } catch (error) { $('bridge-message').textContent = `${error.message} If browser network policy blocks attachment, open the companion’s same-origin local link.`; } });
 $('bridge-disconnect').addEventListener('click', async () => { ++userIntent; events?.close(); bridge = null; revision = -1; try { sessionStorage.removeItem(bridgeStorageKey); } catch {} history.replaceState(null, '', location.pathname + location.search); $('connection-status').textContent = 'Browser session'; $('bridge-message').textContent = 'Disconnected. Continuing this session in the browser.'; try { await startBrowser(session ? { session: exportSession(session) } : {}); } catch (error) { status(error.message, true); } });
 
-async function boot() {
-  let savedBridge;
-  try { savedBridge = JSON.parse(sessionStorage.getItem(bridgeStorageKey) || 'null'); } catch {}
-  if (fragment.has('token') || (savedBridge && !fragment.has('focus'))) {
-    try { await connect(fragment.get('bridge') || (fragment.has('token') ? location.origin : savedBridge.origin), fragment.get('token') || savedBridge.token); setBusy(false); return; }
-    catch (error) { try { sessionStorage.removeItem(bridgeStorageKey); } catch {} $('bridge-message').textContent = `${error.message} Open the companion’s local URL for same-origin operation.`; status('Could not attach to the companion. Loading a browser session instead.', true); }
-  }
-  let initial = {};
-  if (fragment.has('focus')) initial.state = decodeFocus(fragment.get('focus'));
-  else { try { const saved = localStorage.getItem(storageKey); if (saved) initial.session = JSON.parse(saved); } catch { /* No usable saved session. */ } }
-  try { await startBrowser(initial); }
-  catch (error) {
-    if (initial.session) { status(`Saved session could not be restored (${error.message}). Starting a fresh session…`); await startBrowser(); }
-    else throw error;
-  }
+async function loadRoute({initial = false} = {}) {
+  const generation = ++routeGeneration; routeAbort?.abort(); routeAbort = new AbortController();
+  ++userIntent; ++sourceEpoch; queuedBridgeSnapshot = null;
+  fragment = new URLSearchParams(location.hash.slice(1));
+  try {
+    if (fragment.has('view')) {
+      const id = fragment.get('view'); if (!/^[A-Za-z0-9_-]{22}$/.test(id)) throw new Error('Invalid saved-view identifier.');
+      setBusy(true, 'Opening saved view…');
+      const response = await fetch(`/api/views/${encodeURIComponent(id)}`, {signal:routeAbort.signal});
+      if (!response.ok) { const error = await response.json().catch(() => ({})); throw new Error(error.error?.message || `Saved view could not load (HTTP ${response.status}).`); }
+      if (Number(response.headers.get('content-length')) > MAX_JSON_BYTES) throw new Error('Saved view is too large.');
+      const reader = response.body.getReader(), chunks=[]; let size=0;
+      while (true) { const {done,value}=await reader.read(); if (done) break; size+=value.length; if(size>MAX_JSON_BYTES){await reader.cancel();throw new Error('Saved view is too large.');} chunks.push(value); }
+      const bytes=new Uint8Array(size);let offset=0;for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
+      const capsule = await decodeCapsuleBytes(bytes);
+      if (generation === routeGeneration) acceptCapsule(capsule, {keepRoute:true});
+      return;
+    }
+    if (fragment.has('focus')) { await startBrowser({state:decodeFocus(fragment.get('focus'))}, {keepRoute:true}); return; }
+    let savedBridge; try { savedBridge=JSON.parse(sessionStorage.getItem(bridgeStorageKey)||'null'); } catch {}
+    if (fragment.has('token') || (initial && savedBridge)) {
+      try { await connect(fragment.get('bridge') || (fragment.has('token') ? location.origin : savedBridge.origin), fragment.get('token') || savedBridge.token); return; }
+      catch (error) { try {sessionStorage.removeItem(bridgeStorageKey);}catch{} $('bridge-message').textContent=`${error.message} Open the companion’s local URL for same-origin operation.`; }
+    }
+    if (initial) {
+      const stored = localStorage.getItem(capsuleStorageKey);
+      if (stored) { acceptCapsule(JSON.parse(stored)); return; }
+      const legacy=localStorage.getItem(storageKey);if(legacy){await startBrowser({session:JSON.parse(legacy)});return;}
+    }
+    emptyPath();
+  } catch (error) { if(generation===routeGeneration && error.name!=='AbortError') {status(`Unable to open this view: ${error.message} Start a new path or open a file to continue.`,true);document.documentElement.dataset.ready='true';} }
+  finally { if(generation===routeGeneration) setBusy(false); }
 }
-boot().catch(error => { setBusy(false); status(`Unable to load the explorer: ${error.message} Reload to retry.`, true); $('directions')?.replaceChildren(el('p', 'empty-state', 'The corpus could not load. Check your connection and reload. Your exported sessions remain portable.')); });
+window.addEventListener('hashchange', () => loadRoute());
+window.eigenquestionsNavigator = Object.freeze({
+  version:'1.0.0',
+  ready:() => activeCapsule ? Promise.resolve(machineRead()) : new Promise(resolve=>readyWaiters.push(resolve)),
+  read:machineRead,
+  orient:async (query, options={}) => { if(typeof query!=='string')throw new Error('orient needs a question string.');await ensureWorker();return createCapsule(await callWorker('orient',{...options,query})); },
+  evidence:async ids => {if(!Array.isArray(ids)||ids.length>100)throw new Error('Supply at most 100 evidence IDs.');const found=ids.map(id=>activeCapsule?.snapshot.view.nodes.find(node=>node.id===id));if(found.every(Boolean))return structuredClone(found);await ensureWorker();return callWorker('evidence',{ids});},
+  apply:(capsule,{expectedRevision}={}) => {assertRevision(expectedRevision);return acceptCapsule(capsule,{expectedRevision});},
+  navigate:async (payload,{expectedRevision}={}) => {assertRevision(expectedRevision);const result=await action(payload,{explicitContinuation:true});if(result?.error)throw new Error(result.error);if(!result)throw new Error('Navigation was superseded. Read current state.');return result;},
+  export:() => activeCapsule ? structuredClone(activeCapsule) : null,
+  publish:async capsule => publish(capsule || activeCapsule),
+  subscribe:callback => {if(typeof callback!=='function')throw new Error('subscribe needs a callback.');observers.add(callback);return()=>observers.delete(callback);}
+});
+loadRoute({initial:true});

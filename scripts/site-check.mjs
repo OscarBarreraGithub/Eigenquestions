@@ -15,7 +15,7 @@ export async function checkSite(directory = path.join(root, 'dist')) {
   }
   await visit(directory);
   assert.ok(entries.length <= 20000, 'Too many static assets for a free-plan deployment');
-  for (const required of ['index.html', '404.html', 'app.js', 'compute-worker.js', 'styles.css', 'lib/protocol/session.mjs', 'lib/geometry/index.mjs', 'data/manifest.json', 'docs/site.md', 'docs/agent-interface.md', 'docs/navigation-contract.md', 'docs/geometry.md', 'docs/geometry-experiments.md']) assert.ok(entries.includes(required), `Missing product asset ${required}`);
+  for (const required of ['index.html', '404.html', 'app.js', 'compute-worker.js', 'styles.css', 'lib/protocol/session.mjs', 'lib/protocol/capsule.mjs', 'lib/geometry/index.mjs', 'data/manifest.json', 'docs/site.md', 'docs/agent-interface.md', 'docs/navigation-contract.md', 'docs/geometry.md', 'docs/geometry-experiments.md', 'docs/stored-views-operations.md']) assert.ok(entries.includes(required), `Missing product asset ${required}`);
   for (const file of entries) assert.ok(!/^(api|quiz|taste|submit|review|leaderboard|explore|_next|\.git)\//.test(file), `Retired route in static output: ${file}`);
   assert.ok(!entries.some(file => file.includes('Q-001-original') || file.includes('Lab Notebook') || file.includes('.env')), 'Private planning/runtime material must not enter the public build');
   const html = await readFile(path.join(directory, 'index.html'), 'utf8');
@@ -48,8 +48,10 @@ export async function checkSite(directory = path.join(root, 'dist')) {
   const pinnedHash = identitySource.match(/ENGINE_SOURCE_SHA256\s*=\s*'([a-f0-9]{64})'/)?.[1];
   assert.equal(createHash('sha256').update(engineSource).digest('hex'), pinnedHash, 'Engine identity is stale; geometry owner must repin before release');
   const config = await readFile(path.join(root, 'wrangler.toml'), 'utf8');
-  assert.ok(!/^main\s*=/m.test(config), 'Deployment must be assets-only');
+  assert.ok(/^main\s*=\s*"backend\/views\.mjs"/m.test(config), 'Only the bounded stored-view handler may run on the default deployment');
   assert.ok(!/d1_databases|nodejs_compat|\.open-next/.test(config), 'Retired backend configuration remains');
+  assert.ok(/run_worker_first\s*=\s*\["\/api\/views", "\/api\/views\/\*"\]/.test(config), 'Only stored-view paths may require Worker execution');
+  assert.ok(!/\[\[r2_buckets\]\]|\[\[durable_objects/.test(config), 'Storage activation must remain explicit');
   assert.ok(/not_found_handling\s*=\s*"404-page"/.test(config), 'Unknown paths must return 404');
   assert.ok(/eigenquestions\.com\/\*/.test(config), 'Existing domain route must be retained');
   const manifest = JSON.parse(await readFile(path.join(directory, 'data/manifest.json'), 'utf8'));
@@ -60,6 +62,6 @@ export async function checkSite(directory = path.join(root, 'dist')) {
     assert.equal(buffer.byteLength, shard.bytes, `Size mismatch: ${shard.path}`);
     assert.equal(createHash('sha256').update(buffer).digest('hex'), shard.sha256, `Hash mismatch: ${shard.path}`);
   }
-  return { assets: entries.length, corpusId: manifest.corpusId, verifiedShards: shards.length, assetsOnly: true, oldRoutesAbsent: true };
+  return { assets: entries.length, corpusId: manifest.corpusId, verifiedShards: shards.length, staticAssets: true, assetsOnly: false, apiRoutes: ['/api/views'], oldRoutesAbsent: true };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) console.log(JSON.stringify(await checkSite(), null, 2));

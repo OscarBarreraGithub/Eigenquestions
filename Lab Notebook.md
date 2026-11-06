@@ -3,9 +3,9 @@
 ## Now
 
 - **Project/question:** Eigenquestions. Implement the authorized Q-003 stored-view journey and Q-004 quieter text interface. Can an agent's complete contextual view travel intact into a responsive browser?
-- **Known:** Live v2 passed its public checks. The startup flash comes from hardcoded KK shell/default state before restoration. Independent Sol review found too many headings/controls before the scientific choices.
-- **Unfinished/running:** Astra protocol/backend and Sol UI are implementing; Sol's initial review is saved. No cluster jobs submitted yet. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
-- **Next:** Integrate the capsule, neutral startup, quiet layout and bounded upload API; then freeze a checkpoint for Worker and real-browser validation. Preserve exact authored scientific decisions.
+- **Known:** The quiet visual prototype passed Slurm capture with no page errors, overflow or measured sub-44px controls. Integrated Node/Worker tests pass 32/32 and both deployment profiles package locally. These do not establish live stored sharing.
+- **Unfinished/running:** Astra protocol is finishing browser/discovery integration; Sol is refining observed empty-state/mobile details. Visual job `58236895` is complete. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
+- **Next:** Freeze the complete runtime and run stored-view/startup plus retained interaction suites in Slurm; inspect the revised screenshots, then release the verified frontend. Preserve exact authored scientific decisions.
 - **Git:** Working branch `agent/stored-views-quiet-ui`, from remotely verified Q-003 research checkpoint `31aaa00`. Coordinator `/root`; agents own implementation. Existing main deployment remains authorized.
 
 ## Requests
@@ -259,3 +259,25 @@
 **Scope.** This checkpoint deliberately leaves in-progress protocol/backend files unstaged. Its capture utility uses real native scientific results and records screenshots/target sizes; it does not establish that new storage buttons work or that the prior runtime's startup default is repaired. Integrated acceptance comes later. No new browser was launched on the Mac.
 
 **Next.** Capture and review 1440, 1024, 390 and 320px screens in authorized Slurm. Use observed visual faults to guide another Sol iteration. [Design choices](docs/Q-004-ui-design.md) · [capture utility](tests/integration/q004_visual_capture.py).
+
+**Submission.** UI checkpoint `3a5f38f8d9a266b6b2b94248e2c5cb1837f3f923` is pushed and remotely verified. Slurm job `58236895` receives that exact archive; local and cluster SHA-256 match. [Receipt](docs/evidence/q004/visual-v1-job.json).
+
+## 2026-11-06 UTC — Q-003 / Q-004: Test durability and inspect real screens
+
+**Observed.** Visual job `58236895` completed in 1m14s, exit 0. The 18 captures have no page errors or horizontal overflow; the measured primary controls meet 44px targets. KK choices start at 384px on desktop and 383px on a 390px phone, versus roughly 480/540px in the earlier design. Root and independent Sol reviewed the actual screens. [Capture report](docs/evidence/q004/visual-v1/q004-visual-capture.json) · [desktop](docs/evidence/q004/visual-v1/kk-1440.png) · [phone](docs/evidence/q004/visual-v1/dark-matter-390.png).
+
+**Interpretation/iteration.** The quieter reading hierarchy succeeds. An empty initial state still occupies a historical column, wasting space and implying a scientific step; the true empty page also repeats unavailable controls. These are bounded rendering corrections for the next integration, not grounds to change the scientific engine. Full meaningful breadcrumbs must survive as the context changes.
+
+**Storage evidence/contributors.** Astra backend's five tests and root's independent rerun pass, including simultaneous identical saves, durable-write failure, lost receipts, immutable IDs and SQLite budget restart/concurrency. The complete Node suite passes 32 tests. Both default and storage-enabled profiles pass local packaging dry runs; neither dry run provisions resources. The selected admission design reserves exact bytes transactionally before R2, allows 2,000 new views/day and keeps an 8 GB inventory ceiling without expiring old links. This is an explicit launch cap, not the earlier theoretical quota calculation.
+
+**Limits/next.** Representative local validation used about 2.85ms of Node process CPU; maximum-size input used about 7.38ms. These are not production Worker CPU measurements. The account's free allowance and actual hosted save/open still require authorized activation. [Benchmark evidence](docs/evidence/q003/stored-views-local-benchmark.json) · [operations and activation](docs/stored-views-operations.md). Freeze the integrated controller for real cold-start, file, URL and delayed-action tests next.
+
+## 2026-11-06 UTC — Q-003 / Q-004: Preserve the scientific object through navigation
+
+**Question.** Does the whole journey preserve the intended view, rather than merely pass isolated upload and display tests?
+
+**Review/contributors.** Root and independent Astra backend review identified stale share routes after local changes, authored history being replaced by native groups, late file reads and save receipts crossing newer user actions, and previous assumptions leaking into an unrelated imported session. Root also found malformed optional metadata could fail during rendering after validation. Astra protocol repaired these boundaries and added browser regressions. Sol refined the observed phone heading and empty-page layout.
+
+**Decision.** The complete capsule remains authoritative. Authored questions and groups display as supplied; a bounded in-memory history restores accepted authored views and their explicit next actions. Evicted authored results require reopening their file rather than pretending native reconstruction is equivalent. Independent loads start with independent assumptions. Saved views render without loading the full corpus; native continuation loads that data only when needed.
+
+**Observed/next.** Root rebuilt and reran all 32 Node/Worker tests successfully; 70 product assets and all 41 frozen corpus shards pass site checks. No scientific engine/data change was made. This checkpoint freezes the integrated runtime for four real-browser suites, including delayed operations and exact authored-file roundtrips. Browser evidence is still pending; [local receipt](docs/evidence/q004/integration-node-validation.json).

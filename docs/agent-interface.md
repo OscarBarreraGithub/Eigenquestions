@@ -4,7 +4,118 @@ The external agent interprets conversation. The shared local engine selects real
 source facets, runs graph diffusion and vector geometry, and returns the exact
 object rendered by the browser. The static website does not run a language model.
 
-## Start a live session
+## Use the physics graph from Eigenquestions
+
+Open [eigenquestions.com](https://eigenquestions.com/) and read this interface.
+The graph is an optional source of orientation. **Always supplement it with
+independent research and native reasoning**; its frozen, Swampland-centered
+collection must not limit the questions, sources or conclusions you consider.
+A short orientation should usually take one query and inspection of a few source
+IDs. Expand only when it helps the user's task.
+
+An agent with permission and tools to execute JavaScript in the page can use
+`window.eigenquestionsNavigator`. It shares the human UI's controller and worker;
+there is no second engine, server computation, model backend or required install.
+Use the structured object rather than depending on clicking UI coordinates:
+
+```js
+const graph = window.eigenquestionsNavigator;
+await graph.ready();
+const current = graph.read();
+const orientation = await graph.orient('KK towers as dark matter', {
+  intent: 'phenomenology', lens: 'combined', workRelation: 'either'
+});
+// orientation is a full contextual-view capsule. This did not move the UI,
+// change its history, or replace the human's draft.
+const sources = orientation.snapshot.view.nodes.slice(0, 5);
+// When the task calls for a visible update, read the latest revision first:
+const latest = graph.read();
+graph.apply(orientation, {expectedRevision: latest.revision});
+```
+
+| Page method | Behavior |
+|---|---|
+| `ready()` | Promise for the first accepted display object; corpus computation may still be unloaded. |
+| `read()` | Copy of `{apiVersion,revision,renderedRevision,busy,mode,capabilities,capsule}`. |
+| `orient(query, options)` | Compute an ephemeral capsule in the same worker; never commit it or alter the draft. Options are canonical state fields except corpus/computation identity. |
+| `evidence(ids)` | Inspect supplied current sources by ID; missing IDs require loading the native corpus. At most 100 IDs. |
+| `apply(capsule,{expectedRevision})` | Validate and display the exact supplied result; replaces the page's active object and detaches a local companion. It does not recompute or silently discard custom groups. |
+| `navigate(action,{expectedRevision})` | Commit a native action against the last visible canonical session, retaining existing race guards. Returns the accepted object or rejects on failure/supersession. |
+| `export()` | Copy the complete capsule, including explicit context, groups, source links and continuation information. |
+| `publish(capsule?)` | POST the explicit/current capsule as gzip to storage; returns a receipt only after durable save. Does not move the current path. |
+| `subscribe(callback)` | Observe accepted object changes; returns an unsubscribe function. |
+
+`revision` belongs to this page controller; it is not a scientific state ID or
+the companion's server revision. Read it immediately before a mutation. A stale
+`apply` rejects with `code: revision_conflict`; inspect `error.current` and
+reconsider the operation instead of retrying blindly. Newer UI intents supersede
+older pending computations. `renderedRevision === revision` acknowledges a past
+render after animation-frame opportunities; it does not prove the tab is visible
+to the human. `ready()` alone is not a render acknowledgement.
+
+## Full contextual views and saved links
+
+The authoritative exchange is the [contextual-view capsule schema](../schemas/contextual-view.schema.json),
+implemented by the [pure validator/codec](../lib/protocol/capsule.mjs). A capsule
+contains `builder`, explicit `context`, `snapshot.view`, optional canonical
+`snapshot.session`, and `continuation`. Group names, overlapping memberships,
+source evidence, typed relationships and order survive import/export exactly.
+An absent projection is valid; geometry is unavailable for that view. An
+`affine-plane` describes a real center and orthonormal basis; `display-layout`
+only describes supplied display positions and makes no geometric claim.
+
+Display, recompute and continue are separate capabilities. Unknown builders can
+be displayed and exported without loading the native corpus. Recompute needs
+the exact supported native builder/version and computation identity. Continue
+needs a compatible canonical session and supported explicit actions. An authored
+group ID is not necessarily a native direction ID: use a resolved `refine`/`pivot`
+query plus genuine source `focusIds`, not `select` of an invented group ID.
+Native continuation consumes the canonical query/anchors/options; preserving
+broader context in the capsule does not make those fields part of the engine's
+math. A new computed result can therefore differ from the author's grouping.
+Do not promise semantic preservation beyond the recorded action.
+
+For a saved link, send the same validated capsule:
+
+```sh
+curl --fail-with-body https://eigenquestions.com/api/views \
+  -H 'Content-Type: application/json' --data-binary @view.json
+# For a larger view, gzip it locally, then use Content-Type: application/gzip.
+# Do not send a Content-Encoding header.
+```
+
+The JSON receipt is `{id,url,readUrl,sha256,bytes,createdAt}` (201 new, 200 identical
+retry). GET `readUrl`, or `/api/views/ID`, returns the exact saved JSON/gzip bytes;
+there is no `Content-Encoding` header, so decode gzip explicitly. Stored bytes
+are limited to 512 KiB and decoded JSON to 2 MiB; the shared codec also limits
+structure, source/group counts, projection dimensions and references. Save links
+are **public and unlisted**: anyone with the link can read them. Keep private
+connection tokens and unrelated conversation data out of capsules.
+
+`/#view=ID` loads the full object directly. A changed hash loads a new object in
+the existing page; stale requests cannot replace a newer route. A URL sent in
+chat does not notify an already-open tab by itself. Opening the link, changing
+that tab's route, or invoking the page object's `apply` is the concrete update.
+Download/Open file and drag-and-drop use the same capsule, including `.json.gz`.
+A full stored/file view renders before any corpus download. Native arbitrary
+queries load and compute on the user's browser only. Storage may be inactive or
+at capacity: preserve the capsule and use a file when saving returns an error;
+see [storage operations and limits](stored-views-operations.md).
+
+## Capability fallback and discovery
+
+An HTTP-only agent can read these instructions, the [corpus manifest](../data/navigation/manifest.json),
+linked paper metadata/source descriptions, and existing saved capsules. It can
+upload a valid authored capsule built from its own source-based work. HTTP access
+alone cannot execute the browser worker, compute an arbitrary native query, or
+mutate another person's browser session. State that boundary; do not substitute
+fabricated coordinates or imply a stored authored view is native computation.
+Use source links for independent research, and offer a saved view/file where
+helpful. The [discovery file](../llms.txt), robots and sitemap help find documents;
+they confer no tool capability or permission. The page object is not an MCP
+server or a claim of universal browser-agent integration.
+
+## Optional local companion and MCP
 
 Requirements: this repository, its frozen `data/navigation/` corpus, and Node 22
 or newer. From the repository root:
@@ -82,9 +193,9 @@ and [tools protocol](https://modelcontextprotocol.io/specification/2025-06-18/se
 The browser SSE API is an internal bridge transport, not an MCP HTTP endpoint.
 
 The skill at [`skills/physics-navigator/SKILL.md`](../skills/physics-navigator/SKILL.md)
-can be copied to the agent's skill directory or loaded directly. The agent still
-needs this checkout's executable interface and data; installing the skill alone
-does not install Node, the corpus, a server, or browser access.
+can be copied to the agent's skill directory or loaded directly. The browser route needs no skill installation. The optional local companion needs
+this checkout, Node and its corpus; installing the skill alone supplies none of
+those capabilities.
 
 ## Intent and context
 
@@ -108,7 +219,7 @@ ON/USING views, a held-out black-hole journey, back/replay/import, empty and
 unsupported queries, another corpus fixture, and actual MCP → bridge → SSE.
 HTTP tests verify exact allowed origins, authentication and private-network
 preflight. They do **not** establish browser permission behavior; browser results
-are tracked separately in the acceptance evidence. The final authorized Chromium
+are tracked separately in the acceptance evidence. The earlier Q-001 authorized Chromium
 run on 2026-11-06 passed **19 actual-browser checks**: MCP-driven owner/held-out
 journeys and render acknowledgements; mobile readability and real marker clicks;
 public-site computation, changed ON/USING evidence, selection/back/export/import/
@@ -137,3 +248,8 @@ anchors recovered it. Read competing sources' roles before treating a direction
 as a continuation of the same physical application. Session
 state is process-local until exported; restarting the bridge creates a fresh
 token and requires reattachment. Export before stopping to retain navigation.
+
+The Q-003/Q-004 browser API, stored-capsule and startup changes have separate
+acceptance coverage in `tests/integration/stored_views_browser_acceptance.py`;
+current implementation and Node checks must not be mistaken for completed
+public deployment or browser acceptance. Release evidence records those results.

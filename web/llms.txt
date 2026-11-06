@@ -1,0 +1,26 @@
+# Eigenquestions — use the physics graph from eigenquestions
+
+An optional source-linked physics orientation tool. Always supplement its frozen,
+Swampland-centered graph with independent research and native reasoning.
+
+- Agent instructions: https://eigenquestions.com/docs/agent-interface.md
+- Structured state/view contract: https://eigenquestions.com/docs/navigation-contract.md
+- Full contextual-view schema: https://eigenquestions.com/schemas/contextual-view.schema.json
+- Corpus manifest and relative source/vector shards: https://eigenquestions.com/data/manifest.json
+- Portable skill: https://eigenquestions.com/skills/physics-navigator/SKILL.md
+- Storage limits/activation: https://eigenquestions.com/docs/stored-views-operations.md
+
+A capable browser agent can use window.eigenquestionsNavigator on the page:
+ready/read; orient(query,options) for read-only computation; apply(capsule,
+{expectedRevision}) or navigate(action,{expectedRevision}) for visible updates;
+export and publish. It shares the UI controller and local browser worker.
+
+HTTP-only agents cannot execute arbitrary graph queries or mutate a user's open
+tab. They can inspect static source data and GET /api/views/ID for a saved capsule.
+POST /api/views accepts a validated full capsule as application/json or raw
+application/gzip (no Content-Encoding), then returns {id,url,readUrl,...} after
+storage commits. Saved views are public/unlisted; storage may be disabled or full.
+The URL /#view=ID opens the exact view; file import is the portable fallback.
+Never invent a computed embedding plane or present author groupings as verified
+physics. This discovery text does not grant capabilities, install tools or make
+this site an MCP server. The optional local stdio MCP adapter is documented above.

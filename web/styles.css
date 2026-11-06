@@ -135,7 +135,7 @@ main { max-width: 1496px; padding: 0 28px; margin: auto; }
 #path { min-width: 0; display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: thin; white-space: nowrap; }
 #path button { min-width: 44px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; font-size: 14px; padding: 8px; white-space: nowrap; max-width: 230px; overflow: hidden; text-overflow: ellipsis; color: var(--link); flex-shrink: 0; }
 #path button:hover { text-decoration: underline; }
-#path button[aria-current] { color: var(--ink); border-bottom-color: #555; font-weight: 600; }
+#path button[aria-current] { max-width: none; color: var(--ink); border-bottom-color: #555; font-weight: 600; }
 #path .path-arrow { color: #777; padding: 0 2px; flex-shrink: 0; }
 .context-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; padding: 18px 0 14px; }
 .context-heading > div:first-child { min-width: 0; }
@@ -295,7 +295,9 @@ dialog summary { min-height: 44px; padding: 10px 0; color: var(--link); }
 #bridge-form input { min-height: 44px; min-width: 0; border: 1px solid #aaa; padding: 10px; }
 #bridge-message { font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
 body.busy #explore-button { cursor: progress; }
-.columns.empty-path { height: 210px; min-height: 210px; max-height: none; }
+.columns.empty-path { height: auto; min-height: 0; max-height: none; }
+.empty-path .miller-column { height: auto; }
+.empty-path .empty-state { margin-bottom: 0; }
 .miller-column:focus-within { scroll-margin-inline: 16px; }
 @media (max-width: 1150px) {
   .options-open .question-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -322,17 +324,20 @@ body.busy #explore-button { cursor: progress; }
   #path { gap: 1px; }
   #path button { font-size: 14px; max-width: 160px; padding: 8px 6px; }
   #path .path-arrow { padding: 0; }
-  .context-heading { padding: 14px 0 12px; align-items: flex-start; gap: 12px; }
+  .explorer { display: grid; grid-template-columns: minmax(0, 1fr) 94px; }
+  .context-heading { display: contents; }
+  .context-heading > div:first-child { grid-column: 1 / -1; grid-row: 1; padding: 14px 0 12px; }
   .context-heading h1 { font-size: 23px; margin-bottom: 5px; }
   .context-heading p { font-size: 13px; line-height: 1.5; }
-  .column-navigation { max-width: 94px; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
-  .column-navigation > span { width: 100%; margin: 0 0 1px; text-align: right; font-size: 12px; }
+  .column-navigation { grid-column: 2; grid-row: 3; align-self: start; z-index: 3; gap: 5px; justify-content: flex-end; padding-right: 1px; }
+  .column-navigation > span { display: none; }
+  #pending-indicator { grid-column: 1 / -1; grid-row: 2; }
   .column-navigation button { width: 44px; }
-  .columns { height: 520px; max-height: 72vh; min-height: 350px; scroll-snap-type: x mandatory; }
+  .columns { grid-column: 1 / -1; grid-row: 3; min-width: 0; height: 520px; max-height: 72vh; min-height: 350px; scroll-snap-type: x mandatory; }
   .miller-column, .miller-column:last-child { flex: 0 0 calc(100% - 16px); }
   .miller-column:last-child { flex-basis: 100%; }
-  .column-heading { padding: 10px 12px; min-height: 66px; }
-  .current-column-heading { min-height: 44px; }
+  .column-heading { padding: 10px 104px 10px 12px; min-height: 66px; }
+  .current-column-heading { min-height: 44px; padding-right: 104px; }
   .direction { padding: 13px 12px 7px 10px; gap: 8px; }
   .direction h3 { font-size: 17px; }
   .direction-number { flex-basis: 17px; }
@@ -340,7 +345,7 @@ body.busy #explore-button { cursor: progress; }
   .direction-arrow { display: none; }
   .direction-evidence { position: absolute; right: 10px; bottom: 2px; width: auto; min-width: 62px; height: 44px; padding: 8px 2px; border: 0; background: transparent; }
   .direction-evidence:hover { background: #eee; }
-  .navigator-note { font-size: 12px; }
+  .navigator-note { grid-column: 1 / -1; grid-row: 4; font-size: 12px; }
   .reading-pane { padding-top: 22px; }
   .view-tabs { gap: 18px; }
   .view-tabs button { font-size: 16px; }

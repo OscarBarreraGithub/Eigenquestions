@@ -56,13 +56,18 @@ extracted descriptions and links to papers so claims can be checked.
 
 ## Portable sessions and agent updates
 
-**Export session** writes the canonical versioned session, including the complete
-path. **Export view** adds the computed view to a snapshot. Either export can be
-imported; the browser validates its session and recomputes from its own frozen
-corpus. A foreign corpus/version is rejected. **Share focus** encodes only the
-current state in the URL fragment; it includes anchors and intent but not the
-full history. No session is uploaded to a public server. Browser local storage
-keeps the most recent session when available.
+**Download session** writes the canonical path for deterministic native replay.
+**Download view** writes the full contextual capsule: computed or authored group
+names, overlapping memberships, explicit context, evidence and optional geometry.
+Opening a view file preserves that exact object without first loading the corpus;
+opening a session recomputes against its pinned engine/data. Unknown builders
+remain readable snapshots with explicit continuation limits. **Share focus**
+encodes only a native current state, while **Save link** uploads the full capsule
+to bounded public, unlisted storage when enabled. Anyone with a saved link can
+open it. A storage error leaves the view available for local download. See
+[storage operations](stored-views-operations.md). Browser local storage keeps the
+most recent full view when available. A shared route takes priority over saved
+state; a new visitor starts with an empty question, not a preselected topic.
 
 The local companion serves the same app and publishes session changes through
 Server-Sent Events. A companion launch link attaches automatically; subsequent
@@ -94,34 +99,50 @@ The static preview binds to `127.0.0.1:4173`. `PORT` or the first argument of
 uncompressed frozen assets on the first load. A progress message remains visible;
 loading, indexing and subsequent computations run in a module Web Worker to
 keep the page responsive. Browser/edge HTTP caches may reduce repeat transfers.
-There are no application runtime packages or remote model calls.
+The frontend uses no application runtime packages or remote model calls. Optional
+stored-view sharing adds bounded storage validation and admission on a Worker;
+it never computes the scientific view. The static preview does not emulate that
+API. Use the local Worker tests for storage behavior and file import for a static
+preview. [Storage contract and activation](stored-views-operations.md).
 
 `scripts/build-site.mjs` copies only explicit app/engine/data/skill/schema/product
 documentation inputs into `dist/`; original prompts, notebooks and release
 planning documents are excluded. `check:site` validates shard hashes, product
-links, static hosting configuration and asset sizes. The native Node tests also
+links, selective Worker routing and asset sizes. The native Node tests also
 exercise 404 responses for retired routes. Browser QA is a separate integration
 gate: Node HTTP checks do not establish rendering or interaction correctness.
 
 ## Deployment and rollback
 
 `wrangler.toml` keeps the existing `eigenquestions` Worker name and
-`eigenquestions.com/*` route, with an assets-only configuration. It has no Worker
-entrypoint, application API or D1 binding. Unknown paths return the new 404 page;
+`eigenquestions.com/*` route. Static assets are served directly; only
+`/api/views` and `/api/views/*` require Worker execution. The default profile has
+no storage bindings and reports 503 when asked to save or fetch a stored view.
+File import and the static explorer remain usable before storage activation.
+The separate `wrangler.views.toml` profile adds a dedicated R2 bucket and a small
+SQLite Durable Object for admission. Neither profile has a D1 binding.
+Unknown paths return the new 404 page;
 there is no SPA fallback exposing a misleading successful old API path.
 The old D1 database is left intact. Former voting, submissions, leaderboard,
 quiz, taste and fixed-tree pages are not present in the build.
 
-GitHub Actions validates and publishes `dist/` on authorized pushes to `main`,
-using the repository's existing Cloudflare secrets. Implementation work stays on
-`agent/arxiv-text-explorer-v2`; the coordinator owns release.
+GitHub Actions validates and publishes the frontend and bounded API handler on
+authorized pushes to `main`, using the repository's existing Cloudflare secrets.
+The repository variable `ENABLE_STORED_VIEWS=true` selects the activated profile
+on every subsequent deployment; without it, the unbound profile is selected.
+Provisioning, quota review and a real account CPU test remain explicit activation
+steps in the [operations guide](stored-views-operations.md). The coordinator owns
+release. Stop uploads with `VIEW_UPLOADS_ENABLED=false` in the activated profile
+while retaining its storage bindings, so existing reads continue.
 `npm run deploy:check` performs local build/validation and Wrangler dry-run only.
 It does not establish live-domain behavior or account permissions.
 
 The old application is recoverable from Git baseline
 `9b7305541ca18ffd34bbe3786ee0cce75dea5633`. Rollback should restore its source,
 lockfile and deployment configuration together. Do not mutate or recreate the
-database as a side effect of source rollback.
+database as a side effect of source rollback. After stored views are activated,
+retain their R2 bucket and budget namespace during source rollback; removing
+bindings disables existing link reads and is not a write-only pause.
 
 Hosting follows Cloudflare's [static assets configuration](https://developers.cloudflare.com/workers/static-assets/binding/)
 and [limits](https://developers.cloudflare.com/workers/platform/limits/): one

@@ -71,3 +71,44 @@ Concrete recommendations sent to the owners:
 
 These are bounded corrections. Real screenshots at 320/390px and desktop widths,
 plus keyboard and delayed-startup behavior, remain the next acceptance evidence.
+
+## Actual browser review: first visual iteration
+
+Source `3a5f38f`; authorized Slurm job `58236895`; Chromium 145.0.7632.6.
+Inspected the actual [KK desktop](evidence/q004/visual-v1/kk-1440.png),
+[dark-matter desktop](evidence/q004/visual-v1/dark-matter-1440.png),
+[dark-matter phone](evidence/q004/visual-v1/dark-matter-390.png),
+[320px KK](evidence/q004/visual-v1/kk-320.png),
+[agent dialog](evidence/q004/visual-v1/agent-dialog-390.png),
+[new path](evidence/q004/visual-v1/new-path-390.png) and
+[source reading](evidence/q004/visual-v1/sources-390.png) screenshots.
+
+The new presentation is materially quieter: familiar linked text and form
+controls, comfortable scientific text, clear Sources actions, a compact dialog
+and a readable source page. Phone Sources targets no longer constrain the title
+width. The [capture report](evidence/q004/visual-v1/q004-visual-capture.json)
+records no page errors, viewport overflow or measured sub-44px action targets.
+First directions begin at y=384 on the KK desktop, y=383 on the 390px KK phone,
+y=395 on the 320px phone and y=432 for the longer dark-matter phone context.
+The earlier screenshot's first choice began around y=540; these are different
+contexts, not a controlled same-state timing/layout comparison.
+
+Two bounded refinements are justified by the actual images:
+
+1. Do not display a blank historical New path as a 350px Miller column. Both
+   desktop journeys spend one quarter of their width on “Your first question”
+   and introductory instructions, even after scientific queries exist. Preserve
+   the canonical state/history but render scientific columns only; retain the
+   original history index for replay. This recommendation went to protocol.
+2. Simplify the empty New path state. Disabled column arrows, “0 directions”,
+   empty Sources tabs/intro and repeated instructions compete with the focused
+   input. Show one concise instruction, keep New path/search focus and Save/load
+   reachable, and hide unavailable reading/navigation chrome. This recommendation
+   went to UI and protocol owners.
+
+The repeated direction count and “Choose a direction” step label were known
+artifacts of the intentionally retained runtime and already have requested fixes.
+The phone context wraps beside the arrow group, but remains readable; it does not
+justify a broader redesign. These screenshots establish visual fit only. Startup
+restoration, stored links, file-drop imports and the amended runtime still need
+their separate acceptance evidence.

@@ -135,3 +135,43 @@ deployed for this calculation. Next, if implementing this design, preserve the
 complete contextual-view contract, test the lightweight upload path against the
 10 ms CPU allowance, and measure round-trip latency/bursts before claiming a
 reliable service throughput. Agent model usage is outside these hosting costs.
+
+## 2026-11-06 implementation amendment — conservative launch profile
+
+The implemented first release uses `POST /api/views` and `GET /api/views/:id`
+through a Worker. It does **not** implement the proposed R2 custom-domain read
+path. Each API read therefore consumes a Worker invocation and an R2 read;
+uploads, reads, retries, preflights and error requests share the Workers Free
+100,000-request daily ceiling, with the earlier 80,000-request planning target.
+Static assets still bypass Worker execution. The earlier direct-R2 theoretical
+opening rate cannot be applied to this first release.
+[Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/).
+
+One small SQLite Durable Object coordinates new upload reservations, using an
+atomic digest-to-ID record and byte/day counters. The explicit launch limits
+are **2,000 new reservations/day**, **8,000 admitted upload attempts/day including
+retries**, **8,000,000,000 lifetime reserved bytes**, and **100,000 lifetime
+reservations**. The 2,000/day limit is a conservative service choice, not a
+revised theoretical Cloudflare quota. Failed or abandoned writes retain their
+reservation; byte-identical retries reuse it. No expiry is selected. Capacity
+exhaustion stops new saves, while existing reads remain available subject to
+the platform's shared request ceiling. No backend scientific/model compute or
+old D1 database is involved. [Operational contract](stored-views-operations.md)
+and [SQLite Durable Object Free allowances](https://developers.cloudflare.com/durable-objects/platform/pricing/).
+
+Five local backend tests passed, including actual Miniflare/workerd R2 and
+SQLite concurrency, durable idempotency, restart/day rollover and admission
+limits. A representative 282,374-byte native capsule compressed to 81,070 bytes;
+median Node validation process CPU was 2.85 ms and local endpoint wall time was
+5.66 ms. A valid 2 MiB decoded capsule measured 7.38 ms Node CPU and 11.35 ms
+endpoint wall time. These are **not production Worker CPU measurements** and
+do not establish compliance with the Free 10 ms CPU limit or production
+throughput. [Recorded local measurements](evidence/q003/stored-views-local-benchmark.json).
+
+The account connector was blocked by the session's approval policy, so no
+account usage audit, R2 provisioning, public upload or production CPU test was
+performed. The default config deploys the frontend and an honest unbound 503
+API; activation requires the reviewed storage profile and repository variable.
+These admission limits bound this service's use, not remaining account-wide
+allowances or costs under unknown other usage. Existing numeric calculation
+artifacts remain unchanged.

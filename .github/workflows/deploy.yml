@@ -23,15 +23,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Validate the static explorer
+      - name: Validate the explorer and bounded stored-view service
         run: |
           npm run build
           npm test
           npm run check:site
 
-      - name: Deploy static assets to the existing domain
+      - name: Deploy the explorer to the existing domain
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ENABLE_STORED_VIEWS: ${{ vars.ENABLE_STORED_VIEWS }}
         run: |
-          npx wrangler deploy
+          if [ "$ENABLE_STORED_VIEWS" = "true" ]; then
+            npx wrangler deploy --config wrangler.views.toml
+          else
+            npx wrangler deploy --config wrangler.toml
+          fi

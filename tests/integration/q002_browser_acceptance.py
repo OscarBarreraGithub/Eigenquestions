@@ -130,13 +130,17 @@ def main():
             def wait_changed(previous,target=page):target.wait_for_function('(id)=>document.documentElement.dataset.stateId!==id',arg=previous,timeout=60000)
             def wait_idle(target=page):target.wait_for_function("!document.body.classList.contains('busy')",timeout=60000)
             def current_directions(target=page):return target.locator('.miller-column[data-current="true"] #directions .direction')
+            def open_options(target=page):
+                if target.locator('#options-toggle').get_attribute('aria-expanded')!='true':target.locator('#options-toggle').click()
             def export_ui(target=page,include_view=False):
+                if target.locator('.session-tools').get_attribute('open') is None:target.locator('.session-tools > summary').click()
                 with target.expect_download() as info:target.locator('#export-view' if include_view else '#export').click()
                 filename=temp/f'export-{time.monotonic_ns()}.json';info.value.save_as(str(filename))
                 exported=json.loads(filename.read_text());assert connection['token'] not in json.dumps(exported)
-                return exported if include_view else exported['session']
+                return exported.get('snapshot',exported) if include_view else exported['session']
             def submit(query,intent='explore',transition='pivot',target=page):
                 before=state_id(target)
+                open_options(target)
                 target.locator('#question').fill(query);target.locator('#intent').select_option(intent)
                 target.locator('#transition').select_option(transition);target.locator('#explore-button').click()
                 wait_changed(before,target);wait_idle(target)
@@ -169,7 +173,7 @@ def main():
             assert selected_direction['label'] in page.locator('#evidence-description').inner_text()
             expected_sources=[n['id'] for n in source_view['nodes'] if n['id'] in selected_direction['memberIds']][:7]
             assert page.locator('.evidence-card').evaluate_all('(nodes)=>nodes.map(n=>n.dataset.sourceId)')==expected_sources
-            page.wait_for_function("()=>{const r=document.querySelector('#reading-heading').getBoundingClientRect();return r.top>=0&&r.bottom<innerHeight}")
+            page.wait_for_function("()=>{const r=document.querySelector('#view-sources').getBoundingClientRect();return r.top>=0&&r.bottom<innerHeight}")
             assert state_id()==dm and export_ui()==dm_session
             source_details=page.locator('.evidence-card details summary')
             if source_details.count():
@@ -263,7 +267,7 @@ def main():
             assert branch_state['query']==branch_direction['query']
             assert branch_state['focusIds']==sorted(set(branch_direction['seedIds']))
             assert branch_state['computationId']==branch_parent['computationId']
-            assert page.locator('.miller-column').count()==len(branched['states'])
+            assert page.locator('.miller-column').count()==sum(bool(state['query'].strip()) or i==branched['cursor'] for i,state in enumerate(branched['states']))
             passed('cached historical-column choice branches from its exact parent and removes the old future')
 
             # Warm presentation-only work: no worker delay or numerical request.
@@ -336,6 +340,7 @@ def main():
             # commits between the UI's revision decision and guarded import.
             baseline=tool('navigator_navigate',{'type':'pivot','query':'KK towers'});wait_id(baseline['state']['id'],connected)
             connected.evaluate('window.__eqQa.holdEvents=true;window.__eqQa.holdImports=true;window.__eqQa.fetchDelayMs=700')
+            open_options(connected)
             connected.locator('#question').fill('KK tower derivation');connected.locator('#transition').select_option('refine');connected.locator('#explore-button').click()
             connected.wait_for_function('window.__eqQa.heldEvents.length>0')
             assert state_id(connected)==baseline['state']['id']
@@ -366,6 +371,7 @@ def main():
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
             page.locator('.miller-column[data-current="true"]').scroll_into_view_if_needed()
             page.screenshot(path=str(output/'narrow-desktop-viewport.png'),full_page=False)
+            if page.locator('#options-toggle').get_attribute('aria-expanded')=='true':page.locator('#options-toggle').click()
             page.set_viewport_size({'width':390,'height':844})
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
             assert page.locator('#options-toggle').is_visible()

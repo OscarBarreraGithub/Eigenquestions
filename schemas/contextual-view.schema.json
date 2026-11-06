@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eigenquestions.com/schemas/contextual-view.schema.json",
+  "title": "Eigenquestions contextual view 1.0.0",
+  "description": "Authoritative displayed scientific object. Runtime validation additionally checks finite JSON, reference integrity, session identity, affine dimensions and bounded encoded/decoded sizes.",
+  "type": "object",
+  "required": ["schemaVersion", "kind", "builder", "context", "snapshot", "continuation"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "kind": {"const": "eigenquestions-contextual-view"},
+    "builder": {"type": "object", "required": ["id", "version"], "properties": {"id": {"type": "string", "minLength": 1, "maxLength": 300}, "version": {"type": "string", "maxLength": 100}}},
+    "context": {"type": "object", "required": ["question"], "properties": {"question": {"type": "string", "maxLength": 4000}}, "additionalProperties": true},
+    "snapshot": {
+      "type": "object", "required": ["view"],
+      "properties": {
+        "session": {"$ref": "navigation-session.schema.json"},
+        "view": {
+          "type": "object", "required": ["stateId", "corpusId", "computationId", "nodes", "directions", "edges", "diagnostics", "warnings"],
+          "properties": {
+            "stateId": {"type": "string", "minLength": 1, "maxLength": 300},
+            "corpusId": {"type": "string", "minLength": 1, "maxLength": 300},
+            "computationId": {"type": "string", "minLength": 1, "maxLength": 300},
+            "nodes": {"type": "array", "maxItems": 500, "items": {"type": "object", "required": ["id", "title", "evidence"], "properties": {"id": {"type": "string", "minLength": 1, "maxLength": 300}, "title": {"type": "string", "maxLength": 4000}, "evidence": {"type": "object", "required": ["text"], "properties": {"text": {"type": "string", "maxLength": 64000}}}}}},
+            "directions": {"type": "array", "maxItems": 50, "items": {"type": "object", "required": ["id", "label", "evidenceIds"], "properties": {"id": {"type": "string", "minLength": 1, "maxLength": 300}, "label": {"type": "string", "maxLength": 4000}, "memberIds": {"$ref": "#/$defs/references"}, "evidenceIds": {"$ref": "#/$defs/references"}, "seedIds": {"$ref": "#/$defs/references"}, "query": {"type": "string", "maxLength": 4000}}}},
+            "edges": {"type": "array", "maxItems": 5000, "items": {"type": "object", "required": ["source", "target", "type"], "properties": {"source": {"type": "string"}, "target": {"type": "string"}, "type": {"type": "string", "maxLength": 200}}}},
+            "chart": {"oneOf": [{"type": "null"}, {"type": "object", "required": ["kind"], "properties": {"kind": {"enum": ["affine-plane", "display-layout"]}}]},
+            "diagnostics": {"type": "object"},
+            "warnings": {"type": "array", "maxItems": 100, "items": {"type": "string", "maxLength": 8000}}
+          }
+        }
+      }
+    },
+    "continuation": {
+      "type": "object", "required": ["mode", "originStateId", "description", "actions"],
+      "properties": {
+        "mode": {"enum": ["native-actions", "snapshot-only"]},
+        "originStateId": {"type": "string"},
+        "description": {"type": "string", "maxLength": 8000},
+        "actions": {"type": "array", "maxItems": 100, "items": {"type": "object", "required": ["id", "label", "action"], "properties": {"id": {"type": "string", "minLength": 1, "maxLength": 300}, "label": {"type": "string", "maxLength": 4000}, "action": {"type": "object", "required": ["type"]}}}}
+      }
+    }
+  },
+  "$defs": {"references": {"type": "array", "maxItems": 1000, "items": {"type": "string", "minLength": 1, "maxLength": 300}}}
+}
