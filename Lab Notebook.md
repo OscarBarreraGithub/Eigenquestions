@@ -4,7 +4,7 @@
 
 - **Project/question:** Eigenquestions v2 — can the dynamic graph/vector navigator feel like the old text explorer, with classic arXiv clarity and immediate controls?
 - **Known:** Verified v1 is live. The old viewer used text/Miller columns with burgundy, white and blue links. The numerical engine and corpus can stay fixed while the interface changes. Review found draft-overwrite, dropped-action and stale-response hazards to fix.
-- **Unfinished/running:** Browser job `58205898` passed 16 v2 interaction checks and 14 retained geometry/agent checks. A bounded visual iteration is reducing the tall control stack before final acceptance. Reference-capture job `58203240` completed successfully; desktop/mobile references are saved. A stale browser rebase needs an atomic bridge revision guard. No owner answer is required.
+- **Unfinished/running:** Compacted v2 passed 19 browser interaction checks plus the retained 14 geometry/agent checks in job `58207325`; final visual review/publication is next. Q-003 agent access is in read-only architecture review. Reference-capture job `58203240` completed successfully; desktop/mobile references are saved. A stale browser rebase needs an atomic bridge revision guard. No owner answer is required.
 - **Next:** Compact the mobile controls based on screenshots, verify the final layouts and historical branching, then publish through the existing workflow.
 - **Git:** Work on `agent/arxiv-text-explorer-v2` from `4e14ab8`; use the existing repository and main deployment. Coordinator: `/root`.
 
@@ -179,3 +179,13 @@
 **Decision/change.** Independent Astra review agreed with the screenshot finding. Astra site added a large phone Search options disclosure with a visible settings summary; opened selectors span the available width. It reduced surrounding spacing, removed the repeated current-column query and shortened the empty New path frame to 210px. Scientific text and main controls keep their readable size. The numerical construction is unchanged.
 
 **Observed/next.** Root reran all 23 tests and the static/shard checks successfully. Astra protocol added actual historical-column branching, source reveal and mobile-disclosure checks without weakening the earlier assertions. Freeze this corrected version, inspect its true top-of-phone and desktop screenshots, then release if the visual and interaction gates pass. The first browser evidence checkpoint `3e8309f` is pushed and remotely verified.
+
+**Second browser submission.** Compacted checkpoint `cb0b412a2cd64c8fbc96c76180a3e7967a54beb7` is pushed and remotely verified. Job `58207325` received its exact, hash-matched archive. [Receipt](docs/evidence/q002/browser-v2-job.json). While it runs, the owner added Q-003: make graph orientation an optional, discoverable supplement for agents, including no-install access. That addition does not cancel the v2 release.
+
+## 2026-11-06 UTC — Q-002: Compacted layout passes real interaction checks
+
+**Observed.** Job `58207325` completed in 52 seconds, exit 0. All 19 revised v2 checks pass, including actual historical branching, source reveal with unchanged path, and phone settings during delayed computation. Root inspected desktop and top-of-phone screenshots: the desktop column boundary moved from about 558px to 480px; five current directions fit the 1000px viewport. Phone options are readable and the first scientific choices appear earlier. No page errors; the 11 warm presentation samples had p95 29.1ms and no observed long tasks. [Report](docs/evidence/q002/browser-v2/q002-browser-acceptance.json) · [desktop](docs/evidence/q002/browser-v2/desktop-viewport.png) · [phone](docs/evidence/q002/browser-v2/mobile-top-viewport.png).
+
+**Next.** Independent visual signoff and the saved retained-suite result complete the local release gate. Publish v2 through the existing main workflow, then verify the actual public renderer. Q-003 remains a separate addition; the owner clarified that its primary path must be agent actions on a shared machine-readable object, with deterministic computation and automatic browser rendering. Crawling is discovery/fallback, not a replacement for that object.
+
+**Release decision.** The retained suite also passes all 14 checks. Independent Astra design review approves the compacted desktop, top-of-phone, narrow-phone and empty-path views with no remaining visual blocker. Release the verified v2; the primary browser/agent object remains the foundation for Q-003.

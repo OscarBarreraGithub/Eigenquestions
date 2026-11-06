@@ -10,22 +10,22 @@ research record. Astra implements; root coordinates, reviews and releases.
 
 | ID | Requirement | Observable acceptance | Owner / status |
 |---|---|---|---|
-| V2-01 | Restore the old text viewer as the primary navigation experience. | Historical Miller-column viewer is inspected; current dynamic directions appear as readable text rows before any chart. | Site / implementing |
-| V2-02 | Keep the new computation and make labels update with search. | A new question changes actual direction IDs/text and evidence through the shared frozen engine; no static topic tree is introduced. | Site + protocol / pending |
-| V2-03 | Use arXiv's palette and typography across the entire site. | Reference evidence and chosen classic burgundy/white/blue-link, sans-serif scholarly style are consistent through controls, rows, path, sources and dialogs. Own Eigenquestions branding retained. | Design + site / reference review |
-| V2-04 | Make the visual result clean, sharp and deliberate. | Desktop, narrow desktop and mobile screenshots receive independent visual review; no marketing hero, tiny labels, overlaps, clipped controls or uncontrolled whitespace. | Design + root / pending |
-| V2-05 | Make presentational interactions immediate. | Tabs, disclosures, typing and path scrolling work during delayed computation; no full-page blocking overlay or unnecessary recomputation for view toggles. Measure input feedback/long tasks without claiming universal frame rates. | Site + protocol / pending |
-| V2-06 | Handle computational waiting clearly. | Existing usable content remains while computation has a visible status; stale responses, duplicate SSE and transport changes cannot overwrite the active intent. | Site + protocol / pending |
-| V2-07 | Preserve drafts while results arrive. | Typing a new question is not replaced by delayed worker or agent responses; submitting applies the intended draft and settings. | Site + protocol / pending |
-| V2-08 | Make the current exploration path easy to understand and navigate. | Selected/current steps are clear; Back, replay and branch selection use canonical state; history labels do not fabricate uncomputed branches. | Site + protocol / pending |
-| V2-09 | Make starting a new path obvious and easy. | Prominent New path works during computation, clears old scientific focus/history through reset, focuses an empty question input, and preserves the active transport. | Site + protocol / pending |
-| V2-10 | Make buttons, toggles and options large and discoverable. | Primary interactive targets are at least 44 CSS px; visible focus, selected and disabled states; comfortable readable labels and keyboard operation. | Site + protocol / pending |
-| V2-11 | Make the layout responsive. | Screens at 1440, 1024 and 390 px (plus narrow overflow check) retain readable current choices/path and accessible controls without page-level horizontal overflow. | Site + protocol / pending |
-| V2-12 | Preserve source access and optional geometry. | Source rows/provenance remain accessible; geometry is a secondary view using the same computed result, with its limitations intact. | Site / pending |
-| V2-13 | Preserve standalone and agent-driven navigation. | Both a public worker session and actual MCP/companion updates exercise v2 rows/path; revision acknowledgements and established permission fallback remain valid. | Protocol / pending |
-| V2-14 | Preserve import/export and v1 computational identity. | Existing sessions replay; corpus/engine/schema are unchanged unless an independently justified correction is coordinated. | Protocol / pending |
-| V2-15 | Call this v2 and deploy it to the existing domain. | Product shows v2, current domain serves the checked renderer, previous retired routes stay retired; no new hosting project or identity. | Site + root / pending |
-| V2-16 | Keep a concise record and verified Git checkpoints. | Q-002 summary, meaningful decisions/failures, evidence and final state are in the one notebook; intended changes committed/pushed with Request/Agent credit and remote/deployment verification. | Root / active |
+| V2-01 | Restore the old text viewer as the primary navigation experience. | Historical Miller-column viewer is inspected; current dynamic directions appear as readable text rows before any chart. | Verified: text columns primary |
+| V2-02 | Keep the new computation and make labels update with search. | A new question changes actual direction IDs/text and evidence through the shared frozen engine; no static topic tree is introduced. | Verified: real label/evidence changes |
+| V2-03 | Use arXiv's palette and typography across the entire site. | Reference evidence and chosen classic burgundy/white/blue-link, sans-serif scholarly style are consistent through controls, rows, path, sources and dialogs. Own Eigenquestions branding retained. | Verified: reference and visual review |
+| V2-04 | Make the visual result clean, sharp and deliberate. | Desktop, narrow desktop and mobile screenshots receive independent visual review; no marketing hero, tiny labels, overlaps, clipped controls or uncontrolled whitespace. | Verified: final independent visual signoff |
+| V2-05 | Make presentational interactions immediate. | Tabs, disclosures, typing and path scrolling work during delayed computation; no full-page blocking overlay or unnecessary recomputation for view toggles. Measure input feedback/long tasks without claiming universal frame rates. | Verified: delayed-work + measured presentation |
+| V2-06 | Handle computational waiting clearly. | Existing usable content remains while computation has a visible status; stale responses, duplicate SSE and transport changes cannot overwrite the active intent. | Verified: races/guard/transport checks |
+| V2-07 | Preserve drafts while results arrive. | Typing a new question is not replaced by delayed worker or agent responses; submitting applies the intended draft and settings. | Verified: worker and agent draft preservation |
+| V2-08 | Make the current exploration path easy to understand and navigate. | Selected/current steps are clear; Back, replay and branch selection use canonical state; history labels do not fabricate uncomputed branches. | Verified: Back/replay and real historical branching |
+| V2-09 | Make starting a new path obvious and easy. | Prominent New path works during computation, clears old scientific focus/history through reset, focuses an empty question input, and preserves the active transport. | Verified: reset during work and attachment preserved |
+| V2-10 | Make buttons, toggles and options large and discoverable. | Primary interactive targets are at least 44 CSS px; visible focus, selected and disabled states; comfortable readable labels and keyboard operation. | Verified: expanded phone controls + keyboard |
+| V2-11 | Make the layout responsive. | Screens at 1440, 1024 and 390 px (plus narrow overflow check) retain readable current choices/path and accessible controls without page-level horizontal overflow. | Verified: 1440/1024/390/320px |
+| V2-12 | Preserve source access and optional geometry. | Source rows/provenance remain accessible; geometry is a secondary view using the same computed result, with its limitations intact. | Verified: source reveal + retained geometry suite |
+| V2-13 | Preserve standalone and agent-driven navigation. | Both a public worker session and actual MCP/companion updates exercise v2 rows/path; revision acknowledgements and established permission fallback remain valid. | Local verified; public verification pending |
+| V2-14 | Preserve import/export and v1 computational identity. | Existing sessions replay; corpus/engine/schema are unchanged unless an independently justified correction is coordinated. | Verified: import/replay and unchanged identity |
+| V2-15 | Call this v2 and deploy it to the existing domain. | Product shows v2, current domain serves the checked renderer, previous retired routes stay retired; no new hosting project or identity. | Ready for existing main deployment |
+| V2-16 | Keep a concise record and verified Git checkpoints. | Q-002 summary, meaningful decisions/failures, evidence and final state are in the one notebook; intended changes committed/pushed with Request/Agent credit and remote/deployment verification. | Active: checkpoints remotely verified; release pending |
 
 ## Design and integration decisions
 
@@ -68,3 +68,12 @@ The check occurs after parsing the request body and immediately before mutation.
 This is a transport correction, not a change to the engine, corpus or scientific
 session schema. Protocol owns the guard and its real-MCP interleaving test; site
 owns the conflict presentation.
+
+## Final local acceptance
+
+Checkpoint `cb0b412a2cd64c8fbc96c76180a3e7967a54beb7` passed 23 Node tests,
+all 41 shard hashes, 19 v2 browser checks and the retained 14 geometry/agent
+checks. Independent visual review approves the compacted desktop and phone
+layouts. Evidence: [v2 report](evidence/q002/browser-v2/q002-browser-acceptance.json),
+[retained report](evidence/q002/browser-v2-legacy/browser-acceptance.json),
+[design review](Q-002-design-reference.md). Public verification remains pending.

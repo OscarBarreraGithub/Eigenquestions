@@ -4,8 +4,8 @@ Reviewer: `/root/v2_design_review`. Initial source inspection: 2026-11-06 UTC.
 This document distinguishes observed reference facts from proposed Eigenquestions
 design choices. Reference screenshots and computed styles were captured in the
 authorized Slurm environment and independently inspected; no local browser was
-launched. The first product screenshot review is complete; a bounded vertical
-compaction pass and its screenshots remain to be checked.
+launched. Both product screenshot reviews are complete. The post-compaction
+interface is visually approved for the Q-002 release.
 
 ## References inspected
 
@@ -180,8 +180,8 @@ The bounded capture helper is
 It refuses browser launch outside Slurm, records public page status and computed
 styles, and captures 1440×1000 and 390×844 viewports. Historical viewers are
 optional loopback URLs staged by the coordinator. HTTP/CSS inspection is complete;
-rendered-reference inspection is complete; final product aesthetic acceptance
-remains pending the compaction review below.
+rendered-reference inspection and final product aesthetic acceptance are
+complete; the observed release verdict is recorded below.
 
 ## Captured reference inspection and pre-screenshot product review
 
@@ -293,3 +293,41 @@ it does not justify changing navigation semantics or the scientific engine.
 
 No new algorithm, source-label rewrite, chart redesign, or additional decoration
 is recommended. Root and the site owner received this conclusion before edits.
+
+## Post-compaction visual release verdict: approved
+
+The reviewer independently inspected the final
+[desktop viewport](evidence/q002/browser-v2/desktop-viewport.png),
+[unscrolled phone viewport](evidence/q002/browser-v2/mobile-top-viewport.png),
+[New path state](evidence/q002/browser-v2/new-path-viewport.png), and
+[narrow phone](evidence/q002/browser-v2/narrow-mobile-viewport.png), plus the
+[expanded agent dialog](evidence/q002/browser-v2/agent-dialog-viewport.png) and
+[source provenance](evidence/q002/browser-v2/source-provenance-viewport.png).
+
+The desktop column strip now starts near y=480 instead of y=558, recovering
+approximately 78px. All five current directions fit in the captured viewport.
+Historical headings preserve their context while the current heading uses the
+short step/choose-direction cue. The controls remain comfortable and the
+scientific text is not reduced to achieve this gain.
+
+The unscrolled phone view shows the wordmark, New path, question input, compact
+Search options control, path, and current focus clearly. Its first direction
+begins around y=540 and its second choice is also readable within the viewport.
+Long labels continue naturally across lines. The narrow-phone view retains a
+clear full current-focus heading while containing horizontal navigation within
+the strip. The New path frame is now approximately 210px tall, an intentional
+empty state rather than a large blank working area.
+
+The expanded dialog and source provenance preserve the same sans typography,
+blue links, gray rules, white surfaces, and burgundy accents as the primary
+viewer. Secondary details remain subordinate to the choices and source text.
+The [final browser report](evidence/q002/browser-v2/q002-browser-acceptance.json)
+passes 19 checks with no page errors, including mobile options, 44px-scale
+controls, historical branching, and explicit source inspection. Those runtime
+results complement the visual inspection; they are not its substitute.
+
+**Release judgment:** the requested old-viewer interaction and classic arXiv
+visual lineage are now coherent, readable, and suitably responsive in the
+reviewed states. No remaining aesthetic issue blocks Q-002 release. No broader
+redesign or further product edits are requested by this reviewer. This signoff
+concerns Q-002 presentation, not the separate Q-003 machine-object design.
