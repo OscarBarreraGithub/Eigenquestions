@@ -2,11 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. V2 text-first interface is live; Q-003 now evaluates agent-uploaded contextual views, stored on Cloudflare with durable short links, while numerical work stays in the agent/browser.
-- **Known:** V2 passed 23 Node tests, 19 public v2 browser checks and 19 retained/public checks. Public assets match the release. The same deterministic engine/corpus are preserved.
-- **Unfinished/running:** No cluster jobs remain running. The upload service remains a proposal. Published free allowances and measured payloads support a roughly 61,000-view inventory at 128 KiB/view with 20% storage headroom. Account remaining quotas and endpoint throughput are unmeasured.
-- **Next:** Use the saved capacity model to choose storage/admission limits; preserve the full contextual-view contract and benchmark the upload endpoint before deployment.
-- **Git:** V2 closure `2929dd4` is verified on main and deployment succeeded. Q-003 discussion branch: `agent/contextual-view-contract-q003`. Coordinator `/root`; Astra owns implementation.
+- **Project/question:** Eigenquestions. Implement the authorized Q-003 stored-view journey and Q-004 quieter text interface. Can an agent's complete contextual view travel intact into a responsive browser?
+- **Known:** Live v2 passed its public checks. The startup flash comes from hardcoded KK shell/default state before restoration. Independent Sol review found too many headings/controls before the scientific choices.
+- **Unfinished/running:** Astra protocol/backend and Sol UI are implementing; Sol's initial review is saved. No cluster jobs submitted yet. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
+- **Next:** Integrate the capsule, neutral startup, quiet layout and bounded upload API; then freeze a checkpoint for Worker and real-browser validation. Preserve exact authored scientific decisions.
+- **Git:** Working branch `agent/stored-views-quiet-ui`, from remotely verified Q-003 research checkpoint `31aaa00`. Coordinator `/root`; agents own implementation. Existing main deployment remains authorized.
 
 ## Requests
 
@@ -15,6 +15,8 @@
 **Q-002 (summary):** Make v2 a polished, text-first successor to the old viewer, with labels supplied by the new dynamic computation. Use arXiv's familiar palette/type aesthetic, a clear current path, easy New path, large discoverable controls and exceptionally smooth interactions. [Original prompt](docs/requests/Q-002-original.md) · [Atomic plan](docs/Q-002-plan.md).
 
 **Q-003 (summary):** Let agents consult the physics graph as an optional supplement to their ordinary independent research, discoverable by name and useful without a local installation when their tools permit it. Preserve the original agent → structured scientific object → deterministic computation → browser rendering model. Evaluate URL delivery of agent-computed views while retaining context-dependent grouping, labels, relations, changing depth and enough state to continue; do not assume a matrix or main node encodes the full organization. [Proposal](docs/Q-003-contextual-view-proposal.md).
+
+**Q-004 (summary):** Implement Q-003's stored-view proposal, preserve the vision and a concise future showcase of the mechanism, fix the KK-to-restored-topic startup jump, and have Sol agents iterate toward a familiar, minimal, sharp text-first interface with less competing for attention. [Original request](docs/requests/Q-004-original.md) · [Joint atomic plan](docs/Q-003-Q-004-implementation-plan.md).
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -235,3 +237,15 @@
 **Observed/calculated.** At 128 KiB per compressed view, an 8 GB planning inventory holds 61,035 views. With 20% operation headroom and no caching assumed, direct R2 reads support roughly 26,666 new saves/day and 266,666 openings/day averaged over a 30-day month; these are quotas, not throughput benchmarks. One hundred daily users saving 20 views each day retain 7.864 GB after 30 days. Permanent links keep accumulating; at 500 such daily users the 8 GB target is reached in about six days. Extra R2 storage is inexpensive, but free allowance is not a hard spending cap.
 
 **Meaning/next.** Storage retention, payload size and the distinction between saving and opening dominate the answer. Keep scientific computation/compression out of the 10 ms Free Worker CPU path, and measure a real lightweight upload endpoint before calling its capacity reliable. The account's remaining shared allowances were not inspected; no subscription, bucket or deployment was changed. [Capacity note](docs/Q-003-cloudflare-capacity.md) · [calculation inputs/results](docs/evidence/q003/cloudflare-capacity-20261106.json). Preserve existing links when planning storage growth rather than silently assuming a deletion policy.
+
+## 2026-11-06 UTC — Q-003 / Q-004: Authorize implementation and remove the false starting topic
+
+**Question.** Can the complete view travel intact while the interface becomes a quiet reading tool?
+
+**Tried/contributors.** The owner authorized the stored-view proposal and requested Sol iteration on visual clarity. Root assigned Astra protocol and backend owners, Sol interface implementation and an independent Sol review. Root preserved the exact request, audited a joint atomic plan against the broader contextual-navigation vision and wrote [a concise future showcase](docs/contextual-view-showcase.md).
+
+**Observed.** The initial UI review identifies repeated headings and settings before the scientific choices. Source inspection identifies hardcoded KK shell text and worker defaults before restoration as the startup jump's cause. These are findings; repairs are not yet verified. The proposed file keeps authored group labels, overlapping membership, relations, evidence and optional typed geometry; unknown builders remain readable without silently claiming full continuation support.
+
+**Constraint.** Cloudflare account discovery through the configured connector returned “MCP tool call requires approval, but approval policy is never.” Root stopped that access path and did not use another credential route. Code, local Worker tests and the existing authorized GitHub site deployment can proceed; real R2 activation remains pending. No bucket, subscription or existing D1 data was changed.
+
+**Next.** Integrate and test neutral startup, exact file/view roundtrips, route changes and delayed interactions. Inspect real desktop/phone screenshots after freezing source, then publish the verified interface. Hosted save/open must be tested after authorized activation before it is described as available. [Atomic plan](docs/Q-003-Q-004-implementation-plan.md) · [Sol baseline review](docs/Q-004-ui-review.md).
