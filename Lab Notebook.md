@@ -4,7 +4,7 @@
 
 - **Project/question:** Eigenquestions. Q-005 repairs startup/repeated paths; Q-006 adds a separate fixed, zoomable overview for a collaborator demo.
 - **Known:** Q-005 passes 35 local and 57 browser checks, with desktop/phone visual approval; release `f0e782d` deployed successfully. The actual IAIFI renderer is verified. A pinned existing question map covers 8,473 excerpts from 6,477 papers with a shallow, overlapping hierarchy.
-- **Unfinished/running:** Q-006 implementation passes 43 local tests and static checks; its real-browser validation is next. Q-005 is verified live with 43 public browser checks. No validation job is currently running. Hosted storage remains inactive; this addition needs no hosted compute or storage API.
+- **Unfinished/running:** Q-006 implementation passes 43 local tests and static checks; its real-browser validation is next. Q-005 is verified live with 43 public browser checks. Slurm job `58373333` checks the frozen overview and navigation regression. Hosted storage remains inactive; this addition needs no hosted compute or storage API.
 - **Next:** Freeze the overview, inspect desktop/phone browser evidence in Slurm, then publish and verify the public map. [Q-006 plan](docs/Q-006-plan.md).
 - **Git:** Main and the working branch contain `f0e782d`; new overview work stays on the working branch until verified. Coordinator `/root` owns checkpoints/release.
 
@@ -411,3 +411,7 @@
 **Observed.** All 43 local tests pass, alongside 94 built assets, 41 original corpus shard hashes and 18 derived overview file hashes. Regeneration is byte-identical. Final initial JSON is 1,858,801 bytes; all 19 overview files total 3,671,240 bytes (amending the earlier preliminary manifest-size measurement). Topic captions preserve originals and rationales. No IAIFI scientific data or geometry is used. [Data audit](docs/Q-006-overview-data-audit.md) · [UI notes](docs/Q-006-ui-review.md).
 
 **Meaning/next.** This is ready for real-browser inspection, not yet a public release. The owner requested immediate deployment; run the focused overview acceptance and existing navigation regression on a frozen snapshot, inspect the pictures, and publish through the existing workflow if they pass.
+
+**Browser submission.** Source `50e58042101fab5ba1ad892b2b2ba1f6ac9d08f4` is pushed and remotely verified. Its archive matched SHA-256 on FASRC before extraction. Slurm job `58373333` runs the focused overview suite and the existing Q-005 navigation regression. [Receipt](docs/evidence/q006/browser-v1-job.json).
+
+**First browser result.** Job `58373333` completed in 45 seconds. All 10 navigation regression checks pass and the overview loads all fixed data with five readable labels. The overview suite stops at its precise wheel-anchor assertion; protocol is checking the actual delivered pointer coordinates before deciding whether this is a renderer or input-test defect. The first desktop image is legible. Preserve this failure and rerun the focused suite after diagnosis. [Evidence](docs/evidence/q006/browser-v1/).

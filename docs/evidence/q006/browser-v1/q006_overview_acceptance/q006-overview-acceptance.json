@@ -1,0 +1,23 @@
+{
+  "request": "Q-006",
+  "checks": [
+    {
+      "name": "new-tab overview loads the pinned Swampland map and five genuine broad groups without source shards or query corpus",
+      "passed": true,
+      "initialDataBytes": 1852731,
+      "initialLabels": 5
+    }
+  ],
+  "screenshots": [
+    "overview-fit-1440.png"
+  ],
+  "scope": "Real fixed Swampland data, browser Canvas and input events. Headless Slurm timings are observations, not a 60-fps or production-latency guarantee.",
+  "origin": "http://127.0.0.1:57187",
+  "browserVersion": "145.0.7632.6",
+  "passed": false,
+  "failure": {
+    "type": "AssertionError",
+    "message": "",
+    "traceback": "Traceback (most recent call last):\n  File \"/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-006/browser-v1/project/tests/integration/q006_overview_acceptance.py\", line 158, in main\n    assert abs(actual['x']-world['x']) < 1e-6 and abs(actual['y']-world['y']) < 1e-6\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+}

@@ -147,6 +147,10 @@ def main():
             px, py = box['width'] * .37, box['height'] * .43
             camera = initial['camera']
             world = {'x': (px-initial['width']/2)/camera['k']+camera['x'], 'y': (initial['height']/2-py)/camera['k']+camera['y']}
+            # Chromium can quantize native wheel client coordinates. Observe
+            # the actual browser event and its pre-handler camera, retaining
+            # both requested and delivered coordinates for the failure audit.
+            canvas.evaluate("""node=>node.addEventListener('wheel',event=>{const rect=node.getBoundingClientRect();window.__overviewWheel={clientX:event.clientX,clientY:event.clientY,localX:event.clientX-rect.left,localY:event.clientY-rect.top,rect:{left:rect.left,top:rect.top,width:rect.width,height:rect.height},before:window.eigenquestionsOverview.read()};},{capture:true,once:true})""")
             page.mouse.move(box['x']+px, box['y']+py)
             start = time.monotonic()
             page.mouse.wheel(0, -120)
@@ -154,8 +158,14 @@ def main():
             frame_after(initial['frame'])
             wheel = read()
             actual = {'x': (px-wheel['width']/2)/wheel['camera']['k']+wheel['camera']['x'], 'y': (wheel['height']/2-py)/wheel['camera']['k']+wheel['camera']['y']}
+            observed = page.evaluate('window.__overviewWheel')
+            assert observed is not None
+            before_event, event_x, event_y = observed['before'], observed['localX'], observed['localY']
+            event_world = {'x': (event_x-before_event['width']/2)/before_event['camera']['k']+before_event['camera']['x'], 'y': (before_event['height']/2-event_y)/before_event['camera']['k']+before_event['camera']['y']}
+            event_after = {'x': (event_x-wheel['width']/2)/wheel['camera']['k']+wheel['camera']['x'], 'y': (wheel['height']/2-event_y)/wheel['camera']['k']+wheel['camera']['y']}
+            report['wheelDiagnostic'] = {'requestedLocal': {'x': px, 'y': py}, 'deliveredLocal': {'x': event_x, 'y': event_y}, 'beforeCamera': before_event['camera'], 'afterCamera': wheel['camera'], 'requestedWorldError': {key: actual[key]-world[key] for key in ('x','y')}, 'deliveredWorldError': {key: event_after[key]-event_world[key] for key in ('x','y')}, 'eventRect': observed['rect']}
             assert wheel['camera']['k'] > camera['k']
-            assert abs(actual['x']-world['x']) < 1e-6 and abs(actual['y']-world['y']) < 1e-6
+            assert abs(event_after['x']-event_world['x']) < 1e-6 and abs(event_after['y']-event_world['y']) < 1e-6, report['wheelDiagnostic']
             wheel_ms = (time.monotonic()-start)*1000
             page.mouse.move(box['x']+box['width']/2, box['y']+box['height']/2)
             page.mouse.down()

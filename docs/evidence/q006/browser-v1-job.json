@@ -1,0 +1,27 @@
+{
+  "request": "Q-006",
+  "jobId": "58373333",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "50e58042101fab5ba1ad892b2b2ba1f6ac9d08f4",
+  "archiveSha256": "05f90ae6703898194830b45808112d8625c54a71364e302c1e30a5b3396f5a9c",
+  "archiveHashMatched": true,
+  "harnessSha256": "7a529bf7a17bf82fd4e9bfd23f8a293210760ceabba9ef2830694241002d0363",
+  "submittedUtc": "2026-11-06T19:38:31.923430+00:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-006/browser-v1",
+  "statusAtReceipt": "completed_with_overview_wheel_assertion_failure",
+  "suites": [
+    "q006_overview_acceptance.py",
+    "q005_navigation_acceptance.py"
+  ],
+  "elapsedSeconds": 45,
+  "suiteResults": {
+    "overview": {
+      "passedBeforeFailure": 1,
+      "failure": "Pointer-centered wheel invariant did not match the requested fractional event coordinate; diagnosis pending."
+    },
+    "navigation": {
+      "passed": 10
+    }
+  }
+}
