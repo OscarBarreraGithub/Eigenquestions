@@ -161,7 +161,10 @@ def main():
                 assert box['x'] >= max(0, chart_box['x']) - 1
                 assert box['x'] + box['width'] <= min(390, chart_box['x'] + chart_box['width']) + 1
                 assert box['y'] >= chart_box['y'] - 1 and box['y'] + box['height'] <= chart_box['y'] + chart_box['height'] + 1
-            assert page.locator('#directions h3').all_inner_texts() == [direction['label'] for direction in mobile_state['view']['directions']]
+            expected_labels=page.evaluate("async directions=>{const {displayExcerpt}=await import('/lib/protocol/presentation.mjs');return directions.map(direction=>displayExcerpt(direction.label,72))}",mobile_state['view']['directions'])
+            assert page.locator('#directions h3').all_inner_texts()==expected_labels
+            assert page.locator('#directions .direction').evaluate_all('(nodes)=>nodes.map(node=>node.title)')==[direction['query'] for direction in mobile_state['view']['directions']]
+            assert page.evaluate('window.eigenquestionsNavigator.export().snapshot.view.directions')==mobile_state['view']['directions']
             page.screenshot(path=str(output / 'mobile-view.png'), full_page=True)
             page.locator('#chart').scroll_into_view_if_needed()
             page.screenshot(path=str(output / 'mobile-chart-viewport.png'), full_page=False)

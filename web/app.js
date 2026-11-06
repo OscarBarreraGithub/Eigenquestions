@@ -14,6 +14,7 @@ let actionQueue = Promise.resolve(), loadingTask = Promise.resolve(), queuedBrid
 let bridgeRebaseRevision = null;
 let activeCapsule, uiRevision = 0, nativeComputationId, nativeEmptySnapshot, workerReady, routeGeneration = 0, routeAbort;
 let acceptedCount = 0, renderedRevision = -1, resumeCandidate, resumeCompanion;
+let columnAlignment = Promise.resolve(), columnAlignmentTicket = 0, visibleHistoryIndex = null, lastColumnWidth = 0, userColumnScroll = false;
 const observers = new Set(), readyWaiters = [];
 const capsuleStorageKey = 'eigenquestions:view:v1';
 const columnViews = new Map(), acceptedCapsules = new Map();
@@ -72,10 +73,10 @@ function notifyAccepted() {
   document.documentElement.dataset.uiRevision = String(uiRevision);
   document.documentElement.dataset.acceptedCount = String(acceptedCount);
   const accepted = uiRevision;
-  requestAnimationFrame(() => requestAnimationFrame(() => {
+  columnAlignment.then(() => requestAnimationFrame(() => requestAnimationFrame(() => {
     if (uiRevision !== accepted) return;
     renderedRevision = accepted; document.documentElement.dataset.renderedRevision = String(accepted);
-  }));
+  })));
   const snapshot = machineRead();
   for (const resolve of readyWaiters.splice(0)) resolve(snapshot);
   for (const callback of observers) { try { callback(structuredClone(snapshot)); } catch { /* Observer errors do not change the scientific state. */ } }
@@ -116,9 +117,9 @@ function accept(snapshot, { formVersion, keepRoute = false, preserveContext = fa
   rememberView(view); render(); save(); notifyAccepted();
   if (bridge && Number.isInteger(snapshot.revision)) {
     const renderedState = currentState(next).id, source = sourceEpoch;
-    requestAnimationFrame(() => requestAnimationFrame(() => {
+    columnAlignment.then(() => requestAnimationFrame(() => requestAnimationFrame(() => {
       if (bridge && source === sourceEpoch && document.documentElement.dataset.stateId === renderedState) bridgeFetch('/api/viewer', { method: 'POST', body: JSON.stringify({ viewerId, stateId: renderedState, revision: snapshot.revision }) }).catch(() => {});
-    }));
+    })));
   }
   return true;
 }
@@ -339,7 +340,42 @@ function renderColumns() {
     column.append(list); host.append(column);
   }
   $('navigator-note').hidden = host.children.length < 2 || !canAttemptContinuation();
-  requestAnimationFrame(() => { host.scrollLeft = host.scrollWidth; const crumb = $('path').querySelector('[aria-current]'); if (crumb) $('path').scrollLeft = crumb.offsetLeft - $('path').offsetLeft; updateColumnControls(); });
+  columnAlignment = alignColumn(session.cursor,{followed:true,allFollowed:true});
+  columnAlignment.then(alignBreadcrumb);
+}
+function alignBreadcrumb() {const nav=$('path'),crumb=nav.querySelector('[aria-current]');if(crumb&&nav.clientWidth){const rect=crumb.getBoundingClientRect(),navRect=nav.getBoundingClientRect();nav.scrollLeft+=rect.left-navRect.left-nav.clientLeft;}}
+function revealFollowed(column) {
+  const selected=column.querySelector('.direction[aria-current="step"]')?.closest('.direction-row');
+  if(!selected)return;
+  const header=column.querySelector('.column-heading'),box=column.getBoundingClientRect(),row=selected.getBoundingClientRect();
+  const inset=(header?.getBoundingClientRect().height||0)+10;
+  column.scrollTop=Math.max(0,column.scrollTop+row.top-box.top-inset);
+}
+function alignColumn(index,{followed=false,allFollowed=false}={}) {
+  const ticket=++columnAlignmentTicket;visibleHistoryIndex=index;userColumnScroll=false;
+  return new Promise(resolve=>{
+    let frames=0;
+    const settle=()=>{
+      if(ticket!==columnAlignmentTicket){resolve(false);return;}
+      const host=$('columns'),column=[...host.children].find(item=>Number(item.dataset.historyIndex)===index);
+      if(!column||!host.clientWidth){updateColumnControls();resolve(false);return;}
+      const hostRect=host.getBoundingClientRect(),box=column.getBoundingClientRect(),left=hostRect.left+host.clientLeft;
+      const delta=column.dataset.current==='true'?box.right-left-host.clientWidth:box.left-left;
+      host.scrollLeft=Math.max(0,Math.min(host.scrollWidth-host.clientWidth,host.scrollLeft+delta));
+      if(allFollowed)for(const item of host.children)revealFollowed(item);
+      else if(followed)revealFollowed(column);
+      lastColumnWidth=host.clientWidth;host.dataset.visibleHistoryIndex=String(index);updateColumnControls();
+      if(++frames<3)requestAnimationFrame(settle);else resolve(true);
+    };
+    requestAnimationFrame(settle);
+  });
+}
+function rememberVisibleColumn() {
+  const host=$('columns');if(!userColumnScroll||host.clientWidth!==lastColumnWidth)return;
+  const frame=host.getBoundingClientRect(),left=frame.left+host.clientLeft,right=left+host.clientWidth;
+  let best=null;
+  for(const column of host.children){const box=column.getBoundingClientRect(),visible=Math.max(0,Math.min(right,box.right)-Math.max(left,box.left));const score=visible/Math.max(1,box.width);if(!best||score>best.score+.001||(Math.abs(score-best.score)<.001&&Math.abs(box.left-left)<best.distance))best={index:Number(column.dataset.historyIndex),score,distance:Math.abs(box.left-left)};}
+  if(best){visibleHistoryIndex=best.index;host.dataset.visibleHistoryIndex=String(best.index);}
 }
 function updateColumnControls() { const host = $('columns'); $('browse-prev').disabled = host.scrollLeft < 2; $('browse-next').disabled = host.scrollLeft + host.clientWidth >= host.scrollWidth - 2; }
 function switchPanel(panel) {
@@ -558,10 +594,15 @@ $('view-sources').addEventListener('click', () => switchPanel('sources'));
 $('view-geometry').addEventListener('click', () => switchPanel('geometry'));
 for (const id of ['view-sources', 'view-geometry']) $(id).addEventListener('keydown', event => { if (['ArrowLeft', 'ArrowRight'].includes(event.key)) { event.preventDefault(); const panel = activePanel === 'sources' ? 'geometry' : 'sources'; switchPanel(panel); $(`view-${panel}`).focus(); } });
 $('clear-evidence').addEventListener('click', () => { selectedDirectionId = null; selectedId = null; allEvidence = false; renderEvidence(); $('columns').querySelectorAll('.direction-evidence').forEach(button => button.setAttribute('aria-pressed', 'false')); });
-$('columns').addEventListener('scroll', updateColumnControls, { passive: true });
-for (const [id, sign] of [['browse-prev', -1], ['browse-next', 1]]) $(id).addEventListener('click', () => $('columns').scrollBy({ left: sign * Math.max(300, $('columns').clientWidth * .75), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }));
+$('columns').addEventListener('scroll',()=>{rememberVisibleColumn();updateColumnControls();},{passive:true});
+for(const type of ['pointerdown','touchstart','wheel','keydown'])$('columns').addEventListener(type,()=>{userColumnScroll=true;++columnAlignmentTicket;},{passive:true});
+for (const [id, sign] of [['browse-prev', -1], ['browse-next', 1]]) $(id).addEventListener('click', () => {
+  const columns=[...$('columns').children],current=Math.max(0,columns.findIndex(column=>Number(column.dataset.historyIndex)===visibleHistoryIndex));
+  const target=columns[Math.max(0,Math.min(columns.length-1,current+sign))];
+  if(target)columnAlignment=alignColumn(Number(target.dataset.historyIndex),{followed:true});
+});
 let chartResizeFrame;
-window.addEventListener('resize', () => { cancelAnimationFrame(chartResizeFrame); chartResizeFrame = requestAnimationFrame(() => { if (view && activePanel === 'geometry') renderChart(); updateColumnControls(); }); });
+window.addEventListener('resize', () => { cancelAnimationFrame(chartResizeFrame); chartResizeFrame = requestAnimationFrame(() => { if (view && activePanel === 'geometry') renderChart(); if(session){columnAlignment=alignColumn(visibleHistoryIndex ?? session.cursor,{followed:true});columnAlignment.then(alignBreadcrumb);}else updateColumnControls(); }); });
 $('back').addEventListener('click', () => { if (session) action({ type: 'replay', index: Math.max(0, session.cursor - 1) }); });
 $('broaden').addEventListener('click', () => action({ type: 'broaden' }));
 $('reset').addEventListener('click', () => {

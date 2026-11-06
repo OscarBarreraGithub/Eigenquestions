@@ -91,6 +91,64 @@ def main():
                 # Native IDs contain a colon but no selector quotes.
                 return target_page.locator(f'.miller-column[data-current="true"] .direction[data-direction-id="{direction_id}"]')
 
+            def settled_columns(label, selector=None):
+                # Observe the actual control/resize result. Forcing scrollLeft
+                # here would conceal the clipping that the first captures found.
+                result = page.evaluate("""async selector=>{
+                    const host=document.querySelector('#columns'), start=performance.now(), samples=[];
+                    let previous=null, stable=0, sample;
+                    do {
+                        await new Promise(requestAnimationFrame);
+                        const rect=host.getBoundingClientRect(), left=rect.left+host.clientLeft, right=left+host.clientWidth;
+                        const columns=[...host.querySelectorAll('.miller-column')].map(node=>{
+                            const box=node.getBoundingClientRect();
+                            return {index:node.dataset.historyIndex,current:node.dataset.current==='true',left:box.left,right:box.right,width:box.width,
+                                    fullyVisible:box.left>=left-1&&box.right<=right+1};
+                        });
+                        const target=selector?document.querySelector(selector):null;
+                        const selected=target?columns.find(column=>column.index===target.dataset.historyIndex):null;
+                        sample={ms:Math.round(performance.now()-start),left,right,clientWidth:host.clientWidth,scrollLeft:host.scrollLeft,
+                                scrollWidth:host.scrollWidth,snap:getComputedStyle(host).scrollSnapType,columns};
+                        const positions=[left,right,host.scrollLeft,...columns.flatMap(column=>[column.left,column.right])];
+                        stable=previous&&positions.length===previous.length&&positions.every((value,index)=>Math.abs(value-previous[index])<.25)?stable+1:0;
+                        previous=positions; samples.push(sample);
+                        const visible=selector?Boolean(selected?.fullyVisible):columns.some(column=>column.fullyVisible);
+                        if(visible&&stable>=4&&sample.ms>=150)return {passed:true,sample,samples:[...samples.slice(0,3),...samples.slice(-8)]};
+                    } while(performance.now()-start<3000);
+                    return {passed:false,sample,samples:[...samples.slice(0,3),...samples.slice(-12)]};
+                }""", selector)
+                report.setdefault('columnGeometry', []).append({'label': label, 'target': selector, **result})
+                if not result['passed']:
+                    filename = f'q005-column-failure-{len(report["columnGeometry"])}.png'
+                    page.screenshot(path=str(output / filename), full_page=False)
+                    report['screenshots'].append(filename)
+                assert result['passed'], f'Column visibility/settling failed: {label}; {json.dumps(result["sample"])}'
+                return result['sample']
+
+            def current_visible(label):
+                return settled_columns(label, '.miller-column[data-current="true"]')
+
+            def browse_to(position, label):
+                button = page.locator('#browse-next' if position == 'current' else '#browse-prev')
+                for index in range(page.locator('.miller-column').count() + 2):
+                    if button.is_disabled():
+                        break
+                    button.click()
+                    settled_columns(f'{label}: arrow {index + 1}')
+                assert button.is_disabled(), f'Column arrows did not reach {position}: {label}'
+                selector = '.miller-column[data-current="true"]' if position == 'current' else '#columns > .miller-column:first-child'
+                settled_columns(label, selector)
+
+            def followed_row_visible(column, label):
+                result = column.evaluate("""node=>{
+                    const rect=node.getBoundingClientRect(), heading=node.querySelector('.column-heading').getBoundingClientRect();
+                    const row=node.querySelector('.direction[aria-current="step"]').closest('.direction-row').getBoundingClientRect();
+                    const top=Math.max(rect.top+node.clientTop,heading.bottom),bottom=rect.top+node.clientTop+node.clientHeight;
+                    return {passed:row.top>=top-1&&row.bottom<=bottom+1,top,bottom,rowTop:row.top,rowBottom:row.bottom,scrollTop:node.scrollTop};
+                }""")
+                report.setdefault('followedRowGeometry', []).append({'label': label, **result})
+                assert result['passed'], f'Followed choice is clipped inside its historical column: {label}; {json.dumps(result)}'
+
             page.goto(origin, wait_until='domcontentloaded')
             ready()
             assert page.locator('#home-heading').is_visible()
@@ -119,6 +177,8 @@ def main():
             before = revision()
             button.click()
             changed(before)
+            current_visible('reported method: accepted click')
+            followed_row_visible(page.locator(f'.miller-column[data-history-index="{initial_cursor}"]'), 'reported fourth method: accepted click')
             selected = capsule()
             selected_session = selected['snapshot']['session']
             selected_state = selected_session['states'][selected_session['cursor']]
@@ -147,14 +207,14 @@ def main():
             page.locator('#full-question-details').evaluate('(node)=>node.removeAttribute("open")')
             for width, height in [(1440, 1000), (390, 844)]:
                 page.set_viewport_size({'width': width, 'height': height})
-                page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
-                page.evaluate('()=>{const columns=document.querySelector("#columns");columns.scrollLeft=columns.scrollWidth;window.scrollTo(0,0)}')
+                current_visible(f'reported method: resize to {width}px')
+                page.evaluate('window.scrollTo(0,0)')
                 for suffix, full_page in [('full', True), ('viewport', False)]:
                     filename = f'q005-reported-method-{width}-{suffix}.png'
                     page.screenshot(path=str(output / filename), full_page=full_page)
                     report['screenshots'].append(filename)
             page.set_viewport_size({'width': 1440, 'height': 1000})
-            page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
+            current_visible('reported method: restore desktop before branch')
 
             previous_column = page.locator(f'.miller-column[data-history-index="{initial_cursor}"]')
             assert previous_column.locator('.direction').count() == 5
@@ -166,6 +226,7 @@ def main():
             before = revision()
             previous_column.locator(f'.direction[data-direction-id="{sibling["id"]}"]').click()
             changed(before)
+            current_visible('historical sibling: accepted branch click')
             branched = capsule()['snapshot']['session']
             assert branched['states'][:initial_cursor + 1] == initial_session['states'][:initial_cursor + 1]
             assert branched['states'][branched['cursor']]['query'] == sibling['query']
@@ -198,6 +259,7 @@ def main():
                 before_revision = revision()
                 button.click()
                 changed(before_revision)
+                current_visible(f'cycle selection {step + 1}: accepted click')
                 after_session = capsule()['snapshot']['session']
                 if prior_index >= 0:
                     returns += 1
@@ -220,12 +282,12 @@ def main():
             page.locator('#full-question-details').evaluate('(node)=>node.removeAttribute("open")')
             for width, height in [(1440, 1000), (390, 844), (320, 740)]:
                 page.set_viewport_size({'width': width, 'height': height})
-                page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
+                current_visible(f'cycle view: resize to {width}px')
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'), f'Outer horizontal overflow at {width}px'
                 assert page.locator('.miller-column[data-current="true"] .direction').count() == 5
                 for position in ['current', 'earlier']:
-                    page.evaluate('position=>{const columns=document.querySelector("#columns");columns.scrollLeft=position==="current"?columns.scrollWidth:0;document.querySelector("#path").scrollLeft=position==="current"?100000:0;window.scrollTo(0,0)}', position)
-                    page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(resolve))')
+                    browse_to(position, f'cycle view: {width}px {position} arrows')
+                    page.evaluate('window.scrollTo(0,0)')
                     filename = f'q005-{width}-{position}-full.png'
                     page.screenshot(path=str(output / filename), full_page=True)
                     report['screenshots'].append(filename)
@@ -233,7 +295,10 @@ def main():
                     page.screenshot(path=str(output / filename), full_page=False)
                     report['screenshots'].append(filename)
                 assert page.locator('.miller-column[data-current="false"] .direction').count() >= 5
-            passed('desktop, 390px and 320px preserve full path, current choices and scrollable earlier alternatives without outer overflow')
+                # Resize starts from the current column. Deliberately viewing an
+                # earlier column is a separate user intent, not a resize defect.
+                browse_to('current', f'cycle view: {width}px return arrows')
+            passed('desktop, 390px and 320px keep the intended column fully visible after clicks, resize and settled arrow navigation; earlier alternatives remain reachable')
 
             # Keep this separate from the native walk: two scientific authored
             # displays can share a native canonical state. A native API return
@@ -328,19 +393,23 @@ def main():
             assert capsule(home) == selected
             passed('New path and subsequent bare reload preserve the last nonempty view for explicit resumption')
 
-            home.add_init_script("""window.__q005Headings=[];new MutationObserver(()=>{const node=document.querySelector('#current-question');if(node&&node.textContent)window.__q005Headings.push(node.textContent)}).observe(document,{childList:true,subtree:true,characterData:true});""")
+            # A fresh document tests initial-route priority; changing only the
+            # existing page's hash would retain its accepted-count and observers.
+            focus_page = home_context.new_page()
+            focus_page.on('pageerror', lambda error: errors.append(str(error)))
+            focus_page.add_init_script("""window.__q005Headings=[];new MutationObserver(()=>{const node=document.querySelector('#current-question');if(node&&node.textContent)window.__q005Headings.push(node.textContent)}).observe(document,{childList:true,subtree:true,characterData:true});""")
             focus_state = initial_session['states'][initial_cursor]
             encoded = base64.urlsafe_b64encode(json.dumps(focus_state, ensure_ascii=False, separators=(',', ':')).encode()).decode().rstrip('=')
-            home.goto(origin + '/#focus=' + encoded, wait_until='domcontentloaded')
-            ready(home)
-            idle(home)
-            focused = capsule(home)
+            focus_page.goto(origin + '/#focus=' + encoded, wait_until='domcontentloaded')
+            ready(focus_page)
+            idle(focus_page)
+            focused = capsule(focus_page)
             assert focused['context']['question'] == 'KK towers'
             assert focused['snapshot']['view']['stateId'] == focus_state['id']
-            assert home.locator('#home-heading').is_hidden() and home.locator('#exploration-workspace').is_visible()
-            assert home.locator('html').get_attribute('data-accepted-count') == '1'
-            assert not any('Sum one-loop contributions' in text for text in home.evaluate('window.__q005Headings'))
-            assert home.evaluate('location.hash').startswith('#focus=')
+            assert focus_page.locator('#home-heading').is_hidden() and focus_page.locator('#exploration-workspace').is_visible()
+            assert focus_page.locator('html').get_attribute('data-accepted-count') == '1'
+            assert not any('Sum one-loop contributions' in text for text in focus_page.evaluate('window.__q005Headings'))
+            assert focus_page.evaluate('location.hash').startswith('#focus=')
             passed('an explicit focus URL takes precedence over saved history with one accepted view and no transient restored method')
 
             report['pageErrors'] = errors

@@ -109,3 +109,9 @@ first words and 44px target remain available; full context is still in the
 disclosure. Protocol was asked to verify the application's actual breadcrumb
 alignment rather than relying on an arbitrary forced scroll position. This
 small CSS correction awaits the next actual screenshots.
+
+Horizontal CSS scroll snapping has also been removed at all widths, coordinated
+with the controller's explicit column targeting. Native snap animation must not
+override the accepted current column, a deliberate arrow action or the viewed
+column retained during resize. The next screenshots must verify the integrated
+controller positioning rather than treating this CSS change alone as a fix.
