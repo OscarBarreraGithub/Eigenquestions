@@ -41,3 +41,33 @@ neutral shell until the actual URL/session target is known, or synchronously
 paint validated saved context before loading the corpus. A stored-view URL
 must take precedence over unrelated local state. Verify the pre-init DOM under
 delayed loads, not only the final rendered state.
+
+## First quiet implementation: source review
+
+Reviewed the revised `web/index.html` and component-organized `web/styles.css`
+after `/root/quiet_ui_sol` completed presentation work. No static layout blocker
+found. The marketing layers and colored bands are removed, search options are
+collapsed at all widths, New path stays visible, and 17px blue scientific
+direction text has a clear selected treatment. The initial heading/input are
+neutral. The full-view file/link controls form one secondary disclosure.
+
+The phone Sources action now sits in the metadata row rather than consuming a
+64px text rail. Its 44px-high target begins just below the scientific title;
+the metadata reserves 66px on the right. The 320px header should fit from the
+specified font sizes and padding. These are source-based expectations, not
+measured browser results.
+
+Concrete recommendations sent to the owners:
+
+- Set a 44px minimum width on Agent and short path buttons, which currently
+  have only a minimum height. The 320px header has room for this.
+- Inset the direction button's focus outline so the scroll column does not
+  clip its outer edge.
+- After a row's Sources action, focus the visible Sources tab. The previous
+  destination, `reading-heading`, is now visually hidden.
+- Remove the repeated “Choose a direction” instruction from the dynamically
+  generated step label and the repeated direction count beside column arrows.
+  During initial loading, avoid giving the same progress message four places.
+
+These are bounded corrections. Real screenshots at 320/390px and desktop widths,
+plus keyboard and delayed-startup behavior, remain the next acceptance evidence.

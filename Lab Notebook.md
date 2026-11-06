@@ -249,3 +249,13 @@
 **Constraint.** Cloudflare account discovery through the configured connector returned “MCP tool call requires approval, but approval policy is never.” Root stopped that access path and did not use another credential route. Code, local Worker tests and the existing authorized GitHub site deployment can proceed; real R2 activation remains pending. No bucket, subscription or existing D1 data was changed.
 
 **Next.** Integrate and test neutral startup, exact file/view roundtrips, route changes and delayed interactions. Inspect real desktop/phone screenshots after freezing source, then publish the verified interface. Hosted save/open must be tested after authorized activation before it is described as available. [Atomic plan](docs/Q-003-Q-004-implementation-plan.md) · [Sol baseline review](docs/Q-004-ui-review.md).
+
+## 2026-11-06 UTC — Q-004: Isolate the first visual iteration
+
+**Question.** Does the quieter layout actually put scientific text first at desktop and phone sizes?
+
+**Tried/contributors.** Sol interface removed promotional headings, repeated labels, colored bands and exposed settings; kept a visible New path, plain links, readable rows and large controls. Independent Sol source review requested wider small targets and unclipped keyboard focus. Those bounded repairs are included. Root is freezing these UI files with the previously verified runtime for a fast visual experiment while Astra finishes the new view controller.
+
+**Scope.** This checkpoint deliberately leaves in-progress protocol/backend files unstaged. Its capture utility uses real native scientific results and records screenshots/target sizes; it does not establish that new storage buttons work or that the prior runtime's startup default is repaired. Integrated acceptance comes later. No new browser was launched on the Mac.
+
+**Next.** Capture and review 1440, 1024, 390 and 320px screens in authorized Slurm. Use observed visual faults to guide another Sol iteration. [Design choices](docs/Q-004-ui-design.md) · [capture utility](tests/integration/q004_visual_capture.py).
