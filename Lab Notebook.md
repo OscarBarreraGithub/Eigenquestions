@@ -2,12 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. Q-006 delivers a separate fixed Swampland overview for a collaborator demo; Q-005 navigation repairs remain intact.
-- **Known:** The [overview is live](https://eigenquestions.com/overview): 8,473 source question excerpts from 6,477 papers, five broad groups and the genuine finer hierarchy. All geometry, memberships, topics and affinities are Swampland data; IAIFI supplies UI style only. Runtime `50e5804`, release `edeb241`.
-- **Verified:** 43 local tests, 12 local overview browser checks, 10 explorer regression checks and all 12 final public overview checks pass. Desktop/phone visuals accepted; 22 public asset hashes and 32 retired routes verified.
-- **Unfinished/running:** Q-006 is complete; no cluster validation jobs remain. Hosted shared-view storage (Q-003) remains inactive under the earlier connector restriction. The live host injects Cloudflare performance telemetry, recorded separately from application traffic.
-- **Next:** Show the fixed demo to collaborators and record their feedback. The contextual explorer remains the separate path-dependent navigation tool; topic captions are provisional.
-- **Save:** Notebook, meaningful failures, source/harness receipts and public evidence are committed to the configured repository. Coordinator `/root` owns checkpoints and release. [Q-006 plan](docs/Q-006-plan.md).
+- **Project/question:** Eigenquestions. Q-007 drilldown UI work is paused at the owner's explicit request: “for now just leave it as it is. but explain”.
+- **Known:** The live Q-006 overview remains unchanged. Its agent/browser distinction and current weighted-PCA projection are documented. Only the quantum-gravity broad branch has six retained subclusters; other branches stop for recorded construction reasons.
+- **Unfinished/running:** Unpublished Q-007 HTML/CSS/JS drafts expose existing children and parent navigation; they pass 43 local tests but have no new browser acceptance. The hierarchy audit is saved. Implementation agents are stopped; no Q-007 cluster jobs were submitted.
+- **Next:** Wait for the owner to resume changes. Explain current agent transport, local search fallback, and the limits of the existing 2D construction. Do not publish this draft to main while paused.
+- **Save:** Preserve the draft, audit and notebook on the working branch only. Public runtime remains the verified Q-006 release. [Q-007 plan](docs/Q-007-plan.md).
 
 ## Requests
 
@@ -22,6 +21,8 @@
 **Q-005 (summary):** Fix the unsolicited start at the long KK one-loop method, repeated copies of that paragraph, and unclear adjacent choices at each visited level. Keep full scientific context while making navigation concise and each branch understandable. [Atomic plan](docs/Q-005-plan.md).
 
 **Q-006 (summary):** Add a separate fixed overview map, styled after the owner's IAIFI paperscape, with zoomable clusters and legible labels for a collaborator demo. Preserve the current explorer; the overview does not update with queries. [Atomic plan](docs/Q-006-plan.md).
+
+**Q-007 (summary):** Clicking a broad topic should reveal clickable smaller clusters. Clarify the “Awaiting a better home” bucket and keep it secondary. [Plan](docs/Q-007-plan.md).
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -446,3 +447,33 @@
 **Meaning.** The minimal fixed overview is ready for collaborator use at [eigenquestions.com/overview](https://eigenquestions.com/overview), with a new-tab entry on the text explorer. It is a legible global picture of this Swampland collection, using its real shallow hierarchy and provisional labels. It does not replace the contextual navigation construction.
 
 **Save/resume.** This closure changes only documentation, tests and saved evidence; runtime assets remain the publicly verified release. Preserve the failed wheel-coordinate and host-telemetry assumptions as useful reproducibility findings. No cluster job remains. The next substantive work is collaborator feedback, not another speculative UI rewrite.
+
+## 2026-11-06 UTC — Q-007: Distinguish hidden controls from missing hierarchy
+
+**Question.** Why does broad-topic selection not provide the expected next smaller choices?
+
+**Observed.** The fixed export has six children under quantum gravity, while compactification, cosmology and neutrino branches are leaves. The renderer leaves its broad-topic list unchanged and puts child buttons below long details; retained sidebar scroll can further hide them. This is both an access problem and a shallow-data limitation.
+
+**Tried/contributors.** Root assigned Astra protocol the contextual topic list and real parent path, Sol the small accessible UI changes, and Astra data a read-only audit of existing finer partitions. The unassigned bucket becomes a secondary display entry; underlying scientific records remain unchanged.
+
+**Decision/next.** Expose actual children immediately and provide honest source browsing at leaves. Do not attach unstable rejected splits or unrelated alternative trees just to give every button another level. Record the exact data-stop reasons, test the repaired journey, and explain what the current map can and cannot do.
+
+## 2026-11-06 UTC — Q-003 clarification: distinguish local browsing from an agent
+
+**Owner question (summary).** Why does typing update the graph without first connecting an agent?
+
+**Verified explanation.** Overview Find searches existing titles/IDs/topic names and changes camera/selection only. Submitting in the text explorer invokes deterministic browser retrieval: lexical source anchors, their existing vectors and graph neighbors, local direction grouping and a fitted 2D projection. It does not call a language model or freshly embed the typed question. A connected external agent supplies the interpretation, evidence review and an authored structured view through the separate protocol.
+
+**Meaning.** A changing chart is not evidence of agent reasoning. Root explained this distinction directly; the local fallback remains useful, but the interface should distinguish it from agent-guided views. This question does not replace Q-007's active drilldown repair or authorize silently substituting browser heuristics for the broader agentic vision. [Construction](docs/geometry.md) · [Agent interface](docs/agent-interface.md).
+
+## 2026-11-06 UTC — Q-007 paused; explain the current construction
+
+**Owner direction.** “for now just leave it as it is. but explain” follows questions about whether agent updates work and the mathematical tool for the 2D plane. Root stopped the remaining implementation agent. The public site has not received any Q-007 changes.
+
+**Saved state.** Protocol and Sol completed an unpublished contextual-child/parent-navigation draft, including secondary unassigned access. The current draft passed the existing 43 local checks and static build checks. Astra data's hierarchy audit is saved; revised browser tests were not written or run. Preserve this as a draft checkpoint, not as a completed repair.
+
+**Verified explanation.** The page-object apply path and local same-origin companion/MCP path have passed actual browser tests, including exact authored views and render acknowledgements. Public HTTPS-to-loopback attachment was blocked by Chromium local-network policy in the recorded public tests; the local companion page is the tested fallback. Hosted stored-view URLs remain inactive. No claim is made that the owner's current browser tab is attached to an agent.
+
+**Mathematics.** The native dynamic explorer fits weighted PCA to the retrieved direction-group centroids in the existing 384-dimensional MiniLM space. A center and two orthonormal eigenvectors define an affine plane; selected vectors are orthogonally projected and a residual/slab diagnostic is recorded separately. This is not literal intersection of the entire corpus with a plane, nor a learned universal physics coordinate system. The fixed overview instead uses the precomputed first two diffusion modes and never refits its coordinates on Find.
+
+**Resume boundary.** No further implementation or publication until requested. Working-branch save only; leave main/live assets unchanged.

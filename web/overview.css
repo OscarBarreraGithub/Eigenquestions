@@ -52,13 +52,25 @@ h1, h2, h3, p { margin-top: 0; }
 #overview-tooltip { position: absolute; z-index: 3; max-width: min(340px, calc(100% - 24px)); padding: 9px 12px; border: 1px solid #536274; background: #172131; color: #f2f4f7; font-size: 14px; line-height: 1.45; pointer-events: none; overflow-wrap: anywhere; }
 .overview-sidebar { min-width: 0; max-height: clamp(542px, calc(100vh - 268px), 862px); overflow: auto; padding: 0 1px 6px; scrollbar-width: thin; }
 .overview-sidebar h2 { margin: 0 0 8px; font-size: 19px; line-height: 1.4; font-weight: 600; overflow-wrap: anywhere; }
+.topic-path { display: flex; align-items: center; flex-wrap: wrap; gap: 0 5px; margin: 0 0 8px; font-size: 14px; line-height: 1.45; }
+.topic-path button { min-height: 44px; padding: 8px 4px; border: 0; background: #fff; color: var(--link); text-decoration: underline; text-underline-offset: 3px; font-size: 14px; }
+.topic-path [aria-current] { color: var(--ink); font-weight: 600; }
+.topic-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.topic-heading h2 { min-width: 0; margin: 0; }
+#overview-topics-back { flex-shrink: 0; font-size: 14px; }
 .section-note { margin: 0 0 12px; font-size: 14px; color: var(--muted); }
+.source-filter { margin: 0 0 12px; }
+.source-filter label { display: block; margin-bottom: 6px; color: #444; font-size: 14px; }
+#overview-source-filter { display: block; width: 100%; min-width: 0; min-height: 44px; padding: 9px 10px; border: 1px solid #888; border-radius: 2px; background: #fff; color: var(--ink); font-size: 16px; }
 #overview-topics, .overview-results, .details-list { list-style: none; padding: 0; margin: 0; }
 .topic-button, .result-button { display: block; width: 100%; min-height: 44px; padding: 11px 10px; border: 0; border-left: 3px solid var(--topic-color, transparent); border-bottom: 1px solid #ddd; border-radius: 0; color: var(--link); background: #fff; text-align: left; font-size: 16px; line-height: 1.45; overflow-wrap: anywhere; }
 .topic-button:hover, .result-button:hover { background: #f5f5f5; border-left-color: var(--topic-color, #888); }
 .topic-button[aria-pressed="true"], .result-button[aria-pressed="true"] { border-left-color: var(--topic-color, var(--link)); background: #eef2f6; color: var(--ink); font-weight: 600; }
 .topic-button:focus-visible, .result-button:focus-visible { outline-offset: -3px; }
 .topic-meta { display: block; margin-top: 5px; color: var(--muted); font-size: 13px; font-weight: 400; line-height: 1.4; }
+.browse-sources, .unassigned-button { display: block; width: 100%; min-height: 44px; padding: 9px 0; border: 0; border-radius: 0; background: #fff; color: var(--link); font-size: 14px; line-height: 1.45; text-align: left; text-decoration: underline; text-underline-offset: 3px; }
+.browse-sources { margin-top: 8px; }
+.unassigned-excerpts { margin-top: 14px; padding-top: 8px; border-top: 1px solid var(--line); }
 .overview-results:not(:empty) { margin: 20px 0 0; border-top: 1px solid var(--line); padding-top: 6px; }
 .loading-note { padding: 12px 0; color: var(--muted); font-size: 14px; }
 #overview-details { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); scroll-margin-top: 16px; }

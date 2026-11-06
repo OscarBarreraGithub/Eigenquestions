@@ -80,12 +80,13 @@ async function startOverview() {
   const status = $('overview-status'), details = $('overview-details'), tooltip = $('overview-tooltip');
   const colors = ['#72b8fa', '#ce9fec', '#edbc6d', '#7cd6be', '#b0bac9'];
   const state = {ready: false, camera: {x: 0, y: 0, k: 1}, width: 1, height: 1, fitScale: 1, selectedTopic: null, selectedPoint: null, hover: -1,
-    labels: [], drawn: 0, frame: 0, selectedMembers: null, detailGeneration: 0};
+    labels: [], drawn: 0, frame: 0, selectedMembers: null, detailGeneration: 0,
+    browseTopic: null, browseSources: false, sourceFilter: '', sourceLimit: 6};
   let manifest, map, bounds, spatial, broad = [], colorOf = [], paperPoints = [], framePending = false, resizeObserver;
   const shardPromises = new Map(), pointers = new Map(); let moved = false, dragStart, searchTimer;
   const text = (tag, value, className) => { const node = document.createElement(tag); node.textContent = value; if (className) node.className = className; return node; };
   const message = value => { status.textContent = value; };
-  const caption = index => map.topics[index].caption || map.topics[index].label;
+  const caption = index => index === manifest.membershipRule.unresolvedTopicIndex ? 'Unassigned excerpts' : map.topics[index].caption || map.topics[index].label;
   const excerpt = (value, limit = 64) => value.length > limit ? `${value.slice(0, limit - 1).trimEnd()}…` : value;
   const selectedPoint = () => state.selectedPoint === null ? null : map.points[state.selectedPoint];
   const pointScreen = point => screenPoint([point[2], point[3]], state.camera, state.width, state.height);
@@ -155,7 +156,9 @@ async function startOverview() {
   function updateTopicButtons() { for (const button of document.querySelectorAll('button[data-topic-index]')) button.setAttribute('aria-pressed', String(Number(button.dataset.topicIndex) === state.selectedTopic)); }
   function sourceButton(index) {
     const point = map.points[index], paper = map.papers[point[1]], button = text('button', '', 'result-button');
-    button.type = 'button'; button.dataset.pointIndex = index; button.append(text('span', paper[1]), text('span', `Question excerpt · ${paper[0]}`, 'detail-meta'));
+    const count = paperPoints[point[1]].length, ordinal = paperPoints[point[1]].indexOf(index) + 1;
+    button.type = 'button'; button.dataset.pointIndex = index; button.append(text('span', paper[1]), text('span', `Question excerpt${count > 1 ? ` ${ordinal} of ${count}` : ''} · ${paper[0]}`, 'detail-meta'));
+    button.setAttribute('aria-pressed', String(state.selectedPoint === index));
     button.addEventListener('click', () => selectPoint(index)); return button;
   }
   function membersOf(index) {
@@ -163,27 +166,90 @@ async function startOverview() {
     map.points.forEach((point, pointIndex) => { if (point[5].some(home => closure.has(home))) members.add(pointIndex); });
     return members;
   }
+  function browseAncestors(index) {
+    const ancestors = [];
+    for (let current = index; current !== null && current !== manifest.rootTopicIndex; current = map.topics[current].parent) ancestors.unshift(current);
+    return ancestors;
+  }
+  function revealTopicNavigation() {
+    const generation = state.detailGeneration;
+    requestAnimationFrame(() => {
+      if (generation !== state.detailGeneration) return;
+      const section = $('overview-topics').closest('.topic-section'), sidebar = section?.closest('.overview-sidebar');
+      if (sidebar) sidebar.scrollTop = 0;
+      if (section && window.matchMedia('(max-width: 760px)').matches) section.scrollIntoView({block: 'start', behavior: 'instant'});
+      $('overview-topics').focus({preventScroll: true});
+    });
+  }
+  function renderSourceChoices() {
+    const host = $('overview-topics'), index = state.browseTopic, topic = map.topics[index], members = membersOf(index);
+    const ordered = [...new Set([...topic.representatives.filter(point => members.has(point)), ...members])];
+    const filter = state.sourceFilter.trim().toLowerCase();
+    const matches = ordered.filter(point => { const paper = map.papers[map.points[point][1]]; return `${paper[0]} ${paper[1]}`.toLowerCase().includes(filter); });
+    host.replaceChildren();
+    for (const point of matches.slice(0, state.sourceLimit)) { const row = document.createElement('li'); row.append(sourceButton(point)); host.append(row); }
+    if (!matches.length) { const row = document.createElement('li'); row.append(text('p', 'No source titles or arXiv IDs match this filter.')); host.append(row); }
+    if (matches.length > state.sourceLimit) {
+      const row = document.createElement('li'), more = text('button', `Show more sources (${state.sourceLimit} of ${matches.length})`, 'result-button');
+      more.type = 'button'; more.dataset.loadMore = 'true'; more.addEventListener('click', () => { state.sourceLimit += 6; renderSourceChoices(); }); row.append(more); host.append(row);
+    }
+    host.dataset.sourceCount = String(matches.length);
+  }
+  function renderTopicNavigation() {
+    const index = state.browseTopic, topic = index === null ? null : map.topics[index], root = topic === null;
+    const showSources = !root && (state.browseSources || !topic.children.length);
+    const path = $('overview-topic-path'), back = $('overview-topics-back'), host = $('overview-topics'), context = $('overview-topic-context');
+    path.replaceChildren(); path.hidden = root;
+    if (!root) {
+      const full = text('button', 'Full map'); full.type = 'button'; full.dataset.browseRoot = 'true'; full.addEventListener('click', () => { fit(); revealTopicNavigation(); }); path.append(full);
+      for (const ancestor of browseAncestors(index)) {
+        path.append(text('span', '›'));
+        if (ancestor === index && !state.browseSources) { const current = text('span', caption(ancestor)); current.setAttribute('aria-current', 'page'); path.append(current); }
+        else { const button = text('button', caption(ancestor)); button.type = 'button'; button.dataset.browseTopic = ancestor; button.addEventListener('click', () => selectTopic(ancestor)); path.append(button); }
+      }
+      if (state.browseSources) { path.append(text('span', '›')); const current = text('span', 'Source questions'); current.setAttribute('aria-current', 'page'); path.append(current); }
+    }
+    back.hidden = root;
+    back.textContent = !root && state.browseSources && topic.children.length ? 'Back to groups' : !root && topic.parent !== manifest.rootTopicIndex ? 'Parent group' : 'All groups';
+    $('overview-topics-heading').textContent = root ? 'Broad groups' : showSources ? 'Source questions' : 'Finer groups';
+    context.textContent = root ? 'Choose a topic to see its next choices.' : showSources
+      ? `${index === manifest.membershipRule.unresolvedTopicIndex ? 'These excerpts have no current topic assignment.' : topic.children.length ? 'Source questions from this group and its finer groups.' : 'No finer groups in this map yet.'} Browse ${topic.unitCount.toLocaleString()} source excerpts, or filter their paper titles and IDs.`
+      : `Choose one of the ${topic.children.length} finer groups in ${caption(index)}.`;
+    $('overview-source-filter-field').hidden = !showSources;
+    $('overview-source-filter').value = state.sourceFilter;
+    $('overview-browse-sources').hidden = root || showSources;
+    if (!root) $('overview-browse-sources').textContent = `Browse all ${topic.unitCount.toLocaleString()} source excerpts`;
+    if (showSources) renderSourceChoices();
+    else {
+      delete host.dataset.sourceCount;
+      const topics = (root ? broad : topic.children).filter(child => child !== manifest.membershipRule.unresolvedTopicIndex);
+      host.replaceChildren(...topics.map(child => { const li = document.createElement('li'); li.append(topicButton(child)); return li; }));
+    }
+    const unassigned = $('overview-unassigned'); unassigned.replaceChildren(); unassigned.hidden = !root;
+    if (root) {
+      const unresolved = manifest.membershipRule.unresolvedTopicIndex, button = text('button', `Unassigned excerpts (${map.topics[unresolved].unitCount})`, 'unassigned-button');
+      button.type = 'button'; button.dataset.topicIndex = unresolved; button.addEventListener('click', () => selectTopic(unresolved)); unassigned.append(button);
+    }
+    host.dataset.browseTopic = index === null ? '' : String(index); host.dataset.browseMode = root ? 'root' : showSources ? 'sources' : 'children';
+  }
   function selectTopic(index) {
+    if (index === manifest.rootTopicIndex) { fit(); revealTopicNavigation(); return; }
     state.detailGeneration++; state.selectedTopic = index; state.selectedPoint = null; state.selectedMembers = membersOf(index); state.hover = -1;
+    state.browseTopic = index; state.browseSources = false; state.sourceFilter = ''; state.sourceLimit = 6;
     const topic = map.topics[index]; detailHeading(caption(index)); details.dataset.topicId = topic.id;
     details.append(text('p', `${topic.paperCount.toLocaleString()} papers · ${topic.unitCount.toLocaleString()} question excerpts`, 'detail-meta'));
     if (topic.summary) details.append(text('p', topic.summary));
     if (topic.label !== caption(index)) { const disclosure = document.createElement('details'); disclosure.append(text('summary', 'Original group label'), text('p', topic.label)); details.append(disclosure); }
-    if (topic.children.length) { details.append(text('h3', 'Finer groups')); const children = text('div', '', 'details-list'); topic.children.forEach(child => children.append(topicButton(child))); details.append(children); }
     const related = map.links.filter(link => link.source === index || link.target === index).sort((a, b) => b.weight - a.weight).slice(0, 3);
     if (related.length) { const disclosure = document.createElement('details'); disclosure.append(text('summary', 'Nearby groups by text affinity')); const list = text('div', '', 'details-list'); related.forEach(link => list.append(topicButton(link.source === index ? link.target : link.source))); disclosure.append(list); details.append(disclosure); }
-    details.append(text('h3', 'Source questions')); const list = text('div', '', 'details-list'); details.append(list);
-    const representatives = [...new Set([...topic.representatives.filter(i => state.selectedMembers.has(i)), ...state.selectedMembers])]; let displayed = 0;
-    const more = text('button', 'Show more sources', 'result-button'); more.type = 'button';
-    const append = () => { for (const point of representatives.slice(displayed, displayed + 6)) list.append(sourceButton(point)); displayed += 6; more.hidden = displayed >= representatives.length; };
-    more.addEventListener('click', append); append(); details.append(more);
     if (topic.freshConcern) details.append(text('p', topic.freshConcern, 'detail-meta'));
     const groupBounds = boundsOf([...state.selectedMembers].map(i => map.points[i]));
     setCamera(fitCamera(groupBounds, state.width, state.height, 35));
-    updateTopicButtons(); message(`${caption(index)} selected. Its ${state.selectedMembers.size.toLocaleString()} source excerpts are highlighted.`);
+    renderTopicNavigation(); updateTopicButtons(); revealTopicNavigation(); message(`${caption(index)} selected. Its ${state.selectedMembers.size.toLocaleString()} source excerpts are highlighted.`);
   }
   async function selectPoint(index) {
     const generation = ++state.detailGeneration, point = map.points[index], paper = map.papers[point[1]];
+    if (state.browseTopic !== null && !membersOf(state.browseTopic).has(index)) { state.browseTopic = null; state.browseSources = false; state.sourceFilter = ''; state.sourceLimit = 6; }
     state.selectedPoint = index; state.selectedTopic = null; state.selectedMembers = null; state.hover = -1;
     detailHeading(paper[1]); details.dataset.pointId = point[0]; details.append(text('p', `Question excerpt from ${paper[0]}`, 'detail-meta'));
     const question = text('p', 'Loading the source description…', 'detail-excerpt'); question.id = 'overview-excerpt'; details.append(question);
@@ -191,20 +257,22 @@ async function startOverview() {
     details.append(text('h3', point[5].length > 1 ? 'Overlapping group memberships' : 'Group membership'));
     const homes = text('div', '', 'details-list'); point[5].forEach(home => homes.append(topicButton(home))); details.append(homes);
     details.append(text('p', 'This is a source-scoped question description, not a quotation or a verified physical result.', 'detail-meta'));
-    setCamera({x: point[2], y: point[3], k: Math.max(state.camera.k, state.fitScale * 10)}); updateTopicButtons(); message(`Selected a question from ${paper[1]}.`);
+    renderTopicNavigation(); setCamera({x: point[2], y: point[3], k: Math.max(state.camera.k, state.fitScale * 10)}); updateTopicButtons(); message(`Selected a question from ${paper[1]}.`);
     revealSourceDetails(generation);
     try { const value = await questionText(index); if (generation === state.detailGeneration) { question.textContent = value; details.dataset.detailReady = 'true'; } }
     catch (error) { if (generation === state.detailGeneration) { question.textContent = error.message; details.dataset.detailReady = 'error'; } }
   }
   function clearSelection() {
     state.detailGeneration++; state.selectedPoint = null; state.selectedTopic = null; state.selectedMembers = null;
-    detailHeading('Question details'); details.append(text('p', 'Select a group or a dot to inspect its source questions.')); updateTopicButtons(); schedule();
+    state.browseTopic = null; state.browseSources = false; state.sourceFilter = ''; state.sourceLimit = 6;
+    detailHeading('Question details'); details.append(text('p', 'Select a group or a dot to inspect its source questions.')); renderTopicNavigation(); updateTopicButtons();
+    const sidebar = details.closest('.overview-sidebar'); if (sidebar) sidebar.scrollTop = 0; schedule();
   }
   function runSearch() {
     if (!state.ready) return;
     const value = $('overview-find').value.trim().toLowerCase(), host = $('overview-results'); host.replaceChildren(); host.hidden = value.length < 2;
     if (value.length < 2) return;
-    const topicHits = map.topics.map((t, i) => ({t, i})).filter(({t, i}) => i !== manifest.rootTopicIndex && `${t.caption} ${t.label}`.toLowerCase().includes(value)).slice(0, 5);
+    const topicHits = map.topics.map((t, i) => ({t, i})).filter(({t, i}) => i !== manifest.rootTopicIndex && `${caption(i)} ${t.caption} ${t.label}`.toLowerCase().includes(value)).slice(0, 5);
     const paperHits = map.papers.map((p, i) => ({p, i})).filter(({p}) => `${p[0]} ${p[1]}`.toLowerCase().includes(value)).slice(0, 10);
     const row = child => { const li = document.createElement('li'); li.append(child); host.append(li); };
     for (const {i} of topicHits) row(topicButton(i, 'result-button'));
@@ -273,6 +341,7 @@ async function startOverview() {
     const topics = [...new Set([...(state.selectedTopic === null ? [] : [state.selectedTopic, ...map.topics[state.selectedTopic].children]), ...(ratio >= 1.8 ? broad.flatMap(index => map.topics[index].children) : []), ...broad])];
     topics.sort((a, b) => (a === state.selectedTopic ? -1 : b === state.selectedTopic ? 1 : map.topics[b].mass - map.topics[a].mass));
     for (const index of topics) {
+      if (index === manifest.membershipRule.unresolvedTopicIndex) continue;
       const topic = map.topics[index], p = screenPoint([topic.x, topic.y], state.camera, state.width, state.height);
       if (p.x < -20 || p.y < -20 || p.x > state.width + 20 || p.y > state.height + 20 || state.labels.length >= (ratio < 1.8 && state.selectedTopic === null ? 5 : 11)) continue;
       paintLabel(caption(index), p, 'topic', index, occupied, index === state.selectedTopic);
@@ -293,6 +362,15 @@ async function startOverview() {
     return index >= 0 ? {type: 'point', index} : null;
   }
   $('overview-zoom-in').addEventListener('click', () => zoom(1.5)); $('overview-zoom-out').addEventListener('click', () => zoom(1 / 1.5)); $('overview-fit').addEventListener('click', fit);
+  $('overview-topics-back').addEventListener('click', () => {
+    if (state.browseTopic === null) return;
+    const topic = map.topics[state.browseTopic];
+    if (state.browseSources && topic.children.length) selectTopic(state.browseTopic);
+    else if (topic.parent === null || topic.parent === manifest.rootTopicIndex) { fit(); revealTopicNavigation(); }
+    else selectTopic(topic.parent);
+  });
+  $('overview-browse-sources').addEventListener('click', () => { if (state.browseTopic === null) return; state.browseSources = true; state.sourceFilter = ''; state.sourceLimit = 6; renderTopicNavigation(); revealTopicNavigation(); });
+  $('overview-source-filter').addEventListener('input', event => { state.sourceFilter = event.target.value; state.sourceLimit = 6; renderSourceChoices(); });
   $('overview-find').addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 65); });
   $('overview-search').addEventListener('submit', event => { event.preventDefault(); clearTimeout(searchTimer); runSearch(); $('overview-results').querySelector('button')?.click(); });
   canvas.addEventListener('wheel', event => { if (!state.ready) return; event.preventDefault(); zoom(Math.exp(-clamp(event.deltaY, -160, 160) * .004), localPointer(event)); }, {passive: false});
@@ -331,6 +409,7 @@ async function startOverview() {
     selectedTopic: state.selectedTopic, selectedPoint: state.selectedPoint, selectedUnitId: selectedPoint()?.[0], selectedHomes: selectedPoint()?.[5] || [],
     selectedWorld: selectedPoint() ? {x: selectedPoint()[2], y: selectedPoint()[3]} : null,
     selectedTopicId: state.selectedTopic === null ? null : map.topics[state.selectedTopic].id, selectedMemberCount: state.selectedMembers?.size || 0,
+    browseTopic: state.browseTopic, browseMode: state.browseTopic === null ? 'root' : state.browseSources || !map.topics[state.browseTopic].children.length ? 'sources' : 'children',
     labels: state.labels.map(label => ({...label})), loadedDetailShards: [...shardPromises.keys()]})});
   try {
     message('Opening the fixed overview…');
@@ -340,7 +419,7 @@ async function startOverview() {
     const broadClosures = broad.map(index => topicClosure(map.topics, index));
     colorOf = map.points.map(point => { const index = broadClosures.findIndex(set => point[5].some(home => set.has(home))); return index < 0 ? colors.length - 1 : index % colors.length; });
     paperPoints = map.papers.map(() => []); map.points.forEach((point, index) => paperPoints[point[1]].push(index));
-    $('overview-topics').replaceChildren(...broad.map(index => { const li = document.createElement('li'); li.append(topicButton(index)); return li; })); clearSelection(); resize(); state.ready = true;
+    clearSelection(); resize(); state.ready = true;
     document.documentElement.dataset.overviewReady = 'true'; stage.dataset.viewId = manifest.viewId;
     if ($('overview-summary')) $('overview-summary').textContent = `${map.points.length.toLocaleString()} question excerpts · ${map.papers.length.toLocaleString()} papers · fixed collection`;
     message('Drag to pan; zoom to inspect groups and source questions.'); resizeObserver = new ResizeObserver(resize); resizeObserver.observe(stage); schedule();
