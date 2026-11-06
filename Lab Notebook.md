@@ -4,9 +4,9 @@
 
 - **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
 - **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
-- **Unfinished/running:** Implementation and 35 local tests pass. Slurm job `58361795` finished: two suites passed; two test assumptions need correction, and visual review found a real mobile column-alignment problem. Astra/Sol are correcting it; no job is running. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
+- **Unfinished/running:** Implementation and 35 local tests pass. The reported phone alignment is repaired. Final harness expectations are corrected and 35 local tests pass; the next integrated browser run is being prepared. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
 - **Next:** Freeze the repaired entry/choices/return behavior and verify the reported journey in a real browser, including authored-history safety and phone layouts. [Q-005 plan](docs/Q-005-plan.md).
-- **Git:** Prototype `d87bb2b` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
+- **Git:** Corrected prototype `bbea301` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
 
 ## Requests
 
@@ -363,3 +363,11 @@
 **Decision/next.** Withhold release. Astra will anchor the actual intended column reliably, Sol will bound the current breadcrumb, and the focused browser test will check column rectangles and settled arrow/resize behavior before capturing images. Preserve the failed pictures and source version rather than relabeling them as a pass.
 
 **Repair ready for recheck.** Astra replaced horizontal CSS snapping with explicit column alignment after accepted navigation and resize; arrows target actual adjacent columns, while deliberate earlier-step browsing is retained. The historical followed row is revealed within its column, and renderer acknowledgements wait for alignment. Sol bounded the current breadcrumb. The focused harness now samples stable column rectangles and uses real arrows; screenshots no longer rely on direct scroll writes. The obsolete label assertion now also verifies exact underlying query and group data. All 35 local tests and static checks pass again. Browser results for this repair are pending.
+
+**Second submission.** Corrected source `bbea3016642055722126cfa7584d24fec2cc9de2` is pushed and remotely verified. The second complete Git archive matched SHA-256 on FASRC. Job `58364357` runs all four browser suites with the stronger column checks. [Receipt](docs/evidence/q005/browser-v2-job.json).
+
+## 2026-11-06 UTC — Q-005: Verify the distinction between view state and viewport
+
+**Observed.** Job `58364357` passed the 14 stored-view and 19 interaction checks again. The reported method now has a fully visible phone column and a bounded breadcrumb; its stable geometry checks pass. Later, the focused test expected the current step after resizing while an earlier step was deliberately remembered. The renderer correctly preserved that earlier step. The legacy test also compared a full browser group against a compact MCP response that intentionally omits memberships. [Second-run evidence](docs/evidence/q005/browser-v2/).
+
+**Amendment/next.** Correct those test expectations: first verify the remembered column survives resize, then use the real arrows to verify current; request the full MCP snapshot for exact group equality. Preserve the strong visibility and full-data assertions. At root’s request, Astra removed unreadable stemmed diagnostic tokens from the visible subtitle without changing exported diagnostics. Freeze a final candidate and rerun the integrated suites. These failures do not establish a new numerical or source-data defect.

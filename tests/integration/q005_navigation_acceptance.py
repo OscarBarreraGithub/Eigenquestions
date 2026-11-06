@@ -108,6 +108,7 @@ def main():
                         const target=selector?document.querySelector(selector):null;
                         const selected=target?columns.find(column=>column.index===target.dataset.historyIndex):null;
                         sample={ms:Math.round(performance.now()-start),left,right,clientWidth:host.clientWidth,scrollLeft:host.scrollLeft,
+                                rememberedIndex:host.dataset.visibleHistoryIndex,
                                 scrollWidth:host.scrollWidth,snap:getComputedStyle(host).scrollSnapType,columns};
                         const positions=[left,right,host.scrollLeft,...columns.flatMap(column=>[column.left,column.right])];
                         stable=previous&&positions.length===previous.length&&positions.every((value,index)=>Math.abs(value-previous[index])<.25)?stable+1:0;
@@ -281,8 +282,15 @@ def main():
             page.locator('.session-tools').evaluate('(node)=>node.removeAttribute("open")')
             page.locator('#full-question-details').evaluate('(node)=>node.removeAttribute("open")')
             for width, height in [(1440, 1000), (390, 844), (320, 740)]:
+                # Resizing preserves the column deliberately reached with the
+                # arrows. Several columns can fit at desktop width, so a fully
+                # visible current column need not be the remembered arrow target.
+                remembered_index = page.locator('#columns').get_attribute('data-visible-history-index')
+                assert remembered_index is not None
                 page.set_viewport_size({'width': width, 'height': height})
-                current_visible(f'cycle view: resize to {width}px')
+                settled_columns(f'cycle view: resize to {width}px preserves column {remembered_index}',
+                                f'.miller-column[data-history-index="{remembered_index}"]')
+                assert page.locator('#columns').get_attribute('data-visible-history-index') == remembered_index
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'), f'Outer horizontal overflow at {width}px'
                 assert page.locator('.miller-column[data-current="true"] .direction').count() == 5
                 for position in ['current', 'earlier']:
@@ -295,10 +303,9 @@ def main():
                     page.screenshot(path=str(output / filename), full_page=False)
                     report['screenshots'].append(filename)
                 assert page.locator('.miller-column[data-current="false"] .direction').count() >= 5
-                # Resize starts from the current column. Deliberately viewing an
-                # earlier column is a separate user intent, not a resize defect.
-                browse_to('current', f'cycle view: {width}px return arrows')
-            passed('desktop, 390px and 320px keep the intended column fully visible after clicks, resize and settled arrow navigation; earlier alternatives remain reachable')
+                # Leave the earlier arrow target selected so the next resize
+                # explicitly exercises preservation of deliberate browsing intent.
+            passed('desktop, 390px and 320px preserve the remembered column on resize and fully reveal current or earlier choices through settled arrow navigation')
 
             # Keep this separate from the native walk: two scientific authored
             # displays can share a native canonical state. A native API return

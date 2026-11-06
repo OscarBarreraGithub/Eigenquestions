@@ -248,8 +248,7 @@ function render() {
   const sourceLink = safeUrl(knownSource?.sourceUrl || knownSource?.evidence?.url);
   $('full-question-source').hidden = !sourceLink; if(sourceLink){$('full-question-source').href=sourceLink;$('full-question-source').textContent=`Source: ${knownSource.title}`;}
   if (!draftDirty) { $('question').value = ''; $('question').placeholder = empty ? 'Physics question or concept' : 'Ask a follow-up or explore another concept'; $('intent').value = state.intent; $('lens').value = state.lens; $('work-relation').value = state.workRelation; }
-  const context = view.diagnostics?.contextTerms || [];
-  $('current-context').textContent = state.query ? `${labels[state.intent]} · ${labels[state.lens]}${state.focusIds.length ? ` · Building on ${state.focusIds.length} sources${context.length ? ` about ${context.slice(0, 3).join(', ')}` : ''}` : ' · Across the corpus'}` : 'Enter a concept or question above. This path has no inherited focus.';
+  $('current-context').textContent = state.query ? `${labels[state.intent]} · ${labels[state.lens]}${state.focusIds.length ? ` · Building on ${state.focusIds.length} ${state.focusIds.length === 1 ? 'source' : 'sources'}` : ' · Across the corpus'}` : 'Enter a concept or question above. This path has no inherited focus.';
   $('back').disabled = session.cursor === 0 || !canAttemptContinuation();
   $('broaden').disabled = !canAttemptContinuation() || (!state.focusIds.length && !state.constraints?.excludeIds?.length);
   $('path').replaceChildren();

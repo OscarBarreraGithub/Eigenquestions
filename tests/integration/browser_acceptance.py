@@ -164,7 +164,9 @@ def main():
             expected_labels=page.evaluate("async directions=>{const {displayExcerpt}=await import('/lib/protocol/presentation.mjs');return directions.map(direction=>displayExcerpt(direction.label,72))}",mobile_state['view']['directions'])
             assert page.locator('#directions h3').all_inner_texts()==expected_labels
             assert page.locator('#directions .direction').evaluate_all('(nodes)=>nodes.map(node=>node.title)')==[direction['query'] for direction in mobile_state['view']['directions']]
-            assert page.evaluate('window.eigenquestionsNavigator.export().snapshot.view.directions')==mobile_state['view']['directions']
+            mobile_full=tool('navigator_state',{'full':True})
+            assert mobile_full['session']['states'][mobile_full['session']['cursor']]['id']==mobile_state['state']['id']
+            assert page.evaluate('window.eigenquestionsNavigator.export().snapshot.view.directions')==mobile_full['view']['directions']
             page.screenshot(path=str(output / 'mobile-view.png'), full_page=True)
             page.locator('#chart').scroll_into_view_if_needed()
             page.screenshot(path=str(output / 'mobile-chart-viewport.png'), full_page=False)

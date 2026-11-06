@@ -1,0 +1,38 @@
+{
+  "request": "Q-005",
+  "jobId": "58364357",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "bbea3016642055722126cfa7584d24fec2cc9de2",
+  "archiveSha256": "705f399db5990585e1ddbcb6565cbce576c8ac764ff155d5c4f00c2adedff498",
+  "archiveHashMatched": true,
+  "submittedUtc": "2026-11-06T19:05:31.600265+00:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-005/browser-v2",
+  "statusAtReceipt": "failed",
+  "suites": [
+    "q005_navigation_acceptance.py",
+    "stored_views_browser_acceptance.py",
+    "q002_browser_acceptance.py",
+    "browser_acceptance.py"
+  ],
+  "scope": "Fresh exact source archive and real Slurm browser; focused suite uses stable column rectangles and actual arrow controls. Stored-view storage remains an HTTP adapter.",
+  "elapsed": "00:01:21",
+  "exitCode": "1:0",
+  "suiteResults": {
+    "q005": {
+      "passedBeforeFailure": 4,
+      "failure": "Resize test expected current although an earlier column was the deliberately remembered destination. Corrected test asserts that remembered column first, then navigates to current."
+    },
+    "storedViews": {
+      "passed": 14
+    },
+    "interactions": {
+      "passed": 19
+    },
+    "legacy": {
+      "passedBeforeFailure": 11,
+      "failure": "Exact full-direction comparison used compact MCP response without memberships. Corrected test requests full:true and retains exact comparison."
+    }
+  },
+  "visualObservation": "The reported method now shows a fully visible current column and readable breadcrumb on390px. All remaining screenshot widths await the corrected test."
+}
