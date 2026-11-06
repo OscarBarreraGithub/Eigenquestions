@@ -2,16 +2,17 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions — can a conversation select useful, reproducible local views of a physics graph/vector space, with about five directions at a time?
-- **Known:** V1 is live at [eigenquestions.com](https://eigenquestions.com). Questions recompute real graph/vector neighborhoods and five-direction charts. Final acceptance: 23 local tests, 19 browser checks, 9 deployed asset hashes and 32 retired-route checks. Independent agent use succeeds with deliberate context recovery.
-- **Limits:** Source-level 2D distances remain lossy; suggestions need source checking. The tested Chromium requires loopback permission for public-page attachment; same-origin local agent updates and graceful fallback are verified.
-- **Unfinished/running:** V1 implementation and acceptance are complete. No research jobs remain and no owner input is required. The completion evidence is saved and pushed; its deployment and final public hashes/routes are verified.
-- **Next:** Review a scientist-guided journey and record the next substantive request here. Stronger semantic retrieval and richer scientific relations are future research, not claims of this v1.
-- **Git:** Implementation checkpoints are on `agent/question-conditioned-navigation`; the validated release is fast-forwarded and pushed to `main` in `OscarBarreraGithub/Eigenquestions`. Coordinator: `/root`.
+- **Project/question:** Eigenquestions v2 — can the dynamic graph/vector navigator feel like the old text explorer, with classic arXiv clarity and immediate controls?
+- **Known:** Verified v1 is live. The old viewer used text/Miller columns with burgundy, white and blue links. The numerical engine and corpus can stay fixed while the interface changes. Review found draft-overwrite, dropped-action and stale-response hazards to fix.
+- **Unfinished/running:** Astra site implements; Astra protocol tests interactions; a separate Astra reviewer studies references and visual quality. No Q-002 cluster job is submitted yet. No owner answer is required.
+- **Next:** Establish the text-first layout, repair async interaction semantics, then inspect real desktop/mobile browser results and measured responsiveness.
+- **Git:** Work on `agent/arxiv-text-explorer-v2` from `4e14ab8`; use the existing repository and main deployment. Coordinator: `/root`.
 
 ## Requests
 
 **Q-001 (summary):** Replace Eigenquestions with a static, conversation-guided physics explorer. An agent navigates the real graph and embeddings through a machine-readable interface; deterministic local code recomputes a question-dependent 2D view and about five next directions. Demonstrate KK towers → dark matter → Dark Dimension, support derivation/phenomenology/recent-work intents, provide portable agent instructions, and iterate under Astra implementation with central integration review. Keep this notebook and verified Git checkpoints. [Original prompt](docs/requests/Q-001-original.md) · [Atomic plan](docs/Q-001-plan.md).
+
+**Q-002 (summary):** Make v2 a polished, text-first successor to the old viewer, with labels supplied by the new dynamic computation. Use arXiv's familiar palette/type aesthetic, a clear current path, easy New path, large discoverable controls and exceptionally smooth interactions. [Original prompt](docs/requests/Q-002-original.md) · [Atomic plan](docs/Q-002-plan.md).
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -130,3 +131,13 @@
 **Save/resume.** This ordinary Git checkpoint records completion of the bounded Q-001 v1; its push and configured deployment are verified before the completion report. The [40-requirement plan](docs/Q-001-plan.md) and [independent audit](docs/requirements-audit.md) identify evidence and limits; no cluster jobs remain running. Resume with expert-guided usage feedback rather than repeating completed extraction or geometry experiments.
 
 **Save verification amendment.** Completion checkpoint `ed6381d034dcb27103d1e7f7fc68700c2d525bc2` is verified on both remote branches; [deployment 42163657269](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42163657269) succeeded. The final public comparison again matched all 9 assets and 32 retired-route statuses. [Final receipt](docs/evidence/Q-001-final-publication.json). This closure corrects the audit's pre-save wording; it changes no runtime or public product asset. Q-001 is complete at the stated v1 scope.
+
+## 2026-11-06 UTC — Q-002: Recover the old viewer's clarity without freezing its data
+
+**Question.** What should return from the old interface, and what should remain dynamic?
+
+**Tried/contributors.** Root inspected the historical Miller-column viewer and the saved text explorer, confirmed the clean v1 repository and opened the v2 branch. Astra site owns the interface; Astra protocol reviews interaction correctness; a fresh Astra reviewer checks arXiv references and visual quality.
+
+**Observed/decision.** The old viewer supplies the intended text navigation structure. Use classic burgundy/white/blue links and familiar sans-serif typography, with more readable rows and larger controls. Current arXiv styling differs; the reference note will distinguish the classic choice from a claim of exact current-site copying. Keep the real engine/corpus and canonical sessions. Cache only actually computed historical directions; show Restore for uncached past steps. Geometry becomes secondary.
+
+**Interaction finding/next.** Current results can overwrite typed drafts; busy guards can silently drop Back/Reset, and a late worker result can overwrite a newly attached agent state. These are concrete v2 requirements, not merely cosmetic changes. Fix and test those races alongside the new design. [Q-002 plan](docs/Q-002-plan.md).
