@@ -1,0 +1,26 @@
+{
+  "request": "Q-006",
+  "jobId": "58376328",
+  "account": "randall_lab",
+  "partition": "test",
+  "runtimeCommit": "50e58042101fab5ba1ad892b2b2ba1f6ac9d08f4",
+  "releaseCommit": "edeb241d3e9232b0b037350d6175adffbc056ee5",
+  "harnessCommit": "2a6fb8968079a2a6f0276b4c0d719535162c04df",
+  "harnessSha256": "b431348918a592acc6f3ba023651f6c29c6d34c951c03a431b43c73a8e620f71",
+  "harnessHashMatched": true,
+  "submittedUtc": "2026-11-06T19:47:22.072334+00:00",
+  "origin": "https://eigenquestions.com",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-006/public-v2",
+  "statusAtReceipt": "completed_with_identified_host_beacon",
+  "scope": "Full actual public overview acceptance with sanitized network trace, narrow advertised NEL classification, and unchanged graph/API/storage isolation assertions.",
+  "elapsedSeconds": 17,
+  "checksPassedBeforeFailure": 10,
+  "observedPlatformScript": "static.cloudflareinsights.com/beacon.min.js",
+  "observedNonGet": {
+    "host": "eigenquestions.com",
+    "path": "/cdn-cgi/rum",
+    "method": "POST",
+    "contentType": "application/json"
+  },
+  "finding": "Actual browser response includes Cloudflare Web Analytics beacon; no NEL reports were seen. Narrow host-beacon classification is being added; application runtime remains unchanged."
+}

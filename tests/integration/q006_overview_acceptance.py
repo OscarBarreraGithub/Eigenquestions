@@ -321,8 +321,17 @@ def main():
                     and item.get('contentType', '').split(';')[0] == 'application/reports+json' \
                     and item.get('reportTypes') and all(kind == 'network-error' for kind in item['reportTypes']) \
                     and any(policy['group'] == 'cf-nel' and endpoint in policy['endpoints'] for policy in network_policies[page])
-            report['classifiedPlatformReports'] = [item for item, raw in zip(report['overviewRequests'], requests[page]) if is_advertised_nel(raw)]
-            assert all(item['method'] == 'GET' or is_advertised_nel(item) for item in requests[page]), report['overviewRequests']
+            observed_beacon_path = '/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092'
+            has_observed_rum_beacon = any(item['method'] == 'GET' and urlparse(item['url']).scheme == 'https'
+                and urlparse(item['url']).netloc == 'static.cloudflareinsights.com' and urlparse(item['url']).path == observed_beacon_path for item in requests[page])
+            def is_observed_rum(item):
+                parsed = urlparse(item['url'])
+                return has_observed_rum_beacon and item['method'] == 'POST' and parsed.scheme == urlparse(origin).scheme \
+                    and parsed.netloc == urlparse(origin).netloc and parsed.path == '/cdn-cgi/rum' \
+                    and item.get('contentType', '').split(';')[0] == 'application/json'
+            report['classifiedPlatformReports'] = [{**item, 'classification': 'Cloudflare RUM with observed injected beacon' if is_observed_rum(raw) else 'advertised Cloudflare NEL'}
+                for item, raw in zip(report['overviewRequests'], requests[page]) if is_advertised_nel(raw) or is_observed_rum(raw)]
+            assert all(item['method'] == 'GET' or is_advertised_nel(item) or is_observed_rum(item) for item in requests[page]), report['overviewRequests']
             assert not any(path in ['/app.js','/compute-worker.js'] or path.startswith(('/lib/','/api/')) or (path.startswith('/data/') and not path.startswith('/data/overview/')) for path in overview_paths)
             after = explorer.evaluate('({capsule:window.eigenquestionsNavigator.export(),revision:window.eigenquestionsNavigator.read().revision,local:{...localStorage},session:{...sessionStorage},draft:document.querySelector("#question").value})')
             assert after == before

@@ -4,8 +4,8 @@
 
 - **Project/question:** Eigenquestions. Q-005 repairs startup/repeated paths; Q-006 adds a separate fixed, zoomable overview for a collaborator demo.
 - **Known:** Q-005 passes 35 local and 57 browser checks, with desktop/phone visual approval; release `f0e782d` deployed successfully. The actual IAIFI renderer is verified. A pinned existing question map covers 8,473 excerpts from 6,477 papers with a shallow, overlapping hierarchy.
-- **Unfinished/running:** Q-006 passes 43 local tests, 12 overview browser checks and 10 navigation regression checks. Q-005 is verified live with 43 public browser checks. No validation job remains running; publication is next. Hosted storage remains inactive; this addition needs no hosted compute or storage API.
-- **Next:** Publish the accepted fixed overview and verify its public assets and browser behavior. [Q-006 plan](docs/Q-006-plan.md).
+- **Unfinished/running:** Q-006 passes 43 local tests, 12 overview browser checks and 10 navigation regression checks. Q-005 is verified live with 43 public browser checks. The map is live; job `58376328` performs the final public browser check. Hosted storage remains inactive; this addition needs no hosted compute or storage API.
+- **Next:** Finish the public browser record and save closure. [Q-006 plan](docs/Q-006-plan.md).
 - **Git:** Main and the working branch contain `f0e782d`; new overview work stays on the working branch until verified. Coordinator `/root` owns checkpoints/release.
 
 ## Requests
@@ -431,3 +431,7 @@
 **Public identity verified.** Deployment `42282030920` succeeded. All 22 public asset hashes match the accepted build, including the canonical overview HTML/JS/CSS/data; all 32 retired-route checks pass. The live map is [eigenquestions.com/overview](https://eigenquestions.com/overview). Slurm job `58375066` exercises the actual public UI. [Publication evidence](docs/evidence/q006/publication-v1.json) · [public browser receipt](docs/evidence/q006/public-v1-job.json).
 
 **Public browser finding.** Job `58375066` passed ten map/render/input checks, then stopped on the blanket assertion that all page-associated requests use GET. The public response advertises Cloudflare Network Error Logging, absent from the local server; the failed report did not retain the request trace. Add that trace and distinguish proven browser/platform reports from application data/API traffic, preserving all explorer-isolation assertions. No application runtime change is justified yet. [First public evidence](docs/evidence/q006/public-v1/).
+
+**Public rerun.** Job `58376328` uses hash-matched harness `2a6fb89` against the unchanged live release. Network evidence is saved before assertions, and only a POST with Cloudflare NEL endpoint, declared document policy, correct MIME type and network-error-only payload is classified as a platform report. Unknown POSTs and any graph/API or explorer-state side effects still fail. [Receipt](docs/evidence/q006/public-v2-job.json).
+
+**Amendment from the actual network trace.** Job `58376328` passed the same ten public UI checks. Its saved trace identifies Cloudflare Web Analytics, not NEL: an injected `static.cloudflareinsights.com/beacon.min.js` script POSTs JSON to the same-origin `/cdn-cgi/rum`. The source HTML and curl response do not include that injected script, so those checks alone did not reveal it. This is existing host telemetry, not graph computation or a submitted map view. Recognize only that proven script/endpoint combination in the browser harness and retain unknown-request/API/state checks. Do not change hosting configuration as part of this demo. [Trace](docs/evidence/q006/public-v2/q006_overview_acceptance/q006-overview-acceptance.json).
