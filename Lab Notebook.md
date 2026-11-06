@@ -4,9 +4,9 @@
 
 - **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
 - **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
-- **Unfinished/running:** Implementation and 35 local tests pass; final browser harness checks are being prepared. No Slurm job yet. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
+- **Unfinished/running:** Implementation and 35 local tests pass. Slurm job `58361795` is validating frozen source `d87bb2b` with four browser suites. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
 - **Next:** Freeze the repaired entry/choices/return behavior and verify the reported journey in a real browser, including authored-history safety and phone layouts. [Q-005 plan](docs/Q-005-plan.md).
-- **Git:** Starting from clean published `8a9a00d` on main and `agent/stored-views-quiet-ui`; coordinator `/root` owns checkpoints and release.
+- **Git:** Prototype `d87bb2b` is pushed and verified on `agent/stored-views-quiet-ui`; the public site is still the earlier version. Coordinator `/root` owns checkpoints and release.
 
 ## Requests
 
@@ -351,3 +351,5 @@
 **Observed.** All 35 local Node/Worker/protocol tests pass, with 71 built assets and 41 verified corpus shards. Six real selections now retain five unique history states and recognize two return visits; full method text and numerical computation remain unchanged. A stale built helper initially failed the publication test; rebuilding resolved it. Build precedes tests in the documented verification order. [Local validation](docs/evidence/q005/local-validation.json).
 
 **Meaning/next.** This fixes exact repetition and presentation, not all semantic redundancy or the synthesis of higher-level research questions. Preserve old session data and mark older recorded returns; do not rewrite scientific history. Freeze this prototype and run the reported path plus existing race/authored-view suites in Slurm Chromium, then inspect the screenshots before publishing.
+
+**Browser submission.** Frozen source `d87bb2b0e2b6e88765e2d3158275fb49c5885684` is pushed and remotely verified. Its Git archive matched SHA-256 on FASRC before extraction; Slurm job `58361795` runs the new regression and three existing browser suites. No browser outcome is claimed yet. [Receipt](docs/evidence/q005/browser-v1-job.json).

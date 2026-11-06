@@ -1,0 +1,19 @@
+{
+  "request": "Q-005",
+  "jobId": "58361795",
+  "account": "randall_lab",
+  "partition": "test",
+  "sourceCommit": "d87bb2b0e2b6e88765e2d3158275fb49c5885684",
+  "archiveSha256": "bd5557ede376c17fbd602bf3515f0e326fda5184ba34b6f3773b235b7f80e324",
+  "archiveHashMatched": true,
+  "submittedUtc": "2026-11-06T18:56:17.804622+00:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions/Q-005/browser-v1",
+  "statusAtReceipt": "submitted",
+  "suites": [
+    "q005_navigation_acceptance.py",
+    "stored_views_browser_acceptance.py",
+    "q002_browser_acceptance.py",
+    "browser_acceptance.py"
+  ],
+  "scope": "Frozen source; Slurm Chromium with real browser worker. Stored-view suite uses an HTTP adapter, not production R2."
+}
