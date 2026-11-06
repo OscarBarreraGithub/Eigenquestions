@@ -5,8 +5,9 @@ This audit distinguishes owner requirements from implementation choices and pres
 Current conclusion: the scoped v1 passes integrated acceptance (19 final browser
 checks, 9 deployed asset hashes, 32 retired-route checks). Direct public-to-loopback
 attachment was denied by the tested browser; the verified same-origin companion
-and graceful public fallback are the supported path. The final evidence save is
-the coordinator's remaining action. See the final acceptance entry below.
+and graceful public fallback are the supported path. Completion evidence was
+saved and remotely verified at `ed6381d034dcb27103d1e7f7fc68700c2d525bc2`; its
+configured deployment succeeded. See the final acceptance entry below.
 
 | Distinct request clause | Plan coverage | Interpretation / acceptance risk |
 |---|---|---|
@@ -323,6 +324,9 @@ ON/USING roles, method-selection drift and untested permission-granted public
 attachment remain explicit product limits, not hidden completion claims.
 
 No further implementation blocker or omitted original requirement was found.
-The coordinator's remaining action is the ordinary final evidence/notebook/doc
-checkpoint and remote-SHA verification; this audit does not claim that future
-save has already happened.
+The coordinator completed the ordinary evidence/notebook/doc checkpoint at
+`ed6381d034dcb27103d1e7f7fc68700c2d525bc2`, verified both remote branches, and
+confirmed deployment workflow `42163657269` succeeded. The final repeated
+[publication check](evidence/Q-001-final-publication.json) matched all nine assets
+and retired all 32 checked routes. This dated closure records the save after it
+happened; no implementation or acceptance action remains.
