@@ -1,0 +1,48 @@
+{
+  "input": "axion-ede-snapshot.json",
+  "sizes": {
+    "jsonBytes": 118797,
+    "rawBase64urlBytes": 158396,
+    "deflateBytes": 29974,
+    "deflateBase64urlBytes": 39966,
+    "brotliBytes": 21744,
+    "brotliBase64urlBytes": 28992,
+    "rawWholeUrlBytes": 158431,
+    "deflateWholeUrlBytes": 40001,
+    "brotliWholeUrlBytes": 29027,
+    "smallestBudgetBytes": {
+      "raw": null,
+      "deflate": null,
+      "brotli": null
+    }
+  },
+  "counts": {
+    "sources": 64,
+    "groups": 5,
+    "edges": 134
+  },
+  "retained": "All selected IDs/order, all dynamic source fields/scores/work relations, all graph edges/types/weights/evidence links, all directions with exact labels/queries/members/seeds/properties, complete affine plane center+basis and projection diagnostics/warnings, normalized continuation state and computation/corpus identities.",
+  "omitted": {
+    "nodeFields": [
+      "paperId",
+      "title",
+      "label",
+      "sourceUrl",
+      "year",
+      "date",
+      "lens",
+      "evidence"
+    ],
+    "chartFields": [
+      "groupCentroids[].centroid"
+    ],
+    "history": "Prior session states/cursor and UI revision omitted; only current canonical continuationState retained."
+  },
+  "hydration": {
+    "fullViewJsonExactlyEqual": true,
+    "sha256": "c197319fceedbc264b13241ef3bdf78ff3a3361737f03301c3d1afcc13d20f62",
+    "requires": "Matching pinned corpus for node metadata and source vectors; existing weighted-mean formula/member order for centroids. No retrieval or PCA rerun needed for display.",
+    "continuation": "Preserves v1 next-action inputs. Does not preserve prior Back/replay history, agent reasoning, custom continuation semantics, or prove sufficient context beyond v1."
+  },
+  "notice": "Measurement-only serialization, not a production schema or implemented URL transport. JSON numbers retained at original precision."
+}

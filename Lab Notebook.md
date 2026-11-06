@@ -4,15 +4,17 @@
 
 - **Project/question:** Eigenquestions. V2 text-first interface is live; Q-003 asks what structured object lets an agent orient itself and deliver a reproducible view to the browser, potentially through a URL.
 - **Known:** V2 passed 23 Node tests, 19 public v2 browser checks and 19 retained/public checks. Public assets match the release. The same deterministic engine/corpus are preserved.
-- **Unfinished/running:** No cluster jobs remain running. Q-003 is architecture discussion only; no new agent API/URL protocol has been implemented. The owner is clarifying agent-computed neighborhood/plane objects versus browser reconstruction.
-- **Next:** Refine and save the mathematical view contract, preserving independent agent research and the distinction between discovery, computation and delivery.
-- **Git:** V2 release `dbb7d0e` is verified on main and deployed. Coordinator `/root`; Astra owns implementation.
+- **Unfinished/running:** No cluster jobs remain running. Q-003 is architecture and measurement only; no new agent API/URL protocol is implemented. The full contextual view includes grouping, labels, relations and continuation context; a matrix alone is insufficient.
+- **Next:** Review the contextual-view proposal and size measurements; implement only after the transport/continuation contract is settled. Preserve independent agent research.
+- **Git:** V2 closure `2929dd4` is verified on main and deployment succeeded. Q-003 discussion branch: `agent/contextual-view-contract-q003`. Coordinator `/root`; Astra owns implementation.
 
 ## Requests
 
 **Q-001 (summary):** Replace Eigenquestions with a static, conversation-guided physics explorer. An agent navigates the real graph and embeddings through a machine-readable interface; deterministic local code recomputes a question-dependent 2D view and about five next directions. Demonstrate KK towers → dark matter → Dark Dimension, support derivation/phenomenology/recent-work intents, provide portable agent instructions, and iterate under Astra implementation with central integration review. Keep this notebook and verified Git checkpoints. [Original prompt](docs/requests/Q-001-original.md) · [Atomic plan](docs/Q-001-plan.md).
 
 **Q-002 (summary):** Make v2 a polished, text-first successor to the old viewer, with labels supplied by the new dynamic computation. Use arXiv's familiar palette/type aesthetic, a clear current path, easy New path, large discoverable controls and exceptionally smooth interactions. [Original prompt](docs/requests/Q-002-original.md) · [Atomic plan](docs/Q-002-plan.md).
+
+**Q-003 (summary):** Let agents consult the physics graph as an optional supplement to their ordinary independent research, discoverable by name and useful without a local installation when their tools permit it. Preserve the original agent → structured scientific object → deterministic computation → browser rendering model. Evaluate URL delivery of agent-computed views while retaining context-dependent grouping, labels, relations, changing depth and enough state to continue; do not assume a matrix or main node encodes the full organization. [Proposal](docs/Q-003-contextual-view-proposal.md).
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -201,3 +203,25 @@
 **Observed.** Public job `58208591` completed in 2m06s, exit 0. All 19 v2 checks and 19 retained/public checks pass against the actual domain, including independent browser computation, guarded live-agent updates, replay/import, source reveal, historical branching, mobile settings, geometry legibility and permission-blocked companion recovery. The public first-load measurement was 9.285s; warm presentation p95 was 30.1ms with no observed long tasks in that sample. These are measurements on the tested headless environment, not promises for every connection. [V2 public report](docs/evidence/q002/public-v1/q002-browser-acceptance.json) · [retained/public report](docs/evidence/q002/public-v1-legacy/browser-acceptance.json).
 
 **Outcome.** Q-002 is complete at the requested v2 scope: a live text-column explorer, classic arXiv visual treatment, clear path/New path, large controls and tested asynchronous behavior. All release assets and retired routes match. No cluster job is left running. Q-003 discussion continues separately; it must preserve the original agent → structured object → deterministic computation → rendered view architecture.
+
+## 2026-11-06 UTC — Q-003: Correct the object before choosing its transport
+
+**Question.** Can an agent compute a contextual view and send it through a URL without losing the nontrivial organization described in Q-001?
+
+**Tried/contributors.** Root reread the original request. Astra protocol inspected actual state/view exports and measured real payloads; a separate Astra reviewer audited mathematical sufficiency and path dependence. Root first described selected nodes and an affine plane, then corrected that simplification after the owner emphasized names, clusters and context-relative depth.
+
+**Observation/interpretation.** A plane only specifies geometry. A complete view also needs selected sources, possibly overlapping groups, labels, typed relations, evidence, available next actions and continuation context. A compact recipe is sufficient only when the pinned builder can reconstruct every omitted decision. Today's query/intent/source-anchor state exactly determines today's frozen algorithm; that fact does not establish adequate memory for the broader scientific navigator. Model-generated decisions must be captured as accepted outputs, not assumed reproducible by rerunning a model.
+
+**Decision/proposal.** Make the complete contextual object authoritative. Distinguish display, deterministic reconstruction and continuation. Treat URL encoding as an optional transport/optimization; use reference-based compact objects when metadata already exists in the pinned corpus, and a full object/file or existing agent bridge when a URL cannot carry it. No arbitrary code belongs in the URL. The proposal remains unimplemented while this discussion settles the contract.
+
+**Existing gaps.** Share focus encodes only current state and is read only at startup, so a fragment-only change in an already open tab currently does nothing. Encoding has no matching size check for the decoder's 16,000-character limit. Export view includes a computed result, but import restores its session and recomputes; there is no generic agent-authored contextual-view importer. These are recorded implementation findings, not completed repairs.
+
+**Save context.** V2 closure `2929dd491d4f0c6476d1a5e9cfb0e5f86f2e0be6` is verified on remote main; [deployment 42169887099](https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/42169887099) succeeded. Q-003 adds no product changes yet.
+
+## 2026-11-06 UTC — Q-003: Measure what a URL would have to carry
+
+**Observed.** Astra protocol measured eight real views. Current recipes are 518–999 JSON bytes and 451–781 bytes as strongly compressed, URL-encoded payloads with a short prefix. Complete computed views require 80,850–102,746 encoded bytes; a lean source-referencing result still uses 29,027. A nine-state current-algorithm session fits 1,922 encoded bytes. All eight small recipes exactly replay today's view JSON in a second navigator; a lean result also hydrates exactly from the pinned corpus without repeating retrieval/PCA. [Measurements](docs/evidence/q003/size-study/report.json) · [retained/omitted fields](docs/evidence/q003/size-study/lean-result.json).
+
+**Meaning.** These are measured examples, not lower bounds or universal URL limits. Small links work when shared data and a deterministic builder supply the omitted information. Arbitrary new labels, groups, relations or context cannot be recovered unless recorded or specified reproducibly. The independent audit distinguishes displaying a view, reconstructing it and continuing from it; only the last requires sufficient scientific continuation context. The authoritative representation must be the complete contextual object, with URL delivery optional. [Proposal and next checks](docs/Q-003-contextual-view-proposal.md).
+
+**Status.** This checkpoint saves the discussion, failed matrix-only simplification, actual size evidence and bounded next steps. No new view protocol, agent-written grouping importer or URL update loader is claimed implemented.
