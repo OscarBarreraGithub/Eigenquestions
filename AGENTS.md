@@ -23,8 +23,8 @@ and local agent share the deterministic geometry engine and canonical session.
   notebook, request plan, commits, checkpoint pushes and release. Implementation
   agents report evidence and blockers without committing or deploying separately.
 - Record meaningful changes in the notebook with the request ID and evidence.
-  Checkpoint commit bodies include the active request (`Request: Q-003` and/or
-  `Request: Q-004`), the agent tag and contributors.
+  Checkpoint commit bodies include the active request (currently `Request: Q-005`),
+  the agent tag and contributors.
   Preserve unrelated work and verify the remote SHA after each authorized push.
 - Browser QA limitations must remain explicit. A successful HTTP check does not
   establish browser behavior or public HTTPS-to-loopback compatibility.

@@ -2,11 +2,11 @@
 
 ## Now
 
-- **Project/question:** Eigenquestions. Q-004's quiet text interface is live. Q-003's complete agent-authored view now survives file, browser and continuation workflows; hosted sharing awaits activation.
-- **Known:** All 32 Node/Worker tests, 52 public browser checks and 14 final focused public checks pass. Sol approved desktop/phone layouts. All 16 deployed asset hashes and 32 retired routes match. Storage tests use local emulation/browser adapters, not live R2.
-- **Unfinished/running:** No jobs for this update remain running. Hosted storage is inactive: the Cloudflare connector requires approval, but this session's approval policy is `never`. No bucket/subscription changed; the public API honestly returns 503 with file guidance.
-- **Next:** Once connector access is enabled, inspect actual account allowances, activate the dedicated R2/SQLite profile through the existing workflow, and verify durable save/retry/open plus production CPU. [Activation instructions](docs/stored-views-operations.md). Do not bypass the access restriction.
-- **Git:** Released runtime `7600613` is on main and `agent/stored-views-quiet-ui`; deployment `42183241426` succeeded. This closure preserves final evidence and the remaining prerequisite. Coordinator `/root`; Astra/Sol implemented and independently reviewed the work.
+- **Project/question:** Eigenquestions, Q-005: why does home resume a long KK method, why is it repeated, and what alternatives were available along the path?
+- **Known:** Bare startup restores saved state automatically; source selection uses the full method as its canonical query. That query is repeated by multiple UI elements. The reported paragraph is one method unit from paper 1303.2661. Actual user browser storage has not been inspected.
+- **Unfinished/running:** Astra is repairing entry/history behavior, Sol is refining the text interface, and an independent Astra audit is checking real-data repetition. No Slurm job yet. Q-003 hosted storage remains inactive under the previously recorded connector approval restriction.
+- **Next:** Separate concise display labels from full scientific context; expose explicit Resume and actual alternatives at each visited step, then verify the reported journey in a real browser. [Q-005 plan](docs/Q-005-plan.md).
+- **Git:** Starting from clean published `8a9a00d` on main and `agent/stored-views-quiet-ui`; coordinator `/root` owns checkpoints and release.
 
 ## Requests
 
@@ -17,6 +17,8 @@
 **Q-003 (summary):** Let agents consult the physics graph as an optional supplement to their ordinary independent research, discoverable by name and useful without a local installation when their tools permit it. Preserve the original agent → structured scientific object → deterministic computation → browser rendering model. Evaluate URL delivery of agent-computed views while retaining context-dependent grouping, labels, relations, changing depth and enough state to continue; do not assume a matrix or main node encodes the full organization. [Proposal](docs/Q-003-contextual-view-proposal.md).
 
 **Q-004 (summary):** Implement Q-003's stored-view proposal, preserve the vision and a concise future showcase of the mechanism, fix the KK-to-restored-topic startup jump, and have Sol agents iterate toward a familiar, minimal, sharp text-first interface with less competing for attention. [Original request](docs/requests/Q-004-original.md) · [Joint atomic plan](docs/Q-003-Q-004-implementation-plan.md).
+
+**Q-005 (summary):** Fix the unsolicited start at the long KK one-loop method, repeated copies of that paragraph, and unclear adjacent choices at each visited level. Keep full scientific context while making navigation concise and each branch understandable. [Atomic plan](docs/Q-005-plan.md).
 
 ## 2026-11-06 UTC — Q-001: Establish the project and the intended change
 
@@ -323,3 +325,13 @@
 **What remains.** Hosted shared links are not active. The configured Cloudflare connector refused account discovery with “MCP tool call requires approval, but approval policy is never.” The implementation, admission limits, activation profile and verification procedure are ready; enabling connector access is the remaining owner-dependent prerequisite. After activation, test real durable storage and production CPU before claiming live/free-tier sharing. Existing D1 and unrelated cluster work were untouched; no job for this update remains running.
 
 **Save.** The vision, exact latest request, atomic requirements, useful failed approaches, independent reviews and mechanism showcase are in the project. This ordinary Git checkpoint includes closure/evidence only; runtime assets are unchanged from the verified release. Push both agreed branches and verify their remote heads before reporting completion. [Showcase](docs/contextual-view-showcase.md) · [reproducible plan/status](docs/Q-003-Q-004-implementation-plan.md).
+
+## 2026-11-06 UTC — Q-005: Separate source descriptions from navigation
+
+**Question.** Is the repeated KK paragraph a hardcoded default, duplicated corpus evidence, or navigation state rendered in several places?
+
+**Observed.** The bare-home route implicitly restores a saved capsule/session/companion. Native direction selection uses the representative source's full description as the next query; the renderer repeats it in several places. The exact paragraph is a method extraction for paper 1303.2661. We have not inspected the user's browser storage or yet established whether successive groups also repeat semantically.
+
+**Amendment to Q-004.** The earlier startup correction removed the hardcoded first KK view and its subsequent jump. It did not remove automatic resumption on a bare visit. Q-005 changes that policy to explicit Resume; the earlier clean-profile tests did not cover this expectation.
+
+**Tried/next.** `/root` assigned Astra controller/history work, Sol interface refinement and an independent Astra real-data audit with shared requirements. Preserve full queries and evidence while shortening their display, and show the actual alternatives and choice taken at each step. A prior failed query-shortening experiment rules out treating this as a casual scientific-input edit. [Plan](docs/Q-005-plan.md). No implementation or new browser validation is claimed at this checkpoint.
