@@ -32,9 +32,11 @@ it in a fresh browser, and compare the labels and evidence. Explain separately
 which actions can continue from this object: displaying a saved result does not
 guarantee that every outside builder's algorithm can be rerun locally.
 
-**Status, 2026-11-06:** the previous explorer already computes contextual directions
-from the frozen source-linked corpus. Faithful full-view import, upload/link
-delivery and the quieter interface are being implemented and tested under the
-[joint plan](Q-003-Q-004-implementation-plan.md). Live hosted storage activation
-is blocked by connector approval; no live upload claim is made yet. The final
-verification entries in [the notebook](../Lab%20Notebook.md) are authoritative.
+**Status, 2026-11-06:** full-view import/export, file drop, contextual history,
+read-only agent orientation and the quieter interface are implemented. The final
+14 browser view checks pass, alongside 32 Node/Worker tests and the retained
+interaction/geometry suites. [Evidence](evidence/q004/final-v1/stored-views-browser-acceptance.json).
+Upload/link delivery passes browser HTTP-adapter and local durable-storage tests;
+live hosted storage activation is blocked by connector approval. Do not present
+public saving as active yet. Publication status and the remaining activation step
+are recorded in [the notebook](../Lab%20Notebook.md).

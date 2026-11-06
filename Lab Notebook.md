@@ -3,9 +3,9 @@
 ## Now
 
 - **Project/question:** Eigenquestions. Implement the authorized Q-003 stored-view journey and Q-004 quieter text interface. Can an agent's complete contextual view travel intact into a responsive browser?
-- **Known:** The quiet visual prototype passed Slurm capture with no page errors, overflow or measured sub-44px controls. Integrated Node/Worker tests pass 32/32 and both deployment profiles package locally. These do not establish live stored sharing.
-- **Unfinished/running:** Integrated browser job `58241697` tests frozen source `3fe979f`; visual job `58236895` is complete. Portable-skill and public-test updates are saved for the next checkpoint. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
-- **Next:** Inspect all four browser-suite reports and revised screenshots, fix observed failures, then release the verified frontend. Preserve exact authored scientific decisions.
+- **Known:** Integrated browser source `3fe979f` passed 45 checks and 18 captures; Sol approved the ordinary interface. Current Node/Worker tests pass 32/32; both deployment profiles package locally. These do not establish live stored sharing.
+- **Unfinished/running:** Final bounded stored-view job `58243580` tests remotely verified source `a00c40e`. Cloudflare account discovery is approval-blocked, so hosted storage activation is pending; no subscription/bucket changed.
+- **Next:** Inspect the final anchor/drop check, publish the verified frontend through the existing workflow, and verify the actual public domain. Storage needs authorized account access and a separate live save/open/CPU check.
 - **Git:** Working branch `agent/stored-views-quiet-ui`, from remotely verified Q-003 research checkpoint `31aaa00`. Coordinator `/root`; agents own implementation. Existing main deployment remains authorized.
 
 ## Requests
@@ -291,3 +291,11 @@
 **Visual decision.** Root and independent Sol approve the revised ordinary interface at desktop, 390px and 320px. Phone controls fit the Step header without squeezing the question. The empty page is compact and the blank historical column is gone. [Final visual review](docs/Q-004-ui-review.md) · [phone](docs/evidence/q004/integrated-v1/visual-artifacts/dark-matter-390.png) · [empty path](docs/evidence/q004/integrated-v1/visual-artifacts/new-path-390.png).
 
 **Final bounded correction.** An external continuation now checks that its source anchors actually exist before native computation; the native engine's warning-and-ignore behavior is insufficient for an authored scientific action. Authored snapshots also report source descriptions rather than inventing paper counts from missing IDs, and omit unavailable continuation instructions. The final harness adds actual drag-and-drop and invalid-anchor rejection. All 32 local tests/build/shard checks pass again. Recheck this bounded stored-view journey, then publish; no more visual redesign is planned.
+
+**Final submission.** Checkpoint `a00c40eddb96da392f60f19dcd07b012c412a091` is pushed and remotely verified, including portable instructions and expanded publication checks. Job `58243580` runs the revised stored-view harness from its exact hash-matched archive. [Receipt](docs/evidence/q004/final-v1-job.json).
+
+## 2026-11-06 UTC — Q-003 / Q-004: Approve the frontend release
+
+**Observed.** Final job `58243580` completed in 24 seconds, exit 0; all 14 checks pass with no page errors. Actual drop, unavailable anchor rejection, exact authored history, no-corpus display, empty startup and guarded independent imports all pass. [Final report](docs/evidence/q004/final-v1/stored-views-browser-acceptance.json). The existing 19 interaction and 14 retained local checks remain valid; the final changes are limited to authored-view handling and tested wording.
+
+**Release decision.** Publish the verified frontend through the existing main workflow, using the default profile with no storage bindings. This does not provision R2 or bypass the blocked connector. The live API must honestly report unavailable storage, while file import/export and page-agent navigation work. Verify the public assets, retired routes, actual API response and public browser behavior before closure. [Showcase note](docs/contextual-view-showcase.md) now distinguishes implemented/tested behavior from pending live sharing.

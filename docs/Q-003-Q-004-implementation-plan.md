@@ -71,3 +71,24 @@ On 2026-11-06 the Cloudflare connector rejected account discovery with
 credential path will be used. Implementation/testing and the existing authorized
 site deployment can proceed. Hosted upload activation remains a separate final
 step until the restriction is resolved; no subscription has been changed.
+
+## Verification checkpoint, 2026-11-06
+
+- Source `3fe979f`: all four Slurm suites pass (12 view checks, 19 interaction
+  checks, 14 retained scientific/agent checks, 18 visual captures). Independent
+  Sol visual review approves the ordinary interface. This covers U01–U05 and
+  the integrated rendering/navigation portions of S01–S12.
+- Source `a00c40e`: the final 14 view checks also pass, adding actual file drop,
+  invalid authored-anchor rejection and honest source counts. No corpus is
+  downloaded to display a complete stored view. Local code tests pass 32/32.
+- Backend tests exercise durable emulated R2/SQLite, concurrent identical saves,
+  failure/retry, admission limits and restart behavior. Both profiles package.
+  S06/S07/S13 still require **real account activation and live save/open/CPU
+  verification** before hosted sharing is declared operational.
+- S14 public release verification is next; D01/D02 are saved with the notebook,
+  showcase, evidence and remotely verified Git checkpoints.
+
+Evidence: [final view report](evidence/q004/final-v1/stored-views-browser-acceptance.json),
+[integrated reports](evidence/q004/integrated-v1), [visual review](Q-004-ui-review.md),
+[activation procedure](stored-views-operations.md). These are observed checks,
+not a claim that external builders' science is verified or universally replayable.
