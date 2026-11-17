@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "q025-successor-preflight/1",
+  "campaignSha256": "a02112b00435a7c2c13c8043df968385625e2cfe32f9ad2ee467df3f6cf9a16a",
+  "runnerSha256": "3185a3ee251d366d50add2176592e1b0193b57fbe076d3f83168a7504a97defd",
+  "nativeLaunches": 0,
+  "sourceHashVerification": "Every actually materialized excerpt and archived source file verified by the same dispatch function. Future dependency-bearing packets are compiled and checked only after their receipts exist.",
+  "actualJobDirectoriesMaterialized": 0,
+  "results": [
+    {
+      "jobId": "canonical-fields-control-statistics-challenge",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "80160a02757e569a00373cb17de160fd19aa034a04b43c8a525d6ebd91d8c5ef",
+      "promptSha256": "43e60f0783fdefbc42cbe97b83a757a4e557d961a63c1ac18ba0de6d88a437fa",
+      "schemaSha256": "29366c682ec0d6ec50d8232da1ef493fb776966696429323ad64edb580167015",
+      "sourceUnitCount": 86,
+      "primaryExcerptCount": 68,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 484794,
+        "schemaCharacters": 1430,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 218075
+      }
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": "q025-reconciliation-refresh/4",
+  "status": "incremental_nomination_and_screen_queue_not_scientific_admission",
+  "registry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v4-20261117T131639Z.json",
+    "sha256": "8fec0de5da3901625e4fea16240d4a487878b7b6c803c29a3e3893dc89c1fe7e",
+    "bytes": 70417256
+  },
+  "currentCandidates": {
+    "path": "research/q025/assembly/outputs/scope-candidates-v4/candidates.json",
+    "sha256": "23a39560ee95e549cd3c1a85a1d9a66a785f2dbcf629c59fe2b4914075fcf65b",
+    "bytes": 9558242
+  },
+  "combinedContinuation": {
+    "path": "research/q025/geometry/canonical-review-design/continuation-v4-index.json",
+    "sha256": "f77189d59d6bf40d57d00f93aab3158af7f0fd303e7241cc731a69043e90587f",
+    "bytes": 669174
+  },
+  "coverage": {
+    "registryScopes": 1740,
+    "newRegistryCandidateIds": 628,
+    "selectedUniqueReviewLineages": 229,
+    "duplicateCanonicalReviewKeys": 0,
+    "completedScreenFamilies": 4,
+    "completedComparisonsExcluded": 375,
+    "completedOriginalWorkloadIds": 375,
+    "allWorkloadIdsNowCoveredByCompletedPairs": 375,
+    "priorRichPilotPairIdsStillDeferred": [
+      "scope-nomination:10036992003da27caf8a7da6",
+      "scope-nomination:2412efac903c15d58a19c1b4",
+      "scope-nomination:2cdf5678c206a92f23f3b1b7",
+      "scope-nomination:309f2613b219a7a40d05ce65",
+      "scope-nomination:381386d524bc5812b4328837",
+      "scope-nomination:3ecadaa8fff3d75455224374",
+      "scope-nomination:72186f67a7b8ca74ab6bd2a8",
+      "scope-nomination:78dafbe268cd19728899a8d4",
+      "scope-nomination:95b5c3a710574629f4ab9a95",
+      "scope-nomination:97246ec3fea96de5e55e5b54",
+      "scope-nomination:ac7ed3c1cdc9c2978a43b8d1",
+      "scope-nomination:b6c4e83c086e9e8164df29bd",
+      "scope-nomination:be84bda9bfa56c8e97243d21",
+      "scope-nomination:bf29f6dcd88d5a11dd3ecca6",
+      "scope-nomination:c6ca0bcd10381b132b83c75a",
+      "scope-nomination:d2cb46c36df47dde1f9045ea",
+      "scope-nomination:d469bc40093a52e2ce7a5ed4",
+      "scope-nomination:e101dffa583f041006d412db"
+    ],
+    "priorRichPilotPairsPresentInCurrentNominationSet": 18,
+    "pendingUniqueComparisons": 7907,
+    "pendingOriginalWorkloadIds": 7923,
+    "oldPendingComparisonsRetained": 3778,
+    "newComparisonKeysBeyondOldQueuedUniverse": 4129,
+    "pendingScopeAccountingAnchors": 1725,
+    "scopesAccountedIncludingCompletedOrPriorPilot": 1740,
+    "currentUnmatchedScopes": 158,
+    "acceptedScientificDecisions": 0,
+    "primaryReadingClaims": 0,
+    "omittedScopeDefinitions": 0,
+    "truncatedSourceDescriptions": 0,
+    "pairedUnitNotesOmittedFromViews": true
+  },
+  "admittedCalibrationScopeComparisons": {
+    "pairs": 45,
+    "withExactSharedUnit": 33,
+    "meaning": "Formerly missing source leaves now have completed pairs; exact IDs join. Shared source still does not prove equivalence.",
+    "sourceGroundedNominations": [
+      {
+        "id": "scope-nomination:329b41d956b7bd67a4bb7e7f",
+        "recordIds": [
+          "leaf-0403944f92af04eaed4a-challenge:p5",
+          "admitted:q-kk-graviton-threshold-decay"
+        ],
+        "admittedDestinationIds": [
+          null,
+          "q-kk-graviton-threshold-decay"
+        ],
+        "sharedUnitIds": [
+          "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+          "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60",
+          "unit:c667eaad26bf24f79ac000d31da08a2e1f6be8c980569251185cfd41bfdc3ae2"
+        ],
+        "definitions": [
+          {
+            "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+            "question": "What threshold law controls intra-tower KK-graviton decays, and what does it imply for cascading dark matter and for freeze-in populations even when KK gravitons are not dark matter?",
+            "summary": "The 2026 sources report momentum-suppressed threshold rates and challenge earlier fast-cascade estimates. Their amplitude domains and cosmological applications differ; flat-dimension exclusions do not establish exclusion of every warped model.",
+            "scope": {
+              "systems": [
+                "Five-dimensional KK-graviton towers",
+                "Cascading graviton dark matter",
+                "Freeze-in gravitons"
+              ],
+              "targets": [
+                "Three-point amplitude scaling",
+                "Partial waves",
+                "Cascade viability",
+                "Reheating and radius constraints"
+              ],
+              "regimes": [
+                "Near threshold with comparable daughter masses",
+                "Specified warped scalar–gravity constructions",
+                "Flat Dark Dimension cosmological applications"
+              ],
+              "assumptions": [
+                "The broad amplitude claim is bounded by the stated diffeomorphism-invariant two-derivative scalar–gravity setting and treatment of fields and branes.",
+                "The irreducible-population constraint uses the stated freeze-in history and reheating bounds.",
+                "The earlier s-wave estimate is a rejected comparator in these sources."
+              ],
+              "conventions": [
+                "Distinguish daughter momentum from parent mass.",
+                "Distinguish a partial decay rate from a summed cascade history.",
+                "The freeze-in constraint does not require KK gravitons to constitute dark matter."
+              ],
+              "includes": [
+                "Covariant vertex cancellations",
+                "Reported d-wave law",
+                "Conditional flat-dimension viability limits"
+              ],
+              "excludes": [
+                "A universal no-go for all gravitational interactions or compactifications",
+                "Certification of the announced general proof",
+                "Importing the unsupplied companion-paper analysis of warped viability"
+              ]
+            },
+            "readingLimit": "Bounded pages from 2609.36234 and 2610.01825v1, the latter dated 1 Oct 2026. Complete derivations, appendices, figures and the companion paper are absent; broad and exclusion claims remain attributed to these sources."
+          },
+          {
+            "title": "How fast can a KK graviton decay near threshold?",
+            "question": "How does an intra-tower KK-graviton decay amplitude and rate scale with daughter momentum near threshold, and which background or coupling assumptions control that scaling?",
+            "summary": "A supplied 2026 analysis reports a d-wave rate proportional to the fifth power of daughter momentum near threshold. Its derivation and full domain of generality remain outside the reading performed here.",
+            "scope": {
+              "systems": [
+                "Parent and daughter KK gravitons"
+              ],
+              "targets": [
+                "Threshold amplitude and rate scaling",
+                "Partial-wave interpretation and stated generality"
+              ],
+              "regimes": [
+                "Near-threshold two-body decay",
+                "Source-specific five-dimensional gravitational settings"
+              ],
+              "assumptions": [
+                "Source-specific gravitational action, couplings and background",
+                "Generality beyond the supplied setting remains to be checked"
+              ],
+              "conventions": [
+                "Compare daughter momentum in the parent rest frame",
+                "Distinguish amplitude scaling from phase-space-inclusive rate scaling"
+              ],
+              "includes": [
+                "Momentum versus parent-mass scaling",
+                "Reported cancellation and partial-wave explanations"
+              ],
+              "excludes": [
+                "A universal theorem for every geometry, field content or higher-derivative theory",
+                "Automatic identity of subsequent cosmological conclusions"
+              ]
+            },
+            "readingLimit": "arXiv:2610.01825 supplies abstract/introduction statements and the opening of the decay section, not the proof. arXiv:2609.36234 supplies only a description; agreement of derivations or broad generality cannot be certified."
+          }
+        ]
+      },
+      {
+        "id": "scope-nomination:7ce99689db9e7c31bf52b6be",
+        "recordIds": [
+          "leaf-0403944f92af04eaed4a-challenge:p5",
+          "admitted:q-flat-darkdimension-freezein-bounds"
+        ],
+        "admittedDestinationIds": [
+          null,
+          "q-flat-darkdimension-freezein-bounds"
+        ],
+        "sharedUnitIds": [
+          "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346"
+        ],
+        "definitions": [
+          {
+            "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+            "question": "What threshold law controls intra-tower KK-graviton decays, and what does it imply for cascading dark matter and for freeze-in populations even when KK gravitons are not dark matter?",
+            "summary": "The 2026 sources report momentum-suppressed threshold rates and challenge earlier fast-cascade estimates. Their amplitude domains and cosmological applications differ; flat-dimension exclusions do not establish exclusion of every warped model.",
+            "scope": {
+              "systems": [
+                "Five-dimensional KK-graviton towers",
+                "Cascading graviton dark matter",
+                "Freeze-in gravitons"
+              ],
+              "targets": [
+                "Three-point amplitude scaling",
+                "Partial waves",
+                "Cascade viability",
+                "Reheating and radius constraints"
+              ],
+              "regimes": [
+                "Near threshold with comparable daughter masses",
+                "Specified warped scalar–gravity constructions",
+                "Flat Dark Dimension cosmological applications"
+              ],
+              "assumptions": [
+                "The broad amplitude claim is bounded by the stated diffeomorphism-invariant two-derivative scalar–gravity setting and treatment of fields and branes.",
+                "The irreducible-population constraint uses the stated freeze-in history and reheating bounds.",
+                "The earlier s-wave estimate is a rejected comparator in these sources."
+              ],
+              "conventions": [
+                "Distinguish daughter momentum from parent mass.",
+                "Distinguish a partial decay rate from a summed cascade history.",
+                "The freeze-in constraint does not require KK gravitons to constitute dark matter."
+              ],
+              "includes": [
+                "Covariant vertex cancellations",
+                "Reported d-wave law",
+                "Conditional flat-dimension viability limits"
+              ],
+              "excludes": [
+                "A universal no-go for all gravitational interactions or compactifications",
+                "Certification of the announced general proof",
+                "Importing the unsupplied companion-paper analysis of warped viability"
+              ]
+            },
+            "readingLimit": "Bounded pages from 2609.36234 and 2610.01825v1, the latter dated 1 Oct 2026. Complete derivations, appendices, figures and the companion paper are absent; broad and exclusion claims remain attributed to these sources."
+          },
+          {
+            "title": "What flat-dimension bounds survive suppressed KK cascades?",
+            "question": "In a flat dark dimension with threshold-suppressed KK-graviton cascades, what observational constraints follow from the irreducibly produced population even if it is not all dark matter?",
+            "summary": "A flat-dimension analysis argues that unavoidable production and visible decays constrain reheating and radius even when KK gravitons do not constitute all dark matter. Its numerical exclusion remains an attributed result.",
+            "scope": {
+              "systems": [
+                "KK gravitons in a flat dark dimension",
+                "Standard Model brane and visible decay products"
+              ],
+              "targets": [
+                "Reheating upper bounds",
+                "Compatibility with lower reheating bounds",
+                "Radius constraints"
+              ],
+              "regimes": [
+                "Source-specific freeze-in and decay cosmology",
+                "A subdominant KK population is allowed"
+              ],
+              "assumptions": [
+                "Flat dark dimension",
+                "Reported threshold suppression",
+                "Specified brane coupling and thermal history",
+                "Applicable BBN and CMB reheating floors"
+              ],
+              "conventions": [
+                "arXiv:2610.01825 uses m_KK=1/R and the four-dimensional reduced Planck mass",
+                "Earlier visible-decay constraints use their own mass histories and coupling parameters"
+              ],
+              "includes": [
+                "Irreducible production",
+                "Visible decay products",
+                "Conditional radius exclusion"
+              ],
+              "excludes": [
+                "All warped or multidimensional models",
+                "An independently checked numerical exclusion curve",
+                "Automatic replacement of every earlier conditional phenomenological calculation"
+              ]
+            },
+            "readingLimit": "The source reports exclusion of flat radii approximately R≥0.2 micrometres under its assumptions. The calculation, exclusion figure and adopted reheating bounds are outside the supplied window. Comparison sources do not establish that exclusion independently."
+          }
+        ]
+      },
+      {
+        "id": "scope-nomination:5e3e0783e9a2bbb77213f6b2",
+        "recordIds": [
+          "leaf-0403944f92af04eaed4a-challenge:p3",
+          "admitted:q-kk-decay-linear-cosmology"
+        ],
+        "admittedDestinationIds": [
+          null,
+          "q-kk-decay-linear-cosmology"
+        ],
+        "sharedUnitIds": [
+          "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+          "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a"
+        ],
+        "definitions": [
+          {
+            "title": "Linear cosmology of decay-induced dark-matter kicks",
+            "question": "How do repeated KK-graviton decays affect linear cosmological perturbations, and what do CMB, BAO and weak-lensing data constrain about their kick velocity?",
+            "summary": "The analysis constrains a velocity combination in a simplified tower model. Its interpretation as Dark Dimension parameter bounds depends on the assumed decay and mass-evolution laws.",
+            "scope": {
+              "systems": [
+                "Decaying KK-graviton dark matter"
+              ],
+              "targets": [
+                "Linear structure suppression",
+                "Kick velocity",
+                "Conditional Dark Dimension parameters"
+              ],
+              "regimes": [
+                "Linear perturbations",
+                "Nonrelativistic daughters",
+                "Small mass release"
+              ],
+              "assumptions": [
+                "Approximately equal daughter masses",
+                "Last-decay kicks approximate the relevant velocity history",
+                "The historical cascade evolution fixes the modeled time dependence"
+              ],
+              "conventions": [
+                "The principal data constraint is on a velocity combination, not independent measurements of every tower parameter."
+              ],
+              "includes": [
+                "Planck CMB, BAO and KiDS-1000 cosmic-shear analysis"
+              ],
+              "excludes": [
+                "A nonlinear resolution of the σ8 tension",
+                "A demonstrated resolution of the Hubble tension",
+                "An updated fit using the later threshold law"
+              ]
+            },
+            "readingLimit": "The supplied version is 2311.05318v1, dated 9 Nov 2023. Its abstract reports a bound, while the supplied body states the approximations. The likelihood, nonlinear evolution and consequences of replacing the cascade law were not checked."
+          },
+          {
+            "title": "What do repeated KK decays do to linear structure?",
+            "question": "Within the specified repeated-decay KK-graviton model, how do daughter recoil and the changing mass distribution affect linear cosmological perturbations?",
+            "summary": "Repeated decays change the tower mass distribution and give daughters recoil velocities. The linear cosmology calculation assumes a specified decay history and does not establish the cascade microphysics.",
+            "scope": {
+              "systems": [
+                "A cosmological KK-graviton dark-matter tower"
+              ],
+              "targets": [
+                "Linear matter and CMB perturbations",
+                "Recoil constraints and their conditional parameter interpretation"
+              ],
+              "regimes": [
+                "Nonrelativistic population",
+                "Linear cosmological perturbations",
+                "Source-era CMB, BAO and cosmic-shear analysis"
+              ],
+              "assumptions": [
+                "Repeated intra-tower decay evolution",
+                "Simplified daughter distribution dominated by approximately symmetric decays",
+                "Small released mass difference"
+              ],
+              "conventions": [
+                "The source's kick parameter is a combination of model parameters",
+                "Its reported confidence limit is a dated author result"
+              ],
+              "includes": [
+                "Daughter recoil",
+                "Changing mass population",
+                "Conditional structure suppression"
+              ],
+              "excludes": [
+                "Nonlinear structure predictions or a demonstrated resolution of the S8 tension",
+                "Unconditional viability of the cascade",
+                "Visible-energy injection as the primary target"
+              ]
+            },
+            "readingLimit": "The model assumptions and abstract's reported kick constraint were read. Perturbation equations, likelihood implementation and numerical constraints were not independently checked."
+          }
+        ]
+      },
+      {
+        "id": "scope-nomination:cad8a6df43e864c1313ad6df",
+        "recordIds": [
+          "leaf-a07f87c80964ac1def6a-challenge:p0",
+          "admitted:q-relic-abundance-early-matter-domination"
+        ],
+        "admittedDestinationIds": [
+          null,
+          "q-relic-abundance-early-matter-domination"
+        ],
+        "sharedUnitIds": [
+          "unit:4ed2ac936157aab2ac1031a731c7fd778188055e7092082eb69b67b68a11dc32"
+        ],
+        "definitions": [
+          {
+            "title": "Modulus and gravitino cosmology",
+            "question": "When do modulus or gravitino production, domination and decay permit BBN-compatible histories and acceptable dark-matter abundances?",
+            "summary": "Connects decay timing, production, annihilation and dilution while preserving stable-gravitino, thermal-WIMP and nonthermal-neutralino alternatives.",
+            "scope": {
+              "systems": [
+                "Cosmological moduli and other specified heavy scalars",
+                "Gravitinos and source-specific dark-matter candidates"
+              ],
+              "targets": [
+                "BBN consistency",
+                "Relic abundance",
+                "Production versus dilution"
+              ],
+              "regimes": [
+                "Late decay",
+                "Pre-freeze-out decay as a boundary",
+                "Stable gravitinos as a separate alternative"
+              ],
+              "assumptions": [
+                "Dominance, branching fractions and mass ordering are model-specific"
+              ],
+              "conventions": [
+                "Successful BBN timing does not by itself certify gravitino, LSP or axion safety"
+              ],
+              "includes": [
+                "G2-MSSM, LVS and effective decay cosmologies",
+                "Superheavy dark matter diluted by a lighter modulus"
+              ],
+              "excludes": [
+                "Treating every modulus as the producer of the surviving dark matter"
+              ]
+            },
+            "readingLimit": "The excerpts establish announced targets and selected mechanisms, not complete parameter-space validation."
+          },
+          {
+            "title": "How do early matter domination and dilution change relic abundance?",
+            "question": "How do production timing and entropy release in specified early matter- or modulus-dominated histories determine dark-matter abundance and allowed duration, subject to the relevant reheating, inflationary and dark-radiation constraints?",
+            "summary": "Production and dilution can impose competing constraints on an early matter-dominated history. Superheavy neutralinos provide a two-stage example; different relics retain their own channels and expansion histories.",
+            "scope": {
+              "systems": [
+                "Dark-matter relics and a dominant matter-like field or modulus",
+                "Visible and hidden radiation sectors"
+              ],
+              "targets": [
+                "Surviving relic abundance",
+                "Allowed duration of early matter domination",
+                "Competition between dilution requirements and inflationary bounds"
+              ],
+              "regimes": [
+                "Source-specific early matter or modulus domination",
+                "Production before domination, during its adiabatic stage or through decay, as specified separately"
+              ],
+              "assumptions": [
+                "A specified expansion and reheating history",
+                "Production channels, branching fractions and sector temperatures remain model-specific"
+              ],
+              "conventions": [
+                "arXiv:1808.02659's comparison cross section is 3×10^−26 cm^3 s^−1",
+                "The EDGES interpretation in arXiv:1812.11915 remains a paper-specific premise",
+                "A sufficiently long dilution phase is not by itself a sufficient condition for full viability"
+              ],
+              "includes": [
+                "Thermal and nonthermal relic realizations",
+                "Production-stage distinctions",
+                "BBN reheating floors as boundary inputs"
+              ],
+              "excludes": [
+                "Scalar-tensor expansion changes automatically identified with entropy dilution",
+                "A universal relic formula or duration bound",
+                "Current validation of historical anomaly interpretations"
+              ]
+            },
+            "readingLimit": "Only arXiv:2010.03573 supplies excerpts for this card. They support the two-stage history, branching-condition statement and opposing duration constraints, but not the complete numerical solution or model scan. Other contributions are description-level."
+          }
+        ]
+      },
+      {
+        "id": "scope-nomination:cd674aba46c2cc9409222962",
+        "recordIds": [
+          "leaf-0403944f92af04eaed4a-challenge:p2",
+          "admitted:q-kk-graviton-thermal-production"
+        ],
+        "admittedDestinationIds": [
+          null,
+          "q-kk-graviton-thermal-production"
+        ],
+        "sharedUnitIds": [
+          "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+          "unit:e12ca8a5f0ff6c3418a1bad027868db22196d443140dbd0952d62c39ff0d811e"
+        ],
+        "definitions": [
+          {
+            "title": "Observable Standard Model decays of KK-graviton dark matter",
+            "question": "What bounds do cosmological energy deposition and photon or positron signals place on KK-graviton dark matter and its coupling to the Standard Model brane?",
+            "summary": "The supplied analysis constrains decay signals and a phenomenological brane-overlap coupling within its tower-evolution model. Naturalness-based mass conclusions require the additional coupling assumption.",
+            "scope": {
+              "systems": [
+                "Dark-matter KK-graviton tower",
+                "Standard Model brane"
+              ],
+              "targets": [
+                "Decay energy deposition",
+                "Photon and positron signals",
+                "Coupling and mass constraints"
+              ],
+              "regimes": [
+                "Recombination and reionization",
+                "Later intergalactic heating",
+                "Galactic and diffuse emission"
+              ],
+              "assumptions": [
+                "The 2023 tower mass history and cascade prescription are conditional historical inputs.",
+                "The natural-mass interpretation assumes order-one dimensionless decay couplings."
+              ],
+              "conventions": [
+                "λ denotes averaged graviton wave-function overlap with the brane."
+              ],
+              "includes": [
+                "CMB, IGM heating, diffuse and Galactic photons, and Galactic positrons"
+              ],
+              "excludes": [
+                "An unconditional present-day dark-matter mass bound",
+                "Treating the assumed cascade history as established after the supplied 2026 critiques"
+              ]
+            },
+            "readingLimit": "Bounded pages from 2307.11048 support the targets and reported conditional bounds. One source-object evidence item is omitted. The 2026 excerpts challenge the cascade premise; they do not supply a complete reanalysis of these observables."
+          },
+          {
+            "title": "How does a hot brane produce KK gravitons?",
+            "question": "Can a hot Standard Model brane gravitationally produce the KK-graviton abundance needed in the Dark Dimension setting, for specified initial brane temperature and bulk population?",
+            "summary": "A hot Standard Model brane can populate a KK-graviton tower in the specified scenario. The initial abundance question is separate from whether the population survives as dark matter.",
+            "scope": {
+              "systems": [
+                "Standard Model brane and KK-graviton tower"
+              ],
+              "targets": [
+                "Initial tower population",
+                "Produced abundance"
+              ],
+              "regimes": [
+                "Early-universe hot-brane production in the specified Dark Dimension setup"
+              ],
+              "assumptions": [
+                "Specified initial brane temperature",
+                "Bulk initially essentially unexcited in the arXiv:2311.05318 setup",
+                "Gravitational brane coupling"
+              ],
+              "conventions": [
+                "An initially adequate abundance does not establish viable late-time dark matter"
+              ],
+              "includes": [
+                "Brane-to-bulk production",
+                "Initial mass population"
+              ],
+              "excludes": [
+                "All gravitational or nonthermal dark-matter production",
+                "Independent validation of a fast subsequent cascade",
+                "UHECR spectral measurements"
+              ]
+            },
+            "readingLimit": "No production integral or abundance calculation was checked. The source excerpts state inherited production assumptions and claimed abundances; the late-time cascade is disputed elsewhere in this packet."
+          }
+        ]
+      },
+      {
+        "id": "scope-nomination:805508c3dbaaea9bd14b7b79",
+        "recordIds": [
+          "leaf-0403944f92af04eaed4a-challenge:p2",
+          "admitted:q-kk-graviton-threshold-decay"
+        ],
+        "admittedDestinationIds": [
+          null,
+          "q-kk-graviton-threshold-decay"
+        ],
+        "sharedUnitIds": [
+          "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+          "unit:c667eaad26bf24f79ac000d31da08a2e1f6be8c980569251185cfd41bfdc3ae2"
+        ],
+        "definitions": [
+          {
+            "title": "Observable Standard Model decays of KK-graviton dark matter",
+            "question": "What bounds do cosmological energy deposition and photon or positron signals place on KK-graviton dark matter and its coupling to the Standard Model brane?",
+            "summary": "The supplied analysis constrains decay signals and a phenomenological brane-overlap coupling within its tower-evolution model. Naturalness-based mass conclusions require the additional coupling assumption.",
+            "scope": {
+              "systems": [
+                "Dark-matter KK-graviton tower",
+                "Standard Model brane"
+              ],
+              "targets": [
+                "Decay energy deposition",
+                "Photon and positron signals",
+                "Coupling and mass constraints"
+              ],
+              "regimes": [
+                "Recombination and reionization",
+                "Later intergalactic heating",
+                "Galactic and diffuse emission"
+              ],
+              "assumptions": [
+                "The 2023 tower mass history and cascade prescription are conditional historical inputs.",
+                "The natural-mass interpretation assumes order-one dimensionless decay couplings."
+              ],
+              "conventions": [
+                "λ denotes averaged graviton wave-function overlap with the brane."
+              ],
+              "includes": [
+                "CMB, IGM heating, diffuse and Galactic photons, and Galactic positrons"
+              ],
+              "excludes": [
+                "An unconditional present-day dark-matter mass bound",
+                "Treating the assumed cascade history as established after the supplied 2026 critiques"
+              ]
+            },
+            "readingLimit": "Bounded pages from 2307.11048 support the targets and reported conditional bounds. One source-object evidence item is omitted. The 2026 excerpts challenge the cascade premise; they do not supply a complete reanalysis of these observables."
+          },
+          {
+            "title": "How fast can a KK graviton decay near threshold?",
+            "question": "How does an intra-tower KK-graviton decay amplitude and rate scale with daughter momentum near threshold, and which background or coupling assumptions control that scaling?",
+            "summary": "A supplied 2026 analysis reports a d-wave rate proportional to the fifth power of daughter momentum near threshold. Its derivation and full domain of generality remain outside the reading performed here.",
+            "scope": {
+              "systems": [
+                "Parent and daughter KK gravitons"
+              ],
+              "targets": [
+                "Threshold amplitude and rate scaling",
+                "Partial-wave interpretation and stated generality"
+              ],
+              "regimes": [
+                "Near-threshold two-body decay",
+                "Source-specific five-dimensional gravitational settings"
+              ],
+              "assumptions": [
+                "Source-specific gravitational action, couplings and background",
+                "Generality beyond the supplied setting remains to be checked"
+              ],
+              "conventions": [
+                "Compare daughter momentum in the parent rest frame",
+                "Distinguish amplitude scaling from phase-space-inclusive rate scaling"
+              ],
+              "includes": [
+                "Momentum versus parent-mass scaling",
+                "Reported cancellation and partial-wave explanations"
+              ],
+              "excludes": [
+                "A universal theorem for every geometry, field content or higher-derivative theory",
+                "Automatic identity of subsequent cosmological conclusions"
+              ]
+            },
+            "readingLimit": "arXiv:2610.01825 supplies abstract/introduction statements and the opening of the decay section, not the proof. arXiv:2609.36234 supplies only a description; agreement of derivations or broad generality cannot be certified."
+          }
+        ]
+      }
+    ]
+  },
+  "selectedReviewLineages": {
+    "count": 229,
+    "uniqueCanonicalKeys": 229,
+    "originalProposalDependenciesExplicit": true
+  },
+  "fullCanonicalCoverageLimit": "All authored scopes and nominated comparisons are accounted for, not certified unique or admitted. Completed screens nominate targeted decisions; exact identities, source placements and typed routes require independent recorded admission. No connected-component alias union.",
+  "noSealedHoldoutOpened": true
+}

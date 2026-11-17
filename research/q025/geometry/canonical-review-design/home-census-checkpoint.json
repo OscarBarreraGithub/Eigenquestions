@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "q025-home-policy-census-checkpoint/1",
+  "status": "candidate_evidence_no_new_home_admission",
+  "ownedFiles": [
+    {
+      "path": "research/q025/geometry/canonical-review-design/audit_home_lanes.py",
+      "sha256": "5a8282385e770c9bc81cfe15c932e1789dd0467fba54a63298e4b52b8d1b7cfa",
+      "bytes": 10426
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/broader-home-audit.json",
+      "sha256": "027c8d12ad22f7383193c918e4b6813de84e8728c90c524017cff81b486eeef4",
+      "bytes": 68657
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/audit_explicit_fine_homes.py",
+      "sha256": "79e4b88e9edc0639a25887328eec4a21504facc6feee997f19defc91b54ee99c",
+      "bytes": 10681
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/explicit-fine-home-audit.json",
+      "sha256": "09b577a53d2e26c3601ad7768db154c8d5465f8d027c21db4bcaeb275689e7e4",
+      "bytes": 41757
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/reconcile_fine_home_audit.py",
+      "sha256": "73b2f9e28900e3a85d321b978c56ef9a045b2d77193360e6c732ace9e2967a25",
+      "bytes": 9899
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/explicit-fine-home-global-audit.json",
+      "sha256": "0a1d7349493d33b555099bd883e7f216329b624c04a5d7b8fad82d06e06a2a9e",
+      "bytes": 86148
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/audit_home_lanes_v4.py",
+      "sha256": "624c6775c1674d59fafc57928723ed5f07b0a7fc2cbd5ce85592b6359ce85706",
+      "bytes": 12217
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/home-lanes-v4-report.json",
+      "sha256": "3a40c2aeb28594c5f54fe97e551689bcc059c25bd4beb5243fc8a4dd5cba99e1",
+      "bytes": 4200
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/test_home_reconciliation.py",
+      "sha256": "41a78a8d31727c8b5d8debec004bd9e9e54d019b92c040826349a9ea86c2ffdd",
+      "bytes": 2239
+    }
+  ],
+  "validation": {
+    "actualEvidenceRegressionTests": 6,
+    "passes": 6,
+    "originalStage1RowAuditRetained": true,
+    "resolvedScopeAnnotationsApplied": 30,
+    "frozenRealRehearsalUnchanged": true
+  },
+  "externalInputs": {
+    "registry": {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v4-20261117T131639Z.json",
+      "sha256": "8fec0de5da3901625e4fea16240d4a487878b7b6c803c29a3e3893dc89c1fe7e",
+      "bytes": 70417256
+    },
+    "admittedScopeComponent": {
+      "path": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+      "sha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864",
+      "bytes": 35641539
+    },
+    "approvedHomes": {
+      "path": "research/q025/evaluation/full-pass/home-admissions-v1/home-admission-delta.json",
+      "sha256": "223fc77eb12cea97dac3a32253abb86b590efec432e2e38053e012d2f577f451",
+      "bytes": 3241073
+    },
+    "annotationOverlay": {
+      "path": "research/q025/evaluation/full-pass/annotation-admissions-v3/intake-overlay-v2.json",
+      "sha256": "bdea68416a4fcdb751796264a5945e9a93f1780ee26a6cf53cdafc4f0243ae3e",
+      "bytes": 120207
+    },
+    "candidateRows": {
+      "path": "research/q025/geometry/canonical-review-design/home-lanes-v4.local.json",
+      "sha256": "aea54ccb2605389f1b900f5534834cea708c02d7bc1b05103c22fe5cd3e6ec83",
+      "bytes": 21469502
+    }
+  },
+  "excludedFromGit": [
+    "*.local.json exact candidate rows and raw context inputs",
+    "Progress logs"
+  ],
+  "acceptedHomesByThisCheckpoint": 0
+}

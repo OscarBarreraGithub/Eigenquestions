@@ -1,0 +1,29 @@
+{
+  "kind": "q025-captured-revision-browser",
+  "scope": "Isolated Slurm Chromium; synthetic transport fixture. Scripted CLI/MCP protocol proof, not independent agent routing or scientific acceptance.",
+  "manifestSha256": "be6ea5dfb8cd8e8e78542a811de12aa5a3052ba66b78c8a0733b01a1cb515332",
+  "checks": [
+    {
+      "name": "MCP captured revision zero commits and receives exact browser render acknowledgement",
+      "passed": true,
+      "revision": 1
+    },
+    {
+      "name": "stale MCP action, MCP import and CLI import preserve the newer browser state and original draft",
+      "passed": true,
+      "capturedRevision": 1,
+      "currentRevision": 2
+    },
+    {
+      "name": "distinct new guarded Back action renders and acknowledges the preserved prior state",
+      "passed": true,
+      "revision": 3
+    }
+  ],
+  "passed": true,
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "screenshots": [
+    "revision-guard-connected.png"
+  ]
+}

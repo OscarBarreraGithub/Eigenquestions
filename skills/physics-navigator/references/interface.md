@@ -72,6 +72,14 @@ Open the local browser link it prints. All subsequent CLI calls use the same
 `--connection /tmp/eigenquestions-session.json`; omit that flag only when using
 the default connection created by `serve` without a custom path.
 
+Capture `state.revision` before interpreting the requested change. Supply that
+exact number through MCP `expectedRevision` or CLI `--expected-revision N` on
+every mutation, including import, Back and replay. Revision zero is valid. Both
+interfaces send the guard as HTTP `If-Match`. A conflict returns the current
+state without changing it; retain the original proposed action or import file.
+Do not retry by restamping the old proposal. Omitting the guard is supported only
+for legacy callers and does not protect the interpretation interval.
+
 MCP clients launch `node /absolute/checkout/bin/mcp-navigator.mjs --connection
 /tmp/eigenquestions-session.json`. The server exposes:
 
@@ -83,9 +91,9 @@ MCP clients launch `node /absolute/checkout/bin/mcp-navigator.mjs --connection
 | `navigator_sources` | `{destinationId?,collection?,offset?,limit?,lens?,workRelation?,constraints?}` | `sources --destination ID --offset 0 --limit 20` |
 | `navigator_connections` | `{destinationId?,offset?,limit?}` | `connections --destination ID` |
 | `navigator_context` | `{unitId,section?,offset?,limit?,scope?,kinds?,objectIds?}` | `context --id UNIT_ID --section objects --limit 20` |
-| `navigator_navigate` | action below | `action --json '{…}'` |
+| `navigator_navigate` | action below plus `expectedRevision` | `action --json '{…}' --expected-revision N` |
 | `navigator_export` | `{}` | `export --out session.json` |
-| `navigator_import` | `{payload: exportedObject}` | `import --file session.json` |
+| `navigator_import` | `{payload: exportedObject,expectedRevision}` | `import --file session.json --expected-revision N` |
 
 Native navigation action example (prepared navigation uses an exact `selector`):
 

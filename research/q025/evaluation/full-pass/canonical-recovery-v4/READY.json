@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "q025-canonical-completion-ready/1",
+  "status": "READY_FOR_ROOT_VERIFIED_LAUNCH",
+  "generatedAt": "2026-11-17T13:11:43.084342+00:00",
+  "campaignSha256": "aab0f614acb537a0b2c5923df034caf9c626ce73da323de11a34ef7c02dae5f0",
+  "runnerSha256": "3185a3ee251d366d50add2176592e1b0193b57fbe076d3f83168a7504a97defd",
+  "publicManifestSha256": "229d17d943c6d26b38ecf368d289c46842f2b1f4eea5018ef3de2df9ed35f8df",
+  "nativeLaunches": 0,
+  "nativeJobs": 1,
+  "readyPreflightJobs": 1,
+  "pythonTestsPassed": 9,
+  "nodeTestsPassed": 6,
+  "originalFilesModified": false,
+  "priorCanonicalV3AndSuccessorV2Verifiers": "passed after preparation",
+  "runtimeControl": {
+    "enabled": false,
+    "maxActive": 1,
+    "maxAuthorizedConcurrency": 2,
+    "globalLimit": 48,
+    "globalLimitOwner": "root"
+  },
+  "limits": {
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "sourceOnly": true,
+    "sandbox": "read-only",
+    "timeoutSeconds": 1800,
+    "maxOutputCharacters": 120000,
+    "perStringCaps": false,
+    "outsideStringWhitespaceRunLimit": 4096,
+    "dispatchGuardTokens": 220000,
+    "automaticRetries": false
+  },
+  "completionScope": {
+    "priorAssessmentsReused": 46,
+    "originalProposalVariants": 3,
+    "secondAttemptVariants": 145,
+    "wholeProposalRepeated": false,
+    "wholePrimaryReadingRequested": false
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/INSTRUCTIONS.md",
+      "sha256": "08e8a106516fe153c1f2894c712fdf32afb83bc592f63a4fff4832f36869b807",
+      "bytes": 3361
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/README.md",
+      "sha256": "c86a171a9d9d8508bdc5aceb43ef7775dfea246d237f536baff4d5cd5da08aac",
+      "bytes": 4375
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/contract.py",
+      "sha256": "c58f9dd0f20cbab1894b0b9b352561f09da15c1f6f6687008292596f6411cf3f",
+      "bytes": 3452
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/extract.py",
+      "sha256": "6bdea3454297ec3d5eef5738e596191dd14275fd531793d7187542ef0f93546d",
+      "bytes": 4207
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/manifest.json",
+      "sha256": "229d17d943c6d26b38ecf368d289c46842f2b1f4eea5018ef3de2df9ed35f8df",
+      "bytes": 4893
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/materialize.py",
+      "sha256": "ec198435ef43fe3cd867ae1ba9caf821f270fb91393338beadcd69964eb333c3",
+      "bytes": 3137
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/prefix-audit.json",
+      "sha256": "5b30fb640db1097061497bfb64cd3b1924250ad5c8c20274ca8c0239a2b4fca0",
+      "bytes": 1127
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/preflight-run-001.json",
+      "sha256": "1e98b983b4d0befefc2a35c9aa426f3de08be2487fdf81bdb35b29cce0628bd8",
+      "bytes": 1298
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/preflight-run-002.json",
+      "sha256": "6b7aabc7e227f02c3ebc91aca6e32ba8b0620a2584bcf6e3edfd2c6c0ec3f815",
+      "bytes": 1298
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/preflight.mjs",
+      "sha256": "5b77b94b8b7d8c11e71778fe40d6d8ab24fde0c4eeb31ed7528f5f8f0a022335",
+      "bytes": 3415
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/prepare.py",
+      "sha256": "8d9b604e32cb8bc5ba4aee43ef6289ae6984664606bff14d615e8eeb2c2e7fe7",
+      "bytes": 5483
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/runner.mjs",
+      "sha256": "3185a3ee251d366d50add2176592e1b0193b57fbe076d3f83168a7504a97defd",
+      "bytes": 25179
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/runner.test.mjs",
+      "sha256": "942d4af4d561a8fc729327732f85ce4c765d55c13617b085bdd8b2a8d02e4ebb",
+      "bytes": 2434
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/test_completion.py",
+      "sha256": "ea03f6ae30e3db09d4a52d0cf22804ff86fd4a6fbc9653a98682a6c97a38eadf",
+      "bytes": 4554
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-recovery-v4/verification.json",
+      "sha256": "678cbb219ae9cedee5384725a934bc5bc425501a4b515d76c523e2b189729400",
+      "bytes": 3464
+    }
+  ],
+  "privateArtifacts": "Original/derived source packets, both JSON attempts and execution configuration stay in ignored native-local."
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "q025-explicit-contribution-repair-checkpoint/1",
+  "status": "frozen_actual_component_preflight_passed_not_full_atlas_assembly",
+  "ownedFiles": [
+    {
+      "path": "research/q025/assembly/accepted.mjs",
+      "sha256": "8cfb77b88517a1af04c6c3fa57381b82471c9b455f3e078d133577b7dcb8a06c",
+      "bytes": 29177
+    },
+    {
+      "path": "research/q025/assembly/explicit-contributions.test.mjs",
+      "sha256": "afbed142228d9ec6e54ee72013448ea7a762961c0d94720507a7de8cb08ea3bd",
+      "bytes": 4211
+    },
+    {
+      "path": "research/q025/assembly/preflight-contributions.mjs",
+      "sha256": "2d6921358855cd5064cbe8edbbe7caa8b11ba13c15de392b3e116ee8c4e3ca4d",
+      "bytes": 5692
+    },
+    {
+      "path": "research/q025/assembly/explicit-contribution-v1/preflight.json",
+      "sha256": "2d6de11f73ff138e4e58762c8975077da94bfe2cd5e58c78125e73c693a63ffc",
+      "bytes": 69981
+    }
+  ],
+  "priorFrozenManifestRetained": {
+    "path": "research/q025/assembly/real-rehearsal-v1/manifest.json",
+    "sha256": "1ad64356fe50abbc2eaf35812212b5b41ebeb5b5e411966e8830a60614e74459",
+    "bytes": 8410
+  },
+  "updatedHelperMeaning": "One narrow coordinator-receipt path alongside existing independent dual-review source contributions. No source allocation, scope admission, alias equivalence or navigation is inferred.",
+  "validation": {
+    "assemblyTestsPassed": 71,
+    "newExplicitContributionRegressionTests": 13,
+    "actualContributionOnlyRuntimeRegressionPassed": 1,
+    "actualComponentFixture": false,
+    "actualAdmittedScopes": 30,
+    "actualCoordinatorContributions": 4,
+    "exactPrimaryLocators": 74,
+    "actualMutationNegativeControls": 3
+  },
+  "externalComponent": {
+    "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/admitted-scope-role-operation-component.json",
+    "sha256": "f4b8b1badded4a9dbb5c178f61798e8d1a2b54b73fda8b58a0ec3c8ff67b7a87"
+  },
+  "coordinatorReceipt": {
+    "path": "research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/scope-role-operation-admission.json",
+    "sha256": "97216f13b56534815e329d1b2725c40fb3b1fdc0b5f596ba7ea1c1ef6ac39812",
+    "bytes": 14340
+  },
+  "readingLimit": "Source identities, exact bounded locators and explicit review receipts verified; scientific interpretation remains the recorded source readers/coordinator adjudication. The124carriedroles remain pending, and72operations are not public links or accepted global equivalence groups.",
+  "noCommitOrDeployment": true
+}

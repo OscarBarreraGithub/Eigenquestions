@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "q025-premise-amendment-dependency-audit/1",
+  "caseId": "leaf-b2e631ff674dfe9f6385-proposal:f41:qualification",
+  "amendmentAdmission": {
+    "path": "research/q025/evaluation/full-pass/annotation-admissions-v3/explicit-adjudications.json",
+    "sha256": "eb07dddf16f04af462f0e346cc879b4153adf60ae12e5f65d222be0d85c707ef"
+  },
+  "amendedFactorRefs": [
+    "leaf-b2e631ff674dfe9f6385-challenge:pf41"
+  ],
+  "dependentUnitAssessments": [
+    {
+      "reviewId": "leaf-b2e631ff674dfe9f6385-challenge",
+      "unitId": "unit:ba9c1429d4b6f406016a298509274dd93dac6cad03e1bf986edea19eb95f6803",
+      "paperId": "1808.02279",
+      "factorRefs": [
+        "leaf-b2e631ff674dfe9f6385-challenge:pf41"
+      ],
+      "homeAgreement": {
+        "proposal": {
+          "rawRef": "q6",
+          "normalizedRef": "p6",
+          "originalId": "q6",
+          "candidateId": "q025-candidate-question:368f8c2b52529a93c19586b8",
+          "status": "exact_card_reference",
+          "normalization": "explicit_originalId_to_prior_id",
+          "definitionFingerprint": "368f8c2b52529a93c19586b83090e811f563fa12f8198126cff37136e7f9c64f"
+        },
+        "challenge": {
+          "rawRef": "p6",
+          "normalizedRef": "p6",
+          "originalId": "q6",
+          "candidateId": "q025-candidate-question:368f8c2b52529a93c19586b8",
+          "status": "exact_card_reference",
+          "normalization": "exact_id",
+          "definitionFingerprint": "368f8c2b52529a93c19586b83090e811f563fa12f8198126cff37136e7f9c64f"
+        },
+        "proposalDefinitionMatchesPinnedOriginal": true,
+        "sameExplicitScientificCard": true,
+        "unchangedSupportedScope": true,
+        "placementAdmission": false
+      },
+      "proposalNote": "The supplied facet is a setting and induced-mass example; an independent canonical question has not been isolated.",
+      "challengeNote": "A setting and canonical induced-mass example are supplied; an independent canonical question remains unresolved."
+    }
+  ],
+  "dependentScopeContributions": [
+    {
+      "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p6",
+      "candidateId": "q025-candidate-question:368f8c2b52529a93c19586b8",
+      "unitId": "unit:ba9c1429d4b6f406016a298509274dd93dac6cad03e1bf986edea19eb95f6803",
+      "role": "instantiates",
+      "factorRefs": [
+        "leaf-b2e631ff674dfe9f6385-challenge:pf41"
+      ]
+    }
+  ],
+  "affectedExisting1055Homes": [],
+  "dependentScopeDefinitions": [
+    {
+      "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p6",
+      "candidateId": "q025-candidate-question:368f8c2b52529a93c19586b8",
+      "definition": {
+        "title": "Supersymmetry breaking transmitted to light sectors",
+        "question": "How do heavy non-supersymmetric matter and hidden-sector supersymmetry breaking affect the structure and light scalar dynamics of a gravitational effective theory?",
+        "summary": "Keeps preservation of a light gravity sector's potential structure distinct from the induced-mass problem for quintessence.",
+        "scope": {
+          "systems": [
+            "Light approximately supersymmetric gravity coupled to heavy Standard Model matter",
+            "Hidden-sector and quintessence chiral multiplets"
+          ],
+          "targets": [
+            "Consistency of matter coupling and low-energy scalar-potential structure",
+            "Gravitationally induced quintessence masses"
+          ],
+          "regimes": [
+            "Integrating out heavy non-supersymmetric particles",
+            "A separated canonical F-term test model"
+          ],
+          "assumptions": [
+            "Additive separation of K and W does not establish gravitational decoupling"
+          ],
+          "conventions": [
+            "The canonical example is not a theorem about every possible Kähler geometry"
+          ],
+          "includes": [
+            "The hierarchy between an induced gravitino-scale mass and the late-time evolution scale"
+          ],
+          "excludes": [
+            "An established equivalence between the two transmission mechanisms"
+          ]
+        },
+        "readingLimit": "The canonical quintessence example has bounded primary support. The heavy-Standard-Model question is description-only; protection mechanisms and general radiative stability are not checked."
+      }
+    }
+  ],
+  "status": "explicit_revalidation_required_if_an_inference_relies_on_withdrawn_premise",
+  "qualifications": "This inventory follows exact factor references. It does not assert that every listed scoped question relies on the withdrawn premise; intact source-target agreement may survive a separate substantive inspection. No factor premise is promoted through all same-paper units."
+}

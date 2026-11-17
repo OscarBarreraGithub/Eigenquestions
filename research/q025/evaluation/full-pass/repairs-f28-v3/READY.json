@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "q025-launch-ready/1",
+  "status": "prepared_not_launched",
+  "jobs": 2,
+  "cases": 1,
+  "initialConcurrency": 1,
+  "maxAuthorizedConcurrency": 2,
+  "campaignSha256": "1242c3a331b8410be3be2b9e40b00bd4bd3e8c87381ad437867c9469dbb18f78",
+  "manifestSha256": "bf2373fd3803714c16305a31f0b20a159bcc4c2f0dfc4626c8fee164a41fe4f3",
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/runner.mjs",
+      "sha256": "f1ced7c877de24ddd3d6f1c191f2aab33db53ee8b68a57246a43ad5bd05f3dea"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/runner.test.mjs",
+      "sha256": "5c2c40bb29abffe3ab8580c6916769a99f011918ed4057adfefbdb41a02ad79d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/contract.py",
+      "sha256": "c0f3105ac7e003e5f7a426d780a64ec2f30ee0b6b2c19c424bb639daf07e28e5"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/test_contract.py",
+      "sha256": "18ce9617dc3129a86233c5827f125170ef42d45fe3b9fd4a392e63620ddd724b"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/materialize.py",
+      "sha256": "b1cd1dcb946b2c7ad533939ffbd5871eaeacb61297c96bef5270f734de819483"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/prepare.py",
+      "sha256": "fb0a4edf8d80760d2bb82aea1c11f7bfb949d7de5a9e64e816316a083ff2b629"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/INSTRUCTIONS.md",
+      "sha256": "51ebfaa9ef35ce408d9b2c185b26440e225d3d6d40b0c7c979ff664dd7302182"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/source-index.json",
+      "sha256": "522289114b6598b554a7d399f3811765d2c5eeeab8e1b1d224caf1d785425c18"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/manifest.json",
+      "sha256": "bf2373fd3803714c16305a31f0b20a159bcc4c2f0dfc4626c8fee164a41fe4f3"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/preflight.json",
+      "sha256": "2723f685615502938dcb42145b19d42207d1f5c67bad63d91b7140d17d884f19"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/repairs-f28-v3/READY.md",
+      "sha256": "b2080f33655c10493713bef1cf4612b79a12db4be60324003406c2ad7b3d3540"
+    }
+  ],
+  "tests": {
+    "python": 5,
+    "node": 2,
+    "verifiedRequests": 2
+  },
+  "launchCommand": "node research/q025/evaluation/full-pass/repairs-f28-v3/runner.mjs --run --enable"
+}

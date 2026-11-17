@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "q025-launch-ready/1",
+  "status": "tested_prepared_not_launched",
+  "jobs": 117,
+  "initialConcurrency": 8,
+  "maximumAuthorizedConcurrency": 32,
+  "campaignSha256": "7481f1b4652bf9ebcfd754ff23898a6199a029d810769d4cbb16e3737755035a",
+  "manifestSha256": "83ab3ddc547f54ab52f3580674534b5543954d3cd585f638a7c54ed71ee37e8f",
+  "sourceIndex": {
+    "path": "research/q025/geometry/canonical-review-design/continuation-v4-index.json",
+    "sha256": "f77189d59d6bf40d57d00f93aab3158af7f0fd303e7241cc731a69043e90587f"
+  },
+  "publicFiles": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/runner.mjs",
+      "sha256": "9a9a041293d9814868833a4fe03664591f82f9917b4383284a3714ed5b02fe3e"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/runner.test.mjs",
+      "sha256": "36b63a4146db410e65335f2f8f956c1d336f3014a6d398a36942b2d3f3b575b5"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/contract.py",
+      "sha256": "335bc9274bfb122554f8667c863cbcd2f247c6ae57f65979a14edd1ab2d29c8d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/test_contract.py",
+      "sha256": "3113432a61be1085f32360d7bb0f31fdc407ec56d134888d515bf2bd7d013674"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/materialize.py",
+      "sha256": "6d75e15958ccc43ff1f3b1469b8f879b561c4d2f5092271f5130d85830c3db00"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/prepare.py",
+      "sha256": "213584c4785b3ee4bb474fdd383f7726133a6575279b7527baeabd96e2cbe065"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/INSTRUCTIONS.md",
+      "sha256": "be8dfa08a6dfc52c0bf7e071daddb117623db2945e3106754f9f3bfb1312f69c"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/manifest.json",
+      "sha256": "83ab3ddc547f54ab52f3580674534b5543954d3cd585f638a7c54ed71ee37e8f"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/preflight.json",
+      "sha256": "432b06094e45652824902293394b7b24192712f6614fa12c49fffe80e3280277"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/preflight-summary.json",
+      "sha256": "7fd1b5a19773695c7fe386df71217f586bb6a62b8d2199294e99bb867d9cf688"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-triage-wave-v2/READY.md",
+      "sha256": "6524cb0022137561163ddbb44cb62c3fffc92c816ac1539001ac763b47ecc6af"
+    }
+  ],
+  "tests": {
+    "python": 5,
+    "node": 3,
+    "requestVerification": 117
+  },
+  "nativeLaunches": 0,
+  "launchCommand": "node research/q025/evaluation/full-pass/canonical-triage-wave-v2/runner.mjs --run --enable"
+}

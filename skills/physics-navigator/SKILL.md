@@ -37,9 +37,13 @@ the human's path unless a visible update is part of the request. Read the
    physics. Extracted descriptions are not guaranteed verbatim quotations.
 4. For an authorized visible update, use `navigate({type:'navigate',selector})`
    or `select` with a current direction ID. Use `back` / `replay` to revisit a path.
-   Browser mutation must use the parent revision captured before interpretation;
-   never restamp an old proposal with a newly read revision. Preserve the proposal
-   and newer state on conflict. The same accepted destination ID is shared across
+   Every visible mutation, including import, must supply the parent revision captured
+   before interpretation: browser `{expectedRevision: parent.revision}`, MCP
+   `expectedRevision: parent.revision`, or CLI `--expected-revision N`. Zero is valid.
+   Never restamp an old proposal with a newly read revision. Preserve the proposal
+   and newer state on conflict, then reconsider the request against that state.
+   Legacy callers may omit the guard, but this skill requires it.
+   The same accepted destination ID is shared across
    paraphrases and entry paths; do not duplicate it merely to fit the conversation.
 5. Verify `read().renderedRevision === read().revision` after browser acceptance.
    The local companion instead reports `browserStatus.acknowledgedCurrent` for

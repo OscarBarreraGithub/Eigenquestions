@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "q025-integration-checkpoint/1",
+  "wave": "H",
+  "createdAt": "2026-11-17T13:34:29.271041+00:00",
+  "status": "runtime_tested_and_frozen; independent_agent_design_pending_final_data",
+  "files": [
+    {
+      "path": "bin/navigate.mjs",
+      "sha256": "e11823cff63c755c39a97e71000bffdd9d76ec8b230032db82444c3a702fd958",
+      "bytes": 9094
+    },
+    {
+      "path": "lib/protocol/runtime.mjs",
+      "sha256": "1f92c043101cb27dab273e8347e1175d1120668746915cd4b0757a3164f8f1c4",
+      "bytes": 11400
+    },
+    {
+      "path": "lib/protocol/bridge.mjs",
+      "sha256": "92177eb568584caa8661c234ab3071b27629be1e4fb170396f5b5fd3f19cf1b9",
+      "bytes": 7530
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "sha256": "5bed36ac888dc9d6eac78967cbd9395728e5fd113000085485d1b20fe1c85a67",
+      "bytes": 8658
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "sha256": "776dd754714e2b11983af4fc3229534eb942d3c5b85cf98ae103369e874ff0e1",
+      "bytes": 8448
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "sha256": "bf710d8345e3b7d2ec3db14b697803adf8bd8de46a0b4c3fa8b068d9496252c5",
+      "bytes": 8264
+    },
+    {
+      "path": "docs/agent-interface.md",
+      "sha256": "09ee5f76e14ebb1511c4236ed7b38eaba20043b24c24d8bd442e67b6e56ad2fc",
+      "bytes": 25014
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "sha256": "58a737bedffd0087424e96cd2c2a3377366d24531bd74ffbf4fbbb5243fe950a",
+      "bytes": 22847
+    },
+    {
+      "path": "tests/integration/revision-guard.test.mjs",
+      "sha256": "3dc10101a458d2d30d2ebc621e04c6e06345fe510b96741bc6f61f52e92ce738",
+      "bytes": 7333
+    },
+    {
+      "path": "research/q025/integration/revision-browser-acceptance.py",
+      "sha256": "59fc02c355325d7d5ba78399103a49c4525a2be6ec3c959df303088dd96b21c3",
+      "bytes": 6912
+    },
+    {
+      "path": "research/q025/integration/public-bridge-acceptance.py",
+      "sha256": "4712d27c4b27bbd30acffc14b5df2b837bd1c490dec9cec4dc5ad5c118c0daac",
+      "bytes": 11787
+    },
+    {
+      "path": "research/q025/integration/agent-acceptance-plan.md",
+      "sha256": "261ef674e18dc779673b7d2605835170b33bbe531f6b64d3a13c95dfdd5fb818",
+      "bytes": 10388
+    },
+    {
+      "path": "research/q025/integration/WAVE-H.md",
+      "sha256": "8617d6cc740f0bdebc83cc8d21308b2060728b8f2428824ba9f77adc12a77ff4",
+      "bytes": 3129
+    },
+    {
+      "path": "research/q025/integration/qa15/browser.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/q025/integration/qa15/content-manifest.json",
+      "sha256": "c631fb329690964472601524b46de8089d9e3eb1c25c17fbe925f42568be2d9c",
+      "bytes": 223642
+    },
+    {
+      "path": "research/q025/integration/qa15/job.json",
+      "sha256": "38b0d1d3af241437555a98d319d0272b0d29c4407e435dc5baa6f8195e285539",
+      "bytes": 1113
+    },
+    {
+      "path": "research/q025/integration/qa15/public-evidence-scan.json",
+      "sha256": "304599d1e03ad0938100a668d85938e846581682c69818564abbb1ab47c49d9a",
+      "bytes": 527
+    },
+    {
+      "path": "research/q025/integration/qa15/report.json",
+      "sha256": "bd6d2ceca8a4fbfe10a1bfc35b3b706a432e52c981fb8751261a2c3a8f07ca1e",
+      "bytes": 960
+    },
+    {
+      "path": "research/q025/integration/qa15/revision-guard-connected.png",
+      "sha256": "4880a128811a20dab02292b8e9e83d1d2abd34d8c675cb88ebc35376948cef78",
+      "bytes": 201766
+    },
+    {
+      "path": "research/q025/integration/qa15/run.sbatch",
+      "sha256": "ae744a434440546d75d4d513d9218f64189ddbc2721218ac83f44a72eb60ddd4",
+      "bytes": 2728
+    },
+    {
+      "path": "research/q025/integration/qa15/slurm-accounting.txt",
+      "sha256": "d1cbd98199b181ebad2ab2e873a2d87c4be5f54b8a2c7b2c743e81eb1314a83c",
+      "bytes": 135
+    }
+  ],
+  "verification": {
+    "command": "npm run build && npm test && npm run check:site",
+    "exitCode": 0,
+    "tests": 80,
+    "observedExecSession": 83451,
+    "runtimeFilesUnchangedSincePassingChecks": true,
+    "gitDiffCheck": "passed",
+    "pythonHarnessSyntax": "passed"
+  },
+  "browser": {
+    "jobId": "61499582",
+    "status": "COMPLETED",
+    "exitCode": "0:0",
+    "checksPassed": 3,
+    "reportSha256": "bd6d2ceca8a4fbfe10a1bfc35b3b706a432e52c981fb8751261a2c3a8f07ca1e",
+    "scope": "Synthetic CLI/MCP captured-revision interleaving in isolated authorized Slurm Chromium; not independent agent/scientific/public HTTPS acceptance."
+  },
+  "postQa15UnexecutedHarnessChanges": [
+    "research/q025/integration/public-bridge-acceptance.py"
+  ],
+  "pending": [
+    "Final accepted atlas installation and real-data journeys",
+    "Fresh independent agent routing through actual CLI tools to rendered browser",
+    "Public HTTPS default-policy and exact-origin simulated-consent outcomes",
+    "Final display separation of attributed workflow boilerplate from physics premises"
+  ],
+  "originalScientificCampaignInputsChanged": false,
+  "originalQaManifestsChanged": false
+}

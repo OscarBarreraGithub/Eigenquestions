@@ -24,7 +24,7 @@ export function validateAdmittedScope(d,{decision,verifiedReceiptHashes=new Set(
 }
 
 /** Shared production component gate; it never creates homes or allocations. */
-export function compileSourceContributions({rows,destinations,units,decision,reviewRecords,verifiedPrimaryLocators=new Set()}) {
+export function compileSourceContributions({rows,destinations,units,decision,reviewRecords,verifiedPrimaryLocators=new Set(),verifiedReceiptHashes=new Set()}) {
   // A source's scientific contribution is independent of its direct home and
   // independent of whether multiple formulations denote one fine question.
   const dest=new Map(destinations.map(d=>[d.id,d])),reviews=new Set(reviewRecords.keys());
@@ -41,10 +41,19 @@ export function compileSourceContributions({rows,destinations,units,decision,rev
     const proof=decision(row.decisionId,['source_contribution']),scopeHash=scopeContentHash(destination),agreement=proof.reviewAgreement;
     if(!proof.subjectIds?.includes(row.unitId)||!proof.subjectIds?.includes(row.destinationId))fail('typed contribution decision has wrong subjects');
     if(proof.scopeContentSha256!==scopeHash||proof.contributionContentSha256!==sourceContributionContentHash(row,scopeHash))fail('typed contribution changed after admission or names a different scope');
-    if(proof.challengerAgreement!=='independently_agreed'||!agreement?.proposalReviewId||!agreement.challengeReviewId||agreement.proposalReviewId===agreement.challengeReviewId||[agreement.proposalReviewId,agreement.challengeReviewId].some(id=>!reviews.has(id)||!proof.sourceReviewIds.includes(id)))fail('typed contribution lacks distinct pinned proposal and challenge evidence');
-    if(!reviewRecords.get(agreement.proposalReviewId).sha256||reviewRecords.get(agreement.proposalReviewId).sha256===reviewRecords.get(agreement.challengeReviewId).sha256)fail('typed contribution repeats one review artifact under two IDs');
+    const explicit=proof.challengerAgreement==='coordinator_adjudicated_source_contribution';
+    if(explicit){
+      const adjudication=proof.adjudication,receipt=adjudication?.receipt;
+      if(adjudication?.status!=='accepted_explicit_source_contribution'||!receipt?.path||!/^[a-f0-9]{64}$/.test(receipt.sha256||'')||!verifiedReceiptHashes.has(receipt.sha256))fail('typed contribution explicit adjudication receipt is not verified');
+      if(!proof.sourceReviewIds?.length||proof.sourceReviewIds.some(id=>!reviews.has(id)||!verifiedReceiptHashes.has(reviewRecords.get(id).sha256))||!proof.sourceReviewIds.some(id=>reviewRecords.get(id).sha256!==receipt.sha256))fail('typed contribution explicit adjudication lacks verified source review evidence');
+      if(!row.evidenceRefs.every(ref=>(proof.evidenceRefs||[]).some(bound=>JSON.stringify(bound)===JSON.stringify(ref))))fail('typed contribution explicit adjudication does not bind its source evidence');
+      if(agreement)fail('explicit contribution adjudication must not claim a fictional dual review agreement');
+    }else{
+      if(proof.challengerAgreement!=='independently_agreed'||!agreement?.proposalReviewId||!agreement.challengeReviewId||agreement.proposalReviewId===agreement.challengeReviewId||[agreement.proposalReviewId,agreement.challengeReviewId].some(id=>!reviews.has(id)||!proof.sourceReviewIds.includes(id)))fail('typed contribution lacks distinct pinned proposal and challenge evidence');
+      if(!reviewRecords.get(agreement.proposalReviewId).sha256||reviewRecords.get(agreement.proposalReviewId).sha256===reviewRecords.get(agreement.challengeReviewId).sha256)fail('typed contribution repeats one review artifact under two IDs');
+    }
     const key=[row.unitId,row.destinationId,row.role].join('\n');if(contributionKeys.has(key))fail('duplicate typed contribution');contributionKeys.add(key);
-    sourceContributions.push({...row,scopeContentSha256:scopeHash,browserVectorRow:source.browserVectorRow,sourceRow:source.sourceRow,paperId:source.paperId,lens:source.lens,contributionStatus:'accepted_typed_contribution',provenance:{decisionId:row.decisionId,sourceReviewIds:proof.sourceReviewIds,reviewAgreement:agreement,doesNotAssertDirectHome:true,doesNotAssertEquivalence:true,doesNotAssertMethodApplicability:true}});
+    sourceContributions.push({...row,scopeContentSha256:scopeHash,browserVectorRow:source.browserVectorRow,sourceRow:source.sourceRow,paperId:source.paperId,lens:source.lens,contributionStatus:'accepted_typed_contribution',provenance:{decisionId:row.decisionId,sourceReviewIds:proof.sourceReviewIds,...(explicit?{challengerAgreement:proof.challengerAgreement,adjudication:proof.adjudication}:{reviewAgreement:agreement}),doesNotAssertDirectHome:true,doesNotAssertEquivalence:true,doesNotAssertMethodApplicability:true}});
   }
   return sourceContributions;
 }
@@ -96,7 +105,7 @@ export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,
     d.provenance={...d.provenance,scopeDecisionId:d.scopeDecisionId,readingCoverage:d.readingCoverage,originalCandidateId:packet.originalCandidate.candidateId,originalBinIds:d.originalBinIds||[]};
     d.membershipStatus=d.kind==='region'?'complete':'representative';
   }
-  const sourceContributions=compileSourceContributions({rows:packet.sourceContributions,destinations,units,decision,reviewRecords,verifiedPrimaryLocators});
+  const sourceContributions=compileSourceContributions({rows:packet.sourceContributions,destinations,units,decision,reviewRecords,verifiedPrimaryLocators,verifiedReceiptHashes});
   for(const d of destinations){if(d.sourceContributions?.length)fail('typed contributions must use the separately admitted packet table');d.sourceContributions=sourceContributions.filter(row=>row.destinationId===d.id);}
   const relations=[],parents=new Map(destinations.map(d=>[d.id,[]])),children=new Map(destinations.map(d=>[d.id,[]]));
   for(const raw of packet.relations||[]){

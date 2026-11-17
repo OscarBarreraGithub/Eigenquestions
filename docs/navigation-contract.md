@@ -37,12 +37,20 @@ Snapshots additionally expose `browserStatus`: `acknowledgedCurrent`, `acknowled
 Q-002 adds an optional transport precondition for `POST /api/action` and
 `POST /api/import`: `If-Match: "REVISION"` (an unquoted nonnegative safe integer
 is also accepted). The server parses the JSON body, then compares the revision
-and performs the synchronous mutation without an intervening await. A stale
+before preparing the mutation, and checks the same parent again before committing
+after asynchronous shard loading. A stale
 revision returns HTTP 409 with `{error:"Revision conflict",current:snapshot}`;
 the caller must preserve that newer state and its own draft, report the conflict,
 and avoid automatically retrying an old import against the new revision. An
 invalid precondition returns HTTP 400 and changes nothing. An absent precondition
-preserves existing unconditional CLI/MCP behavior. CORS permits `If-Match`.
+preserves explicit legacy unconditional behavior. CLI mutations expose
+`--expected-revision N`; MCP `navigator_navigate` and `navigator_import` expose
+`expectedRevision`. Both forward the exact captured value through `If-Match`,
+including zero. The shared runtime also accepts `{expectedRevision}` for actions
+and imports. Strict agents capture it before interpretation, retain their draft
+and the returned newer state on conflict, and never automatically restamp.
+CLI exits nonzero with a structured conflict; MCP returns `isError` and a compact
+current state. Read-only calls are unchanged. CORS permits `If-Match`.
 If a UI operation needs an import followed by an action, both requests must be
 guarded using the revision returned by the preceding accepted operation. A prior
 GET alone is not concurrency protection. Session schemas, engine/data identity

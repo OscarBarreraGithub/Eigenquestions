@@ -60,6 +60,8 @@ def main():
         mcp.stdin.write(json.dumps({'jsonrpc':'2.0','id':0,'method':'initialize','params':{'protocolVersion':'2025-06-18','clientInfo':{'name':'q025-public-origin-acceptance','version':'1'}}})+'\n');mcp.stdin.flush()
         if not select.select([mcp.stdout],[],[],30)[0]:raise RuntimeError('MCP initialization timed out')
         if json.loads(mcp.stdout.readline()).get('error'):raise RuntimeError('MCP initialization failed')
+        captured_parent=rpc('navigator_state',{})['revision']
+        report['capturedParentRevision']=captured_parent
         with sync_playwright() as playwright:
             browser=playwright.chromium.launch(headless=True)
             report['browserVersion']=browser.version
@@ -68,7 +70,7 @@ def main():
             page=context.new_page();report['pageErrors']=[]
             page.on('pageerror',lambda error:report['pageErrors'].append(str(error)))
             route=args.public_origin+'/#atlas='+quote(selector['atlasId'])+'&version='+quote(selector['atlasVersion'])+'&destination='+quote(args.destination)
-            page.goto(route,wait_until='networkidle');page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=args.destination)
+            page.goto(route,wait_until='domcontentloaded');page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=args.destination)
             response=page.request.get(args.public_origin+base+'/manifest.json');assert response.ok
             assert hashlib.sha256(response.body()).hexdigest()==report['localManifestSha256']
             prepared=page.evaluate('window.eigenquestionsNavigator.export()');prepared_state=prepared['snapshot']['view']['stateId']
@@ -91,7 +93,7 @@ def main():
                 page.locator('#bridge-token').fill('');page.screenshot(path=str(output/'public-connection-unavailable.png'),full_page=True);report['screenshots'].append('public-connection-unavailable.png')
                 raise RuntimeError('Public-origin connection did not complete under the recorded permission policy')
             page.locator('#bridge-token').fill('');page.locator('#agent-close').click()
-            rpc('navigator_navigate',{'type':'navigate','selector':selector})
+            rpc('navigator_navigate',{'type':'navigate','selector':selector,'expectedRevision':captured_parent})
             page.wait_for_function('id=>document.documentElement.dataset.stateId===id',arg=prepared_state)
             acknowledged=False
             for _ in range(80):

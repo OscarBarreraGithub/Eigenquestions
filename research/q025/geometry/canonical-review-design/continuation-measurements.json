@@ -1,0 +1,548 @@
+{
+  "schemaVersion": "q025-canonical-continuation-packing/1",
+  "status": "measurement_only_unlaunched_no_scientific_admission",
+  "inputs": {
+    "frozenExport": {
+      "path": "research/q025/geometry/canonical-review-design/triage-export-index.json",
+      "sha256": "8c6806d664bd84c25fac9153634ba6f30cf8957ebefdb11abf4a4e2c3293bff0",
+      "bytes": 359114
+    },
+    "pairedNoteRegistry": {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v4-20261117T131639Z.json",
+      "sha256": "8fec0de5da3901625e4fea16240d4a487878b7b6c803c29a3e3893dc89c1fe7e",
+      "bytes": 70417256
+    },
+    "frozenPackingScript": {
+      "path": "research/q025/geometry/canonical-review-design/measure_packings.py",
+      "sha256": "8be3bfc2d00aefbdd7a14e3487ccc65f1c52aa78b1615805ba7d3fcd05748a1c"
+    },
+    "completedPilotReceipts": [
+      {
+        "familyId": "canonical-triage-0006",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0006-screen/receipt.json",
+          "sha256": "73ac5b1e5c1b28800334afd73a512f97e124216d247e0da665fc342796c26678",
+          "bytes": 2643
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0006-screen/reply.json",
+          "sha256": "0681734e017d928f0375d6e10f798d5676c03be9716bbc9768e1fdd00fd83ae7",
+          "bytes": 137462
+        },
+        "comparisons": 158,
+        "scopeReviews": 41
+      },
+      {
+        "familyId": "canonical-triage-0019",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0019-screen/receipt.json",
+          "sha256": "bd363dda89dc5ce858ebc4d907050418061a0342f32f84c4be523c0fe588f989",
+          "bytes": 2638
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0019-screen/reply.json",
+          "sha256": "0de97e3b2abea24264cb2a817ea9d5e6bdd1808ab00dfcc89ab53e6347d0dfa6",
+          "bytes": 83976
+        },
+        "comparisons": 63,
+        "scopeReviews": 45
+      },
+      {
+        "familyId": "canonical-triage-0022",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0022-screen/receipt.json",
+          "sha256": "462d4d61a34fbd0e49a4fd3ea75761c406ef81a5c268d3bfe85ced5e3e10a12e",
+          "bytes": 2638
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0022-screen/reply.json",
+          "sha256": "d5016c25d29e581ebbdf83f07a6d1d26aefb4dd7bfc173870be157e04fedc75d",
+          "bytes": 107343
+        },
+        "comparisons": 87,
+        "scopeReviews": 49
+      },
+      {
+        "familyId": "canonical-triage-0028",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0028-screen/receipt.json",
+          "sha256": "abb65897546ebddc9125a2e6773754545da4a0e1740f007af925291d031a1e21",
+          "bytes": 2643
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0028-screen/reply.json",
+          "sha256": "c6c1c2483a76d63fcc9617ed29983f481cbb4bed39423f38eda5763aa59d344a",
+          "bytes": 90572
+        },
+        "comparisons": 67,
+        "scopeReviews": 55
+      }
+    ],
+    "packings": {
+      "path": "research/q025/geometry/canonical-review-design/continuation-packings.local.json",
+      "sha256": "957f45007dad1d5d555dba65d17bfdd600250056bec65ba43237d0ed8c417958",
+      "bytes": 3544013
+    }
+  },
+  "counts": {
+    "originalScopeUniverse": 1112,
+    "completedPilotFamilies": 4,
+    "completedPilotComparisonsExcluded": 375,
+    "completedOriginalWorkloadIdsExcluded": 375,
+    "remainingUniqueComparisons": 3778,
+    "remainingOriginalWorkloadIds": 3793,
+    "remainingScopeExposureUniverse": 1073,
+    "pairedAssessmentRowsAttachedToScopes": 9833,
+    "missingPairedAssessmentRows": 28
+  },
+  "alternatives": [
+    {
+      "name": "continuation_40_120_scope_notes_only",
+      "mode": "triage_refs",
+      "limits": {
+        "maxScopes": 40,
+        "maxPairs": 120,
+        "maxInputCharacters": 280000
+      },
+      "heuristic": "star",
+      "packets": 58,
+      "callsIfEveryPacketProposedAndChallenged": 116,
+      "callsIfTriageOnlySinglePass": 58,
+      "inputCharacters": {
+        "min": 123052,
+        "median": 261849.5,
+        "mean": 242577.25862068965,
+        "max": 279224,
+        "sum": 14069481
+      },
+      "scopesPerPacket": {
+        "min": 17,
+        "median": 39.0,
+        "mean": 35.8448275862069,
+        "max": 40,
+        "sum": 2079
+      },
+      "pairsPerPacket": {
+        "min": 9,
+        "median": 54.0,
+        "mean": 65.13793103448276,
+        "max": 120,
+        "sum": 3778
+      },
+      "scopeExposures": 2079,
+      "maxRepeatedScopeExposures": 6,
+      "sourceDescriptionExposures": 18768,
+      "primaryWindowExposures": 0,
+      "primaryTextCharacters": 0,
+      "sourceDescriptionCharacters": 3976144,
+      "coveredUniqueComparisons": 3778,
+      "coveredNominationIds": 3793,
+      "coveredScopes": 1073,
+      "pendingPilotNominationsExcludedExplicitly": 18,
+      "elapsedSeconds": 0.43354441598057747,
+      "allScopeAndPairCoverageVerified": true,
+      "fullPairedUnitNotesIncluded": false,
+      "completedPilotComparisonsExcluded": 375,
+      "scopeAccountingIncludingCompletedPilot": 1112
+    },
+    {
+      "name": "continuation_40_120_paired_notes",
+      "mode": "triage_refs",
+      "limits": {
+        "maxScopes": 40,
+        "maxPairs": 120,
+        "maxInputCharacters": 280000
+      },
+      "heuristic": "star",
+      "packets": 100,
+      "callsIfEveryPacketProposedAndChallenged": 200,
+      "callsIfTriageOnlySinglePass": 100,
+      "inputCharacters": {
+        "min": 61455,
+        "median": 277098.5,
+        "mean": 266489.8,
+        "max": 279505,
+        "sum": 26648980
+      },
+      "scopesPerPacket": {
+        "min": 2,
+        "median": 22.0,
+        "mean": 22.63,
+        "max": 40,
+        "sum": 2263
+      },
+      "pairsPerPacket": {
+        "min": 1,
+        "median": 31.0,
+        "mean": 37.78,
+        "max": 120,
+        "sum": 3778
+      },
+      "scopeExposures": 2263,
+      "maxRepeatedScopeExposures": 7,
+      "sourceDescriptionExposures": 20445,
+      "primaryWindowExposures": 0,
+      "primaryTextCharacters": 0,
+      "sourceDescriptionCharacters": 4335701,
+      "coveredUniqueComparisons": 3778,
+      "coveredNominationIds": 3793,
+      "coveredScopes": 1073,
+      "pendingPilotNominationsExcludedExplicitly": 18,
+      "elapsedSeconds": 0.9217964579584077,
+      "allScopeAndPairCoverageVerified": true,
+      "fullPairedUnitNotesIncluded": true,
+      "completedPilotComparisonsExcluded": 375,
+      "scopeAccountingIncludingCompletedPilot": 1112
+    },
+    {
+      "name": "continuation_40_100_paired_notes",
+      "mode": "triage_refs",
+      "limits": {
+        "maxScopes": 40,
+        "maxPairs": 100,
+        "maxInputCharacters": 280000
+      },
+      "heuristic": "star",
+      "packets": 102,
+      "callsIfEveryPacketProposedAndChallenged": 204,
+      "callsIfTriageOnlySinglePass": 102,
+      "inputCharacters": {
+        "min": 112288,
+        "median": 277129.0,
+        "mean": 265104.70588235295,
+        "max": 279453,
+        "sum": 27040680
+      },
+      "scopesPerPacket": {
+        "min": 4,
+        "median": 22.0,
+        "mean": 22.235294117647058,
+        "max": 40,
+        "sum": 2268
+      },
+      "pairsPerPacket": {
+        "min": 2,
+        "median": 31.0,
+        "mean": 37.03921568627451,
+        "max": 100,
+        "sum": 3778
+      },
+      "scopeExposures": 2268,
+      "maxRepeatedScopeExposures": 8,
+      "sourceDescriptionExposures": 20979,
+      "primaryWindowExposures": 0,
+      "primaryTextCharacters": 0,
+      "sourceDescriptionCharacters": 4450842,
+      "coveredUniqueComparisons": 3778,
+      "coveredNominationIds": 3793,
+      "coveredScopes": 1073,
+      "pendingPilotNominationsExcludedExplicitly": 18,
+      "elapsedSeconds": 0.8648205000208691,
+      "allScopeAndPairCoverageVerified": true,
+      "fullPairedUnitNotesIncluded": true,
+      "completedPilotComparisonsExcluded": 375,
+      "scopeAccountingIncludingCompletedPilot": 1112
+    },
+    {
+      "name": "continuation_40_80_paired_notes",
+      "mode": "triage_refs",
+      "limits": {
+        "maxScopes": 40,
+        "maxPairs": 80,
+        "maxInputCharacters": 280000
+      },
+      "heuristic": "star",
+      "packets": 104,
+      "callsIfEveryPacketProposedAndChallenged": 208,
+      "callsIfTriageOnlySinglePass": 104,
+      "inputCharacters": {
+        "min": 64627,
+        "median": 277004.5,
+        "mean": 261586.8076923077,
+        "max": 279427,
+        "sum": 27205028
+      },
+      "scopesPerPacket": {
+        "min": 2,
+        "median": 22.0,
+        "mean": 22.009615384615383,
+        "max": 40,
+        "sum": 2289
+      },
+      "pairsPerPacket": {
+        "min": 1,
+        "median": 32.0,
+        "mean": 36.32692307692308,
+        "max": 80,
+        "sum": 3778
+      },
+      "scopeExposures": 2289,
+      "maxRepeatedScopeExposures": 8,
+      "sourceDescriptionExposures": 20978,
+      "primaryWindowExposures": 0,
+      "primaryTextCharacters": 0,
+      "sourceDescriptionCharacters": 4448061,
+      "coveredUniqueComparisons": 3778,
+      "coveredNominationIds": 3793,
+      "coveredScopes": 1073,
+      "pendingPilotNominationsExcludedExplicitly": 18,
+      "elapsedSeconds": 0.8831299999728799,
+      "allScopeAndPairCoverageVerified": true,
+      "fullPairedUnitNotesIncluded": true,
+      "completedPilotComparisonsExcluded": 375,
+      "scopeAccountingIncludingCompletedPilot": 1112
+    },
+    {
+      "name": "continuation_40_100_deduplicated_paired_notes",
+      "mode": "triage_refs",
+      "limits": {
+        "maxScopes": 40,
+        "maxPairs": 100,
+        "maxInputCharacters": 280000
+      },
+      "heuristic": "star",
+      "packets": 90,
+      "callsIfEveryPacketProposedAndChallenged": 180,
+      "callsIfTriageOnlySinglePass": 90,
+      "inputCharacters": {
+        "min": 112301,
+        "median": 277077.0,
+        "mean": 264446.73333333334,
+        "max": 279504,
+        "sum": 23800206
+      },
+      "scopesPerPacket": {
+        "min": 6,
+        "median": 24.0,
+        "mean": 24.633333333333333,
+        "max": 40,
+        "sum": 2217
+      },
+      "pairsPerPacket": {
+        "min": 3,
+        "median": 35.0,
+        "mean": 41.977777777777774,
+        "max": 100,
+        "sum": 3778
+      },
+      "scopeExposures": 2217,
+      "maxRepeatedScopeExposures": 6,
+      "sourceDescriptionExposures": 20208,
+      "primaryWindowExposures": 0,
+      "primaryTextCharacters": 0,
+      "sourceDescriptionCharacters": 4281092,
+      "coveredUniqueComparisons": 3778,
+      "coveredNominationIds": 3793,
+      "coveredScopes": 1073,
+      "pendingPilotNominationsExcludedExplicitly": 18,
+      "elapsedSeconds": 1.2076094159856439,
+      "allScopeAndPairCoverageVerified": true,
+      "pairedUnitContextExposures": 20759,
+      "fullPairedUnitNotesIncluded": true,
+      "losslessWithinReviewUnitDeduplication": true,
+      "completedPilotComparisonsExcluded": 375,
+      "scopeAccountingIncludingCompletedPilot": 1112
+    },
+    {
+      "name": "continuation_40_80_deduplicated_paired_notes",
+      "mode": "triage_refs",
+      "limits": {
+        "maxScopes": 40,
+        "maxPairs": 80,
+        "maxInputCharacters": 280000
+      },
+      "heuristic": "star",
+      "packets": 92,
+      "callsIfEveryPacketProposedAndChallenged": 184,
+      "callsIfTriageOnlySinglePass": 92,
+      "inputCharacters": {
+        "min": 93340,
+        "median": 275932.0,
+        "mean": 258239.90217391305,
+        "max": 279408,
+        "sum": 23758071
+      },
+      "scopesPerPacket": {
+        "min": 4,
+        "median": 24.5,
+        "mean": 24.16304347826087,
+        "max": 40,
+        "sum": 2223
+      },
+      "pairsPerPacket": {
+        "min": 2,
+        "median": 36.0,
+        "mean": 41.06521739130435,
+        "max": 80,
+        "sum": 3778
+      },
+      "scopeExposures": 2223,
+      "maxRepeatedScopeExposures": 9,
+      "sourceDescriptionExposures": 20133,
+      "primaryWindowExposures": 0,
+      "primaryTextCharacters": 0,
+      "sourceDescriptionCharacters": 4268840,
+      "coveredUniqueComparisons": 3778,
+      "coveredNominationIds": 3793,
+      "coveredScopes": 1073,
+      "pendingPilotNominationsExcludedExplicitly": 18,
+      "elapsedSeconds": 1.0978868330130354,
+      "allScopeAndPairCoverageVerified": true,
+      "pairedUnitContextExposures": 20693,
+      "fullPairedUnitNotesIncluded": true,
+      "losslessWithinReviewUnitDeduplication": true,
+      "completedPilotComparisonsExcluded": 375,
+      "scopeAccountingIncludingCompletedPilot": 1112
+    }
+  ],
+  "missingPairedAssessments": [
+    {
+      "recordId": "admitted:q-kk-graviton-thermal-production",
+      "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-kk-graviton-thermal-production",
+      "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-kk-graviton-thermal-production",
+      "unitId": "unit:d5031ab16d8b871bddd917aa4e9de3e7203c9cda1499e4fcfe9a5f463cd4a4ac",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-kk-graviton-thermal-production",
+      "unitId": "unit:e12ca8a5f0ff6c3418a1bad027868db22196d443140dbd0952d62c39ff0d811e",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-kk-decay-linear-cosmology",
+      "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-kk-decay-linear-cosmology",
+      "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-kk-decay-linear-cosmology",
+      "unitId": "unit:cec053fff92732be4f03a2a8f423d75850c602a10c959a3319f2add0f4b67cc6",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-flat-darkdimension-freezein-bounds",
+      "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-flat-darkdimension-freezein-bounds",
+      "unitId": "unit:934c499505e575e7dc040a69c2167ee854efe90f4d6c8b6550cd10a5edf49cee",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-flat-darkdimension-freezein-bounds",
+      "unitId": "unit:c429132b38c3bc616ccb1fb40930ddf78ed91fc9a2f1e989e7d4cc95c9ed04b9",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-flat-darkdimension-freezein-bounds",
+      "unitId": "unit:e12ca8a5f0ff6c3418a1bad027868db22196d443140dbd0952d62c39ff0d811e",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:02835cfa5db848997cf0e3c22f50f39ac94358b530639d593a0548fb382cb96d",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:1f52516c69551f2499ef77f96c54e4faae1f76d9269feb68551e7c449a5f60b0",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:23eb0d42913853b4e0b073283acdbcd14d0332fedc6ae62e501806b6d6c13b4c",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:34c75f8ea355d81507aba068500cd26feb89d0e4642971164d21d9b4551fdfd5",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:4ed2ac936157aab2ac1031a731c7fd778188055e7092082eb69b67b68a11dc32",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:6490b9e42afca4b9d24fb7bb389c080e29d2b83a2a233371bf443f3e3bcfae7c",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:85dbdc1c905fd4cc14c1060102df4e9ca557976fbdc069e9f588e83162c03b96",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:8e9e312f12fae1519b5dcbd7dec805b41fdf1f0d3442a9673093b49c0ad3df36",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:9a58bbb2e0d7da3e10998875a6dfee59040d5ddf4d3845653b6354a2fbbe8f6a",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:9ebc2cf7d7d878ac80b5084b5d5d450419cc253129cf1bc9dab73864be840032",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:a774271268e9e40cd895b4062fae8e32f6418d55bebe369af87270ba8bc9c09f",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "unitId": "unit:f7a47ff010c9f0364b1c05ab1c74916b4431e0c5b727f726f598bcd495eb84b5",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-portal-dark-radiation",
+      "unitId": "unit:23eb0d42913853b4e0b073283acdbcd14d0332fedc6ae62e501806b6d6c13b4c",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-portal-dark-radiation",
+      "unitId": "unit:7dca72ba257ce34ec619731657e1aa584ead455e2ecb62bd102dffff71a3924f",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-portal-dark-radiation",
+      "unitId": "unit:864118c5b3cb9db313dde5dae210854f55d1a5352a49702fa5ee69844eb1c146",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-portal-dark-radiation",
+      "unitId": "unit:d44a74767ac2877c9b99bc74879e8e5feb8bd8cc05d465c5e27a1b9c73c17d76",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    },
+    {
+      "recordId": "admitted:q-portal-dark-radiation",
+      "unitId": "unit:ede61c62dc25c7f33b7ac2c9eb5ad97a073b189cf84455db1b95c8b301e61dd3",
+      "reason": "No same-review paired unit assessment in registry v4; do not invent notes."
+    }
+  ],
+  "limitations": [
+    "The completed 375 comparison screens are accounted for once and excluded, not converted into accepted negative or positive scientific decisions.",
+    "This measures continuation of the frozen 1,112-scope universe; new registry-v4 scopes require separately accounted delta nominations.",
+    "Complete definitions and source descriptions remain exact. Paired-note variants add full original per-unit notes, dispositions, reasons and home refs; no primary text or fresh primary-reading claim is added.",
+    "A screen escalation is a nomination, not a mandate for another primary-rich call. Existing paired evidence can support explicit coordinator organization decisions; only material ambiguity or new physical meaning needs targeted additional reading.",
+    "No active inputs, frozen exports, source campaigns or sealed holdout files were modified."
+  ],
+  "scriptSha256": "75321f891370f2273a4b1acb48541e7a7dac05c4b796812e867f78bfb9a3f59d"
+}

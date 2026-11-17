@@ -216,12 +216,20 @@ or open the printed local link. Compact destination URLs remain independently
 usable. Session tokens are local access secrets and do not belong in
 papers, exported sessions, Git, or shared screenshots.
 
+Before interpreting a requested visible change, read `state` and retain its
+`revision`. Every mutation below must use that captured value through
+`--expected-revision CAPTURED_REVISION`; with MCP supply `expectedRevision` on
+`navigator_navigate` or `navigator_import`. Zero is valid. A conflict leaves the
+newer state intact and returns it with `code: revision_conflict`. Retain the
+proposed action or import file; reconsider it instead of retrying with a newly
+read revision. Omitting the option retains legacy unguarded behavior.
+
 In another terminal, agent operations immediately update attached browsers:
 
 ```sh
-node bin/navigate.mjs navigate --query 'KK towers' --connection /tmp/eigenquestions-session.json
-node bin/navigate.mjs refine --query 'KK towers as dark matter' --intent phenomenology --connection /tmp/eigenquestions-session.json
-node bin/navigate.mjs refine --query 'How do those dark matter gravitons decay?' --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs navigate --query 'KK towers' --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
+node bin/navigate.mjs refine --query 'KK towers as dark matter' --intent phenomenology --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
+node bin/navigate.mjs refine --query 'How do those dark matter gravitons decay?' --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
 node bin/navigate.mjs state --connection /tmp/eigenquestions-session.json
 ```
 
@@ -235,11 +243,11 @@ and `evidence` inspect without navigation:
 ```sh
 node bin/navigate.mjs search --query 'KK towers' --intent recent --relation using --connection /tmp/eigenquestions-session.json
 node bin/navigate.mjs evidence --ids 'unit:ID_FROM_SEARCH' --connection /tmp/eigenquestions-session.json
-node bin/navigate.mjs select --direction 'direction:ID_FROM_CURRENT_VIEW' --connection /tmp/eigenquestions-session.json
-node bin/navigate.mjs back --connection /tmp/eigenquestions-session.json
-node bin/navigate.mjs replay --index 1 --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs select --direction 'direction:ID_FROM_CURRENT_VIEW' --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
+node bin/navigate.mjs back --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
+node bin/navigate.mjs replay --index 1 --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
 node bin/navigate.mjs export --out navigation-session.json --connection /tmp/eigenquestions-session.json
-node bin/navigate.mjs import --file navigation-session.json --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs import --file navigation-session.json --connection /tmp/eigenquestions-session.json --expected-revision CAPTURED_REVISION
 ```
 
 Commands without `--connection` use the connection file printed by `serve` when

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "q025-home-admission-report/1",
+  "admittedUnits": 1055,
+  "admittedPlacements": 1055,
+  "distinctDestinations": 424,
+  "readingBasis": {
+    "description_checked": 923,
+    "source_excerpt_checked": 132
+  },
+  "allWeightsOne": true,
+  "component": {
+    "path": "research/q025/evaluation/full-pass/home-admissions-v1/home-admission-delta.json",
+    "sha256": "223fc77eb12cea97dac3a32253abb86b590efec432e2e38053e012d2f577f451"
+  },
+  "adjudicationReceipt": {
+    "path": "research/q025/evaluation/full-pass/home-admissions-v1/home-policy-admission.json",
+    "sha256": "275fd7dc27c397141cee2737c967e070cf75df3c6446f8d5c2e2a3e7cc79d740"
+  },
+  "inputCut": [
+    {
+      "path": "research/q025/evaluation/full-pass/native-local/uncomplicated-home-candidates-v1.json",
+      "sha256": "90f8d0b907b219e82af7fcecb3b0745a32cec43857eafdd8248b97fc49a36fe0"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v1/uncomplicated-home-policy-audit-v1.json",
+      "sha256": "9ac8f84776f393d655bb4128371a04c6c4c85e3ce2a1910356fac14e4689aa44"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v1/supported-scope-role-component-v1.json",
+      "sha256": "7524a7784f7e4f9103cf4938278df3ebf53ed7af05da0e56688ecfbf80f51a93"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v3-20261117T121953Z.json",
+      "sha256": "c9c419d7ded388f1355e31b1bef413ab09ca12de0e7cd60be996f687655fcf8a"
+    }
+  ],
+  "fullAtlasAdmission": false,
+  "scopeOrIdentityChanges": 0
+}

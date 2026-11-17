@@ -1,0 +1,10 @@
+"""Keep every historical constraint; make the exact current inventory explicit."""
+import hashlib,json
+from pathlib import Path
+B=Path(__file__).resolve().parent;W=B.parents[4];p=B/'admitted-scope-role-operation-component.json';x=json.loads(p.read_text());h=lambda q:hashlib.sha256(q.read_bytes()).hexdigest();vh=lambda v:hashlib.sha256(json.dumps(v,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest();current=[c for c in x['completeLocalPairConstraints'] if c['stage']=='challenge'];key=lambda c:(c['family'],*sorted([c['left'],c['right']]));by={key(c):c for c in current};history=[];changes=[]
+for c in x['completeLocalPairConstraints']:
+ if c['stage']!='proposal':continue
+ n=by[key(c)];changed=c['relation']!=n['relation'];row={'family':c['family'],'left':c['left'],'right':c['right'],'originalRelation':c['relation'],'currentRelation':n['relation'],'historicalConstraintSha256':vh(c),'currentConstraintSha256':vh(n),'status':'superseded_by_explicit_coordinator_adjudication' if changed else 'prior_constraint_retained_as_historical_independent_support','admissionReceipt':x['admissionReceipt']};history.append(row)
+ if changed:changes.append(row)
+assert len(current)==101 and len(history)==92 and len(changes)==1 and changes[0]['originalRelation']=='unresolved' and changes[0]['currentRelation']=='overlap'
+out={'schemaVersion':'q025-canonical-constraint-precedence/1','component':{'path':str(p.relative_to(W)),'sha256':h(p)},'status':'explicit_local_current_history_selection_for_global_conflict_checks','currentConstraints':current,'historicalConstraints':history,'changedConstraints':changes,'coverage':'Every prior pair appears in the complete final challenge. The one changed relation matches root-adjudicated mediation cd6; no old pair is silently omitted.','canonicalGroupsAutomaticallyAdmitted':False,'sourceStatementEquivalenceAsserted':False};q=B/'constraint-precedence.json';q.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n');print(json.dumps({'sha256':h(q),'current':101,'historical':92,'changes':1}))

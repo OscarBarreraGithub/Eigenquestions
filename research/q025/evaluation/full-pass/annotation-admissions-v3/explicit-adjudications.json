@@ -1,0 +1,501 @@
+{
+  "schemaVersion": "q025-explicit-annotation-adjudication/3",
+  "rows": [
+    {
+      "caseId": "leaf-b2e631ff674dfe9f6385-proposal:f41:qualification",
+      "status": "accepted_explicit_premise_amendment",
+      "adjudicator": "root",
+      "authorization": "Root independently read the exact exception packet and supplied primary windows, and explicitly approved this exact challenger text. The premise amendment separately withdraws unsupported hidden-sector insensitivity and a paper-wide F-term-only assertion.",
+      "originalText": "The illustrative K and W are additively separated. Parent context restricts the analysis to F-terms, treats hidden dynamics as insensitive to dark energy and requires a positive Kähler metric. Separation does not eliminate gravitational cou",
+      "originalTextSha256": "ca798d67d5d3c220602a7f13faae74bf3a93dbd7be8614d464dd3e207c75bf91",
+      "replacementText": "In the illustrative canonical supergravity model, K=|z|²+|Q|² and W=W0(z)+W1(Q) are additively separated, and the source evaluates the F-term scalar potential. The displayed canonical K gives a positive Kähler metric. Despite the separation, the potential contains the displayed contribution |W0|²|Q|²/M_Pl⁴, where M_Pl denotes the source's reduced Planck mass. Using the source's gravitino-mass relation, this contribution is of order m3/2²|Q|². Thus the example retains a hidden-sector contribution to the quintessence potential through supergravity. This qualification concerns the displayed calculation; it does not include an additional premise that hidden-sector dynamics are insensitive to dark energy, which the supplied windows do not establish.",
+      "replacementTextSha256": "68c29d96d42a056e54dd2dbdb8d12d64d5376d98b464997e4a415c1313480ad6",
+      "meaningChange": "different",
+      "scopeImpact": "premise_change",
+      "sourcePacket": {
+        "path": "research/q025/evaluation/full-pass/native-local/annotation-adjudication-v2/00b103a4ce618157fc0e.json",
+        "sha256": "76e0ede144de89237599e3a8513718b38e2f8314c8e55a25b4b106c2dbcf6dc5"
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "dc96a6ecb8a1878de67771baf76e893a44a383e893fee3734df10690cbebab4a",
+        "rawSha256": "81020c7c1a78c7233194232ea6ad666bdb29252771471e800aff7971b5d29de0",
+        "receiptSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clauses-wave-v2/jobs/clause2-remaining-clauses-08-proposal/reply.json",
+          "sha256": "c220d8a1728e4082475f295d0ee0786443d1f5a4df45225620a6c57f11ba7fd3",
+          "receiptSha256": "79075b7dcee8c91735af41cd87d20389bc0b4937bb0d515ce4b4a0938cc8f45b"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clauses-wave-v2/jobs/clause2-remaining-clauses-08-challenge/reply.json",
+          "sha256": "c6b97713fd5f0e3efe80632b107153e72f402c220dab1dd936e410d1b902d650",
+          "receiptSha256": "9ebeffd8e6d787cc1f22fdf39cfc0c97f7bfbef8d748248e5ed5a09e6b6242a7"
+        },
+        "sourcePacketSha256": "1ada5657fe255a5cae50374e569b132e498349c66f274dfaebfd3d6808227d8d"
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-b2e631ff674dfe9f6385-proposal:f41:qualification",
+        "decision": "supported_as_written",
+        "reason": "The prior proposal accurately states the canonical example and its surviving F-term contribution. It expressly omits the unsupported hidden-sector-insensitivity premise and correctly labels that omission a premise change. The supplied structural relations do not justify reinstating that premise or a global F-term-only restriction.",
+        "refs": [
+          "e12",
+          "e19",
+          "g19",
+          "g20",
+          "g21",
+          "g24"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e12",
+          "kind": "primary",
+          "sourceId": "ev:aea08d7d29e6650368474694ed348831",
+          "paperId": "1808.02279",
+          "sourceSha256": "f6b34f2082afdc85c32c7799b202721fe75389e264af4f22801cef559ab2c98e",
+          "sourceContext": {
+            "path": "papers/28a56f7cbd5ba7a7efd4/reading-order.json",
+            "fileSha256": "72c4e92e83a1318176e7efcb87e79af15008c2a124dcc392442b3377192a5e3a",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "bd5ae1d73f52d2cd7c9d564d08ee66e936ea8ecbc1a29d46e7d3a4781f724387",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e19",
+          "kind": "primary",
+          "sourceId": "ev:c53f7bcbb59044c51b2cb0f8368eec16",
+          "paperId": "1808.02279",
+          "sourceSha256": "f6b34f2082afdc85c32c7799b202721fe75389e264af4f22801cef559ab2c98e",
+          "sourceContext": {
+            "path": "papers/28a56f7cbd5ba7a7efd4/reading-order.json",
+            "fileSha256": "72c4e92e83a1318176e7efcb87e79af15008c2a124dcc392442b3377192a5e3a",
+            "pdfPage": 3,
+            "start": 630,
+            "end": 3286,
+            "textSha256": "2bead3c431fe76a5b3135985b672a9795cb7fb7bfbf9b470674df011334e811e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "g19",
+          "kind": "source_relation",
+          "sourceId": "edge:2ca4930ea2ffcabc02d9756dc0371ff0",
+          "source": "obj:28a56f7cbd5ba7a7efd4:setting:b30099ebbbc8415a021f7800",
+          "target": "obj:28a56f7cbd5ba7a7efd4:assumption:8e4b16ec6787f69ed8dbbe9f",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            24
+          ]
+        },
+        {
+          "ref": "g20",
+          "kind": "source_relation",
+          "sourceId": "edge:59a582d2eed306b1558fe57da9c92416",
+          "source": "obj:28a56f7cbd5ba7a7efd4:setting:b30099ebbbc8415a021f7800",
+          "target": "obj:28a56f7cbd5ba7a7efd4:assumption:2e85020c557cc9c92919ac4d",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            24
+          ]
+        },
+        {
+          "ref": "g21",
+          "kind": "source_relation",
+          "sourceId": "edge:66fb2b24835dd2b7fcbea91be275b243",
+          "source": "obj:28a56f7cbd5ba7a7efd4:setting:b30099ebbbc8415a021f7800",
+          "target": "obj:28a56f7cbd5ba7a7efd4:assumption:9a9a20853e88c599b837c9bd",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            24
+          ]
+        },
+        {
+          "ref": "g24",
+          "kind": "source_relation",
+          "sourceId": "edge:c5d96d6e1f889c8345630ceb5c71ee98",
+          "source": "obj:28a56f7cbd5ba7a7efd4:setting:b30099ebbbc8415a021f7800",
+          "target": "obj:28a56f7cbd5ba7a7efd4:convention:1da003d19103528b8262c8e8",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            24
+          ]
+        }
+      ],
+      "dependencyRevalidationRequired": true,
+      "noAutomaticPromotion": [
+        "scientific_scope",
+        "placement",
+        "canonical_identity",
+        "scientific_relation",
+        "physical_result"
+      ],
+      "readingLimit": "Exact supplied descriptions and bounded primary passages only; source-reported calculations and missing arguments are not independently reproduced."
+    },
+    {
+      "caseId": "leaf-134e6a0b7019801adad3-challenge:p4:note",
+      "status": "accepted_annotation_refinement",
+      "adjudicator": "root",
+      "authorization": "Root independently read the exact exception packet and supplied primary windows, and explicitly approved the challenger wording as an annotation-only refinement.",
+      "originalText": "Supporting Kähler stabilization connects distinct inflaton sectors without identifying them. The card correctly leaves the chaotic inflaton unspecified and pr",
+      "originalTextSha256": "27eb0b9f8c2ee1b9abaa0adbb17c01aba72819a412435be47b0d7e3ce027f543",
+      "replacementText": "The supplied evidence supports retaining the compatibility question connecting distinct inflaton sectors through supporting Kähler stabilization. The d8 description leaves the chaotic inflaton's identity unspecified. The d11–d13 descriptions concern complex-structure or aligned-axion constructions, with negligible warping and explicitly included warping kept as separate settings. The d31 question concerns Kähler and five-brane moduli lacking membrane-instanton superpotentials and possible Fayet–Iliopoulos-driven five-brane inflation; its compactification framework is not inferred from the other sources. In e4 and e5, open-string radial motion drives the proposed α = 1/3 model in a type IIB/F-theory orbifold setup with intersecting D7 branes and near-conifold regions, while the closed-string sector is reported stabilized. The open-string contribution to τ3 and the convention ρ_k = b_k + iτ_k with b_k = 0 remain local to that setup. In e1 and e8, unwinding inflation uses a five-brane bubble in a warped Klebanov–Strassler throat within a type IIB Calabi–Yau orientifold compactification, with complex-structure moduli stabilized at tree level and two Kähler moduli stabilized through LVS. The specified backreaction analysis concerns anti-D3 charge effects on warping and changes in the scalar potential for the Kähler moduli as that charge is depleted. This does not establish control of every backreaction effect or resolve conjectural field-range bounds generally. The D7 analysis in e11 and e15 requires a suitable shift symmetry, nongeneric flux choices and preservation of extended no-scale loop suppression with an additional light D7 field; the shift symmetry is discussed near large complex structure. The authors report that they did not find an explicit flux in their stated example that preserves the desired light brane sector while stabilizing the axio-dilaton and all complex-structure moduli. This limitation is not a nonexistence theorem. These are source-specific compatibility questions and reported constructions, not interchangeable brane mechanisms or independently verified compactifications.",
+      "replacementTextSha256": "c4db0f59e32ffa77f16567266e93a6deced697424ac8a2cbf7477a64bc2ca3a5",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "sourcePacket": {
+        "path": "research/q025/evaluation/full-pass/native-local/annotation-adjudication-v2/d296323b45de4563049f.json",
+        "sha256": "a19425b060a5d974ddc585e87ff85b8edb4c0460f1423513e530a2dcf9738248"
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "fe14ff686ccb05516bb84ea7dd929297e6b6d35d6664cc978b9c96847a1fa034",
+        "rawSha256": "f3049a188bbd1f236f42c879e3a9eeb780b632ba65304fc3f5d763ff7b214e56",
+        "receiptSha256": "fb5e6a1d9d72eb7247e3104c2578094952e1f934ddfcf8ae8398e8db33faf9c3"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clauses-wave-v2/jobs/clause2-remaining-clauses-01-proposal/reply.json",
+          "sha256": "a020e5bd1d8e26d7b4e713e1891498c8deccb5a7b2b633e750de4619caa5b284",
+          "receiptSha256": "6730a08305fd27ae96d6746de248fa0fc4bce4cf8ff66c2b138e6e56085bab1c"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clauses-wave-v2/jobs/clause2-remaining-clauses-01-challenge/reply.json",
+          "sha256": "0db1e2564b1daf10841baa656fa69b4284179e53810812e5fa9aa5f5604967e4",
+          "receiptSha256": "22329459ec7cfff63df01e368c978a6d8e2f80bab02fdd7647340d4555559dc3"
+        },
+        "sourcePacketSha256": "a8cbc454aecf5f4a03dc9e77e9037ed7dc8cf58e6c6aa221d20d53bae688a7eb"
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-134e6a0b7019801adad3-challenge:p4:note",
+        "decision": "revise",
+        "reason": "The replacement decision and supporting-stabilization scope are supported. Replace the ambiguous 'Kähler potential energy' with the scalar potential for the Kähler moduli: e1 and e8 identify evolution of the moduli's potential during anti-D3 depletion, not a claim specifically about the Kähler potential K. Also retain the D7 limitation as the authors' failure to find the required flux, rather than implying nonexistence. These are annotation refinements, not scope changes.",
+        "refs": [
+          "d8",
+          "d11",
+          "d12",
+          "d13",
+          "d31",
+          "e4",
+          "e5",
+          "e1",
+          "e8",
+          "e11",
+          "e15"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "d8",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:9892f106ab64c549a8e3826bca288c23dde804ab051de33837fe35e172f4b981",
+          "textSha256": "04147363877b418c12f0fad904e990a48180489a3fb7fcec8b3ab886e8f52c16"
+        },
+        {
+          "ref": "d11",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:7820f4b763912ca438f3dfcccca91af9617e1805276bc7263885ddcc4ad151bc",
+          "textSha256": "0ad8b827482dbc17dfd594db165da2cd560ce3ac3608d08034867b517280d105"
+        },
+        {
+          "ref": "d12",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:b2e63c6fb71ac27aa7c23301ae32df91861d94d39a9099906c923875d1048d53",
+          "textSha256": "064f865548bafacc88c365b7c467dff55ab1ff51a3112f025778fa64abf07466"
+        },
+        {
+          "ref": "d13",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:14a2146d250ce913608b4defd62d04dfe2658cca550fd5594fcfdf58b473bcec",
+          "textSha256": "95a189a65d55853e127ea0bbdac51a50e1f9ec6cb88e86f06373cee315504632"
+        },
+        {
+          "ref": "d31",
+          "kind": "description",
+          "unitIndex": 31,
+          "unitId": "unit:be23423b6f469d5bc6b7ea377c3e0ef994f80dfa42ddc4e58dee126e13f4431c",
+          "textSha256": "8920b20c2d9b1938cd0a5a1beb17939c2ed55191fa8265eec82f9a98988cdb3d"
+        },
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:1fe1aed63e9309577edbc5665181de46",
+          "paperId": "2402.00451",
+          "sourceSha256": "598830ef87dc107ef7c8fb272a8426ccb40ce761c6811b5ed8b6568262134ac2",
+          "sourceContext": {
+            "path": "papers/697a2585c00d68019016/reading-order.json",
+            "fileSha256": "1c340713605fe3b043b6095a4332fabbd0190a93b880903fa10436f90188c25e",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "604285729231db99389378f6edb344d8bae3e02fc9fda40e2d7648d643daed49",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e5",
+          "kind": "primary",
+          "sourceId": "ev:2dabc62ca5abd8ad8773d0090cbe55d8",
+          "paperId": "2402.00451",
+          "sourceSha256": "598830ef87dc107ef7c8fb272a8426ccb40ce761c6811b5ed8b6568262134ac2",
+          "sourceContext": {
+            "path": "papers/697a2585c00d68019016/reading-order.json",
+            "fileSha256": "1c340713605fe3b043b6095a4332fabbd0190a93b880903fa10436f90188c25e",
+            "pdfPage": 2,
+            "start": 99,
+            "end": 3496,
+            "textSha256": "730d1e5faa39621e6f58eda4abe0abd0f8df577dc2abb0c58dbf8e863d33881b",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e1",
+          "kind": "primary",
+          "sourceId": "ev:125f840545b3dae2915dae19674ad32c",
+          "paperId": "1712.04466",
+          "sourceSha256": "4b57e1ffd994ff715bc7320505f200345203739d91e6412f876da490442bf9ed",
+          "sourceContext": {
+            "path": "papers/b72828073640bdb10939/reading-order.json",
+            "fileSha256": "4c11ce710d1ad460ce78b324c599b54b5c376f64f6c548f98ee49c5a53dc86b1",
+            "pdfPage": 3,
+            "start": 97,
+            "end": 3118,
+            "textSha256": "8420ab1689fd854857d34626c834fb92f1f42b101764350ab64acfdf085c8ac6",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e8",
+          "kind": "primary",
+          "sourceId": "ev:6a3cd547a0dd504408d9f3fd2e52d775",
+          "paperId": "1712.04466",
+          "sourceSha256": "4b57e1ffd994ff715bc7320505f200345203739d91e6412f876da490442bf9ed",
+          "sourceContext": {
+            "path": "papers/b72828073640bdb10939/reading-order.json",
+            "fileSha256": "4c11ce710d1ad460ce78b324c599b54b5c376f64f6c548f98ee49c5a53dc86b1",
+            "pdfPage": 3,
+            "start": 1292,
+            "end": 3118,
+            "textSha256": "737ebc6a4aaf080fcb2d38e8124eb725b0530e6d5073bd614d4b98f5f47ddc5a",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e11",
+          "kind": "primary",
+          "sourceId": "ev:8202df72985383fca22de1dfb2cec263",
+          "paperId": "1405.0283",
+          "sourceSha256": "0522550d767e50152d705eab62034da653536311ef9ebd65b55a5fbbbb4d078d",
+          "sourceContext": {
+            "path": "papers/742e35e400ab92557c2d/reading-order.json",
+            "fileSha256": "689ba0fa1ce73217419aa39f4e39ec4d0c6aa30bccd388f8476bafa337bece22",
+            "pdfPage": 6,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "31937c071093cc95a71ecf0aa620fee0842bdd1fee2044a5e2d4561ae20608e7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e15",
+          "kind": "primary",
+          "sourceId": "ev:b28782be66b0028edeb0262c753c8007",
+          "paperId": "1405.0283",
+          "sourceSha256": "0522550d767e50152d705eab62034da653536311ef9ebd65b55a5fbbbb4d078d",
+          "sourceContext": {
+            "path": "papers/742e35e400ab92557c2d/reading-order.json",
+            "fileSha256": "689ba0fa1ce73217419aa39f4e39ec4d0c6aa30bccd388f8476bafa337bece22",
+            "pdfPage": 7,
+            "start": 1300,
+            "end": 3791,
+            "textSha256": "f9d16ea86ed600f636f79a90203113bae677a58096dba39a4f56f2d1927eea6f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "dependencyRevalidationRequired": false,
+      "noAutomaticPromotion": [
+        "scientific_scope",
+        "placement",
+        "canonical_identity",
+        "scientific_relation",
+        "physical_result"
+      ],
+      "readingLimit": "Exact supplied descriptions and bounded primary passages only; source-reported calculations and missing arguments are not independently reproduced."
+    },
+    {
+      "caseId": "leaf-134e6a0b7019801adad3-challenge:p3:note",
+      "status": "accepted_annotation_refinement",
+      "adjudicator": "root",
+      "authorization": "Root independently read the exact exception packet and supplied primary windows, and explicitly approved the challenger wording as an annotation-only refinement.",
+      "originalText": "The broad geometric question is useful with its existing boundaries: transforming only K changes the specified construction, positive-energy rolling is not au",
+      "originalTextSha256": "05b8698c74cb1d242ae4073a8216865f0f76fb7de91b47c20d66465981cc84fc",
+      "replacementText": "The supplied evidence supports retaining the broad geometric question with its existing source-specific boundaries. In d18, a field transformation is applied only to the Kähler potential while a prescribed holomorphic superpotential is retained; equivalence under a simultaneous transformation of the full theory is not established by that description. The d15 question concerns positive-energy rolling of the real part of a Kähler modulus after axion displacement from a supersymmetric vacuum, while remaining in that vacuum's effective theory; it does not itself establish slow-roll inflation. The d21 question assumes that a saxion is absent from the leading Kähler-potential term, not that the saxion is absent from the theory; this condition remains local to that asymptotic question. The Hubble-to-gravitino comparison in d1 and the seven-disk targets 3α = 1,…,7 in d14 remain description-level questions. Separately, e4 and e5 report an α = 1/3 open-string pole-inflation construction in a type IIB/F-theory orbifold setup with intersecting D7 branes and near-conifold regions. Its open-string moduli are associated with D3 branes. The authors assume that the near-conifold region arises from warping of the largest four-cycle, τ3, and that the open-string moduli contribute only to τ3. The convention ρ_k = b_k + iτ_k, with b_k set to zero for simplicity, remains local to that construction. The two α-attractor routes are not identified by their numerical overlap. The setting facets o15 and o34 add no independent primary evidence, and the supplied windows do not establish a general classification or a global embedding for every geometric construction.",
+      "replacementTextSha256": "cedb04bbda1077ba7e58b08c833f43b2f0da4ccc86bafbf85b825f50adeaa04d",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "sourcePacket": {
+        "path": "research/q025/evaluation/full-pass/native-local/annotation-adjudication-v2/fcb172b6466d430070d3.json",
+        "sha256": "b6dc553a6a8e85b47a6707ca1e60e13733134e51854d79bb26bdc3e3e7322261"
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "fe14ff686ccb05516bb84ea7dd929297e6b6d35d6664cc978b9c96847a1fa034",
+        "rawSha256": "f3049a188bbd1f236f42c879e3a9eeb780b632ba65304fc3f5d763ff7b214e56",
+        "receiptSha256": "fb5e6a1d9d72eb7247e3104c2578094952e1f934ddfcf8ae8398e8db33faf9c3"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clauses-wave-v2/jobs/clause2-remaining-clauses-01-proposal/reply.json",
+          "sha256": "a020e5bd1d8e26d7b4e713e1891498c8deccb5a7b2b633e750de4619caa5b284",
+          "receiptSha256": "6730a08305fd27ae96d6746de248fa0fc4bce4cf8ff66c2b138e6e56085bab1c"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clauses-wave-v2/jobs/clause2-remaining-clauses-01-challenge/reply.json",
+          "sha256": "0db1e2564b1daf10841baa656fa69b4284179e53810812e5fa9aa5f5604967e4",
+          "receiptSha256": "22329459ec7cfff63df01e368c978a6d8e2f80bab02fdd7647340d4555559dc3"
+        },
+        "sourcePacketSha256": "a8cbc454aecf5f4a03dc9e77e9037ed7dc8cf58e6c6aa221d20d53bae688a7eb"
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-134e6a0b7019801adad3-challenge:p3:note",
+        "decision": "revise",
+        "reason": "The replacement decision and unchanged geometric scope are supported. Refine the prior phrase 'The absent saxion in d21': the supplied condition is absence from the leading Kähler-potential term, not absence from the theory. Making that distinction explicit preserves the exact asymptotic question. The remaining source-local conventions and limits are supported.",
+        "refs": [
+          "d1",
+          "d14",
+          "d15",
+          "d18",
+          "d21",
+          "e4",
+          "e5",
+          "o15",
+          "o34"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "d1",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:e0ffd08609d236ca81207a108fe0989a50535d41d8a3cefa1573b5eab8be8817",
+          "textSha256": "1f4d096743bcc0cd421f66395ebbaa907795a13ca258265aa3fbbbc6b7e3d7e0"
+        },
+        {
+          "ref": "d14",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:d4b666d8d91606547b750fb8804ced4c4bd3ed8e3eeb467cf300541738369a4c",
+          "textSha256": "6fddf66ee508f0c3e0fc6720847896f67eb22d5e04ed634d733850860376c5d2"
+        },
+        {
+          "ref": "d15",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:c04efcb1f3b54d66911bebcde04b4d380033884baf6f5a7886397b068d364ffc",
+          "textSha256": "92aeb23e280115599a7ae78b2a6a45abf66da953ca6da47a15731ad52869e841"
+        },
+        {
+          "ref": "d18",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:aef6f68110d36c7cbbf7f1c2d09d0f9035c889487545833fbcd444d9a46ecbc7",
+          "textSha256": "ec298d5a9648423f720b87aafc807301022c66e8d71eaa22c20e0bfc1889d559"
+        },
+        {
+          "ref": "d21",
+          "kind": "description",
+          "unitIndex": 21,
+          "unitId": "unit:158a2ad6413453f511c3046fa31072b77369b69853e65a39380b51596a1facee",
+          "textSha256": "9bf15b5ff3ada7a57042d66385180c7e3c04b5a12aefa9f8f85eab1406017259"
+        },
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:1fe1aed63e9309577edbc5665181de46",
+          "paperId": "2402.00451",
+          "sourceSha256": "598830ef87dc107ef7c8fb272a8426ccb40ce761c6811b5ed8b6568262134ac2",
+          "sourceContext": {
+            "path": "papers/697a2585c00d68019016/reading-order.json",
+            "fileSha256": "1c340713605fe3b043b6095a4332fabbd0190a93b880903fa10436f90188c25e",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "604285729231db99389378f6edb344d8bae3e02fc9fda40e2d7648d643daed49",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e5",
+          "kind": "primary",
+          "sourceId": "ev:2dabc62ca5abd8ad8773d0090cbe55d8",
+          "paperId": "2402.00451",
+          "sourceSha256": "598830ef87dc107ef7c8fb272a8426ccb40ce761c6811b5ed8b6568262134ac2",
+          "sourceContext": {
+            "path": "papers/697a2585c00d68019016/reading-order.json",
+            "fileSha256": "1c340713605fe3b043b6095a4332fabbd0190a93b880903fa10436f90188c25e",
+            "pdfPage": 2,
+            "start": 99,
+            "end": 3496,
+            "textSha256": "730d1e5faa39621e6f58eda4abe0abd0f8df577dc2abb0c58dbf8e863d33881b",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "o15",
+          "kind": "source_object",
+          "sourceId": "obj:631fc654c33b02a40830:setting:258fe06bbaccdee7a07f27a7",
+          "objectKind": "setting",
+          "paperId": "2209.11821"
+        },
+        {
+          "ref": "o34",
+          "kind": "source_object",
+          "sourceId": "obj:d4f7974840f8e2452ff1:setting:695e6215745e5b304f78a842",
+          "objectKind": "setting",
+          "paperId": "1811.07378"
+        }
+      ],
+      "dependencyRevalidationRequired": false,
+      "noAutomaticPromotion": [
+        "scientific_scope",
+        "placement",
+        "canonical_identity",
+        "scientific_relation",
+        "physical_result"
+      ],
+      "readingLimit": "Exact supplied descriptions and bounded primary passages only; source-reported calculations and missing arguments are not independently reproduced."
+    }
+  ],
+  "pending": [
+    {
+      "caseId": "leaf-5ead4e26cf383a1fc84c-proposal:f28:qualification",
+      "status": "abstention_retained_pending_expanded_local_source",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/annotation-adjudication-v2/b38ef21d79aa718851d7.json",
+        "sha256": "1c0ff4066ea1c42d833ce343ccd1a529751888814ac871ed4b5e13f1d4404a21"
+      }
+    }
+  ],
+  "originalArtifactsUnchanged": true,
+  "annotationRefinements": 2,
+  "separatePremiseAmendments": 1,
+  "scopeAdmissions": 0,
+  "placementAdmissions": 0,
+  "identityAdmissions": 0
+}

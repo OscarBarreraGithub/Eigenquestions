@@ -1,0 +1,61 @@
+{
+  "nativeLaunches": 0,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/q025/evaluation/full-pass/canonical-recovery-v4",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_both_attempts_and_complete_prior_assessments_are_preserved (test_completion.CompletionTests.test_both_attempts_and_complete_prior_assessments_are_preserved) ... ok\ntest_cannot_overwrite_complete_scientific_collections (test_completion.CompletionTests.test_cannot_overwrite_complete_scientific_collections) ... ok\ntest_conflicts_remain_withheld_not_spliced (test_completion.CompletionTests.test_conflicts_remain_withheld_not_spliced) ... ok\ntest_invented_refs_fail (test_completion.CompletionTests.test_invented_refs_fail) ... ok\ntest_lossless_alternate_changes_reconstruct_every_full_record (test_completion.CompletionTests.test_lossless_alternate_changes_reconstruct_every_full_record) ... ok\ntest_missing_either_variant_set_fails (test_completion.CompletionTests.test_missing_either_variant_set_fails) ... ok\ntest_no_per_string_caps (test_completion.CompletionTests.test_no_per_string_caps) ... ok\ntest_parser_extraction_does_not_execute_frozen_script_side_effects (test_completion.CompletionTests.test_parser_extraction_does_not_execute_frozen_script_side_effects) ... ok\ntest_unchanged_strict_semantic_validator_still_rejects_missing_coverage (test_completion.CompletionTests.test_unchanged_strict_semantic_validator_still_rejects_missing_coverage) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.085s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "research/q025/evaluation/full-pass/canonical-recovery-v4/runner.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "\u2714 whitespace guard follows string and escape state across deltas (1.469541ms)\n\u2714 explicit quota denial is distinguished from ordinary scientific prose (0.09025ms)\n\u2714 failed child blocks a successor without coverage omission (0.548333ms)\n\u2714 prepared requests verify without starting a native model (2.244ms)\n\u2714 runtime budget and output schema use the actual request consistently (0.112708ms)\n\u2714 instruction budget is substituted from the request exactly once (0.05925ms)\n\u2139 tests 6\n\u2139 suites 0\n\u2139 pass 6\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 42.892458\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/canonical-recovery-v4/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":1,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/canonical-recovery-v3/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":2,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/recovery-successors-v2/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":15,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    }
+  ]
+}

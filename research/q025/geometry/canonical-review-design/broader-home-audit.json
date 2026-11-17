@@ -1,0 +1,1274 @@
+{
+  "schemaVersion": "q025-broader-home-lane-audit/1",
+  "status": "candidate_evidence_audit_not_new_home_admission",
+  "inputs": {
+    "registry": {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v3-20261117T121953Z.json",
+      "sha256": "c9c419d7ded388f1355e31b1bef413ab09ca12de0e7cd60be996f687655fcf8a",
+      "bytes": 36316550
+    },
+    "scopeRoleComponent": {
+      "path": "research/q025/evaluation/full-pass/admissions-v1/supported-scope-role-component-v1.json",
+      "sha256": "7524a7784f7e4f9103cf4938278df3ebf53ed7af05da0e56688ecfbf80f51a93",
+      "bytes": 32089979
+    },
+    "simpleHomeCandidates": {
+      "path": "research/q025/evaluation/full-pass/native-local/uncomplicated-home-candidates-v1.json",
+      "sha256": "90f8d0b907b219e82af7fcecb3b0745a32cec43857eafdd8248b97fc49a36fe0",
+      "bytes": 3423017
+    },
+    "fullCandidates": {
+      "path": "research/q025/geometry/canonical-review-design/broader-home-candidates.local.json",
+      "sha256": "8997da263bfb61ba490eba5df0d7aba936fc05f409ef962cd826fc1c7d558e58",
+      "bytes": 26035925
+    }
+  },
+  "counts": {
+    "eligiblePreHoldoutQuestions": 8430,
+    "uniqueAssessedUnitsInSnapshot": 5796,
+    "notYetAssessedInSnapshot": 2634,
+    "approvedSimpleClassUnits": 1055,
+    "jointMemberOrOverlapBeforeFlagExclusions": 4694,
+    "additionalBroadUnitsBeforeFlags": 3691,
+    "unflaggedBroadUnits": 4170,
+    "additionalUnflaggedBroadUnits": 3180,
+    "assessedRemainingAfterSimpleAndBroadCandidates": 1561,
+    "rawResidualBeforeFlags": 1050,
+    "flaggedAttributionRows": 635,
+    "flaggedRowsByReason": {
+      "unresolved_unit_annotation_screen": 238,
+      "explicit_changed_regime_or_scope_mismatch": 182,
+      "unresolved_scope_admission_annotation": 261
+    },
+    "additionalUnflaggedBroadUniqueMemberOnly": 2614,
+    "additionalUnflaggedBroadOnlyOverlap": 566,
+    "additionalBroadWithCompoundLanguage": 956,
+    "additionalBroadWithContextOrExclusionLanguage": 180,
+    "additionalBroadHomeCandidateMultiplicity": {
+      "1": 3071,
+      "2": 89,
+      "3": 16,
+      "4": 4
+    },
+    "residualBuckets": {
+      "admitted_instantiates_or_specializes_without_home": 477,
+      "admitted_addresses_but_no_simple_or_unflagged_broad_home": 474,
+      "no_currently_admitted_typed_question_role": 432,
+      "method_boundary_or_comparison_only_no_home": 178
+    }
+  },
+  "examples": [
+    {
+      "selectionPurpose": "holography",
+      "unitId": "unit:0c0e5bc0d09c001963465763a3e9658f3a596ca8cb8303f361b69b7867258d3a",
+      "paperId": "hep-th/9601108",
+      "description": "How do curves of Calabi–Yau singularities generate nonabelian gauge symmetry in four-dimensional Type II compactifications, and do their geometric transitions, periods and topological amplitudes match the proposed light-soliton theory?",
+      "descriptionSha256": "395e7d41ca995b511ffa3928ef28642fd62f9144bb85ce7c7019e1c7862ba6a2",
+      "sourceOrigin": "outside_source_probe",
+      "regionRecordId": "leaf-02b834cc1fe57554842a-challenge:r",
+      "destinationId": "q025-candidate-region:a0f723b38ca7f47ed567e044",
+      "title": "Geometry, protected amplitudes and brane/CFT data",
+      "question": "How do geometric and algebraic structures organize calculable data in string compactifications and supersymmetric field theories, and which adjacent CFT or holographic questions offer distinct comparisons?",
+      "scope": {
+        "systems": [
+          "Calabi–Yau geometries, branes and string compactifications",
+          "Specified supersymmetric gauge theories and BPS sectors",
+          "Two-dimensional CFTs, including Narain and rational theories"
+        ],
+        "targets": [
+          "Protected amplitudes, enumerative invariants and BPS spectra",
+          "Gauge content, effective actions and proposed vacuum mechanisms",
+          "Moduli geometry, phases, stability and limiting spectra",
+          "CFT classification, observables and proposed correspondences"
+        ],
+        "regimes": [
+          "Local and compact settings remain distinct",
+          "Spacetime dimension, genus, refinement and coupling limit remain source-specific",
+          "Ordinary and pre-Swampland work remains eligible"
+        ],
+        "assumptions": [
+          "Numerical proximity is candidate provenance, not scientific evidence",
+          "A broad navigation family can contain different scoped questions",
+          "Conjectures and proposed mechanisms remain conditional"
+        ],
+        "conventions": [
+          "Fine singleton status retains the exact original source question without proving atomicity or uniqueness",
+          "Source-parent kinds and access points do not determine physical premises"
+        ],
+        "includes": [
+          "Separate access to computational, interpretive and consistency questions",
+          "Boundary comparisons and alternate homes"
+        ],
+        "excludes": [
+          "A universal equivalence between all partition functions or geometries",
+          "Automatic transfer of results between dimensions or limits",
+          "Acceptance of graph-derived scattering or singularity resolution from description alone"
+        ]
+      },
+      "readingLimit": "Only supplied descriptions and bounded primary excerpts were assessed. No equations in images, full papers, later developments or external graph relations were checked. This authored region remains a proposal requiring independent review.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "q2",
+      "challengeHomeRef": "p2",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "application",
+      "challengeReason": "application",
+      "proposalNote": "Finite-distance canonical singularities with constant A_(N-1) type and g>1; g=0,1 extensions are discussed separately.",
+      "challengeNote": "Main analysis: finite-distance canonical singularities, smooth irreducible constant-type A_(N-1) curves and g>1. The g=0,1 cases have separate qualifications.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p2",
+          "role": "addresses",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "role": "comparison",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:0c0e5bc0d09c001963465763a3e9658f3a596ca8cb8303f361b69b7867258d3a",
+          "textSha256": "395e7d41ca995b511ffa3928ef28642fd62f9144bb85ce7c7019e1c7862ba6a2"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:77d94273ce32c66ac27784c8570d387d",
+          "paperId": "hep-th/9601108",
+          "sourceSha256": "c4502296c9fd0d6c650711c2fb6a5eecac9dbcf3d3fc114e86239e8209ca37d2",
+          "sourceContext": {
+            "path": "papers/54516f2e7a217284b1e2/reading-order.json",
+            "fileSha256": "87b51d99b675835231e06f3d80274cfef2cdf7161d6b66888efbddcdb2df2874",
+            "pdfPage": 2,
+            "start": 102,
+            "end": 2728,
+            "textSha256": "d70df8484d800bf89969b8df75bd5d849d9d634ffdc1be052493554633d17aa9",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:9da8f56b36c725db26018ef956d45796",
+          "paperId": "hep-th/9601108",
+          "sourceSha256": "c4502296c9fd0d6c650711c2fb6a5eecac9dbcf3d3fc114e86239e8209ca37d2",
+          "sourceContext": {
+            "path": "papers/54516f2e7a217284b1e2/reading-order.json",
+            "fileSha256": "87b51d99b675835231e06f3d80274cfef2cdf7161d6b66888efbddcdb2df2874",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 2817,
+            "textSha256": "4db550af2678f3797c87e3f6dabb04568d17157fbb39c24c3a49ff608688cfee",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-02b834cc1fe57554842a-challenge/packet.actual.json",
+          "sha256": "07b174629ffef16f08e1e6e743334d843ba96e84bfdbe76aba52e5354c659597",
+          "bytes": 216802
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-02b834cc1fe57554842a-challenge/reply.json",
+          "sha256": "262c8a29e8ef148511001f20ae3503a085b591d1470ed73f20faf5342cbb6e98",
+          "bytes": 51934
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "8e8ffc7f48c1a11ec3ef1db745707c1e78f597fccaccc853a98d84c00ed0e08f",
+        "challengeReplySha256": "262c8a29e8ef148511001f20ae3503a085b591d1470ed73f20faf5342cbb6e98",
+        "challengeRawSha256": "ad8d47fb9b6ca6ac20bb6431e209bcdb448e7903e2596d9fba12d1877bac1cbf",
+        "challengePacketSha256": "07b174629ffef16f08e1e6e743334d843ba96e84bfdbe76aba52e5354c659597",
+        "normalizationSha256": "4928f894094728d09757766664fd5a58494280345534a24f519749d35ddd7249",
+        "proposalReceiptSha256": "6c005143b96f145894a9996a06e9ac5dd8e7c2808d734ced03a1d290a9b73f77"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "gauge_geometry",
+      "unitId": "unit:04c13df18a4f760f60de9f358f6862798e5f827c81098c74e430ae013a015b09",
+      "paperId": "2409.02156",
+      "description": "How do Gaiotto–Witten boundary conditions modify the symmetry theory of 4d N=4 su(N) SYM, particularly its electric/magnetic 1-form symmetries and the transport of operators across boundary-associated sectors?",
+      "descriptionSha256": "795a3dc40ebd7550f6e22fa4c1863760245dc04aa2312407ea615f0d1304141b",
+      "sourceOrigin": "boundary_source",
+      "regionRecordId": "leaf-6076fa300fd58f6c5261-challenge:r",
+      "destinationId": "q025-candidate-region:a39202619b96c3f636872a9f",
+      "title": "Gauge dynamics, exact structures and large-N descriptions",
+      "question": "How do vacuum geometry, gauge observables, global data, compactification and large-N descriptions characterize gauge theories, and which construction or consistency conditions constrain them?",
+      "scope": {
+        "systems": [
+          "Predominantly four-dimensional supersymmetric gauge theories",
+          "Adjacent Euclidean gauge theories, lower-dimensional gauge dynamics, higher-dimensional parents and supergravity effective theories"
+        ],
+        "targets": [
+          "Quantum vacuum geometry and low-energy dynamics",
+          "Protected quantities, deformed spectral problems and duality tests",
+          "Global gauge data and boundary symmetries",
+          "Large-N SCFT classification and microscopic dual descriptions",
+          "Realizability, anomaly constraints and compactification"
+        ],
+        "regimes": [
+          "Finite rank and large N remain distinct",
+          "Rigid field theory, dynamical supergravity and holographic descriptions remain distinct",
+          "Weak-coupling limits, strong-coupling dynamics and compactification limits retain their source-specific conditions"
+        ],
+        "assumptions": [
+          "No shared simple-group, vanishing-superpotential or fixed-flavor assumption across the family",
+          "No universal WGC requirement",
+          "Numerical membership and selectionRole are retrieval provenance, not scientific conclusions"
+        ],
+        "conventions": [
+          "Overview membership does not establish fine question equivalence",
+          "Source-scoped singletons retain their exact original statements, including compound targets",
+          "Source settings and extracted objects do not automatically supply physical premises"
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland gauge-theory research",
+          "Pedagogical and methodological sources with their original purpose preserved",
+          "Explicit alternate access to neighboring questions"
+        ],
+        "excludes": [
+          "Treating this family as one canonical physical question",
+          "Identifying similarly numbered classifications across papers",
+          "Promoting announced constructions, conjectures or tests into universal results"
+        ]
+      },
+      "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Description-only assignments remain provisional.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "q2",
+      "challengeHomeRef": "p2",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "specialized",
+      "challengeReason": "specialized",
+      "proposalNote": "The symmetry construction contains non-topological interfaces; it is not an entirely topological bulk.",
+      "challengeNote": "The chosen boundaries preserve half the superconformal symmetry; the symmetry construction includes non-topological interfaces.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+          "role": "specializes",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:04c13df18a4f760f60de9f358f6862798e5f827c81098c74e430ae013a015b09",
+          "textSha256": "795a3dc40ebd7550f6e22fa4c1863760245dc04aa2312407ea615f0d1304141b"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:7e2a44cffa9c63fc03f928fa54861ca5",
+          "paperId": "2409.02156",
+          "sourceSha256": "25ab335404c74af1942b10309f90f48eb472497c830c2b21e52af9361a466fd3",
+          "sourceContext": {
+            "path": "papers/e7f3bf3f78250d8aca86/reading-order.json",
+            "fileSha256": "a339fbc7f39329825c528afb184717b8111fce0bdf3d35a2fc0247c7a8ebb4ee",
+            "pdfPage": 3,
+            "start": 90,
+            "end": 3484,
+            "textSha256": "8979024a6642c8ab3e45450d22c3cc895f14a91a087853a8c20c068e8bd0e331",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:b8b6e5aed05712f54a0d41ef89ebf5aa",
+          "paperId": "2409.02156",
+          "sourceSha256": "25ab335404c74af1942b10309f90f48eb472497c830c2b21e52af9361a466fd3",
+          "sourceContext": {
+            "path": "papers/e7f3bf3f78250d8aca86/reading-order.json",
+            "fileSha256": "a339fbc7f39329825c528afb184717b8111fce0bdf3d35a2fc0247c7a8ebb4ee",
+            "pdfPage": 3,
+            "start": 1285,
+            "end": 3678,
+            "textSha256": "247c30f69f81bba5148b7499037b47803b8da6cdf8400f1dca4dfe69a18ad165",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-6076fa300fd58f6c5261-challenge/packet.actual.json",
+          "sha256": "403e26628979d2a10456c3dc42f6bc72333b8a3eed3168a86aee1278857f5d8e",
+          "bytes": 177720
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-6076fa300fd58f6c5261-challenge/reply.json",
+          "sha256": "e5a7e2a61a2b3b4f4c0dc91b600ddbb9fe8c46d55e8436b1bf5e243876e82da9",
+          "bytes": 36805
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "19e9404bcf6c06149ea6de953bbc3d1ca6b3389921379ec896ae0368e15778cf",
+        "challengeReplySha256": "e5a7e2a61a2b3b4f4c0dc91b600ddbb9fe8c46d55e8436b1bf5e243876e82da9",
+        "challengeRawSha256": "78f76096b8c4752a1b857ab69f1f30c47c753db8aad48c23912ea77bfd5f6ea1",
+        "challengePacketSha256": "403e26628979d2a10456c3dc42f6bc72333b8a3eed3168a86aee1278857f5d8e",
+        "normalizationSha256": "d6f1ee111365166a0a4bb40e3b25ed34b997eab201129b562d238deb2d6c965b",
+        "proposalReceiptSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "cosmology",
+      "unitId": "unit:00dbf41f7d867f842eeebcccdcc11aad6dec1c176453702cc7f0e018e70d88e4",
+      "paperId": "2104.00117",
+      "description": "Can a momentum-sector noncommutative deformation produce constant-roll scalar-field inflation and change the potential regions satisfying the paper's de Sitter swampland inequalities?",
+      "descriptionSha256": "f5d0c303c6f962496a2d6db8d3c7ba74bae18998d4a7fad179768653ab98277a",
+      "sourceOrigin": "boundary_source",
+      "regionRecordId": "leaf-c64e797c2bfd30a0715b-challenge:r",
+      "destinationId": "q025-candidate-region:472111c9e43c5f2f1a378254",
+      "title": "Inflationary dynamics and conditional viability across effective models",
+      "question": "How do specified gravitational, kinetic and dissipative models affect inflationary dynamics, observables and conditional consistency tests, including connections to reheating and late acceleration?",
+      "scope": {
+        "systems": [
+          "Curvature-based and nonminimally coupled gravity models",
+          "Specified braneworld and modified-expansion prescriptions",
+          "Canonical, noncanonical, tachyonic, supersymmetric and multiple-field inflation models"
+        ],
+        "targets": [
+          "Background dynamics, reconstruction and control",
+          "Inflationary observables and source-specific parameter comparisons",
+          "Conditional swampland and TCC diagnostics",
+          "Reheating, primordial gravitational waves and late acceleration where explicitly studied"
+        ],
+        "regimes": [
+          "Slow roll and constant roll remain distinct",
+          "Cold, warm and dissipative cases remain distinct",
+          "High-energy brane calculations do not cover the full density range",
+          "Eternal self-reproduction and singularity repair are adjacent targets"
+        ],
+        "assumptions": [
+          "Each model retains its own field content, action, dimensional setting and validity conditions",
+          "Swampland criteria are conditional inputs where invoked, not required premises of every member",
+          "Numerical selections and source-reported fits are not independently verified here"
+        ],
+        "conventions": [
+          "Retain each source's observational date and version",
+          "Potential derivatives, field normalization and conjecture branches are model-specific",
+          "Conjecture compatibility does not demonstrate an ultraviolet completion"
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland inflationary work",
+          "Negative compatibility results",
+          "Structural and methodological questions alongside phenomenological tests"
+        ],
+        "excludes": [
+          "A universal affirmative claim that modified inflation satisfies swampland criteria",
+          "An assumption that all models have one field, one dimension or one gravitational framework",
+          "Unverified claims of current observational agreement"
+        ]
+      },
+      "readingLimit": "Supplied descriptions and exact graph context, plus bounded archived primary excerpts where listed. One facet anchor and additional source-parent anchors where available; no equation-image, curve-geometry or full-paper certification.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "q4",
+      "challengeHomeRef": "p4",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "specialized",
+      "challengeReason": "specialized",
+      "proposalNote": "Homogeneous-background and labelled potential scans are supplied. Anisotropic dynamics, exact-branch consistency and curve geometry remain unverified.",
+      "challengeNote": "The abstract and extracted scan captions support the target. Anisotropic dynamics, exact branches and curve geometry remain unverified.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-c64e797c2bfd30a0715b-challenge:p4",
+          "role": "specializes",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:00dbf41f7d867f842eeebcccdcc11aad6dec1c176453702cc7f0e018e70d88e4",
+          "textSha256": "f5d0c303c6f962496a2d6db8d3c7ba74bae18998d4a7fad179768653ab98277a"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:337eff1aa04d275a6086542f2140712d",
+          "paperId": "2104.00117",
+          "sourceSha256": "7db9b62ef4dcf70272617c835668c88fe26b7e4cf5716d8a46e693f13bfbf7a8",
+          "sourceContext": {
+            "path": "papers/ecc0ae7a33bc720e66c9/reading-order.json",
+            "fileSha256": "269eb8971729fb0f35b285cf97d5b6b4cb0915949338bb5baeec905b356d1c11",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1214,
+            "textSha256": "6f76819a42993df61dda5590efe27885d8c3bbe057fd830e739e291cda14b88c",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:befc884b977a8f9c19a789706dbea9b3",
+          "paperId": "2104.00117",
+          "sourceSha256": "7db9b62ef4dcf70272617c835668c88fe26b7e4cf5716d8a46e693f13bfbf7a8",
+          "sourceContext": {
+            "path": "papers/ecc0ae7a33bc720e66c9/reading-order.json",
+            "fileSha256": "269eb8971729fb0f35b285cf97d5b6b4cb0915949338bb5baeec905b356d1c11",
+            "pdfPage": 9,
+            "start": 0,
+            "end": 894,
+            "textSha256": "b2247a531afc639af88eb79d5fb23328673444f32b2baa97f2e1ab123014ec3e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:c88a8b0c0ecd7731fcd9112b1c7c2983",
+          "paperId": "2104.00117",
+          "sourceSha256": "7db9b62ef4dcf70272617c835668c88fe26b7e4cf5716d8a46e693f13bfbf7a8",
+          "sourceContext": {
+            "path": "papers/ecc0ae7a33bc720e66c9/reading-order.json",
+            "fileSha256": "269eb8971729fb0f35b285cf97d5b6b4cb0915949338bb5baeec905b356d1c11",
+            "pdfPage": 10,
+            "start": 0,
+            "end": 1256,
+            "textSha256": "7bfb3e37f09ead5e253d17065357286b62437d25fa9a699a1c4a8ed09ec06147",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-c64e797c2bfd30a0715b-challenge/packet.actual.json",
+          "sha256": "570aff9c68f5c1bc6b38321ab1081cebaf7ce49c70e82d8c72bb590ee90b3c19",
+          "bytes": 237489
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-c64e797c2bfd30a0715b-challenge/reply.json",
+          "sha256": "15b57fe27b9082e123954df51d7f61939079e7223d860f814c096e76a0757154",
+          "bytes": 51298
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "854feacba119c0bdfdf30e156c1ebfcb5359989ff6056bab11ba6543396bc819",
+        "challengeReplySha256": "15b57fe27b9082e123954df51d7f61939079e7223d860f814c096e76a0757154",
+        "challengeRawSha256": "70ef21ebe35679f9e02eda5c6efcb8b06b0093a0222971d8cea8e55c66c541fe",
+        "challengePacketSha256": "570aff9c68f5c1bc6b38321ab1081cebaf7ce49c70e82d8c72bb590ee90b3c19",
+        "normalizationSha256": "35f38e5e7f2a584ba4bb766a373ed0ccc3b9296edc5fb563998029ba4e3c4718",
+        "proposalReceiptSha256": "f1289c2830a0b42ab2d97b130dc0a6ae34789fd9d1b5225756a85e51af185f0d"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "compactification",
+      "unitId": "unit:01f899fb19b6229a2737879c5798aeebdf381e6c68b170bf7a21aaf41b6ce441",
+      "paperId": "2206.12889",
+      "description": "Can a K3-fibred LVS compactification admit an explicit anti-D3 uplift with suitable O3-planes, sufficient negative D3 charge, and stabilization of the additional Kähler directions under the stated effective-field-theory assumptions?",
+      "descriptionSha256": "d26bcb9876ed53dcb2044387f2665fa71a7f496cde90d4212ebd36c45ffc5c3e",
+      "sourceOrigin": "central_source",
+      "regionRecordId": "leaf-eb2b14b890c0c74ca5f6-challenge:r",
+      "destinationId": "q025-candidate-region:96135ae9eda9f2d91aa85b1e",
+      "title": "Antibrane uplift: stabilization, consistency and effective descriptions",
+      "question": "Under which source-specific assumptions can antibrane uplift coexist with moduli stabilization, compact embedding and a reliable effective description?",
+      "scope": {
+        "systems": [
+          "KKLT/KKLMMT and LVS constructions where explicitly identified",
+          "Antibranes and specified positive-tension uplift sources in compactification throats",
+          "Four-dimensional EFTs and conditional higher-dimensional descriptions"
+        ],
+        "targets": [
+          "Uplift matching and moduli response",
+          "Metastability, embedding and tadpole/control requirements",
+          "Throat-state hierarchies and superpotential mechanisms",
+          "Cosmology, soft terms and open-string stability"
+        ],
+        "regimes": [
+          "Source-specific strong, weak and unequal-throat warping",
+          "Leading-order and explicitly corrected effective descriptions",
+          "Ordinary and pre-Swampland work as well as proposed quantum-gravity tests"
+        ],
+        "assumptions": [
+          "No universal validity of a ten-dimensional condensate treatment is assumed",
+          "An EFT minimum does not establish control of omitted corrections",
+          "Historical objections and proposed resolutions remain source-qualified"
+        ],
+        "conventions": [
+          "Integrated ten-dimensional consistency constraints are distinct from D3-charge budgets",
+          "AdS precursor construction, uplift and post-uplift stability are separate stages"
+        ],
+        "includes": [
+          "The supplied obstruction, alternative-superpotential and nilpotent-superfield probes",
+          "An alternate navigation home for the fixed-volume K3 comparison"
+        ],
+        "excludes": [
+          "Treating numerical proximity as scientific equivalence",
+          "Inferring an antibrane-uplift target from K3 terminology alone",
+          "A universal no-go theorem or certification of controlled string de Sitter vacua"
+        ]
+      },
+      "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Bounded archived primary text; no equation-image or full-paper certification.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "q2",
+      "challengeHomeRef": "p2",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "specialized",
+      "challengeReason": "specialized",
+      "proposalNote": "The supplied v2 abstract reports an h1,1=4 model; inflation is prospective.",
+      "challengeNote": "The v2 abstract reports an h1,1=4 model; inflation remains prospective.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p2",
+          "role": "instantiates",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:01f899fb19b6229a2737879c5798aeebdf381e6c68b170bf7a21aaf41b6ce441",
+          "textSha256": "d26bcb9876ed53dcb2044387f2665fa71a7f496cde90d4212ebd36c45ffc5c3e"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:c0f8c05cdd13270bbc41840d7d76418b",
+          "paperId": "2206.12889",
+          "sourceSha256": "aea88b8445273a5008a1c33b65a041e1602e9f4470a16f9eb5b56933a12a21c8",
+          "sourceContext": {
+            "path": "papers/d57a657007283d0a06c8/reading-order.json",
+            "fileSha256": "92ffef84e4e114ea2e9212abbc0e2fc4828dd0eab52a3599d95e3933bc967c1d",
+            "pdfPage": 1,
+            "start": 112,
+            "end": 2260,
+            "textSha256": "7d4b3a536305ef0da43e37e52c63deb2b30a1d5ab17adacd1d31cc3b607a2da0",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:b30649d7dc4b25f5579ffeb1e21feaab",
+          "paperId": "2206.12889",
+          "sourceSha256": "aea88b8445273a5008a1c33b65a041e1602e9f4470a16f9eb5b56933a12a21c8",
+          "sourceContext": {
+            "path": "papers/d57a657007283d0a06c8/reading-order.json",
+            "fileSha256": "92ffef84e4e114ea2e9212abbc0e2fc4828dd0eab52a3599d95e3933bc967c1d",
+            "pdfPage": 5,
+            "start": 91,
+            "end": 3488,
+            "textSha256": "b0bda1523d3d7f19dd0833d5e9df993ccbe06b0d8cdf4b8e73f4948242256a53",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:a3da5928a1c5e46f6786773ddb97e6b0",
+          "paperId": "2206.12889",
+          "sourceSha256": "aea88b8445273a5008a1c33b65a041e1602e9f4470a16f9eb5b56933a12a21c8",
+          "sourceContext": {
+            "path": "papers/d57a657007283d0a06c8/reading-order.json",
+            "fileSha256": "92ffef84e4e114ea2e9212abbc0e2fc4828dd0eab52a3599d95e3933bc967c1d",
+            "pdfPage": 5,
+            "start": 1289,
+            "end": 3721,
+            "textSha256": "e7a9369b70c480c88cb83d37f68befebcec0167be33020c5074ad09a0929036e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-eb2b14b890c0c74ca5f6-challenge/packet.actual.json",
+          "sha256": "fdf795ec8a26a6eed9d5e1a5b33e65fd926efbfe38b8c985c4f16ba9366e414c",
+          "bytes": 171001
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-eb2b14b890c0c74ca5f6-challenge/reply.json",
+          "sha256": "f7756bd678d19f145d439e8c5fc784916fddab4e6545644f93b2fd5a30edd533",
+          "bytes": 35193
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "c73b87db1bc2d66d1e2b7a1c07695b4e7948ec85852a88257d0373336718c1a6",
+        "challengeReplySha256": "f7756bd678d19f145d439e8c5fc784916fddab4e6545644f93b2fd5a30edd533",
+        "challengeRawSha256": "7a98381eb82f72944a02c224654591fe5e8fd3feab7778aafcacbbb69a5ac01e",
+        "challengePacketSha256": "fdf795ec8a26a6eed9d5e1a5b33e65fd926efbfe38b8c985c4f16ba9366e414c",
+        "normalizationSha256": "db1ccad7a31a762fd126d7601dc51caf0338da0127d15118a7a7a6f1ee7673c7",
+        "proposalReceiptSha256": "863bf92c80578de3b05933aebdf32d260c0a298bf80dac0b2a4770bafbad8049"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "quantum_or_mathematical_methods",
+      "unitId": "unit:0331d936c08069563803cebe5d3527498080bf62848a27ba3f499deb4eb96d33",
+      "paperId": "2006.06694",
+      "description": "Why do perturbative string compactifications so often yield no-scale supergravity, and which quantum or α′ corrections first lift its flat potentials? The authors seek symmetry-based constraints that assess the robustness of moduli stabilization and explain classical de Sitter obstructions.",
+      "descriptionSha256": "796ef60f83cab96be5a25fcc18050c867b71d9d41c66320e006ce34845df9353",
+      "sourceOrigin": "outside_source_probe",
+      "regionRecordId": "leaf-adcc4556537d69777acf-challenge:r",
+      "destinationId": "q025-candidate-region:e2071b6d680aee82e0841323",
+      "title": "String limits, light spectra and control of gravitational effective theories",
+      "question": "How do compactification parameters and quantum effects determine light objects, interaction strengths, effective dimensions and the validity of gravitational descriptions?",
+      "scope": {
+        "systems": [
+          "String compactifications and gravitational EFTs in the dimensions specified by each source",
+          "Geometric, potentially non-geometric and holographic descriptions"
+        ],
+        "targets": [
+          "Asymptotic strings, particle towers and decompactification",
+          "Quantum accessibility of moduli-space boundaries",
+          "Interaction strengths, cutoff hierarchies and controlled phenomenology"
+        ],
+        "regimes": [
+          "Infinite-distance limits and their possible quantum obstructions",
+          "Finite-distance boundaries, finite-radius compactifications and stabilized vacua where explicitly relevant"
+        ],
+        "assumptions": [
+          "Conjectures remain hypotheses or conditional organizing principles",
+          "Source-specific control conditions and dimensions are not shared automatically"
+        ],
+        "conventions": [
+          "Keep gravitational, string, KK, tension and species scales distinct",
+          "Preserve source-specific normalizations and coupling dictionaries"
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland compactification research",
+          "Methods and applications with explicit connections to the overview questions"
+        ],
+        "excludes": [
+          "A universal proof of the Emergent String Conjecture",
+          "Automatic equivalence of sources sharing terminology",
+          "Automatic inclusion of every string consistency problem in the infinite-distance core"
+        ]
+      },
+      "readingLimit": "Proposed from supplied descriptions, bounded archived primary pages and labeled source-object context only. No images, full papers or external verification; original source dates and provenance remain attached to the supplied records.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "q6",
+      "challengeHomeRef": "p6",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "method_bridge",
+      "challengeReason": "method_bridge",
+      "proposalNote": "No-scale origins and leading corrections are useful stabilization questions without an infinite-distance premise.",
+      "challengeNote": "No-scale origins, leading corrections and stabilization robustness remain separate targets without an infinite-distance premise.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p6",
+          "role": "addresses",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p2",
+          "role": "method",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:0331d936c08069563803cebe5d3527498080bf62848a27ba3f499deb4eb96d33",
+          "textSha256": "796ef60f83cab96be5a25fcc18050c867b71d9d41c66320e006ce34845df9353"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:615509c571019b29b2d54e9a7bdc5305",
+          "paperId": "2006.06694",
+          "sourceSha256": "e27707ef3e215c6674cfbef932dbe0043683a628f6ea6d2a8f8f3325a58b02e1",
+          "sourceContext": {
+            "path": "papers/89479c7ca668eaa45d02/reading-order.json",
+            "fileSha256": "07d58cc9dea6a89a7cca2486ad0db7affc033b8aa930c1f217b71a2f1413d624",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1944,
+            "textSha256": "050f54d3255a416d86f8f93252354ce998113764368ca42713a558c81b0ee88f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:8edc75664e15551c939f299575cf7840",
+          "paperId": "2006.06694",
+          "sourceSha256": "e27707ef3e215c6674cfbef932dbe0043683a628f6ea6d2a8f8f3325a58b02e1",
+          "sourceContext": {
+            "path": "papers/89479c7ca668eaa45d02/reading-order.json",
+            "fileSha256": "07d58cc9dea6a89a7cca2486ad0db7affc033b8aa930c1f217b71a2f1413d624",
+            "pdfPage": 1,
+            "start": 104,
+            "end": 1944,
+            "textSha256": "31173175cb19ec051b5810cf3cf14402bd201e2a45e87ddebc66eefca6448376",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:949459711915fd92a88361f011bf2dd9",
+          "paperId": "2006.06694",
+          "sourceSha256": "e27707ef3e215c6674cfbef932dbe0043683a628f6ea6d2a8f8f3325a58b02e1",
+          "sourceContext": {
+            "path": "papers/89479c7ca668eaa45d02/reading-order.json",
+            "fileSha256": "07d58cc9dea6a89a7cca2486ad0db7affc033b8aa930c1f217b71a2f1413d624",
+            "pdfPage": 72,
+            "start": 100,
+            "end": 2266,
+            "textSha256": "f89a1cbf0f4493e304ad6aa12e0ff114d4e885830f92c1de61bb643d5308baab",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-adcc4556537d69777acf-challenge/packet.actual.json",
+          "sha256": "72eb1b1b75fdfc56b4dc88f42dfbdbc63680122e70a852b3e1342b6555feb1e5",
+          "bytes": 325021
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-adcc4556537d69777acf-challenge/reply.json",
+          "sha256": "04e9e21959e0b70bc92098a75fe23ba3cc53f8e1ce9049dd5aba1aaec34c3cd6",
+          "bytes": 80970
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "ca893f079f425efae22a73018d95a798dd4ec5229cebb8e7fd7515ae07bf0a0c",
+        "challengeReplySha256": "04e9e21959e0b70bc92098a75fe23ba3cc53f8e1ce9049dd5aba1aaec34c3cd6",
+        "challengeRawSha256": "51f34f3cca117c5c5b68eb7edc5c941ba2d7762d2cbeff53539adee3821e62c6",
+        "challengePacketSha256": "72eb1b1b75fdfc56b4dc88f42dfbdbc63680122e70a852b3e1342b6555feb1e5",
+        "normalizationSha256": "07ae445e24bfe8fd884d7880a6b46470851e73f39c4e970131385d5d26f411d0",
+        "proposalReceiptSha256": "2fd9bc71ca72890ba10f11ec660376f716a1bc76e464de15aa69e21b5ad27c79"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "joint_overlap_with_explicit_qualification",
+      "unitId": "unit:035e6383b6602a31cda9d39b845fd6ad6e713d9cf5b894a5da154decc1eae8fd",
+      "paperId": "1306.1237",
+      "description": "How does the previously derived GSW string-tree-level α′² correction affect perturbative control and survival of KKLT, LVS and Kähler-uplifted vacua, despite extended no-scale cancellation?",
+      "descriptionSha256": "75ff518b6b53b6aff2a61d79e5ab8bca5216284a4a53c4836f4f56297868e0b9",
+      "sourceOrigin": "boundary_source",
+      "regionRecordId": "leaf-628d4cf06b5d1f3ad38b-challenge:r",
+      "destinationId": "q025-candidate-region:a8ceefd32f840db53e3a843f",
+      "title": "Corrections to moduli geometry, stabilization and control",
+      "question": "How do quantum, higher-derivative and nonperturbative effects modify moduli dynamics, and under which source-specific conditions can stabilization and its applications remain reliable?",
+      "scope": {
+        "systems": [
+          "Type IIB and F-theory compactifications",
+          "Heterotic and type II compactifications",
+          "Heterotic M-theory",
+          "Five-dimensional orbifold supergravity and lower-dimensional effective moduli theories"
+        ],
+        "targets": [
+          "Corrected Kähler geometry, kinetic terms and scalar potentials",
+          "Moduli stabilization and vacuum extrema",
+          "Perturbative control, uplift response and additional-field stability",
+          "Soft terms, mass scales, vacuum energy and inflation"
+        ],
+        "regimes": [
+          "Large-volume and weak-coupling expansions where explicitly specified",
+          "Mixed perturbative and nonperturbative stabilization",
+          "Order-one desert-point proposals as a separate control boundary"
+        ],
+        "assumptions": [
+          "Topology, flux tuning, spectator stabilization and uplift ingredients remain source-specific",
+          "A correction calculation does not by itself establish a stabilized vacuum",
+          "Older and pre-Swampland questions remain eligible"
+        ],
+        "conventions": [
+          "Geometric Kähler sizes do not automatically include stabilized axions",
+          "Positive saddles, de Sitter hills and metastable minima are distinct targets",
+          "Corrections to Kähler coordinates, Kähler potentials and superpotentials remain distinguishable",
+          "Source-object graph relations retain their exact contextual meaning"
+        ],
+        "includes": [
+          "Conditional proposals, comparative surveys and methodological inputs",
+          "Useful alternate homes for generic geometry, additional-field and uplift questions"
+        ],
+        "excludes": [
+          "Universal existence or control claims inferred from numerical membership",
+          "Automatic equivalence of sources sharing an overview card",
+          "Unprovided later revisions, retractions or current-status assessments"
+        ]
+      },
+      "readingLimit": "Descriptions and bounded supplied primary pages only; no equation-image or full-paper certification. Visible version dates are hep-th/0408054v3: 10 Feb 2005; hep-th/0508171v2: 30 Aug 2005; 1803.08941v2: 1 Oct 2018; 1901.09626v1: 28 Jan 2019; 2203.03362v3: 12 Jun 2022. Other sources retain the supplied identifiers without inferred version dates.",
+      "jointDisposition": "overlap",
+      "proposalHomeRef": "q3",
+      "challengeHomeRef": "p3",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "specialized",
+      "challengeReason": "specialized",
+      "proposalNote": "Historical conditional bounds from 2013; supplied text neither updates nor retracts the assumed GSW correction.",
+      "challengeNote": "Bounds remain conditional on the assumed 2013 GSW correction and relative-correction criterion. Historical status does not assert a retraction.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p3",
+          "role": "addresses",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p1",
+          "role": "boundary",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:035e6383b6602a31cda9d39b845fd6ad6e713d9cf5b894a5da154decc1eae8fd",
+          "textSha256": "75ff518b6b53b6aff2a61d79e5ab8bca5216284a4a53c4836f4f56297868e0b9"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:5c80f6d62e891fb8f2f52a9cc8509f26",
+          "paperId": "1306.1237",
+          "sourceSha256": "7ae6738def604ce1cf20213d916eb2737c76566b3f7034570d52f6f4def98c00",
+          "sourceContext": {
+            "path": "papers/c5a411bfa23541b338e9/reading-order.json",
+            "fileSha256": "f54059326f985e12ac1f9f9d484f199bec8c771b486c03a0d2801dca579322b3",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "2afb1af6f2d9aeef739f727db9fed9a0139703c334f6964d231297027c8cdd1c",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:ffcc2a6060cf586b92f4024d35f9a7c5",
+          "paperId": "1306.1237",
+          "sourceSha256": "7ae6738def604ce1cf20213d916eb2737c76566b3f7034570d52f6f4def98c00",
+          "sourceContext": {
+            "path": "papers/c5a411bfa23541b338e9/reading-order.json",
+            "fileSha256": "f54059326f985e12ac1f9f9d484f199bec8c771b486c03a0d2801dca579322b3",
+            "pdfPage": 4,
+            "start": 92,
+            "end": 3489,
+            "textSha256": "0306b1085902d3ebce23d2809e9a9be0da9298f6f2d46cf6128677c52826a775",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-628d4cf06b5d1f3ad38b-challenge/packet.actual.json",
+          "sha256": "2e7eb52e261905eb7f04424b10c2ce69829c91fd59041aa8d447da4b8be59a31",
+          "bytes": 215288
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-628d4cf06b5d1f3ad38b-challenge/reply.json",
+          "sha256": "14dabc62e84b9eb8fb8ed04d331d8dc2abbb32360a569cd6deddbf08dfb326a5",
+          "bytes": 54034
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "64f109c6d803dbf6c9b024c1960ff8deb02243dfe533c0e209ffdd888524086d",
+        "challengeReplySha256": "14dabc62e84b9eb8fb8ed04d331d8dc2abbb32360a569cd6deddbf08dfb326a5",
+        "challengeRawSha256": "09f9c158ccdefe13512288c52b27923a8989454116bc198ba90e9c6f721f7cd7",
+        "challengePacketSha256": "2e7eb52e261905eb7f04424b10c2ce69829c91fd59041aa8d447da4b8be59a31",
+        "normalizationSha256": "cddc2df43167257cb34292543444c993c9bc6fe7d8314f6e323d03f7cfb995b0",
+        "proposalReceiptSha256": "03f4431908fce2c06755ac888a8e104ad732192547f28511a499cebbaec1ea54"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "compound_target_requires_coverage_decision",
+      "unitId": "unit:01ed613346ef96646a7de1d8cc6c673dd1d5caaeca4bee5c8d2d9b47c19f7b8d",
+      "paperId": "2504.12283",
+      "description": "How sensitively do supergravity inflation models depend on relative couplings, and can small departures from their Starobinsky or new-inflation limits improve CMB agreement while alleviating large-field initial-condition problems? The focus is potential-flatness tuning rather than the overall inflationary hierarchy.",
+      "descriptionSha256": "7cd16e63958802f4746fbedc90d53549b0fd5354952deb4db48e10ee3263fff3",
+      "sourceOrigin": "central_source",
+      "regionRecordId": "leaf-recovery-54e3e83d0ccbf2700b0f-challenge:r",
+      "destinationId": "q025-candidate-region:ad70723be7e74e06a698de89",
+      "title": "Inflationary models, gravitational structure and consistency tests",
+      "question": "How do gravitational structure, scalar-sector construction and cosmological evolution affect inflationary predictions and the separate observational, dynamical and theoretical tests applied to them?",
+      "scope": {
+        "systems": [
+          "Scalar inflation, including Higgs, hybrid, matrix, modular and natural-inflation settings",
+          "Supergravity and Starobinsky-related constructions",
+          "Modified gravitational actions and expansion laws",
+          "Coupled inflation, quintessence and relic-production settings"
+        ],
+        "targets": [
+          "Inflationary construction and source-dated observational predictions",
+          "Potential flatness, stability and effective-theory control",
+          "Initial conditions, complete evolution, reheating and exit",
+          "Late acceleration, particle relics and small-scale signals",
+          "Conditional quantum-gravity diagnostics and adjacent particle-selection questions"
+        ],
+        "regimes": [
+          "Source-specific slow-roll, exact-background and dissipative analyses",
+          "Inflationary, preinflationary and post-inflationary phases kept separate",
+          "Ordinary and pre-Swampland work remains eligible"
+        ],
+        "assumptions": [
+          "Numerical membership is a candidate grouping, not scientific evidence of equivalence",
+          "Conjectures are conditional diagnostics rather than observations or established ultraviolet completion",
+          "Different systems, dimensions and gravitational formulations need not share premises"
+        ],
+        "conventions": [
+          "Retain each source's field variables, frame, normalization and benchmark date",
+          "Treat descriptions, primary excerpts and extracted graph context as different evidence types",
+          "A singleton preserves its exact original source statement without asserting atomicity or cross-source uniqueness"
+        ],
+        "includes": [
+          "Negative and unresolved viability results",
+          "Source settings and methods with explicitly limited question attribution",
+          "Alternate access to related questions outside a gravitational-inflation core"
+        ],
+        "excludes": [
+          "A universal claim that these models satisfy observational or quantum-gravity constraints",
+          "Automatic identification of Higgs spectators with Higgs inflatons",
+          "Automatic equivalence of metric, Palatini, hybrid, Weyl, unimodular and brane constructions",
+          "A claim that numerical co-membership establishes canonical question identity"
+        ]
+      },
+      "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Supplied excerpts are bounded archived primary text without equation-image or full-paper certification. Original prose region scope was not supplied.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "q1",
+      "challengeHomeRef": "p1",
+      "exactRawHomeRefAgreement": false,
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "proposalNote": "Compound tuning and initial-condition study. Potential-flatness tuning is the focus; the distinct 2025 data combinations remain source-dated alternatives.",
+      "challengeNote": "Compound tuning and initial-field study. Flatness tuning is distinct from scale normalization; one displayed no-scale limit assumes a fixed modulus and special relative coupling. The 2025 data combinations remain alternatives.",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-recovery-54e3e83d0ccbf2700b0f-challenge:p1",
+          "role": "addresses",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-recovery-54e3e83d0ccbf2700b0f-challenge:p2",
+          "role": "specializes",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-recovery-54e3e83d0ccbf2700b0f-challenge:p6",
+          "role": "addresses",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-recovery-54e3e83d0ccbf2700b0f-challenge:p3",
+          "role": "addresses",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": true,
+      "contextOrExclusionLanguage": false,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:01ed613346ef96646a7de1d8cc6c673dd1d5caaeca4bee5c8d2d9b47c19f7b8d",
+          "textSha256": "7cd16e63958802f4746fbedc90d53549b0fd5354952deb4db48e10ee3263fff3"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:0ccd8eeb8655082ec466239635a26942",
+          "paperId": "2504.12283",
+          "sourceSha256": "dd484d73a761e090bc8ff20ce4290dc1dcf3821e3163981bd2c5211039e5df75",
+          "sourceContext": {
+            "path": "papers/a401a3f265f4ac43eb78/reading-order.json",
+            "fileSha256": "1a1e89c305379159d978090d7ece93c67859989bf0c2d89dede3f3f8f2c58099",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "f2dc9c614b4e7be6d9655904211d6add630cc292635a8716d58db84bc3193695",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:07d573bb909b4930ae01700a088f3c4c",
+          "paperId": "2504.12283",
+          "sourceSha256": "dd484d73a761e090bc8ff20ce4290dc1dcf3821e3163981bd2c5211039e5df75",
+          "sourceContext": {
+            "path": "papers/a401a3f265f4ac43eb78/reading-order.json",
+            "fileSha256": "1a1e89c305379159d978090d7ece93c67859989bf0c2d89dede3f3f8f2c58099",
+            "pdfPage": 8,
+            "start": 97,
+            "end": 3038,
+            "textSha256": "1899ecb6a93fd766dd62b5351dd558a9291ef9d11188a6397fa2091fe6a12296",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/leaf-recovery-v4/jobs/leaf-recovery-54e3e83d0ccbf2700b0f-challenge/packet.actual.json",
+          "sha256": "a721878b4bda5686503fc1554c44e89a6adb1b0109dcbe45ca0bf712a09658fd",
+          "bytes": 218760
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/leaf-recovery-v4/jobs/leaf-recovery-54e3e83d0ccbf2700b0f-challenge/reply.json",
+          "sha256": "6b821811874cce3677c167b9aab74a6a2266487d334ff9607de610d9a36aebd3",
+          "bytes": 52906
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "2b3a11b88f9991c3ab186eb1121e41e81fd714ee15c832fd81a66ebf0921fe81",
+        "challengeReplySha256": "6b821811874cce3677c167b9aab74a6a2266487d334ff9607de610d9a36aebd3",
+        "challengeRawSha256": "587fd74eb14eb79cab5b0718294667042bc8df88c9362acbc649b0b33dc3a385",
+        "challengePacketSha256": "a721878b4bda5686503fc1554c44e89a6adb1b0109dcbe45ca0bf712a09658fd",
+        "normalizationSha256": "9429e006404ebdeac179d6f6dc0469238110f6e4d50a4bab4f6b08310e27ab43",
+        "proposalReceiptSha256": "c3077dfbc7440f74030649f871aef11373fb0eeb172b44d273f89dead507967f"
+      },
+      "excludedReasons": [],
+      "unitAnnotationFlags": [],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    },
+    {
+      "selectionPurpose": "withheld_borderline_annotation_or_premise_case",
+      "unitId": "unit:0034b70ea953b9879b3d6034ad618cbfcb1be80a68ce1e19fa6ffa94793dec60",
+      "paperId": "1608.07219",
+      "description": "Which discrete gauge symmetries arise in the paper's examples of F-theory compactification on genus-one fibered Calabi–Yau fourfolds without a section, and can their multisection degrees be obtained uniformly from intersection theory?",
+      "descriptionSha256": "c219f4e7aa825cab320035bcc62fbd2408705ae85efc2df5ce8eb1f15cbf5c41",
+      "sourceOrigin": "central_source",
+      "regionRecordId": "leaf-f3d0ef8dd184e0ce2e9a-challenge:r",
+      "destinationId": "q025-candidate-region:839da90831bec9d6ef0a811b",
+      "title": "Compactification geometry, gauge sectors and consistency",
+      "question": "How do compactification geometries encode gauge sectors and effective theories, and what can constructions, dualities and consistency tests establish about their possibilities?",
+      "scope": {
+        "systems": [
+          "Elliptic and genus-one compactifications and their local singularities",
+          "Related M-theory, Type II and heterotic constructions",
+          "Low-energy theories and geometric or string probes explicitly compared with those constructions"
+        ],
+        "targets": [
+          "Gauge algebras, global groups, charged matter and interactions",
+          "Discrete phases, flux vacua and phenomenology",
+          "Anomalies, completeness questions, classifications and bounds",
+          "Dualities, degenerations, defects and light objects"
+        ],
+        "regimes": [
+          "Source-specific dimensions and supersymmetry",
+          "Local, compact, resolved, singular and asymptotic settings kept distinct"
+        ],
+        "assumptions": [
+          "Construction-specific hypotheses remain local to their sources",
+          "Numerical proximity does not establish question equivalence",
+          "Unknown constructions do not by themselves establish inconsistency"
+        ],
+        "conventions": [
+          "Gauge algebra, global gauge group and discrete gauge symmetry are distinct targets",
+          "Massless spectra, full charge lattices and light towers are not interchangeable",
+          "Source dates and stated versions govern historical claims and record values"
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland geometry and model building",
+          "The supplied outside probes where their actual targets fit",
+          "Explicit alternate access for neighboring questions"
+        ],
+        "excludes": [
+          "A universal dimension, method or Swampland premise",
+          "Automatic transfer of source-parent graph properties to every retrieval facet",
+          "Claims of exhaustive classification or current phenomenological viability unsupported by the supplied text"
+        ]
+      },
+      "readingLimit": "Only supplied descriptions, exact source-object context and bounded primary excerpts were assessed. No images, full papers or external verification were available. This newly authored region requires later independent review.",
+      "jointDisposition": "member",
+      "proposalHomeRef": "",
+      "challengeHomeRef": "",
+      "exactRawHomeRefAgreement": true,
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "proposalNote": "Six specified constructions; del Pezzo degree one is excluded. The intersection method is not a classification of all sectionless fourfolds.",
+      "challengeNote": "The v6 text dated 1 May 2017 treats six constructions and excludes del Pezzo degree one. Its multisection method is not a classification of all genus-one four­‑",
+      "pairedQuestionRoles": [
+        {
+          "recordId": "leaf-f3d0ef8dd184e0ce2e9a-challenge:p2",
+          "role": "specializes",
+          "independentRoleAgreement": true
+        },
+        {
+          "recordId": "leaf-f3d0ef8dd184e0ce2e9a-challenge:p5",
+          "role": "method",
+          "independentRoleAgreement": true
+        }
+      ],
+      "fineIdentityStates": [
+        "s",
+        "s"
+      ],
+      "compoundTargetLanguage": false,
+      "contextOrExclusionLanguage": true,
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:0034b70ea953b9879b3d6034ad618cbfcb1be80a68ce1e19fa6ffa94793dec60",
+          "textSha256": "c219f4e7aa825cab320035bcc62fbd2408705ae85efc2df5ce8eb1f15cbf5c41"
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:03691116e527dd90ac9d051d697f68cc",
+          "paperId": "1608.07219",
+          "sourceSha256": "92659298789abcee50ab71b72da1dc26190de4b8e28d6b47dee2ff026681ae42",
+          "sourceContext": {
+            "path": "papers/65ba33db740ff7ca9766/reading-order.json",
+            "fileSha256": "74124b6abb3e29862e01874654e9604084c6e4cec53c2be57df4c29be8b625cb",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1191,
+            "textSha256": "c43bf825bfcf4fc351ef42ce73f3f5885e45f0c643a0a5798214ff20ac9e2944",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:b6bf87016405e76ab0107bbce7ed67d5",
+          "paperId": "1608.07219",
+          "sourceSha256": "92659298789abcee50ab71b72da1dc26190de4b8e28d6b47dee2ff026681ae42",
+          "sourceContext": {
+            "path": "papers/65ba33db740ff7ca9766/reading-order.json",
+            "fileSha256": "74124b6abb3e29862e01874654e9604084c6e4cec53c2be57df4c29be8b625cb",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "be7cebeb324cf5f176dd734ac26406cd3df1c61b33cbab23b0099bbbd46e12dc",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "kind": "primary",
+          "sourceId": "ev:42039aff1d2dbe96e86c606a2e59c39b",
+          "paperId": "1608.07219",
+          "sourceSha256": "92659298789abcee50ab71b72da1dc26190de4b8e28d6b47dee2ff026681ae42",
+          "sourceContext": {
+            "path": "papers/65ba33db740ff7ca9766/reading-order.json",
+            "fileSha256": "74124b6abb3e29862e01874654e9604084c6e4cec53c2be57df4c29be8b625cb",
+            "pdfPage": 4,
+            "start": 99,
+            "end": 3482,
+            "textSha256": "10257a48b056f663ea63c47867c8a539a8ca2643ddf51edf273279b3a313ee82",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "reviewPins": {
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-f3d0ef8dd184e0ce2e9a-challenge/packet.actual.json",
+          "sha256": "199853260472087e2874419ab481265eaa6f8139ebc4cca26a723db39e703b56",
+          "bytes": 358675
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-f3d0ef8dd184e0ce2e9a-challenge/reply.json",
+          "sha256": "df8cb2a859862be2d1b70456aecff6d6dd8a1f7834f38a332db25eb62d2f62fa",
+          "bytes": 102369
+        }
+      },
+      "scopePins": {
+        "challengeReceiptSha256": "fdb0877147b592f136ae83a90f1abd746ee9f6bfa4ca8bbc95520c740a0d8ce6",
+        "challengeReplySha256": "df8cb2a859862be2d1b70456aecff6d6dd8a1f7834f38a332db25eb62d2f62fa",
+        "challengeRawSha256": "d0fc6633bbc5b77e35ad6309d7d9218d0bc624a34256c895291026d86d0f80b5",
+        "challengePacketSha256": "199853260472087e2874419ab481265eaa6f8139ebc4cca26a723db39e703b56",
+        "normalizationSha256": "62e55ee00c23913a23dc125d122a03d905dc364db09a27c8d6e0cba2e249ec9e",
+        "proposalReceiptSha256": "2a74cb032d5b511da9c592ce2274492491fb068da205f53c623bb1b8f4362b28"
+      },
+      "excludedReasons": [
+        "unresolved_unit_annotation_screen"
+      ],
+      "unitAnnotationFlags": [
+        {
+          "path": "$.units[1].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "cludes del Pezzo degree one. Its multisection method is not a classification of all genus-one four­‑",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e2",
+            "e17"
+          ]
+        }
+      ],
+      "status": "requires_explicit_home_policy_and_canonical_mapping",
+      "wholeQuestionCoverage": "Joint overlap or compound/context notes require retaining all source targets and explicit home weights; no partial target is silently discarded."
+    }
+  ],
+  "interpretation": [
+    "An unchanged reviewed broad scientific scope plus exact paired member attribution can justify a broader organizational home by explicit coordinator policy; this is not fallback to an original numerical bin.",
+    "Overlap does not by itself establish coverage of an entire compound source question. Preserve remaining targets and admit explicit normalized weights; do not promote all positive contribution roles automatically.",
+    "Fine identity may remain unresolved while a broad scientific family placement is sound. Missing fine equivalence is not a reason to hide the source or invent a question identity.",
+    "Excluded annotation flags are screening findings requiring resolution, not automatic proof that the source or family is scientifically wrong.",
+    "The raw1050 residual grows after conservative unresolved-annotation exclusions. New completed reviews should update this same census; do not send absent snapshot rows to redundant review.",
+    "Final H uses reconciled retained scientific destinations only, deduplicating aliases before normalization and rejecting simultaneous direct ancestor/descendant mass."
+  ],
+  "homesAdmittedByThisAudit": 0,
+  "noSealedHoldoutOpened": true,
+  "scriptSha256": "5a8282385e770c9bc81cfe15c932e1789dd0467fba54a63298e4b52b8d1b7cfa"
+}

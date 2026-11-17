@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "q025-canonical-continuation-checkpoint/1",
+  "status": "frozen_compact_inputs_no_native_launch_by_geometry",
+  "ownedFiles": [
+    {
+      "path": "research/q025/geometry/canonical-review-design/build_continuation_v4.py",
+      "sha256": "ea5d8ce13d1ab972cf7a6e5e3b31615e354f5fabea6d282cd6b3fa3aca803b07",
+      "bytes": 19010
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/continuation-v4-index.json",
+      "sha256": "f77189d59d6bf40d57d00f93aab3158af7f0fd303e7241cc731a69043e90587f",
+      "bytes": 669174
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/measure_continuation.py",
+      "sha256": "75321f891370f2273a4b1acb48541e7a7dac05c4b796812e867f78bfb9a3f59d",
+      "bytes": 11993
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/continuation-measurements.json",
+      "sha256": "844f73c6dc7fa9a547a9ad17ef63a84b6a16a59ecfc2d68c1c6a2181c0471f9c",
+      "bytes": 21365
+    },
+    {
+      "path": "research/q025/assembly/mine_scope_candidates_v4.py",
+      "sha256": "94c2e74dc824806c48f7ab1746525276299fa21d5b1b1d16c594f36d0af4f6a7",
+      "bytes": 1046
+    },
+    {
+      "path": "research/q025/assembly/reconciliation-refresh-v4.json",
+      "sha256": "2e23733d7bc36e7c21579eb9382cabaf41321fdd7a4838bfe8c674057712f7a2",
+      "bytes": 33241
+    },
+    {
+      "path": "research/q025/assembly/CONSTRUCTION-COPY.md",
+      "sha256": "901840300dc123ab6ef8ae92f74b59c040c0dcd13ffeec9801c6b4610c737a3a",
+      "bytes": 3041
+    }
+  ],
+  "ownedFileCount": 7,
+  "ownedBytes": 758870,
+  "externalInputs": {
+    "registry": {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v4-20261117T131639Z.json",
+      "sha256": "8fec0de5da3901625e4fea16240d4a487878b7b6c803c29a3e3893dc89c1fe7e",
+      "bytes": 70417256
+    },
+    "nominations": {
+      "path": "research/q025/assembly/outputs/scope-candidates-v4/candidates.json",
+      "sha256": "23a39560ee95e549cd3c1a85a1d9a66a785f2dbcf629c59fe2b4914075fcf65b",
+      "bytes": 9558242
+    },
+    "previousExport": {
+      "path": "research/q025/geometry/canonical-review-design/triage-export-index.json",
+      "sha256": "8c6806d664bd84c25fac9153634ba6f30cf8957ebefdb11abf4a4e2c3293bff0",
+      "bytes": 359114
+    },
+    "pilotReceipts": [
+      {
+        "familyId": "canonical-triage-0006",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0006-screen/receipt.json",
+          "sha256": "73ac5b1e5c1b28800334afd73a512f97e124216d247e0da665fc342796c26678",
+          "bytes": 2643
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0006-screen/reply.json",
+          "sha256": "0681734e017d928f0375d6e10f798d5676c03be9716bbc9768e1fdd00fd83ae7",
+          "bytes": 137462
+        },
+        "comparisonCount": 158
+      },
+      {
+        "familyId": "canonical-triage-0019",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0019-screen/receipt.json",
+          "sha256": "bd363dda89dc5ce858ebc4d907050418061a0342f32f84c4be523c0fe588f989",
+          "bytes": 2638
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0019-screen/reply.json",
+          "sha256": "0de97e3b2abea24264cb2a817ea9d5e6bdd1808ab00dfcc89ab53e6347d0dfa6",
+          "bytes": 83976
+        },
+        "comparisonCount": 63
+      },
+      {
+        "familyId": "canonical-triage-0022",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0022-screen/receipt.json",
+          "sha256": "462d4d61a34fbd0e49a4fd3ea75761c406ef81a5c268d3bfe85ced5e3e10a12e",
+          "bytes": 2638
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0022-screen/reply.json",
+          "sha256": "d5016c25d29e581ebbdf83f07a6d1d26aefb4dd7bfc173870be157e04fedc75d",
+          "bytes": 107343
+        },
+        "comparisonCount": 87
+      },
+      {
+        "familyId": "canonical-triage-0028",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0028-screen/receipt.json",
+          "sha256": "abb65897546ebddc9125a2e6773754545da4a0e1740f007af925291d031a1e21",
+          "bytes": 2643
+        },
+        "reply": {
+          "path": "research/q025/evaluation/full-pass/native-local/canonical-triage-v1/jobs/canonical-triage-0028-screen/reply.json",
+          "sha256": "c6c1c2483a76d63fcc9617ed29983f481cbb4bed39423f38eda5763aa59d344a",
+          "bytes": 90572
+        },
+        "comparisonCount": 67
+      }
+    ]
+  },
+  "excludedFromGit": [
+    "All *.local.json and *.local.jsonl scientific views, sidecars, candidate rows and progress logs.",
+    "assembly/outputs/scope-candidates-v4/candidates.json is9.56MB reproducible nomination payload; keep local.",
+    "Unselected80-pair diagnostic files118\u2013129 are outside the authoritative117-family index.",
+    "All frozen raw source/model packets and sealed holdout files."
+  ],
+  "validation": {
+    "scientificViews": 117,
+    "checksummedViewAndSidecarFiles": 234,
+    "uniquePendingComparisons": 7907,
+    "completedComparisonsExcluded": 375,
+    "allExactDefinitionSourceTextAndEndpointHashesChecked": true,
+    "frozenRealRehearsalOwnedFilesUnchanged": 25
+  },
+  "nativeLaunchesByThisAgent": 0,
+  "scienceAdmission": false
+}
