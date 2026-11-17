@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "q025-wave-prelaunch-audit/1",
+  "status": "passed_read_only_no_native_launch",
+  "jobs": 24,
+  "reservedPapersConsumed": 0,
+  "freshPreviouslyExposedPapers": 0,
+  "freshDistinctPapers": 48,
+  "allDescriptionsMatchFrozenSource": true,
+  "allRequestPacketPromptSchemaHashesMatch": true,
+  "largestDescriptionCount": 191,
+  "maxBasePromptCharacters": 272016,
+  "compactSchemaCharacters": 11634,
+  "stressOutput": {
+    "units": 191,
+    "questionCards": 8,
+    "factorDictionaryEntries": 20,
+    "compactCharacters": 98445,
+    "indentedCharacters": 175130,
+    "hardLimitCharacters": 180000,
+    "interpretation": "Constructed plausible-load stress case, not a mathematical upper bound over arbitrary prose. Runtime preserves raw outputs and fails explicitly if the limit is exceeded."
+  },
+  "conservativeInitialCombinedTokens": 170550,
+  "contextPolicy": "Default272k tokens,95% effective258400. Guard220k for chars/3 estimate including actual compact dependency, schema, max response and16k reasoning/protocol headroom. This is a sizing estimate, not exact tokenization. Oversize jobs fail before model start and require explicit splitting; no truncation/retry.",
+  "jobsMeasured": [
+    {
+      "jobId": "kk-production-decay-proposal",
+      "descriptions": 89,
+      "promptCharacters": 212615,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "kk-production-decay-challenge",
+      "descriptions": 89,
+      "promptCharacters": 212617,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "kk-production-decay-fresh",
+      "descriptions": 6,
+      "promptCharacters": 68732,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "effective-actions-vacua-proposal",
+      "descriptions": 191,
+      "promptCharacters": 269710,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "effective-actions-vacua-challenge",
+      "descriptions": 191,
+      "promptCharacters": 269712,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "effective-actions-vacua-fresh",
+      "descriptions": 6,
+      "promptCharacters": 79503,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "distance-emergence-proposal",
+      "descriptions": 124,
+      "promptCharacters": 224225,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "distance-emergence-challenge",
+      "descriptions": 124,
+      "promptCharacters": 224227,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "distance-emergence-fresh",
+      "descriptions": 6,
+      "promptCharacters": 79953,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-proposal",
+      "descriptions": 149,
+      "promptCharacters": 272014,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-challenge",
+      "descriptions": 149,
+      "promptCharacters": 272016,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-fresh",
+      "descriptions": 6,
+      "promptCharacters": 71294,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "inflation-dynamics-proposal",
+      "descriptions": 129,
+      "promptCharacters": 260980,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "inflation-dynamics-challenge",
+      "descriptions": 129,
+      "promptCharacters": 260982,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "inflation-dynamics-fresh",
+      "descriptions": 6,
+      "promptCharacters": 73625,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "axions-proposal",
+      "descriptions": 114,
+      "promptCharacters": 235257,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "axions-challenge",
+      "descriptions": 114,
+      "promptCharacters": 235259,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "axions-fresh",
+      "descriptions": 6,
+      "promptCharacters": 87115,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "neutrinos-proposal",
+      "descriptions": 65,
+      "promptCharacters": 159659,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "neutrinos-challenge",
+      "descriptions": 65,
+      "promptCharacters": 159661,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "neutrinos-fresh",
+      "descriptions": 6,
+      "promptCharacters": 66141,
+      "sourceExcerptUnits": 6
+    },
+    {
+      "jobId": "scattering-positivity-proposal",
+      "descriptions": 68,
+      "promptCharacters": 208388,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "scattering-positivity-challenge",
+      "descriptions": 68,
+      "promptCharacters": 208390,
+      "sourceExcerptUnits": 10
+    },
+    {
+      "jobId": "scattering-positivity-fresh",
+      "descriptions": 6,
+      "promptCharacters": 70378,
+      "sourceExcerptUnits": 6
+    }
+  ]
+}

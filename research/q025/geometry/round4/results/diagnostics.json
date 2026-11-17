@@ -1,0 +1,45 @@
+{
+  "unitCount": 87,
+  "factorNodeCount": 45,
+  "factorEdges": 303,
+  "proposalPairTypes": {
+    "retrieval_only": 1906,
+    "shared_system": 138,
+    "shared_specific_framework": 59,
+    "shared_target": 654,
+    "shared_broad_framework": 1318,
+    "shared_specific_target": 267,
+    "target_bridge_across_regimes": 32
+  },
+  "roleCoverage": {
+    "system": 41,
+    "framework": 67,
+    "target": 73,
+    "regime": 25,
+    "assumption_mentioned": 5
+  },
+  "nearestNeighborDiagnostics": {
+    "minilm": {
+      "rawTop5NoExtractedScopeFraction": 0.1632183908045977,
+      "typedTop5NoExtractedScopeFraction": 0.06206896551724138,
+      "meanTop5Overlap": 3.3333333333333335,
+      "interpretation": "Selection diagnostics only. No semantic accuracy or generalization claim; missing factors are not evidence of unrelated physics."
+    },
+    "qwen-4b-raw": {
+      "rawTop5NoExtractedScopeFraction": 0.1839080459770115,
+      "typedTop5NoExtractedScopeFraction": 0.06206896551724138,
+      "meanTop5Overlap": 3.6666666666666665,
+      "interpretation": "Selection diagnostics only. No semantic accuracy or generalization claim; missing factors are not evidence of unrelated physics."
+    }
+  },
+  "methodControlsRetained": 3,
+  "postRuleControls": 3,
+  "scientificAccuracyMeasured": false,
+  "evaluationLimits": [
+    "Known mixed regions are development examples.",
+    "Post-rule controls reuse existing admitted receipts; this is an endpoint/type/scope audit, not blind-source generalization.",
+    "A shared scope factor does not imply question equivalence.",
+    "All raw geometric neighbors and exact source-method routes remain accessible.",
+    "No whole-paper assumption is attached as a question premise."
+  ]
+}

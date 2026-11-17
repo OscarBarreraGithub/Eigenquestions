@@ -1,0 +1,642 @@
+{
+  "schemaVersion": "q025-native-wave/2",
+  "status": "prepared_not_launched",
+  "jobs": [
+    {
+      "jobId": "kk-production-decay-proposal",
+      "dependsOn": null,
+      "requestSha256": "9c01a5b18c92e247decad4bf98ff599c3a43cb96f41d85beb422160ed26e2f0e",
+      "packetSha256": "123268f4fc975fce2bcd7b08a2986fa9ad981806ba02d19a02d3e80ed46dd6fe",
+      "promptBaseSha256": "e2268488cb1d2d68dade452de9600974f6ff6a355d5059057b9968ed6e195957",
+      "descriptionCount": 89,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 26,
+      "directSourceRelationCount": 9,
+      "sourceObjectCount": 19,
+      "promptCharacters": 212615,
+      "promptUtf8Bytes": 213326,
+      "estimatedBaseTokensAt3CharsPerToken": 70872,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "kk-production-decay-challenge",
+      "dependsOn": "kk-production-decay-proposal",
+      "requestSha256": "bb54dc3801f2e7e9520453bd767da7b87fff2bbc8f7ac47bb06662860f8e8aaf",
+      "packetSha256": "6e7a68d512abfc08f828a161e7f5cce51f1083d34b3a8db875e170284155447a",
+      "promptBaseSha256": "a46b9a5eeca6a3db6e9fa34c7e10ca0b626da35b37de09f5de88d78360321750",
+      "descriptionCount": 89,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 26,
+      "directSourceRelationCount": 9,
+      "sourceObjectCount": 19,
+      "promptCharacters": 212617,
+      "promptUtf8Bytes": 213328,
+      "estimatedBaseTokensAt3CharsPerToken": 70872,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "kk-production-decay-fresh",
+      "dependsOn": "kk-production-decay-challenge",
+      "requestSha256": "fc790143af4eb7054671dd235ae5d61fbeab075e2b98539be653e9640b51a972",
+      "packetSha256": "6b7f3f6bc283c47f5a1b43b199ba3defce9156868fdb827386055b8024e324df",
+      "promptBaseSha256": "7cb0081dd2e51bd292abc5b8c59631994140c02b61f56adb556be95ab45b5d95",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 11,
+      "directSourceRelationCount": 10,
+      "sourceObjectCount": 16,
+      "promptCharacters": 68732,
+      "promptUtf8Bytes": 69335,
+      "estimatedBaseTokensAt3CharsPerToken": 22911,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "effective-actions-vacua-proposal",
+      "dependsOn": null,
+      "requestSha256": "9b619ccc666ae3ace96c8d25cb1ff7a327827df5de976b61e81ffba6a841562e",
+      "packetSha256": "3013d1b7c7b9c248c4047c23e80d39819eabcc793a1fe1be250637ad8e4885ab",
+      "promptBaseSha256": "2437a758a269b38466f61488f9304b462dc6d552bd492e2a1490592a961cec53",
+      "descriptionCount": 191,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 21,
+      "directSourceRelationCount": 15,
+      "sourceObjectCount": 25,
+      "promptCharacters": 269710,
+      "promptUtf8Bytes": 270102,
+      "estimatedBaseTokensAt3CharsPerToken": 89903,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "effective-actions-vacua-challenge",
+      "dependsOn": "effective-actions-vacua-proposal",
+      "requestSha256": "f964ea8b7937e1d44a793e7bf79a30fcef40f13b2df20eebdd4f842099147c0f",
+      "packetSha256": "ffbd5e0c8f348ae9460d4c5c1b7323bd391bd0fdda3bfe703e7733840467feb6",
+      "promptBaseSha256": "3be003714ff88f63521f41cc03fbda43ccb71de7bb291a8857e31daa911ef237",
+      "descriptionCount": 191,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 21,
+      "directSourceRelationCount": 15,
+      "sourceObjectCount": 25,
+      "promptCharacters": 269712,
+      "promptUtf8Bytes": 270104,
+      "estimatedBaseTokensAt3CharsPerToken": 89904,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "effective-actions-vacua-fresh",
+      "dependsOn": "effective-actions-vacua-challenge",
+      "requestSha256": "37ef30d27f2d20cee11e5ae3ccb0294e2dc8c3495b2ac5853d6ebb77f3e85987",
+      "packetSha256": "3cc7b442b6a43f05977a05f0ab8d1fad5c23205bfa8a4930b6549bf95c3b785c",
+      "promptBaseSha256": "3601ba28cbeb706bdafe062a6c42682d5ef00d6f89c9385d0ecd9bca1c186db8",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 16,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 6,
+      "promptCharacters": 79503,
+      "promptUtf8Bytes": 79669,
+      "estimatedBaseTokensAt3CharsPerToken": 26501,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "distance-emergence-proposal",
+      "dependsOn": null,
+      "requestSha256": "4c6895e680cc53580d6362f823b5ba30e4f128630abd67bacceead2e1132b327",
+      "packetSha256": "3df1e21f1ff56afd2e3a58e7ab9a3eb15a34e6ae13e5a5fde7d3b44ddacb9ae3",
+      "promptBaseSha256": "f2071d97096726a7cc5d7b8df225a6da9a766b64aaa819f35a74335c1fbfef99",
+      "descriptionCount": 124,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 22,
+      "directSourceRelationCount": 20,
+      "sourceObjectCount": 30,
+      "promptCharacters": 224225,
+      "promptUtf8Bytes": 224683,
+      "estimatedBaseTokensAt3CharsPerToken": 74742,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "distance-emergence-challenge",
+      "dependsOn": "distance-emergence-proposal",
+      "requestSha256": "995806cf27f7c9b58f585c6f27f0b4a67aedeab5386d54f5d5235f4dcaa43917",
+      "packetSha256": "ff3e9e6cc3e9a0e7510ca4345038ef80c8d4762ad1727b06e6889a04b95fa7ed",
+      "promptBaseSha256": "54624c174cb7c5a0405fbe7dadcb8677626535cc2b3273900e986cf31af0ced4",
+      "descriptionCount": 124,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 22,
+      "directSourceRelationCount": 20,
+      "sourceObjectCount": 30,
+      "promptCharacters": 224227,
+      "promptUtf8Bytes": 224685,
+      "estimatedBaseTokensAt3CharsPerToken": 74742,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "distance-emergence-fresh",
+      "dependsOn": "distance-emergence-challenge",
+      "requestSha256": "9f1606c9c44d3fc59fd29d6b55dbece23700676de72f4af7ee68ba00fa58a5df",
+      "packetSha256": "5022b323707203fdfcee82938359f67944dee778f6df57aeb018010e06fb6276",
+      "promptBaseSha256": "fed4cde3ae3f9cd2ae77dd95a8cffd0a4b388e5b50b9a3620ae1b4273a6419fc",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 13,
+      "directSourceRelationCount": 13,
+      "sourceObjectCount": 19,
+      "promptCharacters": 79953,
+      "promptUtf8Bytes": 80208,
+      "estimatedBaseTokensAt3CharsPerToken": 26651,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-proposal",
+      "dependsOn": null,
+      "requestSha256": "b4d2e91144758dd4c4124f0b5a010c3357d847db739ec9505ba18a9c51a000d1",
+      "packetSha256": "af3cf64dec681658dbbc89ad726aa276da4d0242b1883a669da600913aca70b8",
+      "promptBaseSha256": "c4f50c4b911d2a8c2b7a82f7cb6f4e85cf9791557cf31bbd8fc7b8471204c18f",
+      "descriptionCount": 149,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 20,
+      "directSourceRelationCount": 50,
+      "sourceObjectCount": 60,
+      "promptCharacters": 272014,
+      "promptUtf8Bytes": 272586,
+      "estimatedBaseTokensAt3CharsPerToken": 90671,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-challenge",
+      "dependsOn": "gauge-geometry-anomaly-proposal",
+      "requestSha256": "24322d5ae9821ffef85630c6c32c18ad23a0139cf0610bd4b048e6f0eb455741",
+      "packetSha256": "2ee816b4b154817f9de9a59001686c5a33758b0249e3baaede78466d9ae28dfe",
+      "promptBaseSha256": "c5b9319fa8b2efe8bc494ad3f3df890851be8db5205f770c57c6b952e5197a5d",
+      "descriptionCount": 149,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 20,
+      "directSourceRelationCount": 50,
+      "sourceObjectCount": 60,
+      "promptCharacters": 272016,
+      "promptUtf8Bytes": 272588,
+      "estimatedBaseTokensAt3CharsPerToken": 90672,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-fresh",
+      "dependsOn": "gauge-geometry-anomaly-challenge",
+      "requestSha256": "869fbf21d591fbe1dcb667dca2a06a0aaaaaeaf2f74cf616370e02dae4a0326f",
+      "packetSha256": "0e1c95a63a689341af72c8868fdc420b432265a3cf281a71a048240596b0d5a1",
+      "promptBaseSha256": "37a474a4fbc5a0545ebafc5b48b7af37247cc8ec1509ce9092da3124ee194dcf",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 14,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 6,
+      "promptCharacters": 71294,
+      "promptUtf8Bytes": 71616,
+      "estimatedBaseTokensAt3CharsPerToken": 23765,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "inflation-dynamics-proposal",
+      "dependsOn": null,
+      "requestSha256": "95f405f23f6dfa337f9203faf261e8ba66b1ddfb7c7f711d3af1671b496f3a6b",
+      "packetSha256": "61a0671bbbe666d787e29ad2d79046c8fc33a696f96485707686d82950bb364b",
+      "promptBaseSha256": "2cd59b89a7d5e0997042b0ba94d470008225f96d9d506a77e56e03f41504942b",
+      "descriptionCount": 129,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 22,
+      "directSourceRelationCount": 42,
+      "sourceObjectCount": 52,
+      "promptCharacters": 260980,
+      "promptUtf8Bytes": 261846,
+      "estimatedBaseTokensAt3CharsPerToken": 86993,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "inflation-dynamics-challenge",
+      "dependsOn": "inflation-dynamics-proposal",
+      "requestSha256": "65e9bf0d9db8c4417a18df10c74754783ee5a6a2c6a62997ab63f0de6824a44d",
+      "packetSha256": "f08066296c65940288ce2c2a76d57f778c7c47d72961c16797d255c492a213cd",
+      "promptBaseSha256": "748eb9d13457ade8c03ee0f418473867898872a0e6d88d20e300356b942f2348",
+      "descriptionCount": 129,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 22,
+      "directSourceRelationCount": 42,
+      "sourceObjectCount": 52,
+      "promptCharacters": 260982,
+      "promptUtf8Bytes": 261848,
+      "estimatedBaseTokensAt3CharsPerToken": 86994,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "inflation-dynamics-fresh",
+      "dependsOn": "inflation-dynamics-challenge",
+      "requestSha256": "39397ec3c6fbe1e733997d9b0eeb6b4070b37023efc99e83c097cc38a14d3f86",
+      "packetSha256": "1283d8fcafcdadeba6a1181610bb76501d145a4854bf0c98a19df54951340158",
+      "promptBaseSha256": "86c17da41d224ef11fe362fea372e8e966865dce4cd4473e1b5f5cbd037c9ba5",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 13,
+      "directSourceRelationCount": 4,
+      "sourceObjectCount": 10,
+      "promptCharacters": 73625,
+      "promptUtf8Bytes": 74008,
+      "estimatedBaseTokensAt3CharsPerToken": 24542,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "axions-proposal",
+      "dependsOn": null,
+      "requestSha256": "1c57217055e06ede207b8552c821fd74d77e0fe41085b91bb247b27a87e95db5",
+      "packetSha256": "081ce43993360fd35f0b7a206ae345dcb2dfa351f17680b43b6240080316f61b",
+      "promptBaseSha256": "924fb6ef4af6f581fb945180dfff809228201924e5b061f048be507e5db1ac6f",
+      "descriptionCount": 114,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 24,
+      "directSourceRelationCount": 24,
+      "sourceObjectCount": 34,
+      "promptCharacters": 235257,
+      "promptUtf8Bytes": 236231,
+      "estimatedBaseTokensAt3CharsPerToken": 78419,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "axions-challenge",
+      "dependsOn": "axions-proposal",
+      "requestSha256": "a080367fc8587b79393914c61cc60616f47f4fd414143dbc8c98c446a39eab2a",
+      "packetSha256": "8da2451322103cd23491182f202a82dafb794acda0fdfad1f52f49a6febda843",
+      "promptBaseSha256": "ea9621dd5a295771b0c481acee50f0405e8a99641b848a4884ec0c1e1b1b4b56",
+      "descriptionCount": 114,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 24,
+      "directSourceRelationCount": 24,
+      "sourceObjectCount": 34,
+      "promptCharacters": 235259,
+      "promptUtf8Bytes": 236233,
+      "estimatedBaseTokensAt3CharsPerToken": 78420,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "axions-fresh",
+      "dependsOn": "axions-challenge",
+      "requestSha256": "780079de7930c41c8b31441eabe68ae64db18cc5566434911b82695454851337",
+      "packetSha256": "9d9bc13095414f9a247e38b13a97eb2cefd6c00d5c1aee4d606d27c9496ea46e",
+      "promptBaseSha256": "3f37aba00d3d12c85bd276b00ef549201f265c0b75fc725c1b5f4ce7c273c4ba",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 17,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 6,
+      "promptCharacters": 87115,
+      "promptUtf8Bytes": 87611,
+      "estimatedBaseTokensAt3CharsPerToken": 29038,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "neutrinos-proposal",
+      "dependsOn": null,
+      "requestSha256": "97c1536932832cb051fad6f46d971e0c0de7c4643cc85c969424b164b8defbaf",
+      "packetSha256": "857b82515b7bd9f218a2c3e7b7cc3ec25d6b28abb96e5a62809a46742e949b25",
+      "promptBaseSha256": "ef37336bd46b7be1b0b966d65525726fe6f053c57575e15628bff32c254cbbbd",
+      "descriptionCount": 65,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 24,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 10,
+      "promptCharacters": 159659,
+      "promptUtf8Bytes": 160356,
+      "estimatedBaseTokensAt3CharsPerToken": 53220,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "neutrinos-challenge",
+      "dependsOn": "neutrinos-proposal",
+      "requestSha256": "c7766ada95f3b2f8898058b764f94b77016d3d40df1781bf81b4b3b5348e14ac",
+      "packetSha256": "38eb48230a9b4d8d70aefcaa8e64cb0b779766e98ae63747f3fe9a40ea0407d6",
+      "promptBaseSha256": "710a37e1b24bc83666970dba4150c707268801feaa4efab946b808a8329f48b7",
+      "descriptionCount": 65,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 24,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 10,
+      "promptCharacters": 159661,
+      "promptUtf8Bytes": 160358,
+      "estimatedBaseTokensAt3CharsPerToken": 53220,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "neutrinos-fresh",
+      "dependsOn": "neutrinos-challenge",
+      "requestSha256": "b922e25b401879c27a148b34814b4acfe4a8a7d75cd662726fd376d19db6df55",
+      "packetSha256": "bbec9b535ac011a330cd1f5c2e72487d6823ad46b6fa599f279bc357f033b6f2",
+      "promptBaseSha256": "c6fe9b00e7114b783682b7779f139681a2c71d822b7359562dc16a793c2a2661",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 13,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 6,
+      "promptCharacters": 66141,
+      "promptUtf8Bytes": 66461,
+      "estimatedBaseTokensAt3CharsPerToken": 22047,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "scattering-positivity-proposal",
+      "dependsOn": null,
+      "requestSha256": "9c63ab3c4c14a4cef268880619989199a1b5e1b3c45593aab68f833b0c0454e2",
+      "packetSha256": "38bc01684bb6dc7fb837d15e16b10646c3ecd68616c111fc9afece66fe3ea2be",
+      "promptBaseSha256": "ed94ebef74cd3a46b580e1f5f54c3431574d0853d38ddaf06fe1a86c50b4f608",
+      "descriptionCount": 68,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 28,
+      "directSourceRelationCount": 21,
+      "sourceObjectCount": 31,
+      "promptCharacters": 208388,
+      "promptUtf8Bytes": 209094,
+      "estimatedBaseTokensAt3CharsPerToken": 69463,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "scattering-positivity-challenge",
+      "dependsOn": "scattering-positivity-proposal",
+      "requestSha256": "3e2b20f41b786c7ca4844a09a3efaa6e03d1ba82a24bfb95ed4835da42e0ad1d",
+      "packetSha256": "51b93e2db29f66fdb89f5cd1a199fb48291ee66c61c800c65f272e5576e3065f",
+      "promptBaseSha256": "62ed834b8d8fcc5d2d5db374edd52ce493a14fbbd816deebf51a0fa8fd0fdf13",
+      "descriptionCount": 68,
+      "sourceExcerptUnitCount": 10,
+      "sourceAnchorCount": 28,
+      "directSourceRelationCount": 21,
+      "sourceObjectCount": 31,
+      "promptCharacters": 208390,
+      "promptUtf8Bytes": 209096,
+      "estimatedBaseTokensAt3CharsPerToken": 69463,
+      "maxOutputCharacters": 180000
+    },
+    {
+      "jobId": "scattering-positivity-fresh",
+      "dependsOn": "scattering-positivity-challenge",
+      "requestSha256": "cdd7d35f15ebc0aa907e07aa25c6ea27fc075ae8cd9cc80d716f86f075c0e24b",
+      "packetSha256": "617becb0e2819e1381814caa06d261362fb18a8ec474ad83b1943fa1c6064867",
+      "promptBaseSha256": "9e292ecff4e93fde59102224e40fb80c3cdf6e71fa6bf09a72d16c7138088703",
+      "descriptionCount": 6,
+      "sourceExcerptUnitCount": 6,
+      "sourceAnchorCount": 14,
+      "directSourceRelationCount": 0,
+      "sourceObjectCount": 6,
+      "promptCharacters": 70378,
+      "promptUtf8Bytes": 70803,
+      "estimatedBaseTokensAt3CharsPerToken": 23459,
+      "maxOutputCharacters": 180000
+    }
+  ],
+  "families": [
+    {
+      "familyId": "kk-production-decay",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:0403944f92af04eaed4a",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 9,
+          "memberIdOrderSha256": "fb7f8065668aa7557425d410416942712a668fce1877976a90a16771751a8e36"
+        },
+        {
+          "candidate": "local_spectral_consensus",
+          "regionId": "local_spectral_consensus:spectral:bfee9d43254b967793c9",
+          "regionFile": "research/q025/geometry/round2/local_spectral_consensus/regions.json",
+          "regionFileSha256": "cb3ebeedd58ddc7479bbf6677246d18e3cddbb8689488e39daa39941d8fbab27",
+          "memberCount": 18,
+          "memberIdOrderSha256": "079426bca0cb0cf553d52c1e79d6ef5f521182c70300464bd999825bcf32ce56"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:1a59e9c1af68ec589759",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 76,
+          "memberIdOrderSha256": "dd3ba9ceea536b6a0b2a6986d362debab81cdf9f17dee5c5b7a4c4ca8c2266ac"
+        }
+      ],
+      "unionMemberCount": 87,
+      "unionMemberIdsSha256": "072fdbe3e3fb66074837cb036f3a04da0feddd11000349bad5d6a2521b0985b3",
+      "providedDescriptionCount": 86,
+      "reservedUnreviewedUnitCount": 1
+    },
+    {
+      "familyId": "effective-actions-vacua",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:c3339e1f151b5c739eb5",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 87,
+          "memberIdOrderSha256": "e40eaa50329aca3ae017c42a88ab472611ac71b86c7b115175d5df6152bffcdf"
+        },
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:917023476c8ed7e389e0",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 52,
+          "memberIdOrderSha256": "5252b9b412242d94b0723d6409fcd3b4989e2694c63ad15465fe0d00c82633d0"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:6afc0d9c421931234feb",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 29,
+          "memberIdOrderSha256": "291d76d39df78e26ecfebfcf5b836f19a5d7b5b7fd819b16c7861d503c1ee04d"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:d27ad088c4dfcf5e3854",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 45,
+          "memberIdOrderSha256": "2415539d5448eaff02309aa85aa0e433a81092fec64c09e4b912b7b5789888fb"
+        }
+      ],
+      "unionMemberCount": 188,
+      "unionMemberIdsSha256": "ac30a22e9b84d6a126edac78e5ebd4e45d17f191afdb2ac2e84d294f97d00894",
+      "providedDescriptionCount": 188,
+      "reservedUnreviewedUnitCount": 0
+    },
+    {
+      "familyId": "distance-emergence",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:adcc4556537d69777acf",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 94,
+          "memberIdOrderSha256": "3b83934397e0628566de03fa617bf6a66fecc98a9ecfd9b6b551bc45b46d3aee"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:6cee53cc87faacd94178",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 62,
+          "memberIdOrderSha256": "7889af3af54da7b941e2882d6b6548870d78bf440b8c324d4cb639fcc8486806"
+        }
+      ],
+      "unionMemberCount": 122,
+      "unionMemberIdsSha256": "4c38314c5b9cd3cfc2eb534fe96ec5ca6f062973685de459726e69ba58ebac29",
+      "providedDescriptionCount": 121,
+      "reservedUnreviewedUnitCount": 1
+    },
+    {
+      "familyId": "gauge-geometry-anomaly",
+      "candidateRegions": [
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:8d9d4d04cfaed30bba4e",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 146,
+          "memberIdOrderSha256": "35cb12a789c6a1d39e4d6ba657e3617d378ac1a2f8d267a8afb910d666cee019"
+        }
+      ],
+      "unionMemberCount": 146,
+      "unionMemberIdsSha256": "202b9ae0b4e1695ce8ba98624899d9589716c1ffa462992851285e8e5161d717",
+      "providedDescriptionCount": 146,
+      "reservedUnreviewedUnitCount": 0
+    },
+    {
+      "familyId": "inflation-dynamics",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:431e39adaf172dcc211a",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 21,
+          "memberIdOrderSha256": "4834c380439d4c9e503f18e918a408eefdcf47f8f4989af997400bcbb2ae2847"
+        },
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:ccbf22b7e49aec0dfecf",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 55,
+          "memberIdOrderSha256": "f1cdfc67cf973147d71deff61b15f3bc8a446b3db837df1d6913ce09cec91abe"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:6db85b9a8a960a0c5f50",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 19,
+          "memberIdOrderSha256": "3ce3c15e0906ad1536f5b2ef1b24e836c40b3b163d8ada99ffe43e5dba8b288d"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:c669854c0351421af172",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 56,
+          "memberIdOrderSha256": "0742e334f94cb4218322bf0e8037856306d075b7b58ebf38dd5216e63181fb73"
+        }
+      ],
+      "unionMemberCount": 126,
+      "unionMemberIdsSha256": "c5d65c52bbd447714e744618e299e82e7c7e7daeb825414df5b51ea5e745fec0",
+      "providedDescriptionCount": 126,
+      "reservedUnreviewedUnitCount": 0
+    },
+    {
+      "familyId": "axions",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:3d1118c04f114f9ecdc6",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 85,
+          "memberIdOrderSha256": "14d7ece90258bf7503ea0dd3623ff77ba9ed2c1a75a09f9cc46ab9d5ef038429"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:6061678943a20012a9e8",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 49,
+          "memberIdOrderSha256": "fd1e243738b3c029601549ea0c4cbde43ed90c5ea53a5697d7a3fb6887471807"
+        }
+      ],
+      "unionMemberCount": 113,
+      "unionMemberIdsSha256": "1c98fd7592bb025d3d47d53a40122da3377c3edbeec9efff3ae8949939e0c5af",
+      "providedDescriptionCount": 111,
+      "reservedUnreviewedUnitCount": 2
+    },
+    {
+      "familyId": "neutrinos",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:76e3d3dd115e5b73a21b",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 34,
+          "memberIdOrderSha256": "8ca23b5cc70452d23938485501e2efec235b564d70dea160e6e80dde9305b073"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:3ebd2decc41cd7dcd6f1",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 60,
+          "memberIdOrderSha256": "e63307af9e203b9119784dd4b907e2f8a7f2cccac573939687518614bd736759"
+        }
+      ],
+      "unionMemberCount": 63,
+      "unionMemberIdsSha256": "dce0e3aa512ae3c8e44f62127bd4c187b5d71ead48e2e059205242b0e857978a",
+      "providedDescriptionCount": 62,
+      "reservedUnreviewedUnitCount": 1
+    },
+    {
+      "familyId": "scattering-positivity",
+      "candidateRegions": [
+        {
+          "candidate": "multiview_preserve_candidates",
+          "regionId": "multiview_preserve_candidates:region:2bb36b2ccecd56449d47",
+          "regionFile": "research/q025/geometry/round3/multiview_preserve_candidates/regions.json",
+          "regionFileSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+          "memberCount": 62,
+          "memberIdOrderSha256": "5ca6b3a52bae26aeb4796b0643b5ba53d088a2f036ab5c9c392101f35e76ddda"
+        },
+        {
+          "candidate": "extra_facet_context",
+          "regionId": "extra_facet_context:region:16cd2f1226965bfbabde",
+          "regionFile": "research/q025/geometry/round3/extra_facet_context/regions.json",
+          "regionFileSha256": "98becd20a2ab404d360504bfe2366b99ce36117b46d1ede184da37764a59420c",
+          "memberCount": 57,
+          "memberIdOrderSha256": "928af51c49e2d062933c921150cca589ae413dfac6065b5627ea0f720480c85a"
+        }
+      ],
+      "unionMemberCount": 67,
+      "unionMemberIdsSha256": "830101309e3e146bc260d9cf9eda0308645afda7f0ff9a9b659dd46d5d5244bf",
+      "providedDescriptionCount": 65,
+      "reservedUnreviewedUnitCount": 2
+    }
+  ],
+  "sourceRowsSha256": "46b1744d38fcd4ec12e6be91bd2de65c381f437c1d94f528dcabb33677b8c973",
+  "inputManifestSha256": "74598fe665886a333874c349f286c9ec2f3ea8619a23526ad04f0be90bc44c70",
+  "foundationManifestSha256": "438a23da4f90932f1b67a41d77f5e8ee180e28de62476eb673ebe93ecce4f339",
+  "reservedFinalPapersConsumed": 0,
+  "freshPreviouslyExposedPapers": 0,
+  "freshPaperCount": 48,
+  "sourceExposedPaperCount": 1544,
+  "instructionsSha256": "bc0930b3f9f61c81f5a1a59563647c937a870f73b727283c42514e8878d1d7bb",
+  "validatorSha256": "bf18e9a6b11cb0f8b789821434afc9c09d97046ca36e1703a4ada9712fce1ab0",
+  "schemaSha256": "331f69a8c80c0238490b679cab051d837ceb9110d9a76f4184499c0d680616a7",
+  "fullMembershipManifestPath": "full-memberships.local.json",
+  "pilotSha256": "156e77386ed2191caeedeb1e2717e22c3ee05956641dd4c6fd6b79d731b55911",
+  "nativeLaunches": 0,
+  "sourceAnchorCount": 298,
+  "primarySourcePacketsPublished": false,
+  "preparationLineage": "fourth_preparation; oversized and smaller-cap versions retained in ignored history; no model launches",
+  "runnerSha256": "923eb7ccdc4202bce26dfdc451c5f44ef42a1e9a0540f586f9faec26ec4bdace",
+  "prelaunchAuditSha256": "675ab57b5f5ef8cfeaa0e8a81f7c23b30dd99a0a4b954e688ee2bcfa637df4ab"
+}

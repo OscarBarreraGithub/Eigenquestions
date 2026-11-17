@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+"""Pin complete source coverage and review DAG for the186-leaf starting proposal. No jobs launch."""
+import hashlib,json,collections
+from pathlib import Path
+B=Path(__file__).resolve().parent;E=B.parent;W=E.parents[2]
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+regionpath=W/'research/q025/geometry/round3/multiview_preserve_candidates/regions.json';rowsfile=W/'research/q025/geometry/round1/source-rows.jsonl'
+r=json.loads(regionpath.read_text());regions=r['regions'] if isinstance(r,dict) else r
+rows={x['unit_id']:x for x in map(json.loads,rowsfile.read_text().splitlines())};held={r['paperId'] for r in json.loads((E/'final-holdout-reservation.local.json').read_text())['records']}
+leaves=[r for r in regions if not r['childIds']];parents=sorted((r for r in regions if r['childIds']),key=lambda r:(-r['depth'],r['id']));allids=[u for r in leaves for u in r['memberIds']];assert len(allids)==8473==len(set(allids));assert len(leaves)==186 and len(parents)==55
+short={r['id']:r['id'].rsplit(':',1)[-1] for r in regions};jobs=[];records=[];local={}
+for r in leaves+parents:
+ rid=r['id'];members=r['memberIds'];visible=[u for u in members if rows[u]['paper_id'] not in held];reserved=[u for u in members if u not in set(visible)];kind='leaf' if not r['childIds'] else 'parent';sid=short[rid]
+ records.append({'candidateRegionId':rid,'reviewKey':sid,'kind':kind,'depth':r['depth'],'candidateParentIds':r['parentIds'],'candidateChildIds':r['childIds'],'fullMemberCount':len(members),'memberIdOrderSha256':hashlib.sha256(('\n'.join(members)+'\n').encode()).hexdigest(),'eligibleDescriptionCount':len(visible),'reservedUnreviewedUnitCount':len(reserved),'eligibleDistinctPaperCount':len({rows[u]['paper_id'] for u in visible}),'sourceExcerptTarget':{'central':min(4,len({rows[u]['paper_id'] for u in visible})),'boundary':3,'outsideContrast':3} if kind=='leaf' else {'childScopeContrasts':6},'scopeStatus':'numerical_proposal_only_pending_scientific_review','reviewedMembershipStatus':'none_yet','candidateMembershipImmutable':True})
+ local[sid]={'candidateMemberIds':members,'eligibleDescriptionIds':visible,'reservedUnreviewedIds':reserved}
+ proposal=f'{kind}-{sid}-proposal';challenge=f'{kind}-{sid}-challenge';dependencies=[] if kind=='leaf' else [('leaf' if not next(x for x in regions if x['id']==c)['childIds'] else 'parent')+'-'+short[c]+'-challenge' for c in r['childIds']]
+ jobs.extend([{'jobId':proposal,'kind':kind,'stage':'proposal','reviewKey':sid,'dependsOn':dependencies,'status':'planned_not_prepared'},{'jobId':challenge,'kind':kind,'stage':'challenge','reviewKey':sid,'dependsOn':[proposal],'status':'planned_not_prepared'}])
+assert len(jobs)==482
+heldunits=sum(r['reservedUnreviewedUnitCount'] for r in records if r['kind']=='leaf')
+out={'schemaVersion':'q025-whole-atlas-coverage-plan/1','status':'planned_no_native_jobs_prepared_or_launched','candidate':'multiview_preserve_candidates','candidatePurpose':'Starting coverage bins; semantic reviews may reaggregate, overlap and reparent without rewriting numerical provenance.','regionFile':str(regionpath.relative_to(W)),'regionFileSha256':sha(regionpath),'sourceRowsSha256':sha(rowsfile),'holdoutReservationSha256':sha(E/'final-holdout-reservation.local.json'),'coverage':{'uniqueTerminalUnits':8473,'leafCount':186,'parentCountIncludingRoot':55,'descriptionReviewEligibleUnits':8473-heldunits,'reservedUnreviewedUnits':heldunits,'reservedSourcePaperCount':24,'twoPassCoverageCalls':482,'independentPrimaryContrastCalls':32,'initialQuestionReconciliationCalls':24,'planningTotalCalls':538},'laterContrastInterpretation':'The32 checks reread independent primary excerpts/contrasts with prior description exposure disclosed. They are not unseen-paper tests; only the sealed24-paper final test retains that claim.','jobs':jobs,'regions':records,'notYetPrepared':['Actual source exemplar selection and exact primary packets','Final acceptance/synthesis schema informed by calibration outcomes','Full-pass isolated runner with multi-dependency parent packets','Accepted shared-question registry and scope reconciliation inputs']}
+(B/'coverage-plan.json').write_text(json.dumps(out,indent=2)+'\n');(B/'coverage-memberships.local.json').write_text(json.dumps(local,indent=2)+'\n')
+print(json.dumps({'status':out['status'],'coverage':out['coverage'],'parentsDependOnCompletedDirectChildChallenges':True,'nativeLaunches':0},indent=2))

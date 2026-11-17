@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "q025-factor-controls-public/1",
+  "expectationsSha256": "a53e9bc98a836792a377a3fd40ec1321f2b88c40e51127aa77f2d4ced22b0647",
+  "status": "expectations_sealed_before_factor_rules_inspection",
+  "evaluationLimit": "Controls are absent from the87-unit factor cohort, but their underlying receipts exist in the shared admitted ledger. This is a post-rule audit, not a blind-source test.",
+  "records": [
+    {
+      "id": "FC01",
+      "sourceObjectIds": [
+        "obj:8dc194fae0fdf0bccb51:method:aab5d6c83679112bdb3a4ae6",
+        "obj:0dd7757685993832204c:method:813dc0058083922a0930e843"
+      ],
+      "paperIds": [
+        "1206.5900",
+        "1410.4669"
+      ],
+      "prompt": "Compare the physical scope and differential-equation operations of these two source methods. Which navigation connections, if any, follow; which question identities or physical conclusions remain separate?"
+    },
+    {
+      "id": "FC02",
+      "sourceObjectIds": [
+        "obj:5cd68d47f3a9d593d007:method:d77c3247e2c32baa35be3602",
+        "obj:f4a5aa09dcceeb50511f:method:4a6e6f39ed4ae8205fd49f43"
+      ],
+      "paperIds": [
+        "1912.03317",
+        "2104.15030"
+      ],
+      "prompt": "Compare the scalar-potential and spectrum procedures in these two source methods. Identify what can share a route and what needs a separate scope."
+    },
+    {
+      "id": "FC03",
+      "sourceObjectIds": [
+        "obj:cc810b181b608f59620b:method:1ff629b3c0586789cd3fea9e",
+        "obj:ac77eaed73ac53cd2046:method:c7ba158e0dc78d8e79116bd6"
+      ],
+      "paperIds": [
+        "2004.10768",
+        "2011.00024"
+      ],
+      "prompt": "Compare the input data, calculated target and operations of these two source methods. Decide the justified navigation relationship without assuming a common method from shared vocabulary."
+    }
+  ]
+}

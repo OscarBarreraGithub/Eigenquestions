@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "q025-factor-independent-challenge/1",
+  "cohortSha256": "facda7954497aa8d37a7d8b54af10afe0cde9cdccaaec48957720f9a207c9d51",
+  "factorRulesSha256": "f0826f6659394e14d6026d78abeaada16afb5a17453642aeac7e4e90a7131f66",
+  "factorDraftSha256": "f3baadafe68338552845e68f3ce5564a1555103db12b567abf5a4521030b8b92",
+  "predictionsSha256": "9eea13c5e2dc0e0d50c2cf85c995ca98633a6c6058f82c12b683d49402876e6b",
+  "sealedExpectationsSha256": "a53e9bc98a836792a377a3fd40ec1321f2b88c40e51127aa77f2d4ced22b0647",
+  "postRuleGrades": [
+    {
+      "id": "FC01",
+      "passedExactSourceRelationPreservation": true,
+      "expectedCategory": "uses_method",
+      "questionEquivalenceEstablished": false,
+      "interpretation": "Generic exact-endpoint ledger lookup preserves an already reviewed relation and its scope; this is not evidence that lexical factors infer an unseen scientific relationship."
+    },
+    {
+      "id": "FC02",
+      "passedExactSourceRelationPreservation": true,
+      "expectedCategory": "uses_method",
+      "questionEquivalenceEstablished": false,
+      "interpretation": "Generic exact-endpoint ledger lookup preserves an already reviewed relation and its scope; this is not evidence that lexical factors infer an unseen scientific relationship."
+    },
+    {
+      "id": "FC03",
+      "passedExactSourceRelationPreservation": true,
+      "expectedCategory": "analogy_only",
+      "questionEquivalenceEstablished": false,
+      "interpretation": "Generic exact-endpoint ledger lookup preserves an already reviewed relation and its scope; this is not evidence that lexical factors infer an unseen scientific relationship."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "unitId": "unit:e833b4f0190f60ba6a1be2eabb1c32a2b21dc891f0ef2c79cfd5dd689114c156",
+      "paperId": "1007.0027",
+      "basis": "description_checked",
+      "descriptionTextSha256": "a505eabdde684e902f3938a05eb78b8ba40ed9b62afe3cd1f88b53edb602ad28",
+      "literalSpan": {
+        "start": 37,
+        "end": 69,
+        "text": "Galileon phase replace inflation"
+      },
+      "issue": "Framework nomination inflation loses the replace/comparison polarity; this is a noninflationary alternative question, despite reheating appearing later.",
+      "proposedRepair": "Represent Galileon/NEC-violating background and alternative-to-inflation relation, preserving a primordial-perturbation bridge. Do not use inflation as an affirmative system membership.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F02",
+      "unitId": "unit:2fb3b12439a334e616e991b9c2be223a2ee7e671b70169eeb4f69a236b75b718",
+      "paperId": "2205.06065",
+      "basis": "description_checked",
+      "descriptionTextSha256": "365d83dfa2320f53bc3fb18a1007d2e241484e181d7e7c41df20e3dcc427aa96",
+      "literalSpan": {
+        "start": 4,
+        "end": 34,
+        "text": "transient slow-roll violations"
+      },
+      "issue": "The nominated slow_roll regime includes its violation rather than a globally valid slow-roll approximation.",
+      "proposedRepair": "Represent a temporal transition/violation target. Slow roll can remain a compared regime, not an everywhere-applicable premise.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F03",
+      "unitId": "unit:2fb3b12439a334e616e991b9c2be223a2ee7e671b70169eeb4f69a236b75b718",
+      "paperId": "2205.06065",
+      "basis": "description_checked",
+      "descriptionTextSha256": "365d83dfa2320f53bc3fb18a1007d2e241484e181d7e7c41df20e3dcc427aa96",
+      "literalSpan": {
+        "start": 81,
+        "end": 116,
+        "text": "without large field-space curvature"
+      },
+      "issue": "The curved_field_space assumption mention omits the without-large qualifier. It must not become evidence that large curvature is required.",
+      "proposedRepair": "Keep the explicit negated/limited curvature condition and magnitude qualifier. No hard constraint from a positive lexical token.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F04",
+      "unitId": "unit:a0d6f7a5d5f4200e99f7d7a873615e76ef8dbdd4ba520975abc1e41982bfa768",
+      "paperId": "1807.05240",
+      "basis": "description_checked",
+      "descriptionTextSha256": "661ebb369ed5e2ce092db14dbd90a40f576f3f7d5ee08b9a83e09f2392c088c6",
+      "literalSpan": {
+        "start": 93,
+        "end": 143,
+        "text": "entropy kinetic coefficient provides amplification"
+      },
+      "issue": "An entirely unassigned unit explicitly describes entropy-mode amplification through field-dependent kinetic coupling.",
+      "proposedRepair": "Add proposed perturbation-amplification target and kinetic-coupling method, with stationary background chi scope. Its methodological navigation can cross physical backgrounds without merging questions.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F05",
+      "unitId": "unit:164f402ba93c08d0ff36672e7a20f2e6af8f141802340e480c08b012edf2c00f",
+      "paperId": "2005.12370",
+      "basis": "description_checked",
+      "descriptionTextSha256": "30f6da3ed9f88102f2671f82bb0f7e011d502402d85d0c2a81cca079a798d387",
+      "literalSpan": {
+        "start": 35,
+        "end": 74,
+        "text": "radiation-dominated preinflationary era"
+      },
+      "issue": "An entirely unassigned unit has clear initial-state and preinflationary-background targets.",
+      "proposedRepair": "Add early-time radiation-era history and initial-state dependence of CMB power. Keep preinflation distinct from inflation dynamics and from late reheating.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F06",
+      "unitId": "unit:d807a68e5262ff1889706188d291c76deaea9d7af3afd6586ccc8e0b4cb41a23",
+      "paperId": "0803.0859",
+      "basis": "description_checked",
+      "descriptionTextSha256": "ec2979e72a1c696c084e29494dde69c6857f867971f90d4db2cb445be13a302c",
+      "literalSpan": {
+        "start": 6,
+        "end": 50,
+        "text": "decreasing, initially very large sound speed"
+      },
+      "issue": "The no-inflation polarity is retained, but there is no useful sound-speed/primordial-fluctuation bridge to other mechanisms.",
+      "proposedRepair": "Retain noninflationary expansion as its own scope and add comparison/method search on sound-speed evolution and scale-invariant perturbations; source review is needed before an admitted uses_method edge.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F07",
+      "unitId": "unit:51af4ccc0af140887bc46277dff4590cd4237a304cf4ae9a5363765a7fbf07bb",
+      "paperId": "1901.08603",
+      "basis": "description_checked",
+      "descriptionTextSha256": "71696c5d26dc3a1775f41bb2571e14b17463d6c1b7ac16e4c761f289cd7d47d8",
+      "literalSpan": {
+        "start": 139,
+        "end": 197,
+        "text": "Could a varying L evade the constant-curvature restriction"
+      },
+      "issue": "The constant-curvature phrase names a restriction being challenged in an extension question, not necessarily a fixed premise of this whole facet.",
+      "proposedRepair": "Separate known constant-curvature setup from a varying-L extension target; record its interrogative scope and uncertainty. Reheating is a further target, not automatically the operative regime of the rapid-turn calculation.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    },
+    {
+      "id": "F08",
+      "unitId": "unit:faeadcc2425dd0e822137f4d1dcd02bb52622c4159571ddfcf5a6cdf455090b0",
+      "paperId": "0811.3633",
+      "basis": "description_checked",
+      "descriptionTextSha256": "7aa850e32e81bf3e25d3eb86219ee4547e0aaffe47cee84ee88a901b2f129f5b",
+      "literalSpan": {
+        "start": 6,
+        "end": 42,
+        "text": "expanding or contracting cosmologies"
+      },
+      "issue": "Broad scalar-spectrum targets lose explicit branch alternatives and the varying-sound-speed organizing method.",
+      "proposedRepair": "Retain expanding/contracting as alternatives, with varying sound speed and stability comparisons. This offers an ordinary bridge to0803.0859 without asserting equal mechanisms or conclusions.",
+      "scientificStatus": "scope_annotation_proposal_not_primary_scientific_adjudication"
+    }
+  ],
+  "coverage": "Eight explicit failure/omission findings selected from reading candidate factor descriptions; not an exhaustive scientific annotation of all87 units. Warm-PBH phase distinction additionally rests on the prior native source pilot.",
+  "conclusion": "Typed navigation preserves useful distinctions but the lexical prototype cannot yet establish physical scope. Repair polarity, interrogative/comparison role, temporal phases and missing methods; use source-reviewed factors to reaggregate and overlap, never as universal cannot-link rules.",
+  "holdoutClaim": "These controls are based on previously exposed admitted receipts and known development descriptions. No blind-source or population-generalization claim; no sealed24 source paper consumed."
+}

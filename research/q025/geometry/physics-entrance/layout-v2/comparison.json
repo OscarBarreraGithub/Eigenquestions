@@ -1,0 +1,53 @@
+{
+  "selected": "graph_distance_stress",
+  "sameNodesAndMembershipsAsBaseline": true,
+  "components": [
+    {
+      "component": 0,
+      "nodeCount": 197,
+      "baselineDiffusionAgainstGraphDistance": {
+        "graphDistanceStressAfterUniformFit": 0.6785837862361334,
+        "graphTopFiveNeighborRecall": 0.22639593908629438,
+        "neighborTieCaveat": "Equal-distance ties use fixed source order; this graph metric is a display construction, not physics distance."
+      },
+      "graphStressLayout": {
+        "graphDistanceStressAfterUniformFit": 0.2063234419939552,
+        "graphTopFiveNeighborRecall": 0.2629441624365482,
+        "neighborTieCaveat": "Equal-distance ties use fixed source order; this graph metric is a display construction, not physics distance."
+      },
+      "chosenInitialization": 2,
+      "iterations": 417,
+      "fiveInitializationStress": [
+        102058.80780859527,
+        127557.25259646348,
+        101248.03646763998,
+        105557.70387586224,
+        105553.27719026722
+      ]
+    },
+    {
+      "component": 1,
+      "nodeCount": 14,
+      "baselineDiffusionAgainstGraphDistance": {
+        "graphDistanceStressAfterUniformFit": 0.5644409905087976,
+        "graphTopFiveNeighborRecall": 0.4000000000000001,
+        "neighborTieCaveat": "Equal-distance ties use fixed source order; this graph metric is a display construction, not physics distance."
+      },
+      "graphStressLayout": {
+        "graphDistanceStressAfterUniformFit": 0.3477020613785098,
+        "graphTopFiveNeighborRecall": 0.4857142857142857,
+        "neighborTieCaveat": "Equal-distance ties use fixed source order; this graph metric is a display construction, not physics distance."
+      },
+      "chosenInitialization": 1,
+      "iterations": 378,
+      "fiveInitializationStress": [
+        143.5653917219159,
+        143.56539172000456,
+        143.56539172133762,
+        143.5653917225342,
+        143.5653917300384
+      ]
+    }
+  ],
+  "selectionRationale": "The first two diffusion modes collapsed most fields; graph-distance stress layout is evaluated against the same declared graph-distance target for both candidates. Source membership and exact classification links remain unchanged."
+}

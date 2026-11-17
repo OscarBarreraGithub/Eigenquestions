@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "q025-calibration-scientific-progress/1",
+  "status": "in_progress",
+  "interpretation": "Completed source-only review proposals and explicit challenge agreement only. Original-basin needs_revision does not invalidate all new cards; rewritten challenger cards are not independently accepted. No scientific implication promoted. No raw primary excerpts included.",
+  "stateCounts": {
+    "failed": 1,
+    "blocked": 2,
+    "launched": 4,
+    "pending": 17
+  },
+  "completedUsage": {},
+  "records": [
+    {
+      "jobId": "kk-production-decay-proposal",
+      "status": "failed",
+      "reason": "Reply validation failed: Full-description/card validator: {\"valid\": false, \"error\": \"unknown description\"}\n",
+      "scientificInterpretation": "Operational failure/pending dependency is not a scientific membership verdict."
+    },
+    {
+      "jobId": "kk-production-decay-challenge",
+      "status": "blocked",
+      "reason": "Previous stage did not complete; no automatic retry",
+      "scientificInterpretation": "Operational failure/pending dependency is not a scientific membership verdict."
+    },
+    {
+      "jobId": "kk-production-decay-fresh",
+      "status": "blocked",
+      "reason": "Previous stage did not complete; no automatic retry",
+      "scientificInterpretation": "Operational failure/pending dependency is not a scientific membership verdict."
+    }
+  ]
+}

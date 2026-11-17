@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "q025-full-recorded-source-context-export/3",
+  "sourceContextIndex": {
+    "path": "source-context-index-v3.json",
+    "sha256": "16f685d227488eb42b3cb4ea440502c71014c1213789e04fd55f7adc7ad978b0",
+    "bytes": 33606
+  },
+  "sourceContextSummary": {
+    "path": "source-context-summary-v3.json",
+    "sha256": "d80ea101a9263158a662a12a67a20c980b96e82b7b2203c4f1a1f8d644951691",
+    "bytes": 5620274
+  },
+  "coverage": {
+    "description": "All recorded nodes and edges incident to the 6,477 papers represented by 26,410 question/method entries. Structural containment and unvalidated mention edges remain explicitly typed; they are not independent scientific assertions. Exact object relations, numbered extraction-window context and whole-paper context stay separate. Nonpositive and withheld reviews remain inactive assessments.",
+    "paperCount": 6477,
+    "unitCount": 26410,
+    "physical_questionCount": 8473,
+    "physical_questionWithNoncontainmentNonmentionLocalRelations": 2408,
+    "physical_questionWithReviewedRelations": 0,
+    "methodCount": 17937,
+    "methodWithNoncontainmentNonmentionLocalRelations": 2485,
+    "methodWithReviewedRelations": 96,
+    "sourceObjectCount": 281127,
+    "sourceRelationCount": 400532,
+    "reviewedScopedRelations": 97,
+    "nonpositiveSourceAssessments": 31,
+    "methodReviewedRelationsAnyEndpoint": 51,
+    "methodReviewedRelationsBothEndpoints": 50,
+    "missingAnchorCount": 0,
+    "globalSourceNodeCount": 281128,
+    "globalSourceNativeEdgeCount": 400435,
+    "outOfBrowserPaperNodeCount": 1,
+    "outOfBrowserPaperEdgeCount": 0,
+    "pdfOrRawPageTextIncluded": false
+  },
+  "shardCount": 6477,
+  "totalShardBytes": 305644546,
+  "maxShardBytes": 1414991,
+  "totalUncompressedShardBytes": 1936336305,
+  "maxUncompressedShardBytes": 8224859,
+  "maxShardObjects": 2073,
+  "maxShardRelations": 2162,
+  "bucketCount": 256,
+  "totalIndexBucketBytes": 21615982,
+  "maxIndexBucketBytes": 105588,
+  "invariants": {
+    "all26410UnitAnchorsResolve": true,
+    "allSourceRelationEndpointsResolve": true,
+    "allEvidenceRefsResolve": true,
+    "allGzipRoundTripsPass": true,
+    "all97ReviewedEdgesRetained": true,
+    "all31NonpositiveAssessmentsRetained": true,
+    "allFiveMandatoryWithheldReaderNotesRetained": true,
+    "eachDecompressedFileUnder16MiB": true,
+    "noRawQuoteOrPdfPayloadExported": true
+  },
+  "provenance": {
+    "scriptSha256": "8841bdd8af32393b70a5d2d9cfc9155f8ade2e4e24c8e9593cee5946d32ec28a",
+    "resolverSha256": "1c9d65e255f131344db8cbf18a1600aec1fc9936e69642d2f090be7862d9eac0",
+    "unitsMetadataSha256": "a3e3e3e580d62ba621200c166b2fe9f301f37814a542bbeef6667b9d11da8418",
+    "ledgerSha256": "d1fbb7de394839dfd5f0ead77e07ffdae3bbde47b9c400529ce9fb65ca3a96ae",
+    "sourceGraphFiles": {
+      "nodes.jsonl.gz": "398ea5ea662c30c635302aef3b58e94eea11eda6efa5223533bacc992f23fc11",
+      "edges.jsonl.gz": "cabee8f05de78edac20203cc95eea38945c20b7eb2d0eb537bcfdfda9500cde8",
+      "evidence.jsonl.gz": "bfeb1779d7134cdc5b3c27aa7385ea47fd69b94cd11e0a59f00279c4779ca8bc"
+    },
+    "supersededCompactPackManifestSha256": "41a38ee4b8fcfcf2d88e8ae77c7acc7ec1ec47495a3802f36c88c7732ab2015e"
+  },
+  "outOfBrowserPaperNodes": [
+    "paper:d27c5a2cd841f6565a2a:unavailable"
+  ],
+  "publicationStatus": "diagnostic_only_do_not_publish",
+  "reason": "Catalog paper.text contained original abstracts and verbose repeated catalog review bookkeeping; superseded by v3.1 compact projection.",
+  "fullManifestSha256": "565c73b08a07ff7ba7894a40a13c26ebf35491115274441a170f1119761d5e08"
+}

@@ -46,3 +46,22 @@ source-context-pack/*
 
 compact-source-context-pack/*
 !compact-source-context-pack/manifest.json
+
+# Later experiments retain the source/factor drafts and compact diagnostics.
+round4/inputs/
+round4/results/factor-graph.json
+round4/results/neighbors.json
+
+source-index-v2/inputs/units-metadata.json
+source-index-v2/pack/*
+!source-index-v2/pack/manifest.json
+!source-index-v2/pack/fixtures.json
+!source-index-v2/pack/method-relation-routes.json
+
+source-context-v3/pack/*
+
+source-context-v3-compact/pack/*
+!source-context-v3-compact/pack/manifest.json
+!source-context-v3-compact/pack/method-relation-routes.json
+
+physics-entrance/results/memberships.json

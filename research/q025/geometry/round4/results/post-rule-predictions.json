@@ -1,0 +1,693 @@
+[
+  {
+    "id": "FC01",
+    "sourceObjectIds": [
+      "obj:8dc194fae0fdf0bccb51:method:aab5d6c83679112bdb3a4ae6",
+      "obj:0dd7757685993832204c:method:813dc0058083922a0930e843"
+    ],
+    "prompt": "Compare the physical scope and differential-equation operations of these two source methods. Which navigation connections, if any, follow; which question identities or physical conclusions remain separate?",
+    "genericExactEndpointLookup": true,
+    "questionIdentity": "Not established by a source-method comparison; keep scoped question identity separate.",
+    "activeRelations": [
+      {
+        "id": "scientific:production-006",
+        "source": "obj:0dd7757685993832204c:method:813dc0058083922a0930e843",
+        "target": "obj:8dc194fae0fdf0bccb51:method:aab5d6c83679112bdb3a4ae6",
+        "kind": "reviewed_scoped_source_relation",
+        "type": "uses_method",
+        "originalDirection": "right_to_left",
+        "exactAssertion": "The right endpoint uses the left endpoint's positive-function rescaling of the separated internal differential equation. On the same background, restricting the left scalar problem to M=0 and constant B4 mode mu=0, and identifying lambda_left=L²M_right,n², makes its p,q,u and transformed coefficients identical to right Eqs. (3.8)-(3.12). This assertion concerns the differential-expression transformation on (0,pi). It excludes equality of physical boundary-value spectra, endorsement of right boundary prescription (3.13), independent certification of endpoint regularity, and any low-lying mass or scale-separation bound.",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0004s002",
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0003s002",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "The common setting is the same smooth warped AdS4 × S²(B4) background, with the comparison restricted to its theta-dependent internal differential equation on I=(0,pi)."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0005s002",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "Set the left ten-dimensional scalar mass M to zero and choose constant chi on B4, so mu=0. Then r=0, and identify the left eigenvalue lambda_n with the right L² M_n²."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0004s002",
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0003s002",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "Compare the same background functions A,C,f and radius L in the displayed string-frame convention; the assertion concerns differential expressions rather than arbitrary backgrounds or physical boundary domains."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0005s002"
+              ],
+              "statement": "Restrict the left problem to M=0 and mu=0; retain arbitrary spectral parameter lambda=L² M_n²."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "8dc194fae0fdf0bccb51:p0020s001",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "Use the substitution only where its coefficients are differentiable and u=1-log(sin theta)>0, namely inside I. Endpoint boundary conditions require a separate transformation."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "Images image:1 and image:4 confirm identical p=e^{4(A+C)} sin(theta)/f and q=e^{4(A+C)} f sin(theta)."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0005s002"
+              ],
+              "statement": "The displayed left potential vanishes at M=mu=0. The right paper's footnote 3 explicitly identifies its internal equation with left Eq. (5.3) at M=0 and lambda_n=L² M_n²; image:5 confirms this identification."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "8dc194fae0fdf0bccb51:p0020s001",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "On I, 0<sin(theta)<=1 implies u>=1. The rescaling is therefore invertible there, and its coefficient transformation agrees in images image:2 and image:4."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0016s001",
+                "8dc194fae0fdf0bccb51:p0017s001",
+                "0dd7757685993832204c:p0005s001",
+                "0dd7757685993832204c:p0006s001"
+              ],
+              "statement": "The left endpoint treats a scalar probe, including nonzero ten-dimensional mass and B4 eigenvalue; the right treats spin-2 perturbations in a theta-only sector. The common internal equation does not identify the physical fields."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0020s001",
+                "0dd7757685993832204c:p0005s001",
+                "0dd7757685993832204c:p0006s001",
+                "0dd7757685993832204c:p0010s001",
+                "0dd7757685993832204c:p0011s001"
+              ],
+              "statement": "The substitution alone does not identify endpoint domains. In particular, the right paper's claimed equivalence between finite original g and vanishing transformed flux fails the constant-mode check in reproduction step 5."
+            },
+            {
+              "evidence_ids": [
+                "8dc194fae0fdf0bccb51:p0017s002",
+                "8dc194fae0fdf0bccb51:p0018s002",
+                "0dd7757685993832204c:p0012s001",
+                "0dd7757685993832204c:p0012s002"
+              ],
+              "statement": "The left large-n asymptotic statement and the right numerical investigation of the first nonzero eigenvalue are different spectral claims. Neither is certified by the restricted method-reuse relation."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "Background, frame and dimension",
+            "conversion": "Identify the same A(theta), C(theta), L and theta coordinate. Both displayed backgrounds use the string frame and ds10²=e^{2A}ds²(AdS4)+L²ds²(M6); no frame change is needed for this comparison. Image image:3 confirms the left metric convention.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0004s002",
+              "8dc194fae0fdf0bccb51:p0005s001",
+              "0dd7757685993832204c:p0003s002",
+              "0dd7757685993832204c:p0004s001"
+            ],
+            "left_definition": "Ten-dimensional warped geometry with four-dimensional AdS radius L and six-dimensional internal space; R(AdS4)=-12/L².",
+            "right_definition": "The same displayed metric decomposition and AdS curvature normalization.",
+            "status": "established"
+          },
+          {
+            "concept": "Internal sector and base normalization",
+            "conversion": "Choose chi constant, hence mu=0, and remove psi dependence. This produces the right theta-only sector. The zero base eigenvalue is independent of any numerical base-metric normalization.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0005s001",
+              "8dc194fae0fdf0bccb51:p0017s001",
+              "0dd7757685993832204c:p0004s001",
+              "0dd7757685993832204c:p0006s001"
+            ],
+            "left_definition": "omega=chi(w)g(theta), independent of psi, with -Delta_B4 chi=mu chi. The base is normalized by Ric_B4=2g_B4.",
+            "right_definition": "g depends only on theta; the base metric is described as canonically normalized.",
+            "status": "established"
+          },
+          {
+            "concept": "Masses, eigenvalues and units",
+            "conversion": "Set M_left=0 and lambda_left=L² M_right,n². This does not set the right four-dimensional KK masses to zero. Lambda is dimensionless; L has length units and both mass symbols have inverse-length units.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0016s001",
+              "8dc194fae0fdf0bccb51:p0017s001",
+              "0dd7757685993832204c:p0005s001",
+              "0dd7757685993832204c:p0005s002"
+            ],
+            "left_definition": "M is the ten-dimensional scalar mass; lambda_n is the internal eigenvalue and m_n²=lambda_n/L² is the four-dimensional scalar KK mass squared.",
+            "right_definition": "M_n is the four-dimensional Pauli-Fierz spin-2 mass; its internal eigenvalue is L² M_n².",
+            "status": "established"
+          },
+          {
+            "concept": "Differential-equation sign and coefficients",
+            "conversion": "At M_left=mu=0, r_left=0 and both equations are (p g')'+lambda q g=0, equivalently -(p g')'=lambda q g. Images image:1 and image:4 resolve the coefficient placement and signs.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0017s001",
+              "0dd7757685993832204c:p0006s001"
+            ],
+            "left_definition": "(p g')'+(lambda q-r)g=0, with p=e^{4(A+C)}sin(theta)/f, q=e^{4(A+C)}f sin(theta), r=e^{6A+2C}f sin(theta)(mu+L²M²e^{2C}). Primes denote theta derivatives.",
+            "right_definition": "The same p,q and derivative convention, with no original r term and lambda=L²M_n².",
+            "status": "established"
+          },
+          {
+            "concept": "Positive-function rescaling",
+            "conversion": "Identify h_left with g_tilde_right. Setting r=0 in the left transformation gives exactly the right coefficients. Images image:2 and image:4 confirm the critical derivative placement: r_tilde=-u(pu')', not -(upu')'.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0017s001",
+              "8dc194fae0fdf0bccb51:p0020s001",
+              "0dd7757685993832204c:p0006s001"
+            ],
+            "left_definition": "h=g/u, u=1-log(sin theta); p_tilde=pu², q_tilde=qu², r_tilde=ru²-u(pu')'.",
+            "right_definition": "g_tilde=g/u with the same u; p_tilde=pu², q_tilde=qu², r_tilde=-u(pu')'.",
+            "status": "established"
+          },
+          {
+            "concept": "Internal operator weights",
+            "conversion": "At M_left=0, multiplying the left internal equation by e^{4A} gives the right divergence-form equation with lambda=L²M_n². Thus the printed e^{-2A} and e^{2A} factors are compatible, not competing eigenvalue conventions; image:5 confirms the right factor.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0016s001",
+              "0dd7757685993832204c:p0005s001",
+              "0dd7757685993832204c:p0005s002"
+            ],
+            "left_definition": "-(Delta6+4 grad A·grad-L²M²)omega=lambda e^{-2A}omega.",
+            "right_definition": "-div6(e^{4A}grad g)=L²M_n² e^{2A}g.",
+            "status": "established"
+          },
+          {
+            "concept": "Boundary variables",
+            "conversion": "The exact flux transformation is p_tilde h'=p(u g'-u'g). It does not preserve a zero-flux condition automatically. For the reported finite-g branch, h tends to zero, while its transformed flux can be nonzero; see reproduction step 5.",
+            "evidence_ids": [
+              "8dc194fae0fdf0bccb51:p0020s001",
+              "0dd7757685993832204c:p0006s001",
+              "0dd7757685993832204c:p0010s001",
+              "0dd7757685993832204c:p0011s001"
+            ],
+            "left_definition": "Appendix B permits separated or periodic conditions on the regularized variable; the supplied section 5 does not specify a physical endpoint domain.",
+            "right_definition": "Eq. (3.13) imposes p_tilde g_tilde'=0 at both endpoints and claims this is equivalent to finite original g.",
+            "status": "established"
+          }
+        ],
+        "readerNote": null,
+        "provenance": {
+          "receiptPath": "atlas-relations/results/production-006.json",
+          "receiptSha256": "28260d57cb188ac07aef44dfbe970aafd3021973d29a278cd61d498ec7928a23"
+        },
+        "questionEquivalenceEstablished": false
+      }
+    ],
+    "nonpositiveAssessments": [],
+    "unmatched": false,
+    "reservedExpectedLabelsRead": false
+  },
+  {
+    "id": "FC02",
+    "sourceObjectIds": [
+      "obj:5cd68d47f3a9d593d007:method:d77c3247e2c32baa35be3602",
+      "obj:f4a5aa09dcceeb50511f:method:4a6e6f39ed4ae8205fd49f43"
+    ],
+    "prompt": "Compare the scalar-potential and spectrum procedures in these two source methods. Identify what can share a route and what needs a separate scope.",
+    "genericExactEndpointLookup": true,
+    "questionIdentity": "Not established by a source-method comparison; keep scoped question identity separate.",
+    "activeRelations": [
+      {
+        "id": "scientific:production-075",
+        "source": "obj:f4a5aa09dcceeb50511f:method:4a6e6f39ed4ae8205fd49f43",
+        "target": "obj:5cd68d47f3a9d593d007:method:d77c3247e2c32baa35be3602",
+        "kind": "reviewed_scoped_source_relation",
+        "type": "uses_method",
+        "originalDirection": "right_to_left",
+        "exactAssertion": "Within the displayed isotropic, retained-field SUSY AdS calculations, the right endpoint uses the generic computational core described by the left endpoint: construct the N=1 F-term potential from K,W, impose D_IW=0, and obtain scalar masses from its Hessian with Kähler-metric canonical normalization. This is restricted procedural containment, reconstructed from the two sources; it asserts neither historical borrowing nor use of the left endpoint's additional KK correction. It excludes equivalence of compactifications, a field/flux duality dictionary, equality of spectra, universal mass/AdS ratios, and transfer of either tadpole constraints or ten-dimensional KK conclusions.",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0004s002",
+                "5cd68d47f3a9d593d007:p0006s001",
+                "f4a5aa09dcceeb50511f:p0008s001",
+                "f4a5aa09dcceeb50511f:p0008s002",
+                "f4a5aa09dcceeb50511f:p0013s002"
+              ],
+              "statement": "Both calculations use a four-dimensional N=1 F-term potential and impose supersymmetry on all retained chiral fields for the SUSY mass calculation. The intersection is a computational framework, without an identified common compactification."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0004s002",
+                "5cd68d47f3a9d593d007:p0007s001",
+                "f4a5aa09dcceeb50511f:p0010s001",
+                "f4a5aa09dcceeb50511f:p0014s001"
+              ],
+              "statement": "The comparison concerns the displayed isotropic sectors: three complex fields S,T,U on the left and two complex fields S,τ in the right's explicit isotropic mass matrix. It concerns masses of retained fluctuations only."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0004s002",
+                "f4a5aa09dcceeb50511f:p0008s002",
+                "f4a5aa09dcceeb50511f:p0013s002"
+              ],
+              "statement": "Interpret method use as implementation of the common F-term/SUSY/canonical-Hessian procedure within the displayed effective actions, without asserting historical borrowing or equivalence of the compactifications."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0006s001",
+                "5cd68d47f3a9d593d007:p0007s001",
+                "f4a5aa09dcceeb50511f:p0013s002",
+                "f4a5aa09dcceeb50511f:p0014s001"
+              ],
+              "statement": "For the restricted AdS comparison, impose D_I W=0 for every retained field and W≠0."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0005s001",
+                "5cd68d47f3a9d593d007:p0007s001",
+                "f4a5aa09dcceeb50511f:p0010s001",
+                "f4a5aa09dcceeb50511f:p0014s001"
+              ],
+              "statement": "Work on nonsingular positive-metric domains of the displayed Kähler potentials. Canonical normalization must use each theory's own metric and retained field content."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0005s001",
+                "5cd68d47f3a9d593d007:p0006s002",
+                "f4a5aa09dcceeb50511f:p0008s001",
+                "f4a5aa09dcceeb50511f:p0010s001"
+              ],
+              "statement": "Differentiate with flux parameters fixed. In particular, C_L is constant under moduli differentiation, although it depends on geometric fluxes across different left-hand backgrounds."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0004s002",
+                "5cd68d47f3a9d593d007:p0007s001",
+                "f4a5aa09dcceeb50511f:p0008s002",
+                "f4a5aa09dcceeb50511f:p0013s002",
+                "f4a5aa09dcceeb50511f:p0014s001"
+              ],
+              "statement": "The displayed potentials, supersymmetric Hessian construction, and canonical mass calculations establish the required procedural overlap directly."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0006s001",
+                "5cd68d47f3a9d593d007:p0007s001",
+                "f4a5aa09dcceeb50511f:p0013s002",
+                "f4a5aa09dcceeb50511f:p0014s001"
+              ],
+              "statement": "The left explicitly solves D_I W=0 and reports negative V_0; the right evaluates its SUSY Hessian at D_I W=0 and defines Λ_AdS=−3e^K|W|². Nonzero W follows within the selected AdS sector."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0005s001",
+                "5cd68d47f3a9d593d007:p0007s001",
+                "f4a5aa09dcceeb50511f:p0010s001",
+                "f4a5aa09dcceeb50511f:p0014s001"
+              ],
+              "statement": "Differentiating the supplied Kähler potentials gives positive metrics for positive left saxions and positive right imaginary parts. The right's resulting metric agrees with its explicitly reported canonical fluctuation factors."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0004s001",
+                "f4a5aa09dcceeb50511f:p0006s002",
+                "f4a5aa09dcceeb50511f:p0006s003"
+              ],
+              "statement": "The left background is nearly Kähler S³×S³. The right discusses a mirror of a rigid CY and a qualified bulk-sector connection to DGKT. Image:6 confirms that this statement supplies no dictionary to the assigned left background."
+            },
+            {
+              "evidence_ids": [
+                "5cd68d47f3a9d593d007:p0006s002",
+                "5cd68d47f3a9d593d007:p0008s001",
+                "f4a5aa09dcceeb50511f:p0012s001",
+                "f4a5aa09dcceeb50511f:p0012s002"
+              ],
+              "statement": "The left's KK correction depends on a geometric-flux-dependent internal-volume normalization. The right's tadpole isolation depends on its special-geometry inputs and stated metric assumption. Neither additional operation is transferred by the proposed relation."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "F-term potential and covariant derivative",
+            "conversion": "Identify the mathematical operations V=e^K(g^{I J̄}D_IW overline(D_JW)−3|W|²) and D_IW=∂_IW+K_IW, using each source's own K,W and index range. Image:1 confirms the left conjugation and −3 term.",
+            "evidence_ids": [
+              "5cd68d47f3a9d593d007:p0004s002",
+              "f4a5aa09dcceeb50511f:p0008s001",
+              "f4a5aa09dcceeb50511f:p0008s002"
+            ],
+            "left_definition": "I runs over retained S,T,U; g_{I J̄}=∂_I∂_{J̄}K.",
+            "right_definition": "The same F-term expression and derivative definition apply to the axio-dilaton and retained complex-structure fields.",
+            "status": "established"
+          },
+          {
+            "concept": "Chiral coordinates and Kähler potentials",
+            "conversion": "There is no asserted field identification. In particular S_L must not be equated to S_R simply because the symbols agree. Their logarithmic weights and saxion conventions differ.",
+            "evidence_ids": [
+              "5cd68d47f3a9d593d007:p0005s001",
+              "5cd68d47f3a9d593d007:p0007s001",
+              "f4a5aa09dcceeb50511f:p0008s001",
+              "f4a5aa09dcceeb50511f:p0010s001"
+            ],
+            "left_definition": "K_L=−ln(S_L+S̄_L)−3ln(T_L+T̄_L)−3ln(U_L+Ū_L)−3ln C_L. Saxions are Re S_L, Re T_L, Re U_L. Image:3 confirms the logarithms and C_L factors.",
+            "right_definition": "In the isotropic non-geometric sector, K_R=−4ln[−i(S_R−S̄_R)]−3ln[−i(τ−τ̄)]. Im S_R=g_s^−1. The physical model uses k_S=4, not the geometric comparison value k_S=1.",
+            "status": "not_applicable"
+          },
+          {
+            "concept": "Units, cosmological constant and sign",
+            "conversion": "Compare dimensionless potentials v_L=V_L/M_P,L⁴ and v_R=V_R in the right's Planck units. The left's Λ_L/M_P,L² equals v_L at the vacuum. Converting a right matrix normalized by signed Λ_AdS to normalization by |Λ_AdS| introduces an overall minus sign. No absolute ten-dimensional scale matching is needed.",
+            "evidence_ids": [
+              "5cd68d47f3a9d593d007:p0003s001",
+              "5cd68d47f3a9d593d007:p0005s002",
+              "5cd68d47f3a9d593d007:p0007s001",
+              "f4a5aa09dcceeb50511f:p0008s001",
+              "f4a5aa09dcceeb50511f:p0014s001"
+            ],
+            "left_definition": "K,W are dimensionless; restoring the four-dimensional Einstein-frame units supplies M_P⁴ to V. The reported mass spectrum is normalized by |V_0|/M_P²=|Λ_L|.",
+            "right_definition": "The reduced Planck mass is set to one. Λ_AdS=−3e^K|W|²<0, and Eq. (3.16) divides the physical mass matrix by this signed quantity; image:5 confirms the denominator.",
+            "status": "established"
+          },
+          {
+            "concept": "Canonical mass normalization",
+            "conversion": "Use each Kähler metric to normalize fluctuations before comparing mass operators. In Planck units, the real-coordinate Hessian with kinetic metric G=2g has mass operator G^−1H=(1/2)g^−1H; its symmetric canonical representative is G^−1/2 H G^−1/2. Complex and real canonical coordinates differ by the usual √2 convention. This identifies the procedure, not the numerical matrices.",
+            "evidence_ids": [
+              "5cd68d47f3a9d593d007:p0005s001",
+              "5cd68d47f3a9d593d007:p0007s001",
+              "f4a5aa09dcceeb50511f:p0010s001",
+              "f4a5aa09dcceeb50511f:p0013s002",
+              "f4a5aa09dcceeb50511f:p0014s001"
+            ],
+            "left_definition": "Eq. (2.14)'s accompanying text reports diagonalization of (1/2)K^{ij}∂_i∂_jV at the vacuum; image:2 confirms the factor 1/2.",
+            "right_definition": "Eq. (3.14) supplies complex Hessian blocks at supersymmetry. For σ=Im S_R and v=Im τ, image:5 gives Ŝ=ΔS_R/σ and τ̂=√3 Δτ/(2v).",
+            "status": "conditional"
+          },
+          {
+            "concept": "Superpotential inputs and symplectic conventions",
+            "conversion": "Both use a flux-dependent holomorphic W as input to the F-term procedure. No map of flux integers, cycle bases or compactification geometries is asserted.",
+            "evidence_ids": [
+              "5cd68d47f3a9d593d007:p0005s001",
+              "f4a5aa09dcceeb50511f:p0007s001",
+              "f4a5aa09dcceeb50511f:p0008s001",
+              "f4a5aa09dcceeb50511f:p0010s001"
+            ],
+            "left_definition": "Eq. (2.6) supplies W_L/C_L with RR, NS-NS and geometric-flux terms.",
+            "right_definition": "W_R=∫(F_3−S_RH_3)∧Ω. Image:4 confirms Π=(F_a,u^a), Ω=u^aα_a−F_aβ^a, ∫α_a∧β^b=δ_a^b and reversed wedge order with a minus sign. The tadpole convention is N_flux=∫H_3∧F_3.",
+            "status": "established"
+          },
+          {
+            "concept": "Unrelated constants called C",
+            "conversion": "Rename them C_L and C_R; they are not interchangeable.",
+            "evidence_ids": [
+              "5cd68d47f3a9d593d007:p0005s001",
+              "5cd68d47f3a9d593d007:p0006s002",
+              "f4a5aa09dcceeb50511f:p0012s001",
+              "f4a5aa09dcceeb50511f:p0012s002"
+            ],
+            "left_definition": "C_L normalizes the internal volume and superpotential and depends on geometric fluxes through Eq. (2.10).",
+            "right_definition": "C_R is the reported positive zeroth-order coefficient of Ṽ=e^−K V as a polynomial in Im S_R.",
+            "status": "established"
+          }
+        ],
+        "readerNote": null,
+        "provenance": {
+          "receiptPath": "atlas-relations/results/production-075.json",
+          "receiptSha256": "5ff0e4e0677f6bd11e387f58844b0196611143f8068bf537d444ee95e83e4475"
+        },
+        "questionEquivalenceEstablished": false
+      }
+    ],
+    "nonpositiveAssessments": [],
+    "unmatched": false,
+    "reservedExpectedLabelsRead": false
+  },
+  {
+    "id": "FC03",
+    "sourceObjectIds": [
+      "obj:cc810b181b608f59620b:method:1ff629b3c0586789cd3fea9e",
+      "obj:ac77eaed73ac53cd2046:method:c7ba158e0dc78d8e79116bd6"
+    ],
+    "prompt": "Compare the input data, calculated target and operations of these two source methods. Decide the justified navigation relationship without assuming a common method from shared vocabulary.",
+    "genericExactEndpointLookup": true,
+    "questionIdentity": "Not established by a source-method comparison; keep scoped question identity separate.",
+    "activeRelations": [
+      {
+        "id": "scientific:production-019",
+        "source": "obj:cc810b181b608f59620b:method:1ff629b3c0586789cd3fea9e",
+        "target": "obj:ac77eaed73ac53cd2046:method:c7ba158e0dc78d8e79116bd6",
+        "kind": "reviewed_scoped_source_relation",
+        "type": "analogy_only",
+        "originalDirection": "left_to_right",
+        "exactAssertion": "The left emergence estimate provides a qualitative analogy for the right method: both organize weak-coupling charged-tower physics around linked gauge, scalar, and mass data. Their operations differ: the left induces kinetic terms from an assumed spectrum, whereas the right uses an indexed sublattice and imposes repulsive-force matching to constrain a mass ansatz. This directed comparison asserts no method inheritance, common spectrum, species-cutoff identification, numerical equivalence, derived mass renormalization, or one-loop equality of extremality and repulsion.",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0054s002",
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0043s002",
+                "ac77eaed73ac53cd2046:p0046s001"
+              ],
+              "statement": "Both displayed methods concern charged particle towers becoming light near four-dimensional weak gauge coupling and relate their masses to gauge and scalar data. This is an intersection of physical questions, without an established identification of compactifications or spectra."
+            },
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0046s002",
+                "ac77eaed73ac53cd2046:p0047s001"
+              ],
+              "statement": "Both discuss quantum effects relevant to charge-to-mass and scalar-force relations. The left supplies a parametric motivation; the right imposes a perturbative repulsive-force matching condition."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0054s002",
+                "cc810b181b608f59620b:p0055s001"
+              ],
+              "statement": "The left estimate is read under its proposed emergence boundary condition, linear charged spectrum, species prescription, and leading one-loop approximation. Its continuum reconstruction additionally assumes large N."
+            },
+            {
+              "evidence_ids": [
+                "ac77eaed73ac53cd2046:p0050s002",
+                "ac77eaed73ac53cd2046:p0051s001"
+              ],
+              "statement": "For the right's unshifted indexed sublattice, retain its stated nonzero derivative contribution and reported absence of cancellation on that sublattice. This is restricted to the corresponding generic-flux argument."
+            },
+            {
+              "evidence_ids": [
+                "ac77eaed73ac53cd2046:p0046s001",
+                "ac77eaed73ac53cd2046:p0046s002"
+              ],
+              "statement": "The right mass-matching calculation uses its ansatz and linear expansion in small mass and threshold corrections. Equating a sufficient lower bound to the force threshold is an imposed matching prescription, rather than a first-principles mass calculation."
+            },
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0047s001"
+              ],
+              "statement": "The comparison must preserve both sources' qualifications: the left does not determine exact force coefficients, and the right's one-loop black-hole interpretation is conditional on continued agreement between extremality and the repulsive-force condition."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0054s002",
+                "cc810b181b608f59620b:p0055s001"
+              ],
+              "statement": "The left explicitly states the emergence proposal and displays the assumed spectrum and cutoff equations. These establish the inputs of its toy estimate, not their universal physical validity."
+            },
+            {
+              "evidence_ids": [
+                "ac77eaed73ac53cd2046:p0050s002",
+                "ac77eaed73ac53cd2046:p0051s001"
+              ],
+              "statement": "The right explicitly states the quasi-Jacobi decomposition, the generic-flux restriction, and the sublattice survival argument. Only their reported use is needed for this method comparison."
+            },
+            {
+              "evidence_ids": [
+                "ac77eaed73ac53cd2046:p0042s002",
+                "ac77eaed73ac53cd2046:p0046s001",
+                "ac77eaed73ac53cd2046:p0046s002"
+              ],
+              "statement": "The right explicitly identifies its mass correction as an ansatz constrained by demanding repulsion. Image:4 confirms the scalar-metric derivative term and the negative sign of the threshold correction in equation (5.21)."
+            },
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0047s001",
+                "ac77eaed73ac53cd2046:p0047s002"
+              ],
+              "statement": "The qualifications limiting numerical and extremality conclusions are present in the sources themselves; no missing cross-paper normalization premise is used to assert the restricted analogy."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0049s002",
+                "ac77eaed73ac53cd2046:p0050s001"
+              ],
+              "statement": "The left assumes q_k=k and m_k=kΔm. The right identifies charges q_k=2m_J k and an inequality involving excitation levels. This does not establish the left's exact linear mass spectrum."
+            },
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0050s002",
+                "ac77eaed73ac53cd2046:p0051s001"
+              ],
+              "statement": "The left's N counts species below a cutoff. The right's elliptic-genus coefficients are signed indices of a subsector; they do not supply a full positive species count or the degeneracies needed to transplant the species estimate."
+            },
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0054s002",
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0045s002",
+                "ac77eaed73ac53cd2046:p0046s001"
+              ],
+              "statement": "The left proposes generating kinetic terms from integrated particles with nondynamical UV fields. The right constrains string-loop mass renormalization alongside corrections to an existing leading gauge coupling. These are different calculations despite their common quantum-correction language."
+            },
+            {
+              "evidence_ids": [
+                "cc810b181b608f59620b:p0055s001",
+                "ac77eaed73ac53cd2046:p0047s001",
+                "ac77eaed73ac53cd2046:p0051s002",
+                "ac77eaed73ac53cd2046:p0051s003"
+              ],
+              "statement": "The left leaves exact force matching undetermined. The right's corrected extremality interpretation remains conditional, and its fluxed U(1) force description is evaluated at the tower scale, where the source reports the Stückelberg mass to be lower. Neither establishes an unrestricted long-distance, exactly massless shared gauge sector."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "Dimension, setting, and frame",
+            "conversion": "Compare only the displayed four-dimensional charged-tower reasoning. No Type-IIB/F-theory compactification dictionary or duality between these endpoints is established.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0054s002",
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0043s002",
+              "ac77eaed73ac53cd2046:p0046s001"
+            ],
+            "left_definition": "A field-theoretic emergence estimate discussed alongside the paper's four-dimensional N=2 results.",
+            "right_definition": "Four-dimensional N=1 F-theory with an emergent heterotic string; the loop expansion is expressed in the heterotic frame.",
+            "status": "established"
+          },
+          {
+            "concept": "Mass symbols and overloaded m",
+            "conversion": "Use m_J for the right's Jacobi index and h(L) for its mass-correction function. Neither is the left particle mass or its mass gap.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0045s001",
+              "ac77eaed73ac53cd2046:p0046s001"
+            ],
+            "left_definition": "m_k=kΔm, with Δm the varying mass gap.",
+            "right_definition": "M_k²=8π(n_k−1)M_het²(1+δ), δ=(M_het²/M_Pl²)h(L); m_J=(C0·S)/2>0. The paper writes both m_J and h(L) using m.",
+            "status": "established"
+          },
+          {
+            "concept": "Electric charge units",
+            "conversion": "The formal relabeling q'_k=q_k/(2m_J)=k requires g'=2m_J g_YM to preserve g'q'_k=g_YM q_k. This changes units on the selected sublattice and does not identify spectra or kinetic terms.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0050s001",
+              "ac77eaed73ac53cd2046:p0051s001"
+            ],
+            "left_definition": "q_k=k and canonically coupled electric charge Q_k=gk.",
+            "right_definition": "The unshifted sublattice has q_k=2m_J k; the coupling enters through g_YM q_k.",
+            "status": "conditional"
+          },
+          {
+            "concept": "Planck units and charge-to-mass normalization",
+            "conversion": "Use dimensionless z=M_Pl gq/(particle mass) when comparing scaling. The left's suppressed Planck factors can be restored in its species algebra, but its approximate formulas do not fix equality with the right's numerical bound.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0043s002",
+              "ac77eaed73ac53cd2046:p0046s002"
+            ],
+            "left_definition": "Λ_UV=M_pl/√N is explicit, while the displayed gap powers and kinetic estimates suppress Planck factors.",
+            "right_definition": "Masses are explicitly divided by M_Pl, and the leading squared ratio is compared with 1/M_Pl². The gauge coupling is evaluated at the tower scale.",
+            "status": "conditional"
+          },
+          {
+            "concept": "Scalar metric and scalar charge",
+            "conversion": "The common operation is contraction with an inverse scalar metric. A numerical field-coordinate or action-normalization identification is not established. Image:2 resolves the left scalar charge as √(g^{φφ})∂_φm, with an inverse metric.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0046s002"
+            ],
+            "left_definition": "g_φφ is the induced scalar metric; its inverse canonically normalizes the mass derivative.",
+            "right_definition": "g^{rs} contracts derivatives with respect to scalar coordinates L^r in the expanded force condition. Image:4 confirms this contraction.",
+            "status": "conditional"
+          },
+          {
+            "concept": "Species count versus indexed coefficients",
+            "conversion": "No equality between N and elliptic-genus coefficients is allowed.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0050s002",
+              "ac77eaed73ac53cd2046:p0051s001"
+            ],
+            "left_definition": "N counts gravitational species below Λ_UV in the assumed tower estimate.",
+            "right_definition": "N_G(C0(n,r)) are signed indexed coefficients; nonzero coefficients imply states, while vanishing coefficients need not imply absence of states.",
+            "status": "not_applicable"
+          },
+          {
+            "concept": "Elliptic-genus variables",
+            "conversion": "Keep the fugacity q separate from q_k, and the derivative ξ∂_ξ separate from scalar-field derivatives.",
+            "evidence_ids": [
+              "ac77eaed73ac53cd2046:p0050s001",
+              "ac77eaed73ac53cd2046:p0050s002",
+              "ac77eaed73ac53cd2046:p0051s001"
+            ],
+            "left_definition": "No elliptic-genus fugacities enter the selected method.",
+            "right_definition": "In q^n ξ^r, n labels excitation level and r electric charge; ξ∂_ξ multiplies each coefficient by r.",
+            "status": "established"
+          },
+          {
+            "concept": "Correction signs and matching prescription",
+            "conversion": "Writing x=M_het²/M_Pl², define D[δ]=(1/(2x²))g^{rs}(∂_r x)∂_s(xδ). Matching the two displayed lower-bound expressions gives D[δ]=−Δ. This is sufficient matching, not a necessary mass formula for every super-extremal state.",
+            "evidence_ids": [
+              "cc810b181b608f59620b:p0055s001",
+              "ac77eaed73ac53cd2046:p0045s002",
+              "ac77eaed73ac53cd2046:p0046s001",
+              "ac77eaed73ac53cd2046:p0046s002"
+            ],
+            "left_definition": "No counterpart to the right's Δ and δ is specified; the kinetic estimates have undetermined physical coefficients.",
+            "right_definition": "δ shifts mass squared through 1+δ. Δ enters the tower lower bound through 1−Δ−δ and has model-dependent sign. Image:4 fixes D[δ]=−Δ in equation (5.21).",
+            "status": "established"
+          }
+        ],
+        "readerNote": null,
+        "provenance": {
+          "receiptPath": "atlas-relations/results/production-019.json",
+          "receiptSha256": "964c937f4657bbebf36aa48a2a620fc5cccabbd3d5040914b57a6cf30c8b05c4"
+        },
+        "questionEquivalenceEstablished": false
+      }
+    ],
+    "nonpositiveAssessments": [],
+    "unmatched": false,
+    "reservedExpectedLabelsRead": false
+  }
+]

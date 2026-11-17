@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {dirname,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {validateReply,verifyPrepared} from './runner.mjs';
+const here=dirname(fileURLToPath(import.meta.url));
+const fixture=()=>JSON.parse(spawnSync('python3',['-c','import json;from test_contract import fixture;p,o=fixture();print(json.dumps({"packet":p,"reply":o}))'],{cwd:here,encoding:'utf8'}).stdout);
+test('real host validator accepts complete typed coverage',()=>{const {packet,reply}=fixture();assert.equal(validateReply(reply,packet,{familyId:'synthetic',stage:'proposal'}),true);});
+test('real host validator rejects missing member',()=>{const {packet,reply}=fixture();reply.unitAssessments=[];assert.throws(()=>validateReply(reply,packet,{familyId:'synthetic',stage:'proposal'}),/missing\/duplicate unit assessment/);});
+test('24 prepared inputs verify without launching model',()=>assert.equal(verifyPrepared().jobs.length,24));
