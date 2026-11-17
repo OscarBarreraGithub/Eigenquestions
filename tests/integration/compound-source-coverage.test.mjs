@@ -7,7 +7,7 @@ import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {createAtlasNavigator,createAtlasSourceReader,validateAtlas,sourceCoverage} from '../../lib/geometry/prepared-atlas.mjs';
 import {createCapsule,validateCapsule} from '../../lib/protocol/capsule.mjs';
-import {createRuntime} from '../../lib/protocol/runtime.mjs';
+import {createRuntime,agentSnapshot} from '../../lib/protocol/runtime.mjs';
 import {appendSourceCoverage} from '../../web/source-coverage.mjs';
 const fixture=JSON.parse(await readFile(new URL('../fixtures/compound-source-coverage.json',import.meta.url),'utf8'));
 const hash=value=>createHash('sha256').update(value).digest('hex');
@@ -36,6 +36,11 @@ test('real approved compound source retains both component homes and full map th
     assert.deepEqual(nav.getEvidence([uid],{destinationId:membership.destinationId})[0].targetCoverage,membership.targetCoverage);
   }
   nav.readSources=read;const runtime=createRuntime(nav,'compound-regression'),before=runtime.snapshot(),page=await runtime.sources();assert.deepEqual(page.items[0].targetCoverage,data.catalog.memberships[0].targetCoverage);assert.equal(page.items[0].source.evidence.text,fixture.unit.text);assert.deepEqual(runtime.snapshot(),before,'agent coverage reads are read-only');
+  const compact=agentSnapshot(before),compactSource=compact.view.nodes.find(n=>n.id===uid),fullSource=before.view.nodes.find(n=>n.id===uid);
+  for(const key of ['coverageMode','wholeQuestionCoveredByEachHome','targetCoverage','coverageNotice','coverageProvenance'])assert.deepEqual(compactSource[key],fullSource[key],`compact agent source must retain ${key}`);
+  assert.equal(compactSource.wholeQuestionCoveredByEachHome,false);assert.equal(compactSource.evidence.text,fixture.unit.text);
+  compactSource.targetCoverage[0].explanation='Caller-local edit';assert.deepEqual(runtime.snapshot(),before,'compact projection must not expose mutable runtime coverage');
+  const ordinary=structuredClone(before);for(const key of ['coverageMode','wholeQuestionCoveredByEachHome','targetCoverage','coverageNotice','coverageProvenance'])delete ordinary.view.nodes[0][key];assert.equal(agentSnapshot(ordinary).view.nodes[0].coverageNotice,undefined,'ordinary sources do not acquire compound qualification');
   assert.equal(nav.getEvidence([uid])[0].targetCoverage,undefined,'unscoped source lookup cannot inherit a destination-specific assertion');assert.deepEqual(data,original,'source records and allocations remain immutable');
   const ancestor=sourceCoverage({...data.catalog.memberships[0],destinationId:'ancestor'});assert.equal(ancestor.coverageNotice,'This source combines several targets; see the qualified coverage in Source scope & provenance.');assert.deepEqual(ancestor.targetCoverage,data.catalog.memberships[0].targetCoverage);
   const invalid=atlas();invalid.catalog.memberships[0].wholeQuestionCoveredByEachHome=true;assert.throws(()=>validateAtlas(invalid.manifest,invalid.catalog),/partial whole-question/);

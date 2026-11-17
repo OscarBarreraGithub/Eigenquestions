@@ -149,6 +149,10 @@ def main():
         report['phase']='compound-source-coverage'
         compound=cases['compound']; current,_=navigate(compound['destinationId'])
         node=next(row for row in current['view']['nodes'] if row['id']==compound['unitId'])
+        full_node=next(row for row in call('navigator_state',{'full':True})['view']['nodes'] if row['id']==compound['unitId'])
+        browser_node=page.evaluate('id=>window.eigenquestionsNavigator.read().capsule.snapshot.view.nodes.find(node=>node.id===id)',compound['unitId'])
+        for field in ['coverageMode','wholeQuestionCoveredByEachHome','targetCoverage','coverageNotice','coverageProvenance']:
+            assert node[field]==full_node[field]==browser_node[field], 'Compact/full/browser compound qualification differs: '+field
         assert node['coverageMode']=='explicit_compound_union' and node['wholeQuestionCoveredByEachHome'] is False
         assert node['targetCoverage']==compound['targetCoverage'] and node['evidence']['text']==compound['sourceText']
         assert node['coverageNotice']=='This view covers one part of the source’s question.'

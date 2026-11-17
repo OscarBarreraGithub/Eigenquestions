@@ -1,0 +1,35 @@
+{
+  "status": "SUBMITTED",
+  "jobId": "61596083",
+  "submittedAt": "2026-11-17T19:22:51.699518+00:00",
+  "baseCommit": "a7bf978b8b7f685326c6bd21faf8df35479cb1df",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "finalInputSha256": "01666516e657e14c7331f691642d4233492427d6c637ee634c310d0537863c07",
+  "archives": [
+    {
+      "path": "repository.tar.gz",
+      "sha256": "cc3ff76828e1795f221c47070be345cc5b1c31ca8a258e4f30b0cfcf75ed6b79",
+      "bytes": 154254078
+    },
+    {
+      "path": "overlay.tar.gz",
+      "sha256": "d03cdaef1d4889de947a8cd2296a508a5247259bb4683082059665153765f3e1",
+      "bytes": 50706668
+    }
+  ],
+  "resourceLimits": {
+    "cpus": 4,
+    "memoryGB": 16,
+    "minutes": 45,
+    "account": "randall_lab",
+    "partition": "test"
+  },
+  "externalSourceAssetsReused": 6735,
+  "remoteEnvelopeChecksums": "All five files matched before sbatch",
+  "remoteRunDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/final-acceptance-v1",
+  "phases": [
+    "browser",
+    "observer"
+  ],
+  "limitations": "Submitted only; core results, independent-agent rendering and public-origin acceptance pending. No owner browser used."
+}

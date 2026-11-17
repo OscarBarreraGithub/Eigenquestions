@@ -1,0 +1,9 @@
+# Final run v1: compact agent qualification omitted
+
+Job 61596083 used commit a7bf978b8b7f685326c6bd21faf8df35479cb1df and final atlas manifest 15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb. Input archive and source assets verified; build/site check passed with 18,453 files, largest 7,021,318 bytes. Nine scripted real-data checks passed, with no page errors. The job then failed at `compound-source-coverage`: the compact MCP node omitted `coverageMode`, causing the assertion to stop. No observer or independent browser agent started.
+
+The browser's captured full capsule and screenshot retain the unchanged source question, complete target map and visible sentence “This view covers one part of the source’s question.” Thus this is a compact-agent qualification omission, not loss of the scientific data or browser display. Root directed a narrow runtime repair: preserve coverage mode, false whole-question-per-home flag, complete target map, notice and provenance on compact compound source nodes. Ordinary source nodes are unchanged. No manifest, scientific definition, source row or allocation changed.
+
+The existing real compound regression now checks compact/full equality and mutation isolation. Both focused regressions, the captured actual final-browser node projection, and the required build → 113 tests → site check passed. The next browser attempt additionally compares compact, full MCP and browser values. This repair is not counted as success of the failed original run.
+
+Original run-v1 outputs are preserved here unchanged. The browser harness redacted its ephemeral session token at capture; no unredacted token-bearing URLs are published, and no connection file is included. The Slurm job's private temporary bridge directory was cleaned on exit. Screenshots contain no address bar or credentials. Fresh-agent receipts remain a separate future result.
