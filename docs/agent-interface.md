@@ -1,8 +1,65 @@
 # Agent interface
 
-The external agent interprets conversation. The shared local engine selects real
-source facets, runs graph diffusion and vector geometry, and returns the exact
-object rendered by the browser. The static website does not run a language model.
+The external agent interprets conversation. Prepared navigation selects a recorded,
+versioned scientific destination; native exploration selects source facets and runs
+graph/vector geometry. Both use the same session transitions and accepted browser
+controller. The static website does not run a language model.
+
+## Prepared destinations
+
+Read `/data/atlas/index.json` for installed atlas versions and entry destinations.
+Each `/data/atlas/ATLAS/VERSION/manifest.json` pins the catalog. Small readable
+pages at `/atlas/ATLAS/VERSION/DESTINATION.html` expose definitions, qualifications,
+representative sources and typed connections without JavaScript or installation.
+Title/alias lookup is lexical discovery. It does not interpret arbitrary paragraphs
+or establish scientific equivalence. Read the scope and sources before accepting
+a destination; retain changed hypotheses as a distinct question or explicit gap.
+
+```js
+const graph = window.eigenquestionsNavigator;
+const parent = await graph.ready(); // capture before interpretation/computation
+const selector = {kind: 'atlas-destination', atlasId, atlasVersion, destinationId};
+const definition = await graph.describe(selector);
+const prepared = await graph.orient(originalQuestion, {selector, lens: 'combined'});
+// Inspect definitions, sources and constraints; continue independent research.
+graph.apply(prepared, {expectedRevision: parent.revision});
+// Or follow an explicit reviewed selector in the current prepared path:
+// await graph.navigate({type:'navigate', selector}, {expectedRevision:parent.revision});
+```
+
+`lookup(query, selector)` returns title/alias matches without changing the page.
+`describe(selector)` reads the full destination definition; `connections(selector)`
+reads typed incident relations, preserving their actual direction.
+`sources(selector,{offset,limit,lens,intent,workRelation,constraints})` pages through
+recorded membership and fetches checksum-verified source metadata/excerpts without
+loading embeddings. Full membership may be much larger than a displayed capsule.
+Missing filter metadata is an explicit error. Context witnesses are labeled apart
+from matching sources; recent refers only to recorded years in the frozen corpus.
+
+`context(unitId, selector)` lazily reads the checksummed source-context shard.
+It preserves exact scientific object endpoints, semantic status, premises,
+convention dictionaries and evidence namespaces. Direct source relations,
+shared-extraction context and same-paper context are visibly distinct; a source
+relation is never promoted to a claim about an entire destination. Missing exported
+context reports its coverage limit, not absence of assumptions or methods.
+The local bridge/MCP exposes the same read-only operations as `navigator_sources`,
+`navigator_connections` and `navigator_context`; CLI equivalents are `sources`,
+`connections` and `context --id UNIT_ID`. Start a prepared companion with
+`node bin/navigate.mjs serve --atlas data/atlas/ID/VERSION`.
+
+The selector's atlas/version/destination and explicit perspective define the
+prepared state. Route history and original prose do not create different question
+IDs. Navigate by exact IDs, never by a label re-search. The same destination exposes
+the same incident graph from any route; narrower, method, application, scientific
+relation and geometric affinity have distinct meanings. A metadata-only field is
+a vocabulary landmark, not evidence of a complete physics corpus.
+
+Compact `/#atlas=ID&version=VERSION&destination=ID&lens=...&intent=...&relation=...`
+addresses need no upload. Unsupported filter addresses require a full capsule.
+Local work notes attach to stable selectors and export separately; they are never
+included automatically in copied destination links or published views. Switching
+between native and prepared computations is explicit and retains the old path as
+a local branch. Old native v1 sessions keep their original IDs and computation.
 
 ## Use the physics graph from Eigenquestions
 
@@ -35,9 +92,8 @@ const orientation = await graph.orient('KK towers as dark matter', {
 // orientation is a full contextual-view capsule. This did not move the UI,
 // change its history, or replace the human's draft.
 const sources = orientation.snapshot.view.nodes.slice(0, 5);
-// When the task calls for a visible update, read the latest revision first:
-const latest = graph.read();
-graph.apply(orientation, {expectedRevision: latest.revision});
+// When the task calls for a visible update, retain the original parent revision:
+graph.apply(orientation, {expectedRevision: current.revision});
 ```
 
 | Page method | Behavior |
@@ -53,7 +109,9 @@ graph.apply(orientation, {expectedRevision: latest.revision});
 | `subscribe(callback)` | Observe accepted object changes; returns an unsubscribe function. |
 
 `revision` belongs to this page controller; it is not a scientific state ID or
-the companion's server revision. Read it immediately before a mutation. A stale
+the companion's server revision. Capture it before computing or interpreting the
+result and retain that parent revision. Never read a newer revision merely to
+restamp an older result. A stale
 `apply` rejects with `code: revision_conflict`; inspect `error.current` and
 reconsider the operation instead of retrying blindly. Newer UI intents supersede
 older pending computations. `renderedRevision === revision` acknowledges a past

@@ -10,6 +10,24 @@ Swampland-centered graph with independent research and native reasoning.
 - Portable skill: https://eigenquestions.com/skills/physics-navigator/SKILL.md
 - Storage limits/activation: https://eigenquestions.com/docs/stored-views-operations.md
 
+Prepared atlas versions, when installed, are listed at
+https://eigenquestions.com/data/atlas/index.json. Readable destination pages live
+under /atlas/ATLAS/VERSION/DESTINATION.html; exact data is in that version's
+/data/atlas/ATLAS/VERSION/manifest.json. No install is needed for static reading.
+Title/alias lookup is lexical, not paragraph interpretation. Read definitions,
+assumptions, source evidence and typed connections before resolving a question to
+an explicit destination. Distinguish canonical questions from overlapping regions.
+Metadata-only broad fields are vocabulary landmarks, not detailed corpus coverage.
+
+The page also exposes read-only lookup(query,selector), describe(selector),
+connections(selector), sources(selector,{offset,limit,...filters}) and
+orient(originalQuestion,{selector,...perspective}). Prepared selectors contain
+{kind:"atlas-destination",atlasId,atlasVersion,destinationId}. navigate can commit
+one through the same controller. Capture expectedRevision before interpreting or
+computing; never restamp a stale result with a fresh revision. Verify the rendered
+revision after committing. Compact prepared URLs require no upload; they do not
+include private local work notes. Arbitrary authored views still use capsules.
+
 A capable browser agent can use window.eigenquestionsNavigator on the page:
 ready/read; orient(query,options) for read-only computation; apply(capsule,
 {expectedRevision}) or navigate(action,{expectedRevision}) for visible updates;

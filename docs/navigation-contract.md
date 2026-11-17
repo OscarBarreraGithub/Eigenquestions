@@ -1,4 +1,4 @@
-# Navigation contract v1.0.0
+# Navigation contract: native v1.0.0 and prepared v1.1.0
 
 Shared agreement between geometry, protocol and site owners for Q-001. Schemas are in [`schemas/`](../schemas/). Engine computations are deterministic for an immutable corpus and normalized state. All IDs are stable source IDs; screen labels are never identifiers.
 
@@ -140,3 +140,78 @@ Legacy native histories with duplicate states remain intact and export unchanged
 repeated entries can be labeled as returns for presentation. No claim is made
 that different states or sources are semantically novel, or that all scientific
 redundancy has been eliminated.
+
+## Q-025 prepared destinations
+
+`lib/geometry/prepared-atlas.mjs` adapts a pinned prepared atlas to the same
+`computeView/search/getEvidence` interface. It performs lookup and deterministic
+view assembly, not new embedding, clustering, scientific inference or paragraph
+interpretation. The native engine, parameters, source rows, hashes and v1 state
+normalization remain unchanged.
+
+Prepared states use schema `1.1.0` and add exactly:
+
+```json
+{"selector":{"kind":"atlas-destination","atlasId":"ID","atlasVersion":"VERSION","destinationId":"ID"}}
+```
+
+Their `query` is the canonical recorded question and their `focusIds` are empty;
+complete memberships are referenced through the selector. Original prose belongs
+in capsule context. The scientific ID excludes route/history and original prose.
+It includes the canonical destination, atlas/computation identity, intent, lens,
+work relation and supported constraints. A changed scientific premise requires
+the appropriate separately scoped destination, not an unrecorded prose override.
+
+Each manifest pins atlas ID/version, source corpus/content hash, dated scope and a
+checksummed catalog. Exact manifest bytes, catalog bytes and adapter-source hash
+all enter `computationId`. Catalog arrays keep destinations, source descriptions,
+memberships and relations distinct. Destination kind separates questions from
+regions, methods and landmarks. Numerical cluster identity is never proof of
+question equivalence. Membership records preserve source IDs, weight, role,
+source/vector row binding, and year/lens/perspective metadata when filters use it.
+Missing metadata for a requested filter fails explicitly. Distinct statuses
+describe scientific reading, placement and membership coverage.
+
+`narrower` relations form an acyclic graph with possible multiple parents. If both
+parent and child declare complete enumerated membership, the child must be a
+subset. A metadata-only broad parent does not make an empty-set containment claim.
+Methods, applications, source-local science, reviewed scientific assertions and
+geometric affinity retain their own typed relations and qualifications. Incoming
+navigation preserves the scientific arrow. Same destination/perspective always
+exposes the same incident relations irrespective of path.
+
+The capsule still has schema `1.0.0`; its canonical session/view can be prepared
+`1.1.0`. Builder `eigenquestions-prepared-atlas` version `1.0.0` permits the same
+recorded `select` continuation when computation identity matches. Views expose up
+to fifteen foreground directions and full incident relation metadata in
+`view.atlas.connections`. Full memberships can exceed the capsule's 500-source
+display bound. `membershipCount`, `matchingSourceCount`, membership status and
+sample notices state what is represented. Context evidence and matching sources
+are labeled separately. Metadata-only vocabulary sources never inflate paper
+counts. Full source paging verifies the frozen JSON source/paper shard hashes and
+row IDs without loading embedding arrays.
+
+`navigate` with a selector, `select`, `back`, `forward`, `replay`, `reset`, export
+and import use the existing shared session transitions. Prepared and native
+sessions have distinct pinned computation identities; changing mode explicitly
+branches through the same accepted-capsule controller and retains the prior path.
+There is no silent reinterpretation of a prepared question as native search.
+
+Prepared URLs pin atlas/version/destination/lens/intent/work relation and require
+no upload. Unsupported filtered addresses require the full capsule; the UI clears
+a stale prepared address rather than showing it for a differently filtered state.
+Opening/reloading a compact URL reconstructs the prepared view. Browser history
+retains a local canonical session for Back; the public address omits its path.
+Arbitrary authored views continue to require their exact existing capsule.
+
+Local work notes use `eigenquestions-work-note` schema `1.0.0`, a stable note ID,
+target selector, text and timestamps. They persist on that browser and export or
+import separately. They are excluded from normal view export, copied prepared URLs
+and upload. A public destination link is not permission to publish private notes.
+
+Static HTML destination pages and JSON manifests support read-only discovery.
+The page controller additionally exposes `lookup`, `describe`, `connections` and
+`sources`; these are read-only adapters, not a second state system. The connected
+agent must preserve the parent revision captured before interpretation/computation.
+A freshly read revision must never be used to launder an older result. Display
+acknowledgement and public-to-loopback limitations remain as specified above.

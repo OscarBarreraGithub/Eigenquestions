@@ -106,7 +106,7 @@ test('MCP stdio action reaches bridge SSE and origin/session checks reject outsi
     assert.match(preflight.headers.get('access-control-allow-headers'),/If-Match/);
     const events=await fetch(new URL(`/api/events?token=${bridge.token}`,bridge.url));reader=events.body.getReader();await reader.read();
     const init=await rpc('initialize',{protocolVersion:'2025-06-18',clientInfo:{name:'integration',version:'1'}});assert.equal(init.result.serverInfo.name,'eigenquestions-navigator');
-    assert.equal((await rpc('tools/list',{})).result.tools.length,6);
+    assert.deepEqual((await rpc('tools/list',{})).result.tools.map(tool=>tool.name).sort(),['navigator_state','navigator_search','navigator_evidence','navigator_sources','navigator_connections','navigator_context','navigator_navigate','navigator_export','navigator_import'].sort());
     const response=await rpc('tools/call',{name:'navigator_navigate',arguments:{type:'navigate',query:'KK towers'}});assert.equal(response.result.isError,false);
     let streamText='';while(!streamText.includes('\n\n')){const chunk=await reader.read();streamText+=new TextDecoder().decode(chunk.value);}
     const event=JSON.parse(streamText.split('data: ')[1].split('\n\n')[0]);assert.equal(event.revision,1);assert.equal(event.view.query,'KK towers');

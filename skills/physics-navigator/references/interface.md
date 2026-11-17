@@ -14,8 +14,7 @@ const orientation = await graph.orient('KK towers as dark matter', {
 });
 // Inspect orientation.snapshot.view.nodes/directions and original paper links.
 // Independent research continues; orient did not move the human's path.
-const latest = graph.read();
-graph.apply(orientation, {expectedRevision: latest.revision}); // only for a visible update
+graph.apply(orientation, {expectedRevision: before.revision}); // retain the parent captured before orient
 const capsule = graph.export();
 // When a saved link is requested: await graph.publish(capsule).
 ```

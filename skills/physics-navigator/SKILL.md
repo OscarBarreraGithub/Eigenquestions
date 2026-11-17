@@ -81,9 +81,11 @@ not a deeper topic. Method/Question metadata describes its representative source
    fidelity from source-overlay fidelity and within-group spread; retained group
    variance does not certify source-level geometry. Slab thickness is not a
    physical scale.
-5. For a requested visible update, re-read the page revision immediately before
-   `apply`/`navigate`; preserve a newer state on conflict, rather than blindly
-   retrying. Confirm `read().renderedRevision === read().revision` after the
+5. For a requested visible update, capture the parent page revision **before**
+   interpretation or computation and retain it for `apply`/`navigate`. Never stamp
+   a stale result with a newly read revision. Preserve a newer state and the
+   proposal on conflict rather than blindly retrying. Confirm
+   `read().renderedRevision === read().revision` after the
    accepted update. The local bridge instead reports
    `browserStatus.acknowledgedCurrent` only after a browser acknowledges that
    state/revision. This confirms a past render, not that the user still sees the
@@ -96,6 +98,23 @@ not a deeper topic. Method/Question metadata describes its representative source
    unavailable/full, preserve the file and report that no durable link was made.
 
 ## Preserve the full view's meaning
+
+Prepared atlases use the same controller and a versioned destination selector.
+Read `/data/atlas/index.json`, the exact catalog manifest and the small static
+destination pages before routing. `lookup` matches titles/aliases only; the agent
+interprets prose, checks defining assumptions and selects an explicit ID. Region
+membership and similar embeddings do not establish canonical question equivalence.
+Use `describe`, `connections` and paginated `sources`; a displayed source sample
+is not complete membership. Do not omit available cross-links because the question
+was entered through a different parent. Metadata-only broad fields are vocabulary
+landmarks, not claims of detailed literature coverage.
+
+Prepared `navigate` and `select` retain the same destination across paraphrases and
+paths once scientific equivalence has been accepted. Changed defining assumptions
+may require another destination. `orient(query,{selector,...})` retains original
+prose locally while leaving the human path unchanged. A compact prepared URL does
+not contain private work notes or require upload. Native exploration remains an
+explicit alternative computation; preserve the prior prepared path when switching.
 
 Display, recompute and continue are different capabilities. Import/apply must
 show the exact supplied capsule, including an unknown builder's groups. Do not

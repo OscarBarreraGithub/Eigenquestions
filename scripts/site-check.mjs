@@ -48,6 +48,21 @@ export async function checkSite(directory = path.join(root, 'dist')) {
   const identitySource = await readFile(path.join(directory, 'lib/geometry/identity.mjs'), 'utf8');
   const pinnedHash = identitySource.match(/ENGINE_SOURCE_SHA256\s*=\s*'([a-f0-9]{64})'/)?.[1];
   assert.equal(createHash('sha256').update(engineSource).digest('hex'), pinnedHash, 'Engine identity is stale; geometry owner must repin before release');
+  const preparedSource=await readFile(path.join(directory,'lib/geometry/prepared-atlas.mjs'));
+  const preparedIdentity=await readFile(path.join(directory,'lib/geometry/prepared-identity.mjs'),'utf8');
+  assert.equal(createHash('sha256').update(preparedSource).digest('hex'),preparedIdentity.match(/PREPARED_SOURCE_SHA256\s*=\s*['"]([a-f0-9]{64})/)?.[1],'Prepared adapter identity is stale');
+  let verifiedAtlasFiles=0;
+  if(entries.includes('data/atlas/index.json')){
+    const index=JSON.parse(await readFile(path.join(directory,'data/atlas/index.json'),'utf8'));
+    assert.equal(index.schemaVersion,'1.0.0');
+    for(const entry of index.atlases){
+      for(const value of [entry.atlasId,entry.atlasVersion])assert.match(value,/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,199}$/);
+      const atlasDirectory=path.join(directory,'data/atlas',entry.atlasId,entry.atlasVersion),prepared=JSON.parse(await readFile(path.join(atlasDirectory,'manifest.json'),'utf8'));
+      assert.match(prepared.files.catalog.path,/^[a-zA-Z0-9][a-zA-Z0-9._-]*\.json$/);
+      const catalog=await readFile(path.join(atlasDirectory,prepared.files.catalog.path));assert.equal(createHash('sha256').update(catalog).digest('hex'),prepared.files.catalog.sha256,'Prepared catalog hash mismatch');verifiedAtlasFiles+=2;
+      assert.ok(entries.includes(`atlas/${entry.atlasId}/${entry.atlasVersion}/${entry.entryDestinationId}.html`),'Prepared atlas lacks static readable entrance');
+    }
+  }
   const config = await readFile(path.join(root, 'wrangler.toml'), 'utf8');
   assert.ok(/^main\s*=\s*"backend\/views\.mjs"/m.test(config), 'Only the bounded stored-view handler may run on the default deployment');
   assert.ok(!/d1_databases|nodejs_compat|\.open-next/.test(config), 'Retired backend configuration remains');
@@ -75,6 +90,6 @@ export async function checkSite(directory = path.join(root, 'dist')) {
   }
   const renderer = await readFile(path.join(directory, 'overview.js'), 'utf8');
   assert.doesNotMatch(renderer, /(?:localStorage|sessionStorage|compute-worker|lib\/geometry|eigenquestionsNavigator)/, 'Overview must remain isolated from the contextual controller');
-  return { assets: entries.length, corpusId: manifest.corpusId, verifiedShards: shards.length, verifiedOverviewFiles: overviewFiles.length, staticAssets: true, assetsOnly: false, apiRoutes: ['/api/views'], oldRoutesAbsent: true };
+  return { assets: entries.length, corpusId: manifest.corpusId, verifiedShards: shards.length, verifiedOverviewFiles: overviewFiles.length, verifiedAtlasFiles, staticAssets: true, assetsOnly: false, apiRoutes: ['/api/views'], oldRoutesAbsent: true };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) console.log(JSON.stringify(await checkSite(), null, 2));

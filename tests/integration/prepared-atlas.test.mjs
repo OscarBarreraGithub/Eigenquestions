@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
-import {createAtlasNavigator,loadAtlas,validateAtlas,atlasAddress,createAtlasSourceReader} from '../../lib/geometry/prepared-atlas.mjs';
+import {gzipSync} from 'node:zlib';
+import {createAtlasNavigator,loadAtlas,validateAtlas,atlasAddress,createAtlasSourceReader,validateSourceContext,createAtlasContextReader} from '../../lib/geometry/prepared-atlas.mjs';
 import {PREPARED_SOURCE_SHA256} from '../../lib/geometry/prepared-identity.mjs';
 import {createSession,normalizeState,currentState,applyAction,importSession,exportSession} from '../../lib/protocol/session.mjs';
 import {createCapsule,capsuleCapabilities,encodeCapsuleBytes,decodeCapsuleBytes} from '../../lib/protocol/capsule.mjs';
@@ -57,11 +58,12 @@ test('prepared loader verifies exact content, containment, evidence and version'
   const nav=createAtlasNavigator(atlasFixture());assert.throws(()=>nav.createSession({selector:{...nav.initialState.selector,atlasVersion:'different'}}),/version mismatch/);
 });
 
-test('lookup is explicitly lexical and prepared runtime uses existing shared transitions',()=>{
+test('lookup is explicitly lexical and prepared runtime uses existing shared transitions',async()=>{
   const atlas=atlasFixture(),nav=createAtlasNavigator(atlas),runtime=createRuntime(nav,atlas.manifest.corpusId);
   assert.equal(runtime.search('shared alias')[0].selector.destinationId,'shared');
   assert.equal(runtime.search('alternate alias')[0].matchKind,'title-and-alias-lookup');
   assert.equal(runtime.search('unrepresented wording').length,0);
+  assert.equal((await runtime.sources({destinationId:'shared',limit:1})).total,2);assert.equal(runtime.connections({destinationId:'shared'}).total,3);assert.equal((await runtime.context({unitId:'source-a'})).availability,'not-exported');assert.equal(runtime.snapshot().revision,0);
   const first=runtime.snapshot();runtime.action({type:'navigate',selector:{...nav.initialState.selector,destinationId:'shared'}});
   assert.equal(runtime.snapshot().revision,1);assert.equal(agentSnapshot(runtime.snapshot()).view.chart,null);
   runtime.import(runtime.export());assert.equal(runtime.snapshot().revision,2);
@@ -97,4 +99,25 @@ test('source filters cover unbundled memberships and distinguish context witness
   assert.equal(view.atlas.matchingSourceCount,601);assert.equal(view.nodes.find(n=>n.id==='source-a').atlasRole,'context-evidence');assert.equal(view.nodes.find(n=>n.id==='source-b').atlasRole,'matching-source');
   assert.equal(nav.sources('shared',{intent:'derive'}).total,601);assert.equal(nav.sources('shared',{intent:'phenomenology'}).total,1);
   const incomplete=createAtlasNavigator(atlasFixture({largeMembership:true}));assert.throws(()=>incomplete.sources('shared',{constraints:{yearMin:2024}}),/lacks year metadata/);assert.throws(()=>incomplete.sources('shared',{lens:'method'}),/lacks lens metadata/);
+});
+
+test('complete containment requires membership subset; vocabulary parents carry an explicit exemption',()=>{
+  const atlas=atlasFixture({largeMembership:true});for(const d of atlas.catalog.destinations)d.membershipStatus='complete';
+  assert.throws(()=>validateAtlas(atlas.manifest,atlas.catalog),/child membership escapes parent/);
+  for(const id of ['left','right']){const d=atlas.catalog.destinations.find(x=>x.id===id);d.membershipStatus='metadata-only';d.metadataOnly=true;}
+  assert.doesNotThrow(()=>validateAtlas(atlas.manifest,atlas.catalog));
+});
+
+test('source science preserves exact object endpoints, semantic status and attachment scope',async()=>{
+  const atlas=atlasFixture(),context={coverage:{description:'Two synthetic objects only'},sourceObjects:[{id:'claim-a',kind:'claim',paperId:'paper-a',text:'Synthetic claim',evidenceScope:'direct',provenance:{sourceSha256:'a'.repeat(64)}},{id:'method-b',kind:'method',paperId:'paper-b',text:'Synthetic method',evidenceScope:'inherited',provenance:{sourceSha256:'b'.repeat(64)}}],sourceRelations:[{id:'source-use',source:'claim-a',target:'method-b',type:'uses_method',semanticStatus:'reviewed_scoped',premises:['Only the declared synthetic limit'],provenance:{review:'fixture'}}],sourceAttachments:[{unitId:'source-a',scope:'shared_extraction_window_context',objectIds:['claim-a','method-b'],relationIds:['source-use']}],sourceAssessments:[]};
+  const body=JSON.stringify(context),index={schemaVersion:'1.0.0',kind:'eigenquestions-source-context-index',coverage:{description:'Fixture coverage'},units:{'source-a':{path:'context-0.json',sha256:createHash('sha256').update(body).digest('hex')}}},indexBody=JSON.stringify(index);
+  atlas.manifest.files.sourceContextIndex={path:'source-context-index.json',sha256:createHash('sha256').update(indexBody).digest('hex')};
+  const reader=createAtlasContextReader(atlas,{readText:async filename=>filename.endsWith('source-context-index.json')?indexBody:body});
+  const result=await reader('source-a');assert.equal(result.sourceRelations[0].source,'claim-a');assert.equal(result.sourceAttachments[0].scope,'shared_extraction_window_context');assert.deepEqual(result.sourceRelations[0].premises,['Only the declared synthetic limit']);
+  const compressed=gzipSync(body),gzipIndex=structuredClone(index);gzipIndex.units['source-a']={path:'context-0.json.gz',encoding:'gzip',uncompressedBytes:Buffer.byteLength(body),sha256:createHash('sha256').update(compressed).digest('hex')};const gzipIndexBody=JSON.stringify(gzipIndex),gzipAtlas=structuredClone(atlas);gzipAtlas.manifest.files.sourceContextIndex.sha256=createHash('sha256').update(gzipIndexBody).digest('hex');
+  assert.deepEqual(await createAtlasContextReader(gzipAtlas,{readText:async()=>gzipIndexBody,readBinary:async()=>compressed})('source-a'),result);
+  await assert.rejects(createAtlasContextReader(gzipAtlas,{readText:async()=>gzipIndexBody,readBinary:async()=>new Uint8Array([1,2,3])})('source-a'),/checksum mismatch/);
+  assert.equal((await reader('unrepresented-unit')).availability,'not-exported');assert.match((await reader('unrepresented-unit')).notice,/does not establish/);
+  const bad=structuredClone(context);bad.sourceRelations[0].source='root';assert.throws(()=>validateSourceContext(bad),/endpoint/);bad.sourceRelations[0].source='claim-a';delete bad.sourceRelations[0].semanticStatus;assert.throws(()=>validateSourceContext(bad),/semanticStatus/);
+  assert.equal(atlas.catalog.relations.length,5,'source-science relation never becomes a destination arrow');
 });
