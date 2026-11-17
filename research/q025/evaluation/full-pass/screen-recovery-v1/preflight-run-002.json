@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "q025-successor-preflight/1",
+  "campaignSha256": "37d88392fd9260bb1fb13dcf41eb8eb1ebb945c83ff623e6378123f5d09f518e",
+  "runnerSha256": "31116e39b14e11a33d95ee2fe8658292eff2640df0713a25416c2087fc464323",
+  "nativeLaunches": 0,
+  "sourceHashVerification": "Every supplied scope definition, source description and comparison endpoint is checked against its pinned machine sidecar by the dispatch materializer. No primary text is supplied. Original stream, receipt, request and packet hashes verified.",
+  "actualJobDirectoriesMaterialized": 0,
+  "results": [
+    {
+      "jobId": "canonical-continuation-v4-0039-screen-completion",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "d3abc907beec53b20a76e977015f83dc8dc86ab10214cb2f1e7a46a225c8c2fb",
+      "promptSha256": "929a37b9708c87e3905379c21f3f5c07927158c7ffe10b7be68d8ceef1e663bc",
+      "schemaSha256": "e4f6be4e3a730b09b94bebc3ef7e47a4d72050e0ce10d2680770ae2f113bd5b0",
+      "sourceUnitCount": 0,
+      "scopeCount": 26,
+      "comparisonCount": 100,
+      "primaryExcerptCount": 0,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 205023,
+        "schemaCharacters": 2416,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 125147
+      }
+    },
+    {
+      "jobId": "canonical-continuation-v4-0047-screen-completion",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "6f1938c5677afb3dccacbd773bb117137b394ac3d33743de63afa3533b26c6dc",
+      "promptSha256": "7141c4ebd01f9193025c7caf3a315b82631e004eb861f6c43207969c6be79add",
+      "schemaSha256": "e4f6be4e3a730b09b94bebc3ef7e47a4d72050e0ce10d2680770ae2f113bd5b0",
+      "sourceUnitCount": 378,
+      "scopeCount": 39,
+      "comparisonCount": 88,
+      "primaryExcerptCount": 0,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 389423,
+        "schemaCharacters": 2416,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 186613
+      }
+    }
+  ]
+}

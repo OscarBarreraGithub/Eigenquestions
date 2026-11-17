@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "q025-placement-policy-proposal/1",
+  "status": "awaiting_explicit_coordinator_policy_admission",
+  "inputs": {
+    "registry": {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v5-20261117T135430Z.json",
+      "sha256": "0e0d5443114cbcba6078a70241c809b5fb713097b22d9d1846b63f6172da69d5",
+      "bytes": 71736816
+    },
+    "eligibleInventory": {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/eligible-preholdout-unit-ids-v1.json",
+      "sha256": "7bb1497c3d615d312d7f8efe9d9e0bd847ec181d6110b270af484be6e5c3dc3f",
+      "bytes": 607567
+    },
+    "census": {
+      "path": "research/q025/assembly/organization-v4/home-lanes-v5.local.json",
+      "sha256": "0a249caf80cf733d82aa6306769b9300b8762e522703ee6341a85a62f3511b5c",
+      "bytes": 21650098
+    },
+    "existingSimpleHomes": {
+      "path": "research/q025/evaluation/full-pass/home-admissions-v1/home-admission-delta.json",
+      "sha256": "223fc77eb12cea97dac3a32253abb86b590efec432e2e38053e012d2f577f451",
+      "bytes": 3241073
+    },
+    "existingKKHomes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee",
+      "bytes": 254563
+    },
+    "scopeRoleSupport": {
+      "path": "research/q025/evaluation/full-pass/admissions-v3/supported-scope-role-component-v3.json",
+      "sha256": "278c869e629b4308af296018d4ed365318fd762e0dd5c9db0a7677804bed9bf6",
+      "bytes": 55104527
+    },
+    "canonicalScopeRoleComponent": {
+      "path": "research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/admitted-scope-role-operation-component.json",
+      "sha256": "f4b8b1badded4a9dbb5c178f61798e8d1a2b54b73fda8b58a0ec3c8ff67b7a87",
+      "bytes": 900565
+    },
+    "currentHistoricalCanonicalConstraints": {
+      "path": "research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/constraint-precedence.json",
+      "sha256": "263eb4d560dea205bed93b69ed1a667cafbc6db0c1184bf39873f561899837be",
+      "bytes": 157894
+    },
+    "exactCandidateRows": {
+      "path": "research/q025/assembly/organization-v4/placement-policy-candidates.local.json",
+      "sha256": "a361697d44f4d63b917e91468e9a490f1afc9245cbcc40fa4eaf90cbe99b245a",
+      "bytes": 15984667
+    },
+    "examples": {
+      "path": "research/q025/assembly/organization-v4/placement-policy-examples.json",
+      "sha256": "a920ecf1259d51fb3e4a770cd6c50ecdde87f3d0147b8eff3ba83e8eb64e40df",
+      "bytes": 173352
+    }
+  },
+  "counts": {
+    "eligibleQuestions": 8430,
+    "existingAdmittedHomeUnits": 1060,
+    "existingHomeRows": 1061,
+    "pendingPolicyClasses": {
+      "A_exact_paired_scientific_question_home": 2276,
+      "B_whole_family_home": 1272,
+      "B_compound_whole_family_home": 1155
+    },
+    "pendingClassesWithAlreadyAdmittedScope": 4703,
+    "pendingClassesAwaitingUnchangedScopeComponent": 0,
+    "remainingOrganizationalDecisions": 2667,
+    "remainingDecisionKinds": {
+      "flagged_existing_broad_attribution": 644,
+      "explicit_home_missing_or_disputed": 837,
+      "fine_home_coverage_or_cross_context_conflict": 333,
+      "overlap_needs_complete_target_coverage": 564,
+      "multiple_reviewed_broad_homes": 165,
+      "whole_family_qualification": 124
+    },
+    "coveredIfBothPoliciesApprovedAfterScopeAdmission": 5763,
+    "unreviewedEligibleUnits": 0,
+    "reservedHoldoutUnitsNotAllocated": 43
+  },
+  "proposedPolicies": [
+    {
+      "class": "A_exact_paired_scientific_question_home",
+      "weight": 1,
+      "rule": "Both existing reviewers explicitly chose the same exact unchanged scientific question card, verified against the original proposal definition; the chosen target has an agreed addresses/instantiates/specializes role. Global source-context checks find no competing explicit home, compound coverage ambiguity or unresolved same-target premise/annotation conflict. Extra method/comparison roles do not veto the home. The target must have a separate scope admission before compilation."
+    },
+    {
+      "class": "B_whole_family_home_and_B_compound_whole_family_home",
+      "weight": 1,
+      "rule": "When A does not settle the home, both existing reviewers place the complete source unit as member in the same unchanged scientific broad scope; the source has one such unflagged broad destination, no unresolved premise/annotation conflict and no inherited/context ambiguity in those member notes. Admit that whole-family organizational home, including compound source questions whose subtargets remain within the reviewed family. Keep all exact source text and typed subtarget contributions. Do not declare a compound source one atomic canonical question or split mass merely because it has several targets."
+    }
+  ],
+  "exceptions": [
+    "Existing 1,055 home approvals and the five exact KK/UHECR source homes are preserved. Their six KK/UHECR rows include the explicit half/half compound allocation; no competing source mass is added.",
+    "Overlap-only rows need whole-question coverage or explicitly approved normalized overlaps; they do not inherit weight 1 by this policy.",
+    "Several distinct broad or fine homes require canonical reconciliation or an explicit choice. Common-target grouping is not equivalence, and no ancestor plus descendant receive duplicate direct mass.",
+    "Annotation-only flags are not scientific rejection. Exact admitted repairs are already applied; unresolved severed notes or premise-dependent wording stay a concrete bounded decision rather than triggering blanket paper rereading.",
+    "A contextual or inherited positive role does not justify a home: the linear KK source keeps its admitted linear-cosmology home and receives no production allocation.",
+    "All pending rows remain outside accepted H until explicit coordinator policy and exact scope/row bindings are recorded. The 43 reserved sources remain unallocated until the separate post-test amendment."
+  ],
+  "remainingDecisionWorkflow": "Resolve each listed exact scientific choice using its complete source description, existing paired notes and already reviewed scope definitions. Inspect new primary text only when those records leave a material premise or scope ambiguity. Reuse retained meaningful broader scopes instead of forcing the narrowest home; create no generic fallback.",
+  "homesAdmittedByThisProposal": 0,
+  "newModelCalls": 0,
+  "runningScreenInputsChanged": false,
+  "scriptSha256": "9eb9518ee60e57c55bf27fbb3c62d4bcfe8b1478de6f52fe30f8f61494870188"
+}

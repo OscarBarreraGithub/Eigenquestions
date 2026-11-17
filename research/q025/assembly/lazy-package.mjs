@@ -64,7 +64,7 @@ export function partitionCatalog(logical,{entryDestinationId,detailTargetBytes=2
   const membershipPack=packEntries(membershipEntries,{kind:'eigenquestions-destination-memberships',prefix:'destination-memberships',targetBytes:membershipTargetBytes,maxFileBytes});
   const details={entry:[],metadata:[],authored:[],fine:[]};
   for(const d of logical.destinations){
-    const rows=byDestination.get(d.id),sample=sampleRows(rows,d),sampleIds=new Set([...sample.map(r=>r.unitId),...(d.evidenceIds||[]).slice(0,30),...(d.contextSourceIds||[]).slice(0,6)]);
+    const rows=byDestination.get(d.id),sample=sampleRows(rows,d),sampleIds=new Set([...sample.map(r=>r.unitId),...(d.evidenceIds||[]),...(d.contextSourceIds||[])]);
     const destination={...d,memberIdsExternal:rows.length>0};delete destination.memberIds;
     const sources=[...sampleIds].map(id=>{const s=sourceMap.get(id);if(!s)throw new Error(`Unknown representative source ${id}`);return s;});
     const detail={destination,sources,membershipSample:sample,...(rows.length?{memberships:membershipPack.locations.get(d.id)}:{}),coverage:{...counts.get(d.id),membershipSampleIsComplete:sample.length===rows.length,memberIdsSha256:membershipHashes.get(d.id)}};

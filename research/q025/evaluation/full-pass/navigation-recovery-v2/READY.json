@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "q025-navigation-recovery-ready/2",
+  "jobs": 1,
+  "initialConcurrency": 1,
+  "maxAuthorizedConcurrency": 1,
+  "tests": {
+    "python": 5,
+    "node": 2,
+    "verify": 1
+  },
+  "campaignSha256": "7c7740aeeefb78ed5c9020df6d69a6e50a39fa9da22b292dbc61d3d488d4727d",
+  "manifestSha256": "4489a87e5af351d77575002a420f5e3e4fe99c052cedfc18af13b52c55da50a3",
+  "preflight": {
+    "actualPromptCharacters": 213116,
+    "schemaCharacters": 12857,
+    "maxResponseCharacters": 80000,
+    "conservativeCombinedTokens": 117991,
+    "dispatchGuardTokens": 220000,
+    "priorCandidatePreserved": true,
+    "priorQuestionRefsRegisteredAsSuppliedAuthoredObjects": true,
+    "sourceWindowCount": 3,
+    "promptSha256": "6d0fee91d7dc984fc3c42d9fff2a1a2057944f435cd9ac406b0b26200907ae79",
+    "packetSha256": "27ea2277bb004ba678bcf5c42e0a980b12c16c4d31da525dd116d3250fd9ae2b"
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/contract.py",
+      "sha256": "9b952710fb8706d24c4f102dec2b6e10240a50218e2a223825671e04a7badcf8"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/materialize.py",
+      "sha256": "59cbd50e0ecaf2faf7d29095dedf5cc9a647529202bd4bfb280d530c7842f9ab"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/INSTRUCTIONS.md",
+      "sha256": "cab200b3c53b48ab626b40994833e77b2544c40c760a4509650f5244f50970ef"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/source-index.json",
+      "sha256": "7ab96f9ca5550486771821b3df6707eeafb7f5d972220b8d7654104a8b0481f3"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/prepare.py",
+      "sha256": "9b7823e52f7495c96753aed62010278f54b0706283a64d37e55375229154f7ce"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/runner.mjs",
+      "sha256": "81f94a2a4414aa553b0b0f62f97bef93265a2bee304b4fe4ec6d5b8ead5f9196"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/test_recovery.py",
+      "sha256": "89250958dea65c54f5c4b4aaa782764e386fe785ecaca1f75811a2cd287a7cf9"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/runner.test.mjs",
+      "sha256": "897ba917b473a76e4fa4736d20272245728db94f3d5353042d7ecf936a945fb2"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/preflight.json",
+      "sha256": "b3c66bf5ecb5565d5fe45c767e4ecb54fbc735a9976169b8a22cb20c1ae5dc5d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/manifest.json",
+      "sha256": "4489a87e5af351d77575002a420f5e3e4fe99c052cedfc18af13b52c55da50a3"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/adopt_inflation.py",
+      "sha256": "4872c5a2a9146b38c0c013ce0f6078c4ccf09a8f18762c854f4a313405121fab"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-recovery-v2/inflation-recovery.json",
+      "sha256": "6e2eb23759176d6de1421c68a470567e6a90baec9a36108826f00c082610cca3"
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/navigation-recovery-v2/runner.mjs --run --enable",
+  "inflationRecoveredWithoutNativeTurn": true,
+  "amplitudeRequiresIndependentScientificJudgment": true,
+  "nativeLaunches": 0
+}

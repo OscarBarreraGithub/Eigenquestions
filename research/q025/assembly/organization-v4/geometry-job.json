@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "q025-slurm-receipt/1",
+  "jobId": "61513820",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 4,
+  "memory": "16G",
+  "timeLimit": "00:30:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/organization-v5-cohort/attempt-1",
+  "inputs": [
+    {
+      "path": "research/q025/assembly/organization-v4/geometry.sbatch",
+      "sha256": "2c06e08e863a519136b4a0a21dd13280c8499be8f5e9fbfc90c030cd6bc1d8db",
+      "bytes": 651
+    },
+    {
+      "path": "research/q025/assembly/organization-v4/measure-approved-overview.py",
+      "sha256": "a8ec4bdc0fc43788cb52adb1e39e0000d69a476213a109a736b5de1063131e45",
+      "bytes": 5326
+    },
+    {
+      "path": "research/q025/assembly/overview.py",
+      "sha256": "8de155dee7907aa8b454689be5676cbeef632c56b2633e0e51324eeb8dbf84dc",
+      "bytes": 17299
+    },
+    {
+      "path": "research/q025/assembly/outputs/organization-candidate-v1/accepted-geometry-input.json",
+      "sha256": "edbf322ff7004993d617515c10a3d0dc50f851d94060fed7a260e819dddc1e66",
+      "bytes": 4635393
+    },
+    {
+      "path": "research/q025/assembly/organization-v4/candidate-v1/positive-support.json",
+      "sha256": "b1236dfaec1c8725fa962a99a6910213ac006f60b3e55ef2f26ac7761e639dcc",
+      "bytes": 259468
+    }
+  ],
+  "remoteInputHashesVerified": true,
+  "status": "COMPLETED",
+  "elapsed": "00:00:13",
+  "exitCode": "0:0"
+}

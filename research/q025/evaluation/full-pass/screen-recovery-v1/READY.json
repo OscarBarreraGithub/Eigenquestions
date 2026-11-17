@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "q025-launch-ready/1",
+  "status": "tested_prepared_not_launched",
+  "nativeJobs": 2,
+  "initialConcurrency": 2,
+  "maximumAuthorizedConcurrency": 2,
+  "globalConcurrencyOwner": "root; total active across campaigns <=48",
+  "campaignSha256": "3ebb3c4b8f201b2920392b2256fa5661c363a7f8addefcc118266935f1e201d1",
+  "manifestSha256": "d75b21c35975c50d70c5f0264f61992d10d3f0a2653ec04c6406bf892c99f5d3",
+  "runnerSha256": "31116e39b14e11a33d95ee2fe8658292eff2640df0713a25416c2087fc464323",
+  "publicFiles": [
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/INSTRUCTIONS.md",
+      "sha256": "f5e1fd9a5e0581e8ee9eda86cd925e87228d6418bf1809389c397cd4a503db34"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/README.md",
+      "sha256": "1e56fe5f9f3709ea02d645b46af07c920667d3c48070194b119a790435041e01"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/adopt.py",
+      "sha256": "8345e682cec0a5921700dbd9adf52c9caeb0a34cee32833476329014a5c53049"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/adoption-0065.json",
+      "sha256": "daf6699fcc669fce8d19be57690edabaf40d538a2287bebc23af2dacf79a7aa1"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/contract.py",
+      "sha256": "9ef037f042f16f6ac6a79dca3a115f2ef0d8495b3a884772b999bd9bfc05cf17"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/extract.py",
+      "sha256": "181514c480e177dffc45eb54ec559bc9226652af7a99738dcc997e68f20a7fab"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/manifest.json",
+      "sha256": "d75b21c35975c50d70c5f0264f61992d10d3f0a2653ec04c6406bf892c99f5d3"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/materialize.py",
+      "sha256": "9d8ff7b8c14958c6e2ee0dd9996c34b2ef7ce38ebe21a8f94299e8550bca1f17"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/prefix-audit.json",
+      "sha256": "31d575588d5801fbd389a2bf738c99c068f47e3b7472528a2a2adfb5196396b0"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/preflight-run-001.json",
+      "sha256": "deea8f8809b57511fcf6cfd24f80e080d1383d06e228a46a7002e2c36fd27d33"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/preflight-run-002.json",
+      "sha256": "c42248c9d32537980ad7e8b318d5eb2a65a4d50e4b897dc0b765bb4ae792bb7d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/preflight-run-003.json",
+      "sha256": "c58d529a67e72d3b946ae3be9d5e4824c58b3d44a35bf7885db988a1283c321e"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/preflight.mjs",
+      "sha256": "a0fb8e81aea6f87291c63944fa9b42dc69c6ef46565d2f3ac2afe3271275f2ca"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/prepare.py",
+      "sha256": "dbcf18157b781974f87f41500fb68841373e0bcb56a8f82152c47d99df910768"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/runner.mjs",
+      "sha256": "31116e39b14e11a33d95ee2fe8658292eff2640df0713a25416c2087fc464323"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/runner.test.mjs",
+      "sha256": "dbae4277a070ceffd84fa090f66fdaa3dff5ab07a6b49701790b5c42645cd3c1"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/screen-recovery-v1/test_completion.py",
+      "sha256": "52d9440f2b521972221a61808f2593a65e4ac183c2de3587e95b9c4c57358099"
+    }
+  ],
+  "tests": {
+    "python": 9,
+    "node": 6,
+    "requestVerification": 2
+  },
+  "currentPreflight": "preflight-run-003.json",
+  "combinedTokenEstimates": {
+    "canonical-continuation-v4-0039-screen-completion": 125546,
+    "canonical-continuation-v4-0047-screen-completion": 187167
+  },
+  "deterministicAdoption": {
+    "jobId": "canonical-continuation-v4-0065-screen",
+    "receiptSha256": "bc39ddfd6079f2aef1fef3be6172d0c98da05ac1468045ec2eee9dad46c476a1",
+    "newNativeCalls": 0,
+    "scientificAdmission": false
+  },
+  "nativeLaunches": 0,
+  "launchCommand": "node research/q025/evaluation/full-pass/screen-recovery-v1/runner.mjs --run --enable"
+}

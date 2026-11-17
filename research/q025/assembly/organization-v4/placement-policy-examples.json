@@ -1,0 +1,3303 @@
+{
+  "schemaVersion": "q025-placement-policy-examples/1",
+  "registry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v5-20261117T135430Z.json",
+    "sha256": "0e0d5443114cbcba6078a70241c809b5fb713097b22d9d1846b63f6172da69d5",
+    "bytes": 71736816
+  },
+  "examples": [
+    {
+      "purpose": "A_specialization_boundary_symmetries",
+      "source": {
+        "unitId": "unit:04c13df18a4f760f60de9f358f6862798e5f827c81098c74e430ae013a015b09",
+        "paperId": "2409.02156",
+        "description": "How do Gaiotto–Witten boundary conditions modify the symmetry theory of 4d N=4 su(N) SYM, particularly its electric/magnetic 1-form symmetries and the transport of operators across boundary-associated sectors?",
+        "descriptionSha256": "795a3dc40ebd7550f6e22fa4c1863760245dc04aa2312407ea615f0d1304141b",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-6076fa300fd58f6c5261-challenge/packet.actual.json",
+          "sha256": "403e26628979d2a10456c3dc42f6bc72333b8a3eed3168a86aee1278857f5d8e",
+          "bytes": 177720
+        },
+        "sourceDescriptionRef": "d16"
+      },
+      "proposedPlacement": {
+        "unitId": "unit:04c13df18a4f760f60de9f358f6862798e5f827c81098c74e430ae013a015b09",
+        "destinationId": "q025-candidate-question:53aab4d85892ccbd9a6ec0e7",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "policyClass": "A_exact_paired_scientific_question_home",
+        "status": "pending_coordinator_policy_admission",
+        "scopeAdmissionState": "already_admitted",
+        "scopeContentSha256": "562f5ecd2bac13a62437564d204d805289d74be6318df9458c487bef5c0cf971",
+        "scopeRecordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+        "definitionSha256": "45b27656754bb1d3fa8df139a9fbfb5557fd6bf18098852177c29d0536f4ae26",
+        "sourceReviewIds": [
+          "leaf-6076fa300fd58f6c5261-challenge"
+        ],
+        "basis": "existing_paired_scientific_attribution_not_paired_placement_admission",
+        "qualification": "Organizational home for the complete original source question. This does not assert fine-question equivalence, method applicability or a new scientific result."
+      },
+      "existingAdmittedPlacements": [],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:53aab4d85892ccbd9a6ec0e7",
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+          "definition": {
+            "title": "Global gauge data, lines and boundary symmetries",
+            "question": "How do line-operator choices and boundary conditions refine the specification, dualities and symmetries of a four-dimensional gauge theory?",
+            "summary": "Separates global theory specification, electric–magnetic line classification and boundary one-form symmetry transport.",
+            "scope": {
+              "systems": [
+                "Four-dimensional gauge theories",
+                "N=4 SYM with the specified Gaiotto–Witten boundary conditions"
+              ],
+              "targets": [
+                "Magnetic and dyonic line data beyond Lie algebra and gauge group",
+                "Discrete θ choices, phases and duality actions",
+                "Boundary one-form symmetries and operator transport",
+                "Stress-tensor one-point data associated with line operators"
+              ],
+              "regimes": [
+                "Theories with and without physical boundaries"
+              ],
+              "assumptions": [
+                "The boundary construction preserves half the superconformal symmetry",
+                "The N=4 line-operator duality action is presented as conjectured in its source description"
+              ],
+              "conventions": [
+                "Lie algebra, global gauge group and line spectrum are distinct data",
+                "The supplied SymTFT construction has non-topological interfaces"
+              ],
+              "includes": [
+                "Holographic symmetry constructions with boundary sectors"
+              ],
+              "excludes": [
+                "Inferring a universal global form from a gauge-algebra label"
+              ]
+            },
+            "readingLimit": "Primary excerpts concern the boundary symmetry construction. General line classification and global specification are description-based."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "19e9404bcf6c06149ea6de953bbc3d1ca6b3389921379ec896ae0368e15778cf",
+            "challengeReplySha256": "e5a7e2a61a2b3b4f4c0dc91b600ddbb9fe8c46d55e8436b1bf5e243876e82da9",
+            "challengeRawSha256": "78f76096b8c4752a1b857ab69f1f30c47c753db8aad48c23912ea77bfd5f6ea1",
+            "challengePacketSha256": "403e26628979d2a10456c3dc42f6bc72333b8a3eed3168a86aee1278857f5d8e",
+            "normalizationSha256": "d6f1ee111365166a0a4bb40e3b25ed34b997eab201129b562d238deb2d6c965b",
+            "proposalReceiptSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:a39202619b96c3f636872a9f",
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:r",
+          "definition": {
+            "title": "Gauge dynamics, exact structures and large-N descriptions",
+            "question": "How do vacuum geometry, gauge observables, global data, compactification and large-N descriptions characterize gauge theories, and which construction or consistency conditions constrain them?",
+            "summary": "The strongest organizing core concerns four-dimensional supersymmetric gauge theories. The original numerical collection also contains related methods, gravitational effective theories and distinct dimensional settings. These support a connected research family without supplying a common physical premise.",
+            "scope": {
+              "systems": [
+                "Predominantly four-dimensional supersymmetric gauge theories",
+                "Adjacent Euclidean gauge theories, lower-dimensional gauge dynamics, higher-dimensional parents and supergravity effective theories"
+              ],
+              "targets": [
+                "Quantum vacuum geometry and low-energy dynamics",
+                "Protected quantities, deformed spectral problems and duality tests",
+                "Global gauge data and boundary symmetries",
+                "Large-N SCFT classification and microscopic dual descriptions",
+                "Realizability, anomaly constraints and compactification"
+              ],
+              "regimes": [
+                "Finite rank and large N remain distinct",
+                "Rigid field theory, dynamical supergravity and holographic descriptions remain distinct",
+                "Weak-coupling limits, strong-coupling dynamics and compactification limits retain their source-specific conditions"
+              ],
+              "assumptions": [
+                "No shared simple-group, vanishing-superpotential or fixed-flavor assumption across the family",
+                "No universal WGC requirement",
+                "Numerical membership and selectionRole are retrieval provenance, not scientific conclusions"
+              ],
+              "conventions": [
+                "Overview membership does not establish fine question equivalence",
+                "Source-scoped singletons retain their exact original statements, including compound targets",
+                "Source settings and extracted objects do not automatically supply physical premises"
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland gauge-theory research",
+                "Pedagogical and methodological sources with their original purpose preserved",
+                "Explicit alternate access to neighboring questions"
+              ],
+              "excludes": [
+                "Treating this family as one canonical physical question",
+                "Identifying similarly numbered classifications across papers",
+                "Promoting announced constructions, conjectures or tests into universal results"
+              ]
+            },
+            "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Description-only assignments remain provisional."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "19e9404bcf6c06149ea6de953bbc3d1ca6b3389921379ec896ae0368e15778cf",
+            "challengeReplySha256": "e5a7e2a61a2b3b4f4c0dc91b600ddbb9fe8c46d55e8436b1bf5e243876e82da9",
+            "challengeRawSha256": "78f76096b8c4752a1b857ab69f1f30c47c753db8aad48c23912ea77bfd5f6ea1",
+            "challengePacketSha256": "403e26628979d2a10456c3dc42f6bc72333b8a3eed3168a86aee1278857f5d8e",
+            "normalizationSha256": "d6f1ee111365166a0a4bb40e3b25ed34b997eab201129b562d238deb2d6c965b",
+            "proposalReceiptSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-6076fa300fd58f6c5261-challenge",
+          "sourceOrigin": "boundary_source",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "specializes"
+              }
+            ],
+            "f": [
+              "pf2",
+              "pf24",
+              "pf25",
+              "pf26"
+            ],
+            "refs": [
+              "e10",
+              "e15"
+            ],
+            "reason": "specialized",
+            "note": "The symmetry construction contains non-topological interfaces; it is not an entirely topological bulk.",
+            "home": "q2",
+            "identity": "s",
+            "title": "Boundary one-form symmetry and operator transport in N=4 SYM"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "specializes"
+              }
+            ],
+            "f": [
+              "pf2",
+              "pf24",
+              "pf25",
+              "pf26"
+            ],
+            "refs": [
+              "e10",
+              "e15"
+            ],
+            "reason": "specialized",
+            "note": "The chosen boundaries preserve half the superconformal symmetry; the symmetry construction includes non-topological interfaces.",
+            "home": "p2",
+            "identity": "s",
+            "title": "Boundary one-form symmetry and operator transport in N=4 SYM"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:53aab4d85892ccbd9a6ec0e7",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "53aab4d85892ccbd9a6ec0e73ac9325e2efbde7430e4e4a47cae43cd886cb2dc"
+            },
+            "challenge": {
+              "rawRef": "p2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:53aab4d85892ccbd9a6ec0e7",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "53aab4d85892ccbd9a6ec0e73ac9325e2efbde7430e4e4a47cae43cd886cb2dc"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+              "role": "specializes",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "19e9404bcf6c06149ea6de953bbc3d1ca6b3389921379ec896ae0368e15778cf",
+            "challengeReplySha256": "e5a7e2a61a2b3b4f4c0dc91b600ddbb9fe8c46d55e8436b1bf5e243876e82da9",
+            "challengeRawSha256": "78f76096b8c4752a1b857ab69f1f30c47c753db8aad48c23912ea77bfd5f6ea1",
+            "challengePacketSha256": "403e26628979d2a10456c3dc42f6bc72333b8a3eed3168a86aee1278857f5d8e",
+            "normalizationSha256": "d6f1ee111365166a0a4bb40e3b25ed34b997eab201129b562d238deb2d6c965b",
+            "proposalReceiptSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-6076fa300fd58f6c5261-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-6076fa300fd58f6c5261-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "cfd2fa211d56f083edb5949a462668b1ec02a1eddf3cef31f6d66f0ed0447d0c",
+            "reply.jsonSha256": "4ebb2ca40aacdf9dd5246d31a16e3114e555407d2f87bc9c758758eeb3f4714a",
+            "reply.raw.txtSha256": "4638f6538391f0b9153cec71641727bd0135420ea6ce595d2b6cb4894bbf54bb",
+            "receipt.jsonSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a",
+            "normalization.jsonSha256": "d2dd68c494854b1fe6e7e71a347c6251b669dcf9c855a7fd0488e2c55d74aa26",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-6076fa300fd58f6c5261-challenge/dispatch-request.json",
+              "sha256": "7ee1c057419a162bdbcc2e2827da0f19d7f6dfef277372b3498fe96e6c418bd6"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "A_instantiation_global_uplift",
+      "source": {
+        "unitId": "unit:01f899fb19b6229a2737879c5798aeebdf381e6c68b170bf7a21aaf41b6ce441",
+        "paperId": "2206.12889",
+        "description": "Can a K3-fibred LVS compactification admit an explicit anti-D3 uplift with suitable O3-planes, sufficient negative D3 charge, and stabilization of the additional Kähler directions under the stated effective-field-theory assumptions?",
+        "descriptionSha256": "d26bcb9876ed53dcb2044387f2665fa71a7f496cde90d4212ebd36c45ffc5c3e",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-eb2b14b890c0c74ca5f6-challenge/packet.actual.json",
+          "sha256": "fdf795ec8a26a6eed9d5e1a5b33e65fd926efbfe38b8c985c4f16ba9366e414c",
+          "bytes": 171001
+        },
+        "sourceDescriptionRef": "d16"
+      },
+      "proposedPlacement": {
+        "unitId": "unit:01f899fb19b6229a2737879c5798aeebdf381e6c68b170bf7a21aaf41b6ce441",
+        "destinationId": "q025-candidate-question:ca98a7fe13dd48c0124cfcd6",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "policyClass": "A_exact_paired_scientific_question_home",
+        "status": "pending_coordinator_policy_admission",
+        "scopeAdmissionState": "already_admitted",
+        "scopeContentSha256": "fdb28ecbc180941e9809d24f99d053e393fe9016f0898b39432cb33521c2e93d",
+        "scopeRecordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p2",
+        "definitionSha256": "b4fb955b9c6e9f7585d98c6dace97b2b311ca347ee6113e02d38ccbbf5e855b4",
+        "sourceReviewIds": [
+          "leaf-eb2b14b890c0c74ca5f6-challenge"
+        ],
+        "basis": "existing_paired_scientific_attribution_not_paired_placement_admission",
+        "qualification": "Organizational home for the complete original source question. This does not assert fine-question equivalence, method applicability or a new scientific result."
+      },
+      "existingAdmittedPlacements": [],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:ca98a7fe13dd48c0124cfcd6",
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p2",
+          "definition": {
+            "title": "Global uplift constructions and control budgets",
+            "question": "Can compactification geometry, flux choices, moduli stabilization and throat uplift be realized together with adequate charge budgets and specified approximation control?",
+            "summary": "Organizes global existence and quantitative-control questions while preserving differences between KKLT, LVS and unspecified leading-order EFT constructions.",
+            "scope": {
+              "systems": [
+                "Type-IIB Calabi–Yau orientifolds",
+                "KKLT and LVS where identified",
+                "K3-fibred LVS geometries"
+              ],
+              "targets": [
+                "Throat fit and global embedding",
+                "D3-tadpole availability",
+                "Stabilization of throat and Kähler directions",
+                "Explicit candidate minima and correction sensitivity"
+              ],
+              "regimes": [
+                "Specified leading-order EFTs",
+                "Prescribed parametric-control quality",
+                "Source-specific warping and higher F-term corrections"
+              ],
+              "assumptions": [
+                "An explicitly reported EFT minimum is conditional on retained terms",
+                "Orientifold, flux and correction requirements must be evaluated together",
+                "K3-fibred LVS is distinct from fixed-volume K3 degeneration"
+              ],
+              "conventions": [
+                "Negative-charge availability and throat charge consumption are source-specific",
+                "An abstract announcing a model is not a full verification of that model"
+              ],
+              "includes": [
+                "Additional Kähler directions and suitable O3-plane requirements",
+                "Proceedings summaries with their dependence on an underlying study"
+              ],
+              "excludes": [
+                "Universal numerical tadpole bounds",
+                "Established stability under all omitted corrections"
+              ]
+            },
+            "readingLimit": "The 2206.12889v2 excerpt, dated 9 March 2023, reports an h1,1=4 model; its full stabilization calculation was not supplied. The 2025 proceedings text summarizes work presented around CORFU2024 and explicitly leaves stability under further corrections open. Other construction assignments may be description-only."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "c73b87db1bc2d66d1e2b7a1c07695b4e7948ec85852a88257d0373336718c1a6",
+            "challengeReplySha256": "f7756bd678d19f145d439e8c5fc784916fddab4e6545644f93b2fd5a30edd533",
+            "challengeRawSha256": "7a98381eb82f72944a02c224654591fe5e8fd3feab7778aafcacbbb69a5ac01e",
+            "challengePacketSha256": "fdf795ec8a26a6eed9d5e1a5b33e65fd926efbfe38b8c985c4f16ba9366e414c",
+            "normalizationSha256": "db1ccad7a31a762fd126d7601dc51caf0338da0127d15118a7a7a6f1ee7673c7",
+            "proposalReceiptSha256": "863bf92c80578de3b05933aebdf32d260c0a298bf80dac0b2a4770bafbad8049"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:96135ae9eda9f2d91aa85b1e",
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:r",
+          "definition": {
+            "title": "Antibrane uplift: stabilization, consistency and effective descriptions",
+            "question": "Under which source-specific assumptions can antibrane uplift coexist with moduli stabilization, compact embedding and a reliable effective description?",
+            "summary": "No original prose scope was supplied, so the original proposal is assessed through its numerical membership. Its main concentration is coherent as a broad research family, not as one equivalent question. Local uplift matching, dynamical conifold response, global construction, decay channels, towers and phenomenology remain separate targets. The K3 degeneration comparison is retained as an alternate direction.",
+            "scope": {
+              "systems": [
+                "KKLT/KKLMMT and LVS constructions where explicitly identified",
+                "Antibranes and specified positive-tension uplift sources in compactification throats",
+                "Four-dimensional EFTs and conditional higher-dimensional descriptions"
+              ],
+              "targets": [
+                "Uplift matching and moduli response",
+                "Metastability, embedding and tadpole/control requirements",
+                "Throat-state hierarchies and superpotential mechanisms",
+                "Cosmology, soft terms and open-string stability"
+              ],
+              "regimes": [
+                "Source-specific strong, weak and unequal-throat warping",
+                "Leading-order and explicitly corrected effective descriptions",
+                "Ordinary and pre-Swampland work as well as proposed quantum-gravity tests"
+              ],
+              "assumptions": [
+                "No universal validity of a ten-dimensional condensate treatment is assumed",
+                "An EFT minimum does not establish control of omitted corrections",
+                "Historical objections and proposed resolutions remain source-qualified"
+              ],
+              "conventions": [
+                "Integrated ten-dimensional consistency constraints are distinct from D3-charge budgets",
+                "AdS precursor construction, uplift and post-uplift stability are separate stages"
+              ],
+              "includes": [
+                "The supplied obstruction, alternative-superpotential and nilpotent-superfield probes",
+                "An alternate navigation home for the fixed-volume K3 comparison"
+              ],
+              "excludes": [
+                "Treating numerical proximity as scientific equivalence",
+                "Inferring an antibrane-uplift target from K3 terminology alone",
+                "A universal no-go theorem or certification of controlled string de Sitter vacua"
+              ]
+            },
+            "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Bounded archived primary text; no equation-image or full-paper certification."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "c73b87db1bc2d66d1e2b7a1c07695b4e7948ec85852a88257d0373336718c1a6",
+            "challengeReplySha256": "f7756bd678d19f145d439e8c5fc784916fddab4e6545644f93b2fd5a30edd533",
+            "challengeRawSha256": "7a98381eb82f72944a02c224654591fe5e8fd3feab7778aafcacbbb69a5ac01e",
+            "challengePacketSha256": "fdf795ec8a26a6eed9d5e1a5b33e65fd926efbfe38b8c985c4f16ba9366e414c",
+            "normalizationSha256": "db1ccad7a31a762fd126d7601dc51caf0338da0127d15118a7a7a6f1ee7673c7",
+            "proposalReceiptSha256": "863bf92c80578de3b05933aebdf32d260c0a298bf80dac0b2a4770bafbad8049"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-eb2b14b890c0c74ca5f6-challenge",
+          "sourceOrigin": "central_source",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "instantiates"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf3",
+              "pf4",
+              "pf6",
+              "pf10",
+              "pf11",
+              "pf12",
+              "pf30",
+              "pf31",
+              "pf51"
+            ],
+            "refs": [
+              "e17",
+              "e19",
+              "e20"
+            ],
+            "reason": "specialized",
+            "note": "The supplied v2 abstract reports an h1,1=4 model; inflation is prospective.",
+            "home": "q2",
+            "identity": "s",
+            "title": "K3-fibred LVS uplift with O3-planes and extra Kähler directions"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "instantiates"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf3",
+              "pf4",
+              "pf6",
+              "pf10",
+              "pf11",
+              "pf12",
+              "pf30",
+              "pf31",
+              "pf51"
+            ],
+            "refs": [
+              "e17",
+              "e19",
+              "e20"
+            ],
+            "reason": "specialized",
+            "note": "The v2 abstract reports an h1,1=4 model; inflation remains prospective.",
+            "home": "p2",
+            "identity": "s",
+            "title": "K3-fibred LVS uplift with O3-planes and extra Kähler directions"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:ca98a7fe13dd48c0124cfcd6",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "ca98a7fe13dd48c0124cfcd6a1c67cbac94c094b3060173f2505ee5ea6bec075"
+            },
+            "challenge": {
+              "rawRef": "p2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:ca98a7fe13dd48c0124cfcd6",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "ca98a7fe13dd48c0124cfcd6a1c67cbac94c094b3060173f2505ee5ea6bec075"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p2",
+              "role": "instantiates",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "c73b87db1bc2d66d1e2b7a1c07695b4e7948ec85852a88257d0373336718c1a6",
+            "challengeReplySha256": "f7756bd678d19f145d439e8c5fc784916fddab4e6545644f93b2fd5a30edd533",
+            "challengeRawSha256": "7a98381eb82f72944a02c224654591fe5e8fd3feab7778aafcacbbb69a5ac01e",
+            "challengePacketSha256": "fdf795ec8a26a6eed9d5e1a5b33e65fd926efbfe38b8c985c4f16ba9366e414c",
+            "normalizationSha256": "db1ccad7a31a762fd126d7601dc51caf0338da0127d15118a7a7a6f1ee7673c7",
+            "proposalReceiptSha256": "863bf92c80578de3b05933aebdf32d260c0a298bf80dac0b2a4770bafbad8049"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-eb2b14b890c0c74ca5f6-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-eb2b14b890c0c74ca5f6-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "c7497cbaf877f3abeb9d1cdb742f52d358ae08ef0a49961fe8d917f935eebd42",
+            "reply.jsonSha256": "82e343bbe8cceb47113e575046d5ec2eb436ff2dd1d9ad7b7d03ea2334603bff",
+            "reply.raw.txtSha256": "09adf1914b5bccf358373443505e96d24c691f179611d9f25dbd91ff7be70140",
+            "receipt.jsonSha256": "863bf92c80578de3b05933aebdf32d260c0a298bf80dac0b2a4770bafbad8049",
+            "normalization.jsonSha256": "1344a1d3bd2422acf08b394f7295032b02839e11b29da1f2f6dbc750ee799029",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-eb2b14b890c0c74ca5f6-challenge/dispatch-request.json",
+              "sha256": "bbce7d1e0eb415ff5b8f9b8dbcc9a62832a8529c46d861609df37dd8168acadd"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "A_named_home_despite_other_comparison_and_addresses_routes",
+      "source": {
+        "unitId": "unit:0c0e5bc0d09c001963465763a3e9658f3a596ca8cb8303f361b69b7867258d3a",
+        "paperId": "hep-th/9601108",
+        "description": "How do curves of Calabi–Yau singularities generate nonabelian gauge symmetry in four-dimensional Type II compactifications, and do their geometric transitions, periods and topological amplitudes match the proposed light-soliton theory?",
+        "descriptionSha256": "395e7d41ca995b511ffa3928ef28642fd62f9144bb85ce7c7019e1c7862ba6a2",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-02b834cc1fe57554842a-challenge/packet.actual.json",
+          "sha256": "07b174629ffef16f08e1e6e743334d843ba96e84bfdbe76aba52e5354c659597",
+          "bytes": 216802
+        },
+        "sourceDescriptionRef": "d60"
+      },
+      "proposedPlacement": {
+        "unitId": "unit:0c0e5bc0d09c001963465763a3e9658f3a596ca8cb8303f361b69b7867258d3a",
+        "destinationId": "q025-candidate-question:50ab896f047c0d9524a8913c",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "policyClass": "A_exact_paired_scientific_question_home",
+        "status": "pending_coordinator_policy_admission",
+        "scopeAdmissionState": "already_admitted",
+        "scopeContentSha256": "c5309107cfb4cc1c4769a8c79ea45e2f1a521e70e3e8033fdc0cdb9ee4409099",
+        "scopeRecordId": "leaf-02b834cc1fe57554842a-challenge:p2",
+        "definitionSha256": "44efaba656d90cb707836c80a955a009633079fde7d23fd52e99972e85213634",
+        "sourceReviewIds": [
+          "leaf-02b834cc1fe57554842a-challenge"
+        ],
+        "basis": "existing_paired_scientific_attribution_not_paired_placement_admission",
+        "qualification": "Organizational home for the complete original source question. This does not assert fine-question equivalence, method applicability or a new scientific result."
+      },
+      "existingAdmittedPlacements": [],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:50ab896f047c0d9524a8913c",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p2",
+          "definition": {
+            "title": "Branes and singularities as gauge-theory data",
+            "question": "How do branes and Calabi–Yau singularities encode gauge groups, matter, interactions and dynamics, and when can different gauge descriptions share geometric data?",
+            "summary": "Inverse reconstruction, dimer mechanisms, phenomenological constraints, intersecting-brane spectra and nonabelian enhancement remain separate questions.",
+            "scope": {
+              "systems": [
+                "D-branes at toric singularities",
+                "Quiver and brane-tiling constructions",
+                "Intersecting branes on K3 or Calabi–Yau threefolds",
+                "Type-II compactifications with curves of singularities"
+              ],
+              "targets": [
+                "Gauge groups, matter, charges and superpotentials",
+                "Flavor hierarchies and discrete symmetries",
+                "Gauge enhancement and geometric tests of effective dynamics"
+              ],
+              "regimes": [
+                "Local gauge constructions and compact consistency are distinguished",
+                "Four-dimensional and six-dimensional theories retain their own assumptions"
+              ],
+              "assumptions": [
+                "The supplied dimer explanation proposes a mirror D6-brane decomposition and projection",
+                "The nonabelian-enhancement analysis focuses on smooth irreducible constant-type A_(N-1) singular curves with g>1"
+              ],
+              "conventions": [
+                "Recovering quiver data is distinct from explaining the string origin of a dimer",
+                "A common toric moduli space does not identify gauge theories"
+              ],
+              "includes": [
+                "Phenomenological applications",
+                "Stability questions for engineered supersymmetry-breaking vacua"
+              ],
+              "excludes": [
+                "Automatic global consistency or vacuum stabilization from local quiver data"
+              ]
+            },
+            "readingLimit": "Primary text supports scoped proposals and example comparisons, not a universal classification of brane gauge theories."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "8e8ffc7f48c1a11ec3ef1db745707c1e78f597fccaccc853a98d84c00ed0e08f",
+            "challengeReplySha256": "262c8a29e8ef148511001f20ae3503a085b591d1470ed73f20faf5342cbb6e98",
+            "challengeRawSha256": "ad8d47fb9b6ca6ac20bb6431e209bcdb448e7903e2596d9fba12d1877bac1cbf",
+            "challengePacketSha256": "07b174629ffef16f08e1e6e743334d843ba96e84bfdbe76aba52e5354c659597",
+            "normalizationSha256": "4928f894094728d09757766664fd5a58494280345534a24f519749d35ddd7249",
+            "proposalReceiptSha256": "6c005143b96f145894a9996a06e9ac5dd8e7c2808d734ced03a1d290a9b73f77"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:a0f723b38ca7f47ed567e044",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:r",
+          "definition": {
+            "title": "Geometry, protected amplitudes and brane/CFT data",
+            "question": "How do geometric and algebraic structures organize calculable data in string compactifications and supersymmetric field theories, and which adjacent CFT or holographic questions offer distinct comparisons?",
+            "summary": "The original proposal supplies numerical memberships without a scientific scope statement. These memberships are useful after distinguishing physical targets, dimensions, regimes and evidential status. Shared geometry, modularity or partition-function language does not establish question identity.",
+            "scope": {
+              "systems": [
+                "Calabi–Yau geometries, branes and string compactifications",
+                "Specified supersymmetric gauge theories and BPS sectors",
+                "Two-dimensional CFTs, including Narain and rational theories"
+              ],
+              "targets": [
+                "Protected amplitudes, enumerative invariants and BPS spectra",
+                "Gauge content, effective actions and proposed vacuum mechanisms",
+                "Moduli geometry, phases, stability and limiting spectra",
+                "CFT classification, observables and proposed correspondences"
+              ],
+              "regimes": [
+                "Local and compact settings remain distinct",
+                "Spacetime dimension, genus, refinement and coupling limit remain source-specific",
+                "Ordinary and pre-Swampland work remains eligible"
+              ],
+              "assumptions": [
+                "Numerical proximity is candidate provenance, not scientific evidence",
+                "A broad navigation family can contain different scoped questions",
+                "Conjectures and proposed mechanisms remain conditional"
+              ],
+              "conventions": [
+                "Fine singleton status retains the exact original source question without proving atomicity or uniqueness",
+                "Source-parent kinds and access points do not determine physical premises"
+              ],
+              "includes": [
+                "Separate access to computational, interpretive and consistency questions",
+                "Boundary comparisons and alternate homes"
+              ],
+              "excludes": [
+                "A universal equivalence between all partition functions or geometries",
+                "Automatic transfer of results between dimensions or limits",
+                "Acceptance of graph-derived scattering or singularity resolution from description alone"
+              ]
+            },
+            "readingLimit": "Only supplied descriptions and bounded primary excerpts were assessed. No equations in images, full papers, later developments or external graph relations were checked. This authored region remains a proposal requiring independent review."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "8e8ffc7f48c1a11ec3ef1db745707c1e78f597fccaccc853a98d84c00ed0e08f",
+            "challengeReplySha256": "262c8a29e8ef148511001f20ae3503a085b591d1470ed73f20faf5342cbb6e98",
+            "challengeRawSha256": "ad8d47fb9b6ca6ac20bb6431e209bcdb448e7903e2596d9fba12d1877bac1cbf",
+            "challengePacketSha256": "07b174629ffef16f08e1e6e743334d843ba96e84bfdbe76aba52e5354c659597",
+            "normalizationSha256": "4928f894094728d09757766664fd5a58494280345534a24f519749d35ddd7249",
+            "proposalReceiptSha256": "6c005143b96f145894a9996a06e9ac5dd8e7c2808d734ced03a1d290a9b73f77"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:d519f3af4046a7cec5f40fdd",
+          "recordId": "leaf-ae62356d300a62e86120-challenge:r",
+          "definition": {
+            "title": "Calabi–Yau geometry, moduli spaces and effective physics",
+            "question": "How do Calabi–Yau geometry, moduli and degeneration data organize effective theories, physical spectra, quantum phases and consistency questions?",
+            "summary": "A broad research family with distinct period, distance, singularity, symmetry, arithmetic, stabilization and metric questions. The packet supplies numerical candidate membership but no original prose scope to endorse verbatim. The proposed scope is a new organization requiring independent review.",
+            "scope": {
+              "systems": [
+                "Calabi–Yau geometries and their string, M-theory and F-theory compactifications",
+                "Heterotic dual descriptions and explicitly related special-geometric or conformal theories"
+              ],
+              "targets": [
+                "Periods and physical couplings",
+                "Distances, towers and emergent limits",
+                "Singularities, topology change and connected vacua",
+                "Charged states, black objects and symmetries",
+                "Arithmetic and quantum-consistency conditions",
+                "Controlled reductions, stabilization and inflation",
+                "Metrics, spectra and gravitational decoupling"
+              ],
+              "regimes": [
+                "Finite and infinite distance",
+                "Complex-structure and Kähler sectors",
+                "Threefold, fourfold and other explicitly specified settings",
+                "Classical, perturbative, nonperturbative and numerical treatments"
+              ],
+              "assumptions": [
+                "Validity conditions remain local to each source question.",
+                "Conjectural towers, consistency criteria, uplift mechanisms and diagnostic bounds are questions or source claims, not accepted family-wide premises."
+              ],
+              "conventions": [
+                "Keep dimensions, supersymmetry, multiplet sectors, charge bases and approximation orders distinct.",
+                "Source-scoped singleton access does not establish atomicity or cross-source uniqueness."
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland work",
+                "Numerical internal metrics and explicit stabilization constructions",
+                "Mathematical questions about Calabi–Yau moduli geometry",
+                "Auxiliary or rigid theories where the supplied material explicitly compares them with compactification geometry"
+              ],
+              "excludes": [
+                "Automatic inclusion of G2 cone assumptions as Calabi–Yau results",
+                "String-star thermodynamics without a supplied Calabi–Yau connection",
+                "Treating Calabi–Yau motives in amplitudes as evidence of a compactification system",
+                "Universal conclusions inferred from shared terminology or source-object graph edges"
+              ]
+            },
+            "readingLimit": "Only supplied descriptions, bounded archived primary pages and explicitly labeled graph context were used. No equation-image or full-paper certification. Source dates and versions remain those supplied; later developments are unassessed."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "e50d893e8df9c0b77e88148adaad096bf8617c58b06d0682c1110fd35a8e035b",
+            "challengeReplySha256": "0a19bbd5bad5aa94dce0ac3da1854f86140afd0dbe8fd30219c6f1c45e8ec81b",
+            "challengeRawSha256": "3135b474c8b3bc694cb6ae4f88ec30b68cc956440f69c0e08d7cc37d7a945e66",
+            "challengePacketSha256": "c4a1d6c6c6d9931bd5a00f7d20aed98187d09f2abf725fa163b73d6636ed4b6e",
+            "normalizationSha256": "2b910047bb500971254c4123d33314358f8c69ee85981651943d7cf5487264a8",
+            "proposalReceiptSha256": "540de7570b65535b85d1688e70c552b35fd53765212b66c103645768c242ad94"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "sourceOrigin": "outside_source_probe",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "addresses"
+              },
+              {
+                "id": "p0",
+                "role": "comparison"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf8",
+              "pf10",
+              "pf15",
+              "pf17",
+              "pf55"
+            ],
+            "refs": [
+              "e8",
+              "e12"
+            ],
+            "reason": "application",
+            "note": "Finite-distance canonical singularities with constant A_(N-1) type and g>1; g=0,1 extensions are discussed separately.",
+            "home": "q2",
+            "identity": "s",
+            "title": "Nonabelian enhancement from curves of Calabi–Yau singularities"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "addresses"
+              },
+              {
+                "id": "p0",
+                "role": "comparison"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf8",
+              "pf10",
+              "pf15",
+              "pf17",
+              "pf55"
+            ],
+            "refs": [
+              "e8",
+              "e12"
+            ],
+            "reason": "application",
+            "note": "Main analysis: finite-distance canonical singularities, smooth irreducible constant-type A_(N-1) curves and g>1. The g=0,1 cases have separate qualifications.",
+            "home": "p2",
+            "identity": "s",
+            "title": "Nonabelian enhancement from curves of Calabi–Yau singularities"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:50ab896f047c0d9524a8913c",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "50ab896f047c0d9524a8913c52e402f87dfdbf9b7f4380c0c8e694ef0eaa6a4e"
+            },
+            "challenge": {
+              "rawRef": "p2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:50ab896f047c0d9524a8913c",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "50ab896f047c0d9524a8913c52e402f87dfdbf9b7f4380c0c8e694ef0eaa6a4e"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-02b834cc1fe57554842a-challenge:p2",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            },
+            {
+              "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+              "role": "comparison",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "8e8ffc7f48c1a11ec3ef1db745707c1e78f597fccaccc853a98d84c00ed0e08f",
+            "challengeReplySha256": "262c8a29e8ef148511001f20ae3503a085b591d1470ed73f20faf5342cbb6e98",
+            "challengeRawSha256": "ad8d47fb9b6ca6ac20bb6431e209bcdb448e7903e2596d9fba12d1877bac1cbf",
+            "challengePacketSha256": "07b174629ffef16f08e1e6e743334d843ba96e84bfdbe76aba52e5354c659597",
+            "normalizationSha256": "4928f894094728d09757766664fd5a58494280345534a24f519749d35ddd7249",
+            "proposalReceiptSha256": "6c005143b96f145894a9996a06e9ac5dd8e7c2808d734ced03a1d290a9b73f77"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-02b834cc1fe57554842a-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-02b834cc1fe57554842a-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "4d2c42e8a3c2bf9ad452e0ca10ca82d006c6fa1c470b0397e1bba612064b1d3c",
+            "reply.jsonSha256": "cab41722098772b69c3bd3258a2d19bf2662694e69248feab8a1e68caadd5b9f",
+            "reply.raw.txtSha256": "02d9880eb142e0bfb5055c903e185573f501ee18f56fe5b586d3084ccf3b502a",
+            "receipt.jsonSha256": "6c005143b96f145894a9996a06e9ac5dd8e7c2808d734ced03a1d290a9b73f77",
+            "normalization.jsonSha256": "289c701e08cdde195284c86065baafd166d8e2f1fc539ac81a8803915d3e9072",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-02b834cc1fe57554842a-challenge/dispatch-request.json",
+              "sha256": "e067074abff24ad855fcf00c26b8bd8fcc96326710a8639c87c5d39a7c337a8a"
+            }
+          }
+        },
+        {
+          "reviewId": "leaf-ae62356d300a62e86120-challenge",
+          "sourceOrigin": "central_source",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "addresses"
+              },
+              {
+                "id": "p3",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf3",
+              "pf9",
+              "pf15",
+              "pf23",
+              "pf30",
+              "pf31",
+              "pf60"
+            ],
+            "refs": [
+              "e14",
+              "e17"
+            ],
+            "reason": "central",
+            "note": "The source reports SU(N) with g adjoint hypermultiplets under stated assumptions and checks against examples; its main analysis restricts g>1.",
+            "home": "",
+            "identity": "s",
+            "title": "Nonabelian enhancement from curves of A-type singularities"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "addresses"
+              },
+              {
+                "id": "p3",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf3",
+              "pf9",
+              "pf15",
+              "pf23",
+              "pf30",
+              "pf31",
+              "pf60"
+            ],
+            "refs": [
+              "e14",
+              "e17"
+            ],
+            "reason": "central",
+            "note": "The source reports SU(N) with g adjoint hypermultiplets under stated assumptions and example checks; the main analysis restricts g>1.",
+            "home": "",
+            "identity": "s",
+            "title": "Nonabelian enhancement from curves of A-type singularities"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "",
+              "status": "explicitly_unresolved"
+            },
+            "challenge": {
+              "rawRef": "",
+              "status": "explicitly_unresolved"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": false,
+            "sameExplicitScientificCard": false,
+            "unchangedSupportedScope": false,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-ae62356d300a62e86120-challenge:p2",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            },
+            {
+              "recordId": "leaf-ae62356d300a62e86120-challenge:p3",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "e50d893e8df9c0b77e88148adaad096bf8617c58b06d0682c1110fd35a8e035b",
+            "challengeReplySha256": "0a19bbd5bad5aa94dce0ac3da1854f86140afd0dbe8fd30219c6f1c45e8ec81b",
+            "challengeRawSha256": "3135b474c8b3bc694cb6ae4f88ec30b68cc956440f69c0e08d7cc37d7a945e66",
+            "challengePacketSha256": "c4a1d6c6c6d9931bd5a00f7d20aed98187d09f2abf725fa163b73d6636ed4b6e",
+            "normalizationSha256": "2b910047bb500971254c4123d33314358f8c69ee85981651943d7cf5487264a8",
+            "proposalReceiptSha256": "540de7570b65535b85d1688e70c552b35fd53765212b66c103645768c242ad94"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-ae62356d300a62e86120-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-ae62356d300a62e86120-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "2326dec5f0d2cb6000f8b0bed8a23c1739386fa5c82fdfa0229e7bcc040f272e",
+            "reply.jsonSha256": "f98e75d21f267065cfe4e9951815b9a117e97aefbb8d37e85a318d71844f29b6",
+            "reply.raw.txtSha256": "fcddeb02cb837262d2ef2d933652cc1dc595e43a64e2535877f15482afdb8f4c",
+            "receipt.jsonSha256": "540de7570b65535b85d1688e70c552b35fd53765212b66c103645768c242ad94",
+            "normalization.jsonSha256": "91239466a8c4020dfb37e681cbcf6551d458c2ecea681fd3b2bdc4145f07ad58",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-ae62356d300a62e86120-challenge/dispatch-request.json",
+              "sha256": "820d1648f094b53a5646c59f9f7258f5ec1335b8633eff283eb85ec89283e331"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "B_axionic_EFT_string_anomalies",
+      "source": {
+        "unitId": "unit:002c4e5fbdee96b81e899bfae015ede31b5c59dcd22c3310352ade5f8dd25164",
+        "paperId": "2210.10797",
+        "description": "What constraints on four-dimensional N=1 gauge-gravity EFTs follow from consistency of axionic EFT-string worldsheets, beyond bulk anomaly cancellation?",
+        "descriptionSha256": "aa380bf0a1e4f0876e4003d27a7232e2984e5a42261be1e938617876ea617bb9",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-4c962dd12d07e9d303a0-challenge/packet.actual.json",
+          "sha256": "1bca6b421cec1c11e69f86cd8b88eb84460471b53114a95fc650d290721ddee9",
+          "bytes": 312877
+        },
+        "sourceDescriptionRef": "d69"
+      },
+      "proposedPlacement": {
+        "unitId": "unit:002c4e5fbdee96b81e899bfae015ede31b5c59dcd22c3310352ade5f8dd25164",
+        "destinationId": "q025-candidate-region:cea1d45ac3ad0a880f6e9112",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "policyClass": "B_whole_family_home",
+        "status": "pending_coordinator_policy_admission",
+        "scopeAdmissionState": "already_admitted",
+        "scopeContentSha256": "177f9c64625e0e628512e1e1f494749504fd78d2bd8a2b6d9698b2fe76c5ea7e",
+        "scopeRecordId": "leaf-4c962dd12d07e9d303a0-challenge:r",
+        "definitionSha256": "50203c82fc65cc21a7b43fe5c05467806f5a09337d4784b5536e0c27ef83b678",
+        "sourceReviewIds": [
+          "leaf-4c962dd12d07e9d303a0-challenge"
+        ],
+        "basis": "existing_paired_scientific_attribution_not_paired_placement_admission",
+        "qualification": "Organizational home for the complete original source question. This does not assert fine-question equivalence, method applicability or a new scientific result.",
+        "compoundSourceRetained": false
+      },
+      "existingAdmittedPlacements": [],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-region:cea1d45ac3ad0a880f6e9112",
+          "recordId": "leaf-4c962dd12d07e9d303a0-challenge:r",
+          "definition": {
+            "title": "Anomalies, global structures and consistency of field theories",
+            "question": "How do anomalies and related global, geometric or defect consistency tests constrain specified field theories, their observables and proposed ultraviolet realizations?",
+            "summary": "A navigational family spanning ordinary field theory, supergravity and string constructions. Local cancellation, global consistency, anomaly matching, geometric realization and probe tests remain distinct targets.",
+            "scope": {
+              "systems": [
+                "Chiral gauge theories and supergravity",
+                "String compactifications, branes and charged strings",
+                "Conformal theories, topological phases and Standard Model extensions"
+              ],
+              "targets": [
+                "Anomaly computation, cancellation and matching",
+                "Global gauge forms, admissible backgrounds and charge data",
+                "Additional consistency and realization tests"
+              ],
+              "regimes": [
+                "Source-specified dimensions, supersymmetry and matter content",
+                "Perturbative, global and nonperturbative questions kept distinct"
+              ],
+              "assumptions": [
+                "Anomaly cancellation is not treated as sufficient for a fixed point or quantum-gravity completion",
+                "Probe existence, charge admissibility and completeness assumptions are source-specific",
+                "Absence of a known string construction is not itself an inconsistency result"
+              ],
+              "conventions": [
+                "Gauge algebra, global gauge group and combined spacetime/internal structure are distinct data",
+                "Gauged anomalies require cancellation; background anomalies can instead require matching",
+                "Source-relative claims retain their supplied dates"
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland anomaly work",
+                "Positive consistency evidence as well as exclusions",
+                "Boundary questions about global observables and geometric realization"
+              ],
+              "excludes": [
+                "Anomalous scaling dimensions included solely because of the word anomalous",
+                "Universal completeness or uniqueness claims inferred from selected examples",
+                "Automatic promotion of source-object relations to physical premises"
+              ]
+            },
+            "readingLimit": "New scope proposal requiring independent checking. Based only on supplied descriptions, exact extracted context and bounded archived primary pages; no images or full-paper verification."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "8ed936a7556a6bf4fce58f00d1c758dd2f2d0ebc8713144c117fb6130fc3b3b6",
+            "challengeReplySha256": "5cb1503f9027570d1f4d137f16912ae1d42f1d75d47433415bbe604b76b7b47a",
+            "challengeRawSha256": "90455e6a08d554082e616f2cfb70208b98d8a57275333b2a922d2f934914eb33",
+            "challengePacketSha256": "1bca6b421cec1c11e69f86cd8b88eb84460471b53114a95fc650d290721ddee9",
+            "normalizationSha256": "b922d6dd74a0d897a5cf886a8065da0bf70c3d5039f862d902a467d95647bbc6",
+            "proposalReceiptSha256": "bbf55c63231ab68e9f0cf168864910d007db9fef535b75089442c09d7ef258ce"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-4c962dd12d07e9d303a0-challenge",
+          "sourceOrigin": "candidate_member_description",
+          "proposal": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p3",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf14",
+              "pf17"
+            ],
+            "refs": [],
+            "reason": "central",
+            "note": "Four-dimensional N=1 axionic EFT-string setting; higher-dimensional worldsheet assumptions are not imported.",
+            "home": "",
+            "identity": "s",
+            "title": "Four-dimensional EFT constraints from axionic string worldsheets"
+          },
+          "challenge": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p3",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf14",
+              "pf17"
+            ],
+            "refs": [],
+            "reason": "central",
+            "note": "Four-dimensional N=1 axionic EFT strings; higher-dimensional worldsheet assumptions are not imported.",
+            "home": "",
+            "identity": "s",
+            "title": "Four-dimensional EFT constraints from axionic string worldsheets"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "",
+              "status": "explicitly_unresolved"
+            },
+            "challenge": {
+              "rawRef": "",
+              "status": "explicitly_unresolved"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": false,
+            "sameExplicitScientificCard": false,
+            "unchangedSupportedScope": false,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-4c962dd12d07e9d303a0-challenge:p3",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "8ed936a7556a6bf4fce58f00d1c758dd2f2d0ebc8713144c117fb6130fc3b3b6",
+            "challengeReplySha256": "5cb1503f9027570d1f4d137f16912ae1d42f1d75d47433415bbe604b76b7b47a",
+            "challengeRawSha256": "90455e6a08d554082e616f2cfb70208b98d8a57275333b2a922d2f934914eb33",
+            "challengePacketSha256": "1bca6b421cec1c11e69f86cd8b88eb84460471b53114a95fc650d290721ddee9",
+            "normalizationSha256": "b922d6dd74a0d897a5cf886a8065da0bf70c3d5039f862d902a467d95647bbc6",
+            "proposalReceiptSha256": "bbf55c63231ab68e9f0cf168864910d007db9fef535b75089442c09d7ef258ce"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-4c962dd12d07e9d303a0-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-4c962dd12d07e9d303a0-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "38df9f64b6219368d39f93d22c809d05bc79ad60f675e5b1f63c30070f2e7e56",
+            "reply.jsonSha256": "aacb9424339d94bc909510fb51ae0a826e1d8b5121a3ede5986a87ceb35868ba",
+            "reply.raw.txtSha256": "6a544848cee7dfc15d8f3ec1db963de28c05a95bfdba994f1eb36cec6ebc96ee",
+            "receipt.jsonSha256": "bbf55c63231ab68e9f0cf168864910d007db9fef535b75089442c09d7ef258ce",
+            "normalization.jsonSha256": "72b76d01fb1ce79f4c6c3335ec93371a4a22891c96090dfe575fc2f8930f7260",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-4c962dd12d07e9d303a0-challenge/dispatch-request.json",
+              "sha256": "c45883918cd19b6d9538463c2c6bfe99da52e4c5945f9f7df8092b3456eb62f4"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "B_ordinary_methodological_supergravity_question",
+      "source": {
+        "unitId": "unit:020d1dd32ca6f8925762345c8d87b3d46a91cc4e47f4092de72e7cebeb21c731",
+        "paperId": "2010.13758",
+        "description": "Does super-unimodular gravity yield the same pure de Sitter supergravity action as the goldstino-brane/nilpotent-superfield constructions? The paper tests this through cubic order as a step toward understanding possible uniqueness.",
+        "descriptionSha256": "c127447e635e3a02e23b84b9ae07d12494f15d26dcd6f915f4e86e0b4ee623a4",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2e631ff674dfe9f6385-challenge/packet.actual.json",
+          "sha256": "f39e0044597171b6509e875ce1a7201a2bbefcde9bcb7639f639d405a19f271f",
+          "bytes": 190670
+        },
+        "sourceDescriptionRef": "d14"
+      },
+      "proposedPlacement": {
+        "unitId": "unit:020d1dd32ca6f8925762345c8d87b3d46a91cc4e47f4092de72e7cebeb21c731",
+        "destinationId": "q025-candidate-region:928f4934020b2d00bb1ef0c5",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "policyClass": "B_whole_family_home",
+        "status": "pending_coordinator_policy_admission",
+        "scopeAdmissionState": "already_admitted",
+        "scopeContentSha256": "6205d80a3157e78ac38f1ba7695f2336b4baa7a30a603d845c8f40984c59c7cf",
+        "scopeRecordId": "leaf-b2e631ff674dfe9f6385-challenge:r",
+        "definitionSha256": "c2d37668c97658355b1e6840c36e689347c1c7301b45bc1ea3243ae963474c94",
+        "sourceReviewIds": [
+          "leaf-b2e631ff674dfe9f6385-challenge"
+        ],
+        "basis": "existing_paired_scientific_attribution_not_paired_placement_admission",
+        "qualification": "Organizational home for the complete original source question. This does not assert fine-question equivalence, method applicability or a new scientific result.",
+        "compoundSourceRetained": false
+      },
+      "existingAdmittedPlacements": [],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:5c35ce6f7bbfa8429002f452",
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p1",
+          "definition": {
+            "title": "Formulations of nonlinearly broken supergravity",
+            "question": "How can constrained multiplets, Goldstino branes or unimodular constructions realize broken local supersymmetry, and under what stated limits can their actions be compared?",
+            "summary": "Covers distinct construction targets: gravitational-origin Goldstinos, complete component actions, off-shell N=2 couplings, brane formulations and unimodular completion.",
+            "scope": {
+              "systems": [
+                "N=1 supergravity",
+                "Off-shell N=2 supergravity with matter",
+                "Goldstino-brane and unimodular formulations"
+              ],
+              "targets": [
+                "Actions and transformation rules",
+                "Restrictions on matter couplings",
+                "Formulation comparisons and compensator completion"
+              ],
+              "regimes": [
+                "Scalar-free models where specified",
+                "Parameter-dependent de Sitter solutions",
+                "Cubic-order comparisons versus all-orders constructions"
+              ],
+              "assumptions": [
+                "Different supersymmetry counts and field contents are not interchangeable"
+              ],
+              "conventions": [
+                "All orders in fermions and all orders in compensating fields are different statements"
+              ],
+              "includes": [
+                "Gravitational curvature constraints and their dual descriptions"
+              ],
+              "excludes": [
+                "General uniqueness inferred from a cubic-order comparison",
+                "Automatic quantum-gravity completion"
+              ]
+            },
+            "readingLimit": "Primary excerpts support announced constructions and reported results for selected models. Brane and unimodular questions remain description-based; no full action or all-orders equivalence is independently verified."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "ea78ad73959112ec928de8c455814cff8f6daaffee6f11c9238476478bdde9cc",
+            "challengeReplySha256": "2f5e99a874697a6932a4e03759dbe14ac87ef1ea1350431c1a6ddfdc9b52d91b",
+            "challengeRawSha256": "dbcec978d0de71c34370b3040193d62f950e75a3e118c439a5bc54c3093c268e",
+            "challengePacketSha256": "f39e0044597171b6509e875ce1a7201a2bbefcde9bcb7639f639d405a19f271f",
+            "normalizationSha256": "9d2c9c405c3ca73a26c1df7b3778afed4a078acb9640cca4b766bf085ab7b17d",
+            "proposalReceiptSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:928f4934020b2d00bb1ef0c5",
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:r",
+          "definition": {
+            "title": "Supersymmetry breaking, Goldstino theories and gravitational applications",
+            "question": "How is supersymmetry breaking represented, diagnosed and coupled to gravity, and what follows within specified models for light fields, cosmological potentials and effective-theory control?",
+            "summary": "A useful discovery family spanning effective descriptions, constructions, diagnostics and consistency questions. The original numerical membership is retrieval provenance, not evidence that all entries answer one physical question. Setting facets, compound targets and neighboring coupling questions remain distinguishable.",
+            "scope": {
+              "systems": [
+                "Goldstino effective theories and constrained superfields",
+                "Supergravity with nonlinear local supersymmetry",
+                "Specified flux backgrounds and rigid supersymmetric matter models",
+                "Cosmological and light-matter sectors coupled to supersymmetry breaking"
+              ],
+              "targets": [
+                "Effective interactions and surviving light spectra",
+                "Supergravity actions and formulation comparisons",
+                "Spontaneous-breaking diagnostics and metastability",
+                "Inflation, vacuum energy and cosmological evolution",
+                "Model-dependent stability, cutoff and coupling questions"
+              ],
+              "regimes": [
+                "Global and local supersymmetry remain distinct",
+                "N=1 and N=2 constructions remain distinct",
+                "Stationary vacua and evolving scalar backgrounds remain distinct",
+                "Four-dimensional effective theories and the supplied five-dimensional holographic truncation are not identified"
+              ],
+              "assumptions": [
+                "No common scalar spectrum, vacuum sign or Swampland premise is imposed",
+                "Conjectural constraints and disputed instability claims are not accepted family premises"
+              ],
+              "conventions": [
+                "Numerical memberships retain their original provenance",
+                "Fine singletons preserve exact source scopes without asserting cross-source uniqueness"
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland supersymmetry-breaking work",
+                "Boundary questions about gravitino couplings and gravitational transmission",
+                "Open questions and comparisons that challenge proposed constructions"
+              ],
+              "excludes": [
+                "A universal de Sitter existence or exclusion theorem",
+                "Treating a Goldstino diagnostic as proof of infrared stability",
+                "Treating frozen photon couplings as evidence of supersymmetry breaking",
+                "Automatic equivalence of constrained, brane and unimodular formulations"
+              ]
+            },
+            "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. All supplied primary text is bounded archived text without equation-image or full-paper certification."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "ea78ad73959112ec928de8c455814cff8f6daaffee6f11c9238476478bdde9cc",
+            "challengeReplySha256": "2f5e99a874697a6932a4e03759dbe14ac87ef1ea1350431c1a6ddfdc9b52d91b",
+            "challengeRawSha256": "dbcec978d0de71c34370b3040193d62f950e75a3e118c439a5bc54c3093c268e",
+            "challengePacketSha256": "f39e0044597171b6509e875ce1a7201a2bbefcde9bcb7639f639d405a19f271f",
+            "normalizationSha256": "9d2c9c405c3ca73a26c1df7b3778afed4a078acb9640cca4b766bf085ab7b17d",
+            "proposalReceiptSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-b2e631ff674dfe9f6385-challenge",
+          "sourceOrigin": "candidate_member_description",
+          "proposal": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p1",
+                "role": "comparison"
+              }
+            ],
+            "f": [
+              "pf3",
+              "pf14",
+              "pf15",
+              "pf17"
+            ],
+            "refs": [],
+            "reason": "distinct_target",
+            "note": "Cubic-order agreement would not establish all-orders uniqueness.",
+            "home": "q1",
+            "identity": "s",
+            "title": "Cubic-order comparison of pure de Sitter supergravities"
+          },
+          "challenge": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p1",
+                "role": "comparison"
+              }
+            ],
+            "f": [
+              "pf3",
+              "pf14",
+              "pf15",
+              "pf17"
+            ],
+            "refs": [],
+            "reason": "distinct_target",
+            "note": "",
+            "home": "p1",
+            "identity": "s",
+            "title": "Cubic-order comparison of pure de Sitter supergravities"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q1",
+              "normalizedRef": "p1",
+              "originalId": "q1",
+              "candidateId": "q025-candidate-question:5c35ce6f7bbfa8429002f452",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "5c35ce6f7bbfa8429002f4520ee6273d2ba3e6ef4e9ee3380ce153a398ea75fd"
+            },
+            "challenge": {
+              "rawRef": "p1",
+              "normalizedRef": "p1",
+              "originalId": "q1",
+              "candidateId": "q025-candidate-question:5c35ce6f7bbfa8429002f452",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "5c35ce6f7bbfa8429002f4520ee6273d2ba3e6ef4e9ee3380ce153a398ea75fd"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p1",
+              "role": "comparison",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "ea78ad73959112ec928de8c455814cff8f6daaffee6f11c9238476478bdde9cc",
+            "challengeReplySha256": "2f5e99a874697a6932a4e03759dbe14ac87ef1ea1350431c1a6ddfdc9b52d91b",
+            "challengeRawSha256": "dbcec978d0de71c34370b3040193d62f950e75a3e118c439a5bc54c3093c268e",
+            "challengePacketSha256": "f39e0044597171b6509e875ce1a7201a2bbefcde9bcb7639f639d405a19f271f",
+            "normalizationSha256": "9d2c9c405c3ca73a26c1df7b3778afed4a078acb9640cca4b766bf085ab7b17d",
+            "proposalReceiptSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-b2e631ff674dfe9f6385-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2e631ff674dfe9f6385-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "dc96a6ecb8a1878de67771baf76e893a44a383e893fee3734df10690cbebab4a",
+            "reply.jsonSha256": "dbddfa5d4496c300610c31240b5a55fc746adc0aabf6deb836c9007a5d2e61d4",
+            "reply.raw.txtSha256": "81020c7c1a78c7233194232ea6ad666bdb29252771471e800aff7971b5d29de0",
+            "receipt.jsonSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45",
+            "normalization.jsonSha256": "1a4f29a54743aff7731ff9d79b9aaf318f5894e4c603525edb5bda584b3ca0b2",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2e631ff674dfe9f6385-challenge/dispatch-request.json",
+              "sha256": "8c11fc60f0ce675d8db51c66c790616d7a55fb817db13373c14191487a89886d"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "B_compound_6d_symmetry_and_anomaly_targets",
+      "source": {
+        "unitId": "unit:02dd298620e4d0edea3b1967b2805c4362f55a80a94cd7e4f6e28d5ad27a8ce2",
+        "paperId": "2412.07842",
+        "description": "How does M-theory determine the discrete SymTFT, absolute global variants, and non-invertible symmetries of 6d (2,0) D_N SCFTs, and reproduce their gravitational/R-symmetry anomaly polynomial?",
+        "descriptionSha256": "65cea7adf4f5d7f5448c52d12fd5bb315b923a23fadd98131649aab22bcad61c",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-bc459549ef9e43d5a378-challenge/packet.actual.json",
+          "sha256": "df0614cd5dc1cc67335cb963fb74817f093adc36e8f1d92768816112b38cd7a8",
+          "bytes": 200357
+        },
+        "sourceDescriptionRef": "d27"
+      },
+      "proposedPlacement": {
+        "unitId": "unit:02dd298620e4d0edea3b1967b2805c4362f55a80a94cd7e4f6e28d5ad27a8ce2",
+        "destinationId": "q025-candidate-region:132653e4842cd11f883cf50f",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "policyClass": "B_compound_whole_family_home",
+        "status": "pending_coordinator_policy_admission",
+        "scopeAdmissionState": "already_admitted",
+        "scopeContentSha256": "07f03ce1ff096f6decad953599d2576bf2a2c64f0201272a3a194992b5aa3bf5",
+        "scopeRecordId": "leaf-bc459549ef9e43d5a378-challenge:r",
+        "definitionSha256": "11070df8d9d3ff9e799da7c173f83ca0b8e7acb24805af60553e7691c83154f8",
+        "sourceReviewIds": [
+          "leaf-bc459549ef9e43d5a378-challenge"
+        ],
+        "basis": "existing_paired_scientific_attribution_not_paired_placement_admission",
+        "qualification": "Organizational home for the complete original source question. This does not assert fine-question equivalence, method applicability or a new scientific result.",
+        "compoundSourceRetained": true
+      },
+      "existingAdmittedPlacements": [],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:34b539e27e9969d6e1c9ae49",
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p2",
+          "definition": {
+            "title": "Symmetry groups, gauging and defects",
+            "question": "How are continuous and generalized symmetries of six-dimensional theories determined, screened, gauged and represented by defects?",
+            "summary": "Retains zero-form mixing, center one-form symmetry, discrete two-form symmetry and non-invertible defects as distinct targets.",
+            "scope": {
+              "systems": [
+                "Six-dimensional SCFTs and gauge theories",
+                "Gravity-coupled sectors",
+                "Related four-dimensional constructions"
+              ],
+              "targets": [
+                "Global symmetry groups and gauge-group global forms",
+                "Screening and gauging",
+                "Symmetry operators, TFTs and fusion",
+                "Mixed anomalies and global variants"
+              ],
+              "regimes": [
+                "Gravity decoupling versus coupling to gravity",
+                "Tensor branches",
+                "Twisted compactifications where stated"
+              ],
+              "assumptions": [],
+              "conventions": [
+                "Zero-, one- and two-form symmetries are not interchangeable",
+                "Bulk gauge symmetry and worldsheet global symmetry are distinguished"
+              ],
+              "includes": [
+                "SymTFT and non-invertible constructions"
+              ],
+              "excludes": [
+                "Automatic extension of geometric bounds to all quantum gravity"
+              ]
+            },
+            "readingLimit": "Mostly supplied descriptions. No complete symmetry-group, fusion-rule or anomaly calculation was audited."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "6a33f1de066f31a5f3182cc21e89c642fa8aeb9066b5caed6c417d7b619a85b7",
+            "challengeReplySha256": "85f66aa7ccb976818bdc60e010443535d1279cbe9c74b9d1ae28322556662996",
+            "challengeRawSha256": "668f7fe4feeac98267d7db18ea7d55309887c2fa538ef52736ccb2882c5a0b27",
+            "challengePacketSha256": "df0614cd5dc1cc67335cb963fb74817f093adc36e8f1d92768816112b38cd7a8",
+            "normalizationSha256": "a65b9bb617e2c4a96d3b66767f7a6d1147d9d3f12ac7ca129e5fa8aa457611c8",
+            "proposalReceiptSha256": "ea81bb1cc8c7064a37931418ca45f72c98670ffe6670376728230e75d5b0145d"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:132653e4842cd11f883cf50f",
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:r",
+          "definition": {
+            "title": "Six-dimensional theories: geometry, anomalies, symmetries and limits",
+            "question": "How do geometry, anomalies, symmetry structures and limiting or compactification regimes organize six-dimensional field theories and string vacua?",
+            "summary": "A useful broad family spans gravity-coupled theories, decoupled SCFTs, string vacua and their lower-dimensional descriptions. No original scientific region statement was supplied, so the critique concerns numerical membership rather than an attributed universal claim. The proposed scope separates physical targets and retains adjacent applications.",
+            "scope": {
+              "systems": [
+                "Six-dimensional gauge theories and supergravities",
+                "Six-dimensional SCFTs and proposed critical theories",
+                "Six-dimensional string vacua with differing supersymmetry",
+                "Associated branes, strings and chiral form fields"
+              ],
+              "targets": [
+                "Anomaly cancellation and further consistency conditions",
+                "Construction, classification and distinguishing data",
+                "Symmetry groups, gauging and defects",
+                "Weak-coupling limits and effective descriptions"
+              ],
+              "regimes": [
+                "Dynamical gravity and gravity decoupling are separate regimes",
+                "Tensor, Higgs and mixed branches where specified",
+                "Circle and torus reductions and lower-dimensional applications",
+                "Frozen and unfrozen constructions where specified"
+              ],
+              "assumptions": [
+                "Numerical selection roles do not establish scientific membership",
+                "Anomaly cancellation alone is not treated as sufficient for ultraviolet consistency",
+                "A missing construction does not by itself establish inconsistency"
+              ],
+              "conventions": [
+                "Preserve source supersymmetry labels and form degrees",
+                "Distinguish operator mass dimension from spacetime dimension",
+                "Preserve source dates and conjectural versus demonstrated status"
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland work",
+                "Relevant outside probes of six-dimensional consistency",
+                "Explicitly labeled method and application overlaps"
+              ],
+              "excludes": [
+                "Standard Model operator classification as a six-dimensional member solely because it concerns dimension-six operators",
+                "Claims of universal classification or fine-question equivalence unsupported by the supplied material"
+              ]
+            },
+            "readingLimit": "Supplied descriptions, exact object relations and bounded primary pages only. No images, full-paper verification or later literature were consulted. This revised region is a proposal requiring independent review."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "6a33f1de066f31a5f3182cc21e89c642fa8aeb9066b5caed6c417d7b619a85b7",
+            "challengeReplySha256": "85f66aa7ccb976818bdc60e010443535d1279cbe9c74b9d1ae28322556662996",
+            "challengeRawSha256": "668f7fe4feeac98267d7db18ea7d55309887c2fa538ef52736ccb2882c5a0b27",
+            "challengePacketSha256": "df0614cd5dc1cc67335cb963fb74817f093adc36e8f1d92768816112b38cd7a8",
+            "normalizationSha256": "a65b9bb617e2c4a96d3b66767f7a6d1147d9d3f12ac7ca129e5fa8aa457611c8",
+            "proposalReceiptSha256": "ea81bb1cc8c7064a37931418ca45f72c98670ffe6670376728230e75d5b0145d"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-bc459549ef9e43d5a378-challenge",
+          "sourceOrigin": "candidate_member_description",
+          "proposal": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "specializes"
+              },
+              {
+                "id": "p0",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf1",
+              "pf4",
+              "pf6",
+              "pf15"
+            ],
+            "refs": [],
+            "reason": "specialized",
+            "note": "D_N (2,0) SymTFT/global variants and the gravitational/R-symmetry anomaly polynomial are distinct targets.",
+            "home": "q2",
+            "identity": "?",
+            "title": "D_N (2,0) SymTFT, global variants and anomaly polynomial"
+          },
+          "challenge": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "specializes"
+              },
+              {
+                "id": "p0",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf1",
+              "pf4",
+              "pf6",
+              "pf15"
+            ],
+            "refs": [],
+            "reason": "specialized",
+            "note": "SymTFT/global variants and the gravitational/R-symmetry anomaly polynomial require compound-target reconciliation.",
+            "home": "p2",
+            "identity": "?",
+            "title": "D_N (2,0) SymTFT, global variants and anomaly polynomial"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:34b539e27e9969d6e1c9ae49",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "34b539e27e9969d6e1c9ae49536f40d6728704917816eb5b5340c43e8b417394"
+            },
+            "challenge": {
+              "rawRef": "p2",
+              "normalizedRef": "p2",
+              "originalId": "q2",
+              "candidateId": "q025-candidate-question:34b539e27e9969d6e1c9ae49",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "34b539e27e9969d6e1c9ae49536f40d6728704917816eb5b5340c43e8b417394"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-bc459549ef9e43d5a378-challenge:p2",
+              "role": "specializes",
+              "independentRoleAgreement": true
+            },
+            {
+              "recordId": "leaf-bc459549ef9e43d5a378-challenge:p0",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "6a33f1de066f31a5f3182cc21e89c642fa8aeb9066b5caed6c417d7b619a85b7",
+            "challengeReplySha256": "85f66aa7ccb976818bdc60e010443535d1279cbe9c74b9d1ae28322556662996",
+            "challengeRawSha256": "668f7fe4feeac98267d7db18ea7d55309887c2fa538ef52736ccb2882c5a0b27",
+            "challengePacketSha256": "df0614cd5dc1cc67335cb963fb74817f093adc36e8f1d92768816112b38cd7a8",
+            "normalizationSha256": "a65b9bb617e2c4a96d3b66767f7a6d1147d9d3f12ac7ca129e5fa8aa457611c8",
+            "proposalReceiptSha256": "ea81bb1cc8c7064a37931418ca45f72c98670ffe6670376728230e75d5b0145d"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-bc459549ef9e43d5a378-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-bc459549ef9e43d5a378-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "7996cc791b5b79b7e7a3c283543a64ffdfaa331cc657627ec653d5695f5a8263",
+            "reply.jsonSha256": "75bddd986b96e1dd5b0a64f1e07563e5faf4ed73bc94ca25446499c896955429",
+            "reply.raw.txtSha256": "4d9aaacf7e78f11c1d600cfcb53009f082e010167f55d7f49b78f43e688da7a7",
+            "receipt.jsonSha256": "ea81bb1cc8c7064a37931418ca45f72c98670ffe6670376728230e75d5b0145d",
+            "normalization.jsonSha256": "03385c0331c85e370c98e4d206caf2ddcd0a24c5c7a894b6aa9fa1415ba7b9cd",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-bc459549ef9e43d5a378-challenge/dispatch-request.json",
+              "sha256": "ca9c9d3211d2b2909aa64be994689a955bb63561e0c5d34776074643c88860bc"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "cross_context_do_not_add_duplicate_mass",
+      "source": {
+        "unitId": "unit:128622e23dbd0a7aabb43506baba17e3b38181fb22558a0db701685bfbda855c",
+        "paperId": "astro-ph/0408456",
+        "description": "How well can future CMB–galaxy correlations constrain the physical scale and amplitude of dark-energy clustering, and thereby test canonical single-scalar quintessence?",
+        "descriptionSha256": "a660ffc2b2fbf6656f11b1445e2d7f7f0133c9f14939c6dbf9cc1ec754ea37bb",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-45dcaa67fd021056a4f5-challenge/packet.actual.json",
+          "sha256": "e0dd5f8ba57a434d1b336539fde115de839c1eb65e60f197f39bee27d996e5a6",
+          "bytes": 221418
+        },
+        "sourceDescriptionRef": "d35"
+      },
+      "proposedPlacement": null,
+      "existingAdmittedPlacements": [
+        {
+          "unitId": "unit:128622e23dbd0a7aabb43506baba17e3b38181fb22558a0db701685bfbda855c",
+          "destinationId": "q025-candidate-question:890bb92e9010e75ad9773a62",
+          "role": "member",
+          "status": "accepted",
+          "basis": "description_checked",
+          "allocationWeight": 1,
+          "workRelation": "on",
+          "qualification": "This source addresses a question within this scoped destination. Its specific system, regime and source-reading limits remain attached; membership does not equate the source statement with the broader question.",
+          "evidenceRefs": [
+            {
+              "localRef": "d95",
+              "kind": "description",
+              "unitIndex": 95,
+              "unitId": "unit:128622e23dbd0a7aabb43506baba17e3b38181fb22558a0db701685bfbda855c",
+              "textSha256": "a660ffc2b2fbf6656f11b1445e2d7f7f0133c9f14939c6dbf9cc1ec754ea37bb"
+            }
+          ],
+          "decisionId": "decision:organizational-home:6de9a330ba381097fa610484"
+        }
+      ],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:890bb92e9010e75ad9773a62",
+          "recordId": "leaf-69a2dba0396b3e83d82b-challenge:p5",
+          "definition": {
+            "title": "Structure tests beyond background expansion",
+            "question": "Which growth, lensing and nonlinear observables distinguish cosmologies that have similar expansion histories or matched linear clustering amplitudes?",
+            "summary": "Dark-energy clustering, coupled matter and light massive relics offer different tests; shared S8 motivation does not identify their dynamics.",
+            "scope": {
+              "systems": [
+                "Clustering dark energy",
+                "Coupled dark matter",
+                "Subdominant light massive relics"
+              ],
+              "targets": [
+                "Growth and lensing discrimination",
+                "σ8 and S8 comparisons",
+                "Nonlinear signatures and distribution sensitivity"
+              ],
+              "regimes": [
+                "Linear and reduced perturbation tests",
+                "Nonlinear structure",
+                "High-redshift galaxy applications"
+              ],
+              "assumptions": [
+                "Matched background or linear amplitude does not establish observational equivalence",
+                "Forecast and simulation premises remain source-specific"
+              ],
+              "conventions": [
+                "σ8 and S8 are distinct quantities",
+                "Reduced perturbative tests do not certify full stability"
+              ],
+              "includes": [
+                "Ordinary structure probes without quantum-gravity motivation"
+              ],
+              "excludes": [
+                "Treating a growth remedy as an H0 remedy without an explicit joint test"
+              ]
+            },
+            "readingLimit": "Bounded LiMR excerpts describe simulations and comparison design. Other targets are description-level; proposed tidal-tail tests and forecasts are not completed observations."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "f71fbff2fe7b0982f6189900a5cfe127e3c4b7d4d38703e2bbec0f38c7bfa8da",
+            "challengeReplySha256": "979d583f705ebaf7ca13742560018f0b605caaf61e06fce8500fede0ba0f8ec4",
+            "challengeRawSha256": "d8e57fa15f6975c180b6f76ef891c1e35844e446f7ab96fe9f5ea2a1e91e3790",
+            "challengePacketSha256": "0add7140ebddd86245dabc6050172d0a13cd10a08dbae3f4f1d329a992f5a8cd",
+            "normalizationSha256": "825a7e2113a215ec26c01c25516f10a7a398d53cb818b1b3f8aab599fb93c5ad",
+            "proposalReceiptSha256": "a951d0a1f380cac76f41160417c48e67d84f216cd9321726c53070f780e7e48d"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-question:9003410b1ddf627c787f413f",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p6",
+          "definition": {
+            "title": "Perturbations, growth and clustering",
+            "question": "Which linear perturbation, matter-power and CMB–galaxy observables can distinguish the supplied dark-energy mechanisms?",
+            "summary": "Separate calculations of model perturbations from forecasts for measuring the scale and amplitude of dark-energy clustering.",
+            "scope": {
+              "systems": [
+                "Canonical and coupled quintessence",
+                "Assisted early–late dark energy",
+                "Thawing Slotheon dark energy"
+              ],
+              "targets": [
+                "Dark-energy and matter perturbations",
+                "Linear growth and matter power",
+                "Scale and amplitude of dark-energy clustering"
+              ],
+              "regimes": [
+                "Linear perturbation theory",
+                "Large-scale and horizon-scale clustering",
+                "Source-specific survey forecasts"
+              ],
+              "assumptions": [
+                "The canonical scalar is a tested model or comparison, not a shared kinetic action for every entry.",
+                "ISW forecasts retain their source survey and initial-condition assumptions."
+              ],
+              "conventions": [
+                "A forecasted correlation measurement is not an observed detection of dark-energy clustering."
+              ],
+              "includes": [
+                "Slotheon comparisons with canonical quintessence and ΛCDM",
+                "All-sky ISW–galaxy forecasting"
+              ],
+              "excludes": [
+                "A universal forecast sensitivity",
+                "Inferring a background-model equivalence from similar perturbation curves"
+              ]
+            },
+            "readingLimit": "The Slotheon excerpts announce calculations and identify a noncanonical gravitational derivative coupling. ISW sensitivities belong to the 2004 forecast; cosmic variance limits the smooth-equation-of-state application."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "e5788ec32bf4dbd9b7b1ca482a31e9a2aea8de0b04fc65cc89581b5ce8cb0550",
+            "challengeReplySha256": "d0ab364bd06f0d09cd06bebb1a03091e1941e0a73c39741b540f622dcc89f27b",
+            "challengeRawSha256": "631b6285276dc5111172e7eda4e4489dd3501adb7349aa6828dff627507a4944",
+            "challengePacketSha256": "e0dd5f8ba57a434d1b336539fde115de839c1eb65e60f197f39bee27d996e5a6",
+            "normalizationSha256": "9fa165da0b1196bc7a8a4a20e983440f0986f3f4f4952102b7f7a15729879b9b",
+            "proposalReceiptSha256": "27ae4120a4a519a146a031d1b0ec4b9ee7cc2b5c2ce26d7684bc01b09bfbd303"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-question:a6d028bd811fe2692cbb4bc3",
+          "recordId": "leaf-d0f7439b59828c4c552c-challenge:p3",
+          "definition": {
+            "title": "Cosmological parameters and dark-energy clustering",
+            "question": "What cosmological parameters and tests of late-time dynamics follow from CMB spectra, lensing and CMB–galaxy correlations under specified cosmological models?",
+            "summary": "Connects general cosmological inference with a distinct ISW-based forecast for dark-energy clustering.",
+            "scope": {
+              "systems": [
+                "CMB temperature, polarization and lensing",
+                "Galaxy distributions and evolving gravitational potentials"
+              ],
+              "targets": [
+                "Cosmological parameters and cross-probe consistency",
+                "Scale and amplitude of dark-energy clustering",
+                "Tests of canonical single-scalar quintessence"
+              ],
+              "regimes": [
+                "Final full-mission Planck parameter inference",
+                "Large-scale, late-time ISW correlations",
+                "Source-dated galaxy-survey forecasts"
+              ],
+              "assumptions": [
+                "Base ΛCDM and selected extensions are analysis models.",
+                "Canonical quintessence is a tested hypothesis.",
+                "The supplied clustering argument has stated adiabatic and force assumptions."
+              ],
+              "conventions": [
+                "Forecast capability is not an achieved measurement."
+              ],
+              "includes": [
+                "External-probe comparisons",
+                "Dark-energy clustering rather than only homogeneous evolution"
+              ],
+              "excludes": [
+                "Identifying an ISW clustering observable with cosmic birefringence"
+              ]
+            },
+            "readingLimit": "Planck parameter scope is description-only. The dark-energy forecast is supported by bounded text from the version dated 1 December 2004; its predicted sensitivity is not a current survey result."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "dc06d6ff28faf4bd9a68bd11017af162f41258552f13e6596d9e37862def63bc",
+            "challengeReplySha256": "9c854df75c10d16cd92369b08b8acd39e0e4b3b46746ae5114866fae6146142d",
+            "challengeRawSha256": "1e65810611b65de6097deb94b463b1fc6b620e0f54537a366f4510bba68616a2",
+            "challengePacketSha256": "39ff05705e63406f0cdaca4dc2925309974eaa58c3faac9c3e9321fb7567a9b8",
+            "normalizationSha256": "d09a9cb6a9d597e039be38032e4eb976ee80066b613940628d1e2e6c3c75aec7",
+            "proposalReceiptSha256": "174a90cf8563798416b1a02b14c4313b9fdb711d44dc47e33e3ecc1c3dea60d3"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:8fa82f3539d7091f52c46952",
+          "recordId": "leaf-69a2dba0396b3e83d82b-challenge:r",
+          "definition": {
+            "title": "Cosmic expansion, dark sectors and cosmological inference",
+            "question": "How can observations distinguish explanations of cosmic expansion and structure, and which assumptions, dynamics and inference choices control those comparisons?",
+            "summary": "The original packet supplies numerical membership without an authored scientific scope. Much of it concerns expansion, dark energy and cosmological discrepancies, but shared H0 motivation or AdS terminology does not establish common mechanisms, assumptions or question identity. The proposed organization preserves those differences and provides alternate access for peripheral targets.",
+            "scope": {
+              "systems": [
+                "Observed cosmological expansion and structure",
+                "ΛCDM and specified extensions",
+                "Scalar, fluid, vacuum and compact-object dark sectors"
+              ],
+              "targets": [
+                "Expansion and dark-energy inference",
+                "H0 and structure-growth comparisons",
+                "Model discrimination and observational robustness",
+                "Conditional theoretical viability"
+              ],
+              "regimes": [
+                "Source-specific late-time and low-redshift windows",
+                "Equality and pre-recombination transients",
+                "High-redshift galaxy observations",
+                "Separate future and asymptotic questions"
+              ],
+              "assumptions": [
+                "Datasets, priors, calibration and model assumptions remain source-specific",
+                "Quantum-gravity conjectures are conditional motivations or tests",
+                "No common spatial flatness, coupling fraction or perturbation prescription is imposed"
+              ],
+              "conventions": [
+                "Historical discrepancies and preferences retain their source dates",
+                "Background fits, perturbative predictions and nonlinear tests are distinct",
+                "Settings, claims and methods are not automatically independent physical questions"
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland cosmology",
+                "Null results, systematic explanations and premise checks",
+                "Inference methods and related theoretical questions with qualified homes"
+              ],
+              "excludes": [
+                "Acceptance of numerical proximity as scientific equivalence",
+                "Universal resolution of any cosmological tension",
+                "Treating every source as evidence for the same dark-sector mechanism"
+              ]
+            },
+            "readingLimit": "All supplied descriptions and bounded primary excerpts were read. Only rows with their own supplied primaryRefs use excerpt basis. No full-paper, equation-image, independent data or current-literature verification."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "f71fbff2fe7b0982f6189900a5cfe127e3c4b7d4d38703e2bbec0f38c7bfa8da",
+            "challengeReplySha256": "979d583f705ebaf7ca13742560018f0b605caaf61e06fce8500fede0ba0f8ec4",
+            "challengeRawSha256": "d8e57fa15f6975c180b6f76ef891c1e35844e446f7ab96fe9f5ea2a1e91e3790",
+            "challengePacketSha256": "0add7140ebddd86245dabc6050172d0a13cd10a08dbae3f4f1d329a992f5a8cd",
+            "normalizationSha256": "825a7e2113a215ec26c01c25516f10a7a398d53cb818b1b3f8aab599fb93c5ad",
+            "proposalReceiptSha256": "a951d0a1f380cac76f41160417c48e67d84f216cd9321726c53070f780e7e48d"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:9e70e2a41edf777edaea9f5c",
+          "recordId": "leaf-d0f7439b59828c4c552c-challenge:r",
+          "definition": {
+            "title": "CMB inference, primordial physics and electromagnetic propagation",
+            "question": "What can CMB observations and their theoretical interpretation establish about primordial physics, cosmic propagation and cosmological dynamics, given foregrounds, instrumental errors and model limitations?",
+            "summary": "A broad navigation family connecting measurements, forecasts, statistical tests and theoretical viability questions. The supplied numerical membership needs explicit boundaries around questions lacking a demonstrated CMB connection.",
+            "scope": {
+              "systems": [
+                "CMB temperature, polarization, lensing and blackbody radiation",
+                "Galactic polarized foregrounds",
+                "CMB-producing cosmological models and CMB–galaxy correlations"
+              ],
+              "targets": [
+                "Cosmic polarization rotation and its identification",
+                "Primordial tensors, scalar spectra, statistical properties and defects",
+                "Cosmological parameters and dark-energy clustering",
+                "Survey capabilities and control of measurement errors",
+                "Validity of selected warped-throat and electromagnetic-propagation models"
+              ],
+              "regimes": [
+                "Source-dated observations and forecasts",
+                "Primordial generation, subsequent photon propagation and late-time cosmological structure"
+              ],
+              "assumptions": [
+                "Model assumptions belong to their individual questions.",
+                "No shared Swampland premise or common new-physics mechanism is imposed."
+              ],
+              "conventions": [
+                "Preserve source-specific data releases, confidence conventions and rotation signs."
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland cosmological work",
+                "Different observables, systems and methods linked by a substantive CMB question"
+              ],
+              "excludes": [
+                "Automatic equivalence of questions sharing polarization or dark-sector terminology",
+                "GRB shock magnetogenesis as a CMB question",
+                "An inferred CMB prediction from the supplied finite-amplitude Weyl-selection description"
+              ]
+            },
+            "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Description-only units remain explicitly distinguished."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "dc06d6ff28faf4bd9a68bd11017af162f41258552f13e6596d9e37862def63bc",
+            "challengeReplySha256": "9c854df75c10d16cd92369b08b8acd39e0e4b3b46746ae5114866fae6146142d",
+            "challengeRawSha256": "1e65810611b65de6097deb94b463b1fc6b620e0f54537a366f4510bba68616a2",
+            "challengePacketSha256": "39ff05705e63406f0cdaca4dc2925309974eaa58c3faac9c3e9321fb7567a9b8",
+            "normalizationSha256": "d09a9cb6a9d597e039be38032e4eb976ee80066b613940628d1e2e6c3c75aec7",
+            "proposalReceiptSha256": "174a90cf8563798416b1a02b14c4313b9fdb711d44dc47e33e3ecc1c3dea60d3"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:d0aad74f894499b6a6598789",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:r",
+          "definition": {
+            "title": "Quintessence and related dynamical dark energy",
+            "question": "How can dynamical dark-energy models generate cosmic acceleration, be distinguished observationally, and satisfy their stated theoretical conditions?",
+            "summary": "The original numerical grouping is scientifically unvalidated, and no original prose scope was supplied. A usable proposal connects quintessence dynamics, dark-sector interactions, model construction, observational inference and consistency tests while retaining related thermal and modified-gravity alternatives.",
+            "scope": {
+              "systems": [
+                "Canonical, axionic, assisted and interacting quintessence",
+                "Inflation-linked scalars, dilatons, moduli and five-dimensional radion models",
+                "Thermal hidden sectors and radiation-producing scalar fields",
+                "Slotheon and matter-coupled f(Q) comparison models"
+              ],
+              "targets": [
+                "Background histories, initial conditions and parameter inference",
+                "Coincidence, apparent phantom behavior and historical cosmological tensions",
+                "Perturbations, clustering and observational discrimination",
+                "Potential construction, radiative sensitivity and conditional consistency tests"
+              ],
+              "regimes": [
+                "Source-specific primordial, matter-era, late-time and future evolution",
+                "Thawing, freezing, scaling and transient acceleration",
+                "Source-dated datasets, reconstructions and observing prospects"
+              ],
+              "assumptions": [
+                "Canonical kinetics, sector couplings, dimensionality and potential restrictions remain model-specific.",
+                "Ordinary and pre-Swampland studies remain eligible.",
+                "Numerical proximity and shared terminology do not establish question identity."
+              ],
+              "conventions": [
+                "Distinguish scalar, effective and observationally inferred equations of state.",
+                "Preserve the source-specific distinction between physical and conformal expansion rates.",
+                "Treat conjectures conditionally and historical observational claims as dated context."
+              ],
+              "includes": [
+                "Alternate homes for mechanisms outside a narrower canonical-quintessence core",
+                "Source-scoped access to compound questions without claiming atomicity"
+              ],
+              "excludes": [
+                "A universal dark-sector coupling or quantum-gravity premise",
+                "Current observational validation inferred from archived claims",
+                "Demonstrated ultraviolet completion or universal stability",
+                "Fine identity inferred solely from overview-card membership"
+              ]
+            },
+            "readingLimit": "Supplied descriptions, bounded primary pages and explicitly labeled graph context only; no images, full-paper verification or external checks. This newly authored region remains a proposal requiring independent review or coordinator adjudication."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "e5788ec32bf4dbd9b7b1ca482a31e9a2aea8de0b04fc65cc89581b5ce8cb0550",
+            "challengeReplySha256": "d0ab364bd06f0d09cd06bebb1a03091e1941e0a73c39741b540f622dcc89f27b",
+            "challengeRawSha256": "631b6285276dc5111172e7eda4e4489dd3501adb7349aa6828dff627507a4944",
+            "challengePacketSha256": "e0dd5f8ba57a434d1b336539fde115de839c1eb65e60f197f39bee27d996e5a6",
+            "normalizationSha256": "9fa165da0b1196bc7a8a4a20e983440f0986f3f4f4952102b7f7a15729879b9b",
+            "proposalReceiptSha256": "27ae4120a4a519a146a031d1b0ec4b9ee7cc2b5c2ce26d7684bc01b09bfbd303"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "sourceOrigin": "outside_source_probe",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p6",
+                "role": "specializes"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf1",
+              "pf14",
+              "pf15",
+              "pf40",
+              "pf42"
+            ],
+            "refs": [
+              "e20",
+              "e22"
+            ],
+            "reason": "distinct_target",
+            "note": "A 2004 clustering forecast under source assumptions; cosmic variance limits its smooth-w application.",
+            "home": "q6",
+            "identity": "s",
+            "title": "ISW–galaxy tests of dark-energy clustering"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p6",
+                "role": "specializes"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf1",
+              "pf14",
+              "pf15",
+              "pf40",
+              "pf42"
+            ],
+            "refs": [
+              "e20",
+              "e22"
+            ],
+            "reason": "distinct_target",
+            "note": "The 2004 forecast concerns spatial clustering; its smooth-w application is limited by CMB cosmic variance.",
+            "home": "p6",
+            "identity": "s",
+            "title": "ISW–galaxy tests of dark-energy clustering"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q6",
+              "normalizedRef": "p6",
+              "originalId": "q6",
+              "candidateId": "q025-candidate-question:9003410b1ddf627c787f413f",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "9003410b1ddf627c787f413ff46301a1393af805b314fca75ac720e76d5614cf"
+            },
+            "challenge": {
+              "rawRef": "p6",
+              "normalizedRef": "p6",
+              "originalId": "q6",
+              "candidateId": "q025-candidate-question:9003410b1ddf627c787f413f",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "9003410b1ddf627c787f413ff46301a1393af805b314fca75ac720e76d5614cf"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p6",
+              "role": "specializes",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "e5788ec32bf4dbd9b7b1ca482a31e9a2aea8de0b04fc65cc89581b5ce8cb0550",
+            "challengeReplySha256": "d0ab364bd06f0d09cd06bebb1a03091e1941e0a73c39741b540f622dcc89f27b",
+            "challengeRawSha256": "631b6285276dc5111172e7eda4e4489dd3501adb7349aa6828dff627507a4944",
+            "challengePacketSha256": "e0dd5f8ba57a434d1b336539fde115de839c1eb65e60f197f39bee27d996e5a6",
+            "normalizationSha256": "9fa165da0b1196bc7a8a4a20e983440f0986f3f4f4952102b7f7a15729879b9b",
+            "proposalReceiptSha256": "27ae4120a4a519a146a031d1b0ec4b9ee7cc2b5c2ce26d7684bc01b09bfbd303"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-45dcaa67fd021056a4f5-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-45dcaa67fd021056a4f5-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "d3e65853d43d571f743550472b16924daacc850dc5271e6223bbfa51ff28d00f",
+            "reply.jsonSha256": "df726b215fff2eb2e54aa15bd2c20d279d6603bfe36d95fb411fe049612defe6",
+            "reply.raw.txtSha256": "325b25df91d0bf22af6d6518a73c37a9479c9927a5d1464da692cba5bccc1758",
+            "receipt.jsonSha256": "27ae4120a4a519a146a031d1b0ec4b9ee7cc2b5c2ce26d7684bc01b09bfbd303",
+            "normalization.jsonSha256": "e1b35353b7b78f9829c66d1afcdef9358880736d119f9e9e3f2c796efc1887fe",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-45dcaa67fd021056a4f5-challenge/dispatch-request.json",
+              "sha256": "3c6f3b5087d3ec8c6ba49e9ab142730dd8922c5d7bb32115b46522044b7576d6"
+            }
+          }
+        },
+        {
+          "reviewId": "leaf-69a2dba0396b3e83d82b-challenge",
+          "sourceOrigin": "candidate_member_description",
+          "proposal": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p5",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf3",
+              "pf9",
+              "pf16",
+              "pf17",
+              "pf44"
+            ],
+            "refs": [],
+            "reason": "specialized",
+            "note": "Future CMB–galaxy forecast, not a completed clustering measurement.",
+            "home": "q5",
+            "identity": "s",
+            "title": "Forecasting dark-energy clustering with CMB–galaxy correlations"
+          },
+          "challenge": {
+            "b": "description",
+            "d": "member",
+            "q": [
+              {
+                "id": "p5",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf3",
+              "pf9",
+              "pf16",
+              "pf17",
+              "pf44"
+            ],
+            "refs": [],
+            "reason": "specialized",
+            "note": "A forecast for future CMB–galaxy correlations.",
+            "home": "p5",
+            "identity": "s",
+            "title": "Forecasting dark-energy clustering with CMB–galaxy correlations"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q5",
+              "normalizedRef": "p5",
+              "originalId": "q5",
+              "candidateId": "q025-candidate-question:890bb92e9010e75ad9773a62",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "890bb92e9010e75ad9773a62e4c8a0039e3de389ab274d56fc31cc84e1a2cbb2"
+            },
+            "challenge": {
+              "rawRef": "p5",
+              "normalizedRef": "p5",
+              "originalId": "q5",
+              "candidateId": "q025-candidate-question:890bb92e9010e75ad9773a62",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "890bb92e9010e75ad9773a62e4c8a0039e3de389ab274d56fc31cc84e1a2cbb2"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-69a2dba0396b3e83d82b-challenge:p5",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "f71fbff2fe7b0982f6189900a5cfe127e3c4b7d4d38703e2bbec0f38c7bfa8da",
+            "challengeReplySha256": "979d583f705ebaf7ca13742560018f0b605caaf61e06fce8500fede0ba0f8ec4",
+            "challengeRawSha256": "d8e57fa15f6975c180b6f76ef891c1e35844e446f7ab96fe9f5ea2a1e91e3790",
+            "challengePacketSha256": "0add7140ebddd86245dabc6050172d0a13cd10a08dbae3f4f1d329a992f5a8cd",
+            "normalizationSha256": "825a7e2113a215ec26c01c25516f10a7a398d53cb818b1b3f8aab599fb93c5ad",
+            "proposalReceiptSha256": "a951d0a1f380cac76f41160417c48e67d84f216cd9321726c53070f780e7e48d"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-69a2dba0396b3e83d82b-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-69a2dba0396b3e83d82b-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "2a81e5555c5ce16f49c90ed2786688a2f1b6d967ad32dd57cf31b964933d8795",
+            "reply.jsonSha256": "01fcb606396d2bf333bc6ae616a34c2959de848a3545ac3945d77574a771779c",
+            "reply.raw.txtSha256": "271bc09dce7f659e632f0f923d43b7f25ad19118288177170543460458aa9cda",
+            "receipt.jsonSha256": "a951d0a1f380cac76f41160417c48e67d84f216cd9321726c53070f780e7e48d",
+            "normalization.jsonSha256": "c77b20bb4e6740911262a4b949af6aee15c2c085b669f0de150508261cf63c09",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-69a2dba0396b3e83d82b-challenge/dispatch-request.json",
+              "sha256": "f4c90858f4cf5af4d6934dff79b07cc2029ebab2092ea64b5709ea8ed3b3ef90"
+            }
+          }
+        },
+        {
+          "reviewId": "leaf-d0f7439b59828c4c552c-challenge",
+          "sourceOrigin": "outside_source_probe",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p3",
+                "role": "specializes"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf23",
+              "pf24",
+              "pf25",
+              "pf26",
+              "pf27"
+            ],
+            "refs": [
+              "e18",
+              "e22"
+            ],
+            "reason": "distinct_target",
+            "note": "The 2004 forecast concerns dark-energy clustering through temperature–galaxy correlations, with canonical quintessence as a tested hypothesis.",
+            "home": "q3",
+            "identity": "s",
+            "title": "ISW–galaxy forecasts for dark-energy clustering"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p3",
+                "role": "specializes"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf23",
+              "pf24",
+              "pf25",
+              "pf26",
+              "pf27"
+            ],
+            "refs": [
+              "e18",
+              "e22"
+            ],
+            "reason": "distinct_target",
+            "note": "The 2004 forecast tests clustering scale and amplitude, with canonical quintessence as a hypothesis rather than an established dark-energy identity.",
+            "home": "p3",
+            "identity": "s",
+            "title": "ISW–galaxy forecasts for dark-energy clustering"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q3",
+              "normalizedRef": "p3",
+              "originalId": "q3",
+              "candidateId": "q025-candidate-question:a6d028bd811fe2692cbb4bc3",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "a6d028bd811fe2692cbb4bc3523583ea8b068d52675e4c7e55b1e5143b32d8e0"
+            },
+            "challenge": {
+              "rawRef": "p3",
+              "normalizedRef": "p3",
+              "originalId": "q3",
+              "candidateId": "q025-candidate-question:a6d028bd811fe2692cbb4bc3",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "a6d028bd811fe2692cbb4bc3523583ea8b068d52675e4c7e55b1e5143b32d8e0"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-d0f7439b59828c4c552c-challenge:p3",
+              "role": "specializes",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "dc06d6ff28faf4bd9a68bd11017af162f41258552f13e6596d9e37862def63bc",
+            "challengeReplySha256": "9c854df75c10d16cd92369b08b8acd39e0e4b3b46746ae5114866fae6146142d",
+            "challengeRawSha256": "1e65810611b65de6097deb94b463b1fc6b620e0f54537a366f4510bba68616a2",
+            "challengePacketSha256": "39ff05705e63406f0cdaca4dc2925309974eaa58c3faac9c3e9321fb7567a9b8",
+            "normalizationSha256": "d09a9cb6a9d597e039be38032e4eb976ee80066b613940628d1e2e6c3c75aec7",
+            "proposalReceiptSha256": "174a90cf8563798416b1a02b14c4313b9fdb711d44dc47e33e3ecc1c3dea60d3"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-d0f7439b59828c4c552c-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-d0f7439b59828c4c552c-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "46fcf3ee2178b0d900e9967713285d90845ffe62e2af2ce2eddf557163f1a8c6",
+            "reply.jsonSha256": "bb42ef92e35533673193ab60be4412deb35a6afd6989076f3c925e1567c98cf8",
+            "reply.raw.txtSha256": "a9983bfd545abe9bd186d16767b614406678feddb031e1654daf033f40b74eae",
+            "receipt.jsonSha256": "174a90cf8563798416b1a02b14c4313b9fdb711d44dc47e33e3ecc1c3dea60d3",
+            "normalization.jsonSha256": "4361fc5f157fdc98e777d5d8e989948b1bcf6832eb7beebf3a3ed5bde4bacd59",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-d0f7439b59828c4c552c-challenge/dispatch-request.json",
+              "sha256": "68ba4c105ce4583464c6fd8f8d89280023e733003bb450402449c18a3b5862d4"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "overlap_only_stellar_KK_production_and_decay_bounds",
+      "source": {
+        "unitId": "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60",
+        "paperId": "2510.18975",
+        "description": "How do plasmon–KK graviton mixing and pion-induced production change stellar cooling bounds on large extra dimensions, and when do intra-tower decays weaken constraints from Standard Model decay products?",
+        "descriptionSha256": "f591ef39e476db08dadb1faa2c20ee22ad3c9b44b6ddfeded63c0bc33c310518",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-0403944f92af04eaed4a-challenge/packet.actual.json",
+          "sha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+          "bytes": 147663
+        },
+        "sourceDescriptionRef": "d5"
+      },
+      "proposedPlacement": null,
+      "existingAdmittedPlacements": [],
+      "remainingDecision": {
+        "unitId": "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60",
+        "paperId": "2510.18975",
+        "decisionKind": "overlap_needs_complete_target_coverage",
+        "decisionNeeded": "Identify all covered source targets and a whole-question home, or explicitly approve a normalized overlap. An overlap-only family cannot silently receive the whole mass.",
+        "fineOptions": [
+          {
+            "destinationId": "q025-candidate-question:fc582eff749d1936943465cf",
+            "title": "Stellar production and cooling bounds on extra dimensions",
+            "scopeAlreadyAdmitted": false,
+            "reviewId": "leaf-0403944f92af04eaed4a-challenge",
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q4",
+                "normalizedRef": "p4",
+                "originalId": "q4",
+                "candidateId": "q025-candidate-question:fc582eff749d1936943465cf",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "fc582eff749d1936943465cff71bc3ff553993a1f3bc5cb45a86c6892b65665d"
+              },
+              "challenge": {
+                "rawRef": "p4",
+                "normalizedRef": "p4",
+                "originalId": "q4",
+                "candidateId": "q025-candidate-question:fc582eff749d1936943465cf",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "fc582eff749d1936943465cff71bc3ff553993a1f3bc5cb45a86c6892b65665d"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "chosenHomeRoles": [
+              "addresses"
+            ],
+            "exclusionReasons": [],
+            "coverageReviewReasons": [
+              "explicit_compound_target_language"
+            ]
+          }
+        ],
+        "broadOptions": [
+          {
+            "unitId": "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60",
+            "paperId": "2510.18975",
+            "reviewId": "leaf-0403944f92af04eaed4a-challenge",
+            "destinationId": "q025-candidate-region:0100a51832623c18e78e8565",
+            "title": "Dark Dimension tests and neighboring cosmic-ray and vacuum questions",
+            "scopeAlreadyAdmitted": false,
+            "jointDisposition": "overlap",
+            "compoundLanguage": true,
+            "contextLanguage": false,
+            "unresolvedFlags": false,
+            "flagReasons": [],
+            "proposalNote": "Compound target: two production mechanisms and cascade-dependent visible-decay limits; dimensions extend beyond the five-dimensional cascade analysis.",
+            "challengeNote": "Compound: two production mechanisms and cascade-dependent visible-decay limits. Dimensional scope exceeds the five-dimensional threshold analyses."
+          }
+        ],
+        "sourceContextRefs": [
+          {
+            "reviewId": "leaf-0403944f92af04eaed4a-challenge",
+            "unitId": "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60"
+          }
+        ]
+      },
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-question:fc582eff749d1936943465cf",
+          "recordId": "leaf-0403944f92af04eaed4a-challenge:p4",
+          "definition": {
+            "title": "Stellar production and cooling bounds on extra dimensions",
+            "question": "How do plasmon mixing and pion-induced KK-graviton production affect stellar cooling limits, and when can intra-tower decays reduce limits from Standard Model decay products?",
+            "summary": "Cooling and subsequent decay signals are distinct constraint mechanisms. The source studies additional production channels and a conditional change in branching to visible products across more than one extra-dimensional setting.",
+            "scope": {
+              "systems": [
+                "Stellar plasmas",
+                "Supernova cores",
+                "KK gravitons in large extra dimensions"
+              ],
+              "targets": [
+                "Energy-loss limits",
+                "Production mechanisms",
+                "Dependence of visible-decay limits on intra-tower decays"
+              ],
+              "regimes": [
+                "Plasmon resonances",
+                "Pion production in supernovae",
+                "Different numbers of extra dimensions"
+              ],
+              "assumptions": [
+                "Weakening visible-decay bounds requires intra-tower decays to dominate.",
+                "Pion abundance and properties in protoneutron stars are uncertain."
+              ],
+              "conventions": [
+                "Cooling and bounds from later Standard Model decays remain separate."
+              ],
+              "includes": [
+                "Bremsstrahlung comparison",
+                "Plasmon mixing",
+                "π−p → nh"
+              ],
+              "excludes": [
+                "Completed white-dwarf constraints",
+                "Assuming rapid intra-tower decays in every geometry"
+              ]
+            },
+            "readingLimit": "Only bounded introductory material from 2510.18975 is supplied. It establishes mechanisms, scope and qualifications, but does not certify calculated rates or numerical bounds."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "50b842c68376edbeaec40105e4ebbf0c4a028befa4142c35bd6e2bc33e12a17d",
+            "challengeReplySha256": "dc0458885cd86d0be941913115b83595b2b38a2bfefc9545673e480207b87908",
+            "challengeRawSha256": "a7826c78404bc43581777e86a85a3bea036c183dff8f5af48a83922bf1f01da1",
+            "challengePacketSha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+            "normalizationSha256": "0aa6fa77a73f9a6a3f66ad0fd545e42ba863b3838c748a30ac66d0720f6fa604",
+            "proposalReceiptSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:0100a51832623c18e78e8565",
+          "recordId": "leaf-0403944f92af04eaed4a-challenge:r",
+          "definition": {
+            "title": "Dark Dimension tests and neighboring cosmic-ray and vacuum questions",
+            "question": "How do cosmic-ray spectra, KK-graviton phenomenology and vacuum-energy matching test the Dark Dimension proposal and neighboring explanations?",
+            "summary": "A broad navigation family connecting empirical spectra, conditional model tests and theoretical premise checks. Shared observables and frameworks support links; they do not establish equivalent questions or settled conclusions.",
+            "scope": {
+              "systems": [
+                "UHECR spectra and candidate sources",
+                "KK-graviton towers and stellar production in extra dimensions",
+                "Compactified EFT vacuum energy",
+                "Historical de Sitter α-vacuum cosmic-ray production"
+              ],
+              "targets": [
+                "Spectral suppression and source-associated cutoff universality",
+                "Decay signatures, linear structure formation and stellar cooling",
+                "Threshold cascade rates and irreducible freeze-in constraints",
+                "Compatibility of proposed vacuum-energy and KK-scale relations"
+              ],
+              "regimes": [
+                "Source-specific observational epochs",
+                "Linear nonrelativistic cosmology",
+                "Near-threshold KK decays",
+                "Flat and specified warped five-dimensional models",
+                "Stellar limits allowing different numbers of extra dimensions"
+              ],
+              "assumptions": [
+                "Dark Dimension assumptions apply only to the questions that explicitly invoke them.",
+                "Earlier cascade phenomenology remains conditional on its dated decay prescription.",
+                "Species-scale identification, source associations and vacuum-energy matching are hypotheses under examination."
+              ],
+              "conventions": [
+                "The UHECR parameter λ and the graviton–brane coupling λ are source-specific quantities.",
+                "The α-vacuum parameter is distinct from the distance-conjecture exponent.",
+                "A reported result is attributed to its supplied source and date."
+              ],
+              "includes": [
+                "Ordinary observational UHECR work as an independent empirical home",
+                "Broader stellar-cooling questions",
+                "EFT matching as a theoretical premise-check home",
+                "Historical α-vacuum production as an alternate UHECR home"
+              ],
+              "excludes": [
+                "Treating numerical membership as scientific equivalence",
+                "Inferring a Dark Dimension origin from spectral suppression alone",
+                "Universal exclusion of all warped or extra-dimensional models",
+                "Treating a bounded excerpt as verification of a full calculation or a current fit"
+              ]
+            },
+            "readingLimit": "Supplied descriptions and bounded archived primary pages only; no equation-image or full-paper certification. Units 0 and 1 have no primary excerpts. No graph relations were supplied. This newly authored region remains a proposal requiring independent review."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "50b842c68376edbeaec40105e4ebbf0c4a028befa4142c35bd6e2bc33e12a17d",
+            "challengeReplySha256": "dc0458885cd86d0be941913115b83595b2b38a2bfefc9545673e480207b87908",
+            "challengeRawSha256": "a7826c78404bc43581777e86a85a3bea036c183dff8f5af48a83922bf1f01da1",
+            "challengePacketSha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+            "normalizationSha256": "0aa6fa77a73f9a6a3f66ad0fd545e42ba863b3838c748a30ac66d0720f6fa604",
+            "proposalReceiptSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-0403944f92af04eaed4a-challenge",
+          "sourceOrigin": "boundary_source",
+          "proposal": {
+            "b": "excerpt",
+            "d": "overlap",
+            "q": [
+              {
+                "id": "p4",
+                "role": "addresses"
+              },
+              {
+                "id": "p5",
+                "role": "boundary"
+              }
+            ],
+            "f": [
+              "pf9",
+              "pf10",
+              "pf16",
+              "pf17",
+              "pf18"
+            ],
+            "refs": [
+              "e4",
+              "e23"
+            ],
+            "reason": "distinct_target",
+            "note": "Compound target: two production mechanisms and cascade-dependent visible-decay limits; dimensions extend beyond the five-dimensional cascade analysis.",
+            "home": "q4",
+            "identity": "s",
+            "title": "Plasmon and pion production, stellar cooling and competing decays"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "overlap",
+            "q": [
+              {
+                "id": "p4",
+                "role": "addresses"
+              },
+              {
+                "id": "p5",
+                "role": "boundary"
+              }
+            ],
+            "f": [
+              "pf9",
+              "pf10",
+              "pf16",
+              "pf17",
+              "pf18"
+            ],
+            "refs": [
+              "e4",
+              "e23"
+            ],
+            "reason": "distinct_target",
+            "note": "Compound: two production mechanisms and cascade-dependent visible-decay limits. Dimensional scope exceeds the five-dimensional threshold analyses.",
+            "home": "p4",
+            "identity": "s",
+            "title": "Plasmon and pion production, stellar cooling and competing decays"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q4",
+              "normalizedRef": "p4",
+              "originalId": "q4",
+              "candidateId": "q025-candidate-question:fc582eff749d1936943465cf",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "fc582eff749d1936943465cff71bc3ff553993a1f3bc5cb45a86c6892b65665d"
+            },
+            "challenge": {
+              "rawRef": "p4",
+              "normalizedRef": "p4",
+              "originalId": "q4",
+              "candidateId": "q025-candidate-question:fc582eff749d1936943465cf",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "fc582eff749d1936943465cff71bc3ff553993a1f3bc5cb45a86c6892b65665d"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-0403944f92af04eaed4a-challenge:p4",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            },
+            {
+              "recordId": "leaf-0403944f92af04eaed4a-challenge:p5",
+              "role": "boundary",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "50b842c68376edbeaec40105e4ebbf0c4a028befa4142c35bd6e2bc33e12a17d",
+            "challengeReplySha256": "dc0458885cd86d0be941913115b83595b2b38a2bfefc9545673e480207b87908",
+            "challengeRawSha256": "a7826c78404bc43581777e86a85a3bea036c183dff8f5af48a83922bf1f01da1",
+            "challengePacketSha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+            "normalizationSha256": "0aa6fa77a73f9a6a3f66ad0fd545e42ba863b3838c748a30ac66d0720f6fa604",
+            "proposalReceiptSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-0403944f92af04eaed4a-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-0403944f92af04eaed4a-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "383ae7b86412907f65fe1932bc1315f15a446f9bc7ff2e80ded6256323fd38ab",
+            "reply.jsonSha256": "d365b2636376fad46b8355d9a6bfcb054451af1d5ba67d727fb095a55dbf7613",
+            "reply.raw.txtSha256": "a01b83e6caa3b7ffd3c4ca3c3486b0e022e000e0916e471d88d6f4cc271a2ad3",
+            "receipt.jsonSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f",
+            "normalization.jsonSha256": "858ef1f25d8fe118af755053e087cfb8b98171a86f14c28c15d48b1b008580e1",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-0403944f92af04eaed4a-challenge/dispatch-request.json",
+              "sha256": "d5ffd19bc6aec21c15711daee5ba2d48793a99f90cf81a9e2870d46248f38a77"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "annotation_only_flag_is_not_a_new_scientific_home",
+      "source": {
+        "unitId": "unit:0034b70ea953b9879b3d6034ad618cbfcb1be80a68ce1e19fa6ffa94793dec60",
+        "paperId": "1608.07219",
+        "description": "Which discrete gauge symmetries arise in the paper's examples of F-theory compactification on genus-one fibered Calabi–Yau fourfolds without a section, and can their multisection degrees be obtained uniformly from intersection theory?",
+        "descriptionSha256": "c219f4e7aa825cab320035bcc62fbd2408705ae85efc2df5ce8eb1f15cbf5c41",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-f3d0ef8dd184e0ce2e9a-challenge/packet.actual.json",
+          "sha256": "199853260472087e2874419ab481265eaa6f8139ebc4cca26a723db39e703b56",
+          "bytes": 358675
+        },
+        "sourceDescriptionRef": "d23"
+      },
+      "proposedPlacement": null,
+      "existingAdmittedPlacements": [],
+      "remainingDecision": {
+        "unitId": "unit:0034b70ea953b9879b3d6034ad618cbfcb1be80a68ce1e19fa6ffa94793dec60",
+        "paperId": "1608.07219",
+        "decisionKind": "flagged_existing_broad_attribution",
+        "decisionNeeded": "Resolve the specific note/premise flag on an already paired broader attribution; a format or reading-limit repair need not trigger another full source reading.",
+        "fineOptions": [],
+        "broadOptions": [
+          {
+            "unitId": "unit:0034b70ea953b9879b3d6034ad618cbfcb1be80a68ce1e19fa6ffa94793dec60",
+            "paperId": "1608.07219",
+            "reviewId": "leaf-f3d0ef8dd184e0ce2e9a-challenge",
+            "destinationId": "q025-candidate-region:839da90831bec9d6ef0a811b",
+            "title": "Compactification geometry, gauge sectors and consistency",
+            "scopeAlreadyAdmitted": true,
+            "jointDisposition": "member",
+            "compoundLanguage": false,
+            "contextLanguage": false,
+            "unresolvedFlags": true,
+            "flagReasons": [
+              "unit_annotation"
+            ],
+            "proposalNote": "Six specified constructions; del Pezzo degree one is excluded. The intersection method is not a classification of all sectionless fourfolds.",
+            "challengeNote": "The v6 text dated 1 May 2017 treats six constructions and excludes del Pezzo degree one. Its multisection method is not a classification of all genus-one four­‑"
+          }
+        ],
+        "sourceContextRefs": [
+          {
+            "reviewId": "leaf-f3d0ef8dd184e0ce2e9a-challenge",
+            "unitId": "unit:0034b70ea953b9879b3d6034ad618cbfcb1be80a68ce1e19fa6ffa94793dec60"
+          }
+        ]
+      },
+      "candidateScopes": [
+        {
+          "destinationId": "q025-candidate-region:839da90831bec9d6ef0a811b",
+          "recordId": "leaf-f3d0ef8dd184e0ce2e9a-challenge:r",
+          "definition": {
+            "title": "Compactification geometry, gauge sectors and consistency",
+            "question": "How do compactification geometries encode gauge sectors and effective theories, and what can constructions, dualities and consistency tests establish about their possibilities?",
+            "summary": "F-theory geometry and spectra form the main center. Discrete symmetries, phenomenology, anomalies, geometric classification and asymptotic limits supply distinct directions. No original scientific scope statement was supplied beyond numerical membership, so the usable scope here is a new proposal rather than confirmation of an existing definition.",
+            "scope": {
+              "systems": [
+                "Elliptic and genus-one compactifications and their local singularities",
+                "Related M-theory, Type II and heterotic constructions",
+                "Low-energy theories and geometric or string probes explicitly compared with those constructions"
+              ],
+              "targets": [
+                "Gauge algebras, global groups, charged matter and interactions",
+                "Discrete phases, flux vacua and phenomenology",
+                "Anomalies, completeness questions, classifications and bounds",
+                "Dualities, degenerations, defects and light objects"
+              ],
+              "regimes": [
+                "Source-specific dimensions and supersymmetry",
+                "Local, compact, resolved, singular and asymptotic settings kept distinct"
+              ],
+              "assumptions": [
+                "Construction-specific hypotheses remain local to their sources",
+                "Numerical proximity does not establish question equivalence",
+                "Unknown constructions do not by themselves establish inconsistency"
+              ],
+              "conventions": [
+                "Gauge algebra, global gauge group and discrete gauge symmetry are distinct targets",
+                "Massless spectra, full charge lattices and light towers are not interchangeable",
+                "Source dates and stated versions govern historical claims and record values"
+              ],
+              "includes": [
+                "Ordinary and pre-Swampland geometry and model building",
+                "The supplied outside probes where their actual targets fit",
+                "Explicit alternate access for neighboring questions"
+              ],
+              "excludes": [
+                "A universal dimension, method or Swampland premise",
+                "Automatic transfer of source-parent graph properties to every retrieval facet",
+                "Claims of exhaustive classification or current phenomenological viability unsupported by the supplied text"
+              ]
+            },
+            "readingLimit": "Only supplied descriptions, exact source-object context and bounded primary excerpts were assessed. No images, full papers or external verification were available. This newly authored region requires later independent review."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "fdb0877147b592f136ae83a90f1abd746ee9f6bfa4ca8bbc95520c740a0d8ce6",
+            "challengeReplySha256": "df8cb2a859862be2d1b70456aecff6d6dd8a1f7834f38a332db25eb62d2f62fa",
+            "challengeRawSha256": "d0fc6633bbc5b77e35ad6309d7d9218d0bc624a34256c895291026d86d0f80b5",
+            "challengePacketSha256": "199853260472087e2874419ab481265eaa6f8139ebc4cca26a723db39e703b56",
+            "normalizationSha256": "62e55ee00c23913a23dc125d122a03d905dc364db09a27c8d6e0cba2e249ec9e",
+            "proposalReceiptSha256": "2a74cb032d5b511da9c592ce2274492491fb068da205f53c623bb1b8f4362b28"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-f3d0ef8dd184e0ce2e9a-challenge",
+          "sourceOrigin": "central_source",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "specializes"
+              },
+              {
+                "id": "p5",
+                "role": "method"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf5",
+              "pf17",
+              "pf20",
+              "pf22"
+            ],
+            "refs": [
+              "e0",
+              "e2",
+              "e17"
+            ],
+            "reason": "central",
+            "note": "Six specified constructions; del Pezzo degree one is excluded. The intersection method is not a classification of all sectionless fourfolds.",
+            "home": "",
+            "identity": "s",
+            "title": "Discrete groups from multisection degrees in explicit fourfolds"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p2",
+                "role": "specializes"
+              },
+              {
+                "id": "p5",
+                "role": "method"
+              }
+            ],
+            "f": [
+              "pf0",
+              "pf5",
+              "pf17",
+              "pf20",
+              "pf22"
+            ],
+            "refs": [
+              "e0",
+              "e2",
+              "e17"
+            ],
+            "reason": "central",
+            "note": "The v6 text dated 1 May 2017 treats six constructions and excludes del Pezzo degree one. Its multisection method is not a classification of all genus-one four­‑",
+            "home": "",
+            "identity": "s",
+            "title": "Discrete groups from multisection degrees in explicit fourfolds"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "",
+              "status": "explicitly_unresolved"
+            },
+            "challenge": {
+              "rawRef": "",
+              "status": "explicitly_unresolved"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": false,
+            "sameExplicitScientificCard": false,
+            "unchangedSupportedScope": false,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-f3d0ef8dd184e0ce2e9a-challenge:p2",
+              "role": "specializes",
+              "independentRoleAgreement": true
+            },
+            {
+              "recordId": "leaf-f3d0ef8dd184e0ce2e9a-challenge:p5",
+              "role": "method",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "fdb0877147b592f136ae83a90f1abd746ee9f6bfa4ca8bbc95520c740a0d8ce6",
+            "challengeReplySha256": "df8cb2a859862be2d1b70456aecff6d6dd8a1f7834f38a332db25eb62d2f62fa",
+            "challengeRawSha256": "d0fc6633bbc5b77e35ad6309d7d9218d0bc624a34256c895291026d86d0f80b5",
+            "challengePacketSha256": "199853260472087e2874419ab481265eaa6f8139ebc4cca26a723db39e703b56",
+            "normalizationSha256": "62e55ee00c23913a23dc125d122a03d905dc364db09a27c8d6e0cba2e249ec9e",
+            "proposalReceiptSha256": "2a74cb032d5b511da9c592ce2274492491fb068da205f53c623bb1b8f4362b28"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-f3d0ef8dd184e0ce2e9a-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-f3d0ef8dd184e0ce2e9a-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "9931968483ac5d7c514982e7aafd27bd6eecc759b1e961f9f777fbcd49765d4d",
+            "reply.jsonSha256": "d2cc023ba8d5e181fe45eefa3894d5b9d688f348329790facc69d682c0ac6774",
+            "reply.raw.txtSha256": "d35a2e90b9220dd50cde0b833edaca559fb4714174b55f1a67194f84a1815185",
+            "receipt.jsonSha256": "2a74cb032d5b511da9c592ce2274492491fb068da205f53c623bb1b8f4362b28",
+            "normalization.jsonSha256": "5bb670445a49b0c78964e13f8dd984241cb6fda1d5e7cd3e136573650181a1f4",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-f3d0ef8dd184e0ce2e9a-challenge/dispatch-request.json",
+              "sha256": "8f6de39eb4e4b024c8d7bf372007bed5f896a92c9061b07a6c732e6406100ed6"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    },
+    {
+      "purpose": "negative_KK_inherited_production_is_not_a_production_home",
+      "source": {
+        "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+        "paperId": "2311.05318",
+        "description": "What linear cosmological signatures arise from repeated decays within a dark-matter KK-graviton tower, and what do CMB, BAO and weak-lensing data imply for its kick velocity and Dark Dimension parameters?",
+        "descriptionSha256": "d9fc482c4e4edaf9b5e3f5a8913f61a8f87a9b9997d8900b9abbc8907049ef1c",
+        "sourcePacket": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-0403944f92af04eaed4a-challenge/packet.actual.json",
+          "sha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+          "bytes": 147663
+        },
+        "sourceDescriptionRef": "d4"
+      },
+      "proposedPlacement": null,
+      "existingAdmittedPlacements": [
+        {
+          "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+          "destinationId": "q-kk-decay-linear-cosmology",
+          "role": "member",
+          "status": "accepted",
+          "basis": "source_excerpt_checked",
+          "allocationWeight": 1,
+          "workRelation": "on",
+          "qualification": "The direct scientific target is linear cosmological perturbations and recoil constraints. Its hot-brane production contribution is inherited context and receives no organizational home.",
+          "evidenceRefs": [
+            {
+              "ref": "d62",
+              "kind": "description",
+              "unitIndex": 62,
+              "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+              "textSha256": "d9fc482c4e4edaf9b5e3f5a8913f61a8f87a9b9997d8900b9abbc8907049ef1c"
+            },
+            {
+              "ref": "e5",
+              "kind": "primary",
+              "sourceId": "ev:2fad585ea0fd6a9e881beb23831ceaa7",
+              "paperId": "2311.05318",
+              "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+              "sourceContext": {
+                "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                "pdfPage": 5,
+                "start": 92,
+                "end": 3490,
+                "textSha256": "61c3e56df1d3e250b6c058bf036fe06e39f281e0111f2c5b8b38423b4af22398",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            },
+            {
+              "ref": "e17",
+              "kind": "primary",
+              "sourceId": "ev:98101f0d696c278269902e9cbb5320e0",
+              "paperId": "2311.05318",
+              "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+              "sourceContext": {
+                "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                "pdfPage": 3,
+                "start": 0,
+                "end": 3000,
+                "textSha256": "f0e4c6eec8d6d63ebf4b8ca921034d36a649eb3ac4b7d8e95c99a321fe6d2a37",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            },
+            {
+              "ref": "e21",
+              "kind": "primary",
+              "sourceId": "ev:bbf52e208ce8497a6b71719219ba7d85",
+              "paperId": "2311.05318",
+              "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+              "sourceContext": {
+                "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                "pdfPage": 1,
+                "start": 0,
+                "end": 1673,
+                "textSha256": "7f3a9c3dff1be519144f71674fae6fab4ecf7c7d625152e8fe85d4abbf95c382",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            }
+          ],
+          "decisionId": "decision:kk-placement:2"
+        }
+      ],
+      "remainingDecision": null,
+      "candidateScopes": [
+        {
+          "destinationId": "q-kk-decay-linear-cosmology",
+          "recordId": "admitted:q-kk-decay-linear-cosmology",
+          "definition": {
+            "title": "What do repeated KK decays do to linear structure?",
+            "question": "Within the specified repeated-decay KK-graviton model, how do daughter recoil and the changing mass distribution affect linear cosmological perturbations?",
+            "summary": "Repeated decays change the tower mass distribution and give daughters recoil velocities. The linear cosmology calculation assumes a specified decay history and does not establish the cascade microphysics.",
+            "scope": {
+              "systems": [
+                "A cosmological KK-graviton dark-matter tower"
+              ],
+              "targets": [
+                "Linear matter and CMB perturbations",
+                "Recoil constraints and their conditional parameter interpretation"
+              ],
+              "regimes": [
+                "Nonrelativistic population",
+                "Linear cosmological perturbations",
+                "Source-era CMB, BAO and cosmic-shear analysis"
+              ],
+              "assumptions": [
+                "Repeated intra-tower decay evolution",
+                "Simplified daughter distribution dominated by approximately symmetric decays",
+                "Small released mass difference"
+              ],
+              "conventions": [
+                "The source's kick parameter is a combination of model parameters",
+                "Its reported confidence limit is a dated author result"
+              ],
+              "includes": [
+                "Daughter recoil",
+                "Changing mass population",
+                "Conditional structure suppression"
+              ],
+              "excludes": [
+                "Nonlinear structure predictions or a demonstrated resolution of the S8 tension",
+                "Unconditional viability of the cascade",
+                "Visible-energy injection as the primary target"
+              ]
+            },
+            "readingLimit": "The model assumptions and abstract's reported kick constraint were read. Perturbation equations, likelihood implementation and numerical constraints were not independently checked."
+          },
+          "scopeStatus": "explicitly_admitted_scope",
+          "alreadyAdmitted": true,
+          "pins": {
+            "componentSha256": "3e2500b715ca31075d7f2987aa24abcf6991b6f35e65aeb6a8134e6d872150df",
+            "scopeAdjudicationReceiptSha256": "e6f9f10d8a2c751b76028aa2575e0b5560b256fb5675f0ef3e2bfebb08faf677",
+            "contributionAdjudicationReceiptSha256": "3e724e9877924b1ed6b3e84b7d4f7455c5a1f60f4965e1f3c51f54909cd66b19",
+            "organizationAdjudicationReceiptSha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512",
+            "challengePacketSha256": "ede8c80d673eeb7f9ff34429ae862737a0bf3d4ad1125d3954d7dd2dac0e2f97",
+            "challengeReplySha256": "04e0ada928a7e1037fdd8af9e5219cc7042babaf3d7580450a50070965521065"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "recordId": "leaf-0403944f92af04eaed4a-challenge:p3",
+          "definition": {
+            "title": "Linear cosmology of decay-induced dark-matter kicks",
+            "question": "How do repeated KK-graviton decays affect linear cosmological perturbations, and what do CMB, BAO and weak-lensing data constrain about their kick velocity?",
+            "summary": "The analysis constrains a velocity combination in a simplified tower model. Its interpretation as Dark Dimension parameter bounds depends on the assumed decay and mass-evolution laws.",
+            "scope": {
+              "systems": [
+                "Decaying KK-graviton dark matter"
+              ],
+              "targets": [
+                "Linear structure suppression",
+                "Kick velocity",
+                "Conditional Dark Dimension parameters"
+              ],
+              "regimes": [
+                "Linear perturbations",
+                "Nonrelativistic daughters",
+                "Small mass release"
+              ],
+              "assumptions": [
+                "Approximately equal daughter masses",
+                "Last-decay kicks approximate the relevant velocity history",
+                "The historical cascade evolution fixes the modeled time dependence"
+              ],
+              "conventions": [
+                "The principal data constraint is on a velocity combination, not independent measurements of every tower parameter."
+              ],
+              "includes": [
+                "Planck CMB, BAO and KiDS-1000 cosmic-shear analysis"
+              ],
+              "excludes": [
+                "A nonlinear resolution of the σ8 tension",
+                "A demonstrated resolution of the Hubble tension",
+                "An updated fit using the later threshold law"
+              ]
+            },
+            "readingLimit": "The supplied version is 2311.05318v1, dated 9 Nov 2023. Its abstract reports a bound, while the supplied body states the approximations. The likelihood, nonlinear evolution and consequences of replacing the cascade law were not checked."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "50b842c68376edbeaec40105e4ebbf0c4a028befa4142c35bd6e2bc33e12a17d",
+            "challengeReplySha256": "dc0458885cd86d0be941913115b83595b2b38a2bfefc9545673e480207b87908",
+            "challengeRawSha256": "a7826c78404bc43581777e86a85a3bea036c183dff8f5af48a83922bf1f01da1",
+            "challengePacketSha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+            "normalizationSha256": "0aa6fa77a73f9a6a3f66ad0fd545e42ba863b3838c748a30ac66d0720f6fa604",
+            "proposalReceiptSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f"
+          }
+        },
+        {
+          "destinationId": "q025-candidate-region:0100a51832623c18e78e8565",
+          "recordId": "leaf-0403944f92af04eaed4a-challenge:r",
+          "definition": {
+            "title": "Dark Dimension tests and neighboring cosmic-ray and vacuum questions",
+            "question": "How do cosmic-ray spectra, KK-graviton phenomenology and vacuum-energy matching test the Dark Dimension proposal and neighboring explanations?",
+            "summary": "A broad navigation family connecting empirical spectra, conditional model tests and theoretical premise checks. Shared observables and frameworks support links; they do not establish equivalent questions or settled conclusions.",
+            "scope": {
+              "systems": [
+                "UHECR spectra and candidate sources",
+                "KK-graviton towers and stellar production in extra dimensions",
+                "Compactified EFT vacuum energy",
+                "Historical de Sitter α-vacuum cosmic-ray production"
+              ],
+              "targets": [
+                "Spectral suppression and source-associated cutoff universality",
+                "Decay signatures, linear structure formation and stellar cooling",
+                "Threshold cascade rates and irreducible freeze-in constraints",
+                "Compatibility of proposed vacuum-energy and KK-scale relations"
+              ],
+              "regimes": [
+                "Source-specific observational epochs",
+                "Linear nonrelativistic cosmology",
+                "Near-threshold KK decays",
+                "Flat and specified warped five-dimensional models",
+                "Stellar limits allowing different numbers of extra dimensions"
+              ],
+              "assumptions": [
+                "Dark Dimension assumptions apply only to the questions that explicitly invoke them.",
+                "Earlier cascade phenomenology remains conditional on its dated decay prescription.",
+                "Species-scale identification, source associations and vacuum-energy matching are hypotheses under examination."
+              ],
+              "conventions": [
+                "The UHECR parameter λ and the graviton–brane coupling λ are source-specific quantities.",
+                "The α-vacuum parameter is distinct from the distance-conjecture exponent.",
+                "A reported result is attributed to its supplied source and date."
+              ],
+              "includes": [
+                "Ordinary observational UHECR work as an independent empirical home",
+                "Broader stellar-cooling questions",
+                "EFT matching as a theoretical premise-check home",
+                "Historical α-vacuum production as an alternate UHECR home"
+              ],
+              "excludes": [
+                "Treating numerical membership as scientific equivalence",
+                "Inferring a Dark Dimension origin from spectral suppression alone",
+                "Universal exclusion of all warped or extra-dimensional models",
+                "Treating a bounded excerpt as verification of a full calculation or a current fit"
+              ]
+            },
+            "readingLimit": "Supplied descriptions and bounded archived primary pages only; no equation-image or full-paper certification. Units 0 and 1 have no primary excerpts. No graph relations were supplied. This newly authored region remains a proposal requiring independent review."
+          },
+          "scopeStatus": "independently_supported",
+          "alreadyAdmitted": true,
+          "pins": {
+            "challengeReceiptSha256": "50b842c68376edbeaec40105e4ebbf0c4a028befa4142c35bd6e2bc33e12a17d",
+            "challengeReplySha256": "dc0458885cd86d0be941913115b83595b2b38a2bfefc9545673e480207b87908",
+            "challengeRawSha256": "a7826c78404bc43581777e86a85a3bea036c183dff8f5af48a83922bf1f01da1",
+            "challengePacketSha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+            "normalizationSha256": "0aa6fa77a73f9a6a3f66ad0fd545e42ba863b3838c748a30ac66d0720f6fa604",
+            "proposalReceiptSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f"
+          }
+        }
+      ],
+      "pairedAssessments": [
+        {
+          "reviewId": "leaf-0403944f92af04eaed4a-challenge",
+          "sourceOrigin": "central_source",
+          "proposal": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p3",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf3",
+              "pf9",
+              "pf12",
+              "pf13",
+              "pf14",
+              "pf15"
+            ],
+            "refs": [
+              "e5",
+              "e16",
+              "e20"
+            ],
+            "reason": "central",
+            "note": "",
+            "home": "q3",
+            "identity": "s",
+            "title": "Linear cosmological signatures and bounds on decay kicks"
+          },
+          "challenge": {
+            "b": "excerpt",
+            "d": "member",
+            "q": [
+              {
+                "id": "p3",
+                "role": "addresses"
+              }
+            ],
+            "f": [
+              "pf3",
+              "pf9",
+              "pf12",
+              "pf13",
+              "pf14",
+              "pf15"
+            ],
+            "refs": [
+              "e5",
+              "e16",
+              "e20"
+            ],
+            "reason": "central",
+            "note": "",
+            "home": "p3",
+            "identity": "s",
+            "title": "Linear cosmological signatures and bounds on decay kicks"
+          },
+          "homeAgreement": {
+            "proposal": {
+              "rawRef": "q3",
+              "normalizedRef": "p3",
+              "originalId": "q3",
+              "candidateId": "q025-candidate-question:3f58b634e6f7439e502be440",
+              "status": "exact_card_reference",
+              "normalization": "explicit_originalId_to_prior_id",
+              "definitionFingerprint": "3f58b634e6f7439e502be4403e714167b6283a810ca3a917bc473043bef12a1c"
+            },
+            "challenge": {
+              "rawRef": "p3",
+              "normalizedRef": "p3",
+              "originalId": "q3",
+              "candidateId": "q025-candidate-question:3f58b634e6f7439e502be440",
+              "status": "exact_card_reference",
+              "normalization": "exact_id",
+              "definitionFingerprint": "3f58b634e6f7439e502be4403e714167b6283a810ca3a917bc473043bef12a1c"
+            },
+            "proposalDefinitionMatchesPinnedOriginal": true,
+            "sameExplicitScientificCard": true,
+            "unchangedSupportedScope": true,
+            "placementAdmission": false
+          },
+          "typedContributions": [
+            {
+              "recordId": "leaf-0403944f92af04eaed4a-challenge:p3",
+              "role": "addresses",
+              "independentRoleAgreement": true
+            }
+          ],
+          "pins": {
+            "challengeReceiptSha256": "50b842c68376edbeaec40105e4ebbf0c4a028befa4142c35bd6e2bc33e12a17d",
+            "challengeReplySha256": "dc0458885cd86d0be941913115b83595b2b38a2bfefc9545673e480207b87908",
+            "challengeRawSha256": "a7826c78404bc43581777e86a85a3bea036c183dff8f5af48a83922bf1f01da1",
+            "challengePacketSha256": "eb360ef966e5ecc8bc458432bed3dfc8d3fb3004c2741dd04c212b1a4d5c9915",
+            "normalizationSha256": "0aa6fa77a73f9a6a3f66ad0fd545e42ba863b3838c748a30ac66d0720f6fa604",
+            "proposalReceiptSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f"
+          },
+          "originalProposal": {
+            "reviewId": "leaf-0403944f92af04eaed4a-proposal",
+            "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-0403944f92af04eaed4a-proposal",
+            "packetFile": "packet.json",
+            "packet.jsonSha256": "383ae7b86412907f65fe1932bc1315f15a446f9bc7ff2e80ded6256323fd38ab",
+            "reply.jsonSha256": "d365b2636376fad46b8355d9a6bfcb054451af1d5ba67d727fb095a55dbf7613",
+            "reply.raw.txtSha256": "a01b83e6caa3b7ffd3c4ca3c3486b0e022e000e0916e471d88d6f4cc271a2ad3",
+            "receipt.jsonSha256": "7eef9bfa2a8fe91b655b79f8e220aeddf2dd226b14236ef7a65873c0657a512f",
+            "normalization.jsonSha256": "858ef1f25d8fe118af755053e087cfb8b98171a86f14c28c15d48b1b008580e1",
+            "resolvedFromRequest": {
+              "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-0403944f92af04eaed4a-challenge/dispatch-request.json",
+              "sha256": "d5ffd19bc6aec21c15711daee5ba2d48793a99f90cf81a9e2870d46248f38a77"
+            }
+          }
+        }
+      ],
+      "scopeAndSourceIdentityNotMerged": true
+    }
+  ]
+}

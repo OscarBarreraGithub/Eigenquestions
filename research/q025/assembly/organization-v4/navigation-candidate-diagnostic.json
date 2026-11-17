@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "q025-navigation-candidate-diagnostic/1",
+  "status": "candidate_route_comparison_not_admission",
+  "inputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v3/supported-scope-role-component-v3.json",
+      "sha256": "278c869e629b4308af296018d4ed365318fd762e0dd5c9db0a7677804bed9bf6"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/admitted-scope-role-operation-component.json",
+      "sha256": "f4b8b1badded4a9dbb5c178f61798e8d1a2b54b73fda8b58a0ec3c8ff67b7a87"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-admissions-v1/role-component.json",
+      "sha256": "f250d27b139faee3d82af0e4017f4ee6de709fb656da3ac37d451857f2fa9bd6"
+    },
+    {
+      "path": "research/q025/assembly/organization-v4/placement-policy-candidates.local.json",
+      "sha256": "a361697d44f4d63b917e91468e9a490f1afc9245cbcc40fa4eaf90cbe99b245a"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/parent-navigation-candidates-v5-20261117T135430Z.json",
+      "sha256": "b5961e5664de6ae3ed8056f361a2490fc05c183fbdb2961a811b0df88ac05556"
+    }
+  ],
+  "allocationCoverage": {
+    "sourceQuestions": 5765,
+    "directQuestionDestinations": 1016,
+    "questionAllocatedSources": 3337,
+    "directBroadDestinations": 177,
+    "broadAllocatedSources": 2428,
+    "totalAdmittedQuestionScopes": 1451,
+    "zeroAllocationWithPositiveSupport": 392,
+    "zeroAllocationWithoutPositiveSupport": 43,
+    "eligibleUnallocated": 2665,
+    "holdoutUnallocated": 43
+  },
+  "supportCoordinatePolicyCandidate": {
+    "roles": [
+      "addresses",
+      "instantiates",
+      "specializes"
+    ],
+    "deduplicateBy": [
+      "destinationId",
+      "unitId"
+    ],
+    "weight": "Global per-paper question mass, normalized within each support set; excluded from H and C.",
+    "basis": "Centroid of exact supported source coordinates, explicitly distinct from allocated membership position.",
+    "exclude": [
+      "method",
+      "comparison",
+      "boundary",
+      "same-paper context"
+    ],
+    "additionalHMass": 0,
+    "unallocatedSourceSupport": "Can be positioned only in a common pinned source-coordinate chart; do not substitute an unrelated allocated home or invent coordinates for sources absent from the chart."
+  },
+  "routeInventory": {
+    "allParentRecords": 2824,
+    "pairedScopeLinksWithAdmittedEndpoints": 1789,
+    "scopeDestinationsWithMultipleNarrowParents": 52,
+    "narrowFrontierSizeDistribution": {
+      "1": 54,
+      "2": 13,
+      "3": 13,
+      "4": 5,
+      "5": 10,
+      "6": 8,
+      "7": 4,
+      "8": 5,
+      "9": 3,
+      "10": 2,
+      "11": 4,
+      "12": 1,
+      "13": 1
+    },
+    "moreThan15NarrowDirections": 0,
+    "candidateTypes": {
+      "related": 411,
+      "method": 205,
+      "comparison": 442,
+      "premise_check": 81,
+      "application": 228,
+      "narrows": 421,
+      "broadens": 1
+    }
+  },
+  "journeys": [
+    {
+      "start": "Dark sectors: candidates, cosmic histories and tests",
+      "end": "Linear cosmology of decay-induced dark-matter kicks",
+      "narrow_only": null,
+      "typed_connections": [
+        {
+          "from": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "fromTitle": "Dark sectors: candidates, cosmic histories and tests",
+          "to": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+          "toTitle": "Cosmological survival and depletion of dark relics",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:3",
+          "nativeType": "narrows",
+          "readingDirection": "forward",
+          "rationale": "Persistence and depletion connect charged fields, PBHs and KK relics without identifying their mechanisms.",
+          "status": "pending_explicit_navigation_decision"
+        },
+        {
+          "from": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+          "fromTitle": "Cosmological survival and depletion of dark relics",
+          "to": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "toTitle": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:35",
+          "nativeType": "premise_check",
+          "readingDirection": "forward",
+          "rationale": "Threshold suppression tests the fast-cascade premise and also informs a distinct constraint on a population that need not be dark matter.",
+          "status": "pending_explicit_navigation_decision"
+        },
+        {
+          "from": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "fromTitle": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "to": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "toTitle": "Linear cosmology of decay-induced dark-matter kicks",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45",
+          "nativeType": "premise_check",
+          "readingDirection": "forward",
+          "rationale": "A changed cascade prescription requires reconsidering the modeled kick history, but the supplied text establishes no revised cosmological fit.",
+          "status": "pending_explicit_navigation_decision"
+        }
+      ]
+    },
+    {
+      "start": "Extra dimensions and conditional quantum-gravity tests",
+      "end": "Linear cosmology of decay-induced dark-matter kicks",
+      "narrow_only": null,
+      "typed_connections": [
+        {
+          "from": "q025-candidate-question:190bdf4415c78268d594ff95",
+          "fromTitle": "Extra dimensions and conditional quantum-gravity tests",
+          "to": "q025-candidate-question:fc582eff749d1936943465cf",
+          "toTitle": "Stellar production and cooling bounds on extra dimensions",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:42",
+          "nativeType": "application",
+          "readingDirection": "forward",
+          "rationale": "Stellar KK production and cooling test specified extra-dimensional settings, separately from subsequent visible decays.",
+          "status": "pending_explicit_navigation_decision"
+        },
+        {
+          "from": "q025-candidate-question:fc582eff749d1936943465cf",
+          "fromTitle": "Stellar production and cooling bounds on extra dimensions",
+          "to": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "toTitle": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:46",
+          "nativeType": "premise_check",
+          "readingDirection": "incoming",
+          "rationale": "Claims that intra-tower decays dominate require the relevant geometry and threshold regime to be checked before transferring the suppression result.",
+          "status": "pending_explicit_navigation_decision"
+        },
+        {
+          "from": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "fromTitle": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "to": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "toTitle": "Linear cosmology of decay-induced dark-matter kicks",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45",
+          "nativeType": "premise_check",
+          "readingDirection": "forward",
+          "rationale": "A changed cascade prescription requires reconsidering the modeled kick history, but the supplied text establishes no revised cosmological fit.",
+          "status": "pending_explicit_navigation_decision"
+        }
+      ]
+    },
+    {
+      "start": "Linear cosmology of decay-induced dark-matter kicks",
+      "end": "Stellar production and cooling bounds on extra dimensions",
+      "narrow_only": null,
+      "typed_connections": [
+        {
+          "from": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "fromTitle": "Linear cosmology of decay-induced dark-matter kicks",
+          "to": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "toTitle": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45",
+          "nativeType": "premise_check",
+          "readingDirection": "incoming",
+          "rationale": "A changed cascade prescription requires reconsidering the modeled kick history, but the supplied text establishes no revised cosmological fit.",
+          "status": "pending_explicit_navigation_decision"
+        },
+        {
+          "from": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "fromTitle": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "to": "q025-candidate-question:fc582eff749d1936943465cf",
+          "toTitle": "Stellar production and cooling bounds on extra dimensions",
+          "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:46",
+          "nativeType": "premise_check",
+          "readingDirection": "forward",
+          "rationale": "Claims that intra-tower decays dominate require the relevant geometry and threshold regime to be checked before transferring the suppression result.",
+          "status": "pending_explicit_navigation_decision"
+        }
+      ]
+    },
+    {
+      "start": "Compactification vacua, effective theories and stability",
+      "end": "KK spectra, eigenmodes and interactions",
+      "narrow_only": null,
+      "typed_connections": [
+        {
+          "from": "q025-candidate-region:30e42c20fef58dd627023a94",
+          "fromTitle": "Compactification vacua, effective theories and stability",
+          "to": "q025-candidate-question:f312dc34c0c5fd0c5ecde056",
+          "toTitle": "KK spectra, eigenmodes and interactions",
+          "candidateLinkId": "parent-032f7db703bb514040cc-challenge:link:8",
+          "nativeType": "method",
+          "readingDirection": "forward",
+          "rationale": "Higher-dimensional fluctuation operators and eigenmodes provide a spectral route distinct from finite supergravity mass matrices.",
+          "status": "pending_explicit_navigation_decision"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "These are proposed routes, not accepted navigation. Premise/application direction must be explicitly adjudicated; native labels alone do not supply final semantics.",
+    "Narrow-only comparison permits only outgoing native narrows proposals; typed_connections also exposes incoming links without asserting a converse physical relation.",
+    "Stable KK admission IDs and new full-wave records remain separate pending explicit reuse/compound-scope reconciliation.",
+    "The current public global graph is not complete. Original numerical batches are excluded from both comparisons."
+  ],
+  "scriptSha256": "c7e3d3050310d3c209b102d32f9297ce826eb30ca75bf68d231634389189a631"
+}

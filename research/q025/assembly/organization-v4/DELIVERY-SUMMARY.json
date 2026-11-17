@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "q025-approved-organization-checkpoint-summary/1",
+  "coverage": {
+    "allocated": 5765,
+    "eligiblePending": 2665,
+    "reservedHoldout": 43,
+    "scientificCoverageComplete": false
+  },
+  "homes": {
+    "admittedSourceUnits": 4705,
+    "admittedHomeRows": 4705,
+    "distinctDestinations": 1037,
+    "policyClasses": {
+      "A_exact_paired_scientific_question_home": 2276,
+      "B_whole_family_home": 1272,
+      "B_compound_whole_family_home": 1155,
+      "C_explicit_stellar_whole_compound_question": 1,
+      "D_explicit_fourfold_placement_without_annotation_repair": 1
+    },
+    "readingBasis": {
+      "description_checked": 4057,
+      "source_excerpt_checked": 648
+    },
+    "verifiedNativeArtifacts": 1020,
+    "component": {
+      "path": "research/q025/assembly/organization-v4/admitted-v1/home-admission-delta.local.json",
+      "sha256": "18a311d28c3e0bde9285be2a3f009cb4bec9a014ac5c338a60d6a15f8d6c450b",
+      "bytes": 15204827
+    },
+    "bindings": {
+      "path": "research/q025/assembly/organization-v4/admitted-v1/placement-bindings.local.json",
+      "sha256": "6667c6510cf0348cd57fc2602b5a866c988a18c7643e94813da3165d1ad1b2b9",
+      "bytes": 19664848
+    },
+    "receipts": [
+      {
+        "path": "research/q025/assembly/organization-v4/admitted-v1/policy-admission.json",
+        "sha256": "b5520cd866efcbd7deb243b88c39e613c0b762009a2df7f5b19e1cb4fa5eddaa",
+        "bytes": 308046
+      },
+      {
+        "path": "research/q025/assembly/organization-v4/admitted-v1/stellar-admission.json",
+        "sha256": "370a9763646d822b218f4ea4f81077bb7dec44d393dc830c22052052726f0e31",
+        "bytes": 2363
+      },
+      {
+        "path": "research/q025/assembly/organization-v4/admitted-v1/fourfold-admission.json",
+        "sha256": "91fad703d2ca778ef6312503975dea3e418dac6de0b1e2b47ee00b3329c738d6",
+        "bytes": 2485
+      }
+    ]
+  },
+  "productionChecks": {
+    "fixture": false,
+    "allSourceUnitsConserved": true,
+    "sourceUnits": 26410,
+    "allocationMaxError": 0,
+    "typedContributions": 13323,
+    "primaryLocators": 4034
+  },
+  "geometry": {
+    "jobId": "61513820",
+    "nodes": 1267,
+    "directBases": 1193,
+    "supportOnlyNodes": 74,
+    "partialSupportNotPlotted": 168,
+    "unallocatedSupportNotPlotted": 150,
+    "paperMass": 4670.000000000003,
+    "paperMassPolicy": "cohort_renormalized_one_mass_per_represented_paper",
+    "components": [
+      {
+        "component": 0,
+        "atomCount": 1193,
+        "layout": "two_diffusion_modes",
+        "atomProjection": {
+          "distanceStress": 0.5366591280999291,
+          "topFiveNeighborRecall": 0.0647108130762783,
+          "degenerateTarget": false
+        },
+        "leadingLazyEigenvalues": [
+          1.0000000000000002,
+          0.9192621310007926,
+          0.8896392127295177,
+          0.8749670041598785,
+          0.8495919386430869,
+          0.8456566251290276,
+          0.8385315615882858,
+          0.8321103066928953
+        ],
+        "twoModeEnergyFraction": 0.03190785964323063,
+        "displayPackingOffset": [
+          0,
+          0
+        ],
+        "interComponentDistancesMeaningful": false,
+        "displayedRegionCentroids": {
+          "distanceStress": 0.5367215125648599,
+          "topFiveNeighborRecall": 0.0647108130762783,
+          "degenerateTarget": false
+        },
+        "diagnosticDistinction": "atomProjection describes the computational diffusion atoms; displayedRegionCentroids evaluates actual shown region positions against the same full diffusion distances."
+      }
+    ],
+    "fullOverviewRemote": {
+      "path": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/organization-v5-cohort/attempt-1/results/overview.json",
+      "sha256": "3e3b0d98ad2d4a6cfee088ebcef184ac8446d0a95571550e8ccf70f923e98af2",
+      "bytes": 49446319
+    },
+    "fullCoarseFlowRemote": {
+      "path": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/organization-v5-cohort/attempt-1/results/coarse-flow.npz",
+      "sha256": "dc587603dda9da2b3d454a119e69981c03d1e91062196baf2701b1fc51ec69cc"
+    },
+    "globalProjectionIsPoor": true
+  },
+  "packageWithoutOverview": {
+    "manifestSha256": "3f07acd5cdf163af85c1ba91ccf3a6882343e1f7b33c6852e9ec61ca98d25674",
+    "counts": {
+      "destinations": 7624,
+      "sources": 26623,
+      "memberships": 31166,
+      "navigationRelations": 6005,
+      "orientationNodes": 211,
+      "detailOverviewNodes": 0
+    },
+    "catalogBytes": 4587360,
+    "fileCountGate": {
+      "maxFileBytes": 26214400,
+      "maxFileCount": 20000,
+      "staticDestinationPages": 7624,
+      "ordinarySiteAssetReserve": 500,
+      "projectedFileCount": 15554,
+      "passed": true
+    },
+    "packageDirectory": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/organization-candidate-v1"
+  },
+  "knownLimits": [
+    "Only seven admitted scientific navigation arcs; global family routes/reconciliation are pending. Independent candidate entry IDs do not create scientific links.",
+    "Original numerical bins remain provenance only.",
+    "49MB full affinity-edge overview is diagnostic, not a public asset. Full C retained; sparse recorded display affinities and one metric-fit comparison are next.",
+    "This checkpoint includes13323 typed roles; the newly delivered separate16-row role delta is pending incorporation in a later candidate.",
+    "No deployment or complete/pre-holdout-freeze claim."
+  ]
+}
