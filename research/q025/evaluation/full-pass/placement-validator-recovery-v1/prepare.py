@@ -1,0 +1,23 @@
+"""Exact deterministic timeout adoption and one independent challenge; never launches."""
+import json,os,shutil,time
+from pathlib import Path
+import contract
+from materialize import read,dump,sha,verified_pin
+B=Path(__file__).resolve().parent;F=B.parent;E=F.parent;W=E.parents[2];L=F/'native-local/placement-validator-recovery-v1';O=F/'native-local/placement-successors-v1/jobs/successor-placement-continuation-0041-proposal';C=O.parent/'successor-placement-continuation-0041-challenge'
+def pin(p):return {'path':os.path.relpath(p,E),'sha256':sha(p)}
+def main():
+ assert not(L/'state.json').exists();old=read(O/'receipt.json');assert old['status']=='failed'and'ETIMEDOUT'in old['error']and old['sourceOnly']and not old['toolUseAttempted']and not old['streamTruncated'];p=read(O/'packet.actual.json');raw=read(O/'reply.raw.txt');assert sha(O/'reply.raw.txt')==old['replySha256']
+ for name,key in [('request.json','baseRequestSha256'),('dispatch-request.json','requestSha256'),('packet.actual.json','packetSha256'),('prompt.actual.txt','promptSha256')]:assert sha(O/name)==old['inputPins'][key]
+ start=time.perf_counter();result=contract.evaluate(p,raw);elapsed=time.perf_counter()-start;assert result['normalizedReview']==raw,'no scientific or representation change permitted'
+ adopted=L/'adopted/0041-proposal';adopted.mkdir(parents=True,exist_ok=True);copied=['request.json','dispatch-request.json','packet.actual.json','prompt.actual.txt','reply.raw.txt']
+ for name in copied:shutil.copyfile(O/name,adopted/name)
+ dump(adopted/'reply.json',raw);result.update(originalFailedReceipt=pin(O/'receipt.json'),originalRawSha256=sha(O/'reply.raw.txt'),packetSha256=sha(adopted/'packet.actual.json'),normalizerSha256=sha(B/'contract.py'),deterministicRevalidation=True,scientificContentChanged=False);dump(adopted/'normalization.json',result)
+ receipt={**old,'schemaVersion':'q025-derived-placement-receipt/1','jobId':'0041-deterministic-proposal-adoption','status':'complete','error':None,'originalNativeStatus':'failed','originalFailedReceipt':pin(O/'receipt.json'),'normalizedReplySha256':sha(adopted/'reply.json'),'normalizationReceiptSha256':sha(adopted/'normalization.json'),'representationStatus':result['status'],'nativeReviewRepeated':False,'scientificContentChanged':False};dump(adopted/'receipt.json',receipt)
+ req=read(C/'request.json');assert not(C/'dispatch-request.json').exists();pins=[]
+ for item in req['sourcePins']:pins.append(pin(verified_pin(item)))
+ pins += [pin(O/n)for n in copied+['receipt.json','reply.stream.raw.txt']]+[pin(C/'request.json')]+[pin(adopted/n)for n in copied+['reply.json','receipt.json','normalization.json']]
+ schema=L/'placement-schema.json';dump(schema,contract.SCHEMA);pins.append(pin(schema));pins=list({x['path']:x for x in pins}.values());jid='validator-recovery-placement-0041-challenge'
+ req={**req,'jobId':jid,'dependsOn':None,'priorJobPath':str(adopted.relative_to(E)),'priorReceiptSha256':sha(adopted/'receipt.json'),'schemaPath':str(schema.relative_to(E)),'schemaSha256':sha(schema),'sourcePins':[{'path':str((E/x['path']).resolve().relative_to(W)),'sha256':x['sha256']}for x in pins]};dump(L/'jobs'/jid/'request.json',req)
+ campaign={'schemaVersion':'q025-placement-validator-recovery/1','originalRuntime':'full-pass/native-local/placement-continuation-v1','maxAuthorizedConcurrency':1,'jobs':[{'jobId':jid,'dependsOn':None,'requestSha256':sha(L/'jobs'/jid/'request.json')}],'publicPins':[pin(B/n)for n in ['contract.py','materialize.py','INSTRUCTIONS.md','prepare.py']]+[pin(F/'placement-continuation-v1/contract.py')],'immutableInputPins':pins,'nativeLaunches':0};dump(L/'campaign.json',campaign);shutil.copyfile(F/'native-local/placement-successors-v1/execution.json',L/'execution.json');dump(L/'control.json',{'enabled':False,'maxActive':1,'maxStartsPerMinute':6,'minStartIntervalMs':5000,'stopWhenComplete':True});dump(B/'manifest.json',{**campaign,'campaignSha256':sha(L/'campaign.json'),'runnerSha256':sha(B/'runner.mjs'),'nativeJobs':1})
+ dump(B/'adoption.json',{'schemaVersion':'q025-placement-timeout-adoption/1','originalFailedReceipt':pin(O/'receipt.json'),'originalRawReply':pin(O/'reply.raw.txt'),'adoptedReceipt':pin(adopted/'receipt.json'),'adoptedReply':pin(adopted/'reply.json'),'normalization':pin(adopted/'normalization.json'),'revalidationSeconds':elapsed,'placementRows':len(raw['placements']),'newScopes':len(raw['newScopes']),'exactLogicalContentUnchanged':True,'originalFailurePreserved':True,'nativeCallsRepeated':0,'scientificAdmission':False});print(json.dumps({'requests':1,'placements':len(raw['placements']),'newScopes':len(raw['newScopes']),'nativeLaunches':0,'revalidationSeconds':elapsed}))
+if __name__=='__main__':main()

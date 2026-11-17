@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "q025-incremental-placement-cut/1",
+  "counts": {
+    "previousSourcesExcluded": 403,
+    "pendingGlobalDefinitions": 40,
+    "pairs": 27,
+    "sources": 820,
+    "eligibleUnchangedExistingWholeHomes": 682,
+    "exceptionSources": 138,
+    "proposedDefinitions": 108,
+    "currentlySelectedProposedDefinitions": 105,
+    "verifiedFiles": 324
+  },
+  "mechanical": {
+    "path": "research/q025/integration/placement-continuation-intake-v1/intake-20261117T170838Z.json",
+    "sha256": "5c511504cfc9e96ac5663abbcc0e8831ebd8d8fe919e91854eb58e9919c47211",
+    "bytes": 1307884
+  },
+  "currentAssembly": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/candidate-6294/aggregate.local.json",
+    "sha256": "e9bb797bb6595e24e42191e8ea20112bdc619dc326ff62efc61cbcaa9bb54d75",
+    "bytes": 106896310
+  },
+  "sourceBindings": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-03/source-bindings.local.json",
+    "sha256": "23339baf89182d89370f5289d0217061bf0b1fbe1c7162f1c530935db6c7170a",
+    "bytes": 14953079
+  },
+  "exceptionIntake": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-03/exception-intake.json",
+    "sha256": "e2c8feedca7ab901585b3a3f046fa6900d1fb60eec30b2dd8f668d09a2d15a7b",
+    "bytes": 7068293
+  },
+  "exceptionReasons": {
+    "requires_scope_or_coverage_adjudication": 126,
+    "new_scope_requires_global_check": 112,
+    "whole_target_or_missing_premise": 16,
+    "proposal_coverage_gap": 16,
+    "nonconservative_allocation": 14,
+    "challenger_changed_or_insufficient_home": 12,
+    "changed_home_or_weight": 12,
+    "canonical_home_revalidation_required": 3
+  },
+  "existingHomeAdmissionPolicy": "Root approved exact retained existing-scope whole-home class on the pilot; compilation still binds every exact row/current scope/source before assembly.",
+  "noNewScopesAdmitted": true,
+  "noPrimaryReading": true,
+  "scriptSha256": "b955f115cd57d435a46a2117413b1942ac8ae83b64a0e8421dd8c79410076bf2"
+}

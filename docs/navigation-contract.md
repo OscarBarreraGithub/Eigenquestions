@@ -1,22 +1,22 @@
 # Navigation contract: native v1.0.0 and prepared v1.1.0
 
-Shared agreement between geometry, protocol and site owners for Q-001. Schemas are in [`schemas/`](../schemas/). Engine computations are deterministic for an immutable corpus and normalized state. All IDs are stable source IDs; screen labels are never identifiers.
+Shared agreement between geometry, protocol and site owners, beginning with Q-001 and extended by Q-025. Schemas are in [`schemas/`](../schemas/). The primary atlas path uses [prepared scoped destinations (v1.1)](#q-025-prepared-destinations): stable question/region IDs, explicit source links and reviewed navigation. Optional native exploration retains the v1.0 source-vector engine described first below. Both use the same session/controller and deterministic versioned state. Source IDs and scientific destination IDs are distinct; screen labels are never identifiers.
 
-## Data and engine
+## Native v1.0 data and engine
 
 `lib/geometry/index.mjs` exports `loadCorpus(base, {readJson, readBinary}?)` and `createNavigator(corpus)`. The loader defaults to browser fetch; Node supplies filesystem readers. A manifest names hashed JSON metadata and float32 vector shards. Corpus contains `manifest`, `papers`, `units`, `vectors`, `adjacency`. Full encoder, normalization, row alignment and snapshot metadata belong in the manifest. Scientific claims attach to evidence, not vector proximity.
 
 `createNavigator(corpus)` returns synchronous `computeView(state)`, `search(query, options?)`, and `getEvidence(ids)`. Geometry ignores history and searches the global corpus at each step; focus conditions retrieval without locking descendants into an inherited cluster. `computeView` never mutates its input.
 
-## State and result
+## Native v1.0 state and result
 
 State: `{schemaVersion:'1.0.0', id, corpusId, computationId, query, focusIds, intent, workRelation, lens, constraints}`. `intent` is `explore|derive|phenomenology|recent|using`; `workRelation` is independently `on|using|either` so recent work **on** and recent work **using** a subject differ. `lens` is `physical_question|method|combined`. Constraints contain `excludeIds`, optional `yearMin`, `yearMax`. Query records the current natural-language question; conversation interpretation is the external agent's responsibility. `computationId` pins the engine version, exact default parameter digest and corpus manifest digest. Both session import and action execution reject a different computation identity; algorithm changes require an engine-version bump. `id` is a deterministic digest of normalized state including this identity, never an invented physics coordinate.
 
-View: `{schemaVersion,corpusId,computationId,stateId,query,nodes,edges,directions,chart,diagnostics,warnings}`. Nodes expose `id,paperId,title,label,x,y,score,residual,sourceUrl,evidence`. Edges expose `source,target,type,weight`. Direction objects expose `id,label,summary,seedIds,query,intent,lens,evidenceIds`, optional `workRelation`, plus `mass,massFraction,sourceCount,withinGroupRms,residual,inSlab` when grouped. Normally five, never more than six choices; low-coverage results may contain fewer. Directions are proposals supported by evidence, not established deductions.
+View: `{schemaVersion,corpusId,computationId,stateId,query,nodes,edges,directions,chart,diagnostics,warnings}`. Nodes expose `id,paperId,title,label,x,y,score,residual,sourceUrl,evidence`. Edges expose `source,target,type,weight`. Direction objects expose `id,label,summary,seedIds,query,intent,lens,evidenceIds`, optional `workRelation`, plus `mass,massFraction,sourceCount,withinGroupRms,residual,inSlab` when grouped. This optional native projection normally produces five, never more than six choices; low-coverage results may contain fewer. Prepared atlas choices instead follow the scientific structure, usually about 1–15, with every exact connection accessible. Directions are proposals supported by evidence, not established deductions.
 
 The chart declares method, center, basis, dimension, metric, scale, thickness, explained variance and degeneracy. The selected default fits the five **dynamic direction means** in the original embedding ambient space; these weighted means are not renormalized. `chart.fitScope` names this choice, and `groupDiagnostics` and `sourceDiagnostics` separately report fidelity. Group variance must never be presented as variance retained for all source vectors. Source points are overlays projected into the same plane; within-group spread and source residuals remain visible. Residual means distance from the affine plane in the declared vector space; projection coordinates and group mass are not physical observables or scientific probabilities. Warnings/diagnostics communicate corpus recency, unsupported/empty queries, coverage and geometric failures rather than fabricating results. Engine-specific diagnostic fields may extend the object.
 
-## Session and transitions
+## Native v1.0 session and transitions
 
 `lib/protocol/session.mjs` exports:
 
@@ -314,3 +314,27 @@ canonical neighbor title for an unlabeled incoming route). `relations` retains
 every exact directed reason, qualification and access certificate; `routeCount`
 reports that count. The full connection collection and its relation count are
 unchanged. This grouping does not compose, invert or merge scientific relations.
+
+### Lazy relation evidence and review records
+
+A lazy atlas may keep `catalog.relationDetailShards` and a compact relation
+`detail:{shardId,recordSha256}`. The index preserves endpoints, type, status,
+reviewed titles, rationale, qualification and other scientific fields, plus the
+navigation-basis discriminator and exact `evidenceCount`. Complete evidence IDs,
+evidence references and review provenance live in the referenced record; omitted
+index fields never imply absent evidence. The shard is
+`{schemaVersion:'1.0.0',kind:'eigenquestions-relation-details',relations:{[id]:fullRecord}}`.
+Both file checksum and recursively key-sorted full-record checksum are verified,
+as is equality with every indexed scientific field. Existing inline records remain
+supported. Destination details retain their full evidence inventory; organization
+history is available through `manifest.files.organizationProvenance`.
+
+`navigator_connections` accepts one exact `relationId` with `includeProof:true`;
+the CLI exposes `connections --relation-id ID --include-proof`. The returned
+connection contains the full original `proof` without reversing incoming arrows.
+The browser offers a lazy source/review disclosure and static pages link the same
+JSON record. Reads do not mutate selectors, history, revisions or computed views;
+a late disclosure cannot replace a newly accepted destination. Complete logical
+validation and partition round-trip checks happen at build time. A legacy exact
+source-method map may omit its byte count; its hash and actual 25 MiB bound still
+apply, while destination and relation-proof shard sizes remain mandatory.

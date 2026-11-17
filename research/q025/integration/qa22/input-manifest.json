@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "q025-qa-config-correction/1",
+  "priorJobId": "61552414",
+  "priorInputManifestSha256": "4f336f1117e05cbc946aaaab45f8d1690ad01d3a14941dd5b221b147c490b97e",
+  "patchSha256": "0c58f3aeee16c3dac3272dd14da8152b6da52affbbf4ca5997de9e866ddb5a54",
+  "files": [
+    {
+      "path": "data/atlas/index.json",
+      "sha256": "e02c479cce1fe6b55ae83edc8c2ccc462bc838cb42359c852d28bbfda80af822",
+      "bytes": 668
+    },
+    {
+      "path": "dist/data/atlas/index.json",
+      "sha256": "e02c479cce1fe6b55ae83edc8c2ccc462bc838cb42359c852d28bbfda80af822",
+      "bytes": 668
+    },
+    {
+      "path": "research/q025/integration/qa22/browser.py",
+      "sha256": "ea5bfeea3dcf45d7381e42ce4992bcf9a3611333b80ddeef31702ad11bac998a",
+      "bytes": 14116
+    }
+  ],
+  "candidateManifestSha256": "e7d79cc32992decac93f59342a46fed7d740bc7b991fad79b399eec9a9d08883",
+  "defaultHome": {
+    "atlasId": "q025-approved-organization-candidate",
+    "atlasVersion": "2026-11-17-cohort-6030-connected-v4",
+    "destinationId": "classification:physics"
+  },
+  "scientificPackageChanged": false,
+  "runtimeCodeChanged": false,
+  "changes": [
+    "Add missing explicit default home to isolated QA source and built index.",
+    "Keep browser alive for failure diagnostics and prevalidate default home before waiting."
+  ]
+}

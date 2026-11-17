@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "q025-incremental-placement-production-check/1",
+  "status": "passed",
+  "fixtureBypass": false,
+  "candidatePacket": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/candidate-6294/aggregate.local.json",
+    "sha256": "e9bb797bb6595e24e42191e8ea20112bdc619dc326ff62efc61cbcaa9bb54d75",
+    "bytes": 106896310
+  },
+  "component": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/admitted/component.json",
+    "sha256": "7f8b96f5b2631bf13a76a0789141adb4dbf927fab3b2595acad9a2226970343c",
+    "bytes": 531244
+  },
+  "admission": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/admitted/admission.json",
+    "sha256": "5aa801513aeabdfa5423f7d016f63e93acf2f4ca5ef692c73b0be6ac405d2b54",
+    "bytes": 155555
+  },
+  "productionReport": {
+    "path": "research/q025/assembly/outputs/organization-candidate-6294-incremental-v7/assembly-report.json",
+    "sha256": "30066d97b32c440885ae8b68a45013c09974aea9785b8db8c8908909a2e3d349",
+    "bytes": 3472231
+  },
+  "manifest": {
+    "path": "research/q025/assembly/outputs/organization-candidate-6294-incremental-v7/manifest.json",
+    "sha256": "4a913058f8170f4f11756ae91fec24e81d4571774ae5d3a3bbccbd3316557470",
+    "bytes": 2827
+  },
+  "catalog": {
+    "path": "research/q025/assembly/outputs/organization-candidate-6294-incremental-v7/catalog.json",
+    "sha256": "137f9ccbb088bb43a215b870dd537e36b5b1c5e7711e1bb05cf075c097391c0d",
+    "bytes": 22713110
+  },
+  "sourceCount": 6294,
+  "remainingEligible": 2136,
+  "reserved": 43,
+  "sourceAllocationMaxError": 0,
+  "canonicalProjection": {
+    "groups": 6,
+    "redirects": 7,
+    "originalDefinitionsRetained": 13,
+    "suppressedSelfRelations": 3,
+    "sourceContributionObservations": 13416,
+    "sourceContributionRelationships": 13397,
+    "ancestorClosureRecomputed": true,
+    "addedAncestorRows": 24,
+    "massChanged": false,
+    "homeRowsRemapped": 0,
+    "sourceStatementEquivalence": false
+  },
+  "counts": {
+    "destinations": 8187,
+    "sources": 26623,
+    "memberships": 49919,
+    "navigationRelations": 10010,
+    "orientationNodes": 211,
+    "detailOverviewNodes": 0
+  },
+  "fileCountGate": {
+    "maxFileBytes": 26214400,
+    "maxFileCount": 20000,
+    "staticDestinationPages": 8187,
+    "ordinarySiteAssetReserve": 500,
+    "projectedFileCount": 16222,
+    "passed": true
+  },
+  "purpose": "One in-flight integration check adds177unchanged whole homes and501approved orientation/parent routes. Frozen6117QA baseline remains unchanged; further placement components accumulate without per-cut browser rebuilds.",
+  "noNewScopeOrAlias": true,
+  "partialNotRelease": true
+}

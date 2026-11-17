@@ -63,6 +63,8 @@ export async function checkSite(directory = path.join(root, 'dist')) {
       assert.match(prepared.files.catalog.path,/^[a-zA-Z0-9][a-zA-Z0-9._-]*\.json$/);
       const catalog=await readFile(path.join(atlasDirectory,prepared.files.catalog.path));assert.equal(createHash('sha256').update(catalog).digest('hex'),prepared.files.catalog.sha256,'Prepared catalog hash mismatch');verifiedAtlasFiles+=2;
       const loaded=await loadAtlas(atlasDirectory,{readText:filename=>readFile(filename,'utf8')}),navigator=createAtlasNavigator(loaded);await navigator.prepareSearch?.();
+      for(const relation of loaded.catalog.relations)if(relation.detail)await navigator.readRelation(relation.id);
+      if(prepared.files.organizationProvenance)await loaded.readShard(prepared.files.organizationProvenance);
       const assetSet=new Set(entries);for(const destination of loaded.catalog.destinations)assert.ok(assetSet.has(`atlas/${entry.atlasId}/${entry.atlasVersion}/${destination.id}.html`),`Prepared atlas lacks static readable destination ${destination.id}`);
       for(const oldId of Object.keys(loaded.catalog.destinationAliases||{}))assert.ok(assetSet.has(`atlas/${entry.atlasId}/${entry.atlasVersion}/${oldId}.html`),`Prepared atlas lacks readable former-destination page ${oldId}`);
     }

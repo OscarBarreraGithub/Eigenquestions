@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "q025-incremental-placement-checkpoint/1",
+  "status": "frozen_stage_safe",
+  "files": [
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/prepare_next_cut.mjs",
+      "sha256": "b955f115cd57d435a46a2117413b1942ac8ae83b64a0e8421dd8c79410076bf2",
+      "bytes": 10816
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/compile_next_cut.mjs",
+      "sha256": "38cd2f6ce13a0e31a1d56014f98c6b47618fd3b98bd0ca90e78a25a9ebea0e02",
+      "bytes": 6249
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-02/settings.json",
+      "sha256": "6c325d7fe67e3e67b4c34e3610f5484feb5b9d8c7ed7dda1609436aea190cb5c",
+      "bytes": 746
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-02/report.json",
+      "sha256": "6083faa4f45152d9751680d398a89c6d54708a656d83979d4694b464a3f46f07",
+      "bytes": 1847
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-02/admitted/component.json",
+      "sha256": "3d57c1bb9052987b57125d84277c99ac62472527fc154d51851245f68c5b8ff9",
+      "bytes": 506170
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-02/admitted/admission.json",
+      "sha256": "b83d8082c4d165c364ce233d81d7568e524b7963d4a1549e7578d8448cd9a51a",
+      "bytes": 146870
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-02/admitted/report.json",
+      "sha256": "e4d0fd0fd2768a15be5bb7b6b2b0ba797573cf61d2d8fb059b13b21f4f9bd832",
+      "bytes": 684
+    }
+  ],
+  "totalBytes": 673382,
+  "previousCut": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/checkpoint.json",
+    "sha256": "cd3f089906b4569dd3d8077b7e1a266ae9ac30968097c007fd18cfe482035441",
+    "bytes": 3018
+  },
+  "compiledSources": 167,
+  "coverageIncludingPriorAdmittedCuts": 6461,
+  "lastFullAssemblySources": 6294,
+  "exceptionsPending": 17,
+  "newDefinitionsPending": 13,
+  "noNewScopesOrRoutesOrAliases": true,
+  "bulkExcluded": [
+    "source-bindings.local.json",
+    "exception-intake.json (pin in report; evaluator review ongoing)",
+    "no full browser package built for this cut"
+  ]
+}

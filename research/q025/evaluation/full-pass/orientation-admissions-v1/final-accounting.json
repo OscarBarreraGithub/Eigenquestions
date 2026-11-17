@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "q025-final-orientation-accounting/1",
+  "exactClassCut": {
+    "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/cut-04.json",
+    "sha256": "da1a60b5cb6d9866791af81456fed03ea73860a6021c17a146a1b107d22cac15",
+    "bytes": 13497
+  },
+  "explicitCoordinatorDeltas": [
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-adjudications-v1/stellar-component.json",
+      "sha256": "f6a01a8f52288e9e7d3c1aeebef68f71e4528614b58dcacabf112067c39895aa",
+      "bytes": 9743
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-adjudications-v1/replacements-component.json",
+      "sha256": "fd241032ecaa5130e94f836220d706273742fe16dba901246af9357a6f941925",
+      "bytes": 52426
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-adjudications-v1/final-replacements-component.json",
+      "sha256": "209209e4a2adb434fe6200cbffd945410c3a2e982404cdb3b1757d1277195e8b",
+      "bytes": 33024
+    }
+  ],
+  "counts": {
+    "originalObservations": 491,
+    "exactPairedRoutes": 481,
+    "rootAdjudicatedReplacementRoutes": 4,
+    "originalClaimsWithheld": 6,
+    "separateQualifiedConnectionsWithoutWithheldClaim": 2,
+    "publicRouteObservations": 487,
+    "unresolvedOriginalCoverage": 0,
+    "newNativeCallsRequired": 0
+  },
+  "withholdingMeaning": "Six original application/method claims remain withheld. Two separately approved definition-level comparisons keep explicit scientific connections accessible without establishing those withheld claims. Four other optional relationships remain pending; no additional review campaign is required.",
+  "allOriginalsPreserved": true,
+  "newHomesScopesRolesAliases": false,
+  "newPrimaryReading": false,
+  "remainingGlobalChecks": "Assembler revalidates exact current endpoints, canonical projection, duplicate route observations and containment DAG."
+}

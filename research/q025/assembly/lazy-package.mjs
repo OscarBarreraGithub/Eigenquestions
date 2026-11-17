@@ -7,7 +7,15 @@ const bytes=x=>Buffer.byteLength(JSON.stringify(x));
 const contextual=r=>r.placementStatus==='context_only';
 const setHash=ids=>sha256([...new Set(ids)].sort().join('\n'));
 const MAX_FILE=25*1024*1024;
-const indexFields=['id','kind','title','question','summary','aliases','metadataOnly','evidenceIds','scientificStatus','placementStatus','membershipStatus','identityStatus','sourceQuestionAccess'];
+const indexFields=['id','kind','title','question','summary','aliases','metadataOnly','scientificStatus','placementStatus','membershipStatus','identityStatus','sourceQuestionAccess'];
+const sorted=value=>Array.isArray(value)?value.map(sorted):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(k=>[k,sorted(value[k])])):value;
+export const relationRecordHash=record=>sha256(JSON.stringify(sorted(record)));
+export function compactRelation(record,shardId){
+  if(record.detail!==undefined||record.evidenceCount!==undefined)throw new Error('Logical relation uses reserved lazy proof fields');
+  const value={...record};delete value.evidenceIds;delete value.evidenceRefs;delete value.provenance;
+  if(record.provenance?.navigationBasis!==undefined)value.provenance={navigationBasis:record.provenance.navigationBasis};
+  return {...value,evidenceCount:(record.evidenceIds||[]).length,detail:{shardId,recordSha256:relationRecordHash(record)}};
+}
 
 /** Lossless shallow defaults. Exact identity and endpoint fields are never templates. */
 export function templateIndex(catalog){
@@ -26,11 +34,9 @@ export function validatePartition(logical,partition){
   const fine=partition.catalog.fineIndex?read(partition.catalog.fineIndex):{destinations:[],relations:[]},expand=(row,kind)=>{const value={...(partition.catalog.indexTemplates?.[kind]?.[row.indexTemplate]||{}),...row};delete value.indexTemplate;return value;};
   const indexes=new Map([...partition.catalog.destinations,...fine.destinations].map(d=>{const value=expand(d,'destinations');return [value.id,value];})),relations=new Map([...partition.catalog.relations,...fine.relations].map(r=>{const value=expand(r,'relations');return [value.id,value];}));
   if(indexes.size!==logical.destinations.length||relations.size!==logical.relations.length)throw new Error('Partition index loses exact identities');
-  for(const r of logical.relations)if(JSON.stringify(relations.get(r.id))!==JSON.stringify(r)){
-    // Template expansion changes key insertion order but must preserve every value.
-    const same=(a,b)=>JSON.stringify(Object.entries(a).sort(([x],[y])=>x.localeCompare(y)))===JSON.stringify(Object.entries(b).sort(([x],[y])=>x.localeCompare(y)));
-    if(!same(relations.get(r.id),r))throw new Error('Partition relation changed');
-  }
+  const loadedRelations=new Map();
+  for(const r of logical.relations){const index=relations.get(r.id),descriptor=partition.catalog.relationDetailShards?.[index.detail?.shardId];if(!descriptor)throw new Error('Partition relation proof missing');if(!loadedRelations.has(descriptor.path))loadedRelations.set(descriptor.path,read(descriptor));const payload=loadedRelations.get(descriptor.path),full=payload.relations?.[r.id];if(payload.kind!=='eigenquestions-relation-details'||!full||relationRecordHash(full)!==index.detail.recordSha256||relationRecordHash(full)!==relationRecordHash(r)||JSON.stringify(sorted(index))!==JSON.stringify(sorted(compactRelation(r,index.detail.shardId))))throw new Error('Partition relation changed');}
+  if(logical.organizationProvenance&&JSON.stringify(read(partition.ancillary.organizationProvenance))!==JSON.stringify(logical.organizationProvenance))throw new Error('Organization provenance round trip differs');
   const byDest=new Map(logical.destinations.map(d=>[d.id,[]]));for(const row of logical.memberships)byDest.get(row.destinationId).push(row);
   const loadedDetails=new Map(),loadedMemberships=new Map();let count=0;
   for(const d of logical.destinations){const index=indexes.get(d.id);if(!index)throw new Error('Destination absent from partition');const descriptor=partition.catalog.detailShards[index.detail.shardId];if(!loadedDetails.has(descriptor.path))loadedDetails.set(descriptor.path,read(descriptor));const detail=loadedDetails.get(descriptor.path).destinations[d.id];if(!detail||detail.destination.id!==d.id)throw new Error('Wrong detailed identity');let rows=[];if(detail.memberships){if(!loadedMemberships.has(detail.memberships.path))loadedMemberships.set(detail.memberships.path,read(detail.memberships));rows=loadedMemberships.get(detail.memberships.path).destinations[d.id].items;}if(JSON.stringify(rows)!==JSON.stringify(byDest.get(d.id)))throw new Error(`Membership round trip differs: ${d.id}`);count+=rows.length;
@@ -38,7 +44,7 @@ export function validatePartition(logical,partition){
     const incident=logical.relations.filter(r=>r.source===d.id||r.target===d.id);if(index.connectionCount!==incident.length)throw new Error('Pinned connection count mismatch');const localIds=new Set(detail.navigation.relations.map(r=>r.id)),globalIds=new Set(partition.catalog.relations.filter(r=>r.source===d.id||r.target===d.id).map(r=>r.id));if(incident.some(r=>!localIds.has(r.id)&&!globalIds.has(r.id)))throw new Error('Local navigation loses an incident link');
   }
   for(const [prefix,descriptor] of Object.entries(partition.catalog.fineLookup?.shards||{})){const bucket=read(descriptor);for(const d of bucket.destinations)if(d.id.slice(16,18)!==prefix||!indexes.has(d.id))throw new Error('Fine lookup prefix mismatch');}
-  return {passed:true,filesChecked:files.size,completeMembershipRowsChecked:count,destinationsChecked:indexes.size,relationsChecked:relations.size,exactMembershipRoundTrip:true,exactSourceIdentityPreserved:true,pinnedCountsVerified:true,allIncidentNavigationAvailableBeforeView:true};
+  return {passed:true,filesChecked:files.size,completeMembershipRowsChecked:count,destinationsChecked:indexes.size,relationsChecked:relations.size,exactMembershipRoundTrip:true,exactRelationProofRoundTrip:true,exactSourceIdentityPreserved:true,pinnedCountsVerified:true,allIncidentNavigationAvailableBeforeView:true};
 }
 
 function sampleRows(rows,d,primaryLimit=30,contextLimit=6){
@@ -47,14 +53,14 @@ function sampleRows(rows,d,primaryLimit=30,contextLimit=6){
   return [...rows.filter(r=>!contextual(r)).sort(order).slice(0,primaryLimit),...rows.filter(contextual).sort(order).slice(0,contextLimit)];
 }
 
-function packEntries(entries,{kind,prefix,targetBytes,maxFileBytes=MAX_FILE}){
+function packEntries(entries,{kind,prefix,targetBytes,maxFileBytes=MAX_FILE,collectionKey='destinations'}){
   const files=[],locations=new Map();let current={},currentBytes=0;
-  function flush(){if(!Object.keys(current).length)return;const payload={kind,schemaVersion:'1.0.0',destinations:current},text=JSON.stringify(payload),size=Buffer.byteLength(text);if(size>maxFileBytes)throw new Error(`${kind} shard exceeds ${maxFileBytes} bytes (${size})`);const path=`${prefix}-${String(files.length).padStart(4,'0')}.json`,descriptor={path,sha256:sha256(text),bytes:size};files.push({descriptor,text});for(const id of Object.keys(current))locations.set(id,descriptor);current={};currentBytes=0;}
+  function flush(){if(!Object.keys(current).length)return;const payload={kind,schemaVersion:'1.0.0',[collectionKey]:current},text=JSON.stringify(payload),size=Buffer.byteLength(text);if(size>maxFileBytes)throw new Error(`${kind} shard exceeds ${maxFileBytes} bytes (${size})`);const path=`${prefix}-${String(files.length).padStart(4,'0')+'.json'}`,descriptor={path,sha256:sha256(text),bytes:size};files.push({descriptor,text});for(const id of Object.keys(current))locations.set(id,descriptor);current={};currentBytes=0;}
   for(const [id,value] of entries){const n=Buffer.byteLength(JSON.stringify(id))+bytes(value)+2;if(currentBytes&&currentBytes+n>targetBytes)flush();current[id]=value;currentBytes+=n;}
   flush();return {files,locations};
 }
 
-export function partitionCatalog(logical,{entryDestinationId,detailTargetBytes=256*1024,membershipTargetBytes=1024*1024,maxFileBytes=MAX_FILE}={}){
+export function partitionCatalog(logical,{entryDestinationId,detailTargetBytes=256*1024,membershipTargetBytes=1024*1024,relationTargetBytes=512*1024,maxFileBytes=MAX_FILE}={}){
   const sourceMap=new Map(logical.sources.map(s=>[s.id,s])),destMap=new Map(logical.destinations.map(d=>[d.id,d]));
   if(destMap.size!==logical.destinations.length||sourceMap.size!==logical.sources.length)throw new Error('Duplicate logical atlas identity');
   const byDestination=new Map(logical.destinations.map(d=>[d.id,[]]));
@@ -70,7 +76,8 @@ export function partitionCatalog(logical,{entryDestinationId,detailTargetBytes=2
     const detail={destination,sources,membershipSample:sample,...(rows.length?{memberships:membershipPack.locations.get(d.id)}:{}),coverage:{...counts.get(d.id),membershipSampleIsComplete:sample.length===rows.length,memberIdsSha256:membershipHashes.get(d.id)}};
     const category=d.id===entryDestinationId?'entry':d.metadataOnly?'metadata':d.sourceQuestionAccess?'fine':'authored';details[category].push([d.id,detail]);
   }
-  const files=[...membershipPack.files],detailShards={},detailLocations=new Map();
+  const relationPack=packEntries(logical.relations.map(r=>[r.id,r]),{kind:'eigenquestions-relation-details',prefix:'relation-details',targetBytes:relationTargetBytes,maxFileBytes,collectionKey:'relations'}),relationDetailShards=Object.fromEntries(relationPack.files.map(f=>[f.descriptor.path.replace(/\.json$/,''),f.descriptor]));
+  const files=[...membershipPack.files,...relationPack.files],detailShards={},detailLocations=new Map();
   for(const [category,entries] of Object.entries(details)){
     const pack=packEntries(entries,{kind:'eigenquestions-destination-details',prefix:`destination-details-${category}`,targetBytes:category==='metadata'?64*1024:detailTargetBytes,maxFileBytes});
     for(const file of pack.files){const shardId=file.descriptor.path.replace(/\.json$/,'');detailShards[shardId]=file.descriptor;files.push(file);}for(const [id,descriptor] of pack.locations)detailLocations.set(id,descriptor.path.replace(/\.json$/,''));
@@ -80,9 +87,9 @@ export function partitionCatalog(logical,{entryDestinationId,detailTargetBytes=2
     // The source-facet summary is invariant boilerplate and is present in the full detail.
     if(d.sourceQuestionAccess)delete value.summary;
     const n=counts.get(d.id);return {...value,membershipCount:n.primaryCount,contextMembershipCount:n.contextCount,paperCount:n.paperCount,connectionCount:incident.get(d.id).length,detail:{shardId:detailLocations.get(d.id)}};});
-  let catalog={...logical,storage:'lazy-destinations-v1',destinations,sources:[],memberships:[],detailShards};
+  let catalog={...logical,storage:'lazy-destinations-v1',destinations,sources:[],memberships:[],detailShards,relationDetailShards,relations:logical.relations.map(r=>compactRelation(r,relationPack.locations.get(r.id).path.replace(/\.json$/,'')))};
   if(catalog.sourceContributions){catalog.sourceContributionInventory={count:catalog.sourceContributions.length,sha256:sha256(JSON.stringify(catalog.sourceContributions)),access:'Complete exact typed contributions are stored in each destination detail; they are not primary membership or geometry allocations.'};delete catalog.sourceContributions;}
-  const ancillary={};for(const key of ['fineIdentityProposals','unrepresentedPapers'])if(catalog[key]){const text=JSON.stringify(catalog[key]),descriptor={path:`${key.replace(/[A-Z]/g,x=>'-'+x.toLowerCase())}.json`,sha256:sha256(text),bytes:Buffer.byteLength(text)};if(descriptor.bytes>maxFileBytes)throw new Error(`Ancillary ${key} exceeds file bound`);files.push({descriptor,text});ancillary[key]=descriptor;delete catalog[key];}
+  const ancillary={};for(const key of ['fineIdentityProposals','unrepresentedPapers','organizationProvenance'])if(catalog[key]){const text=JSON.stringify(catalog[key]),descriptor={path:`${key.replace(/[A-Z]/g,x=>'-'+x.toLowerCase())}.json`,sha256:sha256(text),bytes:Buffer.byteLength(text)};if(descriptor.bytes>maxFileBytes)throw new Error(`Ancillary ${key} exceeds file bound`);files.push({descriptor,text});ancillary[key]=descriptor;delete catalog[key];}
   catalog.sourceInventory={sourceCount:logical.sources.filter(s=>s.kind!=='vocabulary').length,vocabularyCount:logical.sources.filter(s=>s.kind==='vocabulary').length,access:'Exact frozen browserVectorRow memberships; bounded source records in destination detail; full source context separately pinned.'};
   catalog=templateIndex(catalog);
   const fineIds=new Set(logical.destinations.filter(d=>d.sourceQuestionAccess).map(d=>d.id)),fineRelationIds=new Set(logical.relations.filter(r=>fineIds.has(r.source)||fineIds.has(r.target)).map(r=>r.id)),indexById=new Map(catalog.destinations.map(d=>[d.id,d])),indexedRelationById=new Map(catalog.relations.map(r=>[r.id,r]));
@@ -122,6 +129,8 @@ export async function writeLazyPackage({directory,manifest,catalog:logical,prove
   const projectedFileCount=deliveryFiles.length+2+logical.destinations.length+ordinarySiteAssetReserve;if(projectedFileCount>20000)throw new Error(`Projected full static delivery exceeds 20000 assets: ${projectedFileCount}`);
   for(const f of deliveryFiles)if(!Number.isSafeInteger(f.bytes)||f.bytes>MAX_FILE||f.bytes<1)throw new Error(`Delivery asset violates25MiB bound: ${f.path}`);
   const delivery={schemaVersion:'q025-delivery-assets/1',files:deliveryFiles,gate:{maxFileBytes:MAX_FILE,maxFileCount:20000,staticDestinationPages:logical.destinations.length,ordinarySiteAssetReserve,projectedFileCount,passed:true},sourceGeometryChanged:false},deliveryText=JSON.stringify(delivery),deliveryDescriptor={path:'delivery-assets.json',sha256:sha256(deliveryText),bytes:Buffer.byteLength(deliveryText)};await writeFile(join(directory,deliveryDescriptor.path),deliveryText);
+  const sourceMethodRoutes=manifest.files?.sourceMethodRoutes;
+  if(sourceMethodRoutes){const asset=deliveryFiles.find(f=>f.path===sourceMethodRoutes.path&&f.sha256===sourceMethodRoutes.sha256);if(!asset)throw new Error('Source-method route descriptor has no exact delivery asset');manifest={...manifest,files:{...manifest.files,sourceMethodRoutes:{...sourceMethodRoutes,bytes:asset.bytes}}};}
   manifest={...manifest,schemaVersion:'1.1.0',files:{...manifest.files,catalog:catalogDescriptor,logicalValidation:validationDescriptor,deliveryAssets:deliveryDescriptor,...partition.ancillary}};
   const manifestText=JSON.stringify(manifest);await writeFile(join(directory,'catalog.json'),catalogText);await writeFile(join(directory,'manifest.json'),manifestText);
   const handoff={schemaVersion:'q025-assembly-handoff/1',publicationStatus,notApprovedForSiteRelease:publicationStatus!=='accepted_for_installation',packageDirectory:directory,manifestSha256:sha256(manifestText),catalogSha256:catalogDescriptor.sha256,catalogBytes:catalogDescriptor.bytes,counts:{destinations:logical.destinations.length,sources:logical.sources.length,memberships:logical.memberships.length,navigationRelations:logical.relations.length,orientationNodes:logical.orientation?.nodes.length||0,detailOverviewNodes:logical.overview?.nodes.length||0},partition:{validation:validationDescriptor,deliveryAssets:deliveryDescriptor,assetCount:partition.files.length+4,totalShardBytes:partition.report.totalShardBytes,largestMembershipShardBytes:partition.report.largestMembershipShardBytes,largestDetailShardBytes:partition.report.largestDetailShardBytes,fileCountGate:delivery.gate},provenance};

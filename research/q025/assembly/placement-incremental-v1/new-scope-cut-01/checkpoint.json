@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "q025-incremental-placement-checkpoint/1",
+  "status": "frozen_stage_safe",
+  "files": [
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/compile_new_scope_homes.mjs",
+      "sha256": "ff9b5929e63b3b4e744e5b37c3394af22ec4962224744689ce9f816a8799316f",
+      "bytes": 8457
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/new-scope-homes.test.mjs",
+      "sha256": "c347c9e6c33c454bb7c404de1da717955edaa58923e69b549e7dbf749725adf2",
+      "bytes": 1606
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/new-scope-cut-01/component.json",
+      "sha256": "c83804d9a6228751dd12bf9c15d01caa2474513bb6a8f5f17504e881095c3f1d",
+      "bytes": 100520
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/new-scope-cut-01/admission.json",
+      "sha256": "9dded082079d58697b154619b36b4a67fe46234126ce54ba74bc876fa12b26b8",
+      "bytes": 39520
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/new-scope-cut-01/report.json",
+      "sha256": "9140acbabbd307cc3ed6fa54d6f2491563a79978a380c93092d0dd6992e691ac",
+      "bytes": 1030
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/new-scope-cut-01/access-gap.json",
+      "sha256": "0e5ad0e945b45a5ba8d78fe41176ad1438418a5d0c24beafe85298a0db559cda",
+      "bytes": 10541
+    }
+  ],
+  "totalBytes": 161674,
+  "approvedScopeCount": 26,
+  "homeSources": 32,
+  "excluded": "placement-continuation-0000:n8 remains outside this frozen component; later approval must be additive"
+}

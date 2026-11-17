@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "q025-separate-comparison-component/1",
+  "destinations": [],
+  "relations": [
+    {
+      "id": "navigation:stellar-threshold-comparison",
+      "source": "q025-candidate-question:fc582eff749d1936943465cf",
+      "target": "q025-candidate-question:3837596ccc94dbb619230dc6",
+      "type": "comparison",
+      "title": "Compare assumptions for intra-tower decays",
+      "rationale": "Compare the stellar production, cooling and visible-decay questions with the separately scoped KK threshold and cascade analysis. The relation supports examining their assumptions without asserting transfer of the threshold law.",
+      "qualification": "Compare dimensionality, action, field/brane treatment, daughter-mass and threshold regime. Compatibility is unestablished; no revised stellar bound follows. Cooling and production are distinct from visible-decay constraints. The specified five-dimensional threshold law is not established as applicable here or as a family-wide premise.",
+      "evidenceIds": [
+        "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+        "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60",
+        "unit:c667eaad26bf24f79ac000d31da08a2e1f6be8c980569251185cfd41bfdc3ae2"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:fc582eff749d1936943465cf",
+          "scopeContentSha256": "e7d5b35706d4ac9bbb82ba7cadc149841164baaacfa955a62a989b5d27c8a125"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "scopeContentSha256": "18e133141c5df5a60eb5a76bfe937797e87c309aa9aa9fe26a5d65922eec1f24"
+        }
+      ],
+      "decisionId": "decision:stellar-threshold-comparison",
+      "provenance": {
+        "coordinatorDefinitionLevelComparison": true,
+        "originalTransferStatus": "jointly_withheld_and_still_withheld",
+        "originalTransferDecision": {
+          "id": "d15",
+          "originalRef": "l15",
+          "status": "withheld",
+          "source": "s36",
+          "target": "s5",
+          "type": null,
+          "title": "Pending: establish applicability of the threshold law to stellar KK decays",
+          "rationale": "A premise check would run from the stellar visible-decay inference to the threshold analysis, reversing the original direction. Both statements require a geometry and decay-regime check, but the packet does not establish the match needed to transfer the suppression result.",
+          "qualification": "Keep this relation pending without asserting incompatibility or a revised stellar bound. The stellar source spans multiple dimensional settings, while s5 restricts its amplitude claim to a stated five-dimensional scalar–gravity setting and threshold regime. Cooling and production remain separate from later visible-decay limits; only the latter weakening argument invokes dominant intra-tower decays.",
+          "missingPremise": "It is not established that the stellar-source intra-tower channel relevant to the claimed weakening of visible-decay limits lies within s5's five-dimensional, diffeomorphism-invariant two-derivative scalar–gravity setting, stated field and brane treatment, and near-threshold regime with comparable daughter masses.",
+          "refs": [
+            "l15",
+            "s36",
+            "s5"
+          ]
+        },
+        "independentWithholdingAssessment": {
+          "ref": "d15",
+          "verdict": "supported_as_written",
+          "reason": "Both original statements require a geometry and decay-regime check before transferring threshold suppression to the stellar inference. The supplied scopes do not establish that match. Withholding is justified, and the proposed premise-check orientation is correctly reversed toward s5. The missing premise specifically identifies dimensional, action, field/brane and near-threshold requirements without asserting a revised stellar limit.",
+          "refs": [
+            "l15",
+            "s36",
+            "s5"
+          ]
+        },
+        "originalCandidateId": "parent-6df57d46d56df9c77805-challenge:link:46",
+        "sourceReadingBasis": "root_read_complete_endpoint_definitions_and_both_orientation_judgments",
+        "freshPrimaryReading": false,
+        "pairedComparisonVerdict": false,
+        "noPhysicalApplicabilityClaim": true,
+        "titleReadingDirection": "outgoing_only",
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:stellar-threshold-comparison",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:fc582eff749d1936943465cf",
+        "q025-candidate-question:3837596ccc94dbb619230dc6"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "e1e36c748c1ba64ee4e42f864f4d5845fedcef61c0a63975de72446f34cf9036",
+      "sourceScopeContentSha256": "e7d5b35706d4ac9bbb82ba7cadc149841164baaacfa955a62a989b5d27c8a125",
+      "targetScopeContentSha256": "18e133141c5df5a60eb5a76bfe937797e87c309aa9aa9fe26a5d65922eec1f24",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/orientation-adjudications-v1/stellar-receipt.json",
+          "sha256": "fc7be097ad3fa8aac57dfd4430ec1a85b35e588e97976ef346a0245199b63cba"
+        }
+      },
+      "sourceReviewIds": [
+        "parent-orientation-02-proposal",
+        "parent-orientation-02-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:fc582eff749d1936943465cf",
+          "scopeContentSha256": "e7d5b35706d4ac9bbb82ba7cadc149841164baaacfa955a62a989b5d27c8a125"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "scopeContentSha256": "18e133141c5df5a60eb5a76bfe937797e87c309aa9aa9fe26a5d65922eec1f24"
+        }
+      ]
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "parent-orientation-02-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-02-proposal/reply.json",
+      "sha256": "56b11dbbea9e1724e2bdd2636a38f407d1c665f7f9d5dcca49a2874ec98b1f37",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-02-proposal/receipt.json",
+      "receiptSha256": "ac97df9d8a824845b1d2c7a480f91e9428b92b9dfc1427e64a2a681275c3c320",
+      "kind": "independent_orientation_proposal",
+      "readingBasis": "complete_endpoint_definitions_and_both_inherited_route_rationales",
+      "primaryPagesSupplied": 0
+    },
+    {
+      "id": "parent-orientation-02-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-02-challenge/reply.json",
+      "sha256": "a4c696972c135d1cabc4ee0aa6b05ac3d4a469f70b826c532194670928dde3a3",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-02-challenge/receipt.json",
+      "receiptSha256": "1fbb555b9fd7101227a68877fcacc97590fb02786b87e5d46a5c0dc53c1a90da",
+      "kind": "independent_orientation_challenge",
+      "readingBasis": "complete_endpoint_definitions_and_both_inherited_route_rationales",
+      "primaryPagesSupplied": 0
+    }
+  ],
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/orientation-adjudications-v1/stellar-receipt.json",
+    "sha256": "fc7be097ad3fa8aac57dfd4430ec1a85b35e588e97976ef346a0245199b63cba"
+  },
+  "sourceContributions": [],
+  "placements": [],
+  "aliases": [],
+  "typedCanonicalOperations": [],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [],
+  "withheldClaimsRetained": [
+    {
+      "id": "d15",
+      "originalRef": "l15",
+      "status": "withheld",
+      "source": "s36",
+      "target": "s5",
+      "type": null,
+      "title": "Pending: establish applicability of the threshold law to stellar KK decays",
+      "rationale": "A premise check would run from the stellar visible-decay inference to the threshold analysis, reversing the original direction. Both statements require a geometry and decay-regime check, but the packet does not establish the match needed to transfer the suppression result.",
+      "qualification": "Keep this relation pending without asserting incompatibility or a revised stellar bound. The stellar source spans multiple dimensional settings, while s5 restricts its amplitude claim to a stated five-dimensional scalar–gravity setting and threshold regime. Cooling and production remain separate from later visible-decay limits; only the latter weakening argument invokes dominant intra-tower decays.",
+      "missingPremise": "It is not established that the stellar-source intra-tower channel relevant to the claimed weakening of visible-decay limits lies within s5's five-dimensional, diffeomorphism-invariant two-derivative scalar–gravity setting, stated field and brane treatment, and near-threshold regime with comparable daughter masses.",
+      "refs": [
+        "l15",
+        "s36",
+        "s5"
+      ]
+    }
+  ],
+  "fullAtlasAdmission": false
+}

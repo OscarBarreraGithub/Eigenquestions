@@ -1,0 +1,55 @@
+{
+  "intake": {
+    "path": "research/q025/evaluation/full-pass/native-local/orientation-admissions-v1/cut-03-exceptions.json",
+    "sha256": "a0ddeefb24c78f7a798767626d328cbbc9fad029cad32ea7f2c279ee926a5557"
+  },
+  "replacementRows": [
+    {
+      "family": "parent-orientation-10",
+      "originalCandidateId": "successor-parent-4fde62f72cf6b83a34be-challenge:link:52",
+      "oldType": "method_for",
+      "newType": null,
+      "effectiveStatus": "withheld",
+      "change": "The reversal assigns the computation to s10 and its application to s27 without an identified provider-to-target mapping in either original statement. The endpoints' computational overlap does not establish that particular use. Replacement d28 retains the original relation as pending a targeted clarification of the method and its recipient target."
+    },
+    {
+      "family": "parent-orientation-10",
+      "originalCandidateId": "successor-parent-e216581a59d87c4cff7a-challenge:link:29",
+      "oldType": "narrower",
+      "newType": "related_question",
+      "effectiveStatus": "route",
+      "change": "The shared no-boundary setting does not establish full-scope containment: s12 also asks about complex-saddle allowability and observable predictions beyond the explicitly listed initial-condition, weighting and transition targets of s7. The paired statements support a connection but do not identify s7 as a particular underlying method. Replacement d29 preserves that connection as related_question."
+    },
+    {
+      "family": "parent-orientation-15",
+      "originalCandidateId": "successor2-parent-e8d0c428c737a887a324-challenge:link:21",
+      "oldType": "method_for",
+      "newType": "method_for",
+      "effectiveStatus": "route",
+      "change": "The method_for direction and restricted applicability are supported. However, the qualification groups continuous convexity with effective-potential convexity as failing to establish discrete superadditivity. The supplied statements support that nonimplication for effective-potential convexity; s7 only distinguishes continuous convexity from discrete superadditivity. Replace this additional implication claim with the supplied distinction, retaining the method route and all other substantive restrictions."
+    }
+  ],
+  "jointlyWithheld": [
+    {
+      "family": "parent-orientation-02",
+      "originalCandidateId": "parent-6df57d46d56df9c77805-challenge:link:46",
+      "missingPremise": "It is not established that the stellar-source intra-tower channel relevant to the claimed weakening of visible-decay limits lies within s5's five-dimensional, diffeomorphism-invariant two-derivative scalar–gravity setting, stated field and brane treatment, and near-threshold regime with comparable daughter masses."
+    },
+    {
+      "family": "parent-orientation-11",
+      "originalCandidateId": "parent-b518fa2038910d956e04-challenge:link:52",
+      "missingPremise": "A supplied account must identify which specific test, conditional restriction or comparison from s3 is used or examined in s4, and how it connects to the compound strong-CP construction. The paired route statements currently provide no such mapping."
+    },
+    {
+      "family": "parent-orientation-12",
+      "originalCandidateId": "parent-d1051e06be08ba1ea288-challenge:link:47",
+      "missingPremise": "Identify whether the vacuum assumed by the D3-catalysis branch uses an antibrane configuration covered by s24, and which matching metastability analysis is relevant. If the finiteness branch is intended instead, supply the connection between its required distinct stabilized vacua and that antibrane analysis; bound-state existence alone is insufficient."
+    },
+    {
+      "family": "parent-orientation-13",
+      "originalCandidateId": "successor-parent-ede3e74822319a5ec5a5-challenge:link:44",
+      "missingPremise": "Identify the bound or consistency condition, its hypotheses, and the specific effective-description construction or control inference in s2 for which satisfying that condition is a relevant prerequisite."
+    }
+  ],
+  "newPrimaryReading": false
+}

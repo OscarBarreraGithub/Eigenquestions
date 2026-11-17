@@ -125,6 +125,11 @@ function rememberView(result) {
   while (columnViews.size > 24) columnViews.delete(columnViews.keys().next().value);
 }
 function clearViewRoute() { const hash = new URLSearchParams(location.hash.slice(1)); if (hash.has('view') || hash.has('focus') || hash.has('atlas')) history.replaceState(null, '', location.pathname + location.search); }
+let lookupGeneration=0;
+function clearLookupForDestination(next){
+  const previous=activeCapsule?.snapshot.view.atlas?.selector,target=next?.atlas?.selector;
+  if(['atlasId','atlasVersion','destinationId'].some(key=>previous?.[key]!==target?.[key])){++lookupGeneration;$('atlas-lookup')?.replaceChildren();}
+}
 function accept(snapshot, { formVersion, keepRoute = false, preserveContext = false, context: suppliedContext } = {}) {
   if (!snapshot?.session || !snapshot?.view) throw new Error('The companion returned an incomplete session.');
   const next = validateSession(snapshot.session);
@@ -134,6 +139,7 @@ function accept(snapshot, { formVersion, keepRoute = false, preserveContext = fa
   if (snapshot.revision !== undefined) revision = snapshot.revision;
   if (!currentState(next).selector) nativeComputationId = snapshot.view.computationId;
   if (!keepRoute && !currentState(next).selector) clearViewRoute();
+  clearLookupForDestination(snapshot.view);
   const previousContext = suppliedContext || (preserveContext ? activeCapsule?.context : null);
   activeCapsule = createCapsule(snapshot, previousContext ? {context: {...structuredClone(previousContext), question: currentState(next).query, history: next.states.map((s, index) => ({question: s.query, focusIds: s.focusIds, active: index === next.cursor}))}} : {});
   session = next; view = activeCapsule.snapshot.view; selectedId = null; selectedDirectionId = null; allEvidence = false;
@@ -156,6 +162,7 @@ function acceptCapsule(input, {expectedRevision, clearForm = false, keepRoute = 
   ++userIntent; ++sourceEpoch; events?.close(); bridge = null; revision = -1;
   if (!preserveCompanion) { try { sessionStorage.removeItem(bridgeStorageKey); } catch {} }
   queuedBridgeSnapshot = null; bridgeNeedsRebase = false; actionQueue = Promise.resolve(); loadingTask = Promise.resolve();
+  clearLookupForDestination(capsule.snapshot.view);
   activeCapsule = capsule; session = readableSession(capsule); view = capsule.snapshot.view;
   selectedId = null; selectedDirectionId = null; allEvidence = false;
   if (clearForm) draftDirty = false;
@@ -362,7 +369,7 @@ function renderColumns() {
         if (followed) { button.setAttribute('aria-current','step');selected=true; }
         const priorSession = session.schemaVersion ? {...session,cursor:index} : null;
         const revisit = (current || !cached?.authored) ? revisitFor(direction,priorSession) : -1;
-        const info = direction.selector ? {kind:(direction.navigationKind || 'Connection').replaceAll('_',' '),sourceTitle:direction.summary || ''} : current ? representativeInfo(direction,view.nodes,!builtIn(activeCapsule)) : {kind:direction.kind || 'Source direction',sourceTitle:direction.sourceTitle || ''};
+        const info = direction.selector ? {kind:(direction.navigationKind || 'Connection').replaceAll('_',' '),sourceTitle:direction.summary===direction.label?'':direction.summary || ''} : current ? representativeInfo(direction,view.nodes,!builtIn(activeCapsule)) : {kind:direction.kind || 'Source direction',sourceTitle:direction.sourceTitle || ''};
         button.append(el('span', 'direction-number', String(directionIndex + 1).padStart(2, '0')));
         const content = el('span', 'direction-content'); content.append(el('h3', '', label));
         if(info.sourceTitle && !fullLabel.includes(info.sourceTitle))content.append(el('span','direction-source direction-source-title',displayExcerpt(info.sourceTitle,72)));
@@ -657,7 +664,8 @@ $('question-form').addEventListener('submit', event => {
   action({ type: $('transition').value, query, intent: $('intent').value, lens: $('lens').value, workRelation: $('work-relation').value }, { clearForm: true });
 });
 async function lookupPrepared(query) {
-  try {const selector=currentState(session).selector,loaded=await ensureAtlas(selector);await loaded.navigator.prepareSearch?.();const results=loaded.navigator.search(query,{limit:15});let host=$('atlas-lookup');if(!host){host=el('section','atlas-lookup');host.id='atlas-lookup';$('question-form').after(host);}host.replaceChildren(el('p','','Title and alias lookup. A connected agent can interpret a longer question and check its scope.'));for(const result of results){const button=el('button','',result.title);button.type='button';button.addEventListener('click',()=>{host.replaceChildren();action({type:'navigate',selector:result.selector,intent:$('intent').value,lens:$('lens').value,workRelation:$('work-relation').value},{clearForm:true});});host.append(button,el('p','',result.summary));}if(!results.length)host.append(el('p','','No title or alias match. Ask your agent to inspect the catalog, or start a source exploration.'));status(`${results.length} title/alias matches; the current destination is unchanged.`);}catch(error){status(error.message,true);}
+  const ticket=++lookupGeneration;
+  try {const selector=currentState(session).selector,loaded=await ensureAtlas(selector);await loaded.navigator.prepareSearch?.();if(ticket!==lookupGeneration)return;const results=loaded.navigator.search(query,{limit:15});let host=$('atlas-lookup');if(!host){host=el('section','atlas-lookup');host.id='atlas-lookup';$('question-form').after(host);}host.replaceChildren(el('p','','Title and alias lookup. A connected agent can interpret a longer question and check its scope.'));for(const result of results){const button=el('button','',result.title);button.type='button';button.addEventListener('click',()=>{host.replaceChildren();action({type:'navigate',selector:result.selector,intent:$('intent').value,lens:$('lens').value,workRelation:$('work-relation').value},{clearForm:true});});host.append(button);if(result.summary!==result.title)host.append(el('p','',result.summary));}if(!results.length)host.append(el('p','','No title or alias match. Ask your agent to inspect the catalog, or start a source exploration.'));status(`${results.length} title/alias matches; the current destination is unchanged.`);}catch(error){status(error.message,true);}
 }
 $('intent').addEventListener('change', () => { if ($('intent').value === 'using') $('work-relation').value = 'using'; updateOptionsSummary(); });
 $('show-sources').addEventListener('change', () => { if (view && activePanel === 'geometry') renderChart(); });
@@ -821,7 +829,7 @@ window.eigenquestionsNavigator = Object.freeze({
   lookup:async (query,selector=currentState(session)?.selector) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSearch?.();return prepared.navigator.search(query,{limit:15});},
   describe:async selector => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareDestination?.(selector.destinationId);return prepared.navigator.destination(selector.destinationId);},
   sources:async (selector,{offset=0,limit=20,collection='membership',...filters}={}) => {const prepared=await ensureAtlas(selector);if(collection==='membership')await prepared.navigator.prepareSources?.(selector.destinationId);const page=prepared.navigator.sources(selector.destinationId,{offset,limit,collection,...filters});return {...page,items:await prepared.readSources(page.items)};},
-  connections:async (selector,options={}) => {const prepared=await ensureAtlas(selector);return prepared.navigator.connections(selector.destinationId,options);},
+  connections:async (selector,options={}) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareDestination?.(selector.destinationId);return prepared.navigator.connections(selector.destinationId,options);},
   context:async (unitId,selector=currentState(session)?.selector,options={}) => {const prepared=await ensureAtlas(selector);return pageSourceContext(await prepared.readContext(unitId),options);},
   evidence:async ids => {if(!Array.isArray(ids)||ids.length>100)throw new Error('Supply at most 100 evidence IDs.');const found=ids.map(id=>activeCapsule?.snapshot.view.nodes.find(node=>node.id===id));if(found.every(Boolean))return structuredClone(found);await ensureWorker();return callWorker('evidence',{ids});},
   apply:(capsule,{expectedRevision}={}) => {assertRevision(expectedRevision);return acceptCapsule(capsule,{expectedRevision});},

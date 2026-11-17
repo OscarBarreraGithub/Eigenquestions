@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "q025-qa20-follow-on/1",
+  "priorJobId": "61546342",
+  "priorContentManifestSha256": "c854e0042f8f67dd5d039cb07bfaeb8d91b1429875e976008016ff62272e2b01",
+  "priorOverlaySha256": "6a7770d981062ff160e6a67d63afe9e81c7ba35fd696ff43819bced9ac60b741",
+  "runtimeAndDataChanged": false,
+  "change": "Supply exact public repository documentation targets missing from the isolated QA19 archive. Reuse its complete, successfully built site in a separate hardlinked input tree; no rebuild or production edit.",
+  "patchSha256": "f057025f01fa3a9e3b0a441111fe3825cf121a280c76f6bdae671dfc6b2e52af",
+  "patchBytes": 47766,
+  "files": [
+    {
+      "path": "backend/budget.mjs",
+      "sha256": "da882c60637b44051339f21c9135fbe96c2d21d90a9575fc159e7a534603d6b6",
+      "bytes": 3101
+    },
+    {
+      "path": "research/q025/integration/LAZY-DATA-CONTRACT.md",
+      "sha256": "5c8cbf9c64f7099e98efc538890401b608613da21198733026347b9411b1d77e",
+      "bytes": 4849
+    },
+    {
+      "path": "research/q025/integration/qa10/report.json",
+      "sha256": "eadb23770ec3047461421a13211c3e1089e5cf9cd9a2038dd1d87efa571e8da0",
+      "bytes": 57501
+    },
+    {
+      "path": "tests/geometry/direction-chart-results.json",
+      "sha256": "90838359080500ad47e359d29c514db7e30e7d898f9d33d40af8b9624cfeff40",
+      "bytes": 14970
+    },
+    {
+      "path": "tests/geometry/failures.json",
+      "sha256": "3f84b0e0b7168b25faa3bcccb56cca2902eacdac38b03e53147196d51e03f6f9",
+      "bytes": 9700
+    },
+    {
+      "path": "tests/geometry/results.json",
+      "sha256": "aed835e9975bf6abf22398ccf80b969740720e435542adbe9e0bbfd885f90469",
+      "bytes": 84012
+    },
+    {
+      "path": "tests/geometry/selection-query-results.json",
+      "sha256": "4ed34ba4e6a72c860156bb8ae32a99b49777eda149bd91fef49e21115536d56f",
+      "bytes": 61092
+    },
+    {
+      "path": "wrangler.views.toml",
+      "sha256": "27214abc32c85f9a0bd6f3db3151ceef1454f8e1ce93fb124edcd15a9c8fbdc8",
+      "bytes": 880
+    }
+  ],
+  "scope": "Actual partial candidate, scripted isolated browser/MCP only; no public release or independent scientific agent claim."
+}

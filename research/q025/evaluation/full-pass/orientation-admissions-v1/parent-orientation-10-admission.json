@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "q025-orientation-exact-agreement-admission/1",
+  "authority": "root_authorized_exact_proposal_challenge_policy",
+  "policy": "Admit only complete unchanged explicitly supported route definitions with exact admitted endpoint hashes and both actual independent orientation receipts. Changed rows remain separate coordinator work; jointly withheld rows remain withheld. All current arrows use the shared direction semantics and retain their complete qualifications.",
+  "familyId": "parent-orientation-10",
+  "inputs": {
+    "contract": {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/contract.py",
+      "sha256": "d713eebf70c43bc8b8082bba3db216389b6a919839ba22b89576cea3b50c62ba"
+    },
+    "design": {
+      "path": "research/q025/evaluation/full-pass/orientation-design-v1/design-index.json",
+      "sha256": "88748052eebe067a9476dfb7011267430f307997f25ca7636a2267edb3c5be4b"
+    },
+    "bindings": {
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-design-v1/10.bindings.json",
+      "sha256": "9ddc8e2b45deeaf13d82e9ac913109e5a81ab4dc1bed0cf93cdba4f10a60f99e"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-10-proposal/reply.json",
+      "sha256": "add5567b5a7ac50fb04010fde7e1c885f1e8b1198c947613da206515907e777a"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-10-proposal/receipt.json",
+      "sha256": "b3b97a31d7019af080f10a8b0121bb99777c751d1983f092423381aa5d5d5db2"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-10-challenge/reply.json",
+      "sha256": "5be8c8b09594beb4bf0d7753d4db4f20bd550860f0d60d97e59648cecc8c0999"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-10-challenge/receipt.json",
+      "sha256": "a4c3969b492df26d0db3d0f5c5aec5048e142540aa22b872fc8d889c065c018c"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-10-challenge/normalization.json",
+      "sha256": "f8176efbf97e5ace2de85384b14e877bb434d29a7c65f693d1aec23eea46885c"
+    }
+  },
+  "navigationHashes": {
+    "decision:orientation:parent-orientation-10:l0": "c204cc76e8a13ad7b8b99416ca5bf1025ef0345b975f15e5b30bc43063297ffb",
+    "decision:orientation:parent-orientation-10:l2": "4667cf590750f6eb97deeee116cae2d250753497d8d63a67d3d7c43b2b0414b6",
+    "decision:orientation:parent-orientation-10:l3": "262fec574a03c1acee73c5205ba6e6822fe3494ca67ede1fe8ffef5b49a0cced",
+    "decision:orientation:parent-orientation-10:l4": "39bf497ab49b059669d1f6543666fe5dc046d1e63c830b6240e6681acc40229f",
+    "decision:orientation:parent-orientation-10:l5": "722174993df324296ddd93af3aade13c64c68082a7c6f75d72907bbb3509ef13",
+    "decision:orientation:parent-orientation-10:l6": "865c39b643e854a932cb34e1cc4064eef62299e32fe5591b060fd4d04054d613",
+    "decision:orientation:parent-orientation-10:l7": "8217ab7f525ddd61177a71be0271c8472d1747b8d4d017e3d85fdfc6903986e9",
+    "decision:orientation:parent-orientation-10:l8": "2826910eda69699e02aa23e0d9646541fdcbe651af9c05377076e52b174546c6",
+    "decision:orientation:parent-orientation-10:l9": "c873f35f036541fd32f5cc6b4e6fb1bce61475efae9abd7553ed4767e49eb0de",
+    "decision:orientation:parent-orientation-10:l10": "c007b507629401b3f4340936e4164c89b5de533daedea675db9df19e1c2a598c",
+    "decision:orientation:parent-orientation-10:l11": "7c6176116ffde23287b36be47f44afc983d77ca9c571033e7a725c71794ce7de",
+    "decision:orientation:parent-orientation-10:l12": "4e47f90d55d8735538f6c26e9b09afbba9cb021e7bcbbe83bd947823c28b34e1",
+    "decision:orientation:parent-orientation-10:l13": "7983bcea6cd471bb209db69dc04719eb53b912878c5cf0f51618a9ad154217a8",
+    "decision:orientation:parent-orientation-10:l14": "e178d29aa2d72180b2bfec720f631ba357906ade7187c39e28d61aee4f426d18",
+    "decision:orientation:parent-orientation-10:l15": "8f20058d34e4c24125f4a0f65a698fa669a6ebf0f342ae4b9d3b5ea364e5bed1",
+    "decision:orientation:parent-orientation-10:l16": "41da197c210c28f6fd8d50ee95408a8923139d106709e2ff9f6d8e41ba02d20b",
+    "decision:orientation:parent-orientation-10:l17": "aff2e20973ea2f69ee9910592b7e5adeb8350263c0f3b5095012f4bdca46cb0c",
+    "decision:orientation:parent-orientation-10:l18": "f5c3b8b3e4841bb336db08e18570eefc13046f67a667f5cde0473db39dd671c1",
+    "decision:orientation:parent-orientation-10:l20": "4a9505ea99edc0f1e450d5f45bcc1da4d851a2ae2c1e14638196e52aa84d95e7",
+    "decision:orientation:parent-orientation-10:l21": "d3e4ecf83149d4b71c976f0c231c91afd969a566615c85a9f08a974dbb0280c0",
+    "decision:orientation:parent-orientation-10:l22": "3edced8e574d42600a2812063439e85edaea8a7954c791acb029aad230ff212c",
+    "decision:orientation:parent-orientation-10:l23": "256d3d33b734e171879433d61a7aa62e6147a84f2c8e69138eef68d335cefd73",
+    "decision:orientation:parent-orientation-10:l24": "0986472c26dea8a342d7fa407fd9bacfafea9abdf0885a7d528ba9ab7f40b8db",
+    "decision:orientation:parent-orientation-10:l25": "f1def333389fd59e2eb9389967a6a466211b18578cf1eb0c46aae03cf553d2e9",
+    "decision:orientation:parent-orientation-10:l26": "495bbcbb08e48e2843a017ccbb20fd13a83a01a23a130e286c8b920ce4519516",
+    "decision:orientation:parent-orientation-10:l27": "22abfe7d71562926b0e01da76fb79394f89419d4f202960ee1b8db10dc0bd796"
+  },
+  "coverage": [
+    {
+      "originalCandidateId": "parent-8d2b5fd7cc13cefc77fe-challenge:link:49",
+      "originalRef": "l0",
+      "proposalDecisionId": "d0",
+      "effectiveDecisionId": "d0",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:10",
+      "originalRef": "l2",
+      "proposalDecisionId": "d2",
+      "effectiveDecisionId": "d2",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:34",
+      "originalRef": "l3",
+      "proposalDecisionId": "d3",
+      "effectiveDecisionId": "d3",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:33",
+      "originalRef": "l4",
+      "proposalDecisionId": "d4",
+      "effectiveDecisionId": "d4",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:20",
+      "originalRef": "l5",
+      "proposalDecisionId": "d5",
+      "effectiveDecisionId": "d5",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:21",
+      "originalRef": "l6",
+      "proposalDecisionId": "d6",
+      "effectiveDecisionId": "d6",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:25",
+      "originalRef": "l7",
+      "proposalDecisionId": "d7",
+      "effectiveDecisionId": "d7",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:39",
+      "originalRef": "l8",
+      "proposalDecisionId": "d8",
+      "effectiveDecisionId": "d8",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:38",
+      "originalRef": "l9",
+      "proposalDecisionId": "d9",
+      "effectiveDecisionId": "d9",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:37",
+      "originalRef": "l10",
+      "proposalDecisionId": "d10",
+      "effectiveDecisionId": "d10",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:32",
+      "originalRef": "l11",
+      "proposalDecisionId": "d11",
+      "effectiveDecisionId": "d11",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-93e54ec3771cd79938de-challenge:link:35",
+      "originalRef": "l12",
+      "proposalDecisionId": "d12",
+      "effectiveDecisionId": "d12",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-ae3ac5701d07a07d14d4-challenge:link:34",
+      "originalRef": "l13",
+      "proposalDecisionId": "d13",
+      "effectiveDecisionId": "d13",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-ae3ac5701d07a07d14d4-challenge:link:35",
+      "originalRef": "l14",
+      "proposalDecisionId": "d14",
+      "effectiveDecisionId": "d14",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-ae3ac5701d07a07d14d4-challenge:link:49",
+      "originalRef": "l15",
+      "proposalDecisionId": "d15",
+      "effectiveDecisionId": "d15",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-ae3ac5701d07a07d14d4-challenge:link:8",
+      "originalRef": "l16",
+      "proposalDecisionId": "d16",
+      "effectiveDecisionId": "d16",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "successor-parent-b7f81485b7d06aed5b64-challenge:link:48",
+      "originalRef": "l17",
+      "proposalDecisionId": "d17",
+      "effectiveDecisionId": "d17",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "successor-parent-b7f81485b7d06aed5b64-challenge:link:49",
+      "originalRef": "l18",
+      "proposalDecisionId": "d18",
+      "effectiveDecisionId": "d18",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "successor2-parent-5eef7911f1a80cb73c18-challenge:link:14",
+      "originalRef": "l20",
+      "proposalDecisionId": "d20",
+      "effectiveDecisionId": "d20",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-ae4cdd4e0e8516e33bac-challenge:link:19",
+      "originalRef": "l21",
+      "proposalDecisionId": "d21",
+      "effectiveDecisionId": "d21",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-ae4cdd4e0e8516e33bac-challenge:link:27",
+      "originalRef": "l22",
+      "proposalDecisionId": "d22",
+      "effectiveDecisionId": "d22",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-b3f2229cf734fe8c68ce-challenge:link:20",
+      "originalRef": "l23",
+      "proposalDecisionId": "d23",
+      "effectiveDecisionId": "d23",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-b3f2229cf734fe8c68ce-challenge:link:21",
+      "originalRef": "l24",
+      "proposalDecisionId": "d24",
+      "effectiveDecisionId": "d24",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-b518fa2038910d956e04-challenge:link:17",
+      "originalRef": "l25",
+      "proposalDecisionId": "d25",
+      "effectiveDecisionId": "d25",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-b518fa2038910d956e04-challenge:link:19",
+      "originalRef": "l26",
+      "proposalDecisionId": "d26",
+      "effectiveDecisionId": "d26",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "parent-b518fa2038910d956e04-challenge:link:45",
+      "originalRef": "l27",
+      "proposalDecisionId": "d27",
+      "effectiveDecisionId": "d27",
+      "status": "accepted_exact_paired_route"
+    },
+    {
+      "originalCandidateId": "successor-parent-4fde62f72cf6b83a34be-challenge:link:52",
+      "originalRef": "l1",
+      "proposalDecisionId": "d1",
+      "effectiveDecisionId": "d28",
+      "status": "replacement_needs_coordinator"
+    },
+    {
+      "originalCandidateId": "successor-parent-e216581a59d87c4cff7a-challenge:link:29",
+      "originalRef": "l19",
+      "proposalDecisionId": "d19",
+      "effectiveDecisionId": "d29",
+      "status": "replacement_needs_coordinator"
+    }
+  ],
+  "counts": {
+    "accepted_exact_paired_route": 26,
+    "replacement_needs_coordinator": 2
+  },
+  "globalCanonicalAndCycleRevalidationRequired": true,
+  "newScopesRolesHomesIdentities": false,
+  "primaryPagesSupplied": 0
+}

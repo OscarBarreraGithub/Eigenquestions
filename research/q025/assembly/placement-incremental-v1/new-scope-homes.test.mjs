@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {validateNewScopeHome} from './compile_new_scope_homes.mjs';
+const load=async path=>JSON.parse(await readFile(new URL(path,import.meta.url),'utf8'));
+const mapping=await load('../../evaluation/full-pass/placement-scope-review-v1/scope-mapping.json');
+const scopes=await load('../../evaluation/full-pass/placement-scope-review-v1/scope-component.json');
+const intake=await load('./cut-01/exception-intake.json');
+const m=mapping.rows[0],d=scopes.destinations.find(d=>d.id===m.destinationId),row=intake.rows.find(r=>r.unitId===m.unitIds[0]);
+test('exact approved new-scope mapping preserves the complete source home',()=>{assert.equal(validateNewScopeHome(row,m,d).weight,1);assert.equal(mapping.rows.length,26);assert.ok(!mapping.rows.some(m=>m.familyId==='placement-continuation-0000'&&m.localRef==='n8'));});
+test('new-scope home cannot borrow a different source or changed scope hash',()=>{assert.throws(()=>validateNewScopeHome({...row,unitId:'unit:not-approved'},m,d),/mapping/);assert.throws(()=>validateNewScopeHome(row,m,{...d,question:d.question+' broadened'}),/mapping/);});
+test('retention does not authorize a coverage gap or a changed whole-home weight',()=>{const gap=structuredClone(row);gap.challengeJudgment.missingPremises=['Missing physical regime'];assert.throws(()=>validateNewScopeHome(gap,m,d),/whole-source/);const changed=structuredClone(row);changed.challengeJudgment.homes[0].weight=0.5;assert.throws(()=>validateNewScopeHome(changed,m,d),/Changed home/);});

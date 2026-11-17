@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "q025-orientation-final-replacement-adjudication/1",
+  "authority": "root",
+  "input": {
+    "path": "research/q025/evaluation/full-pass/native-local/orientation-admissions-v1/final-three-exceptions.json",
+    "sha256": "9a984019527d9d1f2d0dfb19367503eea7611ced93006d18f3d0868198e72645"
+  },
+  "decision": "Approve exact d40 stabilization-dependent application_of s7 to s15 and d41 limited categorical/geometric method_for s21 to s3. Preserve all qualifications and inherited reading limits. Neither requires applicability across the entire recipient scope. No universal stabilization, soft-spectrum, RG or equivalence result. Keep axion/fixed-tadpole joint withholding pending without a forced route.",
+  "approvedCases": [
+    {
+      "familyId": "parent-orientation-05",
+      "originalCandidateId": "successor-parent-4fde62f72cf6b83a34be-challenge:link:19",
+      "status": "replacement_needs_coordinator",
+      "proposal": {
+        "id": "d17",
+        "originalRef": "l17",
+        "status": "route",
+        "source": "s15",
+        "target": "s7",
+        "type": "related_question",
+        "title": "Examine hidden–visible transmission data beyond moduli fixing",
+        "rationale": "This row specifically connects stabilization to the additional transmission information required for mediation and visible soft spectra. Its insufficiency statement does not itself specify an applied stabilization mechanism or make transmission a prerequisite for every stabilization construction.",
+        "qualification": "Locality and spatial separation alone do not establish sequestering. Comparable mediation contributions and gauge dominance are different requirements, and visible soft masses are distinct from masses in a condensing stabilization sector. Retain each warped, LARGE-volume, fluxless or other stated supergravity setting and its normalization conventions. Neither endpoint supplies a universal spectrum or sequestering theorem.",
+        "missingPremise": "",
+        "refs": [
+          "l17",
+          "s15",
+          "s7"
+        ]
+      },
+      "challengeAssessment": {
+        "ref": "d17",
+        "verdict": "replace",
+        "reason": "The related_question rationale treats the need for additional transmission data as insufficient evidence of an application. However, s7 explicitly asks how stabilization contributes to transmission and soft spectra, and both l17 statements describe the extra data needed beyond moduli fixing. Replace with d40: a stabilization-dependent application_of route from s7 to s15 that preserves this insufficiency and all transmission limitations.",
+        "refs": [
+          "l17",
+          "s15",
+          "s7"
+        ]
+      },
+      "effective": {
+        "id": "d40",
+        "originalRef": "l17",
+        "status": "route",
+        "source": "s7",
+        "target": "s15",
+        "type": "application_of",
+        "title": "Examine stabilization ingredients underlying mediation and soft spectra",
+        "rationale": "The stabilization-dependent branches of s7 apply stabilization ingredients to mediation and visible soft-spectrum questions. Both original statements require hidden–visible transmission data beyond fixing moduli. That insufficiency limits the application; it does not reduce the explicitly stated use of stabilization to a merely related topic.",
+        "qualification": "The application is confined to the stabilization-dependent branches of s7. Warped, local LARGE-volume, fluxless G2 and other specified supergravity settings retain their separate assumptions, including joint versus sequential stabilization and breaking and leading versus subleading contributions. Fixing moduli does not determine hidden–visible transmission or establish sequestering. Locality and spatial separation alone are insufficient; comparable mediation contributions and gauge dominance are different requirements. Visible soft masses and masses in a condensing stabilization sector remain distinct. No common soft-term normalization or gravitino-mass prescription, universal viable spectrum or sequestering theorem is inferred. Historical spectrum forecasts remain historical.",
+        "missingPremise": "",
+        "refs": [
+          "l17",
+          "s7",
+          "s15"
+        ]
+      },
+      "completeScopes": [
+        {
+          "ref": "s7",
+          "kind": "question",
+          "title": "Mediation, soft spectra and hidden–visible transmission",
+          "question": "How do stabilization, localization and hidden-sector dynamics determine supersymmetry-breaking transmission and soft spectra, and what follows for flavor suppression, gauge mediation and moduli cosmology?",
+          "summary": "A cross-batch direction connects the admitted mediation and sequestering questions while preserving warped, LARGE-volume and G2 assumptions and their different phenomenological targets.",
+          "scope": {
+            "systems": [
+              "Stabilized brane compactifications",
+              "Separated hidden and visible sectors",
+              "Fluxless G2 models and other specified supergravity settings"
+            ],
+            "targets": [
+              "Relative mediation strengths and soft spectra",
+              "Suppression or transmission of flavor-sensitive interactions",
+              "Gauge-mediation compatibility",
+              "Cosmological consequences of the resulting moduli and breaking scales"
+            ],
+            "regimes": [
+              "Joint stabilization and breaking versus sequential treatments",
+              "Leading and subleading contributions",
+              "Warped, local LARGE-volume and fluxless regimes kept distinct"
+            ],
+            "assumptions": [
+              "Locality or spatial separation alone does not establish sequestering",
+              "Comparable mediation contributions and gauge dominance are different requirements",
+              "Visible soft masses and masses in a condensing stabilization sector are different targets",
+              "Historical spectrum forecasts are not current experimental validation"
+            ],
+            "conventions": [
+              "No common soft-term normalization or gravitino-mass prescription is imposed"
+            ],
+            "includes": [
+              "Spectrum calculations and transmission mechanisms",
+              "Premise checks for suppression",
+              "Compound mediation and moduli-cosmology questions"
+            ],
+            "excludes": [
+              "A universal viable spectrum",
+              "A universal sequestering theorem or no-go",
+              "Automatic admission of pending anomalous-U(1), throat-response or vacuum-energy scopes"
+            ]
+          },
+          "readingCoverage": {
+            "descriptionCheckedCount": 2,
+            "excerptCheckedCount": 2,
+            "readingLimit": "The LARGE-volume excerpts chiefly support the gravity-mediation calculation and its stated consequences; anomaly mediation is explicit in the supplied description. The G2 excerpts announce stabilization, hierarchy and soft-term results without supplying complete spectra. This shared overview is a new proposal.",
+            "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+            "inheritedParentCoverage": {
+              "fullDescendantMembers": 113,
+              "providedContrastDescriptions": 5,
+              "providedPrimaryContrastUnits": 5,
+              "completeMemberIdsPinnedExternally": true,
+              "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+            }
+          }
+        },
+        {
+          "ref": "s15",
+          "kind": "question",
+          "title": "Moduli stabilization and compatibility of vacuum ingredients",
+          "question": "Which source-specific ingredients can stabilize compactification moduli, and under what geometric, gauge, matter-sector and vacuum-energy conditions can those ingredients coexist?",
+          "summary": "A shared stabilization direction is needed across the warped, flux, condensate and fluxless settings. It does not require every construction to generate a hierarchy, break supersymmetry or produce positive vacuum energy.",
+          "scope": {
+            "systems": [
+              "String and M-theory compactifications",
+              "Associated supergravity constructions with explicitly stated compactification assumptions"
+            ],
+            "targets": [
+              "Fixing relevant moduli",
+              "Admissibility and compatibility of stabilization ingredients",
+              "Conditional vacuum energy and hierarchy outcomes"
+            ],
+            "regimes": [
+              "Flux and nonperturbative mechanisms",
+              "Explicitly fluxless strong gauge dynamics",
+              "Supersymmetric and broken vacua at their stated approximation orders"
+            ],
+            "assumptions": [
+              "Flux constraints, zero modes, chirality, hidden sectors and Kähler data are source-specific",
+              "A nonperturbative superpotential or positive energy contribution does not establish a complete stabilized vacuum",
+              "Local or effective constructions need separate compact-completion and control checks"
+            ],
+            "conventions": [
+              "No common potential normalization or modulus definition is inferred"
+            ],
+            "includes": [
+              "Alternative stabilization mechanisms",
+              "Compatibility tests and unsuccessful proposed uplifts"
+            ],
+            "excludes": [
+              "A common stabilization mechanism",
+              "Universal positive vacuum energy or phenomenological success"
+            ]
+          },
+          "readingCoverage": {
+            "descriptionCheckedCount": 2,
+            "excerptCheckedCount": 2,
+            "readingLimit": "The D7 and fluxless G2 contrasts provide bounded primary support for particular mechanisms and announced outcomes. Other specializations retain their attributed child reading limits. This shared overview is a new proposal.",
+            "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+            "inheritedParentCoverage": {
+              "fullDescendantMembers": 113,
+              "providedContrastDescriptions": 5,
+              "providedPrimaryContrastUnits": 5,
+              "completeMemberIdsPinnedExternally": true,
+              "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+            }
+          }
+        }
+      ],
+      "scopeBindings": {
+        "s7": {
+          "id": "q025-candidate-question:377c1312908bf36a9fc734a9",
+          "scopeContentSha256": "7fccfebc21cbee0e57ae9aa921f4b3834354eb8e37bdddd3db1d4c38c07c128a"
+        },
+        "s15": {
+          "id": "q025-candidate-question:4d926fd69f6bc59cf12f6050",
+          "scopeContentSha256": "eeeddcb9d4ffb791b9ff8a9179a222d02258a75a20edd4dc9a4bc9b043b0407d"
+        }
+      },
+      "originalRoute": {
+        "ref": "l17",
+        "source": "s15",
+        "target": "s7",
+        "nativeType": "application",
+        "proposalStatements": [
+          "Mediation and soft spectra require hidden–visible transmission data beyond fixing compactification moduli."
+        ],
+        "challengeStatement": "Mediation and visible soft spectra require transmission data beyond fixing moduli.",
+        "originalEvidenceKinds": [
+          "attributed_child_question"
+        ],
+        "originalEvidenceProvidedAsText": false
+      },
+      "reviewPins": [
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-05-proposal/reply.json",
+          "sha256": "c4cbffa5bbf1de6e43ab849e70fa232ed56cdb5f3c6fd84ca960a73044eee2cd"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-05-challenge/reply.json",
+          "sha256": "7343a418eec204e250d1ccf6c5784e7876bb7184430d441a60a23390a48a7d4f"
+        }
+      ],
+      "noNewPrimaryRead": true
+    },
+    {
+      "familyId": "parent-orientation-05",
+      "originalCandidateId": "successor-parent-17324a9d1c6d231abdd8-challenge:link:49",
+      "status": "replacement_needs_coordinator",
+      "proposal": {
+        "id": "d37",
+        "originalRef": "l37",
+        "status": "route",
+        "source": "s3",
+        "target": "s21",
+        "type": "related_question",
+        "title": "Connect brane and interface constructions to categorical and deformation programs",
+        "rationale": "The supplied scopes connect brane-tiling applications and interface or deformation targets to categorical and geometric programs. They do not identify a categorical method applicable across the full brane-engineering question, so a general method arrow is not established.",
+        "qualification": "Methods and alternate targets remain distinguishable. Homological mirror symmetry, mathematical equivalence, physical RG equivalence, corrected Poisson–Lie duality and Higgs-bundle interfaces retain separate systems and approximation schemes. The supplied statements establish neither a common equivalence theorem nor a satisfactory general model structure for RG flows; this limitation is not a universal impossibility claim. The description-only RG and deformation programs are not silently completed or unified.",
+        "missingPremise": "",
+        "refs": [
+          "l37",
+          "s3",
+          "s21"
+        ]
+      },
+      "challengeAssessment": {
+        "ref": "d37",
+        "verdict": "replace",
+        "reason": "The rationale rejects method_for because applicability across the full brane-engineering scope is not established. Full-scope containment is required for narrower, not for a suitably qualified method_for route. Both original statements identify a methodological role while preserving alternate targets and the absence of a common equivalence theorem or general RG model structure. Replace with d41, reversing the method direction and retaining those substantive limits.",
+        "refs": [
+          "l37",
+          "s3",
+          "s21"
+        ]
+      },
+      "effective": {
+        "id": "d41",
+        "originalRef": "l37",
+        "status": "route",
+        "source": "s21",
+        "target": "s3",
+        "type": "method_for",
+        "title": "Use categorical and geometric approaches in linked construction questions",
+        "rationale": "Both original statements identify categorical and geometric approaches as methods alongside alternate targets. The methodological questions in s21 therefore point toward the linked construction questions in s3. A method_for route can retain this stated limited role without requiring applicability across the entire brane-engineering scope.",
+        "qualification": "Applicability is confined to the construction and interface connections identified by the supplied scopes and original statements. The separate homological-mirror-symmetry application does not establish reciprocal applicability of every categorical method. Mathematical and homotopy equivalence, physical RG equivalence, SCFT deformation programs, corrected Poisson–Lie duality and Higgs-bundle interfaces retain their distinct systems, targets and approximation schemes. The supplied material establishes neither a common equivalence theorem nor a satisfactory general model structure for RG flows. Description-only programs remain unassessed beyond their stated scope; no general algorithm, physical existence result or common microscopic formulation is inferred.",
+        "missingPremise": "",
+        "refs": [
+          "l37",
+          "s21",
+          "s3"
+        ]
+      },
+      "completeScopes": [
+        {
+          "ref": "s21",
+          "kind": "question",
+          "title": "Categorical equivalence and geometric deformations",
+          "question": "How do RG flow and geometric or categorical structures realize equivalences and organize deformations, vacua and interfaces?",
+          "summary": "An alternate method-oriented home. Homological mirror symmetry, RG realization of categorical equivalence, corrected Poisson–Lie duality and Higgs-bundle interfaces remain separate targets.",
+          "scope": {
+            "systems": [
+              "The theories and SCFT moduli spaces appearing in the supplied descriptions",
+              "Brane-tiling applications to homological mirror symmetry"
+            ],
+            "targets": [
+              "Categorical and homotopy equivalences of presentations",
+              "Structures on SCFT moduli spaces",
+              "Strongly coupled SCFT deformations",
+              "Poisson–Lie T-duality beyond leading order",
+              "Higgs-bundle vacua and interfaces"
+            ],
+            "regimes": [
+              "RG flow",
+              "Beyond-leading-order duality corrections where stated"
+            ],
+            "assumptions": [
+              "No common physical system or approximation is established for all targets",
+              "The compound deformation description does not establish a single mechanism connecting its components"
+            ],
+            "conventions": [
+              "Mathematical equivalence, physical RG equivalence and corrected duality are distinguished"
+            ],
+            "includes": [
+              "Stacks, derived categories and derived schemes",
+              "A separate homological-mirror-symmetry application"
+            ],
+            "excludes": [
+              "Inferring one equivalence theorem from shared categorical or geometric vocabulary"
+            ]
+          },
+          "readingCoverage": {
+            "descriptionCheckedCount": 3,
+            "excerptCheckedCount": 1,
+            "readingLimit": "Primary text supports the announced brane-tiling application only. The RG and deformation programs are description-only; their detailed systems, correction schemes and interconnections remain unassessed.",
+            "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+            "inheritedParentCoverage": null
+          }
+        },
+        {
+          "ref": "s3",
+          "kind": "question",
+          "title": "Brane engineering, holography and microscopic formulations",
+          "question": "How do brane, compactification and geometric constructions realize field theories, interfaces and candidate microscopic or holographic descriptions, and what data can their specified formulations compute?",
+          "summary": "A construction direction connecting field-theory engineering, holographic backgrounds and brane formulations. Definitions, effective descriptions, observable tests and exploratory proposals retain different evidential standards.",
+          "scope": {
+            "systems": [
+              "Brane worldvolume theories and their supergravity descriptions",
+              "Geometrically engineered gauge theories and SCFTs",
+              "Little string theories and separately identified effective models",
+              "M-brane formulations and heterotic junction or quotient proposals"
+            ],
+            "targets": [
+              "Field theories, fixed points and gravity-decoupled completions",
+              "Interfaces, boundaries and symmetry generators",
+              "Holographic backgrounds and their observables",
+              "Microscopic formulations, topological phases and computational descriptions"
+            ],
+            "regimes": [
+              "Source-specific compactification, near-horizon and decoupling limits",
+              "Specified supersymmetric truncations and semiclassical constructions"
+            ],
+            "assumptions": [
+              "A consistent truncation supports its retained sector rather than every observable of the parent theory",
+              "A toy model need not be a full microscopic theory",
+              "Candidate dualities and quotient constructions retain their proposed status"
+            ],
+            "conventions": [
+              "Construction, quantitative testing and nonperturbative definition are distinct targets",
+              "Interfaces between fixed points do not identify those fixed points",
+              "Different branes, quivers and dimensions retain their source-specific meanings"
+            ],
+            "includes": [
+              "Ordinary brane engineering",
+              "Nonsupersymmetric fixed-point and chiral-sector questions",
+              "Explicit method routes to geometric and quiver descriptions"
+            ],
+            "excludes": [
+              "A common ultraviolet completion or holographic approximation",
+              "Physical existence inferred solely from formal consistency conditions"
+            ]
+          },
+          "readingCoverage": {
+            "descriptionCheckedCount": 2,
+            "excerptCheckedCount": 2,
+            "readingLimit": "Current excerpts directly support the Janus construction scope and the geometric-engineering method in the BPS study. Other directions rely on attributed child questions; their proofs, spectra and microscopic proposals were not reread here. This overview requires independent review.",
+            "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+            "inheritedParentCoverage": {
+              "fullDescendantMembers": 88,
+              "providedContrastDescriptions": 5,
+              "providedPrimaryContrastUnits": 5,
+              "completeMemberIdsPinnedExternally": true,
+              "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+            }
+          }
+        }
+      ],
+      "scopeBindings": {
+        "s21": {
+          "id": "q025-candidate-question:83adf5812787f134afa7af50",
+          "scopeContentSha256": "df50712d0169a1060321938d7008306ea1b5621fcbacd94da046856868940e1b"
+        },
+        "s3": {
+          "id": "q025-candidate-question:1ca579a906621f6bd2f2643a",
+          "scopeContentSha256": "911fdbdaf40c9c4bcf2d47efc2bf3275c74bfb4435995a64564bbef11c469e2f"
+        }
+      },
+      "originalRoute": {
+        "ref": "l37",
+        "source": "s3",
+        "target": "s21",
+        "nativeType": "method",
+        "proposalStatements": [
+          "Categorical and geometric approaches provide methods and alternate targets without a common established equivalence theorem."
+        ],
+        "challengeStatement": "Categorical and geometric approaches provide methods and alternate targets; the supplied scopes establish no common equivalence theorem or satisfactory general model structure for RG flows.",
+        "originalEvidenceKinds": [
+          "attributed_child_question",
+          "attributed_child_review"
+        ],
+        "originalEvidenceProvidedAsText": false
+      },
+      "reviewPins": [
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-05-proposal/reply.json",
+          "sha256": "c4cbffa5bbf1de6e43ab849e70fa232ed56cdb5f3c6fd84ca960a73044eee2cd"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/orientation-wave-v1/jobs/parent-orientation-05-challenge/reply.json",
+          "sha256": "7343a418eec204e250d1ccf6c5784e7876bb7184430d441a60a23390a48a7d4f"
+        }
+      ],
+      "noNewPrimaryRead": true
+    }
+  ],
+  "navigationHashes": {
+    "decision:orientation-adjudicated:parent-orientation-05:l17": "379822a3d7401a731668e061789330f316b2270c01ec72eef538eb26b5e8c625",
+    "decision:orientation-adjudicated:parent-orientation-05:l37": "58ea047d845bc90741e812fa749d8e6b30676420862a5661b10910625934a449"
+  },
+  "sourceScopeHashes": {
+    "q025-candidate-question:377c1312908bf36a9fc734a9": "7fccfebc21cbee0e57ae9aa921f4b3834354eb8e37bdddd3db1d4c38c07c128a",
+    "q025-candidate-question:4d926fd69f6bc59cf12f6050": "eeeddcb9d4ffb791b9ff8a9179a222d02258a75a20edd4dc9a4bc9b043b0407d",
+    "q025-candidate-question:83adf5812787f134afa7af50": "df50712d0169a1060321938d7008306ea1b5621fcbacd94da046856868940e1b",
+    "q025-candidate-question:1ca579a906621f6bd2f2643a": "911fdbdaf40c9c4bcf2d47efc2bf3275c74bfb4435995a64564bbef11c469e2f"
+  },
+  "newPrimaryReading": false,
+  "newScopesHomesRolesIdentities": false
+}

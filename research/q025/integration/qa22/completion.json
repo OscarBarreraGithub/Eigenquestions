@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "q025-qa-completion/1",
+  "jobId": "61554287",
+  "status": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:02:53",
+  "siteCheckPassed": true,
+  "browserChecksPassed": 6,
+  "stage": "Exact source-route lookup",
+  "classification": "Actual sourceMethodRoutes descriptor lacked optional legacy byte count; strict generic shard reader rejected it",
+  "diagnosisReproducedWithExactAssets": true,
+  "preservedOriginalReport": true,
+  "failureScreenshot": "failure.png",
+  "credentialsScan": {
+    "files": [
+      "report.json",
+      "site-check.log",
+      "browser.log",
+      "build-size.json",
+      "slurm-61554287.out",
+      "slurm-61554287.err"
+    ],
+    "tokenPatternsFound": 0,
+    "redactionRequired": false
+  },
+  "files": [
+    {
+      "path": "research/q025/integration/qa22/report.json",
+      "sha256": "de0fcb688539207fd4c9429c2568d5429a03d0ec5bb38213a57632a3683d3aab"
+    },
+    {
+      "path": "research/q025/integration/qa22/site-check.log",
+      "sha256": "89df0a8a5f75372e8db4a06a447e17f09652ba333345fba3adb59c79d3bae33e"
+    },
+    {
+      "path": "research/q025/integration/qa22/browser.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "research/q025/integration/qa22/build-size.json",
+      "sha256": "3d6bba7e180bfdae6c665ad40a7acdee45ffc1998506a70e895f6414daf7c977"
+    },
+    {
+      "path": "research/q025/integration/qa22/slurm-61554287.out",
+      "sha256": "dd4fcc6c89d8e8f06ccfa21c245f06398ea5a9dc0f36a0a3a8c911f669245c4d"
+    },
+    {
+      "path": "research/q025/integration/qa22/slurm-61554287.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

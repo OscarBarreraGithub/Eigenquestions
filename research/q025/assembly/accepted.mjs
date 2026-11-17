@@ -33,6 +33,7 @@ export function validateNavigationBinding({row,proof,source,target,reviewRecords
   if(proof.challengerAgreement==='coordinator_adjudicated_navigation'){
     if(proof.adjudication?.status!=='accepted_explicit_navigation'||!verifiedReceiptHashes.has(proof.adjudication.receipt?.sha256))fail('navigation coordinator receipt is not verified');
   }else{
+    if(proof.adjudication)fail('navigation coordinator adjudication cannot claim independent agreement');
     const agreement=proof.reviewAgreement,paired=agreement?[agreement.proposalReviewId,agreement.challengeReviewId]:ids;
     if(proof.challengerAgreement!=='independently_agreed'||paired.length!==2||paired[0]===paired[1]||paired.some(id=>!ids.includes(id))||reviewRecords.get(paired[0])?.sha256===reviewRecords.get(paired[1])?.sha256)fail('navigation lacks distinct verified independent review evidence');
   }

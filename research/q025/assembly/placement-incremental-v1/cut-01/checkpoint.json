@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "q025-incremental-placement-checkpoint/1",
+  "status": "frozen_stage_safe",
+  "files": [
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/prepare_cut.mjs",
+      "sha256": "7a2f2c7486cc344e5f8d3b87539de70472be81675c51ab5c4ec73437c00b5b59",
+      "bytes": 9418
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/policy.mjs",
+      "sha256": "be0fe011f78fbcfaa111665203bdc205fe2fbf1356a3e2037454cfa15fc14319",
+      "bytes": 1486
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/policy.test.mjs",
+      "sha256": "640efcfe0d5401c8622e5df70e8ec153ab7449374e7412f1d3c8656eb9005dd3",
+      "bytes": 1311
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/compile_cut.mjs",
+      "sha256": "0b7a34d049c9526601aa12973fa740db5435e76141e9ced518d859bb2cc95b38",
+      "bytes": 5511
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/assemble_cut.mjs",
+      "sha256": "b33f8a745c8de31d4063e60721b62cc10c3e8104263724aac4b3746a1b3682af",
+      "bytes": 7172
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-01/report.json",
+      "sha256": "ffc02429bb911321fe1e7a480241f759af73808a6f1a601db2d9658210858951",
+      "bytes": 1864
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-01/admitted/component.json",
+      "sha256": "7f8b96f5b2631bf13a76a0789141adb4dbf927fab3b2595acad9a2226970343c",
+      "bytes": 531244
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-01/admitted/admission.json",
+      "sha256": "5aa801513aeabdfa5423f7d016f63e93acf2f4ca5ef692c73b0be6ac405d2b54",
+      "bytes": 155555
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-01/admitted/report.json",
+      "sha256": "000dfcab303239db2c0cae0dcff37078d0cf1496f00c89580181821b722149c5",
+      "bytes": 684
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-01/production-check.json",
+      "sha256": "4d50da70fae27712db7e6308f1ce0bdb02392ec10f19e45e3bb00675a45798c1",
+      "bytes": 2668
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-01/tests.log",
+      "sha256": "92f31e4d2b0209a7c9faf77d27b50d8f6294708aeee1d85fd156db78e64c51d1",
+      "bytes": 8623
+    }
+  ],
+  "totalBytes": 725536,
+  "verifiedSourceQuestions": 219,
+  "admittedUnderExistingClass": 177,
+  "exceptionsPending": 42,
+  "newDefinitionsPending": 27,
+  "assemblyTests": 103,
+  "productionAllocatedSources": 6294,
+  "existing6117QABaselineUnchanged": true,
+  "bulkExcluded": [
+    "source-bindings.local.json",
+    "exception-intake.json (scientific review in progress; hash pinned in report)",
+    "candidate-6294 aggregate/certificate buckets",
+    "built package files"
+  ],
+  "sourceReproduction": "Exact paired normalized replies and sidecars are pinned by immutable mechanical intake in report; no raw primary text or sealed holdout text in this checkpoint."
+}

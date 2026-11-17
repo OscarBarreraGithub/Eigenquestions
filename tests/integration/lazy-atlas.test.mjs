@@ -6,7 +6,7 @@ import {createCapsule} from '../../lib/protocol/capsule.mjs';
 import {createRuntime} from '../../lib/protocol/runtime.mjs';
 const fineId='source-question:'+'b'.repeat(64);
 const sha=text=>createHash('sha256').update(text).digest('hex');
-function fixture({alterMembership,alterDetail}={}){
+function fixture({alterMembership,alterDetail,relationProof=false,alterProofIndex,legacyRoutes=false}={}){
   const files=new Map(),reads=[],hydratedIds=[];
   const save=(path,data)=>{const body=JSON.stringify(data);files.set('/fixture/'+path,body);return{path,sha256:sha(body),bytes:Buffer.byteLength(body)};};
   const source=id=>({id,paperId:id,title:`Synthetic ${id}`,year:id==='a'?2020:2024,evidence:{text:'Synthetic source; no scientific claim.',lens:'physical_question',date:id==='a'?'2020':'2024'}});
@@ -26,7 +26,14 @@ function fixture({alterMembership,alterDetail}={}){
   const detail=(id,value)=>save(id+'.json',{schemaVersion:'1.0.0',kind:'eigenquestions-destination-details',destinations:{[value.destination.id]:value}});
   const fineData={schemaVersion:'1.0.0',kind:'eigenquestions-fine-index',destinations:[fineIndex],relations:[fineEdge]};
   const catalog={storage:'lazy-destinations-v1',destinations:[rootIndex,coarseIndex],sources:[],memberships:[],relations:[rootEdge],detailShards:{root:detail('root',rootItem),coarse:detail('coarse',coarseItem),fine:detail('fine',fineItem)},fineIndex:save('fine-index.json',fineData),fineLookup:{kind:'source-question-hash-prefix',prefixLength:2,shards:{bb:save('fine-bb.json',fineData)}}};
-  const manifest={schemaVersion:'1.1.0',kind:'eigenquestions-atlas',atlasId:'fixture',atlasVersion:'v1',corpusId:'fixture',corpusContentHash:'a'.repeat(64),entryDestinationId:'root',scope:{description:'Synthetic test only'},files:{catalog:save('catalog.json',catalog)}};save('manifest.json',manifest);
+  if(relationProof){
+    const full={...rootEdge,title:'Enter the synthetic scope',qualification:'Only under the stated synthetic assumptions.',decisionId:'review-1',provenance:{navigationBasis:'reviewed_scientific_route',history:['Exact retained review.']},evidenceRefs:[{id:'exact-source-span'}]};
+    const canonical=value=>value&&typeof value==='object'?(Array.isArray(value)?value.map(canonical):Object.fromEntries(Object.keys(value).sort().map(key=>[key,canonical(value[key])]))):value;
+    const descriptor=save('relation-proofs.json',{schemaVersion:'1.0.0',kind:'eigenquestions-relation-details',relations:{[full.id]:full}});
+    const {evidenceIds,evidenceRefs,provenance,...fields}=full;const compact={...fields,provenance:{navigationBasis:provenance.navigationBasis},evidenceCount:evidenceIds.length,detail:{shardId:'proofs',recordSha256:sha(JSON.stringify(canonical(full)))}};
+    if(alterProofIndex)alterProofIndex(compact);catalog.relations=[compact];catalog.relationDetailShards={proofs:descriptor};
+  }
+  const manifest={schemaVersion:'1.1.0',kind:'eigenquestions-atlas',atlasId:'fixture',atlasVersion:'v1',corpusId:'fixture',corpusContentHash:'a'.repeat(64),entryDestinationId:'root',scope:{description:'Synthetic test only'},files:{catalog:save('catalog.json',catalog)}};if(legacyRoutes){manifest.files.sourceMethodRoutes=save('source-routes.json',{schemaVersion:'1.0.0',kind:'eigenquestions-exact-source-method-routes',routes:{},units:{}});delete manifest.files.sourceMethodRoutes.bytes;}save('manifest.json',manifest);
   const readText=async path=>{reads.push(path);if(!files.has(path))throw new Error('Missing test file '+path);return files.get(path);};
   return{files,reads,hydratedIds,async open(){const atlas=await loadAtlas('/fixture',{readText});return{atlas,nav:createAtlasNavigator(atlas,{readSources:async rows=>{hydratedIds.push(...rows.map(row=>row.unitId));return rows.map(row=>({...row,source:source(row.unitId)}));}})};}};
 }
@@ -66,4 +73,24 @@ test('cold runtime connection reads hydrate exact coarse and fine links without 
   const {nav}=await fixture().open();await nav.prepareState(nav.initialState);const runtime=createRuntime(nav,'fixture'),before=structuredClone(runtime.snapshot());
   const fine=await runtime.connections({destinationId:fineId});assert.equal(fine.total,1);assert.deepEqual(await runtime.connections({destinationId:fineId}),fine);
   const coarse=await runtime.connections({destinationId:'coarse'});assert.equal(coarse.total,2);assert.deepEqual(await runtime.connections({destinationId:'coarse'}),coarse);assert.deepEqual(runtime.snapshot(),before);
+});
+
+test('relation proofs stay lazy and complete reads never alter selected view or revision',async()=>{
+  const f=fixture({relationProof:true}),{nav}=await f.open();await nav.prepareState(nav.initialState);const runtime=createRuntime(nav,'fixture'),before=runtime.snapshot();
+  const compact=await runtime.connections();assert.equal(compact.items[0].evidenceCount,1);assert.equal(compact.items[0].evidenceIds,undefined);assert.equal(compact.items[0].qualification,'Only under the stated synthetic assumptions.');assert.ok(!f.reads.includes('/fixture/relation-proofs.json'));
+  const result=await runtime.connections({relationId:'root-coarse',includeProof:true});assert.deepEqual(result.items[0].proof.evidenceIds,['a']);assert.deepEqual(result.items[0].proof.provenance.history,['Exact retained review.']);assert.equal(result.items[0].proof.decisionId,'review-1');assert.equal(f.reads.filter(p=>p==='/fixture/relation-proofs.json').length,1);
+  assert.deepEqual(runtime.snapshot(),before);assert.deepEqual(await runtime.connections(),compact);
+  assert.throws(()=>runtime.connections({includeProof:true}),/one exact relationId/);await assert.rejects(runtime.connections({relationId:'coarse-fine',includeProof:true}),/not incident/);
+});
+test('proof checksum and indexed qualification remain bound independently',async()=>{
+  const f=fixture({relationProof:true}),{nav}=await f.open();f.files.set('/fixture/relation-proofs.json',f.files.get('/fixture/relation-proofs.json')+' ');await assert.rejects(nav.readRelation('root-coarse'),/byte count|checksum/);
+  const changed=await fixture({relationProof:true,alterProofIndex:r=>r.qualification='Changed premise'}).open();await assert.rejects(changed.nav.readRelation('root-coarse'),/indexed qualification/);
+  const hash=await fixture({relationProof:true,alterProofIndex:r=>r.detail.recordSha256='0'.repeat(64)}).open();await assert.rejects(hash.nav.readRelation('root-coarse'),/record checksum/);
+  const count=await fixture({relationProof:true,alterProofIndex:r=>r.evidenceCount=2}).open();await assert.rejects(count.nav.readRelation('root-coarse'),/evidence count/);
+});
+
+test('legacy exact source-method map descriptors without byte counts remain hash verified',async()=>{
+  const f=fixture({legacyRoutes:true}),{nav,atlas}=await f.open();assert.equal((await nav.sourceRoutes({sourceRelations:[]})).status,'available');
+  assert.equal(atlas.manifest.files.sourceMethodRoutes.bytes,undefined);await assert.rejects(atlas.readShard({path:'arbitrary.json',sha256:'a'.repeat(64)}),/invalid lazy file descriptor/);
+  const bad=fixture({legacyRoutes:true}),loaded=await bad.open();bad.files.set('/fixture/source-routes.json','{}');await assert.rejects(loaded.nav.sourceRoutes({sourceRelations:[]}),/checksum/);
 });

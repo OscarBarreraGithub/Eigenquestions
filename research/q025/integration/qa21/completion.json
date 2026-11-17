@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "q025-qa-completion/1",
+  "jobId": "61552414",
+  "status": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:04:44",
+  "stage": "Initial browser default-home readiness",
+  "classification": "Isolated QA index omitted explicit home selector required by test",
+  "siteCheckPassed": true,
+  "browserStarted": true,
+  "pageErrors": 0,
+  "runtimeFailureEstablished": false,
+  "failureScreenshotAvailable": false,
+  "screenshotLimitation": "Playwright context exited before outer exception screenshot; corrected only in successor harness.",
+  "files": [
+    {
+      "path": "research/q025/integration/qa21/report.json",
+      "sha256": "415cc3b30592c36a76e6ac4f431af015d8b2a973062eace6243dd83e5749fb51"
+    },
+    {
+      "path": "research/q025/integration/qa21/site-check.log",
+      "sha256": "89df0a8a5f75372e8db4a06a447e17f09652ba333345fba3adb59c79d3bae33e"
+    },
+    {
+      "path": "research/q025/integration/qa21/browser.log",
+      "sha256": "4064ba9aa1b984129a109b8f7f0468a7bd61924627d995787ca14c4f2ba410fe"
+    },
+    {
+      "path": "research/q025/integration/qa21/slurm-61552414.out",
+      "sha256": "79a97e8e33d063bd5214087d4b4f50af98b7f112e5515e65f957966aa3f17d88"
+    },
+    {
+      "path": "research/q025/integration/qa21/slurm-61552414.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa21/build-size.json",
+      "sha256": "3de652c5b175b252d4e987b9f704bc3e8469fc1c99035d08d3cb4bff32c8e310"
+    }
+  ]
+}

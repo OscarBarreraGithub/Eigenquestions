@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "q025-qa-completion/1",
+  "jobId": "61548083",
+  "status": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:02:19",
+  "stage": "site-check before browser",
+  "classification": "isolated source packaging omission",
+  "missingRepositoryFile": "wrangler.toml",
+  "browserStarted": false,
+  "runtimeFailureEstablished": false,
+  "originalJobReceiptUnchanged": true,
+  "logs": [
+    {
+      "path": "research/q025/integration/qa20/site-check.log",
+      "sha256": "ead029641befb54d661d6d7d791d771a50954c9ebbed9a25602e9ccdceb1231d",
+      "bytes": 845
+    },
+    {
+      "path": "research/q025/integration/qa20/slurm-61548083.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/q025/integration/qa20/slurm-61548083.out",
+      "sha256": "bc6ec916acc5006be304f30194b84b2bfe66f3af011b0bd10b5afd0688fa85f5",
+      "bytes": 73
+    }
+  ],
+  "credentialScan": "No browser or bridge started; logs contain no bridge-token URL."
+}

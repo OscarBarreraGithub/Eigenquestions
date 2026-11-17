@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "q025-integration-checkpoint/1",
+  "status": "FROZEN_STAGE_SAFE_QA23_PENDING",
+  "scope": "Lazy complete relation-proof reads, exact source-map descriptor compatibility, stale lexical result cleanup, duplicate subtitle cleanup, native/prepared documentation, completed-pair intakes and preservedQA20\u201322 lineage.",
+  "runtimeTests": 105,
+  "baselineBuildAndSiteCheck": "PASS;110assets/0installedatlas",
+  "actualProofRecordsVerified": 10010,
+  "publicInstalled": false,
+  "independentAgentAcceptance": false,
+  "qa23": {
+    "jobId": "61559089",
+    "status": "running; exact inputs frozen",
+    "candidate": "organization-candidate-6294-proof-transport-v8",
+    "claims": "No final browser pass claimed before report."
+  },
+  "frozenFiles": [
+    {
+      "path": "bin/navigate.mjs",
+      "bytes": 9609,
+      "sha256": "73b52633d65a03e83d16cdeb31da1cabe6cd0f3b3ec987599ecd89b68a735aaa"
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "bytes": 30532,
+      "sha256": "83808f1b387306194bd28ecfa0a9a9deffabebf5a165d9110655f94f5b3712ab"
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 70492,
+      "sha256": "3e5f74dc1fb957b84f6e9a2b5e134238125a09f5ffd7d03fccd11be95f500631"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "e0e29418640156443926a19afbdc9fc95d610cd695b2e88d3be8344bc82c8ba5"
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "bytes": 9711,
+      "sha256": "c6a525814ce52d14d948d2a0aecde7d12bfb2920a87b47c360adee61307cafdf"
+    },
+    {
+      "path": "lib/protocol/runtime.mjs",
+      "bytes": 11773,
+      "sha256": "2ab8d8f3dda6970f2f01d8cd3f0eff9e8cac1a4c1146386a11d1e8c64f6dd904"
+    },
+    {
+      "path": "research/q025/integration/lazy-proof-v1/README.md",
+      "bytes": 2103,
+      "sha256": "73c5eb5749cb5f8542d40af1e174b84ab9ac2e2e2affda46ab296539065eadba"
+    },
+    {
+      "path": "research/q025/integration/lazy-proof-v1/check-real.mjs",
+      "bytes": 3456,
+      "sha256": "5a8a78ada75cf90fb38ec45ef1ac7dc7843da5b8b4835e7a445031d8106bb6de"
+    },
+    {
+      "path": "research/q025/integration/lazy-proof-v1/real-reader-report.json",
+      "bytes": 1188,
+      "sha256": "4029dd914bf2da9ca0a09782de288771db5037f339e77f1229006c736eb2b92a"
+    },
+    {
+      "path": "research/q025/integration/lazy-proof-v1/verification.json",
+      "bytes": 284,
+      "sha256": "bc13a417c49a23ea6462f68158b040c5c76aa8dd9d4658d83a7f410fc533c942"
+    },
+    {
+      "path": "research/q025/integration/placement-continuation-intake-v1/README.md",
+      "bytes": 1067,
+      "sha256": "b4f50cdea871ce7b1446c3eddfc168860b10c3fc9c48f79d7e2f5effa8c7a24f"
+    },
+    {
+      "path": "research/q025/integration/placement-continuation-intake-v1/intake-20261117T164105Z.json",
+      "bytes": 226324,
+      "sha256": "0b017bf2de7a39ea0d52003a89ce535514e0731d47d6c70634c1265445dd083f"
+    },
+    {
+      "path": "research/q025/integration/placement-continuation-intake-v1/intake-20261117T165635Z.json",
+      "bytes": 416411,
+      "sha256": "223abe6a9a84a12429dc8e59241503850585737fd7721120682e426c4749f757"
+    },
+    {
+      "path": "research/q025/integration/placement-continuation-intake-v1/intake-20261117T170838Z.json",
+      "bytes": 1307884,
+      "sha256": "5c511504cfc9e96ac5663abbcc0e8831ebd8d8fe919e91854eb58e9919c47211"
+    },
+    {
+      "path": "research/q025/integration/placement-continuation-intake-v1/summarize.py",
+      "bytes": 5864,
+      "sha256": "563944c0d3b1b4135b91bcc3641848edd5994c6caaa5a35594077f51e27f12c8"
+    },
+    {
+      "path": "research/q025/integration/qa20/completion.json",
+      "bytes": 1028,
+      "sha256": "e5b64f2f32135f88677af17f692d4fc4089360048bd3361dd75a36f613992a59"
+    },
+    {
+      "path": "research/q025/integration/qa20/input-manifest.json",
+      "bytes": 2129,
+      "sha256": "d8c4a94a1da3c8d582f8ae49a03250e959bf959ed0edd04581a7d7a551286a02"
+    },
+    {
+      "path": "research/q025/integration/qa20/job.json",
+      "bytes": 789,
+      "sha256": "5cc04b5c9174b1a4dcc07f8c381f28960ae39997a2bfc3fa439f756761c851c3"
+    },
+    {
+      "path": "research/q025/integration/qa20/run.sbatch",
+      "bytes": 3150,
+      "sha256": "56a03a14f5205f0ca26408348a1bf2df567dc6e0d1e0d225c1412d9d0061c152"
+    },
+    {
+      "path": "research/q025/integration/qa20/site-check.log",
+      "bytes": 845,
+      "sha256": "ead029641befb54d661d6d7d791d771a50954c9ebbed9a25602e9ccdceb1231d"
+    },
+    {
+      "path": "research/q025/integration/qa20/slurm-61548083.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa20/slurm-61548083.out",
+      "bytes": 73,
+      "sha256": "bc6ec916acc5006be304f30194b84b2bfe66f3af011b0bd10b5afd0688fa85f5"
+    },
+    {
+      "path": "research/q025/integration/qa21/browser.log",
+      "bytes": 50,
+      "sha256": "4064ba9aa1b984129a109b8f7f0468a7bd61924627d995787ca14c4f2ba410fe"
+    },
+    {
+      "path": "research/q025/integration/qa21/build-size.json",
+      "bytes": 199,
+      "sha256": "3de652c5b175b252d4e987b9f704bc3e8469fc1c99035d08d3cb4bff32c8e310"
+    },
+    {
+      "path": "research/q025/integration/qa21/closure-observation.json",
+      "bytes": 2316,
+      "sha256": "ed7796542f9fff8fc0dfc1773c58a926ff4ca331351fc473462e4da6c1790a0e"
+    },
+    {
+      "path": "research/q025/integration/qa21/completion.json",
+      "bytes": 1529,
+      "sha256": "9e396fdf8d8fefb432656aaeeb4d7f9c78a9c0f24606457e9260d6571ce4ba71"
+    },
+    {
+      "path": "research/q025/integration/qa21/input-manifest.json",
+      "bytes": 406443,
+      "sha256": "4f336f1117e05cbc946aaaab45f8d1690ad01d3a14941dd5b221b147c490b97e"
+    },
+    {
+      "path": "research/q025/integration/qa21/job.json",
+      "bytes": 852,
+      "sha256": "38bc92be4fbc9c88fcc7fab7d723bb785764b407bce28a8bed8030ea204b473b"
+    },
+    {
+      "path": "research/q025/integration/qa21/prepare.py",
+      "bytes": 3116,
+      "sha256": "ade01d494db8689197b0110631d53dcf95d69a99cf3dbdd0bcdf7f642e116cd1"
+    },
+    {
+      "path": "research/q025/integration/qa21/report.json",
+      "bytes": 494,
+      "sha256": "415cc3b30592c36a76e6ac4f431af015d8b2a973062eace6243dd83e5749fb51"
+    },
+    {
+      "path": "research/q025/integration/qa21/run.sbatch",
+      "bytes": 3865,
+      "sha256": "77a24fedbfeda00abc73cb3f96d7fc1b011cd411d85f92721c00db0b00bac2d1"
+    },
+    {
+      "path": "research/q025/integration/qa21/site-check.log",
+      "bytes": 274,
+      "sha256": "89df0a8a5f75372e8db4a06a447e17f09652ba333345fba3adb59c79d3bae33e"
+    },
+    {
+      "path": "research/q025/integration/qa21/slurm-61552414.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa21/slurm-61552414.out",
+      "bytes": 91,
+      "sha256": "79a97e8e33d063bd5214087d4b4f50af98b7f112e5515e65f957966aa3f17d88"
+    },
+    {
+      "path": "research/q025/integration/qa22/REPORT.md",
+      "bytes": 1906,
+      "sha256": "6f2f1f6ea4162dde6cf86cd0f7ddb1762cb72366c15705178c6463c082ead0b4"
+    },
+    {
+      "path": "research/q025/integration/qa22/browser.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "research/q025/integration/qa22/browser.py",
+      "bytes": 14116,
+      "sha256": "ea5bfeea3dcf45d7381e42ce4992bcf9a3611333b80ddeef31702ad11bac998a"
+    },
+    {
+      "path": "research/q025/integration/qa22/build-size.json",
+      "bytes": 199,
+      "sha256": "3d6bba7e180bfdae6c665ad40a7acdee45ffc1998506a70e895f6414daf7c977"
+    },
+    {
+      "path": "research/q025/integration/qa22/completion.json",
+      "bytes": 1716,
+      "sha256": "46261ac85c191075e55c18ad49edd34f53a6957fb15fc02acd078a051a62be67"
+    },
+    {
+      "path": "research/q025/integration/qa22/dark-sectors-desktop.png",
+      "bytes": 533074,
+      "sha256": "add8a0de011be4a691f6cf4cefa7aa6956acdc0f41c3e85d76aa621b0a79b6f2"
+    },
+    {
+      "path": "research/q025/integration/qa22/failure.png",
+      "bytes": 641294,
+      "sha256": "0e8510a0daf30cd17a5dad4fa9f751390668db85ebf12c382bae35642ae71b00"
+    },
+    {
+      "path": "research/q025/integration/qa22/input-manifest.json",
+      "bytes": 1316,
+      "sha256": "607924cb46546b3103dbe1560107e1fae6004f2d75b4b67077e64496798350dd"
+    },
+    {
+      "path": "research/q025/integration/qa22/job.json",
+      "bytes": 963,
+      "sha256": "fda9a483e1666ace6c06f34c2d945a490f9f7caabf58e943d15e2bd6254f6bf5"
+    },
+    {
+      "path": "research/q025/integration/qa22/kk-production-desktop.png",
+      "bytes": 433167,
+      "sha256": "e9b1f3a7fb9118ae35432a06cbc739e0946daf5e6485ff00c8585307e220896a"
+    },
+    {
+      "path": "research/q025/integration/qa22/linear-desktop.png",
+      "bytes": 431426,
+      "sha256": "35fe848247706c8f5b970aa92774b3b14e63839bfc4111588d557da0bb653fd3"
+    },
+    {
+      "path": "research/q025/integration/qa22/physics-desktop.png",
+      "bytes": 149873,
+      "sha256": "a72af389ec3e31a7fe9f968915bca9870d1fe8e64271a91969e46ad990ee99d0"
+    },
+    {
+      "path": "research/q025/integration/qa22/report.json",
+      "bytes": 70402,
+      "sha256": "de0fcb688539207fd4c9429c2568d5429a03d0ec5bb38213a57632a3683d3aab"
+    },
+    {
+      "path": "research/q025/integration/qa22/run.sbatch",
+      "bytes": 3274,
+      "sha256": "959062eef35d7a3077598395dc0a0592cf60d5aec4ab57c42b465d44827e3400"
+    },
+    {
+      "path": "research/q025/integration/qa22/site-check.log",
+      "bytes": 274,
+      "sha256": "89df0a8a5f75372e8db4a06a447e17f09652ba333345fba3adb59c79d3bae33e"
+    },
+    {
+      "path": "research/q025/integration/qa22/slurm-61554287.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa22/slurm-61554287.out",
+      "bytes": 97,
+      "sha256": "dd4fcc6c89d8e8f06ccfa21c245f06398ea5a9dc0f36a0a3a8c911f669245c4d"
+    },
+    {
+      "path": "research/q025/integration/qa23/browser.py",
+      "bytes": 15685,
+      "sha256": "13b69c44c9b48523b9c32b2fb726c8fff571516a1e3c57d5db110550b78d0508"
+    },
+    {
+      "path": "research/q025/integration/qa23/cases.json",
+      "bytes": 3550,
+      "sha256": "94f4dba15a0c694053e0ab135699e13f185e6a503972760f3d69e518a3423667"
+    },
+    {
+      "path": "research/q025/integration/qa23/content-manifest.json",
+      "bytes": 2637672,
+      "sha256": "8ed9c56b98db8dbc7814b9e0d9c2830e159688bb00ee8ab94c31f3498eec96fe"
+    },
+    {
+      "path": "research/q025/integration/qa23/job.json",
+      "bytes": 885,
+      "sha256": "c71e6dbfdf245c3ac7acaf5ead1bc7f554c746d27419d897b020800f06bccbf8"
+    },
+    {
+      "path": "research/q025/integration/qa23/package.py",
+      "bytes": 4059,
+      "sha256": "42fa8a5dedb288a777fe515f5966589e230acc71a2db4eee789c10a31af23c9c"
+    },
+    {
+      "path": "research/q025/integration/qa23/prepare-cases.mjs",
+      "bytes": 2302,
+      "sha256": "8cf3664bbe059e24ec5dc9d6cd77b1d04cd30666dd19894fa7aa0da76a3ecd04"
+    },
+    {
+      "path": "research/q025/integration/qa23/run.sbatch",
+      "bytes": 4065,
+      "sha256": "f2de3cadcd1ebe1824d1251b523a12dcd19731e4157a8562ddd97902f1e9b455"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 20634,
+      "sha256": "253d38a1b6eed146c146d75ccd6d8d9f3d6be0598480052cb1bc9cbf4b323a85"
+    },
+    {
+      "path": "scripts/site-check.mjs",
+      "bytes": 9276,
+      "sha256": "a970dffe9e2cbf635c9be073f8d2f1d13d42371cb0c96dd8869969dbd2950500"
+    },
+    {
+      "path": "tests/integration/lazy-atlas.test.mjs",
+      "bytes": 13486,
+      "sha256": "76b3f6f8619d6792b3ed31c17dc02045219e4345e687dbc8226b0b4424799cd4"
+    },
+    {
+      "path": "tests/integration/relation-proof-render.test.mjs",
+      "bytes": 2384,
+      "sha256": "dfc373a43c7a4b5f0cc127b2d02254070294a2720d00b2464eb25295550417a6"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 93369,
+      "sha256": "edf2337140edd928943197585ad856f544120c7750efad94ad903822894197f9"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 21841,
+      "sha256": "c59ecc49e6ee9d1d150ce64dfe1dec99cccf66bfac79e89311e87b13601dcec3"
+    }
+  ],
+  "exclusions": [
+    "All native-local jobs, raw private packets, credentials, .git, node_modules and generated archives.",
+    "Scientific source package files belong to geometry handoff, not this runtime checkpoint.",
+    "FutureQA23 outputs require an additive evidence checkpoint."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "q025-validator-recovery-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 1,
+  "repeatedProposals": 0,
+  "independentChallenges": 1,
+  "sourceQuestions": 31,
+  "newScopesInAdoptedProposal": 0,
+  "maxAuthorizedConcurrency": 1,
+  "maxResponseCharacters": 120000,
+  "actualDependentPriorCharacters": 60514,
+  "maxConservativeCombinedTokens": 118206,
+  "dispatchGuardTokens": 220000,
+  "tests": {
+    "python": 4,
+    "node": 8,
+    "verifiedRequests": 1
+  },
+  "campaignSha256": "9b3b74bae40b542efa67d57d745efdc279a9899f836f3050ca224b501aac353c",
+  "originalFailurePreserved": true,
+  "scientificContentChanged": false,
+  "scientificAdmission": false,
+  "nativeLaunches": 0,
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/README.md",
+      "sha256": "31fc60588d0c59d939798aff73a6440edc93229f49b499ca9917999af84d62ba",
+      "bytes": 2170
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/INSTRUCTIONS.md",
+      "sha256": "9f807b5c117d54bb81b95174d8d9abf2e292704967829c80217eae3aa36b08d7",
+      "bytes": 5566
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/contract.py",
+      "sha256": "0940bfc7f94d843cc8129e3dc4ab02e8c6fdfeb9b8d0fd2d248260f189517fc8",
+      "bytes": 1663
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/materialize.py",
+      "sha256": "f15e88303da259d08634213e42b62a160647132b0e4aa73911f07cf1125d1989",
+      "bytes": 7113
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/prepare.py",
+      "sha256": "e0cda7377dc664581779f6d9c9823a185562a9658cc4535d4d480beb926d2412",
+      "bytes": 4707
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/runner.mjs",
+      "sha256": "5034d8f909501dd5d3532de0ed0b333a1bb6fd74e1836fed8597239398e48a52",
+      "bytes": 26015
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/runner.test.mjs",
+      "sha256": "eaa31c349b5e5e4d03579f60205b97c61a26302b4b3800f2ee66f049731b2011",
+      "bytes": 3844
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/test_recovery.py",
+      "sha256": "06bae0c390a8b6d148d608a7126ff4bc07f86c553493cccd290ffa402642a9cb",
+      "bytes": 1321
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/preflight.py",
+      "sha256": "01c7219810d6781a2d5f4464e8e9e91b25ac9efdc7a8dbfd1a091a2912c4afc4",
+      "bytes": 2404
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/preflight.json",
+      "sha256": "139ac1587c6162e79d6b5da86849d8a10340339a4c6a42619a5445d5590c8a03",
+      "bytes": 913
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/manifest.json",
+      "sha256": "f8b1def673efe1a463514c7cd4b90d8e9d0081c38ef892dce65a9e0f6babad64",
+      "bytes": 17031
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-validator-recovery-v1/adoption.json",
+      "sha256": "173327ceb479a5cd15f0d67585d353186256bb4ee41443ff03e94978610760fd",
+      "bytes": 1276
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/placement-validator-recovery-v1/runner.mjs --run --enable"
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "q025-integration-job/1",
+  "jobId": "61554287",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 4,
+  "memory": "16G",
+  "timeLimit": "00:12:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa22",
+  "priorJobId": "61552414",
+  "inputManifestSha256": "607924cb46546b3103dbe1560107e1fae6004f2d75b4b67077e64496798350dd",
+  "patchArchiveSha256": "0c58f3aeee16c3dac3272dd14da8152b6da52affbbf4ca5997de9e866ddb5a54",
+  "sbatchSha256": "959062eef35d7a3077598395dc0a0592cf60d5aec4ab57c42b465d44827e3400",
+  "statusAtSubmission": "submitted",
+  "runtimeCodeChanged": false,
+  "scientificPackageChanged": false,
+  "changes": [
+    "Add missing explicit default home to isolated QA source and built index.",
+    "Keep browser alive for failure diagnostics and prevalidate default home before waiting."
+  ],
+  "scope": "Actual6030partial candidate; scripted isolated browser/MCP only."
+}

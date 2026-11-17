@@ -1,0 +1,16 @@
+node:internal/fs/promises:636
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa20/project/wrangler.toml'
+    at async open (node:internal/fs/promises:636:25)
+    at async readFile (node:internal/fs/promises:1273:14)
+    at async checkSite (file:///n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa20/project/scripts/site-check.mjs:70:18)
+    at async file:///n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa20/project/scripts/site-check.mjs:99:117 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa20/project/wrangler.toml'
+}
+
+Node.js v25.7.0

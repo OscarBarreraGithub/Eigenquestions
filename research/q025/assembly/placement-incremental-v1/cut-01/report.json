@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "q025-incremental-placement-cut/1",
+  "counts": {
+    "pairs": 7,
+    "sources": 219,
+    "eligibleUnchangedExistingWholeHomes": 177,
+    "exceptionSources": 42,
+    "proposedDefinitions": 27,
+    "currentlySelectedProposedDefinitions": 27,
+    "verifiedFiles": 84
+  },
+  "mechanical": {
+    "path": "research/q025/integration/placement-continuation-intake-v1/intake-20261117T164105Z.json",
+    "sha256": "0b017bf2de7a39ea0d52003a89ce535514e0731d47d6c70634c1265445dd083f",
+    "bytes": 226324
+  },
+  "currentAssembly": {
+    "path": "research/q025/assembly/organization-residual-v1/candidate-6117-canonical-v6/aggregate.local.json",
+    "sha256": "b2034b6169a83cb197b4c2fedae2268cbda8b9f6d01086944a64bc2454957b07",
+    "bytes": 99402062
+  },
+  "sourceBindings": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/source-bindings.local.json",
+    "sha256": "dc1cf62cd026cfcb2701ef5bd7aa9c2ddfad0950711732a66f26c796b071502b",
+    "bytes": 4051638
+  },
+  "exceptionIntake": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+    "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+    "bytes": 2044150
+  },
+  "exceptionReasons": {
+    "requires_scope_or_coverage_adjudication": 38,
+    "new_scope_requires_global_check": 34,
+    "challenger_changed_or_insufficient_home": 5,
+    "proposal_coverage_gap": 4,
+    "changed_home_or_weight": 5,
+    "whole_target_or_missing_premise": 4,
+    "nonconservative_allocation": 4
+  },
+  "existingHomeAdmissionPolicy": "Root approved exact retained existing-scope whole-home class on the pilot; compilation still binds every exact row/current scope/source before assembly.",
+  "noNewScopesAdmitted": true,
+  "noPrimaryReading": true,
+  "scriptSha256": "7a2f2c7486cc344e5f8d3b87539de70472be81675c51ab5c4ec73437c00b5b59"
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "q025-lazy-proof-export-checkpoint-report/1",
+  "status": "verified_partial_candidate_transport",
+  "scientificInput": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/candidate-6294/aggregate.local.json",
+    "sha256": "e9bb797bb6595e24e42191e8ea20112bdc619dc326ff62efc61cbcaa9bb54d75",
+    "bytes": 106896310
+  },
+  "packageDirectory": "research/q025/assembly/outputs/organization-candidate-6294-proof-transport-v9",
+  "manifest": {
+    "path": "research/q025/assembly/outputs/organization-candidate-6294-proof-transport-v9/manifest.json",
+    "sha256": "f6cbc5f221e2b98d4545117a45ada7a64037e6d64f369d2f117faf366bb5e5b0",
+    "bytes": 2998
+  },
+  "catalog": {
+    "path": "research/q025/assembly/outputs/organization-candidate-6294-proof-transport-v9/catalog.json",
+    "sha256": "8a112e3bf7194ab4522e92ac3c2753b41265bbea65daf483198525fca9bacd08",
+    "bytes": 5397278
+  },
+  "previousCatalog": {
+    "path": "research/q025/assembly/outputs/organization-candidate-6294-incremental-v7/catalog.json",
+    "sha256": "137f9ccbb088bb43a215b870dd537e36b5b1c5e7711e1bb05cf075c097391c0d",
+    "bytes": 22713110
+  },
+  "catalogReductionBytes": 17315832,
+  "relationProofShards": 44,
+  "largestProofShardBytes": 524320,
+  "roundtrip": {
+    "logicalDestinationCount": 8187,
+    "logicalSourceCount": 26623,
+    "logicalMembershipCount": 49919,
+    "navigationRelationCount": 10010,
+    "totalShardCount": 806
+  },
+  "partitionRoundTrip": {
+    "passed": true,
+    "filesChecked": 806,
+    "completeMembershipRowsChecked": 49919,
+    "destinationsChecked": 8187,
+    "relationsChecked": 10010,
+    "exactMembershipRoundTrip": true,
+    "exactRelationProofRoundTrip": true,
+    "exactSourceIdentityPreserved": true,
+    "pinnedCountsVerified": true,
+    "allIncidentNavigationAvailableBeforeView": true
+  },
+  "methodRouteDescriptor": {
+    "path": "source-method-routes.json",
+    "sha256": "2d3fc77b042d1dd1bfd42addded3edfcba41de625db1f1d5174ab5cce85b1bfc",
+    "bytes": 105807
+  },
+  "runtimeVerification": {
+    "path": "research/q025/integration/lazy-proof-v1/real-reader-report.json",
+    "sha256": "4029dd914bf2da9ca0a09782de288771db5037f339e77f1229006c736eb2b92a",
+    "bytes": 1188
+  },
+  "runtimeVerificationQualification": "Runtime inspected v8 with the identical catalog/proof bytes; v9 only adds exact measured sourceMethodRoutes.bytes. Browser QA23 runs frozen v8 and is separately reported.",
+  "tests": {
+    "passed": 106,
+    "log": {
+      "path": "research/q025/assembly/lazy-proofs-v1/tests.log",
+      "sha256": "b33412c8f0f414dd75048cd6865afdbe00870efe2606a02ad7fdec5e1616f079",
+      "bytes": 8922
+    }
+  },
+  "scienceUnchanged": true,
+  "fullAtlasReleaseAllowed": false,
+  "oldFailuresPreserved": [
+    "organization-candidate-6294-incremental-v7 retains oversized catalog",
+    "organization-candidate-6294-proof-transport-v8 retains legacy method-map descriptor without bytes"
+  ],
+  "reproduceCommand": "node research/q025/assembly/assemble.mjs --packet research/q025/assembly/placement-incremental-v1/cut-01/candidate-6294/aggregate.local.json --out <new-empty-output-directory>"
+}
