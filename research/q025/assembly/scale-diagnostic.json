@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "q025-scale-diagnostic/1",
+  "notAnAcceptedAssembly": true,
+  "corpusContentHash": "5957a5437e4d7e2c3c8089cc885a6ea03069bd8c6fc78cd104eb3024672ff300",
+  "originalProposalRegionsSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+  "scope": "Actual source records and original186-leaf/55-parent memberships; diagnostic placement labels only. Reviewed overlaps/new scopes may increase counts.",
+  "sourceInventory": {
+    "count": 26410,
+    "jsonBytes": 35913600,
+    "first30SourceBytes": 38486
+  },
+  "proposalMemberships": {
+    "regionCount": 241,
+    "primaryRows": 37692,
+    "primaryBytes": 13841215,
+    "contextMethodRows": 99119,
+    "contextMethodBytes": 63307016,
+    "perDestinationPaperPairs": 31670,
+    "compactPaperPairBytes": 3216901
+  },
+  "fineSourceAccess": {
+    "destinationCount": 8473,
+    "estimatedFullRecordBytes": 13263276
+  },
+  "catalogLowerBoundBeforeReviewedScopesOrNavigation": {
+    "bytes": 126325107,
+    "MiB": 120.47301006317139,
+    "exceeds25MiB": true,
+    "exceeds64MiB": true
+  },
+  "destinationCountBounds": {
+    "fineSourceFacets": 8473,
+    "originalRegions": 241,
+    "classificationAndHepTh": 213,
+    "overviewCardsAt3PerLeaf": 558,
+    "overviewCardsAt8PerLeaf": 1488,
+    "totalAt3PerLeaf": 9485,
+    "totalAt8PerLeaf": 10415,
+    "currentRuntimeMax": 10000
+  },
+  "conclusion": "Source records and expanded ancestor/context memberships need bounded lazy partitioning before real accepted assembly. This diagnostic does not alter source scopes, identities or memberships."
+}

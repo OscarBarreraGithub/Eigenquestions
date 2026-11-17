@@ -1,0 +1,62 @@
+{
+  "syntheticOnly": true,
+  "allNumericalInvariantsPass": true,
+  "diagnostics": {
+    "coverage": {
+      "questionUnits": 4,
+      "papers": 3,
+      "regionNodes": 3,
+      "directRegionalCatchments": 3,
+      "methodsExcludedFromGeometry": true,
+      "provisionalAllocationCount": 2
+    },
+    "flow": {
+      "isolatedSourceCount": 1,
+      "selfFlowFraction": 0.5555555555555556,
+      "sourceMassMaxError": 0.0
+    },
+    "coarseFlowTotal": 3.0,
+    "expectedPaperMass": 3,
+    "components": [
+      {
+        "component": 0,
+        "atomCount": 2,
+        "layout": "two_diffusion_modes",
+        "projection": {
+          "distanceStress": 0.0,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "metricFit": {
+          "distanceStress": 0.0,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "chosenInitialization": 0,
+        "iterations": 2,
+        "leadingLazyEigenvalues": [
+          1.0,
+          0.5555555555555556
+        ],
+        "twoModeEnergyFraction": 1.0,
+        "displayPackingOffset": [
+          0,
+          0
+        ],
+        "interComponentDistancesMeaningful": false
+      },
+      {
+        "component": 1,
+        "atomCount": 1,
+        "layout": "isolated",
+        "distanceStress": null,
+        "displayPackingOffset": [
+          3,
+          0
+        ],
+        "interComponentDistancesMeaningful": false
+      }
+    ],
+    "fineQuestionsPlotted": false
+  }
+}

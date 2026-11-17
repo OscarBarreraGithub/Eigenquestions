@@ -1,0 +1,130 @@
+/** Deterministic compilation of explicit adjudicated organization decisions. */
+import {hydrateSources,sha256} from './corpus.mjs';
+
+const fail=message=>{throw new Error(`Accepted assembly: ${message}`);};
+const setHash=ids=>sha256([...new Set(ids)].sort().join('\n'));
+const mapUnique=(rows,name)=>{const out=new Map();for(const row of rows){if(!row?.id||out.has(row.id))fail(`duplicate/missing ${name} ID`);out.set(row.id,row);}return out;};
+const navigationTypes=new Set(['narrower','method_for','application_of','comparison','premise_check','related_question']);
+const emptyScope=()=>Object.fromEntries(['assumptions','includes','excludes','regimes','conventions'].map(k=>[k,[]]));
+export const scopeContentHash=d=>sha256(JSON.stringify(Object.fromEntries(['kind','title','question','summary','scope','scientificStatus','readingCoverage','evidenceIds'].map(k=>[k,d[k]]))));
+export const acceptedContentHash=packet=>sha256(JSON.stringify(Object.fromEntries(Object.entries(packet).filter(([key])=>key!=='acceptance'))));
+
+export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,verifiedReceiptHashes=new Set(),fixture=false}) {
+  if(packet.schemaVersion!=='q025-accepted-atlas/1')fail('unsupported acceptance packet');
+  if(packet.acceptance?.status!=='accepted_for_assembly')fail('raw reviewer proposals cannot be assembled as accepted');
+  if(!fixture&&!verifiedReceiptHashes.has(packet.acceptance.receipt?.sha256))fail('assembly admission receipt is not verified');
+  if(packet.corpus?.corpusId!==corpus.manifest.corpusId||packet.corpus?.contentHash!==corpus.manifest.contentHash)fail('frozen corpus identity mismatch');
+  if(packet.originalCandidate?.regionsSha256!==originalBinsSha256)fail('original candidate hash mismatch');
+  if(packet.allocationPolicy!=='equal_across_explicit_homes'&&packet.allocationPolicy!=='explicit_normalized_weights')fail('organizational allocation policy must be explicit');
+  const units=corpus.unitMap,questions=corpus.units.filter(u=>u.lens==='physical_question'),methods=corpus.units.filter(u=>u.lens==='method');
+  const bins=mapUnique(originalBins,'original bin'),originalRows=[];const leaves=originalBins.filter(b=>!b.childIds?.length),priorByUnit=new Map();
+  for(const bin of originalBins){
+    if(bin.candidateId!==packet.originalCandidate.candidateId)fail('mixed original candidates');
+    for(const uid of bin.memberIds)if(!units.has(uid)||units.get(uid).lens!=='physical_question')fail('original candidate contains an unknown/nonquestion source');
+    originalRows.push({candidateId:bin.candidateId,regionId:bin.id,memberCount:bin.memberIds.length,memberIdsSha256:setHash(bin.memberIds),parentIds:bin.parentIds||[],childIds:bin.childIds||[]});
+  }
+  for(const bin of leaves)for(const uid of bin.memberIds){if(priorByUnit.has(uid))fail('original leaf partition is not unique');priorByUnit.set(uid,bin.id);}
+  if(questions.some(u=>!priorByUnit.has(u.id)))fail('original leaf partition does not conserve the question corpus');
+  const decisions=mapUnique(packet.decisions||[],'decision'),reviews=new Set((packet.reviewRegistry||[]).map(r=>r.id));
+  function decision(id,types){
+    const d=decisions.get(id);if(!d||d.status!=='accepted'||!types.includes(d.type))fail(`missing admitted decision ${id}`);
+    if(!d.sourceReviewIds?.length||d.sourceReviewIds.some(r=>!reviews.has(r)))fail(`unresolved review provenance ${id}`);
+    if(!d.evidenceRefs?.length)fail(`decision lacks evidence ${id}`);
+    return d;
+  }
+  function admitScope(d){
+    const accepted=decision(d.scopeDecisionId,['scope_acceptance']);
+    if(!accepted.subjectIds?.includes(d.id))fail(`scope decision does not name destination ${d.id}`);
+    if(accepted.scopeContentSha256!==scopeContentHash(d))fail(`scope changed after its admission decision: ${d.id}`);
+    const supported=accepted.challengerAgreement==='supported_as_written'&&accepted.scopeAgreement==='unchanged';
+    const adjudicated=accepted.adjudication?.status==='accepted_explicit_scope'&&verifiedReceiptHashes.has(accepted.adjudication.receipt?.sha256);
+    if(!supported&&!adjudicated)fail(`scope is rewritten, unsupported or awaiting review: ${d.id}`);
+  }
+  const destinations=structuredClone(packet.destinations||[]),dest=mapUnique(destinations,'destination');
+  if(!dest.has(packet.atlas?.entryDestinationId))fail('detailed entry destination absent');
+  for(const d of destinations){
+    if(!['region','question','method'].includes(d.kind))fail(`unsupported scientific destination kind ${d.id}`);
+    admitScope(d);
+    if(!d.title||!d.question||!d.summary||!d.scientificStatus||!d.readingCoverage)fail(`missing reviewed readable scope ${d.id}`);
+    if(d.aliases?.length)fail('aliases must be separate equivalence decisions');
+    d.scope={...emptyScope(),...d.scope};d.aliases=[];d.contextSourceIds=d.contextSourceIds||[];
+    if(!d.evidenceIds?.length||d.evidenceIds.some(uid=>!units.has(uid)))fail(`invalid representative evidence ${d.id}`);
+    if((d.originalBinIds||[]).some(id=>!bins.has(id)))fail(`unknown original bin provenance ${d.id}`);
+    d.provenance={...d.provenance,scopeDecisionId:d.scopeDecisionId,readingCoverage:d.readingCoverage,originalCandidateId:packet.originalCandidate.candidateId,originalBinIds:d.originalBinIds||[]};
+    d.membershipStatus=d.kind==='region'?'complete':'representative';
+  }
+  const relations=[],parents=new Map(destinations.map(d=>[d.id,[]])),children=new Map(destinations.map(d=>[d.id,[]]));
+  for(const raw of packet.relations||[]){
+    if(!dest.has(raw.source)||!dest.has(raw.target)||raw.source===raw.target)fail(`unknown/self navigation endpoint ${raw.id}`);
+    if(!navigationTypes.has(raw.type))fail(`source-science relation cannot be promoted to destination navigation: ${raw.type}`);
+    const proof=decision(raw.decisionId,raw.type==='narrower'?['reparent','navigation']:['navigation']);
+    if(!proof.subjectIds?.includes(raw.source)||!proof.subjectIds?.includes(raw.target))fail(`navigation decision has wrong subjects ${raw.id}`);
+    if(!raw.rationale||!raw.evidenceIds?.length||raw.evidenceIds.some(uid=>!units.has(uid)))fail(`navigation lacks source rationale ${raw.id}`);
+    relations.push({...raw,status:'accepted_navigation',provenance:{...raw.provenance,decisionId:raw.decisionId,sourceScienceLayerSeparate:true}});
+    if(raw.type==='narrower'){parents.get(raw.target).push(raw.source);children.get(raw.source).push(raw.target);}
+  }
+  const visiting=new Set(),visited=new Set(),order=[];
+  function visit(id){if(visiting.has(id))fail('cyclic accepted containment');if(visited.has(id))return;visiting.add(id);for(const child of children.get(id))visit(child);visiting.delete(id);visited.add(id);order.push(id);}
+  for(const id of dest.keys())visit(id);
+  function ancestors(id){const out=new Set(),todo=[...parents.get(id)];while(todo.length){const n=todo.pop();if(out.has(n))continue;out.add(n);todo.push(...parents.get(n));}return out;}
+  const direct=new Map(),placementKeys=new Set(),ambiguous=[];
+  for(const p of packet.placements||[]){
+    if(!units.has(p.unitId)||!dest.has(p.destinationId))fail(`unknown placement identity ${p.unitId}`);
+    if(!['member','overlap','context'].includes(p.role)||!['accepted','provisional','unresolved'].includes(p.status))fail('invalid placement role/status');
+    const key=`${p.unitId}\n${p.destinationId}`;if(placementKeys.has(key))fail('duplicate direct placement');placementKeys.add(key);
+    const proof=decision(p.decisionId,p.role==='overlap'?['overlap','placement']:['placement']);
+    if(!proof.subjectIds?.includes(p.unitId)||!proof.subjectIds?.includes(p.destinationId))fail(`placement decision has wrong subjects ${key}`);
+    if(p.status==='accepted'&&proof.challengerAgreement!=='independently_agreed')fail(`unagreed accepted placement ${key}`);
+    if(p.status!=='accepted'){
+      if(dest.get(p.destinationId).kind!=='region'||!p.reason||proof.outcome!=='retain_provisional_family_placement')fail('unresolved placement needs an explicitly admitted broad family and reason');
+      ambiguous.push({...p});
+    }
+    if(p.role==='context'&&!p.associationScope)fail('context placement requires its attachment scope');
+    if(p.workRelation==='using'&&!proof.sourceRelationRefs?.length&&!proof.sourceExcerptSupport)fail('using requires scoped evidence, not co-paper association');
+    if(!direct.has(p.unitId))direct.set(p.unitId,[]);direct.get(p.unitId).push({...p});
+  }
+  const allocations=[];
+  for(const u of questions){
+    const rows=(direct.get(u.id)||[]).filter(p=>p.role!=='context');if(!rows.length)fail(`uncovered question; no catch-all is invented: ${u.id}`);
+    for(const p of rows)for(const other of rows)if(p!==other&&ancestors(p.destinationId).has(other.destinationId))fail(`direct home duplicates its ancestor: ${u.id}`);
+    const weights=rows.map(p=>packet.allocationPolicy==='equal_across_explicit_homes'?1/rows.length:p.allocationWeight);
+    if(weights.some(w=>!Number.isFinite(w)||w<=0)||Math.abs(weights.reduce((a,b)=>a+b,0)-1)>1e-10)fail(`organizational allocation does not conserve unit ${u.id}`);
+    rows.forEach((p,i)=>allocations.push({unitId:u.id,destinationId:p.destinationId,weight:weights[i],placementStatus:p.status,decisionId:p.decisionId,originalBinId:priorByUnit.get(u.id)}));
+  }
+  const members=new Map(destinations.map(d=>[d.id,new Map()]));
+  function rowFor(uid,destinationId,weight,p){const u=units.get(uid),paper=corpus.papers.get(u.paperId);return {destinationId,unitId:uid,paperId:u.paperId,weight,lens:u.lens,year:paper.year,browserVectorRow:u.browserVectorRow,sourceRow:u.sourceRow,role:p.workRelation||'on',placementStatus:p.status||p.placementStatus,decisionIds:[p.decisionId],...(p.associationScope?{associationScope:p.associationScope}:{}),...(p.reason?{placementReason:p.reason}:{})};}
+  function addRow(id,row){const prev=members.get(id).get(row.unitId);if(!prev||prev.placementStatus==='context_only'&&row.placementStatus!=='context_only')members.get(id).set(row.unitId,row);else if(row.placementStatus!=='context_only'){prev.weight=Math.min(1,prev.weight+row.weight);prev.decisionIds=[...new Set([...prev.decisionIds,...row.decisionIds])];if(prev.placementStatus!=='accepted'||row.placementStatus!=='accepted')prev.placementStatus='contains_provisional_placement';}}
+  for(const a of allocations){const p=(direct.get(a.unitId)||[]).find(p=>p.destinationId===a.destinationId);for(const id of [a.destinationId,...ancestors(a.destinationId)])addRow(id,rowFor(a.unitId,id,a.weight,p));}
+  for(const [uid,rows] of direct)for(const p of rows)if(units.get(uid).lens==='method'||p.role==='context'){
+    for(const id of p.role==='context'?[p.destinationId]:[p.destinationId,...ancestors(p.destinationId)]){const r=rowFor(uid,id,p.allocationWeight??1,p);if(p.role==='context'){r.role='evidence';r.placementStatus='context_only';}addRow(id,r);}
+  }
+  // Methods from papers represented in a region are contextual source inventory,
+  // not claims of method use; geometry never consumes these rows.
+  if(packet.methodContextPolicy?.kind==='same_paper_context_at_regions'){
+    const policy=decision(packet.methodContextPolicy.decisionId,['context_policy']);
+    if(policy.outcome!=='context_only_no_applicability')fail('method context policy must exclude applicability');
+    const methodByPaper=new Map();for(const m of methods){if(!methodByPaper.has(m.paperId))methodByPaper.set(m.paperId,[]);methodByPaper.get(m.paperId).push(m);}
+    for(const d of destinations.filter(d=>d.kind==='region')){
+      const byPaper=new Map();for(const r of members.get(d.id).values())if(r.lens==='physical_question'&&r.placementStatus!=='context_only'){if(!byPaper.has(r.paperId))byPaper.set(r.paperId,[]);byPaper.get(r.paperId).push(r.unitId);}
+      for(const [paperId,qids] of byPaper)for(const m of methodByPaper.get(paperId)||[]){if(members.get(d.id).has(m.id))continue;members.get(d.id).set(m.id,{...rowFor(m.id,d.id,1,{status:'context_only',decisionId:policy.id,associationScope:'same_paper_context'}),role:'evidence',associationProvenance:{join:'exact frozen paperId',paperId,sourceQuestionIds:qids.sort(),noMethodApplicabilityInferred:true}});}
+    }
+  }else if(methods.length)fail('method source visibility policy must be explicitly admitted');
+  const memberships=[...members.values()].flatMap(rows=>[...rows.values()]);
+  for(const d of destinations){
+    const rows=[...members.get(d.id).values()],primary=rows.filter(r=>r.placementStatus!=='context_only');d.memberIds=primary.map(r=>r.unitId).sort();d.memberIdsSha256=setHash(d.memberIds);d.placementStatus=primary.some(r=>r.placementStatus!=='accepted')?'reviewed_scope_with_visible_provisional_placements':'reviewed_scope_and_placements';d.contextAssociationCount=rows.length-primary.length;
+    const contextSample=[],samplePapers=new Set();for(const r of rows.filter(r=>r.placementStatus==='context_only'&&r.lens==='method').sort((a,b)=>a.browserVectorRow-b.browserVectorRow)){if(samplePapers.has(r.paperId))continue;contextSample.push(r.unitId);samplePapers.add(r.paperId);if(contextSample.length===6)break;}d.contextSourceIds=[...new Set([...d.contextSourceIds,...contextSample])].slice(0,100);
+    if(d.completeMemberIds&&setHash(d.completeMemberIds)!==d.memberIdsSha256)fail(`declared complete membership differs from accepted containment closure ${d.id}`);
+    delete d.completeMemberIds;
+  }
+  for(const r of relations.filter(r=>r.type==='narrower'))for(const uid of dest.get(r.target).memberIds)if(!members.get(r.source).has(uid)||members.get(r.source).get(uid).placementStatus==='context_only')fail('primary child escapes parent');
+  const rootMembers=new Set(dest.get(packet.atlas.entryDestinationId).memberIds);if(questions.some(u=>!rootMembers.has(u.id)))fail('detailed entry does not reach every question through accepted containment');
+  const methodVisible=new Set(memberships.filter(m=>m.lens==='method').map(m=>m.unitId));if(methods.some(u=>!methodVisible.has(u.id)))fail('method source has no source/context view');
+  for(const a of packet.aliases||[]){const d=dest.get(a.destinationId),proof=decision(a.decisionId,['question_equivalence']);if(!d||proof.outcome!=='equivalent_as_scoped'||proof.challengerAgreement!=='independently_agreed'||proof.changedPremises?.length||!proof.subjectIds?.includes(d.id))fail('alias lacks accepted scoped equivalence');d.aliases.push(a.alias);}
+  const representedPapers=new Set(corpus.units.map(u=>u.paperId)),unrepresentedPapers=[...corpus.papers.values()].filter(p=>!representedPapers.has(p.id)).map(p=>({id:p.id,title:p.title,sourceUrl:p.url,sourceSha256:p.sourceSha256,sourceNotice:p.sourceNotice,reason:'No vector-covered question/method unit in this frozen navigation corpus; source availability is not inferred.'}));
+  const catalog={destinations,sources:hydrateSources(corpus),memberships,relations,unrepresentedPapers,organizationProvenance:{originalCandidate:{candidateId:packet.originalCandidate.candidateId,regionsSha256:packet.originalCandidate.regionsSha256},originalBins:originalRows,acceptance:{status:packet.acceptance.status,receipt:{sha256:packet.acceptance.receipt.sha256}},decisionIds:[...decisions.keys()],geometryMembershipsAreOrganizationalAllocations:true}};
+  const paperCounts=new Map();for(const u of questions)paperCounts.set(u.paperId,(paperCounts.get(u.paperId)||0)+1);
+  const geometryInput={schemaVersion:'q025-accepted-geometry-input/1',corpus:packet.corpus,originalCandidate:packet.originalCandidate,acceptanceReceipt:packet.acceptance.receipt,allocations,units:questions.map(u=>({unitId:u.id,paperId:u.paperId,browserVectorRow:u.browserVectorRow,sourceRow:u.sourceRow,textSha256:u.evidence.textSha256,paperBalancedMass:1/paperCounts.get(u.paperId)})),destinations:destinations.map(d=>({id:d.id,kind:d.kind,memberIds:d.memberIds.filter(id=>units.get(id).lens==='physical_question'),parentIds:parents.get(d.id)})),baseDestinationIds:packet.geometry?.baseDestinationIds||[],allocationMeaning:'Organizational mass among explicit reviewed/provisional homes, not confidence or relevance.',contextMembershipRowsUsedAsAllocations:false};
+  const allocationSums=new Map();for(const a of allocations)allocationSums.set(a.unitId,(allocationSums.get(a.unitId)||0)+a.weight);
+  const report={allSourceUnitsConserved:catalog.sources.length===corpus.units.length,sourceUnits:corpus.units.length,questionUnits:questions.length,methodUnits:methods.length,representedPaperCount:representedPapers.size,unrepresentedPapers,questionAllocationMaxError:Math.max(0,...questions.map(u=>Math.abs(allocationSums.get(u.id)-1))),visibleAmbiguousPlacements:ambiguous,originalLeafCount:leaves.length,originalBinCount:originalBins.length,sourceTextAndRowIdentity:'Exact frozen corpus hydration; no source rewrites.',methodAssociationMeaning:'Same-paper context is not primary membership or actual uses.',sourceScienceImportedAsNavigation:false};
+  return {catalog,geometryInput,report};
+}

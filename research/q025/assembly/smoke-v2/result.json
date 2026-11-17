@@ -1,0 +1,114 @@
+{
+  "syntheticOnly": true,
+  "allNumericalInvariantsPass": true,
+  "diagnostics": {
+    "coverage": {
+      "questionUnits": 4,
+      "papers": 3,
+      "regionNodes": 3,
+      "directRegionalCatchments": 3,
+      "methodsExcludedFromGeometry": true,
+      "provisionalAllocationCount": 2
+    },
+    "flow": {
+      "isolatedSourceCount": 1,
+      "selfFlowFraction": 0.5555555555555556,
+      "sourceMassMaxError": 0.0
+    },
+    "coarseFlowTotal": 3.0,
+    "expectedPaperMass": 3,
+    "components": [
+      {
+        "component": 0,
+        "atomCount": 2,
+        "layout": "two_diffusion_modes",
+        "atomProjection": {
+          "distanceStress": 0.0,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "leadingLazyEigenvalues": [
+          1.0,
+          0.5555555555555556
+        ],
+        "twoModeEnergyFraction": 1.0,
+        "displayPackingOffset": [
+          0,
+          0
+        ],
+        "interComponentDistancesMeaningful": false,
+        "displayedRegionCentroids": {
+          "distanceStress": 0.0,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "diagnosticDistinction": "atomProjection describes the computational diffusion atoms; displayedRegionCentroids evaluates actual shown region positions against the same full diffusion distances."
+      },
+      {
+        "component": 1,
+        "atomCount": 1,
+        "layout": "isolated",
+        "distanceStress": null,
+        "displayPackingOffset": [
+          3,
+          0
+        ],
+        "interComponentDistancesMeaningful": false
+      }
+    ],
+    "regionsSpanningDisconnectedComponents": [
+      "root"
+    ],
+    "fineQuestionsPlotted": false
+  },
+  "overlapDisplayedFidelity": {
+    "coverage": {
+      "questionUnits": 6,
+      "papers": 6,
+      "regionNodes": 5,
+      "directRegionalCatchments": 5,
+      "methodsExcludedFromGeometry": true,
+      "provisionalAllocationCount": 0
+    },
+    "flow": {
+      "isolatedSourceCount": 0,
+      "selfFlowFraction": 0.14583333333333334,
+      "sourceMassMaxError": 0.0
+    },
+    "coarseFlowTotal": 6.0,
+    "expectedPaperMass": 6,
+    "components": [
+      {
+        "component": 0,
+        "atomCount": 5,
+        "layout": "two_diffusion_modes",
+        "atomProjection": {
+          "distanceStress": 0.006309946150311309,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "leadingLazyEigenvalues": [
+          0.9999999999999999,
+          0.9104835849178082,
+          0.7356627804582339,
+          0.440798870621069,
+          0.15263809733622188
+        ],
+        "twoModeEnergyFraction": 0.9974517801917387,
+        "displayPackingOffset": [
+          0,
+          0
+        ],
+        "interComponentDistancesMeaningful": false,
+        "displayedRegionCentroids": {
+          "distanceStress": 0.041975946309630356,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "diagnosticDistinction": "atomProjection describes the computational diffusion atoms; displayedRegionCentroids evaluates actual shown region positions against the same full diffusion distances."
+      }
+    ],
+    "regionsSpanningDisconnectedComponents": [],
+    "fineQuestionsPlotted": false
+  }
+}

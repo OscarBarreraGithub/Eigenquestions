@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "q025-lazy-scale-diagnostic/1",
+  "notAnAcceptedAssembly": true,
+  "corpusContentHash": "5957a5437e4d7e2c3c8089cc885a6ea03069bd8c6fc78cd104eb3024672ff300",
+  "originalProposalSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+  "indexBytes": 783784,
+  "indexGzipBytes": 105025,
+  "fineLookupMaxBytes": 48264,
+  "roundTrip": {
+    "passed": true,
+    "filesChecked": 512,
+    "completeMembershipRowsChecked": 171694,
+    "destinationsChecked": 8928,
+    "relationsChecked": 8946,
+    "exactMembershipRoundTrip": true,
+    "exactSourceIdentityPreserved": true,
+    "pinnedCountsVerified": true,
+    "allIncidentNavigationAvailableBeforeView": true
+  },
+  "fineIndexBytes": 8616150,
+  "indexBreakdown": {
+    "destinations": 357580,
+    "relations": 261157,
+    "detailShards": 32816,
+    "orientation": 98809
+  },
+  "counts": {
+    "destinations": 8928,
+    "initialDestinations": 455,
+    "membershipRows": 171694,
+    "sources": 26623,
+    "navigationRelations": 8946
+  },
+  "lazyFiles": {
+    "detailFiles": 191,
+    "membershipFiles": 63,
+    "total": 512,
+    "totalBytes": 173607085,
+    "maxDetailBytes": 580281,
+    "maxMembershipBytes": 15029623
+  },
+  "firstViews": {
+    "allPhysics": {
+      "id": "classification:physics",
+      "detailBytes": 2390,
+      "samplePrimary": 0,
+      "sampleContext": 0,
+      "sampleSourceBytes": 193,
+      "fullMembershipBytes": 0,
+      "counts": {
+        "primaryCount": 0,
+        "contextCount": 0,
+        "paperCount": 0,
+        "membershipSampleIsComplete": true,
+        "memberIdsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "allSources": {
+      "id": "diagnostic:all-source-questions",
+      "detailBytes": 337214,
+      "samplePrimary": 30,
+      "sampleContext": 6,
+      "sampleSourceBytes": 46640,
+      "fullMembershipBytes": 14342937,
+      "counts": {
+        "primaryCount": 8473,
+        "contextCount": 17937,
+        "paperCount": 6477,
+        "membershipSampleIsComplete": false,
+        "memberIdsSha256": "5eef7911f1a80cb73c18ef716cd977513e04caa34f2902088699874e2cfd5e8f"
+      }
+    },
+    "fine": {
+      "id": "source-question:d6c3bca8b9ea72f7d8e58527c7878134dc4b69142009321c9909abc883f36baa",
+      "detailBytes": 301876,
+      "samplePrimary": 1,
+      "sampleContext": 0,
+      "sampleSourceBytes": 1284,
+      "fullMembershipBytes": 1048378,
+      "counts": {
+        "primaryCount": 1,
+        "contextCount": 0,
+        "paperCount": 1,
+        "membershipSampleIsComplete": true,
+        "memberIdsSha256": "f2e669118b29dc8ebbbecaf1707e5b21357a31af142759dab48b26b2f556e962"
+      }
+    },
+    "leaf": {
+      "id": "multiview_preserve_candidates:region:917023476c8ed7e389e0",
+      "detailBytes": 404543,
+      "samplePrimary": 30,
+      "sampleContext": 6,
+      "sampleSourceBytes": 47840,
+      "fullMembershipBytes": 944877,
+      "counts": {
+        "primaryCount": 52,
+        "contextCount": 176,
+        "paperCount": 48,
+        "membershipSampleIsComplete": false,
+        "memberIdsSha256": "917023476c8ed7e389e0833a7ad8aa9bf7704b9f5b804f3d84ca6d39f2fca74f"
+      }
+    }
+  },
+  "assetCountEnvelope": {
+    "existingSourceContextFiles": 6735,
+    "lazyDataFiles": 515,
+    "destinationHtmlBase": 8928,
+    "extraReviewedCardsAt8PerLeaf": 1488,
+    "totalAt8PerLeaf": 17666,
+    "limit": 20000
+  },
+  "extraCardCaveat": "Reviewed card scopes/relations are unavailable and are not fabricated; actual final index size and file count must be checked again after assembly.",
+  "logicalScope": "Original proposal plus exact source access and an explicit diagnostic all-corpus parent. No admission or scientific canonicalization is implied."
+}

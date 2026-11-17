@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtempSync,readFileSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {explicitQuotaFailure,quotaSummary,persistAgentDelta,verifyPrepared} from './runner.mjs';
+test('only explicit exhaustion is quota failure',()=>{assert.equal(explicitQuotaFailure({message:'Connection failed'}),false);assert.equal(explicitQuotaFailure({error:{code:'workspace_owner_credits_depleted'}}),true);assert.equal(explicitQuotaFailure({message:'Rate limit reached'}),true);assert.equal(explicitQuotaFailure({message:'Unknown quota field'}),false);});
+test('quota null remains unknown and unrelated model is excluded',()=>{const r=quotaSummary({ordinaryUsageAllowed:null,rateLimits:{primary:{usedPercent:5}},rateLimitsByLimitId:{other:{normalModelSlug:'other-model',primary:{usedPercent:99}}}});assert.equal(r.ordinaryUsageAllowed,null);assert.equal(r.applicableUsage.length,1);assert.equal(r.applicableUsage[0].primaryUsedPercent,5);});
+test('stream survives interrupted final within bounded retention',()=>{const dir=mkdtempSync(join(tmpdir(),'q025-compact-stream-'));try{const j={dir,req:{maxOutputCharacters:5},characters:0};persistAgentDelta(j,'abc');assert.equal(readFileSync(join(dir,'reply.stream.raw.txt'),'utf8'),'abc');persistAgentDelta(j,'x'.repeat(9000));assert.equal(readFileSync(join(dir,'reply.stream.raw.txt'),'utf8').length,8197);assert.equal(j.streamTruncated,true);}finally{rmSync(dir,{recursive:true,force:true});}});
+test('prepared seven-job wave is hash-verified without calls',()=>{const p=verifyPrepared();assert.equal(p.jobs.length,7);assert.equal(p.maxAuthorizedConcurrency,8);});

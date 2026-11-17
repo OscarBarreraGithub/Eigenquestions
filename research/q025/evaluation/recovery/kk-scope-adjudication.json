@@ -1,0 +1,695 @@
+{
+  "schemaVersion": "q025-coordinator-scope-adjudication/1",
+  "status": "accepted_explicit_scope",
+  "adjudicator": "atlas_scientific_evaluation with root scope approval",
+  "approvalBasis": "Root explicitly approved seven supported scopes with reading limits and authorized independent ALP correction; no new model call for harmless copyediting.",
+  "sourceReading": "Independent bounded primary reading of e2/e3/e24,e4/e20,e5/e17/e21,e10/e12/e25,e13/e22,e14/e15; no full-paper, figure, amplitude-proof or likelihood verification.",
+  "reviewPins": {
+    "originalFailedReceiptSha256": "dfbb2fb237d09f696a41f1da9f1e11cca39ec6736ac06fa09957c77eac654b77",
+    "derivedProposalSha256": "6400339a20b1cdeda9158e17479e47a245979db7fdce8c9fe6d1a53eb6c178d6",
+    "challengeReceiptSha256": "fd4c23d662223c502c895254ac77fb347db7c8bfaa3a5b6e404ff731b17fc470",
+    "challengeReplySha256": "04e0ada928a7e1037fdd8af9e5219cc7042babaf3d7580450a50070965521065",
+    "sourcePacketSha256": "ede8c80d673eeb7f9ff34429ae862737a0bf3d4ad1125d3954d7dd2dac0e2f97"
+  },
+  "scopeDecisions": [
+    {
+      "localRef": "p0",
+      "destinationId": "q-kk-graviton-thermal-production",
+      "priorScopeContentSha256": "cb0c0212de9f41dc7bd1f44601f54fbab1283fa49828be97bac18ae6a9df63c4",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "Initial production is distinct from subsequent cascade viability; e17 and e10 state the inherited production setup.",
+      "evidenceRefs": [
+        {
+          "ref": "d72",
+          "kind": "description",
+          "unitIndex": 72,
+          "unitId": "unit:d5031ab16d8b871bddd917aa4e9de3e7203c9cda1499e4fcfe9a5f463cd4a4ac",
+          "textSha256": "a1ba9f6015de8de7f002b1b06f65007425ff9bf6ecc6517bf3be86de2ad125ff"
+        },
+        {
+          "ref": "e17",
+          "kind": "primary",
+          "sourceId": "ev:98101f0d696c278269902e9cbb5320e0",
+          "paperId": "2311.05318",
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+          "sourceContext": {
+            "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+            "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "f0e4c6eec8d6d63ebf4b8ca921034d36a649eb3ac4b7d8e95c99a321fe6d2a37",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e10",
+          "kind": "primary",
+          "sourceId": "ev:64f421dfe96a55d2d045fbd08742a255",
+          "paperId": "2307.11048",
+          "sourceSha256": "e293aac5117495c4acb5e3a5fdf652c81c9dc4ed2d32624d8430bc61f52abcec",
+          "sourceContext": {
+            "path": "papers/87ab740ce7579fffbe8e/reading-order.json",
+            "fileSha256": "abe6572669f2ca8a3227f2525de829392a44f6544bbe2a3acc2d4db058a1bca9",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "793a7c683ad2ce1bf920c11d8a20917afdb44109a22bc87ceabb1a733a7b8390",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e7",
+          "kind": "primary",
+          "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 1305,
+            "end": 4703,
+            "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        }
+      ],
+      "scopeContentSha256": "4275a9582722b9f5f77acde6fa53b419bb1c605de0527ff97df850153fc7d5fa"
+    },
+    {
+      "localRef": "p1",
+      "destinationId": "q-kk-graviton-threshold-decay",
+      "priorScopeContentSha256": "abe2f9578f90364c63ebfaa2d458d37de93efed16c29d2baf134e3cd91fc507e",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "e12/e25 support the announced partial-wave target; proof and generality remain unverified.",
+      "evidenceRefs": [
+        {
+          "ref": "e25",
+          "kind": "primary",
+          "sourceId": "ev:fac9569d8f192e54850486112c7fe0d8",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "f047caa6711ddcf0dab834ac0976f6f55b1f49660dd4bcadb530252e9ef74864",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e12",
+          "kind": "primary",
+          "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 2504,
+            "end": 4949,
+            "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d65",
+          "kind": "description",
+          "unitIndex": 65,
+          "unitId": "unit:c667eaad26bf24f79ac000d31da08a2e1f6be8c980569251185cfd41bfdc3ae2",
+          "textSha256": "9106a842c07c887daa181d76dfb11f0af970dcc414acc0eae0997cf771d0bf97"
+        },
+        {
+          "ref": "d60",
+          "kind": "description",
+          "unitIndex": 60,
+          "unitId": "unit:bd8c5b9a8b57126b3ca4cd9f8f106d4a591051d19ace30fd62d33141efb25f60",
+          "textSha256": "f591ef39e476db08dadb1faa2c20ee22ad3c9b44b6ddfeded63c0bc33c310518"
+        }
+      ],
+      "scopeContentSha256": "206baf6ffa291d6327e37311f13fe1f436e0f87e304acc8b238ed4a8eb39fef7"
+    },
+    {
+      "localRef": "p2",
+      "destinationId": "q-kk-decay-linear-cosmology",
+      "priorScopeContentSha256": "bbf5250b9cee89be04dc20a19460e6541e3383f3eb7a1a0a60a60cd80bf3ba43",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "e5 explicitly limits the analysis to nonrelativistic approximately symmetric decays and linear perturbations.",
+      "evidenceRefs": [
+        {
+          "ref": "e21",
+          "kind": "primary",
+          "sourceId": "ev:bbf52e208ce8497a6b71719219ba7d85",
+          "paperId": "2311.05318",
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+          "sourceContext": {
+            "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+            "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1673,
+            "textSha256": "7f3a9c3dff1be519144f71674fae6fab4ecf7c7d625152e8fe85d4abbf95c382",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e5",
+          "kind": "primary",
+          "sourceId": "ev:2fad585ea0fd6a9e881beb23831ceaa7",
+          "paperId": "2311.05318",
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+          "sourceContext": {
+            "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+            "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+            "pdfPage": 5,
+            "start": 92,
+            "end": 3490,
+            "textSha256": "61c3e56df1d3e250b6c058bf036fe06e39f281e0111f2c5b8b38423b4af22398",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e12",
+          "kind": "primary",
+          "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 2504,
+            "end": 4949,
+            "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d70",
+          "kind": "description",
+          "unitIndex": 70,
+          "unitId": "unit:cec053fff92732be4f03a2a8f423d75850c602a10c959a3319f2add0f4b67cc6",
+          "textSha256": "136084feaac50139e9138e2492454319d3ca38c387db2b3fb86f98d4023626ea"
+        },
+        {
+          "ref": "e17",
+          "kind": "primary",
+          "sourceId": "ev:98101f0d696c278269902e9cbb5320e0",
+          "paperId": "2311.05318",
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+          "sourceContext": {
+            "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+            "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "f0e4c6eec8d6d63ebf4b8ca921034d36a649eb3ac4b7d8e95c99a321fe6d2a37",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e7",
+          "kind": "primary",
+          "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 1305,
+            "end": 4703,
+            "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        }
+      ],
+      "scopeContentSha256": "69fa9f0f6b17e46e71e526415368140409596c60de30144cfed2ae7227905815"
+    },
+    {
+      "localRef": "p3",
+      "destinationId": "q-flat-darkdimension-freezein-bounds",
+      "priorScopeContentSha256": "389afd7c3610f54ee93da0f6e83b33fbc6ab89f3002f1cce4d05df359d9622ce",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "e12/e25 state the flat-model claim and irreducible population; no independent numerical exclusion is certified.",
+      "evidenceRefs": [
+        {
+          "ref": "e7",
+          "kind": "primary",
+          "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 1305,
+            "end": 4703,
+            "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e12",
+          "kind": "primary",
+          "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 2504,
+            "end": 4949,
+            "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e0",
+          "kind": "primary",
+          "sourceId": "ev:07176133fbb03438ee326c621cfff45c",
+          "paperId": "2307.11048",
+          "sourceSha256": "e293aac5117495c4acb5e3a5fdf652c81c9dc4ed2d32624d8430bc61f52abcec",
+          "sourceContext": {
+            "path": "papers/87ab740ce7579fffbe8e/reading-order.json",
+            "fileSha256": "abe6572669f2ca8a3227f2525de829392a44f6544bbe2a3acc2d4db058a1bca9",
+            "pdfPage": 5,
+            "start": 95,
+            "end": 3499,
+            "textSha256": "c691c109ccbe41a4c162d46d678e000cfeba4b68f6d98ff2bf32b080162129ce",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d25",
+          "kind": "description",
+          "unitIndex": 25,
+          "unitId": "unit:445345e93a3ef6cbc1c9b1829cfd7ac8458ba81e309410ba379da6198af25151",
+          "textSha256": "74aedec539dc81858817f658c25445d9e60f41898b5b4a3f5f79bf41ccc8b6f9"
+        },
+        {
+          "ref": "d49",
+          "kind": "description",
+          "unitIndex": 49,
+          "unitId": "unit:934c499505e575e7dc040a69c2167ee854efe90f4d6c8b6550cd10a5edf49cee",
+          "textSha256": "50d03d7a58010aae42ce3d293d9ad2015cb3b6d07d78b075f36029ae7bf5a9ca"
+        },
+        {
+          "ref": "d63",
+          "kind": "description",
+          "unitIndex": 63,
+          "unitId": "unit:c429132b38c3bc616ccb1fb40930ddf78ed91fc9a2f1e989e7d4cc95c9ed04b9",
+          "textSha256": "896383a5672459675120331caba3654d566b79d9d7c659be9a05a4084a2f0643"
+        },
+        {
+          "ref": "e25",
+          "kind": "primary",
+          "sourceId": "ev:fac9569d8f192e54850486112c7fe0d8",
+          "paperId": "2610.01825",
+          "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+          "sourceContext": {
+            "path": "papers/3768bbe41c392cde3687/reading-order.json",
+            "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "f047caa6711ddcf0dab834ac0976f6f55b1f49660dd4bcadb530252e9ef74864",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        }
+      ],
+      "scopeContentSha256": "a4505fda8d88e59e71ea43415520a4dbfca1bea3fb5e31137f5ee0d9042678c4"
+    },
+    {
+      "localRef": "p4",
+      "destinationId": "q-relic-abundance-early-matter-domination",
+      "priorScopeContentSha256": "c854bf75e1e1cd561d1b33ab1ee9ecf72b7e8186f82c1fbd9ad617ad36f1e426",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "e22 gives two EMD stages and the inefficient-annihilation branching condition; e13 gives opposing duration constraints.",
+      "evidenceRefs": [
+        {
+          "ref": "d7",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:1a8568e9044c2488d4831b94b550dc431f436dd9c4df137b19b1e3c2d40e3f63",
+          "textSha256": "b6ab0c603276fa4251a12260e69814887ba5d6b4cc2fdb907cf1c06be0fbe1f9"
+        },
+        {
+          "ref": "d50",
+          "kind": "description",
+          "unitIndex": 50,
+          "unitId": "unit:9a58bbb2e0d7da3e10998875a6dfee59040d5ddf4d3845653b6354a2fbbe8f6a",
+          "textSha256": "222d464ac15c353bcb3e547e91fe2fb460704239d13666c228e42d7d13b0b3fb"
+        },
+        {
+          "ref": "d51",
+          "kind": "description",
+          "unitIndex": 51,
+          "unitId": "unit:9ebc2cf7d7d878ac80b5084b5d5d450419cc253129cf1bc9dab73864be840032",
+          "textSha256": "b8f9cc8131be3f3566bdc0883a22c18b591b198e71b9bdb3285a5c4e4f4ea895"
+        },
+        {
+          "ref": "d54",
+          "kind": "description",
+          "unitIndex": 54,
+          "unitId": "unit:a774271268e9e40cd895b4062fae8e32f6418d55bebe369af87270ba8bc9c09f",
+          "textSha256": "b761ff9cf09f45059d48250398b307efaa21ffa784867bf919b0ed486b2f8438"
+        },
+        {
+          "ref": "d68",
+          "kind": "description",
+          "unitIndex": 68,
+          "unitId": "unit:ca873de0fdebf135f4071fd942269c1fb771f209effde80589c3f9b06af4677e",
+          "textSha256": "31deab53127a2940304392a56bb84f78212f65c316a09b3d45573459c1d7d208"
+        },
+        {
+          "ref": "d74",
+          "kind": "description",
+          "unitIndex": 74,
+          "unitId": "unit:d746397051946e3ea1aad18713ce16be7e7baa9f21b9fb53aeaa0c99b37027a5",
+          "textSha256": "5a9a2ce657548e8f1d3d40053e89254a7d0fccdb5162d548e7c53ef8974c66ee"
+        },
+        {
+          "ref": "e22",
+          "kind": "primary",
+          "sourceId": "ev:c7ff0eff6081d519c7b388be9582dd54",
+          "paperId": "2010.03573",
+          "sourceSha256": "69f2ddcf93542a278aa0328987be18969e813dbaf117bb83e6a654ff24a56871",
+          "sourceContext": {
+            "path": "papers/3ff64b60bb5ec38dfb4a/reading-order.json",
+            "fileSha256": "1fd053c1815bd5fc7cffb2580ec6bd9b76dae518c5281ddf946a4d9eeed82fbc",
+            "pdfPage": 2,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "5ddf197e27a51e4f8587492941d377371fc4d04915cd0aaf9daae52faf7b826f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e13",
+          "kind": "primary",
+          "sourceId": "ev:838fea98513824e2293a8b26a8b8326f",
+          "paperId": "2010.03573",
+          "sourceSha256": "69f2ddcf93542a278aa0328987be18969e813dbaf117bb83e6a654ff24a56871",
+          "sourceContext": {
+            "path": "papers/3ff64b60bb5ec38dfb4a/reading-order.json",
+            "fileSha256": "1fd053c1815bd5fc7cffb2580ec6bd9b76dae518c5281ddf946a4d9eeed82fbc",
+            "pdfPage": 4,
+            "start": 1321,
+            "end": 3680,
+            "textSha256": "8cd609c0305f8484508bdf8944ec071e717b57b2aed42367bd163ff5fec86758",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d42",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:85dbdc1c905fd4cc14c1060102df4e9ca557976fbdc069e9f588e83162c03b96",
+          "textSha256": "c49cb469bed4ed4ed3e87158d98bfe6963b2c9209ffcb3295f4c678bbe3fbf83"
+        }
+      ],
+      "scopeContentSha256": "63f9c93561235dd2757636d30607450451320364a7360de54bb98010fb8cf022"
+    },
+    {
+      "localRef": "p5",
+      "destinationId": "q-portal-dark-radiation",
+      "priorScopeContentSha256": "e2aba860a87d0225f68ca21f5c2d69f40bc92690841144dde426c5432e9ecfee",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "e4 requires reheating above mediator mass for UV insensitivity; e20 requires preferential energy transfer into the hidden sector.",
+      "evidenceRefs": [
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:2ea38e823d76c99b3075a7621d0ad975",
+          "paperId": "2206.13530",
+          "sourceSha256": "107b6ed9da0b55bbe7d8310fb63c0db96284d6fd2b5e5c87a8f061605ba979f7",
+          "sourceContext": {
+            "path": "papers/f4c09eb30214fa2983cc/reading-order.json",
+            "fileSha256": "ac749615ec6653d3bec9f97ab4ed557d7fb4cda6fe499df2f55338e6c88df478",
+            "pdfPage": 3,
+            "start": 1295,
+            "end": 4107,
+            "textSha256": "dff4b3d705d9a03a7a03e7edf32e339b038ea5548e3f53eab0d08946e17cfdee",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e20",
+          "kind": "primary",
+          "sourceId": "ev:afe8e93b26f1cde43b278eaeaea741eb",
+          "paperId": "2206.13530",
+          "sourceSha256": "107b6ed9da0b55bbe7d8310fb63c0db96284d6fd2b5e5c87a8f061605ba979f7",
+          "sourceContext": {
+            "path": "papers/f4c09eb30214fa2983cc/reading-order.json",
+            "fileSha256": "ac749615ec6653d3bec9f97ab4ed557d7fb4cda6fe499df2f55338e6c88df478",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "6b344f4d4ee10e8133512fd4582fa25d44571a0833253aaff9a05b269e660d64",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d43",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:864118c5b3cb9db313dde5dae210854f55d1a5352a49702fa5ee69844eb1c146",
+          "textSha256": "b3c4b1c1beaaceaf6ee018e8440ef5bd71f4dbbe1fa38a68be9facfe53a89487"
+        },
+        {
+          "ref": "d71",
+          "kind": "description",
+          "unitIndex": 71,
+          "unitId": "unit:d44a74767ac2877c9b99bc74879e8e5feb8bd8cc05d465c5e27a1b9c73c17d76",
+          "textSha256": "37967a206704cbc92955d83baf3088da3cad4d097ea2d5142b5a6560719cd0cc"
+        },
+        {
+          "ref": "d66",
+          "kind": "description",
+          "unitIndex": 66,
+          "unitId": "unit:c6b9254297831d47ecb97d58360e42add8fc2c2064e1437853b686d1000cec40",
+          "textSha256": "568fa16bfcf86458f26e547c88be859828296ac36bb9a5f776eb14184cada397"
+        }
+      ],
+      "scopeContentSha256": "35912534fb140df4b16d26ad0d41c187723cbc3f721c34d2ef647480bf581c64"
+    },
+    {
+      "localRef": "p7",
+      "destinationId": "q-historical-uhecr-suppression",
+      "priorScopeContentSha256": "85298c647cc17412a52a3efc9319d4cbcae9cae3fd4edf6a27bfd61acf700ae5",
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question"
+      ],
+      "scientificAssessment": "e15 defines Auger suppression energy and distinguishes significance from cause; e14 is the historical HiRes abstract/introduction.",
+      "evidenceRefs": [
+        {
+          "ref": "e15",
+          "kind": "primary",
+          "sourceId": "ev:8ed4ce70820d5062ec6cb15bc50e6be9",
+          "paperId": "0806.4302",
+          "sourceSha256": "cecb4922e96f00b60c8eb95d97fbe75df8904076441e1cc5910d2f91bb9cb6a8",
+          "sourceContext": {
+            "path": "papers/51b1d00f57a8df313729/reading-order.json",
+            "fileSha256": "41b3dde3e59d3bc8d2f7c93b09f09fceaa923ab686bf521cff6ba0800dca037f",
+            "pdfPage": 5,
+            "start": 1309,
+            "end": 4346,
+            "textSha256": "2a0b6bbf31447ee415ba255989eca21f5082eeacf336f01560e9b456e06649f9",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e14",
+          "kind": "primary",
+          "sourceId": "ev:870335ae78a31a46d2d4ba742e8f18db",
+          "paperId": "astro-ph/0703099",
+          "sourceSha256": "28e721a5792cbc14109eea0fc79fa043512fc234e82703ee8932a5e07c5a90ce",
+          "sourceContext": {
+            "path": "papers/79d81f12efe58fd79488/reading-order.json",
+            "fileSha256": "1e6b709da6832a46ac6c3cc80fb073ef08971e6ff10b006d73235c89af7a8e4c",
+            "pdfPage": 1,
+            "start": 99,
+            "end": 3491,
+            "textSha256": "9d50906e3de68bf9b7c0293225e27ddf4cc1d810470a5491ab2748379202fe6f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d37",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:72ea9aab8c7f5e8693cf643cf866542b0d281605ac7ff1e4ba53d25d90f232a3",
+          "textSha256": "e57adb386131f77c377583eab6f9523213f4ff0335c9e2698eff72cda94648c4"
+        },
+        {
+          "ref": "d41",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:84800ab8ff8466d6a40813cbdb4b9e17b76e30b25efb1c95182068931c147119",
+          "textSha256": "72e88e9ffeceef553be5a82546e6c5657f274b73e133900d05a83790c32940d0"
+        },
+        {
+          "ref": "e8",
+          "kind": "primary",
+          "sourceId": "ev:5ad95a623c99a968540a965f98fc4bb6",
+          "paperId": "0806.4302",
+          "sourceSha256": "cecb4922e96f00b60c8eb95d97fbe75df8904076441e1cc5910d2f91bb9cb6a8",
+          "sourceContext": {
+            "path": "papers/51b1d00f57a8df313729/reading-order.json",
+            "fileSha256": "41b3dde3e59d3bc8d2f7c93b09f09fceaa923ab686bf521cff6ba0800dca037f",
+            "pdfPage": 3,
+            "start": 2490,
+            "end": 4550,
+            "textSha256": "277ad4892d11afd42a97a35955021feccf7262d5173ea30eb44d7f8c01e12889",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e1",
+          "kind": "primary",
+          "sourceId": "ev:0b6908c31cba99938f4ef319efd928a5",
+          "paperId": "astro-ph/0703099",
+          "sourceSha256": "28e721a5792cbc14109eea0fc79fa043512fc234e82703ee8932a5e07c5a90ce",
+          "sourceContext": {
+            "path": "papers/79d81f12efe58fd79488/reading-order.json",
+            "fileSha256": "1e6b709da6832a46ac6c3cc80fb073ef08971e6ff10b006d73235c89af7a8e4c",
+            "pdfPage": 1,
+            "start": 2484,
+            "end": 5024,
+            "textSha256": "c415f1cc2815c2878c47e080ea03993d6742ea26ac4cab65b12490be4f4fc7b5",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        }
+      ],
+      "scopeContentSha256": "83e21d8303d089c102bb5f6d5b62e5590b6e991954f34ec46cc308545bd63a5e"
+    },
+    {
+      "localRef": "q0",
+      "destinationId": "q-electroweak-alp-misalignment",
+      "priorScopeContentSha256": null,
+      "changes": [
+        "Replace internal unit-number locators with exact arXiv IDs",
+        "Replace review instructions in summary with reader-facing scientific summary",
+        "Use a concise question title while retaining the full scoped question",
+        "Broaden ALP onset timing from before/at to the source-qualified before/after and before/at alternatives",
+        "Replace stale new-proposal status in final reading limit with adjudicated wording, retaining unverified calculation limits"
+      ],
+      "scientificAssessment": "Independent reading of 2311.05125v2 pp1–2: e2 says before/after EWSB, e3 before/at; the new scope preserves both statements and does not claim the unprovided case analysis was checked.",
+      "evidenceRefs": [
+        {
+          "ref": "e2",
+          "kind": "primary",
+          "sourceId": "ev:2309c14bd6cde0fcdd41481bcdec4819",
+          "paperId": "2311.05125",
+          "sourceSha256": "ba6cb9edcfadafea78fb227490b7e2fb9683797594c1fda882580992de1119cb",
+          "sourceContext": {
+            "path": "papers/f44dd283f222534c82dd/reading-order.json",
+            "fileSha256": "37a11da4c245ebc98e116442484df7fd185650989f19afb814f941616479ff97",
+            "pdfPage": 1,
+            "start": 2488,
+            "end": 5570,
+            "textSha256": "dd02ea1f05403bc3bfddadeca088748890cb22a80492b0fe9fb89e05c36d3bdc",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e3",
+          "kind": "primary",
+          "sourceId": "ev:2da821c08abb74343b3a2ed6e1161cab",
+          "paperId": "2311.05125",
+          "sourceSha256": "ba6cb9edcfadafea78fb227490b7e2fb9683797594c1fda882580992de1119cb",
+          "sourceContext": {
+            "path": "papers/f44dd283f222534c82dd/reading-order.json",
+            "fileSha256": "37a11da4c245ebc98e116442484df7fd185650989f19afb814f941616479ff97",
+            "pdfPage": 2,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "7aef705c0b03b41d14d9ee05e97dbe7394a9979547fe7e92c4ee3d6d46677958",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e24",
+          "kind": "primary",
+          "sourceId": "ev:cf0eb28e4aa2fb6db894759f57edbec8",
+          "paperId": "2311.05125",
+          "sourceSha256": "ba6cb9edcfadafea78fb227490b7e2fb9683797594c1fda882580992de1119cb",
+          "sourceContext": {
+            "path": "papers/f44dd283f222534c82dd/reading-order.json",
+            "fileSha256": "37a11da4c245ebc98e116442484df7fd185650989f19afb814f941616479ff97",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "ef79da011b80dc2899093a9031356eda461c9ad4cb4348af1c5004a473ff71f1",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        }
+      ],
+      "scopeContentSha256": "f6eafd1904d38b19db3071c386d58df3039af6a40b82e93c9b4f583bdf06bd73"
+    }
+  ],
+  "agreedTypedContributionCount": 31,
+  "limits": [
+    "Accepted as scoped scientific questions, not independently verified physical results.",
+    "Other new q1–q7 cards remain unadmitted proposals.",
+    "88 proposed singletons and1 unresolved identity do not prove cross-source uniqueness.",
+    "No broad-family or complete-atlas admission is issued here."
+  ]
+}
