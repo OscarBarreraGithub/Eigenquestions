@@ -1,0 +1,898 @@
+{
+  "schemaVersion": "q025-researcher-navigation-preview/1",
+  "coverage": "5,765-source admitted organizational cohort; all displayed route proposals are explicitly pending. Stable seven-arc KK subgraph already exists separately.",
+  "paths": [
+    {
+      "status": "candidate_routes_pending_explicit_adjudication",
+      "steps": [
+        {
+          "destinationId": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "title": "Dark sectors: candidates, cosmic histories and tests",
+          "question": "How do proposed dark-sector constituents, their origins and subsequent evolution determine abundance, persistence, structure and observable signals, and which source-specific consistency tests constrain those proposals?",
+          "scientificLinks": 8,
+          "distinctDestinations": 8,
+          "byType": {
+            "narrower": 8
+          },
+          "narrowerDirections": 8,
+          "directlyAllocatedSourceQuestions": 2,
+          "admittedPositiveTargetSources": 0,
+          "sourceQuestionsUnderProposedNarrowerClosure": 26,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:3807e422776615534282c7e2",
+              "title": "Candidates and cosmic origins",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:0"
+            },
+            {
+              "targetId": "q025-candidate-question:1244bfcb36eb72d9d5a1aa60",
+              "title": "Cosmic inference and complementary searches",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:5"
+            },
+            {
+              "targetId": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+              "title": "Cosmological survival and depletion of dark relics",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:3"
+            },
+            {
+              "targetId": "q025-candidate-question:26ddfdb6006ae7d5377e404a",
+              "title": "Dark forces and structure",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:2"
+            },
+            {
+              "targetId": "q025-candidate-question:df13652e4b166b843c904fad",
+              "title": "Expansion, reheating and relic histories",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:1"
+            },
+            {
+              "targetId": "q025-candidate-question:190bdf4415c78268d594ff95",
+              "title": "Extra dimensions and conditional quantum-gravity tests",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:7"
+            },
+            {
+              "targetId": "q025-candidate-question:64d5f9b67d11b1a4f7f8c113",
+              "title": "Laboratory and propagation tests",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:4"
+            },
+            {
+              "targetId": "q025-candidate-question:a769109135269dac501c8430",
+              "title": "PBH formation and population viability",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:6"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+          "title": "Cosmological survival and depletion of dark relics",
+          "question": "What controls the cosmological persistence or depletion of proposed dark matter and other relic populations, and which observable consequences test the assumed survival mechanism?",
+          "scientificLinks": 6,
+          "distinctDestinations": 6,
+          "byType": {
+            "related": 3,
+            "broader": 1,
+            "narrower": 1,
+            "premise_check": 1
+          },
+          "narrowerDirections": 1,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 3,
+          "sourceQuestionsUnderProposedNarrowerClosure": 0,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:029587a2c93629396ec1643c",
+              "title": "Light-PBH survival and remnant consistency",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:33"
+            },
+            {
+              "targetId": "q025-candidate-question:3807e422776615534282c7e2",
+              "title": "Candidates and cosmic origins",
+              "nativeType": "related",
+              "traversal": "incoming",
+              "kind": "related",
+              "candidateLinkId": "parent-12df24ef76989bce6d58-challenge:link:11"
+            },
+            {
+              "targetId": "q025-candidate-question:8dbc6899a0ab9536aca1f259",
+              "title": "Instability and astrophysical signals",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:34"
+            },
+            {
+              "targetId": "q025-candidate-question:3b80491b512352662967030e",
+              "title": "Production and survival of vector and millicharged dark matter",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:32"
+            },
+            {
+              "targetId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+              "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:35"
+            },
+            {
+              "targetId": "q025-candidate-region:7961ee3cebdb154299e78b58",
+              "title": "Dark sectors: candidates, cosmic histories and tests",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:3"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "question": "What threshold law controls intra-tower KK-graviton decays, and what does it imply for cascading dark matter and for freeze-in populations even when KK gravitons are not dark matter?",
+          "scientificLinks": 5,
+          "distinctDestinations": 5,
+          "byType": {
+            "premise_check": 4,
+            "comparison": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 2,
+          "sourceQuestionsUnderProposedNarrowerClosure": 0,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+              "title": "Cosmological survival and depletion of dark relics",
+              "nativeType": "premise_check",
+              "traversal": "incoming",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:35"
+            },
+            {
+              "targetId": "q025-candidate-question:565c35a7b5acf0efa6bf96b2",
+              "title": "Higher-dimensional PBHs and their probes",
+              "nativeType": "comparison",
+              "traversal": "incoming",
+              "kind": "comparison",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:47"
+            },
+            {
+              "targetId": "q025-candidate-question:3f58b634e6f7439e502be440",
+              "title": "Linear cosmology of decay-induced dark-matter kicks",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45"
+            },
+            {
+              "targetId": "q025-candidate-question:6b27590dbc2f3a0722174815",
+              "title": "Observable Standard Model decays of KK-graviton dark matter",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:44"
+            },
+            {
+              "targetId": "q025-candidate-question:fc582eff749d1936943465cf",
+              "title": "Stellar production and cooling bounds on extra dimensions",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:46"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "title": "Linear cosmology of decay-induced dark-matter kicks",
+          "question": "How do repeated KK-graviton decays affect linear cosmological perturbations, and what do CMB, BAO and weak-lensing data constrain about their kick velocity?",
+          "scientificLinks": 1,
+          "distinctDestinations": 1,
+          "byType": {
+            "premise_check": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 1,
+          "sourceQuestionsUnderProposedNarrowerClosure": 0,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+              "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+              "nativeType": "premise_check",
+              "traversal": "incoming",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": "candidate_routes_pending_explicit_adjudication",
+      "steps": [
+        {
+          "destinationId": "q025-candidate-question:190bdf4415c78268d594ff95",
+          "title": "Extra dimensions and conditional quantum-gravity tests",
+          "question": "How do specified extra-dimensional constructions, effective-theory hierarchies or quantum-gravity hypotheses constrain dark-sector models and their observational tests?",
+          "scientificLinks": 6,
+          "distinctDestinations": 6,
+          "byType": {
+            "premise_check": 2,
+            "broader": 1,
+            "related": 1,
+            "application": 1,
+            "method": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 3,
+          "admittedPositiveTargetSources": 8,
+          "sourceQuestionsUnderProposedNarrowerClosure": 3,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:3807e422776615534282c7e2",
+              "title": "Candidates and cosmic origins",
+              "nativeType": "premise_check",
+              "traversal": "incoming",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-12df24ef76989bce6d58-challenge:link:21"
+            },
+            {
+              "targetId": "q025-candidate-question:8e566fe6ab9c8aa3af27d75f",
+              "title": "Conditional gauge–gravity consistency tests",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:40"
+            },
+            {
+              "targetId": "q025-candidate-question:bdfb6100643885f4cae8dc2f",
+              "title": "Contested EFT matching of Dark Dimension vacuum energy",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:41"
+            },
+            {
+              "targetId": "q025-candidate-question:850c14ec5e9355cc9d819037",
+              "title": "Microscopic frameworks and consistency",
+              "nativeType": "method",
+              "traversal": "outgoing",
+              "kind": "method",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:43"
+            },
+            {
+              "targetId": "q025-candidate-question:fc582eff749d1936943465cf",
+              "title": "Stellar production and cooling bounds on extra dimensions",
+              "nativeType": "application",
+              "traversal": "outgoing",
+              "kind": "application",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:42"
+            },
+            {
+              "targetId": "q025-candidate-region:7961ee3cebdb154299e78b58",
+              "title": "Dark sectors: candidates, cosmic histories and tests",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:7"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:fc582eff749d1936943465cf",
+          "title": "Stellar production and cooling bounds on extra dimensions",
+          "question": "How do plasmon mixing and pion-induced KK-graviton production affect stellar cooling limits, and when can intra-tower decays reduce limits from Standard Model decay products?",
+          "scientificLinks": 2,
+          "distinctDestinations": 2,
+          "byType": {
+            "application": 1,
+            "premise_check": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 1,
+          "admittedPositiveTargetSources": 1,
+          "sourceQuestionsUnderProposedNarrowerClosure": 1,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:190bdf4415c78268d594ff95",
+              "title": "Extra dimensions and conditional quantum-gravity tests",
+              "nativeType": "application",
+              "traversal": "incoming",
+              "kind": "application",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:42"
+            },
+            {
+              "targetId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+              "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+              "nativeType": "premise_check",
+              "traversal": "incoming",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:46"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "question": "What threshold law controls intra-tower KK-graviton decays, and what does it imply for cascading dark matter and for freeze-in populations even when KK gravitons are not dark matter?",
+          "scientificLinks": 5,
+          "distinctDestinations": 5,
+          "byType": {
+            "premise_check": 4,
+            "comparison": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 2,
+          "sourceQuestionsUnderProposedNarrowerClosure": 0,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+              "title": "Cosmological survival and depletion of dark relics",
+              "nativeType": "premise_check",
+              "traversal": "incoming",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:35"
+            },
+            {
+              "targetId": "q025-candidate-question:565c35a7b5acf0efa6bf96b2",
+              "title": "Higher-dimensional PBHs and their probes",
+              "nativeType": "comparison",
+              "traversal": "incoming",
+              "kind": "comparison",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:47"
+            },
+            {
+              "targetId": "q025-candidate-question:3f58b634e6f7439e502be440",
+              "title": "Linear cosmology of decay-induced dark-matter kicks",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45"
+            },
+            {
+              "targetId": "q025-candidate-question:6b27590dbc2f3a0722174815",
+              "title": "Observable Standard Model decays of KK-graviton dark matter",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:44"
+            },
+            {
+              "targetId": "q025-candidate-question:fc582eff749d1936943465cf",
+              "title": "Stellar production and cooling bounds on extra dimensions",
+              "nativeType": "premise_check",
+              "traversal": "outgoing",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:46"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "title": "Linear cosmology of decay-induced dark-matter kicks",
+          "question": "How do repeated KK-graviton decays affect linear cosmological perturbations, and what do CMB, BAO and weak-lensing data constrain about their kick velocity?",
+          "scientificLinks": 1,
+          "distinctDestinations": 1,
+          "byType": {
+            "premise_check": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 1,
+          "sourceQuestionsUnderProposedNarrowerClosure": 0,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:3837596ccc94dbb619230dc6",
+              "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+              "nativeType": "premise_check",
+              "traversal": "incoming",
+              "kind": "premise_check",
+              "candidateLinkId": "parent-6df57d46d56df9c77805-challenge:link:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": "candidate_routes_pending_explicit_adjudication",
+      "steps": [
+        {
+          "destinationId": "q025-candidate-region:e8d76d9907161eb0534206f7",
+          "title": "Black-hole entropy, horizon structure and gravitational limits",
+          "question": "How do microscopic descriptions, horizon dynamics and thermodynamic or spectral probes account for black-hole entropy, characterize solutions and excitations, and delimit gravitational descriptions in their stated regimes?",
+          "scientificLinks": 6,
+          "distinctDestinations": 6,
+          "byType": {
+            "narrower": 5,
+            "method": 1
+          },
+          "narrowerDirections": 5,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 0,
+          "sourceQuestionsUnderProposedNarrowerClosure": 11,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:98c1d1d5dbd99d4a80ad03a2",
+              "title": "Attractor geometry and extremal solutions",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:6"
+            },
+            {
+              "targetId": "q025-candidate-question:8a35446d8726f87aec13ccc4",
+              "title": "Excitation spectra, relaxation and near-horizon limits",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:9"
+            },
+            {
+              "targetId": "q025-candidate-question:674aafcb45db8090fc96bf44",
+              "title": "Horizonless BPS geometries and throat structure",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:7"
+            },
+            {
+              "targetId": "q025-candidate-question:e467a3835ad69a76fa663b52",
+              "title": "Microscopic and near-horizon entropy accounts",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:5"
+            },
+            {
+              "targetId": "q025-candidate-question:a31754bfdb42eed547f22213",
+              "title": "Quantum entropy corrections and EFT limits",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:12"
+            },
+            {
+              "targetId": "q025-candidate-question:f439c38f8c08c59fba69bf2c",
+              "title": "First-order radial dynamics and fake superpotentials",
+              "nativeType": "method",
+              "traversal": "outgoing",
+              "kind": "method",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:8"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:e467a3835ad69a76fa663b52",
+          "title": "Microscopic and near-horizon entropy accounts",
+          "question": "Under which system-specific conditions do string, brane or near-horizon degrees of freedom reproduce black-hole entropy?",
+          "scientificLinks": 10,
+          "distinctDestinations": 10,
+          "byType": {
+            "broader": 2,
+            "related": 3,
+            "narrower": 1,
+            "comparison": 4
+          },
+          "narrowerDirections": 1,
+          "directlyAllocatedSourceQuestions": 2,
+          "admittedPositiveTargetSources": 10,
+          "sourceQuestionsUnderProposedNarrowerClosure": 2,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:779625291a2a70986077f251",
+              "title": "Counting topology-supported BPS configurations",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:32"
+            },
+            {
+              "targetId": "q025-candidate-question:3ab5e615a5e2c81fc660aaff",
+              "title": "AdS fragmentation and extremal entropy",
+              "nativeType": "comparison",
+              "traversal": "outgoing",
+              "kind": "comparison",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:36"
+            },
+            {
+              "targetId": "q025-candidate-question:ae53d1097cf353e9e9a5fb19",
+              "title": "Circle compactification as an entropy proposal",
+              "nativeType": "comparison",
+              "traversal": "outgoing",
+              "kind": "comparison",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:33"
+            },
+            {
+              "targetId": "q025-candidate-question:e3d413fdb21c9ba9b200dbee",
+              "title": "Holographic and microscopic descriptions",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-278f3b8c9fe4a9756c61-challenge:link:29"
+            },
+            {
+              "targetId": "q025-candidate-question:674aafcb45db8090fc96bf44",
+              "title": "Horizonless BPS geometries and throat structure",
+              "nativeType": "comparison",
+              "traversal": "outgoing",
+              "kind": "comparison",
+              "candidateLinkId": "parent-278f3b8c9fe4a9756c61-challenge:link:30"
+            },
+            {
+              "targetId": "q025-candidate-question:3eb1b7312ef08a1bc0cbbba5",
+              "title": "Microscopic entropy and gravitational indices",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:31"
+            },
+            {
+              "targetId": "q025-candidate-question:a4bd16233abe73c43d27d12e",
+              "title": "Quantum subsystems and gravitational entropy",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:34"
+            },
+            {
+              "targetId": "q025-candidate-question:4a14c3720eae352ef7660fb7",
+              "title": "String realizations, spectra and duality",
+              "nativeType": "comparison",
+              "traversal": "outgoing",
+              "kind": "comparison",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:35"
+            },
+            {
+              "targetId": "q025-candidate-region:e8d76d9907161eb0534206f7",
+              "title": "Black-hole entropy, horizon structure and gravitational limits",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:5"
+            },
+            {
+              "targetId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+              "title": "Black-hole structure, entropy and dynamical consistency",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-278f3b8c9fe4a9756c61-challenge:link:7"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:779625291a2a70986077f251",
+          "title": "Counting topology-supported BPS configurations",
+          "question": "What degeneracy follows from admissible flux and cycle configurations, and could it account for a substantial share of black-hole microstates?",
+          "scientificLinks": 2,
+          "distinctDestinations": 2,
+          "byType": {
+            "broader": 1,
+            "related": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 2,
+          "sourceQuestionsUnderProposedNarrowerClosure": 0,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:674aafcb45db8090fc96bf44",
+              "title": "Horizonless BPS geometries and throat structure",
+              "nativeType": "related",
+              "traversal": "incoming",
+              "kind": "related",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:43"
+            },
+            {
+              "targetId": "q025-candidate-question:e467a3835ad69a76fa663b52",
+              "title": "Microscopic and near-horizon entropy accounts",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": "candidate_routes_pending_explicit_adjudication",
+      "steps": [
+        {
+          "destinationId": "q025-candidate-region:e8d76d9907161eb0534206f7",
+          "title": "Black-hole entropy, horizon structure and gravitational limits",
+          "question": "How do microscopic descriptions, horizon dynamics and thermodynamic or spectral probes account for black-hole entropy, characterize solutions and excitations, and delimit gravitational descriptions in their stated regimes?",
+          "scientificLinks": 6,
+          "distinctDestinations": 6,
+          "byType": {
+            "narrower": 5,
+            "method": 1
+          },
+          "narrowerDirections": 5,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 0,
+          "sourceQuestionsUnderProposedNarrowerClosure": 11,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:98c1d1d5dbd99d4a80ad03a2",
+              "title": "Attractor geometry and extremal solutions",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:6"
+            },
+            {
+              "targetId": "q025-candidate-question:8a35446d8726f87aec13ccc4",
+              "title": "Excitation spectra, relaxation and near-horizon limits",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:9"
+            },
+            {
+              "targetId": "q025-candidate-question:674aafcb45db8090fc96bf44",
+              "title": "Horizonless BPS geometries and throat structure",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:7"
+            },
+            {
+              "targetId": "q025-candidate-question:e467a3835ad69a76fa663b52",
+              "title": "Microscopic and near-horizon entropy accounts",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:5"
+            },
+            {
+              "targetId": "q025-candidate-question:a31754bfdb42eed547f22213",
+              "title": "Quantum entropy corrections and EFT limits",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:12"
+            },
+            {
+              "targetId": "q025-candidate-question:f439c38f8c08c59fba69bf2c",
+              "title": "First-order radial dynamics and fake superpotentials",
+              "nativeType": "method",
+              "traversal": "outgoing",
+              "kind": "method",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:8"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:8a35446d8726f87aec13ccc4",
+          "title": "Excitation spectra, relaxation and near-horizon limits",
+          "question": "Which excitations and dynamical scales arise near black-hole horizons, and how do supersymmetry, decoupling limits and observer choices affect their interpretation?",
+          "scientificLinks": 6,
+          "distinctDestinations": 6,
+          "byType": {
+            "broader": 1,
+            "narrower": 3,
+            "related": 2
+          },
+          "narrowerDirections": 3,
+          "directlyAllocatedSourceQuestions": 0,
+          "admittedPositiveTargetSources": 0,
+          "sourceQuestionsUnderProposedNarrowerClosure": 4,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:9fcda24471df25aabf65a640",
+              "title": "Near-BPS spectra and effective dynamics",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:13"
+            },
+            {
+              "targetId": "q025-candidate-question:749b5584857e7b52eeebdbe2",
+              "title": "Near-extremal thresholds and AdS2 limits",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:14"
+            },
+            {
+              "targetId": "q025-candidate-question:26de1cebb3c55722cbb2a605",
+              "title": "Relaxation scales and soft horizon transitions",
+              "nativeType": "narrows",
+              "traversal": "outgoing",
+              "kind": "narrower",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:15"
+            },
+            {
+              "targetId": "q025-candidate-question:a0b81ad3358ecff3e0f1c4ad",
+              "title": "Field spectra, boundary conditions and stability",
+              "nativeType": "related",
+              "traversal": "incoming",
+              "kind": "related",
+              "candidateLinkId": "parent-278f3b8c9fe4a9756c61-challenge:link:38"
+            },
+            {
+              "targetId": "q025-candidate-question:e1407b9cdf71e84033922dd1",
+              "title": "Thermal relaxation and proposed WGC inferences",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-278f3b8c9fe4a9756c61-challenge:link:40"
+            },
+            {
+              "targetId": "q025-candidate-region:e8d76d9907161eb0534206f7",
+              "title": "Black-hole entropy, horizon structure and gravitational limits",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:9"
+            }
+          ]
+        },
+        {
+          "destinationId": "q025-candidate-question:749b5584857e7b52eeebdbe2",
+          "title": "Near-extremal thresholds and AdS2 limits",
+          "question": "Which excitations survive AdS2 decoupling limits, and when does a backreaction or thermodynamic breakdown scale correspond to a genuine gap above extremality?",
+          "scientificLinks": 2,
+          "distinctDestinations": 2,
+          "byType": {
+            "broader": 1,
+            "related": 1
+          },
+          "narrowerDirections": 0,
+          "directlyAllocatedSourceQuestions": 2,
+          "admittedPositiveTargetSources": 3,
+          "sourceQuestionsUnderProposedNarrowerClosure": 2,
+          "alternatives": [
+            {
+              "targetId": "q025-candidate-question:3ab5e615a5e2c81fc660aaff",
+              "title": "AdS fragmentation and extremal entropy",
+              "nativeType": "related",
+              "traversal": "outgoing",
+              "kind": "related",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:54"
+            },
+            {
+              "targetId": "q025-candidate-question:8a35446d8726f87aec13ccc4",
+              "title": "Excitation spectra, relaxation and near-horizon limits",
+              "nativeType": "narrows",
+              "traversal": "incoming",
+              "kind": "broader",
+              "candidateLinkId": "parent-0177419a6060a2f477fb-challenge:link:14"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frontierCensus": {
+    "scopesWithCandidateConnections": 1397,
+    "moreThan15ScientificLinks": 6,
+    "moreThan15DistinctScientificNeighbors": 6,
+    "duplicateEndpointLinkExcess": 32,
+    "maximumDistinctScientificNeighbors": 23,
+    "nodesNeedingGrouping": [
+      {
+        "destinationId": "q025-candidate-question:4d926fd69f6bc59cf12f6050",
+        "title": "Moduli stabilization and compatibility of vacuum ingredients",
+        "scientificLinks": 24,
+        "distinctDestinations": 23,
+        "byType": {
+          "broader": 2,
+          "narrower": 5,
+          "related": 3,
+          "application": 7,
+          "method": 2,
+          "comparison": 3,
+          "premise_check": 2
+        }
+      },
+      {
+        "destinationId": "q025-candidate-question:1ca579a906621f6bd2f2643a",
+        "title": "Brane engineering, holography and microscopic formulations",
+        "scientificLinks": 22,
+        "distinctDestinations": 22,
+        "byType": {
+          "broader": 1,
+          "method": 8,
+          "application": 6,
+          "narrower": 4,
+          "related": 2,
+          "comparison": 1
+        }
+      },
+      {
+        "destinationId": "q025-candidate-question:6713a07b5b30dacb0268a4bf",
+        "title": "Inflation and alternative origins of structure",
+        "scientificLinks": 19,
+        "distinctDestinations": 19,
+        "byType": {
+          "related": 1,
+          "narrower": 13,
+          "comparison": 2,
+          "broader": 1,
+          "method": 1,
+          "application": 1
+        }
+      },
+      {
+        "destinationId": "q025-candidate-question:4d35ecaac6f6200acc8ed5c5",
+        "title": "Effective actions and controlled compactification descriptions",
+        "scientificLinks": 19,
+        "distinctDestinations": 19,
+        "byType": {
+          "method": 8,
+          "narrower": 3,
+          "comparison": 2,
+          "application": 2,
+          "premise_check": 3,
+          "related": 1
+        }
+      },
+      {
+        "destinationId": "q025-candidate-question:b675e7dd132c628539732073",
+        "title": "Mechanisms for accelerated expansion",
+        "scientificLinks": 17,
+        "distinctDestinations": 17,
+        "byType": {
+          "broader": 2,
+          "narrower": 9,
+          "method": 2,
+          "premise_check": 1,
+          "related": 2,
+          "comparison": 1
+        }
+      },
+      {
+        "destinationId": "q025-candidate-question:3807e422776615534282c7e2",
+        "title": "Candidates and cosmic origins",
+        "scientificLinks": 17,
+        "distinctDestinations": 17,
+        "byType": {
+          "broader": 2,
+          "related": 7,
+          "method": 4,
+          "narrower": 2,
+          "comparison": 1,
+          "premise_check": 1
+        }
+      }
+    ]
+  },
+  "proposal": "Prefer actual narrower scientific directions, then typed cross-routes and broader entrances, before source-question facet access. For the explicitly listed crowded scientific frontiers, preserve all links and provide type/perspective grouping; do not merge distinct target scopes or force five directions.",
+  "scientificWarnings": [
+    "Native premise/application labels require explicit direction adjudication; incoming access is not converse scientific implication.",
+    "Threshold/full-wave linear records need explicit stable-KK reuse/compound reconciliation.",
+    "Proposed closure source counts are preview counts, not admitted containment or new H mass.",
+    "Source counts are extracted question units, not unique papers."
+  ]
+}

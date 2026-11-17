@@ -1,0 +1,2588 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/1",
+  "destinations": [
+    {
+      "id": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "kind": "question",
+      "title": "N=4 EFT constraints and conditional Veneziano selection",
+      "question": "Which nonlinear four-point Wilson-coefficient relations follow from N=4 supersymmetry, unbroken SU(4) R-symmetry, higher-point tree factorization and six-scalar parity, and what numerical selection of the four-gluon open-superstring amplitude follows after separately imposing dispersive assumptions?",
+      "summary": "New explicit replacement for c0 and c1. UV-independent EFT relations precede a separate numerical bootstrap that suggests selection of the Veneziano amplitude with appropriate four-gluon kinematic prefactors. Neither convergence nor uniqueness is proved here.",
+      "scope": {
+        "systems": [
+          "Non-gravitational, weakly coupled, planar four-dimensional EFTs reducing to N=4 super Yang–Mills at leading low-energy order"
+        ],
+        "targets": [
+          "Nonlinear relations among four-point Wilson coefficients of Tr D^(2k) F^4 operators and their supersymmetric partners",
+          "Conditional numerical selection of the open-superstring four-point tree amplitude: the Veneziano amplitude with kinematic prefactors appropriate to four-gluon scattering"
+        ],
+        "regimes": [
+          "Single-trace four-, five- and six-point tree amplitudes",
+          "Order-by-order low-energy expansion",
+          "Separate numerical four-point bootstrap with an arbitrary but nonzero spectral gap"
+        ],
+        "assumptions": [
+          "N=4 supersymmetry and unbroken SU(4) R-symmetry",
+          "Standard tree-level factorization on massless poles for four-, five- and six-point amplitudes",
+          "Parity-even six-scalar amplitudes, excluding local contact terms containing Levi–Civita contractions",
+          "For the bootstrap stage only: unitarity, analyticity and A4/s² → 0 as |s| → ∞ at fixed u < 0 or fixed t < 0"
+        ],
+        "conventions": [
+          "The EFT stage assumes neither properties nor existence of a UV completion.",
+          "The large-energy condition is stated for the source's four-point amplitude A4; the candidate retains the four-gluon kinematic prefactors.",
+          "The candidate curve is parameterized by string tension relative to the assumed spectral gap, following the source's convention."
+        ],
+        "includes": [
+          "The Coulomb-branch example as a boundary of the parity assumption: its reported massive-W one-loop correction gives incompatible coefficients, and its six-scalar amplitudes require Levi–Civita-bearing local terms."
+        ],
+        "excludes": [
+          "A proved uniqueness theorem or universal uniqueness of string UV completion",
+          "Applying the nonlinear coefficient constraints after admitting parity-odd local six-scalar terms",
+          "Importing dispersive or UV-existence premises into the EFT stage",
+          "Inferring inconsistency of Coulomb-branch N=4 SYM from failure of the parity-restricted constraints",
+          "Identification of Wilson coefficients with Wilson lines"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 1,
+        "readingLimit": "Retained c0 limit: Bounded introductory pages of the supplied 2601.11705 source. Numerical convergence and the announced coefficient derivation were not independently verified. Retained c1 limit: The excerpts report nonlinear relations and numerical evidence; convergence and uniqueness are not independently established. Current reading is limited to e0–e2; e0 and e1 overlap.",
+        "readingBasis": "Exact source description and own-paper windows cited by both original proposal and explicit whole challenge; root separately read the complete scopes and bounded primary windows.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f"
+      ],
+      "methods": [
+        "Supersymmetry Ward identities",
+        "Higher-point factorization",
+        "Numerical dispersive bootstrap"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-amplitude:scope:pq0",
+      "provenance": {
+        "localRef": "pq0",
+        "reviewIds": [
+          "amplitude-navigation-original-proposal",
+          "amplitude-navigation-derived-whole-challenge"
+        ],
+        "admissionBasis": "explicit_unchanged_scope_support_and_root_scientific_adjudication",
+        "globalIdentityStatus": "local_equality_approved_subject_to_global_whole_group_gate"
+      },
+      "scopeContentSha256": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a"
+    }
+  ],
+  "sourceContributions": [
+    {
+      "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+      "destinationId": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "role": "addresses",
+      "basis": "source_excerpt_checked",
+      "qualification": "Changed-target confirmation only: the same whole description addresses both the UV-independent coefficient relations and the subsequent conditional numerical selection. The windows establish the exact falloff, four-gluon prefactors and parity boundary; they do not verify convergence or uniqueness. Independent confirmation: Retain the proposed u33 → pq0 addresses row unchanged as confirmation of the explicit replacement destination. The whole description contains both targets, and e0–e2 support their distinct premises, exact falloff, four-gluon prefactors and parity boundary. This confirms the complete compound contribution without splitting u33, proving convergence or creating roles for other units.",
+      "evidenceRefs": [
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9",
+          "paperId": "2601.11705"
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e13",
+          "kind": "primary",
+          "sourceId": "ev:902a90cea6cffc707b9c2705299b345c",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 1288,
+            "end": 3315,
+            "textSha256": "23134ebdfb5470e5683e0d9d5879bece63e9100e3944ab1c0c7cf6c72b07c720",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "decisionId": "decision:navigation-amplitude:role:0"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:amplitude:pn0",
+      "source": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "target": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "type": "narrower",
+      "title": "Follow higher-point N=4 constraints toward Veneziano selection",
+      "qualification": "Restrict to weakly coupled, non-gravitational planar 4d EFTs with leading N=4 SYM, unbroken SU(4), massless-pole factorization and parity-even six-scalar amplitudes. Numerical selection additionally requires unitarity, analyticity, a nonzero gap and A4/s² → 0 at large |s| for fixed u < 0 or t < 0. The candidate includes four-gluon prefactors; uniqueness is unproved.",
+      "rationale": "c3 explicitly includes this restricted amplitude question. Both original descriptions now lead to pq0 without duplicating the destination.",
+      "evidenceIds": [
+        "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "decisionId": "decision:navigation-amplitude:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "originalOutgoingTitle": "Follow higher-point N=4 constraints toward Veneziano selection",
+        "sourceReviewIds": [
+          "amplitude-navigation-original-proposal",
+          "amplitude-navigation-derived-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "Retain value-identically. The direction is correctly broader c3 to narrower pq0. c3 explicitly includes this question; e0/e2 support the displayed system, two stages, exact falloff, four-gluon candidate and parity boundary. The route does not claim verified uniqueness.",
+          "refs": [
+            "c3",
+            "c0",
+            "c1",
+            "u33",
+            "n34",
+            "e0",
+            "e2"
+          ]
+        },
+        "explicitTitleCopyedit": false
+      }
+    },
+    {
+      "id": "navigation:amplitude:pn1",
+      "source": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "target": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "type": "narrower",
+      "title": "Combine dispersive bounds with independent N=4 coefficient relations",
+      "qualification": "This is c4's selected supersymmetric EFT branch. Symmetry, higher-point factorization and six-scalar parity first constrain coefficients without any UV-existence assumption. Only the later bootstrap adds unitarity, analyticity, a nonzero gap and the fixed-negative-u-or-t A4/s² falloff. The output remains numerical evidence for the gluon-prefactored Veneziano amplitude.",
+      "rationale": "c4 includes conditional combinations with independent symmetry constraints, and n77 supplies the exact specialization attribution. Parent navigation does not impose dispersion premises on the first stage.",
+      "evidenceIds": [
+        "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "decisionId": "decision:navigation-amplitude:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "originalOutgoingTitle": "Combine dispersive bounds with independent N=4 coefficient relations",
+        "sourceReviewIds": [
+          "amplitude-navigation-original-proposal",
+          "amplitude-navigation-derived-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "Retain value-identically. The direction is broader c4 to narrower pq0, supported by c4's explicit independent-symmetry combinations and n77's exact mapping. Its qualification protects the UV-independent first stage and limits dispersive assumptions to the later numerical bootstrap.",
+          "refs": [
+            "c4",
+            "c1",
+            "u33",
+            "n77",
+            "e0",
+            "e2"
+          ]
+        },
+        "explicitTitleCopyedit": false
+      }
+    },
+    {
+      "id": "navigation:amplitude:pn2",
+      "source": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "target": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "type": "comparison",
+      "title": "Compare amplitude selection with gravitational string realizability",
+      "qualification": "The starting question is nongravitational and concerns conditional numerical four-point selection. The destination concerns necessary gravitational consistency tests and dated string-construction comparisons in specified classes. Its restricted six-dimensional conjecture and source-specific probe assumptions remain separate; no amplitude result proves gravitational universality.",
+      "rationale": "n34 explicitly supports a comparison between u33 and c2. The route compares research questions without asserting containment or equivalent physical statements.",
+      "evidenceIds": [
+        "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "decisionId": "decision:navigation-amplitude:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "originalOutgoingTitle": "Compare amplitude selection with gravitational string realizability",
+        "sourceReviewIds": [
+          "amplitude-navigation-original-proposal",
+          "amplitude-navigation-derived-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "Retain value-identically. n34 supports this particular comparison arc to c2, not containment or application. The qualification preserves the nongravitational/gravitational distinction, c2's restricted conjectures and the lack of a universality inference.",
+          "refs": [
+            "c2",
+            "u33",
+            "n34",
+            "e0",
+            "e2"
+          ]
+        },
+        "explicitTitleCopyedit": false
+      }
+    },
+    {
+      "id": "navigation:amplitude:pn3",
+      "source": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "target": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "type": "comparison",
+      "title": "Compare string coefficient minima with proposed consistency bounds",
+      "qualification": "The concrete example is leading four-graviton coefficients in toroidally compactified type II theory in D=6,7,8. Reported minima motivate future sharp-unitarity-bound tests; they are not established universal bounds or a completeness result. This route uses description and inherited attribution evidence.",
+      "rationale": "u58 addresses the amplitude question and has a comparison role for gravitational consistency, providing a concrete connection between the retained scopes.",
+      "evidenceIds": [
+        "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "u58",
+          "kind": "description",
+          "unitIndex": 44,
+          "unitId": "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a",
+          "textSha256": "af64b280279741b2938197cae037323922de0586cf6b8ff4123670a019cfe8e4"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-amplitude:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "originalOutgoingTitle": "Compare string coefficient minima with proposed consistency bounds",
+        "sourceReviewIds": [
+          "amplitude-navigation-original-proposal",
+          "amplitude-navigation-derived-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "Retain value-identically. u58's whole description and n29's mapped roles support the concrete c2-to-c3 comparison. Its qualification correctly confines the minima to toroidal type II theory in D=6,7,8 and treats sharp-bound testing as prospective. No fresh primary verification is implied.",
+          "refs": [
+            "c2",
+            "c3",
+            "u58",
+            "n29"
+          ]
+        },
+        "explicitTitleCopyedit": false
+      }
+    },
+    {
+      "id": "navigation:amplitude:pn4",
+      "source": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "target": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "type": "comparison",
+      "title": "Compare symmetry and factorization constraints with dispersive bounds",
+      "qualification": "The overlap is selected amplitude-coefficient questions. KLT constructions, counterterm soft tests and arithmetic inequalities retain their own targets. Dispersive bounds retain source-specific growth, infrared, polarization and symmetry conditions; positivity-only and full nonlinear unitarity are distinct, and neither universal boundedness nor general transfer to gravity follows.",
+      "rationale": "The definitions support complementary constraint programs and a shared narrower destination pq0, while preserving their different complete scopes.",
+      "evidenceIds": [
+        "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+        "unit:c65404fc057a90ba747ce597c19b5f1f6479733e17169c31d2f460c7438a3b66"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u59",
+          "kind": "description",
+          "unitIndex": 32,
+          "unitId": "unit:c65404fc057a90ba747ce597c19b5f1f6479733e17169c31d2f460c7438a3b66",
+          "textSha256": "41dad4abdce2d9b077bfc8a9361583fec0fc1bdc253a200bc5ce78e4ce787c8a"
+        },
+        {
+          "localRef": "n68",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c65404fc057a90ba747ce597c19b5f1f6479733e17169c31d2f460c7438a3b66",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-amplitude:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "originalOutgoingTitle": "Compare symmetry and factorization constraints with dispersive bounds",
+        "sourceReviewIds": [
+          "amplitude-navigation-original-proposal",
+          "amplitude-navigation-derived-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "Retain value-identically. The definitions and u33's mapped roles support comparison of the two constraint programs through a shared narrower question. c4 and u59/n68 support the cautions about nonlinear unitarity and unbounded directions; the arc supplies neither nesting nor unrestricted gravitational transfer.",
+          "refs": [
+            "c3",
+            "c4",
+            "u33",
+            "n34",
+            "n77",
+            "u59",
+            "n68"
+          ]
+        },
+        "explicitTitleCopyedit": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-amplitude:scope:pq0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n45",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-435f493b9a3a1b52277e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e13",
+          "kind": "primary",
+          "sourceId": "ev:902a90cea6cffc707b9c2705299b345c",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 1288,
+            "end": 3315,
+            "textSha256": "23134ebdfb5470e5683e0d9d5879bece63e9100e3944ab1c0c7cf6c72b07c720",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "scopeContentSha256": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "decision:navigation-amplitude:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "amplitude-navigation-original-proposal",
+        "challengeReviewId": "amplitude-navigation-derived-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9",
+          "paperId": "2601.11705"
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e13",
+          "kind": "primary",
+          "sourceId": "ev:902a90cea6cffc707b9c2705299b345c",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 1288,
+            "end": 3315,
+            "textSha256": "23134ebdfb5470e5683e0d9d5879bece63e9100e3944ab1c0c7cf6c72b07c720",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u33",
+        "questionRef": "pq0",
+        "role": "addresses",
+        "reason": "Changed-target confirmation only: the same whole description addresses both the UV-independent coefficient relations and the subsequent conditional numerical selection. The windows establish the exact falloff, four-gluon prefactors and parity boundary; they do not verify convergence or uniqueness.",
+        "refs": [
+          "u33",
+          "c0",
+          "c1",
+          "n45",
+          "n77",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "Retain the proposed u33 → pq0 addresses row unchanged as confirmation of the explicit replacement destination. The whole description contains both targets, and e0–e2 support their distinct premises, exact falloff, four-gluon prefactors and parity boundary. This confirms the complete compound contribution without splitting u33, proving convergence or creating roles for other units.",
+        "refs": [
+          "u33",
+          "c0",
+          "c1",
+          "n45",
+          "n77",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "scopeContentSha256": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a",
+      "contributionContentSha256": "d69332532af55fe94231e5f0e320c01974e0839885ba019e6dfee78eba1a6daa",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "decision:navigation-amplitude:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1255f0086476b4077b7bf5f5",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "4cc31d1f2590fa0f954ba48322136aaf124b560c6a01e24ca6687d16f8a01603",
+      "sourceScopeContentSha256": "80aee43db092929988164204830b10c7d17ab89dff2a2f270eea46602162f19e",
+      "targetScopeContentSha256": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a",
+      "challengerAgreement": "independently_agreed",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "decision:navigation-amplitude:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "7d73409832febfffac583c89e53312d61aefa65bdbcb051a6f027a454bc2e045",
+      "sourceScopeContentSha256": "6bff48f3bcdae9e362626581fcbf8e5ec7841b40ed00a6b7a16e59f5a5cabd39",
+      "targetScopeContentSha256": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a",
+      "challengerAgreement": "independently_agreed",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "decision:navigation-amplitude:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+        "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "1d427e44c5f951e0529260a4332a168507aa6d760a986733356e77d3057fb95d",
+      "sourceScopeContentSha256": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a",
+      "targetScopeContentSha256": "64fa356684397cf004c5af3db72c52c17ddd67e08c1d75642d73ed599a5e5b12",
+      "challengerAgreement": "independently_agreed",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "decision:navigation-amplitude:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+        "q025-candidate-question:1255f0086476b4077b7bf5f5"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "0c95adcf67c3a760a73d9c906c94fc02e8a6134de4a3785166ca242ac72246af",
+      "sourceScopeContentSha256": "64fa356684397cf004c5af3db72c52c17ddd67e08c1d75642d73ed599a5e5b12",
+      "targetScopeContentSha256": "80aee43db092929988164204830b10c7d17ab89dff2a2f270eea46602162f19e",
+      "challengerAgreement": "independently_agreed",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "u58",
+          "kind": "description",
+          "unitIndex": 44,
+          "unitId": "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a",
+          "textSha256": "af64b280279741b2938197cae037323922de0586cf6b8ff4123670a019cfe8e4"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "decision:navigation-amplitude:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1255f0086476b4077b7bf5f5",
+        "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "de9eec7d28d939b96839dab23b4ae3231f00e1f04599d30aafedc5c8c099694b",
+      "sourceScopeContentSha256": "80aee43db092929988164204830b10c7d17ab89dff2a2f270eea46602162f19e",
+      "targetScopeContentSha256": "6bff48f3bcdae9e362626581fcbf8e5ec7841b40ed00a6b7a16e59f5a5cabd39",
+      "challengerAgreement": "independently_agreed",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u59",
+          "kind": "description",
+          "unitIndex": 32,
+          "unitId": "unit:c65404fc057a90ba747ce597c19b5f1f6479733e17169c31d2f460c7438a3b66",
+          "textSha256": "41dad4abdce2d9b077bfc8a9361583fec0fc1bdc253a200bc5ce78e4ce787c8a"
+        },
+        {
+          "localRef": "n68",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c65404fc057a90ba747ce597c19b5f1f6479733e17169c31d2f460c7438a3b66",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "amplitude-navigation-original-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-decisions-v1/jobs/amplitude-reuse-and-parent-routes-proposal/reply.raw.txt",
+      "sha256": "68b77293c602cabcaa1cebf628d111496ba5f1aadca1779d2aca88bdf05ef672",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-decisions-v1/jobs/amplitude-reuse-and-parent-routes-proposal/receipt.json",
+      "receiptSha256": "42ef67a8d8a2c642017390a5954a0fad5311385e0a9fad072fcd5091cd68f022",
+      "nativeStatus": "failed",
+      "kind": "retained_complete_native_proposal"
+    },
+    {
+      "id": "amplitude-navigation-derived-whole-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v3/adopted/amplitude-compound-challenge/reply.json",
+      "sha256": "c63783c85bd7cf701b2711e9d5cc97f738caba19eb6e38d00cf5ef36bd233bd0",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v3/adopted/amplitude-compound-challenge/receipt.json",
+      "receiptSha256": "f6de2572718293e8f28286aedb3bf21aef26a5fc97d83d7ae3ec3fcd0ad9e2ef",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v3/adopted/amplitude-compound-challenge/normalization.json",
+        "sha256": "98a5b7be77b064b1c6d53edcc346eefc22fb786cad8f37273df5e84e322bc00b"
+      },
+      "kind": "complete_native_independent_challenge_with_derived_reference_validation",
+      "originalFailurePreserved": true
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-amplitude:cd0",
+      "nativeOperation": {
+        "id": "cd0",
+        "operation": "same_scoped_question",
+        "members": [
+          "c0",
+          "c1",
+          "pq0"
+        ],
+        "target": "pq0",
+        "definingDifferences": [],
+        "reason": "Independent comparison establishes the same complete two-stage question. In e0/e1, c1's referential large-energy falloff is exactly c0's A4/s² → 0 as |s| → ∞ at fixed u < 0 or t < 0, and c0's open-superstring four-point tree candidate is explicitly the Veneziano amplitude with four-gluon kinematic prefactors. Both definitions already fix nongravitational, weakly coupled planar 4d N=4 EFTs, unbroken SU(4), standard massless-pole factorization and a nonzero bootstrap gap. e2 identifies the four-point coefficients with the stated operators and their supersymmetric partners; that wording adds no restriction. Its Mandelstam-only pole terms also establish the equivalence of six-scalar parity and excluding Levi–Civita-bearing local terms, with the Coulomb branch outside that condition. pq0 preserves the UV-independent, order-by-order EFT stage and separate dispersive numerical stage, both original reading limits and the absence of a uniqueness proof. Retain this explicitly authored replacement unchanged; no physical defining premise differs.",
+        "refs": [
+          "c0",
+          "c1",
+          "u33",
+          "n45",
+          "n77",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "nativeOperationValueSha256": "068f93af1e0b426a96f3f363d409ec0a38f9a870773df4a5d5485304d553d2d0",
+      "members": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "target": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "admissionBasis": "root_adjudicated_local_equality",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n45",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-435f493b9a3a1b52277e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e13",
+          "kind": "primary",
+          "sourceId": "ev:902a90cea6cffc707b9c2705299b345c",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 1288,
+            "end": 3315,
+            "textSha256": "23134ebdfb5470e5683e0d9d5879bece63e9100e3944ab1c0c7cf6c72b07c720",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "operation:navigation-amplitude:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "pq0 fixes a non-gravitational planar four-dimensional N=4 system and a six-scalar parity condition.",
+          "c3 also covers other amplitude constructions, supergravity counterterms, double-copy maps and arithmetic targets."
+        ],
+        "reason": "c3 explicitly accommodates the Veneziano-isolation question and its additional symmetry, factorization and parity assumptions. Its existing amplitude scope supplies a broader destination without equating the other source questions or transferring their premises.",
+        "refs": [
+          "c3",
+          "c0",
+          "c1",
+          "u33",
+          "n34",
+          "e0",
+          "e2"
+        ]
+      },
+      "nativeOperationValueSha256": "4a328bde91e68d9cb54c18b5014082001f28f43fb516b3a3de8508f710375121",
+      "members": [
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+        "q025-candidate-question:1255f0086476b4077b7bf5f5"
+      ],
+      "target": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "admissionBasis": "explicit_paired_support_and_root_admission",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "operation:navigation-amplitude:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "pq0 selects a particular supersymmetric EFT and combines independently derived nonlinear relations with a conditional four-point bootstrap.",
+          "Its initial EFT derivation requires no UV completion; dispersive premises apply only to its second stage.",
+          "c4 covers many other systems, polarization choices and constraint strengths."
+        ],
+        "reason": "c4 includes selected supersymmetric EFTs and conditional combinations with independent symmetry constraints; n77 also records u33's specialization to that exact scope. The whole two-stage question fits this branch, while neither stage inherits assumptions merely from its parent.",
+        "refs": [
+          "c4",
+          "c0",
+          "c1",
+          "u33",
+          "n77",
+          "e0",
+          "e2"
+        ]
+      },
+      "nativeOperationValueSha256": "f34aa2dfc22e0b9a44845cb4a361ad0b19673be20f67764bae6a4756f25921f7",
+      "members": [
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+        "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+      ],
+      "target": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "admissionBasis": "explicit_paired_support_and_root_admission",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "operation:navigation-amplitude:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "comparison",
+        "members": [
+          "pq0",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "pq0 concerns non-gravitational EFT amplitudes; c2 concerns gravitational theories and string realizability.",
+          "Conditional numerical four-point selection differs from classification or completeness of quantum-gravity constructions."
+        ],
+        "reason": "The questions permit comparison of how consistency restrictions relate to string examples. n34 explicitly assigns u33 a comparison role for c2. Neither containment nor transfer of an amplitude-isolation claim to gravitational string universality is supported.",
+        "refs": [
+          "c2",
+          "c0",
+          "c1",
+          "u33",
+          "n34",
+          "e0",
+          "e2"
+        ]
+      },
+      "nativeOperationValueSha256": "37781e58118d263770a7ddd27013a483dec0e08020effa360015243fe5bfaa8c",
+      "members": [
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+        "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+      ],
+      "target": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "admissionBasis": "explicit_paired_support_and_root_admission",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+          "candidateId": "q025-candidate-question:39594f3f2592c9816c879036"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p7",
+          "candidateId": "q025-candidate-question:44cfc530ee4b7053d438805d"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:10a01e71dc991bacbaf37e301a29c8f5",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 3,
+            "start": 91,
+            "end": 3315,
+            "textSha256": "eccce786b44cc1c7f26e93f6a7a501bfaa17af84af93f2256c5ee4d29b357457",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a36f7023155baf18c1256ccae937f352",
+          "paperId": "2601.11705",
+          "sourceSha256": "da326530747833518ef0fc44a14848fdfcf9bcf23bd33aaaf65a89cdeffb8485",
+          "sourceContext": {
+            "path": "papers/589fd5fd280d2a8b6ee1/reading-order.json",
+            "fileSha256": "dfcba77d881caf3c32896059699ebb797769c8352e2821b319ff7eefdfadba9f",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2882,
+            "textSha256": "e5758dd406a4f2fe57cfc19dc9a1cc90596f247efd25ab2e5f56ac332ec2cd76",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "operation:navigation-amplitude:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "comparison",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c2 asks about necessary gravitational consistency criteria and comparison with constructions.",
+          "c3 asks about specified amplitudes, higher-derivative interactions and constructions, including targets outside gravitational completion."
+        ],
+        "reason": "Retain distinct questions and permit a concrete comparison through string-derived four-graviton coefficient minima. u58 addresses c3 and supplies comparison evidence for c2; its D=6,7,8 minima are prospective inputs to sharp-bound tests, not established universal bounds.",
+        "refs": [
+          "c2",
+          "c3",
+          "u58",
+          "n29"
+        ]
+      },
+      "nativeOperationValueSha256": "1ce89fbc05c5801064ccdfc74505f1f9a3eb53bdbea2df9124b0ae29db49d11f",
+      "members": [
+        "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+        "q025-candidate-question:1255f0086476b4077b7bf5f5"
+      ],
+      "target": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "admissionBasis": "explicit_paired_support_and_root_admission",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "u58",
+          "kind": "description",
+          "unitIndex": 44,
+          "unitId": "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a",
+          "textSha256": "af64b280279741b2938197cae037323922de0586cf6b8ff4123670a019cfe8e4"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c36a13fa2e8f6f1b1a64356c5688076b9b3955e66e39be67305e17db285e8b6a",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "operation:navigation-amplitude:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "different",
+        "members": [
+          "c2",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "Gravitational consistency and string realizability differ from source-conditioned scattering-coefficient constraints.",
+          "The selected gravitational-positivity method requires additional channel and infrared control; it does not license general transfer of nongravitational bounds."
+        ],
+        "reason": "Retain both scoped targets without a containment or general method-application claim. u12 and n73 describe a conditional gravitational method, but do not establish its application to c2's dimension- and supersymmetry-specific classifications.",
+        "refs": [
+          "c2",
+          "c4",
+          "u12",
+          "n73"
+        ]
+      },
+      "nativeOperationValueSha256": "f624cd426e3ae97180a1848ca75e9f9e3346cc82752313843eb75a0b0151d0f2",
+      "members": [
+        "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+        "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+      ],
+      "target": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "admissionBasis": "explicit_paired_support_and_root_admission",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p1",
+          "candidateId": "q025-candidate-question:0a6795d7d471717cd8a4fdf6"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 46,
+          "unitId": "unit:20d8a793b545cc5ba0ed741ce878ed9ea729b1bd3521f438ee5b9dae460ae2bc",
+          "textSha256": "31e2948b5d26b779e5da4bc02bbd9ea5bcf4f4e951fef2697af22a735e4e6d91"
+        },
+        {
+          "localRef": "n73",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:20d8a793b545cc5ba0ed741ce878ed9ea729b1bd3521f438ee5b9dae460ae2bc",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    },
+    {
+      "id": "operation:navigation-amplitude:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "comparison",
+        "members": [
+          "c3",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c3 includes KLT construction, counterterm soft tests and amplitude-derived arithmetic inequalities.",
+          "c4 includes broad positivity and scattering-bootstrap questions with system-specific spin, polarization, infrared and Lorentz-symmetry conditions."
+        ],
+        "reason": "These scopes overlap on selected amplitude-coefficient questions, including pq0, but neither complete scope is identified with or established as a subset of the other. Reuse both and provide a comparison of constraint programs.",
+        "refs": [
+          "c3",
+          "c4",
+          "u33",
+          "n34",
+          "n77",
+          "u13",
+          "n21",
+          "u22",
+          "n59"
+        ]
+      },
+      "nativeOperationValueSha256": "eca9bcca93ef2a42a77e57460cc4cc3e262700ca5b2dacb2f07baf349728abab",
+      "members": [
+        "q025-candidate-question:1255f0086476b4077b7bf5f5",
+        "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+      ],
+      "target": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "admissionBasis": "explicit_paired_support_and_root_admission",
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p4",
+          "candidateId": "q025-candidate-question:1255f0086476b4077b7bf5f5"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-7ffba6ee241f0310c173-challenge:p0",
+          "candidateId": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "textSha256": "3d464c9fb911fe316295724edc7094ae506fb7b3517c74df194d4471723e49e9"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n77",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68e6e000f88a2ca2427c173df89b3e3f031bf8dd7227fbc421005f909a3a5e7f",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 35,
+          "unitId": "unit:24bfbbe9b326abd18b7b044b506279b7f2ea18e3a9c759d1279a6cb316fbe135",
+          "textSha256": "318a5ee78a10afc47ecce53d962a3fbd138c822f175f4b1b8f6f66e312ca3ad2"
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:24bfbbe9b326abd18b7b044b506279b7f2ea18e3a9c759d1279a6cb316fbe135",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:43e363fb9814337b83f0e03a93aba748c0f6d3edcefbc7c8dd35b229fbb91478",
+          "textSha256": "e9a4aa12ded93a345ca25446b67d3b1cf8f6e39c634cbad1cce837991f6029ca"
+        },
+        {
+          "localRef": "n59",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:43e363fb9814337b83f0e03a93aba748c0f6d3edcefbc7c8dd35b229fbb91478",
+          "reviewId": "leaf-7ffba6ee241f0310c173-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+        "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [
+    {
+      "operationId": "operation:navigation-amplitude:cd0",
+      "memberDestinationIds": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "canonicalDestinationId": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "status": "local_group_approved_global_whole_group_gate_pending",
+      "retainedReadingLimits": [
+        {
+          "destinationId": "q025-candidate-question:39594f3f2592c9816c879036",
+          "readingLimit": "Bounded introductory pages of the supplied 2601.11705 source. Numerical convergence and the announced coefficient derivation were not independently verified."
+        },
+        {
+          "destinationId": "q025-candidate-question:44cfc530ee4b7053d438805d",
+          "readingLimit": "The excerpts report nonlinear relations and numerical evidence; convergence and uniqueness are not independently established."
+        }
+      ],
+      "sourceStatementIdentityEstablished": false,
+      "automaticHomeTransfer": false
+    }
+  ],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "same_scoped_question",
+        "reason": "The windows resolve the stated falloff and gluon-prefactor wording to one complete two-stage question. Use the explicit replacement pq0 with both reading limits.",
+        "refs": [
+          "c0",
+          "c1",
+          "u33",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Non-gravitational amplitude selection and gravitational string realizability are distinct targets. A qualified comparison survives the identity rejection.",
+        "refs": [
+          "c0",
+          "c2",
+          "u33",
+          "n34",
+          "e0"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "The exact two-stage N=4 amplitude question is a restricted instance of c3's amplitude-consistency program, whose definition explicitly retains its parity assumption.",
+        "refs": [
+          "c0",
+          "c3",
+          "u33",
+          "n34",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "c4 includes conditional combinations of scattering bounds with independent symmetry constraints. Inclusion preserves c0's UV-independent first stage and conditional bootstrap second stage.",
+        "refs": [
+          "c0",
+          "c4",
+          "u33",
+          "n77",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Four-gluon numerical isolation in a nongravitational EFT does not answer gravitational completion or string-universality classifications.",
+        "refs": [
+          "c1",
+          "c2",
+          "u33",
+          "n34",
+          "e0"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "c1's restricted symmetry, factorization, parity and numerical-bootstrap targets fall within c3's explicitly qualified amplitude program.",
+        "refs": [
+          "c1",
+          "c3",
+          "u33",
+          "n34",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "The exact c4 mapping in n77 supports this selected supersymmetric EFT branch. Its dispersion assumptions remain confined to the second stage.",
+        "refs": [
+          "c1",
+          "c4",
+          "u33",
+          "n77",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "right": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Gravitational realizability and the broader collection of amplitude targets are distinct scoped questions. The coefficient-minimum example supports comparison, not identity or containment.",
+        "refs": [
+          "c2",
+          "c3",
+          "u58",
+          "n29"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c4",
+        "relation": "different",
+        "reason": "A gravitational-classification question is not the same as a scattering-bound question. Conditional gravitational positivity does not supply a family-wide application relation.",
+        "refs": [
+          "c2",
+          "c4",
+          "u12",
+          "n73"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "overlap",
+        "reason": "Selected amplitude-coefficient questions lie in both scopes, but their construction, arithmetic and system-specific scattering branches prevent full equivalence or established global nesting.",
+        "refs": [
+          "c3",
+          "c4",
+          "u33",
+          "n34",
+          "n77",
+          "u13",
+          "u22"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "pq0",
+        "relation": "same_scoped_question",
+        "reason": "pq0 preserves c0's scope and reading limit while making its source-identified four-gluon candidate explicit.",
+        "refs": [
+          "c0",
+          "c1",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "pq0",
+        "relation": "same_scoped_question",
+        "reason": "pq0 preserves c1's scope and reading limit while replacing its referential falloff wording with the actual fixed-negative-u-or-t A4/s² limit.",
+        "refs": [
+          "c0",
+          "c1",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "same_scoped_question",
+        "reason": "e0/e1 resolve the referential falloff and identify the open-superstring candidate with its four-gluon prefactors. e2 confirms the same parity boundary. All systems, targets, regimes and stage-specific premises agree; cd0 retains both reading limits in pq0.",
+        "refs": [
+          "c0",
+          "c1",
+          "u33",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Non-gravitational amplitude selection and gravitational string realizability are distinct targets. A qualified comparison survives the identity rejection.",
+        "refs": [
+          "c0",
+          "c2",
+          "u33",
+          "n34",
+          "e0"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "The exact two-stage N=4 amplitude question is a restricted instance of c3's amplitude-consistency program, whose definition explicitly retains its parity assumption.",
+        "refs": [
+          "c0",
+          "c3",
+          "u33",
+          "n34",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "c4 includes conditional combinations of scattering bounds with independent symmetry constraints. Inclusion preserves c0's UV-independent first stage and conditional bootstrap second stage.",
+        "refs": [
+          "c0",
+          "c4",
+          "u33",
+          "n77",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Four-gluon numerical isolation in a nongravitational EFT does not answer gravitational completion or string-universality classifications.",
+        "refs": [
+          "c1",
+          "c2",
+          "u33",
+          "n34",
+          "e0"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "c1's restricted symmetry, factorization, parity and numerical-bootstrap targets fall within c3's explicitly qualified amplitude program.",
+        "refs": [
+          "c1",
+          "c3",
+          "u33",
+          "n34",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "The exact c4 mapping in n77 supports this selected supersymmetric EFT branch. Its dispersion assumptions remain confined to the second stage.",
+        "refs": [
+          "c1",
+          "c4",
+          "u33",
+          "n77",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "right": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Gravitational realizability and the broader collection of amplitude targets are distinct scoped questions. The coefficient-minimum example supports comparison, not identity or containment.",
+        "refs": [
+          "c2",
+          "c3",
+          "u58",
+          "n29"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c4",
+        "relation": "different",
+        "reason": "A gravitational-classification question is not the same as a scattering-bound question. Conditional gravitational positivity does not supply a family-wide application relation.",
+        "refs": [
+          "c2",
+          "c4",
+          "u12",
+          "n73"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+      "right": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "overlap",
+        "reason": "Selected amplitude-coefficient questions lie in both scopes, but their construction, arithmetic and system-specific scattering branches prevent full equivalence or established global nesting.",
+        "refs": [
+          "c3",
+          "c4",
+          "u33",
+          "n34",
+          "n77",
+          "u13",
+          "u22"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:39594f3f2592c9816c879036",
+      "right": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "pq0",
+        "relation": "same_scoped_question",
+        "reason": "pq0 preserves c0's complete two-stage scope and reading limit. The four-gluon prefactors and operator wording identify the existing source-defined target; the Coulomb-branch explanation preserves its existing parity boundary.",
+        "refs": [
+          "c0",
+          "c1",
+          "u33",
+          "e0",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "right": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "pq0",
+        "relation": "same_scoped_question",
+        "reason": "pq0 resolves c1's stated falloff to A4/s² → 0 at large |s| for fixed u < 0 or t < 0 and makes its low-energy expansion explicit. e0/e1 supply both without adding premises. Its four-gluon target, parity restriction, two stages and reading limit remain intact.",
+        "refs": [
+          "c0",
+          "c1",
+          "u33",
+          "e0",
+          "e1",
+          "e2"
+        ]
+      },
+      "sourceReviewIds": [
+        "amplitude-navigation-original-proposal",
+        "amplitude-navigation-derived-whole-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:39594f3f2592c9816c879036",
+    "c1": "q025-candidate-question:44cfc530ee4b7053d438805d",
+    "c2": "q025-candidate-question:0a6795d7d471717cd8a4fdf6",
+    "c3": "q025-candidate-question:1255f0086476b4077b7bf5f5",
+    "c4": "q025-candidate-question:5a5e811b1dce2d3684f2a0ac",
+    "pq0": "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+    "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u33",
+      "questionRefs": [
+        "pq0"
+      ],
+      "reason": "Keep u33 unchanged as a compound source. Its two stages share one public question destination while retaining different premise sets; no source splitting or atomic identity claim is introduced.",
+      "refs": [
+        "u33",
+        "n34",
+        "n45",
+        "n77",
+        "e0",
+        "e2"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "fixedStableRoutesUnchanged": false,
+  "fullAtlasAdmission": false
+}

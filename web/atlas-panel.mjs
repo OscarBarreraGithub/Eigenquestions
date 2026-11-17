@@ -1,5 +1,6 @@
 /** Text-first prepared destination details and local research notes. */
 import {destinationPresentation} from '../lib/protocol/display-editorial.mjs';
+import {paperTitle} from './paper-title.mjs';
 const element=(tag,text,className)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;};
 const noteKey=selector=>`eigenquestions:work-note:v1:${selector.atlasId}:${selector.atlasVersion}:${selector.destinationId}`;
 const noteBuffers=new Map();
@@ -27,7 +28,7 @@ function sourceContributions(record,navigator,readSources,onError,contextForSour
   more.addEventListener('click',load);disclosure.addEventListener('toggle',()=>{if(disclosure.open&&!started)return load();});return disclosure;
 }
 
-export function renderAtlasPanel({capsule,navigator,manifest,readSources,contextForSource,onNavigate,onNative,onError}) {
+export function renderAtlasPanel({capsule,navigator,manifest,readSources,sourceHistory=[],contextForSource,onNavigate,onNative,onError}) {
   let host=document.getElementById('atlas-panel');
   if(!host){host=element('section',undefined,'atlas-panel');host.id='atlas-panel';document.querySelector('.explorer').after(host);}
   host.replaceChildren();host.hidden=!capsule.snapshot.view.atlas;const previousSummary=document.getElementById('atlas-current-summary');if(previousSummary)previousSummary.hidden=host.hidden;if(host.hidden)return;
@@ -37,7 +38,7 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,context
   if(atlas.sourceInspection){
     const inspected=atlas.sourceInspection,panel=element('section',undefined,'source-inspection');panel.id='source-inspection-panel';panel.setAttribute('data-object-id',inspected.object.id);
     panel.append(element('h2',`Source method · ${inspected.source.paperId}`),element('p',`Within the current physics destination: ${record.title}`),element('p',inspected.notice),element('p',inspected.object.text));
-    if(/^https?:\/\//.test(inspected.source.sourceUrl||'')){const link=element('a',inspected.source.title);link.href=inspected.source.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';panel.append(link);}
+    if(/^https?:\/\//.test(inspected.source.sourceUrl||'')){const link=element('a',paperTitle(inspected.source.title));link.title=inspected.source.title;link.href=inspected.source.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';panel.append(link);}
     const relation=element('details');relation.append(element('summary',`${inspected.relation.type.replaceAll('_',' ')} · ${inspected.relation.semanticStatus.replaceAll('_',' ')}`),element('p',`${inspected.relation.source} → ${inspected.relation.target}`));
     if(inspected.relation.statement)relation.append(element('p',inspected.relation.statement));if(inspected.relation.readerNote)relation.append(element('p',inspected.relation.readerNote));
     relation.append(element('p',`Inspecting the ${inspected.endpointSide} endpoint does not reverse this recorded direction.`));
@@ -45,6 +46,7 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,context
     const origin=element('details');origin.append(element('summary','Exact source identity and provenance'),element('pre',JSON.stringify({target:inspected.target,mapping:inspected.mapping,object:inspected.object,relation:inspected.relation},null,2)));relation.append(origin);panel.append(relation);
     if(contextForSource)panel.append(contextForSource(inspected.target.unitId));const close=element('button','Return to this physics question');close.type='button';close.addEventListener('click',()=>onNavigate({type:'close-source'}));panel.append(close);host.append(panel);
   }
+  if(sourceHistory.length){const history=element('details');history.className='source-inspection-history';history.append(element('summary',`Source inspection history (${sourceHistory.length})`));const list=element('ol');for(const row of sourceHistory){const item=element('li'),button=element('button',row.label);button.type='button';button.title=`${row.target.relationId} · ${row.target.objectId}`;button.setAttribute('data-history-index',String(row.index));if(row.active)button.setAttribute('aria-current','step');button.addEventListener('click',()=>onNavigate({type:'replay',index:row.index}));item.append(button);list.append(item);}history.append(list);host.append(history);}
   const scope=element('details'),summary=element('summary',record.metadataOnly?'Classification source and coverage':'Scope, assumptions and sources');scope.append(summary);
   if(record.whyItMatters)scope.append(element('p',record.whyItMatters));
   for(const [key,label]of[['systems','Systems'],['targets','Targets'],['includes','Includes'],['excludes','Distinctions and exclusions'],['assumptions','Assumptions'],['regimes','Regimes'],['conventions','Conventions']]){
@@ -75,7 +77,7 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,context
   }
   const contributions=sourceContributions(record,navigator,readSources,onError,contextForSource);if(contributions)host.append(contributions);
   const connections=element('details'),connectionList=element('div',undefined,'atlas-connection-list');connections.append(element('summary',`All connections (${atlas.connectionCount})`));
-  for(const relation of atlas.connections){const row=element('div'),button=element('button',relation.title);button.type='button';button.addEventListener('click',()=>onNavigate({type:'navigate',selector:relation.selector}));row.append(button,element('span',` ${relation.navigationKind.replaceAll('_',' ')} · ${relation.traversal} recorded relation`),element('p',relation.rationale));connectionList.append(row);}connections.append(connectionList);host.append(connections);
+  for(const relation of atlas.connections){const row=element('div'),button=element('button',relation.choiceTitle||relation.title);button.type='button';button.addEventListener('click',()=>onNavigate({type:'navigate',selector:relation.selector}));row.append(button,element('span',` ${relation.navigationKind.replaceAll('_',' ')} · ${relation.traversal} recorded relation`),element('p',relation.rationale));connectionList.append(row);}connections.append(connectionList);host.append(connections);
   const note=element('details'),textarea=element('textarea');note.append(element('summary','Your work on this question'));
   textarea.rows=4;textarea.maxLength=12000;textarea.placeholder='A private local work note, attached to this destination.';textarea.setAttribute('aria-label','Local research work note');textarea.value=readNote(selector)?.text||'';
   const notice=element('p','Saved on this browser only. Share destination links separately; your note is not included in them.'),actions=element('div',undefined,'tool-buttons'),feedback=element('p');

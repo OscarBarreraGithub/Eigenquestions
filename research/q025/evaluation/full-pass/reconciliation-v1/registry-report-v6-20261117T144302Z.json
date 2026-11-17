@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "q025-final-lineage-registry-cut/6",
+  "registry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v6-20261117T144302Z.json",
+    "sha256": "5e2a8e9106b56fc5071b8635b929f6e4999b67f24e01b7a8e67bf22913f19baa",
+    "bytes": 72328962
+  },
+  "previousRegistry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v5-20261117T135430Z.json",
+    "sha256": "0e0d5443114cbcba6078a70241c809b5fb713097b22d9d1846b63f6172da69d5"
+  },
+  "counts": {
+    "completedLeafPairs": 186,
+    "completedParentPairs": 55,
+    "completedSuccessorLeafPairs": 6,
+    "authoredScopes": 1800,
+    "authoredQuestions": 1558,
+    "scopeStatuses": {
+      "independently_supported": 1617,
+      "limits_require_adjudication": 140,
+      "unresolved_scope_change": 2,
+      "new_challenger_proposal": 2,
+      "explicitly_adjudicated_scope_pending_final_organization": 1,
+      "explicitly_admitted_scope": 8,
+      "explicitly_admitted_canonical_pilot_scope_global_identity_pending": 30
+    },
+    "uniqueContributingSourceUnits": 8330,
+    "sourceContributionRecords": 14714,
+    "unitAssessmentRecords": 9283,
+    "uniqueAssessedUnits": 8430,
+    "exactPairedHomeReferences": 8107,
+    "supportedUnchangedPairedHomeReferences": 7476,
+    "reservedPapersExcluded": 24,
+    "reservedQuestionUnitsUnreviewed": 43,
+    "admittedCalibrationScopes": 8,
+    "adjudicatedParentScopes": 1,
+    "newCanonicalQuestionsAdmittedByThisCompiler": 0,
+    "duplicateRecordsFromParentReuse": 0,
+    "newCandidateScopesSincePreviousCut": 6,
+    "admittedCanonicalPilotScopes": 30,
+    "admittedCanonicalPilotContributions": 128,
+    "newExplicitCanonicalContributionRows": 124,
+    "eligiblePreHoldoutUnits": 8430,
+    "unassessedEligibleUnits": 0,
+    "allLeafAndParentPairsComplete": true
+  },
+  "compiler": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/refresh_registry_v6.py",
+    "sha256": "085debaa8717d6a4e881c6f8d00d4b63104338171437c79e3487eca25cb3de1d"
+  },
+  "newParentLineages": [
+    {
+      "artifactDirectory": "full-pass/native-local/recovery-successors-v2/jobs/successor2-parent-5eef7911f1a80cb73c18-challenge",
+      "reviewId": "successor2-parent-5eef7911f1a80cb73c18-challenge",
+      "status": "complete",
+      "receiptSha256": "3a03ea25b1d3f029bf1b8a76cff9e15f8ffafc2b2052cabf5059938d238e7b36",
+      "lineagePriority": 40,
+      "canonicalReviewKey": "parent:5eef7911f1a80cb73c18",
+      "familyId": "5eef7911f1a80cb73c18",
+      "kind": "parent",
+      "candidateRegionId": "multiview_preserve_candidates:region:5eef7911f1a80cb73c18",
+      "challengePins": {
+        "artifactDirectory": "full-pass/native-local/recovery-successors-v2/jobs/successor2-parent-5eef7911f1a80cb73c18-challenge",
+        "packetFile": "packet.actual.json",
+        "packet.actual.jsonSha256": "783fca8ad0c206144b663c532d96a903a50df8724949f88395f9d5e460bfcc59",
+        "reply.jsonSha256": "a5b87b3059ea83dd4136caff9089a981a93d2932676041a5fb90dc12adfba988",
+        "reply.raw.txtSha256": "0150d21a762614339b2ad10b13e27b5e332664b355b59600c635fd0574428e03",
+        "receipt.jsonSha256": "3a03ea25b1d3f029bf1b8a76cff9e15f8ffafc2b2052cabf5059938d238e7b36",
+        "normalization.jsonSha256": "f9d3c8d0a480348d5e8e97bd7f55dad45c7dd4baec013e9547a323081f64a5be"
+      }
+    },
+    {
+      "artifactDirectory": "full-pass/native-local/recovery-successors-v2/jobs/successor2-parent-c8776465ed44d9e65c4c-challenge",
+      "reviewId": "successor2-parent-c8776465ed44d9e65c4c-challenge",
+      "status": "complete",
+      "receiptSha256": "69a6f7a935debdff52d9659f6ff573be379d97fbccf50467efd818dfcce9b37e",
+      "lineagePriority": 40,
+      "canonicalReviewKey": "parent:c8776465ed44d9e65c4c",
+      "familyId": "c8776465ed44d9e65c4c",
+      "kind": "parent",
+      "candidateRegionId": "multiview_preserve_candidates:region:c8776465ed44d9e65c4c",
+      "challengePins": {
+        "artifactDirectory": "full-pass/native-local/recovery-successors-v2/jobs/successor2-parent-c8776465ed44d9e65c4c-challenge",
+        "packetFile": "packet.actual.json",
+        "packet.actual.jsonSha256": "9cdd37349fb1ca46a5fba163dab6943e4b42eb7da6047c592dbd886aae6d951a",
+        "reply.jsonSha256": "763ca8cc56edbfd3b5e3e32bfe6f7178c34deac4d6e2adb74d0367c2f76b57c2",
+        "reply.raw.txtSha256": "a854f24433f7ce7f82effeffb18349bf607172a24709039e17925c048c2c8a9a",
+        "receipt.jsonSha256": "69a6f7a935debdff52d9659f6ff573be379d97fbccf50467efd818dfcce9b37e",
+        "normalization.jsonSha256": "ca1999c21a17763aa8d1bfb04329242e4817946d94c850e2cc850f2710116676"
+      }
+    }
+  ],
+  "newCandidateIds": [
+    "q025-candidate-question:09d21797eba0045cf9179b12",
+    "q025-candidate-question:0ce75b71f62a993a0919398b",
+    "q025-candidate-question:af298838a189df0b2994fb8d",
+    "q025-candidate-question:c320f11a3b13b50e837c7b1b",
+    "q025-candidate-region:446faa36fc716cc41d4cf603",
+    "q025-candidate-region:88aac1f2c237b6c3e063f6e0"
+  ],
+  "canonicalRoleDeltaComponents": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-admissions-v1/role-component.json",
+      "sha256": "f250d27b139faee3d82af0e4017f4ee6de709fb656da3ac37d451857f2fa9bd6"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-adjudications-v2/role-component.json",
+      "sha256": "3b9d93ff2bd43e0522ffcf731d88daecf2b8922492f3ac29a92b708cb1572cb1"
+    }
+  ],
+  "parentNavigationCandidates": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/parent-navigation-candidates-v6-20261117T144302Z.json",
+    "sha256": "fc8468a287b3515541e71932fe9769f77710d754e1834a5143d420e0d86eb91e",
+    "count": 2932
+  },
+  "activeInputsChanged": false,
+  "holdoutLimit": "24papers/43questions were reserved from semantic scope/home review and downstream decision packets. Existing corpus encoders and unsupervised affinity inputs may include them; this is transductive semantic withholding, not a wholly unseen inductive model benchmark. Freeze candidate before routing/read; any resulting source/placement/scope changes are dated post-test amendments."
+}

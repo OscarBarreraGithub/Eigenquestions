@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "q025-placement-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 8,
+  "proposalChallengePairs": 4,
+  "distinctSourceQuestions": 87,
+  "maxAuthorizedConcurrency": 4,
+  "initialConcurrency": 4,
+  "sourceOnly": true,
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "maximumResponseCharacters": 120000,
+  "maxDependentPriorResponseCharacters": 120000,
+  "maxConservativeContextEstimateTokens": 203669,
+  "dispatchGuardTokens": 220000,
+  "nativeLaunches": 0,
+  "scientificAdmission": false,
+  "fullAtlasCoverageClaim": false,
+  "tests": {
+    "python": 13,
+    "node": 7,
+    "preparedRequestVerification": 8
+  },
+  "scientificPolicyReview": "Geometry owner read INSTRUCTIONS.md and contract.py, confirmed single composite home / explicit compound union / prior retention / no primary rereading policy. Semantic completeness remains independent/coordinator review.",
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/README.md",
+      "sha256": "f866b96413e8e4fea4d2a0b2aa6929abd5cc11d458a71305a2818044cd0f4cb1",
+      "bytes": 3889
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/INSTRUCTIONS.md",
+      "sha256": "4aec502284f7bb6a6904a253421744b366d3c1428a12088cbc372abf86dd8e1f",
+      "bytes": 5280
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/contract.py",
+      "sha256": "c51c8d8512c7834152f00cf5a495a1813b38ea2b32184a1c2412c6b8b69b95a1",
+      "bytes": 8760
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/materialize.py",
+      "sha256": "1320e9c1fb2b46689758d974160764f7f6a05dee96daffac01fcb26a6c6088f2",
+      "bytes": 6642
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/prepare.py",
+      "sha256": "5862a6f6456006c71df26db44428a9938a6dec46e5062d8fde178be94bdb1b26",
+      "bytes": 4146
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/preflight.py",
+      "sha256": "5fcbd24ef158ef87bfe34bcd0d893753fd06e3fd08be4a2d1b09ce65536000a9",
+      "bytes": 2930
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/runner.mjs",
+      "sha256": "8c69fd9e3c6099d8a97a620be4b69dd006b2006b2ec220322940cd8a902de343",
+      "bytes": 25348
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/runner.test.mjs",
+      "sha256": "f098abba7c007875be4ee9b45a76dfc131f7092f7cef2b4dd6dcc390b12c978e",
+      "bytes": 3432
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/test_contract.py",
+      "sha256": "6132503af6dc953d56d74a648ae434bf0a906cbd496f07a58266a92c6aff461f",
+      "bytes": 8216
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/manifest.json",
+      "sha256": "3358f857401d0ae8e0d251e398adfa6d0a30cffe160c661e40d6b090432532b2",
+      "bytes": 78949
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/source-audit.json",
+      "sha256": "e7cf996f3c1859fb8c9963636bb8f32cccd28ec9e0c0e42b9d21fe0e4e407f9d",
+      "bytes": 1118
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/preflight.json",
+      "sha256": "207530c2f70e2117ee645e5a15ae8cc14d5d0a697fd8dc93e822c4895ac0cb3b",
+      "bytes": 4682
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-decisions-v1/verification.json",
+      "sha256": "8703da2e752ec1e5806590a70c2feb7982aff814d8101a6b8ec7ee9e1a06e7d9",
+      "bytes": 1952
+    }
+  ],
+  "campaignSha256": "70fdbdd63e7d2f66e9d2a9a55abb659de7a9434fc3aad38493248153555dffb4",
+  "delivery": {
+    "path": "research/q025/assembly/organization-residual-v1/placement-pilot-delivery.json",
+    "sha256": "b439a532fc6e725bf84fc18b9ff5f2271a2c95d043e9c485c74b1d1fc9ba4a1d"
+  },
+  "limits": [
+    "87 residual sources only; remaining residual and reserved sources pending.",
+    "No primary pages supplied or newly read; historical refs retain inherited scope.",
+    "Exact-span and normalization checks do not prove complete scientific coverage.",
+    "All homes, compound unions, new scopes and changed prior assessments require coordinator admission.",
+    "Synthetic maximum-prior preflight is not a model or science success."
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/placement-decisions-v1/runner.mjs --run --enable"
+}

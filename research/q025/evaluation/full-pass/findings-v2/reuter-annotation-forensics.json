@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "q025-reuter-annotation-forensic-check/1",
+  "unitId": "unit:0512c7d33fc01fba59af1556246131c61d9bdf866f46c10f0ecfb47637d374ab",
+  "paperId": "2312.03831",
+  "originalWholeQuestion": "Does the gravitational Reuter fixed point remain stable when a complete sixth-order derivative expansion is included in the minimal essential scheme, and how robust are its relevant directions and critical exponents under regulator changes?",
+  "schema": {
+    "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/review-schema.json",
+    "sha256": "8b163a7ea7186bcce818770e84e5e71b508cd50d9a679cb8bc33901fa4c603f5"
+  },
+  "registry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v6-20261117T144302Z.json",
+    "sha256": "5e2a8e9106b56fc5071b8635b929f6e4999b67f24e01b7a8e67bf22913f19baa"
+  },
+  "placementInput": {
+    "path": "research/q025/assembly/organization-residual-v1/same-policy-examples.json",
+    "sha256": "12e2c0ac06483c8e5c8b323b509f93e8b2e2c0d0c0238392a1cd5be7d5190ee6"
+  },
+  "rows": [
+    {
+      "stage": "proposal",
+      "field": "$.units[i=29].note",
+      "text": "Header 6 Dec/manuscript 8 Dec 2023. The reported single relevant direction is conditional on the minimal essential setup.",
+      "length": 121,
+      "schemaMaxLength": 160,
+      "rawRowEqualsNormalizedRow": true,
+      "rawNoteEqualsRegistryAndPlacement": true,
+      "raw": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-proposal/reply.raw.txt",
+        "sha256": "c4eea7cf609a4ca2a1e160bfe1c927a0ddf70db6eaf896306cc7e7faad118fce"
+      },
+      "normalized": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-proposal/reply.json",
+        "sha256": "d317f94667ce382b32e743c419149f16ced6b1ba1c8c7de9698340ab8af04c08"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-proposal/receipt.json",
+        "sha256": "aa352c780222d7e1e24380dcf4409e2805d88585dd889154d33ee9ec83073337"
+      },
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-proposal/packet.json",
+        "sha256": "e0aac3a8b2a452230cfd21bd59ca3ff1b596b81c2bc81c650acbfa18a0391192"
+      }
+    },
+    {
+      "stage": "challenge",
+      "field": "$.units[i=29].note",
+      "text": "Header 6 Dec/manuscript 8 Dec 2023. The single relevant direction is reported within the background approximation, GR universality class and vanishing",
+      "length": 150,
+      "schemaMaxLength": 160,
+      "rawRowEqualsNormalizedRow": true,
+      "rawNoteEqualsRegistryAndPlacement": true,
+      "raw": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-challenge/reply.raw.txt",
+        "sha256": "622eb0cfeb44ac036cc09a1ead451cec6a2a40b26854c3858aefe3fe1cede46f"
+      },
+      "normalized": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-challenge/reply.json",
+        "sha256": "529ecb4e25324376a07b44110c3b86ba977fbd1e91f16f290be1916d758e1dad"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-challenge/receipt.json",
+        "sha256": "6b4bc363a075e372c4fa94c6293bd7f5e830d65dca8d3ddba5d2038350f8037b"
+      },
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-challenge/packet.actual.json",
+        "sha256": "5ff7bf1d3affe62ada5382d3fb1c695f4fc825baf6baa3ad68f6cba861c4c46d"
+      }
+    },
+    {
+      "stage": "challenge",
+      "field": "$.cardReviews[id=p0].note",
+      "text": "Existence, relevance and robustness form a usable overview. The existing scheme qualification is essential: the sixth-order single-direction result cannot be",
+      "length": 157,
+      "schemaMaxLength": 420,
+      "rawNoteEqualsNormalized": true,
+      "exactHistoricalFlagRetainedByPlacement": true
+    }
+  ],
+  "finding": "The unfinished phrase ending \"and vanishing\" is already present in the original native final JSON (150 characters, below the160-character note cap). Raw and normalized rows are identical; registry and placement retain exactly the same text. The157-character p0 assessment also ends unfinished below its420-character cap. No registry compiler, normalization or placement compaction introduced either cut. Exact model/backend cause is not established.",
+  "scientificAction": "Do not guess the missing object or promote the unfinished clause to a premise. Preserve the original complete question, separately supported scope and explicit placement adjudication; the historical note defect remains visible. No source reread, rewritten premise or new home is performed by this audit.",
+  "mutationsToOriginals": 0,
+  "nativeCalls": 0
+}

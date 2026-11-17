@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "q025-navigation-scientific-admission/1",
+  "family": "amplitude",
+  "status": "accepted_exact_scientific_delta_subject_to_global_identity_gate",
+  "authority": "root_after_reading_full_definitions_paired_assessments_source_descriptions_and_relevant_equality_windows",
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v3/adopted/amplitude-compound-challenge/packet.actual.json",
+      "sha256": "27ea2277bb004ba678bcf5c42e0a980b12c16c4d31da525dd116d3250fd9ae2b"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-decisions-v1/jobs/amplitude-reuse-and-parent-routes-proposal/reply.raw.txt",
+      "sha256": "68b77293c602cabcaa1cebf628d111496ba5f1aadca1779d2aca88bdf05ef672"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v3/adopted/amplitude-compound-challenge/reply.json",
+      "sha256": "c63783c85bd7cf701b2711e9d5cc97f738caba19eb6e38d00cf5ef36bd233bd0"
+    },
+    "recovery": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v3/adopted/amplitude-compound-challenge/normalization.json",
+      "sha256": "98a5b7be77b064b1c6d53edcc346eefc22fb786cad8f37273df5e84e322bc00b"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopesAndRoutes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    }
+  },
+  "scopeHashes": {
+    "q025-candidate-question:0e226d69a7c3bb82fb9345a2": "c464520aa10ec07a448ddfd40b69ea5e29c38eb7fc378f58490ca3079a05c35a"
+  },
+  "roleHashes": {
+    "decision:navigation-amplitude:role:0": "d69332532af55fe94231e5f0e320c01974e0839885ba019e6dfee78eba1a6daa"
+  },
+  "operationHashes": {
+    "operation:navigation-amplitude:cd0": "068f93af1e0b426a96f3f363d409ec0a38f9a870773df4a5d5485304d553d2d0",
+    "operation:navigation-amplitude:pd1": "4a328bde91e68d9cb54c18b5014082001f28f43fb516b3a3de8508f710375121",
+    "operation:navigation-amplitude:pd2": "f34aa2dfc22e0b9a44845cb4a361ad0b19673be20f67764bae6a4756f25921f7",
+    "operation:navigation-amplitude:pd3": "37781e58118d263770a7ddd27013a483dec0e08020effa360015243fe5bfaa8c",
+    "operation:navigation-amplitude:pd4": "1ce89fbc05c5801064ccdfc74505f1f9a3eb53bdbea2df9124b0ae29db49d11f",
+    "operation:navigation-amplitude:pd5": "f624cd426e3ae97180a1848ca75e9f9e3346cc82752313843eb75a0b0151d0f2",
+    "operation:navigation-amplitude:pd6": "eca9bcca93ef2a42a77e57460cc4cc3e262700ca5b2dacb2f07baf349728abab"
+  },
+  "navigationHashes": {
+    "decision:navigation-amplitude:route:pn0": "4cc31d1f2590fa0f954ba48322136aaf124b560c6a01e24ca6687d16f8a01603",
+    "decision:navigation-amplitude:route:pn1": "7d73409832febfffac583c89e53312d61aefa65bdbcb051a6f027a454bc2e045",
+    "decision:navigation-amplitude:route:pn2": "1d427e44c5f951e0529260a4332a168507aa6d760a986733356e77d3057fb95d",
+    "decision:navigation-amplitude:route:pn3": "0c95adcf67c3a760a73d9c906c94fc02e8a6134de4a3785166ca242ac72246af",
+    "decision:navigation-amplitude:route:pn4": "de9eec7d28d939b96839dab23b4ae3231f00e1f04599d30aafedc5c8c099694b"
+  },
+  "editorialOverrides": [],
+  "localEqualityGroups": [
+    {
+      "operationId": "operation:navigation-amplitude:cd0",
+      "memberDestinationIds": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "canonicalDestinationId": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "status": "local_group_approved_global_whole_group_gate_pending",
+      "retainedReadingLimits": [
+        {
+          "destinationId": "q025-candidate-question:39594f3f2592c9816c879036",
+          "readingLimit": "Bounded introductory pages of the supplied 2601.11705 source. Numerical convergence and the announced coefficient derivation were not independently verified."
+        },
+        {
+          "destinationId": "q025-candidate-question:44cfc530ee4b7053d438805d",
+          "readingLimit": "The excerpts report nonlinear relations and numerical evidence; convergence and uniqueness are not independently established."
+        }
+      ],
+      "sourceStatementIdentityEstablished": false,
+      "automaticHomeTransfer": false
+    }
+  ],
+  "preservedLimitations": [
+    "Fresh primary reading is limited to e0–e2; e0 and e1 overlap. Other decisions reuse supplied exact definitions, whole descriptions and inherited assessments, cited through current c* and n* refs rather than their historical nested citation IDs.",
+    "The coefficient derivation and numerical convergence were not independently verified. Selection of the four-gluon open-superstring amplitude remains conditional numerical evidence, not a uniqueness theorem.",
+    "Equivalence is established locally for the complete c0/c1/pq0 question. Global canonical uniqueness and equivalence of other source statements are not established.",
+    "pq0, pd1–pd6 and pn0–pn4 are retained value-identically with explicit independent reviews. Only pd0 is replaced by cd0.",
+    "Other inherited contribution rows and compound sources remain unchanged. Omitted rows receive no new target role. Scope support, source roles, canonical identity and navigation do not admit an organizational home or mass."
+  ],
+  "unresolved": [
+    "A general method_for or application_of route between c4 and c2 remains unsupported. u12/n73 require channel positivity and the same geometry for low-energy exchange and the full UV integral; applicability to c2's specified classifications is not supplied.",
+    "Separate atomic identities for u33's EFT and dispersive-bootstrap stages remain unassessed. Their complete compound question can share one destination without resolving that finer decomposition."
+  ],
+  "counts": {
+    "newScopes": 1,
+    "typedOperations": 7,
+    "newPublicRoutes": 5,
+    "confirmedSourceRoles": 1,
+    "fixedRoutesUnchanged": 0,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noUpdatedFitUniversalThresholdUniquenessOrProofClaim": true
+}

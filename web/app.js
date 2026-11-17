@@ -6,6 +6,8 @@ import {loadAtlas,createAtlasNavigator,createAtlasSourceReader,createAtlasContex
 import {renderAtlasPanel} from '/atlas-panel.mjs';
 import {sourceContextDisclosure} from '/source-context.mjs';
 import {pageSourceContext} from '/lib/protocol/context-page.mjs';
+import {physicsPath,sourceInspectionHistory} from '/physics-path.mjs';
+import {paperTitle} from '/paper-title.mjs';
 
 const $ = id => document.getElementById(id);
 let lastRenderedInspection = null;
@@ -73,7 +75,7 @@ function readableSession(capsule) {
 function canAttemptContinuation() { return activeCapsule?.continuation.mode === 'native-actions' && Boolean(activeCapsule.snapshot.session); }
 function historicalAction(stateId, direction) { const capsule = acceptedCapsules.get(stateId); return capsule?.continuation.actions.find(item => item.id === direction.id)?.action || (columnViews.get(stateId)?.authored ? null : {type:'select',directionId:direction.id}); }
 function stateQuestion(state) { return acceptedCapsules.get(state.id)?.context.question || columnViews.get(state.id)?.question || state.query; }
-function stepNumber(index) { return Math.max(1,session.states.slice(0,index+1).filter(state=>stateQuestion(state).trim()).length); }
+function stepNumber(index) { return Math.max(1,physicsPath({...session,cursor:index},{activeOnly:true}).filter(step=>stateQuestion(step.state).trim()).length); }
 function revisitFor(direction, atSession = session) {
   if (!builtIn(activeCapsule) || !atSession?.schemaVersion) return -1;
   try { return selectionTarget(atSession,direction).revisitIndex; } catch { return -1; }
@@ -292,13 +294,14 @@ function render() {
   $('back').disabled = session.cursor === 0 || !canAttemptContinuation();
   $('broaden').disabled = !canAttemptContinuation() || (!state.focusIds.length && !state.constraints?.excludeIds?.length);
   $('path').replaceChildren();
-  session.states.forEach((item, index) => {
-    if (index) $('path').append(el('span', 'path-arrow', '›'));
-    const pathQuestion = item.sourceInspection ? `Source inspection · ${item.query}` : bridge ? item.query : stateQuestion(item);
-    const earlier = builtIn(activeCapsule) && !columnViews.get(item.id)?.authored ? previousVisitIndex(session,index) : -1;
+  physicsPath(session).forEach((step, position) => {
+    const {state:item,index}=step;
+    if (position) $('path').append(el('span', 'path-arrow', '›'));
+    const pathQuestion = bridge ? item.query : stateQuestion(item);
+    const visit = builtIn(activeCapsule) && !columnViews.get(item.id)?.authored ? previousVisitIndex(session,index) : -1,earlier=visit<step.startIndex?visit:-1;
     const button = el('button', '', earlier>=0 ? `Return to step ${stepNumber(earlier)}` : displayExcerpt(pathQuestion,48) || 'New path'); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
     button.setAttribute('aria-label', pathQuestion ? `Step ${stepNumber(index)}: ${pathQuestion}` : 'New path');
-    if (index === session.cursor) button.setAttribute('aria-current', 'step');
+    if (step.current) button.setAttribute('aria-current', 'step');
     button.disabled = !canAttemptContinuation(); button.addEventListener('click', () => action({ type: 'replay', index })); $('path').append(button);
   });
   $('corpus-scope').textContent = activeCapsule.builder.id === 'browser-empty' ? initialCorpusScope : `${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
@@ -315,7 +318,8 @@ function render() {
   if (!view.chart && activePanel === 'geometry') switchPanel('sources');
   updateOptionsSummary(); renderColumns(); renderEvidence();
   const selector=state.selector,loaded=selector&&installedAtlases.get(atlasKey(selector));
-  const renderPreparedPanel=()=>renderAtlasPanel({capsule:activeCapsule,navigator:loaded?.navigator,manifest:loaded?.atlas.manifest,readSources:loaded?.readSources,contextForSource:loaded?unitId=>sourceContextDisclosure(()=>loaded.readContext(unitId),{onInspect:payload=>action(payload)}):undefined,onNavigate:payload=>action(payload),onNative:query=>startNativeBranch(query),onError:message=>status(message,true)});
+  const sourceHistory=sourceInspectionHistory(session,item=>{const focus=acceptedCapsules.get(item.id)?.snapshot.view.atlas?.sourceInspection;return focus?{paperId:focus.source.paperId,endpointSide:focus.endpointSide}:null;});
+  const renderPreparedPanel=()=>renderAtlasPanel({capsule:activeCapsule,navigator:loaded?.navigator,manifest:loaded?.atlas.manifest,readSources:loaded?.readSources,sourceHistory,contextForSource:loaded?unitId=>sourceContextDisclosure(()=>loaded.readContext(unitId),{onInspect:payload=>action(payload)}):undefined,onNavigate:payload=>action(payload),onNative:query=>startNativeBranch(query),onError:message=>status(message,true)});
   renderPreparedPanel();
   if(state.sourceInspection&&lastRenderedInspection!==state.id){const focusedStateId=state.id;requestAnimationFrame(()=>{if(currentState(session).id===focusedStateId)$('source-inspection-panel')?.scrollIntoView({block:'start'});});}
   lastRenderedInspection=state.sourceInspection?state.id:null;
@@ -334,14 +338,14 @@ function renderColumns() {
   host.classList.toggle('prepared-columns',Boolean(view.atlas));
   host.classList.toggle('empty-path', !currentState(session).query && !view.directions.length);
   $('directions-count').textContent = '';
-  const states = session.states.slice(0, session.cursor + 1);
-  for (let index = 0; index < states.length; index++) {
-    const state = states[index], current = index === session.cursor, next = states[index + 1];
+  const steps = physicsPath(session,{activeOnly:true});
+  for (let position = 0; position < steps.length; position++) {
+    const {state,index,current}=steps[position],next=steps[position+1]&&session.states[steps[position+1].startIndex];
     if (!current && !stateQuestion(state).trim()) continue;
     const cached = columnViews.get(state.id);
     const directions = current ? view.directions : cached?.computationId === state.computationId && !(bridge && cached.authored) ? cached.directions : null;
     const column = el('section', 'miller-column'); column.dataset.stateId = state.id; column.dataset.historyIndex = index; column.dataset.current = String(current);
-    const legacyReturn = builtIn(activeCapsule) && !cached?.authored ? previousVisitIndex(session,index) : -1;
+    const visit = builtIn(activeCapsule) && !cached?.authored ? previousVisitIndex(session,index) : -1,legacyReturn=visit<steps[position].startIndex?visit:-1;
     const heading = el('div', `column-heading${current ? ' current-column-heading' : ''}`); heading.append(el('span', 'column-step', `Step ${stepNumber(index)} · ${current ? 'Next choices' : 'Choices then'}`));
     if (!current) heading.append(el('h3', '', displayExcerpt(stateQuestion(state) || 'Your first question',72)));
     if(legacyReturn>=0)heading.append(el('span','direction-state',`Return to step ${stepNumber(legacyReturn)}`));
@@ -351,7 +355,7 @@ function renderColumns() {
       let selected = false;
       directions.forEach((direction, directionIndex) => {
         const row = el('div', 'direction-row'), button = el('button', 'direction'); button.type = 'button'; button.dataset.directionId = direction.id;
-        const fullLabel = direction.label, label = displayExcerpt(fullLabel,72);
+        const fullLabel = direction.label, label = direction.selector?fullLabel:displayExcerpt(fullLabel,72);
         button.title = direction.query || fullLabel; button.setAttribute('aria-label', `Direction ${directionIndex + 1}: ${direction.query || fullLabel}`);
         const transition = next && cached?.transitions?.[next.id];
         const followed = Boolean(transition?.directionId === direction.id && ['select','refine','pivot','navigate'].includes(transition.type));
@@ -534,7 +538,7 @@ function renderEvidence() {
     const relation = node.retrieval?.workRelation?.kind;
     card.append(el('p', 'source-meta', `${evidence.date || evidence.year || node.year || 'date unavailable'} · ${labels[evidence.lens || node.lens] || 'Source'}${relation ? ` · ${relation === 'ambiguous' ? 'role uncertain' : relation}` : ''}${node.atlasContextScope==='same_paper_context'?' · Same-paper context; check applicability':node.atlasRole ? ` · ${node.atlasRole==='context-evidence'?(node.atlasMembershipChecked===false?'Context witness; full membership not read':'Context evidence (outside current source selection)'):'Matches current source selection'}` : ''}`));
     const title = el('h3'), paperUrl = safeUrl(node.sourceUrl || evidence.url);
-    if (paperUrl) { const link = el('a', '', node.title); link.href = paperUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; title.append(link); } else title.textContent = node.title; if(!repeatTitle)card.append(title);
+    if (paperUrl) { const link = el('a', '', paperTitle(node.title)); link.title=node.title; link.href = paperUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; title.append(link); } else title.textContent = paperTitle(node.title); if(!repeatTitle)card.append(title);
     card.append(el('p', 'passage', evidence.text || node.label));
     const details = el('details'); details.append(el('summary', '', 'Source scope & provenance'));
     details.append(el('p', '', node.kind==='vocabulary'?'Classification vocabulary reference. This field does not yet claim detailed paper coverage.':'Extracted source description, not a direct quotation or independently verified result.'));

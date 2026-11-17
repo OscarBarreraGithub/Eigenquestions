@@ -1,0 +1,47 @@
+{
+  "component": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/kk-component.json",
+    "sha256": "2c10f3e7dd11065f12f520761f54f753fdbded795260a6185b60a1ceb1d59a05"
+  },
+  "receipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/kk-admission.json",
+    "sha256": "772b8e1a2effc543ca9560d1b0189d1bee3dd5881dec1f220166b716d5a771fd"
+  },
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 22,
+    "newPublicRoutes": 22,
+    "confirmedSourceRoles": 7,
+    "fixedRoutesUnchanged": 7,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "roleBasis": {
+    "description_checked": 2,
+    "source_excerpt_checked": 5
+  },
+  "localEqualityGroups": [
+    {
+      "operationId": "operation:navigation-kk:pd0",
+      "memberDestinationIds": [
+        "q025-candidate-question:3f58b634e6f7439e502be440",
+        "q-kk-decay-linear-cosmology"
+      ],
+      "canonicalDestinationId": "q-kk-decay-linear-cosmology",
+      "status": "local_group_approved_global_whole_group_gate_pending",
+      "retainedReadingLimits": [
+        {
+          "destinationId": "q025-candidate-question:3f58b634e6f7439e502be440",
+          "readingLimit": "The supplied version is 2311.05318v1, dated 9 Nov 2023. Its abstract reports a bound, while the supplied body states the approximations. The likelihood, nonlinear evolution and consequences of replacing the cascade law were not checked."
+        },
+        {
+          "destinationId": "q-kk-decay-linear-cosmology",
+          "readingLimit": "The model assumptions and abstract's reported kick constraint were read. Perturbation equations, likelihood implementation and numerical constraints were not independently checked."
+        }
+      ],
+      "sourceStatementIdentityEstablished": false,
+      "automaticHomeTransfer": false
+    }
+  ],
+  "outgoingTitlesOnly": true
+}

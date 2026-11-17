@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "q025-integration-checkpoint/1",
+  "wave": "K-source-path-and-route-presentation",
+  "status": "runtime_tested_protocol_browser_passed_final_scientific_data_pending",
+  "files": [
+    {
+      "path": "docs/navigation-contract.md",
+      "sha256": "a59066a6dd0dc09151fb5868d1ff2c50f8ba9081a8158c07c3649598ae0b699e",
+      "bytes": 25188
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "sha256": "c45d2a04beaf1bdc7f054f6427fbb64cffdf3498160ab029eaebff2ea490aa35",
+      "bytes": 61907
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "sha256": "289ac20e299ab3a4b10e12c8913cbd82463914e1c2c42ef971c6781320bf2e1a",
+      "bytes": 178
+    },
+    {
+      "path": "research/q025/integration/qa18/browser.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/q025/integration/qa18/content-manifest.json",
+      "sha256": "c12ce369b361c6b0d3aad102dd35d4b6e22bf7774ee2212c5061c544cd695134",
+      "bytes": 121753
+    },
+    {
+      "path": "research/q025/integration/qa18/job.json",
+      "sha256": "60ee705769d0bd6efefbab2e2747d34350e140be4ffbb63344b535efc771a729",
+      "bytes": 1176
+    },
+    {
+      "path": "research/q025/integration/qa18/public-evidence-scan.json",
+      "sha256": "cfd787018cb041931dd93ac2f5c6620f1f65adc856a767167f19f1aa9cf27abd",
+      "bytes": 716
+    },
+    {
+      "path": "research/q025/integration/qa18/report.json",
+      "sha256": "8eb2ea6e12a30590270ad17e255f9696b080bcb543137b0f51c3cb0e3b867969",
+      "bytes": 1661
+    },
+    {
+      "path": "research/q025/integration/qa18/run.sbatch",
+      "sha256": "2a14dbe4692c432b5ce0d764d3cc86fea63fee75c9a8ae00af303981806c1a0d",
+      "bytes": 3144
+    },
+    {
+      "path": "research/q025/integration/qa18/slurm-accounting.txt",
+      "sha256": "4c6d4781d35b51c6682dc02ae0a69a5742f5ac657d4f177210121fc1fd408eb2",
+      "bytes": 138
+    },
+    {
+      "path": "research/q025/integration/qa18/source-endpoint-desktop.png",
+      "sha256": "90850ceda140b486e3e2b87fd3c17959c90881eaf350ff757bbf937709c4a3db",
+      "bytes": 146837
+    },
+    {
+      "path": "research/q025/integration/qa18/source-endpoint-mobile.png",
+      "sha256": "c36ff50e8ec8cdc887ec1fedbad3a75392df73681eb9927b0c3c0afa2c55b67d",
+      "bytes": 132323
+    },
+    {
+      "path": "research/q025/integration/source-path-browser-acceptance.py",
+      "sha256": "17d1bc3d3b95b04df1548443dcbe35eba30a4a98a92d79a9f2685871442d555a",
+      "bytes": 9745
+    },
+    {
+      "path": "research/q025/integration/source-path-v1/REPORT.md",
+      "sha256": "c39842c77148e01ea27019f96336f02a7a47bd26fdcf5d688f33f490d6cc2c8c",
+      "bytes": 3188
+    },
+    {
+      "path": "tests/integration/physics-path.test.mjs",
+      "sha256": "421a20e133b5817694669e489bb119dd42928c978de478bcf783cfb15d7fd4db",
+      "bytes": 2412
+    },
+    {
+      "path": "tests/integration/prepared-direction-priority.test.mjs",
+      "sha256": "0938b848eebe7d1cebaad14957d6ff815ffd39e8810f23c3391913bdd2e10fa2",
+      "bytes": 2845
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "a41ab2fefb2577918a5d93c4bef9f61601de3fafa6a32fc0502fb96c0d30c523",
+      "bytes": 92608
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "sha256": "680bd1fd23dffb6ce315dd98754a4f688cb9d976b5fa872a00b11fe90e601364",
+      "bytes": 17851
+    },
+    {
+      "path": "web/paper-title.mjs",
+      "sha256": "3ae9ba41b359fbfdae8bea76a2b8f653655d84f1a161cb7243251574f9eaa37d",
+      "bytes": 675
+    },
+    {
+      "path": "web/physics-path.mjs",
+      "sha256": "ee80f6b785bcbaacf1c401a94808ac36afc5e42e911c17eeae5805de5cc68b20",
+      "bytes": 1219
+    }
+  ],
+  "verification": {
+    "command": "npm run build && npm test && npm run check:site && git diff --check",
+    "exitCode": 0,
+    "tests": 92,
+    "observedExecChunk": "576159",
+    "browserReport": "research/q025/integration/qa18/report.json",
+    "browserJob": "61519120",
+    "browserChecks": 6,
+    "pageErrors": 0,
+    "postBrowserChanges": [
+      {
+        "path": "docs/navigation-contract.md",
+        "reason": "Document tested source-path grouping and directional reviewed-title semantics only."
+      }
+    ]
+  },
+  "sessionStatesOrRevisionSemanticsChanged": false,
+  "scientificDefinitionsChanged": false,
+  "finalAcceptedPackageInstalled": false,
+  "limitations": [
+    "Protocol destination with actual reviewed source relations; no scientific-choice browser proof",
+    "Scripted MCP/browser; not fresh independent agent research or public HTTPS acceptance",
+    "Final full accepted source package and journeys pending"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "q025-scope-admission-home-refresh/1",
+  "status": "pending_root_exact_row_confirmation",
+  "inputs": [
+    {
+      "path": "research/q025/assembly/organization-v4/home-lanes-v5.local.json",
+      "sha256": "0a249caf80cf733d82aa6306769b9300b8762e522703ee6341a85a62f3511b5c",
+      "bytes": 21650098
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v4/supported-scope-role-component-v4.json",
+      "sha256": "98821c0544eb16b26584d65d5838a256bda54c2c65aebe377a834426579274cb",
+      "bytes": 55294105
+    },
+    {
+      "path": "research/q025/assembly/organization-v4/candidate-v1/aggregate.local.json",
+      "sha256": "4a88672331f46c299c3da9d91f905f46377e0ff29d933d6f72e835f699bd2dbe",
+      "bytes": 72030888
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v5-20261117T135430Z.json",
+      "sha256": "0e0d5443114cbcba6078a70241c809b5fb713097b22d9d1846b63f6172da69d5",
+      "bytes": 71736816
+    }
+  ],
+  "candidatePayload": {
+    "path": "research/q025/assembly/organization-residual-v1/same-policy-candidates.local.json",
+    "sha256": "294201aca0dfc8b1820b6b96b871ccc923fc31f56edbfc575150aa1e2bef68c2",
+    "bytes": 2088977
+  },
+  "examples": {
+    "path": "research/q025/assembly/organization-residual-v1/same-policy-examples.json",
+    "sha256": "12e2c0ac06483c8e5c8b323b509f93e8b2e2c0d0c0238392a1cd5be7d5190ee6",
+    "bytes": 83314
+  },
+  "counts": {
+    "newFine": 142,
+    "newBroad": 123,
+    "policyClasses": {
+      "B_compound_whole_family_home": 63,
+      "B_whole_family_home": 60,
+      "A_exact_paired_scientific_question_home": 142
+    },
+    "newRows": 265,
+    "coverageIfApproved": 6030,
+    "remainingEligible": 2400,
+    "reserved": 43,
+    "remainingBuckets": {
+      "explicit_fine_home_unit_annotation_only": 203,
+      "one_clean_paired_fine_home_coverage_only": 735,
+      "explicit_fine_home_other_gap": 660,
+      "no_supported_exact_fine_home": 677,
+      "multiple_clean_paired_fine_homes": 125
+    }
+  },
+  "meaning": "Same approved A/B scientific rules, refreshed with current admitted scope status. No unit annotation flag or scientific conflict is waived. Existing exact scope definitions, historical flags and original review notes remain unchanged. These265 rows are not admitted until root confirms their pinned list.",
+  "scriptSha256": "892b30e5f1c7358d472c8c86c4f1f33518eba48a57d26d6ff00d031574b858b6"
+}

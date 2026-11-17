@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "q025-organizational-access-review/1",
+  "input": {
+    "path": "research/q025/assembly/organization-residual-v1/coverage-paths.json",
+    "sha256": "79dde669ae5d6651e165e0e67c349f0e4110ba3e41fa3eeb2e2164413e86ca4c"
+  },
+  "inputPinsVerified": 5,
+  "exactCandidateJoinsVerified": 3774,
+  "candidateRoutes": 1042,
+  "uniqueSupportingUnits": 2066,
+  "routeEndpointKinds": {
+    "region→question": 1041,
+    "region→region": 1
+  },
+  "homeRoles": {
+    "member": 3774
+  },
+  "positiveRoles": {
+    "specializes": 1405,
+    "addresses": 2044,
+    "instantiates": 325
+  },
+  "singleWitnessRoutes": 409,
+  "duplicateEndpoints": 0,
+  "duplicateUnitsWithinRoute": 0,
+  "nonquestionTargets": [
+    {
+      "source": "q025-candidate-region:88fa8687d2ded4f0a4462ab0",
+      "target": "q025-candidate-region:953776ce2227c9ba181efcad",
+      "supports": [
+        {
+          "unitId": "unit:a83c7372568e19dc70aae371bcbbf7df811fef4d7a2530a020b971ba3928d48e",
+          "role": "specializes",
+          "placementDecisionId": "decision:approved-home-policy-v5:ac23cb00ee8b94cdffad5ab9",
+          "contributionDecisionId": "decision:canonical-explicit-role:statistics:z57",
+          "qualification": "The statistical component has primary support as a conditional IIA trial-search probability. Its separate energy-raising mechanism is not absorbed into a common ensemble with the IIB sources."
+        }
+      ],
+      "sourceTitle": "De Sitter existence, scalar instability and candidate exceptions",
+      "targetTitle": "Vacuum stability statistics in specified search ensembles"
+    }
+  ],
+  "scopeQualificationExamples": [
+    {
+      "source": "q025-candidate-region:0100a51832623c18e78e8565",
+      "target": "q025-candidate-question:e31ae7ec2e888e4d1fa5c124",
+      "supports": [
+        {
+          "unitId": "unit:72ea9aab8c7f5e8693cf643cf866542b0d281605ac7ff1e4ba53d25d90f232a3",
+          "role": "specializes",
+          "placementDecisionId": "decision:approved-home-policy-v5:a6de35edc87793fd1c655506",
+          "contributionDecisionId": "decision:source-contribution:6b9bbc1af6635313e1980d99",
+          "qualification": "Original proposal qualification: Compound target: cutoff universality and a conditional species-scale inference. Independent challenge qualification: Compound target: cutoff compatibility and conditional species-scale inference; retain both for fine reconciliation."
+        }
+      ],
+      "sourceTitle": "Dark Dimension tests and neighboring cosmic-ray and vacuum questions",
+      "targetTitle": "Source-associated UHECR cutoffs and a gravitational scale"
+    },
+    {
+      "source": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+      "target": "q025-candidate-question:842474decf24d26352d666e3",
+      "supports": [
+        {
+          "unitId": "unit:68b2460dbd5e441bfa56c8a9dfb9ce0ee2a84d74f21591cdc3ecd5e4763aa332",
+          "role": "instantiates",
+          "placementDecisionId": "decision:approved-home-policy-v5:4963d343ae9a0152da4b2558",
+          "contributionDecisionId": "decision:source-contribution:80b7e47856a787b18feaeef4",
+          "qualification": "Original proposal qualification: Setting facet, not an exact entropy-proof question. Parent-method context is retained; canonical question identity remains unresolved. Independent challenge qualification: Setting facet with parent entropy-method context; the canonical question remains unresolved. Extracted normalization and approximation issues are not repaired."
+        }
+      ],
+      "sourceTitle": "Black-hole structure, entropy and dynamical consistency",
+      "targetTitle": "Extremality and charged-spectrum consistency"
+    },
+    {
+      "source": "q025-candidate-region:8fa82f3539d7091f52c46952",
+      "target": "q025-candidate-question:501501acf0c759cd137418dc",
+      "supports": [
+        {
+          "unitId": "unit:c08ed44e9a45a52485ff76bf4c063f66dd76f751a04cfe3e43f57aef9fe48bab",
+          "role": "specializes",
+          "placementDecisionId": "decision:approved-home-policy-v5:c9738437280e2a86ffafc34e",
+          "contributionDecisionId": "decision:source-contribution:4258f8112c33f2da00b117c2",
+          "qualification": "Original proposal qualification: The 2022 assessment varies calibration and BAO combinations; it does not establish universal simultaneous tension resolution. Independent challenge qualification: The 2022 assessment depends on calibration and BAO choices; e8 records Galaxy BAO disfavoring a low transition redshift associated with stronger improvements."
+        }
+      ],
+      "sourceTitle": "Cosmic expansion, dark sectors and cosmological inference",
+      "targetTitle": "Cosmological fits and ΛCDM diagnostics"
+    }
+  ],
+  "noPrimarySourceReadingPerformed": true,
+  "scientificOrNavigationAdmission": false,
+  "limits": [
+    "Exact join audit against already admitted inputs, not independent certification of their scientific judgments.",
+    "Coverage probe also uses paired native routes that are not yet admitted and treats them as traversable in either direction.",
+    "Final complete accepted graph and source-filter behavior still require separate checks."
+  ]
+}

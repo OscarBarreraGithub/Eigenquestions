@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "q025-complete-screen-report/2",
+  "completedLogicalCalls": 121,
+  "original117Statuses": {
+    "complete": 114,
+    "failed_preserved": 3
+  },
+  "recoveryCalls": 2,
+  "deterministicAdoptions": 1,
+  "pilotCalls": 4,
+  "uniqueComparisons": 8282,
+  "uniqueWorkloadIds": 8298,
+  "lanes": {
+    "organization_and_shared_question_decision": 3392,
+    "possible_typed_connection_decision": 4311,
+    "retained_definition_contrast_screen_only": 469,
+    "priority_existing_scope_reuse": 103,
+    "unresolved_context_needed": 1,
+    "explicit_variant_conflict_withheld": 6
+  },
+  "withheldVariantConflicts": [
+    {
+      "comparisonId": "012ff827350b4adc37214398",
+      "jobId": "canonical-continuation-v4-0039-screen-completion",
+      "ref": "n4794",
+      "variantRef": "attempt1:comparisonReviews:n4794",
+      "selectedPath": [
+        "comparisonReviews",
+        11
+      ]
+    },
+    {
+      "comparisonId": "ad2613df60e5e39f7b196db3",
+      "jobId": "canonical-continuation-v4-0039-screen-completion",
+      "ref": "n5103",
+      "variantRef": "attempt1:comparisonReviews:n5103",
+      "selectedPath": [
+        "comparisonReviews",
+        16
+      ]
+    },
+    {
+      "comparisonId": "d7c03f42ca203e834552563d",
+      "jobId": "canonical-continuation-v4-0039-screen-completion",
+      "ref": "n5953",
+      "variantRef": "attempt1:comparisonReviews:n5953",
+      "selectedPath": [
+        "comparisonReviews",
+        32
+      ]
+    },
+    {
+      "comparisonId": "e72a68585609b7328ae25069",
+      "jobId": "canonical-continuation-v4-0047-screen-completion",
+      "ref": "n467",
+      "variantRef": "attempt0:comparisonReviews:n467",
+      "selectedPath": [
+        "comparisonReviews",
+        0
+      ]
+    },
+    {
+      "comparisonId": "3b2d82319e9b0636642c8d3d",
+      "jobId": "canonical-continuation-v4-0047-screen-completion",
+      "ref": "n475",
+      "variantRef": "attempt0:comparisonReviews:n475",
+      "selectedPath": [
+        "comparisonReviews",
+        5
+      ]
+    },
+    {
+      "comparisonId": "5a465dc25aa9d69685f14edd",
+      "jobId": "canonical-continuation-v4-0047-screen-completion",
+      "ref": "n478",
+      "variantRef": "attempt0:comparisonReviews:n478",
+      "selectedPath": [
+        "comparisonReviews",
+        8
+      ]
+    }
+  ],
+  "intake": {
+    "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/combined-screen-intake.json",
+    "sha256": "0ef92b332f653470b6bd2583a0df8b3d8b5094d21c9805de35eb80141e9a005d"
+  },
+  "allAutomaticAdmissions": 0
+}

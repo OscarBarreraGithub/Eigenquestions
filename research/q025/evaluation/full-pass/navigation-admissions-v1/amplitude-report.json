@@ -1,0 +1,48 @@
+{
+  "component": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-component.json",
+    "sha256": "ac2307c576140dd0c49ac1fae87089a56f42dab7c89f7cc957a2307285e6e601"
+  },
+  "receipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/amplitude-admission.json",
+    "sha256": "64798636098995f423b16146d094e79f74d07bd5e1abf9da48869b590130810b"
+  },
+  "counts": {
+    "newScopes": 1,
+    "typedOperations": 7,
+    "newPublicRoutes": 5,
+    "confirmedSourceRoles": 1,
+    "fixedRoutesUnchanged": 0,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "roleBasis": {
+    "description_checked": 0,
+    "source_excerpt_checked": 1
+  },
+  "localEqualityGroups": [
+    {
+      "operationId": "operation:navigation-amplitude:cd0",
+      "memberDestinationIds": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "canonicalDestinationId": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "status": "local_group_approved_global_whole_group_gate_pending",
+      "retainedReadingLimits": [
+        {
+          "destinationId": "q025-candidate-question:39594f3f2592c9816c879036",
+          "readingLimit": "Bounded introductory pages of the supplied 2601.11705 source. Numerical convergence and the announced coefficient derivation were not independently verified."
+        },
+        {
+          "destinationId": "q025-candidate-question:44cfc530ee4b7053d438805d",
+          "readingLimit": "The excerpts report nonlinear relations and numerical evidence; convergence and uniqueness are not independently established."
+        }
+      ],
+      "sourceStatementIdentityEstablished": false,
+      "automaticHomeTransfer": false
+    }
+  ],
+  "outgoingTitlesOnly": true
+}

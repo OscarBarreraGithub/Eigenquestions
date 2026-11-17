@@ -1,0 +1,1606 @@
+{
+  "examples": [
+    {
+      "source": {
+        "unitId": "unit:0488e6c70d34029be671172d444cfb2502cfae70302abbbea3ae76ffb1666a57",
+        "paperId": "0705.1725",
+        "description": "Which decay rate belongs in a bound on the relaxation of the whole system? The relevant quantity is the slowest admitted rate, which can differ from either of the particular fundamental modes previously examined.",
+        "descriptionSha256": "9150ee24cbd17119293ffd2a4d1cc9f3fcbf2a8e38f6981affa8562385bb051e",
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-03d3e9337dac249848d4-challenge/packet.actual.json",
+          "sha256": "1edc7b879c7a404e44fa640cff46de5a6fd5fdbdcf0498c247438ccfd79b0013",
+          "bytes": 185879
+        }
+      },
+      "candidate": {
+        "unitId": "unit:0488e6c70d34029be671172d444cfb2502cfae70302abbbea3ae76ffb1666a57",
+        "destinationId": "q025-candidate-question:fb7dc37f7262699494bae6bd",
+        "policyClass": "A_exact_paired_scientific_question_home",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "status": "pending_exact_same_policy_extension",
+        "scopeContentSha256": "b5b279128372dd0661fe18c3705d6f9da82f9beb8fbed70ded67db7d4558f833",
+        "scopeDecisionId": "decision:scope:c3f2a677770d2799ea48cedc",
+        "sourceReviewIds": [
+          "leaf-03d3e9337dac249848d4-challenge"
+        ],
+        "contexts": [
+          {
+            "reviewId": "leaf-03d3e9337dac249848d4-challenge",
+            "proposal": {
+              "b": "description",
+              "d": "alternate",
+              "q": [
+                {
+                  "id": "p5",
+                  "role": "addresses"
+                }
+              ],
+              "f": [
+                "pf49",
+                "pf50"
+              ],
+              "refs": [],
+              "reason": "distinct_target",
+              "note": "",
+              "home": "q5",
+              "identity": "s",
+              "title": "Selecting the whole-system relaxation rate"
+            },
+            "challenge": {
+              "b": "description",
+              "d": "alternate",
+              "q": [
+                {
+                  "id": "p5",
+                  "role": "addresses"
+                }
+              ],
+              "f": [
+                "pf49",
+                "pf50"
+              ],
+              "refs": [],
+              "reason": "distinct_target",
+              "note": "",
+              "home": "p5",
+              "identity": "s",
+              "title": "Selecting the whole-system relaxation rate"
+            },
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q5",
+                "normalizedRef": "p5",
+                "originalId": "q5",
+                "candidateId": "q025-candidate-question:fb7dc37f7262699494bae6bd",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "fb7dc37f7262699494bae6bd08c51c645476d81bcf74e1b002a96c31332d420f"
+              },
+              "challenge": {
+                "rawRef": "p5",
+                "normalizedRef": "p5",
+                "originalId": "q5",
+                "candidateId": "q025-candidate-question:fb7dc37f7262699494bae6bd",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "fb7dc37f7262699494bae6bd08c51c645476d81bcf74e1b002a96c31332d420f"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "pins": {
+              "challengeReceiptSha256": "9308682cb602100ae67baa4bd9960d52fe46a9cc624c8705df606245bd7237ef",
+              "challengeReplySha256": "e8443ddd0fa261dc461d91f333309ab36dda6b837391a834fece5434898c3da6",
+              "challengeRawSha256": "7535fdb3a9dbcd03557b0dcda8438487c1ca48ad960f5bdb57c96acad3964458",
+              "challengePacketSha256": "1edc7b879c7a404e44fa640cff46de5a6fd5fdbdcf0498c247438ccfd79b0013",
+              "normalizationSha256": "6256557e3dd14f560e01f5bcc3cbe42d82797d8d62f98b494b1bd2862d4cf1a7",
+              "proposalReceiptSha256": "cd0f7b65b42184c34c4dee01a939faaf33a3c5ce24a6f9ac29b02319e047d3f2"
+            },
+            "originalProposal": {
+              "reviewId": "leaf-03d3e9337dac249848d4-proposal",
+              "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-03d3e9337dac249848d4-proposal",
+              "packetFile": "packet.json",
+              "packet.jsonSha256": "64ba5fdd69d5c878418ab56e8733f387a6615d8d6de0f9c592eaf81334d191b7",
+              "reply.jsonSha256": "f1883516144016d2fa9c8217fbb2dfe1f44a5ddb9be697af197dfaea4e8d5651",
+              "reply.raw.txtSha256": "a30d857887a3abd3e6c93f08dfd8d33e9fe82889ad963d64be459a9a156bfa9b",
+              "receipt.jsonSha256": "cd0f7b65b42184c34c4dee01a939faaf33a3c5ce24a6f9ac29b02319e047d3f2",
+              "normalization.jsonSha256": "68a8fe21cc938e57bd526727f98a97327e1aa73685f213c8d1ecb2ac29a699cc",
+              "resolvedFromRequest": {
+                "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-03d3e9337dac249848d4-challenge/dispatch-request.json",
+                "sha256": "f8019bfbc9320368564fdfd6e0f0e14e8a8a4c6426cedb948e5dc4efab78b8ad"
+              }
+            }
+          }
+        ],
+        "scopeDiagnosticRefresh": [
+          {
+            "unitId": "unit:0488e6c70d34029be671172d444cfb2502cfae70302abbbea3ae76ffb1666a57",
+            "reviewId": "leaf-03d3e9337dac249848d4-challenge",
+            "destinationId": "q025-candidate-question:fb7dc37f7262699494bae6bd",
+            "removedDiagnostic": "unresolved_scope_annotation_or_definition_flag",
+            "scopeDecisionId": "decision:scope:c3f2a677770d2799ea48cedc",
+            "scopeContentSha256": "b5b279128372dd0661fe18c3705d6f9da82f9beb8fbed70ded67db7d4558f833",
+            "retainedHistoricalNoteFlags": [
+              {
+                "path": "$.cardReviews[6].note",
+                "length": 153,
+                "schemaMaxLength": 420,
+                "atSchemaCap": false,
+                "reasons": [
+                  "clustered_short_unpunctuated_notes"
+                ],
+                "suffix": "tial-chaos and operator-growth questions. The card correctly avoids importing an entropy mechanism o",
+                "impact": "admission_justification",
+                "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+                "refs": [
+                  "d0",
+                  "d2",
+                  "d3"
+                ],
+                "cardId": "p5"
+              }
+            ],
+            "reason": "Exact unchanged scientific scope is already admitted; separate review-note flags remain historical, not a stale scope-admission blocker."
+          }
+        ],
+        "unitAnnotationFlagsWaived": false,
+        "premiseOrScopeConflictWaived": false
+      },
+      "admittedScope": {
+        "id": "q025-candidate-question:fb7dc37f7262699494bae6bd",
+        "kind": "question",
+        "title": "Relaxation, chaos and operator-growth limits",
+        "question": "Which dynamical quantity can support a relaxation or temperature-dependent timescale bound, under which assumptions?",
+        "summary": "An alternate home separating whole-system relaxation, initial thermal-chaos growth and small-to-large operator growth.",
+        "scope": {
+          "systems": [
+            "The source's relaxing system",
+            "Thermal quantum systems",
+            "Many-body quantum dynamics"
+          ],
+          "targets": [
+            "Slowest admitted relaxation rate",
+            "Initial chaos growth",
+            "Operator-growth timescale"
+          ],
+          "regimes": [
+            "Initial thermal growth and whole-system relaxation are different limits"
+          ],
+          "assumptions": [
+            "Analyticity and factorization belong to the thermal-chaos question",
+            "Failures of other proposed timescale bounds motivate, rather than prove, the operator-growth proposal"
+          ],
+          "conventions": [
+            "A particular fundamental mode need not be the slowest admitted mode",
+            "Two-point decay, transport, individual OTOCs and operator size remain different targets"
+          ],
+          "includes": [
+            "Ordinary many-body dynamics"
+          ],
+          "excludes": [
+            "An entropy-bound derivation inferred from numerical co-membership"
+          ]
+        },
+        "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+        "readingCoverage": {
+          "descriptionCheckedCount": 3,
+          "excerptCheckedCount": 0,
+          "readingLimit": "Descriptions only; no quantitative bound or proof was inspected.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "evidenceIds": [
+          "unit:0488e6c70d34029be671172d444cfb2502cfae70302abbbea3ae76ffb1666a57",
+          "unit:0bbd6d862bac7b3e68ad802d777b58f9ed7f27037841122453a61af576264137",
+          "unit:90a348c0936616a6a9bcb589c621c8952695194abcb63db2eb4f46c93b55f5f6"
+        ],
+        "methods": [
+          "Rate selection",
+          "Analyticity and factorization arguments",
+          "Operator-growth characterization"
+        ],
+        "aliases": [],
+        "scopeDecisionId": "decision:scope:c3f2a677770d2799ea48cedc",
+        "provenance": {
+          "recordId": "leaf-03d3e9337dac249848d4-challenge:p5",
+          "reviewIds": [
+            "leaf-03d3e9337dac249848d4-proposal",
+            "leaf-03d3e9337dac249848d4-challenge"
+          ],
+          "sourceProposalDefinitionUnchanged": true,
+          "canonicalIdentityStatus": "unreconciled_authored_scope",
+          "publicationStatus": "pending_canonical_organization_and_explicit_stage_status_copyedit",
+          "doesNotVerifyPhysicalResults": true,
+          "admissionJustificationFlags": [
+            {
+              "path": "$.cardReviews[6].note",
+              "length": 153,
+              "schemaMaxLength": 420,
+              "atSchemaCap": false,
+              "reasons": [
+                "clustered_short_unpunctuated_notes"
+              ],
+              "suffix": "tial-chaos and operator-growth questions. The card correctly avoids importing an entropy mechanism o",
+              "impact": "admission_justification",
+              "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+              "refs": [
+                "d0",
+                "d2",
+                "d3"
+              ],
+              "cardId": "p5"
+            }
+          ],
+          "annotationResolution": null,
+          "annotationFlagsDoNotAlterExactScopeDefinition": true
+        },
+        "scopeContentSha256": "b5b279128372dd0661fe18c3705d6f9da82f9beb8fbed70ded67db7d4558f833"
+      }
+    },
+    {
+      "source": {
+        "unitId": "unit:0512c7d33fc01fba59af1556246131c61d9bdf866f46c10f0ecfb47637d374ab",
+        "paperId": "2312.03831",
+        "description": "Does the gravitational Reuter fixed point remain stable when a complete sixth-order derivative expansion is included in the minimal essential scheme, and how robust are its relevant directions and critical exponents under regulator changes?",
+        "descriptionSha256": "0dc4db4d6a729de92f326891eb23328f0cabb806611933cfa936471b5bc30b07",
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-challenge/packet.actual.json",
+          "sha256": "5ff7bf1d3affe62ada5382d3fb1c695f4fc825baf6baa3ad68f6cba861c4c46d",
+          "bytes": 221723
+        }
+      },
+      "candidate": {
+        "unitId": "unit:0512c7d33fc01fba59af1556246131c61d9bdf866f46c10f0ecfb47637d374ab",
+        "destinationId": "q025-candidate-question:7fc5f55b18f12ec4bbab14ee",
+        "policyClass": "A_exact_paired_scientific_question_home",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "status": "pending_exact_same_policy_extension",
+        "scopeContentSha256": "c3b9d609498caed1a2348a6ba544ccac3bad7e8155684df977f9a1abeff800f5",
+        "scopeDecisionId": "decision:scope:936ac6329ded7e6729d67ed7",
+        "sourceReviewIds": [
+          "leaf-b2ca79d3d5eb80e10584-challenge"
+        ],
+        "contexts": [
+          {
+            "reviewId": "leaf-b2ca79d3d5eb80e10584-challenge",
+            "proposal": {
+              "b": "excerpt",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p0",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf0",
+                "pf1",
+                "pf2",
+                "pf3",
+                "pf4",
+                "pf13",
+                "pf27",
+                "pf28"
+              ],
+              "refs": [
+                "e1",
+                "e2",
+                "e21"
+              ],
+              "reason": "specialized",
+              "note": "Header 6 Dec/manuscript 8 Dec 2023. The reported single relevant direction is conditional on the minimal essential setup.",
+              "home": "q0",
+              "identity": "s",
+              "title": "Sixth-order Reuter stability in the minimal essential scheme"
+            },
+            "challenge": {
+              "b": "excerpt",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p0",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf0",
+                "pf1",
+                "pf2",
+                "pf3",
+                "pf4",
+                "pf13",
+                "pf27",
+                "pf28"
+              ],
+              "refs": [
+                "e1",
+                "e2",
+                "e21"
+              ],
+              "reason": "specialized",
+              "note": "Header 6 Dec/manuscript 8 Dec 2023. The single relevant direction is reported within the background approximation, GR universality class and vanishing",
+              "home": "p0",
+              "identity": "s",
+              "title": "Sixth-order Reuter stability in the minimal essential scheme"
+            },
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q0",
+                "normalizedRef": "p0",
+                "originalId": "q0",
+                "candidateId": "q025-candidate-question:7fc5f55b18f12ec4bbab14ee",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "7fc5f55b18f12ec4bbab14ee6c15b128ddd1d24f3f75768c6fe7149384e05d3a"
+              },
+              "challenge": {
+                "rawRef": "p0",
+                "normalizedRef": "p0",
+                "originalId": "q0",
+                "candidateId": "q025-candidate-question:7fc5f55b18f12ec4bbab14ee",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "7fc5f55b18f12ec4bbab14ee6c15b128ddd1d24f3f75768c6fe7149384e05d3a"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "pins": {
+              "challengeReceiptSha256": "6b4bc363a075e372c4fa94c6293bd7f5e830d65dca8d3ddba5d2038350f8037b",
+              "challengeReplySha256": "529ecb4e25324376a07b44110c3b86ba977fbd1e91f16f290be1916d758e1dad",
+              "challengeRawSha256": "622eb0cfeb44ac036cc09a1ead451cec6a2a40b26854c3858aefe3fe1cede46f",
+              "challengePacketSha256": "5ff7bf1d3affe62ada5382d3fb1c695f4fc825baf6baa3ad68f6cba861c4c46d",
+              "normalizationSha256": "81e4f730cb8120d9c982eed824b830e9d371720c3b9091dd84ed0bdf8919a6b1",
+              "proposalReceiptSha256": "aa352c780222d7e1e24380dcf4409e2805d88585dd889154d33ee9ec83073337"
+            },
+            "originalProposal": {
+              "reviewId": "leaf-b2ca79d3d5eb80e10584-proposal",
+              "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-proposal",
+              "packetFile": "packet.json",
+              "packet.jsonSha256": "e0aac3a8b2a452230cfd21bd59ca3ff1b596b81c2bc81c650acbfa18a0391192",
+              "reply.jsonSha256": "d317f94667ce382b32e743c419149f16ced6b1ba1c8c7de9698340ab8af04c08",
+              "reply.raw.txtSha256": "c4eea7cf609a4ca2a1e160bfe1c927a0ddf70db6eaf896306cc7e7faad118fce",
+              "receipt.jsonSha256": "aa352c780222d7e1e24380dcf4409e2805d88585dd889154d33ee9ec83073337",
+              "normalization.jsonSha256": "35757469830dc4bbd6b0b45c1f3532e11a7eec5d6cd8bcf551b4570b9fca8ac7",
+              "resolvedFromRequest": {
+                "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-b2ca79d3d5eb80e10584-challenge/dispatch-request.json",
+                "sha256": "a0f5b81de162ca222fd367fefbb2bbd5dad33858a7795717130f50c7d4330d6d"
+              }
+            }
+          }
+        ],
+        "scopeDiagnosticRefresh": [
+          {
+            "unitId": "unit:0512c7d33fc01fba59af1556246131c61d9bdf866f46c10f0ecfb47637d374ab",
+            "reviewId": "leaf-b2ca79d3d5eb80e10584-challenge",
+            "destinationId": "q025-candidate-question:7fc5f55b18f12ec4bbab14ee",
+            "removedDiagnostic": "unresolved_scope_annotation_or_definition_flag",
+            "scopeDecisionId": "decision:scope:936ac6329ded7e6729d67ed7",
+            "scopeContentSha256": "c3b9d609498caed1a2348a6ba544ccac3bad7e8155684df977f9a1abeff800f5",
+            "retainedHistoricalNoteFlags": [
+              {
+                "path": "$.cardReviews[1].note",
+                "length": 157,
+                "schemaMaxLength": 420,
+                "atSchemaCap": false,
+                "reasons": [
+                  "clustered_short_unpunctuated_notes"
+                ],
+                "suffix": "w. The existing scheme qualification is essential: the sixth-order single-direction result cannot be",
+                "impact": "admission_justification",
+                "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+                "refs": [
+                  "d0",
+                  "d3",
+                  "d9",
+                  "e1",
+                  "e2",
+                  "e24",
+                  "d35"
+                ],
+                "cardId": "p0"
+              }
+            ],
+            "reason": "Exact unchanged scientific scope is already admitted; separate review-note flags remain historical, not a stale scope-admission blocker."
+          }
+        ],
+        "unitAnnotationFlagsWaived": false,
+        "premiseOrScopeConflictWaived": false
+      },
+      "admittedScope": {
+        "id": "q025-candidate-question:7fc5f55b18f12ec4bbab14ee",
+        "kind": "question",
+        "title": "Gravitational fixed points and their robustness",
+        "question": "Which gravitational RG approximations support an interacting ultraviolet fixed point with finitely many relevant directions, and how stable is that evidence?",
+        "summary": "Organizes existence, relevance and convergence tests without identifying their fixed points or promoting truncation results to a proof.",
+        "scope": {
+          "systems": [
+            "Metric gravity and explicitly specified gravity-matter extensions"
+          ],
+          "targets": [
+            "Fixed-point existence",
+            "Relevant directions",
+            "Stability under approximation changes"
+          ],
+          "regimes": [
+            "Source-specific dimensions and truncations"
+          ],
+          "assumptions": [
+            "Results remain conditional on the chosen theory space and renormalization scheme"
+          ],
+          "conventions": [
+            "Essential and conventional coupling counts are not interchangeable"
+          ],
+          "includes": [
+            "Einstein–Hilbert, curvature, vertex and essential-scheme investigations"
+          ],
+          "excludes": [
+            "A universal critical-exponent spectrum",
+            "Automatic physical unitarity"
+          ]
+        },
+        "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+        "readingCoverage": {
+          "descriptionCheckedCount": 14,
+          "excerptCheckedCount": 4,
+          "readingLimit": "Description-level scope supplemented by bounded primary excerpts; no full calculation or convergence proof was verified.",
+          "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "evidenceIds": [
+          "unit:0512c7d33fc01fba59af1556246131c61d9bdf866f46c10f0ecfb47637d374ab",
+          "unit:0d5436f249a3d0078bd569dee6ad68e178bb73df7292e15d79287450bc87225d",
+          "unit:2064fad41c0d63558d71a51bc0ed5ae9fb8d7a4ef021ea113d89e90d18f78a3a",
+          "unit:2306cda36e47ae4075cbbdf3bfeb783ecea184eaf0bc4ecc86726b2858d81f68",
+          "unit:3ad0ec9d8c97443e3c81e06a53b9f01977642d9c99f9c03e16d9aecc0799e225",
+          "unit:6958d5f5106c01cc8c17e92fd5c72bc3e7452a5a538794cab6afb132e592f3bf",
+          "unit:83e19c355f96115d8f8f473ac0408e0945c7d2f798fcddca0aadc1359cc0ad87",
+          "unit:89b417af52a8d947a24ddab6d864914b1cef6a8fc35be2f6fd3e49882b582dee",
+          "unit:8e2d2857870284a8ab0648e10a221e60608d5fc3728459c846085da1ec4681dd",
+          "unit:97f12ac2386a97a5a7abedbb0a70e1d9e76e6f0addbc6fc989e3b7fbb7f3000e",
+          "unit:abef692556dbc00bce42ae3e2a9bc56d02857e7496a9b082a2740f7fbb203600",
+          "unit:d43de80cd8898bda9e02b5b5ba0588e8f0543039089b5384eb04b1e601f3431a",
+          "unit:da8124e6854715aafc8cc48baf65ee4d1248e4e33ab602bbf58fd1f1ddfbb56a",
+          "unit:dba158bc7ce92d15914355d6bcfe1b96cb911572df0271fb4d62ef1a5c2c393d"
+        ],
+        "methods": [
+          "RG fixed-point analysis",
+          "Truncation, regulator and gauge comparisons"
+        ],
+        "aliases": [],
+        "scopeDecisionId": "decision:scope:936ac6329ded7e6729d67ed7",
+        "provenance": {
+          "recordId": "leaf-b2ca79d3d5eb80e10584-challenge:p0",
+          "reviewIds": [
+            "leaf-b2ca79d3d5eb80e10584-proposal",
+            "leaf-b2ca79d3d5eb80e10584-challenge"
+          ],
+          "sourceProposalDefinitionUnchanged": true,
+          "canonicalIdentityStatus": "unreconciled_authored_scope",
+          "publicationStatus": "pending_canonical_organization_and_stage_status_copyedit",
+          "doesNotVerifyPhysicalResults": true
+        },
+        "scopeContentSha256": "c3b9d609498caed1a2348a6ba544ccac3bad7e8155684df977f9a1abeff800f5"
+      }
+    },
+    {
+      "source": {
+        "unitId": "unit:034693c97fff26cada7d869d256ca9df45b52d95b34b2b6c45d686b77bafcee9",
+        "paperId": "2505.23414",
+        "description": "Can evaporation of five-dimensional primordial black holes explain KM3-230213A through sterile-to-active neutrino conversion, while avoiding gamma-ray limits and remaining compatible with IceCube constraints?",
+        "descriptionSha256": "ab43403913406070daa5e3b0fb997bf1a90faa04d0fd44273fa87e29ffee1877",
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-61d70a37d7a5e93f0814-challenge/packet.actual.json",
+          "sha256": "a46c0710dab3260dedf641bfa81ca4a3256335810c20c3e0a64809b904d0d517",
+          "bytes": 206356
+        }
+      },
+      "candidate": {
+        "unitId": "unit:034693c97fff26cada7d869d256ca9df45b52d95b34b2b6c45d686b77bafcee9",
+        "destinationId": "q025-candidate-region:4631b8f0e5ff5377e87be809",
+        "policyClass": "B_whole_family_home",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "status": "pending_exact_same_policy_extension",
+        "scopeContentSha256": "3755e615078e500336f9133a114e1cd2a6e29ee784a38174ecad58db56fb4270",
+        "scopeDecisionId": "decision:scope:bfec70f5395110b46e6db74f",
+        "sourceReviewIds": [
+          "leaf-61d70a37d7a5e93f0814-challenge"
+        ],
+        "contexts": [
+          {
+            "reviewId": "leaf-61d70a37d7a5e93f0814-challenge",
+            "proposal": {
+              "b": "description",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p4",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf0",
+                "pf4",
+                "pf18",
+                "pf20",
+                "pf22",
+                "pf57"
+              ],
+              "refs": [],
+              "reason": "application",
+              "note": "",
+              "home": "q4",
+              "identity": "s",
+              "title": "Five-dimensional evaporation and KM3-230213A"
+            },
+            "challenge": {
+              "b": "description",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p4",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf0",
+                "pf4",
+                "pf18",
+                "pf20",
+                "pf22",
+                "pf57"
+              ],
+              "refs": [],
+              "reason": "application",
+              "note": "",
+              "home": "p4",
+              "identity": "s",
+              "title": "Five-dimensional evaporation and KM3-230213A"
+            },
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q4",
+                "normalizedRef": "p4",
+                "originalId": "q4",
+                "candidateId": "q025-candidate-question:565c35a7b5acf0efa6bf96b2",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "565c35a7b5acf0efa6bf96b2fd4159442c491d8a18f7bf4ab85e96dc0a42f41d"
+              },
+              "challenge": {
+                "rawRef": "p4",
+                "normalizedRef": "p4",
+                "originalId": "q4",
+                "candidateId": "q025-candidate-question:565c35a7b5acf0efa6bf96b2",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "565c35a7b5acf0efa6bf96b2fd4159442c491d8a18f7bf4ab85e96dc0a42f41d"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "pins": {
+              "challengeReceiptSha256": "f0d8725547917aaf0722b78be7103df8de17243d89ad96edc33a6b57950a1433",
+              "challengeReplySha256": "bb7e06ec0526368fcfd8cca8cc8ace2b3f6b5d81289472a7efbeca90c25ee677",
+              "challengeRawSha256": "c113d3b2dccc72cab76c7ecb2ed48ea9682a84967c6e25c7cafd4a5625ec3cb0",
+              "challengePacketSha256": "a46c0710dab3260dedf641bfa81ca4a3256335810c20c3e0a64809b904d0d517",
+              "normalizationSha256": "72a92c166f2d4ec5252c1532a37ce7702eb2f7122186245df22ebe0f4bc28c44",
+              "proposalReceiptSha256": "0db5d62996f525b5783244a638030a54be176988f0d140aee199a1d3a59af9ff"
+            },
+            "originalProposal": {
+              "reviewId": "leaf-61d70a37d7a5e93f0814-proposal",
+              "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-61d70a37d7a5e93f0814-proposal",
+              "packetFile": "packet.json",
+              "packet.jsonSha256": "7622507113f49dd2f654e4eca76d29f0e2810004c4010870f93b174f509a88a3",
+              "reply.jsonSha256": "2a08b4aa29705eb653320c7d6042d485dff0ed05fd4bb0a3091315dc95320918",
+              "reply.raw.txtSha256": "c0824c60e1289fada8e84b82d5d7b3ffb9c74c9c9292b80a65eab866e988b542",
+              "receipt.jsonSha256": "0db5d62996f525b5783244a638030a54be176988f0d140aee199a1d3a59af9ff",
+              "normalization.jsonSha256": "254bfb34486a2121897018a8d0533454d1effdaeb484b0a6023a7d3350d5856c",
+              "resolvedFromRequest": {
+                "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-61d70a37d7a5e93f0814-challenge/dispatch-request.json",
+                "sha256": "da9dcbe1f13de6192f4827ecaa6509a8b46ba74f73ada45c1b64a525de79b195"
+              }
+            }
+          }
+        ],
+        "scopeDiagnosticRefresh": [],
+        "unitAnnotationFlagsWaived": false,
+        "premiseOrScopeConflictWaived": false
+      },
+      "admittedScope": {
+        "id": "q025-candidate-region:4631b8f0e5ff5377e87be809",
+        "kind": "region",
+        "title": "Primordial black holes: origins, survival, dark matter and tests",
+        "question": "Under which formation, evaporation and environmental assumptions can primordial black holes or their remnants contribute to dark matter, and how can observations and cosmological effects test those scenarios?",
+        "summary": "A useful family joins formation, population evolution, evaporation constraints and proposed survival mechanisms. Particle alternatives, particle constraints inferred from PBHs, and consequences of already-evaporated PBHs retain distinct targets. Scalar-driven stasis has an alternate home connected through model context.",
+        "scope": {
+          "systems": [
+            "Primordial black holes and proposed remnants",
+            "Particle dark matter and evaporation products where explicitly connected"
+          ],
+          "targets": [
+            "Formation, abundance, mass distributions and population evolution",
+            "Survival and dark-matter contribution",
+            "Radiative, cosmological and gravitational tests"
+          ],
+          "regimes": [
+            "Source-specific evaporating and surviving populations",
+            "Ordinary, charged, rotating, nonsingular and higher-dimensional models",
+            "Early evaporation and present-day signals kept distinct"
+          ],
+          "assumptions": [
+            "Alternative mechanisms are conditional branches, not jointly required premises",
+            "Source-era constraints and adopted astrophysical interpretations remain dated",
+            "Ordinary and pre-Swampland work is eligible"
+          ],
+          "conventions": [
+            "Initial abundance and present dark-matter fraction are distinct targets",
+            "A signal explanation does not imply an all-dark-matter population",
+            "Dimensions, mass functions and charge conventions remain source-specific"
+          ],
+          "includes": [
+            "PBH production and observational reviews",
+            "Evaporation constraints and proposed changes to evaporation",
+            "PBH-mediated particle constraints and cosmological effects as overlaps"
+          ],
+          "excludes": [
+            "Treating numerical membership as scientific equivalence",
+            "Treating general scalar-driven stasis as a PBH mechanism",
+            "Inferring a shared Swampland premise from neighboring sources",
+            "Treating announced viability as a current universal result"
+          ]
+        },
+        "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+        "readingCoverage": {
+          "descriptionCheckedCount": 39,
+          "excerptCheckedCount": 8,
+          "readingLimit": "One facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. Supplied primary text is bounded archived text, with no equation-image or full-paper certification. Other units are assessed from their descriptions.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "evidenceIds": [
+          "unit:034693c97fff26cada7d869d256ca9df45b52d95b34b2b6c45d686b77bafcee9",
+          "unit:0b1e52ed812ac1c6407c35252bf4fc4a19c1a8e1c3622d1e87cf6b67fc9773f7",
+          "unit:1a6d48cc0e9e67a40005cf1b398e5392b8bc0e073b5e424bf2b4d197a0676394",
+          "unit:262e7e604d44510e9353c51437e51ac6f15776d4f9ebe8ba60ddb6814effdf0a",
+          "unit:2b1592c8aed650149bea9d6095a344d63570e40a6cb2b11fea1f1cb19230e837",
+          "unit:2e709c9f8ad348619f817d0feeb369b4f434e962eef2ea33ffc95ca367277bc9",
+          "unit:2e823459353e61e2b0bda4815aa646b0477960f26f9ca96ec50f36fa788b1a99",
+          "unit:32d480093c8420b79b6b2acc9e86aa981afc12b47a4bd68af86fff9fadc4a270",
+          "unit:3384a059406ed760dd77ca728dfcfcc8226327266ab2fba6d9068069280784e4",
+          "unit:35c648d93c1934365602c46461db0356c47c80b950555d9b06fd17c4fdebec82",
+          "unit:3ec858943221ec2ed1306e5570dd6996b575708450fd9abb06c3233022c0efde",
+          "unit:4c8fc2531cf27ddcee3ed14f4fb5dfe443b6ea61e1434bcc1eca0d6b82aa58a0",
+          "unit:5934d82041e931be9e900c6051678de3d0a38fd6548a0a5a75502a7fe2f59c6b",
+          "unit:5aa24b970df1e09eb2f838d7ec6421aef76e5ed0f0b7d6e1d208ccfeb5682634",
+          "unit:653d77c08f39b16ab4e04744df1ec210a4837aad7219a5606d726bfbd10c08e1",
+          "unit:6c1ccb8a4554cd004a13f5ea3fd9df5ecc2d8dbb2097fc23e0cc79925f2d2d62",
+          "unit:6cebd8e2b9cf7f4068e18f11738bd3434087517b9f43fbe73e4f65012a463c02",
+          "unit:6df39bcb6b52192e783e45e332d170619d74452ddfa32f036f52c1457ca2c8e1",
+          "unit:6fc3c7f4f138553b7a8326245dcc2c9bab529c2f70b92598adbd82cffd065f50",
+          "unit:718abceaa1908b125cc9a83bb3c02ef2236b7a4e10fdcaedb60d008456e9c3d5",
+          "unit:7291bf9c51ee3ff5ac13accc9f9d6a2aa037f9b774b1f12b2034fde11b02f2bd",
+          "unit:7c6297a04edc0fea048168f43d81f5d7f3433b4552886c2189186f699fc7ea5f",
+          "unit:7f5d2e2972725556842d972fb2a0683fe27d174c4378f7c81eaf1c8d28e4a72a",
+          "unit:80b05614fde710bc676dbbee1dd8fa489080d7e1ffbdb84c0e287b4181333674",
+          "unit:981fdb22aad44c978f6596b526fd0c6c1facc06a688b3de01dfe4075d7b189af",
+          "unit:acab0c5daf656cc69830b12caa3561456f409907c04dd1a4820562201311df9a",
+          "unit:af81e296b41f72f2c8685e58dc48fe9efbd11afe0a67af60c61643252c8c8fe1",
+          "unit:bc071927d9331c7ddd7107d6c5db963468b5f8d6520573b3402d66fe8dca755a",
+          "unit:bcc6bfb083cb6ee371871bffebf1a269b65a0d96b7be7a1f77a4685c7f18e911",
+          "unit:c83a92111f0e77fd2fbd50ff3698dc4b0e28aa8d344c5edaf2c77529197c2404",
+          "unit:c860ece91f178ef3fa54dfd58e1a108defc5877191ab40b901f0efddbdcd2dd6",
+          "unit:ce8b0ef70dc9740652201c03aef96b61e49078405f84caa61eaff6f4ab28d2b6",
+          "unit:d08e1c2b6ea62784620c9899d488afb2293cfcb3c6a98ab700b266c350a8a4a6",
+          "unit:db7a2b2c827303010fb6929bfb0d6c9f81d24055c903768efa7277ac09f95b56",
+          "unit:e140b04b657cbc144fbf16c0010f4193fd2e26b9db5d9a95a1a8e3b5fa5d0297",
+          "unit:e2a73c5a63d5ec55fd905cb39514430c68df1bd7aa3a2d3394d2fe7e419d4905",
+          "unit:e938130dc5f7e49e501bbf1b305e66b4b84b4b65660c7551c20724d533c64d5a",
+          "unit:ef90cd39fe7bc8516efdee7afb55725852f1503cf8c64c289d9372ce731ef253",
+          "unit:f21bcf6117aeb09d9860eccd259ce184cb36adbb1d0bcaa6798c0c9a0fe23b46"
+        ],
+        "methods": [],
+        "aliases": [],
+        "scopeDecisionId": "decision:scope:bfec70f5395110b46e6db74f",
+        "provenance": {
+          "recordId": "leaf-61d70a37d7a5e93f0814-challenge:r",
+          "reviewIds": [
+            "leaf-61d70a37d7a5e93f0814-proposal",
+            "leaf-61d70a37d7a5e93f0814-challenge"
+          ],
+          "sourceProposalDefinitionUnchanged": true,
+          "canonicalIdentityStatus": "unreconciled_authored_scope",
+          "publicationStatus": "pending_canonical_organization_and_explicit_stage_status_copyedit",
+          "doesNotVerifyPhysicalResults": true,
+          "admissionJustificationFlags": [
+            {
+              "path": "$.cardReviews[0].note",
+              "length": 155,
+              "schemaMaxLength": 420,
+              "atSchemaCap": false,
+              "reasons": [
+                "clustered_short_unpunctuated_notes"
+              ],
+              "suffix": "vigation family. Its explicit overlaps, alternate homes and conditional branches are essential; nume",
+              "impact": "admission_justification",
+              "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+              "refs": [
+                "d13",
+                "d16",
+                "d25",
+                "d34",
+                "e2",
+                "e11",
+                "e12",
+                "e13",
+                "e20"
+              ],
+              "cardId": "r"
+            }
+          ],
+          "annotationResolution": null,
+          "annotationFlagsDoNotAlterExactScopeDefinition": true
+        },
+        "scopeContentSha256": "3755e615078e500336f9133a114e1cd2a6e29ee784a38174ecad58db56fb4270"
+      }
+    },
+    {
+      "source": {
+        "unitId": "unit:0702b8a1df85cd2f038bbf2cb02964037dd5c07a76a319b8f3fc3068e4beb9dc",
+        "paperId": "2003.06785",
+        "description": "Does the previously proposed entropy–extremality relation hold for rotating BTZ and Kerr-AdS black holes under a constant action correction, and is there an analogous relation involving the shift of angular momentum?",
+        "descriptionSha256": "841372f6040944f5a0de3394fd2544d996bf5af931ea5a9c393ac2394e82710e",
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-3195a8d62ae5b9dee03c-challenge/packet.actual.json",
+          "sha256": "567581e81d15cb5c2d7516a2a422a418a9e0f403c5b32fb69e8b44487c81ee25",
+          "bytes": 190698
+        }
+      },
+      "candidate": {
+        "unitId": "unit:0702b8a1df85cd2f038bbf2cb02964037dd5c07a76a319b8f3fc3068e4beb9dc",
+        "destinationId": "q025-candidate-region:1b676e04cbd94e2caf104916",
+        "policyClass": "B_whole_family_home",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "status": "pending_exact_same_policy_extension",
+        "scopeContentSha256": "01d0bfe6c2911b558a4743ba8c0d38de189dd724a13f75fd9607dc42078f87bd",
+        "scopeDecisionId": "decision:scope:6ef773bf49585939ea0918fb",
+        "sourceReviewIds": [
+          "leaf-3195a8d62ae5b9dee03c-challenge"
+        ],
+        "contexts": [
+          {
+            "reviewId": "leaf-3195a8d62ae5b9dee03c-challenge",
+            "proposal": {
+              "b": "excerpt",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p0",
+                  "role": "instantiates"
+                }
+              ],
+              "f": [
+                "pf0",
+                "pf1",
+                "pf3",
+                "pf6",
+                "pf10",
+                "pf14",
+                "pf15"
+              ],
+              "refs": [
+                "e20"
+              ],
+              "reason": "specialized",
+              "note": "Retain joint entropy and angular-momentum identities across BTZ and Kerr-AdS; the singleton does not make these targets atomic.",
+              "home": "q1",
+              "identity": "s",
+              "title": "BTZ and Kerr-AdS entropy and angular-momentum response identities"
+            },
+            "challenge": {
+              "b": "excerpt",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p0",
+                  "role": "instantiates"
+                }
+              ],
+              "f": [
+                "pf0",
+                "pf1",
+                "pf3",
+                "pf6",
+                "pf10",
+                "pf14",
+                "pf15"
+              ],
+              "refs": [
+                "e11",
+                "e20"
+              ],
+              "reason": "specialized",
+              "note": "BTZ and Kerr-AdS, and entropy and angular-momentum responses, remain distinct components of the source question. Their derivative constraints differ.",
+              "home": "p1",
+              "identity": "s",
+              "title": "BTZ and Kerr-AdS entropy and angular-momentum responses"
+            },
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q1",
+                "normalizedRef": "p1",
+                "originalId": "q1",
+                "candidateId": "q025-candidate-question:548e8e272fbc1348cec89487",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "548e8e272fbc1348cec89487c6400c30b203f6dd9920dfc85ac49d8a949b72db"
+              },
+              "challenge": {
+                "rawRef": "p1",
+                "normalizedRef": "p1",
+                "originalId": "q1",
+                "candidateId": "q025-candidate-question:548e8e272fbc1348cec89487",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "548e8e272fbc1348cec89487c6400c30b203f6dd9920dfc85ac49d8a949b72db"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "pins": {
+              "challengeReceiptSha256": "7727606c3ac2822f2115a3204ddd0f96e3ae357e955cb916055a91ca777ebe44",
+              "challengeReplySha256": "9b667742a82f44a134cdeca5687dab3924e27dd2e83ef764ce8795e358f8656a",
+              "challengeRawSha256": "d73876b782024ef27168f89a6b1438824c5582f31848f6dfd99ba299306a375d",
+              "challengePacketSha256": "567581e81d15cb5c2d7516a2a422a418a9e0f403c5b32fb69e8b44487c81ee25",
+              "normalizationSha256": "3ab63ea0d5b1753020986440c9fc45b9b1535ca5e22b2cc3f9e6053a3294ee9a",
+              "proposalReceiptSha256": "c7ae3f8afb6243e6c3b1c08af9ef2aa388518efd49ee6e8cba2dd0e18865215d"
+            },
+            "originalProposal": {
+              "reviewId": "leaf-3195a8d62ae5b9dee03c-proposal",
+              "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-3195a8d62ae5b9dee03c-proposal",
+              "packetFile": "packet.json",
+              "packet.jsonSha256": "3b0f48e91bf227728af852d85ec211d55a2fdeaa7acb0a1757ed16e26f289644",
+              "reply.jsonSha256": "ee9d8d17f0ad62080868f53ba8dfac5587017e216966be8b05d9ca036d7b55a3",
+              "reply.raw.txtSha256": "dd85daa9f12ae48b69067d1d48c2ddde68e7e995b05bc3f7dea2d0952e2f3f3f",
+              "receipt.jsonSha256": "c7ae3f8afb6243e6c3b1c08af9ef2aa388518efd49ee6e8cba2dd0e18865215d",
+              "normalization.jsonSha256": "53e8d875282c119f00e211eb2a1b44f0e70f501c2ccb4fc0f016e3c59d4ff4e7",
+              "resolvedFromRequest": {
+                "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-3195a8d62ae5b9dee03c-challenge/dispatch-request.json",
+                "sha256": "bf28b1e3af7c3e4c158488f208a22ba868a0a5f8a783c2f5dade9d7ceafaec7d"
+              }
+            }
+          }
+        ],
+        "scopeDiagnosticRefresh": [],
+        "unitAnnotationFlagsWaived": false,
+        "premiseOrScopeConflictWaived": false
+      },
+      "admittedScope": {
+        "id": "q025-candidate-region:1b676e04cbd94e2caf104916",
+        "kind": "region",
+        "title": "Black-hole entropy, extremality and consistency questions",
+        "question": "How do specified changes to dynamics, entropy prescriptions or thermodynamic constraints affect black-hole entropy and extremality, and how do these questions connect to other entropy bounds and consistency tests?",
+        "summary": "This is a proposed navigation family. Its strongest common thread is the entropy–extremality response relation; several numerical neighbors address different targets. The original membership is usable for discovery, but does not establish scientific equivalence or a common consistency criterion.",
+        "scope": {
+          "systems": [
+            "Specified black holes, black branes and black strings",
+            "Perturbed thermodynamic systems underlying entropy–extremality arguments",
+            "Asymptotically AdS initial data and holographic comparison systems"
+          ],
+          "targets": [
+            "Entropy–extremality response identities and their conditions",
+            "Conditional entropy positivity and extremality constraints",
+            "Responses under alternative entropy prescriptions and thermodynamic constraints",
+            "Distinct neighboring questions about dynamical laws, collider thresholds, specific entropy and the Penrose inequality"
+          ],
+          "regimes": [
+            "Source-specific dimensions, asymptotics and horizon geometries",
+            "Perturbative action corrections and higher-derivative EFT",
+            "Near-extremal, exactly corrected zero-temperature and Nariai limits, distinguished explicitly"
+          ],
+          "assumptions": [
+            "No common entropy-positivity assumption is imposed on the entire family",
+            "WGC interpretations remain conditional and source-specific",
+            "Numerical membership supplies provenance, not scientific validation"
+          ],
+          "conventions": [
+            "Retain fixed variables, perturbation direction, horizon choice and endpoint separately",
+            "An increased charge-to-mass extremality bound is not a positive extremal-mass correction at fixed charge",
+            "Singleton identities preserve exact source questions without claiming cross-source uniqueness"
+          ],
+          "includes": [
+            "Ordinary thermodynamic and gravitational questions without a Swampland interpretation",
+            "Alternate homes for sources outside the narrower response-relation core"
+          ],
+          "excludes": [
+            "Equating fixed-mass entropy shifts with entropy shifts at corrected zero temperature",
+            "Treating action deformations, entropy replacements and uncertainty prescriptions as equivalent corrections",
+            "Inferring universal WGC validity or UV completion from model checks"
+          ]
+        },
+        "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+        "readingCoverage": {
+          "descriptionCheckedCount": 24,
+          "excerptCheckedCount": 9,
+          "readingLimit": "All supplied descriptions were read. Primary reading is limited to the supplied archived excerpts: one facet anchor and additional exact source-parent methodological/result/condition anchors where available; bounded original pages only, no images or full-paper verification. No original semantic region statement was supplied beyond candidate membership.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "evidenceIds": [
+          "unit:054a3aaa4e3655b7ef0555bfba63a5cd29ea65e6b526ee56432bc2fcf85fb217",
+          "unit:05cd4f24969a052c34c8179054503d486871b3aed4b1e1a358d1eb5d420df862",
+          "unit:0702b8a1df85cd2f038bbf2cb02964037dd5c07a76a319b8f3fc3068e4beb9dc",
+          "unit:0b54fd0f5f3814f2dfffd0c39c24992549b88467d27d245c5a1710aef6be0409",
+          "unit:2b3919215dc1fca229981ae3e7b23c3934cb596808b4edc4a419fc5185b8abaf",
+          "unit:316b6aba761439e7ba6e17cf62f24d43ea17ff33e0023bf9773e840882d386ba",
+          "unit:33c0d814c0b006cb08912b3f8bebb7b3656b611be8ea7d2b001ea9098c40936d",
+          "unit:3947265a02602d4ead1f5677bb7f9cf93b83dd37f3af973db538c2343acfe91a",
+          "unit:3c6fe1a3fbb93d537c10542256e163cc61ec0d243746307a6a6053def1ad0966",
+          "unit:43527b6acc9949962f85a2cb17ce8564be00d0dc88fcfe207376f9f97b0abc53",
+          "unit:4f0d1fc376ea4ae4f6e4db123c48391a5a9dd5cb1e02ee44f763cb5d8973334c",
+          "unit:57a7a2acf4ccbf7274c833c50127cdbf73951f3ee6f2fcc4e268829fb231e490",
+          "unit:61c8e0b22962446471f9a1fd2596a8c42b4f9d2f8adbb0365a087b2487dc82ea",
+          "unit:746648263d181074a402dd7e7b541e73c68a2669b150300a24df9fe061f4db9d",
+          "unit:753eb80972aeb4eef8bed36c3cb2d5095c7adbe4b7dcf803204ab2b1475b8eba",
+          "unit:8645df96e1d5a104c77d9fd0bdb5a08073bfedec34d3951354a6e84eedbcadb4",
+          "unit:88df84f42743eece8af1fa6e459123a00c600f2576ea257b282fa55b0c00f028",
+          "unit:9a8af3668541b2fe297df0e6b321c5a00f6bf829c6daac0c9c5116444be5642b",
+          "unit:b32f2bfc3e7e02031176bc3b4f7bd584734d74365f81b2b3656c004990e5bb02",
+          "unit:b5505445a85f89950ba6f38d799d36a1a46dac4f03dffa2e386a69b4c2895fb8",
+          "unit:bafc4b56732941e2a932db04d2397cd6650889120d1309550cb23ff4059e06f8",
+          "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "unit:da3b42fb5f4247edfd1bd072b8701216486945905a8766c825f60e221ca0ce61",
+          "unit:e8031fc404e3674cecf9260727208dd068349f5eaed7ca729a465c859af2255b"
+        ],
+        "methods": [],
+        "aliases": [],
+        "scopeDecisionId": "decision:scope:6ef773bf49585939ea0918fb",
+        "provenance": {
+          "recordId": "leaf-3195a8d62ae5b9dee03c-challenge:r",
+          "reviewIds": [
+            "leaf-3195a8d62ae5b9dee03c-proposal",
+            "leaf-3195a8d62ae5b9dee03c-challenge"
+          ],
+          "sourceProposalDefinitionUnchanged": true,
+          "canonicalIdentityStatus": "unreconciled_authored_scope",
+          "publicationStatus": "pending_canonical_organization_and_explicit_stage_status_copyedit",
+          "doesNotVerifyPhysicalResults": true,
+          "admissionJustificationFlags": [
+            {
+              "path": "$.cardReviews[0].note",
+              "length": 153,
+              "schemaMaxLength": 420,
+              "atSchemaCap": false,
+              "reasons": [
+                "clustered_short_unpunctuated_notes"
+              ],
+              "suffix": "cope accommodates ordinary thermodynamics and alternate targets without claiming equivalence. The nu",
+              "impact": "admission_justification",
+              "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+              "refs": [
+                "d0",
+                "d1",
+                "d2",
+                "d10",
+                "d15",
+                "e15",
+                "e16",
+                "e3"
+              ],
+              "cardId": "r"
+            }
+          ],
+          "annotationResolution": null,
+          "annotationFlagsDoNotAlterExactScopeDefinition": true
+        },
+        "scopeContentSha256": "01d0bfe6c2911b558a4743ba8c0d38de189dd724a13f75fd9607dc42078f87bd"
+      }
+    },
+    {
+      "source": {
+        "unitId": "unit:01bc0c8173b368aa08dc2f130a09e6ebb5f042128a0715452000f66f39cac321",
+        "paperId": "hep-ph/0507110",
+        "description": "Can KKLT-motivated mixed modulus–anomaly mediation with the MSSM on D7 branes yield acceptable electroweak breaking, a viable superpartner spectrum, and neutralino dark matter under the paper's experimental and cosmological constraints?",
+        "descriptionSha256": "f5f33ec29b58901375340da5e7853147fe9dd28011a216435d2e4ceb12e02793",
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-2386dc0b02ae434e5bc5-challenge/packet.actual.json",
+          "sha256": "a4d8cbac5d065414e47633b765d134e1393b5c89ec9996688b226b7ffafe6a64",
+          "bytes": 215354
+        }
+      },
+      "candidate": {
+        "unitId": "unit:01bc0c8173b368aa08dc2f130a09e6ebb5f042128a0715452000f66f39cac321",
+        "destinationId": "q025-candidate-region:4d6bdfd39abbaae85087b4a7",
+        "policyClass": "B_compound_whole_family_home",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "status": "pending_exact_same_policy_extension",
+        "scopeContentSha256": "d35c67377e3cfd8ff2a3538833e23595173ff9ed2f0d32d6817b4843b0b03e8f",
+        "scopeDecisionId": "decision:scope:864135f72fedd7ba3f55409f",
+        "sourceReviewIds": [
+          "leaf-2386dc0b02ae434e5bc5-challenge"
+        ],
+        "contexts": [
+          {
+            "reviewId": "leaf-2386dc0b02ae434e5bc5-challenge",
+            "proposal": {
+              "b": "excerpt",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p0",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p2",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf1",
+                "pf2",
+                "pf5",
+                "pf6",
+                "pf10",
+                "pf12",
+                "pf18",
+                "pf37"
+              ],
+              "refs": [
+                "e2",
+                "e8"
+              ],
+              "reason": "central",
+              "note": "Compound D7-MSSM spectrum, EWSB and relic targets. Neutralino dominance changes allowed spectra; viability statements use 2005 constraints.",
+              "home": "q0",
+              "identity": "s",
+              "title": "D7-brane KKLT mixed mediation and neutralino viability"
+            },
+            "challenge": {
+              "b": "excerpt",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p0",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p2",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf1",
+                "pf2",
+                "pf5",
+                "pf6",
+                "pf10",
+                "pf12",
+                "pf18",
+                "pf37"
+              ],
+              "refs": [
+                "e2",
+                "e8"
+              ],
+              "reason": "central",
+              "note": "Compound D7-MSSM spectrum, EWSB and relic targets. Neutralino dominance changes allowed regions; the reported viability uses 2005 constraints.",
+              "home": "p0",
+              "identity": "s",
+              "title": "D7-brane KKLT mixed mediation and neutralino viability"
+            },
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q0",
+                "normalizedRef": "p0",
+                "originalId": "q0",
+                "candidateId": "q025-candidate-question:c1acbd9e4487628b850d08b2",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "c1acbd9e4487628b850d08b200224be00fe8d9ced38ee5aa8b60d1feb40e08fa"
+              },
+              "challenge": {
+                "rawRef": "p0",
+                "normalizedRef": "p0",
+                "originalId": "q0",
+                "candidateId": "q025-candidate-question:c1acbd9e4487628b850d08b2",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "c1acbd9e4487628b850d08b200224be00fe8d9ced38ee5aa8b60d1feb40e08fa"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "pins": {
+              "challengeReceiptSha256": "28137b4dca192b46e96a493326cf3e782a2b46360dbf3bbf4977df7f59dd6daa",
+              "challengeReplySha256": "4d2c316506894141b8bdd5f1715c9860e39ac42b4fe3b88fb90e14cf2d4b7e63",
+              "challengeRawSha256": "6b4f3888c58597542ccb9a39392523e2763ab79f9557b66f3bbf8a6ca9846f21",
+              "challengePacketSha256": "a4d8cbac5d065414e47633b765d134e1393b5c89ec9996688b226b7ffafe6a64",
+              "normalizationSha256": "22c0c3851967e4cfb071007bcbfcfe3ef15b10769ee389615607f9475a0bc242",
+              "proposalReceiptSha256": "534efcc45fcb840fa88122df83417cc15e5df231a5997291d0b5d40a9df0e2b2"
+            },
+            "originalProposal": {
+              "reviewId": "leaf-2386dc0b02ae434e5bc5-proposal",
+              "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-2386dc0b02ae434e5bc5-proposal",
+              "packetFile": "packet.json",
+              "packet.jsonSha256": "d855b3bcbf8d1dea58d41ed7dd865b1986aa604d05f4f0f654eee8e1f6826dff",
+              "reply.jsonSha256": "647d262ed55bc5c590c41bfa745c0107eb2d0f173278fb0e4e36756e0efefbdb",
+              "reply.raw.txtSha256": "7d4c9da631ca698349c2749b5c22dee276e5180fc2bdecc5a437004f508b362c",
+              "receipt.jsonSha256": "534efcc45fcb840fa88122df83417cc15e5df231a5997291d0b5d40a9df0e2b2",
+              "normalization.jsonSha256": "24e66de1900015fc4db4395841f0ff921f55b32b8b15883345d8a5f5864797ce",
+              "resolvedFromRequest": {
+                "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-2386dc0b02ae434e5bc5-challenge/dispatch-request.json",
+                "sha256": "e966e5dbb9e666dd422e693e26225dbc60f3c89101f2df0aa61a906aa73e8a39"
+              }
+            }
+          }
+        ],
+        "scopeDiagnosticRefresh": [],
+        "unitAnnotationFlagsWaived": false,
+        "premiseOrScopeConflictWaived": false
+      },
+      "admittedScope": {
+        "id": "q025-candidate-region:4d6bdfd39abbaae85087b4a7",
+        "kind": "region",
+        "title": "Supersymmetry breaking, mediation and particle–cosmology scales",
+        "question": "How do proposed sources and mediation mechanisms of supersymmetry breaking connect particle spectra, electroweak scales, vacuum energy and cosmological viability, and what observations or conditional consistency arguments constrain them?",
+        "summary": "Original-scope assessment: only numerical memberships were supplied, without an original scientific scope statement. The descriptions support this broad organizing question, but not a single mechanism, universal quantum-gravity premise or common observational test. The proposed overview preserves ordinary supersymmetry phenomenology, conditional quantum-gravity extensions and useful alternate access.",
+        "scope": {
+          "systems": [
+            "Supersymmetric particle models and supergravity",
+            "String/M-theory compactifications and visible/hidden brane sectors",
+            "Early-universe supersymmetry-breaking, gravitino and moduli sectors",
+            "Adjacent non-abelian gauge, dark-dimension and scalar-screening systems"
+          ],
+          "targets": [
+            "Origin, mediation and inference of supersymmetry breaking",
+            "Soft spectra, flavor control and electroweak hierarchy",
+            "Vacuum energy and cosmological viability",
+            "Conditional quantum-gravity relations among particle and cosmological scales"
+          ],
+          "regimes": [
+            "Source-specific low-, intermediate- and high-scale supersymmetry",
+            "Thermal evolution, inflationary relaxation and rolling quintessence where stated",
+            "Classical, radiative, near-Minkowski, AdS and positive-energy settings kept distinct",
+            "Four-dimensional effective models and higher-dimensional constructions where explicitly supplied"
+          ],
+          "assumptions": [
+            "Numerical membership is a retrieval proposal",
+            "Mediation, vacuum-selection, naturalness and conjectural assumptions remain source-specific",
+            "Experimental constraints and forecasts retain their source dates"
+          ],
+          "conventions": [
+            "Vacuum-energy density, gravitino mass and supersymmetry-breaking scales are not interchangeable",
+            "No universal naturalness measure or Planck-mass convention is imposed",
+            "Unresolved extracted equation glyphs remain unresolved"
+          ],
+          "includes": [
+            "Ordinary and pre-Swampland work",
+            "Construction questions, phenomenological tests and checks of proposed premises",
+            "Source-scoped singleton access for distinct questions and compound questions"
+          ],
+          "excludes": [
+            "Treating numerical proximity as scientific equivalence",
+            "Unconditional experimental or quantum-gravity conclusions",
+            "Treating scalar screening as an established supersymmetry-breaking mechanism"
+          ]
+        },
+        "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+        "readingCoverage": {
+          "descriptionCheckedCount": 40,
+          "excerptCheckedCount": 10,
+          "readingLimit": "Supplied descriptions and bounded archived primary pages only; no images, complete derivations, full-paper verification or updated experimental assessment. Source-object and graph context retain their stated evidential limits. This newly authored region remains a proposal requiring independent review.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "evidenceIds": [
+          "unit:01bc0c8173b368aa08dc2f130a09e6ebb5f042128a0715452000f66f39cac321",
+          "unit:06d0fff814a1ccfbc9c6fc6722b6a758f63b71fbbda46dffd5e1745f57d4723b",
+          "unit:0ace88b90adb2b0ad9517509d8f54ccdf700eb16a9e5f6565febf4fccaafa5be",
+          "unit:0d525c9f5e14caffc01d4336fe6c35719270c11af023ab0194298a8ee1633d8f",
+          "unit:0de09fc89be45aa7aed25bbcdc28100471fa55c8fc0f8ca8e3601ac41f6a3d12",
+          "unit:11c64a9574c7812ca866ffe455dfa66bb99851524485b81fd996e966bf19d13f",
+          "unit:1b3f60d668b6e5e34f7d802825aca8a7da3d450a02c8871cc663009dcd0c4c9b",
+          "unit:1d39a7630ee3159f91ad89bdf62c078a4dd1b6675a5f1dcaea10c449cf9d24f6",
+          "unit:2ddfcadcceb2aea604a04a0a6c73f83a49b1a8e522236751e37c2da6bad3220d",
+          "unit:356c33f119fd2002b7bfe3f5f27ec5ba96d0563691b3112342edaf46623fab53",
+          "unit:4331be7cb1ef5b8888984ef61f04719c84ee8920565e48ab0fe0ba72c71b43a0",
+          "unit:45d4b4ad8550bdbdc0c2b8b0b231e4802095910fec1c356277c544d8d63b79f0",
+          "unit:489527604010e8c1e725a9b31da69776b13eee8a095805148e026e832702ce11",
+          "unit:4e46e8a6e98d00a4b93a3d78291fea1340276a1f49811129d1d7ba403c007d88",
+          "unit:6131a6c0aa4375fe3b59d41504466f7b76de87a8815953a9c3ec2646e852962b",
+          "unit:66f2128fe3c730b2c6401827e2da1852e7022d1fbc910e8bdfa4ea219db44ee9",
+          "unit:6f4bd85cba9e7fa6775a09acf61cb878ef117b3cc5044b200147abb7a136e6b7",
+          "unit:72784e5fa42228a07fbb4371b3ca08be6b570d412a30841e500d2629c5cd8cee",
+          "unit:86bdd8dbc9e3994b23ea8394c40a8c95b2c6cf1488c02715afa36663c68c2495",
+          "unit:9e5952f58d1093b7e27464d4f68812d21a4f260a925be01f9666a58dfadb9e07",
+          "unit:a89ad673796c91d6a0bd8f292dde9faae5fb686f291bb1208aa3d4b66da55f97",
+          "unit:ab871d7619e7955fe098f2140aba6103cfaf8991943cfa38ba18b6b2dca0f666",
+          "unit:acfa3c138fe7f7b17c784ccfc8c8cea3c9281ba86224d642963559b38f4a1c7c",
+          "unit:adf249b07b18434ba58b71fbc9873ff45a6694164faf5f0759e34b3b5fba5174",
+          "unit:b7c0477228ebecae4aeec4d61ab1f908d3c903bf7bf94310f23d46c3290edbaf",
+          "unit:b9ada24dac412b144c1bfeec0199298988d608716c31cff05842d849994b456d",
+          "unit:ba2db2d76dd6ce5790bb60ec53801f7a3dcc9b3b31008a748cc4b2135a5fc45f",
+          "unit:baf2aa38f63d81357a05339a0c1969e63893d8ad15b7701e3421726cad0c66e7",
+          "unit:c0939c5f7d452074b0f8f661a7a753e218ece5c8f215491d476a15ebe0124af2",
+          "unit:c5bbd61b6ffbf7b3b79c246c42a374c29e65fddd4a97dcf1bf088ac9a6b9b921",
+          "unit:c656e3015e47f1c8f03051c24f2999d157f01024b3bbfe258f7becd3c312a859",
+          "unit:c85f81c5a449a568894fda092cbbcd10adb8c797ffb1e7ef9afea547ca5f1d49",
+          "unit:ca6d1f2005c083a30e87c83b44eeb0a494da020a23c79f5c5ec57677c042cf8a",
+          "unit:d6c532a0767d19c246874778435da569beb823103147b8652f709c74bb673463",
+          "unit:def0cc0aaaca0f3f633f056025e839e8d87045631214f1060e58c46d7001255d",
+          "unit:e292d6f025aad66121d75508a8aa35844e2add144cb61d853c67b6b73c559f23",
+          "unit:e479b47323dd61aa7b752344d8e7943fce5039396e6e8dc59a7508f11be0c59e",
+          "unit:ea468168deccbaf5737c0a01b59625146a2687e04e22d35ea765ea482bbbfa82",
+          "unit:f12074876d2226dff1c73eb66784473fe6b8027a2e23b350b437f6572f3fb433",
+          "unit:f6b94df4b49821cf5e06d15c3f6aaba63616b2a1ed719390809dc5b594178351"
+        ],
+        "methods": [],
+        "aliases": [],
+        "scopeDecisionId": "decision:scope:864135f72fedd7ba3f55409f",
+        "provenance": {
+          "recordId": "leaf-2386dc0b02ae434e5bc5-challenge:r",
+          "reviewIds": [
+            "leaf-2386dc0b02ae434e5bc5-proposal",
+            "leaf-2386dc0b02ae434e5bc5-challenge"
+          ],
+          "sourceProposalDefinitionUnchanged": true,
+          "canonicalIdentityStatus": "unreconciled_authored_scope",
+          "publicationStatus": "pending_canonical_organization_and_explicit_stage_status_copyedit",
+          "doesNotVerifyPhysicalResults": true,
+          "admissionJustificationFlags": [
+            {
+              "path": "$.cardReviews[8].note",
+              "length": 156,
+              "schemaMaxLength": 420,
+              "atSchemaCap": false,
+              "reasons": [
+                "trailing_space_or_hyphen",
+                "clustered_short_unpunctuated_notes"
+              ],
+              "suffix": "rogeneous navigation scope, independently of narrower cards. Original numerical membership does not ",
+              "impact": "admission_justification",
+              "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+              "refs": [
+                "d6",
+                "e7",
+                "e8",
+                "e15",
+                "e20",
+                "d16",
+                "e11",
+                "e19"
+              ],
+              "cardId": "r"
+            }
+          ],
+          "annotationResolution": null,
+          "annotationFlagsDoNotAlterExactScopeDefinition": true
+        },
+        "scopeContentSha256": "d35c67377e3cfd8ff2a3538833e23595173ff9ed2f0d32d6817b4843b0b03e8f"
+      }
+    },
+    {
+      "source": {
+        "unitId": "unit:0ace88b90adb2b0ad9517509d8f54ccdf700eb16a9e5f6565febf4fccaafa5be",
+        "paperId": "hep-ph/0509225",
+        "description": "How does comparable modulus and anomaly mediation in KKLT compactifications affect the low-energy sparticle spectrum, electroweak symmetry breaking, and the composition of a possible neutralino dark-matter candidate?",
+        "descriptionSha256": "3d8c75187ff736f04567e61ae1af5b867452024fdf1f8c7809ad87f198fec72c",
+        "packet": {
+          "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-2386dc0b02ae434e5bc5-challenge/packet.actual.json",
+          "sha256": "a4d8cbac5d065414e47633b765d134e1393b5c89ec9996688b226b7ffafe6a64",
+          "bytes": 215354
+        }
+      },
+      "candidate": {
+        "unitId": "unit:0ace88b90adb2b0ad9517509d8f54ccdf700eb16a9e5f6565febf4fccaafa5be",
+        "destinationId": "q025-candidate-region:4d6bdfd39abbaae85087b4a7",
+        "policyClass": "B_compound_whole_family_home",
+        "proposedRole": "member",
+        "proposedWeight": 1,
+        "status": "pending_exact_same_policy_extension",
+        "scopeContentSha256": "d35c67377e3cfd8ff2a3538833e23595173ff9ed2f0d32d6817b4843b0b03e8f",
+        "scopeDecisionId": "decision:scope:864135f72fedd7ba3f55409f",
+        "sourceReviewIds": [
+          "leaf-2386dc0b02ae434e5bc5-challenge"
+        ],
+        "contexts": [
+          {
+            "reviewId": "leaf-2386dc0b02ae434e5bc5-challenge",
+            "proposal": {
+              "b": "description",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p0",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p2",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf2",
+                "pf5",
+                "pf6",
+                "pf10",
+                "pf12",
+                "pf18"
+              ],
+              "refs": [],
+              "reason": "specialized",
+              "note": "Compound spectrum, EWSB and neutralino-composition targets; candidate composition alone does not establish relic-abundance viability.",
+              "home": "q0",
+              "identity": "s",
+              "title": "KKLT mixed-mediation spectra and neutralino composition"
+            },
+            "challenge": {
+              "b": "description",
+              "d": "member",
+              "q": [
+                {
+                  "id": "p0",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p1",
+                  "role": "specializes"
+                },
+                {
+                  "id": "p2",
+                  "role": "specializes"
+                }
+              ],
+              "f": [
+                "pf2",
+                "pf5",
+                "pf6",
+                "pf10",
+                "pf12",
+                "pf18"
+              ],
+              "refs": [],
+              "reason": "specialized",
+              "note": "Compound spectrum, EWSB and neutralino-composition targets. Candidate composition does not establish acceptable relic abundance.",
+              "home": "p0",
+              "identity": "s",
+              "title": "KKLT mixed-mediation spectra and neutralino composition"
+            },
+            "homeAgreement": {
+              "proposal": {
+                "rawRef": "q0",
+                "normalizedRef": "p0",
+                "originalId": "q0",
+                "candidateId": "q025-candidate-question:c1acbd9e4487628b850d08b2",
+                "status": "exact_card_reference",
+                "normalization": "explicit_originalId_to_prior_id",
+                "definitionFingerprint": "c1acbd9e4487628b850d08b200224be00fe8d9ced38ee5aa8b60d1feb40e08fa"
+              },
+              "challenge": {
+                "rawRef": "p0",
+                "normalizedRef": "p0",
+                "originalId": "q0",
+                "candidateId": "q025-candidate-question:c1acbd9e4487628b850d08b2",
+                "status": "exact_card_reference",
+                "normalization": "exact_id",
+                "definitionFingerprint": "c1acbd9e4487628b850d08b200224be00fe8d9ced38ee5aa8b60d1feb40e08fa"
+              },
+              "proposalDefinitionMatchesPinnedOriginal": true,
+              "sameExplicitScientificCard": true,
+              "unchangedSupportedScope": true,
+              "placementAdmission": false
+            },
+            "pins": {
+              "challengeReceiptSha256": "28137b4dca192b46e96a493326cf3e782a2b46360dbf3bbf4977df7f59dd6daa",
+              "challengeReplySha256": "4d2c316506894141b8bdd5f1715c9860e39ac42b4fe3b88fb90e14cf2d4b7e63",
+              "challengeRawSha256": "6b4f3888c58597542ccb9a39392523e2763ab79f9557b66f3bbf8a6ca9846f21",
+              "challengePacketSha256": "a4d8cbac5d065414e47633b765d134e1393b5c89ec9996688b226b7ffafe6a64",
+              "normalizationSha256": "22c0c3851967e4cfb071007bcbfcfe3ef15b10769ee389615607f9475a0bc242",
+              "proposalReceiptSha256": "534efcc45fcb840fa88122df83417cc15e5df231a5997291d0b5d40a9df0e2b2"
+            },
+            "originalProposal": {
+              "reviewId": "leaf-2386dc0b02ae434e5bc5-proposal",
+              "artifactDirectory": "full-pass/native-local/full-leaf-wave-v3/jobs/leaf-2386dc0b02ae434e5bc5-proposal",
+              "packetFile": "packet.json",
+              "packet.jsonSha256": "d855b3bcbf8d1dea58d41ed7dd865b1986aa604d05f4f0f654eee8e1f6826dff",
+              "reply.jsonSha256": "647d262ed55bc5c590c41bfa745c0107eb2d0f173278fb0e4e36756e0efefbdb",
+              "reply.raw.txtSha256": "7d4c9da631ca698349c2749b5c22dee276e5180fc2bdecc5a437004f508b362c",
+              "receipt.jsonSha256": "534efcc45fcb840fa88122df83417cc15e5df231a5997291d0b5d40a9df0e2b2",
+              "normalization.jsonSha256": "24e66de1900015fc4db4395841f0ff921f55b32b8b15883345d8a5f5864797ce",
+              "resolvedFromRequest": {
+                "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-2386dc0b02ae434e5bc5-challenge/dispatch-request.json",
+                "sha256": "e966e5dbb9e666dd422e693e26225dbc60f3c89101f2df0aa61a906aa73e8a39"
+              }
+            }
+          }
+        ],
+        "scopeDiagnosticRefresh": [],
+        "unitAnnotationFlagsWaived": false,
+        "premiseOrScopeConflictWaived": false
+      },
+      "admittedScope": {
+        "id": "q025-candidate-region:4d6bdfd39abbaae85087b4a7",
+        "kind": "region",
+        "title": "Supersymmetry breaking, mediation and particle–cosmology scales",
+        "question": "How do proposed sources and mediation mechanisms of supersymmetry breaking connect particle spectra, electroweak scales, vacuum energy and cosmological viability, and what observations or conditional consistency arguments constrain them?",
+        "summary": "Original-scope assessment: only numerical memberships were supplied, without an original scientific scope statement. The descriptions support this broad organizing question, but not a single mechanism, universal quantum-gravity premise or common observational test. The proposed overview preserves ordinary supersymmetry phenomenology, conditional quantum-gravity extensions and useful alternate access.",
+        "scope": {
+          "systems": [
+            "Supersymmetric particle models and supergravity",
+            "String/M-theory compactifications and visible/hidden brane sectors",
+            "Early-universe supersymmetry-breaking, gravitino and moduli sectors",
+            "Adjacent non-abelian gauge, dark-dimension and scalar-screening systems"
+          ],
+          "targets": [
+            "Origin, mediation and inference of supersymmetry breaking",
+            "Soft spectra, flavor control and electroweak hierarchy",
+            "Vacuum energy and cosmological viability",
+            "Conditional quantum-gravity relations among particle and cosmological scales"
+          ],
+          "regimes": [
+            "Source-specific low-, intermediate- and high-scale supersymmetry",
+            "Thermal evolution, inflationary relaxation and rolling quintessence where stated",
+            "Classical, radiative, near-Minkowski, AdS and positive-energy settings kept distinct",
+            "Four-dimensional effective models and higher-dimensional constructions where explicitly supplied"
+          ],
+          "assumptions": [
+            "Numerical membership is a retrieval proposal",
+            "Mediation, vacuum-selection, naturalness and conjectural assumptions remain source-specific",
+            "Experimental constraints and forecasts retain their source dates"
+          ],
+          "conventions": [
+            "Vacuum-energy density, gravitino mass and supersymmetry-breaking scales are not interchangeable",
+            "No universal naturalness measure or Planck-mass convention is imposed",
+            "Unresolved extracted equation glyphs remain unresolved"
+          ],
+          "includes": [
+            "Ordinary and pre-Swampland work",
+            "Construction questions, phenomenological tests and checks of proposed premises",
+            "Source-scoped singleton access for distinct questions and compound questions"
+          ],
+          "excludes": [
+            "Treating numerical proximity as scientific equivalence",
+            "Unconditional experimental or quantum-gravity conclusions",
+            "Treating scalar screening as an established supersymmetry-breaking mechanism"
+          ]
+        },
+        "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+        "readingCoverage": {
+          "descriptionCheckedCount": 40,
+          "excerptCheckedCount": 10,
+          "readingLimit": "Supplied descriptions and bounded archived primary pages only; no images, complete derivations, full-paper verification or updated experimental assessment. Source-object and graph context retain their stated evidential limits. This newly authored region remains a proposal requiring independent review.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "evidenceIds": [
+          "unit:01bc0c8173b368aa08dc2f130a09e6ebb5f042128a0715452000f66f39cac321",
+          "unit:06d0fff814a1ccfbc9c6fc6722b6a758f63b71fbbda46dffd5e1745f57d4723b",
+          "unit:0ace88b90adb2b0ad9517509d8f54ccdf700eb16a9e5f6565febf4fccaafa5be",
+          "unit:0d525c9f5e14caffc01d4336fe6c35719270c11af023ab0194298a8ee1633d8f",
+          "unit:0de09fc89be45aa7aed25bbcdc28100471fa55c8fc0f8ca8e3601ac41f6a3d12",
+          "unit:11c64a9574c7812ca866ffe455dfa66bb99851524485b81fd996e966bf19d13f",
+          "unit:1b3f60d668b6e5e34f7d802825aca8a7da3d450a02c8871cc663009dcd0c4c9b",
+          "unit:1d39a7630ee3159f91ad89bdf62c078a4dd1b6675a5f1dcaea10c449cf9d24f6",
+          "unit:2ddfcadcceb2aea604a04a0a6c73f83a49b1a8e522236751e37c2da6bad3220d",
+          "unit:356c33f119fd2002b7bfe3f5f27ec5ba96d0563691b3112342edaf46623fab53",
+          "unit:4331be7cb1ef5b8888984ef61f04719c84ee8920565e48ab0fe0ba72c71b43a0",
+          "unit:45d4b4ad8550bdbdc0c2b8b0b231e4802095910fec1c356277c544d8d63b79f0",
+          "unit:489527604010e8c1e725a9b31da69776b13eee8a095805148e026e832702ce11",
+          "unit:4e46e8a6e98d00a4b93a3d78291fea1340276a1f49811129d1d7ba403c007d88",
+          "unit:6131a6c0aa4375fe3b59d41504466f7b76de87a8815953a9c3ec2646e852962b",
+          "unit:66f2128fe3c730b2c6401827e2da1852e7022d1fbc910e8bdfa4ea219db44ee9",
+          "unit:6f4bd85cba9e7fa6775a09acf61cb878ef117b3cc5044b200147abb7a136e6b7",
+          "unit:72784e5fa42228a07fbb4371b3ca08be6b570d412a30841e500d2629c5cd8cee",
+          "unit:86bdd8dbc9e3994b23ea8394c40a8c95b2c6cf1488c02715afa36663c68c2495",
+          "unit:9e5952f58d1093b7e27464d4f68812d21a4f260a925be01f9666a58dfadb9e07",
+          "unit:a89ad673796c91d6a0bd8f292dde9faae5fb686f291bb1208aa3d4b66da55f97",
+          "unit:ab871d7619e7955fe098f2140aba6103cfaf8991943cfa38ba18b6b2dca0f666",
+          "unit:acfa3c138fe7f7b17c784ccfc8c8cea3c9281ba86224d642963559b38f4a1c7c",
+          "unit:adf249b07b18434ba58b71fbc9873ff45a6694164faf5f0759e34b3b5fba5174",
+          "unit:b7c0477228ebecae4aeec4d61ab1f908d3c903bf7bf94310f23d46c3290edbaf",
+          "unit:b9ada24dac412b144c1bfeec0199298988d608716c31cff05842d849994b456d",
+          "unit:ba2db2d76dd6ce5790bb60ec53801f7a3dcc9b3b31008a748cc4b2135a5fc45f",
+          "unit:baf2aa38f63d81357a05339a0c1969e63893d8ad15b7701e3421726cad0c66e7",
+          "unit:c0939c5f7d452074b0f8f661a7a753e218ece5c8f215491d476a15ebe0124af2",
+          "unit:c5bbd61b6ffbf7b3b79c246c42a374c29e65fddd4a97dcf1bf088ac9a6b9b921",
+          "unit:c656e3015e47f1c8f03051c24f2999d157f01024b3bbfe258f7becd3c312a859",
+          "unit:c85f81c5a449a568894fda092cbbcd10adb8c797ffb1e7ef9afea547ca5f1d49",
+          "unit:ca6d1f2005c083a30e87c83b44eeb0a494da020a23c79f5c5ec57677c042cf8a",
+          "unit:d6c532a0767d19c246874778435da569beb823103147b8652f709c74bb673463",
+          "unit:def0cc0aaaca0f3f633f056025e839e8d87045631214f1060e58c46d7001255d",
+          "unit:e292d6f025aad66121d75508a8aa35844e2add144cb61d853c67b6b73c559f23",
+          "unit:e479b47323dd61aa7b752344d8e7943fce5039396e6e8dc59a7508f11be0c59e",
+          "unit:ea468168deccbaf5737c0a01b59625146a2687e04e22d35ea765ea482bbbfa82",
+          "unit:f12074876d2226dff1c73eb66784473fe6b8027a2e23b350b437f6572f3fb433",
+          "unit:f6b94df4b49821cf5e06d15c3f6aaba63616b2a1ed719390809dc5b594178351"
+        ],
+        "methods": [],
+        "aliases": [],
+        "scopeDecisionId": "decision:scope:864135f72fedd7ba3f55409f",
+        "provenance": {
+          "recordId": "leaf-2386dc0b02ae434e5bc5-challenge:r",
+          "reviewIds": [
+            "leaf-2386dc0b02ae434e5bc5-proposal",
+            "leaf-2386dc0b02ae434e5bc5-challenge"
+          ],
+          "sourceProposalDefinitionUnchanged": true,
+          "canonicalIdentityStatus": "unreconciled_authored_scope",
+          "publicationStatus": "pending_canonical_organization_and_explicit_stage_status_copyedit",
+          "doesNotVerifyPhysicalResults": true,
+          "admissionJustificationFlags": [
+            {
+              "path": "$.cardReviews[8].note",
+              "length": 156,
+              "schemaMaxLength": 420,
+              "atSchemaCap": false,
+              "reasons": [
+                "trailing_space_or_hyphen",
+                "clustered_short_unpunctuated_notes"
+              ],
+              "suffix": "rogeneous navigation scope, independently of narrower cards. Original numerical membership does not ",
+              "impact": "admission_justification",
+              "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+              "refs": [
+                "d6",
+                "e7",
+                "e8",
+                "e15",
+                "e20",
+                "d16",
+                "e11",
+                "e19"
+              ],
+              "cardId": "r"
+            }
+          ],
+          "annotationResolution": null,
+          "annotationFlagsDoNotAlterExactScopeDefinition": true
+        },
+        "scopeContentSha256": "d35c67377e3cfd8ff2a3538833e23595173ff9ed2f0d32d6817b4843b0b03e8f"
+      }
+    }
+  ]
+}

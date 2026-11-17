@@ -1,0 +1,303 @@
+{
+  "inputs": [
+    {
+      "path": "research/q025/assembly/organization-v4/candidate-v1/aggregate.local.json",
+      "sha256": "4a88672331f46c299c3da9d91f905f46377e0ff29d933d6f72e835f699bd2dbe",
+      "bytes": 72030888
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/parent-navigation-candidates-v5-20261117T135430Z.json",
+      "sha256": "b5961e5664de6ae3ed8056f361a2490fc05c183fbdb2961a811b0df88ac05556",
+      "bytes": 8516204
+    },
+    {
+      "path": "research/q025/assembly/organization-residual-v1/access-certificates.local.json",
+      "sha256": "17586b6c541d1f687ea51438df5aef449fb0c1502c875c7e93e4befca49d844a",
+      "bytes": 31969626
+    }
+  ],
+  "candidateNativePlusAdmittedBefore": {
+    "scientificDestinations": 1646,
+    "destinationsWithAnyChoice": 1401,
+    "maxDistinctChoices": 23,
+    "moreThan15": 6,
+    "distinctChoiceHistogram": {
+      "0": 245,
+      "1": 692,
+      "2": 294,
+      "3": 138,
+      "4": 89,
+      "5": 44,
+      "6": 44,
+      "7": 17,
+      "8": 14,
+      "9": 16,
+      "10": 15,
+      "11": 19,
+      "12": 4,
+      "13": 6,
+      "14": 2,
+      "15": 1,
+      "17": 2,
+      "19": 2,
+      "22": 1,
+      "23": 1
+    },
+    "crowdedDestinations": [
+      {
+        "id": "q025-candidate-question:4d926fd69f6bc59cf12f6050",
+        "title": "Moduli stabilization and compatibility of vacuum ingredients",
+        "kind": "question",
+        "distinctChoices": 23,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 2,
+          "narrows:outgoing": 5,
+          "related:outgoing": 3,
+          "application:outgoing": 7,
+          "method:outgoing": 2,
+          "comparison:outgoing": 3,
+          "premise_check:outgoing": 2
+        }
+      },
+      {
+        "id": "q025-candidate-question:1ca579a906621f6bd2f2643a",
+        "title": "Brane engineering, holography and microscopic formulations",
+        "kind": "question",
+        "distinctChoices": 22,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 1,
+          "method:outgoing": 8,
+          "application:outgoing": 6,
+          "narrows:outgoing": 4,
+          "related:outgoing": 2,
+          "comparison:outgoing": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:6713a07b5b30dacb0268a4bf",
+        "title": "Inflation and alternative origins of structure",
+        "kind": "question",
+        "distinctChoices": 19,
+        "incidentArcsByTypeAndTraversal": {
+          "related:outgoing": 1,
+          "narrows:outgoing": 13,
+          "comparison:incoming": 1,
+          "narrows:incoming": 1,
+          "comparison:outgoing": 1,
+          "method:outgoing": 1,
+          "application:outgoing": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:4d35ecaac6f6200acc8ed5c5",
+        "title": "Effective actions and controlled compactification descriptions",
+        "kind": "question",
+        "distinctChoices": 19,
+        "incidentArcsByTypeAndTraversal": {
+          "method:incoming": 3,
+          "method:outgoing": 5,
+          "narrows:outgoing": 3,
+          "comparison:outgoing": 2,
+          "application:outgoing": 2,
+          "premise_check:outgoing": 3,
+          "related:outgoing": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:b675e7dd132c628539732073",
+        "title": "Mechanisms for accelerated expansion",
+        "kind": "question",
+        "distinctChoices": 17,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 2,
+          "narrows:outgoing": 9,
+          "method:outgoing": 2,
+          "premise_check:outgoing": 1,
+          "related:outgoing": 2,
+          "comparison:outgoing": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:3807e422776615534282c7e2",
+        "title": "Candidates and cosmic origins",
+        "kind": "question",
+        "distinctChoices": 17,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 2,
+          "related:outgoing": 7,
+          "method:outgoing": 4,
+          "narrows:outgoing": 2,
+          "comparison:outgoing": 1,
+          "premise_check:outgoing": 1
+        }
+      }
+    ],
+    "countsExcludeSourceFacetsAndClassification": true,
+    "incomingTraversalIsAccessNotConverseScientificAssertion": true
+  },
+  "sameCandidateGraphPlusProposedAccess": {
+    "scientificDestinations": 1646,
+    "destinationsWithAnyChoice": 1592,
+    "maxDistinctChoices": 23,
+    "moreThan15": 6,
+    "distinctChoiceHistogram": {
+      "0": 54,
+      "1": 333,
+      "2": 490,
+      "3": 247,
+      "4": 133,
+      "5": 108,
+      "6": 67,
+      "7": 59,
+      "8": 35,
+      "9": 34,
+      "10": 20,
+      "11": 26,
+      "12": 15,
+      "13": 8,
+      "14": 6,
+      "15": 5,
+      "17": 1,
+      "19": 2,
+      "20": 1,
+      "22": 1,
+      "23": 1
+    },
+    "crowdedDestinations": [
+      {
+        "id": "q025-candidate-question:4d926fd69f6bc59cf12f6050",
+        "title": "Moduli stabilization and compatibility of vacuum ingredients",
+        "kind": "question",
+        "distinctChoices": 23,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 2,
+          "narrows:outgoing": 5,
+          "related:outgoing": 3,
+          "application:outgoing": 7,
+          "method:outgoing": 2,
+          "comparison:outgoing": 3,
+          "premise_check:outgoing": 2
+        }
+      },
+      {
+        "id": "q025-candidate-question:1ca579a906621f6bd2f2643a",
+        "title": "Brane engineering, holography and microscopic formulations",
+        "kind": "question",
+        "distinctChoices": 22,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 1,
+          "method:outgoing": 8,
+          "application:outgoing": 6,
+          "narrows:outgoing": 4,
+          "related:outgoing": 2,
+          "comparison:outgoing": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:6713a07b5b30dacb0268a4bf",
+        "title": "Inflation and alternative origins of structure",
+        "kind": "question",
+        "distinctChoices": 20,
+        "incidentArcsByTypeAndTraversal": {
+          "related:outgoing": 1,
+          "narrows:outgoing": 13,
+          "comparison:incoming": 1,
+          "narrows:incoming": 1,
+          "comparison:outgoing": 1,
+          "method:outgoing": 1,
+          "application:outgoing": 1,
+          "derived_organizational_access:incoming": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:b675e7dd132c628539732073",
+        "title": "Mechanisms for accelerated expansion",
+        "kind": "question",
+        "distinctChoices": 19,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 2,
+          "narrows:outgoing": 9,
+          "method:outgoing": 2,
+          "premise_check:outgoing": 1,
+          "related:outgoing": 2,
+          "comparison:outgoing": 1,
+          "derived_organizational_access:incoming": 2
+        }
+      },
+      {
+        "id": "q025-candidate-question:4d35ecaac6f6200acc8ed5c5",
+        "title": "Effective actions and controlled compactification descriptions",
+        "kind": "question",
+        "distinctChoices": 19,
+        "incidentArcsByTypeAndTraversal": {
+          "method:incoming": 3,
+          "method:outgoing": 5,
+          "narrows:outgoing": 3,
+          "comparison:outgoing": 2,
+          "application:outgoing": 2,
+          "premise_check:outgoing": 3,
+          "related:outgoing": 1
+        }
+      },
+      {
+        "id": "q025-candidate-question:3807e422776615534282c7e2",
+        "title": "Candidates and cosmic origins",
+        "kind": "question",
+        "distinctChoices": 17,
+        "incidentArcsByTypeAndTraversal": {
+          "narrows:incoming": 2,
+          "related:outgoing": 7,
+          "method:outgoing": 4,
+          "narrows:outgoing": 2,
+          "comparison:outgoing": 1,
+          "premise_check:outgoing": 1,
+          "derived_organizational_access:incoming": 2
+        }
+      }
+    ],
+    "countsExcludeSourceFacetsAndClassification": true,
+    "incomingTraversalIsAccessNotConverseScientificAssertion": true
+  },
+  "admittedOnlyBefore": {
+    "scientificDestinations": 1646,
+    "destinationsWithAnyChoice": 4,
+    "maxDistinctChoices": 3,
+    "moreThan15": 0,
+    "distinctChoiceHistogram": {
+      "0": 1642,
+      "1": 1,
+      "2": 2,
+      "3": 1
+    },
+    "crowdedDestinations": [],
+    "countsExcludeSourceFacetsAndClassification": true,
+    "incomingTraversalIsAccessNotConverseScientificAssertion": true
+  },
+  "admittedPlusProposedAccess": {
+    "scientificDestinations": 1646,
+    "destinationsWithAnyChoice": 1116,
+    "maxDistinctChoices": 15,
+    "moreThan15": 0,
+    "distinctChoiceHistogram": {
+      "0": 530,
+      "1": 856,
+      "2": 102,
+      "3": 24,
+      "4": 13,
+      "5": 22,
+      "6": 24,
+      "7": 24,
+      "8": 15,
+      "9": 18,
+      "10": 9,
+      "11": 3,
+      "12": 3,
+      "15": 3
+    },
+    "crowdedDestinations": [],
+    "countsExcludeSourceFacetsAndClassification": true,
+    "incomingTraversalIsAccessNotConverseScientificAssertion": true
+  },
+  "newDistinctEndpointPairsRelativeToCandidateNative": 1011,
+  "limitation": "Candidate native route types/directions remain unadmitted. These are choice-count and accessibility diagnostics, not containment or full-release coverage."
+}

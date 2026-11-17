@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "q025-admission-continuation-report/3",
+  "counts": {
+    "acceptedScopes": 1614,
+    "acceptedQuestionScopes": 1418,
+    "acceptedRegionScopes": 196,
+    "acceptedTypedContributions": 13185,
+    "addedScopes": 6,
+    "addedTypedRoles": 5,
+    "addedBroadRepresentativeScopes": 2,
+    "addedRoleBasis": {
+      "source_excerpt_checked": 5
+    },
+    "excludedScopeRecords": 186,
+    "excludedRoles": 754,
+    "resolvedScopeAssessmentNotesApplied": 30,
+    "newHomes": 0,
+    "newIdentities": 0,
+    "newRelations": 0,
+    "carried124RolesAdmitted": 0
+  },
+  "component": {
+    "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+    "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa",
+    "bytes": 55400676
+  },
+  "receipt": {
+    "path": "research/q025/evaluation/full-pass/admissions-v5/scope-role-admission-v5.json",
+    "sha256": "b6da4e2ef0727fa782fbbc4c0acb4ee546e2c0ed072e0e7a295b9f04a618f0e3",
+    "bytes": 26151
+  },
+  "compiler": {
+    "path": "research/q025/evaluation/full-pass/admissions-v5/compile_final_parent_delta.py",
+    "sha256": "1e7e7ce2cf27ee673a112612e4705aefd328df282363c4fa4064ff2986344e52"
+  },
+  "exclusionReasons": {
+    "limits_require_adjudication": 140,
+    "unresolved_scope_change": 2,
+    "new_challenger_proposal": 2,
+    "no_exact_representative_source_unit_for_scope": 3,
+    "explicitly_adjudicated_scope_pending_final_organization": 1,
+    "explicitly_admitted_scope": 8,
+    "explicitly_admitted_canonical_pilot_scope_global_identity_pending": 30
+  },
+  "roleExclusionReasons": {
+    "explicit_changed_regime_or_scope_mismatch": 673,
+    "no_exact_independent_role_agreement": 81
+  },
+  "representativeNewScopes": [
+    {
+      "id": "q025-candidate-region:88aac1f2c237b6c3e063f6e0",
+      "kind": "region",
+      "title": "Fields, gravity and cosmology: construction and tests",
+      "question": "How are field and gravitational descriptions constructed and tested, how do their geometries and matter sectors determine physical behavior and cosmological histories, and what can observations or probabilistic inference establish?",
+      "scopeContentSha256": "d0d9fba5488b94afa7635c327243dbc3bb4b630288a1a59ec60f2d231661fc5f",
+      "recordId": "successor2-parent-5eef7911f1a80cb73c18-challenge:r",
+      "readingCoverage": {
+        "descriptionCheckedCount": 4,
+        "excerptCheckedCount": 4,
+        "readingLimit": "Only the supplied descriptions, bounded e* excerpts, exact source-object context, existing question definitions and attributed child ledgers were assessed. No images, full papers, omitted derivations, independent calculations or later-status checks were available. Overlapping excerpts are not independent corroboration. This newly authored region and its proposed relations require independent review or explicit coordinator adjudication.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 8473,
+          "providedContrastDescriptions": 5,
+          "providedPrimaryContrastUnits": 5,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 4,
+        "allDescendantsFreshlyRead": false
+      }
+    },
+    {
+      "id": "q025-candidate-question:09d21797eba0045cf9179b12",
+      "kind": "question",
+      "title": "Constructing quantum descriptions and testing their control",
+      "question": "Which action, quantization, boundary and structural choices yield useful quantum descriptions of fields and gravity, and what establishes their calculational control within the specified regime?",
+      "scopeContentSha256": "57b74ae56893021391834868d0598cc3ddc4542b618d45fd815b4765161b974f",
+      "recordId": "successor2-parent-c8776465ed44d9e65c4c-challenge:p0",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 1,
+        "readingLimit": "The direct contrasts support particular proposed de Sitter descriptions. Other construction and control directions are supported through attributed existing questions, with their original limits. This new overview does not independently validate those constructions.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 1915,
+          "providedContrastDescriptions": 7,
+          "providedPrimaryContrastUnits": 7,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 2,
+        "allDescendantsFreshlyRead": false
+      }
+    },
+    {
+      "id": "q025-candidate-question:c320f11a3b13b50e837c7b1b",
+      "kind": "question",
+      "title": "Physical solutions, spectra and dynamical response",
+      "question": "How do specified equations, matter sectors, states and boundary conditions determine physical solutions, spectra, evolution and response in field-theoretic and gravitational systems?",
+      "scopeContentSha256": "972a60dfed7651a101c91b807dc019ca9ef8e00556923171b3cbad6910c3cff0",
+      "recordId": "successor2-parent-c8776465ed44d9e65c4c-challenge:p1",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 2,
+        "readingLimit": "Direct primary support concerns the charged-scalar relaxation proposal and the weak-field thermal Schwinger calculation. Other directions retain attributed child support. Pending thermal and initial-ensemble scopes remain pending; no complete rate or spectral calculation is independently certified.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 1915,
+          "providedContrastDescriptions": 7,
+          "providedPrimaryContrastUnits": 7,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 2,
+        "allDescendantsFreshlyRead": false
+      }
+    },
+    {
+      "id": "q025-candidate-question:af298838a189df0b2994fb8d",
+      "kind": "question",
+      "title": "Entropy, information and operational limits in quantum systems",
+      "question": "What do specified entropy definitions, state-space constructions and access protocols establish about counting, correlations, information, computational limits and physical observables?",
+      "scopeContentSha256": "2b7d348d0fa3ded61521d9b18b26580bce78ee9ac5e55dcc7daaca62a4be090d",
+      "recordId": "successor2-parent-c8776465ed44d9e65c4c-challenge:p2",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 1,
+        "readingLimit": "The direct contrasts support the DS/dS thesis's announced criterion and reported difficulty, and the beginning of the observer-conditioning discussion. Other sectors rely on attributed questions. The conditioning page is truncated, and the DS/dS inequality is not supplied. This overview requires independent review.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 1915,
+          "providedContrastDescriptions": 7,
+          "providedPrimaryContrastUnits": 7,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 2,
+        "allDescendantsFreshlyRead": false
+      }
+    },
+    {
+      "id": "q025-candidate-question:0ce75b71f62a993a0919398b",
+      "kind": "question",
+      "title": "Spacetime topology, gravitational histories and causal access",
+      "question": "Under which geometric, matter, boundary and quantum prescriptions do spacetime constructions exist, admit causal access or contribute to gravitational amplitudes, and how should their state and effective-theory effects be interpreted?",
+      "scopeContentSha256": "90606e895059cfb6cf702a94847d6be7af9c98988b5a6ebd3753d88a8abe8d0e",
+      "recordId": "successor2-parent-c8776465ed44d9e65c4c-challenge:p3",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 1,
+        "readingLimit": "Direct reading covers the 2018 wormhole review's framing and one classical throat construction. Detailed negative-mode, FKS, Wheeler–DeWitt, contour and holographic analyses are outside the supplied window. Other routes retain attributed child limits.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 1915,
+          "providedContrastDescriptions": 7,
+          "providedPrimaryContrastUnits": 7,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 1,
+        "allDescendantsFreshlyRead": false
+      }
+    },
+    {
+      "id": "q025-candidate-region:446faa36fc716cc41d4cf603",
+      "kind": "region",
+      "title": "Quantum fields and gravity: descriptions, dynamics and consistency",
+      "question": "How are quantum and gravitational descriptions constructed and controlled, what determines their physical behavior and information, and which source-specific tests constrain their interpretation or possible applications?",
+      "scopeContentSha256": "f1d8d16dc638ce86dff18b79baa2f5b4bc1887a16633c5a670dd48c675ff3d16",
+      "recordId": "successor2-parent-c8776465ed44d9e65c4c-challenge:r",
+      "readingCoverage": {
+        "descriptionCheckedCount": 6,
+        "excerptCheckedCount": 6,
+        "readingLimit": "Only supplied descriptions, bounded primary pages, exact extracted graph context and attributed child records were assessed. No images, complete papers, omitted derivations or later observational evidence were inspected. Existing questions retain their original reading limits, dates and source-local reference namespaces. This newly authored region and its navigation relations require independent review or explicit coordinator adjudication.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 1915,
+          "providedContrastDescriptions": 7,
+          "providedPrimaryContrastUnits": 7,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 6,
+        "allDescendantsFreshlyRead": false
+      }
+    }
+  ],
+  "separateExplicitComponents": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/admitted-scope-role-operation-component.json",
+      "sha256": "f4b8b1badded4a9dbb5c178f61798e8d1a2b54b73fda8b58a0ec3c8ff67b7a87"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    }
+  ],
+  "allPriorScopesAndRolesByteEquivalent": true
+}

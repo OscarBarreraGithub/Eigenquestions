@@ -278,3 +278,18 @@ The source inspection snapshot retains the exact object, source description,
 relation conditions and provenance within the bounded capsule; complete context
 remains lazily readable. Captured-parent guards apply to all visible inspection
 actions, including zero, and to asynchronous source reads before commit.
+
+Source inspections are secondary display history, not additional scientific-depth
+columns. Consecutive prepared states differing only in source focus share one
+physics column. Exact session states, revisions, Back and replay indices remain
+unchanged; a closed source-history disclosure restores individual inspections.
+Different destinations or meaningful perspective changes retain separate steps.
+
+The bounded next-choice list orders narrower destinations, typed scientific
+cross-routes and broader destinations before exact `source_question` facets.
+All connections remain available through the existing paged reader. A reviewed
+relation `title` labels its outgoing choice; only an explicitly reviewed
+`incomingTitle` labels the reverse traversal. Otherwise the incoming choice uses
+the canonical neighbor title. The connection read preserves its canonical
+neighbor `title`, exact recorded outgoing `routeTitle`, and traversal-specific
+`choiceTitle`. Arrival always uses the unchanged destination title and question.

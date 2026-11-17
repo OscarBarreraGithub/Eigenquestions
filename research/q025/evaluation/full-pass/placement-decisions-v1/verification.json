@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "at": "2026-11-17T15:09:21.024817+00:00",
+  "pythonTests": 13,
+  "nodeTests": 7,
+  "verifyRequests": 8,
+  "nativeLaunches": 0,
+  "actualJobDirectoriesRequestOnly": true,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/q025/evaluation/full-pass/placement-decisions-v1",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.074s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "research/q025/evaluation/full-pass/placement-decisions-v1/runner.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "\u2714 outside-string whitespace guard preserves strings and escapes across deltas (1.502958ms)\n\u2714 native JSON-RPC framing preserves multibyte text split at every UTF-8 byte (1.612209ms)\n\u2714 quota errors pause; ordinary network reconnect is not a separate scientific dispatch (0.208666ms)\n\u2714 eight prepared proposal/challenge requests verify without native calls (85.262833ms)\n\u2714 single-sourced response/context budget and shared quota pause remain enforced (0.176458ms)\n\u2714 instruction budget comes from the actual request exactly once (0.067ms)\n\u2714 preflight includes the maximum actual prior reply in every dependent challenge (0.089917ms)\n\u2139 tests 7\n\u2139 suites 0\n\u2139 pass 7\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 127.124625\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/placement-decisions-v1/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":8,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    }
+  ]
+}

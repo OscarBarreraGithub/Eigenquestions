@@ -1,0 +1,4023 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/1",
+  "destinations": [
+    {
+      "id": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "kind": "question",
+      "title": "Gauss–Bonnet corrections to two-field rapid-turn inflation",
+      "question": "How does scalar-dependent Gauss–Bonnet coupling modify two-field rapid-turn inflation, its potential slow-roll relations and its consistency conditions?",
+      "summary": "New scoped definition for the inflationary component of u70. Its late-time phantom component reuses c4; the original compound source remains unchanged.",
+      "scope": {
+        "systems": [
+          "The source-specific two-field inflationary model with scalar coupling to Gauss–Bonnet curvature"
+        ],
+        "targets": [
+          "Changes to rapid-turn inflationary dynamics",
+          "Potential slow-roll relations and inflationary consistency conditions"
+        ],
+        "regimes": [
+          "Early-universe rapid-turn inflation"
+        ],
+        "assumptions": [
+          "Detailed action restrictions and validity conditions require the source's derivation, which is not supplied here",
+          "The dark-matter condition reported for the late-time branch is not an inflationary premise"
+        ],
+        "conventions": [
+          "Two-field inflation and multifield late-time dark energy remain separate scoped targets",
+          "Single-field Gauss–Bonnet ansätze and results are not automatically transferable to this model"
+        ],
+        "includes": [
+          "The inflationary component of u70"
+        ],
+        "excludes": [
+          "Late-time phantom conditions, which retain destination c4",
+          "A classification of all rapid-turn inflation",
+          "An independently established cutoff, full perturbative stability result or observational validation"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Based on u70's supplied description and inherited assessments in n5, n8 and n63 of abstract/introduction material dated 30 October 2026. This packet contains no actual primary windows. Detailed relations, conditions and derivations have not been freshly checked.",
+        "readingBasis": "Exact source description and inherited paired attribution notes; this decision packet has no primary windows. The unchanged definition has explicit independent support.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e"
+      ],
+      "methods": [
+        "Source-specific scalar–gravity background and consistency analysis"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-inflation:scope:pq0",
+      "provenance": {
+        "localRef": "pq0",
+        "reviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "admissionBasis": "unchanged_definition_with_explicit_independent_support_and_root_admission",
+        "sourceCompoundPreserved": true
+      },
+      "scopeContentSha256": "95bc4db55298c5460935e80f5a2577b5f394c3cdc37423cf63d79c7303d0ad9b"
+    }
+  ],
+  "sourceContributions": [
+    {
+      "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+      "destinationId": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "role": "specializes",
+      "basis": "description_checked",
+      "qualification": "New overlap mapping for the source's inflationary geometric-assumption and dynamics questions. Inherited assessments restrict it to generalized hyperinflation, distinguish side-tracked inflation and do not establish a classification of all rapid-turn models. Compatibility and reheating facets remain compound. Independent confirmation: u52 can specialize c0 through its geometric-assumption and inflationary-dynamics component. n31 and n84 restrict the assessment to generalized hyperinflation, distinguish side-tracked inflation and leave compatibility and reheating as separate compound facets.",
+      "evidenceRefs": [
+        {
+          "localRef": "u52",
+          "kind": "description",
+          "unitIndex": 75,
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "textSha256": "7c342ba751e8d593f5da5c663b785b2e7c735997d9b4b61ffed701302f868ec4",
+          "paperId": "1901.08603"
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:role:0"
+    },
+    {
+      "unitId": "unit:e32c7f128410233ca55ab75e01e5468626ebf2ea175a44320754dc21201ffed1",
+      "destinationId": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "role": "method",
+      "basis": "description_checked",
+      "qualification": "New method contribution for metric-dependent multifield backgrounds and the geometric dependence of fluctuations. The supplied setting does not itself furnish a calculated spectrum or correlation result, and shift symmetry is not imposed universally. Independent confirmation: u68 supplies a metric-dependent multifield setting relevant as a method contribution to c0. n60 specifically limits the target to geometric dependence of fluctuations, while n59 prevents imposing shift symmetry. The role claims no calculated spectrum.",
+      "evidenceRefs": [
+        {
+          "localRef": "u68",
+          "kind": "description",
+          "unitIndex": 85,
+          "unitId": "unit:e32c7f128410233ca55ab75e01e5468626ebf2ea175a44320754dc21201ffed1",
+          "textSha256": "87ee385dd3440ad8bf17821136e98ee6ab95ef8f6fc8841d5207b68efebd27ff",
+          "paperId": "1906.05772"
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:role:1"
+    },
+    {
+      "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+      "destinationId": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "role": "specializes",
+      "basis": "description_checked",
+      "qualification": "Confirm the reused overview covers potential-free nonquadratic kinetic inflation in the Einstein frame. Decreasing curvature, acceptable perturbations and transition to radiation are linked source questions, not independently certified outcomes or potential-slope tests. Independent confirmation: Potential-free nonquadratic Einstein-frame kinetics is a concrete instance of c3's kinetic modifications. The contribution correctly preserves decreasing curvature, perturbations and radiation exit as linked questions rather than certified outcomes.",
+      "evidenceRefs": [
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 82,
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "textSha256": "e2b6b37b4dcada60b412317bb4763f5083c338986115287e96468ebaf157225b",
+          "paperId": "hep-th/9904075"
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:role:2"
+    },
+    {
+      "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+      "destinationId": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "role": "specializes",
+      "basis": "description_checked",
+      "qualification": "New mapping for the inflation, exit and perturbative-control components of scalar-coupled Gauss–Bonnet dynamics with the Einstein term retained and no assumed scalar slow roll. Adding a potential remains an intervention, not a universal premise. Independent confirmation: u31's inflationary component fits c3's scalar–gravity modifications and control target. Its retained Einstein term, absence of assumed scalar slow roll and optional added potential are explicit; its later-evolution component is not absorbed into this role.",
+      "evidenceRefs": [
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003",
+          "paperId": "1804.03004"
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:role:3"
+    },
+    {
+      "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+      "destinationId": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "Confirm the previously added mapping: the whole description explicitly asks about subsequent Einstein-dominated evolution. This is a later-evolution target within the unchanged compound source, not a verified successful history. Independent confirmation: Although c5 records earlier role disagreement, the supplied whole description directly asks about subsequent Einstein-dominated evolution, and n0 explicitly explains the added c5 mapping. This supports addresses without certifying a successful history.",
+      "evidenceRefs": [
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003",
+          "paperId": "1804.03004"
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:role:4"
+    },
+    {
+      "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+      "destinationId": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The whole description explicitly asks how scalar–Gauss–Bonnet coupling modifies two-field rapid-turn inflation, potential slow-roll relations and consistency conditions. Only this early-time component receives the new role; its existing late-time roles remain unchanged. Independent confirmation: u70 directly addresses pq0's two-field rapid-turn dynamics, potential slow-roll relations and consistency conditions. The contribution is restricted to that early-time component and leaves existing late-time mappings and their matter conditions intact.",
+      "evidenceRefs": [
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82",
+          "paperId": "2610.41636"
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:role:5"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:inflation:pn0",
+      "source": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "target": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "type": "comparison",
+      "title": "Compare inflationary mechanisms and trajectory distances",
+      "qualification": "Use c0 for the shared dynamics overview; this route emphasizes c1's distinct cooperative, exit, turning and trajectory/geodesic questions. The full c1 definition is unchanged. No common attractor, universal curvature sign or compulsory SDC premise is implied.",
+      "rationale": "The exact definitions support a differentiated next direction without presenting another indistinguishable multifield overview or merging their complete scopes.",
+      "evidenceIds": [
+        "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+        "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+        "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-71f9bd087ee989805def-challenge:p4",
+          "candidateId": "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p3",
+          "candidateId": "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+        },
+        {
+          "localRef": "u25",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+          "textSha256": "501321b282bfbb14557ac348ee90284630e513951cda0a03528972d9ce9fa847"
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 83,
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "textSha256": "7aa306b37d444bb72c20d45042ed6c79f78d4ba7f75932003723cbbf8f4517f2"
+        },
+        {
+          "localRef": "n58",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u71",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6",
+          "textSha256": "e3fed400061ec47fbab046840b136e58ac869307d6bdd9fc65d3bc01e08969ae"
+        },
+        {
+          "localRef": "n46",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The comparison direction exposes c1's distinct mechanism and distance targets while retaining c0 for shared dynamics. It asserts neither containment nor a compulsory conjecture premise.",
+          "refs": [
+            "c0",
+            "c1",
+            "u25",
+            "n35",
+            "u71",
+            "n46"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn1",
+      "source": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "target": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "type": "narrower",
+      "title": "Examine kinetic, dissipative and gravitational mechanisms",
+      "qualification": "Focus on c2's stated mechanisms and their separate perturbation and exit calculations, including potential-free kinetics. General kinetic actions are not all P(φ,X), and a changed background expansion law does not supply a complete perturbation theory.",
+      "rationale": "c3 supplies the shared broad destination; c2 supplies a more specific comparison while preserving its action and control restrictions.",
+      "evidenceIds": [
+        "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+        "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fd81fbc9a7aeac07a2cd-challenge:p4",
+          "candidateId": "q025-candidate-question:c253246412d0dc8d86ed91ae"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 82,
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "textSha256": "e2b6b37b4dcada60b412317bb4763f5083c338986115287e96468ebaf157225b"
+        },
+        {
+          "localRef": "n57",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 48,
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "textSha256": "bf9132cc35500dbe3d9c78a19ab37eacb80529d341c2c87fd0fe0588ed84a25c"
+        },
+        {
+          "localRef": "n39",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "The direction is correctly broader c3 to focused c2. Its qualification preserves potential-free kinetics and prevents a background modification from being mistaken for a complete perturbation prescription.",
+          "refs": [
+            "c3",
+            "c2",
+            "u22",
+            "n57",
+            "u19",
+            "n39"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn2",
+      "source": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "target": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "type": "comparison",
+      "title": "Compare perturbation methods across kinetic actions",
+      "qualification": "Compare source-specific multifield methods with noncanonical and modified-gravity calculations. PyTransport's curved-metric tree-level scope does not establish support for every kinetic action; multiple-DBI horizon-exit and separable-Hubble evolution restrictions remain distinct.",
+      "rationale": "The existing scopes explicitly identify an action-support boundary that is useful when moving from general multifield calculations to modified dynamics.",
+      "evidenceIds": [
+        "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+        "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-71f9bd087ee989805def-challenge:p4",
+          "candidateId": "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "textSha256": "8e92c481fbc3c42a86309060eb52acf655835b2eea7bdd24d3ad9dd9df63afe4"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u66",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5",
+          "textSha256": "44e60a0db770e7db3621811f21a9d3aaa0692b9390e00b6ce86b7fdff9e6d927"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "Comparison is the licensed type: action applicability is explicitly restricted in c0 and n11, and n9 separates multiple-DBI horizon-exit assumptions from later analytical evolution.",
+          "refs": [
+            "c0",
+            "c2",
+            "u14",
+            "n11",
+            "u66",
+            "n9"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn3",
+      "source": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "target": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "type": "narrower",
+      "title": "Study Gauss–Bonnet corrections to rapid-turn inflation",
+      "qualification": "Select u70's two-field inflationary question. The packet supports the target through a description and inherited introductory assessments, not its detailed formulas. No single-field inverse-potential ansatz or late-time dark-matter condition is imported.",
+      "rationale": "This supplies a precise gravitational-coupling question beneath the mechanism comparison while preserving the compound source's epoch split.",
+      "evidenceIds": [
+        "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "c2 to pq0 correctly narrows a gravitational-coupling question to a source-specific two-field inflationary target. The qualification makes the description-level support and absent action derivation explicit.",
+          "refs": [
+            "c2",
+            "u70",
+            "n5",
+            "n8",
+            "n63"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn4",
+      "source": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "target": "q025-candidate-question:34990732591a1b91983b1849",
+      "type": "related_question",
+      "title": "Examine the source's late-time phantom conditions",
+      "qualification": "The target changes from two-field rapid-turn inflation to multifield late-time dark energy. The supplied late-time account requires non-negligible dark matter without direct DM–DE interaction. This is a separate announced analysis, not a demonstrated continuation of the inflationary solution.",
+      "rationale": "u70 explicitly contains both targets, licensing a source-linked reading route without a new physical equivalence or shared-premise claim.",
+      "evidenceIds": [
+        "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "The compound description supports this explicit related-question arc. Its type and qualifications correctly avoid treating the late-time branch as a narrower inflationary question or an application of already-established inflationary formulas.",
+          "refs": [
+            "u70",
+            "c4",
+            "n5",
+            "n8",
+            "n63"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn5",
+      "source": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "target": "q025-candidate-question:34990732591a1b91983b1849",
+      "type": "narrower",
+      "title": "Focus on Gauss–Bonnet phantom-like dark energy",
+      "qualification": "Select the late-time effective equation-of-state question below -1, retaining its non-negligible-dark-matter condition and no direct DM–DE interaction. Other c5 models need not share these conditions; no wrong-sign kinetic term or observational confirmation is inferred.",
+      "rationale": "The existing precise c4 question supplies the phantom branch without duplicating it within the later-evolution overview.",
+      "evidenceIds": [
+        "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn5",
+      "provenance": {
+        "nativeRouteId": "pn5",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn5",
+          "verdict": "supported_as_written",
+          "reason": "c5 expressly contains the phantom target, so broader-to-narrower access to c4 is supported. The matter conditions remain attached only to that model branch.",
+          "refs": [
+            "c5",
+            "c4",
+            "u70",
+            "n5",
+            "n8"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn6",
+      "source": "q025-candidate-question:144691c70786c15357e04bcf",
+      "target": "q025-candidate-question:34990732591a1b91983b1849",
+      "type": "narrower",
+      "title": "Isolate the Gauss–Bonnet phantom branch",
+      "qualification": "Select u70's multifield Gauss–Bonnet analysis, with its stated dark-matter conditions. u69's turning-dark-energy model remains a distinct question and receives no automatic phantom, dark-matter or stability conclusion.",
+      "rationale": "The same c4 destination is reached from the late-acceleration comparison; a second public phantom definition is unnecessary.",
+      "evidenceIds": [
+        "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+        "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn6",
+      "provenance": {
+        "nativeRouteId": "pn6",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn6",
+          "verdict": "supported_as_written",
+          "reason": "The second broader-to-narrower route correctly reaches the same c4 definition. It preserves u69 as a distinct turning target without phantom, dark-matter or stability conclusions.",
+          "refs": [
+            "c6",
+            "c4",
+            "u69",
+            "u70",
+            "n61",
+            "n63"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn7",
+      "source": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "target": "q025-candidate-question:144691c70786c15357e04bcf",
+      "type": "comparison",
+      "title": "Compare inflationary turning with turning dark energy",
+      "qualification": "Compare the early- and late-universe questions while retaining their source-specific metrics and targets. A metric differing from the flat polar example does not fix its curvature sign. Inflationary attractors, fluctuation formulas and observational tests are not transferred.",
+      "rationale": "c6 explicitly allows comparison with inflationary turning methods, and the supplied descriptions identify the changed epoch without establishing stronger physical relations.",
+      "evidenceIds": [
+        "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+        "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p3",
+          "candidateId": "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "u52",
+          "kind": "description",
+          "unitIndex": 75,
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "textSha256": "7c342ba751e8d593f5da5c663b785b2e7c735997d9b4b61ffed701302f868ec4"
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn7",
+      "provenance": {
+        "nativeRouteId": "pn7",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn7",
+          "verdict": "supported_as_written",
+          "reason": "The comparison is explicitly allowed by c6 and supported by the two descriptions. No stronger application relation is established; metric change alone does not fix curvature sign.",
+          "refs": [
+            "c1",
+            "c6",
+            "u52",
+            "n31",
+            "u69",
+            "n61"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    },
+    {
+      "id": "navigation:inflation:pn8",
+      "source": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "target": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "type": "related_question",
+      "title": "Follow a scalar–gravity model beyond inflation",
+      "qualification": "Use this route only for matching scalar–gravity systems. In u31, the Einstein term is retained and adding a potential is a proposed intervention tied to perturbative repair and later Einstein-dominated evolution. An inflationary fit does not establish reheating success or a universal later history.",
+      "rationale": "The supplied compound description connects the temporal questions while c5 preserves its distinct reheating, stiff-era, GR-attraction and dark-energy targets.",
+      "evidenceIds": [
+        "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fd81fbc9a7aeac07a2cd-challenge:p4",
+          "candidateId": "q025-candidate-question:c253246412d0dc8d86ed91ae"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-inflation:route:pn8",
+      "provenance": {
+        "nativeRouteId": "pn8",
+        "sourceReviewIds": [
+          "inflation-scope-navigation-proposal",
+          "inflation-retained-whole-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn8",
+          "verdict": "supported_as_written",
+          "reason": "u31 supports a conditional reading path between temporal targets. related_question is appropriate because the packet supplies neither universal containment nor a demonstrated postinflationary solution.",
+          "refs": [
+            "c3",
+            "c5",
+            "u31",
+            "n0"
+          ]
+        },
+        "noImplicationBeyondTypedQualifiedRoute": true
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-inflation:scope:pq0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:9b49c6ccf6462c9e89de1083"
+      ],
+      "scopeContentSha256": "95bc4db55298c5460935e80f5a2577b5f394c3cdc37423cf63d79c7303d0ad9b",
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+        "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u52",
+          "kind": "description",
+          "unitIndex": 75,
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "textSha256": "7c342ba751e8d593f5da5c663b785b2e7c735997d9b4b61ffed701302f868ec4",
+          "paperId": "1901.08603"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u52",
+        "questionRef": "c0",
+        "role": "specializes",
+        "reason": "New overlap mapping for the source's inflationary geometric-assumption and dynamics questions. Inherited assessments restrict it to generalized hyperinflation, distinguish side-tracked inflation and do not establish a classification of all rapid-turn models. Compatibility and reheating facets remain compound.",
+        "refs": [
+          "u52",
+          "c0",
+          "c1",
+          "n31",
+          "n84"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "u52 can specialize c0 through its geometric-assumption and inflationary-dynamics component. n31 and n84 restrict the assessment to generalized hyperinflation, distinguish side-tracked inflation and leave compatibility and reheating as separate compound facets.",
+        "refs": [
+          "u52",
+          "c0",
+          "c1",
+          "n31",
+          "n84"
+        ]
+      },
+      "scopeContentSha256": "da7d218c2f8e077a8e32d2aee988ab77679ea16fa2e7eb999dfecb655306f99a",
+      "contributionContentSha256": "a996115d9628348755d211b38c9e08ebba5ed599823ea9776305bf6c7dcfa846",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:role:1",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:e32c7f128410233ca55ab75e01e5468626ebf2ea175a44320754dc21201ffed1",
+        "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u68",
+          "kind": "description",
+          "unitIndex": 85,
+          "unitId": "unit:e32c7f128410233ca55ab75e01e5468626ebf2ea175a44320754dc21201ffed1",
+          "textSha256": "87ee385dd3440ad8bf17821136e98ee6ab95ef8f6fc8841d5207b68efebd27ff",
+          "paperId": "1906.05772"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u68",
+        "questionRef": "c0",
+        "role": "method",
+        "reason": "New method contribution for metric-dependent multifield backgrounds and the geometric dependence of fluctuations. The supplied setting does not itself furnish a calculated spectrum or correlation result, and shift symmetry is not imposed universally.",
+        "refs": [
+          "u68",
+          "c0",
+          "n59",
+          "n60"
+        ]
+      },
+      "independentAssessment": {
+        "index": 1,
+        "verdict": "supported_as_written",
+        "reason": "u68 supplies a metric-dependent multifield setting relevant as a method contribution to c0. n60 specifically limits the target to geometric dependence of fluctuations, while n59 prevents imposing shift symmetry. The role claims no calculated spectrum.",
+        "refs": [
+          "u68",
+          "c0",
+          "n59",
+          "n60"
+        ]
+      },
+      "scopeContentSha256": "da7d218c2f8e077a8e32d2aee988ab77679ea16fa2e7eb999dfecb655306f99a",
+      "contributionContentSha256": "d767576f09fa640aa1b8de55e1e009af1fae5f2401f1ff8b33d3867cf3f0860b",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:role:2",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+        "q025-candidate-question:c253246412d0dc8d86ed91ae"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 82,
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "textSha256": "e2b6b37b4dcada60b412317bb4763f5083c338986115287e96468ebaf157225b",
+          "paperId": "hep-th/9904075"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u22",
+        "questionRef": "c3",
+        "role": "specializes",
+        "reason": "Confirm the reused overview covers potential-free nonquadratic kinetic inflation in the Einstein frame. Decreasing curvature, acceptable perturbations and transition to radiation are linked source questions, not independently certified outcomes or potential-slope tests.",
+        "refs": [
+          "u22",
+          "c2",
+          "c3",
+          "n57"
+        ]
+      },
+      "independentAssessment": {
+        "index": 2,
+        "verdict": "supported_as_written",
+        "reason": "Potential-free nonquadratic Einstein-frame kinetics is a concrete instance of c3's kinetic modifications. The contribution correctly preserves decreasing curvature, perturbations and radiation exit as linked questions rather than certified outcomes.",
+        "refs": [
+          "u22",
+          "c2",
+          "c3",
+          "n57"
+        ]
+      },
+      "scopeContentSha256": "6222773dbbd2d1d21ae40e96680b69b7a1a683aa0e99245dc7ce3a37bf1dc278",
+      "contributionContentSha256": "50c4505454a63e23e69fb5a515cc3abe5973ea6aedb42617bd0e2b1b488b96ae",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:role:3",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+        "q025-candidate-question:c253246412d0dc8d86ed91ae"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003",
+          "paperId": "1804.03004"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u31",
+        "questionRef": "c3",
+        "role": "specializes",
+        "reason": "New mapping for the inflation, exit and perturbative-control components of scalar-coupled Gauss–Bonnet dynamics with the Einstein term retained and no assumed scalar slow roll. Adding a potential remains an intervention, not a universal premise.",
+        "refs": [
+          "u31",
+          "c3",
+          "n0"
+        ]
+      },
+      "independentAssessment": {
+        "index": 3,
+        "verdict": "supported_as_written",
+        "reason": "u31's inflationary component fits c3's scalar–gravity modifications and control target. Its retained Einstein term, absence of assumed scalar slow roll and optional added potential are explicit; its later-evolution component is not absorbed into this role.",
+        "refs": [
+          "u31",
+          "c3",
+          "n0"
+        ]
+      },
+      "scopeContentSha256": "6222773dbbd2d1d21ae40e96680b69b7a1a683aa0e99245dc7ce3a37bf1dc278",
+      "contributionContentSha256": "2579690214eea29b85df5214ce6c134a05ef115fdaea476178da029b5622245f",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:role:4",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+        "q025-candidate-question:8d27c10725a1f68d46910a02"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003",
+          "paperId": "1804.03004"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u31",
+        "questionRef": "c5",
+        "role": "addresses",
+        "reason": "Confirm the previously added mapping: the whole description explicitly asks about subsequent Einstein-dominated evolution. This is a later-evolution target within the unchanged compound source, not a verified successful history.",
+        "refs": [
+          "u31",
+          "c5",
+          "n0"
+        ]
+      },
+      "independentAssessment": {
+        "index": 4,
+        "verdict": "supported_as_written",
+        "reason": "Although c5 records earlier role disagreement, the supplied whole description directly asks about subsequent Einstein-dominated evolution, and n0 explicitly explains the added c5 mapping. This supports addresses without certifying a successful history.",
+        "refs": [
+          "u31",
+          "c5",
+          "n0"
+        ]
+      },
+      "scopeContentSha256": "691d84eab94388d6ee0622edd65d6a266538f998c0d10776e4eb21192bcd810d",
+      "contributionContentSha256": "9be15e746c4f8c771a278e028bd6cc068878a96c32c727c7fe4fe2cf48568e57",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:role:5",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+        "q025-candidate-question:9b49c6ccf6462c9e89de1083"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82",
+          "paperId": "2610.41636"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u70",
+        "questionRef": "pq0",
+        "role": "addresses",
+        "reason": "The whole description explicitly asks how scalar–Gauss–Bonnet coupling modifies two-field rapid-turn inflation, potential slow-roll relations and consistency conditions. Only this early-time component receives the new role; its existing late-time roles remain unchanged.",
+        "refs": [
+          "u70",
+          "n5",
+          "n8",
+          "n63"
+        ]
+      },
+      "independentAssessment": {
+        "index": 5,
+        "verdict": "supported_as_written",
+        "reason": "u70 directly addresses pq0's two-field rapid-turn dynamics, potential slow-roll relations and consistency conditions. The contribution is restricted to that early-time component and leaves existing late-time mappings and their matter conditions intact.",
+        "refs": [
+          "u70",
+          "n5",
+          "n8",
+          "n63",
+          "c4"
+        ]
+      },
+      "scopeContentSha256": "95bc4db55298c5460935e80f5a2577b5f394c3cdc37423cf63d79c7303d0ad9b",
+      "contributionContentSha256": "cf95a7edc34c19026bbe043991ad15203863db2f7010192ea1bd45f2a5ae01de",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+        "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "717b9af64bc051129b737109b81e006e7248b8bf244ef02ecae34bce14381b97",
+      "sourceScopeContentSha256": "da7d218c2f8e077a8e32d2aee988ab77679ea16fa2e7eb999dfecb655306f99a",
+      "targetScopeContentSha256": "bae79f7df0fdb4a7de842c161ffdcee66a0f9322f4a87a0745d2c078fcb27cf7",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-71f9bd087ee989805def-challenge:p4",
+          "candidateId": "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p3",
+          "candidateId": "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+        },
+        {
+          "localRef": "u25",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+          "textSha256": "501321b282bfbb14557ac348ee90284630e513951cda0a03528972d9ce9fa847"
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 83,
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "textSha256": "7aa306b37d444bb72c20d45042ed6c79f78d4ba7f75932003723cbbf8f4517f2"
+        },
+        {
+          "localRef": "n58",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u71",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6",
+          "textSha256": "e3fed400061ec47fbab046840b136e58ac869307d6bdd9fc65d3bc01e08969ae"
+        },
+        {
+          "localRef": "n46",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:c253246412d0dc8d86ed91ae",
+        "q025-candidate-question:c19b646d564f6e3e0f160f53"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "33ce356c13a3c62ca70bfbb6e6d47a45550bf862b36b7d154cf0b1bcd5641bc3",
+      "sourceScopeContentSha256": "6222773dbbd2d1d21ae40e96680b69b7a1a683aa0e99245dc7ce3a37bf1dc278",
+      "targetScopeContentSha256": "21c07c83ba088a36e1a1cf7583290e425b0c2b5a00162d828cb61cd5a0e6342c",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fd81fbc9a7aeac07a2cd-challenge:p4",
+          "candidateId": "q025-candidate-question:c253246412d0dc8d86ed91ae"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 82,
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "textSha256": "e2b6b37b4dcada60b412317bb4763f5083c338986115287e96468ebaf157225b"
+        },
+        {
+          "localRef": "n57",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 48,
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "textSha256": "bf9132cc35500dbe3d9c78a19ab37eacb80529d341c2c87fd0fe0588ed84a25c"
+        },
+        {
+          "localRef": "n39",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+        "q025-candidate-question:c19b646d564f6e3e0f160f53"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "457955b9d4108b9f15cc2a66d03bcd7047b422a5c43a6c938cb744764bd353a0",
+      "sourceScopeContentSha256": "da7d218c2f8e077a8e32d2aee988ab77679ea16fa2e7eb999dfecb655306f99a",
+      "targetScopeContentSha256": "21c07c83ba088a36e1a1cf7583290e425b0c2b5a00162d828cb61cd5a0e6342c",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-71f9bd087ee989805def-challenge:p4",
+          "candidateId": "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "textSha256": "8e92c481fbc3c42a86309060eb52acf655835b2eea7bdd24d3ad9dd9df63afe4"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u66",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5",
+          "textSha256": "44e60a0db770e7db3621811f21a9d3aaa0692b9390e00b6ce86b7fdff9e6d927"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:c19b646d564f6e3e0f160f53",
+        "q025-candidate-question:9b49c6ccf6462c9e89de1083"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "e7ec84cec59b1e0eeb68102b1bf80df9c3badfab7984f26bbe7cc2f32862412f",
+      "sourceScopeContentSha256": "21c07c83ba088a36e1a1cf7583290e425b0c2b5a00162d828cb61cd5a0e6342c",
+      "targetScopeContentSha256": "95bc4db55298c5460935e80f5a2577b5f394c3cdc37423cf63d79c7303d0ad9b",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+        "q025-candidate-question:34990732591a1b91983b1849"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "e9be83ee813c38d0b0f0520f541eb45571197467bacd4c0214adad9112b07a72",
+      "sourceScopeContentSha256": "95bc4db55298c5460935e80f5a2577b5f394c3cdc37423cf63d79c7303d0ad9b",
+      "targetScopeContentSha256": "99e40ce7f503e03ed6f3ef3d9d518d9645fe2334932e89e6f96cabb8684fc106",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn5",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:8d27c10725a1f68d46910a02",
+        "q025-candidate-question:34990732591a1b91983b1849"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "118ba3e0f9d87a8f32efdd10aee3270e59fc7481971d1e48a172936019b137d3",
+      "sourceScopeContentSha256": "691d84eab94388d6ee0622edd65d6a266538f998c0d10776e4eb21192bcd810d",
+      "targetScopeContentSha256": "99e40ce7f503e03ed6f3ef3d9d518d9645fe2334932e89e6f96cabb8684fc106",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn6",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:144691c70786c15357e04bcf",
+        "q025-candidate-question:34990732591a1b91983b1849"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "9fb52d1814dfd9f8ba1d423ed2664ba65582c9f6abac010bc309c38266a71f9b",
+      "sourceScopeContentSha256": "925cfa0d892a617e367b71bc3da919f41af76967a5a540413a8eac11efeaf72a",
+      "targetScopeContentSha256": "99e40ce7f503e03ed6f3ef3d9d518d9645fe2334932e89e6f96cabb8684fc106",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn7",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+        "q025-candidate-question:144691c70786c15357e04bcf"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "f1c06ff49ff6bd5f3b7145a93e99a8325cdfa425da74068caf4f56dad38f418f",
+      "sourceScopeContentSha256": "bae79f7df0fdb4a7de842c161ffdcee66a0f9322f4a87a0745d2c078fcb27cf7",
+      "targetScopeContentSha256": "925cfa0d892a617e367b71bc3da919f41af76967a5a540413a8eac11efeaf72a",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p3",
+          "candidateId": "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "u52",
+          "kind": "description",
+          "unitIndex": 75,
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "textSha256": "7c342ba751e8d593f5da5c663b785b2e7c735997d9b4b61ffed701302f868ec4"
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "decision:navigation-inflation:route:pn8",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:c253246412d0dc8d86ed91ae",
+        "q025-candidate-question:8d27c10725a1f68d46910a02"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "badac2aa5ed4936af8ec2003f0244973b07d4646c96ec4b35c78e3ed00943d16",
+      "sourceScopeContentSha256": "6222773dbbd2d1d21ae40e96680b69b7a1a683aa0e99245dc7ce3a37bf1dc278",
+      "targetScopeContentSha256": "691d84eab94388d6ee0622edd65d6a266538f998c0d10776e4eb21192bcd810d",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "inflation-scope-navigation-proposal",
+        "challengeReviewId": "inflation-retained-whole-challenge"
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fd81fbc9a7aeac07a2cd-challenge:p4",
+          "candidateId": "q025-candidate-question:c253246412d0dc8d86ed91ae"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "inflation-scope-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-decisions-v1/jobs/inflation-and-late-time-scope-reuse-proposal/reply.json",
+      "sha256": "e989b7e954b207cd189188cab1221e2aadb3d43e1808bf64cbd20ec671059340",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-decisions-v1/jobs/inflation-and-late-time-scope-reuse-proposal/receipt.json",
+      "receiptSha256": "506c0ede69136c10bf347e27808fc91606560f5523be022dafc9550cbc53acb3",
+      "kind": "native_source_only_proposal"
+    },
+    {
+      "id": "inflation-retained-whole-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v2/adopted/inflation-retained-challenge/reply.json",
+      "sha256": "78591a7cce220ba42ecf3ec941d688a78eb1c4c7e024d8ffe6d26db550e256be",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v2/adopted/inflation-retained-challenge/receipt.json",
+      "receiptSha256": "38c66c9fe8f131a95a7d00174175ed7ebc2212ee745e32757eca0746b5bdac8f",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v2/adopted/inflation-retained-challenge/normalization.json",
+        "sha256": "ffac53e665239071c3fad164ffc0c2c7d06bc48338e5e74b24aa62ba5ad34ad1"
+      },
+      "kind": "native_whole_challenge_with_exact_retained_object_derivation",
+      "originalFailurePreserved": true
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-inflation:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "common_target",
+        "members": [
+          "c0",
+          "c1"
+        ],
+        "target": "c0",
+        "definingDifferences": [
+          "c0 explicitly covers perturbation calculations, software, multiple-DBI bispectra and initial-condition questions",
+          "c1 explicitly covers cooperative and exit mechanisms, trajectory/geodesic distinctions and effective field-space distance diagnostics",
+          "Neither complete scope contains the other"
+        ],
+        "reason": "Use existing c0 once for their shared multifield-dynamics question. Preserve c1 unchanged for mechanism and geometry comparisons, with a differentiated navigation title. This reuses an overlap destination without replacing c1, transferring all its source roles or equating physical mechanisms.",
+        "refs": [
+          "c0",
+          "c1",
+          "u30",
+          "n18",
+          "n58",
+          "u14",
+          "n11",
+          "u25",
+          "n35",
+          "u71",
+          "n46"
+        ]
+      },
+      "nativeOperationValueSha256": "d5f63974f7ad4e22d092fa40555e3661eadb412046d61936d89acc575473b80a",
+      "members": [
+        "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+        "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+      ],
+      "target": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The definitions and assisted-inflation contributions establish shared dynamics, while calculation methods and distance diagnostics distinguish the full scopes. Reusing c0 only for the shared target is sound; it neither subsumes c1 nor identifies their source statements.",
+        "refs": [
+          "c0",
+          "c1",
+          "u30",
+          "n18",
+          "n58",
+          "n11",
+          "n35",
+          "n46"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-71f9bd087ee989805def-challenge:p4",
+          "candidateId": "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p3",
+          "candidateId": "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 83,
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "textSha256": "7aa306b37d444bb72c20d45042ed6c79f78d4ba7f75932003723cbbf8f4517f2"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n58",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "textSha256": "8e92c481fbc3c42a86309060eb52acf655835b2eea7bdd24d3ad9dd9df63afe4"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u25",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+          "textSha256": "501321b282bfbb14557ac348ee90284630e513951cda0a03528972d9ce9fa847"
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4af27c308433ed96897b4f154906c8eaa06e5c09e636f426886d96754d77c275",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u71",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6",
+          "textSha256": "e3fed400061ec47fbab046840b136e58ac869307d6bdd9fc65d3bc01e08969ae"
+        },
+        {
+          "localRef": "n46",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f3c1328da956bff58dbfb949f0a7c75260ec904d9556000faed0d3dfe72367f6",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "specializes",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c2 selects dissipative, kinetic, gravitational-coupling and altered-evolution mechanisms and their action-specific predictions",
+          "c3 additionally organizes multifield turning and inflation without a fundamental inflaton",
+          "Potential-free kinetics and deformed evolution remain distinct mechanisms within c2"
+        ],
+        "reason": "Reuse c3 as the broad modified-inflation destination and expose c2 as its more focused mechanism-and-perturbation comparison. The containment is between question families; it does not establish a common action, perturbation prescription or successful evasion of conjectures.",
+        "refs": [
+          "c2",
+          "c3",
+          "u22",
+          "n57",
+          "u19",
+          "n39",
+          "u23",
+          "n83",
+          "u52",
+          "n84"
+        ]
+      },
+      "nativeOperationValueSha256": "2f78df26461e9d8f3ab3a071acdc837644c96eb796e151f29037c0a9302e2651",
+      "members": [
+        "q025-candidate-question:c19b646d564f6e3e0f160f53",
+        "q025-candidate-question:c253246412d0dc8d86ed91ae"
+      ],
+      "target": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c3's question explicitly ranges over changes to energy transfer, kinetics and gravitational expansion, accommodating c2's focused comparison while also admitting turning and non-fundamental sources. Containment holds at the question-family level and does not migrate compound or boundary source roles.",
+        "refs": [
+          "c2",
+          "c3",
+          "u22",
+          "n57",
+          "u23",
+          "n83",
+          "n43",
+          "n47"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fd81fbc9a7aeac07a2cd-challenge:p4",
+          "candidateId": "q025-candidate-question:c253246412d0dc8d86ed91ae"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 82,
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "textSha256": "e2b6b37b4dcada60b412317bb4763f5083c338986115287e96468ebaf157225b"
+        },
+        {
+          "localRef": "n57",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:44f896289f988ae22f8cbdf9c2786133fe80640387051fbf190a4702037ff272",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 48,
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "textSha256": "bf9132cc35500dbe3d9c78a19ab37eacb80529d341c2c87fd0fe0588ed84a25c"
+        },
+        {
+          "localRef": "n39",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 68,
+          "unitId": "unit:4626a3a8d39509541dec173d1bc336b6d24ebec2c15694500ed82143744cc945",
+          "textSha256": "571b658809c8b23711c9c40f70fecbcd1591e1bb2e8d3094534acdea53405782"
+        },
+        {
+          "localRef": "n83",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4626a3a8d39509541dec173d1bc336b6d24ebec2c15694500ed82143744cc945",
+          "reviewId": "leaf-fd81fbc9a7aeac07a2cd-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u52",
+          "kind": "description",
+          "unitIndex": 75,
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "textSha256": "7c342ba751e8d593f5da5c663b785b2e7c735997d9b4b61ffed701302f868ec4"
+        },
+        {
+          "localRef": "n84",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "reviewId": "leaf-fd81fbc9a7aeac07a2cd-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "specializes",
+        "members": [
+          "c4",
+          "c5"
+        ],
+        "target": "c5",
+        "definingDifferences": [
+          "c4 isolates effective phantom-like multifield Gauss–Bonnet dark energy",
+          "c5 also covers reheating, proposed stiff eras, gravitational-wave consequences and late-time GR attraction"
+        ],
+        "reason": "The exact c4 target is a narrower late-time branch of c5. Reuse c4 with its non-negligible-dark-matter condition and absence of direct DM–DE interaction; neither condition becomes universal across c5.",
+        "refs": [
+          "c4",
+          "c5",
+          "u70",
+          "n5",
+          "n8"
+        ]
+      },
+      "nativeOperationValueSha256": "c1c61fb78756f04e6c517427db51b88548c75b92a2436203c69130d7d2736ed4",
+      "members": [
+        "q025-candidate-question:34990732591a1b91983b1849",
+        "q025-candidate-question:8d27c10725a1f68d46910a02"
+      ],
+      "target": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c5 expressly includes the same multifield Gauss–Bonnet phantom target and its matter qualification. c4 narrows that branch without narrowing every other c5 model to the phantom assumptions.",
+        "refs": [
+          "c4",
+          "c5",
+          "u70",
+          "n5",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "specializes",
+        "members": [
+          "c4",
+          "c6"
+        ],
+        "target": "c6",
+        "definingDifferences": [
+          "c4 selects the Gauss–Bonnet phantom branch",
+          "c6 also includes two-field turning dark energy without a supplied phantom or dark-matter requirement"
+        ],
+        "reason": "Reuse c4 as c6's precise Gauss–Bonnet destination. The conditions inherited from u70 do not apply automatically to u69's turning model.",
+        "refs": [
+          "c4",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "nativeOperationValueSha256": "f23dc6aa6b80b17bcbd16620aef0510a282a46cd59a37e3d1bbe3728cb054b39",
+      "members": [
+        "q025-candidate-question:34990732591a1b91983b1849",
+        "q025-candidate-question:144691c70786c15357e04bcf"
+      ],
+      "target": "q025-candidate-question:144691c70786c15357e04bcf",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c6 contains an explicit Gauss–Bonnet phantom branch matching c4 and a separate turning-dark-energy branch. The latter's description supplies neither phantom behavior nor u70's matter conditions.",
+        "refs": [
+          "c4",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "common_target",
+        "members": [
+          "c5",
+          "c6"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c5 retains postinflationary histories and GR-attraction targets",
+          "c6 retains the separate two-field turning-acceleration target",
+          "Only their Gauss–Bonnet phantom branch has the shared destination c4"
+        ],
+        "reason": "Both broader questions should reach the same existing phantom question. Neither broader scope is replaced by c4 or merged with the other; c5's stated systems are not silently expanded to every turning-dark-energy model.",
+        "refs": [
+          "c4",
+          "c5",
+          "c6",
+          "u69",
+          "u70",
+          "n5",
+          "n61",
+          "n63"
+        ]
+      },
+      "nativeOperationValueSha256": "2faa4571f4207f8d9e5cd1a3e2e7ab192bae72b6166fde9daaedcc6bc26ce6f1",
+      "members": [
+        "q025-candidate-question:8d27c10725a1f68d46910a02",
+        "q025-candidate-question:144691c70786c15357e04bcf"
+      ],
+      "target": "q025-candidate-question:34990732591a1b91983b1849",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The two broader scopes share the already-defined c4 component. Their remaining systems and targets differ, so shared access is justified without full equivalence or c6-to-c5 containment.",
+        "refs": [
+          "c4",
+          "c5",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "comparison",
+        "members": [
+          "c0",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "Multifield perturbation methods versus action-dependent kinetic and gravitational dynamics",
+          "Curved-metric transport support does not establish support for arbitrary nonstandard kinetic actions"
+        ],
+        "reason": "A useful next step from multifield calculations is to compare the action restrictions behind alternative inflationary dynamics. This licenses a comparison route, not an implementation or universal-method claim.",
+        "refs": [
+          "c0",
+          "c2",
+          "u14",
+          "n11",
+          "u66",
+          "n9",
+          "u19",
+          "n39"
+        ]
+      },
+      "nativeOperationValueSha256": "2fbbc32b0fb0b9b3465bafa8b13f9e736497ad21c22ef90c7ed8dd0583b7d17d",
+      "members": [
+        "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+        "q025-candidate-question:c19b646d564f6e3e0f160f53"
+      ],
+      "target": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd5",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Both definitions make action-dependent perturbation restrictions relevant. A comparison is supported, whereas automatic application of curved-metric transport to multiple-DBI or modified-gravity actions would exceed the inherited evidence.",
+        "refs": [
+          "c0",
+          "c2",
+          "u14",
+          "n11",
+          "u66",
+          "n9",
+          "u19",
+          "n39"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-71f9bd087ee989805def-challenge:p4",
+          "candidateId": "q025-candidate-question:12a2e56e9a3e4a85989a684c"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "textSha256": "8e92c481fbc3c42a86309060eb52acf655835b2eea7bdd24d3ad9dd9df63afe4"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:28cc3b8fbc59cb74cee255fb796373ce619cff34da0cf31634c5e2d8732b8aa0",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u66",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5",
+          "textSha256": "44e60a0db770e7db3621811f21a9d3aaa0692b9390e00b6ce86b7fdff9e6d927"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e11deefd980d73a0a6df6c68de43a0c805e7db3e5f523b0f12c99aa712c227e5",
+          "reviewId": "leaf-71f9bd087ee989805def-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 48,
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "textSha256": "bf9132cc35500dbe3d9c78a19ab37eacb80529d341c2c87fd0fe0588ed84a25c"
+        },
+        {
+          "localRef": "n39",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2f6f00e39c157ddcabebbe6b29ccd9158eb1406d68cba75ca73640d0212c2f7c",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "comparison",
+        "members": [
+          "c1",
+          "c6"
+        ],
+        "target": "c6",
+        "definingDifferences": [
+          "Inflationary turning and distance questions versus late-time acceleration",
+          "The late-time turning model's metric and stability properties are not fixed by its departure from a flat polar-coordinate example"
+        ],
+        "reason": "Compare how turning is posed in the two epochs. The descriptions and existing definitions support this reading route, but not transfer of attractors, curvature assumptions, perturbation formulas or observational conclusions.",
+        "refs": [
+          "c1",
+          "c6",
+          "u52",
+          "n31",
+          "u69",
+          "n61"
+        ]
+      },
+      "nativeOperationValueSha256": "5a9e9e0b4cc690ab1c5317f8113b6173a4e67259a6bc0c20c5f92de7f36f3604",
+      "members": [
+        "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+        "q025-candidate-question:144691c70786c15357e04bcf"
+      ],
+      "target": "q025-candidate-question:144691c70786c15357e04bcf",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c6 explicitly includes comparison with inflationary turning methods. u69 supports a late-time turning question, and n61 prevents inferring curvature sign from a metric change. The decision claims no transferred solution.",
+        "refs": [
+          "c1",
+          "c6",
+          "u52",
+          "n31",
+          "u69",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p3",
+          "candidateId": "q025-candidate-question:528990f28c3ccba6d5d8b47d"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+        },
+        {
+          "localRef": "u52",
+          "kind": "description",
+          "unitIndex": 75,
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "textSha256": "7c342ba751e8d593f5da5c663b785b2e7c735997d9b4b61ffed701302f868ec4"
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "reviewId": "leaf-b826c032aa9fcad09ba2-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u69",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "textSha256": "56ab1d5e5d9940b1ba6946506a5ce36fbb6ded84bc67e98d4ca1f725fd46e1cc"
+        },
+        {
+          "localRef": "n61",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd7",
+      "nativeOperation": {
+        "id": "pd7",
+        "operation": "comparison",
+        "members": [
+          "c3",
+          "c5"
+        ],
+        "target": "c5",
+        "definingDifferences": [
+          "Inflationary support and control versus specified subsequent evolution",
+          "c5 covers particular scalar–gravity systems, not every framework in c3"
+        ],
+        "reason": "Offer a model-qualified route from inflation to later evolution. u31 explicitly links inflation, exit, perturbative repair and subsequent Einstein-dominated evolution, while keeping addition of a potential as an intervention. This is not evidence for a common history across the overview.",
+        "refs": [
+          "c3",
+          "c5",
+          "u31",
+          "n0"
+        ]
+      },
+      "nativeOperationValueSha256": "abcd2fa74415847f5737532b1e05d32e2c67c815cec507d5993616a3767e96cb",
+      "members": [
+        "q025-candidate-question:c253246412d0dc8d86ed91ae",
+        "q025-candidate-question:8d27c10725a1f68d46910a02"
+      ],
+      "target": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "u31 explicitly connects inflation, exit, an added-potential intervention and subsequent Einstein-dominated evolution. This supports a model-qualified reading route, not a claim that every c3 framework falls within c5 or has a successful later history.",
+        "refs": [
+          "c3",
+          "c5",
+          "u31",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fd81fbc9a7aeac07a2cd-challenge:p4",
+          "candidateId": "q025-candidate-question:c253246412d0dc8d86ed91ae"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+        },
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "textSha256": "3fc2049e9cda0c05c77f0cf6be86abdeb89ec1495ac53c05d47d1373eb1ba003"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd8",
+      "nativeOperation": {
+        "id": "pd8",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "pq0 selects scalar–Gauss–Bonnet coupling in the source's two-field rapid-turn inflationary setting",
+          "c2 compares several dissipative, kinetic and gravitational mechanisms"
+        ],
+        "reason": "The supplied description supports this narrower question about gravitational-coupling modifications to inflation. It does not establish the announced relations or license importing a single-field coupling ansatz.",
+        "refs": [
+          "c2",
+          "u70",
+          "n5",
+          "n8",
+          "n63"
+        ]
+      },
+      "nativeOperationValueSha256": "1af7500dc751db0296684f43a2675fc0ffdc6d4dfcd563c4fc673fac936ff27a",
+      "members": [
+        "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+        "q025-candidate-question:c19b646d564f6e3e0f160f53"
+      ],
+      "target": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd8",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "u70's two-field scalar–Gauss–Bonnet modification is a concrete gravitational-coupling question within c2. A scoped target can be supported without verifying its announced formulas; no single-field inverse-potential ansatz is inherited.",
+        "refs": [
+          "c2",
+          "u70",
+          "n5",
+          "n8",
+          "n63",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-b826c032aa9fcad09ba2-challenge:p2",
+          "candidateId": "q025-candidate-question:c19b646d564f6e3e0f160f53"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    },
+    {
+      "id": "operation:navigation-inflation:pd9",
+      "nativeOperation": {
+        "id": "pd9",
+        "operation": "comparison",
+        "members": [
+          "pq0",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "Two-field rapid-turn inflation versus multifield late-time dark energy",
+          "Inflationary consistency relations versus effective equation of state below -1",
+          "Non-negligible dark matter without direct DM–DE interaction is local to the supplied late-time analysis"
+        ],
+        "reason": "The unchanged compound source u70 explicitly asks both questions, supporting a related-question route across its two branches. Shared provenance and a coupling framework do not establish a continuous cosmological solution or interchangeable premises.",
+        "refs": [
+          "c4",
+          "u70",
+          "n5",
+          "n8",
+          "n63"
+        ]
+      },
+      "nativeOperationValueSha256": "10d707d223570c27d67351d5f755b9de52e43f3d81e9b6d951c90fc4e683c6ac",
+      "members": [
+        "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+        "q025-candidate-question:34990732591a1b91983b1849"
+      ],
+      "target": "q025-candidate-question:34990732591a1b91983b1849",
+      "admissionBasis": "explicit_independent_support_and_root_admission",
+      "challengeAssessment": {
+        "ref": "pd9",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The whole compound description contains both targets, supporting the stated related-question route. The different field-count restrictions, epochs and observables preclude treating it as identity, containment or a demonstrated evolution sequence.",
+        "refs": [
+          "u70",
+          "c4",
+          "n5",
+          "n8",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+        },
+        {
+          "localRef": "u70",
+          "kind": "description",
+          "unitIndex": 62,
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "textSha256": "78cb7d616db1242c87b4506921af36e198b09b50c8ca953c7f04499bc7585e82"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-297710f585b0edbffa67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-431e39adaf172dcc211a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n63",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+          "reviewId": "leaf-f4bd79c6fc317999d078-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+        "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+      }
+    }
+  ],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Reuse c0 for shared multifield dynamics, but retain c1's trajectory/geodesic and distance diagnostics and c0's distinct calculation targets. Complete scoped equivalence fails.",
+        "refs": [
+          "c0",
+          "c1",
+          "n11",
+          "n35",
+          "n46"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Noncanonical multifield dynamics provide an overlap, but field-content questions and action-specific modifications are different scopes. No universal transport support follows.",
+        "refs": [
+          "c0",
+          "c2",
+          "u66",
+          "n9",
+          "n11"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Multifield inflation overlaps modified-dynamics mechanisms. c0 also retains ordinary assisted and modular questions; c3 includes non-fundamental inflating sources and other distinct frameworks.",
+        "refs": [
+          "c0",
+          "c3",
+          "u30",
+          "n18",
+          "u23",
+          "n83"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Inflationary dynamics and perturbations are distinct from late-time phantom conditions. The latter's dark-matter premise does not enter c0.",
+        "refs": [
+          "c0",
+          "c4",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary backgrounds and correlations differ from reheating and later cosmology. Evolution after horizon crossing is not itself postinflationary evolution.",
+        "refs": [
+          "c0",
+          "c5",
+          "u14",
+          "u10",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "The epoch and target change from inflationary dynamics and perturbations to late-time acceleration. Shared scalar geometry does not supply a transferable solution.",
+        "refs": [
+          "c0",
+          "c6",
+          "u69",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Field-dependent kinetic geometry can enter their shared inflation-mechanism questions, but multifield cooperation, turning and distances do not coincide with the full dissipation/kinetic/gravity comparison.",
+        "refs": [
+          "c1",
+          "c2",
+          "u68",
+          "u42",
+          "n40",
+          "n59"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Generalized hyperinflation contributes to both. Pure geometry/distance questions and ordinary cooperative mechanisms remain distinguishable from c3's wider modified-dynamics frameworks.",
+        "refs": [
+          "c1",
+          "c3",
+          "u52",
+          "n31",
+          "n84",
+          "n46"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Inflationary mechanism and distance diagnostics do not ask the late-time Gauss–Bonnet phantom question. Neither turning nor extra fields supplies c4's conditions automatically.",
+        "refs": [
+          "c1",
+          "c4",
+          "u70",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary mechanisms and geometry differ from the specified subsequent histories. A postinflationary potential minimum alone does not establish reheating, GR attraction or phantom behavior.",
+        "refs": [
+          "c1",
+          "c5",
+          "u26",
+          "n52"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "Turning supports a qualified comparison across epochs, not identity or containment. The late-time metric's curvature sign and perturbative stability remain unspecified.",
+        "refs": [
+          "c1",
+          "c6",
+          "u69",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "c2 is the focused dissipative/kinetic/gravitational mechanism comparison within c3's broader modified-inflation question. Its action restrictions and potential-free branch remain explicit.",
+        "refs": [
+          "c2",
+          "c3",
+          "u22",
+          "n57",
+          "u23",
+          "n83"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c4",
+        "relation": "changed_scope",
+        "reason": "Gauss–Bonnet inflation and late-time phantom dark energy differ in epoch, system and target. A coupling label does not transfer a single-field ansatz or the late-time dark-matter condition.",
+        "refs": [
+          "c2",
+          "c4",
+          "u72",
+          "n28",
+          "u70",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary support, perturbations and exit differ from subsequent reheating or late-time histories. A matched scalar–gravity model can connect the questions without equating them.",
+        "refs": [
+          "c2",
+          "c5",
+          "u31",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "The inflationary mechanism comparison changes to late-time turning or Gauss–Bonnet acceleration. Neither a common action nor transferred stability conditions are supplied.",
+        "refs": [
+          "c2",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "changed_scope",
+        "reason": "Modified inflation and phantom-like late-time dark energy remain separate. c4 is a related destination through the explicitly split u70 branch, not a narrower inflationary question.",
+        "refs": [
+          "c3",
+          "c4",
+          "u70",
+          "n5",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary support/control and subsequent evolution require separate questions. The public route is restricted to matching scalar–gravity systems, not all c3 frameworks.",
+        "refs": [
+          "c3",
+          "c5",
+          "u31",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "Turning during inflation and late-time acceleration have different epochs and viability tests. No equivalence of their attractors or fluctuation prescriptions is established.",
+        "refs": [
+          "c3",
+          "c6",
+          "u52",
+          "u69",
+          "n84",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:34990732591a1b91983b1849",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c5",
+        "relation": "specializes_left",
+        "reason": "c4 is the precise Gauss–Bonnet phantom branch within c5's broader subsequent-evolution question; its dark-matter conditions stay branch-local.",
+        "refs": [
+          "c4",
+          "c5",
+          "u70",
+          "n5",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:34990732591a1b91983b1849",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c6",
+        "relation": "specializes_left",
+        "reason": "c4 narrows c6 to Gauss–Bonnet phantom behavior. u69's distinct turning-dark-energy question does not inherit its phantom or dark-matter premises.",
+        "refs": [
+          "c4",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c5",
+        "right": "c6",
+        "relation": "overlap",
+        "reason": "Their shared phantom branch reuses c4. Reheating and GR attraction remain in c5, while the separate two-field turning model remains in c6; neither full scope is merged or contained.",
+        "refs": [
+          "c5",
+          "c6",
+          "c4",
+          "u69",
+          "u70"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "right": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c2",
+        "relation": "specializes_left",
+        "reason": "The new question selects the two-field rapid-turn Gauss–Bonnet inflationary component of the broader gravitational-coupling comparison.",
+        "refs": [
+          "c2",
+          "u70",
+          "n5",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "left": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c4",
+        "relation": "changed_scope",
+        "reason": "The same compound source addresses different epochs and targets. Only the late-time branch has the supplied non-negligible-dark-matter condition without direct DM–DE interaction.",
+        "refs": [
+          "c4",
+          "u70",
+          "n5",
+          "n8",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Shared multifield dynamics can reuse c0; c0's calculation targets and c1's mechanism, geodesic and distance targets prevent complete equivalence or containment.",
+        "refs": [
+          "c0",
+          "c1",
+          "u30",
+          "n18",
+          "n58",
+          "n11",
+          "n35",
+          "n46"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Noncanonical multifield questions overlap, but multifield perturbation methods and action-specific modifications have different full scopes. General transport applicability is not established.",
+        "refs": [
+          "c0",
+          "c2",
+          "u66",
+          "n9",
+          "n11"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Multifield mechanisms overlap modified inflation. c0 also covers ordinary assisted and modular dynamics and calculation methods; c3 includes non-fundamental sources and other frameworks.",
+        "refs": [
+          "c0",
+          "c3",
+          "u30",
+          "n18",
+          "u23",
+          "n83"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Inflationary dynamics and correlations differ from late-time phantom conditions. Neither a shared field count nor coupling context transfers the dark-matter premise.",
+        "refs": [
+          "c0",
+          "c4",
+          "u70",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Evolution after horizon crossing is not itself postinflationary evolution. Inflationary calculations and subsequent reheating or late-time histories remain distinct targets.",
+        "refs": [
+          "c0",
+          "c5",
+          "u14",
+          "u10",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "Moving from inflationary backgrounds and perturbations to late-time acceleration changes both epoch and target; geometry alone supplies no transferable solution.",
+        "refs": [
+          "c0",
+          "c6",
+          "u69",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Kinetic geometry can enter both mechanism comparisons. Multifield cooperation and distance diagnostics do not coincide with the full dissipative, kinetic and gravitational scope.",
+        "refs": [
+          "c1",
+          "c2",
+          "u68",
+          "u42",
+          "n40",
+          "n59"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Generalized hyperinflation contributes to both. Geometry-only questions and ordinary cooperative mechanisms prevent identification with the broader modified-dynamics question.",
+        "refs": [
+          "c1",
+          "c3",
+          "u52",
+          "n31",
+          "n84",
+          "n46"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Inflationary mechanisms and distance diagnostics do not ask the late-time Gauss–Bonnet phantom question or supply its matter conditions.",
+        "refs": [
+          "c1",
+          "c4",
+          "u70",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary geometry and subsequent histories remain distinct. A source's postinflationary minimum does not establish reheating, GR attraction or phantom behavior.",
+        "refs": [
+          "c1",
+          "c5",
+          "u26",
+          "n52"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "Turning permits a qualified comparison across epochs, not identity or containment. The late-time metric's curvature sign and perturbative stability remain unspecified.",
+        "refs": [
+          "c1",
+          "c6",
+          "u69",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "c2 focuses the broader question about changed inflationary dynamics onto dissipative, kinetic and gravitational mechanisms and their predictions. This question-family containment preserves potential-free kinetics and all action-specific limits.",
+        "refs": [
+          "c2",
+          "c3",
+          "u22",
+          "n57",
+          "u23",
+          "n83"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c4",
+        "relation": "changed_scope",
+        "reason": "The Gauss–Bonnet overlap changes epoch, system and observable target. Neither a single-field inflationary ansatz nor the late-time dark-matter condition transfers.",
+        "refs": [
+          "c2",
+          "c4",
+          "u72",
+          "n28",
+          "u70",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary support, perturbations and exit differ from subsequent histories. A specified model may connect these questions without equating them.",
+        "refs": [
+          "c2",
+          "c5",
+          "u31",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "The inflationary mechanism comparison changes to late-time turning or Gauss–Bonnet acceleration. A common action or transferable stability conditions are not supplied.",
+        "refs": [
+          "c2",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "changed_scope",
+        "reason": "Phantom-like late-time dark energy is not a narrower inflationary target. Access through u70's separate inflationary component preserves the epoch change.",
+        "refs": [
+          "c3",
+          "c4",
+          "u70",
+          "n5",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Inflationary support and subsequent evolution require separate questions. Their reading route applies only to matching scalar–gravity systems.",
+        "refs": [
+          "c3",
+          "c5",
+          "u31",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c6",
+        "relation": "changed_scope",
+        "reason": "Inflationary turning and late-time acceleration have different epochs and viability tests; their attractors and fluctuation prescriptions are not identified.",
+        "refs": [
+          "c3",
+          "c6",
+          "u52",
+          "u69",
+          "n84",
+          "n61"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:34990732591a1b91983b1849",
+      "right": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c5",
+        "relation": "specializes_left",
+        "reason": "c4 isolates c5's Gauss–Bonnet phantom branch while retaining its branch-local dark-matter conditions and introductory reading limit.",
+        "refs": [
+          "c4",
+          "c5",
+          "u70",
+          "n5",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:34990732591a1b91983b1849",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c6",
+        "relation": "specializes_left",
+        "reason": "c4 selects c6's Gauss–Bonnet phantom question. The separate turning model receives no phantom or dark-matter premise from that selection.",
+        "refs": [
+          "c4",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:8d27c10725a1f68d46910a02",
+      "right": "q025-candidate-question:144691c70786c15357e04bcf",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c5",
+        "right": "c6",
+        "relation": "overlap",
+        "reason": "Their common Gauss–Bonnet phantom component reuses c4. c5 retains reheating and GR-attraction targets; c6 retains a distinct turning model not established within c5's stated systems.",
+        "refs": [
+          "c4",
+          "c5",
+          "c6",
+          "u69",
+          "u70",
+          "n61",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "right": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c2",
+        "relation": "specializes_left",
+        "reason": "The source-specific two-field rapid-turn Gauss–Bonnet question narrows the gravitational-coupling component of c2 without importing another model's ansatz.",
+        "refs": [
+          "c2",
+          "u70",
+          "n5",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "left": "q025-candidate-question:9b49c6ccf6462c9e89de1083",
+      "right": "q025-candidate-question:34990732591a1b91983b1849",
+      "relation": "changed_scope",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c4",
+        "relation": "changed_scope",
+        "reason": "u70 supplies distinct early- and late-time targets. Non-negligible dark matter without direct DM–DE interaction belongs only to the supplied late-time analysis.",
+        "refs": [
+          "c4",
+          "u70",
+          "n5",
+          "n8",
+          "n63"
+        ]
+      },
+      "sourceReviewIds": [
+        "inflation-scope-navigation-proposal",
+        "inflation-retained-whole-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+    "c1": "q025-candidate-question:528990f28c3ccba6d5d8b47d",
+    "c2": "q025-candidate-question:c19b646d564f6e3e0f160f53",
+    "c3": "q025-candidate-question:c253246412d0dc8d86ed91ae",
+    "c4": "q025-candidate-question:34990732591a1b91983b1849",
+    "c5": "q025-candidate-question:8d27c10725a1f68d46910a02",
+    "c6": "q025-candidate-question:144691c70786c15357e04bcf",
+    "pq0": "q025-candidate-question:9b49c6ccf6462c9e89de1083"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/inflation-admission.json",
+    "sha256": "c58c7f7a6a49c669b2adf1ceecbd28492470ce67da115918763442bc7b8465c8"
+  },
+  "placements": [],
+  "aliases": [],
+  "globalCanonicalIdentityStatus": "no_equivalence_admitted_by_this_delta",
+  "fullAtlasAdmission": false
+}

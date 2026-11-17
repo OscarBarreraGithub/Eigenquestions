@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "q025-placement-pilot-delivery/1",
+  "status": "source_inputs_only_no_native_launch",
+  "inputIndex": {
+    "path": "research/q025/assembly/organization-residual-v1/placement-pilot-index.json",
+    "sha256": "e189c44a1a8af7ce982de7768adaa9f1290b6c6de67206923e3365cbe5d94d31",
+    "bytes": 2801
+  },
+  "script": {
+    "path": "research/q025/assembly/organization-residual-v1/compact_placement_pilot.py",
+    "sha256": "a84b7ff7147e6db463bf7b602a2e65891e09329be07aff267e016f36d2a41e1f",
+    "bytes": 4672
+  },
+  "packets": [
+    {
+      "familyId": "placement-pilot-annotation",
+      "view": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-annotation.view.json",
+        "sha256": "a5f0357a7264e8650d5ffdb7580887bed33810f1e1c55b98d23f12c12b3b2765",
+        "bytes": 103512
+      },
+      "sidecar": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-annotation.json",
+        "sha256": "1a20671def06b3c99fdc4ab06a8125ea7c99dc6a6fae54717d0b761da4a4210e",
+        "bytes": 411887
+      },
+      "units": 17,
+      "scopes": 29,
+      "priorContexts": 20,
+      "completeDescriptionsAndBothAnnotationsVerified": true
+    },
+    {
+      "familyId": "placement-pilot-coverage",
+      "view": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-coverage.view.json",
+        "sha256": "f5638f04832e3f64b40bb120f2dd7bc471316761f48d31e81adaf8532782a78a",
+        "bytes": 83679
+      },
+      "sidecar": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-coverage.json",
+        "sha256": "c19a7ac9a3d3fb70d206e33b11d1de18daec1742b75b1bbf1528a0f689e6cce6",
+        "bytes": 406645
+      },
+      "units": 24,
+      "scopes": 17,
+      "priorContexts": 27,
+      "completeDescriptionsAndBothAnnotationsVerified": true
+    },
+    {
+      "familyId": "placement-pilot-competing",
+      "view": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-competing.view.json",
+        "sha256": "b3349d0c7e74944f598dd2ad92ace6b3753d1a83e75ec01c62051812777ec1f7",
+        "bytes": 314181
+      },
+      "sidecar": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-competing.json",
+        "sha256": "64b286d336b92ceac388cd861b0551eb0ff87ca01f6d28df090c345e1c0efd86",
+        "bytes": 1186444
+      },
+      "units": 22,
+      "scopes": 93,
+      "priorContexts": 61,
+      "completeDescriptionsAndBothAnnotationsVerified": true
+    },
+    {
+      "familyId": "placement-pilot-absent",
+      "view": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-absent.view.json",
+        "sha256": "b368296b76ae7f57371d39a1e16a5dfd3f2b398bd16ea89417446bae480c3f2a",
+        "bytes": 54790
+      },
+      "sidecar": {
+        "path": "research/q025/assembly/organization-residual-v1/pilot-inputs/placement-pilot-absent.json",
+        "sha256": "9ad2b6207ae5ef4e544618902befdf68fa6da2a33815e1fe7367783140252e53",
+        "bytes": 258047
+      },
+      "units": 24,
+      "scopes": 6,
+      "priorContexts": 24,
+      "completeDescriptionsAndBothAnnotationsVerified": true
+    }
+  ],
+  "distinctSources": 87,
+  "admissionPolicy": "New proposal/challenge judgments remain pending coordinator admission; no home, scope, identity, contribution or navigation is admitted by source export."
+}
