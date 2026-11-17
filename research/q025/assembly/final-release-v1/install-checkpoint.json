@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "q025-final-install-preparation-checkpoint/1",
+  "status": "prepared_not_installed",
+  "files": [
+    {
+      "path": "research/q025/assembly/final-release-v1/install.py",
+      "sha256": "b36c610ac65806beb36a9281d4ab5998e0b12edf86321454199d81adc664cea6",
+      "bytes": 11325
+    },
+    {
+      "path": "research/q025/assembly/final-release-v1/install_test.py",
+      "sha256": "05d1bb570b8dfb332a32968409b9b2bb50c5148beb037e4c3b4d6b56409443cb",
+      "bytes": 5608
+    },
+    {
+      "path": "research/q025/assembly/final-release-v1/INSTALL.md",
+      "sha256": "6f575f1a15bd069e3bf8ee8ca4caa6e85f561e87cd3930482d97c795930a3eac",
+      "bytes": 4320
+    },
+    {
+      "path": "research/q025/assembly/final-release-v1/install-preflight.json",
+      "sha256": "f6a26caaed96f5ff2a17e18a9604afdee9b19209dca711837e0b2f055deeecf8",
+      "bytes": 1481
+    }
+  ],
+  "fileCount": 4,
+  "tests": {
+    "command": "python3 research/q025/assembly/final-release-v1/install_test.py",
+    "passed": 6,
+    "failed": 0
+  },
+  "frozenScienceManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "verifiedPublicFiles": 7680,
+  "decodedBytesScreened": 1854979429,
+  "leakageFindings": 0,
+  "authority": "Root authorized installer preparation only; exact installation command remains blocked on root final acceptance. No data/atlas tree or index was created.",
+  "existingWorkflow": ".github/workflows/deploy.yml",
+  "workflowRequirement": "Commit actual installed files as ordinary Git blobs; the workflow has no external download or LFS checkout."
+}

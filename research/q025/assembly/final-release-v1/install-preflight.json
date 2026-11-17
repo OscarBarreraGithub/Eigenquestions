@@ -1,0 +1,51 @@
+{
+  "kind": "q025-final-declared-install-audit",
+  "mode": "read_only",
+  "freezeSha256": "141336abde9ec9e096beb6bda67f5f04f5ac21f72d7429a242d0920872881a91",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "installDirectory": "data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1",
+  "dataFiles": 7680,
+  "indexFiles": 1,
+  "dataBytes": 486811841,
+  "largestFile": {
+    "path": "catalog.json",
+    "bytes": 7021318
+  },
+  "categories": {
+    "package_files": 910,
+    "package_bytes": 233627984,
+    "source_context_files": 6735,
+    "source_context_bytes": 217456068,
+    "supplemental_external_files": 35,
+    "supplemental_external_bytes": 35727789
+  },
+  "decodedBytesScreened": 1854979429,
+  "leakageScreen": {
+    "files": 7680,
+    "gzipFiles": 6477,
+    "findings": 0,
+    "categories": [
+      "private_absolute_path",
+      "credential_like"
+    ],
+    "limit": "Pattern-based path/credential screen, not a general secret detector or scientific text audit."
+  },
+  "projectedBuildGate": {
+    "maxFileBytes": 26214400,
+    "maxFileCount": 20000,
+    "staticDestinationPages": 10653,
+    "ordinarySiteAssetReserve": 500,
+    "projectedFileCount": 18833,
+    "passed": true
+  },
+  "installed": false,
+  "excluded": [
+    "asset-plan.json",
+    "handoff.json",
+    "assembly-report.json",
+    "accepted-geometry-input.json",
+    "native review inputs",
+    "primary archives",
+    "recovery tar"
+  ]
+}

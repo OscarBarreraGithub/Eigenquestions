@@ -1203,3 +1203,12 @@ The owner asked why this was taking so long. Root acknowledged that validation a
 
 
 **Repair checkpoint.** Product preserved the failed run and added only the five compound-coverage fields to compact agent nodes, cloning the map/provenance. The harness now compares compact, full and actual browser fields. Root inspected the code, verified 22 checkpoint pins and independently passed the two real-source compound regressions. Product’s build, 113 runtime tests and site checks pass. Scientific manifest and browser geometry are unchanged. [Failure and repair](research/q025/integration/final-acceptance/run-v1/FAILURE-AMENDMENT.md). Next: a separately sealed run-v2 and fresh observer.
+
+
+## 2026-11-17 UTC — Q-025: Prepare self-contained publication and separate browser gates
+
+**Delivery.** Geometry prepared a narrow installer for the exact declared files. It verifies 7,680 files (486.8 MB), stages and rechecks bytes, preserves old immutable versions and selects the discovery entry last. Its bounded screen found no private path/credential patterns in 1.85 GB of decoded JSON. Root inspected the script, verified the four frozen preparation pins and independently passed six installation regressions. No production data has yet been installed. [Installation handoff](research/q025/assembly/final-release-v1/INSTALL.md).
+
+**Browser observation.** Run-v2 (61597266, code `a17c9ea3f7e660e4154172f574304bad14315722`) passed twelve final-data text/source/mobile checks, including identical compound qualifications in compact/full/browser views. It then timed out in the separate overview check; no page errors were reported and the observer had not started. Preserve this attempt. Root authorized an observer-only successor using the same sealed code/data while product and geometry diagnose that exact overview wait separately. This separates independent agent control from an unrelated scripted-map check; it does not waive the overview publication gate.
+
+**Display finding.** Five earlier approved presentation annotations are absent from the exported details despite unchanged scope hashes/text. Product is restoring only those exact annotations through the shared display path; original scientific records remain frozen. The scientific evaluator separately fixed the fourth agent-case expectation before any run: source-facet precision, distinct dissipation regimes and negligible selected PBH abundance, with no new canonical identity or proof claim.
