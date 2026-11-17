@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {verifyPrepared,observeWhitespaceRun} from './runner.mjs';
+test('four recovery requests pin both prefixes and distinct completion/challenge schemas',()=>{const p=verifyPrepared();assert.equal(p.jobs.length,4);assert.equal(p.prefixes.length,2);assert.equal(p.maxAuthorizedConcurrency,2);});
+test('whitespace loop guard preserves normal source strings',()=>{const j={};observeWhitespaceRun(j,JSON.stringify({text:' '.repeat(5000)}));assert.equal(j.cancelReason,undefined);observeWhitespaceRun(j,'\n'.repeat(4097));assert.match(j.cancelReason,/Degenerate/);});

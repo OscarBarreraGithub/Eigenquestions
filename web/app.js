@@ -314,11 +314,11 @@ function render() {
   if (!view.chart && activePanel === 'geometry') switchPanel('sources');
   updateOptionsSummary(); renderColumns(); renderEvidence();
   const selector=state.selector,loaded=selector&&installedAtlases.get(atlasKey(selector));
-  const renderPreparedPanel=()=>renderAtlasPanel({capsule:activeCapsule,navigator:loaded?.navigator,readSources:loaded?.readSources,onNavigate:payload=>action(payload),onNative:query=>startNativeBranch(query),onError:message=>status(message,true)});
+  const renderPreparedPanel=()=>renderAtlasPanel({capsule:activeCapsule,navigator:loaded?.navigator,manifest:loaded?.atlas.manifest,readSources:loaded?.readSources,contextForSource:loaded?unitId=>sourceContextDisclosure(()=>loaded.readContext(unitId)):undefined,onNavigate:payload=>action(payload),onNative:query=>startNativeBranch(query),onError:message=>status(message,true)});
   renderPreparedPanel();
   if(selector&&!loaded){const identity=state.id;ensureAtlas(selector).then(()=>{if(currentState(session).id===identity)render();}).catch(error=>status(`This exact snapshot remains readable; prepared continuation unavailable: ${error.message}`,true));}
   if (activePanel === 'geometry') { renderChart(); renderDetails(); }
-  status(view.atlas?.destination.metadataOnly ? 'Classification vocabulary · paper coverage is a separate atlas' : view.nodes.length ? `${view.directions.length} ${canAttemptContinuation() ? 'next directions' : 'supplied groups'} · ${authored ? `${view.nodes.length} source descriptions` : `${paperCount} papers`} in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
+  status(view.atlas?.destination.metadataOnly ? 'Classification vocabulary · paper coverage is a separate atlas' : view.nodes.length ? `${view.directions.length} ${canAttemptContinuation() ? (view.directions.length===1?'next direction':'next directions') : (view.directions.length===1?'supplied group':'supplied groups')} · ${authored ? `${view.nodes.length} source descriptions` : `${paperCount} papers`} in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
   document.documentElement.dataset.ready = 'true';
   document.documentElement.dataset.stateId = state.id;
   document.documentElement.dataset.corpusId = state.corpusId;
@@ -601,7 +601,7 @@ async function connect(origin, token) {
     let savedToken = false;
     try { sessionStorage.setItem(bridgeStorageKey, JSON.stringify(bridge)); savedToken = true; } catch {}
     if (fragment.has('token') && savedToken) history.replaceState(null, '', location.pathname + location.search);
-  } catch (error) { if (source === sourceEpoch) { bridge = null; events?.close(); setBusy(false); } throw error; }
+  } catch (error) { if (source === sourceEpoch) { bridge = null; events?.close(); $('connection-status').textContent='Browser session · companion disconnected'; setBusy(false); } throw error; }
 }
 async function ensureWorker() {
   if (workerReady) return workerReady;
@@ -720,7 +720,7 @@ $('publish-view').addEventListener('click', async () => {
 });
 $('copy-view-link').addEventListener('click', async () => { try { await navigator.clipboard.writeText($('stored-view-url').value); $('stored-view-status').textContent = 'Link copied.'; } catch { $('stored-view-url').focus(); $('stored-view-url').select(); $('stored-view-status').textContent = 'Select and copy the saved link.'; } });
 $('agent-open').addEventListener('click', () => $('agent-dialog').showModal()); $('agent-close').addEventListener('click', () => $('agent-dialog').close());
-$('bridge-form').addEventListener('submit', async event => { event.preventDefault(); try { await connect($('bridge-origin').value, $('bridge-token').value); } catch (error) { $('bridge-message').textContent = `${error.message} If browser network policy blocks attachment, open the companion’s same-origin local link.`; } });
+$('bridge-form').addEventListener('submit', async event => { event.preventDefault(); try { await connect($('bridge-origin').value, $('bridge-token').value); } catch (error) { $('bridge-message').textContent = `${error.message} If your browser blocks access to apps on this device, allow the site permission for Eigenquestions or open the companion’s local link.`; } });
 $('bridge-disconnect').addEventListener('click', async () => { ++userIntent; events?.close(); bridge = null; revision = -1; try { sessionStorage.removeItem(bridgeStorageKey); } catch {} history.replaceState(null, '', location.pathname + location.search); $('connection-status').textContent = 'Browser session'; $('bridge-message').textContent = 'Disconnected. Continuing this session in the browser.'; try { await startBrowser(session ? { session: exportSession(session) } : {}); } catch (error) { status(error.message, true); } });
 
 function refreshResume(home = $('exploration-workspace').hidden) {
@@ -810,7 +810,7 @@ window.eigenquestionsNavigator = Object.freeze({
   orient:async (query, options={}) => { if(typeof query!=='string')throw new Error('orient needs a question string.');if(options.selector){const prepared=await ensureAtlas(options.selector),oriented=prepared.navigator.createSession(options);await prepared.navigator.prepareState?.(currentState(oriented));return createCapsule({session:oriented,view:prepared.navigator.computeView(currentState(oriented))},{context:{question:currentState(oriented).query,originalQuestion:query}});}await ensureWorker();return createCapsule(await callWorker('orient',{...options,query})); },
   lookup:async (query,selector=currentState(session)?.selector) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSearch?.();return prepared.navigator.search(query,{limit:15});},
   describe:async selector => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareDestination?.(selector.destinationId);return prepared.navigator.destination(selector.destinationId);},
-  sources:async (selector,{offset=0,limit=20,...filters}={}) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSources?.(selector.destinationId);const page=prepared.navigator.sources(selector.destinationId,{offset,limit,...filters});return {...page,items:await prepared.readSources(page.items)};},
+  sources:async (selector,{offset=0,limit=20,collection='membership',...filters}={}) => {const prepared=await ensureAtlas(selector);if(collection==='membership')await prepared.navigator.prepareSources?.(selector.destinationId);const page=prepared.navigator.sources(selector.destinationId,{offset,limit,collection,...filters});return {...page,items:await prepared.readSources(page.items)};},
   connections:async (selector,options={}) => {const prepared=await ensureAtlas(selector);return prepared.navigator.connections(selector.destinationId,options);},
   context:async (unitId,selector=currentState(session)?.selector,options={}) => {const prepared=await ensureAtlas(selector);return pageSourceContext(await prepared.readContext(unitId),options);},
   evidence:async ids => {if(!Array.isArray(ids)||ids.length>100)throw new Error('Supply at most 100 evidence IDs.');const found=ids.map(id=>activeCapsule?.snapshot.view.nodes.find(node=>node.id===id));if(found.every(Boolean))return structuredClone(found);await ensureWorker();return callWorker('evidence',{ids});},

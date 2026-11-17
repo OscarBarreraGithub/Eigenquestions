@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {renderAtlasPanel} from '../../web/atlas-panel.mjs';
+test('source contribution disclosure reads bounded pages, groups papers, and retains roles and qualifications',async()=>{
+  const original=globalThis.document,storage=globalThis.localStorage,all=[],reads=[],contextIds=[];
+  class Element{constructor(tag){this.tag=tag;this.children=[];this.handlers={};this.isConnected=true;all.push(this);}append(...nodes){this.children.push(...nodes);}replaceChildren(...nodes){this.children=nodes;}insertBefore(node){this.children.push(node);}after(){}setAttribute(){}addEventListener(type,handler){this.handlers[type]=handler;}}
+  const elements=new Map([['atlas-panel',new Element('section')],['full-question-details',new Element('details')],['full-question-text',new Element('p')]]);
+  try{
+    globalThis.document={createElement:tag=>new Element(tag),getElementById:id=>elements.get(id),querySelector:()=>new Element('section')};globalThis.localStorage={getItem:()=>null};
+    const rows=Array.from({length:25},(_,i)=>({unitId:`unit:${i}`,paperId:`paper-${i%2}`,role:i%2?'comparison':'method',basis:'description_checked',qualification:'Source-specific condition retained.',lens:'physical_question',decisionId:`decision:${i}`,evidenceRefs:[`evidence:${i}`]}));
+    const record={summary:'Synthetic only',scope:{},scientificStatus:'test',placementStatus:'test',sourceContributions:rows};
+    const atlas={selector:{kind:'atlas-destination',atlasId:'contributions',atlasVersion:'v1',destinationId:'q'},destination:record,membershipCount:0,membershipNotice:'No membership claim',connectionCount:0,connections:[]};
+    renderAtlasPanel({capsule:{snapshot:{view:{atlas}}},navigator:{getEvidence:ids=>ids.map(id=>({id,paperId:'bundled',evidence:{text:'Already verified bundled source'}}))},contextForSource:id=>{contextIds.push(id);return new Element('details');},readSources:async selected=>{assert.ok(selected.every(row=>row.source?.id===row.unitId&&row.source.evidence.text==='Already verified bundled source'));reads.push(selected.map(r=>r.unitId));return selected.map(row=>({...row,source:{paperId:row.paperId,title:row.paperId,sourceUrl:'https://example.org/'+row.paperId,evidence:{text:'Recorded extracted description'}}}));},onError:message=>{throw new Error(message);}});
+    assert.equal(reads.length,0);assert.equal(contextIds.length,0);const disclosure=all.find(n=>n.className==='source-contributions');disclosure.open=true;await disclosure.handlers.toggle();assert.equal(reads[0].length,20);assert.deepEqual(contextIds,rows.slice(0,20).map(row=>row.unitId));
+    assert.ok(all.some(n=>n.textContent==='Method contribution'));assert.ok(all.some(n=>n.textContent==='Comparison context'));assert.ok(all.some(n=>n.textContent==='Source-specific condition retained.'));assert.equal(all.filter(n=>n.tag==='article').length,20);
+    await all.find(n=>n.textContent==='Read next contributions').handlers.click();assert.equal(reads[1].length,5);assert.equal(all.filter(n=>n.tag==='article').length,25);assert.equal(all.filter(n=>n.textContent?.match(/^paper-[01] \(\d+ contributions\)$/)).length,2);assert.equal(atlas.membershipCount,0);assert.deepEqual(record.sourceContributions,rows);
+  }finally{globalThis.document=original;if(storage===undefined)delete globalThis.localStorage;else globalThis.localStorage=storage;}
+});

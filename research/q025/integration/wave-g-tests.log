@@ -1,0 +1,122 @@
+--- build ---
+
+> eigenquestions@1.0.0 build
+> node scripts/build-site.mjs
+
+Static site: 106 files, 85.0 MiB → dist/
+
+--- tests ---
+
+> eigenquestions@1.0.0 test
+> node --test tests/**/*.test.mjs
+
+✔ real Worker/R2/SQLite round trip preserves unknown-builder authored data and concurrent retries (311.113334ms)
+✔ malformed, oversized, deeply nested and inconsistent capsules fail before any storage reservation (29.765834ms)
+✔ JSON is accepted, negative reads are not cached, CORS and method/retired-route boundaries stay explicit (113.78775ms)
+{"event":"stored_view_failure","operation":"save"}
+{"event":"stored_view_failure","operation":"save"}
+✔ no receipt before durable PUT; failed/lost receipt retry keeps the same reserved id (2.920125ms)
+✔ atomic SQLite budget survives restart, bounds concurrent admissions, reuses reservations and advances UTC days (144.14025ms)
+✔ frozen corpus is complete, aligned and source linked (9.011125ms)
+✔ same real state reproduces nodes, directions, basis and scores exactly (230.158584ms)
+✔ intent changes actual retrieval and plane, with grounded derivation and recent use evidence (427.442417ms)
+✔ pronoun refinement jointly preserves towers and introduces Dark Dimension; deeper decay retains DM context (396.533125ms)
+✔ held-out entropy refinement and global pivot do not inherit a fixed branch (350.093584ms)
+✔ vector and graph ablations change ranks; chart is not a lexical list with decoration (240.783458ms)
+✔ constraints, unsupported text, stale corpus and malformed vectors fail sensibly (69.675125ms)
+✔ second corpus adapter exercises disconnected and low-rank geometry without physics-specific assumptions (0.48025ms)
+✔ direction chart reports aggregate fidelity separately and stores its true ambient centroids (97.389959ms)
+✔ selecting a source direction does not immediately offer the same selected source again (265.585042ms)
+✔ non-KK intent comparison retains physics focus without domain concepts injected by intent (284.560083ms)
+✔ implementation and parameters are pinned, and metadata corruption is rejected before use (13.01975ms)
+✔ fixed overview pins its original source, complete bounded file inventory and current exporter (14.073417ms)
+✔ every question ID, exact lazy-loaded excerpt, paper identity and source URL matches the frozen corpus (397.569875ms)
+✔ compact encoding preserves every supplied coordinate, overlapping weight, topic label and affinity exactly (4.452875ms)
+✔ membership closure retains overlapping, internal and unresolved homes and reproduces distinct-source counts (7.133583ms)
+✔ concise captions retain original labels and explain the actual scientific scope (0.094083ms)
+✔ authored overlapping groups/context/relations round-trip exactly through JSON and gzip (15.930458ms)
+✔ malformed references, resource limits and executable values fail before display (5.1875ms)
+✔ typed affine planes reject strings, nonfinite entries and nonorthogonal basis (0.397666ms)
+✔ native identity/version and executable author continuation are separate capabilities (0.588833ms)
+✔ classification graph preserves all coordinates up to a uniform transform within each recorded component (13.271875ms)
+✔ desktop field callouts retain full names and separate accessible targets tied to exact graph anchors (0.441958ms)
+✔ an admitted contribution-only question loads with pinned empty membership and remains scientifically supported (21.720833ms)
+✔ lazy entry and direct fine URL read only exact bounded records; replay is independent of cache history (20.415292ms)
+✔ local fine drilldown avoids global search; filters and paging require complete membership (4.168541ms)
+✔ lazy hashes, counts and canonical identity are checked before publication (3.085333ms)
+✔ an async prepared action cannot overwrite a newer accepted revision (2.809167ms)
+✔ lazy preparation honors the shared implicit USING action before hydrating selected rows (2.31125ms)
+✔ cold runtime connection reads hydrate exact coarse and fine links without changing the session (2.459167ms)
+✔ owner journey changes real geometry, preserves multi-turn context and replays (2372.058708ms)
+✔ derive, phenomenology, recent ON and recent USING are distinct computations (506.185459ms)
+✔ held-out evaporation → information → islands route re-enters outside original neighborhood (798.521667ms)
+✔ empty, unsupported, stale and malformed states fail honestly (34.4395ms)
+✔ same engine/session contract works on a separate small subfield fixture (0.9585ms)
+✔ MCP stdio action reaches bridge SSE and origin/session checks reject outsiders (489.488125ms)
+✔ prepared destinations converge through different paths without changing v1 identity (14.44975ms)
+✔ prepared capsule preserves exact selector, full membership counts and all cross-links beyond menu (19.682041ms)
+✔ prepared loader verifies exact content, containment, evidence and version (3.340125ms)
+✔ lookup is explicitly lexical and prepared runtime uses existing shared transitions (3.348458ms)
+✔ prepared addresses contain scientific selector and perspective, never prose or notes (0.377042ms)
+✔ full-source paging verifies real frozen rows without loading any embedding files (80.040292ms)
+✔ prepared computation pins exact adapter source in addition to atlas bytes (4.848416ms)
+✔ source filters cover unbundled memberships and distinguish context witnesses (5.775125ms)
+✔ complete containment requires membership subset; vocabulary parents carry an explicit exemption (2.540209ms)
+✔ source science preserves exact object endpoints, semantic status and attachment scope (7.545458ms)
+✔ same-paper methods remain contextual associations, outside primary containment and USING (0.595833ms)
+✔ typed contributions stay outside membership, navigation and USING, with exact role and scope binding (0.970292ms)
+✔ publication helper detects exact release and rejects stale module or surviving old API (267.968584ms)
+✔ Q005 quoted method display is shorter while full source query and numerical view stay unchanged (1219.650417ms)
+✔ Q005 six real selections revisit exact active-prefix states instead of appending a false deeper cycle (2730.929667ms)
+✔ Q005 return comparison keeps constraints/focus distinct, ignores forward branch, and does not collapse typed refine (0.354542ms)
+✔ source context matches independent scope resolver: whole_paper (0.942666ms)
+✔ source context matches independent scope resolver: direct_reviewed (0.115416ms)
+✔ source context matches independent scope resolver: shared_window (0.084917ms)
+✔ source context matches independent scope resolver: missing_anchor (0.059458ms)
+✔ partitioned context lookup verifies only its exact bucket and preserves missing anchor coverage (11.757667ms)
+✔ bounded context pages prioritize direct anchors and expose complete/filtered coverage (8.542125ms)
+✔ relation endpoints remain exact outside object pages, and withheld reader notes are never shortened (1.258417ms)
+✔ large records stop at explicit byte-budget continuation and never truncate scientific text (1.977792ms)
+✔ structural links remain inspectable without displacing substantive direct relations (2.168166ms)
+(node:6192) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ source contribution disclosure reads bounded pages, groups papers, and retains roles and qualifications (10.991583ms)
+✔ plain atlas pages resolve bucketed source locators and link optional compressed detail (415.73125ms)
+(node:6194) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ private note export survives storage quota failure and accepted reading coverage stays visible (24.381834ms)
+✔ the actual public recent-USING state keeps all five markers clear of placed labels (715.027459ms)
+✔ an overfilled chart omits labels instead of covering a marker (0.144416ms)
+✔ overview camera preserves the pointed world coordinate, bounds zoom, and fits fixed input (6.188375ms)
+✔ overview spatial picking matches brute force at multiple camera scales and empty locations (4.712792ms)
+✔ overview validates identities, rejects malformed geometry, and preserves overlapping descendant memberships (34.938625ms)
+✔ built assets preserve corpus hashes and complete imports alongside the bounded storage API (133.924875ms)
+✔ static HTTP server serves the new product and retires old pages and APIs (165.235042ms)
+ℹ tests 76
+ℹ suites 0
+ℹ pass 76
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4291.266958
+
+--- site ---
+
+> eigenquestions@1.0.0 check:site
+> node scripts/site-check.mjs
+
+{
+  "assets": 106,
+  "corpusId": "swampland-navigation-20261105-minilm-v1",
+  "verifiedShards": 41,
+  "verifiedOverviewFiles": 18,
+  "verifiedAtlasFiles": 0,
+  "staticAssets": true,
+  "assetsOnly": false,
+  "apiRoutes": [
+    "/api/views"
+  ],
+  "oldRoutesAbsent": true
+}
+

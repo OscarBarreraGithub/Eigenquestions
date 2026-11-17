@@ -1,0 +1,607 @@
+{
+  "schemaVersion": "q025-dual-canonical-prefix-audit/2",
+  "families": [
+    {
+      "schemaVersion": "q025-complete-stream-components/2",
+      "familyId": "mediation-scope",
+      "originalFailedReceiptSha256": "2b15299b7928e164f7fd9692f55c6aacab12c8681f050800d447d28dda773001",
+      "retainedStreamSha256": "aa14fc14012b6282cca4a751c5e0f49ccca6ca289e4c30cdff8994c2a1395a5e",
+      "sourcePacketSha256": "dd04ed4225a3b3872968e8815414893002ddd23169c5058e464128b26d0fd4c6",
+      "jsonStartByte": 309,
+      "offsetUnit": "utf8_bytes",
+      "selectionBasis": "Latest coherent top-level JSON attempt is the provisional candidate; all complete earlier definitions remain explicit variants for independent conflict review. Native cause of restart is not established.",
+      "scientificStatus": "Preserved proposal components only; no scientific admission or invented final tail.",
+      "prefixArtifactSha256": "e0e0fcfdceaffdb6c8ea1c01366f2af3fbac6fc877082254de7b02054481c90f",
+      "prefixPath": "full-pass/native-local/canonical-recovery-v2/prefix-mediation-scope.json",
+      "completeQuestions": 14,
+      "completeDecisions": 32,
+      "completePairConstraints": 37,
+      "earlierCompleteQuestionVariants": 0,
+      "attemptStartBytes": [
+        309
+      ],
+      "exactValueRanges": [
+        {
+          "field": "version",
+          "complete": true,
+          "start": 324,
+          "end": 349,
+          "sha256": "067cfc12d20c4b9494ce49a23dca6d3a7205ccfab213248d307be97c7700348b"
+        },
+        {
+          "field": "familyId",
+          "complete": true,
+          "start": 365,
+          "end": 382,
+          "sha256": "ed98fd53df8f0f1d18171021315fc3e64f49f1da3be0e492cd73f815f0fd58e0"
+        },
+        {
+          "field": "stage",
+          "complete": true,
+          "start": 395,
+          "end": 405,
+          "sha256": "705a654d181601b5a5069400774a16ef9c5b370347666be4bdeae44173217053"
+        },
+        {
+          "field": "summary",
+          "complete": true,
+          "start": 420,
+          "end": 877,
+          "sha256": "30889dd4fb8e9e6f0cbd581c6ae3489d97dcf1bb4337291adc56f8665317a950"
+        },
+        {
+          "field": "newQuestions",
+          "complete": true,
+          "start": 897,
+          "end": 32657,
+          "sha256": "1da58995275ebeb899f47f86fba9293b58766604e3e64c7bddf6b5ccb018c1e8"
+        },
+        {
+          "field": "decisions",
+          "complete": true,
+          "start": 32674,
+          "end": 49975,
+          "sha256": "6b75fcf76c1529e41779cce39fa4824c42278add0b764bb963c7f8e2b25f1494"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 0,
+          "complete": true,
+          "start": 50004,
+          "end": 50290,
+          "sha256": "d1a012bdf143a5c010c27fb0fc18bcd9f544e17473172e14720f4e55df4d3225"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 1,
+          "complete": true,
+          "start": 50296,
+          "end": 50529,
+          "sha256": "956d2a86d1384751073bab2779537941ecbc5db97977f5396ae4f39dbd2a9f74"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 2,
+          "complete": true,
+          "start": 50535,
+          "end": 50805,
+          "sha256": "ea5848c560c132203834c8fbf2122012223e98ff285cb805eb348fec91b909f7"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 3,
+          "complete": true,
+          "start": 50811,
+          "end": 51080,
+          "sha256": "37dcedf30b485e1861defdd2abf7943abae979f16289c432ed0a2b4f379c6a92"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 4,
+          "complete": true,
+          "start": 51086,
+          "end": 51375,
+          "sha256": "758a139ee115e61c73a0fbf19c669e601bf1f5b9a8bcf97a2520c1b656402424"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 5,
+          "complete": true,
+          "start": 51381,
+          "end": 51621,
+          "sha256": "6ab184d599488aad6809cb9cd5ec9f93e6245407177b6df564c087f983683805"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 6,
+          "complete": true,
+          "start": 51627,
+          "end": 51906,
+          "sha256": "00e49f271ebba7f8a3682b7bc6ef60b7edd72451c4932d8696e6436b0667a84b"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 7,
+          "complete": true,
+          "start": 51912,
+          "end": 52163,
+          "sha256": "8a98a1841124fc3848eb4d18f8d94158a2e7770bef8404d6af09477d2140874f"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 8,
+          "complete": true,
+          "start": 52169,
+          "end": 52437,
+          "sha256": "631b4c4fc58f3a9943223be58bf0866067c0fafd120c9d9df1c368452ea1d86c"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 9,
+          "complete": true,
+          "start": 52443,
+          "end": 52720,
+          "sha256": "f60646b606c830ee948607d19b1f2b5afd05b9534e23ff21c19fb02cdc2bec69"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 10,
+          "complete": true,
+          "start": 52726,
+          "end": 53035,
+          "sha256": "da1649cfd5fc43ec62f8ddc94b70f46a38dcc054b0bafe1b968a61b99c2fff6f"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 11,
+          "complete": true,
+          "start": 53041,
+          "end": 53310,
+          "sha256": "1b3f2cf466c2f3799ac57c8d4a2085bcf0914a772c3bc6429173bf50c8ef7c62"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 12,
+          "complete": true,
+          "start": 53316,
+          "end": 53574,
+          "sha256": "2e090d8ca7f3d23e968ddbdf7efebfb1ec48e952402feff95c2f82db9b23db8d"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 13,
+          "complete": true,
+          "start": 53580,
+          "end": 53850,
+          "sha256": "e728467305dcc915e6895b40fd2edd92683bc2f00f0cdc33d9bfabadc9154f27"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 14,
+          "complete": true,
+          "start": 53856,
+          "end": 54133,
+          "sha256": "2406f7fd6f61e9a9020be2680a0a9432bcd204eba12a607700bc66f7b444712e"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 15,
+          "complete": true,
+          "start": 54139,
+          "end": 54385,
+          "sha256": "52d4e3539efaca949c30f11fff4b4d1a9df02cf5d0060302476b129a8fb814ce"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 16,
+          "complete": true,
+          "start": 54391,
+          "end": 54636,
+          "sha256": "0297cde782f5bf27ce379386d905e98637b730c473892ca5453cd6372f849f5f"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 17,
+          "complete": true,
+          "start": 54642,
+          "end": 54939,
+          "sha256": "5348bec34339c48e36f1b65e2ce9165c50ec16255aaaf72f42be0c50fad6f2bc"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 18,
+          "complete": true,
+          "start": 54945,
+          "end": 55200,
+          "sha256": "3a01bcb5363bc9bc80cb3991263485ba20e652eb5c75b815ddba7091cc4f8f42"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 19,
+          "complete": true,
+          "start": 55206,
+          "end": 55497,
+          "sha256": "b442d9485ed83152f613c35388d3cfc28683f3206007f1e6eb0bc4b3da791e27"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 20,
+          "complete": true,
+          "start": 55503,
+          "end": 55770,
+          "sha256": "c41a296656df8b00d81dedc82c1b434d8992166b832fab711fb2679895f759b4"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 21,
+          "complete": true,
+          "start": 55776,
+          "end": 56053,
+          "sha256": "fbed0681f01257c440213a2fb2476c495e01853af79512d40718eb091568d1c1"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 22,
+          "complete": true,
+          "start": 56059,
+          "end": 56335,
+          "sha256": "1792f95373656f30c2a793a954a0c3ab33cb3781f75d63bfcd8ea1957cb32fb6"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 23,
+          "complete": true,
+          "start": 56341,
+          "end": 56621,
+          "sha256": "a0271b05a3a3e7e807849ef391cad1cbe6d403ebd43dedda3e370106af125bf4"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 24,
+          "complete": true,
+          "start": 56627,
+          "end": 56895,
+          "sha256": "7ee9501af18df9b4df3d891c903599451552b473f5b1c79d2fd0be1afdb1c59d"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 25,
+          "complete": true,
+          "start": 56901,
+          "end": 57216,
+          "sha256": "bf5b81345d73c64815c635cd6501d887f62de9fd4b789785c38cd01adefbb446"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 26,
+          "complete": true,
+          "start": 57222,
+          "end": 57514,
+          "sha256": "2e4c85c0604801ad5a7b7c6cc871aab205a5b0bc92a50baab5ac008789da497f"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 27,
+          "complete": true,
+          "start": 57520,
+          "end": 57794,
+          "sha256": "b23fdad79141bd723587489e3450cc945349c7f03e918502d535498059d9c2af"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 28,
+          "complete": true,
+          "start": 57800,
+          "end": 58045,
+          "sha256": "29916d672e3c3b909fcec41a8d9291d5bc9484126e034b559adde390df991030"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 29,
+          "complete": true,
+          "start": 58051,
+          "end": 58321,
+          "sha256": "5961415cd438b4c136336c41b487c55bfc904b4e65a58bed8f95a1a7dd832382"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 30,
+          "complete": true,
+          "start": 58327,
+          "end": 58620,
+          "sha256": "a991ce2d1e6843a898a56812e5379395dbdc6f761e9fe81dc67bcbe77327d0f8"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 31,
+          "complete": true,
+          "start": 58626,
+          "end": 58857,
+          "sha256": "8d90d97c98e99954d30f1202eda6087131c715a34b8286b613cda6901e973e8a"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 32,
+          "complete": true,
+          "start": 58863,
+          "end": 59090,
+          "sha256": "a910ecd9298150c04357794051354b1ba49a598ca49ffa161b057dec5faaae01"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 33,
+          "complete": true,
+          "start": 59096,
+          "end": 59349,
+          "sha256": "dac29ef74d06a7a48a0019fa9a7e08d0db422e017216538348896bd56fa2857a"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 34,
+          "complete": true,
+          "start": 59355,
+          "end": 59606,
+          "sha256": "904ce61260bb976a32db7c46f5e6465a13e84310ca12e8b694e44ac4fcaa212f"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 35,
+          "complete": true,
+          "start": 59612,
+          "end": 59874,
+          "sha256": "beed9483e7e8d9ad3328967c97e7be27f8594d7390a1c434cc23d15404a24457"
+        },
+        {
+          "field": "pairConstraints",
+          "index": 36,
+          "complete": true,
+          "start": 59880,
+          "end": 60154,
+          "sha256": "f118abee96aed5ef81b4b265ad119aa7657077a170d1ae29148a3858f119ca02"
+        }
+      ]
+    },
+    {
+      "schemaVersion": "q025-complete-stream-components/2",
+      "familyId": "control-statistics",
+      "originalFailedReceiptSha256": "ce670660803144809b66420ee7db62395cc39c08ee333890de7d31696a051fb5",
+      "retainedStreamSha256": "027d9b01c3f33a381455f66438da129796d2805e6bdc5bd8ef20c3d2e70084a3",
+      "sourcePacketSha256": "998b507e27a1c7d097df4af42949498849eb5af0b0240e5f53bbc491396ec264",
+      "jsonStartByte": 10786,
+      "offsetUnit": "utf8_bytes",
+      "selectionBasis": "Latest coherent top-level JSON attempt is the provisional candidate; all complete earlier definitions remain explicit variants for independent conflict review. Native cause of restart is not established.",
+      "scientificStatus": "Preserved proposal components only; no scientific admission or invented final tail.",
+      "prefixArtifactSha256": "fb7e7d882a0848532d4ed1fb692adbb46628c5fe47634dc1bdd543fee522dbde",
+      "prefixPath": "full-pass/native-local/canonical-recovery-v2/prefix-control-statistics.json",
+      "completeQuestions": 13,
+      "completeDecisions": 23,
+      "completePairConstraints": 0,
+      "earlierCompleteQuestionVariants": 3,
+      "attemptStartBytes": [
+        582,
+        10786
+      ],
+      "exactValueRanges": [
+        {
+          "field": "version",
+          "complete": true,
+          "start": 10801,
+          "end": 10826,
+          "sha256": "067cfc12d20c4b9494ce49a23dca6d3a7205ccfab213248d307be97c7700348b"
+        },
+        {
+          "field": "familyId",
+          "complete": true,
+          "start": 10842,
+          "end": 10862,
+          "sha256": "4e979b7bf4d5fc6290eced4810635676c7a3616bd090cdc846bb19b0ac0d0d24"
+        },
+        {
+          "field": "stage",
+          "complete": true,
+          "start": 10875,
+          "end": 10885,
+          "sha256": "705a654d181601b5a5069400774a16ef9c5b370347666be4bdeae44173217053"
+        },
+        {
+          "field": "summary",
+          "complete": true,
+          "start": 10900,
+          "end": 11357,
+          "sha256": "efa01e6084f8da62aa6c3f061726cbf350471be5d46f7653c437141a90dcb4fc"
+        },
+        {
+          "field": "newQuestions",
+          "complete": true,
+          "start": 11377,
+          "end": 43896,
+          "sha256": "50071cc2b443717a9e4fd91344d21f495c457f5dad156d1a67de3037008c1963"
+        },
+        {
+          "field": "decisions",
+          "index": 0,
+          "complete": true,
+          "start": 43919,
+          "end": 44976,
+          "sha256": "9195c3e9936fb21e06a7d20900f0ed636625684dc985b10c2a53ef3615542658"
+        },
+        {
+          "field": "decisions",
+          "index": 1,
+          "complete": true,
+          "start": 44982,
+          "end": 45705,
+          "sha256": "90832a11db5f736f8f9ef6729773fc5b4f08454b6f593d784b75dafba497d9bd"
+        },
+        {
+          "field": "decisions",
+          "index": 2,
+          "complete": true,
+          "start": 45711,
+          "end": 46600,
+          "sha256": "0133217d755f8f0182ed9613f5639216fc59d63bbab101c3cedb8d6065d11109"
+        },
+        {
+          "field": "decisions",
+          "index": 3,
+          "complete": true,
+          "start": 46606,
+          "end": 47278,
+          "sha256": "0eeee31fc2aa0bc43ac5f385f08a5d75cc07c7b136a4a2ff2027239d1efac738"
+        },
+        {
+          "field": "decisions",
+          "index": 4,
+          "complete": true,
+          "start": 47284,
+          "end": 47948,
+          "sha256": "62e6c86afeaeb6d496597e43755ef29d81bf9c58a7534b76e56a7e3186d6ad19"
+        },
+        {
+          "field": "decisions",
+          "index": 5,
+          "complete": true,
+          "start": 47954,
+          "end": 48715,
+          "sha256": "661d7e3571b44e06dba2ff59e368e7d790ae46bac27180cb4ed7e946cc6566a9"
+        },
+        {
+          "field": "decisions",
+          "index": 6,
+          "complete": true,
+          "start": 48721,
+          "end": 49352,
+          "sha256": "794eff5359015188bf3924dc2c581070565005ea38bafdb2e5908caffe06c5f0"
+        },
+        {
+          "field": "decisions",
+          "index": 7,
+          "complete": true,
+          "start": 49358,
+          "end": 50251,
+          "sha256": "f3ec957d7a831fa25aed79aaaf047091cf8b6f4488bd3f6030ad0de2002f25d2"
+        },
+        {
+          "field": "decisions",
+          "index": 8,
+          "complete": true,
+          "start": 50257,
+          "end": 50857,
+          "sha256": "c9d785a510fa8d3d878628cf8f274c51873f6ca74e0361dd6df4e2957f8946f1"
+        },
+        {
+          "field": "decisions",
+          "index": 9,
+          "complete": true,
+          "start": 50863,
+          "end": 51499,
+          "sha256": "9b546d622bb624cddcc450000611acf613bf0836c0349de835dfbf0fa6aeedc4"
+        },
+        {
+          "field": "decisions",
+          "index": 10,
+          "complete": true,
+          "start": 51505,
+          "end": 52419,
+          "sha256": "479ba3cb90b53c5c6dd07d0c66d5507d8b8ccafc7827d6d5ed56f557ad6366d0"
+        },
+        {
+          "field": "decisions",
+          "index": 11,
+          "complete": true,
+          "start": 52425,
+          "end": 52979,
+          "sha256": "8a1e0d177b3fd18a8fba1cfc1334c9c3fef2eb18ac04324e58b8d4681d28301a"
+        },
+        {
+          "field": "decisions",
+          "index": 12,
+          "complete": true,
+          "start": 52985,
+          "end": 53793,
+          "sha256": "fabe83654de859f04442c69e832e95de83541eb4cdd7dae9f3b8005c899758be"
+        },
+        {
+          "field": "decisions",
+          "index": 13,
+          "complete": true,
+          "start": 53799,
+          "end": 54294,
+          "sha256": "e4b8b77d7e2bd4881eb296829bc2107df03f6f77f86f216767693fedb4b47309"
+        },
+        {
+          "field": "decisions",
+          "index": 14,
+          "complete": true,
+          "start": 54300,
+          "end": 54798,
+          "sha256": "6f6db7fef8b49beee0d8a0082a3a0763da5183138d5898fb58d40aabdbdeb559"
+        },
+        {
+          "field": "decisions",
+          "index": 15,
+          "complete": true,
+          "start": 54804,
+          "end": 55574,
+          "sha256": "ee9c404bae2ac399b900483466de88960e930a9969d478d0a94e8cbe195a139c"
+        },
+        {
+          "field": "decisions",
+          "index": 16,
+          "complete": true,
+          "start": 55580,
+          "end": 56078,
+          "sha256": "355dda73198618f300baa3de1b5adcd477c047350a27cf2151ee4755353c9c42"
+        },
+        {
+          "field": "decisions",
+          "index": 17,
+          "complete": true,
+          "start": 56084,
+          "end": 56571,
+          "sha256": "9190eb267352f08682bda519ee12279445df68ce0d5edd7645d483922d25d0cb"
+        },
+        {
+          "field": "decisions",
+          "index": 18,
+          "complete": true,
+          "start": 56577,
+          "end": 57409,
+          "sha256": "d86ba3b0a7f2d639280bdf18c8dcc1d2e725b7fc397572e64c1255a2ccdaf092"
+        },
+        {
+          "field": "decisions",
+          "index": 19,
+          "complete": true,
+          "start": 57415,
+          "end": 58138,
+          "sha256": "2798baf0daac0fd6f3a42a4d509e8a2a857ff5d20a49693d58eb9950f2db7f00"
+        },
+        {
+          "field": "decisions",
+          "index": 20,
+          "complete": true,
+          "start": 58144,
+          "end": 58705,
+          "sha256": "e3831175526c19883f6b4c2cc2fce698e520969a2420dfb83157d1ca2aa35e07"
+        },
+        {
+          "field": "decisions",
+          "index": 21,
+          "complete": true,
+          "start": 58711,
+          "end": 59260,
+          "sha256": "0d820d68f861bc62eb7953112849c7721e497bcf4968664ef8595f4488b86983"
+        },
+        {
+          "field": "decisions",
+          "index": 22,
+          "complete": true,
+          "start": 59266,
+          "end": 59756,
+          "sha256": "a18290894a0063da1fde6cf109c06f2e8321a9d7fa685b29979477aa7f150a49"
+        }
+      ]
+    }
+  ]
+}

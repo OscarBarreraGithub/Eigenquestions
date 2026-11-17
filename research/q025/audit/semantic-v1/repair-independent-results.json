@@ -1,0 +1,155 @@
+{
+  "repairManifestSha256": "213a8c01419a0c5aa23d73d07c92c19e8ceea2ebdddbb28d1afdc0d06107053f",
+  "verifiedPinnedFiles": [
+    "research/q025/assembly/CONTRACT.md",
+    "research/q025/assembly/accepted.mjs",
+    "research/q025/assembly/assemble.mjs",
+    "research/q025/assembly/fine-identities.mjs",
+    "research/q025/assembly/contributions.test.mjs",
+    "research/q025/assembly/identity-conflicts.test.mjs",
+    "research/q025/assembly/primary-evidence.mjs",
+    "research/q025/assembly/primary-evidence.test.mjs",
+    "research/q025/assembly/semantic-repair-v1/REPORT.md",
+    "research/q025/assembly/semantic-repair-v1/probe-results.json",
+    "research/q025/assembly/semantic-repair-v1/assembly-tests.txt",
+    "research/q025/assembly/semantic-repair-v1/real-primary-resolution.json",
+    "research/q025/assembly/semantic-repair-v1/verify-known-primary.mjs",
+    "research/q025/audit/semantic-v1/REPORT.md",
+    "research/q025/audit/semantic-v1/probes.mjs",
+    "research/q025/audit/semantic-v1/probe-results.json",
+    "research/q025/assembly/semantic-checkpoint-v1.json"
+  ],
+  "externalPinMismatches": [
+    {
+      "path": "tests/integration/contribution-only-destination.test.mjs",
+      "expectedSha256": "e59f350930b8c1832f44b605b980dd562e6356a6b56b838b23657aaec125bf7a",
+      "actualSha256": "9897edbc29862ac199980107cd5f6f7c33c0cd31d15ef9e3e2be982abe47511e",
+      "expectedBytes": 4540,
+      "actualBytes": 5628
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "expectedSha256": "a288194564f17234246a3512b017dac9b38787ac083a83ca4294e6270693e161",
+      "actualSha256": "695eb4a412dc3ffb6b4bf672be6abcfc770f03b8df47b0ae1ac0f94875ea74c0",
+      "expectedBytes": 54428,
+      "actualBytes": 55192
+    }
+  ],
+  "identityChecks": [
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "different",
+      "reverseGroupOrder": false,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "different",
+      "reverseGroupOrder": true,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "specializes",
+      "reverseGroupOrder": false,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "specializes",
+      "reverseGroupOrder": true,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "shared_parent_distinct",
+      "reverseGroupOrder": false,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "shared_parent_distinct",
+      "reverseGroupOrder": true,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "unresolved",
+      "reverseGroupOrder": false,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "unresolved",
+      "reverseGroupOrder": true,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "comparison",
+      "reverseGroupOrder": false,
+      "rejected": true
+    },
+    {
+      "case": "two-group-positive-path-closure",
+      "operation": "comparison",
+      "reverseGroupOrder": true,
+      "rejected": true
+    },
+    {
+      "case": "common-target-does-not-join-distinct-canonical-groups",
+      "accepted": true,
+      "groups": [
+        {
+          "memberIds": [
+            "A",
+            "B"
+          ],
+          "destinationId": "destination:fine"
+        },
+        {
+          "memberIds": [
+            "C",
+            "D"
+          ],
+          "destinationId": "destination:second"
+        }
+      ],
+      "automaticUnions": 0
+    },
+    {
+      "case": "unrelated-conflict-remains-visible-without-blocking-disjoint-group",
+      "accepted": true,
+      "unresolvedMemberIds": [
+        "G",
+        "H"
+      ]
+    },
+    {
+      "case": "one-complete-destination-group-still-honors-specialization",
+      "rejected": true
+    }
+  ],
+  "realPrimaryEvidence": {
+    "referenceCount": 13,
+    "distinctLocators": 13,
+    "archiveFileCount": 5,
+    "sourceSummarySha256": "4d9191003c0f57985d02380713a5b6fc8fd66247624fa1dde9777d3c672f09aa",
+    "locatorFingerprints": [
+      "72f9a80d4ce098d483a9b291e3114c8a104db19e10f609350cbd38ca1e02097d",
+      "61efb31e3c2c73a2f9737bfb86a22337e7d3f251454a0da371848042ff81515b",
+      "69b9412245856e5a8f810472bc83e87432b2c569dff5e4ba8ee7649bcd6db5a7",
+      "dd862e98df1fc3026cba19f11b19c5520d984d3b396155d98ffdb002cc1393aa",
+      "ed901f6f31213f8b400cae65a7d6c04e55564bab4a0d6e302e67c561b1ec65ff",
+      "e3af9c783d68e2bba34dd53cbc041308688625d6635a53f2c545a7f5e0f4f774",
+      "e7741439280844ec2f9f2bf285112c5394920dd33bf0ba30bc4d8fc7b03f0f68",
+      "05db2deef3921f6ba62b0e93647a56a8537001060d2371b20ceaf1155167cf3e",
+      "322d623139635cc3b625a426cb6b83a6b95a62c445a27be5214c5700aa3fcd82",
+      "c159f64f09180fa0ee08019eb4c4dbb31a8a32bcd79c523861d9f8ecdf0f2a09",
+      "0a9358a6658e67fa7dedcec19f1fd89262646d62d5ba52b290c1bddc89fe2856",
+      "aecf7bd3a26eafa0f58af4f2507f66833107a8f43a8365e06e0e99815367d6cd",
+      "2d8463187f36371596526e28c2b05898616b5178ba1f343bb7594a4157dd5e26"
+    ],
+    "rawPrimaryTextExported": false
+  }
+}

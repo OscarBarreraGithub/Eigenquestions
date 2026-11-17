@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "q025-semantic-audit-repair/1",
+  "status": "frozen_for_root_verification_not_scientific_atlas_admission",
+  "files": [
+    {
+      "path": "research/q025/assembly/CONTRACT.md",
+      "sha256": "fa6eaa381df5740d84ba41f341feb25f1c8d23306607f5059c7ec43b5c6851f2",
+      "bytes": 16573
+    },
+    {
+      "path": "research/q025/assembly/accepted.mjs",
+      "sha256": "824fe1e7e561de6b9f07542246b6e691ef4f455825370f6ee2ed1f43cba1bb62",
+      "bytes": 22872
+    },
+    {
+      "path": "research/q025/assembly/assemble.mjs",
+      "sha256": "954aee3789c2cb32da88ad48e002ddf04c17b25cf24a4d91e3e018c27bf8a39a",
+      "bytes": 8787
+    },
+    {
+      "path": "research/q025/assembly/fine-identities.mjs",
+      "sha256": "d449039d48f4193167c394b25439f09e3b5b45b3cb9a6ff9a16aac6f3ee8365c",
+      "bytes": 13844
+    },
+    {
+      "path": "research/q025/assembly/contributions.test.mjs",
+      "sha256": "a3c32ed0b64f3e4a444d76e2097cd82e16d489dfb75041e3f96d931675d4c7e3",
+      "bytes": 5176
+    },
+    {
+      "path": "research/q025/assembly/identity-conflicts.test.mjs",
+      "sha256": "f764b93952afe92c08c0dedf9f0f2efebdd42f0a3087838a42bde2ec8988bbe8",
+      "bytes": 5840
+    },
+    {
+      "path": "research/q025/assembly/primary-evidence.mjs",
+      "sha256": "8d2799ea71c0fb96f566ebf8d352ee0c76518c9f2e3944b1863c34ddd561df4c",
+      "bytes": 4519
+    },
+    {
+      "path": "research/q025/assembly/primary-evidence.test.mjs",
+      "sha256": "c9b591b4468771bc08d4ebd84b04bc29d04f0b782f47781a9ccb56bc2417ec51",
+      "bytes": 4470
+    },
+    {
+      "path": "research/q025/assembly/semantic-repair-v1/REPORT.md",
+      "sha256": "0093f133c0212601456d80926123848d51d1e9afbd80c7383d5a481ceea22806",
+      "bytes": 2963
+    },
+    {
+      "path": "research/q025/assembly/semantic-repair-v1/probe-results.json",
+      "sha256": "116cb921bd683ab7e8c936b96d3f45c24be8b9e907276e708710c0e408b003de",
+      "bytes": 1146
+    },
+    {
+      "path": "research/q025/assembly/semantic-repair-v1/assembly-tests.txt",
+      "sha256": "ceb2e7153a742924dbe980ef4970232841070e6a0c5d4c4ab4729d68025107a0",
+      "bytes": 4000
+    },
+    {
+      "path": "research/q025/assembly/semantic-repair-v1/real-primary-resolution.json",
+      "sha256": "7cc71203bcf47f0e22fa44d158f296cf017314a3ab20cb162d85f7c5c0143a34",
+      "bytes": 10874
+    },
+    {
+      "path": "research/q025/assembly/semantic-repair-v1/verify-known-primary.mjs",
+      "sha256": "c92de634d9115cbe0cf2330ecc4efd8b659c0cd78b81a5a62b6cb8f1619d07b1",
+      "bytes": 1632
+    }
+  ],
+  "totalOwnedBytes": 102696,
+  "externalEvidence": [
+    {
+      "path": "research/q025/audit/semantic-v1/REPORT.md",
+      "sha256": "37c4e689eb97b453fa4b9a7b8f4d9a918710957f159757d944f6ee22114d3829",
+      "bytes": 9066
+    },
+    {
+      "path": "research/q025/audit/semantic-v1/probes.mjs",
+      "sha256": "bbf98cee8f269749c98f5033f1c339538c281be07550bf1e34b7bfa656fb7f85",
+      "bytes": 7984
+    },
+    {
+      "path": "research/q025/audit/semantic-v1/probe-results.json",
+      "sha256": "65779aece5602cd3247dcd226150f9044e75afadb94cf258120296481becd63d",
+      "bytes": 4978
+    },
+    {
+      "path": "research/q025/assembly/semantic-checkpoint-v1.json",
+      "sha256": "d6989cc9f4f8d78453fcf35269d4cd51849e1e8a9b41352052fa130b1ae9afbb",
+      "bytes": 5855
+    },
+    {
+      "path": "tests/integration/contribution-only-destination.test.mjs",
+      "sha256": "e59f350930b8c1832f44b605b980dd562e6356a6b56b838b23657aaec125bf7a",
+      "bytes": 4540
+    }
+  ],
+  "runtime": {
+    "path": "lib/geometry/prepared-atlas.mjs",
+    "sha256": "a288194564f17234246a3512b017dac9b38787ac083a83ca4294e6270693e161",
+    "bytes": 54428
+  },
+  "verification": {
+    "assemblyTests": 48,
+    "passed": 48,
+    "failed": 0,
+    "originalProbeCommand": "node research/q025/audit/semantic-v1/probes.mjs",
+    "originalProbeOutcomes": {
+      "inheritedConstraint": "rejected",
+      "distinctGroupsSameCanonicalDestination": "rejected",
+      "primaryEvidenceWithoutExactLocator": "rejected",
+      "contributionOnlyQuestion": "prepared_with_zero_primary_members"
+    },
+    "realPrimaryLocators": 13,
+    "realArchiveFiles": 5,
+    "rawPrimaryTextExported": false,
+    "syntaxChecks": [
+      "assemble.mjs",
+      "primary-evidence.mjs",
+      "semantic-repair-v1/verify-known-primary.mjs"
+    ]
+  },
+  "preservation": {
+    "originalAuditResultsRewritten": false,
+    "frozenCheckpointRewritten": false,
+    "numericalOrSourcePayloadsRewritten": false,
+    "exporterMembershipChanged": false,
+    "evidenceDerivedPrimaryMembershipAdded": false
+  },
+  "limitations": [
+    "Synthetic component probes use fixture:true, which bypasses external top-level receipts but not the repaired identity/evidence gates.",
+    "Real locator check verifies archived IDs/pages/spans for previously inspected evidence, not scientific relevance or full derivations.",
+    "Contribution-only probe reaches the shared navigator with in-memory shards; browser and public deployment are not claimed.",
+    "No complete accepted scientific atlas was assembled."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "q025-native-whitespace-failure-audit/1",
+  "jobId": "leaf-54e3e83d0ccbf2700b0f-proposal",
+  "originalStatus": "failed",
+  "originalError": "Output exceeded 120000-character hard limit",
+  "receiptSha256": "ecb8a2bd685d3ec44b8572c7de143f474354923dcfc453b85c20a76e40547757",
+  "retainedStreamSha256": "4263b0e582d46411a8c1e974747effbf17589b49b5216f2cc49555b664032dc9",
+  "sourcePacketSha256": "bc0409a2eca71d023c5268d1d3aa6d0685b6fac70799fafaac80aaac6f6d7a1f",
+  "streamCharacters": 120505,
+  "tabCharacters": 115056,
+  "trailingWhitespaceCharacters": 115047,
+  "nonWhitespaceCharacters": 4265,
+  "completeTopLevelFieldNames": [
+    "version",
+    "familyId",
+    "stage",
+    "verdict",
+    "summary",
+    "region"
+  ],
+  "completeCardCount": 0,
+  "completeUnitAssessmentCount": 0,
+  "requiredUnitAssessments": 42,
+  "rawFinalExists": false,
+  "interpretation": "The model stream enters a repeated-tab loop inside the first card after readingLimit; mandatory card fields and all42unit rows are absent. The broadregion text is a complete proposal component only. Trimming whitespace cannot repair missing scientific coverage.",
+  "recoveryPolicy": "Preserve original failed receipt and blocked descendant jobs. A separately pinned small proposal/challenge recovery may reread these same42rows; no automatic retry, invented aliases field, fabricated coverage or relabeling of the original failure."
+}

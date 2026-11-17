@@ -1,0 +1,329 @@
+{
+  "kind": "q025-integration-wave-g-qa14-checkpoint",
+  "createdAt": "2026-11-17T12:03:24.510069+00:00",
+  "baseCommit": "bfbb7d68539aa9a21b85c8d86ecadb115b8086a7",
+  "scope": "Source contributions, explicit empty membership, source coverage discovery and prepared-first agent guidance. No accepted atlas installed or deployed.",
+  "runtimeSha256": "3a5d820721457e85bff2d82521eff08f382d239bd302a8724b12b768803c05b1",
+  "validation": {
+    "nodeTests": 76,
+    "nodeTestsPassed": 76,
+    "buildAssets": 106,
+    "verifiedFrozenShards": 41,
+    "verifiedOverviewFiles": 18,
+    "installedAtlasFiles": 0,
+    "skillValid": true,
+    "qa14JobId": "61478210",
+    "qa14BrowserChecks": 5,
+    "qa14BrowserErrors": 0,
+    "qa14ExactMcpRenderAcknowledged": true,
+    "qa14MobileWidth": 390,
+    "qa14MobileScrollWidth": 390,
+    "qa14ArchiveSha256": "f7ef7e78dadc5a5d5dc0fbddec732a5e72bd4e3d02f5eb3a03feb42171b2f2c5",
+    "qa14InputFiles": 594,
+    "qa14InputFilesUnchanged": 589,
+    "postQa14WordingOnlyAmendments": "research/q025/integration/wave-g-post-qa14.json"
+  },
+  "preservedFailures": [
+    {
+      "qa": "qa11",
+      "jobId": "61475455",
+      "reason": "Readiness timeout after successful MCP read checks; original evidence retained."
+    },
+    {
+      "qa": "qa12",
+      "jobId": "61476153",
+      "reason": "Disclosure did not resolve already-bundled contribution sources before frozen-row fallback."
+    },
+    {
+      "qa": "qa13",
+      "jobId": "61477193",
+      "reason": "Long exact unit IDs overflowed mobile; grouped source/context rendering passed."
+    }
+  ],
+  "limitations": [
+    "Synthetic contribution transport is not scientific acceptance.",
+    "Local same-origin Slurm Chromium is not public HTTPS-to-loopback or owner-browser evidence.",
+    "Prepared-first skill routing still needs an independent research-agent journey, separate from source reviewers.",
+    "Public default-policy and scoped simulated-consent harness is prepared but unexecuted.",
+    "Final accepted package, detailed map, combined asset limits, public gzip hashes and cold first-view paths remain release gates."
+  ],
+  "externalDependencyNotice": "The contribution-only regression imports geometry-owned assembly files; root is checkpointing those separately with the independent semantic audit. This file list contains integration-owned files only.",
+  "files": [
+    {
+      "path": "bin/navigate.mjs",
+      "bytes": 8429,
+      "sha256": "0bbccd6308b8265e4d243e50b466e3349ab992a75cbeb62b5c113f3285ff4e94"
+    },
+    {
+      "path": "docs/agent-interface.md",
+      "bytes": 24215,
+      "sha256": "f36ba4ae01b2381ffb229c434837c75771f4ee01095b19f246e8243d39e41234"
+    },
+    {
+      "path": "docs/contextual-view-showcase.md",
+      "bytes": 5134,
+      "sha256": "f703b6b83388c370f6d18ebf0714cad35236995e09ce32e86887794dcc2e519d"
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "bytes": 22257,
+      "sha256": "292830aa6649a9ecb5798a6a063c946fa6f550901734c5306ed786b3b0587862"
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 55272,
+      "sha256": "3a5d820721457e85bff2d82521eff08f382d239bd302a8724b12b768803c05b1"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "6c182082983a42f5512594a845d4bd1628a090e82dec5dad5d0d141d76fa203c"
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "bytes": 7992,
+      "sha256": "ce681175311ead7c53ee7c5ad88b8cbb48d360377e3ae72908977fe6d2656f68"
+    },
+    {
+      "path": "lib/protocol/runtime.mjs",
+      "bytes": 10367,
+      "sha256": "3f61d58fa27581301b26fde7e8b559da13e2b6a59bbc5263b3e50b1e012e2eb8"
+    },
+    {
+      "path": "research/q025/integration/LAZY-DATA-CONTRACT.md",
+      "bytes": 4849,
+      "sha256": "5c8cbf9c64f7099e98efc538890401b608613da21198733026347b9411b1d77e"
+    },
+    {
+      "path": "research/q025/integration/PUBLIC-BRIDGE-QA.md",
+      "bytes": 2718,
+      "sha256": "fb49c9be976ec2794b6f9b954445ea4bef9c68898088caac6c034e773a7668c8"
+    },
+    {
+      "path": "research/q025/integration/WAVE-G.md",
+      "bytes": 3388,
+      "sha256": "1a310456e9a762653b414195be8f1ea5ee447d645b3f22a0e960755dd62aee70"
+    },
+    {
+      "path": "research/q025/integration/contribution-browser-acceptance.py",
+      "bytes": 10826,
+      "sha256": "ce97527a7028839ff84b5efc3fb193b352ce48bdcce7cd14d16e98a76f14b94c"
+    },
+    {
+      "path": "research/q025/integration/create-contribution-fixture.mjs",
+      "bytes": 6120,
+      "sha256": "9d69dedc8e163d8047940d0c993c101cf423358eb96c898d6f8519c4be6aacf0"
+    },
+    {
+      "path": "research/q025/integration/public-bridge-acceptance.py",
+      "bytes": 11628,
+      "sha256": "7b90c35d980425619094bbf808f2ecb7d6c4f0852734f90dc69806545417805d"
+    },
+    {
+      "path": "research/q025/integration/qa11/browser.log",
+      "bytes": 815,
+      "sha256": "3b4d70c3f48ff33cec72bd2da449b7125d3a69af24268c417cb5d0e86be6832f"
+    },
+    {
+      "path": "research/q025/integration/qa11/content-manifest.json",
+      "bytes": 115176,
+      "sha256": "758c0399438371d0fa9b5a1f8adce7c822b6a6d31f6e7deb2aa044e99a93ab4e"
+    },
+    {
+      "path": "research/q025/integration/qa11/job.json",
+      "bytes": 1095,
+      "sha256": "41c1ffaefe729a5a035da609301cad8e2f0ec9dd247c759a17660a8571b14122"
+    },
+    {
+      "path": "research/q025/integration/qa11/report.json",
+      "bytes": 683,
+      "sha256": "aa83da126776da8c8dc33f764796c2af3cf272794ae5ecbb183e21bf0437cf6f"
+    },
+    {
+      "path": "research/q025/integration/qa11/run.sbatch",
+      "bytes": 2352,
+      "sha256": "ddb5184db57b0454f6c7f72d89a1a3ba51794e2943f87b9afb43e9d416449380"
+    },
+    {
+      "path": "research/q025/integration/qa12/browser.log",
+      "bytes": 815,
+      "sha256": "fedfef184c4fd85cbab3ad992796703623f5dd1f935d070d21f4ecb99170c700"
+    },
+    {
+      "path": "research/q025/integration/qa12/content-manifest.json",
+      "bytes": 115281,
+      "sha256": "2b5d084c22990d9af27fffccc3d0e1867ba02c936fa022f649eb8e65863019cb"
+    },
+    {
+      "path": "research/q025/integration/qa12/failure.png",
+      "bytes": 180975,
+      "sha256": "f362d53ee8ef0058ec92be28c69881628aceefaa88ea961bb9ad7cf98b1a3128"
+    },
+    {
+      "path": "research/q025/integration/qa12/job.json",
+      "bytes": 1155,
+      "sha256": "0da833428df7a498cd8dbaf21ee9e5348619c29c3104d6c36985b042f10a220a"
+    },
+    {
+      "path": "research/q025/integration/qa12/report.json",
+      "bytes": 3306,
+      "sha256": "ef54547d028e1123649bd32b5711633bf814da76c67e3296f671218c97361f6a"
+    },
+    {
+      "path": "research/q025/integration/qa12/run.sbatch",
+      "bytes": 2352,
+      "sha256": "1f593c2db68c826c7a06243efb3ff2d2d656a030b0aeed3efeda44c176d3d777"
+    },
+    {
+      "path": "research/q025/integration/qa13/browser.log",
+      "bytes": 764,
+      "sha256": "f3a4f4fce32107b19aea3d813c814fff837c03192bc2ddff6a32d8235d38f968"
+    },
+    {
+      "path": "research/q025/integration/qa13/content-manifest.json",
+      "bytes": 115299,
+      "sha256": "6449e2104937bf193970cfeb818319064860b5a372074780c949a6deb2494f04"
+    },
+    {
+      "path": "research/q025/integration/qa13/contribution-only-desktop.png",
+      "bytes": 327048,
+      "sha256": "22ca00680368b5205949fd987e547bb0abd54331d9f879ccf46754b57aa12033"
+    },
+    {
+      "path": "research/q025/integration/qa13/job.json",
+      "bytes": 1020,
+      "sha256": "3b9bad29fabdb65a83f7b9752798bb4ea093d56f5c1f95a09124d490f604141e"
+    },
+    {
+      "path": "research/q025/integration/qa13/report.json",
+      "bytes": 1033,
+      "sha256": "0d6ed69dde4e6a56daf9251bc4130cba8504d1d0b30932accbcb6c4152399f06"
+    },
+    {
+      "path": "research/q025/integration/qa13/run.sbatch",
+      "bytes": 2352,
+      "sha256": "63854a0bb1cbec6247eb3e05e0404a9454e5cb4616657bf122bcf982488bdae3"
+    },
+    {
+      "path": "research/q025/integration/qa14/browser.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa14/content-manifest.json",
+      "bytes": 115413,
+      "sha256": "f4b117540d94ffb6c76e6e6a305dabff6bf48653b009589372d5a839d89bf824"
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-connected.png",
+      "bytes": 226239,
+      "sha256": "53ad3f586bb3072534d6f8751e3817e948aeca31aabf691400d7814583db7767"
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-desktop.png",
+      "bytes": 327048,
+      "sha256": "22ca00680368b5205949fd987e547bb0abd54331d9f879ccf46754b57aa12033"
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-mobile.png",
+      "bytes": 314633,
+      "sha256": "fb3089833b6ff428111596b740adb4b24f4b0a9ab4465fd678d96cd053ba1239"
+    },
+    {
+      "path": "research/q025/integration/qa14/job.json",
+      "bytes": 1055,
+      "sha256": "520dadf0546f411bc14c5e879f8d54b45e6fbf74222d242c8b3363dc4b95be2f"
+    },
+    {
+      "path": "research/q025/integration/qa14/report.json",
+      "bytes": 1653,
+      "sha256": "75c63f3305082b63defe64ed0bbb58b77cd99e1a562d99600b6b616dfe88cc38"
+    },
+    {
+      "path": "research/q025/integration/qa14/run.sbatch",
+      "bytes": 2352,
+      "sha256": "04046a282ef06554c74d73343c87f6f5d89b1b655af9f9de78497bbfad56e6dd"
+    },
+    {
+      "path": "research/q025/integration/qa14/slurm-accounting.txt",
+      "bytes": 289,
+      "sha256": "6d6abd8e99b23b047b0caea495f3e9f6175d22d7bae75918a710b331149a63c3"
+    },
+    {
+      "path": "research/q025/integration/wave-g-post-qa14.json",
+      "bytes": 2129,
+      "sha256": "861673056eaf216f32f6c07273943e752c384b9749a001783c349aa00af23049"
+    },
+    {
+      "path": "research/q025/integration/wave-g-public-evidence-scan.json",
+      "bytes": 6058,
+      "sha256": "49bf409a3f78c008e73c3213c11ceb3cf5bef0555c43620c73195f9520e16cf1"
+    },
+    {
+      "path": "research/q025/integration/wave-g-tests.log",
+      "bytes": 9140,
+      "sha256": "e9157d36c4225c9f9fb52cb3297e53b41d6eb8847973ab36609ea6c739fb20d7"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 15221,
+      "sha256": "8f78b463ed07eea66f11984f6d5b4201d92579073c8067655b2f6e89a3c71734"
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "bytes": 8162,
+      "sha256": "b7d363545b8a9f49aa6d9eb9601c4ecf0a0af527bd0dca3e7cdff95bec0aa893"
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "bytes": 7634,
+      "sha256": "8c711ef6b51253090a0314ce9ff0aee54579ccce75f5a56b221ea47210156d52"
+    },
+    {
+      "path": "tests/integration/contribution-only-destination.test.mjs",
+      "bytes": 5764,
+      "sha256": "087a0267d557f58acd59c61a8bbd601fb1a6cddb6adf576faf36b26c2726883d"
+    },
+    {
+      "path": "tests/integration/prepared-atlas.test.mjs",
+      "bytes": 18607,
+      "sha256": "2097422723c5a03873ad1fc976700d24d51a7371ba2fd882573271bc86111235"
+    },
+    {
+      "path": "tests/integration/source-contributions-display.test.mjs",
+      "bytes": 3393,
+      "sha256": "e0852fbc26f986d3dee126aa089e89f711acbcd0c08dbbf12d6c67a6b822a4cf"
+    },
+    {
+      "path": "tests/integration/static-atlas-discovery.test.mjs",
+      "bytes": 5983,
+      "sha256": "78ae1b5318fa120614350d0f079dd9ac28410ac547f61e2163e781fd6d74759c"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 91416,
+      "sha256": "afef6593b4e95cd9f85bdb4887c0c0b815dad357885e30829c2b504429f8a327"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 13908,
+      "sha256": "8bc734bbe3193f22fb399897979aadcb4216198dca2590854ffb8bfc96acde2c"
+    },
+    {
+      "path": "web/construction.html",
+      "bytes": 9195,
+      "sha256": "ea4ebbe6e33b1c337537773071460617966a143c47b4b1cc36f7dd6344563bf7"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 10241,
+      "sha256": "26ae1013c4c37833d0e8cbe6de1aee42a738b2007f34437305b18869580aefae"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 27677,
+      "sha256": "366ee1d054e8348033350e9b2bbf59def28fa496e06c262140dc7c051d386611"
+    }
+  ],
+  "publicEvidenceScan": "research/q025/integration/wave-g-public-evidence-scan.json"
+}

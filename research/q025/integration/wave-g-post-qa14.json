@@ -1,0 +1,43 @@
+{
+  "kind": "q025-post-browser-copy-and-instruction-amendments",
+  "unchangedQa14Files": 589,
+  "changedFiles": [
+    {
+      "path": "bin/navigate.mjs",
+      "qa14Sha256": "68408242adb976ab7d26713e641bd1c2f2b38047df0489710caf8c422421fe32",
+      "checkpointSha256": "0bbccd6308b8265e4d243e50b466e3349ab992a75cbeb62b5c113f3285ff4e94",
+      "change": "Help text advertises --collection; execution unchanged."
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "qa14Sha256": "751bbd969829714e7562c16fd9ae0c74724d8dd2f29d0a39732653eed615e993",
+      "checkpointSha256": "ce681175311ead7c53ee7c5ad88b8cbb48d360377e3ae72908977fe6d2656f68",
+      "change": "Tool descriptions lead with scoped prepared navigation; schema and dispatch unchanged."
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "qa14Sha256": "5f5baa94b57500f7e8836fd46847ffbaf6453f19343eb8e335ccc86afdeeb480",
+      "checkpointSha256": "b7d363545b8a9f49aa6d9eb9601c4ecf0a0af527bd0dca3e7cdff95bec0aa893",
+      "change": "Prepared-first agent workflow, optional native section; no runtime changes."
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "qa14Sha256": "8b5e322a35ad0e8b401213e291ed682e2f6106d5437f8197d94a6f1aac0a3522",
+      "checkpointSha256": "8c711ef6b51253090a0314ce9ff0aee54579ccce75f5a56b221ea47210156d52",
+      "change": "Prepared companion first and contribution collection documented."
+    },
+    {
+      "path": "web/app.js",
+      "qa14Sha256": "c6c183cc57ad8fe855dce4548dd49030b5d0a243f3ed541af545dbd2eba179ac",
+      "checkpointSha256": "afef6593b4e95cd9f85bdb4887c0c0b815dad357885e30829c2b504429f8a327",
+      "change": "Copy-only singular direction/group status correction requested by root."
+    }
+  ],
+  "verification": [
+    "Node syntax check",
+    "skill quick_validate passed",
+    "76 tests passed after skill/tool-description changes",
+    "build and site check passed after singular status copy correction"
+  ],
+  "noNewBrowserRunNeeded": "Root explicitly requested no repeated browser suite for these wording changes. QA14 screenshots retain original plural copy."
+}

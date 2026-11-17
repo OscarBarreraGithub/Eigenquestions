@@ -10,8 +10,8 @@ function fixtureIdentity(){
   return x;
 }
 function compare(x,id,operation,members,differences=[]){x.packet.identityResolution.comparisons.push({id,operation,members,target:members.at(-1),definingDifferences:differences,sourceReviewIds:['review:fixture','review:challenge'],evidenceRefs:[{kind:'description',id:'unit:q1'}]});}
-function group(x,memberIds=['A','B','C']){
-  const r=x.packet.identityResolution,d=x.packet.destinations.find(d=>d.id==='destination:fine'),g={id:'identity:ABC',destinationId:d.id,memberIds,decisionId:'decision:identity'},scopeHash=scopeContentHash(d),inventoryHash=identityInventoryHash(r);
+function group(x,memberIds=['A','B','C'],id='identity:ABC'){
+  const r=x.packet.identityResolution,d=x.packet.destinations.find(d=>d.id==='destination:fine'),g={id,destinationId:d.id,memberIds,decisionId:'decision:'+id},scopeHash=scopeContentHash(d),inventoryHash=identityInventoryHash(r);
   r.canonicalGroups.push(g);x.packet.decisions.push({id:g.decisionId,type:'question_equivalence',status:'accepted',outcome:'equivalent_as_scoped',subjectIds:[d.id,...memberIds],sourceReviewIds:['review:fixture','review:challenge'],evidenceRefs:[{kind:'description',id:'unit:q1'}],challengerAgreement:'independently_agreed',changedPremises:[],canonicalDestinationId:d.id,scopeContentSha256:scopeHash,identityInventorySha256:inventoryHash,identityGroupContentSha256:canonicalIdentityGroupHash(g,scopeHash,inventoryHash),reviewAgreement:{proposalReviewId:'review:fixture',challengeReviewId:'review:challenge'}});
   return g;
 }
@@ -37,4 +37,11 @@ test('pair proof or stale inventory cannot stand in for explicit whole-group adm
 });
 test('partial canonical groups cannot silently join by overlap',()=>{
   const x=fixtureIdentity(),g=group(x,['A','B']);x.packet.identityResolution.canonicalGroups.push({...g,id:'identity:BC',memberIds:['B','C']});assert.throws(()=>assembleAccepted(x),/overlapping canonical groups/);
+});
+test('independent audit: admitted A=C closes recorded A=B into a forbidden B=C equality',()=>{
+  const x=fixtureIdentity();compare(x,'ab','same_scoped_question',['A','B']);compare(x,'bc','different',['B','C'],['Different physical regime']);group(x,['A','C']);
+  assert.throws(()=>assembleAccepted(x),error=>error.identityConflictQueue.transitiveConflicts.some(c=>c.constraintComparisonId==='bc'&&c.canonicalGroupIds.includes('identity:ABC')&&c.memberIds.join(',')==='A,B,C'));
+});
+test('independent audit: disjoint groups cannot collapse specialization through a shared destination',()=>{
+  const x=fixtureIdentity();x.packet.identityResolution.records.push({id:'D',contentSha256:'d'.repeat(64)});compare(x,'ac','specializes',['A','C'],['Different controlled limit']);group(x,['A','B'],'identity:AB');group(x,['C','D'],'identity:CD');assert.throws(()=>assembleAccepted(x),/one canonical destination requires one complete group/);
 });

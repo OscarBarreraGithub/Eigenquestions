@@ -1,6 +1,7 @@
 /** Deterministic compilation of explicit adjudicated organization decisions. */
 import {hydrateSources,sha256} from './corpus.mjs';
 import {validateCanonicalIdentity} from './fine-identities.mjs';
+import {isPrimaryReference,primaryLocatorFingerprint} from './primary-evidence.mjs';
 
 const fail=message=>{throw new Error(`Accepted assembly: ${message}`);};
 const setHash=ids=>sha256([...new Set(ids)].sort().join('\n'));
@@ -11,7 +12,7 @@ export const acceptedContentHash=packet=>sha256(JSON.stringify(Object.fromEntrie
 export const sourceContributionContentHash=(row,scopeContentSha256)=>sha256(JSON.stringify({unitId:row.unitId,destinationId:row.destinationId,role:row.role,basis:row.basis,evidenceRefs:row.evidenceRefs,scopeContentSha256,...(row.qualification!==undefined?{qualification:row.qualification}:{})}));
 export const provenanceRelationContentHash=row=>sha256(JSON.stringify({sourceReviewId:row.sourceReviewId,sourceRef:row.sourceRef,targetRef:row.targetRef,proposedType:row.proposedType,interpretation:row.interpretation,evidenceRefs:row.evidenceRefs}));
 
-export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,verifiedReceiptHashes=new Set(),fixture=false}) {
+export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,verifiedReceiptHashes=new Set(),verifiedPrimaryLocators=new Set(),fixture=false}) {
   if(packet.schemaVersion!=='q025-accepted-atlas/1')fail('unsupported acceptance packet');
   if(packet.acceptance?.status!=='accepted_for_assembly')fail('raw reviewer proposals cannot be assembled as accepted');
   if(!fixture&&!verifiedReceiptHashes.has(packet.acceptance.receipt?.sha256))fail('assembly admission receipt is not verified');
@@ -67,7 +68,8 @@ export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,
     const source=units.get(row.unitId),destination=dest.get(row.destinationId);if(!source||!destination)fail('unknown typed contribution endpoint');
     if(!contributionRoles.has(row.role)||!['description_checked','source_excerpt_checked'].includes(row.basis))fail('invalid typed contribution role/basis');
     if(!row.evidenceRefs?.length)fail('typed contribution lacks exact source evidence');
-    const ownDescription=row.evidenceRefs.some(ref=>ref.kind==='description'&&ref.unitId===row.unitId&&ref.textSha256===source.evidence.textSha256),ownPrimary=row.evidenceRefs.some(ref=>['primary','source_excerpt'].includes(ref.kind)&&ref.paperId===source.paperId&&(ref.textSha256||ref.sha256||ref.id||ref.sourceId&&ref.sourceContext?.textSha256));
+    for(const ref of row.evidenceRefs.filter(isPrimaryReference)){const fingerprint=primaryLocatorFingerprint(ref);if(!fingerprint||!verifiedPrimaryLocators.has(fingerprint))fail('typed contribution lacks an exact resolved primary locator');}
+    const ownDescription=row.evidenceRefs.some(ref=>ref.kind==='description'&&ref.unitId===row.unitId&&ref.textSha256===source.evidence.textSha256),ownPrimary=row.evidenceRefs.some(ref=>isPrimaryReference(ref)&&ref.paperId===source.paperId&&verifiedPrimaryLocators.has(primaryLocatorFingerprint(ref)));
     if(!ownDescription&&!ownPrimary||row.basis==='source_excerpt_checked'&&!ownPrimary)fail('typed contribution evidence does not bind its exact source/basis');
     const proof=decision(row.decisionId,['source_contribution']),scopeHash=scopeContentHash(destination),agreement=proof.reviewAgreement;
     if(!proof.subjectIds?.includes(row.unitId)||!proof.subjectIds?.includes(row.destinationId))fail('typed contribution decision has wrong subjects');

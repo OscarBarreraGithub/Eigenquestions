@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "q025-integration-job/1",
+  "jobId": "61477193",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 2,
+  "memory": "8G",
+  "timeLimit": "00:08:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa13",
+  "submittedAt": "2026-11-17T11:57:48.477285+00:00",
+  "archiveSha256": "550a2fea42247f4d2229f9d4cce68d32087665e33ef14af817f2724f6e48a2c7",
+  "archiveBytes": 114186232,
+  "contentManifestSha256": "6449e2104937bf193970cfeb818319064860b5a372074780c949a6deb2494f04",
+  "sbatchSha256": "63854a0bb1cbec6247eb3e05e0404a9454e5cb4616657bf122bcf982488bdae3",
+  "baseCommit": "bfbb7d68539aa9a21b85c8d86ecadb115b8086a7",
+  "includesUncommittedFiles": true,
+  "statusAtSubmission": "submitted",
+  "scope": "QA13 synthetic contribution-only browser transport. Fixes bundled contribution source lookup and known empty-membership disclosure after preserved QA11/12 failures.",
+  "finalStatus": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:00:17"
+}

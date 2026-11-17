@@ -1,0 +1,168 @@
+{
+  "kind": "q025-wave-g-public-evidence-scan",
+  "createdAt": "2026-11-17T12:04:34.176808+00:00",
+  "scope": "Only intentional integration QA11\u2013QA14 public artifacts listed here; no private credentials/profile inspected.",
+  "checkedFiles": 26,
+  "credentialPatterns": [
+    "credential_in_url",
+    "bearer_value",
+    "token_field"
+  ],
+  "findings": [],
+  "redactionsRequired": false,
+  "preservation": "Original failure reports/logs remain byte-identical. No evidence was silently rewritten or redacted. QA14 screenshots were visually inspected by integration/root; browser screenshots capture page content, not browser address bar. This is a scoped artifact check, not a general secret audit.",
+  "screenshots": [
+    {
+      "path": "research/q025/integration/qa12/failure.png",
+      "textMetadataChunks": []
+    },
+    {
+      "path": "research/q025/integration/qa13/contribution-only-desktop.png",
+      "textMetadataChunks": []
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-connected.png",
+      "textMetadataChunks": []
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-desktop.png",
+      "textMetadataChunks": []
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-mobile.png",
+      "textMetadataChunks": []
+    }
+  ],
+  "files": [
+    {
+      "path": "research/q025/integration/qa11/browser.log",
+      "bytes": 815,
+      "sha256": "3b4d70c3f48ff33cec72bd2da449b7125d3a69af24268c417cb5d0e86be6832f"
+    },
+    {
+      "path": "research/q025/integration/qa11/content-manifest.json",
+      "bytes": 115176,
+      "sha256": "758c0399438371d0fa9b5a1f8adce7c822b6a6d31f6e7deb2aa044e99a93ab4e"
+    },
+    {
+      "path": "research/q025/integration/qa11/job.json",
+      "bytes": 1095,
+      "sha256": "41c1ffaefe729a5a035da609301cad8e2f0ec9dd247c759a17660a8571b14122"
+    },
+    {
+      "path": "research/q025/integration/qa11/report.json",
+      "bytes": 683,
+      "sha256": "aa83da126776da8c8dc33f764796c2af3cf272794ae5ecbb183e21bf0437cf6f"
+    },
+    {
+      "path": "research/q025/integration/qa11/run.sbatch",
+      "bytes": 2352,
+      "sha256": "ddb5184db57b0454f6c7f72d89a1a3ba51794e2943f87b9afb43e9d416449380"
+    },
+    {
+      "path": "research/q025/integration/qa12/browser.log",
+      "bytes": 815,
+      "sha256": "fedfef184c4fd85cbab3ad992796703623f5dd1f935d070d21f4ecb99170c700"
+    },
+    {
+      "path": "research/q025/integration/qa12/content-manifest.json",
+      "bytes": 115281,
+      "sha256": "2b5d084c22990d9af27fffccc3d0e1867ba02c936fa022f649eb8e65863019cb"
+    },
+    {
+      "path": "research/q025/integration/qa12/failure.png",
+      "bytes": 180975,
+      "sha256": "f362d53ee8ef0058ec92be28c69881628aceefaa88ea961bb9ad7cf98b1a3128"
+    },
+    {
+      "path": "research/q025/integration/qa12/job.json",
+      "bytes": 1155,
+      "sha256": "0da833428df7a498cd8dbaf21ee9e5348619c29c3104d6c36985b042f10a220a"
+    },
+    {
+      "path": "research/q025/integration/qa12/report.json",
+      "bytes": 3306,
+      "sha256": "ef54547d028e1123649bd32b5711633bf814da76c67e3296f671218c97361f6a"
+    },
+    {
+      "path": "research/q025/integration/qa12/run.sbatch",
+      "bytes": 2352,
+      "sha256": "1f593c2db68c826c7a06243efb3ff2d2d656a030b0aeed3efeda44c176d3d777"
+    },
+    {
+      "path": "research/q025/integration/qa13/browser.log",
+      "bytes": 764,
+      "sha256": "f3a4f4fce32107b19aea3d813c814fff837c03192bc2ddff6a32d8235d38f968"
+    },
+    {
+      "path": "research/q025/integration/qa13/content-manifest.json",
+      "bytes": 115299,
+      "sha256": "6449e2104937bf193970cfeb818319064860b5a372074780c949a6deb2494f04"
+    },
+    {
+      "path": "research/q025/integration/qa13/contribution-only-desktop.png",
+      "bytes": 327048,
+      "sha256": "22ca00680368b5205949fd987e547bb0abd54331d9f879ccf46754b57aa12033"
+    },
+    {
+      "path": "research/q025/integration/qa13/job.json",
+      "bytes": 1020,
+      "sha256": "3b9bad29fabdb65a83f7b9752798bb4ea093d56f5c1f95a09124d490f604141e"
+    },
+    {
+      "path": "research/q025/integration/qa13/report.json",
+      "bytes": 1033,
+      "sha256": "0d6ed69dde4e6a56daf9251bc4130cba8504d1d0b30932accbcb6c4152399f06"
+    },
+    {
+      "path": "research/q025/integration/qa13/run.sbatch",
+      "bytes": 2352,
+      "sha256": "63854a0bb1cbec6247eb3e05e0404a9454e5cb4616657bf122bcf982488bdae3"
+    },
+    {
+      "path": "research/q025/integration/qa14/browser.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa14/content-manifest.json",
+      "bytes": 115413,
+      "sha256": "f4b117540d94ffb6c76e6e6a305dabff6bf48653b009589372d5a839d89bf824"
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-connected.png",
+      "bytes": 226239,
+      "sha256": "53ad3f586bb3072534d6f8751e3817e948aeca31aabf691400d7814583db7767"
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-desktop.png",
+      "bytes": 327048,
+      "sha256": "22ca00680368b5205949fd987e547bb0abd54331d9f879ccf46754b57aa12033"
+    },
+    {
+      "path": "research/q025/integration/qa14/contribution-only-mobile.png",
+      "bytes": 314633,
+      "sha256": "fb3089833b6ff428111596b740adb4b24f4b0a9ab4465fd678d96cd053ba1239"
+    },
+    {
+      "path": "research/q025/integration/qa14/job.json",
+      "bytes": 1055,
+      "sha256": "520dadf0546f411bc14c5e879f8d54b45e6fbf74222d242c8b3363dc4b95be2f"
+    },
+    {
+      "path": "research/q025/integration/qa14/report.json",
+      "bytes": 1653,
+      "sha256": "75c63f3305082b63defe64ed0bbb58b77cd99e1a562d99600b6b616dfe88cc38"
+    },
+    {
+      "path": "research/q025/integration/qa14/run.sbatch",
+      "bytes": 2352,
+      "sha256": "04046a282ef06554c74d73343c87f6f5d89b1b655af9f9de78497bbfad56e6dd"
+    },
+    {
+      "path": "research/q025/integration/qa14/slurm-accounting.txt",
+      "bytes": 289,
+      "sha256": "6d6abd8e99b23b047b0caea495f3e9f6175d22d7bae75918a710b331149a63c3"
+    }
+  ]
+}

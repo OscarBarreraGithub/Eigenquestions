@@ -137,3 +137,14 @@ test('same-paper methods remain contextual associations, outside primary contain
   const method=view.nodes.find(n=>n.id===methodId);assert.equal(method.atlasRole,'context-evidence');assert.equal(method.atlasContextScope,'same_paper_context');
   const bad=structuredClone(atlas);bad.catalog.memberships.at(-1).role='using';assert.throws(()=>validateAtlas(bad.manifest,bad.catalog),/contextual methods require/);
 });
+
+
+test('typed contributions stay outside membership, navigation and USING, with exact role and scope binding',()=>{
+  const atlas=atlasFixture(),record=atlas.catalog.destinations.find(d=>d.id==='shared');
+  const source={...atlas.catalog.sources[0],id:'source-c'};atlas.catalog.sources.push(source);
+  const baseline=createAtlasNavigator(structuredClone(atlas)),selector={...baseline.initialState.selector,destinationId:'shared'};
+  const row={unitId:'source-c',destinationId:'shared',role:'method',basis:'description_checked',evidenceRefs:['fixture:source-c'],decisionId:'decision:fixture',scopeContentSha256:'c'.repeat(64),browserVectorRow:2,sourceRow:2,paperId:source.paperId,lens:'physical_question',contributionStatus:'accepted_typed_contribution',provenance:{doesNotAssertDirectHome:true,doesNotAssertEquivalence:true,doesNotAssertMethodApplicability:true}};
+  record.sourceContributions=[row];const nav=createAtlasNavigator(atlas),state=currentState(nav.createSession({selector})),view=nav.computeView(state);
+  assert.equal(view.atlas.membershipCount,2);assert.equal(nav.sources('shared',{workRelation:'using'}).total,1);assert.deepEqual(nav.connections('shared'),baseline.connections('shared'));assert.ok(!view.nodes.some(n=>n.id==='source-c'));assert.deepEqual(view.atlas.destination.sourceContributions,[row]);createCapsule({session:nav.createSession({selector}),view});
+  for(const change of [{role:'using'},{workRelation:'using'},{destinationId:'left'},{scopeContentSha256:'not-a-hash'},{provenance:{doesNotAssertMethodApplicability:false}}]){const bad=structuredClone(atlas);Object.assign(bad.catalog.destinations.find(d=>d.id==='shared').sourceContributions[0],change);assert.throws(()=>validateAtlas(bad.manifest,bad.catalog),/contribution|scope binding/);}
+});

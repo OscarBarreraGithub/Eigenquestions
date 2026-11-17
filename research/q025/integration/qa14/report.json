@@ -1,0 +1,48 @@
+{
+  "kind": "q025-contribution-browser-acceptance",
+  "scope": "Isolated Slurm Chromium; synthetic transport fixture, not scientific acceptance or public HTTPS/owner browser evidence.",
+  "checks": [
+    {
+      "name": "existing MCP source reader pages typed contributions and full excerpts without membership, USING or state mutation",
+      "passed": true,
+      "contributions": 3,
+      "primary": 0,
+      "using": 0
+    },
+    {
+      "name": "zero-member question visibly retains paper-grouped roles, qualification and lazy exact scientific context",
+      "passed": true,
+      "paperGroups": 2,
+      "sourceContextObjects": 2
+    },
+    {
+      "name": "mobile contribution disclosure has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "ordinary static readers can inspect contributions, locators, optional rich context and unavailable-source inventory",
+      "passed": true
+    },
+    {
+      "name": "real MCP mutation selects contribution-only lazy question and receives exact browser render acknowledgement",
+      "passed": true,
+      "stateId": "state-d0e8c42ae8044de6",
+      "revision": 1
+    }
+  ],
+  "screenshots": [
+    "contribution-only-desktop.png",
+    "contribution-only-mobile.png",
+    "contribution-only-connected.png"
+  ],
+  "passed": true,
+  "manifestSha256": "be6ea5dfb8cd8e8e78542a811de12aa5a3052ba66b78c8a0733b01a1cb515332",
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "waitingFor": "document.querySelector('.source-contributions').textContent.includes('3 of 3 contributions loaded')",
+  "mobileLayout": {
+    "width": 390,
+    "scrollWidth": 390,
+    "overflowing": []
+  }
+}

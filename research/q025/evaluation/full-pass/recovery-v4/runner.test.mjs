@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {observeWhitespaceRun,verifyPrepared} from './runner.mjs';
+test('degenerate outside-string whitespace is detected across deltas',()=>{const j={};observeWhitespaceRun(j,'{'+ ' '.repeat(2048));assert.equal(j.cancelReason,undefined);observeWhitespaceRun(j,'\t'.repeat(2049));assert.match(j.cancelReason,/Degenerate raw JSON whitespace/);});
+test('normal JSON and escaped or literal in-string whitespace do not trigger',()=>{for(const text of ['{\n  "x":1,\n  "y":2\n}',JSON.stringify({source:'\t\n'.repeat(5000)}),JSON.stringify({source:' '.repeat(6000)})]){const j={};observeWhitespaceRun(j,text);assert.equal(j.cancelReason,undefined);}});
+test('two recovery jobs retain42row source lineage and bounded workers',()=>{const p=verifyPrepared();assert.equal(p.jobs.length,2);assert.equal(p.maxAuthorizedConcurrency,2);});

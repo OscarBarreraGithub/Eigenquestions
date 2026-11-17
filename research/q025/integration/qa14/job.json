@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "q025-integration-job/1",
+  "jobId": "61478210",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 2,
+  "memory": "8G",
+  "timeLimit": "00:08:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa14",
+  "archiveSha256": "f7ef7e78dadc5a5d5dc0fbddec732a5e72bd4e3d02f5eb3a03feb42171b2f2c5",
+  "archiveBytes": 114186368,
+  "contentManifestSha256": "f4b117540d94ffb6c76e6e6a305dabff6bf48653b009589372d5a839d89bf824",
+  "sbatchSha256": "04046a282ef06554c74d73343c87f6f5d89b1b655af9f9de78497bbfad56e6dd",
+  "baseCommit": "bfbb7d68539aa9a21b85c8d86ecadb115b8086a7",
+  "includesUncommittedFiles": true,
+  "statusAtSubmission": "submitted",
+  "scope": "QA14 synthetic contribution-only browser transport. Wraps exact source IDs on mobile, records layout metrics, and resolves the inventory test URL against its own origin. Prior QA11/12 source lookup and QA13 mobile overflow failures remain unchanged.",
+  "finalStatus": "COMPLETED",
+  "exitCode": "0:0",
+  "elapsed": "00:00:29"
+}

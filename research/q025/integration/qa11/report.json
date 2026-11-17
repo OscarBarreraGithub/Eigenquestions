@@ -1,0 +1,19 @@
+{
+  "kind": "q025-contribution-browser-acceptance",
+  "scope": "Isolated Slurm Chromium; synthetic transport fixture, not scientific acceptance or public HTTPS/owner browser evidence.",
+  "checks": [
+    {
+      "name": "existing MCP source reader pages typed contributions and full excerpts without membership, USING or state mutation",
+      "passed": true,
+      "contributions": 3,
+      "primary": 0,
+      "using": 0
+    }
+  ],
+  "screenshots": [],
+  "passed": false,
+  "manifestSha256": "be6ea5dfb8cd8e8e78542a811de12aa5a3052ba66b78c8a0733b01a1cb515332",
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+}

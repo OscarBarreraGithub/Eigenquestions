@@ -238,3 +238,15 @@ A bare URL then opens that entrance without replacing the last meaningful saved
 research path or reconnecting an agent. Explicit view/focus/atlas/token URLs take
 precedence. Resume and New path preserve local branches and separately stored notes.
 An installation without `home` retains the neutral native entrance.
+
+
+An optional destination `sourceContributions` array records admitted `addresses`,
+`instantiates`, `specializes`, `method`, `boundary` or `comparison` roles. Each row
+pins the destination, source unit and frozen rows, reading basis, evidence refs,
+review decision and scope hash; admitted qualifications remain unchanged. These
+rows do not create membership, a primary placement, equivalence, navigation edges
+or USING claims. They stay in the lazy full detail, with only aggregate inventory
+metadata in the initial catalog. Browser disclosures read twenty rows at a time,
+grouped by paper; static destination pages preserve the complete explicit list.
+
+Typed contributions are also available through the existing source reader: `navigator_sources({destinationId, collection:"contributions", offset:0, limit:20})`, CLI `sources --destination ID --collection contributions`, or browser `sources(selector,{collection:"contributions"})`. Each page returns its exact role, reading basis, qualification, review/evidence references and hydrated excerpt. The default collection remains `membership`; membership filters such as USING cannot be combined with contributions. These reads do not change the session.

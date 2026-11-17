@@ -21,6 +21,23 @@ export function validateCanonicalIdentity({resolution,destinations,decision,scop
       for(const id of c.members.slice(1)){adjacency.get(c.members[0]).add(id);adjacency.get(id).add(c.members[0]);}
     }
   }
+  const inventorySha256=identityInventoryHash(resolution),groups=[],assigned=new Set(),canonicalDestinations=new Set(),dest=new Map(destinations.map(d=>[d.id,d]));
+  // A proposed admitted group itself asserts equalities. Validate its proof,
+  // then include those equalities in the consistency graph before checking
+  // every recorded distinction. Components remain diagnostics, not admissions.
+  for(const g of resolution.canonicalGroups||[]){
+    const d=dest.get(g.destinationId);
+    if(!g.id||groups.some(x=>x.id===g.id)||!d||d.kind!=='question'||!Array.isArray(g.memberIds)||g.memberIds.length<2||new Set(g.memberIds).size!==g.memberIds.length||g.memberIds.some(id=>!records.has(id)))fail('invalid canonical identity group');
+    if(g.memberIds.some(id=>assigned.has(id)))fail('overlapping canonical groups require one explicit final group; no transitive union');
+    if(canonicalDestinations.has(g.destinationId))fail('one canonical destination requires one complete group decision; disjoint groups cannot collapse through its ID');
+    const proof=decision(g.decisionId,['question_equivalence']),hash=scopeHash(d);
+    if(proof.outcome!=='equivalent_as_scoped'||proof.challengerAgreement!=='independently_agreed'||proof.changedPremises?.length||proof.canonicalDestinationId!==d.id||proof.scopeContentSha256!==hash||proof.identityInventorySha256!==inventorySha256||proof.identityGroupContentSha256!==canonicalIdentityGroupHash(g,hash,inventorySha256)||[d.id,...g.memberIds].some(id=>!proof.subjectIds?.includes(id)))fail('canonical group lacks one admitted final scope and exact complete-group decision');
+    const agreement=proof.reviewAgreement,reviewIds=[agreement?.proposalReviewId,agreement?.challengeReviewId];
+    if(reviewIds.some(id=>!id||!reviewRecords.has(id)||!proof.sourceReviewIds.includes(id))||reviewIds[0]===reviewIds[1]||!reviewRecords.get(reviewIds[0]).sha256||reviewRecords.get(reviewIds[0]).sha256===reviewRecords.get(reviewIds[1]).sha256)fail('canonical group lacks distinct pinned proposal and challenge evidence');
+    for(const id of g.memberIds)assigned.add(id);canonicalDestinations.add(g.destinationId);
+    for(const id of g.memberIds.slice(1)){adjacency.get(g.memberIds[0]).add(id);adjacency.get(id).add(g.memberIds[0]);}
+    groups.push({...g,scopeContentSha256:hash,identityInventorySha256:inventorySha256,identityStatus:'admitted_scoped_question_group',sourceStatementEquivalenceAsserted:false});
+  }
   const componentById=new Map(),components=[];
   for(const id of records.keys())if(!componentById.has(id)){
     const members=[],todo=[id],index=components.length;componentById.set(id,index);
@@ -31,20 +48,11 @@ export function validateCanonicalIdentity({resolution,destinations,decision,scop
   const unresolvedConflicts=[];
   for(const c of comparisons.filter(constraint))for(let i=0;i<c.members.length;i++)for(let j=i+1;j<c.members.length;j++)if(componentById.get(c.members[i])===componentById.get(c.members[j])){
     const component=components[componentById.get(c.members[i])];
-    unresolvedConflicts.push({id:`identity-conflict:${sha256(c.id+'\n'+c.members[i]+'\n'+c.members[j]).slice(0,24)}`,status:'unresolved_identity_conflict',memberIds:component,constraintComparisonId:c.id,operation:c.operation,definingDifferences:c.definingDifferences,equivalenceComparisonIds:comparisons.filter(p=>p.operation==='same_scoped_question'&&p.members.some(id=>component.includes(id))).map(p=>p.id),automaticMergeAllowed:false});
+    unresolvedConflicts.push({id:`identity-conflict:${sha256(c.id+'\n'+c.members[i]+'\n'+c.members[j]).slice(0,24)}`,status:'unresolved_identity_conflict',memberIds:component,constraintComparisonId:c.id,operation:c.operation,definingDifferences:c.definingDifferences,equivalenceComparisonIds:comparisons.filter(p=>p.operation==='same_scoped_question'&&p.members.some(id=>component.includes(id))).map(p=>p.id),canonicalGroupIds:groups.filter(g=>g.memberIds.some(id=>component.includes(id))).map(g=>g.id),automaticMergeAllowed:false});
   }
-  const inventorySha256=identityInventoryHash(resolution),groups=[],assigned=new Set(),dest=new Map(destinations.map(d=>[d.id,d]));
-  for(const g of resolution.canonicalGroups||[]){
-    const d=dest.get(g.destinationId);
-    if(!g.id||groups.some(x=>x.id===g.id)||!d||d.kind!=='question'||!Array.isArray(g.memberIds)||g.memberIds.length<2||new Set(g.memberIds).size!==g.memberIds.length||g.memberIds.some(id=>!records.has(id)))fail('invalid canonical identity group');
-    if(g.memberIds.some(id=>assigned.has(id)))fail('overlapping canonical groups require one explicit final group; no transitive union');
+  for(const g of groups){
     const blockers=comparisons.filter(c=>constraint(c)&&c.members.filter(id=>g.memberIds.includes(id)).length>1),transitive=unresolvedConflicts.filter(c=>c.memberIds.some(id=>g.memberIds.includes(id)));
     if(blockers.length||transitive.length){const error=new Error('Fine identity assembly: canonical group conflicts with recorded distinction, specialization or changed premises');error.identityConflictQueue={groupId:g.id,directConstraintIds:blockers.map(c=>c.id),transitiveConflicts:transitive};throw error;}
-    const proof=decision(g.decisionId,['question_equivalence']),hash=scopeHash(d);
-    if(proof.outcome!=='equivalent_as_scoped'||proof.challengerAgreement!=='independently_agreed'||proof.changedPremises?.length||proof.canonicalDestinationId!==d.id||proof.scopeContentSha256!==hash||proof.identityInventorySha256!==inventorySha256||proof.identityGroupContentSha256!==canonicalIdentityGroupHash(g,hash,inventorySha256)||[d.id,...g.memberIds].some(id=>!proof.subjectIds?.includes(id)))fail('canonical group lacks one admitted final scope and exact complete-group decision');
-    const agreement=proof.reviewAgreement,reviewIds=[agreement?.proposalReviewId,agreement?.challengeReviewId];
-    if(reviewIds.some(id=>!id||!reviewRecords.has(id)||!proof.sourceReviewIds.includes(id))||reviewIds[0]===reviewIds[1]||!reviewRecords.get(reviewIds[0]).sha256||reviewRecords.get(reviewIds[0]).sha256===reviewRecords.get(reviewIds[1]).sha256)fail('canonical group lacks distinct pinned proposal and challenge evidence');
-    for(const id of g.memberIds)assigned.add(id);groups.push({...g,scopeContentSha256:hash,identityInventorySha256:inventorySha256,identityStatus:'admitted_scoped_question_group',sourceStatementEquivalenceAsserted:false});
   }
   return {registry:resolution.registry,inventorySha256,groups,unresolvedConflicts,recordCount:records.size,comparisonCount:comparisons.length,automaticUnions:0,meaning:'Only explicit whole-group decisions establish reusable scoped questions. Common targets and positive pair components do not merge records or source statements.'};
 }

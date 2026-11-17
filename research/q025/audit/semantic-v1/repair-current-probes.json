@@ -1,0 +1,34 @@
+{
+  "frozenCheckpoint": {
+    "files": 23,
+    "mismatches": [
+      "research/q025/assembly/CONTRACT.md",
+      "research/q025/assembly/accepted.mjs",
+      "research/q025/assembly/assemble.mjs",
+      "research/q025/assembly/fine-identities.mjs",
+      "research/q025/assembly/contributions.test.mjs",
+      "research/q025/assembly/identity-conflicts.test.mjs"
+    ]
+  },
+  "inheritedConstraint": {
+    "accepted": false,
+    "error": "Fine identity assembly: canonical group conflicts with recorded distinction, specialization or changed premises"
+  },
+  "distinctGroupsSameCanonicalDestination": {
+    "accepted": false,
+    "error": "Fine identity assembly: one canonical destination requires one complete group decision; disjoint groups cannot collapse through its ID"
+  },
+  "primaryEvidenceWithoutExactLocator": {
+    "accepted": false,
+    "error": "Accepted assembly: typed contribution lacks an exact resolved primary locator"
+  },
+  "contributionOnlyQuestion": {
+    "assemblyAccepted": true,
+    "logicalValidationPassed": true,
+    "roundTripPassed": true,
+    "questionAllocationMaxError": 0,
+    "sourceContributions": 1,
+    "primaryMembers": 0,
+    "prepared": true
+  }
+}

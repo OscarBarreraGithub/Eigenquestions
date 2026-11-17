@@ -1,159 +1,122 @@
 ---
 name: physics-navigator
-description: Use the physics graph from Eigenquestions for optional source-linked orientation, contextual exploration, authored view sharing, or a navigation journey. Prefer its installed browser object when available; local CLI/MCP and HTTP-only reading are capability-dependent fallbacks. Always supplement with independent research.
+description: Use Eigenquestions for source-linked physics orientation and shared browser/agent navigation. Resolve installed scoped destinations first; native query exploration and authored capsules are explicit alternatives. Supplement the atlas with independent research.
 ---
 
 # Physics navigator
 
-Use the real navigation object as a supplement to independent research and native
-reasoning. The frozen graph must not constrain what physics questions or outside
-sources you consider. For an ordinary answer, start cheaply: one read-only
-orientation and a few relevant source links, then return to the underlying task.
-Do not move the human's path merely to gather background.
+Use the atlas to orient independent research, not to limit which questions or
+outside sources you consider. For background, make read-only queries; do not move
+the human's path unless a visible update is part of the request. Read the
+[interface reference](references/interface.md) for exact calls and capabilities.
 
-Read [the interface reference](references/interface.md) for the available mode:
+## Navigate the prepared atlas
 
-- **Browser execution:** open `https://eigenquestions.com/`, read its agent
-  instructions, and use `window.eigenquestionsNavigator`. No repository, skill
-  install or companion is required. `orient` is read-only; `apply` and `navigate`
-  explicitly commit to the shared page/UI. Respect the browser tool's execution
-  permissions; a page object does not grant capabilities the tool lacks.
-- **HTTP only:** read the manifest, source-linked static descriptions, or an
-  existing saved capsule. This mode cannot run an arbitrary native query or
-  update someone else's browser. Continue independent research, explain the
-  boundary, and supply a source-grounded authored capsule/file if useful.
-- **Local companion:** use the existing Node22 CLI or stdio MCP when a checkout
-  and corpus are available. Locate them from user context or
-  `EIGENQUESTIONS_DIR`; the copied skill alone installs neither data nor tools.
+1. Read the current browser object with `window.eigenquestionsNavigator.read()`,
+   or use `navigator_state` / CLI `state`. Inspect the selector, question, history,
+   corpus date and warnings. Capture the browser parent revision **before**
+   interpretation or computation. Bare home opens the installed all-physics
+   entrance; saved paths and companion reconnection are explicit choices.
+2. Resolve the user's intended scoped destination. Use browser `lookup`,
+   `describe` and `connections`; with MCP use `navigator_search`,
+   `navigator_connections` and the linked static destination record for its full
+   scope. `/atlas/index.html` and `/data/atlas/index.json` support discovery without
+   installing tools. Lookup matches titles and aliases only: the agent interprets
+   prose and checks premises, regime, conventions and intent. A changed defining
+   assumption may require another record. Similar embeddings or shared region
+   membership do not establish canonical question equivalence.
+3. Inspect paginated `sources`, exact paper links and reading limits before using
+   a claim. Request `collection:"contributions"` through the same source reader
+   for reviewed method, boundary, comparison and other typed contributions. These
+   roles are separate from membership, equivalence and USING; retain their
+   qualifications. A question can have contributions and zero primary members.
+   `context` returns bounded pages of source objects, relations, evidence locators
+   or assessments (default 20 objects). Read applicable withheld reader notes.
+   Exact incidence and same-paper context do not establish universal premises or
+   applicability; absence from a page or filter does not establish absence in
+   physics. Extracted descriptions are not guaranteed verbatim quotations.
+4. For an authorized visible update, use `navigate({type:'navigate',selector})`
+   or `select` with a current direction ID. Use `back` / `replay` to revisit a path.
+   Browser mutation must use the parent revision captured before interpretation;
+   never restamp an old proposal with a newly read revision. Preserve the proposal
+   and newer state on conflict. The same accepted destination ID is shared across
+   paraphrases and entry paths; do not duplicate it merely to fit the conversation.
+5. Verify `read().renderedRevision === read().revision` after browser acceptance.
+   The local companion instead reports `browserStatus.acknowledgedCurrent` for
+   the exact state/revision. A computation or JSON response alone does not prove
+   that a browser displayed it. Explain useful next choices in the user's terms,
+   normally about 1–15 scientific directions; classifications may expose more.
+   Check all recorded connections, not only the route used to arrive here.
 
-Bare home intentionally starts neutral. Resume the saved view or reconnect the
-companion explicitly when that is the intended context; do not assume a reload
-restored it. Read the machine object after choosing. Visible titles are concise
-excerpts; full authoritative context/query/evidence remain in the capsule. A
-native choice labeled Return to step N revisits an identical active-prefix state,
-not a deeper topic. Method/Question metadata describes its representative source.
+Keep source claims, agent interpretation and unanswered questions distinct, with
+stable citations. Broad metadata-only fields describe a classification vocabulary,
+not detailed paper coverage. A displayed sample is not complete membership. Graph
+position, similarity and same-paper associations are discovery aids, not proofs of
+equivalence, causation or consistency. Clarify only when ambiguity materially
+changes the scientific scope; otherwise state a reasonable assumption and inspect
+it through read-only calls.
 
-## Resolve the conversation
+## Available interfaces
 
-- Inspect page `read()` (or local `navigator_state`/CLI `state`) first: current question, active
-  history, corpus scope/date, evidence IDs, warnings and proposed directions.
-- Translate pronouns and shorthand into a self-contained query. For “what if
-  they are dark matter?” after KK towers, use “KK towers as dark matter” with
-  `intent: phenomenology` and `type: refine`. Preserve explicit user constraints.
-- Use `derive` for mathematical mechanism, `phenomenology` for consequences or
-  tests, and `recent` for dated work. ON and USING are independent of recency:
-  `intent: recent, workRelation: using` differs from recent work `on` a concept.
-- Clarify only if ambiguity changes the scientific neighborhood substantially:
-  for example, an acronym with competing meanings and no context, or whether a
-  requested “connection” means a derivation or phenomenological compatibility.
-  Otherwise state a brief assumption and compute a reversible view. An empty
-  query means no supported semantic anchor: ask what to explore or offer a few
-  examples grounded in the stated corpus scope.
+- **Browser execution:** use the installed `window.eigenquestionsNavigator` when
+  the browser tool permits page JavaScript. `orient(query,{selector})` is read-only;
+  `navigate` or `apply` commits to that page. No repository, companion or skill
+  installation is required. A page object does not grant missing tool permissions.
+- **HTTP only:** read static destination pages, manifests, source references and
+  saved capsule bytes. Supply a compact prepared link for an installed destination;
+  it needs no upload. HTTP reading cannot update another person's open browser.
+- **Local companion:** use Node22 CLI or stdio MCP with an existing checkout and
+  the selected atlas (`serve --atlas data/atlas/ID/VERSION`). Locate it from user
+  context or `EIGENQUESTIONS_DIR`; the copied skill installs neither data nor tools.
+  Open the connection link and keep the companion running for visible updates.
 
-## Navigate and explain
+A public HTTPS page may require ordinary permission to contact apps on the device.
+If connection is unavailable, use the same-origin local link printed by `serve`
+or a compact prepared URL. Do not disable security or claim a CORS header proves
+connectivity. Keep session tokens out of exports, reports and public links.
 
-1. Search or inspect evidence to resolve the requested concept into source IDs.
-   `refine` refreshes top-five anchors from the *current* view on each turn unless
-   you supply explicit `focusIds`; this supports deeper contextual follow-ups.
-   Use `pivot` for an unrelated topic, `broaden` to release focus/constraints,
-   `select` with a current direction ID, or `back/replay` to revisit a state.
-   After selecting a method-specific direction, retain the user's physical
-   application explicitly in the next resolved query and source anchors. Inspect
-   whether competing sources address that application or merely share a method;
-   the five choices are nearby proposals, not a guaranteed deeper topic hierarchy.
-2. Invoke the interface and wait for its computed result. Never invent embedding
-   vectors, affine planes, retrieval edges or evidence, and never hand-edit a
-   native state ID. The same pinned engine/data/state must reproduce native math.
-   Agent-authored names, overlapping groups and typed interpretive relationships
-   may be supplied in a full capsule; distinguish them from computed results.
-   Omit geometry if no real projection was computed, or explicitly type an
-   authored display layout. Preserve evidence separately from interpretation.
-3. Inspect ranked sources and about five directions, then read evidence for the
-   connection you describe. Distinguish the source's claim, your interpretation,
-   and an unanswered question. Cite stable paper/source links. Extracted facets
-   are indexed descriptions, not guaranteed verbatim quotations; consult the
-   actual paper before asserting a derivation or a decisive physical result.
-4. Explain a small number of useful next choices in the user's terms. Similarity
-   and same-paper edges are discovery aids, never proof of equivalence, causation
-   or consistency. Report low coverage, high residuals or low retained variance
-   when they affect interpretation. The default chart fits five dynamic direction
-   means, with source vectors overlaid in that affine plane. Distinguish group
-   fidelity from source-overlay fidelity and within-group spread; retained group
-   variance does not certify source-level geometry. Slab thickness is not a
-   physical scale.
-5. For a requested visible update, capture the parent page revision **before**
-   interpretation or computation and retain it for `apply`/`navigate`. Never stamp
-   a stale result with a newly read revision. Preserve a newer state and the
-   proposal on conflict rather than blindly retrying. Confirm
-   `read().renderedRevision === read().revision` after the
-   accepted update. The local bridge instead reports
-   `browserStatus.acknowledgedCurrent` only after a browser acknowledges that
-   state/revision. This confirms a past render, not that the user still sees the
-   tab. Otherwise report that the update was computed but its display is not
-   confirmed. A JSON result without attachment is only an artifact.
-   Export the full capsule when the user wants to retain authored names, groups,
-   explicit context and evidence. A canonical session alone supports native
-   replay, not arbitrary authored grouping. Publish only when a saved/shareable
-   view is part of the task; saved links are public and unlisted. If storage is
-   unavailable/full, preserve the file and report that no durable link was made.
+## Optional native exploration
 
-## Preserve the full view's meaning
+Use native exploration explicitly when the recorded atlas does not represent the
+question. Export the prepared capsule before switching so its path and context
+remain recoverable; do not silently reinterpret a selector as a query.
 
-Prepared atlases use the same controller and a versioned destination selector.
-Read `/data/atlas/index.json`, the exact catalog manifest and the small static
-destination pages before routing. `lookup` matches titles/aliases only; the agent
-interprets prose, checks defining assumptions and selects an explicit ID. Region
-membership and similar embeddings do not establish canonical question equivalence.
-Use `context` for bounded pages of exact source objects, relations, evidence locators and assessments (default 20 objects; sections and offsets are explicit). Read applicable withheld reader notes before using a source relation; exact incident edges and same-paper context have different scopes. Missing filtered context is not scientific absence.
-Use `describe`, `connections` and paginated `sources`; a displayed source sample
-is not complete membership. Do not omit available cross-links because the question
-was entered through a different parent. Metadata-only broad fields are vocabulary
-landmarks, not claims of detailed literature coverage.
+Resolve pronouns into a self-contained query, such as “KK towers as dark matter,”
+and preserve the user's physical application and constraints. Native `refine`
+refreshes the top five anchors from the current view unless explicit `focusIds`
+are supplied. `pivot` clears inherited anchors; `broaden` also releases constraints.
+Select a current direction or use `back/replay` for exact states. Nearby native
+choices are proposals, not a guaranteed topic hierarchy. `derive`, `phenomenology`
+and `recent` express mechanism, implications and dated work; ON/USING is independent
+of recency. Empty or unsupported queries must not produce invented anchors.
 
-Prepared `navigate` and `select` retain the same destination across paraphrases and
-paths once scientific equivalence has been accepted. Changed defining assumptions
-may require another destination. `orient(query,{selector,...})` retains original
-prose locally while leaving the human path unchanged. A compact prepared URL does
-not contain private work notes or require upload. Native exploration remains an
-explicit alternative computation; preserve the prior prepared path when switching.
+The native chart fits five dynamic direction means and overlays source vectors.
+Distinguish group fidelity from source-overlay fidelity and within-group spread.
+Report low coverage or retained variance when relevant; slab thickness is not a
+physical scale. Never invent embeddings, retrieval edges, projections or state IDs.
+The pinned engine/data/state must reproduce computed geometry. Continue independent
+literature research for current or out-of-corpus material and label it separately.
 
-Display, recompute and continue are different capabilities. Import/apply must
-show the exact supplied capsule, including an unknown builder's groups. Do not
-replace it by silently recomputing a small recipe. The displayed author question
-may be broader than the canonical native seed query. For continuation, resolve
-that question into an explicit native query plus genuine anchors; richer prose
-context is preserved data, not automatically an input to the current math.
+## Preserve authored views and recover
 
-Follow only supported recorded actions. A custom group ID cannot be passed to
-native `select`; use the author's explicit `refine`/`pivot` query and source IDs.
-An unsupported builder remains a readable snapshot. The browser retains 24 full
-accepted capsules in memory for exact authored Back/branch behavior; after reload
-or eviction, reopen the exported view instead of substituting native labels.
+Use a full capsule for authored names, groups, interpretations or context beyond an
+installed destination. Preserve evidence separately from interpretation; omit
+geometry if none was computed or identify an authored display layout explicitly.
+Import/apply displays the supplied object exactly, including an unknown builder.
+Do not replace it by a silently recomputed recipe. Only supported recorded actions
+can continue it; a custom group ID is not a native direction ID. Unsupported
+builders remain readable snapshots. The browser retains 24 accepted full capsules
+in memory; after reload or eviction, reopen the export for exact authored context.
 
-A saved URL identifies a full object. Sending the URL alone does not notify an
-already-open tab: open it, change that tab's route, or apply through its controller.
-Files and gzip files use the same capsule. Keep connection tokens and unrelated
-private conversation data out of exports and public uploads.
+Prepared links exclude private work notes. Notes export separately. Full JSON/gzip
+capsules retain authored content; a session alone does not retain arbitrary groups.
+Publish only when a saved/shareable view is requested; saved links are public and
+unlisted. If storage fails, preserve the file and say no durable link was created.
+A saved URL alone does not notify an open tab: open the route or apply through its
+controller, then verify the render.
 
-## Scope and recovery
-
-“Latest” is bounded by the manifest snapshot. Say so; if genuinely current work
-is requested, use available literature tools separately and label those findings.
-Do not silently inject papers or fabricated embeddings into a frozen corpus.
-For an unsupported/out-of-corpus question, report the gap, try a precise synonym
-or source ID, and offer a corpus pivot. Do not return a confident unrelated map.
-
-On stale direction IDs, re-inspect the current view and choose from its current
-directions. On corpus/computation/version/ID mismatch, retain the export and load the matching
-data or start a new session; do not patch IDs to make validation pass. Missing or
-corrupt vector shards require repairing the dataset, not generated substitutes.
-On a context-drift concern, inspect focus IDs and evidence, retry with an explicit
-resolved query/anchors, then compare with a pivot; preserve the failed state as
-history so the difference is inspectable.
-
-A public HTTPS page may be unable to reach loopback. Use the same-origin local
-link printed by `serve`; do not disable browser security or claim a CORS header
-guarantees connectivity. After a bridge restart, reattach with its new token and
-import the saved session. Tokens are local session secrets; exclude them from
-exports, shared logs and citations. Stop after a clear repeated connection/data
-failure and report the missing prerequisite; do not loop on speculative fixes.
+On stale directions, inspect the current view again. On corpus, computation or
+version mismatch, retain the export and load matching data; never patch IDs or
+invent replacement vectors. After a bridge restart, reattach using its new token
+and import the saved session. Stop after a clear repeated connection/data failure
+and report the missing prerequisite instead of looping on speculative fixes.

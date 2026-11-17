@@ -15,3 +15,12 @@ The local runtime captures its revision before shard preparation and rejects pub
 All file bytes and decoded identities are checked. Runtime checks include exact counts, sample-to-complete equality, canonical detail identity, source ID alignment, navigation endpoints and containment acyclicity. Full build validation additionally loads every membership and checks complete-child subset containment; metadata-only classifications are explicitly exempt from corpus subset claims. The exporter separately pins its logical conservation/partition receipt. Static source-backed HTML pages are built from the same full records; method facets do not create a second set of per-method pages. The final build enforces the 20,000-file and 25 MiB-per-asset hosting limits.
 
 The research scale fixture is not an accepted scientific atlas. Its current measured envelope is 8,928 destinations, 171,694 membership/association rows, a 783,784-byte initial catalog, a 2,390-byte physics entrance detail, and a largest complete membership file of 15,029,623 bytes. The optional global fine index is 8,616,150 bytes; the largest direct-fine bucket is 48,264 bytes. Browser timings and public release counts must be measured separately.
+
+
+A detail may omit its membership descriptor when the pinned index declares both
+`membershipCount: 0` and `contextMembershipCount: 0` and `membershipSample` is empty.
+This represents an explicit complete empty membership, including a supported
+question whose sources appear only as typed contributions. It is independent of
+`metadataOnly` and does not mean the question lacks source support. Positive
+counts or a nonempty sample still require the complete membership descriptor;
+contributions never fill that membership implicitly.

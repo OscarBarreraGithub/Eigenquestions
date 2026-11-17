@@ -8,6 +8,7 @@ import {assembleAccepted,acceptedContentHash} from './accepted.mjs';
 import {normalizeCompactIdentity,attachFineSourceAccess} from './fine-identities.mjs';
 import {attachClassification} from './classification.mjs';
 import {writeLazyPackage} from './lazy-package.mjs';
+import {verifyPrimaryEvidence} from './primary-evidence.mjs';
 import {validateAtlas} from '../../../lib/geometry/prepared-atlas.mjs';
 
 export async function runAssembly({root,packetPath,out,overviewPath}) {
@@ -23,8 +24,10 @@ export async function runAssembly({root,packetPath,out,overviewPath}) {
     verifiedReceiptHashes.add(registry.sha256);
   }
   const corpus=await loadFrozenCorpus(join(root,'data/navigation'));
+  const contextRoot=resolveInput(packet.assets.sourceContextRoot),context=await readPinnedJson(join(contextRoot,'manifest.json'),packet.assets.sourceContextManifestSha256);
+  const primary=await verifyPrimaryEvidence({references:(packet.sourceContributions||[]).flatMap(row=>row.evidenceRefs||[]),corpus,archiveRoot:packet.assets.sourceArchiveRoot?resolveInput(packet.assets.sourceArchiveRoot):undefined,contextRoot,contextManifest:context.value});
   const bins=await readPinnedJson(resolveInput(packet.originalCandidate.regionsPath),packet.originalCandidate.regionsSha256);
-  const assembled=assembleAccepted({packet,corpus,originalBins:bins.value,originalBinsSha256:bins.sha256,verifiedReceiptHashes});
+  const assembled=assembleAccepted({packet,corpus,originalBins:bins.value,originalBinsSha256:bins.sha256,verifiedReceiptHashes,verifiedPrimaryLocators:primary.verifiedLocators});
   const fineBundles=[];
   for(const ref of packet.fineIdentityPackets||[]){
     const p=await readPinnedJson(resolveInput(ref.packet.path),ref.packet.sha256),r=await readPinnedJson(resolveInput(ref.reply.path),ref.reply.sha256);
@@ -39,13 +42,12 @@ export async function runAssembly({root,packetPath,out,overviewPath}) {
   if(overviewPath){const o=await readPinnedJson(overviewPath);if(o.value.membershipSha256!==geometryHash)throw new Error('Overview belongs to different accepted membership input');const ids=new Set(assembled.catalog.destinations.map(d=>d.id));if(o.value.nodes.some(n=>!ids.has(n.destinationId)))throw new Error('Overview node absent from catalog');assembled.catalog.overview=o.value;}
   const geometry=join(root,'research/q025/geometry/physics-entrance'),orientation=await readPinnedJson(join(geometry,'layout-v2/orientation.json')),classification=await readPinnedJson(join(geometry,'results/destinations.json'));
   const {catalog,entryDestinationId}=attachClassification(assembled.catalog,{orientation:orientation.value,destinations:classification.value,detailEntryDestinationId:packet.atlas.entryDestinationId});
-  const contextRoot=resolveInput(packet.assets.sourceContextRoot),context=await readPinnedJson(join(contextRoot,'manifest.json'),packet.assets.sourceContextManifestSha256);
   const contextDescriptors=[context.value.sourceContextIndex,context.value.sourceContextSummary,...Object.values(context.value.files),...Object.values(context.value.unitIndexFiles)];
   const assets=[...new Map(contextDescriptors.map(d=>[d.path,d])).values()].map(d=>({path:d.path,sha256:d.sha256,bytes:d.bytes,sourcePath:join(contextRoot,d.path)}));
   const assetPlan={schemaVersion:'q025-assembly-asset-plan/1',meaning:'Installer copies each immutable asset once into the package root and verifies its hash; research assembly does not duplicate the full context pack.',assets};
   const assetText=JSON.stringify(assetPlan);await writeFile(join(out,'asset-plan.json'),assetText);
   const manifest={schemaVersion:'1.0.0',kind:'eigenquestions-atlas',atlasId:packet.atlas.atlasId,atlasVersion:packet.atlas.atlasVersion,corpusId:corpus.manifest.corpusId,corpusContentHash:corpus.manifest.contentHash,entryDestinationId,snapshotDate:corpus.manifest.snapshotDate,scope:{...corpus.manifest.scope,...packet.atlas.scope,description:packet.atlas.scope?.description||'Reviewed organization of the frozen Swampland-centered question/method corpus, with a separate broad physics classification entrance.',deliveryState:overviewPath?'accepted_organization_for_integration_review':'accepted_organization_geometry_pending'},files:{sourceContextIndex:context.value.sourceContextIndex,sourceContextSummary:context.value.sourceContextSummary}};
-  await writeFile(join(out,'assembly-report.json'),JSON.stringify({...assembled.report,acceptedPacketSha256:input.sha256,acceptedContentSha256:acceptedContentHash(packet),verifiedReviews,fineSourceQuestionCount:corpus.manifest.layers.physical_question.count,fineIdentityProposalGroupCount:fineBundles.reduce((n,b)=>n+b.groups.length,0),geometryInputSha256:geometryHash,geometryPresent:Boolean(overviewPath)},null,2)+'\n');
+  await writeFile(join(out,'assembly-report.json'),JSON.stringify({...assembled.report,acceptedPacketSha256:input.sha256,acceptedContentSha256:acceptedContentHash(packet),verifiedReviews,primaryEvidenceVerification:primary.report,fineSourceQuestionCount:corpus.manifest.layers.physical_question.count,fineIdentityProposalGroupCount:fineBundles.reduce((n,b)=>n+b.groups.length,0),geometryInputSha256:geometryHash,geometryPresent:Boolean(overviewPath)},null,2)+'\n');
   const {handoff}=await writeLazyPackage({directory:out,manifest,catalog,externalAssets:assets,validateLogical:logical=>{validateAtlas({...manifest,schemaVersion:'1.0.0',files:{...manifest.files,catalog:{path:'logical-catalog.json',sha256:sha256(JSON.stringify(logical))}}},logical);return {...assembled.report,fullSourceIdentityAndContainmentChecked:true,acceptedPacketSha256:input.sha256,admissionReceiptSha256:admission.sha256};},publicationStatus:overviewPath?'accepted_organization_for_integration_review':'accepted_organization_geometry_pending',provenance:{acceptedPacketSha256:input.sha256,admissionReceiptSha256:admission.sha256,originalBinsSha256:bins.sha256,geometryInputSha256:geometryHash,contextManifestSha256:context.sha256,orientationSha256:orientation.sha256,verifiedReviews}});
   handoff.assetPlan={path:'asset-plan.json',sha256:sha256(assetText),assetCount:assets.length};handoff.fullAssetCopyPending=true;handoff.detailEntryDestinationId=packet.atlas.entryDestinationId;
   await writeFile(join(out,'handoff.json'),JSON.stringify(handoff,null,2)+'\n');return handoff;

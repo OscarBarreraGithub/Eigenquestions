@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {assembleAccepted,scopeContentHash,sourceContributionContentHash} from './accepted.mjs';
 import {fixtureInput} from './fixture.mjs';
 import {partitionCatalog,validatePartition} from './lazy-package.mjs';
+import {primaryLocatorFingerprint} from './primary-evidence.mjs';
 
 function withContribution(role='comparison'){
   const x=fixtureInput(),destination=x.packet.destinations.find(d=>d.id==='destination:fine');
@@ -22,7 +23,7 @@ test('method contribution alone does not grant method applicability or USING',()
   const x=withContribution('method'),result=assembleAccepted(x);assert.ok(!result.catalog.memberships.some(r=>r.role==='using'));assert.equal(result.catalog.sourceContributions[0].provenance.doesNotAssertMethodApplicability,true);
 });
 test('resolved primary locators and explicitly bound qualifications remain intact',()=>{
-  const x=withContribution(),row=x.packet.sourceContributions[0],proof=x.packet.decisions.at(-1);row.basis='source_excerpt_checked';row.qualification='Synthetic source-specific qualification.';row.evidenceRefs.push({kind:'primary',paperId:'p2',sourceId:'ev:fixture',sourceContext:{pdfPage:2,textSha256:'d'.repeat(64)}});proof.contributionContentSha256=sourceContributionContentHash(row,proof.scopeContentSha256);assert.equal(assembleAccepted(x).catalog.sourceContributions[0].qualification,row.qualification);row.qualification='Changed';assert.throws(()=>assembleAccepted(x),/changed after admission/);
+  const x=withContribution(),row=x.packet.sourceContributions[0],proof=x.packet.decisions.at(-1);row.basis='source_excerpt_checked';row.qualification='Synthetic source-specific qualification.';const ref={kind:'primary',paperId:'p2',sourceId:'ev:abcdef',sourceSha256:'a'.repeat(64),sourceContext:{path:'synthetic-reading-order.json',fileSha256:'b'.repeat(64),pdfPage:2,start:0,end:10,textSha256:'d'.repeat(64)}};row.evidenceRefs.push(ref);x.verifiedPrimaryLocators=new Set([primaryLocatorFingerprint(ref)]);proof.contributionContentSha256=sourceContributionContentHash(row,proof.scopeContentSha256);assert.equal(assembleAccepted(x).catalog.sourceContributions[0].qualification,row.qualification);row.qualification='Changed';assert.throws(()=>assembleAccepted(x),/changed after admission/);
 });
 test('typed contributions survive lazy detail while remaining absent from initial source payload',()=>{
   const {catalog}=assembleAccepted(withContribution()),p=partitionCatalog(catalog,{entryDestinationId:'destination:root'});assert.equal(p.catalog.sourceContributions,undefined);assert.equal(p.catalog.sourceContributionInventory.count,1);assert.equal(validatePartition(catalog,p).passed,true);const index=p.catalog.destinations.find(d=>d.id==='destination:fine'),descriptor=p.catalog.detailShards[index.detail.shardId],detail=JSON.parse(p.files.find(f=>f.descriptor.path===descriptor.path).text).destinations[index.id];assert.equal(detail.destination.sourceContributions[0].unitId,'unit:q3');

@@ -1,0 +1,149 @@
+{
+  "frozenCheckpoint": {
+    "files": 23,
+    "mismatches": []
+  },
+  "inheritedConstraint": {
+    "accepted": true,
+    "identity": {
+      "registry": {
+        "path": "synthetic-registry.json",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "inventorySha256": "9053e07130e2109be51fe4642d2ed0bc19cf77441f9fe9f2c56c353e2e9a6e5d",
+      "groups": [
+        {
+          "id": "group:AC",
+          "destinationId": "destination:fine",
+          "memberIds": [
+            "A",
+            "C"
+          ],
+          "decisionId": "decision:group:AC",
+          "scopeContentSha256": "ae4b7c98bfaad18a6a72d0ea2dd81966696caa00ee9abc0e6b18c79b551ccc1b",
+          "identityInventorySha256": "9053e07130e2109be51fe4642d2ed0bc19cf77441f9fe9f2c56c353e2e9a6e5d",
+          "identityStatus": "admitted_scoped_question_group",
+          "sourceStatementEquivalenceAsserted": false
+        }
+      ],
+      "unresolvedConflicts": [],
+      "recordCount": 4,
+      "comparisonCount": 2,
+      "automaticUnions": 0,
+      "meaning": "Only explicit whole-group decisions establish reusable scoped questions. Common targets and positive pair components do not merge records or source statements."
+    },
+    "aliases": [
+      "Alias A",
+      "Alias C"
+    ],
+    "contributions": [],
+    "questionAllocationMaxError": 0
+  },
+  "distinctGroupsSameCanonicalDestination": {
+    "accepted": true,
+    "identity": {
+      "registry": {
+        "path": "synthetic-registry.json",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "inventorySha256": "6dbf669100b13780d08b1547f629dbec526307823656befc239dff2e483567b2",
+      "groups": [
+        {
+          "id": "group:AB",
+          "destinationId": "destination:fine",
+          "memberIds": [
+            "A",
+            "B"
+          ],
+          "decisionId": "decision:group:AB",
+          "scopeContentSha256": "ae4b7c98bfaad18a6a72d0ea2dd81966696caa00ee9abc0e6b18c79b551ccc1b",
+          "identityInventorySha256": "6dbf669100b13780d08b1547f629dbec526307823656befc239dff2e483567b2",
+          "identityStatus": "admitted_scoped_question_group",
+          "sourceStatementEquivalenceAsserted": false
+        },
+        {
+          "id": "group:CD",
+          "destinationId": "destination:fine",
+          "memberIds": [
+            "C",
+            "D"
+          ],
+          "decisionId": "decision:group:CD",
+          "scopeContentSha256": "ae4b7c98bfaad18a6a72d0ea2dd81966696caa00ee9abc0e6b18c79b551ccc1b",
+          "identityInventorySha256": "6dbf669100b13780d08b1547f629dbec526307823656befc239dff2e483567b2",
+          "identityStatus": "admitted_scoped_question_group",
+          "sourceStatementEquivalenceAsserted": false
+        }
+      ],
+      "unresolvedConflicts": [],
+      "recordCount": 4,
+      "comparisonCount": 1,
+      "automaticUnions": 0,
+      "meaning": "Only explicit whole-group decisions establish reusable scoped questions. Common targets and positive pair components do not merge records or source statements."
+    },
+    "aliases": [
+      "Alias A",
+      "Alias B",
+      "Alias C",
+      "Alias D"
+    ],
+    "contributions": [],
+    "questionAllocationMaxError": 0
+  },
+  "primaryEvidenceWithoutExactLocator": {
+    "accepted": true,
+    "identity": {
+      "groups": [],
+      "unresolvedConflicts": [],
+      "automaticUnions": 0
+    },
+    "aliases": [],
+    "contributions": [
+      {
+        "unitId": "unit:q3",
+        "destinationId": "destination:fine",
+        "role": "comparison",
+        "basis": "source_excerpt_checked",
+        "evidenceRefs": [
+          {
+            "kind": "primary",
+            "paperId": "p2",
+            "id": "not-a-locator"
+          }
+        ],
+        "decisionId": "decision:source-contribution",
+        "scopeContentSha256": "ae4b7c98bfaad18a6a72d0ea2dd81966696caa00ee9abc0e6b18c79b551ccc1b",
+        "browserVectorRow": 2,
+        "sourceRow": 2,
+        "paperId": "p2",
+        "lens": "physical_question",
+        "contributionStatus": "accepted_typed_contribution",
+        "provenance": {
+          "decisionId": "decision:source-contribution",
+          "sourceReviewIds": [
+            "review:fixture",
+            "review:challenge"
+          ],
+          "reviewAgreement": {
+            "proposalReviewId": "review:fixture",
+            "challengeReviewId": "review:challenge"
+          },
+          "doesNotAssertDirectHome": true,
+          "doesNotAssertEquivalence": true,
+          "doesNotAssertMethodApplicability": true
+        }
+      }
+    ],
+    "questionAllocationMaxError": 0
+  },
+  "contributionOnlyQuestion": {
+    "assemblyAccepted": true,
+    "logicalValidationPassed": true,
+    "roundTripPassed": true,
+    "questionAllocationMaxError": 0,
+    "sourceContributions": 1,
+    "primaryMembers": 0,
+    "prepared": false,
+    "error": "Prepared atlas: nonmetadata destination lacks complete membership descriptor"
+  }
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa13/project/research/q025/integration/contribution-browser-acceptance.py", line 89, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa13/project/research/q025/integration/contribution-browser-acceptance.py", line 80, in main
+    report['error']=str(error).replace(token,'[redacted-session-token]') if token else str(error);raise RuntimeError(report['error']) from None
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError

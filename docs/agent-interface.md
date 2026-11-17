@@ -40,6 +40,13 @@ loading embeddings. Full membership may be much larger than a displayed capsule.
 Same-paper method associations are counted separately from primary membership and excluded from complete-containment checks. Method/derive perspectives expose them as context only; explicit `includeContext:true` includes them in source paging, with `primaryTotal` and `contextTotal`. They retain evidence role and are excluded by USING filters. Missing filter metadata is an explicit error. Context witnesses are labeled apart
 from matching sources; recent refers only to recorded years in the frozen corpus.
 
+A destination may also expose `sourceContributions` in its full definition:
+reviewed roles such as addresses, example, method, boundary or comparison, with
+exact source IDs, evidence refs, reading basis, scope hash and decision ID. These
+are distinct from source membership and do not establish question equivalence or
+method applicability. Static pages retain all roles; the browser expands them in
+bounded pages grouped by paper.
+
 `context(unitId, selector, options)` reads one bounded page from the checksummed source-context shard. The default is 20 objects; set `section` to `objects`, `relations`, `evidence` or `assessments`, `offset` to the returned `page.nextOffset`, and `limit` up to 40. Optional `scope`, `kinds` and exact `objectIds` narrow the page. Unfiltered totals, filtered totals, returned count and omitted-context notice remain explicit. Relations include exact endpoint references even when their full text is outside the object page; request those IDs in the objects section. Always inspect applicable withheld/nonpositive assessments: their full `readerNote` is retained. A 256 KiB record budget may end a page before its requested count; continue at the explicit next offset. Direct substantive source relations are presented before structural containment or mentions; structural records remain available through continuation pages with their original status. Browser disclosures use the complete underlying reader and build their DOM progressively.
 It preserves exact scientific object endpoints, semantic status, premises,
 convention dictionaries and evidence namespaces. Direct source relations,
@@ -202,8 +209,11 @@ Keep that process running. It prints two browser links: a loopback link to the
 same static renderer, and an `eigenquestions.com` link with bridge attachment data
 in its fragment. Open the local link for the robust same-origin path. Public
 HTTPS → loopback access depends on browser policy and permission; a server CORS
-allowlist cannot override those policies. If public attachment fails, open the
-printed local link. Session tokens are local access secrets and do not belong in
+allowlist cannot override those policies. Use the Connect button to request attachment. A supporting browser may ask for
+permission to connect to apps on this device; allow that site permission for
+Eigenquestions if you want the connection. If blocked, change the site permission
+or open the printed local link. Compact destination URLs remain independently
+usable. Session tokens are local access secrets and do not belong in
 papers, exported sessions, Git, or shared screenshots.
 
 In another terminal, agent operations immediately update attached browsers:
@@ -334,3 +344,5 @@ The Q-003/Q-004 browser API, stored-capsule and startup changes have separate
 acceptance coverage in `tests/integration/stored_views_browser_acceptance.py`;
 current implementation and Node checks must not be mistaken for completed
 public deployment or browser acceptance. Release evidence records those results.
+
+Typed contributions are also available through the existing source reader: `navigator_sources({destinationId, collection:"contributions", offset:0, limit:20})`, CLI `sources --destination ID --collection contributions`, or browser `sources(selector,{collection:"contributions"})`. Each page returns its exact role, reading basis, qualification, review/evidence references and hydrated excerpt. The default collection remains `membership`; membership filters such as USING cannot be combined with contributions. These reads do not change the session.

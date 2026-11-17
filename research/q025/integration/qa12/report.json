@@ -1,0 +1,31 @@
+{
+  "kind": "q025-contribution-browser-acceptance",
+  "scope": "Isolated Slurm Chromium; synthetic transport fixture, not scientific acceptance or public HTTPS/owner browser evidence.",
+  "checks": [
+    {
+      "name": "existing MCP source reader pages typed contributions and full excerpts without membership, USING or state mutation",
+      "passed": true,
+      "contributions": 3,
+      "primary": 0,
+      "using": 0
+    }
+  ],
+  "screenshots": [
+    "failure.png"
+  ],
+  "passed": false,
+  "manifestSha256": "be6ea5dfb8cd8e8e78542a811de12aa5a3052ba66b78c8a0733b01a1cb515332",
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "waitingFor": "document.querySelector('.source-contributions').textContent.includes('3 of 3 contributions loaded')",
+  "failurePage": {
+    "url": "http://127.0.0.1:41353/",
+    "text": "Skip to search\nEigenquestions\nAgent\nNew path\nText explorer\nPhysics atlas overview \u2197\nSearch physics\nYour physics question or focus\nSearch\n\u25b8\nSearch options\nExplore connections\n\nTitle and alias search. Ask your agent about a paragraph.\n\nPrepared atlas: frozen source corpus identity mismatch\n\nBrowser session\n\u2190 Back\nCan a question retain sourced contributions\u2026\nBroaden\nCan a question retain sourced contributions without primary members?\n\u2190\n\u2192\nStep 1 \u00b7 Next choices\n01\nContribution transport checks (synthetic)\nSynthetic transport test. Contributions are displayed separately from\u2026\nbroader\n\u00b7 3 listed descriptions\n\u203a\nSources\nQuestion summary and full context\nScope, assumptions and sources\nSource contributions (3)\n\nThese roles describe how each source contributes to this scope. A shared source does not make questions equivalent, and a method contribution does not establish applicability to every case.\n\nRead source contributions\nAll connections (1)\nYour work on this question\nStart source exploration from this question\nLiterature and geometry\nSources 2 papers\nGeometric view\n\n0 primary descriptions match this selection. This view shows 3 descriptions across 2 papers; supporting context is labeled separately.\n\n2024 \u00b7 Methods \u00b7 Context witness; full membership not read\n\nSynthetic paper A\n\nSynthetic extracted description 1. This fixture tests transport, not a scientific judgment.\n\nSource scope & provenance\nMethods, assumptions and scientific source connections\nRead paper \u2197\nExplore this source\n1 more extracted descriptions from this paper\n\n2024 \u00b7 Physical question \u00b7 Context witness; full membership not read\n\nSynthetic paper B\n\nSynthetic extracted description 3. This fixture tests transport, not a scientific judgment.\n\nSource scope & provenance\nMethods, assumptions and scientific source connections\nRead paper \u2197\nExplore this source\nSave, load and share\n\nSynthetic contribution-only transport fixture. Never accepted scientific release data. \u00b7 2026-11-17-synthetic-v1. Sources belong to the dated frozen collection.\n\nAbout this explorer\nHow the atlas is built\nSource & reproducibility \u2197\nArchived views",
+    "state": {
+      "stateId": "state-1d7855fe25c1f95e",
+      "destinationId": "contribution-only",
+      "busy": "false"
+    }
+  },
+  "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+}

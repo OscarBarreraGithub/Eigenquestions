@@ -5,6 +5,22 @@ The maintained [agent interface](../../../docs/agent-interface.md) is published 
 limits and capabilities. The browser controller is the primary no-install route
 when your tool can execute JavaScript in that page:
 
+For a prepared destination, read the static record and sources, then resolve its
+exact selector. Title/alias search is lexical; it does not interpret a paragraph.
+
+```js
+const graph = window.eigenquestionsNavigator;
+const parent = await graph.ready(); // capture before interpretation/computation
+const selector = {kind:'atlas-destination',atlasId,atlasVersion,destinationId};
+const definition = await graph.describe(selector);
+const connections = await graph.connections(selector,{offset:0,limit:30});
+const sources = await graph.sources(selector,{offset:0,limit:10});
+// Continue independent research and verify scope before committing this ID.
+await graph.navigate({type:'navigate',selector},{expectedRevision:parent.revision});
+```
+
+Use native exploration explicitly when a recorded destination is insufficient:
+
 ```js
 const graph = window.eigenquestionsNavigator;
 await graph.ready();
@@ -20,11 +36,11 @@ const capsule = graph.export();
 ```
 
 `read()` returns controller revision, renderedRevision, busy, capabilities and
-capsule. `navigate(action,{expectedRevision})` uses the shared native worker and
+capsule. `navigate(action,{expectedRevision})` uses the shared prepared adapter or native worker and
 canonical session. `evidence(ids)` inspects source IDs; `subscribe(callback)`
 observes accepted changes. `apply` accepts a complete capsule exactly and
-switches this page away from a local companion. Check the latest revision before
-mutating; a stale operation must not replace a newer human/agent view.
+switches this page away from a local companion. Capture the parent revision before interpretation or computation and retain it
+for mutation; never reread a newer revision to restamp an older result.
 
 Capsule fields are `schemaVersion`, `kind: eigenquestions-contextual-view`,
 `builder`, explicit scientific `context`, `snapshot:{view,session?}`, and
@@ -32,8 +48,9 @@ Capsule fields are `schemaVersion`, `kind: eigenquestions-contextual-view`,
 capsule to just query/anchors and claim all meaning survived. Native actions use
 canonical fields, not arbitrary assumptions or unimplemented builder algorithms.
 
-An HTTP-only agent can GET saved view bytes at `/api/views/ID` and inspect static
-source data from `/data/manifest.json`; it cannot execute the browser engine by
+An HTTP-only agent can read `/atlas/index.html`, exact destination pages and
+`/data/atlas/index.json`, or GET saved view bytes at `/api/views/ID` and inspect
+frozen source data from `/data/manifest.json`; it cannot execute the browser engine by
 HTTP. POST `/api/views` accepts a validated capsule as `application/json` or raw
 `application/gzip`, without `Content-Encoding`. The response contains
 `{id,url,readUrl,sha256,bytes,createdAt}` after durable save. Limits:512KiB stored,
@@ -47,9 +64,10 @@ Run from the Eigenquestions checkout, with Node 22+. First build its static
 renderer (`npm run build`), then keep this process running:
 
 ```sh
-node bin/navigate.mjs serve --connection /tmp/eigenquestions-session.json
+node bin/navigate.mjs serve --atlas data/atlas/ATLAS/VERSION --connection /tmp/eigenquestions-session.json
 ```
 
+Use the installed atlas ID/version from its manifest. Omit `--atlas` only for explicit native exploration.
 Open the local browser link it prints. All subsequent CLI calls use the same
 `--connection /tmp/eigenquestions-session.json`; omit that flag only when using
 the default connection created by `serve` without a custom path.
@@ -62,11 +80,14 @@ MCP clients launch `node /absolute/checkout/bin/mcp-navigator.mjs --connection
 | `navigator_state` | `{}`; optional `full:true` for full basis | `state` |
 | `navigator_search` | `{query, intent?, workRelation?, limit?}` | `search --query '…' --intent recent --relation using` |
 | `navigator_evidence` | `{ids:[stableSourceId]}` | `evidence --ids 'unit:…'` |
+| `navigator_sources` | `{destinationId?,collection?,offset?,limit?,lens?,workRelation?,constraints?}` | `sources --destination ID --offset 0 --limit 20` |
+| `navigator_connections` | `{destinationId?,offset?,limit?}` | `connections --destination ID` |
+| `navigator_context` | `{unitId,section?,offset?,limit?,scope?,kinds?,objectIds?}` | `context --id UNIT_ID --section objects --limit 20` |
 | `navigator_navigate` | action below | `action --json '{…}'` |
 | `navigator_export` | `{}` | `export --out session.json` |
 | `navigator_import` | `{payload: exportedObject}` | `import --file session.json` |
 
-Navigation action example:
+Native navigation action example (prepared navigation uses an exact `selector`):
 
 ```json
 {
@@ -85,7 +106,7 @@ zero-based `index`. Optional `focusIds` are stable unit IDs, never titles.
 `on|using|either`; `lens` is `physical_question|method|combined`.
 `constraints` may contain `yearMin`, `yearMax`, and `excludeIds`.
 
-`refine` defaults to the top five sources in the current view as refreshed
+Native `refine` defaults to the top five sources in the current view as refreshed
 anchors. `pivot` clears inherited anchors. `broaden` also clears constraints.
 New navigation after `back` truncates the forward branch; export first if both
 branches matter. Empty/unknown queries yield warnings and no invented anchors.
@@ -104,3 +125,5 @@ towers' --out snapshot.json`. This creates a deterministic JSON artifact that th
 To update an attached local browser automatically, use the bridge. Session
 exports contain canonical native state; full contextual capsules preserve more
 authored meaning. Neither format should contain executable code or session tokens.
+
+Typed contributions are also available through the existing source reader: `navigator_sources({destinationId, collection:"contributions", offset:0, limit:20})`, CLI `sources --destination ID --collection contributions`, or browser `sources(selector,{collection:"contributions"})`. Each page returns its exact role, reading basis, qualification, review/evidence references and hydrated excerpt. The default collection remains `membership`; membership filters such as USING cannot be combined with contributions. These reads do not change the session.
