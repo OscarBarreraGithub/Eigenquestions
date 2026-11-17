@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {destinationPresentation,destinationPreview,validateDisplayEditorial} from '../../lib/protocol/display-editorial.mjs';
+import {destinationPresentation,destinationPreview,validateDisplayEditorial,validateSourceHomeNotice} from '../../lib/protocol/display-editorial.mjs';
 import {renderAtlasPanel} from '../../web/atlas-panel.mjs';
 
 const examples=JSON.parse(await readFile(new URL('../../research/q025/integration/presentation-v1/examples.json',import.meta.url),'utf8'));
@@ -29,13 +29,24 @@ test('stale scope bindings, moved text, source summaries and duplicate paths fai
   }
 });
 
+test('an explicit placement notice preserves the reason and leaves existing context notices unchanged',()=>{
+  const sourceHomeNotice='A precise topic placement has not been established for this source.';
+  const record={sourceHomeStatus:'unresolved',sourceHomeNotice,sourceHomeReason:'Adequate source context is available, but the complete target has no established scope.'};
+  const original=structuredClone(record);
+  assert.equal(destinationPresentation(record).sourceHomeNotice,sourceHomeNotice);
+  assert.deepEqual(record,original);
+  assert.equal(destinationPresentation({...record,sourceHomeNotice:undefined}).sourceHomeNotice,'More source context is needed for precise topic placement.');
+  assert.equal(destinationPresentation({}).sourceHomeNotice,null);
+  for(const invalid of [{...record,sourceHomeStatus:'assigned'},{...record,sourceHomeReason:''},{...record,sourceHomeNotice:''},{...record,sourceHomeNotice:'x'.repeat(1001)}])assert.throws(()=>validateSourceHomeNotice(invalid),/Display editorial/);
+});
+
 test('browser places workflow history outside physical assumptions in a closed disclosure',()=>{
   const previous={document:globalThis.document,localStorage:globalThis.localStorage},all=[];
   class Element{constructor(tag){this.tag=tag;this.children=[];this.handlers={};this.isConnected=true;all.push(this);}append(...children){this.children.push(...children);}replaceChildren(...children){this.children=children;}insertBefore(child){this.children.push(child);}after(){}setAttribute(){}addEventListener(type,fn){this.handlers[type]=fn;}}
   const elements=new Map([['atlas-panel',new Element('section')],['full-question-details',new Element('details')],['full-question-text',new Element('p')]]);
   try{
     globalThis.document={createElement:tag=>new Element(tag),getElementById:id=>elements.get(id),querySelector:()=>new Element('section')};globalThis.localStorage={getItem:()=>null};
-    const record=examples.records.find(row=>row.displayEditorial.readingLimit),selector={kind:'atlas-destination',atlasId:'test',atlasVersion:'v1',destinationId:record.id};
+    const record={...examples.records.find(row=>row.displayEditorial.readingLimit),sourceHomeStatus:'unresolved',sourceHomeNotice:'A precise topic placement has not been established for this source.',sourceHomeReason:'Adequate context, but no whole-target home.'},selector={kind:'atlas-destination',atlasId:'test',atlasVersion:'v1',destinationId:record.id};
     renderAtlasPanel({capsule:{snapshot:{view:{atlas:{selector,destination:record,membershipCount:0,connectionCount:0,connections:[]}}}},navigator:{},onError:error=>{throw new Error(error);}});
     const text=node=>[node.textContent||'',...node.children.map(text)].join('\n');
     const history=all.find(node=>node.tag==='details'&&node.children[0]?.textContent==='Reading and record history');
@@ -43,6 +54,7 @@ test('browser places workflow history outside physical assumptions in a closed d
     const scope=all.find(node=>node.tag==='details'&&node.children[0]?.textContent==='Scope, assumptions and sources');
     assert.ok(!text(scope).includes(record.displayEditorial.relocations[0].originalText));assert.ok(text(scope).includes(record.displayEditorial.readingLimit.text));
     assert.ok(all.some(node=>node.textContent===record.displayEditorial.summary.text));
+    assert.ok(all.some(node=>node.textContent===record.sourceHomeNotice));assert.ok(all.some(node=>node.textContent===record.sourceHomeReason));assert.ok(!text(scope).includes('More source context is needed'));
   }finally{for(const [key,value]of Object.entries(previous))if(value===undefined)delete globalThis[key];else globalThis[key]=value;}
 });
 

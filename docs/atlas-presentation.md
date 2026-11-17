@@ -28,3 +28,11 @@ contributions, identity aliases, relations, current admission status or the
 scientific content hash. A lazy catalog may carry the annotated display synopsis
 for lookup and next choices; the complete original definition remains in its
 checksummed destination detail. A new package version pins any display change.
+
+An unresolved source facet may carry an explicit `sourceHomeNotice` alongside
+`sourceHomeStatus: "unresolved"` and its unchanged `sourceHomeReason`. The browser
+and static page show that notice and retain the full reason in “Placement context”.
+This distinguishes an unestablished topic placement from missing source context;
+the renderer never infers the distinction from keywords. Existing facets without
+the optional field keep their recorded context-specific display fallback. The
+notice does not create a home, source mass or canonical equivalence.

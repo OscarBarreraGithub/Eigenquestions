@@ -1,16 +1,32 @@
 # Eigenquestions v2
 
-[Eigenquestions](https://eigenquestions.com) is a physics explorer with a static frontend. A
-question selects a source-grounded neighborhood of real graph and embedding
-objects; deterministic local code recomputes about five directions to consider
-next. A live text-column explorer makes those choices and the path primary, with
-source reading and an optional geometric view below. Refinement can introduce connections from
-across the corpus. It is not a fixed topic tree or a language-model chatbot.
+[Eigenquestions](https://eigenquestions.com) is a source-backed physics atlas with a
+static frontend. Prepared destinations carry versioned identities, scientific
+scopes, reading limits and typed connections. The text explorer puts the current
+question, roughly 1–15 useful next choices and the saved path first. Overlapping
+topics and qualified cross-routes provide more than a fixed topic tree.
 
-The first corpus is a frozen Swampland-centered collection of **6,478 papers**
-and **26,410 extracted question/method descriptions**, dated **2026-11-05**.
+The separate overview combines a physics classification entrance with a schematic
+of reviewed collection entries. Schematic distances have no scientific meaning.
+An optional native source explorer uses the frozen graph and embeddings to
+recompute a local view, normally with about five directions. That explicit mode
+does not rename the prepared scientific destinations.
+
+The underlying frozen Swampland-centered corpus has **6,478 cataloged papers**
+(**6,477 with available source text**) and **26,410 extracted question/method
+descriptions**, dated **2026-11-05**.
 Recent means recent within that collection. Source descriptions and retrieval
 similarity are not independently verified physics claims.
+
+The source accounting approved on **2026-11-17** covers all **8,473 extracted
+question descriptions**: **8,436** have reviewed topic placements and **37** remain
+discoverable without an assigned precise placement, with individual reasons.
+None remains reserved. These placements organize the collection; they do not
+assert that every description is a unique canonical question or that all physics
+is covered. The frozen independent routing diagnostic found useful broad
+orientation but uneven fine-question resolution. The dated 43-source amendment
+followed scoring and is not an independent retest. Final browser/public release
+evidence is recorded separately from this scientific accounting.
 
 ## Run the static explorer
 
@@ -22,24 +38,27 @@ npm run build
 npm start
 ```
 
-Open `http://127.0.0.1:4173`. Choose a concept, approach and perspective. Refine
-keeps source context, pivot starts another focus, and back/path controls replay
-prior views. **New path** clears the inherited context and focuses a fresh question.
-Opening the bare homepage is always neutral. **Resume last view** explicitly
-opens the previous exploration; explicit view/focus/companion links still open
-their destinations. Short navigation excerpts leave the full **context** and
-source text accessible. Earlier columns retain their actual choices and mark
-the choice followed. An exact native revisit returns to its earlier step instead
-of adding apparent depth. Method and question facets remain distinguishable;
-these representative excerpts are not automatically synthesized topic names.
-Sources/Geometry tabs and path scrolling remain available during computation.
-The public page and local page use the same engine and corpus.
-Computation runs in a browser worker; the first native query downloads the
-corpus. Empty startup and complete saved views do not require that download.
-The public service performs no model inference or scientific graph computation.
+Open `http://127.0.0.1:4173`. With an installed atlas, the bare homepage opens the
+all-physics entrance. Choose a field or a scientific destination, inspect its
+sources and follow a recorded direction. **New path**, Back and replay preserve
+explicit history; **Resume last view** opens a prior exploration. Explicit
+prepared/view/companion links open their named destinations. Browser title/alias
+lookup is lexical; an agent interprets prose and checks scope before selecting an
+existing record.
 
-Export a **session** for native replay, or a **view** for the complete accepted
-scientific object: context, groups, labels, sources, relationships and optional
+The full question, source descriptions, methods, assumptions and review history
+remain accessible in disclosures. Membership, typed source contributions and
+same-paper method context have distinct meanings. Notes attach locally to exact
+destination IDs and export separately. Compact prepared links need no upload and
+contain no private notes. The browser and agent use the same state/controller;
+visible agent updates require a captured parent revision and render acknowledgement.
+
+Native refine/pivot and source-based local projections remain explicit options.
+Their first query downloads the frozen vector corpus; prepared browsing does not.
+The static service performs no model inference or scientific graph computation.
+
+Export a **session** for native replay, or a **view** for the complete displayed
+object: context, groups, labels, sources, relationships and optional
 geometry. Import or drop a view file to display it exactly, including another
 builder's authored groups. Compatible recorded actions can continue locally;
 display does not imply that an outside builder can be reproduced. JSON and gzip

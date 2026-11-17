@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": "node --test tests/integration/display-editorial.test.mjs tests/integration/work-note-fallback.test.mjs tests/integration/static-atlas-discovery.test.mjs tests/integration/prepared-atlas.test.mjs",
+      "tests": 20,
+      "passed": 20
+    },
+    {
+      "command": "npm run build && npm test && npm run check:site",
+      "tests": 113,
+      "passed": 113,
+      "assets": 112,
+      "verifiedAtlasFiles": 0
+    }
+  ],
+  "scope": "Baseline runtime, focused DOM/static serialization and contracts; no final-data browser claim",
+  "finalDataInstalled": false,
+  "newModelCalls": 0,
+  "observerStarted": false,
+  "browserJobStarted": false
+}

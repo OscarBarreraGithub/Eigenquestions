@@ -68,7 +68,7 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,sourceH
   for(const reading of presentation.reading)scope.append(element('p',reading));
   if(presentation.readingRecord){const raw=element('details');raw.append(element('summary','Full reading coverage record'),element('pre',JSON.stringify(presentation.readingRecord,null,2)));scope.append(raw);}
   scope.append(element('p',`Scientific status: ${record.scientificStatus}. Placement: ${record.placementStatus}.`,'atlas-provenance'));
-  if(record.sourceHomeStatus==='unresolved'){scope.append(element('p','More source context is needed for precise topic placement.'));const reason=element('details');reason.append(element('summary','Placement context'),element('p',record.sourceHomeReason||'This source remains available without an assigned scientific home.'));scope.append(reason);}
+  if(record.sourceHomeStatus==='unresolved'){scope.append(element('p',presentation.sourceHomeNotice));const reason=element('details');reason.append(element('summary','Placement context'),element('p',record.sourceHomeReason||'This source remains available without an assigned scientific home.'));scope.append(reason);}
   if(!record.metadataOnly)scope.append(element('p',atlas.membershipNotice));
   if(record.metadataOnly)for(const source of navigator?.getEvidence?.(record.evidenceIds||[])||[]){if(!/^https?:\/\//.test(source.sourceUrl||''))continue;const link=element('a',source.title);link.href=source.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';scope.append(link);}
   const coverage=element('div');

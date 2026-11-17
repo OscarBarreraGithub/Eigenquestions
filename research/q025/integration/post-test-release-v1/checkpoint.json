@@ -1,0 +1,110 @@
+{
+  "status": "FROZEN_STAGE_SAFE",
+  "baseCommit": "2dbe1a85965f90fa28e908c2018c8c558710ff55",
+  "amendment": "Post-test notice, generic skill guidance and approved dated accounting copy; no scientific definition or frozen test alteration",
+  "adjudicationSha256": "4fbc122ec2ad1053d3af2fcb9499e23984c736e3182e1ce92540f8b33d1e79ca",
+  "validation": {
+    "status": "PASS",
+    "commands": [
+      {
+        "command": "node --test tests/integration/display-editorial.test.mjs tests/integration/work-note-fallback.test.mjs tests/integration/static-atlas-discovery.test.mjs tests/integration/prepared-atlas.test.mjs",
+        "tests": 20,
+        "passed": 20
+      },
+      {
+        "command": "npm run build && npm test && npm run check:site",
+        "tests": 113,
+        "passed": 113,
+        "assets": 112,
+        "verifiedAtlasFiles": 0
+      }
+    ],
+    "scope": "Baseline runtime, focused DOM/static serialization and contracts; no final-data browser claim",
+    "finalDataInstalled": false,
+    "newModelCalls": 0,
+    "observerStarted": false,
+    "browserJobStarted": false
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7604,
+      "sha256": "cc5380aaf0aba5c60d4c047b05a0c7dde83d9b4ffa64e41a02981842b273594d"
+    },
+    {
+      "path": "web/construction.html",
+      "bytes": 12980,
+      "sha256": "94e9a1429a82f855085b1e495baa26ba75d74ae8677315deb15454eb8a1cd35e"
+    },
+    {
+      "path": "docs/contextual-view-showcase.md",
+      "bytes": 6090,
+      "sha256": "55759d0b2e18df5b389c812a8d47c8db3aaae3f19de7321d26c3e658bd88cd14"
+    },
+    {
+      "path": "docs/atlas-presentation.md",
+      "bytes": 2449,
+      "sha256": "51a5afb1441f631bb680e1bccc85d0fa826dfc2e433d86535a89b3c65b82f64d"
+    },
+    {
+      "path": "research/q025/integration/accepted-release-path.md",
+      "bytes": 7665,
+      "sha256": "9acf2330d5a0a8c935eb0262d1100434df53da0b65966d63faf1b089aac76e43"
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 73327,
+      "sha256": "b23d4767901321588374a3d4573c7305cfa5dff85611f44e892edf71dcc8d7b0"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "c99eb56559e11e3bd2199563d63c8758e3758557582be21fa1840195c9fba67d"
+    },
+    {
+      "path": "lib/protocol/display-editorial.mjs",
+      "bytes": 5781,
+      "sha256": "f2ea42010729ca63cc192f9e42997a1d55942681948f12fe00faa615ac975f47"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 22427,
+      "sha256": "544913cf473c73c9fa3152654d942d0557d6c28ad8c4229384491b793992c0f8"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 21914,
+      "sha256": "20508e4ff8f56effe2f59467d4ada7deebaf7e23a40cfb75cda76d9bde388a70"
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "bytes": 9325,
+      "sha256": "05cb339ba2cf0193c1e1bc5aaa3f96e0913d81f815601d27e4fbf9aa1f1f6260"
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "bytes": 9172,
+      "sha256": "97a30baa962e6e56e484fad0ad20e173a8a15151f618f21eb6a6151281ac35ba"
+    },
+    {
+      "path": "tests/integration/display-editorial.test.mjs",
+      "bytes": 6828,
+      "sha256": "be37be83f7b51abbed307fdac32c244b447658d5624db0b32577945eb0aaf2b5"
+    },
+    {
+      "path": "tests/integration/static-atlas-discovery.test.mjs",
+      "bytes": 10559,
+      "sha256": "3a814a4a5ecf0ef662be3da0bc28e82abae6b4e91486811d8e3703b5ef651db5"
+    },
+    {
+      "path": "research/q025/integration/post-test-release-v1/README.md",
+      "bytes": 2851,
+      "sha256": "a0e30e108ee9e77dc09712b7e8883c0d44443e68783480e6746ef647226aac1a"
+    },
+    {
+      "path": "research/q025/integration/post-test-release-v1/validation.json",
+      "bytes": 701,
+      "sha256": "bac4e1a07a47fd72225f1f8c4ec323a3c74bd4b35bd161402238c9baf6d30333"
+    }
+  ]
+}

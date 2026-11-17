@@ -2,10 +2,12 @@
 
 Status, 2026-11-17: QA23 passed ten scripted browser/MCP checks on the
 6,294-source partial candidate, including the actual black-hole → RG route and
-lazy relation proofs. All placement review pools have settled; final scientific
-intake and the full package freeze are still pending. Earlier partial packages
-remain research evidence and must not be installed as the final atlas. Fresh-agent
-routing and public HTTPS acceptance remain separate, unexecuted final gates.
+lazy relation proofs. The independent read-only diagnostic is scored and root has
+approved the dated 43-source amendment: 8,436 placed sources, 37 explicitly
+unresolved placements, zero reserved. Geometry is binding the final immutable
+package. Earlier partial packages remain research evidence and must not be
+installed as the final atlas. Fresh-agent rendered-browser navigation and public
+HTTPS acceptance remain separate, unexecuted final gates.
 
 ## One handoff
 
@@ -32,8 +34,9 @@ Original component files and their scientific hashes remain unchanged.
 Integration/root checks before installation:
 
 - Handoff and manifest agree on the exact atlas/version and final accounting
-  policy, with no `partialRehearsal` or partial-candidate status. Every frozen
-  source must be accounted for and discoverable. Unresolved scientific identity
+  policy, with no `partialRehearsal` or partial-candidate status. Require
+  `sourceAccountingComplete === true` and `reservedQuestionCount === 0`.
+  Every frozen source must be accounted for and discoverable. Unresolved scientific identity
   may remain an explicit source facet with zero semantic allocation mass and a
   stated reason; no home is invented merely to reach a numeric coverage target.
   Root's final release decision remains required;

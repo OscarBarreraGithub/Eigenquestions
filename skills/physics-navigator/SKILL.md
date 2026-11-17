@@ -25,6 +25,10 @@ the human's path unless a visible update is part of the request. Read the
    prose and checks premises, regime, conventions and intent. A changed defining
    assumption may require another record. Similar embeddings or shared region
    membership do not establish canonical question equivalence.
+   Break prose into the physical system, target or mechanism, and defining regime.
+   If the first search finds only broad orientation, try one bounded second search
+   emphasizing the specific target rather than repeating model names.
+   Inspect the full scope and distinguish a canonical question from a source-specific facet.
 3. Inspect paginated `sources`, exact paper links and reading limits before using
    a claim. Request `collection:"contributions"` through the same source reader
    for reviewed method, boundary, comparison and other typed contributions. These

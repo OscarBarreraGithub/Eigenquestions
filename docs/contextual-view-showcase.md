@@ -1,7 +1,11 @@
 # One scientific question, shared by browser and agent
 
-Q-025 development checkpoint, 2026-11-17. The integrated mechanism is tested;
-the complete accepted scientific release is still being assembled.
+Q-025 source-accounting decision, 2026-11-17. All 8,473 extracted questions are
+accounted for: 8,436 have reviewed topic placements and 37 remain discoverable
+without a precise placement, with individual reasons. No source is still reserved.
+Placement organizes source descriptions; it does not establish a unique fine
+canonical question for each one. Final rendered-browser and public-origin
+acceptance are separate release gates.
 
 A researcher should be able to reach the same scoped question through different
 topics or a justified paraphrase, inspect its sources, and continue from the same
@@ -57,17 +61,25 @@ and can use a saved link when hosted storage is available. Local work notes atta
 to destination IDs and export separately; ordinary destination links and view
 exports do not publish them. Graph orientation supplements independent research.
 
-**Verified development evidence:** QA10 passed 17 isolated Chromium checks,
-including a real lazy-loaded KK source destination sent through local MCP/SSE,
-matching browser/agent source IDs, exact render acknowledgement, mobile recovery
-and preserved private test notes. [Receipt](../research/q025/integration/qa10/report.json).
-This is local same-origin HTTP evidence, not proof of public HTTPS-to-loopback
-permission behavior or operation of the owner's browser. Default-policy and
-explicit scoped-consent public tests are separate final-release gates.
+**Verified development evidence:** QA23 passed ten isolated Chromium checks on a
+6,294-source partial candidate, including actual KK navigation, the black-hole/RG
+route, lazy source proofs, source-method inspection and mobile rendering.
+[Receipt](../research/q025/integration/qa23/artifacts/report.json).
+This is scripted local HTTP evidence, not final-data acceptance or proof of
+public HTTPS-to-loopback behavior. Default-policy and explicit scoped-consent
+public tests remain distinct from operation of the owner's browser.
 
-**Publication and storage:** the final accepted atlas, its counts, public connection
-results and current hosted-storage status must be recorded at release. Prepared
-links do not depend on upload storage. If saving an authored view fails, retain its
+**Independent read-only diagnostic:** three fresh agents answered 72 prose queries
+against a frozen candidate, with expectations committed before routing. It showed
+useful broad orientation and uneven precise question resolution; it does not
+validate unique fine resolution across physics. The subsequent 43-source amendment
+and short generic search guidance are post-test changes, not an independent
+retest. [Frozen scored report](../research/q025/evaluation/final-holdout/scored-report.json).
+Read-only selectors and tool receipts do not prove a visible browser update.
+
+**Publication and storage:** the exact installed version and final browser/public
+receipts are recorded at release. Hosted authored-view storage remains inactive;
+prepared links do not depend on it. If saving an authored view fails, retain its
 file and report that no durable saved link was made.
 
 ## Historical Q-003 / Q-004 status, 2026-11-06

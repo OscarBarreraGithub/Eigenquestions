@@ -7,6 +7,10 @@ when your tool can execute JavaScript in that page:
 
 For a prepared destination, read the static record and sources, then resolve its
 exact selector. Title/alias search is lexical; it does not interpret a paragraph.
+Break prose into the physical system, target or mechanism, and defining regime.
+If only broad orientation is found, try one bounded second search emphasizing the
+specific target rather than repeating model names. Inspect the full scope and
+distinguish a canonical question from a source-specific facet.
 
 ```js
 const graph = window.eigenquestionsNavigator;
