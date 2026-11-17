@@ -1,6 +1,6 @@
 import {loadAtlas,createAtlasNavigator,atlasAddress} from '/lib/geometry/prepared-atlas.mjs';
 import {placeChartLabel} from '/chart-labels.mjs';
-import {classificationDisplayLayout} from '/classification-layout.mjs';
+import {classificationChartDisplay} from '/classification-layout.mjs';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;};
 const svg=(tag,attrs,text)=>{const node=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))node.setAttribute(k,v);if(text!==undefined)node.textContent=text;return node;};
@@ -11,7 +11,7 @@ const textMeasure=document.createElement('canvas').getContext('2d');textMeasure.
 const layout=()=>space==='classification'?loaded.catalog.orientation:loaded.catalog.overview;
 const selector=id=>({kind:'atlas-destination',atlasId:loaded.manifest.atlasId,atlasVersion:loaded.manifest.atlasVersion,destinationId:id});
 function relations(id){const items=[];let offset=0,total;do{const page=navigator.connections(id,{offset,limit:100});items.push(...page.items);total=page.total;offset+=page.items.length;}while(offset<total);return items;}
-function children(id){return space==='classification'?(layout()?.edges||[]).filter(e=>e.source===id).map(e=>e.target):relations(id).filter(r=>r.navigationKind==='narrower').map(r=>r.destinationId);}
+function children(id){return space==='classification'?id===layout()?.entryDestinationId?roots():(layout()?.edges||[]).filter(e=>e.source===id).map(e=>e.target):relations(id).filter(r=>r.navigationKind==='narrower').map(r=>r.destinationId);}
 function parents(id){return space==='classification'?(layout()?.edges||[]).filter(e=>e.target===id).map(e=>e.source):relations(id).filter(r=>r.navigationKind==='broader').map(r=>r.destinationId);}
 function roots(){const values=[...points.values()];if(!values.length)return[];const minimum=Math.min(...values.map(p=>p.depth??0));return values.filter(p=>(p.depth??0)===minimum).map(p=>p.destinationId);}
 function labelPositions(){
@@ -36,45 +36,60 @@ function fit(){
 function zoom(factor){if(!baseCamera)return;const width=Math.min(baseCamera.width*3,Math.max(baseCamera.width/80,camera.width*factor));camera.height*=width/camera.width;camera.width=width;viewBox();}
 function portalFor(id){return loaded.catalog.orientation?.portals?.filter(p=>p.destinationId===id)||[];}
 function draw(){
-  map.replaceChildren();const chart=layout();
+  map.replaceChildren();const chart=layout();document.querySelector('.atlas-map-workspace').classList.toggle('classification-workspace',space==='classification');
   if(!chart){visibleIds=[];map.style.display='none';$('atlas-map-caption').textContent=space==='classification'?'This release has no classification map. Recorded destinations remain readable in the list.':'This release has no detailed source chart. No coordinates have been invented.';return;}
   map.style.display='block';const childIds=children(selectedId).filter(id=>points.has(id));
   if(points.has(selectedId))visibleIds=[selectedId,...(childIds.length?childIds:parents(selectedId).flatMap(id=>children(id)))];else if(space==='classification'&&classificationAnchor&&points.has(classificationAnchor))visibleIds=[classificationAnchor,...children(classificationAnchor)];else visibleIds=roots();
   if(space==='detail'&&points.has(selectedId))visibleIds.push(...relations(selectedId).filter(r=>!['broader','narrower'].includes(r.navigationKind)).map(r=>r.destinationId));
   visibleIds=[...new Set(visibleIds)].filter(id=>points.has(id));const visible=new Set(visibleIds);
-  if(space==='classification'){classificationDisplay=classificationDisplayLayout(visibleIds.map(id=>({...points.get(id),title:records.get(id).title})),{width:map.clientWidth,measureText:text=>textMeasure.measureText(text).width});displayPoints=new Map(classificationDisplay.nodes.map(p=>[p.destinationId,p]));map.style.height=`${classificationDisplay.height}px`;map.classList.add('classification-display');}else{classificationDisplay=null;displayPoints=points;map.style.height='';map.classList.remove('classification-display');}
+  if(space==='classification'){drawClassification(chart);return;}
+  classificationDisplay=null;displayPoints=points;map.style.height='';map.classList.remove('classification-display');document.querySelector('.atlas-map-workspace').classList.remove('classification-workspace');
   for(const edge of chart.edges||[]){if(!visible.has(edge.source)||!visible.has(edge.target))continue;const a=displayPoints.get(edge.source),b=displayPoints.get(edge.target);map.append(svg('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'atlas-map-edge'}));}
   visibleIds.forEach((id,index)=>{const p=displayPoints.get(id),record=records.get(id),group=svg('g',{class:'atlas-map-node',tabindex:0,role:'button','aria-label':record.title,'aria-current':String(id===selectedId)});group.dataset.destinationId=id;
-    if(space==='classification'){
-      group.classList.add('classification-card');
-      group.append(svg('rect',{x:p.x-p.width/2,y:p.y-p.height/2,width:p.width,height:p.height,rx:3,class:'atlas-map-hit'}));
-      const label=svg('text',{x:p.x-p.width/2+14,y:p.y-(p.lines.length-1)*9+5,class:'atlas-map-label'});
-      p.lines.forEach((line,i)=>label.append(svg('tspan',{x:p.x-p.width/2+14,dy:i?18:0},line)));group.append(label,svg('title',{},record.title));
-    }else{
-      group.append(svg('circle',{cx:p.x,cy:p.y,r:1,fill:'transparent',class:'atlas-map-hit'}),svg('circle',{cx:p.x,cy:p.y,r:1,fill:id===selectedId?'#a52929':record.kind==='question'?'#754c4c':'#3f607c',class:'atlas-map-dot'}),svg('text',{x:p.x,y:p.y,'text-anchor':'middle',fill:'#fff',class:'atlas-map-number'},String(index+1)),svg('text',{x:0,y:0,fill:'#292929',class:'atlas-map-label'},record.title.length>62?record.title.slice(0,59)+'…':record.title),svg('title',{},record.title));
-    }
+    group.append(svg('circle',{cx:p.x,cy:p.y,r:1,fill:'transparent',class:'atlas-map-hit'}),svg('circle',{cx:p.x,cy:p.y,r:1,fill:id===selectedId?'#a52929':record.kind==='question'?'#754c4c':'#3f607c',class:'atlas-map-dot'}),svg('text',{x:p.x,y:p.y,'text-anchor':'middle',fill:'#fff',class:'atlas-map-number'},String(index+1)),svg('text',{x:0,y:0,fill:'#292929',class:'atlas-map-label'},record.title.length>62?record.title.slice(0,59)+'…':record.title),svg('title',{},record.title));
     group.addEventListener('click',()=>select(id));group.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();select(id);}});map.append(group);
   });
   fit();
   $('atlas-map-caption').textContent=space==='classification'?'Physics classification: links follow the recorded vocabulary hierarchy. Positions organize labels; distances are not physical or embedding distances. The detailed source atlas is a separate chart.':'Detailed source chart: positions use the recorded source geometry. Gray links are geometric affinities, not scientific implications. Broader classifications have a separate coordinate system.';
   $('atlas-map-provenance').textContent=JSON.stringify({layoutId:chart.layoutId,kind:chart.kind,provenance:chart.provenance,displayAdjustment:space==='classification'?'Full labels occupy nonoverlapping screen cards assigned near the recorded positions by minimum total displacement. Stored coordinates and classification links are unchanged; screen distances have no metric meaning.':undefined,diagnostics:chart.diagnostics,limitations:chart.limitations},null,2);
 }
+function drawClassification(chart){
+  document.querySelector('.atlas-map-workspace').classList.add('classification-workspace');
+  classificationDisplay=classificationChartDisplay([...points.values()].map(point=>({...point,title:records.get(point.destinationId).title})),{width:map.clientWidth,measureText:text=>textMeasure.measureText(text).width});
+  displayPoints=new Map(classificationDisplay.points.map(point=>[point.destinationId,point]));map.style.height=`${classificationDisplay.height}px`;map.classList.add('classification-display');
+  const focus=points.has(selectedId)?selectedId:classificationAnchor,parentsById=new Map();for(const edge of chart.edges){if(!parentsById.has(edge.target))parentsById.set(edge.target,[]);parentsById.get(edge.target).push(edge.source);}
+  for(const frame of classificationDisplay.frames){map.append(svg('rect',{x:frame.x,y:frame.y,width:frame.width,height:frame.height,class:'classification-component-frame'}),svg('text',{x:frame.x+8,y:frame.y+15,class:'classification-component-label'},frame.label));}
+  for(const edge of chart.edges){const a=displayPoints.get(edge.source),b=displayPoints.get(edge.target);if(!a||!b)continue;map.append(svg('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:`atlas-map-edge classification-edge${edge.source===focus||edge.target===focus?' selected-edge':''}`}));}
+  const activate=(group,id)=>{group.addEventListener('click',()=>select(id));group.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();select(id);}});};
+  for(const point of classificationDisplay.points){const field=point.depth===0,shared=(parentsById.get(point.destinationId)||[]).length>1,group=svg('g',{class:`atlas-fixed-node${field?' classification-field':' classification-area'}${shared?' shared-area':''}${point.destinationId===focus?' active-point':''}`,'aria-label':records.get(point.destinationId).title,role:'button',tabindex:field&&classificationDisplay.mobile?0:-1});group.dataset.destinationId=point.destinationId;
+    if(field&&classificationDisplay.mobile)group.classList.add('atlas-map-node');
+    group.append(svg('circle',{cx:point.x,cy:point.y,r:field?22:7,fill:'transparent',class:'atlas-map-hit'}),svg('circle',{cx:point.x,cy:point.y,r:field?6:shared?3.5:2.5,class:'classification-fixed-dot'}),svg('title',{},records.get(point.destinationId).title+(shared?' · Classified under '+parentsById.get(point.destinationId).map(id=>records.get(id).title).join('; '):'')));activate(group,point.destinationId);map.append(group);
+  }
+  for(const box of classificationDisplay.callouts){
+    const endX=box.side?box.x:box.x+box.width,endY=box.y+box.height/2;map.append(svg('line',{x1:box.anchor.x,y1:box.anchor.y,x2:endX,y2:endY,class:'classification-leader'}));
+    const group=svg('g',{class:'atlas-map-node classification-card',tabindex:0,role:'button','aria-label':records.get(box.destinationId).title,'aria-current':String(box.destinationId===focus)});group.dataset.destinationId=box.destinationId;
+    group.append(svg('rect',{x:box.x,y:box.y,width:box.width,height:box.height,rx:3,class:'atlas-map-hit'}));const label=svg('text',{x:box.x+14,y:box.y+box.height/2-(box.lines.length-1)*9+5,class:'atlas-map-label'});box.lines.forEach((line,i)=>label.append(svg('tspan',{x:box.x+14,dy:i?18:0},line)));group.append(label);activate(group,box.destinationId);map.append(group);
+  }
+  fit();$('atlas-map-caption').textContent='Physics classification: 17 fields, 194 research areas and their recorded classification links. Shared areas connect their actual parent fields. The detailed source atlas has a separate chart.';
+  $('atlas-map-help').textContent=classificationDisplay.mobile?'Select a field below, or tap a point. Drag to pan; use +/− to zoom.':'Select a field label or an area point. Drag to pan; use +/− to zoom.';
+  $('atlas-map-provenance').textContent=JSON.stringify({layoutId:chart.layoutId,kind:chart.kind,provenance:chart.provenance,displayAdjustment:'Coordinates within each recorded connected component are scaled uniformly and translated. Labels use separate callouts linked to unchanged anchors. Smaller disconnected components use a framed inset; its gap and scale are display choices, not intellectual distances.',diagnostics:chart.diagnostics,limitations:chart.limitations},null,2);
+}
 function button(label,handler){const node=el('button',label);node.type='button';node.addEventListener('click',handler);return node;}
 async function select(id){
   const selection=++request;await navigator.prepareDestination?.(id);if(selection!==request)return;
-  const record=navigator.destination(id);selectedId=id;if(space==='classification'&&points.has(id))classificationAnchor=id;const links=relations(id),childIds=children(id),panel=$('atlas-selected');panel.replaceChildren(el('h2',record.title),el('p',record.summary));
-  if(record.metadataOnly)panel.append(el('p','Classification or field landmark. This node does not claim detailed coverage of its literature.'));
+  const record=navigator.destination(id);records.set(id,record);selectedId=id;if(space==='classification'&&points.has(id))classificationAnchor=id;const links=relations(id),childIds=children(id),panel=$('atlas-selected');panel.replaceChildren(el('h2',record.title));
+  if(space==='classification'&&record.metadataOnly&&childIds.length)panel.append(el('p',`${childIds.length} ${id===layout()?.entryDestinationId?'fields':'research areas'} in this classification.`));else if(!record.metadataOnly||record.kind==='landmark')panel.append(el('p',record.summary));
   const open=el('a','Open this destination in the text explorer →');open.href=atlasAddress(navigator.createSession({selector:selector(id)}).states[0],location.origin);panel.append(open);
   for(const portal of portalFor(id))panel.append(button(portal.label||'Enter the detailed source atlas →',()=>portal.target==='destination'?select(portal.entryDestinationId):switchSpace('detail',portal.entryDestinationId)));
-  const related=space==='classification'?[...new Set([...childIds,...parents(id)])].map(target=>({destinationId:target,title:records.get(target)?.title||target,navigationKind:childIds.includes(target)?'narrower classification':'broader classification'})):links;
-  panel.append(el('h3',childIds.length?'More specific topics and connections':'Recorded connections'));
+  const related=space==='classification'?parents(id).map(target=>({destinationId:target,title:records.get(target)?.title||target,navigationKind:'broader classification'})):links;
+  if(related.length)panel.append(el('h3',space==='classification'?'Broader classifications':'Recorded connections'));
   for(const relation of related)panel.append(button(`${relation.title} · ${relation.navigationKind.replaceAll('_',' ')}`,()=>select(relation.destinationId)));
-  if(!related.length)panel.append(el('p',record.metadataOnly?'Detailed source-backed navigation has not yet been prepared for this field.':'No additional recorded connection. Its source material remains available in the text explorer.'));
+  if(!related.length&&space!=='classification')panel.append(el('p',record.metadataOnly?'Detailed source-backed navigation has not yet been prepared for this field.':'No additional recorded connection. Its source material remains available in the text explorer.'));
   const breadcrumb=$('atlas-map-breadcrumb');breadcrumb.replaceChildren(button('All physics fields',()=>switchSpace('classification',loaded.catalog.orientation?.entryDestinationId||loaded.manifest.entryDestinationId)),el('span',` › ${space==='classification'?'Classification':'Detailed sources'} › ${record.title}`));
   draw();renderTopics();const hash=new URLSearchParams({atlas:loaded.manifest.atlasId,version:loaded.manifest.atlasVersion,destination:id,space});history.replaceState(null,'',`#${hash}`);
 }
 function renderTopics(){
-  const host=$('atlas-topics');host.replaceChildren();$('atlas-topics-heading').textContent=space==='classification'?'Fields in this view':'Destinations in this view';
+  const host=$('atlas-topics');host.replaceChildren();$('atlas-topics-heading').textContent=space==='classification'?(selectedId===layout()?.entryDestinationId?'Choose a field':'Topics in this view'):'Destinations in this view';
   const ids=visibleIds.length?visibleIds:[selectedId];ids.forEach((id,index)=>{const li=el('li');li.append(button(`${index+1}. ${records.get(id)?.title||id}`,()=>select(id)));host.append(li);});
 }
 function switchSpace(next,destination){
@@ -90,7 +105,7 @@ async function open(entry,destination,requestedSpace){
 }
 $('atlas-space').addEventListener('change',()=>{try{switchSpace($('atlas-space').value);}catch(error){$('atlas-map-status').textContent=error.message;}});
 $('atlas-zoom-in').addEventListener('click',()=>zoom(.8));$('atlas-zoom-out').addEventListener('click',()=>zoom(1.25));$('atlas-fit').addEventListener('click',fit);
-let drag;map.addEventListener('pointerdown',event=>{if(event.target.closest('.atlas-map-node'))return;drag={x:event.clientX,y:event.clientY,camera:{...camera}};map.setPointerCapture(event.pointerId);});map.addEventListener('pointermove',event=>{if(!drag)return;camera.x=drag.camera.x-(event.clientX-drag.x)/map.clientWidth*camera.width;camera.y=drag.camera.y-(event.clientY-drag.y)/map.clientHeight*camera.height;viewBox();});map.addEventListener('pointerup',()=>drag=null);map.addEventListener('pointercancel',()=>drag=null);map.addEventListener('wheel',event=>{event.preventDefault();zoom(event.deltaY>0?1.12:.89);},{passive:false});map.addEventListener('keydown',event=>{if(event.key==='+')zoom(.8);if(event.key==='-')zoom(1.25);if(event.key==='Home')fit();});
+let drag;map.addEventListener('pointerdown',event=>{if(event.target.closest('.atlas-map-node,.atlas-fixed-node'))return;drag={x:event.clientX,y:event.clientY,camera:{...camera}};map.setPointerCapture(event.pointerId);});map.addEventListener('pointermove',event=>{if(!drag)return;camera.x=drag.camera.x-(event.clientX-drag.x)/map.clientWidth*camera.width;camera.y=drag.camera.y-(event.clientY-drag.y)/map.clientHeight*camera.height;viewBox();});map.addEventListener('pointerup',()=>drag=null);map.addEventListener('pointercancel',()=>drag=null);map.addEventListener('wheel',event=>{event.preventDefault();zoom(event.deltaY>0?1.12:.89);},{passive:false});map.addEventListener('keydown',event=>{if(event.key==='+')zoom(.8);if(event.key==='-')zoom(1.25);if(event.key==='Home')fit();});
 window.addEventListener('resize',()=>{if(loaded){if(space==='classification')draw();else fit();}});
 $('atlas-find').addEventListener('input',async()=>{if(!navigator)return;const query=$('atlas-find').value.trim();if(!query){renderTopics();return;}await navigator.prepareSearch?.();if($('atlas-find').value.trim()!==query)return;const list=$('atlas-topics');list.replaceChildren();for(const result of navigator.search(query,{limit:15})){const li=el('li');li.append(button(result.title,()=>select(result.id)));list.append(li);}});
 try{

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa08/project/tests/integration/q025_prepared_acceptance.py", line 364, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa08/project/tests/integration/q025_prepared_acceptance.py", line 306, in main
+    assert home_layout['scrollWidth']<=home_layout['width']+1 and home_layout['choicesY']<570 and home_layout['summaryY']>home_layout['choicesY'],home_layout
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'width': 390, 'scrollWidth': 390, 'choicesY': 644.59375, 'summaryY': 1218.453125}

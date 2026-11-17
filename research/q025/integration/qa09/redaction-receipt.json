@@ -1,0 +1,19 @@
+{
+  "kind": "q025-public-evidence-redaction",
+  "files": [
+    {
+      "file": "browser.log",
+      "originalSha256": "a8260bf3eec5143c2a30a1c9cb3779fb9cc1356cecc220a340dfcb26ef009485",
+      "publicSha256": "008fa39b05514f52560f18b550fda53d381bf8c015d5203ced62b01b60e08ab7",
+      "redactions": 1,
+      "reason": "Ephemeral test companion token in Playwright timeout URL. Original remains private in the isolated run directory; token expired when companion terminated."
+    },
+    {
+      "file": "report.json",
+      "originalSha256": "151d80e497e18ae57629aaaf76cc4b928d628f2551f7dfaec30da271ae80ce7c",
+      "publicSha256": "bf3c60b54c0b6698465b60f2c3010ef986455025eddfe743bda4f530c0929608",
+      "redactions": 1,
+      "reason": "Ephemeral test companion token in Playwright timeout URL. Original remains private in the isolated run directory; token expired when companion terminated."
+    }
+  ]
+}

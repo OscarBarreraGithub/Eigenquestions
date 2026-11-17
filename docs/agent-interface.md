@@ -11,6 +11,10 @@ Read `/data/atlas/index.json` for installed atlas versions and entry destination
 Each `/data/atlas/ATLAS/VERSION/manifest.json` pins the catalog. Small readable
 pages at `/atlas/ATLAS/VERSION/DESTINATION.html` expose definitions, qualifications,
 representative sources and typed connections without JavaScript or installation.
+A lazy package reads only the selected definition and bounded representatives at
+first. Direct fine-ID links use a small lookup bucket; global title search loads a
+separate index. Full source paging and filters read complete memberships before
+returning results, with exact totals and no silent sample filtering.
 Title/alias lookup is lexical discovery. It does not interpret arbitrary paragraphs
 or establish scientific equivalence. Read the scope and sources before accepting
 a destination; retain changed hypotheses as a distinct question or explicit gap.
@@ -28,7 +32,7 @@ graph.apply(prepared, {expectedRevision: parent.revision});
 ```
 
 `lookup(query, selector)` returns title/alias matches without changing the page.
-`describe(selector)` reads the full destination definition; `connections(selector)`
+`describe(selector)` reads the full destination definition; `connections(selector,{offset,limit})`
 reads typed incident relations, preserving their actual direction.
 `sources(selector,{offset,limit,lens,intent,workRelation,constraints})` pages through
 recorded membership and fetches checksum-verified source metadata/excerpts without
@@ -73,7 +77,8 @@ collection must not limit the questions, sources or conclusions you consider.
 A short orientation should usually take one query and inspection of a few source
 IDs. Expand only when it helps the user's task.
 
-A bare homepage starts a neutral path even when prior browser data exists.
+A bare homepage opens the installed all-physics entrance when one is configured,
+or a neutral native path in older installations, even when prior browser data exists.
 Use **Resume last view** or **Reconnect agent** explicitly to recover a previous
 exploration/companion. Opening home does not erase the saved view. An explicit
 `#view`, `#focus` or companion token link opens its intended destination. After a

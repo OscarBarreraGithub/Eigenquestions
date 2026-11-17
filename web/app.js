@@ -21,6 +21,9 @@ let acceptedCount = 0, renderedRevision = -1, resumeCandidate, resumeCompanion;
 let columnAlignment = Promise.resolve(), columnAlignmentTicket = 0, visibleHistoryIndex = null, lastColumnWidth = 0, userColumnScroll = false;
 const observers = new Set(), readyWaiters = [];
 const atlasLoads = new Map(), installedAtlases = new Map();
+let preparedIndexPromise;
+async function preparedIndex(){if(!preparedIndexPromise)preparedIndexPromise=fetch('/data/atlas/index.json').then(async response=>{if(response.status===404)return null;if(!response.ok)throw new Error('The installed atlas catalog is unavailable.');const index=await response.json();if(index.schemaVersion!=='1.0.0'||!Array.isArray(index.atlases))throw new Error('Unsupported installed atlas catalog.');return index;});return preparedIndexPromise;}
+function atAtlasEntrance(){const selector=session&&currentState(session).selector;return Boolean(selector&&selector.destinationId===installedAtlases.get(atlasKey(selector))?.atlas.manifest.entryDestinationId);}
 const builtIn = capsule => [NATIVE_BUILDER,ATLAS_BUILDER].includes(capsule?.builder.id) && capsule?.builder.version === '1.0.0';
 const atlasKey = selector => `${selector.atlasId}/${selector.atlasVersion}`;
 const installedIdentity = capsule => {const selector=capsule?.snapshot.session?.states[capsule.snapshot.session.cursor]?.selector;return selector?installedAtlases.get(atlasKey(selector))?.navigator.computationId:nativeComputationId;};
@@ -107,7 +110,7 @@ function assertRevision(expected) {
 }
 function save() {
   if (!session) return;
-  try { if (activeCapsule && (activeCapsule.context.question.trim() || view.nodes.length)) localStorage.setItem(capsuleStorageKey, JSON.stringify(activeCapsule)); if (activeCapsule?.snapshot.session && (activeCapsule.context.question.trim() || view.nodes.length)) localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
+  try { if (!atAtlasEntrance() && activeCapsule && (activeCapsule.context.question.trim() || view.nodes.length)) localStorage.setItem(capsuleStorageKey, JSON.stringify(activeCapsule)); if (!atAtlasEntrance() && activeCapsule?.snapshot.session && (activeCapsule.context.question.trim() || view.nodes.length)) localStorage.setItem(storageKey, JSON.stringify(exportSession(session))); } catch {}
   const cached = [...columnViews.values()].slice(-24);
   setTimeout(() => { try { localStorage.setItem(columnStorageKey, JSON.stringify(cached)); } catch {} }, 0);
 }
@@ -115,7 +118,7 @@ function rememberView(result) {
   if (activeCapsule) { acceptedCapsules.delete(result.stateId); acceptedCapsules.set(result.stateId, structuredClone(activeCapsule)); while (acceptedCapsules.size > 24) acceptedCapsules.delete(acceptedCapsules.keys().next().value); }
   const previous = columnViews.get(result.stateId);
   columnViews.delete(result.stateId);
-  columnViews.set(result.stateId, { question: activeCapsule?.context.question || result.query, transitions: previous?.transitions || {}, authored: !builtIn(activeCapsule), stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(direction => {const {id,label,query,seedIds,sourceCount,evidenceIds,intent,lens,workRelation,selector,navigationKind}=direction;return {id,label,query,seedIds,sourceCount,evidenceIds,intent,lens,workRelation,...(selector?{selector,navigationKind}:{}),...representativeInfo(direction,result.nodes,!builtIn(activeCapsule))};}) });
+  columnViews.set(result.stateId, { question: activeCapsule?.context.question || result.query, transitions: previous?.transitions || {}, authored: !builtIn(activeCapsule), stateId: result.stateId, computationId: result.computationId, directions: result.directions.map(direction => {const {id,label,query,seedIds,sourceCount,evidenceIds,intent,lens,workRelation,selector,navigationKind,summary,metadataOnly}=direction;return {id,label,query,seedIds,sourceCount,evidenceIds,intent,lens,workRelation,...(selector?{selector,navigationKind,summary:summary||'',metadataOnly:Boolean(metadataOnly)}:{}),...representativeInfo(direction,result.nodes,!builtIn(activeCapsule))};}) });
   while (columnViews.size > 24) columnViews.delete(columnViews.keys().next().value);
 }
 function clearViewRoute() { const hash = new URLSearchParams(location.hash.slice(1)); if (hash.has('view') || hash.has('focus') || hash.has('atlas')) history.replaceState(null, '', location.pathname + location.search); }
@@ -267,9 +270,9 @@ function render() {
   const empty = !displayQuestion.trim() && !view.nodes.length;
   if($('atlas-entrances'))$('atlas-entrances').hidden=!empty;
   $('home-heading').hidden = !empty; $('exploration-workspace').hidden = empty;
-  refreshResume(empty);
+  refreshResume(empty||atAtlasEntrance());
   document.querySelector('.column-navigation').hidden = empty;
-  document.querySelector('.reading-pane').hidden = empty;
+  document.querySelector('.reading-pane').hidden = empty || Boolean(view.atlas?.destination.metadataOnly);
   document.querySelector('.navigator-note').hidden = empty || Boolean(view.atlas) || !canAttemptContinuation();
   $('current-context').hidden = empty;
   document.documentElement.classList.toggle('prepared-view',Boolean(view.atlas));
@@ -304,7 +307,7 @@ function render() {
   $('snapshot-notice').hidden = !authored || activeCapsule.builder.id === 'browser-empty';
   $('snapshot-notice').textContent = authored ? `Supplied view · ${activeCapsule.builder.id} ${activeCapsule.builder.version}. Labels and relationships are author interpretations, not verified corpus results. ${activeCapsule.continuation.description}` : '';
   if (authored && activeCapsule.builder.id !== 'browser-empty') { $('current-context').textContent = activeCapsule.context.summary || 'The supplied scientific context and source groups are preserved in this view.'; $('corpus-scope').textContent = `Supplied corpus: ${view.corpusId}`; }
-  if(view.atlas){$('current-context').textContent=`${view.atlas.destination.metadataOnly?'Field landmark':labels[state.intent]} · ${labels[state.lens]} · ${view.atlas.membershipCount.toLocaleString()} listed descriptions`;$('corpus-scope').textContent=`${scope.description || 'Physics atlas'} · ${view.atlas.atlasVersion}. ${view.atlas.destination.metadataOnly?'Vocabulary landmark; no detailed paper coverage claimed.':'Sources belong to the dated frozen collection.'}`;}
+  if(view.atlas){$('current-context').textContent=view.atlas.destination.metadataOnly?'Physics classification':`${labels[state.intent]} · ${labels[state.lens]} · ${view.atlas.membershipCount.toLocaleString()} listed descriptions`;$('corpus-scope').textContent=`${scope.description || 'Physics atlas'} · ${view.atlas.atlasVersion}. ${view.atlas.destination.metadataOnly?'Vocabulary landmark; no detailed paper coverage claimed.':'Sources belong to the dated frozen collection.'}`;}
   $('view-geometry').disabled = !view.chart;
   $('export').disabled = !activeCapsule.snapshot.session;
   $('share').disabled = authored || !activeCapsule.snapshot.session;
@@ -315,7 +318,7 @@ function render() {
   renderPreparedPanel();
   if(selector&&!loaded){const identity=state.id;ensureAtlas(selector).then(()=>{if(currentState(session).id===identity)render();}).catch(error=>status(`This exact snapshot remains readable; prepared continuation unavailable: ${error.message}`,true));}
   if (activePanel === 'geometry') { renderChart(); renderDetails(); }
-  status(view.atlas?.destination.metadataOnly ? 'Field landmark · detailed literature coverage is not yet prepared' : view.nodes.length ? `${view.directions.length} ${canAttemptContinuation() ? 'next directions' : 'supplied groups'} · ${authored ? `${view.nodes.length} source descriptions` : `${paperCount} papers`} in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
+  status(view.atlas?.destination.metadataOnly ? 'Classification vocabulary · paper coverage is a separate atlas' : view.nodes.length ? `${view.directions.length} ${canAttemptContinuation() ? 'next directions' : 'supplied groups'} · ${authored ? `${view.nodes.length} source descriptions` : `${paperCount} papers`} in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
   document.documentElement.dataset.ready = 'true';
   document.documentElement.dataset.stateId = state.id;
   document.documentElement.dataset.corpusId = state.corpusId;
@@ -354,15 +357,15 @@ function renderColumns() {
         button.append(el('span', 'direction-number', String(directionIndex + 1).padStart(2, '0')));
         const content = el('span', 'direction-content'); content.append(el('h3', '', label));
         if(info.sourceTitle && !fullLabel.includes(info.sourceTitle))content.append(el('span','direction-source direction-source-title',displayExcerpt(info.sourceTitle,72)));
-        const meta=el('span','direction-meta');meta.append(el('span','direction-kind',info.kind),document.createTextNode(` · ${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} ${direction.selector?'listed descriptions':'sources'}`));
+        const meta=el('span','direction-meta');if(!direction.metadataOnly)meta.append(el('span','direction-kind',info.kind),document.createTextNode(` · ${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} ${direction.selector?'listed descriptions':'sources'}`));
         if(followed)meta.append(el('span','direction-state','Followed'));
         if(revisit>=0)meta.append(el('span','direction-state',`Return to step ${stepNumber(revisit)}`));
-        content.append(meta);
+        if(meta.childNodes.length)content.append(meta);
         button.append(content, el('span', 'direction-arrow', '›'));
         button.disabled = !canAttemptContinuation() || (!current && !historicalAction(state.id,direction)) || (current && !activeCapsule.continuation.actions.some(item => item.id === direction.id && (builtIn(activeCapsule) || item.action.type !== 'select')));
         button.addEventListener('click', () => current ? followDirection(direction) : action({ type: 'replay', index }, { followup: historicalAction(state.id,direction), viaDirectionId:direction.id }));
         row.append(button);
-        if (current) {
+        if (current&&!direction.metadataOnly) {
           const inspect = el('button', 'direction-evidence', 'Sources'); inspect.type = 'button'; inspect.setAttribute('aria-label', `Inspect sources for direction ${directionIndex + 1}`); inspect.title = 'Inspect sources'; inspect.setAttribute('aria-pressed', String(selectedDirectionId === direction.id));
           inspect.addEventListener('click', () => {
             selectedDirectionId = direction.id; selectedId = null; allEvidence = false; switchPanel('sources'); renderEvidence();
@@ -381,7 +384,7 @@ function renderColumns() {
     } else list.append(el('p', 'empty-state', current&&view.atlas ? view.atlas.destination.metadataOnly ? 'This is a vocabulary landmark. Detailed source-backed navigation has not yet been prepared for this field.' : 'This recorded question has no further prepared direction. Inspect its sources or start a source exploration.' : state.query ? 'No supported directions for this question. Try another focus or broaden the context.' : 'Begin with a physics concept. Your first question will open approximately five directions here.'));
     column.append(list); host.append(column);
   }
-  $('navigator-note').hidden = host.children.length < 2 || !canAttemptContinuation();
+  $('navigator-note').hidden = Boolean(view.atlas) || host.children.length < 2 || !canAttemptContinuation();
   columnAlignment = alignColumn(session.cursor,{followed:true,allFollowed:true});
   columnAlignment.then(alignBreadcrumb);
 }
@@ -663,11 +666,11 @@ let chartResizeFrame;
 window.addEventListener('resize', () => { cancelAnimationFrame(chartResizeFrame); chartResizeFrame = requestAnimationFrame(() => { if (view && activePanel === 'geometry') renderChart(); if(session){columnAlignment=alignColumn(visibleHistoryIndex ?? session.cursor,{followed:true});columnAlignment.then(alignBreadcrumb);}else updateColumnControls(); }); });
 $('back').addEventListener('click', () => { if (session) action({ type: 'replay', index: Math.max(0, session.cursor - 1) }); });
 $('broaden').addEventListener('click', () => action({ type: 'broaden' }));
-$('reset').addEventListener('click', () => {
+$('reset').addEventListener('click', async () => {
   retainBranch(activeCapsule);
   $('question').value = ''; $('intent').value = 'explore'; $('lens').value = 'combined'; $('work-relation').value = 'either'; $('transition').value = 'refine';
   markDraft(); $('question').focus(); selectedDirectionId = null; switchPanel('sources');
-  if (bridge) action({ type: 'reset', query: '' }, { clearForm: true }); else { draftDirty = false; emptyPath(); }
+  if(bridge||session&&currentState(session).selector)action({type:'reset',...(!session||!currentState(session).selector?{query:''}:{})},{clearForm:true});else{draftDirty=false;clearViewRoute();await loadRoute({initial:true});}
 });
 $('export').addEventListener('click', () => { if (activeCapsule?.snapshot.session) download('eigenquestions-session.json', exportSession(activeCapsule.snapshot.session)); });
 $('export-view').addEventListener('click', () => { if (activeCapsule) download('eigenquestions-view.json', activeCapsule); });
@@ -724,11 +727,20 @@ function refreshResume(home = $('exploration-workspace').hidden) {
   resumeCandidate = null; resumeCompanion = null; let invalid = false;
   try {
     const stored=localStorage.getItem(capsuleStorageKey),legacy=localStorage.getItem(storageKey);
-    if(stored){const capsule=validateCapsule(JSON.parse(stored));if(capsule.context.question.trim()||capsule.snapshot.view.nodes.length)resumeCandidate={kind:'capsule',payload:capsule,label:capsule.context.question};}
+    if(stored){const capsule=validateCapsule(JSON.parse(stored));if((capsule.context.question.trim()||capsule.snapshot.view.nodes.length)&&capsule.snapshot.view.stateId!==view?.stateId)resumeCandidate={kind:'capsule',payload:capsule,label:capsule.context.question};}
     else if(legacy){const payload=JSON.parse(legacy),previous=importSession(payload);if(currentState(previous).query.trim())resumeCandidate={kind:'session',payload,label:currentState(previous).query};}
   } catch { invalid = true; }
   try {const saved=JSON.parse(sessionStorage.getItem(bridgeStorageKey)||'null');if(saved&&typeof saved.origin==='string'&&typeof saved.token==='string'&&saved.token)resumeCompanion=saved;}catch{invalid=true;}
   $('resume-prior').hidden = !home || (!resumeCandidate && !resumeCompanion && !invalid);
+  let recovery=document.getElementById('resume-disclosure');
+  if(atAtlasEntrance()){
+    if(!recovery){recovery=el('details','resume-disclosure');recovery.id='resume-disclosure';recovery.hidden=true;recovery.append(el('summary','','Resume a previous exploration'));}
+    if(recovery.hidden)recovery.open=false;
+    $('columns').after(recovery);recovery.append($('resume-prior'));recovery.hidden=$('resume-prior').hidden;
+  }else{
+    $('exploration-workspace').before($('resume-prior'));if(recovery)recovery.hidden=true;
+  }
+
   $('resume-view').hidden = !resumeCandidate; $('resume-companion').hidden = !resumeCompanion;
   $('resume-label').textContent = invalid ? 'A saved exploration could not be read. It has been kept; open a valid file or begin a new question.' : resumeCandidate ? `Saved exploration: ${displayExcerpt(resumeCandidate.label,90)}` : 'A previous local agent connection is available. Reconnect explicitly to inspect its current state.';
   let branches=$('saved-branches');if(!branches){branches=el('details','saved-branches');branches.id='saved-branches';document.querySelector('.session-tools').append(branches);}branches.replaceChildren(el('summary','','Earlier paths on this browser'));
@@ -737,6 +749,14 @@ function refreshResume(home = $('exploration-workspace').hidden) {
 $('resume-view').addEventListener('click',async()=>{const candidate=resumeCandidate;if(!candidate)return;try{if(candidate.kind==='capsule')acceptCapsule(candidate.payload,{preserveCompanion:true});else await startBrowser({session:candidate.payload});}catch(error){status(`Unable to resume: ${error.message} The saved data is unchanged.`,true);}});
 $('resume-companion').addEventListener('click',async()=>{const connection=resumeCompanion;if(!connection)return;try{await connect(connection.origin,connection.token);}catch(error){status(`Unable to reconnect: ${error.message} Open the companion’s local URL or resume the saved view.`,true);}});
 
+async function openPreparedHome(generation){
+  const index=await preparedIndex();if(generation!==routeGeneration)return true;if(!index?.home)return false;
+  setBusy(true,'Opening the physics atlas…');
+  const home=index.home,entry=index.atlases.find(item=>item.atlasId===home.atlasId&&item.atlasVersion===home.atlasVersion&&item.entryDestinationId===home.destinationId);if(!entry)throw new Error('The default physics entrance is not in the installed catalog.');
+  const selector={kind:'atlas-destination',atlasId:home.atlasId,atlasVersion:home.atlasVersion,destinationId:home.destinationId},loaded=await ensureAtlas(selector);if(generation!==routeGeneration)return true;if(loaded.atlas.manifest.entryDestinationId!==home.destinationId)throw new Error('The configured physics entrance does not match its pinned manifest.');
+  const next=loaded.navigator.createSession({selector});await loaded.navigator.prepareState?.(currentState(next));if(generation!==routeGeneration)return true;
+  acceptCapsule(createCapsule({session:next,view:loaded.navigator.computeView(currentState(next))}),{keepRoute:true,persist:false,preserveCompanion:true});return true;
+}
 let lastReadRoute;
 async function loadRoute({initial = false} = {}) {
   const routeKey=location.href+JSON.stringify(history.state);if(!initial&&routeKey===lastReadRoute)return;lastReadRoute=routeKey;
@@ -777,7 +797,7 @@ async function loadRoute({initial = false} = {}) {
       try { await connect(fragment.get('bridge') || location.origin, fragment.get('token')); return; }
       catch (error) { try {sessionStorage.removeItem(bridgeStorageKey);}catch{} $('bridge-message').textContent=`${error.message} Open the companion’s local URL for same-origin operation.`; }
     }
-    emptyPath();
+    if(!await openPreparedHome(generation)&&generation===routeGeneration)emptyPath();
   } catch (error) { if(generation===routeGeneration && error.name!=='AbortError') {status(`Unable to open this view: ${error.message} Start a new path or open a file to continue.`,true);document.documentElement.dataset.ready='true';} }
   finally { if(generation===routeGeneration) setBusy(false); }
 }
@@ -791,7 +811,7 @@ window.eigenquestionsNavigator = Object.freeze({
   lookup:async (query,selector=currentState(session)?.selector) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSearch?.();return prepared.navigator.search(query,{limit:15});},
   describe:async selector => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareDestination?.(selector.destinationId);return prepared.navigator.destination(selector.destinationId);},
   sources:async (selector,{offset=0,limit=20,...filters}={}) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSources?.(selector.destinationId);const page=prepared.navigator.sources(selector.destinationId,{offset,limit,...filters});return {...page,items:await prepared.readSources(page.items)};},
-  connections:async selector => {const prepared=await ensureAtlas(selector);return prepared.navigator.connections(selector.destinationId);},
+  connections:async (selector,options={}) => {const prepared=await ensureAtlas(selector);return prepared.navigator.connections(selector.destinationId,options);},
   context:async (unitId,selector=currentState(session)?.selector,options={}) => {const prepared=await ensureAtlas(selector);return pageSourceContext(await prepared.readContext(unitId),options);},
   evidence:async ids => {if(!Array.isArray(ids)||ids.length>100)throw new Error('Supply at most 100 evidence IDs.');const found=ids.map(id=>activeCapsule?.snapshot.view.nodes.find(node=>node.id===id));if(found.every(Boolean))return structuredClone(found);await ensureWorker();return callWorker('evidence',{ids});},
   apply:(capsule,{expectedRevision}={}) => {assertRevision(expectedRevision);return acceptCapsule(capsule,{expectedRevision});},
@@ -801,5 +821,5 @@ window.eigenquestionsNavigator = Object.freeze({
   subscribe:callback => {if(typeof callback!=='function')throw new Error('subscribe needs a callback.');observers.add(callback);return()=>observers.delete(callback);}
 });
 loadRoute({initial:true});
-async function showPreparedEntrances(){try{const response=await fetch('/data/atlas/index.json');if(!response.ok)return;const index=await response.json();if(index.schemaVersion!=='1.0.0'||!Array.isArray(index.atlases))return;let host=el('section','atlas-entrances');host.id='atlas-entrances';host.hidden=Boolean(activeCapsule?.context.question?.trim());host.append(el('h2','','Physics atlas'),el('p','','Browse recorded questions and connections. Search matches titles and aliases; your agent can interpret a paragraph.'));for(const entry of index.atlases.slice(0,30)){const selector={kind:'atlas-destination',atlasId:entry.atlasId,atlasVersion:entry.atlasVersion,destinationId:entry.entryDestinationId},button=el('button','',entry.title);button.type='button';button.addEventListener('click',()=>action({type:'navigate',selector}));host.append(button);if(entry.scope)host.append(el('p','',entry.scope));}$('question-form').before(host);}catch{/* Optional prepared package is not installed on every retained release. */}}
+async function showPreparedEntrances(){try{const index=await preparedIndex();if(!index)return;let host=el('section','atlas-entrances');host.id='atlas-entrances';host.hidden=Boolean(activeCapsule?.context.question?.trim());host.append(el('h2','','Physics atlas'),el('p','','Browse recorded questions and connections. Search matches titles and aliases; your agent can interpret a paragraph.'));for(const entry of index.atlases.slice(0,30)){const selector={kind:'atlas-destination',atlasId:entry.atlasId,atlasVersion:entry.atlasVersion,destinationId:entry.entryDestinationId},button=el('button','',entry.title);button.type='button';button.addEventListener('click',()=>action({type:'navigate',selector}));host.append(button);if(entry.scope)host.append(el('p','',entry.scope));}$('question-form').before(host);}catch{/* Optional prepared package is not installed on every retained release. */}}
 showPreparedEntrances();

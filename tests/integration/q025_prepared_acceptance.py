@@ -33,6 +33,7 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     temp = Path(tempfile.mkdtemp(prefix='eigenquestions-q025-'))
     server = mcp = None
+    private_tokens=[]
     report = {'schemaVersion': '1.0.0', 'request': 'Q-025', 'checks': [], 'screenshots': [],
               'scope': 'Isolated Slurm Chromium, synthetic prepared atlas, actual shared controller and local MCP bridge. Not the owner Chrome and not scientific acceptance.'}
 
@@ -75,7 +76,7 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
         scale_manifest=None
         if args.scale_atlas:
             scale_directory=Path(args.scale_atlas).resolve();scale_manifest=json.loads((scale_directory/'manifest.json').read_text())
-            discovery=json.loads((root/'dist/data/atlas/index.json').read_text());discovery['atlases'].append({'atlasId':scale_manifest['atlasId'],'atlasVersion':scale_manifest['atlasVersion'],'entryDestinationId':scale_manifest['entryDestinationId'],'title':'Full-scale delivery diagnostic','scope':scale_manifest['scope']['description']});(root/'dist/data/atlas/index.json').write_text(json.dumps(discovery))
+            discovery=json.loads((root/'dist/data/atlas/index.json').read_text());discovery['home']={'atlasId':scale_manifest['atlasId'],'atlasVersion':scale_manifest['atlasVersion'],'destinationId':scale_manifest['entryDestinationId']};discovery['atlases'].append({'atlasId':scale_manifest['atlasId'],'atlasVersion':scale_manifest['atlasVersion'],'entryDestinationId':scale_manifest['entryDestinationId'],'title':'Full-scale delivery diagnostic','scope':scale_manifest['scope']['description']});(root/'dist/data/atlas/index.json').write_text(json.dumps(discovery))
             report['staticScaleBuild']=json.loads((root/'dist/build-info.json').read_text())
         connection = temp / 'connection.json'
         atlas_dir = root / 'dist/data/atlas/acceptance-fixture/2026-11-17-test'
@@ -87,7 +88,7 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
             time.sleep(.05)
         if not connection.exists():
             raise RuntimeError('Prepared companion startup timed out')
-        conn = json.loads(connection.read_text()); origin=conn['url'].rstrip('/')
+        conn = json.loads(connection.read_text()); private_tokens.append(conn['token']); origin=conn['url'].rstrip('/')
         mcp = subprocess.Popen([args.node,str(root/'bin/mcp-navigator.mjs'),'--connection',str(connection)],cwd=root,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
         seq=0
         def rpc(method,params):
@@ -101,8 +102,8 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
         with sync_playwright() as playwright:
             browser=playwright.chromium.launch(headless=True)
             context=browser.new_context(viewport={'width':1440,'height':1050})
-            context.add_init_script("""window.__q025LongTasks=[];try{new PerformanceObserver(list=>{for(const entry of list.getEntries())window.__q025LongTasks.push({start:entry.startTime,duration:entry.duration});}).observe({type:'longtask',buffered:true});}catch{}""")
-            page=context.new_page();errors=[];requests=[]
+            context.add_init_script("""window.__q025StateRenders=[];new MutationObserver(()=>{const id=document.documentElement.dataset.stateId;if(id&&window.__q025StateRenders.at(-1)?.id!==id)window.__q025StateRenders.push({id,destinationId:document.documentElement.dataset.destinationId,at:performance.now()});}).observe(document,{subtree:true,attributes:true,attributeFilter:['data-state-id']});window.__q025LongTasks=[];try{new PerformanceObserver(list=>{for(const entry of list.getEntries())window.__q025LongTasks.push({start:entry.startTime,duration:entry.duration});}).observe({type:'longtask',buffered:true});}catch{}""")
+            page=context.new_page();errors=report['browserErrors']=[];requests=[]
             page.on('pageerror',lambda error:errors.append(str(error)))
             page.on('request',lambda request:requests.append(request.url))
             route=origin+'/#atlas=acceptance-fixture&version=2026-11-17-test&destination=root'
@@ -143,7 +144,7 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
             page.reload(wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='shared'")
             assert page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view.stateId')==left_id
             passed('compact URL and reload restore exact prepared destination')
-            page.goto(origin+'/#token='+conn['token'],wait_until='networkidle');page.wait_for_function("window.eigenquestionsNavigator.read().mode==='local-companion'")
+            page.goto(origin+'/#token='+conn['token'],wait_until='domcontentloaded');page.wait_for_function("window.eigenquestionsNavigator.read().mode==='local-companion'")
             response=rpc('tools/call',{'name':'navigator_navigate','arguments':{'type':'navigate','selector':{**selector,'destinationId':'shared'}}})
             assert not response['isError'];page.wait_for_function("document.documentElement.dataset.destinationId==='shared'")
             page.wait_for_function('window.eigenquestionsNavigator.read().renderedRevision===window.eigenquestionsNavigator.read().revision')
@@ -213,6 +214,13 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                     assert 'classification' in page.locator('#atlas-map-caption').inner_text().lower()
                     report['classificationPerformance']=page.evaluate("({readyMs:performance.now(),longTasks:window.__q025LongTasks,renderedNodes:document.querySelectorAll('.atlas-map-node').length,visibleLabels:[...document.querySelectorAll('.atlas-map-label')].filter(n=>getComputedStyle(n).display!=='none').length,resources:performance.getEntriesByType('resource').map(r=>({name:new URL(r.name).pathname,transferSize:r.transferSize,decodedBodySize:r.decodedBodySize}))})")
                     assert report['classificationPerformance']['visibleLabels']==17
+                    assert page.locator('.atlas-fixed-node').count()==211 and page.locator('.classification-edge').count()==211
+                    transport=next(d['id'] for d in draft_catalog['destinations'] if d['title']=='Transport phenomena')
+                    transport_parents=[e['source'] for e in draft_catalog['orientation']['edges'] if e['target']==transport];assert len(transport_parents)==3
+                    page.locator('.atlas-fixed-node[data-destination-id="'+transport+'"]').evaluate('(node)=>node.dispatchEvent(new MouseEvent("click",{bubbles:true}))')
+                    page.wait_for_function("document.querySelectorAll('.classification-edge.selected-edge').length===3")
+                    assert page.locator('#atlas-selected button').count()==3
+                    page.get_by_role('button',name='All physics fields',exact=True).click();page.wait_for_function("document.querySelectorAll('#atlas-topics button').length===17")
                     targets=page.locator('.classification-card .atlas-map-hit').evaluate_all("nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}})")
                     assert all(t['width']>=44 and t['height']>=44 for t in targets)
                     assert all(a['x']+a['width']<=b['x']+.5 or b['x']+b['width']<=a['x']+.5 or a['y']+a['height']<=b['y']+.5 or b['y']+b['height']<=a['y']+.5 for i,a in enumerate(targets) for b in targets[i+1:])
@@ -228,9 +236,11 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                     passed('classification frontier drills through exact children and explicit hep-th portal to draft source destination without inventing detailed coordinates')
                     page.set_viewport_size({'width':390,'height':844});page.goto(overview_url,wait_until='networkidle');page.wait_for_function("document.querySelectorAll('.atlas-map-node').length===17")
                     overview_layout=page.evaluate("({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,nodes:document.querySelectorAll('.atlas-map-node').length,visibleLabels:[...document.querySelectorAll('.atlas-map-label')].filter(n=>getComputedStyle(n).display!=='none').length,zoomY:[...document.querySelectorAll('.atlas-map-zoom button')].map(n=>n.getBoundingClientRect().y)})");assert overview_layout['scrollWidth']<=overview_layout['width']+1
-                    assert overview_layout['visibleLabels']==17 and len(set(overview_layout['zoomY']))==1
+                    assert page.locator('#atlas-topics button').count()==17 and len(set(overview_layout['zoomY']))==1
+                    assert page.locator('.atlas-fixed-node').count()==211 and page.locator('.classification-edge').count()==211
+                    assert all(r['height']>=44 for r in page.locator('#atlas-topics button').evaluate_all('nodes=>nodes.map(n=>({height:n.getBoundingClientRect().height}))'))
                     page.screenshot(path=str(output/'physics-classification-mobile.png'),full_page=True);report['screenshots'].append('physics-classification-mobile.png')
-                    passed('mobile classification map retains all17 selectable fields with no page overflow',layout=overview_layout)
+                    passed('mobile classification keeps the fixed 211-node graph and all 17 named field controls without overflow',layout=overview_layout)
                 if args.source_context_pack:
                     page.set_viewport_size({'width':1180,'height':900});page.goto(real_url,wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='q-kk-decay-linear-cosmology'")
                     worst='unit:0f56d055e5fd6027bbab4d22fa399093344b4c734afa5b6c32ff7abfaf369749'
@@ -246,11 +256,13 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
             if scale_manifest:
                 scale_selector={'kind':'atlas-destination','atlasId':scale_manifest['atlasId'],'atlasVersion':scale_manifest['atlasVersion'],'destinationId':scale_manifest['entryDestinationId']}
                 def scale_url(destination):return origin+'/#atlas='+scale_manifest['atlasId']+'&version='+scale_manifest['atlasVersion']+'&destination='+destination
-                def performance_receipt():return page.evaluate("({readyMs:performance.now(),longTasks:window.__q025LongTasks,domElements:document.querySelectorAll('*').length,resources:performance.getEntriesByType('resource').map(r=>({name:new URL(r.name).pathname,duration:r.duration,transferSize:r.transferSize,decodedBodySize:r.decodedBodySize}))})")
+                def performance_receipt():return page.evaluate("({readySampleMs:performance.now(),stateRenders:window.__q025StateRenders,paint:performance.getEntriesByType('paint').map(p=>({name:p.name,at:p.startTime})),longTasks:window.__q025LongTasks,domElements:document.querySelectorAll('*').length,resources:performance.getEntriesByType('resource').map(r=>({name:new URL(r.name).pathname,duration:r.duration,transferSize:r.transferSize,decodedBodySize:r.decodedBodySize}))})")
                 page.set_viewport_size({'width':1180,'height':900});page.goto(scale_url(scale_manifest['entryDestinationId']),wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='classification:physics'")
                 report['scalePhysicsEntrance']=performance_receipt();paths=[r['name'] for r in report['scalePhysicsEntrance']['resources']]
                 assert not any('fine-index' in p or 'fine-lookup' in p or 'destination-memberships' in p or '/vectors' in p for p in paths)
                 assert page.locator('#directions button.direction').count()==17
+                assert page.locator('#directions .direction-evidence').count()==0 and not page.locator('.reading-pane').is_visible()
+                assert 'listed descriptions' not in page.locator('#directions').inner_text()
                 page.screenshot(path=str(output/'scale-physics-entrance.png'),full_page=True);report['screenshots'].append('scale-physics-entrance.png')
                 known_unit=draft_catalog['destinations'][next(i for i,d in enumerate(draft_catalog['destinations']) if d['id']=='q-kk-decay-linear-cosmology')]['evidenceIds'][0]
                 fine_id='source-question:'+known_unit.removeprefix('unit:');page.goto(scale_url(fine_id),wait_until='networkidle');page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=fine_id)
@@ -281,20 +293,84 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                 static_url=origin+'/atlas/'+scale_manifest['atlasId']+'/'+scale_manifest['atlasVersion']+'/'+fine_id+'.html'
                 static_body=page.request.get(static_url);assert static_body.ok and known_unit in static_body.text()
                 passed('full-scale physics, direct fine URL, local drill, global lookup and large-parent filtering use separate pinned lazy reads with stable views',destinations=8928,primary=8473,context=17937,staticFineReadable=True)
+                page.goto(scale_url(fine_id),wait_until='networkidle');page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=fine_id)
+                saved_id=page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view.stateId')
+                page.goto(origin+'/',wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='classification:physics'")
+                assert page.url==origin+'/' and page.locator('#resume-disclosure').is_visible()
+                assert page.locator('#directions button.direction').count()==17 and not page.locator('.reading-pane').is_visible()
+                report['barePhysicsHome']=performance_receipt()
+                page.locator('#resume-disclosure>summary').click();page.locator('#resume-view').click();page.wait_for_function('id=>document.documentElement.dataset.stateId===id',arg=saved_id)
+                page.locator('#reset').click();page.wait_for_function("document.documentElement.dataset.destinationId==='classification:physics'")
+                assert page.locator('#resume-disclosure').is_visible()
+                page.set_viewport_size({'width':390,'height':844});page.goto(origin+'/',wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='classification:physics'")
+                home_layout=page.evaluate("({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,choicesY:document.querySelector('#directions button.direction').getBoundingClientRect().top,summaryY:document.querySelector('#full-question-details').getBoundingClientRect().top})")
+                report['mobileHomeLayout']=home_layout
+                page.screenshot(path=str(output/'physics-home-mobile.png'),full_page=True);report['screenshots'].append('physics-home-mobile.png')
+                assert home_layout['scrollWidth']<=home_layout['width']+1 and home_layout['choicesY']<570 and home_layout['summaryY']>home_layout['choicesY'],home_layout
+                passed('installed research home opens all physics, keeps 17 clear choices and preserves the prior path for Resume and New path',layout=home_layout)
+
+                page.add_init_script('''{const original=window.fetch;window.fetch=async function(input,...args){if(String(input).endsWith('/data/atlas/index.json'))await new Promise(resolve=>setTimeout(resolve,1500));return original.call(this,input,...args);};}''')
+                page.goto(origin+'/',wait_until='domcontentloaded');page.evaluate('hash=>{location.hash=hash}',scale_url(fine_id).split('#',1)[1]);page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=fine_id);page.wait_for_load_state('networkidle');page.wait_for_timeout(1600)
+                assert page.evaluate('window.eigenquestionsNavigator.read().busy') is False and page.evaluate('document.documentElement.dataset.destinationId')==fine_id
+                passed('delayed default-home index cannot replace or leave busy a newer explicit fine route')
+
+                # A second server uses the actual lazy package, not the synthetic transport fixture.
+                mcp.terminate();mcp.wait(timeout=10);server.terminate();server.wait(timeout=10)
+                connection=temp/'lazy-connection.json';lazy_directory=root/'dist/data/atlas'/scale_manifest['atlasId']/scale_manifest['atlasVersion']
+                server=subprocess.Popen([args.node,str(root/'bin/navigate.mjs'),'serve','--atlas',str(lazy_directory),'--port','0','--connection',str(connection)],cwd=root,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+                deadline=time.monotonic()+45
+                while not connection.exists() and time.monotonic()<deadline:
+                    if server.poll() is not None:raise RuntimeError('Lazy companion failed: '+server.stderr.read().decode()[-2000:])
+                    time.sleep(.05)
+                if not connection.exists():raise RuntimeError('Lazy companion startup timed out')
+                conn=json.loads(connection.read_text());private_tokens.append(conn['token']);origin=conn['url'].rstrip('/')
+                mcp=subprocess.Popen([args.node,str(root/'bin/mcp-navigator.mjs'),'--connection',str(connection)],cwd=root,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+                rpc('initialize',{'protocolVersion':'2025-06-18','clientInfo':{'name':'q025-lazy-browser-acceptance','version':'1'}})
+                initial=rpc('tools/call',{'name':'navigator_state','arguments':{}})['structuredContent']
+                cold=rpc('tools/call',{'name':'navigator_connections','arguments':{'destinationId':fine_id}})['structuredContent']
+                warm=rpc('tools/call',{'name':'navigator_connections','arguments':{'destinationId':fine_id}})['structuredContent']
+                after_read=rpc('tools/call',{'name':'navigator_state','arguments':{}})['structuredContent']
+                assert cold==warm and cold['total']>0 and initial['state']==after_read['state'] and initial['revision']==after_read['revision']
+                page.set_viewport_size({'width':1180,'height':900});page.goto(origin+'/#token='+conn['token'],wait_until='domcontentloaded');page.wait_for_function("window.eigenquestionsNavigator.read().mode==='local-companion'")
+                response=rpc('tools/call',{'name':'navigator_navigate','arguments':{'type':'navigate','selector':{**scale_selector,'destinationId':fine_id}}});assert not response['isError']
+                page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=fine_id)
+                acknowledged=False
+                for _ in range(60):
+                    state=rpc('tools/call',{'name':'navigator_state','arguments':{}})['structuredContent']
+                    if state['browserStatus']['acknowledgedCurrent']:acknowledged=True;break
+                    time.sleep(.05)
+                assert acknowledged and state['state']['selector']['destinationId']==fine_id
+                assert page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view.stateId')==state['state']['id']
+                agent_sources=rpc('tools/call',{'name':'navigator_sources','arguments':{'destinationId':fine_id,'limit':5}})['structuredContent']
+                browser_sources=page.evaluate('async selector=>window.eigenquestionsNavigator.sources(selector,{limit:5})',{**scale_selector,'destinationId':fine_id})
+                assert [row['unitId'] for row in agent_sources['items']]==[row['unitId'] for row in browser_sources['items']] and known_unit in [row['unitId'] for row in agent_sources['items']]
+                assert page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view.stateId')==state['state']['id']
+                page.locator('#atlas-panel details').filter(has=page.locator('textarea')).locator('summary').click();page.locator('#atlas-panel textarea').fill('Private lazy MCP note')
+                for target in [parent,fine_id]:
+                    response=rpc('tools/call',{'name':'navigator_navigate','arguments':{'type':'navigate','selector':{**scale_selector,'destinationId':target}}});assert not response['isError'];page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=target)
+                assert page.locator('#atlas-panel textarea').input_value()=='Private lazy MCP note'
+                assert 'Private lazy MCP note' not in json.dumps(page.evaluate('window.eigenquestionsNavigator.export()'))
+                page.screenshot(path=str(output/'lazy-mcp-connected.png'),full_page=True);report['screenshots'].append('lazy-mcp-connected.png')
+                passed('real lazy destination reaches browser through stdio MCP and SSE with exact state render acknowledgement; cold connection reads are complete and nonmutating; notes survive agent updates',destinationId=fine_id,stateId=state['state']['id'],scope='Local same-origin HTTP in isolated Chromium. This does not establish public HTTPS-to-loopback browser access.')
+
 
             assert not errors,errors
             passed('no browser page errors',errorCount=len(errors))
             browser.close()
         report['passed']=True
     except Exception as error:
-        report['passed']=False;report['error']=str(error)
+        report['passed']=False;message=str(error)
+        for secret in private_tokens:message=message.replace(secret,'[redacted-ephemeral-test-token]')
+        report['error']=message
         try:
             report['failedDom']=page.evaluate("({title:document.querySelector('#current-question')?.textContent,summaryText:document.querySelector('#atlas-current-summary')?.textContent,summaryInnerText:document.querySelector('#atlas-current-summary')?.innerText,detailsOpen:document.querySelector('#full-question-details')?.open,status:document.querySelector('#status')?.textContent})")
             page.screenshot(path=str(output/'failure.png'),full_page=True);report['screenshots'].append('failure.png')
         except Exception:pass
-        raise
+        raise RuntimeError(message) from None
     finally:
-        (output/'report.json').write_text(json.dumps(report,indent=2)+'\n')
+        body=json.dumps(report,indent=2)+'\n'
+        for secret in private_tokens:body=body.replace(secret,'[redacted-ephemeral-test-token]')
+        (output/'report.json').write_text(body)
         if mcp:mcp.terminate()
         if server:server.terminate()
         shutil.rmtree(temp,ignore_errors=True)

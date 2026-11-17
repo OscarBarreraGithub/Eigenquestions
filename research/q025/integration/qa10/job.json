@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "q025-integration-job/1",
+  "jobId": "61466625",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 2,
+  "memory": "8G",
+  "timeLimit": "00:12:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa10",
+  "submittedAt": "2026-11-17T11:11:15.089309+00:00",
+  "archiveSha256": "7a62cafc689c063622a58faa4bd3f5b05c9e9ba21260ecbedd22336c5dd206a5",
+  "contentManifestSha256": "6a35854e35922b3b776798bac5492d4c008d129ac4243e2a51f746c249ca7219",
+  "sbatchSha256": "a73536aac299f5fbde3231cc86df2e702cd4fef3ee148677e5a4ce88f2823b55",
+  "sourceContextPackage": {
+    "manifestSha256": "c86bc90966007c28ce40523348e51e4ace4d20d62354f79928133d371f77c6f5",
+    "indexSha256": "22772f2c76dd7a98a79e407656191df74b781d9446950ac0038bbb2a27db4f10",
+    "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/source-context-v3-compact/pack"
+  },
+  "baseCommit": "148d58a01637256380e7e33da03e7b01cfeeffec",
+  "includesUncommittedFiles": true,
+  "statusAtSubmission": "submitted",
+  "scope": "QA10 exact runtime, frozen corpus, research-only classification/KK/full-scale fixtures. Tests fixed classification graph, home/resume and actual local lazy MCP transport. Public HTTPS-to-loopback final gate remains separate. No owner profile/raw source, no duplicate context payload. Corrects QA08 mobile-home placement and delayed-index race; preserves original failure. QA09 runtime unchanged; live SSE readiness uses DOMContentLoaded plus explicit connected/state/revision checks instead of network idle.",
+  "finalStatus": "COMPLETED",
+  "exitCode": "0:0",
+  "elapsed": "00:02:08"
+}

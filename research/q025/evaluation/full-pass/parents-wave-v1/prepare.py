@@ -1,0 +1,15 @@
+"""Freeze108 dependent parent requests; pilot pair is reused externally, never rerun."""
+import json,shutil,subprocess,sys
+from pathlib import Path
+B=Path(__file__).resolve().parent;F=B.parent;E=F.parent;sys.path.insert(0,str(F/'compact-v1'));from compact_pipeline import dump,hfile
+L=F/'native-local/parents-wave-v1';pilotkey='b518fa2038910d956e04'
+if (L/'state.json').exists():raise SystemExit('Active state exists; preserve campaign.')
+L.mkdir(exist_ok=True);schema=subprocess.check_output(['python3',str(B/'contract.py'),'--schema'],text=True);(L/'review-schema.json').write_text(schema);templates=json.loads((F/'parents-v1/parent-templates.json').read_text());jobs=[]
+for t in templates['templates']:
+ if t['familyId']==pilotkey:continue
+ deps=[]
+ for dep in t['childDependencies']:
+  lane='full-leaf-wave-v3' if dep['kind']=='leaf' else ('parent-pilot-v1' if dep['reviewKey']==pilotkey else 'parents-wave-v1');deps.append({**dep,'jobPath':f'full-pass/native-local/{lane}/jobs/{dep["challengeJobId"]}'})
+ req={'schemaVersion':'q025-parent-wave-request/1','jobId':t['jobId'],'familyId':t['familyId'],'kind':'parent','stage':t['stage'],'dependsOn':t['priorParentJobId'],'model':'gpt-6-astra','effort':'xhigh','sandbox':'read-only','sourceOnly':True,'timeoutSeconds':1800,'maxOutputCharacters':120000,'schemaSha256':hfile(L/'review-schema.json'),'originalPacketPath':t['sourcePacketPath'],'originalPacketSha256':t['sourcePacketSha256'],'fullMemberCount':t['fullMemberCount'],'childDependencies':deps};d=L/'jobs'/req['jobId'];dump(d/'request.json',req);jobs.append({'jobId':req['jobId'],'dependsOn':req['dependsOn'],'requestSha256':hfile(d/'request.json')})
+paths=[B/'contract.py',B/'materialize.py',B/'build_child_artifact.py',B/'INSTRUCTIONS.md',F/'parents-v1/parent_pipeline.py',F/'parents-v1/build_child_artifact.py',F/'production-v3/contract.py',F/'compact-v1/production_contract.py',F/'compact-v1/compact_pipeline.py',E/'recovery/compact_contract.py',E/'recovery/compact_inputs.py',F/'coverage-plan.json',F/'coverage-memberships.local.json',F/'production-v3/manifest.json',F/'parents-v1/pilot-manifest.json']
+campaign={'schemaVersion':'q025-parent-wave-campaign/1','status':'prepared_not_launched','jobs':jobs,'maxAuthorizedConcurrency':12,'publicPins':[{'path':str(p.relative_to(E)),'sha256':hfile(p)} for p in paths],'nativeLaunches':0,'pilotExcludedAndReused':pilotkey,'compilerSha256':hfile(B/'materialize.py'),'schemaSha256':hfile(L/'review-schema.json')};dump(L/'campaign.json',campaign);shutil.copyfile(F/'native-local/full-leaf-wave-v3/execution.json',L/'execution.json');dump(L/'control.json',{'enabled':False,'maxActive':2,'maxStartsPerMinute':6,'minStartIntervalMs':5000,'stopWhenComplete':True});dump(B/'manifest.json',{**campaign,'campaignSha256':hfile(L/'campaign.json'),'runnerSha256':hfile(B/'runner.mjs'),'launchGate':'Root reviews completed parent pilot pair and focused tests; start2 then ramp12 with actual valid outputs. Immutable leaf remains23; coordinate global48budget.'});print(json.dumps({'jobs':len(jobs),'parents':len(jobs)//2,'maxAuthorizedConcurrency':12,'nativeLaunches':0}))

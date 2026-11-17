@@ -183,7 +183,7 @@ exposes the same incident relations irrespective of path.
 The capsule still has schema `1.0.0`; its canonical session/view can be prepared
 `1.1.0`. Builder `eigenquestions-prepared-atlas` version `1.0.0` permits the same
 recorded `select` continuation when computation identity matches. Views expose up
-to fifteen foreground directions and full incident relation metadata in
+to fifteen foreground directions (up to twenty for metadata classifications) and full incident relation metadata in
 `view.atlas.connections`. Full memberships can exceed the capsule's 500-source
 display bound. `membershipCount`, `matchingSourceCount`, membership status and
 sample notices state what is represented. Context evidence and matching sources
@@ -217,3 +217,24 @@ A freshly read revision must never be used to launder an older result. Display
 acknowledgement and public-to-loopback limitations remain as specified above.
 
 Prepared source associations can carry `associationScope: same_paper_context`, `placementStatus: context_only`, `role: evidence`, `lens: method`, an exact `paperId` and `associationProvenance`. Such rows remain outside primary membership counts and complete-child subset proofs. Method/derive reading and explicit contextual paging may expose them, always with contextual counts and labels; they do not become a primary method membership or USING claim.
+
+
+Prepared manifest `1.1.0` also supports `catalog.storage: lazy-destinations-v1`.
+The initial index contains coarse destinations, exact counts and checksummed detail
+locators. A direct fine-ID link loads one hash-prefix lookup bucket; local coarse
+navigation loads its recorded fine children. Only explicit global lookup reads the
+full fine-search index. `prepareDestination`, `prepareState`, `prepareAction` and
+`prepareSources` load and verify required records before the existing synchronous
+controller computes a view. Default views use an immutable bounded sample and exact
+counts; filtering or paging requires the complete recorded membership. Cache history
+must not change a view or state ID. Build validation expands all shards, checks
+containment/conservation and requires every static destination page. Missing declared
+files fail the build; only an absent optional top-level installed index is allowed.
+See the [exact delivery contract](../research/q025/integration/LAZY-DATA-CONTRACT.md).
+
+The installed `/data/atlas/index.json` may set `home` to
+`{atlasId,atlasVersion,destinationId}` matching an installed entry destination.
+A bare URL then opens that entrance without replacing the last meaningful saved
+research path or reconnecting an agent. Explicit view/focus/atlas/token URLs take
+precedence. Resume and New path preserve local branches and separately stored notes.
+An installation without `home` retains the neutral native entrance.
