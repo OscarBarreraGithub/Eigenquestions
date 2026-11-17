@@ -28,7 +28,7 @@ async function ensureAtlas(selector) {
   if(!selector||selector.kind!=='atlas-destination'||![selector.atlasId,selector.atlasVersion,selector.destinationId].every(value=>typeof value==='string'&&/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,199}$/.test(value)))throw new Error('Invalid prepared atlas selector.');
   const key=atlasKey(selector);
   if(!atlasLoads.has(key))atlasLoads.set(key,loadAtlas(`/data/atlas/${encodeURIComponent(selector.atlasId)}/${encodeURIComponent(selector.atlasVersion)}`).then(atlas=>{const loaded={atlas,navigator:createAtlasNavigator(atlas),readSources:createAtlasSourceReader(atlas),readContext:createAtlasContextReader(atlas)};installedAtlases.set(key,loaded);return loaded;}).catch(error=>{atlasLoads.delete(key);throw error;}));
-  return atlasLoads.get(key);
+  const loaded=await atlasLoads.get(key);await loaded.navigator.prepareDestination?.(selector.destinationId);return loaded;
 }
 function retainBranch(capsule) {
   if(!capsule?.context.question?.trim())return;
@@ -205,11 +205,13 @@ function action(payload, { followup, operation = 'action', clearForm = false, ex
       } else if (payload.selector || baseSession && currentState(baseSession).selector) {
         const selector=payload.selector || currentState(baseSession).selector,prepared=await ensureAtlas(selector);
         if(ticket!==userIntent||source!==sourceEpoch)return {superseded:true};
-        if(operation==='import'){const imported=importSession(payload,{corpusId:prepared.atlas.manifest.corpusId,computationId:prepared.navigator.computationId});result={session:imported,view:prepared.navigator.computeView(currentState(imported))};}
+        if(operation==='import'){const imported=importSession(payload,{corpusId:prepared.atlas.manifest.corpusId,computationId:prepared.navigator.computationId});await prepared.navigator.prepareState?.(currentState(imported));result={session:imported,view:prepared.navigator.computeView(currentState(imported))};}
         else {
           const same=baseSession?.computationId===prepared.navigator.computationId;
           if(!same)retainBranch(baseCapsule);
           const starting=same?baseSession:prepared.navigator.createSession({selector,intent:payload.intent||'explore',lens:payload.lens||'combined',workRelation:payload.workRelation||'either'});
+          if(same)await prepared.navigator.prepareAction?.(starting,payload);else await prepared.navigator.prepareState?.(currentState(starting));
+          if(ticket!==userIntent||source!==sourceEpoch)return {superseded:true};
           result=!same?{session:starting,view:prepared.navigator.computeView(currentState(starting))}:applyAction(starting,payload,prepared.navigator);
         }
       } else {
@@ -222,7 +224,7 @@ function action(payload, { followup, operation = 'action', clearForm = false, ex
         result = await callWorker(operation, operation === 'action' ? { action: payload, baseSession: baseSession || initialized.session } : payload);
       }
       if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
-      if (followup && !followed) result = transport ? await bridgeFetch('/api/action', { method: 'POST', headers: { 'If-Match': `"${result.revision}"` }, body: JSON.stringify(followup) }, transport) : currentState(result.session).selector ? applyAction(result.session,followup,(await ensureAtlas(currentState(result.session).selector)).navigator) : await callWorker('action', { action: followup, baseSession: result.session });
+      if (followup && !followed) result = transport ? await bridgeFetch('/api/action', { method: 'POST', headers: { 'If-Match': `"${result.revision}"` }, body: JSON.stringify(followup) }, transport) : currentState(result.session).selector ? await (async()=>{const prepared=(await ensureAtlas(currentState(result.session).selector)).navigator;await prepared.prepareAction?.(result.session,followup);return applyAction(result.session,followup,prepared);})() : await callWorker('action', { action: followup, baseSession: result.session });
       if (ticket !== userIntent || source !== sourceEpoch) { if (transport && source === sourceEpoch) { bridgeNeedsRebase = true; bridgeRebaseRevision = result.revision; } return; }
       // Agent changes may have arrived while this request's response was delayed.
       const externalReplacement = queuedBridgeSnapshot && queuedBridgeSnapshot.revision > (result.revision ?? -1);
@@ -268,11 +270,14 @@ function render() {
   refreshResume(empty);
   document.querySelector('.column-navigation').hidden = empty;
   document.querySelector('.reading-pane').hidden = empty;
-  document.querySelector('.navigator-note').hidden = empty || !canAttemptContinuation();
+  document.querySelector('.navigator-note').hidden = empty || Boolean(view.atlas) || !canAttemptContinuation();
   $('current-context').hidden = empty;
+  document.documentElement.classList.toggle('prepared-view',Boolean(view.atlas));
+  if(view.atlas){$('columns').after($('full-question-details'));$('full-question-details').append($('current-context'));}else{document.querySelector('.context-heading>div').insertBefore($('current-context'),$('snapshot-notice'));$('current-context').after($('full-question-details'));}
+  $('full-question-details').querySelector('summary').textContent=view.atlas?'Question summary and full context':'Full context';
   $('atlas-lookup-note').hidden = !state.selector;
   $('current-question').textContent = (view.atlas ? view.atlas.destination.shortTitle || view.atlas.destination.title || displayQuestion : displayExcerpt(displayQuestion,90)) || 'Start a new path';
-  $('full-question-details').hidden = !displayQuestion || $('current-question').textContent === displayQuestion;
+  $('full-question-details').hidden = !view.atlas && (!displayQuestion || $('current-question').textContent === displayQuestion);
   $('full-question-text').textContent = displayQuestion;
   const normalizedQuestion = displayQuestion.trim().replace(/\s+/g,' ');
   const knownSource = activeCapsule.builder.id === NATIVE_BUILDER && [...acceptedCapsules.values()].flatMap(capsule=>capsule.snapshot.view.nodes).find(node=>state.focusIds.includes(node.id) && String(node.evidence?.text || '').slice(0,3900).trim().replace(/\s+/g,' ')===normalizedQuestion);
@@ -519,7 +524,7 @@ function renderEvidence() {
     const evidence = node.evidence || {}, card = el('article', `evidence-card${node.id === selectedId ? ' selected' : ''}`);
     card.dataset.sourceId = node.id;
     const relation = node.retrieval?.workRelation?.kind;
-    card.append(el('p', 'source-meta', `${evidence.date || evidence.year || node.year || 'date unavailable'} · ${labels[evidence.lens || node.lens] || 'Source'}${relation ? ` · ${relation === 'ambiguous' ? 'role uncertain' : relation}` : ''}${node.atlasContextScope==='same_paper_context'?' · Same-paper context; check applicability':node.atlasRole ? ` · ${node.atlasRole==='context-evidence'?'Context evidence (outside current source selection)':'Matches current source selection'}` : ''}`));
+    card.append(el('p', 'source-meta', `${evidence.date || evidence.year || node.year || 'date unavailable'} · ${labels[evidence.lens || node.lens] || 'Source'}${relation ? ` · ${relation === 'ambiguous' ? 'role uncertain' : relation}` : ''}${node.atlasContextScope==='same_paper_context'?' · Same-paper context; check applicability':node.atlasRole ? ` · ${node.atlasRole==='context-evidence'?(node.atlasMembershipChecked===false?'Context witness; full membership not read':'Context evidence (outside current source selection)'):'Matches current source selection'}` : ''}`));
     const title = el('h3'), paperUrl = safeUrl(node.sourceUrl || evidence.url);
     if (paperUrl) { const link = el('a', '', node.title); link.href = paperUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; title.append(link); } else title.textContent = node.title; if(!repeatTitle)card.append(title);
     card.append(el('p', 'passage', evidence.text || node.label));
@@ -639,7 +644,7 @@ $('question-form').addEventListener('submit', event => {
   action({ type: $('transition').value, query, intent: $('intent').value, lens: $('lens').value, workRelation: $('work-relation').value }, { clearForm: true });
 });
 async function lookupPrepared(query) {
-  try {const selector=currentState(session).selector,loaded=await ensureAtlas(selector),results=loaded.navigator.search(query,{limit:15});let host=$('atlas-lookup');if(!host){host=el('section','atlas-lookup');host.id='atlas-lookup';$('question-form').after(host);}host.replaceChildren(el('p','','Title and alias lookup. A connected agent can interpret a longer question and check its scope.'));for(const result of results){const button=el('button','',result.title);button.type='button';button.addEventListener('click',()=>{host.replaceChildren();action({type:'navigate',selector:result.selector,intent:$('intent').value,lens:$('lens').value,workRelation:$('work-relation').value},{clearForm:true});});host.append(button,el('p','',result.summary));}if(!results.length)host.append(el('p','','No title or alias match. Ask your agent to inspect the catalog, or start a source exploration.'));status(`${results.length} title/alias matches; the current destination is unchanged.`);}catch(error){status(error.message,true);}
+  try {const selector=currentState(session).selector,loaded=await ensureAtlas(selector);await loaded.navigator.prepareSearch?.();const results=loaded.navigator.search(query,{limit:15});let host=$('atlas-lookup');if(!host){host=el('section','atlas-lookup');host.id='atlas-lookup';$('question-form').after(host);}host.replaceChildren(el('p','','Title and alias lookup. A connected agent can interpret a longer question and check its scope.'));for(const result of results){const button=el('button','',result.title);button.type='button';button.addEventListener('click',()=>{host.replaceChildren();action({type:'navigate',selector:result.selector,intent:$('intent').value,lens:$('lens').value,workRelation:$('work-relation').value},{clearForm:true});});host.append(button,el('p','',result.summary));}if(!results.length)host.append(el('p','','No title or alias match. Ask your agent to inspect the catalog, or start a source exploration.'));status(`${results.length} title/alias matches; the current destination is unchanged.`);}catch(error){status(error.message,true);}
 }
 $('intent').addEventListener('change', () => { if ($('intent').value === 'using') $('work-relation').value = 'using'; updateOptionsSummary(); });
 $('show-sources').addEventListener('change', () => { if (view && activePanel === 'geometry') renderChart(); });
@@ -679,7 +684,7 @@ async function importFile(file) {
     const payload = JSON.parse(new TextDecoder('utf-8', {fatal:true}).decode(bytes));
     if (payload.kind === CAPSULE_KIND) return acceptCapsule(payload);
     if (payload.view && payload.session) return acceptCapsule(createCapsule(payload));
-    if (payload.kind === 'eigenquestions-session') { if (bridge) throw new Error('Disconnect before restoring a separate session.'); const imported=importSession(payload),selector=currentState(imported).selector;if(selector){const loaded=await ensureAtlas(selector);if(ticket!==userIntent)return {superseded:true};return accept({session:imported,view:loaded.navigator.computeView(currentState(imported))});}return action(payload, {operation:'import'}); }
+    if (payload.kind === 'eigenquestions-session') { if (bridge) throw new Error('Disconnect before restoring a separate session.'); const imported=importSession(payload),selector=currentState(imported).selector;if(selector){const loaded=await ensureAtlas(selector);await loaded.navigator.prepareState?.(currentState(imported));if(ticket!==userIntent)return {superseded:true};return accept({session:imported,view:loaded.navigator.computeView(currentState(imported))});}return action(payload, {operation:'import'}); }
     throw new Error('This file is not a supported contextual view or navigation session.');
   } catch(error) { if(ticket===userIntent)throw error; return {superseded:true}; }
   finally { if(ticket===userIntent){setBusy(false);if(queuedBridgeSnapshot){const latest=queuedBridgeSnapshot;queuedBridgeSnapshot=null;accept(latest);}} }
@@ -763,6 +768,8 @@ async function loadRoute({initial = false} = {}) {
       if(bridge)retainBranch(activeCapsule);
       events?.close();bridge=null;revision=-1;queuedBridgeSnapshot=null;bridgeNeedsRebase=false;actionQueue=Promise.resolve();loadingTask=Promise.resolve();
       $('connection-status').textContent='Browser session';
+      await prepared.navigator.prepareState?.(currentState(next));
+      if(generation!==routeGeneration)return;
       accept({session:next,view:prepared.navigator.computeView(currentState(next))},{keepRoute:true});return;
     }
     if (fragment.has('focus')) { await startBrowser({state:decodeFocus(fragment.get('focus'))}, {keepRoute:true}); return; }
@@ -780,10 +787,10 @@ window.eigenquestionsNavigator = Object.freeze({
   version:'1.0.0',
   ready:() => activeCapsule ? Promise.resolve(machineRead()) : new Promise(resolve=>readyWaiters.push(resolve)),
   read:machineRead,
-  orient:async (query, options={}) => { if(typeof query!=='string')throw new Error('orient needs a question string.');if(options.selector){const prepared=await ensureAtlas(options.selector),oriented=prepared.navigator.createSession(options);return createCapsule({session:oriented,view:prepared.navigator.computeView(currentState(oriented))},{context:{question:currentState(oriented).query,originalQuestion:query}});}await ensureWorker();return createCapsule(await callWorker('orient',{...options,query})); },
-  lookup:async (query,selector=currentState(session)?.selector) => {const prepared=await ensureAtlas(selector);return prepared.navigator.search(query,{limit:15});},
-  describe:async selector => {const prepared=await ensureAtlas(selector);return prepared.navigator.destination(selector.destinationId);},
-  sources:async (selector,{offset=0,limit=20,...filters}={}) => {const prepared=await ensureAtlas(selector),page=prepared.navigator.sources(selector.destinationId,{offset,limit,...filters});return {...page,items:await prepared.readSources(page.items)};},
+  orient:async (query, options={}) => { if(typeof query!=='string')throw new Error('orient needs a question string.');if(options.selector){const prepared=await ensureAtlas(options.selector),oriented=prepared.navigator.createSession(options);await prepared.navigator.prepareState?.(currentState(oriented));return createCapsule({session:oriented,view:prepared.navigator.computeView(currentState(oriented))},{context:{question:currentState(oriented).query,originalQuestion:query}});}await ensureWorker();return createCapsule(await callWorker('orient',{...options,query})); },
+  lookup:async (query,selector=currentState(session)?.selector) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSearch?.();return prepared.navigator.search(query,{limit:15});},
+  describe:async selector => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareDestination?.(selector.destinationId);return prepared.navigator.destination(selector.destinationId);},
+  sources:async (selector,{offset=0,limit=20,...filters}={}) => {const prepared=await ensureAtlas(selector);await prepared.navigator.prepareSources?.(selector.destinationId);const page=prepared.navigator.sources(selector.destinationId,{offset,limit,...filters});return {...page,items:await prepared.readSources(page.items)};},
   connections:async selector => {const prepared=await ensureAtlas(selector);return prepared.navigator.connections(selector.destinationId);},
   context:async (unitId,selector=currentState(session)?.selector,options={}) => {const prepared=await ensureAtlas(selector);return pageSourceContext(await prepared.readContext(unitId),options);},
   evidence:async ids => {if(!Array.isArray(ids)||ids.length>100)throw new Error('Supply at most 100 evidence IDs.');const found=ids.map(id=>activeCapsule?.snapshot.view.nodes.find(node=>node.id===id));if(found.every(Boolean))return structuredClone(found);await ensureWorker();return callWorker('evidence',{ids});},

@@ -1,0 +1,269 @@
+{
+  "kind": "q025-integration-wave-e-qa07-checkpoint",
+  "createdAt": "2026-11-17T10:36:19.679306+00:00",
+  "scope": "Frozen lazy runtime, classification full-label display, bounded context/notes/static-build correctness and QA06/07 lineage. Scientific package remains research-only. Default accepted home and accepted detail-map release pending.",
+  "qa07InputFilesVerifiedUnchanged": 646,
+  "qa07JobId": "61455099",
+  "qa07ArchiveSha256": "85a733266651041f35c89701ffa453ea6b96764125bd564e6a12419a1fbfb659",
+  "validation": {
+    "automatedTests": 72,
+    "qa07Checks": 14,
+    "browserErrors": 0,
+    "fullScaleDestinations": 8928,
+    "membershipRows": 171694,
+    "completeContainmentChecks": 241
+  },
+  "limitations": [
+    "Browser timing readyMs is a sample after network-idle, not a precise first-paint timestamp.",
+    "MCP-to-browser transport proof uses synthetic prepared v1; lazy runtime asynchronous transitions have focused tests and full-scale browser coverage. Repeat connected real-data update in final acceptance.",
+    "Classification labels are nonoverlapping display cards near recorded positions; stored topology/coordinates unchanged. Detailed scientific chart is still unaccepted.",
+    "Mobile choices begin at502.94px. Summary is collapsed, but inherited mobile grid places the disclosure above choices; move it below in the final home/layout wave."
+  ],
+  "files": [
+    {
+      "path": "bin/navigate.mjs",
+      "bytes": 7971,
+      "sha256": "4de45840675a8af6b316f84b7d38f49b03dd33b1783a0fe014aafbd2c42ae4a7"
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 52090,
+      "sha256": "58c37e498794a8f5ea45e1cc0af8c1e0ff0be7bd35d937d47e0fdd5084019653"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "19ce29f5a4fbf838adf9a94ed57137a7412d607e153ad99163e9b76615754120"
+    },
+    {
+      "path": "lib/protocol/bridge.mjs",
+      "bytes": 7632,
+      "sha256": "df61f4520d788c512e52e9895313c4f358637459ab43810982fce2f1e5b0be92"
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "bytes": 7653,
+      "sha256": "9c767d8b4340b1345e247fd9bd76e9ed56c5ed8d79f26d970f3df156f0bf15eb"
+    },
+    {
+      "path": "lib/protocol/runtime.mjs",
+      "bytes": 10044,
+      "sha256": "03c806ac40159cf7102142266e6c462742fe7063df79b54fc12975714460267a"
+    },
+    {
+      "path": "research/q025/integration/LAZY-DATA-CONTRACT.md",
+      "bytes": 4316,
+      "sha256": "2770a77f51f0e822dfcf183cdebd6b80e2440ac57eb8ddba4967ac0610d5e4af"
+    },
+    {
+      "path": "research/q025/integration/lazy-delivery-read-receipt.json",
+      "bytes": 1865,
+      "sha256": "26afabde40ce82040ef5bb5a14da142290cee703046a42cbe9ec9d715a701959"
+    },
+    {
+      "path": "research/q025/integration/probe-lazy-delivery.mjs",
+      "bytes": 3663,
+      "sha256": "c9d69ae694ce5d39891a9826241447aaf4a03321d748b5b52fae0ddb885106dc"
+    },
+    {
+      "path": "research/q025/integration/qa06/browser.log",
+      "bytes": 618,
+      "sha256": "f76169b2a47c58ec943d890515bb92538c3b0d34998f9ddfcb0cfb885878048d"
+    },
+    {
+      "path": "research/q025/integration/qa06/content-manifest.json",
+      "bytes": 136913,
+      "sha256": "db01cf2ecfb137e124a08e862f65a39a87ccb3ce9162639cd1b4f396802aabb7"
+    },
+    {
+      "path": "research/q025/integration/qa06/job.json",
+      "bytes": 1350,
+      "sha256": "829dd6b1b63829c99ef7349141348650a54f2f03741af55e1eb87f5a2037c799"
+    },
+    {
+      "path": "research/q025/integration/qa06/prepared-connected.png",
+      "bytes": 183470,
+      "sha256": "35f689679a69aea8905c9c14b885898161d95a9dceaa12a69935f7795912cc77"
+    },
+    {
+      "path": "research/q025/integration/qa06/prepared-shared.png",
+      "bytes": 186067,
+      "sha256": "eb866595fd2c10a4cd9e9db05ab4bf9475a971d7da4a19c5c97a9dbc00b15ac5"
+    },
+    {
+      "path": "research/q025/integration/qa06/report.json",
+      "bytes": 4447,
+      "sha256": "449655739ecd861a1afac1186be39a26420fb25a97bf4eff8e8fd841987f810a"
+    },
+    {
+      "path": "research/q025/integration/qa06/run.sbatch",
+      "bytes": 2853,
+      "sha256": "8cffb7e7b46df781d256ba1f472b22f29068f11535c9cc2082d268c979db6f00"
+    },
+    {
+      "path": "research/q025/integration/qa07/browser.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/q025/integration/qa07/content-manifest.json",
+      "bytes": 137748,
+      "sha256": "46c7862650512613f87929f30115fde681ad9064ec8a48f33ebbb7206104fc56"
+    },
+    {
+      "path": "research/q025/integration/qa07/job.json",
+      "bytes": 1317,
+      "sha256": "e8609bf5d168a486fb05dc355e93ff3329275be34b23ba77de7ce43565bd4398"
+    },
+    {
+      "path": "research/q025/integration/qa07/physics-classification-desktop.png",
+      "bytes": 202826,
+      "sha256": "b615b4490948496141b5c165af6c5a19fbb37c98ca58847abaf6f5a68d0a7749"
+    },
+    {
+      "path": "research/q025/integration/qa07/physics-classification-mobile.png",
+      "bytes": 194073,
+      "sha256": "b61ed63999ccff9f4a07fd8ea3a92439dd2bf808b90739d69c3f7e075c48ce95"
+    },
+    {
+      "path": "research/q025/integration/qa07/physics-field-drill.png",
+      "bytes": 220268,
+      "sha256": "34e69d7f51a05f8c43c1a012a87a1e4e4fe83f6ef4fdc2ae1130a8c2c4fd70ef"
+    },
+    {
+      "path": "research/q025/integration/qa07/physics-hepth-portal.png",
+      "bytes": 174006,
+      "sha256": "7ed5f922ab61a090a92a0cf52aa8cf437125f44ae8134b4412f77e5374939ede"
+    },
+    {
+      "path": "research/q025/integration/qa07/prepared-connected.png",
+      "bytes": 183470,
+      "sha256": "35f689679a69aea8905c9c14b885898161d95a9dceaa12a69935f7795912cc77"
+    },
+    {
+      "path": "research/q025/integration/qa07/prepared-shared.png",
+      "bytes": 186067,
+      "sha256": "eb866595fd2c10a4cd9e9db05ab4bf9475a971d7da4a19c5c97a9dbc00b15ac5"
+    },
+    {
+      "path": "research/q025/integration/qa07/real-draft-desktop.png",
+      "bytes": 290967,
+      "sha256": "d34e2e0ba25eb71f86612bf2b13f96d44faac560cc529ed8f9c7a2f587c8c676"
+    },
+    {
+      "path": "research/q025/integration/qa07/real-draft-mobile.png",
+      "bytes": 279486,
+      "sha256": "74e819d194bc8bc317c3dd6d1abbe51b007dde4ef3d2c14da659b257d91cae5e"
+    },
+    {
+      "path": "research/q025/integration/qa07/real-method-context.png",
+      "bytes": 340301,
+      "sha256": "d4c0338d09894e86fbd7b38f4895125595fc0994594232303e27962ccd4020f2"
+    },
+    {
+      "path": "research/q025/integration/qa07/report.json",
+      "bytes": 48081,
+      "sha256": "2f9e37c80e07d82cc172bbc50f16e26af2eb22b2f599d9fe1715cf6b0e968ea2"
+    },
+    {
+      "path": "research/q025/integration/qa07/run.sbatch",
+      "bytes": 2853,
+      "sha256": "75be1825c236b35ad9abb11f8df29f94a76d8cf058cf21736852779b7473709e"
+    },
+    {
+      "path": "research/q025/integration/qa07/scale-physics-entrance.png",
+      "bytes": 178505,
+      "sha256": "9ba7a370edd491cbb29c3cb8c1430b27eaf17dac8d0eb9fde4ca1bd993e5dce9"
+    },
+    {
+      "path": "research/q025/integration/qa07/worst-source-context-component.png",
+      "bytes": 675436,
+      "sha256": "528e58f7d039b8f9b0ff42c93d88d70e99be953d031bb52ba826a7a978f9922b"
+    },
+    {
+      "path": "research/q025/integration/wave-e-tests.log",
+      "bytes": 8422,
+      "sha256": "2c6e9e65a94b9ab8f7e073ade57fd697798a2c0b1a753a7a84913f6ea63b55b1"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 12729,
+      "sha256": "64af4c544c6c7b00973094c2c88c7576943c58356f21362001dd8193bd7a453a"
+    },
+    {
+      "path": "scripts/site-check.mjs",
+      "bytes": 8792,
+      "sha256": "9a3f68e0297ccbe149ac7364c7db4618654454cb768e3f8d2d05b92affca713e"
+    },
+    {
+      "path": "tests/integration/classification-layout.test.mjs",
+      "bytes": 1172,
+      "sha256": "68cf153f2337053db6b61842de10b9b38fb8ee9753bbe70187e3a32350847610"
+    },
+    {
+      "path": "tests/integration/lazy-atlas.test.mjs",
+      "bytes": 9438,
+      "sha256": "8601a1b64150bbab3e2f1d5310369ab966ac23547f0fe5064f70c3a6971ed27b"
+    },
+    {
+      "path": "tests/integration/q025_prepared_acceptance.py",
+      "bytes": 34984,
+      "sha256": "d5a221cabef90071e5c07cb0302117e775a45279ecfc643a44dd27a07ee38786"
+    },
+    {
+      "path": "tests/integration/static-atlas-discovery.test.mjs",
+      "bytes": 4010,
+      "sha256": "a827c8bb7432f56bbee3d41ffea271502ef5cc6d646bcdafe23581c39a522f2a"
+    },
+    {
+      "path": "tests/integration/work-note-fallback.test.mjs",
+      "bytes": 2591,
+      "sha256": "96de19c17c7115e1e4c40010570c1aaf36e84feaba9cc7e8ffe1b003a7bd4659"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 88219,
+      "sha256": "235855b1681c523451559d138acd339b3240c83975302d4c8a0618cd28f32650"
+    },
+    {
+      "path": "web/atlas-overview.css",
+      "bytes": 3045,
+      "sha256": "20c01f6d618dc1bb0b3a5c768a6cbf7e65ff3ec5b9ef99782da28a6a3c4efc41"
+    },
+    {
+      "path": "web/atlas-overview.html",
+      "bytes": 2399,
+      "sha256": "ace75b33019b543e5ebaa0654cc0a61f2277f65bd7076f2580e8d63a785188f4"
+    },
+    {
+      "path": "web/atlas-overview.js",
+      "bytes": 16103,
+      "sha256": "cca3f98badcd1aa8ef20490d0421293811f2bee0e7ddff55d8599fc6ea6130a7"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 9409,
+      "sha256": "d06f3339a277fa467b4194cf5982c75ad8d853088a843d2fe53f4f4877d3e54b"
+    },
+    {
+      "path": "web/classification-layout.mjs",
+      "bytes": 2345,
+      "sha256": "1888012dc982d0a06f276ba4d7e38c02f3686bdfac58af7d551ff6899f6d49c7"
+    },
+    {
+      "path": "web/construction.html",
+      "bytes": 8837,
+      "sha256": "8b696c9133169df814e443d7877d0d73967726713edabc283c9f48cd39997a70"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 9998,
+      "sha256": "6bf2a8bdcbda01af8c7509de55e300619f726d4055faa5c2e9ea21645b03848f"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 26859,
+      "sha256": "c1cc8d6c1d565d9b615211a470696d35ceda45d7a4a5bc02f985553da76085f5"
+    }
+  ]
+}

@@ -2,3 +2,5 @@
 #atlas-map-breadcrumb{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;font-size:.9rem;margin:1rem 0}#atlas-map-breadcrumb button{min-height:44px;padding:.4rem .6rem;border:1px solid var(--line);background:white;color:var(--link)}.atlas-map-number{pointer-events:none}.atlas-map-node .atlas-map-dot{vector-effect:non-scaling-stroke}.atlas-map-node:focus .atlas-map-dot{stroke:#111;stroke-width:2}
 
 .atlas-map-node .atlas-map-label{pointer-events:all;cursor:pointer}
+
+.atlas-map-zoom{display:flex;flex:0 0 auto;gap:.5rem;align-items:center}.atlas-map-zoom button{min-width:44px}.atlas-map-pane svg.classification-display{min-height:0;max-height:none}.classification-card .atlas-map-hit{fill:#fafafa;stroke:#c8c8c8;stroke-width:1}.classification-card .atlas-map-label{font-size:14px;fill:#174e8a}.classification-card[aria-current=true] .atlas-map-hit{fill:#f9f1ef;stroke:#9a4747;stroke-width:2}.classification-card:hover .atlas-map-hit,.classification-card:focus .atlas-map-hit{fill:#f0f3f5;stroke:#174e8a;stroke-width:2}.classification-card .atlas-map-label{pointer-events:none}

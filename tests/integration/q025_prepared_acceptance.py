@@ -23,6 +23,7 @@ def main():
     parser.add_argument('--output', required=True)
     parser.add_argument('--node', default='node')
     parser.add_argument('--draft-atlas')
+    parser.add_argument('--scale-atlas')
     parser.add_argument('--source-context-pack')
     parser.add_argument('--source-context-manifest-sha')
     args = parser.parse_args()
@@ -71,6 +72,11 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                 draft_manifest['files']['sourceContextIndex']=pack_manifest['sourceContextIndex'];draft_manifest['files']['sourceContextSummary']=pack_manifest['sourceContextSummary'];(target/'manifest.json').write_text(json.dumps(draft_manifest,separators=(',',':')))
                 report['contextPackage']={'manifestSha256':hashlib.sha256(pack_bytes).hexdigest(),'indexSha256':pack_manifest['sourceContextIndex']['sha256'],'verifiedFiles':len(descriptors),'originalCandidateManifestSha256':original_hash,'testDerivedManifestSha256':hashlib.sha256((target/'manifest.json').read_bytes()).hexdigest(),'scope':'Isolated QA derivative; candidate science/catalog unchanged, full pinned source context staged from existing Slurm artifact.'}
 
+        scale_manifest=None
+        if args.scale_atlas:
+            scale_directory=Path(args.scale_atlas).resolve();scale_manifest=json.loads((scale_directory/'manifest.json').read_text())
+            discovery=json.loads((root/'dist/data/atlas/index.json').read_text());discovery['atlases'].append({'atlasId':scale_manifest['atlasId'],'atlasVersion':scale_manifest['atlasVersion'],'entryDestinationId':scale_manifest['entryDestinationId'],'title':'Full-scale delivery diagnostic','scope':scale_manifest['scope']['description']});(root/'dist/data/atlas/index.json').write_text(json.dumps(discovery))
+            report['staticScaleBuild']=json.loads((root/'dist/build-info.json').read_text())
         connection = temp / 'connection.json'
         atlas_dir = root / 'dist/data/atlas/acceptance-fixture/2026-11-17-test'
         server = subprocess.Popen([args.node, str(root/'bin/navigate.mjs'), 'serve', '--atlas', str(atlas_dir), '--port', '0', '--connection', str(connection)], cwd=root, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
@@ -158,7 +164,9 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                 assert page.locator('#current-question').inner_text()==page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view.atlas.destination.title')
                 assert page.locator('#question').get_attribute('placeholder')=='Find a topic or question'
                 assert not page.locator('#atlas-entrances').is_visible()
+                page.locator('#full-question-details>summary').click()
                 assert page.locator('#atlas-current-summary').inner_text().find('threshold')>=0
+                page.locator('#full-question-details>summary').click()
                 assert page.locator('#directions button.direction').first.bounding_box()['y']<720
                 assert 'draft_not_accepted' in json.dumps(page.evaluate('window.eigenquestionsNavigator.read().capsule'))
                 assert not any('.f32' in item['name'] for item in page.evaluate("performance.getEntriesByType('resource').map(r=>({name:r.name}))"))
@@ -191,7 +199,7 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                 page.evaluate('window.scrollTo(0,0)')
                 layout=page.evaluate("({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,choicesY:document.querySelector('#directions button.direction').getBoundingClientRect().top,choiceHeight:document.querySelector('#directions button.direction').getBoundingClientRect().height})")
                 assert layout['scrollWidth']<=layout['width']+1,layout
-                assert 0<=layout['choicesY']<844 and layout['choiceHeight']>=44,layout
+                assert 0<=layout['choicesY']<570 and layout['choiceHeight']>=44,layout
                 page.locator('#atlas-panel details').filter(has=page.locator('textarea')).locator('summary').click()
                 page.locator('#atlas-panel textarea').fill('Unsaved-button mobile note')
                 page.locator('#directions button.direction').filter(has_text='near-threshold').click();page.wait_for_function("document.documentElement.dataset.destinationId==='q-kk-graviton-threshold-decay'")
@@ -204,6 +212,10 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                     page.set_viewport_size({'width':1180,'height':900});page.goto(overview_url,wait_until='networkidle');page.wait_for_function("document.querySelectorAll('.atlas-map-node').length===17")
                     assert 'classification' in page.locator('#atlas-map-caption').inner_text().lower()
                     report['classificationPerformance']=page.evaluate("({readyMs:performance.now(),longTasks:window.__q025LongTasks,renderedNodes:document.querySelectorAll('.atlas-map-node').length,visibleLabels:[...document.querySelectorAll('.atlas-map-label')].filter(n=>getComputedStyle(n).display!=='none').length,resources:performance.getEntriesByType('resource').map(r=>({name:new URL(r.name).pathname,transferSize:r.transferSize,decodedBodySize:r.decodedBodySize}))})")
+                    assert report['classificationPerformance']['visibleLabels']==17
+                    targets=page.locator('.classification-card .atlas-map-hit').evaluate_all("nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}})")
+                    assert all(t['width']>=44 and t['height']>=44 for t in targets)
+                    assert all(a['x']+a['width']<=b['x']+.5 or b['x']+b['width']<=a['x']+.5 or a['y']+a['height']<=b['y']+.5 or b['y']+b['height']<=a['y']+.5 for i,a in enumerate(targets) for b in targets[i+1:])
                     page.screenshot(path=str(output/'physics-classification-desktop.png'),full_page=True);report['screenshots'].append('physics-classification-desktop.png')
                     page.locator('.atlas-map-node[aria-label="Particles & Fields"] .atlas-map-hit').click();page.wait_for_function("document.querySelector('#atlas-selected h2').textContent==='Particles & Fields'")
                     page.screenshot(path=str(output/'physics-field-drill.png'),full_page=True);report['screenshots'].append('physics-field-drill.png')
@@ -215,7 +227,8 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                     page.locator('#atlas-selected>a').click();page.wait_for_function("document.documentElement.dataset.destinationId==='q-kk-graviton-thermal-production'")
                     passed('classification frontier drills through exact children and explicit hep-th portal to draft source destination without inventing detailed coordinates')
                     page.set_viewport_size({'width':390,'height':844});page.goto(overview_url,wait_until='networkidle');page.wait_for_function("document.querySelectorAll('.atlas-map-node').length===17")
-                    overview_layout=page.evaluate("({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,nodes:document.querySelectorAll('.atlas-map-node').length})");assert overview_layout['scrollWidth']<=overview_layout['width']+1
+                    overview_layout=page.evaluate("({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,nodes:document.querySelectorAll('.atlas-map-node').length,visibleLabels:[...document.querySelectorAll('.atlas-map-label')].filter(n=>getComputedStyle(n).display!=='none').length,zoomY:[...document.querySelectorAll('.atlas-map-zoom button')].map(n=>n.getBoundingClientRect().y)})");assert overview_layout['scrollWidth']<=overview_layout['width']+1
+                    assert overview_layout['visibleLabels']==17 and len(set(overview_layout['zoomY']))==1
                     page.screenshot(path=str(output/'physics-classification-mobile.png'),full_page=True);report['screenshots'].append('physics-classification-mobile.png')
                     passed('mobile classification map retains all17 selectable fields with no page overflow',layout=overview_layout)
                 if args.source_context_pack:
@@ -230,12 +243,55 @@ await writeFile('dist/data/atlas/index.json',JSON.stringify({schemaVersion:'1.0.
                     page.screenshot(path=str(output/'worst-source-context-component.png'),full_page=True);report['screenshots'].append('worst-source-context-component.png')
                     passed('largest source shard remains complete internally while agent output and real disclosure component remain bounded',**component,defaultPageBytes=len(json.dumps(worst_page).encode()),scope='Isolated source-context component fixture; it does not invent a scientific destination or change navigation.')
 
+            if scale_manifest:
+                scale_selector={'kind':'atlas-destination','atlasId':scale_manifest['atlasId'],'atlasVersion':scale_manifest['atlasVersion'],'destinationId':scale_manifest['entryDestinationId']}
+                def scale_url(destination):return origin+'/#atlas='+scale_manifest['atlasId']+'&version='+scale_manifest['atlasVersion']+'&destination='+destination
+                def performance_receipt():return page.evaluate("({readyMs:performance.now(),longTasks:window.__q025LongTasks,domElements:document.querySelectorAll('*').length,resources:performance.getEntriesByType('resource').map(r=>({name:new URL(r.name).pathname,duration:r.duration,transferSize:r.transferSize,decodedBodySize:r.decodedBodySize}))})")
+                page.set_viewport_size({'width':1180,'height':900});page.goto(scale_url(scale_manifest['entryDestinationId']),wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='classification:physics'")
+                report['scalePhysicsEntrance']=performance_receipt();paths=[r['name'] for r in report['scalePhysicsEntrance']['resources']]
+                assert not any('fine-index' in p or 'fine-lookup' in p or 'destination-memberships' in p or '/vectors' in p for p in paths)
+                assert page.locator('#directions button.direction').count()==17
+                page.screenshot(path=str(output/'scale-physics-entrance.png'),full_page=True);report['screenshots'].append('scale-physics-entrance.png')
+                known_unit=draft_catalog['destinations'][next(i for i,d in enumerate(draft_catalog['destinations']) if d['id']=='q-kk-decay-linear-cosmology')]['evidenceIds'][0]
+                fine_id='source-question:'+known_unit.removeprefix('unit:');page.goto(scale_url(fine_id),wait_until='networkidle');page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=fine_id)
+                report['scaleDirectFine']=performance_receipt();paths=[r['name'] for r in report['scaleDirectFine']['resources']]
+                assert any('fine-lookup-' in p for p in paths) and not any('fine-index.json' in p or 'destination-memberships' in p for p in paths)
+                fine_before=page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view')
+                parent=next(c['destinationId'] for c in fine_before['atlas']['connections'] if c['navigationKind']=='source_question' and c['traversal']=='incoming')
+                page.goto(scale_url(parent),wait_until='networkidle');page.wait_for_function('id=>document.documentElement.dataset.destinationId===id',arg=parent)
+                parent_before=page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view');assert any(c['destinationId']==fine_id for c in parent_before['atlas']['connections'])
+                parent_selector={**scale_selector,'destinationId':parent}
+                page.evaluate("async selector=>{const api=window.eigenquestionsNavigator,parent=api.read();await api.navigate({type:'navigate',selector},{expectedRevision:parent.revision});}",{**scale_selector,'destinationId':fine_id})
+                assert not any('fine-index.json' in r['name'] for r in performance_receipt()['resources'])
+                report['scaleLocalDrill']=performance_receipt()
+                lookup=page.evaluate("async selector=>window.eigenquestionsNavigator.lookup('dark dimension',selector)",scale_selector);assert lookup
+                report['scaleGlobalLookup']=performance_receipt();assert any('fine-index.json' in r['name'] for r in report['scaleGlobalLookup']['resources'])
+                assert page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view')==fine_before
+                page.goto(scale_url('diagnostic:all-source-questions'),wait_until='networkidle');page.wait_for_function("document.documentElement.dataset.destinationId==='diagnostic:all-source-questions'")
+                root_before=page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view');assert root_before['atlas']['membershipCount']==8473 and root_before['atlas']['contextMembershipCount']==17937
+                report['scaleAllSourcesParent']=performance_receipt();assert not any('destination-memberships' in r['name'] for r in report['scaleAllSourcesParent']['resources'])
+                root_selector={**scale_selector,'destinationId':'diagnostic:all-source-questions'}
+                filtered=page.evaluate("async selector=>window.eigenquestionsNavigator.sources(selector,{offset:0,limit:5,lens:'physical_question',constraints:{yearMin:2024,excludeIds:[]}})",root_selector)
+                assert filtered['total']>5 and all(r['year']>=2024 and r['source']['id']==r['unitId'] for r in filtered['items'])
+                report['scaleFilteredSources']=performance_receipt();assert any('destination-memberships' in r['name'] for r in report['scaleFilteredSources']['resources'])
+                assert page.evaluate('window.eigenquestionsNavigator.read().capsule.snapshot.view')==root_before
+                methods=page.evaluate("async selector=>window.eigenquestionsNavigator.sources(selector,{offset:0,limit:5,lens:'method',includeContext:true})",root_selector)
+                assert methods['contextTotal']==17937 and all(r['associationScope']=='same_paper_context' for r in methods['items'])
+                actual_using=page.evaluate("async selector=>window.eigenquestionsNavigator.sources(selector,{offset:0,limit:5,lens:'method',workRelation:'using'})",root_selector);assert actual_using['total']==0
+                static_url=origin+'/atlas/'+scale_manifest['atlasId']+'/'+scale_manifest['atlasVersion']+'/'+fine_id+'.html'
+                static_body=page.request.get(static_url);assert static_body.ok and known_unit in static_body.text()
+                passed('full-scale physics, direct fine URL, local drill, global lookup and large-parent filtering use separate pinned lazy reads with stable views',destinations=8928,primary=8473,context=17937,staticFineReadable=True)
+
             assert not errors,errors
             passed('no browser page errors',errorCount=len(errors))
             browser.close()
         report['passed']=True
     except Exception as error:
         report['passed']=False;report['error']=str(error)
+        try:
+            report['failedDom']=page.evaluate("({title:document.querySelector('#current-question')?.textContent,summaryText:document.querySelector('#atlas-current-summary')?.textContent,summaryInnerText:document.querySelector('#atlas-current-summary')?.innerText,detailsOpen:document.querySelector('#full-question-details')?.open,status:document.querySelector('#status')?.textContent})")
+            page.screenshot(path=str(output/'failure.png'),full_page=True);report['screenshots'].append('failure.png')
+        except Exception:pass
         raise
     finally:
         (output/'report.json').write_text(json.dumps(report,indent=2)+'\n')

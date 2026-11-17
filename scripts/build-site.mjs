@@ -1,3 +1,5 @@
+import {createHash} from 'node:crypto';
+import {loadAtlas,createAtlasNavigator} from '../lib/geometry/prepared-atlas.mjs';
 import { cp, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -15,34 +17,48 @@ for (const [from, to] of [['lib/geometry', 'lib/geometry'], ['lib/protocol/sessi
 const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 await mkdir(path.join(out,'atlas'),{recursive:true});
 await writeFile(path.join(out,'atlas/index.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Physics atlas — Eigenquestions</title><h1>Physics atlas</h1><p>No prepared catalog is installed in this retained release.</p><p><a href="/">Open the source explorer</a> · <a href="/docs/agent-interface.md">Agent interface</a></p></html>');
-try {
-  const index=JSON.parse(await readFile(path.join(out,'data/atlas/index.json'),'utf8'));
+let atlasIndex;
+try {atlasIndex=JSON.parse(await readFile(path.join(out,'data/atlas/index.json'),'utf8'));}
+catch(error){if(error.code!=='ENOENT')throw error;}
+if(atlasIndex){
+  const index=atlasIndex;
   const links=[];
   for(const entry of index.atlases || []) {
     if(![entry.atlasId,entry.atlasVersion].every(x=>/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,199}$/.test(x)))throw new Error('Invalid atlas index path');
     const directory=path.join(out,'data/atlas',entry.atlasId,entry.atlasVersion),manifest=JSON.parse(await readFile(path.join(directory,'manifest.json'),'utf8'));
     if(!/^[a-zA-Z0-9][a-zA-Z0-9._-]*\.json$/.test(manifest.files.catalog.path))throw new Error('Invalid atlas catalog path');
-    const catalog=JSON.parse(await readFile(path.join(directory,manifest.files.catalog.path),'utf8'));
-    const contextIndex=manifest.files.sourceContextIndex?JSON.parse(await readFile(path.join(directory,manifest.files.sourceContextIndex.path),'utf8')):null;
+    const atlas=await loadAtlas(directory,{readText:filename=>readFile(filename,'utf8')}),catalog=atlas.catalog,navigator=createAtlasNavigator(atlas);
+    await navigator.prepareSearch?.();
+    const checkedMemberships=await navigator.validateCompleteMemberships?.();if(checkedMemberships)console.log(`Validated lazy atlas membership: ${JSON.stringify(checkedMemberships)}`);
+    const destinationIndex=new Map(catalog.destinations.map(d=>[d.id,d])),incident=new Map();for(const relation of catalog.relations)for(const id of [relation.source,relation.target]){if(!incident.has(id))incident.set(id,[]);incident.get(id).push(relation);}
+    const checkedFiles=new Set();
+    async function checkedFile(descriptor,json=false){
+      if(!descriptor||!/^[a-zA-Z0-9][a-zA-Z0-9._/-]*\.json(?:\.gz)?$/.test(descriptor.path||'')||descriptor.path.split('/').includes('..')||!/^[a-f0-9]{64}$/.test(descriptor.sha256||''))throw new Error('Invalid declared atlas file');
+      const body=await readFile(path.join(directory,descriptor.path));if(descriptor.bytes!==undefined&&descriptor.bytes!==body.length)throw new Error(`Atlas file size mismatch: ${descriptor.path}`);if(createHash('sha256').update(body).digest('hex')!==descriptor.sha256)throw new Error(`Atlas file checksum mismatch: ${descriptor.path}`);checkedFiles.add(descriptor.path);return json?JSON.parse(body.toString('utf8')):undefined;
+    }
+    if(manifest.files.logicalValidation)await checkedFile(manifest.files.logicalValidation);
+    const contextIndex=manifest.files.sourceContextIndex?await checkedFile(manifest.files.sourceContextIndex,true):null;
     const contextBuckets=new Map(),sourceContextFiles=new Map();
-    for(const source of catalog.sources){
+    async function indexSourceContext(source){
+      if(sourceContextFiles.has(source.id))return;
       let dictionary=contextIndex;
-      if(contextIndex?.unitIndex){const prefix=/^unit:([a-f0-9]{2})/.exec(source.id)?.[1],bucket=prefix&&contextIndex.unitIndex.shards[prefix];if(!bucket)continue;if(!contextBuckets.has(prefix))contextBuckets.set(prefix,JSON.parse(await readFile(path.join(directory,bucket.path),'utf8')));dictionary=contextBuckets.get(prefix);}
-      const reference=dictionary?.units?.[source.id],file=reference?.shardId?dictionary.shards[reference.shardId]:reference;if(file)sourceContextFiles.set(source.id,{file,locator:reference.sourceLocator});
+      if(contextIndex?.unitIndex){const prefix=/^unit:([a-f0-9]{2})/.exec(source.id)?.[1],bucket=prefix&&contextIndex.unitIndex.shards[prefix];if(!bucket)return;if(!contextBuckets.has(prefix))contextBuckets.set(prefix,await checkedFile(bucket,true));dictionary=contextBuckets.get(prefix);}
+      const reference=dictionary?.units?.[source.id],file=reference?.shardId?dictionary.shards[reference.shardId]:reference;if(file){if(!checkedFiles.has(file.path))await checkedFile(file);sourceContextFiles.set(source.id,{file,locator:reference.sourceLocator});}
     }
     const publicDirectory=path.join(out,'atlas',entry.atlasId,entry.atlasVersion);await mkdir(publicDirectory,{recursive:true});
-    for(const d of catalog.destinations){
+    for(const indexed of catalog.destinations){
+      await navigator.prepareDestination?.(indexed.id);const d=navigator.destination(indexed.id);
       if(!/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,199}$/.test(d.id))throw new Error('Invalid destination path');
-      const hash=new URLSearchParams({atlas:entry.atlasId,version:entry.atlasVersion,destination:d.id}),related=catalog.relations.filter(r=>r.source===d.id||r.target===d.id);
-      const sources=d.evidenceIds.map(id=>catalog.sources.find(s=>s.id===id)).filter(Boolean);
+      const hash=new URLSearchParams({atlas:entry.atlasId,version:entry.atlasVersion,destination:d.id}),related=incident.get(d.id)||[];
+      const sources=navigator.getEvidence(d.evidenceIds).filter(source=>!source.error);for(const source of sources)await indexSourceContext(source);
       const sourceLinks=sources.map(s=>`<li>${/^https?:\/\//.test(s.sourceUrl||'')?`<a href="${escapeHtml(s.sourceUrl)}">${escapeHtml(s.title)}</a>`:escapeHtml(s.title)}<p>${escapeHtml(s.evidence.text)}</p><p>Source ID: ${escapeHtml(s.id)}</p>${sourceContextFiles.get(s.id)?.locator?`<p>Archived source locator: ${escapeHtml(JSON.stringify(sourceContextFiles.get(s.id).locator))}</p>`:''}${sourceContextFiles.get(s.id)?.file?`<p><a href="/data/atlas/${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}/${escapeHtml(sourceContextFiles.get(s.id).file.path)}">Optional complete source context (${sourceContextFiles.get(s.id).file.encoding==='gzip'?'gzip JSON':'JSON'})</a>. Exact source-object relations retain their own scope; they do not imply relations between entire topics.</p>`:''}</li>`).join('');
-      const html=`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(d.title)} — Eigenquestions</title><link rel="stylesheet" href="/styles.css"><main style="max-width:70rem;margin:auto;padding:2rem"><a href="/atlas/index.html">Physics atlas</a><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.question)}</p><p>${escapeHtml(d.summary)}</p><p><a href="/#${hash}">Open this destination in the explorer</a></p><h2>Scope</h2>${Object.entries(d.scope).map(([key,values])=>`<h3>${escapeHtml(key)}</h3><ul>${values.map(value=>`<li>${escapeHtml(value)}</li>`).join('')}</ul>`).join('')}<h2>Methods and reading coverage</h2><p>${escapeHtml((d.methods||[]).map(m=>typeof m==='string'?m:m.description||m.label||JSON.stringify(m)).join('; '))}</p><p>${escapeHtml(typeof d.readingLimit==='string'?d.readingLimit:JSON.stringify(d.readingLimit||d.readingCoverage||'Not separately recorded'))}</p><h2>Connections</h2><ul>${related.map(r=>{const target=r.source===d.id?r.target:r.source,record=catalog.destinations.find(x=>x.id===target);return `<li><a href="${encodeURIComponent(target)}.html">${escapeHtml(record.title)}</a> — ${escapeHtml(r.type)} (${r.source===d.id?'outgoing':'incoming'} recorded relation)<p>${escapeHtml(r.rationale)}</p></li>`;}).join('')}</ul><h2>Listed sources</h2><ul>${sourceLinks}</ul><p>Scientific status: ${escapeHtml(d.scientificStatus)}. Placement: ${escapeHtml(d.placementStatus)}.</p><p>Listed sources support this record; they do not claim exhaustive literature coverage. <a href="/data/atlas/${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}/manifest.json">Versioned data manifest</a></p></main></html>`;
+      const html=`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(d.title)} — Eigenquestions</title><link rel="stylesheet" href="/styles.css"><main style="max-width:70rem;margin:auto;padding:2rem"><a href="/atlas/index.html">Physics atlas</a><h1>${escapeHtml(d.title)}</h1><p>${escapeHtml(d.question)}</p><p>${escapeHtml(d.summary)}</p><p><a href="/#${hash}">Open this destination in the explorer</a></p><h2>Scope</h2>${Object.entries(d.scope).map(([key,values])=>`<h3>${escapeHtml(key)}</h3><ul>${(Array.isArray(values)?values:[values]).map(value=>`<li>${escapeHtml(value)}</li>`).join('')}</ul>`).join('')}<h2>Methods and reading coverage</h2><p>${escapeHtml((d.methods||[]).map(m=>typeof m==='string'?m:m.description||m.label||JSON.stringify(m)).join('; '))}</p><p>${escapeHtml(typeof d.readingLimit==='string'?d.readingLimit:JSON.stringify(d.readingLimit||d.readingCoverage||'Not separately recorded'))}</p><h2>Connections</h2><ul>${related.map(r=>{const target=r.source===d.id?r.target:r.source,record=destinationIndex.get(target);return `<li><a href="${encodeURIComponent(target)}.html">${escapeHtml(record.title)}</a> — ${escapeHtml(r.type)} (${r.source===d.id?'outgoing':'incoming'} recorded relation)<p>${escapeHtml(r.rationale)}</p></li>`;}).join('')}</ul><h2>Listed sources</h2><ul>${sourceLinks}</ul><p>Scientific status: ${escapeHtml(d.scientificStatus)}. Placement: ${escapeHtml(d.placementStatus)}.</p><p>Listed sources support this record; they do not claim exhaustive literature coverage. <a href="/data/atlas/${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}/manifest.json">Versioned data manifest</a></p></main></html>`;
       await writeFile(path.join(publicDirectory,`${d.id}.html`),html);
     }
     links.push(`<li><a href="${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}/${encodeURIComponent(entry.entryDestinationId)}.html">${escapeHtml(entry.title)}</a><p>${escapeHtml(entry.scope)}</p></li>`);
   }
   await mkdir(path.join(out,'atlas'),{recursive:true});await writeFile(path.join(out,'atlas/index.html'),`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prepared physics atlas — Eigenquestions</title><link rel="stylesheet" href="/styles.css"><main style="max-width:70rem;margin:auto;padding:2rem"><h1>Prepared physics atlas</h1><p>Source-backed destinations and shared connections. Read scopes and evidence before mapping a question; title matching is not semantic interpretation. Coverage is dated and uneven.</p><ul>${links.join('')}</ul><a href="/">Open the explorer</a></main></html>`);
-}catch(error){if(error.code!=='ENOENT')throw error;}
+}
 await mkdir(path.join(out, 'docs'), { recursive: true });
 for (const name of ['site.md', 'agent-interface.md', 'navigation-contract.md', 'geometry.md', 'geometry-experiments.md', 'stored-views-operations.md', 'Q-006-overview-contract.md']) {
   try { await cp(path.join(root, 'docs', name), path.join(out, 'docs', name)); }

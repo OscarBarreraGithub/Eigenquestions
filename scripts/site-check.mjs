@@ -1,3 +1,4 @@
+import {loadAtlas,createAtlasNavigator} from '../lib/geometry/prepared-atlas.mjs';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
@@ -60,7 +61,8 @@ export async function checkSite(directory = path.join(root, 'dist')) {
       const atlasDirectory=path.join(directory,'data/atlas',entry.atlasId,entry.atlasVersion),prepared=JSON.parse(await readFile(path.join(atlasDirectory,'manifest.json'),'utf8'));
       assert.match(prepared.files.catalog.path,/^[a-zA-Z0-9][a-zA-Z0-9._-]*\.json$/);
       const catalog=await readFile(path.join(atlasDirectory,prepared.files.catalog.path));assert.equal(createHash('sha256').update(catalog).digest('hex'),prepared.files.catalog.sha256,'Prepared catalog hash mismatch');verifiedAtlasFiles+=2;
-      assert.ok(entries.includes(`atlas/${entry.atlasId}/${entry.atlasVersion}/${entry.entryDestinationId}.html`),'Prepared atlas lacks static readable entrance');
+      const loaded=await loadAtlas(atlasDirectory,{readText:filename=>readFile(filename,'utf8')}),navigator=createAtlasNavigator(loaded);await navigator.prepareSearch?.();
+      const assetSet=new Set(entries);for(const destination of loaded.catalog.destinations)assert.ok(assetSet.has(`atlas/${entry.atlasId}/${entry.atlasVersion}/${destination.id}.html`),`Prepared atlas lacks static readable destination ${destination.id}`);
     }
   }
   const config = await readFile(path.join(root, 'wrangler.toml'), 'utf8');

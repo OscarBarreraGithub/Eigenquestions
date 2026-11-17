@@ -1,0 +1,79 @@
+{
+  "kind": "q025-lazy-delivery-read-receipt",
+  "createdAt": "2026-11-17T10:28:14.239Z",
+  "environment": "Local Node structural/read probe; not browser timing or scientific acceptance",
+  "adapterSha256": "58c37e498794a8f5ea45e1cc0af8c1e0ff0be7bd35d937d47e0fdd5084019653",
+  "manifestSha256": "874c75e8312c0d056de44b19a5295100938b61bae5de01b656f0f5bfa6443b0a",
+  "entry": {
+    "reads": [
+      {
+        "path": "manifest.json",
+        "bytes": 742
+      },
+      {
+        "path": "catalog.json",
+        "bytes": 783784
+      },
+      {
+        "path": "destination-details-entry-0000.json",
+        "bytes": 2390
+      }
+    ],
+    "directions": 17,
+    "bytes": 786916
+  },
+  "knownKKFine": {
+    "destinationId": "source-question:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+    "reads": [
+      {
+        "path": "manifest.json",
+        "bytes": 742
+      },
+      {
+        "path": "catalog.json",
+        "bytes": 783784
+      },
+      {
+        "path": "fine-lookup-be.json",
+        "bytes": 34227
+      },
+      {
+        "path": "destination-details-fine-0084.json",
+        "bytes": 301018
+      }
+    ],
+    "capsuleBytes": 10708
+  },
+  "allSourcesParent": {
+    "initialReads": [
+      {
+        "path": "manifest.json",
+        "bytes": 742
+      },
+      {
+        "path": "catalog.json",
+        "bytes": 783784
+      },
+      {
+        "path": "destination-details-entry-0000.json",
+        "bytes": 2390
+      },
+      {
+        "path": "destination-details-authored-0059.json",
+        "bytes": 337214
+      }
+    ],
+    "primary": 8473,
+    "context": 17937,
+    "capsuleBytes": 62059,
+    "viewStableAfterPaging": true
+  },
+  "completeValidation": {
+    "destinations": 8928,
+    "completeMemberships": 242,
+    "checkedContainment": 241,
+    "primaryRows": 54638,
+    "contextRows": 117056
+  },
+  "passed": true
+}

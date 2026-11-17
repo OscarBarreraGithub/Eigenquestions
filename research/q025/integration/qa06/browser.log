@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa06/project/tests/integration/q025_prepared_acceptance.py", line 297, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa06/project/tests/integration/q025_prepared_acceptance.py", line 167, in main
+    assert page.locator('#atlas-current-summary').inner_text().find('threshold')>=0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

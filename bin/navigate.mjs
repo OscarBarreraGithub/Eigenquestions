@@ -19,8 +19,9 @@ try {
     const corpusId=loaded.atlas?.manifest.corpusId || loaded.corpus.manifest.corpusId;
     const initial=options.atlas ? (options.destination ? {selector:{...navigator.initialState.selector,destinationId:options.destination}} : {}) : {query:options.query??''};
     if(options.atlas&&options.query)throw new Error('Prepared mode uses --destination; use search for title/alias lookup.');
+    if(options.atlas)await navigator.prepareState?.({...navigator.initialState,...initial});
     const runtime = createRuntime(navigator,corpusId,initial);
-    if (options.session) runtime.import(JSON.parse(await readFile(options.session,'utf8')));
+    if (options.session) await runtime.import(JSON.parse(await readFile(options.session,'utf8')));
     const bridge = await startBridge({runtime,staticDir:options.static??path.join(PROJECT_ROOT,'dist'),port:Number(options.port??4317),allowedOrigins:(options.origins??'https://eigenquestions.com').split(',')});
     const filename = options.connection??DEFAULT_CONNECTION;
     const connection = {schemaVersion:'1.0.0',url:bridge.url,token:bridge.token,pid:process.pid};
@@ -31,10 +32,11 @@ try {
     process.once('SIGINT',close);process.once('SIGTERM',close);
   } else if (command === 'compute') {
     const loaded=options.atlas?await loadLocalAtlas(options.atlas):await loadLocalNavigator(options.corpus),{navigator}=loaded;
+    if(options.atlas)await navigator.prepareState?.({...navigator.initialState,...(options.destination?{selector:{...navigator.initialState.selector,destinationId:options.destination}}:{})});
     const runtime=createRuntime(navigator,loaded.atlas?.manifest.corpusId||loaded.corpus.manifest.corpusId,options.atlas&&options.destination?{selector:{...navigator.initialState.selector,destinationId:options.destination}}:{});
     if(options.atlas&&options.query)throw new Error('Prepared mode uses --destination; use search for title/alias lookup.');
-    if(options.session)runtime.import(JSON.parse(await readFile(options.session,'utf8')));
-    const snapshot=options.query!==undefined?runtime.action(actionFromOptions('navigate',options)):runtime.snapshot();
+    if(options.session)await runtime.import(JSON.parse(await readFile(options.session,'utf8')));
+    const snapshot=options.query!==undefined?await runtime.action(actionFromOptions('navigate',options)):runtime.snapshot();
     if(options.out)await writeFile(options.out,JSON.stringify(snapshot,null,2)+'\n');else print(snapshot);
   } else {
     const connection=await readConnection(options.connection);

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": "Q-025",
+  "checks": [
+    {
+      "name": "prepared route renders without native vectors or graph shards",
+      "passed": true
+    },
+    {
+      "name": "manual alternate routes converge; browser Back restores path; local work note follows destination without public export",
+      "passed": true
+    },
+    {
+      "name": "read-only orientation leaves path intact and stale result cannot replace newer destination",
+      "passed": true
+    },
+    {
+      "name": "compact URL and reload restore exact prepared destination",
+      "passed": true
+    },
+    {
+      "name": "actual stdio MCP mutation reaches prepared browser through SSE and receives state/revision render acknowledgement",
+      "passed": true,
+      "destinationId": "shared"
+    }
+  ],
+  "screenshots": [
+    "prepared-shared.png",
+    "prepared-connected.png"
+  ],
+  "scope": "Isolated Slurm Chromium, synthetic prepared atlas, actual shared controller and local MCP bridge. Not the owner Chrome and not scientific acceptance.",
+  "contextPackage": {
+    "manifestSha256": "c86bc90966007c28ce40523348e51e4ace4d20d62354f79928133d371f77c6f5",
+    "indexSha256": "22772f2c76dd7a98a79e407656191df74b781d9446950ac0038bbb2a27db4f10",
+    "verifiedFiles": 6735,
+    "originalCandidateManifestSha256": "138749846ec27dd4e61d86d58bc0c976db67f10823b43faec343ff6657aae87f",
+    "testDerivedManifestSha256": "3295df5f8eb9c6f89dc61ad214abfe01de09b41b64b5818c45bd61fa298d6c3c",
+    "scope": "Isolated QA derivative; candidate science/catalog unchanged, full pinned source context staged from existing Slurm artifact."
+  },
+  "staticScaleBuild": {
+    "format": "eigenquestions-static-build-v1",
+    "files": 9551,
+    "bytes": 296683635,
+    "largestAsset": {
+      "path": "data/atlas/q025-full-scale-delivery-diagnostic/2026-11-17-diagnostic-v1/destination-memberships-0000.json",
+      "bytes": 15029623
+    },
+    "staticAssets": true,
+    "serverIncludedInAssets": false,
+    "apiRoutes": [
+      "/api/views"
+    ]
+  },
+  "fixturePerformance": {
+    "readyMs": 613.0999999046326,
+    "longTasks": [],
+    "resources": [
+      {
+        "name": "/styles.css",
+        "duration": 7.5,
+        "transferSize": 27159,
+        "decodedBodySize": 26859
+      },
+      {
+        "name": "/app.js",
+        "duration": 9.200000047683716,
+        "transferSize": 88473,
+        "decodedBodySize": 88173
+      },
+      {
+        "name": "/lib/protocol/session.mjs",
+        "duration": 10.600000143051147,
+        "transferSize": 11748,
+        "decodedBodySize": 11448
+      },
+      {
+        "name": "/chart-labels.mjs",
+        "duration": 10.099999904632568,
+        "transferSize": 2200,
+        "decodedBodySize": 1900
+      },
+      {
+        "name": "/lib/protocol/presentation.mjs",
+        "duration": 10.299999952316284,
+        "transferSize": 1805,
+        "decodedBodySize": 1505
+      },
+      {
+        "name": "/lib/protocol/capsule.mjs",
+        "duration": 16.09999990463257,
+        "transferSize": 12777,
+        "decodedBodySize": 12477
+      },
+      {
+        "name": "/lib/geometry/prepared-atlas.mjs",
+        "duration": 10.5,
+        "transferSize": 51957,
+        "decodedBodySize": 51657
+      },
+      {
+        "name": "/atlas-panel.mjs",
+        "duration": 10.399999856948853,
+        "transferSize": 9601,
+        "decodedBodySize": 9301
+      },
+      {
+        "name": "/lib/protocol/context-page.mjs",
+        "duration": 15.899999856948853,
+        "transferSize": 7316,
+        "decodedBodySize": 7016
+      },
+      {
+        "name": "/source-context.mjs",
+        "duration": 16,
+        "transferSize": 6508,
+        "decodedBodySize": 6208
+      },
+      {
+        "name": "/lib/geometry/prepared-identity.mjs",
+        "duration": 4.800000190734863,
+        "transferSize": 478,
+        "decodedBodySize": 178
+      },
+      {
+        "name": "/data/atlas/acceptance-fixture/2026-11-17-test/manifest.json",
+        "duration": 6.700000047683716,
+        "transferSize": 818,
+        "decodedBodySize": 518
+      },
+      {
+        "name": "/data/atlas/index.json",
+        "duration": 5,
+        "transferSize": 1216,
+        "decodedBodySize": 916
+      },
+      {
+        "name": "/data/atlas/acceptance-fixture/2026-11-17-test/catalog.json",
+        "duration": 2.3999998569488525,
+        "transferSize": 4565,
+        "decodedBodySize": 4265
+      }
+    ]
+  },
+  "passed": false,
+  "error": ""
+}

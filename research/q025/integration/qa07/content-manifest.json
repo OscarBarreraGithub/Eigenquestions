@@ -1,0 +1,3247 @@
+{
+  "schemaVersion": "q025-integration-inputs/1",
+  "createdAt": "2026-11-17T10:28:48.289261+00:00",
+  "baseCommit": "041f808c88a718d8e6e3fc0a76a59b09ddcd9a40",
+  "includesUncommittedFiles": true,
+  "scope": "QA07 exact runtime+frozen native data+research-only classification/KK preview+full-scale lazy delivery fixture. Source context reused by pinned manifest, no duplicate190MBupload. No private raw source or owner profile.",
+  "files": [
+    {
+      "path": "bin/mcp-navigator.mjs",
+      "bytes": 992,
+      "sha256": "26cde01349716d90955ae3991a2ef7e1f3bb6e500f029b0f745b902542c6c458"
+    },
+    {
+      "path": "bin/navigate.mjs",
+      "bytes": 7971,
+      "sha256": "4de45840675a8af6b316f84b7d38f49b03dd33b1783a0fe014aafbd2c42ae4a7"
+    },
+    {
+      "path": "data/navigation/graph-000.json",
+      "bytes": 617936,
+      "sha256": "dd1030c26f50190c2ed4869732b633719e592b62195c02cb7063169b56d66d42"
+    },
+    {
+      "path": "data/navigation/graph-001.json",
+      "bytes": 619422,
+      "sha256": "05d7ea62f9a3fa7b7c65dcd5e9ef52a266fcf8fca85293162361150f8f233b4c"
+    },
+    {
+      "path": "data/navigation/graph-002.json",
+      "bytes": 620011,
+      "sha256": "c659de73c2bac2e392ac0b56519b402faeb58106a511add84b480fdae798606c"
+    },
+    {
+      "path": "data/navigation/graph-003.json",
+      "bytes": 619408,
+      "sha256": "6b5741fbfa8f37792608d1ee8ab54e72d94b5987db3d02590425ced8e50e30f4"
+    },
+    {
+      "path": "data/navigation/graph-004.json",
+      "bytes": 648122,
+      "sha256": "ee0d60fc0e67b8bde36a8aa1bb223521e7a713828d97ace4d9434f44518d2dd2"
+    },
+    {
+      "path": "data/navigation/graph-005.json",
+      "bytes": 653126,
+      "sha256": "75a851b167a82ba1fbab8c6203573c5e758bbc102ff0a3a7bf0fab9000ec2aba"
+    },
+    {
+      "path": "data/navigation/graph-006.json",
+      "bytes": 653438,
+      "sha256": "2cad199e444a8195ff12fd7ab09c85dd940230d46450b48d5907da4c38fccf6e"
+    },
+    {
+      "path": "data/navigation/graph-007.json",
+      "bytes": 653186,
+      "sha256": "c01c78baa03969aa4fe9421938686dd34526c7cd755db574330678d4f3badcf6"
+    },
+    {
+      "path": "data/navigation/graph-008.json",
+      "bytes": 653359,
+      "sha256": "c6d68771fa0e553cd930e2be10d451be6bb7aab3e8dbdec69cc9fb5e1cefca10"
+    },
+    {
+      "path": "data/navigation/graph-009.json",
+      "bytes": 653645,
+      "sha256": "706ecc1e26a063e8639772ceabef6f28ad0379b58440e1a36663769f5608f42d"
+    },
+    {
+      "path": "data/navigation/graph-010.json",
+      "bytes": 653691,
+      "sha256": "9c07a2387236e43342e1a5fcf6b583f803e3295ad188e180cdde5a5dafe22f7a"
+    },
+    {
+      "path": "data/navigation/graph-011.json",
+      "bytes": 653266,
+      "sha256": "edef911179a5fbb78c11f9674097e84fa3652cc2247e4788a158220106aa4f44"
+    },
+    {
+      "path": "data/navigation/graph-012.json",
+      "bytes": 584916,
+      "sha256": "9699c6a6caddbce46611c5a50491c8fdb2d1a942a70daabc764671e2fc66ef54"
+    },
+    {
+      "path": "data/navigation/manifest.json",
+      "bytes": 10631,
+      "sha256": "ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839"
+    },
+    {
+      "path": "data/navigation/papers.json",
+      "bytes": 2772900,
+      "sha256": "d27fa82c789ac01fc529d83602dea76451cf5edd37dd4eecfc009402dbbdce0b"
+    },
+    {
+      "path": "data/navigation/scopes.json",
+      "bytes": 2398722,
+      "sha256": "1271cd4e78063dc15a759bf86c96e244ac13c9e8b4697dd120e07adb2a77b8f6"
+    },
+    {
+      "path": "data/navigation/units-000.json",
+      "bytes": 2320566,
+      "sha256": "e8b54bcca051204033a8b1b6cc30fe37d2112cdb48775de929e6a76a5ee59794"
+    },
+    {
+      "path": "data/navigation/units-001.json",
+      "bytes": 2283340,
+      "sha256": "4eb8058d42d6ff23e1d4b8f453fd00980331a614f47e524065bf719a9516f015"
+    },
+    {
+      "path": "data/navigation/units-002.json",
+      "bytes": 2309830,
+      "sha256": "bc6dd41792b2369396266907e9157f3ce396d862e2ce0a1f1daac5ab375831e1"
+    },
+    {
+      "path": "data/navigation/units-003.json",
+      "bytes": 2342997,
+      "sha256": "e24f49243a3bbfcded9425991b52a90b35fd2637cf113808ad1bda9cd355ce92"
+    },
+    {
+      "path": "data/navigation/units-004.json",
+      "bytes": 2417359,
+      "sha256": "65b31ac1860947fed2a4f54d0bbdee09362c05015aa5ceb2360456bd016cc9af"
+    },
+    {
+      "path": "data/navigation/units-005.json",
+      "bytes": 2450398,
+      "sha256": "f530d6aed90116f80249015317a20ea20a3ab5dd639a123bf9affc2955da0259"
+    },
+    {
+      "path": "data/navigation/units-006.json",
+      "bytes": 2406114,
+      "sha256": "216f7d46303ed234bac5dd3baaceccbe5d72d0557e7e00692c811d99724dc90d"
+    },
+    {
+      "path": "data/navigation/units-007.json",
+      "bytes": 2404072,
+      "sha256": "2ad61105672e07214844e9254743e89ae9dd4dfe20b120e934bee19a9e3adc6c"
+    },
+    {
+      "path": "data/navigation/units-008.json",
+      "bytes": 2423587,
+      "sha256": "5b4f3ef945bd1fbd22ba8dd13f6941924cc47355d94972a51072da048f401bee"
+    },
+    {
+      "path": "data/navigation/units-009.json",
+      "bytes": 2451616,
+      "sha256": "88cb4eca3657f4aeabfc4abd32206a7ca9b6983c7b0b98a37ef8b8138b908384"
+    },
+    {
+      "path": "data/navigation/units-010.json",
+      "bytes": 2477415,
+      "sha256": "149bd6fd28755f5f61f1d0885eaf4d331c5c6d288e63495d11f7f25a547d705b"
+    },
+    {
+      "path": "data/navigation/units-011.json",
+      "bytes": 2468400,
+      "sha256": "6064a25c88d5b47854fef143e8a55562405044da7f6fca523af8eeb373af7af3"
+    },
+    {
+      "path": "data/navigation/units-012.json",
+      "bytes": 2194038,
+      "sha256": "852a33a1473533b1894a3016cd63820d73ac1242874398443c20f252c6a8560b"
+    },
+    {
+      "path": "data/navigation/vectors-000.f32",
+      "bytes": 3145728,
+      "sha256": "38ec3b6a98e27d6396d96b478c8e20050ab95fc2a84eda6031f517c44580f5c5"
+    },
+    {
+      "path": "data/navigation/vectors-001.f32",
+      "bytes": 3145728,
+      "sha256": "f98b6d4174ec913f546efb76ea7432d7a59ca62e6eab382d3c985e317c88636a"
+    },
+    {
+      "path": "data/navigation/vectors-002.f32",
+      "bytes": 3145728,
+      "sha256": "0da761a22dbb02a77aac4c1a9b2163a4b01f2f59ab8971cd26c0046d69fa2794"
+    },
+    {
+      "path": "data/navigation/vectors-003.f32",
+      "bytes": 3145728,
+      "sha256": "88f135a40d7c435fa444c1d28f8c4dca65f8f6eb201d581c1f1af4a2d28bf5b8"
+    },
+    {
+      "path": "data/navigation/vectors-004.f32",
+      "bytes": 3145728,
+      "sha256": "27813f5d86082931158f7b2afd839eff6f9b70c013848717bb3d06f5efffabd1"
+    },
+    {
+      "path": "data/navigation/vectors-005.f32",
+      "bytes": 3145728,
+      "sha256": "9ad9a39c12387d23be68188e467b931d9dc9817a5a47c12b09c4ecdb7b8744a6"
+    },
+    {
+      "path": "data/navigation/vectors-006.f32",
+      "bytes": 3145728,
+      "sha256": "762d2449e377bd29f1fd37dc27d4e84633b288d8abb71fc77878ae9612c14759"
+    },
+    {
+      "path": "data/navigation/vectors-007.f32",
+      "bytes": 3145728,
+      "sha256": "9fb1ab042a7eb02bd6dd3038dfea1a6a45f0b72d3a1bb24f06922778a8354c08"
+    },
+    {
+      "path": "data/navigation/vectors-008.f32",
+      "bytes": 3145728,
+      "sha256": "cfed48dcbf2d91cccfcaca18f182a94f5293829719357ba97fd3ad3df9b4209a"
+    },
+    {
+      "path": "data/navigation/vectors-009.f32",
+      "bytes": 3145728,
+      "sha256": "d74f465019a5221158911c99e3927cc8957ab31dde639ab7aed8203fd18dfad4"
+    },
+    {
+      "path": "data/navigation/vectors-010.f32",
+      "bytes": 3145728,
+      "sha256": "756eab785487bb57da33050dfa374a0a87a2a4c59bbab614b2c94d2873d20abf"
+    },
+    {
+      "path": "data/navigation/vectors-011.f32",
+      "bytes": 3145728,
+      "sha256": "5277bdff56dae576c183d4a6b2637c00bc799f9cfb2e7878ba7c64754d29897a"
+    },
+    {
+      "path": "data/navigation/vectors-012.f32",
+      "bytes": 2817024,
+      "sha256": "4a9a35064e57bc1a16a9c2cb86e0c5946a6e80101fd85bf89a614e47e2021cbc"
+    },
+    {
+      "path": "data/overview/details-000.json",
+      "bytes": 108305,
+      "sha256": "03857d44798c5514ea418ee2edf744ac00b9d9c082cb5ae466ac7a788a7eabb8"
+    },
+    {
+      "path": "data/overview/details-001.json",
+      "bytes": 114696,
+      "sha256": "0c18c979454ac1285634780e0be887b278063fd4391d1ae888dc4acf3832b908"
+    },
+    {
+      "path": "data/overview/details-002.json",
+      "bytes": 112481,
+      "sha256": "876f72131cb12aaa061bffdbe2c2f7a3171531b98098140feaba5dd8ad3aeb63"
+    },
+    {
+      "path": "data/overview/details-003.json",
+      "bytes": 110952,
+      "sha256": "a7c35b6ad3493a05197ecd8bda282eb01ed8332073b8ecaab305758e955c4680"
+    },
+    {
+      "path": "data/overview/details-004.json",
+      "bytes": 105416,
+      "sha256": "d107e7b04f55f04c0a61fa591bc7f6e5fe4c07b49a89d3ed01099aa011cee55a"
+    },
+    {
+      "path": "data/overview/details-005.json",
+      "bytes": 102101,
+      "sha256": "2915b766d8b7588805711d91da3407f96fc816c51a5acda2862ed760c595cd83"
+    },
+    {
+      "path": "data/overview/details-006.json",
+      "bytes": 104685,
+      "sha256": "4e6ec2f1eb119bbce53025aa877fbdbe34400a989f4281b2446e334b65e09cf2"
+    },
+    {
+      "path": "data/overview/details-007.json",
+      "bytes": 107653,
+      "sha256": "8f2fdd345da7b5d4b34c5c9dc871099745c7fae63dd574fbf6d3ac672f95081e"
+    },
+    {
+      "path": "data/overview/details-008.json",
+      "bytes": 102435,
+      "sha256": "79c3966db448d3348982b7208e3f21c295c3d3fb06b6ba8808f3e974cfafe0e2"
+    },
+    {
+      "path": "data/overview/details-009.json",
+      "bytes": 108142,
+      "sha256": "7a237a66a90a952034433b9c8f3816b8e609ba2aaf4741600cb666369a554872"
+    },
+    {
+      "path": "data/overview/details-010.json",
+      "bytes": 107269,
+      "sha256": "01435b9bf63b714ccf65a05e19fe24ac2eb960bce411e4b063ccfda3240822ac"
+    },
+    {
+      "path": "data/overview/details-011.json",
+      "bytes": 114296,
+      "sha256": "f0530e445f0115978923e4a88fc8defe0b63abb1610eb09b23aa6e3ea40996b9"
+    },
+    {
+      "path": "data/overview/details-012.json",
+      "bytes": 115474,
+      "sha256": "4c02b9cadf5de64b902937d1f90d2df9b87b6202b789accc2dcdbe354e481640"
+    },
+    {
+      "path": "data/overview/details-013.json",
+      "bytes": 114499,
+      "sha256": "486b51940df56ed5f44026505ab6a18d3179e4499d3819bf5ccf0079d7428f25"
+    },
+    {
+      "path": "data/overview/details-014.json",
+      "bytes": 114313,
+      "sha256": "e1920da8bad412312a6ec749f4e50cff264c6f51602476eb185f7b52f0ed7d3d"
+    },
+    {
+      "path": "data/overview/details-015.json",
+      "bytes": 109887,
+      "sha256": "6a96da4d248cddc9db913d84bad437d947de87211ad0abf46c9476f5a4b55afa"
+    },
+    {
+      "path": "data/overview/details-016.json",
+      "bytes": 59835,
+      "sha256": "da99b6f6fba8b32b517e08f34d4dd93abf8ddc1c01bd8a762f90417b9c29bf31"
+    },
+    {
+      "path": "data/overview/manifest.json",
+      "bytes": 6070,
+      "sha256": "eec8095619349a8ba60745d74c7d2a65c6f7e005ede45671dfecc7a103fa2a5c"
+    },
+    {
+      "path": "data/overview/map.json",
+      "bytes": 1852731,
+      "sha256": "64d25f86b2477a34779b5ea5365b34ccfd093899db5c6b40816c8515a5a7d929"
+    },
+    {
+      "path": "docs/Q-006-overview-contract.md",
+      "bytes": 12954,
+      "sha256": "5ac78882f4ba7781cfb666fa43916e1ccf989c05f28a721cd97a6e0369c486df"
+    },
+    {
+      "path": "docs/agent-interface.md",
+      "bytes": 22544,
+      "sha256": "a7360e0cbd8e50bd0447790b0a5bba64b7a1da88bc545ec64bc6062776b54d68"
+    },
+    {
+      "path": "docs/geometry-experiments.md",
+      "bytes": 11026,
+      "sha256": "89c04fe53ae8b26f5bbdf292a3a4e8d5b370e8e89fcc7e76703743c006cff158"
+    },
+    {
+      "path": "docs/geometry.md",
+      "bytes": 11086,
+      "sha256": "a9f917e9a196e14fd356ae0067db4a2b8991a0b62f2b09d586cbb7193d1760e1"
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "bytes": 19553,
+      "sha256": "89049e72d92001852839904c627382fad0597d1d8ba0e2e1ebb30ac8fad3c546"
+    },
+    {
+      "path": "docs/site.md",
+      "bytes": 10876,
+      "sha256": "43e18e96de1dbfaa361133c14a0aee5cc196d33389dbbf2b0cb738e5bd57853a"
+    },
+    {
+      "path": "docs/stored-views-operations.md",
+      "bytes": 10783,
+      "sha256": "382e4e1a35b380b3d8432b0dd751f5525ddd02462ab56f4215aa7065654f761a"
+    },
+    {
+      "path": "lib/geometry/identity.mjs",
+      "bytes": 271,
+      "sha256": "1df7b44d35f2e2b6a8e05dd2aa0c189b0ab8b734a9eeb658ef34d7a77b13b718"
+    },
+    {
+      "path": "lib/geometry/index.mjs",
+      "bytes": 28043,
+      "sha256": "c399a502d33a71f34114f0ae9c7adfd4737d1c87954ad0271996dc367a959f34"
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 52090,
+      "sha256": "58c37e498794a8f5ea45e1cc0af8c1e0ff0be7bd35d937d47e0fdd5084019653"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "19ce29f5a4fbf838adf9a94ed57137a7412d607e153ad99163e9b76615754120"
+    },
+    {
+      "path": "lib/protocol/bridge.mjs",
+      "bytes": 7632,
+      "sha256": "df61f4520d788c512e52e9895313c4f358637459ab43810982fce2f1e5b0be92"
+    },
+    {
+      "path": "lib/protocol/capsule.mjs",
+      "bytes": 12477,
+      "sha256": "1dda5be1672ae074ac8fd1825d1a7d21a92ff5c9f7098bd98364ebeac4b33b78"
+    },
+    {
+      "path": "lib/protocol/context-page.mjs",
+      "bytes": 7016,
+      "sha256": "7e4a14a3a2b23c23850cc60a757c065da854161583dced95a0eea992b4cce004"
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "bytes": 7653,
+      "sha256": "9c767d8b4340b1345e247fd9bd76e9ed56c5ed8d79f26d970f3df156f0bf15eb"
+    },
+    {
+      "path": "lib/protocol/presentation.mjs",
+      "bytes": 1505,
+      "sha256": "5ea37ca61ef23c01a70282928b0070d063f32b1f7e55329d0fd1da57a68932c6"
+    },
+    {
+      "path": "lib/protocol/runtime.mjs",
+      "bytes": 10044,
+      "sha256": "03c806ac40159cf7102142266e6c462742fe7063df79b54fc12975714460267a"
+    },
+    {
+      "path": "lib/protocol/session.mjs",
+      "bytes": 11448,
+      "sha256": "f6d48b69379af041a9d24a3b36717734687532b22def536a452c4909c376bdc6"
+    },
+    {
+      "path": "package.json",
+      "bytes": 791,
+      "sha256": "c47a194c76db9e18ec85ca32b9614d321c994a6907aba5aa03de9199269bd87d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/catalog.json",
+      "bytes": 783784,
+      "sha256": "9aafb1c526ddf46a6654cb17ab80d8a0936e475050fdf4b615b2aa6a25003fa5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/delivery-manifest.json",
+      "bytes": 85602,
+      "sha256": "2779b9b4eae5dada2351f9f499cf907b2ce991fc10bb0216d5780dcaf55a7a49"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0000.json",
+      "bytes": 259070,
+      "sha256": "62f25fcffe2db592a6f8f98dc2b835732eaa26320778a97a8dfe2fb56bf1629a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0001.json",
+      "bytes": 404543,
+      "sha256": "df08f8366d57266ec1554abbe9932fe1755179216daedfd9cfb15d6fe4ad19b2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0002.json",
+      "bytes": 297966,
+      "sha256": "30624f0e3bba31559a78eecab2580627625055da027efa319b472a80fc4f86e4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0003.json",
+      "bytes": 327882,
+      "sha256": "5332f2fb04ecb2e0bc6c7bec38713911e8c62c31a6ab15add626f1b2e036ed06"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0004.json",
+      "bytes": 345479,
+      "sha256": "b8d4d7041e4a1d6c70d0f83f7b82df9762452cbffa398011ab71dba3797cec90"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0005.json",
+      "bytes": 344388,
+      "sha256": "c8780a1d0253224a5c0a84a2ddec6d79c0b79529d3ada45a4849e8365433ff5c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0006.json",
+      "bytes": 316109,
+      "sha256": "57b337b5d0a44d1e095a4f647d23be48a6e57ddd45846dfb6e5e052378f79c21"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0007.json",
+      "bytes": 256031,
+      "sha256": "a5af640ec471755ee52401f839d7f212945babd135eb051004aba1db4bb0a77c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0008.json",
+      "bytes": 445190,
+      "sha256": "78a1e447bf056b273227578e66530b4f102cbcd81c66007b53b2959852f9f0f1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0009.json",
+      "bytes": 434281,
+      "sha256": "fb0f5f2252ad89a38c8f744b22afa76e4dc689c59e1107e4c58ace0475746a4a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0010.json",
+      "bytes": 380611,
+      "sha256": "a806ca5920c585c53bfe734f92bfb8bf145980b7f53a7eea45b047096f5c4ad4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0011.json",
+      "bytes": 341318,
+      "sha256": "7091fa5cd69479ef15509437762078d9767e1c6edf4fe442d83f54b8bdea2c74"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0012.json",
+      "bytes": 248332,
+      "sha256": "6382cb24414dee2788ee4ab4bb927bc7d0ddfe43b0c50f0d956290a0b38afc11"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0013.json",
+      "bytes": 533036,
+      "sha256": "ec94f6faab55ce83942dd191b3288e3e9a7faee1de7f2422c37c9615f740eb2f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0014.json",
+      "bytes": 478160,
+      "sha256": "7f1e2c692b8f9c841973c50cc45a89e84c63be0f35cd047d51d5cc1c62c99242"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0015.json",
+      "bytes": 560982,
+      "sha256": "854775e0bf6c6d80e5807364802e3747335432638f899f4f393d771a3f33431e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0016.json",
+      "bytes": 358199,
+      "sha256": "0638e111fae2fadbb19e5fbb692a6f2b79fdd48a0ee6fad41efc09ba85098b66"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0017.json",
+      "bytes": 497756,
+      "sha256": "a17d4a3df1755aa64b18ac5570b817a2809fa25462269c604c6fbd23b8f86526"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0018.json",
+      "bytes": 484548,
+      "sha256": "e34d6ed9d45636a6fae640fc027ddd7f023e7d56dbf41e0163a7cf4529276889"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0019.json",
+      "bytes": 485492,
+      "sha256": "26a78dffb81d63f21c7140d2c45e1f55a6e5d413e817278bd988afd257e6b649"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0020.json",
+      "bytes": 435559,
+      "sha256": "bdf89035141f4a042d749fcf4469349e618a4e06768757a09934b389a9687c3e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0021.json",
+      "bytes": 253457,
+      "sha256": "d400cbe637ef23989f55a7a9df6b41cfa09905c6d136c7acdd204625c097d627"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0022.json",
+      "bytes": 467501,
+      "sha256": "7c8abcb721d877a815d1e1ff5824ea126bf7596f585660110d9703b810ca619c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0023.json",
+      "bytes": 406198,
+      "sha256": "e5127d4cf344f04c70e4cf9cd5e442f554c52e4f8758ca55cc7fce64bd60f275"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0024.json",
+      "bytes": 339714,
+      "sha256": "20039bde776a94aaf0ea48c92209365b89eb33dac9e3822d5e7c781afe2b9317"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0025.json",
+      "bytes": 374685,
+      "sha256": "42e153758534aae4da1f95f4072faf5619c94d058fb75bae4edb4f8a8eb3b606"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0026.json",
+      "bytes": 344150,
+      "sha256": "7895a1309ac81d3caec16cb7162779c49d47e977e7224b54f45e322703ffb5a6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0027.json",
+      "bytes": 371749,
+      "sha256": "025c2cbf61369540e8abca3e0cd1528f0da05ebc07b69c865e03e37050a99a86"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0028.json",
+      "bytes": 371746,
+      "sha256": "0ccff225fd4941add9fc854c39bc52e757fcde8422a12215971b470ec20736b9"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0029.json",
+      "bytes": 580281,
+      "sha256": "7cdb725404388f0f74a39685e370299822b7fa85b4884bc9aefc900d3dc0e583"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0030.json",
+      "bytes": 365173,
+      "sha256": "bc4618b43149c24b7cf5694d1fdc44854a6200eeb59c72d65567fd0cfee87cbe"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0031.json",
+      "bytes": 453404,
+      "sha256": "80a6f0542353098cb05abc51fe6d451832f71af0808924f8a0f484843692580a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0032.json",
+      "bytes": 405469,
+      "sha256": "8f740c3c26a988d188a59b825a64774e8870ee4319dc39d78fc9457d6ce74a47"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0033.json",
+      "bytes": 551745,
+      "sha256": "f241dc89ab44d4a551b19cd35c8b1f4be53f0aaa1588b1f80cc0e109432c711d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0034.json",
+      "bytes": 384312,
+      "sha256": "bc3cf468070b822030cbeefcde7a86d269e94336a9772deb5bac64a1e39d1544"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0035.json",
+      "bytes": 384147,
+      "sha256": "72fc4abbe22f124bc95e342f26ac44c4e5d526e8d17dc6597909c7283a3db497"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0036.json",
+      "bytes": 348076,
+      "sha256": "c262a4fabe09f7bd9081eace3e0ab3c4bbb6daddce27cbd9eff731ea276fd5e0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0037.json",
+      "bytes": 281305,
+      "sha256": "0dfdc3be7451a4d88b2b8f4d1f263939c3dc084da6a46a814c061e23b32c5c87"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0038.json",
+      "bytes": 406327,
+      "sha256": "47776fe6b2aa6d8552d6da01e025ba798a453d7e03280878f6f74be5f021f4d6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0039.json",
+      "bytes": 387061,
+      "sha256": "247dfbe6726655d87f7d2621093eabd983b431705406ad339adbd6deec8895c3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0040.json",
+      "bytes": 364030,
+      "sha256": "ce1a3e57c99a77dbb9603652398b925a96530788425f008db3c478112dd5e9b3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0041.json",
+      "bytes": 319294,
+      "sha256": "690f330edc48d756fe57c4047e2a81b4bbb3c3a61c0fd178c1caf168ac991ff7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0042.json",
+      "bytes": 330223,
+      "sha256": "eaecb4f5dfe54d71cdf756d20ef03342abff5d82a2e3f9f01516ae3afd65e47e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0043.json",
+      "bytes": 355105,
+      "sha256": "92a9ccc9bef27d91b980713677d8006f56e87555085fbf1712738d7156538478"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0044.json",
+      "bytes": 324811,
+      "sha256": "40ed99e9f288ba7a92af490f537594c57af38c072a1db6eda8aa18b1c798a1cc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0045.json",
+      "bytes": 413414,
+      "sha256": "882755def1e6dd206feb0989798fcd7b604af470c547f7babbf20a14654ebf81"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0046.json",
+      "bytes": 406676,
+      "sha256": "9cbdf796ff3c0fedca136fff300ef9405466e8354c720f7b28bbbfc86d8920fb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0047.json",
+      "bytes": 359020,
+      "sha256": "d9430b88480f2f0dafa1e367baa916655babb5801c2b73d7d3af4cb704980e21"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0048.json",
+      "bytes": 351261,
+      "sha256": "f06101b30222fd4841f687e6495b64d775bb1e635191720de98fb64179c8161b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0049.json",
+      "bytes": 460209,
+      "sha256": "88e9ddd08b84138028c2223cb4ed177e6497cb14f4d4cf45458f6cb3215c2ed5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0050.json",
+      "bytes": 394704,
+      "sha256": "2898c9f075f35b00918a32cd8a5b4ef1368710463a5820325bc95658f8ad40f1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0051.json",
+      "bytes": 382201,
+      "sha256": "548f93b79fd68cc0662e0e57b90cffdb637e3cf80d4ea0cee80eab8efa876549"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0052.json",
+      "bytes": 386671,
+      "sha256": "c50ed223048544637c646464337c88afcdcd27d9bae904cb1923e5833642a3a4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0053.json",
+      "bytes": 325782,
+      "sha256": "26a846e0dc57063276ef0a609514a687516226f836c16978c18297cc13f24ad4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0054.json",
+      "bytes": 465540,
+      "sha256": "03ef85726dc07db801e48ad2e95b6965e40f9756f62bcf5fbb703194adb1b4f5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0055.json",
+      "bytes": 452957,
+      "sha256": "fdc1de4b5b4262ccbad5f410521d9740282fad7de3c24669ce2837857bb98951"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0056.json",
+      "bytes": 411517,
+      "sha256": "325babcde9434220feb4f2393dea42c3851e34f22723039a5625510f200648ab"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0057.json",
+      "bytes": 363159,
+      "sha256": "56cb3922d2deedf2aaa0e5e397c26ca3df678a902be191e39548a675e0fa3386"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0058.json",
+      "bytes": 375306,
+      "sha256": "962a92ac246ebda7008731e8c6c4ba0a198649e52e3515dff476bc50385840d5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-authored-0059.json",
+      "bytes": 337214,
+      "sha256": "c59c5a18213dece351e293724509feeceb9f492ecad751dac6157e3ca9b3f325"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-entry-0000.json",
+      "bytes": 2390,
+      "sha256": "66d55d5690d84d21d1526e2cfbe89c7afd67e218180ebc4d68d825f28d289080"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0000.json",
+      "bytes": 301876,
+      "sha256": "23f0aa87d05c4a8bb17618673b098839bf49be277814be195e8b443ad75cbeef"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0001.json",
+      "bytes": 301390,
+      "sha256": "38a55b6752f17f30e4f7f904055c8f0ffb4f203d0ca1931a4e1a58da74afcbad"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0002.json",
+      "bytes": 301540,
+      "sha256": "de504b1ab7d52f76895a9cba77930efbad3d0cc8c53a7e5fc271ab7e1b8ed76a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0003.json",
+      "bytes": 301332,
+      "sha256": "5d9c2d6c616d48f3330501fd3994847774ef466969c3aa4cb42576077fa2e828"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0004.json",
+      "bytes": 301517,
+      "sha256": "f4c2a88c4d70c34a167027425fbff4ca959cdb69bd57a64b92e3d0fc92bf43f5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0005.json",
+      "bytes": 302537,
+      "sha256": "0ea233e8cbf1446135a0d33371e9a3eb60e5547f14e536e5d79bd1dbc77a535a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0006.json",
+      "bytes": 299430,
+      "sha256": "861cc767b0a6208730ee288ea43cc4a62b876efcb5a1f74700b3e0287d17c051"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0007.json",
+      "bytes": 299453,
+      "sha256": "f3d30ee98194e01c7ba598502e8c2d7e2e4269c427e8f5e5480506107ad3723a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0008.json",
+      "bytes": 300671,
+      "sha256": "afc3721d8193452167e0703ca5e4aadf953fe14c391950bf615188d7095ab69b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0009.json",
+      "bytes": 300974,
+      "sha256": "8b4f3a71bf4c0ed741f2b888d24d22835921ac0d6262e1a2096c3e3d04a69709"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0010.json",
+      "bytes": 300427,
+      "sha256": "48aa549200e22047ef0dced5ddeb098e9d14633f15bc81198494fc79fa10657a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0011.json",
+      "bytes": 298511,
+      "sha256": "942fc2397244fb3690d7a939de6cd3495cea52a8a63f366886c8f32b1521a0b3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0012.json",
+      "bytes": 300147,
+      "sha256": "72aeb4c22d644b3d43468ef54dd9331759233abb2799bea1c7c9658ed18344de"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0013.json",
+      "bytes": 300397,
+      "sha256": "f7efa4241893e0eada8ed5815dabeaee608d23c7429178ce2f499025c133c017"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0014.json",
+      "bytes": 299923,
+      "sha256": "632405bb4f5e343c67522568ef76683b2da5449a4b7b5d198d8d3b9858541182"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0015.json",
+      "bytes": 300985,
+      "sha256": "2bc3172e4047eb4605be1123a8e78a1c848254ac1faaf96368fefba5c7e1ff40"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0016.json",
+      "bytes": 300195,
+      "sha256": "a0fe3e6383a03367df8fda6430a0a0f4561aca016811ca3a7533aea01bd44c03"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0017.json",
+      "bytes": 300490,
+      "sha256": "7fbb87d9205cfd4b744c1f978c5c41343f9e390c2aa40bfc1cf4613a67b93f14"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0018.json",
+      "bytes": 299101,
+      "sha256": "e25b7d146128e45138acafacf46377eaee7beff9106bbe87769785cccd6ea9ac"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0019.json",
+      "bytes": 302514,
+      "sha256": "d9244ff1d48ab57ea881f6f01ab9829c17029d7ebe2b10b1e710cf4d794a21d6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0020.json",
+      "bytes": 299226,
+      "sha256": "f48a912adccf8822cd959bd32b09e3f4bb460382a79dfb39e4011867dfe20d11"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0021.json",
+      "bytes": 298854,
+      "sha256": "d3f4e8529f7aa6eb504693d70af027d9a457f1c22163aa674b77143261671eb5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0022.json",
+      "bytes": 300433,
+      "sha256": "0e195a5980ce8b94ead26273a24399b3c9e8c4459a2a5b0dc82a2337d55ed5e1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0023.json",
+      "bytes": 299724,
+      "sha256": "35a384bb443d1e5b0d94a8126e499c538190f2bc5584f1024456a3adfebd1388"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0024.json",
+      "bytes": 302604,
+      "sha256": "c76f31094d5bececd2a631f9df06a821d6067164dc9c10b19fba77b9bb980aba"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0025.json",
+      "bytes": 300543,
+      "sha256": "c4a3715bbc9f30c5b804159c18125d196465e031f9a7ddd4c0ef5ce55c91fb5c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0026.json",
+      "bytes": 301982,
+      "sha256": "cf0c8902231b34d6eb8a18aedf20c286660ebd19c5a815d3239aa2b39a81f6aa"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0027.json",
+      "bytes": 300635,
+      "sha256": "55872528a96eaa8afd374c0bd6aec8be496e2c10735b46a11f703e574c393cf3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0028.json",
+      "bytes": 302590,
+      "sha256": "a24ce311289b73e033da82f50cbe30b1a26d80a9e611f7427e48d498517f2b3d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0029.json",
+      "bytes": 298522,
+      "sha256": "1648e5eb66b3e4e9a9e010effa63881329312101b2fbabfdddaeed9bd51bbcca"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0030.json",
+      "bytes": 299930,
+      "sha256": "229c02122f03ec162eaa8a167ec49ae56476690a455cfdfe8e73e768ad3e38b2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0031.json",
+      "bytes": 300271,
+      "sha256": "65de0bf0a2ff8256a94ddf47bd03fd3d57c78ea2c3f247becc590a8832add1cf"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0032.json",
+      "bytes": 300632,
+      "sha256": "a367525e6327a3990138c33fbbd9d964e9b4c4c99d1ac0614535ac982acf1136"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0033.json",
+      "bytes": 301544,
+      "sha256": "23f982953bb1c04df889a04feb64af19055c8a18decce0d21057e9efda6c0a38"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0034.json",
+      "bytes": 298259,
+      "sha256": "28abc58dc5a103431c0b2e09b7c7ab4da5ecaec17b294e67000fcce396a50d1e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0035.json",
+      "bytes": 299929,
+      "sha256": "45175ac068ff1e8cc08fe38c4d1340f405dc138a76c8f363562b95467a51a6c5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0036.json",
+      "bytes": 300396,
+      "sha256": "9c793f3e05bf91f826fee72b3e993d610be69a2034cb5bdc8731cbfa60bdd712"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0037.json",
+      "bytes": 302376,
+      "sha256": "ba741b7dd6a377afe922c765a114f5ca35d0f89934ebbd1db09760046c86c872"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0038.json",
+      "bytes": 299549,
+      "sha256": "976e2ad5a54482189daadf499ee8462fc7368ddc62bd38b03ee754aa4b60323f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0039.json",
+      "bytes": 301321,
+      "sha256": "9a19136ef4e87c9573f129eb0bd7f544cf267a2decb78e295188a48170d72be3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0040.json",
+      "bytes": 300693,
+      "sha256": "13641e21ebd9700ff84f9c79e016946dfec855a60284a36b1af071a8e6ebf9e7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0041.json",
+      "bytes": 301581,
+      "sha256": "53c1ca591e4a2d7c959d856e2facc4bb6465fc79374c1f53b9c1f1a666f7b761"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0042.json",
+      "bytes": 299513,
+      "sha256": "fcf9b9fc8a313960592fdb3be37f64d4508314a797bc36a57202b0848678045a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0043.json",
+      "bytes": 299113,
+      "sha256": "9f869dafa5ed84ad58a73db6300a7667538638d2ebd7dc4a208c0c93c55cb823"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0044.json",
+      "bytes": 300480,
+      "sha256": "a4f0b70e19b59a74ceb65130527445e50aa711c68014dd17302abc1905b48f7e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0045.json",
+      "bytes": 303075,
+      "sha256": "ca10e75d4154d6e79775bf182cdb220b7e4afe364cb59992e49323d15095eba1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0046.json",
+      "bytes": 302060,
+      "sha256": "b573191c01365f126d6a8eb4efe7340092ed4d701d76a860dc6b29aabce4f44f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0047.json",
+      "bytes": 302399,
+      "sha256": "026b015597446adb97e7800a8d3b6e22990bea46ebf1c0fe22c5a3a681b811ca"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0048.json",
+      "bytes": 300410,
+      "sha256": "aabe6e02344ca975cbaa79a7ab34bcb45f4ecc8417c913a524d6d11d6627761b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0049.json",
+      "bytes": 298751,
+      "sha256": "e3749435c7886346ad5092f996259a387ff9b90d7c3cd64db54030d56b4f4ebd"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0050.json",
+      "bytes": 299183,
+      "sha256": "9f8dc2ba60fb0121553402798fe7f2e3aca53861439c8c639a5cd4580c3c245e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0051.json",
+      "bytes": 300534,
+      "sha256": "faafb8c1c66b21143397789ad99b5b7fe21d13b343e0a9433d0141d21dc6ca87"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0052.json",
+      "bytes": 299078,
+      "sha256": "a347a5e408d38286b55663108fb5ccbd88b626c9344dbe1305a5c167656cfbe8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0053.json",
+      "bytes": 300144,
+      "sha256": "7076559fc3a140dcc7e23e9cfda1d417342aef3059430bd0300ca7b79f50490a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0054.json",
+      "bytes": 301152,
+      "sha256": "8b66c084950451d340d32198231e162f2881d396767d8663dde2183a6b967f21"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0055.json",
+      "bytes": 298890,
+      "sha256": "e75a919c527f473fd55f4841d80434df345df9e32b30343559797bbc7c9380ae"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0056.json",
+      "bytes": 299885,
+      "sha256": "0f82c5455615a76f816755219cc550c64348ffbbd467c306f7e17beb67392ed5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0057.json",
+      "bytes": 298537,
+      "sha256": "5525d08e7cd2c8309b04f18f33ed24aa7c364465e5e136f08acfc9e0f6da18b6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0058.json",
+      "bytes": 300374,
+      "sha256": "3937064075b74b37926ff0ddbb84204f9b79679f256b7130c3f74a6e8961e043"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0059.json",
+      "bytes": 301049,
+      "sha256": "34465b6f33a486c322f8035f13288bf03258ed9019c5f5bfd030b80ea5b58e7f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0060.json",
+      "bytes": 299775,
+      "sha256": "e2b99ee96e47fd8921d0d2965390427ff910ef71a1ebb7a73cd6287749d0ad6c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0061.json",
+      "bytes": 302099,
+      "sha256": "1f7bffcc523c6a4931c8bf1463e967208472b2dc68a980be7a31c3a09a17dced"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0062.json",
+      "bytes": 303116,
+      "sha256": "1b54ee4dd2434f70eb81e0a250ef40e9b888f5c05410f8c4d6d58a5431e6124b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0063.json",
+      "bytes": 299005,
+      "sha256": "7886ffac65730f6bb47a71e50dfd1e799306ade05ba9b10c50e5fec1ef07d3c9"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0064.json",
+      "bytes": 303608,
+      "sha256": "9f294eaff118f22f52b73baa1e710820f9ac1bce8ea549e3ee6de935a9a83fd6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0065.json",
+      "bytes": 299937,
+      "sha256": "6e60fd285377396992865da72767d3ea591b3f0cef9cb70fddf2a5d9e94b26bf"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0066.json",
+      "bytes": 300380,
+      "sha256": "710fe5b296557e9d6e4c6ed50fb9910c4a207ec1950dfefbd065c56961b33d5b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0067.json",
+      "bytes": 300284,
+      "sha256": "46ed8f33cd06377b8dbcd39445bc9715bffc8d87a0b653a517d27456067f61f4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0068.json",
+      "bytes": 299038,
+      "sha256": "6be631bd718c1e78106991c6ed8a2831d61307620bcb2c8d33c2846c68e62762"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0069.json",
+      "bytes": 302258,
+      "sha256": "1d7a6bb3c0cfa52bebb9c680339c55891fce9896a9ad5b0c1f84f9ae6866ec93"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0070.json",
+      "bytes": 300658,
+      "sha256": "8f53db4e601cdee8abe4751271a11a482f153be8c6d197f7df09ebed02462da2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0071.json",
+      "bytes": 301229,
+      "sha256": "817f2f683d98b39172cdecebd7711681a4461c850ce10451d5e2dcae0e94091b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0072.json",
+      "bytes": 299415,
+      "sha256": "801bd2390a6d6e31cb181f8734afdfbc1b9ee083995d20818fd61d447f5c8e53"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0073.json",
+      "bytes": 302412,
+      "sha256": "c90f8076d122be346ccb533ed0a44e77ab758e24103d79cf04abbc10f1b7b2bf"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0074.json",
+      "bytes": 301502,
+      "sha256": "d9ef227009318ddc672bd5a3d7ea2778a7a260a49c65b3bc0b1c273e111c365f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0075.json",
+      "bytes": 299210,
+      "sha256": "a5b8a4ed8fcbc643f717152f3451c1ffe098dd61e4bbb6db145ec3587bc18039"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0076.json",
+      "bytes": 302880,
+      "sha256": "575f0c3f4ab63f71feedad3463337e785f955d32f925e104e5e6008d9cb2a6f1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0077.json",
+      "bytes": 300910,
+      "sha256": "9fa17613000611261456b316456eb1ae6a6fc3c7981e1cc89cb2d79f0f0c820c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0078.json",
+      "bytes": 301076,
+      "sha256": "be9afffb3d1def005ae8a9e75135013d03c9935fb75aea403986c06c471c0955"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0079.json",
+      "bytes": 300241,
+      "sha256": "abe5dc6e383f92f15e71d875c9f6b50904e6069585cccceeb0987dbf3cc92330"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0080.json",
+      "bytes": 300357,
+      "sha256": "071a188621bf09ae2ebb3276744e38150c1d89d392533f6e460d1aec5c79072a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0081.json",
+      "bytes": 297570,
+      "sha256": "d61dd2a6659cff7eae6e9d7ecb0c498a96019a283df33155932c370d8a95977d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0082.json",
+      "bytes": 300366,
+      "sha256": "f95d87e07857913f0b171871c7ba784f6364e6f7e252041527848884a0ab73c7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0083.json",
+      "bytes": 297678,
+      "sha256": "3c1460b6e8e2926eb5d877b8a43efeae0e33e4a9917cfce47ceb0b7ee3ababbc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0084.json",
+      "bytes": 301018,
+      "sha256": "3b59398f8f4355c66f50ac39bb9996bfd24542637536b9e5c39a9c17057fd750"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0085.json",
+      "bytes": 299813,
+      "sha256": "7034b0f2c3856836ca7b980c366f48e0d4de80764f775b4b8b0668197a68527d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0086.json",
+      "bytes": 298107,
+      "sha256": "420e6122b67f5c00c774906628c7ccfdb75e2fe2e808313a81672e3ad237fc14"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0087.json",
+      "bytes": 298049,
+      "sha256": "e5ed0a9ab8226aac2d29db324c53404411851c566671663de942b35ffd9e9ee9"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0088.json",
+      "bytes": 301173,
+      "sha256": "83a4218ee748b07dbb16c3f6ce768711de9b4b3d30599a0edd6c9011a4630993"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0089.json",
+      "bytes": 298002,
+      "sha256": "2ac00bb9001bf8ff9482a34d35ef4b0c8b61dbf7575cbb2b9f3016f2c6434669"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0090.json",
+      "bytes": 298494,
+      "sha256": "d93b49ba0f89535ca2a166f2923a3569558340fedd5bcc3b92d23f491440496a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0091.json",
+      "bytes": 300937,
+      "sha256": "be3d1aa6d6f1811157a8d166ae7981ee0a51f37484dfa8d2dabe95db216ad399"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0092.json",
+      "bytes": 300510,
+      "sha256": "a223e08ba55595df14e3e9f3ad1dc41616564500cac634fb119bea53b06144c3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0093.json",
+      "bytes": 301493,
+      "sha256": "7a661d1744905ebea511dc7ace95fddeb4d6696d06daba751da5e6df95dc036f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0094.json",
+      "bytes": 301984,
+      "sha256": "fba52aad46edc54bae629bce8d65376051abe49594015685cfff79697fe5a885"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0095.json",
+      "bytes": 301779,
+      "sha256": "280f2c543eecde1abbfd0cfad1f9c4343ed5068b1c8766fd96756da3eab326fe"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0096.json",
+      "bytes": 301228,
+      "sha256": "f8d83c6922224d38bbe8190e0bc1b05d9f2dcb5992111ce7a1a76f7645047f06"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0097.json",
+      "bytes": 300436,
+      "sha256": "446c4fc40b6beb0c9a8fc5cf860dc8d3fe809eb33db8a8f97c045a4060722283"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0098.json",
+      "bytes": 301329,
+      "sha256": "4d66e909bd554d861c080c6182a917ad9468804943a8f5f121f0de2648147b45"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0099.json",
+      "bytes": 301471,
+      "sha256": "7972a959d5bde17edd3b65634c64d92702fcc114eb716a0368440eb75265af80"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0100.json",
+      "bytes": 301391,
+      "sha256": "76d6524e4d7f83afd42c8020be27a30a3ec37e1cbdee9d0bde8d62c6dfc1d51a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0101.json",
+      "bytes": 301506,
+      "sha256": "7a51f8c72c3bb52f5ce54c4f406c63e054da20500785abe4c02d90e497858c06"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0102.json",
+      "bytes": 297783,
+      "sha256": "656af44f85b301f83eebc1a66d605da38cb37e82eb70f51e446d9b44d4b6e8dd"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0103.json",
+      "bytes": 298840,
+      "sha256": "547f30543be8cf447c106d40fcc77f0b508282b3ce0d3f1b01201d38c48bfe8a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0104.json",
+      "bytes": 300096,
+      "sha256": "a145e0f5161ba621d5eb6795267d1fb34ca9ca50ff5a27da0554dd2f33f36021"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0105.json",
+      "bytes": 301557,
+      "sha256": "e55f5bc32e7984a76eabf600a1243d5708f6cea01aba731f15b6c6f875318ccb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0106.json",
+      "bytes": 299948,
+      "sha256": "043a1f1a01573a6eadea9cf160e1979189832a553731401d877dc520c4f18546"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0107.json",
+      "bytes": 301747,
+      "sha256": "5fbfdb9285a4acdb3829b2d3a6745907b5b642bb02c2214df7d623b8ca1c4c30"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0108.json",
+      "bytes": 297884,
+      "sha256": "8dcae745a074d3d3e4a22479b314e65cb174d4d15e016399ab6e5306041ac525"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0109.json",
+      "bytes": 300067,
+      "sha256": "ad7aff2e6394f9aba89a56e82bf039bd88e9710d315e075c54305422dec1b87d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0110.json",
+      "bytes": 301348,
+      "sha256": "1f3ce1889703a40f498cc33b958e3be0a5b3d98d2c5391d1e03e8cbacabbd2c8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0111.json",
+      "bytes": 300287,
+      "sha256": "6a314cda4923d6218e51a1d573345aeb68a2cff7c35a054899650650a7180877"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0112.json",
+      "bytes": 301421,
+      "sha256": "be46b019eb2c621d488119825ce4eeff5927298ecd1611a69f5f8de1df736bdb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0113.json",
+      "bytes": 300416,
+      "sha256": "e280a230e9a174128a50bd90a7c85c330a9b5ce9d786f40cc9801d4eb25d59b2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0114.json",
+      "bytes": 303706,
+      "sha256": "72d400afb17b72e52cc4d396b721b425630271a5848de7282d11df77e900ba12"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0115.json",
+      "bytes": 300320,
+      "sha256": "977c3f0e7165a0d08f682d5241cb2a228f72f12626b07d56a26931c57d0aa5b8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0116.json",
+      "bytes": 299291,
+      "sha256": "6653887eaa454b363b8f4729373114a0a02805734269edd40b9cac0612ac29bb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0117.json",
+      "bytes": 300486,
+      "sha256": "725dac1a04428e5708c77ad5758518a854030f94153dc3929e9b648dc7840640"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0118.json",
+      "bytes": 298977,
+      "sha256": "42c57be7300066ba1296ab0081c0da1d5e564c95ebe66c8684d0746981e45fac"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0119.json",
+      "bytes": 300444,
+      "sha256": "901db4153a70cc45ccba89d6772411b6500a2ee5eead6dc030fc56795ea17220"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0120.json",
+      "bytes": 300647,
+      "sha256": "13d2846fa89b317d9d67459bc1cfb658ba384c93436d2b72c808f0648e658683"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-fine-0121.json",
+      "bytes": 282313,
+      "sha256": "fa5a0a4afe3fbd21a5eed7fc03bc6fa3faca3fb8f773e01609ae68313d704686"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0000.json",
+      "bytes": 65145,
+      "sha256": "84cc2d5d2e744023ba9b23d0cc89c66f9e01d196f074ba6508c372b4452c6be5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0001.json",
+      "bytes": 65890,
+      "sha256": "2ea3ef6420a9a650bfdf383899d1d5afcef0fcb36b08aafbb2c27807037d1cd4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0002.json",
+      "bytes": 65900,
+      "sha256": "71165e5f0fb0668f054c4a555eee7a5d771d6ca3777bc5c041137130a8b3031a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0003.json",
+      "bytes": 65984,
+      "sha256": "25abbb2b3d2b4f885d4d6154fc872cb23bc29855eb7021dbd13c25a41a939a12"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0004.json",
+      "bytes": 65707,
+      "sha256": "7e1fc97268903b9a69f833dd3a23c1478dbcba5f8a10ddf02c11f5352de646f4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0005.json",
+      "bytes": 65592,
+      "sha256": "35aed5839e383f34ac9745ca01ce4a06ab281908c16206b417a9660d11e08a8b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0006.json",
+      "bytes": 65762,
+      "sha256": "b6a4c97844e22bafdcdf5e54edde6982b395ea6db3124ed6192715e601214ac8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-details-metadata-0007.json",
+      "bytes": 48480,
+      "sha256": "e5d6d4a4de8067174ebf01f80f344dc5dcdd494150a47d0c76b3e904eb9aa5c3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0000.json",
+      "bytes": 15029623,
+      "sha256": "0f2bf150cf079f026408832f4c09a47b03ad384eecfeb1379f29e63f6b5fd19a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0001.json",
+      "bytes": 5926022,
+      "sha256": "89c6f6d367fe47207878b03f741df8d9fe4251ae342b62cd38f2beb33cca6a52"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0002.json",
+      "bytes": 1320536,
+      "sha256": "1aa67204c5894eed2bc8351e2083b1b609d508f819d8b2887b335b0cf6a7c31b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0003.json",
+      "bytes": 944877,
+      "sha256": "5309ab732d387835194b7566c803a966d4c82a2b35867a95a2c937042be8fecb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0004.json",
+      "bytes": 1046816,
+      "sha256": "4431bf8587b8cea9a1fa41d2fb4605afc05163c70ae1d58a3fac1aa0cb443347"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0005.json",
+      "bytes": 995779,
+      "sha256": "5d88fc9ceaac882da8a61ca588ce7336a70079a8be27382554b46076755abacc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0006.json",
+      "bytes": 1394488,
+      "sha256": "58767dec48a5bda5bef20d447dddca9fb2026ac18af234604dd5ece87fc36f0c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0007.json",
+      "bytes": 916658,
+      "sha256": "b3f94a404253093f36622e1db308c34dec1462959fc142080f3a803ca3760017"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0008.json",
+      "bytes": 868670,
+      "sha256": "1ef712e9cf065b6398047badc332c31a4aa5fd36f4e96e028821a8e2e316655e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0009.json",
+      "bytes": 865916,
+      "sha256": "e6313af81f55f2a867c7d1131bc0679f2a463b9ae4bef289a6e7fe2dc1b7e391"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0010.json",
+      "bytes": 411820,
+      "sha256": "1838d1c18048943f6da21e058e07daad3a310d5606dc5691c4a7945f9570498f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0011.json",
+      "bytes": 1135311,
+      "sha256": "c47d950fd7ade76e55fb2e3dfbecc12ac1a06d12dbbe92d7541b807ed259feee"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0012.json",
+      "bytes": 840864,
+      "sha256": "a40ebabd2498d3deb8f63d3b98cbbf8132075b91c211785c4d45a4b24f2b5781"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0013.json",
+      "bytes": 907473,
+      "sha256": "259e121e9efae20acbd867f1c46ef372a7572c88c85e19e66332b4e56efed385"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0014.json",
+      "bytes": 1037746,
+      "sha256": "97d2a9cd9528622544ad8e939e4ebf701b2fcd775a468ed6b49926208eaa8f59"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0015.json",
+      "bytes": 599456,
+      "sha256": "95fe3bf7ef82ed0307475c130689f53efb1eef615f91be481cc0617752a22415"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0016.json",
+      "bytes": 981010,
+      "sha256": "5df4305101d548f178f2053a96db5d1658d6a8b8233532d19d05a084b0f5d266"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0017.json",
+      "bytes": 763989,
+      "sha256": "655852e11a15ead7fbee269e177f04735b99181455d8df5586eab674aa8a79d7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0018.json",
+      "bytes": 958369,
+      "sha256": "b0de7e2e583ae2055c7264147e8cd88c3466dbdb4dfd0d30c731c94dd41abbb4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0019.json",
+      "bytes": 526561,
+      "sha256": "6137d609d71df44cbcf60cbe3f129a1f9b7e95a7f097354ac0e299ac3ec043bc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0020.json",
+      "bytes": 1032130,
+      "sha256": "ecbf81a92161413da87db7c7ccf67ec0ac4dfd4ad8b13a8856b9b059a877c0ac"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0021.json",
+      "bytes": 640466,
+      "sha256": "ebf1d6c9e1c9d8ee2ce551cd0f2637d5a072a88ccbb748f424d0c0c6d095da90"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0022.json",
+      "bytes": 4080803,
+      "sha256": "76609191e2b19730ec5219ac1b3d2df5ebcf5e659a5b789d34a3c1339af0dac3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0023.json",
+      "bytes": 1243375,
+      "sha256": "9202bea7c7633a8acdcc98b6101b84a4999fb2f2bb3eae084a84885b47719294"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0024.json",
+      "bytes": 965509,
+      "sha256": "edeaf8366e18237ac18a5464755deea4a4004f86daa2806277772dce510d89ec"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0025.json",
+      "bytes": 814475,
+      "sha256": "d01e92eb28795f5a2aedf73e4be854e6ca88b74a7b9e7d61e7fdaedb94eb8e2f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0026.json",
+      "bytes": 860500,
+      "sha256": "fd5f5a03e163f823cdbf3961ee77464601ae166caf76966ff51ded051f417f64"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0027.json",
+      "bytes": 1105826,
+      "sha256": "e7e83998da43404c57a60d0fae40e71911138ca4b6afec6949fcec7c748500cf"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0028.json",
+      "bytes": 996415,
+      "sha256": "ac09a519420282ce260db21b14750101eefec503a3630f42d64bf2ed33f5bdbc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0029.json",
+      "bytes": 920555,
+      "sha256": "3f11d84098a096169d5facdca05fc45cdedfea8ac909ad9d9a77a99c07e9f5ec"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0030.json",
+      "bytes": 947896,
+      "sha256": "dde7b6d81131e7139dfe9800940a1dee6fa396281bcfc41f879d7d4e3d83bfa5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0031.json",
+      "bytes": 1018333,
+      "sha256": "2b4cf69ed954c7dad31e4698441430ea23bf3e99d5e08ba7c3c78934625604ba"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0032.json",
+      "bytes": 1025774,
+      "sha256": "64d2f99f8c884bea894906244ecef591f5653d0c5d9a9180bdef859d1416b4e8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0033.json",
+      "bytes": 782454,
+      "sha256": "62b27f8a1bf1126a73cf62f1d318544ee1c18e16611965a0be06114669a9eb3a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0034.json",
+      "bytes": 826135,
+      "sha256": "8a5991f5cc0ab1e01119283f7dbad72ac6f793c8a86ddae2b668914734de1ba0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0035.json",
+      "bytes": 3914269,
+      "sha256": "826eedcdbc3951a327a2874208437961c50fac631716645512489591d9ac4577"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0036.json",
+      "bytes": 1306253,
+      "sha256": "c910dde2173789f90a80ee0440617b170efc2685c36c3040700bdc50fa81d254"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0037.json",
+      "bytes": 744864,
+      "sha256": "af50ecd0c14d88124eed63a15c57533e051237dd06806aab02e97d77e06e2159"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0038.json",
+      "bytes": 1015279,
+      "sha256": "a18e00d67b8895dc4af43b44013de2f5a35e8afff09e847de5cde892a4d8d76a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0039.json",
+      "bytes": 999411,
+      "sha256": "598153bc0d6ee932ac4924f17595ca350c0a02ec070ee6ff3c1543d2ae8d6536"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0040.json",
+      "bytes": 134164,
+      "sha256": "9df72f5c6571b2a93c04461d3b9b694bbcb1acd92b4c7543359267067ce87a4f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0041.json",
+      "bytes": 1026091,
+      "sha256": "a2e455b668dc60ed4ae797ca8839b3cf75bc8fcd2c21dac72e5f7030ac633fdb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0042.json",
+      "bytes": 1009920,
+      "sha256": "0f0188a651b78ffdbda2de8c6ef3bd5c77288045113abae12559298fe43a325a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0043.json",
+      "bytes": 841704,
+      "sha256": "9bb0b63b6e4083560a3caa592c6440e2539300ca8ac632c98a78851a8ba0c968"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0044.json",
+      "bytes": 856834,
+      "sha256": "302eec77ccc5fdfadf6874175a8c18ebcceba9a47d1099390800f293ebf123a6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0045.json",
+      "bytes": 989237,
+      "sha256": "64637e8139e1a62b842939cfe9518ec74ebe9535f4415d8c615b276b699b6799"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0046.json",
+      "bytes": 610859,
+      "sha256": "9248af4bb9591c6ffb7596eb1873a84b0909d9c3ce9aa3c1aea8d89d0860afec"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0047.json",
+      "bytes": 1042035,
+      "sha256": "07333779cad56c34391f936c62adf7fa819d8cf94c5c588edf3c4c1e44630651"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0048.json",
+      "bytes": 972117,
+      "sha256": "70f041041f3ad67e65d64961624199b3364a2539e92bb64f2295527ee9be90ba"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0049.json",
+      "bytes": 302396,
+      "sha256": "310a0740ee41e64fc424e6fd8e84758cd7b8b42210dd34b47a672cbf43a4bf5a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0050.json",
+      "bytes": 2124758,
+      "sha256": "97e561f32e222c64daa9fc5b142ee720c0f575c05abf71bba6cbf1483ca651ea"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0051.json",
+      "bytes": 1043709,
+      "sha256": "5befe36dfa98b69c23a28170c4db0c38423c1740ec7b0b4b6ed874c05132afa5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0052.json",
+      "bytes": 821688,
+      "sha256": "296a28feb589bf0ae73237b5c1a144b3373dca025ef24d4eba15ca91b1a4b62b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0053.json",
+      "bytes": 802475,
+      "sha256": "f226da9f96e6ff37509d2ea043600ebdaddc28eca9ad0a172303a947865cb49b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0054.json",
+      "bytes": 749276,
+      "sha256": "64aeb9b6cc888fde3a4eb8d36e30c037d700bfb28b530f471dd2bf9f05019ce3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0055.json",
+      "bytes": 1032215,
+      "sha256": "c73922a209e08b2481dd81426cfe027d975d3ef837a9dbd49f33c0f98d5c6c02"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0056.json",
+      "bytes": 111358,
+      "sha256": "ab5a84761351529e14f1589db097ef51f1229beedc662b07927d2fa6e82c4e40"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0057.json",
+      "bytes": 14342937,
+      "sha256": "cb0db7faa312ba7be502b6232461ef861b9c73c25705409ca1c84d8e12d5c053"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0058.json",
+      "bytes": 1048378,
+      "sha256": "8737a9cbfb9cb44f8d939b7c07d288e0ac8578ef58370a06dc88c0f7ba936f28"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0059.json",
+      "bytes": 1048380,
+      "sha256": "e5f40f9261b98e9846084fcc067882fc68b97e213979b44f758b03bc1d5c3788"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0060.json",
+      "bytes": 1048380,
+      "sha256": "bf5cf75ddf9381236df186913882cc1a9b631ee89645cd184768dac5ad3ba89e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0061.json",
+      "bytes": 1048584,
+      "sha256": "c025106e634b431625108c138d72e05aba1ce7f2cada763379b19e7dc391ce73"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/destination-memberships-0062.json",
+      "bytes": 28181,
+      "sha256": "0bd24f50ba55b1882dd988941f59fce49671cefdb79edf042751e3c903570d2a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-identity-proposals.json",
+      "bytes": 239,
+      "sha256": "96a25da62533adf78680f1cd6153f40476d0e3495d8f93df6c5dabd91d7a42cb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-index.json",
+      "bytes": 8616150,
+      "sha256": "21d7c507c6fa042630834253f61e69566d55d72553453b5a0606421997a1fef4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-00.json",
+      "bytes": 26030,
+      "sha256": "d414c4657e1ffde7b19355c0b5fd1dc85e6321f3d0231b40832fab51a5422fd7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-01.json",
+      "bytes": 32204,
+      "sha256": "04ed82851a0f5cdeb9a2c75862a279e8ceb0408b206b8e202dcc0a9b87ce9459"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-02.json",
+      "bytes": 35927,
+      "sha256": "3d2f511780dcb795acfe9041bed8dd89ef535eadabf8d76032e4f6d7a7f4bf24"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-03.json",
+      "bytes": 39527,
+      "sha256": "8a27548a4802bf63c150a0d1343b02f956646eef590d1d9b809297f507aeb2a1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-04.json",
+      "bytes": 33020,
+      "sha256": "b0f5f08034ccfd32afc9d043da22aee77deb8f6ceb8bec5f06c486a0482b6060"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-05.json",
+      "bytes": 30720,
+      "sha256": "d8104f854a8fe4be2b9f5530212f4fa73ea1aeeb1a8f25c5bf33aa243e315df3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-06.json",
+      "bytes": 40562,
+      "sha256": "7008f6ebd732229070ae0bc3823691eba6456094de44aa17b33886e7cbaca7ed"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-07.json",
+      "bytes": 34418,
+      "sha256": "8e44a04f17663b8965dad81e08f80125c4f4f56eef20f284ecaa8987d38fdfb2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-08.json",
+      "bytes": 41478,
+      "sha256": "11a9303d47af8b985cfb1de86cd109e07cdd37cef983819075b860228820327a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-09.json",
+      "bytes": 30494,
+      "sha256": "7447881e8098dec74df9b0c2e0d58689dd27e91df41f5f36d6aa744df7871cc2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-0a.json",
+      "bytes": 33165,
+      "sha256": "7bb416ff68c9e42c89d5879b31f4db50dcebd2b3c0437a7b22f13e52fd36490a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-0b.json",
+      "bytes": 39075,
+      "sha256": "c55cc1f53ba909ffe865894c10d316a0044619baa81948617790b705f136b127"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-0c.json",
+      "bytes": 43718,
+      "sha256": "592430455033449fdd2595ce21af42a06d50d921751c5d9c8e4642fcb8ed48ba"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-0d.json",
+      "bytes": 38669,
+      "sha256": "0915c187b225a26afc952aea096fd36e5bb94a69ec5de17ceef9a625fc5c8f47"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-0e.json",
+      "bytes": 32278,
+      "sha256": "54ba737c1ef63b24e2345d5e93ee60cd6c2745e7d6cd16da7dfebff877d65f18"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-0f.json",
+      "bytes": 35491,
+      "sha256": "ff190acf45a15fb54e7c810bd3455143b585962bad6b6c3d8ab11f72551e074c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-10.json",
+      "bytes": 37210,
+      "sha256": "bdfa1b0a070212aed46700419754ec756f7ec1a4dc6d55a07f69a0a0064b6c56"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-11.json",
+      "bytes": 29914,
+      "sha256": "3257637f123db70a8afd8ae3c00aef956fc293c7d3c03446200bb5479c8f3a1a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-12.json",
+      "bytes": 40634,
+      "sha256": "cd25172fcd993c061683a713024fa9fdefe05dd9311994084f9ec5b19f6017b5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-13.json",
+      "bytes": 35589,
+      "sha256": "75a34b768d37012ec15372f1b765bd2e508d818cc395f679388d090a1db3b9d2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-14.json",
+      "bytes": 35283,
+      "sha256": "9a0ddad2c1cea41b0bb222fe0a0af382cd14e95c01d311b00861e1c842e5fb12"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-15.json",
+      "bytes": 28978,
+      "sha256": "0da6a1f210be16487f7f021aa638576567590a3386b1d07e590f758fdc1c7e06"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-16.json",
+      "bytes": 33968,
+      "sha256": "3de4f9f409d7b7f75bf0e4324194190925c3a54c33b6ab57ee4637377fe2b47e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-17.json",
+      "bytes": 29074,
+      "sha256": "7e074c8542aabf9ceefa35644d2746fcd076238a33554e2e17a2f67281d70795"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-18.json",
+      "bytes": 39879,
+      "sha256": "fcea82631edd2a36f3542a79879da6e45204cd80ff76ba750a6c6071e4bc8841"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-19.json",
+      "bytes": 47457,
+      "sha256": "39a518cc3ca540872a385fe8b5d2db4ef19f4e19b41e582de883bec73dbe411d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-1a.json",
+      "bytes": 40929,
+      "sha256": "d530f34f65c96b0cf0458615a1bed43f7986f3d96f7726d80fd31250d0612326"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-1b.json",
+      "bytes": 39401,
+      "sha256": "01ef12c864b4be1c8db749fa7b5f25840ec8abec57d4bbe4b8af6b48faadecda"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-1c.json",
+      "bytes": 26983,
+      "sha256": "2a08c5151ce9eaec934c62eda0f1c97847df967c23699b880a7835047cceab04"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-1d.json",
+      "bytes": 32087,
+      "sha256": "45a2d2497708e88c65a5ebc7cb996bceef3a51c3108a97c434a909eafe1d123c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-1e.json",
+      "bytes": 29473,
+      "sha256": "776b3005661496003399a9fdf286e87cc9614a0f9559cf9f58431d9f244dcffc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-1f.json",
+      "bytes": 36927,
+      "sha256": "92f667205d757a30f3d706575c47149f6cdcfc4faf7c2e0e9bd075bc9b314e9e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-20.json",
+      "bytes": 33283,
+      "sha256": "bb42519977e2a3716a118e005a4abdee1bbfe22cf2a792df321461814572a926"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-21.json",
+      "bytes": 37395,
+      "sha256": "6eb24d385ebc6ac855594861c55bef73041f8efa6268a1b89fce69f341434979"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-22.json",
+      "bytes": 25226,
+      "sha256": "1a83ebfe724dd5e5d67c0b71c2bb362fbda82e249774f68180d21c36c277b777"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-23.json",
+      "bytes": 43331,
+      "sha256": "55760010b4a74384ec31f2f104613d981f6f0eece6a563209f245232cff4e72f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-24.json",
+      "bytes": 34436,
+      "sha256": "6b1d9f0b90ad7a903e4194ec6a15dfad318c359714488c8c6974da9ac89d5625"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-25.json",
+      "bytes": 27453,
+      "sha256": "7195cb59434ec1e6ffc5153aabd6c082f7d716fb1d3836fa2fa5d49432087ec4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-26.json",
+      "bytes": 36693,
+      "sha256": "5278bbf45220ebeb9da373bbde9f7e55f7539465e9697ba1b2c1b68049f81d1d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-27.json",
+      "bytes": 34313,
+      "sha256": "7da91cd997fd8725bb1d82fc723c9e1997ca357d477caae5188151e9ec870680"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-28.json",
+      "bytes": 32030,
+      "sha256": "20dd814740eb6230aad1b37a0850a5678f7df8990d5e7c3b4fa8027e6f163187"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-29.json",
+      "bytes": 33239,
+      "sha256": "4cd45c691b652db90b04bae4f78cce1c66b6a3b679055537681019b9b7781abd"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-2a.json",
+      "bytes": 40731,
+      "sha256": "eb27fffb1038f32d64b44d8a253a83eb3ed300f3a8f5172de03a40dfe920aaa5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-2b.json",
+      "bytes": 38257,
+      "sha256": "848ad2b8e03958a24f5edd52ea85cacdfb6914165c924fe2f814e576aa97a4f1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-2c.json",
+      "bytes": 32282,
+      "sha256": "7290d5c3b5ab2e40eac967fd0b3bd47388c196ad2569de0e2b5509ecdf9a1177"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-2d.json",
+      "bytes": 30068,
+      "sha256": "5a7378c9eadf4a04d3e7f653efa2f5db16711e2022835a3cb0ec9af407a8a2b8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-2e.json",
+      "bytes": 37085,
+      "sha256": "3a036d824ab8d726a3b6101e8105e074e18cd0e55c9fd92c4ad35a68c0f99c50"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-2f.json",
+      "bytes": 41337,
+      "sha256": "aa4ee2ad353b6b3f6cedbb366235fa38b13348a5b3ea50c5578b9f14ccae0281"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-30.json",
+      "bytes": 30103,
+      "sha256": "b8bac0e1a5d57e826971e2a30049cbb920da0a2a73af813ad15d9a6f40bffd1f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-31.json",
+      "bytes": 33260,
+      "sha256": "58a5fa88c4672a96c3ed4359e762898007d9464780b411c041c95635151d74f9"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-32.json",
+      "bytes": 41386,
+      "sha256": "c946bbd838ba992f8a9c9178985bc33353019c9739675c816ba9000fa203471e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-33.json",
+      "bytes": 33068,
+      "sha256": "b7b040b6e939db4329b98360ae5a1571c71896127c2e11516bfaf7f427a90c6e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-34.json",
+      "bytes": 23022,
+      "sha256": "f8b608ddec682609040068ada5c24d9f624843a00d65e9e977c4d6dd502fc105"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-35.json",
+      "bytes": 30982,
+      "sha256": "e78efd64f0d68b9a30d99f4168922a089bc4f5abd2ea4f0542f460220163c923"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-36.json",
+      "bytes": 22620,
+      "sha256": "562254c9b1bd0074b1eec7aaab7d4b3ad283ec84010f5b683c41b1fb62212298"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-37.json",
+      "bytes": 25825,
+      "sha256": "467a6fb7f38e8aef721d2486ffbb0535c822f2ae2736614b15a2f6002362dea8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-38.json",
+      "bytes": 24679,
+      "sha256": "f6d8620f0dd6e47adf748e50ced7f87a4441561a03c124083d35f6864f1991d4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-39.json",
+      "bytes": 36469,
+      "sha256": "9c9c49008ad45a1a482a52459ae02725b628599201a95300921ca35079c5efde"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-3a.json",
+      "bytes": 35195,
+      "sha256": "d707b7eee4b2f533dfaf8b0d5639c0ac2ebc22ca33d17f632cc5694c22847233"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-3b.json",
+      "bytes": 30243,
+      "sha256": "e7faa808c1cabf2496d893b6ba9cdd012612bf5482fe1ac967336f19a0c48438"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-3c.json",
+      "bytes": 35310,
+      "sha256": "519b7e0104103f621280e8be119b36ba211b826ae3539f5e6d73cf6fbbc1fe05"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-3d.json",
+      "bytes": 37087,
+      "sha256": "3fcc9f48edff3d8d7eb2d56ae319ae774e7657f767eaa4f14f9d32ca7fa82d9b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-3e.json",
+      "bytes": 37410,
+      "sha256": "4cef959d39063dacc4182082ea420dcfdec2c3e9e09c9679abb9c17fd18c91f8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-3f.json",
+      "bytes": 38142,
+      "sha256": "1d911ad195079a93ac664f493b119c16bff89791a07be58fc0e0a04c27a2eb09"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-40.json",
+      "bytes": 21258,
+      "sha256": "67c66699e5665c0f903997cb09965ad52a3c07e21460677ed5868874057a5aa0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-41.json",
+      "bytes": 26052,
+      "sha256": "98c458e47b0636f6e428a95fcf0d31f8cdf9a9f0fd134d5e5a60d3dc6df0daab"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-42.json",
+      "bytes": 33285,
+      "sha256": "eeecda3ef3ae95a9df285f1e4398f9b0892407f3dafbbda886c6ed59c43a8ae9"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-43.json",
+      "bytes": 38582,
+      "sha256": "0baed5afe02c681a1953c87601799f27f3d849d61d0479e60522775066cca34c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-44.json",
+      "bytes": 28513,
+      "sha256": "bb02117d4984c0019f8938b7917bc46ab6aa0c4b6b95b996b2c06a1a59015f6b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-45.json",
+      "bytes": 44713,
+      "sha256": "6eebe6ab63e34c82c8349bc6a975f564430f131621f6a30b00ccc4d7e7b9b60f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-46.json",
+      "bytes": 33731,
+      "sha256": "e05442af7058c19f0622a66d49ac94a9bbb0999d47b6fe005f5134da6aeddd5d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-47.json",
+      "bytes": 37321,
+      "sha256": "fec42b6fbcff0d83a6bbecc4c8967b7a48b34320485e0ac0eaa82b6cb0468693"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-48.json",
+      "bytes": 42970,
+      "sha256": "778eb5457186c98b4dcbb7b96ce8a2c4f1fc3af0bbae554d5cd14821460f281e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-49.json",
+      "bytes": 24336,
+      "sha256": "0742a5d590c587ce17740ca78884b348d4beaa22c02773e43be8bbd5f9e91527"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-4a.json",
+      "bytes": 37444,
+      "sha256": "38b485ccc94da132bf88ed2be992676cb2a9ce4830701ea4139f4365552078f6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-4b.json",
+      "bytes": 37514,
+      "sha256": "b2afea90757d328d507f4fa6e2504959a437eef8046be13ff0441467af84601f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-4c.json",
+      "bytes": 32258,
+      "sha256": "85d0754b7aa423b11fc820efd446fba4bce1061fb9ee0c111edff7b071904f27"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-4d.json",
+      "bytes": 43141,
+      "sha256": "3fbd3f687ba0d75af9a4cc4f388c9e9c40c113482805e00ad1e6bac46b7108c8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-4e.json",
+      "bytes": 37074,
+      "sha256": "23e76b32181e3d072f33c9178002fb6441f441ca101f92ae58146043928c9e9e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-4f.json",
+      "bytes": 25100,
+      "sha256": "7c00e75ed114d5b76a8810495894497a540fcb90baaca94d729bd37f6c5a1ed3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-50.json",
+      "bytes": 29372,
+      "sha256": "4974200a7769b779357e36e165887e94e1e8433a4fa5501154ffdb8b3a23598c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-51.json",
+      "bytes": 35344,
+      "sha256": "d3a1fe1b9f26a1da8d2db61ce7f6bf0bff70b5c8bf2c916eca7716ef39b88be6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-52.json",
+      "bytes": 38663,
+      "sha256": "2f2d0a89ed2bce7cef5839cb881dfa0802dfa5aea52e7c18e7719e417ec19bab"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-53.json",
+      "bytes": 39422,
+      "sha256": "2c9dafb33cb5d2f8d029189cf8adcabfca54b4b10b2a64641b30760c633d5782"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-54.json",
+      "bytes": 35548,
+      "sha256": "c7af49edae00e1d49984a4e6c481f04c73f06d51d3984c82c1381de36de3cb62"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-55.json",
+      "bytes": 30268,
+      "sha256": "5bffdd588d2ea698195a23d879538b4ec73dbf06bf119e5a28b38abb5dbfba2f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-56.json",
+      "bytes": 38628,
+      "sha256": "2d82bd26ec89ab8d266306337cf5f2cf70a4362980b065a1521a5077a7729b6f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-57.json",
+      "bytes": 35128,
+      "sha256": "fc6b0ecfbf40a946bc3db590d21dc28427845c777479f79f997a1bfe11802438"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-58.json",
+      "bytes": 37100,
+      "sha256": "d7dda06642e47a40fa61dc7e69afe1e8c9b7459839710f779f37bf266c0d362d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-59.json",
+      "bytes": 32802,
+      "sha256": "1675be4d24f1fa23dc9c1f603d8b412868d660e498791b962d9034fa13df308d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-5a.json",
+      "bytes": 32154,
+      "sha256": "7d0793311ee07c3a65f2dbc2b52780ba01e2ae32d65208e34b9d06892306cc78"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-5b.json",
+      "bytes": 35204,
+      "sha256": "5d1a4d0ebbdb50206f85292ee0bc4d7f720604efe0a34de1366e72af3aa6135f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-5c.json",
+      "bytes": 40204,
+      "sha256": "986186db54e4e8e0442f5d4ba78d7b530917d92984c272241574a0bd88fb9bb1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-5d.json",
+      "bytes": 46828,
+      "sha256": "e9f5345a0d188ad910aa666ce7bc54b26e64df21121d514d6a68273afdb18e3b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-5e.json",
+      "bytes": 29024,
+      "sha256": "2324c8ceaa11b38916e2a7c926f51ba43578e473bf80850c831bce617cde491b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-5f.json",
+      "bytes": 35699,
+      "sha256": "588d287747776d5094bc0781fd673787f77c8adb82ba7ec42789cb97e79337de"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-60.json",
+      "bytes": 39243,
+      "sha256": "4d9aafa5519eaa6a86bac2d9b4b96c1e565118b818e20913b5d6692b722e1a63"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-61.json",
+      "bytes": 32619,
+      "sha256": "7fb5991e335d6f6200183675b88967a66429b5f2134a8a814b582f3110d227c4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-62.json",
+      "bytes": 38459,
+      "sha256": "f2fb1ea53ef64fd48449b12fa94538c5801d90a40dfbcab5baf2f8b8f361f6fb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-63.json",
+      "bytes": 37940,
+      "sha256": "a2c08c468ef941949cbdf9771b7594e5ab2d451b4dface829ec0da3f4b90532c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-64.json",
+      "bytes": 38204,
+      "sha256": "5351322931569341b5c1767d40d16910ec849a704ffb83d939595c98a6ce8530"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-65.json",
+      "bytes": 31151,
+      "sha256": "2eea27184951790863bbcca8c44afabb04b9cae09a989ce027256aa8ca986d9a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-66.json",
+      "bytes": 36914,
+      "sha256": "03d4c02dbfc633c5b3b140e2fc115faba586d1ad823f077ccaa61c4dbbd0da66"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-67.json",
+      "bytes": 32335,
+      "sha256": "62c71eca6c3e1aaf76254ac508cdc0c39c593e2d1ec112fd7db5a1e574487c9c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-68.json",
+      "bytes": 29166,
+      "sha256": "e50f301b6eb6b4ade20f7fdf25df82ea01d26c9812dfdc0b6f809ad22463b4d8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-69.json",
+      "bytes": 45739,
+      "sha256": "a3723bd2dc0d95990a3ac11f9c835e5c3efc95ad7339095691af30dd4280103c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-6a.json",
+      "bytes": 31995,
+      "sha256": "32ecf5a311fbc9a1599ee4682882b41a033ef6797a56a71df7c192d53a095c88"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-6b.json",
+      "bytes": 30214,
+      "sha256": "8b91d4820bf495dbd2b01e91a07f2f34c813391a8be11352b3da285077569b8f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-6c.json",
+      "bytes": 30421,
+      "sha256": "280526e51f522cc5b7737dc6893f230391460e0d32de002c736b842e6c53f043"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-6d.json",
+      "bytes": 25116,
+      "sha256": "8daffe012e22adee4f5a3e4cd7c27724e0d57a374abbf9a17dee361339cc44da"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-6e.json",
+      "bytes": 27132,
+      "sha256": "f94437122bb987c0ab2241e5de0f82dcbdfd46940213c672daada6f0f4cd1ceb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-6f.json",
+      "bytes": 29292,
+      "sha256": "bd06bc9d1a6f37db09de052c1cb431b20b63b4d89c883e12f3b3f598a322f78a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-70.json",
+      "bytes": 18116,
+      "sha256": "8f5767e855c72847cc5dc82ba38b16ed92f15f5d5b955475cc04e2353dc98e15"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-71.json",
+      "bytes": 33304,
+      "sha256": "b93423164ba39769bbbbc0451090bbbb2cea0c98441f409f23a6c06e483c8d13"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-72.json",
+      "bytes": 31336,
+      "sha256": "e9aa1205411e8169e5300bef2171c731fe62071d96692d440c41948e0bbac40a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-73.json",
+      "bytes": 35935,
+      "sha256": "dde451a909d1fd9bd1b3864e1f16961fd123bcc93a45c74f733706177c6dde75"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-74.json",
+      "bytes": 25252,
+      "sha256": "4b4047a54436b8f00fb4c39758e207a27dfb1e6e750a0710e8333acf4c77933d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-75.json",
+      "bytes": 37948,
+      "sha256": "1471edf3c161cc9db1d3c5b016dd25c3fe03241b5af0b5e575018f1fe3d08fc4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-76.json",
+      "bytes": 37978,
+      "sha256": "8a369c032981bebeb80b607eb442c53d513a1d2d85f7d2126d73fbb65948886c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-77.json",
+      "bytes": 36598,
+      "sha256": "c4751ab517716393ec4494c8d3fd114e2f1a938325e01c6d59fd7313ca78876c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-78.json",
+      "bytes": 36227,
+      "sha256": "d9ebc3d5533617cbb38873307df7af46966f9581a80a72c3ad7121ca58b5ae70"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-79.json",
+      "bytes": 25002,
+      "sha256": "016aa55ae3e90ce57a0947f206a674b89bb18e9f7531553bcc2e93bd096f26d7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-7a.json",
+      "bytes": 34142,
+      "sha256": "bd39d3e5c089b7c7d299b7986fe641ac1512dddb679e3f61512bf88f39eab070"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-7b.json",
+      "bytes": 33318,
+      "sha256": "e2489fcdd758b10b8f93783289b6c1060143bc7dd386d7ff6937e8fc321115f5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-7c.json",
+      "bytes": 30122,
+      "sha256": "ee3b8692736eaa8835ee43c824e819c1590568dd1da67cbe45f1034d8a92ee14"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-7d.json",
+      "bytes": 34539,
+      "sha256": "9fb29b5a865ddbab3b8997c00163d0647a8baaf7c7277399182ac5d65c748803"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-7e.json",
+      "bytes": 32629,
+      "sha256": "33a0b0a5b0031c9adb10743f3302e44884e826e2d5691bf1dccd75eb01534df8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-7f.json",
+      "bytes": 30465,
+      "sha256": "e8c4578417fdbb54cae792fc6bddf82dd67a75a2d68443d7597ea48728d3f975"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-80.json",
+      "bytes": 43140,
+      "sha256": "337ed57781450514f58e9af0e8b64d4746a8a45e6637b0716afc57bba4058578"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-81.json",
+      "bytes": 36972,
+      "sha256": "f1f6dfe8cd47b8d257a1c076cce1309f11d7a6fcdce310d56d709bb37dd5416d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-82.json",
+      "bytes": 31500,
+      "sha256": "919f4ce05962c511a0774365c674b5d055ace1677ffb6b7fcb1df8ae437aef47"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-83.json",
+      "bytes": 29172,
+      "sha256": "916067eb65e3f70cb84df822207a8076e085653ce43075db42405e4a29640ee0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-84.json",
+      "bytes": 37243,
+      "sha256": "c8f393ba5c9dcd047623dc9e03d96a11073925e3a1e09b3120cd0873b1f978d5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-85.json",
+      "bytes": 37583,
+      "sha256": "60d8a3fea5dc35c1472e0bab5f17525e14535292e8a94970c3036d8920de20ef"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-86.json",
+      "bytes": 40747,
+      "sha256": "1badb581fabfca3b9d4e76fd17e37d390f89fe96a3e416b8855bd4858bfbe2ab"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-87.json",
+      "bytes": 38944,
+      "sha256": "f1340503bea52c07cd1d17750864b1a8cc442a0bbc20d05c3c014aeb00a79e85"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-88.json",
+      "bytes": 34141,
+      "sha256": "5c3f1ae483f75781563ac121094844771b6d63586825b7ed5f18fe14a6829d0a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-89.json",
+      "bytes": 37594,
+      "sha256": "bb9614c8d3e233d125b59d62531b64d121cef492ed31b1a8c1892db283a2d85a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-8a.json",
+      "bytes": 27082,
+      "sha256": "6e4c2ddca5b174086202c5b4143b2ff5e3f84ef0c437326488c1eba0fa6b8da7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-8b.json",
+      "bytes": 23865,
+      "sha256": "f9b34cb8fab18ef6293b68a85db36caf703296520e4fe787ae8628c678a84029"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-8c.json",
+      "bytes": 29383,
+      "sha256": "30d5bf3d8776de2b9d9b93d7adfdfa0c15e83f9c59db7dda6b54edd37128599d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-8d.json",
+      "bytes": 36664,
+      "sha256": "8ba37139bc381e287f8685000f1ce35ec27c3cbf3e22fabf979dc5b0913faef0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-8e.json",
+      "bytes": 47247,
+      "sha256": "77835e6a7eef09d6a3b32d6cef7f710ed6cc2ec087a97ee1d7a7293fbb6e44d1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-8f.json",
+      "bytes": 33222,
+      "sha256": "225c644383ff2b2593262fcb537e3d5d6d1cc93f23fc047977e97d833ccc4ac1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-90.json",
+      "bytes": 20168,
+      "sha256": "c09feb2792a61858e7fb05424905204f06c76d7119f3a2ba53bbc0593fc86af6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-91.json",
+      "bytes": 27832,
+      "sha256": "87c7c77ffd763418f94e80466d4ff95dbef7a055e6a9fdd84c7de42921d4d936"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-92.json",
+      "bytes": 31138,
+      "sha256": "f394d32f5b9248bfb20b30b7beee39b68caad0dc76fedab1b7e1ed8529956bef"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-93.json",
+      "bytes": 24898,
+      "sha256": "3348a878bb88e7af376967772d5c385988e7b0c503df723c7868817f8fae064c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-94.json",
+      "bytes": 26925,
+      "sha256": "c4eb2e676247a66d5d13c369b9b769af41928e1dc37b3354fab9152c2eff70ba"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-95.json",
+      "bytes": 27866,
+      "sha256": "60b5071462c692a62bc999acf201a7b3226e4cfd36a0f84b28986c2778426876"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-96.json",
+      "bytes": 33287,
+      "sha256": "380ebae13db79e354fcb95762aaba2d250d73eded5e2e0b2995787dc650d1047"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-97.json",
+      "bytes": 34379,
+      "sha256": "07a16f476d7f88452a36697df895fc11220f9ec9c85b384ee1fe1308a3d00f41"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-98.json",
+      "bytes": 36476,
+      "sha256": "7dca31c1f0e4bcf6c7f06312620339d2b87925f7d7e55401c53124579e25a598"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-99.json",
+      "bytes": 35324,
+      "sha256": "75e408802d13199506c5b689fb4f00f384eafeb2773d7e036f58420e0c890dbf"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-9a.json",
+      "bytes": 41759,
+      "sha256": "320138b05f964bef3a01f81c86f02e03e61f0ca47e54049aba6e258a82c8cb3b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-9b.json",
+      "bytes": 34288,
+      "sha256": "50c92eb7e2e2d2ef1af2ac8e875e1cfc9a33e6e8f5083ba4b3713e72589f614d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-9c.json",
+      "bytes": 32121,
+      "sha256": "11bb294c8ae901c1748698e550429dc18da10555b681e259a14803058aa1503c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-9d.json",
+      "bytes": 18853,
+      "sha256": "3d395ecbfe9be031633d9c3457a8731704345e5a3d116b687f7d720b51e577d3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-9e.json",
+      "bytes": 32218,
+      "sha256": "581857012b89b9f8eff7401e4baf1b6e9db7d6af1b274a3abd3cc36a1cfda551"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-9f.json",
+      "bytes": 36390,
+      "sha256": "caa9dec87b1618e9042f0260d10e0f4b3c573d4a3101aab01819fd0a6abb290a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a0.json",
+      "bytes": 34912,
+      "sha256": "efcf159bb040483c97b9cf2bc1fec1c4432cbc80b35b432903b14b3cae1ce2be"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a1.json",
+      "bytes": 32376,
+      "sha256": "5cff51a61542b1b7f823a8fde0518c17c49e1076085134b863845abfed709c1f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a2.json",
+      "bytes": 37229,
+      "sha256": "22dcbd7f31e6fe8f142933db034d4a7ae0729ea889668d6dffd4f1e29ac78c1a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a3.json",
+      "bytes": 38460,
+      "sha256": "a0d5ddb6cedcf452d9e61cd474c1f7e459c0c2f49c4fc281b79b92363247d29f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a4.json",
+      "bytes": 26059,
+      "sha256": "2b28679fd5952c66a5a4d31401aa9f2ffec5498bed6dfc94a13bcd04d83977db"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a5.json",
+      "bytes": 32790,
+      "sha256": "205f6d90da7c931dec627f848711ea8832496533fc950f225ed28e7183ca1e40"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a6.json",
+      "bytes": 38932,
+      "sha256": "8d552cb139f1eb4fd847ab0238951665d042dbf8f08d3b54ec3517aa485ac6d0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a7.json",
+      "bytes": 37675,
+      "sha256": "2930993fc84237e0117d494387327ca78058dc2a24a4a71137b9e8bd9f17fc12"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a8.json",
+      "bytes": 25148,
+      "sha256": "d1469a1bb5253a84988d6f74bbf864846778f81f757b1d6835abd95814bce0fe"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-a9.json",
+      "bytes": 28329,
+      "sha256": "150bb997ad00143aa598dd940fc62d4bcbb6f5adecb2e6badf0c2b8e48f9ae50"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-aa.json",
+      "bytes": 29361,
+      "sha256": "f68f8b7387e3e15329233d503e30cb8835e19ee46a4d3b8aa8b2b6981adb1d37"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ab.json",
+      "bytes": 41179,
+      "sha256": "680e98f7c0bf695352bad5dadfb56c5afe1d93d57ba4fda2b15667211191bf95"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ac.json",
+      "bytes": 40803,
+      "sha256": "91f5bdfb007203237985ea36c4089c8cd3ff084480de0b08baec622a2d20c5e7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ad.json",
+      "bytes": 34721,
+      "sha256": "586b3e580b1a3318ecc045f4b27c0d245b38c91785735ccfa447eb8e26e0bfd7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ae.json",
+      "bytes": 31225,
+      "sha256": "a7b0b77ae34ae1b7d733d86dd609a2c0377c4fd0a1aacfcd342515986005ff89"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-af.json",
+      "bytes": 34179,
+      "sha256": "7f41c066635046f6e2d1414b1bf5630b7834ba922b557538fb978b8c35b661f0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b0.json",
+      "bytes": 38295,
+      "sha256": "688bdad5eadbf8891e955026746b67ce34c251313731f38a1c2b388dce509486"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b1.json",
+      "bytes": 36097,
+      "sha256": "6ceee3e7baa046a971b68547596e3d870ac297efd6bb7e78b8f9841e83ea0f13"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b2.json",
+      "bytes": 27454,
+      "sha256": "39aff283fdfa4156edc419e2f71ab85844787cae7fdd9e2d6ebfcbd4ad62437b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b3.json",
+      "bytes": 32945,
+      "sha256": "612cf5a5d2fb33f13ff717be961bd65703d408a056b268b9e5a3875818a453a1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b4.json",
+      "bytes": 38108,
+      "sha256": "511645cc99a51c789520254fa668d26f98259bf20edcfec19d2e358572da1ae2"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b5.json",
+      "bytes": 37124,
+      "sha256": "760c3d15ab4ad9975454a358507deed0a3cc172d97361082396b38916f1ae9a6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b6.json",
+      "bytes": 36247,
+      "sha256": "a0928048423b1c6430f3bbf901bc4df63c260d1769d3c0b33ea174fc90c0b22c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b7.json",
+      "bytes": 31266,
+      "sha256": "b8305e4c10f311b2cf23fde2d297891eebadb3c7b0b499a83380d7b9ff8df281"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b8.json",
+      "bytes": 40367,
+      "sha256": "a9e0ade87cc9f4d4313145bd450383bd7944111730f150760bc33c02a1c16ca4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-b9.json",
+      "bytes": 38421,
+      "sha256": "06cf71b6b02ed7663ecdd0dd70af9c2473b4fa9d0e2482eaabcbddb092d9df24"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ba.json",
+      "bytes": 38671,
+      "sha256": "a8a9f6cb5a9f4c689f38cde5b7f898ae59474a118fd4887dc1f38e0a6bc99460"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-bb.json",
+      "bytes": 30832,
+      "sha256": "8d1e3793458d646e7327587fce4d364a904edb2942ff69ba5f746281f38e7b1c"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-bc.json",
+      "bytes": 40658,
+      "sha256": "f5e016edb9fa57f7b9f72af75586fef534a8f922a9774550e5dfc54f8defb0d4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-bd.json",
+      "bytes": 38361,
+      "sha256": "d8bc40f676608542d2138f6939fb49f334a5721dd5cb047837de34419fd0c6b5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-be.json",
+      "bytes": 34227,
+      "sha256": "c5739c69e44e851a652b9508342edcbb1314b856c8a4541fb3068afa4cf32243"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-bf.json",
+      "bytes": 35560,
+      "sha256": "e1483d1b75df9699f8219fd8531c4b114da9555a2b36a2d1f98af18296a952de"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c0.json",
+      "bytes": 48264,
+      "sha256": "3dc2073b9bb3877bb9280c8309b83c28cf3480b16a78aec238be2770bffaac1a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c1.json",
+      "bytes": 32436,
+      "sha256": "e3f84faf6acecb851fe7b9caf78c4dba49d0df39612d5e408a6355cf11889b88"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c2.json",
+      "bytes": 32539,
+      "sha256": "a3252768027ec174c55349ffb8ec08b8dbea28f58c9b8e8821550eec59bde646"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c3.json",
+      "bytes": 32022,
+      "sha256": "0170d652be01883396a911db1467b8316165096f0b56d39240f8f5570fb1f631"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c4.json",
+      "bytes": 43328,
+      "sha256": "dd2053192c41f2a0e37d9b5d43adeb43683bcf85040ff9cae6aeadc3bdd0c93e"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c5.json",
+      "bytes": 36268,
+      "sha256": "3f98dedd6e639ee2022e1e04f51aaac1425c26b39fdb179a5693843ca24e1f1b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c6.json",
+      "bytes": 36353,
+      "sha256": "4845c8237c913823b1cf8675ea4ea6e4203295e0b49ff48369f167572d57376f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c7.json",
+      "bytes": 46679,
+      "sha256": "333baaa6f44c649bccc136a28960a055a1e3635cd22d2ad63ed91a47ec25daa6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c8.json",
+      "bytes": 43348,
+      "sha256": "000e16fc2ab910bf5c039cac0a200f1e1aaf1c8f99de7199c09b7241d76bfdbc"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-c9.json",
+      "bytes": 38268,
+      "sha256": "484a47d158ca4375022d8f7e00be0dcc0c3ac1b5bc0f7f9cc1ddfeb329ee3a04"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ca.json",
+      "bytes": 36204,
+      "sha256": "a731592fe18bcb04026098bb557336b8eb812117461f2e0d9d9e50e7f5d7b6f3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-cb.json",
+      "bytes": 38294,
+      "sha256": "f0d45f8c63744198204523e64cabc7740d3b81a70a51c03b870d58f45c991f85"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-cc.json",
+      "bytes": 38001,
+      "sha256": "2946ea699ed324657c17213eecb884ffee8b5c24b6227a7df7ece2b0fc1a99b5"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-cd.json",
+      "bytes": 40444,
+      "sha256": "289079cc4cf551755f29e48ee981496ce29268f77971253145451672205a0aeb"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ce.json",
+      "bytes": 45458,
+      "sha256": "34395ac7d79f50f2af12f4df6e26369993f68d83396bc71384b86dbb05c8c42a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-cf.json",
+      "bytes": 27105,
+      "sha256": "2c5ccc36f586a391b6ecae6d2bf023f47ee9285b0e5a282a24210af39424f87d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d0.json",
+      "bytes": 32179,
+      "sha256": "59a7aa0b328db94a80ef692a26174af4a8ccb2049bc168bf706042df743d9eb7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d1.json",
+      "bytes": 38387,
+      "sha256": "3fc2f6d88e0d0700336efc004f5c10de85094592785db5f358bbaf274ead3b6b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d2.json",
+      "bytes": 46472,
+      "sha256": "dcbad62e9f6d10fd12a241076bab74f7dc52943db9782bc549f46013ba1f863d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d3.json",
+      "bytes": 33177,
+      "sha256": "79042c314a2171127f67143f4702d85cb504ae6b2e0c4a877d167bd4a2d94405"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d4.json",
+      "bytes": 28224,
+      "sha256": "26d928d235807f9f074ae585360ae702edb8385c903f2e1f67b4af7c4e4c1e69"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d5.json",
+      "bytes": 27668,
+      "sha256": "fcc578293934a52159ddefe71076e45fb0b30b452fdb5e51815ef88605788358"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d6.json",
+      "bytes": 38947,
+      "sha256": "f69a2e16edd91dadd04b2080fa7533069a5d1c33dd1e14ba0c37acd7f9d4e7b4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d7.json",
+      "bytes": 40576,
+      "sha256": "f5e847c65be51bc89e2e39cd34f3881e2a0bd4fe0c6179380f97effeafe36cda"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d8.json",
+      "bytes": 40522,
+      "sha256": "ca18fa490577eed8c3f247154a19dcfc6ad95285c009d1d1fa7b32349b3c683a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-d9.json",
+      "bytes": 36150,
+      "sha256": "d6aa350f048d1c1dbee644e1d921cf6cba02e6f38e7da74e69ce55d135d00874"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-da.json",
+      "bytes": 36455,
+      "sha256": "27781523dc26b72cd83e31c58dc0837ec9ee7ef8b5ffb9bc6d2b3b2cad71b9b9"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-db.json",
+      "bytes": 39318,
+      "sha256": "5077b2b5bded11d613c18c6f43376529d2da05de2df7b8e292e93bce536369f7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-dc.json",
+      "bytes": 37295,
+      "sha256": "277842b7cf5b6df3e5a63801aa48dfb22d1010d849ee46bbbbd20050a012dad6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-dd.json",
+      "bytes": 19130,
+      "sha256": "76b804bad459238323e357cb9fa3d3482293c70259a095beb02241b7744592ac"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-de.json",
+      "bytes": 31633,
+      "sha256": "47de956a2d92b56d195021876479012b1eeaea55ce72beaddb77137c003bbf15"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-df.json",
+      "bytes": 36162,
+      "sha256": "31d4114b3a2b6f6d3718ef94d85764f5adf62fbec28cba02487c7283f6ba7763"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e0.json",
+      "bytes": 33024,
+      "sha256": "172730e8e99ab5723701d48809670045b23e9e617edf1b7659b382229f3618c8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e1.json",
+      "bytes": 35780,
+      "sha256": "69c543e4a58ec2db9b6d55cfaa8d7b2ec78bbcde44dc255c60c505a1533442d0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e2.json",
+      "bytes": 31023,
+      "sha256": "0794d3df09568151f68b383c74645bc990f617f3a9ae987c16e6deca16bdb0a6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e3.json",
+      "bytes": 35692,
+      "sha256": "36dcd845c3791426dd8d84e5550f4a0dd6b679abd4d638857c49d750e6036e04"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e4.json",
+      "bytes": 27187,
+      "sha256": "b0abfdb12f2826d6c844a6f50a17ff3693b50e215482767f41db33b340c4c1c4"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e5.json",
+      "bytes": 37345,
+      "sha256": "7c8f457e6ef659214ac4b9386ce6728b0b738351929a5a1752e3405309f1a104"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e6.json",
+      "bytes": 42291,
+      "sha256": "c3b8603a32f85ec0f7704c7bbf7641b4338f24291256fd7a63ac6214c1f93831"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e7.json",
+      "bytes": 34684,
+      "sha256": "2c853d70a6f260ead9ade747aa4b64612991ea195df3f5e03862b76a194599a1"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e8.json",
+      "bytes": 35594,
+      "sha256": "72f029d8559b5f2a1980f8ba3523aadd88547145850fe8137d8c761231eb1c72"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-e9.json",
+      "bytes": 43682,
+      "sha256": "82713c4f6740b3c86b0bc72bbc7d2cc90f7bd65fe22bb36ba0fd70974695e903"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ea.json",
+      "bytes": 37953,
+      "sha256": "1e179f7d87c103fa7ecdfac68c7ea5dfdde19b51aecd3c066d98f8ab839fbc34"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-eb.json",
+      "bytes": 32191,
+      "sha256": "942d0721ea780692cc742c4d9b66f3f0fec06d86829f39faddf18f6c7afb8813"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ec.json",
+      "bytes": 39044,
+      "sha256": "9a6b5bb7d580b7438dae744616b15d7dc88b3af84d1393299b8c89d7cf2a9a9f"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ed.json",
+      "bytes": 33227,
+      "sha256": "65b35c9c11bfd52b1cb7cbcdd402a7907b6b6806a9e61f4e08fc75501111cd84"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ee.json",
+      "bytes": 22108,
+      "sha256": "a624e4903a25da9bf8a2d6a99eeafab2294d028bdb19ec08203097c005765b2b"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ef.json",
+      "bytes": 35399,
+      "sha256": "99619248ea99b028e5c1475aa9474ea24658f91be7df4888370e0e63080b7ca0"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f0.json",
+      "bytes": 31289,
+      "sha256": "a113a71daeb595499ec131dec5c935bdc5fde7f002fd76293412a3a491a7c8e6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f1.json",
+      "bytes": 24009,
+      "sha256": "7da10812782c4fe08456d3d2d8d5ba3b74c267adacff9feb509650eaab72e4f7"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f2.json",
+      "bytes": 46509,
+      "sha256": "b9674a1c90d309576317a983e937fd99dfbff0668e9ba56c2a9cb1bc75c53c8d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f3.json",
+      "bytes": 26336,
+      "sha256": "6814c6f71384e580c35fe6b8bcb179e4ae992af6e246800b8146e1221f56f8fd"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f4.json",
+      "bytes": 29965,
+      "sha256": "0cb8409564e1def6a573f30d18ffbd3f4675f094fbb874207fcae148013bb3ed"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f5.json",
+      "bytes": 32286,
+      "sha256": "a732ac064242d118159a192d1ee7caeb5366d30aace90f257d002dee371c5c88"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f6.json",
+      "bytes": 30062,
+      "sha256": "e70d3071eda464f0faed9e91c34d43c6ad44c32ae3a328b88f22be3a871556c8"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f7.json",
+      "bytes": 33499,
+      "sha256": "5a210a1401f979cffd5d2627613bdd420983d57edbde13bfd655b17a58bf32ad"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f8.json",
+      "bytes": 39753,
+      "sha256": "45071c68144beb4a9d814510798051dab5c9adf2fc6252301a221c0908458ef6"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-f9.json",
+      "bytes": 37502,
+      "sha256": "8a69c29f805bffa571044c6e9da4c9a903cf1387a33e52db4ad3cb089cf52323"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-fa.json",
+      "bytes": 28246,
+      "sha256": "168493da317d663291d69416372d96058d020a68fda6c93ab1fb061d0e625542"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-fb.json",
+      "bytes": 30421,
+      "sha256": "4592a612a548dfbd9efdcbea9fa295893652043407ab0cc9ca8551df37c14069"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-fc.json",
+      "bytes": 32139,
+      "sha256": "6afb5abc0b5644621fa609eca4932b14c3ae92b3188f56f2d5109eef1fe42462"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-fd.json",
+      "bytes": 29044,
+      "sha256": "e61299ee57a22656fa8487d8d263b68d873b126e9893b4321d4d83a8b2979fa3"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-fe.json",
+      "bytes": 32422,
+      "sha256": "21d8fe9a26a62e303db746060bc6afe84bb77f612a56e7bc9c50888885169164"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/fine-lookup-ff.json",
+      "bytes": 40508,
+      "sha256": "9bc203303cdad15378ead8c63b73558630cb396c0188bdb77f4bf21afd61003d"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/handoff.json",
+      "bytes": 3807,
+      "sha256": "c99543375e2a17ab1fd6b3779a8f00a3594eb9eb21d2ae8cf8ed63a961ebc999"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/manifest.json",
+      "bytes": 742,
+      "sha256": "874c75e8312c0d056de44b19a5295100938b61bae5de01b656f0f5bfa6443b0a"
+    },
+    {
+      "path": "research/q025/assembly/outputs/full-scale-delivery-fixture/partition-validation.json",
+      "bytes": 2513948,
+      "sha256": "56d8d12768c599bb5d4bf99ced4e1036bee2fc16920ddea8ff84501e06fc9699"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/catalog.json",
+      "bytes": 733982,
+      "sha256": "cdbaa0265796d25779ab7ea955e6dcf866d88c8955311e9ad381747bbb92defa"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/context-3768bbe41c392cde3687fcc1.json.gz",
+      "bytes": 6619,
+      "sha256": "351df1d74b1f5d5f7bf8f77dcc2bfcdbc3f7f94ff7874de1cf534e118adb8181"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/context-4d3ed4ed08b412802344410b.json.gz",
+      "bytes": 7342,
+      "sha256": "2f78fe411b79ae1624cf4656b0bfdc06112f78575f901ac3877ac3cc6f2d9ea5"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/context-859136b54d28aa5324222c1f.json.gz",
+      "bytes": 7820,
+      "sha256": "ca023fd550a7c2021688e349d73268c39e6704f749f195078bb4ed74610f822d"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/context-87ab740ce7579fffbe8ec7cc.json.gz",
+      "bytes": 8165,
+      "sha256": "717ef134fcbc5faa4dcb683c843e416f04f3640b6a3222c55eddbd69647fe06a"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/context-b34fbf5825c4466ae89db978.json.gz",
+      "bytes": 7162,
+      "sha256": "d55d48cf50827e8f5e066b5f93d0291c9356f77af4ddb9d155401f71fc16ad96"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/context-fab9bf3fee6db124cc91ebcf.json.gz",
+      "bytes": 8979,
+      "sha256": "51b6a98207b50b9bc0c1cf656d437e70535b9d9e7f3cbb44495a54f1ac30fe53"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/handoff.json",
+      "bytes": 2105,
+      "sha256": "211b5b9f12a79bdf911272d4d098be6367387051a14709769b367866ea635bf7"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/manifest.json",
+      "bytes": 1199,
+      "sha256": "138749846ec27dd4e61d86d58bc0c976db67f10823b43faec343ff6657aae87f"
+    },
+    {
+      "path": "research/q025/assembly/preview-methods-package/source-context-index.json",
+      "bytes": 1981,
+      "sha256": "72f2b270ae1834083de3848a1eebe991c513d05aee0cad0ceb14f5db6e2007c3"
+    },
+    {
+      "path": "schemas/contextual-view.schema.json",
+      "bytes": 3707,
+      "sha256": "9c6e654200741901055deaa65022b393d0975267b77afc23f79e5b5582f0e44c"
+    },
+    {
+      "path": "schemas/navigation-session.schema.json",
+      "bytes": 784,
+      "sha256": "9610fcbb09c2da66d5986230f483235cc51f1eeb8bad25f1a4b8090011b245c0"
+    },
+    {
+      "path": "schemas/navigation-state.schema.json",
+      "bytes": 2938,
+      "sha256": "b0e975e39aef4fd6c07692d851dc3f047d32f4e0814ba14dd8586c2f9f2f0088"
+    },
+    {
+      "path": "schemas/navigation-view.schema.json",
+      "bytes": 5202,
+      "sha256": "514885bee9a964ad680a00def0bb221b6b6fb515680fd3bd688373f69d3f925b"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 12729,
+      "sha256": "64af4c544c6c7b00973094c2c88c7576943c58356f21362001dd8193bd7a453a"
+    },
+    {
+      "path": "scripts/site-check.mjs",
+      "bytes": 8792,
+      "sha256": "9a3f68e0297ccbe149ac7364c7db4618654454cb768e3f8d2d05b92affca713e"
+    },
+    {
+      "path": "scripts/site-serve.mjs",
+      "bytes": 1767,
+      "sha256": "f5cee7ba5fa8d0b0cd229186a7a0ebeb7e670ac7246f47c371abd95335305e78"
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "bytes": 10976,
+      "sha256": "e0fcaaaec39e8bd51134e9a874c8c3725c14c183cfb5abaf77e02ff276879d7c"
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "bytes": 5522,
+      "sha256": "b93e76877b61bb3db6789b2d27ad43e04b5bc8e820cd86a8d4e9c7a3fe93ee08"
+    },
+    {
+      "path": "tests/fixtures/source-context-overrides.json",
+      "bytes": 37765,
+      "sha256": "0899669adba8575bec4f49a851578e62dab20c92204f1e95b870d59546658e0c"
+    },
+    {
+      "path": "tests/integration/classification-layout.test.mjs",
+      "bytes": 1172,
+      "sha256": "68cf153f2337053db6b61842de10b9b38fb8ee9753bbe70187e3a32350847610"
+    },
+    {
+      "path": "tests/integration/lazy-atlas.test.mjs",
+      "bytes": 9438,
+      "sha256": "8601a1b64150bbab3e2f1d5310369ab966ac23547f0fe5064f70c3a6971ed27b"
+    },
+    {
+      "path": "tests/integration/prepared-atlas.test.mjs",
+      "bytes": 16829,
+      "sha256": "50b1db6009eae3132675cb435c2d9240c5c6196b9e2092aa2ae19e6b0849ec82"
+    },
+    {
+      "path": "tests/integration/q025_prepared_acceptance.py",
+      "bytes": 34984,
+      "sha256": "d5a221cabef90071e5c07cb0302117e775a45279ecfc643a44dd27a07ee38786"
+    },
+    {
+      "path": "tests/integration/static-atlas-discovery.test.mjs",
+      "bytes": 4010,
+      "sha256": "a827c8bb7432f56bbee3d41ffea271502ef5cc6d646bcdafe23581c39a522f2a"
+    },
+    {
+      "path": "tests/integration/work-note-fallback.test.mjs",
+      "bytes": 2591,
+      "sha256": "96de19c17c7115e1e4c40010570c1aaf36e84feaba9cc7e8ffe1b003a7bd4659"
+    },
+    {
+      "path": "web/404.html",
+      "bytes": 474,
+      "sha256": "40e37a25618f4c28436e4a4cc9fbd848498a908d96ab9660ee1849e26611c150"
+    },
+    {
+      "path": "web/_headers",
+      "bytes": 355,
+      "sha256": "bf165adf48f8e56c2f5255aff90ca9df6905f5b2a59f450e78513bf746d19cdb"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 88219,
+      "sha256": "235855b1681c523451559d138acd339b3240c83975302d4c8a0618cd28f32650"
+    },
+    {
+      "path": "web/atlas-overview.css",
+      "bytes": 3045,
+      "sha256": "20c01f6d618dc1bb0b3a5c768a6cbf7e65ff3ec5b9ef99782da28a6a3c4efc41"
+    },
+    {
+      "path": "web/atlas-overview.html",
+      "bytes": 2399,
+      "sha256": "ace75b33019b543e5ebaa0654cc0a61f2277f65bd7076f2580e8d63a785188f4"
+    },
+    {
+      "path": "web/atlas-overview.js",
+      "bytes": 16103,
+      "sha256": "cca3f98badcd1aa8ef20490d0421293811f2bee0e7ddff55d8599fc6ea6130a7"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 9409,
+      "sha256": "d06f3339a277fa467b4194cf5982c75ad8d853088a843d2fe53f4f4877d3e54b"
+    },
+    {
+      "path": "web/chart-labels.mjs",
+      "bytes": 1900,
+      "sha256": "3f2c99883fd9cf894bfab6c31eeb83060068f2f18c4ea9f3da7a1266b11ff808"
+    },
+    {
+      "path": "web/classification-layout.mjs",
+      "bytes": 2345,
+      "sha256": "1888012dc982d0a06f276ba4d7e38c02f3686bdfac58af7d551ff6899f6d49c7"
+    },
+    {
+      "path": "web/compute-worker.js",
+      "bytes": 3017,
+      "sha256": "2c2889d43160a64b58a1fdcbfb824f4dbc0e88b2cf37e0e9879311d86cd69c1b"
+    },
+    {
+      "path": "web/construction.html",
+      "bytes": 8837,
+      "sha256": "8b696c9133169df814e443d7877d0d73967726713edabc283c9f48cd39997a70"
+    },
+    {
+      "path": "web/favicon.svg",
+      "bytes": 173,
+      "sha256": "a304460bd4f2165d0a0774d1125690c5262948fec74415d3ecc99f7286d63a75"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 9998,
+      "sha256": "6bf2a8bdcbda01af8c7509de55e300619f726d4055faa5c2e9ea21645b03848f"
+    },
+    {
+      "path": "web/llms.txt",
+      "bytes": 3031,
+      "sha256": "e747accc061683ea82a79c556b649539827ec5bf22d4bfc0d95aeeb126332a94"
+    },
+    {
+      "path": "web/overview.css",
+      "bytes": 8806,
+      "sha256": "c3dd9ce18883d48e158ba48183b16a6e73947b69364c2d7387a6c286646c294a"
+    },
+    {
+      "path": "web/overview.html",
+      "bytes": 4629,
+      "sha256": "a5750488d76c2f457789cf4aaf3585a4b8963802d465f5db212daa2cdc290b93"
+    },
+    {
+      "path": "web/overview.js",
+      "bytes": 31678,
+      "sha256": "53f17eb244ce630b96e053382f3cc948c71fe2d290fdf6ba7e3eba7d35ca9c95"
+    },
+    {
+      "path": "web/robots.txt",
+      "bytes": 71,
+      "sha256": "4e2ce44b5c704067d8cd4ba122c16a3cfb106dc036b9acc0214faf07d6be8e0c"
+    },
+    {
+      "path": "web/sitemap.xml",
+      "bytes": 533,
+      "sha256": "cb344b6ed5114f2db88a787f3ea812ca67f6366ea8858ed03223dae276847c28"
+    },
+    {
+      "path": "web/source-context.mjs",
+      "bytes": 6208,
+      "sha256": "fbbe6c06502530d8be4d778aff4fbd51f308b6bc8124e57dd591e7702b191087"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 26859,
+      "sha256": "c1cc8d6c1d565d9b615211a470696d35ceda45d7a4a5bc02f985553da76085f5"
+    }
+  ],
+  "archiveSha256": "85a733266651041f35c89701ffa453ea6b96764125bd564e6a12419a1fbfb659",
+  "sourceContextPackage": {
+    "manifestSha256": "c86bc90966007c28ce40523348e51e4ace4d20d62354f79928133d371f77c6f5",
+    "indexSha256": "22772f2c76dd7a98a79e407656191df74b781d9446950ac0038bbb2a27db4f10",
+    "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/source-context-v3-compact/pack"
+  },
+  "previousFailedJob": "61451345",
+  "changesSincePrevious": "Disclosure visibility test; exact action/route guards; capsule direction evidence bounded to emitted nodes; cold connection hydration; checked static assets and all destination pages; note export despite full local storage; readingCoverage display."
+}
