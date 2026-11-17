@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "q025-ready-exact-role-confirmation/1",
+  "status": "ready_for_root_launch",
+  "jobs": 2,
+  "rows": 124,
+  "maxAuthorizedConcurrency": 2,
+  "campaignSha256": "ed46f1d9341b6ee94936eae0f2613521a1cae0552ca231df0316cbbb4ebdd568",
+  "manifestSha256": "42576be9daa40c4ff77aeeff877b6755f001792e8ad5ef7669b94303e3b01667",
+  "tests": {
+    "python": 6,
+    "node": 3,
+    "verify": 2
+  },
+  "preflight": {
+    "schemaVersion": "q025-explicit-role-preflight/1",
+    "jobs": [
+      {
+        "jobId": "mediation-source-role-confirmation",
+        "rows": 47,
+        "sourceUnits": 31,
+        "primaryWindowsVerified": 38,
+        "pairedUnitContexts": 33,
+        "promptCharacters": 240603,
+        "schemaCharacters": 2170,
+        "maxResponseCharacters": 40000,
+        "conservativeCombinedTokens": 110258,
+        "defaultContextTokens": 272000,
+        "effectiveContextTokens": 258400,
+        "dispatchGuardTokens": 220000,
+        "promptSha256": "81a1542aba168a081bf062670a72b4c33dcd812340da5c1702be2b20417a1492",
+        "packetSha256": "755a7ddd3fa4a1544a93df47d453d9d79b4122433095868744b7c77993016f60"
+      },
+      {
+        "jobId": "statistics-source-role-confirmation",
+        "rows": 77,
+        "sourceUnits": 52,
+        "primaryWindowsVerified": 67,
+        "pairedUnitContexts": 59,
+        "promptCharacters": 401700,
+        "schemaCharacters": 2170,
+        "maxResponseCharacters": 40000,
+        "conservativeCombinedTokens": 163957,
+        "defaultContextTokens": 272000,
+        "effectiveContextTokens": 258400,
+        "dispatchGuardTokens": 220000,
+        "promptSha256": "e770d16f9c33c525b25ae6239622973040e00aceb7423cf209102057af78d772",
+        "packetSha256": "2f904bc07ec51d036d43bfd6ead353de533379ffcd6c9d41cfe477f18c37d927"
+      }
+    ],
+    "exactRows": 124,
+    "sourceLocatorFailures": 0,
+    "privateSourceArchives": 38,
+    "activeInputsChanged": false,
+    "nativeLaunches": 0
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/contract.py",
+      "sha256": "4a20fad74f577266cb2f401438cb03b10300a7c03b1855501179bf955806dadb"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/materialize.py",
+      "sha256": "a7161980c79b615a0177bc43dcdb8c8df2ad03a3c259713a956ea64fb65da2d9"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/INSTRUCTIONS.md",
+      "sha256": "ecd6f1fadccd2e97842048c193a8379b5f3e814503d3753bc9e33dc1e4c5436c"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/source-index.json",
+      "sha256": "7f4c391fcb078b51101039beeacd93ce8fc6f50eae6332b7a46732db466867bd"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/prepare.py",
+      "sha256": "b9a7a826c8a17b296851fe0f11eb4b48b360875a407ece30ee5375dcc58ca7df"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/runner.mjs",
+      "sha256": "90bf1cfbb80fdf1cfe5382a4a81f9273b66388f315660955bfa828048519f538"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/test_contract.py",
+      "sha256": "0acf1f8973e9fb42ee56724734feb0c5b9bebc0f16490257d84ad0ec0186d86f"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/runner.test.mjs",
+      "sha256": "803f5dd4409f167b45ee1abcb507058db034535d4ef7c5b4086c1b96aab145d2"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/preflight.json",
+      "sha256": "23ba2f971cd99631b32d99d356153370655be13925f5048dc4ebd1236bd026f7"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-role-confirmation-v1/manifest.json",
+      "sha256": "42576be9daa40c4ff77aeeff877b6755f001792e8ad5ef7669b94303e3b01667"
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/canonical-role-confirmation-v1/runner.mjs --run --enable",
+  "noAutomaticRetry": true,
+  "nativeLaunches": 0
+}

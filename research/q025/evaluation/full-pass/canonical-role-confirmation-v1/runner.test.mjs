@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {verifyPrepared,reviewIndependence,explicitQuotaFailure} from './runner.mjs';
+test('two bounded confirmations retain exact124 rows and source pins',()=>{const p=verifyPrepared();assert.equal(p.jobs.length,2);assert.equal(p.exactRows,124);assert.equal(p.maxAuthorizedConcurrency,2);});
+test('receipt records explicit independent role confirmation, not a triage or new first proposal',()=>{assert.equal(reviewIndependence('confirmation'),'separate_ephemeral_explicit_role_confirmation; prior_scientific_readings_visible');});
+test('explicit exhaustion is detected without treating unknown quota as denial',()=>{assert.ok(explicitQuotaFailure({code:'rate_limit_reached'}));assert.equal(explicitQuotaFailure({ordinaryUsageAllowed:null}),false);});

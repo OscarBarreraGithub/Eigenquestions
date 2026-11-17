@@ -1,6 +1,7 @@
 import {loadAtlas,createAtlasNavigator,atlasAddress} from '/lib/geometry/prepared-atlas.mjs';
 import {placeChartLabel} from '/chart-labels.mjs';
 import {classificationChartDisplay} from '/classification-layout.mjs';
+import {destinationPresentation} from '/lib/protocol/display-editorial.mjs';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;};
 const svg=(tag,attrs,text)=>{const node=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))node.setAttribute(k,v);if(text!==undefined)node.textContent=text;return node;};
@@ -78,7 +79,7 @@ function button(label,handler){const node=el('button',label);node.type='button';
 async function select(id){
   const selection=++request;await navigator.prepareDestination?.(id);if(selection!==request)return;
   const record=navigator.destination(id);records.set(id,record);selectedId=id;if(space==='classification'&&points.has(id))classificationAnchor=id;const links=relations(id),childIds=children(id),panel=$('atlas-selected');panel.replaceChildren(el('h2',record.title));
-  if(space==='classification'&&record.metadataOnly&&childIds.length)panel.append(el('p',`${childIds.length} ${id===layout()?.entryDestinationId?'fields':'research areas'} in this classification.`));else if(!record.metadataOnly||record.kind==='landmark')panel.append(el('p',record.summary));
+  if(space==='classification'&&record.metadataOnly&&childIds.length)panel.append(el('p',`${childIds.length} ${id===layout()?.entryDestinationId?'fields':'research areas'} in this classification.`));else if(!record.metadataOnly||record.kind==='landmark')panel.append(el('p',destinationPresentation(record).summary));
   const open=el('a','Open this destination in the text explorer →');open.href=atlasAddress(navigator.createSession({selector:selector(id)}).states[0],location.origin);panel.append(open);
   for(const portal of portalFor(id))panel.append(button(portal.label||'Enter the detailed source atlas →',()=>portal.target==='destination'?select(portal.entryDestinationId):switchSpace('detail',portal.entryDestinationId)));
   const related=space==='classification'?parents(id).map(target=>({destinationId:target,title:records.get(target)?.title||target,navigationKind:'broader classification'})):links;

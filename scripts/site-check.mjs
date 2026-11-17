@@ -29,7 +29,8 @@ export async function checkSite(directory = path.join(root, 'dist')) {
     const source = await readFile(path.join(directory, file), 'utf8');
     for (const match of source.matchAll(/(?:from\s*|import\s*)['"]([^'"]+)['"]/g)) {
       if (!match[1].startsWith('.') && !match[1].startsWith('/')) continue;
-      const imported = match[1].startsWith('/') ? match[1].slice(1) : path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1]));
+      // Browser URL resolution clamps ../ at the origin root, unlike file paths.
+      const imported = new URL(match[1], `https://static.invalid/${file}`).pathname.slice(1);
       assert.ok(entries.includes(imported), `Missing browser module ${imported} imported by ${file}`);
     }
   }

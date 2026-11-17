@@ -1,0 +1,563 @@
+{
+  "schemaVersion": "q025-display-editorial-examples/1",
+  "status": "presentation_proposal_not_installed",
+  "source": {
+    "artifactPath": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+    "artifactSha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864"
+  },
+  "scope": "Five explicit examples only; no automatic matching or global editorial clearance. Final scope hashes must still match before use.",
+  "records": [
+    {
+      "id": "q025-candidate-question:0df1cb0c987af0d359f479ae",
+      "kind": "question",
+      "title": "Effective-supergravity construction and metastability",
+      "question": "How do model choices, supersymmetry-breaking mechanisms and mass hierarchies affect the existence or prevalence of locally stable positive-energy vacua in effective supergravity?",
+      "summary": "Provides a shared overview for explicit constructions and ensemble questions while retaining their different deliverables. N=1 is specified where supported; the supersymmetry count of other F-term descriptions is left unstated.",
+      "scope": {
+        "systems": [
+          "Four-dimensional N=1 models and random ensembles where explicitly specified",
+          "String-motivated effective supergravity",
+          "The supplied flat-metric F-term model",
+          "The heterotic M-theory effective F-term proposal"
+        ],
+        "targets": [
+          "Analytic or minimal de Sitter constructions",
+          "Metastable fractions in random ensembles",
+          "Vacuum-energy and supersymmetry-breaking scales",
+          "Minkowski limits"
+        ],
+        "regimes": [
+          "Explicit models distinguished from ensemble statistics",
+          "F-term mechanisms and gauged shift/R-symmetry mechanisms distinguished",
+          "Local stability assessed within the stated effective theory"
+        ],
+        "assumptions": [
+          "String motivation does not establish a controlled compactification",
+          "No ensemble result is transferred to a named construction"
+        ],
+        "conventions": [
+          "No numerical metastable fraction is recoverable from the supplied descriptions",
+          "Unstated dimensions or supersymmetry counts remain unassessed"
+        ],
+        "includes": [
+          "Independent tuning questions and nonperturbative construction aims"
+        ],
+        "excludes": [
+          "Universal metastability probabilities",
+          "Treating a proposed mechanism as a completed vacuum calculation"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 7,
+        "excerptCheckedCount": 2,
+        "readingLimit": "Most explicit construction and statistical questions are description-only. The heterotic excerpts motivate nonperturbative effects and dilaton stabilization; they do not supply the completed extremum or stability calculation.",
+        "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+        "inheritedParentCoverage": null
+      },
+      "evidenceIds": [
+        "unit:05ffa02f6b3c44588c53b7d1c85e68cf5f8205f9f926b2ef434d5bfde14b2489",
+        "unit:2c9cbbdbcff07df7480b80b4451b56276320054b4d3b4cc5ab15c9d856989415",
+        "unit:3d997dcc724b02954bff3262953343b90c6f68e9f603a30a63f2cce0976b5794",
+        "unit:c7273be609b98d4a21abca72d19dfed1765afc38204a300212c340100744ac41",
+        "unit:e19da428086dc55d2c2a6ecab93a1490a492912b2614f78d2a0c80e48c230a6b",
+        "unit:f7a273b2f436ffc0250f37512c2712a6caafa5e1f99061468e6bc30411ecba22",
+        "unit:ff442754f2c0d4acdad1b0dcd79546a393f0329c23587cb07b343fb0574a859c"
+      ],
+      "scopeContentSha256": "f64d98b7780ade82226597938c949866bf1c4816aad299e59df90e1756449b02",
+      "displayEditorial": {
+        "schemaVersion": "1.0.0",
+        "kind": "presentation-only",
+        "scopeContentSha256": "f64d98b7780ade82226597938c949866bf1c4816aad299e59df90e1756449b02",
+        "origin": {
+          "artifactPath": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+          "artifactSha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864",
+          "recordPointer": "/destinations/107"
+        },
+        "relocations": [
+          {
+            "path": "/scope/conventions/0",
+            "originalText": "No numerical metastable fraction is recoverable from the supplied descriptions",
+            "category": "reading",
+            "reason": "Describes the extent or attribution of source reading, not a physical premise."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q025-candidate-region:a0f723b38ca7f47ed567e044",
+      "kind": "region",
+      "title": "Geometry, protected amplitudes and brane/CFT data",
+      "question": "How do geometric and algebraic structures organize calculable data in string compactifications and supersymmetric field theories, and which adjacent CFT or holographic questions offer distinct comparisons?",
+      "summary": "The original proposal supplies numerical memberships without a scientific scope statement. These memberships are useful after distinguishing physical targets, dimensions, regimes and evidential status. Shared geometry, modularity or partition-function language does not establish question identity.",
+      "scope": {
+        "systems": [
+          "Calabi–Yau geometries, branes and string compactifications",
+          "Specified supersymmetric gauge theories and BPS sectors",
+          "Two-dimensional CFTs, including Narain and rational theories"
+        ],
+        "targets": [
+          "Protected amplitudes, enumerative invariants and BPS spectra",
+          "Gauge content, effective actions and proposed vacuum mechanisms",
+          "Moduli geometry, phases, stability and limiting spectra",
+          "CFT classification, observables and proposed correspondences"
+        ],
+        "regimes": [
+          "Local and compact settings remain distinct",
+          "Spacetime dimension, genus, refinement and coupling limit remain source-specific",
+          "Ordinary and pre-Swampland work remains eligible"
+        ],
+        "assumptions": [
+          "Numerical proximity is candidate provenance, not scientific evidence",
+          "A broad navigation family can contain different scoped questions",
+          "Conjectures and proposed mechanisms remain conditional"
+        ],
+        "conventions": [
+          "Fine singleton status retains the exact original source question without proving atomicity or uniqueness",
+          "Source-parent kinds and access points do not determine physical premises"
+        ],
+        "includes": [
+          "Separate access to computational, interpretive and consistency questions",
+          "Boundary comparisons and alternate homes"
+        ],
+        "excludes": [
+          "A universal equivalence between all partition functions or geometries",
+          "Automatic transfer of results between dimensions or limits",
+          "Acceptance of graph-derived scattering or singularity resolution from description alone"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 59,
+        "excerptCheckedCount": 9,
+        "readingLimit": "Only supplied descriptions and bounded primary excerpts were assessed. No equations in images, full papers, later developments or external graph relations were checked. This authored region remains a proposal requiring independent review.",
+        "sourceReadingScope": "Representative support from exact jointly assessed member/overlap units. These references support the reviewed scope; they admit no placement, mass or equivalence. Counted excerpts are the same own-paper windows explicitly read by both reviewers.",
+        "inheritedParentCoverage": null
+      },
+      "evidenceIds": [
+        "unit:02c3475a0c360d9772cf6d0adbd1e496d653f79dd69b275237e45df6e9c29360",
+        "unit:03a23c4d6ca92b6dfcf7d9a416ec48dd6ee1e51753fab28517a12ab4e37a66b9",
+        "unit:07aa88862aaca8203edf4415f1f2c8b4390219da5d056f187c23c608a35486d1",
+        "unit:0c0e5bc0d09c001963465763a3e9658f3a596ca8cb8303f361b69b7867258d3a",
+        "unit:19080817beafb608e0bd61a2367737fee8f87e7b5857be5bd66014d350bfb8e4",
+        "unit:1bb0ee4ef89f395e9d60f164d6e34a60417ca750f31d66ff7bd626f3ee936f23",
+        "unit:1c740ee1bd39b67be0e4de458839dd9f6aa2e64aeec137a45b06f0d05ac618c9",
+        "unit:1f6123c30767340fc0b822676ee9abee4d8e997aa422366c7f55c46aca12d150",
+        "unit:25ac22d9e6fd82570f5c93d70d293f1bb9bb99293cb973a685488f0eea153531",
+        "unit:26dc3d5fc623094f8a366f82ff79f02ff0b00707ea98991c598ecfa14f767e84",
+        "unit:2b26b922d6d6cbcf3a9307c8f76fa5667afa12ba6c962234be865638a68df584",
+        "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+        "unit:313fe3f0b7b637a83d3c5e3c69dd4ab782c5fa47f66b80fe7a5e3f2dd439dee5",
+        "unit:3d97c5480a531b1ba38f51ae3e7c5972bdc1a59e68a1fac56597b69838783511",
+        "unit:3e854198fa1a47b3a773781c5602527768a2d7fcb722fabacd16fb52658344ab",
+        "unit:4d15e34a3afb16ebec2b8c1d54f24a0521285d4db14d228cde674027fbcac8d4",
+        "unit:50c99daef8f9e52e96048710b8337d19c3aa2dec8ab721265dbeda4463ec7117",
+        "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+        "unit:5a4af9997e5e425d29b9a0b6ac050f0ad09e2b4a619462ea14420647890d6585",
+        "unit:62bbe09790b7105c5af19112f889051b9df1f1e0fde24b9a8d202427b156840d",
+        "unit:6e5f5e91e5ad83417bc4f986dfd7e093104637223a41327a86f24b9198db2efa",
+        "unit:7360420a7778bf2accd9faa80ca7c1ac866fd140092ddc6186f4ef68877d6866",
+        "unit:8518e44b60c515a57e29ca9fc16e1113775b23573fe83b29dc870b110bdd13de",
+        "unit:897e31cc5337b6575a36055f4b0a84f00024866314133e10e9dec1b6182e456e",
+        "unit:8b5ca8d2aee7e64d6c265d34372ec64073c166cd71037721365aaf4ce8ac90fc",
+        "unit:8efc40b4efc7aa4694c466785655934edbd5f991f6252ab20417b369f05391ec",
+        "unit:8fdc82532247645dfb879a70bb30cbce2ae6a161fd71599154118e11f6346880",
+        "unit:92ea645331c8d75e81078ceab1a8ed7d3d18cbb30532801159516cb086a62284",
+        "unit:9677aabaca4ccaf8190115c29bf04ec2d5a3ee30e24f7e00ea5d3f5e10d73fc6",
+        "unit:993cf37abeae3d34f3990a63e73af95651de0fb5718de47b689d108b34838d4f",
+        "unit:99c7050fc9a5097a9ad87dd2998eb69cf29f90ee5015314e65b66a7e8e7eaff0",
+        "unit:9a7160d332c8afef6eaf55ddd28850ca2d419edc4fe857ed65e865d86359fcb5",
+        "unit:a150f08574860f3327069ddc9323140de808e0f11d0ea69fab3ebcb4e260aeb6",
+        "unit:a45a2531a1c48c797b8db3ee29d60c83d473f4044a02360ac2aafee57bfc0bd2",
+        "unit:a663ecd801fbea79e5bc9bf9795776960a01eb52e613e36eaadd5916205834cf",
+        "unit:aedbbaa2e70be546c39bb4e1ab295ca31019f340de3d911d9de360856d65aa8f",
+        "unit:b0d5723baeca211d6f5ee4fec8d413cd34091d547e379911b2d2dc6c2a8fd15e",
+        "unit:b2fc4ea725d6555535761581b325a510195de5c9a2d869810f3aa44aaa0d5c4c",
+        "unit:b6059f5a98a2f2a693a6353696a4679f779a84bbdfb1bddf1b5b75d91d633255",
+        "unit:b70f773059b851f595f30adbdf5d9d16b5bb72edb73f8e8455a3362f71fc734f",
+        "unit:bd283062aadf4477e5437b7f712bc37ccbde50089dd300dde247e842855eab07",
+        "unit:c180c73333c6f705d31480730924244cd754aa417be232edecf06a765d380495",
+        "unit:cac6ded92e886adc1e6ed4c05d9aaccbe0af69a6da8543e089a6d37e76ace01a",
+        "unit:cc61fa9607f90f214075a9c748d4997fed98d8df1fdeb71c01b606277fbe4ee1",
+        "unit:d50b1f5cf26cc87d7dd261b8a3285711831caac130257762539e164a8b1c8f35",
+        "unit:d6b0af15d5f0a5ca83e934e8f0fe8be24feaeb9f5040bc2e62cbb220c64b87e6",
+        "unit:d7d23971e1a6ecf64d786f5585d30b1eaaf5a080cbe0a5dc1fd1150396d8bfdc",
+        "unit:dcdc6e5ef47c4db8f461263342e48b0dbd6f00571ac94eab4dda29de61cee196",
+        "unit:ddfae9e63512dce568acd7e8fdbb2d25e9ccf1c124407ec560fcb5aac3c0a929",
+        "unit:dfd6ce8fb26947ded1b8a218cd1e0cd6af0a7f9043166c40eb32d4a38e220af7",
+        "unit:e4432f2633094599af5d8d07c826506bf714e0e81183a953edafb879e467ed03",
+        "unit:e742750cf3e62f4f133dce44bc41ddfc52787a5eea3a554c52e75299295e1a14",
+        "unit:e764451e25aba315ae729bf7f96f0d767c1d56597c7ef2c32c04ffae3d4dacb4",
+        "unit:e85262ce9c3d2a946b5ea5b5d0185970761c7b66a72f424576895290e35cfc5c",
+        "unit:ec87e0498733a5c3f1767e97511bc48115200d3246157f3776a2008691c53676",
+        "unit:f2a7ff0770c7a4904ed9c63014595a1803f0cb4173894684e7dc3a311cc94b5f",
+        "unit:f69c4bf2fd367ed9e9585ed0c72aa242e96c095890c1f3cf3434f08a8b0e74f2",
+        "unit:f828b293f70a49ede426d42d91be9892f2b38efbe33f95daafeb50cede79138a",
+        "unit:fd542a072d6cfa37434f5631d9b3dae3e42cd98eac5ef75c1d001eb9e86d8f46"
+      ],
+      "scopeContentSha256": "f98fb6f6bde5e147c691823acfbacabb8cee056ce64efeb0fdd8f4ab3eea1696",
+      "displayEditorial": {
+        "schemaVersion": "1.0.0",
+        "kind": "presentation-only",
+        "scopeContentSha256": "f98fb6f6bde5e147c691823acfbacabb8cee056ce64efeb0fdd8f4ab3eea1696",
+        "origin": {
+          "artifactPath": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+          "artifactSha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864",
+          "recordPointer": "/destinations/904"
+        },
+        "relocations": [
+          {
+            "path": "/scope/assumptions/0",
+            "originalText": "Numerical proximity is candidate provenance, not scientific evidence",
+            "category": "workflow",
+            "reason": "Describes organization or review provenance, not a physical premise or convention."
+          }
+        ],
+        "summary": {
+          "text": "Geometry, protected amplitudes and brane/CFT data connect several physical targets. Dimensions, regimes and evidential status remain distinct; shared geometry, modularity or partition-function language does not establish question identity.",
+          "originalText": "The original proposal supplies numerical memberships without a scientific scope statement. These memberships are useful after distinguishing physical targets, dimensions, regimes and evidential status. Shared geometry, modularity or partition-function language does not establish question identity.",
+          "reason": "Present the physical subject and distinctions without treating historical proposal-stage wording as current status. Original scientific definition remains unchanged."
+        }
+      }
+    },
+    {
+      "id": "q025-candidate-region:35fb420b1e4e6b2953db581e",
+      "kind": "region",
+      "title": "De Sitter extrema, supersymmetry breaking and control in supergravity",
+      "question": "Which supergravity constructions permit positive-energy extrema, what determines their stability, and under which additional assumptions can they have a controlled string interpretation?",
+      "summary": "The original packet supplies candidate membership rather than an independently stated scientific region. Its useful common subject includes constructions, obstructions, unstable extrema, statistical metastability and consistency tests across different dimensions and supersymmetries. The original membership needs revision where shared formal tools connect sources with different physical targets.",
+      "scope": {
+        "systems": [
+          "Matter-coupled and gauged supergravities with source-specific dimensions and supersymmetry",
+          "String-motivated effective theories and classical flux/source supergravity",
+          "Rigid supersymmetry as a qualified comparison"
+        ],
+        "targets": [
+          "Existence and local scalar stability of positive-energy extrema",
+          "Supersymmetry breaking, scalar spectra and construction mechanisms",
+          "Embedding, effective-theory control and conjectural consistency tests"
+        ],
+        "regimes": [
+          "Classical or effective supergravity as specified by each source",
+          "Stable extrema, metastable extrema, saddles and parametrically shallow tachyons kept distinct",
+          "Conventional actions and new FI deformations kept distinct"
+        ],
+        "assumptions": [
+          "Matter content, gauging, derivative restrictions and scalar geometry are source-specific",
+          "A supergravity solution does not by itself establish a controlled string background",
+          "Swampland conjectures are questions or conditional inputs, not accepted universal constraints"
+        ],
+        "conventions": [
+          "Stability in retained fields is distinct from stability in all physical scalar directions",
+          "Local scalar stability does not establish nonperturbative longevity",
+          "Numerical membership and source-object graph relations do not establish question equivalence"
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland construction work",
+          "Nonperturbative heterotic proposals and classical-control questions",
+          "Supporting formulation and potential-analysis questions through explicit links"
+        ],
+        "excludes": [
+          "Galileon double-copy puzzles as direct evidence about de Sitter vacua",
+          "AdS5 truncation classifications as direct de Sitter constructions",
+          "Treating an inflationary trajectory as a stationary vacuum",
+          "Universal no-go claims extrapolated from restricted searches"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 27,
+        "excerptCheckedCount": 9,
+        "readingLimit": "Supplied descriptions and bounded archived excerpts only; no equation-image or full-paper verification. Original source dates and versions remain applicable. This revised region requires a later independent check or coordinator adjudication.",
+        "sourceReadingScope": "Representative support from exact jointly assessed member/overlap units. These references support the reviewed scope; they admit no placement, mass or equivalence. Counted excerpts are the same own-paper windows explicitly read by both reviewers.",
+        "inheritedParentCoverage": null
+      },
+      "evidenceIds": [
+        "unit:05ffa02f6b3c44588c53b7d1c85e68cf5f8205f9f926b2ef434d5bfde14b2489",
+        "unit:0c841dc4b0d3731e9687fd46d5af8ebfdd1d6f3dc57d88201a91355d0f9cbc4b",
+        "unit:159d4489fba0daed6f893bb3cb4a42e1220cd8a69d5e5f9ada899d5c50977b4c",
+        "unit:1b806d5279d7d34d52e1a2c8eb20e703ed0c581269b34912ab44d7148cb73650",
+        "unit:2c9cbbdbcff07df7480b80b4451b56276320054b4d3b4cc5ab15c9d856989415",
+        "unit:37abf2e5ed670264851f9506cf26f1bdf1d4ff732c4e0f09de7e0b7bf0f4e0be",
+        "unit:3d997dcc724b02954bff3262953343b90c6f68e9f603a30a63f2cce0976b5794",
+        "unit:5d485b23cbb6f56c5467eb0b2054047ec090f338b17273f451fcda9f8cf86e64",
+        "unit:6318cbaca1a89a39d4ca58ef244499a5b385284ad01ad5374ae10b50ce935636",
+        "unit:653aab7a7ff1af634846341b76900f75e71072f40949d414b73e1cf4bd2551ce",
+        "unit:6f2d606c977a9bea642a23565f88515dd6a21125b9b3d7659e04ba0173bd828d",
+        "unit:7470d0e34f69e9dc5633603fabbbcb83768c8ac5eab46053e9f55dfd06a2c1c3",
+        "unit:798dce3a5f0306d5fa9db62afbdbb3877a049e8c460802bc5db8b5c97839afc6",
+        "unit:7d02aa9376059786fc2530a20b2d1a7b14fa01d5cabcef139150d0eb3dad6f0d",
+        "unit:907e12470e5549c68d1029e6ed7cd90f047a3e29ba2105dd61d77c8d23c2cbfa",
+        "unit:b428f85267fda6eca83bdb7b89abec3430697fce6b8f46a9312a0724b7d35119",
+        "unit:bc29d9fd36482b15e6fd2d6b76151f65cb4a59ec7ccca2a7d78be8049953113d",
+        "unit:bd82ab231817d82284735a1b83120bc287ec6ff72378e05e521935187610dfcb",
+        "unit:c3a74073d195e6663affa7a1c901d3738ee700cec5aff946e2c3caba7f5ae339",
+        "unit:c7273be609b98d4a21abca72d19dfed1765afc38204a300212c340100744ac41",
+        "unit:d2a8cd8bae2d03ced22c28b3e8280fa5ab57e32220cf76e253164035e41087fe",
+        "unit:d76f6cfd1bdbd4c373b33d8793e91e00d6c9801bc25a4c9bed0bd17d402141ae",
+        "unit:e19da428086dc55d2c2a6ecab93a1490a492912b2614f78d2a0c80e48c230a6b",
+        "unit:f5653decf3e8d5f1487b91daf7d18e8142807602792040fccbeacd46b667218b",
+        "unit:f7a273b2f436ffc0250f37512c2712a6caafa5e1f99061468e6bc30411ecba22",
+        "unit:fb1911ca67ed4cb9cde9ca1cac4a8ee15d26389bd09007ba863e63cdbd3d8e90",
+        "unit:ff442754f2c0d4acdad1b0dcd79546a393f0329c23587cb07b343fb0574a859c"
+      ],
+      "scopeContentSha256": "9452c1a377a243ba68c86292dd20b9684998da954dc17bc1c62921ae32f7c2ae",
+      "displayEditorial": {
+        "schemaVersion": "1.0.0",
+        "kind": "presentation-only",
+        "scopeContentSha256": "9452c1a377a243ba68c86292dd20b9684998da954dc17bc1c62921ae32f7c2ae",
+        "origin": {
+          "artifactPath": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+          "artifactSha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864",
+          "recordPointer": "/destinations/915"
+        },
+        "relocations": [
+          {
+            "path": "/scope/conventions/2",
+            "originalText": "Numerical membership and source-object graph relations do not establish question equivalence",
+            "category": "workflow",
+            "reason": "Describes organization or review provenance, not a physical premise or convention."
+          }
+        ],
+        "summary": {
+          "text": "Constructions, obstructions, unstable extrema, statistical metastability and consistency tests span different dimensions and supersymmetries. Shared formal tools can connect sources with different physical targets.",
+          "originalText": "The original packet supplies candidate membership rather than an independently stated scientific region. Its useful common subject includes constructions, obstructions, unstable extrema, statistical metastability and consistency tests across different dimensions and supersymmetries. The original membership needs revision where shared formal tools connect sources with different physical targets.",
+          "reason": "Present the physical subject and distinctions without treating historical proposal-stage wording as current status. Original scientific definition remains unchanged."
+        }
+      }
+    },
+    {
+      "id": "q025-candidate-region:6342a86dd1d7177d13cc836d",
+      "kind": "region",
+      "title": "Supersymmetry, vacuum structure and gravitational effective theories",
+      "question": "How do supersymmetry, its breaking and quantum effects shape effective interactions, scalar potentials, vacuum structure and cosmological dynamics, and which model-specific checks establish stability and effective-theory validity?",
+      "summary": "A discovery family spanning different systems, dimensions and mechanisms. Construction, formulation, scalar stability, effective-theory control, spectra and cosmological evolution are separate targets. Existing scoped questions provide navigation; numerical review batches retain provenance without becoming redundant public branches.",
+      "scope": {
+        "systems": [
+          "Supergravity with source-specific supersymmetry, dimensions and matter content",
+          "Goldstino effective theories and constrained-multiplet formulations",
+          "String-motivated and compactification-derived effective theories",
+          "Rigid supersymmetric and gauge theories through explicit methodological or alternate routes"
+        ],
+        "targets": [
+          "Scalar-potential and vacuum-energy construction",
+          "Representation and diagnosis of supersymmetry breaking",
+          "Local scalar stability and reliable effective descriptions",
+          "Low-energy interactions, masses and soft terms",
+          "Inflation, dark-energy sectors and cosmological phase dynamics",
+          "Quantum vacuum structure, longevity, thermal selection and conditional consistency tests"
+        ],
+        "regimes": [
+          "Global and local supersymmetry remain distinct",
+          "Classical, quantum and finite-temperature questions retain their source-specific regimes",
+          "Stationary configurations, evolving backgrounds and Euclidean saddles remain distinct",
+          "Effective-supergravity results and controlled higher-dimensional realizations require separate assessments"
+        ],
+        "assumptions": [
+          "No shared gauging, scalar geometry, breaking mechanism or vacuum-energy sign is imposed",
+          "MPP, charge-lattice and quantum-gravity conjectures are conditional frameworks or investigation targets",
+          "Child-ledger coverage is attributed evidence, not a parent rereading of descendants"
+        ],
+        "conventions": [
+          "Positive potential energy does not establish a stationary point or full scalar stability",
+          "Local stability, tunneling longevity and thermal selection are different properties",
+          "Shared overview membership does not establish fine question equivalence",
+          "Graph relations retain their exact source-object meanings"
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland work",
+          "Different construction mechanisms and nonpositive outcomes",
+          "Useful alternate homes for questions outside the vacuum-construction core",
+          "Compound source questions with separately typed contributions"
+        ],
+        "excludes": [
+          "A universal de Sitter construction or obstruction",
+          "A claim that every descendant has a de Sitter target",
+          "Automatic ultraviolet completion or phenomenological viability",
+          "Treating the numerical child batches as mandatory public branches"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 4,
+        "excerptCheckedCount": 4,
+        "readingLimit": "This new parent scope is a proposal requiring independent review or explicit coordinator adjudication. Only supplied descriptions, existing question definitions, attributed child ledgers, exact graph context and bounded archived contrast excerpts were assessed. No images, full papers or later literature were checked; existing source dates and reading limits remain applicable.",
+        "sourceReadingScope": "Representative support from exact jointly assessed member/overlap units. These references support the reviewed scope; they admit no placement, mass or equivalence. Counted excerpts are the same own-paper windows explicitly read by both reviewers.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 103,
+          "providedContrastDescriptions": 5,
+          "providedPrimaryContrastUnits": 5,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 4,
+        "allDescendantsFreshlyRead": false
+      },
+      "evidenceIds": [
+        "unit:4d6b2287ccd74619de829fdf1e60b343112b2686c13d6934cf3089c9f4e38bff",
+        "unit:80d28e2aada100f500478b89c2f47312642b416d8f5b43dec2bc7aec07955e3b",
+        "unit:907e12470e5549c68d1029e6ed7cd90f047a3e29ba2105dd61d77c8d23c2cbfa",
+        "unit:ea679dc4cdabb2d2733ef97d3319a552d36dcd9f73c653fed972f19c2aba6f3a"
+      ],
+      "scopeContentSha256": "1dd7588d52dc8cae24c62d99ed93078a8ca529d078fce8eb1c65393f1bde09e2",
+      "displayEditorial": {
+        "schemaVersion": "1.0.0",
+        "kind": "presentation-only",
+        "scopeContentSha256": "1dd7588d52dc8cae24c62d99ed93078a8ca529d078fce8eb1c65393f1bde09e2",
+        "origin": {
+          "artifactPath": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+          "artifactSha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864",
+          "recordPointer": "/destinations/1019"
+        },
+        "relocations": [
+          {
+            "path": "/scope/assumptions/2",
+            "originalText": "Child-ledger coverage is attributed evidence, not a parent rereading of descendants",
+            "category": "reading",
+            "reason": "Describes the extent or attribution of source reading, not a physical premise."
+          },
+          {
+            "path": "/scope/conventions/2",
+            "originalText": "Shared overview membership does not establish fine question equivalence",
+            "category": "workflow",
+            "reason": "Describes organization or review provenance, not a physical premise or convention."
+          },
+          {
+            "path": "/scope/conventions/3",
+            "originalText": "Graph relations retain their exact source-object meanings",
+            "category": "workflow",
+            "reason": "Describes organization or review provenance, not a physical premise or convention."
+          }
+        ],
+        "summary": {
+          "text": "A discovery family spanning different systems, dimensions and mechanisms. Construction, formulation, scalar stability, effective-theory control, spectra and cosmological evolution are separate targets.",
+          "originalText": "A discovery family spanning different systems, dimensions and mechanisms. Construction, formulation, scalar stability, effective-theory control, spectra and cosmological evolution are separate targets. Existing scoped questions provide navigation; numerical review batches retain provenance without becoming redundant public branches.",
+          "reason": "Present the physical subject and distinctions without treating historical proposal-stage wording as current status. Original scientific definition remains unchanged."
+        },
+        "readingLimit": {
+          "path": "/readingCoverage/readingLimit",
+          "text": "Only supplied descriptions, existing question definitions, attributed child ledgers, exact graph context and bounded archived contrast excerpts were assessed. No images, full papers or later literature were checked; existing source dates and reading limits remain applicable.",
+          "originalText": "This new parent scope is a proposal requiring independent review or explicit coordinator adjudication. Only supplied descriptions, existing question definitions, attributed child ledgers, exact graph context and bounded archived contrast excerpts were assessed. No images, full papers or later literature were checked; existing source dates and reading limits remain applicable.",
+          "reason": "Move the historical proposal-stage sentence into record history; retain every statement of reading coverage and limitation."
+        }
+      }
+    },
+    {
+      "id": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "kind": "region",
+      "title": "Calabi–Yau geometry, computation and compactification physics",
+      "question": "How can Calabi–Yau geometries, their moduli and quantum corrections be constructed and computed, and what do these data establish about compactification physics?",
+      "summary": "A proposed parent connects geometric construction, mirror and period calculations, degeneration theory, internal metrics and their physical applications. Existing target questions provide the public directions; numerical review batches remain provenance. No original prose definition of the numerical parent was supplied, so this authored scope requires independent review.",
+      "scope": {
+        "systems": [
+          "Calabi–Yau geometries, with dimensions and construction classes retained by source",
+          "Specified Type II, heterotic, M-theory and F-theory compactifications",
+          "Local geometries, GLSMs and related special-geometric or conformal descriptions where explicitly connected"
+        ],
+        "targets": [
+          "Geometric construction, classification and model searches",
+          "Periods, mirror maps, special geometry and quantum couplings",
+          "Curve invariants and topological amplitudes",
+          "Degenerations, distances, towers, singularities and quantum phases",
+          "Charged spectra, black objects, symmetries and arithmetic consistency questions",
+          "Internal metrics, spectra, normalized interactions and decoupling diagnostics",
+          "Geometric inputs to effective theories, stabilization and inflation"
+        ],
+        "regimes": [
+          "Source-specific classical, perturbative, nonperturbative and numerical treatments",
+          "Complex-structure and Kähler sectors",
+          "Finite- and infinite-distance limits, with volume and hierarchy conditions retained",
+          "Fixed-modulus calculations and explicitly moduli-dependent approximations"
+        ],
+        "assumptions": [
+          "Related targets need not share a system, mechanism or approximation.",
+          "Conjectures, proposed extensions and reported example calculations retain their source-specific status.",
+          "Approximation accuracy and physical control depend on the observable.",
+          "Child-ledger support is attributed evidence, not a parent rereading of descendants."
+        ],
+        "conventions": [
+          "Internal Ricci-flat metrics, effective moduli-space metrics and matter kinetic metrics are distinct.",
+          "Calabi–Yau dimension, spacetime dimension, parameter count and approximation degree remain separate.",
+          "Period reconstruction, charge bounds and flux stabilization can be distinct contributions of one source unit.",
+          "Existing overview overlap does not establish fine-question equivalence."
+        ],
+        "includes": [
+          "Ordinary and pre-Swampland geometry and compactification work",
+          "Analytic, conventional numerical and machine-learning methods",
+          "Mathematical questions about Calabi–Yau geometry and its moduli",
+          "Explicitly qualified method, application and comparison routes to adjacent subjects"
+        ],
+        "excludes": [
+          "Generic programming-language design as a direct Calabi–Yau physics result",
+          "Automatic compactification interpretations for Feynman-integral motives or generic integrable models",
+          "Universal accuracy, consistency, vacuum existence or classification claims inferred from restricted examples",
+          "Automatic admission of child questions still requiring adjudication"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 3,
+        "excerptCheckedCount": 3,
+        "readingLimit": "Only the supplied contrast descriptions, bounded primary excerpts, existing question records and attributed child ledgers were assessed. No images, complete derivations or full papers were checked. Primary contrasts retain the supplied dates: the 2022 thesis summaries; hep-th/9308083v2, 25 August 1993; 2312.17125v2, 29 December 2023, with manuscript date 1 January 2024; and 1411.1607v4, 19 July 2015, with manuscript date 7 July 2015. Other child reading limits remain unchanged. This parent scope is a new proposal.",
+        "sourceReadingScope": "Representative support from exact jointly assessed member/overlap units. These references support the reviewed scope; they admit no placement, mass or equivalence. Counted excerpts are the same own-paper windows explicitly read by both reviewers.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 145,
+          "providedContrastDescriptions": 4,
+          "providedPrimaryContrastUnits": 4,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 3,
+        "allDescendantsFreshlyRead": false
+      },
+      "evidenceIds": [
+        "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+        "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+        "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75"
+      ],
+      "scopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "displayEditorial": {
+        "schemaVersion": "1.0.0",
+        "kind": "presentation-only",
+        "scopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+        "origin": {
+          "artifactPath": "research/q025/evaluation/full-pass/admissions-v2/supported-scope-role-component-v2.json",
+          "artifactSha256": "3c5daa26911fb883e434a3a808fcaf1835acd825450e994e1875ccf82d9f2864",
+          "recordPointer": "/destinations/1021"
+        },
+        "relocations": [
+          {
+            "path": "/scope/assumptions/3",
+            "originalText": "Child-ledger support is attributed evidence, not a parent rereading of descendants.",
+            "category": "reading",
+            "reason": "Describes the extent or attribution of source reading, not a physical premise."
+          },
+          {
+            "path": "/scope/conventions/3",
+            "originalText": "Existing overview overlap does not establish fine-question equivalence.",
+            "category": "workflow",
+            "reason": "Describes organization or review provenance, not a physical premise or convention."
+          }
+        ],
+        "summary": {
+          "text": "Geometric construction, mirror and period calculations, degeneration theory, internal metrics and their physical applications form connected targets. Related questions retain their distinct systems, mechanisms and approximations.",
+          "originalText": "A proposed parent connects geometric construction, mirror and period calculations, degeneration theory, internal metrics and their physical applications. Existing target questions provide the public directions; numerical review batches remain provenance. No original prose definition of the numerical parent was supplied, so this authored scope requires independent review.",
+          "reason": "Present the physical subject and distinctions without treating historical proposal-stage wording as current status. Original scientific definition remains unchanged."
+        },
+        "readingLimit": {
+          "path": "/readingCoverage/readingLimit",
+          "text": "Only the supplied contrast descriptions, bounded primary excerpts, existing question records and attributed child ledgers were assessed. No images, complete derivations or full papers were checked. Primary contrasts retain the supplied dates: the 2022 thesis summaries; hep-th/9308083v2, 25 August 1993; 2312.17125v2, 29 December 2023, with manuscript date 1 January 2024; and 1411.1607v4, 19 July 2015, with manuscript date 7 July 2015. Other child reading limits remain unchanged.",
+          "originalText": "Only the supplied contrast descriptions, bounded primary excerpts, existing question records and attributed child ledgers were assessed. No images, complete derivations or full papers were checked. Primary contrasts retain the supplied dates: the 2022 thesis summaries; hep-th/9308083v2, 25 August 1993; 2312.17125v2, 29 December 2023, with manuscript date 1 January 2024; and 1411.1607v4, 19 July 2015, with manuscript date 7 July 2015. Other child reading limits remain unchanged. This parent scope is a new proposal.",
+          "reason": "Move the historical proposal-stage sentence into record history; retain every statement of reading coverage and limitation."
+        }
+      }
+    }
+  ],
+  "unchangedPhysicsControl": {
+    "id": "q025-candidate-question:4def2fec2f361a1f4a5a57f7",
+    "scopeContentSha256": "cffbe6373d7bf4f9e98bc90492fb8ad9281957ee9b61ffeed92df6d83a4043e6",
+    "path": "/scope/conventions/0",
+    "text": "Approximately zero numerical diagnostics do not prove exact zeros"
+  },
+  "noScientificDefinitionChanged": true
+}

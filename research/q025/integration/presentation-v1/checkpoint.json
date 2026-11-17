@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "q025-integration-checkpoint/1",
+  "wave": "I-presentation",
+  "status": "runtime_tested_display_examples_proposed_not_installed",
+  "files": [
+    {
+      "path": "lib/protocol/display-editorial.mjs",
+      "sha256": "6a07226cb47b696b1ac83b685347c78505e494683289921447a077df55b29b3c",
+      "bytes": 4775
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "sha256": "2ece9d36b4a418cec169f3d38138412fa310bf31fcbdcda5975598a8148d6159",
+      "bytes": 15065
+    },
+    {
+      "path": "web/atlas-overview.js",
+      "sha256": "6c1b1e9576852f026c55f111b034746a6da4fe74e0dd67901401bb2281e5bb2a",
+      "bytes": 20107
+    },
+    {
+      "path": "web/construction.html",
+      "sha256": "21cb6e04c48ab7434d7ce7d1571e909e1e974913cde1186f2e557413e83a8e63",
+      "bytes": 11374
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "sha256": "afdec9dc4f1ecdb30db0cab4eed3ab68e129ac764f0d7afc5b7ee950d72485c9",
+      "bytes": 16318
+    },
+    {
+      "path": "scripts/site-check.mjs",
+      "sha256": "79cbe5332a90ed46401467b64fb8fbf650603266582a171b6ebbd8a29ff4fa16",
+      "bytes": 8823
+    },
+    {
+      "path": "docs/atlas-presentation.md",
+      "sha256": "c490447649a134736bd6fdf3f99136cb2326d786e91afad9f6e9c6461d230760",
+      "bytes": 1890
+    },
+    {
+      "path": "tests/integration/display-editorial.test.mjs",
+      "sha256": "b6a4785c992e801ec4a4727510d5e6e2e9a6a191479559a6787c04f61a7bb38b",
+      "bytes": 4774
+    },
+    {
+      "path": "tests/integration/static-atlas-discovery.test.mjs",
+      "sha256": "af79b3f56dbe941e65973db5e0539ee2ac285d9db518ab12ff4302e8cd1b5fd3",
+      "bytes": 6864
+    },
+    {
+      "path": "research/q025/integration/accepted-release-path.md",
+      "sha256": "3b7ed513b54befe55293cdb82ce280e349ff2257a2e0fd2ef34420e5364aea0f",
+      "bytes": 6698
+    },
+    {
+      "path": "research/q025/integration/presentation-v1/prepare-examples.mjs",
+      "sha256": "862ac0eb0e42bee2f20b92479ce0cdfb1a30d4053529e7b96c58a1b4e99e0255",
+      "bytes": 4915
+    },
+    {
+      "path": "research/q025/integration/presentation-v1/examples.json",
+      "sha256": "302b4211b9b6f67871541e801d8171431c7b4da76a4a7ec234fcd4b74128a13d",
+      "bytes": 40149
+    },
+    {
+      "path": "research/q025/integration/presentation-v1/REPORT.md",
+      "sha256": "8cac08c702c3b21c3c0a781912f675bcb2b8d912651ad5893cecc5019ebd85d2",
+      "bytes": 2100
+    }
+  ],
+  "verification": {
+    "command": "npm run build && npm test && npm run check:site && git diff --check",
+    "exitCode": 0,
+    "tests": 83,
+    "observedExecSession": 84635,
+    "browserRun": false
+  },
+  "scientificDefinitionsChanged": false,
+  "finalAcceptedPackageInstalled": false,
+  "pending": [
+    "Full accepted organization and geometry package",
+    "Root display-example review and final scope binding",
+    "Actual accepted-data browser and independent-agent/public HTTPS gates",
+    "Separately authorized exact source-method endpoint following"
+  ]
+}

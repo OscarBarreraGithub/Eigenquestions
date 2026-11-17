@@ -1,4 +1,5 @@
 /** Text-first prepared destination details and local research notes. */
+import {destinationPresentation} from '../lib/protocol/display-editorial.mjs';
 const element=(tag,text,className)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;};
 const noteKey=selector=>`eigenquestions:work-note:v1:${selector.atlasId}:${selector.atlasVersion}:${selector.destinationId}`;
 const noteBuffers=new Map();
@@ -31,14 +32,16 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,context
   if(!host){host=element('section',undefined,'atlas-panel');host.id='atlas-panel';document.querySelector('.explorer').after(host);}
   host.replaceChildren();host.hidden=!capsule.snapshot.view.atlas;const previousSummary=document.getElementById('atlas-current-summary');if(previousSummary)previousSummary.hidden=host.hidden;if(host.hidden)return;
   const {atlas}=capsule.snapshot.view,record=atlas.destination,selector=atlas.selector;
-  let currentSummary=document.getElementById('atlas-current-summary');if(!currentSummary){currentSummary=element('p',undefined,'atlas-summary');currentSummary.id='atlas-current-summary';document.getElementById('full-question-details').insertBefore(currentSummary,document.getElementById('full-question-text'));}currentSummary.textContent=record.summary;currentSummary.hidden=false;
+  const presentation=destinationPresentation(record);
+  let currentSummary=document.getElementById('atlas-current-summary');if(!currentSummary){currentSummary=element('p',undefined,'atlas-summary');currentSummary.id='atlas-current-summary';document.getElementById('full-question-details').insertBefore(currentSummary,document.getElementById('full-question-text'));}currentSummary.textContent=presentation.summary;currentSummary.hidden=false;
   const scope=element('details'),summary=element('summary',record.metadataOnly?'Classification source and coverage':'Scope, assumptions and sources');scope.append(summary);
   if(record.whyItMatters)scope.append(element('p',record.whyItMatters));
-  for(const [key,label]of[['includes','Includes'],['excludes','Distinctions and exclusions'],['assumptions','Assumptions'],['regimes','Regimes'],['conventions','Conventions']]){
-    if(!record.scope[key]?.length)continue;scope.append(element('h3',label));const list=element('ul');for(const value of record.scope[key])list.append(element('li',value));scope.append(list);
+  for(const [key,label]of[['systems','Systems'],['targets','Targets'],['includes','Includes'],['excludes','Distinctions and exclusions'],['assumptions','Assumptions'],['regimes','Regimes'],['conventions','Conventions']]){
+    if(!presentation.scope[key]?.length)continue;scope.append(element('h3',label));const list=element('ul');for(const value of presentation.scope[key])list.append(element('li',value));scope.append(list);
   }
   if(record.methods?.length){scope.append(element('h3','Methods'));const list=element('ul');for(const method of record.methods)list.append(element('li',typeof method==='string'?method:method.label||method.description||JSON.stringify(method)));scope.append(list);}
-  for(const reading of new Set([record.readingLimit,record.readingCoverage].filter(Boolean).map(value=>typeof value==='string'?value:JSON.stringify(value))))scope.append(element('p',reading));
+  for(const reading of presentation.reading)scope.append(element('p',reading));
+  if(presentation.readingRecord){const raw=element('details');raw.append(element('summary','Full reading coverage record'),element('pre',JSON.stringify(presentation.readingRecord,null,2)));scope.append(raw);}
   scope.append(element('p',`Scientific status: ${record.scientificStatus}. Placement: ${record.placementStatus}.`,'atlas-provenance'));
   if(!record.metadataOnly)scope.append(element('p',atlas.membershipNotice));
   if(record.metadataOnly)for(const source of navigator?.getEvidence?.(record.evidenceIds||[])||[]){if(!/^https?:\/\//.test(source.sourceUrl||''))continue;const link=element('a',source.title);link.href=source.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';scope.append(link);}
@@ -55,6 +58,10 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,context
     scope.append(element('p','Contextual methods share a paper with primary sources. This association does not establish that the method applies to every question here.'),methods,methodList);
   }
   host.append(scope);
+  if(presentation.notes.length){
+    const history=element('details');history.append(element('summary','Reading and record history'),element('p','Original review notes are retained here. Workflow notes describe how the record was made; they are not physical premises or a statement of its current review status.'));
+    for(const note of presentation.notes){const item=element('article');item.append(element('h3',note.path==='/summary'?'Original summary':note.category==='reading'?'Reading limit':'Workflow note'),element('p',note.originalText));const origin=element('details');origin.append(element('summary','Exact origin and display decision'),element('p',note.reason),element('pre',JSON.stringify({origin:note.origin,path:note.path,scopeContentSha256:presentation.scopeContentSha256},null,2)));item.append(origin);history.append(item);}host.append(history);
+  }
   const contributions=sourceContributions(record,navigator,readSources,onError,contextForSource);if(contributions)host.append(contributions);
   const connections=element('details'),connectionList=element('div',undefined,'atlas-connection-list');connections.append(element('summary',`All connections (${atlas.connectionCount})`));
   for(const relation of atlas.connections){const row=element('div'),button=element('button',relation.title);button.type='button';button.addEventListener('click',()=>onNavigate({type:'navigate',selector:relation.selector}));row.append(button,element('span',` ${relation.navigationKind.replaceAll('_',' ')} · ${relation.traversal} recorded relation`),element('p',relation.rationale));connectionList.append(row);}connections.append(connectionList);host.append(connections);
