@@ -190,7 +190,11 @@ def main():
         assert chart.locator('#atlas-space').input_value()=='detail'
         assert chart.evaluate('new URLSearchParams(location.hash.slice(1)).get("destination")')==overview['detailEntryId']
         chart.wait_for_function('title=>document.querySelector("#atlas-selected h2")?.textContent===title',arg=overview['detailEntryTitle'])
-        assert chart.locator('#atlas-map .atlas-map-node').count()>1
+        assert chart.locator('#atlas-map .atlas-map-node').count()==overview['detailNodeCount']
+        assert chart.locator('#atlas-map .atlas-map-edge').count()==overview['detailEdgeCount']
+        assert chart.locator('#atlas-topics button').count()==15
+        if overview['kind']=='navigation_schematic': assert 'distances have no meaning' in chart.locator('#atlas-map-caption').inner_text()
+        chart.screenshot(path=str(out/'overview-detail-entrance-desktop.png'),full_page=True)
         width_before=float(chart.locator('#atlas-map').get_attribute('viewBox').split()[2]);chart.locator('#atlas-zoom-in').click()
         width_after=float(chart.locator('#atlas-map').get_attribute('viewBox').split()[2]);assert width_after<width_before
         target=chart.locator('.atlas-map-node[data-destination-id="'+overview['clickTargetId']+'"] .atlas-map-hit')
@@ -206,7 +210,7 @@ def main():
         assert chart.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
         assert all(r['height']>=44 for r in chart.locator('#atlas-topics button').evaluate_all('nodes=>nodes.map(n=>({height:n.getBoundingClientRect().height}))'))
         chart.screenshot(path=str(out/'overview-physics-mobile.png'),full_page=True);chart.close()
-        report['screenshots']+=['overview-physics-desktop.png','overview-detail-zoom-desktop.png','overview-detail-mobile.png','overview-physics-mobile.png']
+        report['screenshots']+=['overview-physics-desktop.png','overview-detail-entrance-desktop.png','overview-detail-zoom-desktop.png','overview-detail-mobile.png','overview-physics-mobile.png']
         check('Final overview retains the actual classification graph and detailed geometry, zooms and follows a plotted destination',detail=detail_metrics,clickedDestinationId=overview['clickTargetId'],classificationNodes=overview['classificationNodeCount'])
         report['longTasksAll']=page.evaluate('window.__qaLong'); assert not report['pageErrors']; report['passed']=True; browser.close()
     except Exception as error:

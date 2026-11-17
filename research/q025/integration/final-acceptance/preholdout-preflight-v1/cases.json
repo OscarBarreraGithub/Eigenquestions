@@ -1,0 +1,105 @@
+{
+  "atlasId": "q025-approved-organization-candidate",
+  "atlasVersion": "2026-11-17-preholdout-accounted-v1",
+  "entryDestinationId": "classification:physics",
+  "partialCandidate": true,
+  "journey": [
+    "q025-candidate-region:7961ee3cebdb154299e78b58",
+    "q025-candidate-question:190bdf4415c78268d594ff95",
+    "q-kk-graviton-thermal-production",
+    "q-kk-graviton-threshold-decay",
+    "q-kk-decay-linear-cosmology"
+  ],
+  "journeyTitles": [
+    "Dark sectors: candidates, cosmic histories and tests",
+    "Extra dimensions and conditional quantum-gravity tests",
+    "How does a hot brane produce KK gravitons?",
+    "How fast can a KK graviton decay near threshold?",
+    "What do repeated KK decays do to linear structure?"
+  ],
+  "production": "q-kk-graviton-thermal-production",
+  "threshold": "q-kk-graviton-threshold-decay",
+  "linear": "q-kk-decay-linear-cosmology",
+  "blackHole": "q025-candidate-question:81aa3e6e98bedb1c9b443b59",
+  "largest": {
+    "id": "q025-candidate-region:839da90831bec9d6ef0a811b",
+    "title": "Compactification geometry, gauge sectors and consistency",
+    "connectionCount": 75
+  },
+  "aliases": {
+    "q025-candidate-question:647f4b3de8eb982fbd1db9af": "q025-candidate-question:0fe511cad863493858f2321b",
+    "q025-candidate-question:39594f3f2592c9816c879036": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+    "q025-candidate-question:44cfc530ee4b7053d438805d": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+    "q025-candidate-question:3f58b634e6f7439e502be440": "q-kk-decay-linear-cosmology",
+    "q025-candidate-question:49d3e894f117509cb5f6a9f2": "q025-candidate-question:891203df753b324531020eb9",
+    "q025-candidate-question:2ed35c0e62570949d976b307": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+    "q025-candidate-question:a4f67137d6a4a477cc097c6a": "q025-candidate-question:b6a72d6d11c8f9c783284067"
+  },
+  "preview": {
+    "currentId": "q025-candidate-question:161ab9fa038592a6586e54e1",
+    "targetId": "q025-candidate-region:f87c99e7c23e7d82e9d1db78",
+    "choiceTitle": "Particle scales, supersymmetry and cosmological viability",
+    "subtitle": "How do proposed mechanisms for particle scales, supersymmetry breaking and moduli dynamics connect spectra, scalar vacua and cosmological histories, and which observations or conditional consistency tests constrain them?",
+    "rawReviewHistoryRetained": "No original verbal scientific scope accompanies the numerical parent, so there is no original scientific statement to endorse. The child scopes support distinct directions for hierarchy mechanisms, mediation, vacuum structure, cosmology and tests. Their numerical ancestry does not establish equivalent questions or require every neighboring topic to become a core member."
+  },
+  "source": {
+    "relationId": "scientific:production-001",
+    "originUnitId": "unit:96b615c6c308eea90a5bf5ba08528bbb6bf6d51a3542749b77ee5987aec678a1",
+    "sourceObjectId": "obj:b5f0ec67030dbefac468:method:f8d6435ed3a4a59325aa4675",
+    "targetObjectId": "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73",
+    "sourceUnitId": "unit:96b615c6c308eea90a5bf5ba08528bbb6bf6d51a3542749b77ee5987aec678a1",
+    "targetUnitId": "unit:2e38ab5402be87458dcd141e9825d470feee5e26c686e31752a92ce13398cc8c"
+  },
+  "blackHoleFollow": {
+    "relationId": "navigation:orientation:parent-orientation-15:l13",
+    "targetId": "q025-candidate-question:77971b65c8e87c3c7e4b0e48",
+    "title": "Examine ultraviolet flows used in RG-based black-hole models",
+    "type": "application_of"
+  },
+  "manifestSha256": "62b2444c60f743adc9569d33ffe475211c9770d48f05abf5b976843e4e8d920c",
+  "finalAccounting": false,
+  "overview": {
+    "kind": "navigation_schematic",
+    "classificationNodeCount": 211,
+    "classificationEdgeCount": 211,
+    "classificationFieldId": "classification:0f4313da-ec73-46f5-b24f-521a1fcb6db7",
+    "portalSteps": [
+      {
+        "buttonLabel": "Explore high energy theory",
+        "destinationId": "landmark:arxiv-hep-th"
+      },
+      {
+        "buttonLabel": "Open the detailed Swampland atlas",
+        "destinationId": "collection:q025-quantum-gravity"
+      }
+    ],
+    "detailEntryId": "collection:q025-quantum-gravity",
+    "detailEntryTitle": "Quantum gravity and connected physics",
+    "detailNodeCount": 16,
+    "detailEdgeCount": 15,
+    "clickTargetId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+    "clickTargetTitle": "Black-hole structure, entropy and dynamical consistency"
+  },
+  "compound": {
+    "destinationId": "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+    "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+    "targetCoverage": [
+      {
+        "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+        "destinationIds": [
+          "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+        ],
+        "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+      },
+      {
+        "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+        "destinationIds": [
+          "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+        ],
+        "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+      }
+    ],
+    "sourceText": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification, and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+    "sourceOffset": 0
+  }
+}
