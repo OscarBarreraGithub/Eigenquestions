@@ -23,12 +23,26 @@ test('explicit admitted-record annotations preserve scientific definitions and r
 test('approved registry applies only the five exact ID and scope bindings without modifying raw records',()=>{
   for(const annotated of examples.records){
     const raw=structuredClone(annotated);delete raw.displayEditorial;const original=structuredClone(raw);
-    assert.deepEqual(destinationPresentation(raw),destinationPresentation(annotated));assert.deepEqual(raw,original);
+    if(raw.id!=='q025-candidate-region:a0f723b38ca7f47ed567e044')assert.deepEqual(destinationPresentation(raw),destinationPresentation(annotated));
+    assert.deepEqual(raw,original);
     assert.equal(destinationPresentation({...raw,id:raw.id+'-different'}).notes.length,0);
     assert.equal(destinationPresentation({...raw,scopeContentSha256:'f'.repeat(64)}).notes.length,0);
     const changed=structuredClone(raw),note=annotated.displayEditorial.relocations[0],[,,field,index]=note.path.split('/');changed.scope[field][Number(index)]+=' Changed';
     assert.throws(()=>destinationPresentation(changed),/original field text changed/);
   }
+});
+
+test('dated exact reading-status amendment preserves every reading limit and raw scientific hash',()=>{
+  const raw=structuredClone(examples.records.find(row=>row.id==='q025-candidate-region:a0f723b38ca7f47ed567e044'));delete raw.displayEditorial;
+  const original=structuredClone(raw),before=scientificHash(raw),sentence='This authored region remains a proposal requiring independent review.';
+  const whole=raw.readingCoverage.readingLimit,retained=whole.slice(0,-sentence.length).trimEnd();
+  assert.ok(whole.endsWith(sentence));
+  const shown=destinationPresentation(raw);
+  assert.ok(shown.reading.includes(retained));assert.ok(!shown.reading.some(text=>text.includes(sentence)));
+  assert.ok(shown.reading.includes('59 extracted descriptions checked; 9 source excerpts checked.'));
+  assert.ok(shown.notes.some(note=>note.path==='/readingCoverage/readingLimit'&&note.originalText===whole&&note.reason.includes('17 November 2026')));
+  assert.deepEqual(shown.readingRecord,raw.readingCoverage);assert.deepEqual(raw,original);assert.equal(scientificHash(raw),before);assert.equal(before,raw.scopeContentSha256);
+  const changed=structuredClone(raw);changed.readingCoverage.readingLimit+=' Changed';assert.throws(()=>destinationPresentation(changed),/original reading limit changed/);
 });
 
 test('stale scope bindings, moved text, source summaries and duplicate paths fail closed',()=>{
