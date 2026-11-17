@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "q025-installed-local-verification/1",
+  "status": "local_candidate_installed_and_verified_not_published",
+  "authority": "Root authorized local installation for self-contained build verification; remaining independent-agent/display acceptance and publication gates remain external.",
+  "applicationCommit": "756df26acf233424154edbf6ef5290f01f778cfd",
+  "installedManifest": {
+    "path": "data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/manifest.json",
+    "sha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+    "bytes": 3108
+  },
+  "builtManifest": {
+    "path": "dist/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/manifest.json",
+    "sha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+    "bytes": 3108
+  },
+  "publicFileInventory": {
+    "path": "research/q025/assembly/final-release-v1/installed-public-files.json",
+    "sha256": "9bfcf76d8f6711c7ef6e02af5ca2ec8d6755ea19f70013b27b7682137dd03a04",
+    "bytes": 1968240
+  },
+  "installationReceipt": {
+    "path": "research/q025/assembly/final-release-v1/installation-receipt.json",
+    "sha256": "c791c28d87c87cea73840d484cca013c9664e72f55d9ba7b2bb6f71f09752b87",
+    "bytes": 1621
+  },
+  "checks": [
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/installed-build.log",
+        "sha256": "5566110294d0ca0e5441e8f05610026baf15a77228f246edda338bab0ec3e629",
+        "bytes": 253
+      }
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/installed-tests.log",
+        "sha256": "1a2da2b8b44fa53328c2129faafe9fce0c504536352af3f6dea3b91909bda8ef",
+        "bytes": 13180
+      }
+    },
+    {
+      "command": "npm run check:site",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/installed-site-check.log",
+        "sha256": "458d253866634520a338492e3a04c8285ed07a251b22af0259a5509e8c9ab2b9",
+        "bytes": 340
+      }
+    }
+  ],
+  "build": {
+    "files": 18454,
+    "bytes": 698595419,
+    "largestFile": "dist/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/catalog.json",
+    "largestFileBytes": 7021318,
+    "maxFileCount": 20000,
+    "maxFileBytes": 26214400,
+    "remainingFileSlots": 1546
+  },
+  "noScientificChanges": true,
+  "committed": false,
+  "deployed": false
+}
