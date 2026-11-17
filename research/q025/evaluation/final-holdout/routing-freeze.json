@@ -1,0 +1,84 @@
+{
+  "kind": "q025-independent-routing-freeze",
+  "frozenAt": "2026-11-17T18:56:11.809917+00:00",
+  "candidateManifestSha256": "62b2444c60f743adc9569d33ffe475211c9770d48f05abf5b976843e4e8d920c",
+  "expectationCommit": "7f13c4d1c3db095f8f828d1092974b4e5812386d",
+  "runs": [
+    {
+      "agent": "/root/holdout_navigation_a",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "freshContext": true,
+      "formulation": "A",
+      "cases": 24,
+      "result": {
+        "path": "research/q025/evaluation/final-holdout/native-local/routing-A-run/results.json",
+        "sha256": "fa876103e7fcf0215668556ab9b728c41aa0849c62f84c0ee3ba2f731e6f7e6d",
+        "bytes": 241601
+      },
+      "successfulManifestMatchedReceipts": 122,
+      "rejectedCallsPreserved": 2,
+      "commands": {
+        "connections": 29,
+        "describe": 30,
+        "search": 53,
+        "context": 8,
+        "sources": 3,
+        "info": 1
+      }
+    },
+    {
+      "agent": "/root/holdout_navigation_b",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "freshContext": true,
+      "formulation": "B",
+      "cases": 24,
+      "result": {
+        "path": "research/q025/evaluation/final-holdout/native-local/routing-B-run/results.json",
+        "sha256": "7f7cda2047d82ba9acf018623e382b793813d183c125a97028517f331e3ed162",
+        "bytes": 311163
+      },
+      "successfulManifestMatchedReceipts": 186,
+      "rejectedCallsPreserved": 0,
+      "commands": {
+        "search": 68,
+        "describe": 43,
+        "connections": 66,
+        "context": 6,
+        "sources": 3
+      }
+    },
+    {
+      "agent": "/root/holdout_navigation_c",
+      "model": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "freshContext": true,
+      "formulation": "C",
+      "cases": 24,
+      "result": {
+        "path": "research/q025/evaluation/final-holdout/native-local/routing-C-run/results.json",
+        "sha256": "2779157041b9c22f06d53ad037b5be237882b10d6dc89396dc27a4684677f424",
+        "bytes": 176191
+      },
+      "successfulManifestMatchedReceipts": 118,
+      "rejectedCallsPreserved": 1,
+      "commands": {
+        "info": 1,
+        "connections": 27,
+        "describe": 29,
+        "search": 56,
+        "sources": 3,
+        "context": 3
+      }
+    }
+  ],
+  "receiptInventory": {
+    "path": "research/q025/evaluation/final-holdout/native-local/root-receipt-inventory.json",
+    "sha256": "2c1a1f2e4f29471c91a9219e8137ebc4340e4c630a9084a5342c7b0e052283e6",
+    "count": 429
+  },
+  "isScientificScoring": false,
+  "isRenderedBrowserProof": false,
+  "independence": "Separate fresh model contexts received only their formulation packet and the frozen shared read interface; recorded commands verified. No claim of filesystem-enforced isolation."
+}
