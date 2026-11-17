@@ -1,0 +1,1018 @@
+{
+  "schemaVersion": "q025-uncomplicated-home-policy-audit/1",
+  "status": "candidate_policy_audit_not_admission",
+  "rule": "One unchanged admitted scope with exact paired addresses role; both original dispositions member; no other positive target in either row; no explicit unresolved identity/changed regime/scope mismatch; no unresolved scope-note flag; conservative note-language screening for inherited/context/compound/unclear targets. This screen excludes uncertain cases rather than interpreting them automatically.",
+  "candidateCount": 1055,
+  "sourceUnitsWithAnyAgreedAddresses": 2974,
+  "excludedCount": 1919,
+  "exclusionReasons": {
+    "flagged_unit_annotation_requires_inspection": 48,
+    "context_compound_or_unclear_language_screen_requires_adjudication": 265,
+    "multiple_distinct_addresses_scope_candidates": 587,
+    "additional_positive_target_or_changed_target_assignment": 443,
+    "broad_disposition_not_joint_member": 485,
+    "flagged_scope_admission_note_needs_resolved_annotation": 91
+  },
+  "sourceComponentSha256": "7524a7784f7e4f9103cf4938278df3ebf53ed7af05da0e56688ecfbf80f51a93",
+  "representativeCandidates": [
+    {
+      "selectionCategory": "protected_amplitudes",
+      "unitId": "unit:2df68cc360d9803367e006001b21a7bff4856ea790d4dd173a8196c7644cfe59",
+      "paperId": "1606.03095",
+      "description": "Can supersymmetric circle compactifications admit the spin structure required for a bubble of nothing, and, when topology permits this channel, what dynamical mechanism suppresses their decay?",
+      "destinationId": "q025-candidate-question:051a5bf9a7682a171a800e3c",
+      "title": "Topological permission and dynamical suppression",
+      "question": "When do topology, fermion boundary conditions and gravitational dynamics permit or suppress compactification decay?",
+      "scope": {
+        "systems": [
+          "Supersymmetric circle compactifications",
+          "T³ and free torus quotients with specified spin structures",
+          "Perturbatively stable AdS compactifications"
+        ],
+        "targets": [
+          "Topological and spin-structure obstructions",
+          "Global dynamical conditions excluding nucleation",
+          "Removal of obstructions by charged sources or gauge fields"
+        ],
+        "regimes": [
+          "Unbroken supersymmetry",
+          "Nonsupersymmetric vacua with supersymmetry-compatible boundary conditions",
+          "Limits approaching supersymmetric walls"
+        ],
+        "assumptions": [
+          "Supersymmetry-compatible boundary conditions do not by themselves establish a supersymmetric vacuum.",
+          "Vanishing bordism obstruction is not sufficient evidence for a dynamical instanton."
+        ],
+        "conventions": [
+          "Suppression of a specified channel is weaker than full quantum stability."
+        ],
+        "includes": [
+          "Topological and gravitational mechanisms as separate tests"
+        ],
+        "excludes": [
+          "A universal construction whenever a relevant bordism group vanishes",
+          "A proof that all nonsupersymmetric compactifications decay"
+        ]
+      },
+      "scopeContentSha256": "3d37ab7b77204b86fff004e147488fab5f0fdd966589602b5e82ca10cc1add3f",
+      "contributionDecisionId": "decision:source-contribution:9f689b8518ba5cb34645b54d",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d7",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:2df68cc360d9803367e006001b21a7bff4856ea790d4dd173a8196c7644cfe59",
+          "textSha256": "3b6364063001b2b7fb2292609be1032016003e582e8e654660c55953992b46de"
+        },
+        {
+          "localRef": "e9",
+          "kind": "primary",
+          "sourceId": "ev:59b75b483af1d1ab8fe1636d6dc5190e",
+          "paperId": "1606.03095",
+          "sourceSha256": "116884a33dd7aa47fbc1463c3d33cd5f78d308bc2fda62050588d5af34494102",
+          "sourceContext": {
+            "path": "papers/09241dc2be0290d58df6/reading-order.json",
+            "fileSha256": "15f8864c6443f9faa866c8b2d3e9e8946c55139915d1c31b0d763bc7e99b7f97",
+            "pdfPage": 4,
+            "start": 2490,
+            "end": 4149,
+            "textSha256": "6553f7a75c29925f3906cd1f95fee60062286b957cd331372e695ea286519ca5",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e15",
+          "kind": "primary",
+          "sourceId": "ev:9df8d6d6156b2ac5f699abf193b76a46",
+          "paperId": "1606.03095",
+          "sourceSha256": "116884a33dd7aa47fbc1463c3d33cd5f78d308bc2fda62050588d5af34494102",
+          "sourceContext": {
+            "path": "papers/09241dc2be0290d58df6/reading-order.json",
+            "fileSha256": "15f8864c6443f9faa866c8b2d3e9e8946c55139915d1c31b0d763bc7e99b7f97",
+            "pdfPage": 4,
+            "start": 1296,
+            "end": 4149,
+            "textSha256": "e82224d96846ff6eb83e94d2ee20e86dc36d28046324fb8db5110c1848d8ab8b",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "",
+      "challengeNote": "",
+      "proposalReason": "specialized",
+      "challengeReason": "specialized",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "The supplied introductions and model discussion support the stated distinctions. They do not independently verify a general theorem or the complete torus construction."
+    },
+    {
+      "selectionCategory": "holography",
+      "unitId": "unit:02c2b086eebcb3aefe33f8980e83a79add3f5390499ad86ac5cea3a0069b10c3",
+      "paperId": "2208.07373",
+      "description": "Can holographic symmetry generators, including noninvertible defects, be extracted systematically from supergravity Gauss constraints and realized by D-brane worldvolume theories, with fusion and action on lines explained by brane dynamics?",
+      "destinationId": "q025-candidate-question:18c4237c1d916513bc354f44",
+      "title": "Holographic noninvertible symmetries",
+      "question": "How are holographic symmetry generators realized by branes, and how does their worldvolume dynamics determine fusion and action on operators?",
+      "scope": {
+        "systems": [
+          "Supergravity and D-brane descriptions of holographic symmetries",
+          "IIB duals of N=4 theories with gauge algebra so(4N)"
+        ],
+        "targets": [
+          "Symmetry generators including noninvertible defects",
+          "Fusion rules",
+          "Action on line operators where explicitly stated"
+        ],
+        "regimes": [
+          "Source-specific holographic descriptions"
+        ],
+        "assumptions": [
+          "The specified gauge algebra does not determine an unstated global form",
+          "Shared brane language does not establish identical defect categories"
+        ],
+        "conventions": [
+          "Noninvertible symmetry defects are distinguished from general conformal interfaces"
+        ],
+        "includes": [
+          "General constructions and specified gauge-algebra realizations"
+        ],
+        "excludes": [
+          "An asserted canonical merger of the two source questions"
+        ]
+      },
+      "scopeContentSha256": "c8d4d51a903d8fda5297b696214b6c30ae900eebdfe6edad7e57b6ad506c2787",
+      "contributionDecisionId": "decision:source-contribution:0b4ed021623a52e8be2f5448",
+      "basis": "description_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d6",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:02c2b086eebcb3aefe33f8980e83a79add3f5390499ad86ac5cea3a0069b10c3",
+          "textSha256": "d806c6bdccbb0a385d2eff9d1a84263dad0b01cb9dffedf958b7fc3e85032ff2"
+        }
+      ],
+      "proposalNote": "",
+      "challengeNote": "",
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "Descriptions only; no supplied primary derivation of generators, fusion or line action."
+    },
+    {
+      "selectionCategory": "gauge_and_anomalies",
+      "unitId": "unit:361df604ba5328c7d1771a430d86cdf1e44e83b6992919265579446149d26390",
+      "paperId": "1901.02012",
+      "description": "Does the center action on massless matter universally determine the global gauge group in F-theory?",
+      "destinationId": "q025-candidate-question:2b36ffea88e1a286094c95b4",
+      "title": "Abelian charges and global gauge groups",
+      "question": "How do sections, charge data and geometric constructions determine abelian spectra and global gauge groups, and which completeness or charge bounds follow under specified assumptions?",
+      "scope": {
+        "systems": [
+          "F-theory section geometry",
+          "Related perturbative brane constructions"
+        ],
+        "targets": [
+          "U(1) charges",
+          "Global gauge groups",
+          "Charge completeness and possible bounds"
+        ],
+        "regimes": [
+          "Massless, light and full spectra distinguished",
+          "Six- and four-dimensional questions distinguished"
+        ],
+        "assumptions": [
+          "Massless-only quotient and singlet-normalization hypotheses are questions to test"
+        ],
+        "conventions": [
+          "Primitive normalization and spectator sectors matter",
+          "Mordell–Weil torsion is not identified automatically with a discrete gauge factor"
+        ],
+        "includes": [
+          "Section diagnostics",
+          "High-charge constructions",
+          "Connected gauge-group completeness"
+        ],
+        "excludes": [
+          "A universal massless-spectrum theorem inferred from examples"
+        ]
+      },
+      "scopeContentSha256": "e950dccd194758c89edc1dbbac7002103c6357c9307d206484f1f7b740038981",
+      "contributionDecisionId": "decision:source-contribution:4a73d7428fd7a0e72dedf5ae",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d56",
+          "kind": "description",
+          "unitIndex": 56,
+          "unitId": "unit:361df604ba5328c7d1771a430d86cdf1e44e83b6992919265579446149d26390",
+          "textSha256": "8f1530c8e03ac717b7dbeb3af0ea803ee08bdf569540b90f98ca35da79a83bfe"
+        },
+        {
+          "localRef": "e9",
+          "kind": "primary",
+          "sourceId": "ev:71c644ad306406c5e5d2fa5ffc6291b3",
+          "paperId": "1901.02012",
+          "sourceSha256": "f4d28b2cae75296a5685e98478fe8efaa841568342f8379758dabe38b13c9e47",
+          "sourceContext": {
+            "path": "papers/199454c395cdc3122194/reading-order.json",
+            "fileSha256": "3cb0a4eb61fe1f4517358905d92be27442e47f6df2b1c49b68cfdf32f4311658",
+            "pdfPage": 41,
+            "start": 2150,
+            "end": 3507,
+            "textSha256": "3c9cbc8c83f06c33b9888bffff074a912fd6c921b5b032b7c797a74c1b8efba0",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e19",
+          "kind": "primary",
+          "sourceId": "ev:c535db3a205078c9c54e0f61d56bfdf3",
+          "paperId": "1901.02012",
+          "sourceSha256": "f4d28b2cae75296a5685e98478fe8efaa841568342f8379758dabe38b13c9e47",
+          "sourceContext": {
+            "path": "papers/199454c395cdc3122194/reading-order.json",
+            "fileSha256": "3cb0a4eb61fe1f4517358905d92be27442e47f6df2b1c49b68cfdf32f4311658",
+            "pdfPage": 34,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "4a6384139e3b32a71cbd37079446fad781ea003daeb83ddf749c100355e85754",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e22",
+          "kind": "primary",
+          "sourceId": "ev:dbc7a6f9878f8eb3e57927af5ef76d57",
+          "paperId": "1901.02012",
+          "sourceSha256": "f4d28b2cae75296a5685e98478fe8efaa841568342f8379758dabe38b13c9e47",
+          "sourceContext": {
+            "path": "papers/199454c395cdc3122194/reading-order.json",
+            "fileSha256": "3cb0a4eb61fe1f4517358905d92be27442e47f6df2b1c49b68cfdf32f4311658",
+            "pdfPage": 49,
+            "start": 2009,
+            "end": 3878,
+            "textSha256": "d719dd80db2d409ed903f6b1b55be872c56b02b5d590da2b4edb321b28958e82",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "Massless-center universality is conjectural. The singlet-normalization concern and exotic-matter examples do not prove or refute that entire hypothesis.",
+      "challengeNote": "The 2019 massless-center claim is conjectural. The separate singlet-normalization concern supplies no constructed F-theory counterexample.",
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "The 2019 excerpt presents a universal massless-center statement as a hypothesis. Its separate discussion of singlet normalization supplies concerns, not a constructed F-theory counterexample."
+    },
+    {
+      "selectionCategory": "inflation",
+      "unitId": "unit:3763336f4aee0e4683e34c404110ace43c3e59c94cad64ef34c19213cbd05e4d",
+      "paperId": "2104.02840",
+      "description": "Does requiring the interaction-generated entanglement entropy of inflationary long-wavelength perturbations to respect a horizon entropy bound impose an upper duration for inflation and an associated de Sitter lifetime?",
+      "destinationId": "q025-candidate-question:872859db35d058debdc17556",
+      "title": "Interaction entropy and inflationary duration",
+      "question": "Does imposing a horizon entropy bound on interaction-generated entanglement of inflationary perturbations constrain inflationary duration and an associated de Sitter lifetime?",
+      "scope": {
+        "systems": [
+          "Interacting scalar perturbations during inflation"
+        ],
+        "targets": [
+          "Maximum inflationary duration",
+          "An associated de Sitter lifetime"
+        ],
+        "regimes": [
+          "Perturbative interactions between long- and short-wavelength modes"
+        ],
+        "assumptions": [
+          "Trace out sub-Hubble modes coupled to long-wavelength perturbations",
+          "Require the resulting perturbative entanglement entropy to obey the stated horizon bound"
+        ],
+        "conventions": [
+          "The subsystem split is in momentum space",
+          "The source identifies interactions as the origin of this entanglement"
+        ],
+        "includes": [
+          "A bottom-up entropy argument independent of imposing the distance conjecture"
+        ],
+        "excludes": [
+          "Treating the trans-Planckian censorship conjecture as a premise of this argument",
+          "Equating this entropy with every stochastic or thermal entropy"
+        ]
+      },
+      "scopeContentSha256": "3d53d0e26bc6f0337fc52d29cec4f80f9a448654d9594ce17c6e84802dad7ce3",
+      "contributionDecisionId": "decision:source-contribution:c3a90f3330ad3a8594f02fa5",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d4",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:3763336f4aee0e4683e34c404110ace43c3e59c94cad64ef34c19213cbd05e4d",
+          "textSha256": "31676f531c2ea9d7db03b68625a626634b1406d32f4f8a6a2a0570d616fb0934"
+        },
+        {
+          "localRef": "e8",
+          "kind": "primary",
+          "sourceId": "ev:877980506c00fa384142dd75e582b08a",
+          "paperId": "2104.02840",
+          "sourceSha256": "32f3bda684faa91caff6f77b682b4310aebd92a8a6240079b4864872541c08f5",
+          "sourceContext": {
+            "path": "papers/01b80f46c2add97e8337/reading-order.json",
+            "fileSha256": "5c1da46448cf6e4f9d4d7ed014913a83a1060cf00c65eadb99c25768a86c72db",
+            "pdfPage": 2,
+            "start": 88,
+            "end": 3483,
+            "textSha256": "c49b372cf273dd981d83fd878b7c0e887d959b4b57a2c055f3cc62cdfcdf5e90",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e11",
+          "kind": "primary",
+          "sourceId": "ev:9a96f29f9c7b4455e79d6afd961d54df",
+          "paperId": "2104.02840",
+          "sourceSha256": "32f3bda684faa91caff6f77b682b4310aebd92a8a6240079b4864872541c08f5",
+          "sourceContext": {
+            "path": "papers/01b80f46c2add97e8337/reading-order.json",
+            "fileSha256": "5c1da46448cf6e4f9d4d7ed014913a83a1060cf00c65eadb99c25768a86c72db",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 940,
+            "textSha256": "59939f19b4164d81de4e1e1e5e7c8c950f08e8c9f8f8875594a7f4bf07fd3a52",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "",
+      "challengeNote": "",
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "Supplied edition: arXiv:2104.02840v2, 12 June 2022. Abstract and introductory setup support the announced target and assumptions, not verification of the complete entropy calculation or lifetime bound."
+    },
+    {
+      "selectionCategory": "axions",
+      "unitId": "unit:07a3f0f53986a8a49a6a3ae465ab91b315a74c84d03cad87958560de36657c00",
+      "paperId": "0707.2671",
+      "description": "This family tests whether an instanton-dependent supersymmetry-breaking tadpole can coexist with stabilization of the same modulus controlling the instanton.",
+      "destinationId": "q025-candidate-question:97d211f19b5c2f8e1e80c05b",
+      "title": "Vacuum dynamics and axion potentials",
+      "question": "Under what source-specific conditions can instanton effects generate or modify scalar potentials, stabilize moduli, break supersymmetry or support controlled axion dynamics?",
+      "scope": {
+        "systems": [
+          "Specified string compactifications and supersymmetric gauge theories"
+        ],
+        "targets": [
+          "Scalar potentials",
+          "Moduli stability",
+          "Axion masses and field ranges",
+          "Supersymmetry breaking",
+          "Mobile-D3 potentials"
+        ],
+        "regimes": [
+          "Fluxed models",
+          "LARGE volume toy constructions",
+          "Strongly coupled heterotic settings",
+          "Warped N=1 backgrounds"
+        ],
+        "assumptions": [
+          "An announced application or toy model does not establish a controlled vacuum generally"
+        ],
+        "conventions": [
+          "Instantons and gaugino condensation retain their different origins"
+        ],
+        "includes": [
+          "Potential obstructions to degeneration",
+          "Comparison with geometric corrections"
+        ],
+        "excludes": [
+          "Inferring a potential from an N=2 metric correction alone"
+        ]
+      },
+      "scopeContentSha256": "6384b18380f7d7bbaceaf4a6e8337f581037f9a8e09fa4a7a172a1ca15d57669",
+      "contributionDecisionId": "decision:source-contribution:d0a20836b57e1d7f8a0e4641",
+      "basis": "description_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d1",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:07a3f0f53986a8a49a6a3ae465ab91b315a74c84d03cad87958560de36657c00",
+          "textSha256": "a5cd95f940323bd792b099b9aad63b9b7796c01d835c4d9707008f2fedab367e"
+        }
+      ],
+      "proposalNote": "",
+      "challengeNote": "",
+      "proposalReason": "application",
+      "challengeReason": "application",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "Predominantly description-level application questions. The warped-geometry primary anchor is a proceedings abstract, not a checked derivation."
+    },
+    {
+      "selectionCategory": "cosmology",
+      "unitId": "unit:0bec7d24f4b853509974960a9b256ec86ddbf97c6e12ffbe54c5c416fe839bbf",
+      "paperId": "hep-th/0208013",
+      "description": "Can conventional quantum mechanics, holography and horizon complementarity in a universe with a fundamental positive cosmological constant explain, or at least accommodate, an inflationary low-entropy beginning and the observed kind of cosmological history?",
+      "destinationId": "q025-candidate-question:9894a6afccf5323c8d09c0ad",
+      "title": "Preparing cosmological conditions",
+      "question": "Which dynamics or initial-state choices account for flatness, causal homogeneity, accelerating regions and cosmological entropy conditions?",
+      "scope": {
+        "systems": [
+          "Hot Big Bang cosmology",
+          "Inflationary, cyclic and holographic models"
+        ],
+        "targets": [
+          "Flatness",
+          "Causal correlations",
+          "Accelerating-region preparation",
+          "Entropy and time asymmetry"
+        ],
+        "regimes": [
+          "Decelerating matter/radiation eras",
+          "Earlier accelerated or non-geometric phases",
+          "Repeated cycles"
+        ],
+        "assumptions": [
+          "Initial-condition sensitivity is not a mathematical inconsistency.",
+          "Some constructions impose properties that others attempt to explain."
+        ],
+        "conventions": [
+          "Distinguish global entropy from entropy in a selected contracting subsystem."
+        ],
+        "includes": [
+          "Inflationary and noninflationary proposals",
+          "Weyl-curvature hypotheses",
+          "Premise checks on initial states"
+        ],
+        "excludes": [
+          "A common entropy mechanism",
+          "Updating historical observational estimates"
+        ]
+      },
+      "scopeContentSha256": "c4c61c0a6fa06410fda06e4bd75ede674428e3f629a2884d1880a8b0db329991",
+      "contributionDecisionId": "decision:source-contribution:434bbc570368eb917e97e19b",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d72",
+          "kind": "description",
+          "unitIndex": 72,
+          "unitId": "unit:0bec7d24f4b853509974960a9b256ec86ddbf97c6e12ffbe54c5c416fe839bbf",
+          "textSha256": "77b31d05119aa2b501413519eae03e107fc98970f0cb8006eb3ab2d121d3c5f5"
+        },
+        {
+          "localRef": "e4",
+          "kind": "primary",
+          "sourceId": "ev:1c4cacd3f188e6541fb2e64c57ff39c0",
+          "paperId": "hep-th/0208013",
+          "sourceSha256": "d41851bae627940f869b60994f5c65392e735adac489612e8daf8fa263b37d33",
+          "sourceContext": {
+            "path": "papers/b51b9621ffc8e5b16fbc/reading-order.json",
+            "fileSha256": "11496fbbe85591f6528f9a1a06afcb1575503df6ee502b74e3bc9a81b1107a74",
+            "pdfPage": 3,
+            "start": 97,
+            "end": 2938,
+            "textSha256": "04c9dcecdd7858abed7a6b30d49d49af7c1acb5bf5f91f6ea692260b65ce5658",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e8",
+          "kind": "primary",
+          "sourceId": "ev:38db6ac3a514e096b65dada6e1b12324",
+          "paperId": "hep-th/0208013",
+          "sourceSha256": "d41851bae627940f869b60994f5c65392e735adac489612e8daf8fa263b37d33",
+          "sourceContext": {
+            "path": "papers/b51b9621ffc8e5b16fbc/reading-order.json",
+            "fileSha256": "11496fbbe85591f6528f9a1a06afcb1575503df6ee502b74e3bc9a81b1107a74",
+            "pdfPage": 4,
+            "start": 96,
+            "end": 2254,
+            "textSha256": "37e7b8cadb21621fe75b64959c2e434d21370cbedc41ecfb4e2c17943d23eb19",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e20",
+          "kind": "primary",
+          "sourceId": "ev:9b6288710ab00ca754f7801987c17dfa",
+          "paperId": "hep-th/0208013",
+          "sourceSha256": "d41851bae627940f869b60994f5c65392e735adac489612e8daf8fa263b37d33",
+          "sourceContext": {
+            "path": "papers/b51b9621ffc8e5b16fbc/reading-order.json",
+            "fileSha256": "11496fbbe85591f6528f9a1a06afcb1575503df6ee502b74e3bc9a81b1107a74",
+            "pdfPage": 19,
+            "start": 101,
+            "end": 2595,
+            "textSha256": "958f11713978105bdc008f45faeaab946d521c1034ec70c1098b2e5fd4e88d8e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "Conditional 2002 finite-entropy causal-patch argument; recurrence possibilities do not establish typical observed histories.",
+      "challengeNote": "Conditional 2002 finite-entropy causal-patch argument; allowing recurrences does not explain typical observed histories.",
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "The flatness calculation is read in its 2007 approximation; most proposed preparation mechanisms are supported only by descriptions."
+    },
+    {
+      "selectionCategory": "distance_limits",
+      "unitId": "unit:19119a1e85b03c7af0aa5addbb4e7f37cb163f71d8164488f66230fa1aaa2363",
+      "paperId": "2303.14203",
+      "description": "Under which assumptions can Swampland principles, especially the sharpened distance conjecture, explain the duality web of supersymmetric theories in d ≥ 9?",
+      "destinationId": "q025-candidate-question:7b86afd64af222b209e3b53d",
+      "title": "Emergent strings and dual descriptions",
+      "question": "Under which assumptions do infinite-distance limits admit decompactification, emergent strings or dual perturbative descriptions, and how much of the duality web can be recovered?",
+      "scope": {
+        "systems": [
+          "Calabi–Yau compactifications of M-theory and Type IIA",
+          "High-dimensional supersymmetric supergravities",
+          "Locally symmetric moduli spaces",
+          "Warped and non-geometric examples"
+        ],
+        "targets": [
+          "Equi-dimensional string emergence",
+          "Duality frames and strong-coupling descriptions",
+          "Decompactification and symmetry constraints"
+        ],
+        "regimes": [
+          "Asymptotic limits",
+          "Equi-dimensional or decompactifying limits, separately specified"
+        ],
+        "assumptions": [
+          "Emergent String Conjecture where invoked",
+          "Specified supersymmetry and completeness hypotheses",
+          "Known weakly coupled description and moduli-space symmetries for reconstruction"
+        ],
+        "conventions": [
+          "Finite internal volume is not sufficient to establish an equi-dimensional limit",
+          "String emergence is distinct from loop emergence of a metric"
+        ],
+        "includes": [
+          "Non-geometric tower obstructions",
+          "Comparisons with local background interpolation"
+        ],
+        "excludes": [
+          "An unrestricted derivation of all string dualities",
+          "General extra-dimensional phenomenology as a core distance question"
+        ]
+      },
+      "scopeContentSha256": "7bdf63e3a2a1850a23a87155d69151fa7ce8fe870c8764345e84cd8f14c65c61",
+      "contributionDecisionId": "decision:source-contribution:9f864705ea58916f26fe6571",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d33",
+          "kind": "description",
+          "unitIndex": 33,
+          "unitId": "unit:19119a1e85b03c7af0aa5addbb4e7f37cb163f71d8164488f66230fa1aaa2363",
+          "textSha256": "f99925a75f9de5d72f5809d39ffec7728274865cbc633e82eb7ed5e73f010dfc"
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:94c25df99fa644818ddf45bf74a342e8",
+          "paperId": "2303.14203",
+          "sourceSha256": "2ad1a4e9881a07f2ee8512d790ce8cd53f6c424b7db4ae3098eae9b5bc79720e",
+          "sourceContext": {
+            "path": "papers/07e7b9673c3a301306cc/reading-order.json",
+            "fileSha256": "7e67095609a1b80cbc6e1d4f0ec94e67c35bca01d024c9d6d678b450073852d6",
+            "pdfPage": 2,
+            "start": 124,
+            "end": 2166,
+            "textSha256": "a5675200abc8cc9360f873adaaddf6d49e8c10a478f5e3433673135165b9f5ea",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "The introduction states a conditional high-dimensional duality program, not an assumption-free theorem.",
+      "challengeNote": "The introduction announces a conditional d≥9 program using 16 or 32 supercharges and additional principles including BPS completeness.",
+      "proposalReason": "specialized",
+      "challengeReason": "specialized",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "The excerpts announce or summarize restricted analyses. The emergent-string source explicitly leaves its general conjecture unproved; reconstruction is best suited to symmetric spaces."
+    },
+    {
+      "selectionCategory": "geometry",
+      "unitId": "unit:4d15e34a3afb16ebec2b8c1d54f24a0521285d4db14d228cde674027fbcac8d4",
+      "paperId": "1105.0630",
+      "description": "How do refined topological branes quantize local Calabi–Yau geometry, and can their wave-functions and monodromies explain the Nekrasov–Shatashvili connection between gauge partition functions and quantum integrable systems?",
+      "destinationId": "q025-candidate-question:3e180f8ef6812d1e6528307b",
+      "title": "Geometric BPS spectra, defects and quantization",
+      "question": "How do geometry, defects and brane wave-functions determine BPS spectra, wall crossing and quantization in the specified supersymmetric theories?",
+      "scope": {
+        "systems": [
+          "Specified four-dimensional supersymmetric theories and class-S constructions",
+          "Hitchin and flat-connection moduli spaces",
+          "Refined topological branes in local geometry"
+        ],
+        "targets": [
+          "BPS degeneracies and spin data",
+          "Wall crossing and spectrum generators",
+          "Defect observables and moduli-space coordinates",
+          "Quantum curves and integrable-system quantization"
+        ],
+        "regimes": [
+          "Rank-two versus higher-rank constructions",
+          "Nekrasov–Shatashvili limit where stated",
+          "Rigid local observables versus compact reconstruction targets"
+        ],
+        "assumptions": [
+          "The refined-brane derivation is established in the stated matrix-model setting",
+          "Extension to all refined topological strings is a conjecture in the excerpt",
+          "Solving a wave equation alone does not impose the required monodromy condition"
+        ],
+        "conventions": [
+          "BPS spectra, protected indices and quantization conditions are not interchangeable outputs"
+        ],
+        "includes": [
+          "Wrapped-brane stability questions",
+          "Separate line-operator and surface-defect constructions"
+        ],
+        "excludes": [
+          "Identity of all spectral-network and quantum-curve questions"
+        ]
+      },
+      "scopeContentSha256": "7ba80bd074d3d1e551c5e1cc4b6d956806a00795ae1fd86d388fbdc52b661140",
+      "contributionDecisionId": "decision:source-contribution:810e9ce5cb15080abf2e9936",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d7",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:4d15e34a3afb16ebec2b8c1d54f24a0521285d4db14d228cde674027fbcac8d4",
+          "textSha256": "630ea7715116a044166001d58b7a2171afd956b3144d139b50607546b9365c6e"
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:3e12050ffd66a87b136c0598884b19af",
+          "paperId": "1105.0630",
+          "sourceSha256": "82177302172eeb8d130a400a4f78d51bab5a6bf3fb82946e31c4876b8dfa73bf",
+          "sourceContext": {
+            "path": "papers/5a3c19f3ee47e0e35165/reading-order.json",
+            "fileSha256": "c936c6edc9796b19fa8d7d446fe8717550d89f4dda37a41eecd07771ac93c9f8",
+            "pdfPage": 6,
+            "start": 0,
+            "end": 2766,
+            "textSha256": "01670ea8696df48c8f80dc1d1dc5e41c3b68ef81a5de63cd99e741d59210118e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e16",
+          "kind": "primary",
+          "sourceId": "ev:c8ddc1111261ccb5d4c62ab1b2f87d07",
+          "paperId": "1105.0630",
+          "sourceSha256": "82177302172eeb8d130a400a4f78d51bab5a6bf3fb82946e31c4876b8dfa73bf",
+          "sourceContext": {
+            "path": "papers/5a3c19f3ee47e0e35165/reading-order.json",
+            "fileSha256": "c936c6edc9796b19fa8d7d446fe8717550d89f4dda37a41eecd07771ac93c9f8",
+            "pdfPage": 5,
+            "start": 102,
+            "end": 2303,
+            "textSha256": "f834af8d5b99d81517653c6a39236f8e8dec10ad0b17cc0478c1a3bad1ff05c5",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "Matrix-model derivation; broader extension is conjectured. Single-valuedness adds a condition beyond solving the wave equation.",
+      "challengeNote": "Exact equation in the specified matrix model; broader applicability is conjectured. NS wave-equation solutions still require monodromy consistency.",
+      "proposalReason": "method_bridge",
+      "challengeReason": "method_bridge",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "Primary support is bounded to refined-brane excerpts. Spectral-network, line-operator and wrapped-brane assignments otherwise rest on descriptions."
+    },
+    {
+      "selectionCategory": "quantum_methods",
+      "unitId": "unit:064b7795efc4138b39aad15c1bf22b7af51cdffb4c9791597112dcf3dc6a5185",
+      "paperId": "1909.10355",
+      "description": "Does repeatedly restoring fields and defects lead to the complete allowed background category, and does its cobordism vanish?",
+      "destinationId": "q025-candidate-question:8f1340d8c5464bf4845d2259",
+      "title": "Completing quantum-gravity background categories",
+      "question": "How should fields, geometric structures and defects refine a restricted background category, and under what assumptions should its apparent global charges disappear?",
+      "scope": {
+        "systems": [
+          "Quantum-gravity background categories and string-theory approximations"
+        ],
+        "targets": [
+          "Background completion",
+          "Disappearance of apparent global charges",
+          "Gravity-decoupling limits"
+        ],
+        "regimes": [
+          "Restricted approximations versus a proposed complete theory"
+        ],
+        "assumptions": [
+          "No exact global symmetries where explicitly invoked"
+        ],
+        "conventions": [
+          "Defect-induced kernels and gauge-field forgetful-map cokernels are distinct"
+        ],
+        "includes": [
+          "Whitehead towers, fluxes and iterative defect additions"
+        ],
+        "excludes": [
+          "Proved termination, uniqueness or convergence of refinement"
+        ]
+      },
+      "scopeContentSha256": "d5e38e3210f4c6470c46f05705502e3eac55d65af02bef909f8451000a16a2ca",
+      "contributionDecisionId": "decision:source-contribution:f449477493d322a1f6a512e7",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d3",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:064b7795efc4138b39aad15c1bf22b7af51cdffb4c9791597112dcf3dc6a5185",
+          "textSha256": "64180cb26c679cf997e33d1e0306084f74ed156e5848dfb6259413bac9133df7"
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:1ff6bb3df026ea40fb893386347e2ba5",
+          "paperId": "1909.10355",
+          "sourceSha256": "3bf2f00698b8e89b212cdb6246b4571a95c14d06596947c2ecd8e816cc162477",
+          "sourceContext": {
+            "path": "papers/be7eb3da3b362d088e89/reading-order.json",
+            "fileSha256": "e9f35674ef910def229d09267ab0125d5b74c8821c1e86699a0d07c4c8f8bce6",
+            "pdfPage": 32,
+            "start": 0,
+            "end": 1869,
+            "textSha256": "247ec3ccd6d5dbb8050bec41132bd0d246bc71c3c0efdafd87782daf763aaaa2",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e11",
+          "kind": "primary",
+          "sourceId": "ev:8007505f4350d2a92b0fb27a5cef7bd9",
+          "paperId": "1909.10355",
+          "sourceSha256": "3bf2f00698b8e89b212cdb6246b4571a95c14d06596947c2ecd8e816cc162477",
+          "sourceContext": {
+            "path": "papers/be7eb3da3b362d088e89/reading-order.json",
+            "fileSha256": "e9f35674ef910def229d09267ab0125d5b74c8821c1e86699a0d07c4c8f8bce6",
+            "pdfPage": 12,
+            "start": 636,
+            "end": 2148,
+            "textSha256": "ac182801d6b84e0972157967b5175fc017251879113d9dac7792087cbc05c7a7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e21",
+          "kind": "primary",
+          "sourceId": "ev:d84a95d003298e26c31c8b7baa374736",
+          "paperId": "1909.10355",
+          "sourceSha256": "3bf2f00698b8e89b212cdb6246b4571a95c14d06596947c2ecd8e816cc162477",
+          "sourceContext": {
+            "path": "papers/be7eb3da3b362d088e89/reading-order.json",
+            "fileSha256": "e9f35674ef910def229d09267ab0125d5b74c8821c1e86699a0d07c4c8f8bce6",
+            "pdfPage": 13,
+            "start": 0,
+            "end": 968,
+            "textSha256": "2b5b51ca8d511e96fb4ff7f8531eaacc2fae8a6dc4c59455c1cf0f58d8190b53",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "Refinement can create classes; no termination theorem or implemented C-field refinement is supplied.",
+      "challengeNote": "Refinement can introduce classes. Defect kernels and gauge-field cokernels differ; termination and C-field completion are not supplied.",
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "The foundational excerpts describe a research program. The C-field refinement is proposed, its cited computation is external, and the lecture excerpts provide survey-level support."
+    },
+    {
+      "selectionCategory": "additional_direct_target",
+      "unitId": "unit:06d0c20104eb10473e6a3ae51c2f2f0f341809d1e288ae8907049638a8aeb9bc",
+      "paperId": "hep-th/0404168",
+      "description": "Can thermal gauge interactions destroy the metastable dilaton minimum, and what critical temperature and cosmological temperature bounds follow for nonperturbative stabilization?",
+      "destinationId": "q025-candidate-question:c507c726c5fc2dc93257af9b",
+      "title": "Dilaton capture, decoupling and thermal stability",
+      "question": "How can cosmological evolution suppress dilaton interactions or capture moduli in suitable minima, and when do matter or thermal effects instead destabilize them?",
+      "scope": {
+        "systems": [
+          "Massless dilatons",
+          "Light dark-energy moduli",
+          "Dilaton potentials with shallow nonperturbative minima"
+        ],
+        "targets": [
+          "Fifth forces and varying couplings",
+          "Capture and overshoot",
+          "Temporary stabilization",
+          "Thermal loss of a minimum"
+        ],
+        "regimes": [
+          "Finite-field coupling extrema",
+          "Infinite-bare-coupling attraction",
+          "Early thermal evolution and late-time phenomenology"
+        ],
+        "assumptions": [
+          "The form of matter and gauge couplings matters",
+          "A coupling extremum need not stabilize a potential"
+        ],
+        "conventions": [
+          "Thermal stabilization and thermal destabilization refer to different contributions and models"
+        ],
+        "includes": [
+          "Matter-driven damping and direct matter-induced effective potentials"
+        ],
+        "excludes": [
+          "A universal assertion that thermal matter stabilizes the dilaton"
+        ]
+      },
+      "scopeContentSha256": "ff082eba89e991cfca8f13420d2b7e028100cae1f22f17389bbbc6b729b1d238",
+      "contributionDecisionId": "decision:source-contribution:25e2a9bbc8aba7a5398f6e86",
+      "basis": "source_excerpt_checked",
+      "evidenceRefs": [
+        {
+          "localRef": "d45",
+          "kind": "description",
+          "unitIndex": 45,
+          "unitId": "unit:06d0c20104eb10473e6a3ae51c2f2f0f341809d1e288ae8907049638a8aeb9bc",
+          "textSha256": "daf76adb85476b8d48625c7f24f161740a796395e478e4de63c6f670c8866b44"
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:9e9250cf77eaa8f4b54ff72207e44312",
+          "paperId": "hep-th/0404168",
+          "sourceSha256": "c7bc8afaabff0dccd7e6efbd882c378bb0903f78aef9e77f72dc26ac2a0805ee",
+          "sourceContext": {
+            "path": "papers/c5748f98f12cc94b9ada/reading-order.json",
+            "fileSha256": "dcde92b7ed5e9e6ee0a34bb16373e8a1640c9bcbf1374745eb339e83034cfb54",
+            "pdfPage": 2,
+            "start": 1301,
+            "end": 3039,
+            "textSha256": "5d89a0fcac8a1faee31f5810a933736e3f721217d9e914ef3bcc88dd143761af",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e20",
+          "kind": "primary",
+          "sourceId": "ev:ad0b7987605a6e309bdca031b067d724",
+          "paperId": "hep-th/0404168",
+          "sourceSha256": "c7bc8afaabff0dccd7e6efbd882c378bb0903f78aef9e77f72dc26ac2a0805ee",
+          "sourceContext": {
+            "path": "papers/c5748f98f12cc94b9ada/reading-order.json",
+            "fileSha256": "dcde92b7ed5e9e6ee0a34bb16373e8a1640c9bcbf1374745eb339e83034cfb54",
+            "pdfPage": 2,
+            "start": 101,
+            "end": 3039,
+            "textSha256": "2784d4a80d6cda9d5ef59c89282c945c8819e19b0995d82d0f2eb992c052e1c2",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "proposalNote": "The source calls its temperature bound conservative because additional contributions are model-dependent; no universal critical temperature is inferred.",
+      "challengeNote": "The source calls its temperature bound conservative; additional scalar contributions remain model-dependent. No universal critical temperature is established.",
+      "proposalReason": "central",
+      "challengeReason": "central",
+      "sourceRole": "addresses",
+      "proposedWeight": 1,
+      "status": "candidate_only_no_home_admission",
+      "readingLimit": "The primary excerpts support mechanism distinctions. Experimental limits and forecasts retain their source dates; no current fit is established."
+    }
+  ],
+  "counterexamples": [
+    {
+      "unitId": "unit:313fe3f0b7b637a83d3c5e3c69dd4ab782c5fa47f66b80fe7a5e3f2dd439dee5",
+      "destinationId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "reason": "flagged_unit_annotation_requires_inspection",
+      "proposalNote": "Local toric threefold gluing with framing; the mirror explanation is a linked interpretive target.",
+      "challengeNote": "Noncompact toric threefold gluing; the mirror chiral-boson explanation is a linked interpretive target. Complete framing and propagator formulas are not checked"
+    },
+    {
+      "unitId": "unit:2b26b922d6d6cbcf3a9307c8f76fa5667afa12ba6c962234be865638a68df584",
+      "destinationId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Compound: fluctuating Kähler/topology interpretation and a gauge/sheaf definition of the topological A-model.",
+      "challengeNote": "Compound: fluctuating Kähler geometry/topology interpretation and a precise gauge/sheaf definition of the topological model."
+    },
+    {
+      "unitId": "unit:cac6ded92e886adc1e6ed4c05d9aaccbe0af69a6da8543e089a6d37e76ace01a",
+      "destinationId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Compound overview: definitions/computation, gauge observables and four-/five-dimensional BPS black holes.",
+      "challengeNote": "Compound overview of definitions, computation, gauge observables and four-/five-dimensional BPS black holes."
+    },
+    {
+      "unitId": "unit:bd283062aadf4477e5437b7f712bc37ccbde50089dd300dde247e842855eab07",
+      "destinationId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Higher-genus critical twisted N=2 amplitudes; failure of BRST-exact decoupling remains explicit.",
+      "challengeNote": "Compound: higher-genus computation despite failed BRST-exact decoupling, target-space geometry and four-dimensional interactions."
+    },
+    {
+      "unitId": "unit:62bbe09790b7105c5af19112f889051b9df1f1e0fde24b9a8d202427b156840d",
+      "destinationId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Compound: M2-spin computation and constraints from spinning five-dimensional black holes.",
+      "challengeNote": "Compound: M2-spin computation and asymptotic constraints from spinning five-dimensional black holes."
+    },
+    {
+      "unitId": "unit:aedbbaa2e70be546c39bb4e1ab295ca31019f340de3d911d9de360856d65aa8f",
+      "destinationId": "q025-candidate-question:3e180f8ef6812d1e6528307b",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Compound: canonical Seiberg–Witten geometry and stability of allowed electric/magnetic charges.",
+      "challengeNote": "Compound: canonical Seiberg–Witten geometry and which allowed electric/magnetic charges support stable particles."
+    },
+    {
+      "unitId": "unit:25ac22d9e6fd82570f5c93d70d293f1bb9bb99293cb973a685488f0eea153531",
+      "destinationId": "q025-candidate-question:50ab896f047c0d9524a8913c",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Family multiplicity, Yukawa structure and CKM/CP viability remain linked but distinct targets.",
+      "challengeNote": "Compound: family multiplicity, Yukawa structure and CKM/CP viability."
+    },
+    {
+      "unitId": "unit:99c7050fc9a5097a9ad87dd2998eb69cf29f90ee5015314e65b66a7e8e7eaff0",
+      "reason": "multiple_distinct_addresses_scope_candidates",
+      "candidateCount": 2
+    },
+    {
+      "unitId": "unit:dcdc6e5ef47c4db8f461263342e48b0dbd6f00571ac94eab4dda29de61cee196",
+      "destinationId": "q025-candidate-question:50ab896f047c0d9524a8913c",
+      "reason": "context_compound_or_unclear_language_screen_requires_adjudication",
+      "proposalNote": "Inverse reconstruction and non-uniqueness of gauge descriptions are both retained.",
+      "challengeNote": "Inverse reconstruction and non-uniqueness of gauge descriptions remain linked but distinct targets."
+    },
+    {
+      "unitId": "unit:a45a2531a1c48c797b8db3ee29d60c83d473f4044a02360ac2aafee57bfc0bd2",
+      "reason": "multiple_distinct_addresses_scope_candidates",
+      "candidateCount": 2
+    },
+    {
+      "unitId": "unit:a150f08574860f3327069ddc9323140de808e0f11d0ea69fab3ebcb4e260aeb6",
+      "reason": "multiple_distinct_addresses_scope_candidates",
+      "candidateCount": 3
+    },
+    {
+      "unitId": "unit:0c0e5bc0d09c001963465763a3e9658f3a596ca8cb8303f361b69b7867258d3a",
+      "reason": "multiple_distinct_addresses_scope_candidates",
+      "candidateCount": 3
+    }
+  ],
+  "coverageLimit": "Snapshot119 ordinary leaf pairs plus recovered42 pair and19parent pairs; later completed reviews require a new version. This class still requires root policy adjudication and canonical destination mapping. It never claims source-statement equivalence.",
+  "homesAdmitted": 0,
+  "unitsWithoutAgreedAddresses": 2321,
+  "explicitKKCounterexamples": [
+    {
+      "unitIndex": 62,
+      "destinationId": "q-kk-graviton-thermal-production",
+      "disposition": "contextual_contribution_only",
+      "reason": "Paired instantiates role is inherited production context, not the direct question target."
+    },
+    {
+      "unitIndex": 79,
+      "destinationId": "q-kk-graviton-thermal-production",
+      "disposition": "outside_rehearsal_and_no_production_home",
+      "reason": "Visible-energy injection is its direct target; production is inherited context."
+    },
+    {
+      "unitIndex": 63,
+      "destinationId": "q-flat-darkdimension-freezein-bounds",
+      "disposition": "outside_rehearsal_method_only",
+      "reason": "CMB detectability compression is a methodological bridge, not flat-KK scope membership."
+    }
+  ]
+}

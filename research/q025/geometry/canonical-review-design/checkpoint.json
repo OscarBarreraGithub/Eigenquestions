@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "q025-canonical-design-checkpoint/1",
+  "status": "packing_and_held_export_frozen_compact_pilots_separately_root_authorized",
+  "ownedFiles": [
+    {
+      "path": "research/q025/geometry/canonical-review-design/measure_packings.py",
+      "sha256": "8be3bfc2d00aefbdd7a14e3487ccc65f1c52aa78b1615805ba7d3fcd05748a1c",
+      "bytes": 15850
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/export_triage.py",
+      "sha256": "25eeb620fdf6ef5b12313a86b30b5c6295fec859990806d3a9fa80e787e62ca0",
+      "bytes": 7198
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/measurements.json",
+      "sha256": "facad45ca0994c93e32a92f608d559cf5a71451b54f3df15acadfadc94df4b59",
+      "bytes": 86785
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/triage-export-index.json",
+      "sha256": "8c6806d664bd84c25fac9153634ba6f30cf8957ebefdb11abf4a4e2c3293bff0",
+      "bytes": 359114
+    },
+    {
+      "path": "research/q025/geometry/canonical-review-design/REPORT.md",
+      "sha256": "31c6baaacef193f50296ae2d48e6b31bb238026352f65c8385ce951ba2283c38",
+      "bytes": 5396
+    }
+  ],
+  "ownedBytes": 474343,
+  "externalReproductionInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-wave-v1/final-source-index.json",
+      "sha256": "19b3341a0d2fdaf80e06f0b686dd966cff956bd54a8a3316e35436981ae4af2e",
+      "bytes": 664890
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-wave-v1/build_packets.py",
+      "sha256": "d91ff58be03a9a829d267d41b689a849ec698c6c4cbc70eb49ac65d4cc8d9249",
+      "bytes": 11009
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-wave-v1/compact_batches.py",
+      "sha256": "3c7ceda790d8f92a0034fa0f6bf361e085d2779bf8635a6b49b8104319742350",
+      "bytes": 6044
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-wave-v1/retain_prior_pairs.py",
+      "sha256": "31ae75bf7d813163aaa4134c681e36bdf055241c21972fef56a0c793ddf3d694",
+      "bytes": 4161
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v3-20261117T121953Z.json",
+      "sha256": "c9c419d7ded388f1355e31b1bef413ab09ca12de0e7cd60be996f687655fcf8a",
+      "bytes": 36316550
+    }
+  ],
+  "ignoredPayloads": [
+    {
+      "path": "research/q025/geometry/canonical-review-design/packings.json",
+      "sha256": "80c6abe4e8304eadd5df34133ccd052dce8eeb617861e47ffb195bffee59bc17",
+      "bytes": 5239467
+    }
+  ],
+  "ignoredViewAndSidecarPins": "triage-export-index.json families[].view/sidecar",
+  "comparisonCount": 8,
+  "allWorkloadCoverageChecked": true,
+  "exactScientificDefinitionAndDescriptionHashesChecked": true,
+  "knownContextLimit": "Full scope-assessment notes and reading limits retained; per-unit proposer/challenger notes are not included in compact views. This is triage only; source-specific ambiguity escalates.",
+  "heldRichDraftNativeLaunches": 0,
+  "compactPilotLaunches": "Root reported four families launched after export; no inputs changed.",
+  "noNewScientificAdmission": true,
+  "noChangesToRealRehearsalFrozen25Files": true,
+  "doNotStage": [
+    "packets/*.local.json",
+    "packings.json (5MB reproducible workload listing)",
+    "progress*.jsonl",
+    "export*.jsonl",
+    "broader-home* and audit_home_lanes.py belong to a later home checkpoint"
+  ]
+}

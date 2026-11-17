@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "q025-successor-preflight/1",
+  "campaignSha256": "7adcde0190d73bd27103ac6bc24245a61d31a23529a466d6d8f408a57db1abb7",
+  "runnerSha256": "c1bd54d5734a881e104b6a38bcd127288803dff992d500da87c5bfbac39d09e9",
+  "nativeLaunches": 0,
+  "sourceHashVerification": "Every actually materialized excerpt and archived source file verified by the same dispatch function. Future dependency-bearing packets are compiled and checked only after their receipts exist.",
+  "actualJobDirectoriesMaterialized": 0,
+  "results": [
+    {
+      "jobId": "successor2-leaf-ce36cae0274019373c8a-challenge",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "88ca33ce4d019953616a8e0c9d42cd0d061d4f1ee03b65a6913d47c7337e1aea",
+      "promptSha256": "aa0d3c5f94b54f66d344d0b6b6b82996b715fc711ce930791bf4a686445c5dce",
+      "schemaSha256": "7ae981bfdc32dc4abe97841ce753e3afa35a5dfe685b9fed4a48f6a971db4f14",
+      "sourceUnitCount": 51,
+      "primaryExcerptCount": 26,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 269604,
+        "schemaCharacters": 6804,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 148136
+      }
+    },
+    {
+      "jobId": "successor2-leaf-27b96c79f67176367791-proposal",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "77f65d7ab43af3433b4db010938e9198066693dc19874dc22e9266f3347e0a4c",
+      "promptSha256": "6eec04cfafeb1b80934eca34cdf8972dfb495a38bc7818884a799ae780a316d3",
+      "schemaSha256": "07bc44d748c2d180f38dc5950fda0f56dc283da60fd87f02ce7f52d2aefb493b",
+      "sourceUnitCount": 32,
+      "primaryExcerptCount": 24,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 112776,
+        "schemaCharacters": 5932,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 95570
+      }
+    },
+    {
+      "jobId": "successor2-leaf-27b96c79f67176367791-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-leaf-27b96c79f67176367791-proposal",
+      "childReadiness": {
+        "status": "ready"
+      }
+    },
+    {
+      "jobId": "successor2-parent-0b9505226b0fcc606395-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-0b9505226b0fcc606395-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-parent-0b9505226b0fcc606395-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-5eef7911f1a80cb73c18-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-5eef7911f1a80cb73c18-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-parent-5eef7911f1a80cb73c18-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-6695e767a08bf35f78fe-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-6695e767a08bf35f78fe-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-parent-6695e767a08bf35f78fe-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-8faef27ce1cad100b7fe-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-8faef27ce1cad100b7fe-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-parent-8faef27ce1cad100b7fe-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-c8776465ed44d9e65c4c-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-c8776465ed44d9e65c4c-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-parent-c8776465ed44d9e65c4c-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-e8d0c428c737a887a324-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor2-parent-e8d0c428c737a887a324-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor2-parent-e8d0c428c737a887a324-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+"""Conservative candidate class for root policy audit; this admits zero homes."""
+import collections,hashlib,json,re,sys
+from pathlib import Path
+B=Path(__file__).resolve().parent;F=B.parent;E=F.parent;sys.path.insert(0,str(F/'findings-v1'));from audit_field_completeness import screen as field_screen
+REG=F/'reconciliation-v1/authored-scope-registry-v3-20261117T121953Z.json';registry=json.loads(REG.read_text());records={r['candidateId']:r for r in registry['records']};reviews={r['reviewId']:r for r in registry['reviews']};component=json.loads((B/'supported-scope-role-component-v1.json').read_text());dest={d['id']:d for d in component['destinations']};byunit=collections.defaultdict(list);cache={};eligible=[];excluded=[];source_rows={r['unit_id']:r for r in map(json.loads,(E.parent/'geometry/round1/source-rows.jsonl').read_text().splitlines())};positive={'addresses','instantiates','specializes'};screen=re.compile(r'\b(?:inherit\w*|context\w*|compound|multi[- ]target|distinct.{0,40}targets|linked.{0,20}target|unclear|ambiguous|not (?:a |the )?direct|future work|not performed)\b',re.I)
+for row in component['sourceContributions']:
+ if row['role']=='addresses':byunit[row['unitId']].append(row)
+for uid,rows in byunit.items():
+ if len({r['destinationId']for r in rows})!=1:excluded.append({'unitId':uid,'reason':'multiple_distinct_addresses_scope_candidates','candidateCount':len(rows)});continue
+ row=rows[0];record=records[row['destinationId']];rid=record['reviewId'];d=E/reviews[rid]['artifactDirectory']
+ if rid not in cache:
+  p=json.loads((d/'packet.actual.json').read_text());r=json.loads((d/'reply.json').read_text());cache[rid]=(p,{p['refRegistry'][u['descriptionRef']]['unitId']:u for u in p['units']},{a['i']:a for a in p['priorAssignments']},{a['i']:a for a in r['units']})
+ p,units,prior,current=cache[rid];u=units[uid];a=prior[u['i']];b=current[u['i']];reason=None;local=record['localRef']
+ if a['d']!='member'or b['d']!='member':reason='broad_disposition_not_joint_member'
+ elif any({q['id']for q in x['q']if q['role']in positive}!={local}for x in [a,b]):reason='additional_positive_target_or_changed_target_assignment'
+ elif a['identity']=='u'or b['identity']=='u':reason='explicit_unresolved_fine_target_state'
+ elif any(x['reason']in['changed_regime','scope_mismatch']for x in [a,b]):reason='changed_regime_or_scope_mismatch'
+ elif record['admissionJustificationFlags']:reason='flagged_scope_admission_note_needs_resolved_annotation'
+ elif field_screen({'units':[a,b]})[0]:reason='flagged_unit_annotation_requires_inspection'
+ elif screen.search(a['note']+' '+b['note']):reason='context_compound_or_unclear_language_screen_requires_adjudication'
+ if reason:excluded.append({'unitId':uid,'destinationId':row['destinationId'],'reason':reason,'proposalNote':a['note'],'challengeNote':b['note']});continue
+ eligible.append({'unitId':uid,'paperId':u['paperId'],'description':u['description'],'destinationId':row['destinationId'],'title':dest[row['destinationId']]['title'],'question':dest[row['destinationId']]['question'],'scope':dest[row['destinationId']]['scope'],'scopeContentSha256':dest[row['destinationId']]['scopeContentSha256'],'contributionDecisionId':row['decisionId'],'basis':row['basis'],'evidenceRefs':row['evidenceRefs'],'proposalNote':a['note'],'challengeNote':b['note'],'proposalReason':a['reason'],'challengeReason':b['reason'],'sourceRole':'addresses','proposedWeight':1,'status':'candidate_only_no_home_admission','readingLimit':dest[row['destinationId']]['readingCoverage']['readingLimit']})
+# Diverse reproducible demonstration selection; category is selection bookkeeping only.
+patterns=[('protected_amplitudes',r'topological|enumerative'),('black_holes',r'black.hole'),('holography',r'holograph|AdS/CFT'),('gauge_and_anomalies',r'anomal|gauge'),('inflation',r'inflat'),('axions',r'axion'),('cosmology',r'cosmolog|dark.matter'),('distance_limits',r'distance|infinite|emergen'),('geometry',r'Calabi|geometr'),('quantum_methods',r'entangl|quantum|bootstrap')];samples=[];used=set()
+for label,pattern in patterns:
+ choices=[x for x in eligible if x['unitId']not in used and re.search(pattern,x['title'],re.I)]
+ if choices:
+  x=sorted(choices,key=lambda x:(x['basis']!='source_excerpt_checked',x['unitId']))[0];samples.append({'selectionCategory':label,**x});used.add(x['unitId'])
+for paper in ['hep-th/0404168','2011.13956','1904.05379']:
+ if len(samples)>=10:break
+ choices=[x for x in eligible if x['paperId']==paper and x['unitId']not in used]
+ if choices:samples.append({'selectionCategory':'additional_direct_target',**choices[0]});used.add(choices[0]['unitId'])
+report={'schemaVersion':'q025-uncomplicated-home-policy-audit/1','status':'candidate_policy_audit_not_admission','rule':'One unchanged admitted scope with exact paired addresses role; both original dispositions member; no other positive target in either row; no explicit unresolved identity/changed regime/scope mismatch; no unresolved scope-note flag; conservative note-language screening for inherited/context/compound/unclear targets. This screen excludes uncertain cases rather than interpreting them automatically.','candidateCount':len(eligible),'sourceUnitsWithAnyAgreedAddresses':len(byunit),'excludedCount':len(excluded),'exclusionReasons':dict(collections.Counter(x['reason']for x in excluded)),'sourceComponentSha256':hashlib.sha256((B/'supported-scope-role-component-v1.json').read_bytes()).hexdigest(),'representativeCandidates':samples,'counterexamples':excluded[:12],'coverageLimit':'Snapshot119 ordinary leaf pairs plus recovered42 pair and19parent pairs; later completed reviews require a new version. This class still requires root policy adjudication and canonical destination mapping. It never claims source-statement equivalence.','homesAdmitted':0,'unitsWithoutAgreedAddresses':component['counts']['uniqueContributingUnits']-len(byunit),'explicitKKCounterexamples':json.loads((F/'organization-placement-v1/kk-placement-proposal.json').read_text())['negativeControls']};(B/'uncomplicated-home-policy-audit-v1.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');(F/'native-local/uncomplicated-home-candidates-v1.json').write_text(json.dumps({'candidates':eligible,'excluded':excluded},ensure_ascii=False,separators=(',',':'))+'\n');print(json.dumps({k:report[k]for k in ['candidateCount','sourceUnitsWithAnyAgreedAddresses','excludedCount','exclusionReasons','homesAdmitted']}));print(json.dumps([{'paperId':x['paperId'],'description':x['description'],'question':x['question'],'proposalNote':x['proposalNote'],'challengeNote':x['challengeNote']}for x in samples],ensure_ascii=False,indent=2))

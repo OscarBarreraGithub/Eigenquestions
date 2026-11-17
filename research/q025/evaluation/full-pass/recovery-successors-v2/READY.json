@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "q025-successor-ready/1",
+  "status": "READY_FOR_ROOT_VERIFIED_LAUNCH",
+  "generatedAt": "2026-11-17T13:01:13.354297+00:00",
+  "campaignSha256": "7adcde0190d73bd27103ac6bc24245a61d31a23529a466d6d8f408a57db1abb7",
+  "runnerSha256": "c1bd54d5734a881e104b6a38bcd127288803dff992d500da87c5bfbac39d09e9",
+  "publicManifestSha256": "4370fa03e3f5dbb9011c8db54e999628504d842737c5b714f2a597eccd47eb3e",
+  "nativeLaunches": 0,
+  "nativeJobs": 15,
+  "readyPreflightJobs": 2,
+  "dependentJobs": 13,
+  "pythonTestsPassed": 8,
+  "nodeTestsPassed": 6,
+  "originalStatesModified": false,
+  "frozenV1InputVerification": "passed after preparation",
+  "runtimeControl": {
+    "enabled": false,
+    "maxActive": 2,
+    "maxAuthorizedConcurrency": 8,
+    "globalLimit": 48,
+    "globalLimitOwner": "root"
+  },
+  "limits": {
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "sourceOnly": true,
+    "sandbox": "read-only",
+    "timeoutSeconds": 1800,
+    "maxOutputCharacters": 120000,
+    "perStringCaps": false,
+    "outsideStringWhitespaceRunLimit": 4096,
+    "dispatchGuardTokens": 220000,
+    "automaticRetries": false
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/INSTRUCTIONS.md",
+      "sha256": "61d1d46ef35ee00fb482ee1f8590d73e9ddb4df5db5cf28a03a85c98d78d56f2",
+      "bytes": 3566
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/README.md",
+      "sha256": "57ef6fd7398af7898af890035ed1e3b5e2f179eba3223a714d906abd6990a428",
+      "bytes": 4421
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/contract.py",
+      "sha256": "d17b556a2b70c454aa35edbbcea24ae445145b197301fe2c1ab207b940836f83",
+      "bytes": 3948
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/failure-audit.json",
+      "sha256": "91fb5010616b2eb0c57bb88aa8364af1e719424c359a275ac02d8037b876553a",
+      "bytes": 764
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/health-snapshot.json",
+      "sha256": "4510e3ce21ba0d22d0fb9357c39e549fb24b23251d69e0fc4d7e695d5619fb08",
+      "bytes": 6766
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/manifest.json",
+      "sha256": "4370fa03e3f5dbb9011c8db54e999628504d842737c5b714f2a597eccd47eb3e",
+      "bytes": 43136
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/materialize.py",
+      "sha256": "ef0165690f8d0d1b685d9c2c9ec787df945b804a880643fc1042e7f697e14d04",
+      "bytes": 8147
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/preflight-run-001.json",
+      "sha256": "9aed09399bd073b8b3a5d7527ce24c8d05874d81fbb8194e5aaa90101eec772d",
+      "bytes": 5265
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/preflight.mjs",
+      "sha256": "67148dfce1b222fec781522f34d97c2aa2a8f6fc671e4a8a8f3cd720028ba334",
+      "bytes": 3416
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/prepare.py",
+      "sha256": "7ea5b5436311a0bcb90af3a6cd667af242cc3af9577ba1ee0bb61561f84a2010",
+      "bytes": 10666
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/runner.mjs",
+      "sha256": "c1bd54d5734a881e104b6a38bcd127288803dff992d500da87c5bfbac39d09e9",
+      "bytes": 24918
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/runner.test.mjs",
+      "sha256": "ef140ffd35b9990c351c36b53e4236f24b83076230c45802578e1cd98dd29e91",
+      "bytes": 2440
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/test_successors.py",
+      "sha256": "891375bea8b99cb97fc9729e9966eafeb7776e9b2283c35f04531a6d5e93c3f1",
+      "bytes": 4269
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v2/verification.json",
+      "sha256": "6359e1a0db48fcae9dd776b06ec62484314ce980ee82c1e33b9107ed7b440db0",
+      "bytes": 3076
+    }
+  ],
+  "privateArtifacts": "Raw sources, native replies and execution configuration remain in ignored native-local."
+}

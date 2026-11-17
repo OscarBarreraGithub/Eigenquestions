@@ -1,0 +1,51 @@
+{
+  "nativeLaunches": 0,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/q025/evaluation/full-pass/recovery-successors-v2",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_challenge_sees_structural_evidence_without_new_primary_references (test_successors.RecoveryTests.test_challenge_sees_structural_evidence_without_new_primary_references) ... ok\ntest_empty_scientific_references_need_exact_structural_proof (test_successors.RecoveryTests.test_empty_scientific_references_need_exact_structural_proof) ... ok\ntest_failed_original_and_raw_response_are_unchanged (test_successors.RecoveryTests.test_failed_original_and_raw_response_are_unchanged) ... ok\ntest_no_per_string_caps (test_successors.RecoveryTests.test_no_per_string_caps) ... ok\ntest_only_six_blocked_parent_families_are_rewired (test_successors.RecoveryTests.test_only_six_blocked_parent_families_are_rewired) ... ok\ntest_partial_first_card_fields_are_locked (test_successors.RecoveryTests.test_partial_first_card_fields_are_locked) ... ok\ntest_structural_absence_does_not_excuse_a_material_scientific_conflict (test_successors.RecoveryTests.test_structural_absence_does_not_excuse_a_material_scientific_conflict) ... ok\ntest_structural_adoption_preserves_all_scientific_content (test_successors.RecoveryTests.test_structural_adoption_preserves_all_scientific_content) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.036s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "research/q025/evaluation/full-pass/recovery-successors-v2/runner.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "\u2714 whitespace guard follows string and escape state across deltas (1.470584ms)\n\u2714 explicit quota denial is distinguished from ordinary scientific prose (0.096583ms)\n\u2714 failed child blocks a successor without coverage omission (0.593167ms)\n\u2714 prepared requests verify without starting a native model (14.155625ms)\n\u2714 runtime budget and output schema use the actual request consistently (0.149333ms)\n\u2714 retained leaf27 whitespace loop trips the new guard (1.879375ms)\n\u2139 tests 6\n\u2139 suites 0\n\u2139 pass 6\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 55.760042\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/recovery-successors-v2/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":15,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/recovery-successors-v1/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":34,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    }
+  ]
+}
