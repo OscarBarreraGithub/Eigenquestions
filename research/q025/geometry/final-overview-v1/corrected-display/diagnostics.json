@@ -1,0 +1,100 @@
+{
+  "coverage": {
+    "allSourceQuestionCount": 8473,
+    "allocatedSourceCount": 8399,
+    "zeroHSourceCount": 74,
+    "directScientificBaseCount": 1792,
+    "plottedBroadRegions": 215,
+    "unplottedRegionIds": [
+      "q025-candidate-region:9454e2dc275dec5e822bba03",
+      "q025-candidate-region:b158f80b6c1808f1550fae42",
+      "q025-candidate-region:b6066d8938d079cd5060a13f",
+      "q025-candidate-region:ee0f349eb0f97bd0d67454e9"
+    ],
+    "broadCoordinateSupportUniqueSources": 4735,
+    "broadCoordinateSupportMassUnion": 3760.733715549157,
+    "allDirectBasesInfluenceFullCoarseOperator": true,
+    "methodsAreContextAffinityOnly": true
+  },
+  "mass": {
+    "global": 6476.999999999985,
+    "allocated": 6447.757167832158,
+    "unresolved": 5.242832167832167,
+    "reserved": 23.999999999999993,
+    "unassigned": 29.24283216783216,
+    "renormalized": false,
+    "fullFMass": 6477.0,
+    "CRepresentedFlow": 6422.220971144608,
+    "assignedToZeroHFlowOneDirection": 25.536196687560732,
+    "zeroHToZeroHFlow": 3.706635480271017,
+    "totalFlowOutsideC": 54.779028855392426,
+    "coarseMassNotRenormalized": true
+  },
+  "flow": {
+    "isolatedSourceCount": 0,
+    "selfFlowFraction": 0.14909920160550472,
+    "sourceMassMaxError": 4.440892098500626e-16
+  },
+  "broadAffinityDisplay": {
+    "displayedEdges": 894,
+    "positiveUndirectedPairs": 17933,
+    "retainedOffDiagonalOverlapFlowFraction": 0.6210761675358055,
+    "overlapFlowIsNotAProbabilityOrAdditionalHMass": true
+  },
+  "operator": {
+    "lazyDiffusionTime": 4,
+    "completeEigenDimensions": 1791,
+    "sourceGraphComponents": 1,
+    "coarseComponents": 1
+  },
+  "referenceSelection": {
+    "referenceQuestionCount": 8473,
+    "selectedQuestionCount": 8473,
+    "affinityPolicy": "complete pinned multiview operator",
+    "flowMassPolicy": "Metropolis flow is recomputed from the selected graph and selected paper-balanced masses; full-corpus outside flow is not retained.",
+    "selectedSourceFullOffDiagonalAffinity": 7523.574254219865,
+    "retainedWithinSelectionOffDiagonalAffinity": 7523.574254219865,
+    "retainedAffinityFraction": 1.0,
+    "perSourceRetainedFraction": {
+      "min": 1.0,
+      "mean": 1.0,
+      "max": 1.0
+    }
+  },
+  "limitations": [
+    "Broad coordinates are source-mass-weighted centroids in the full accepted coarse diffusion space; plotting then retains its two leading broad centroid axes.",
+    "Broad regions can overlap; their support masses do not sum to corpus mass. Direct residual H and full descendant-scope display are different quantities.",
+    "Fine scopes remain navigable through exact text and typed routes. This plot makes no claim of globally faithful fine-question distances.",
+    "All source mass and flow to unresolved/reserved sources remain counted outside C. Source descriptions of reserved papers were not read.",
+    "Scientific route validity is independent of geometric proximity. Reviewed source relations did not change the selected retrieval operator."
+  ],
+  "failedFineCentroidProjection": {
+    "distanceStress": 0.8994230036852934,
+    "topFiveNeighborRecall": 0.08930232558139532,
+    "degenerateTarget": false
+  },
+  "displayedBroadPointFidelity": {
+    "distanceStress": 0.6171187847142565,
+    "topFiveNeighborRecall": 0.15069767441860465,
+    "degenerateTarget": false
+  },
+  "displayOperator": {
+    "kind": "degree_normalized_overlapping_region_feature_flow",
+    "formula": "A=B^T F B; P=D_A^-1 A; lazy=(I+P)/2; t=4",
+    "isCanonicalConservedC": false,
+    "regionOverlapCreatesRepeatedFeatureSupport": true,
+    "rowNormalizationMeaning": "Transition probabilities between overlapping displayed scope features only; not source membership, confidence or additional source mass.",
+    "leadingLazyEigenvalues": [
+      0.9999999999999997,
+      0.9052591414771264,
+      0.883285581394838,
+      0.8445722921885347,
+      0.8340611687931084,
+      0.8207194585360309,
+      0.8141265133413547,
+      0.7918081534750344
+    ],
+    "twoModeSpectralEnergyFraction": 0.09619142024907147,
+    "sourceSupportCoverageUnchanged": true
+  }
+}

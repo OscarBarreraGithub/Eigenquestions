@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {validateMappedHome} from './compile_mapped_homes.mjs';
+const read=async p=>JSON.parse(await readFile(new URL(p,import.meta.url),'utf8'));
+const mapping=await read('../../evaluation/full-pass/placement-scope-review-v4/scope-mapping.json');
+const receipt=await read('../../evaluation/full-pass/placement-scope-review-v4/scope-class-admission.json');
+const component=await read('../../evaluation/full-pass/placement-scope-review-v4/scope-component.json');
+const intake=await read('./cut-03/exception-intake.json');
+const selected=mapping.rows.filter(m=>m.approvalMode==='root_explicit_selected_challenger_definition');
+const values=m=>[intake.rows.find(r=>r.unitId===m.unitIds[0]),m,component.destinations.find(d=>d.id===m.destinationId),receipt];
+test('four actual coordinator-selected challenger definitions preserve final whole homes',()=>{assert.equal(selected.length,4);for(const m of selected)assert.equal(validateMappedHome(...values(m)).scopeRef,m.localRef);});
+test('selected definition cannot masquerade as unchanged paired retention',()=>{const args=structuredClone(values(selected[0]));args[1].approvalMode='delegated_unchanged_pair_class';assert.throws(()=>validateMappedHome(...args));});
+test('coordinator branch rejects changed authorization, scope, source and partial coverage',()=>{for(const mutate of [a=>a[3].rootSelectedDefinitionDecision.indices=[],a=>a[1].scopeContentSha256='0'.repeat(64),a=>a[0].unitId='foreign',a=>a[0].challengeJudgment.coverageMode='explicit_compound_union',a=>a[0].challengeJudgment.missingPremises=['missing']]){const args=structuredClone(values(selected[0]));mutate(args);assert.throws(()=>validateMappedHome(...args));}});

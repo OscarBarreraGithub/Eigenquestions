@@ -85,6 +85,7 @@ export function normalizeCompactIdentity({packet,reply,corpus,packetSha256,reply
 
 export function attachFineSourceAccess(catalog,{corpus,proposalBundles=[],policyDecisionId}) {
   const rowMap=new Map(),groups=[];
+  const unresolvedHomes=new Map((catalog.sourceAccounting?.unresolved||[]).map(r=>[r.unitId,r]));
   for(const b of proposalBundles){groups.push(...b.groups);for(const r of b.rows){if(!rowMap.has(r.unitId))rowMap.set(r.unitId,[]);rowMap.get(r.unitId).push(r);}}
   const destinations=new Map(catalog.destinations.map(d=>[d.id,d])),regionalMembership=new Map();
   for(const m of catalog.memberships)if(m.lens==='physical_question'&&!m.associationScope){if(!regionalMembership.has(m.unitId))regionalMembership.set(m.unitId,[]);regionalMembership.get(m.unitId).push(m.destinationId);}
@@ -95,10 +96,12 @@ export function attachFineSourceAccess(catalog,{corpus,proposalBundles=[],policy
     const history=rowMap.get(u.id)||[];const unresolved=history.some(r=>r.identityStatus!=='proposed_singleton');
     const identityStatus=history.length?(unresolved?'unresolved_or_group_proposal':'proposed_singleton'):'unreviewed_source_facet';
     const d={id,kind:'question',title:u.text,question:u.text,summary:'This is one exact source-scoped extracted question. Its relationship to other formulations remains an explicit identity-review state; the source ID alone does not establish canonical equivalence.',scope:{assumptions:[],includes:[],excludes:[],regimes:[],conventions:[],sourceContextUnitId:u.id},aliases:[],evidenceIds:[u.id],scientificStatus:'source_scoped_extraction_not_canonical_equivalence',placementStatus:'source_facet_access',identityStatus,membershipStatus:'representative',representativeUnitId:u.id,sourceQuestionAccess:true,provenance:{policyDecisionId,frozenTextSha256:u.evidence.textSha256,browserVectorRow:u.browserVectorRow,sourceRow:u.sourceRow,identityReviewRefs:history.map(r=>({reviewId:r.reviewId,packetSha256:r.packetSha256,replySha256:r.replySha256,candidateGroupId:r.candidateGroupId,identityStatus:r.identityStatus}))}};
+    const unresolvedHome=unresolvedHomes.get(u.id);if(unresolvedHome){d.sourceHomeStatus='unresolved';d.sourceHomeReason=unresolvedHome.reason;d.provenance.sourceHomeAccounting={decisionId:catalog.sourceAccounting.decisionId,sourceReviewIds:unresolvedHome.sourceReviewIds,semanticAllocation:0,sourceFacetMembershipIsNotSemanticHome:true};}
     catalog.destinations.push(d);destinations.set(id,d);
     const paper=corpus.papers.get(u.paperId);catalog.memberships.push({destinationId:id,unitId:u.id,paperId:u.paperId,weight:1,role:'evidence',lens:'physical_question',year:paper.year,browserVectorRow:u.browserVectorRow,sourceRow:u.sourceRow,placementStatus:'source_facet_access'});
     const homes=regionalMembership.get(u.id)||[];const nearest=homes.filter(p=>!homes.some(other=>p!==other&&isAncestor(p,other)));
-    if(!nearest.length)fail('fine source has no meaningful authored family/card home');
+    if(!nearest.length&&!unresolvedHome)fail('fine source has no meaningful authored family/card home');
+    if(unresolvedHome&&nearest.length)fail('explicit unresolved source unexpectedly has a scientific home');
     for(const home of nearest)catalog.relations.push({id:`source-access:${sha256(home+'\n'+u.id).slice(0,24)}`,source:home,target:id,type:'source_question',rationale:'Inspect the exact source question contributing to this authored family/card. This access link does not assert equivalence to the overview question.',status:'source_identity_access',evidenceIds:[u.id],provenance:{policyDecisionId,sourceUnitId:u.id,canonicalEquivalenceEstablished:false}});
   }
   catalog.fineIdentityProposals={groups,unitReviewStates:[...rowMap].map(([unitId,history])=>({unitId,history})),canonicalGroupsAutomaticallyCreated:0,meaning:'Candidate groups retain exact source-question destinations. Separate admitted equivalence decisions are required to create canonical groups or aliases.'};

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "q025-preholdout-freeze/1",
+  "status": "frozen_for_isolated_acceptance_and_blind_evaluation",
+  "packageDirectory": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/final-preholdout-geometry-v1",
+  "publicationStatus": "partial_pre_holdout_candidate",
+  "notApprovedForSiteRelease": true,
+  "files": [
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/manifest.json",
+      "sha256": "62b2444c60f743adc9569d33ffe475211c9770d48f05abf5b976843e4e8d920c",
+      "bytes": 3285
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/catalog.json",
+      "sha256": "f6f26f4fbde73ee5fe7763fef271a990f945868d740296d834b06ac43320eb6e",
+      "bytes": 7013572
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/accepted-geometry-input.json",
+      "sha256": "738f78084a1908a8c7e3057021d400319ef1044344ecbaeaccf71f4d999f3bff",
+      "bytes": 9537600
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/assembly-report.json",
+      "sha256": "c2482524234d6d719780f72424f60de0661a98f55c971b9300b647293eb48d21",
+      "bytes": 3578656
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/partition-validation.json",
+      "sha256": "05b534bf7c94805820e25b5a8ec62bf7ccd29c28b909a510291fbdf69b507802",
+      "bytes": 2879561
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/handoff.json",
+      "sha256": "b523f13d7cc043ab682e342d3f9bc1b40eb665e101776817f09b35058084bf80",
+      "bytes": 252365
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/asset-plan.json",
+      "sha256": "98ac10f4b3a8cadef9a084c5cb83b13a4ed5f91c6b174cb5b3c5d216aaff0c56",
+      "bytes": 1984911
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-preholdout-geometry-v1/delivery-assets.json",
+      "sha256": "3690be3ca0798aef6d4f0d9ccb0375f00669df0389639afdbabfa82b78cf9a9a",
+      "bytes": 1076499
+    }
+  ],
+  "packet": {
+    "path": "research/q025/assembly/final-preholdout-v1/packet/aggregate.local.json",
+    "sha256": "6074b5a4b582e25984a8fd848cf4f77d12f4a60f865867e4905b1d97427b926c",
+    "bytes": 119046930
+  },
+  "accountingReceipt": {
+    "path": "research/q025/assembly/final-preholdout-v1/packet/source-accounting-admission.json",
+    "sha256": "a660129cc5a83a1cad98dfa47ee7c1c134a4ddd905d09467d786d70c41465123",
+    "bytes": 5938
+  },
+  "admissionReceipt": {
+    "path": "research/q025/assembly/final-preholdout-v1/packet/aggregate-admission.json",
+    "sha256": "3ce606a944d336564b37d81d0a18067ffb64ba469209bf6d4866fe0e6e116b3c",
+    "bytes": 5719
+  },
+  "acceptanceCases": {
+    "path": "research/q025/assembly/final-preholdout-v1/acceptance-cases.json",
+    "sha256": "5fe1f3cc42e895e76d5c1e42b0d9ab866c1bb1ad9e149339c5c5f6004fb73bc9",
+    "bytes": 13446
+  },
+  "scope": {
+    "paperCount": 6478,
+    "vectorCoveredPaperCount": 6477,
+    "unitCount": 26410,
+    "earliestPublicationDate": "1969",
+    "latestPublicationDate": "2026-11",
+    "earliestYear": 1969,
+    "latestYear": 2026,
+    "recentMeaning": "Recent within this frozen corpus, not a live literature search. Month precision from arXiv identifier when available; otherwise year.",
+    "limitations": [
+      "Swampland-centered collection; not all physics or all relevant literature.",
+      "Unit text is a source-scoped extraction, not a quotation or independently certified result.",
+      "Affinities are retrieval similarities, not physical implications.",
+      "No query encoder runs in v1; matching source facets provide real embedding anchors."
+    ],
+    "description": "As of 17 November 2026, this reviewed atlas accounts for all 8,473 extracted source questions. It includes 8,399 admitted scientific home allocations and 31 explicitly unresolved source facets. The remaining 43 source questions are reserved for blinded evaluation. Scientific routes, shared-source organizational access, and physics classification are separately labeled.",
+    "partialRehearsal": false,
+    "scientificCoverageComplete": false,
+    "deliveryState": "partial_pre_holdout_candidate",
+    "partialCandidateReason": null,
+    "sourceAccountingComplete": false,
+    "sourceInventoryAccounted": true,
+    "unresolvedQuestionCount": 31,
+    "reservedQuestionCount": 43,
+    "accountingReason": "pre_holdout_freeze",
+    "allocatedQuestionCount": 8399,
+    "unallocatedQuestionCount": 74
+  },
+  "counts": {
+    "destinations": 10610,
+    "sources": 26623,
+    "memberships": 66678,
+    "navigationRelations": 13327,
+    "orientationNodes": 211,
+    "detailOverviewNodes": 16
+  },
+  "compoundSourceCount": 21,
+  "publicEntryReachability": {
+    "entryCount": 19,
+    "reachableScientificDestinations": 1965,
+    "unreachableAllocatedHomes": 0,
+    "meaning": "Rendered incident navigation is traversable in either direction; incoming traversal does not assert a converse physical relation."
+  },
+  "identity": {
+    "groups": 6,
+    "redirects": 7,
+    "originalDefinitionsRetained": 13,
+    "suppressedSelfRelations": 3,
+    "sourceContributionObservations": 13416,
+    "sourceContributionRelationships": 13397,
+    "ancestorClosureRecomputed": true,
+    "addedAncestorRows": 42,
+    "massChanged": false,
+    "homeRowsRemapped": 0,
+    "sourceStatementEquivalence": false
+  },
+  "sourceMass": {
+    "global": 6476.999999999985,
+    "allocated": 6447.757167832158,
+    "unresolved": 5.242832167832167,
+    "reserved": 23.999999999999993,
+    "unassigned": 29.24283216783216,
+    "renormalized": false
+  },
+  "methodAccess": {
+    "schemaVersion": "q025-final-method-access-audit/1",
+    "methodCount": 17937,
+    "indexedMethodCount": 17937,
+    "allFrozenDescriptionsHashVerified": true,
+    "frozenDescriptionReadPath": "data/navigation/manifest.json → exact lens row shard; source context is independently addressed by the same unit ID.",
+    "contextManifestSha256": "c86bc90966007c28ce40523348e51e4ace4d20d62354f79928133d371f77c6f5",
+    "index": {
+      "path": "source-context-index-v3.1.json",
+      "sha256": "22772f2c76dd7a98a79e407656191df74b781d9446950ac0038bbb2a27db4f10",
+      "bytes": 33678
+    },
+    "bucketCount": 256,
+    "attachmentPolicies": {
+      "source_anchors_and_record_context_v1": 17937
+    },
+    "unresolvedQuestionPapers": 29,
+    "methodsOnUnresolvedQuestionPapers": 211,
+    "semanticMembershipsCreated": 0,
+    "methodApplicabilityInferred": false,
+    "limitation": "The audit proves exact direct ID/context and frozen-description accessibility, not that every method is a scientific member of a region. Context-only paper associations retain their existing labels."
+  },
+  "methodActualReaderChecks": 220,
+  "methodAudit": {
+    "path": "research/q025/assembly/final-preholdout-v1/method-access-audit.json",
+    "sha256": "6e56c78a5ad616690d3c7bae1d498974dc2b630ed605ed2f9e4500c68131c59c",
+    "bytes": 124036
+  },
+  "interfacePins": [
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "sha256": "af1e8f20110464d8724ad5cb2e4122c54972e1d37d0017d37d896ef7bf2695ff",
+      "bytes": 73236
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "sha256": "0f2ab107e4f24af946cd12d6ba89a245b938bb606c1902598afbbb9af7ea5300",
+      "bytes": 178
+    },
+    {
+      "path": "lib/protocol/display-editorial.mjs",
+      "sha256": "257ce95468c3c8aa6c3abce2bbb21244c748b0059ed13c63f0294d04cbec3b00",
+      "bytes": 5171
+    }
+  ],
+  "transport": {
+    "verifiedAssetPaths": 7677,
+    "externalAssets": 6770,
+    "maxFileBytes": 26214400,
+    "maxFileCount": 20000,
+    "staticDestinationPages": 10610,
+    "ordinarySiteAssetReserve": 500,
+    "projectedFileCount": 18788,
+    "passed": true,
+    "postTest43FacetUpperBound": 18831,
+    "remoteSourcePack": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/source-context-v3-compact/pack"
+  },
+  "geometry": {
+    "membershipSha256": "738f78084a1908a8c7e3057021d400319ef1044344ecbaeaccf71f4d999f3bff",
+    "delivered": {
+      "path": "research/q025/geometry/final-overview-v1/schematic-overview.json",
+      "sha256": "fb02f0e8c742082e20ba64ac09249c7b1fe35e5783105d99701a8bbb8ed1c12b",
+      "bytes": 13924
+    },
+    "numericResults": {
+      "path": "research/q025/geometry/final-overview-v1/results/manifest.json",
+      "sha256": "28e2a817d2f7104ccba892ed4de6968af500c890d95f337259f7303f02f99434",
+      "bytes": 1097
+    },
+    "failedDisplayCorrection": {
+      "path": "research/q025/geometry/final-overview-v1/corrected-display/manifest.json",
+      "sha256": "aa161e1ffa56636b30ef385c3fb040bc6417412214938f55ec1417dcc6bc7a72",
+      "bytes": 676
+    },
+    "fullHFCRetained": true,
+    "noFurtherFits": true
+  },
+  "postTestAmendment": "After blind routing is frozen and root adjudicates the 43 held-out sources, add dated explicit home decisions or unresolved source accounting, include their exact source facets, and regenerate the same assembler/package with a new version. Preserve this manifest and blind evidence. Any changed scope/route is a separately recorded failed-test amendment, not independent success. No new model campaign is implied."
+}

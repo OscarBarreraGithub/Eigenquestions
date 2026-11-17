@@ -1,0 +1,296 @@
+{
+  "classification": {
+    "entry": "classification:physics",
+    "nodes": 211,
+    "portals": [
+      {
+        "destinationId": "classification:0f4313da-ec73-46f5-b24f-521a1fcb6db7",
+        "target": "destination",
+        "entryDestinationId": "landmark:arxiv-hep-th",
+        "label": "Explore high energy theory",
+        "provenance": {
+          "kind": "curator_navigation",
+          "classificationEquivalence": false
+        }
+      },
+      {
+        "destinationId": "classification:9f5c878e-b7b7-4030-bdb9-21a24ad97422",
+        "target": "destination",
+        "entryDestinationId": "landmark:arxiv-hep-th",
+        "label": "Explore high energy theory",
+        "provenance": {
+          "kind": "curator_navigation",
+          "classificationEquivalence": false
+        }
+      },
+      {
+        "destinationId": "classification:cbc41431-fba0-4ff0-8134-2ded6e598922",
+        "target": "destination",
+        "entryDestinationId": "landmark:arxiv-hep-th",
+        "label": "Explore high energy theory",
+        "provenance": {
+          "kind": "curator_navigation",
+          "classificationEquivalence": false
+        }
+      },
+      {
+        "destinationId": "landmark:arxiv-hep-th",
+        "target": "detail",
+        "entryDestinationId": "collection:q025-quantum-gravity",
+        "label": "Open the detailed Swampland atlas",
+        "provenance": {
+          "kind": "curator_collection_navigation",
+          "sharedCoordinateMetric": false,
+          "reviewOnly": false
+        }
+      }
+    ],
+    "sharedCoordinateMetric": false
+  },
+  "overview": {
+    "entry": "collection:q025-quantum-gravity",
+    "kind": "navigation_schematic",
+    "nodes": 16,
+    "recordedEdges": 15,
+    "choices": [
+      {
+        "destinationId": "q025-candidate-region:2826f594e622ec820a3a006c",
+        "title": "String, brane and quantum-gravity descriptions and consistency"
+      },
+      {
+        "destinationId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+        "title": "Calabi–Yau geometry, computation and compactification physics"
+      },
+      {
+        "destinationId": "q025-candidate-region:8574187d747387068f02fe63",
+        "title": "Compactification, supersymmetry and vacuum dynamics"
+      },
+      {
+        "destinationId": "q025-candidate-region:79dd11c4632243fb25aa5bad",
+        "title": "Moduli dynamics, stabilization and compactification tests"
+      },
+      {
+        "destinationId": "q025-candidate-region:62d736e5f22beae93d504a44",
+        "title": "De Sitter backgrounds: existence, stability and control"
+      },
+      {
+        "destinationId": "q025-candidate-region:525f7ea42c33dd644d118772",
+        "title": "Gravitational EFTs: consistency, structure and limits"
+      },
+      {
+        "destinationId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+        "title": "Black-hole structure, entropy and dynamical consistency"
+      },
+      {
+        "destinationId": "q025-candidate-region:b35c5857878f0111cd402204",
+        "title": "Holographic descriptions, dynamics and gravitational information"
+      },
+      {
+        "destinationId": "q025-candidate-region:e3c867c46139e156f816e00f",
+        "title": "Inflationary dynamics, primordial observables and theory limits"
+      },
+      {
+        "destinationId": "q025-candidate-region:7961ee3cebdb154299e78b58",
+        "title": "Dark sectors: candidates, cosmic histories and tests"
+      },
+      {
+        "destinationId": "q025-candidate-region:5fb081b9efa119868d87802b",
+        "title": "Dark-energy mechanisms, inference and conditional consistency"
+      },
+      {
+        "destinationId": "q025-candidate-region:277d9b2e77af3c3b06134952",
+        "title": "Axions and strong CP: construction, consistency and tests"
+      },
+      {
+        "destinationId": "q025-candidate-region:ec6e08226449cb148b80a2d2",
+        "title": "Anomalies, consistency and six-dimensional theory structure"
+      },
+      {
+        "destinationId": "q025-candidate-region:f87c99e7c23e7d82e9d1db78",
+        "title": "Particle scales, supersymmetry and cosmological viability"
+      },
+      {
+        "destinationId": "q025-candidate-region:88aac1f2c237b6c3e063f6e0",
+        "title": "Fields, gravity and cosmology: construction and tests"
+      }
+    ],
+    "coordinatesAreMetric": false
+  },
+  "darkSectorToProduction": [
+    {
+      "from": "q025-candidate-region:7961ee3cebdb154299e78b58",
+      "to": "q025-candidate-question:190bdf4415c78268d594ff95",
+      "title": "Extra dimensions and conditional quantum-gravity tests",
+      "relationId": "navigation:kk:pn1",
+      "type": "narrower",
+      "traversal": "outgoing",
+      "navigationBasis": "reviewed_scientific_navigation"
+    },
+    {
+      "from": "q025-candidate-question:190bdf4415c78268d594ff95",
+      "to": "q-kk-graviton-thermal-production",
+      "title": "How does a hot brane produce KK gravitons?",
+      "relationId": "navigation:kk:pn7",
+      "type": "narrower",
+      "traversal": "outgoing",
+      "navigationBasis": "reviewed_scientific_navigation"
+    }
+  ],
+  "kkConditionalRoutes": [
+    {
+      "id": "navigation:kk:0",
+      "source": "q-kk-graviton-thermal-production",
+      "target": "q-kk-graviton-threshold-decay",
+      "type": "comparison",
+      "title": "Does the produced population have the assumed subsequent cascade?",
+      "rationale": "Adequate initial production does not establish cascade efficiency. Check the background and couplings before applying the reported threshold scaling.",
+      "decisionId": "decision:kk-navigation:0",
+      "status": "accepted_navigation",
+      "evidenceCount": 2,
+      "detail": {
+        "shardId": "relation-details-0000",
+        "recordSha256": "e5f8cfd78a43fcd8117326295c50a5b2a621f0332236f73d32212abb29eb0286"
+      }
+    },
+    {
+      "id": "navigation:kk:2",
+      "source": "q-kk-graviton-threshold-decay",
+      "target": "q-kk-decay-linear-cosmology",
+      "type": "comparison",
+      "title": "How does the conditional recoil model depend on the decay history?",
+      "rationale": "Compare a microscopic rate question with a conditional linear-cosmology calculation. Their targets differ; the latter does not establish that its assumed cascade occurs.",
+      "decisionId": "decision:kk-navigation:2",
+      "status": "accepted_navigation",
+      "evidenceCount": 2,
+      "detail": {
+        "shardId": "relation-details-0000",
+        "recordSha256": "ce4c02afe4e80ad7e973390254726691d50b597b13c796c6391b905935d4f09b"
+      }
+    },
+    {
+      "id": "navigation:kk:3",
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-threshold-decay",
+      "type": "premise_check",
+      "title": "Is the assumed repeated-decay history microscopically supported?",
+      "rationale": "The linear model presupposes repeated near-threshold decays. Check the applicable threshold rate without replacing the conditional calculation by a universal exclusion.",
+      "decisionId": "decision:kk-navigation:3",
+      "status": "accepted_navigation",
+      "evidenceCount": 2,
+      "detail": {
+        "shardId": "relation-details-0000",
+        "recordSha256": "6bf805304aac25e1139381e75f9b33a2adc3c9f2b28bbb6c36a26250f9bac5ca"
+      }
+    },
+    {
+      "id": "navigation:kk:4",
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-thermal-production",
+      "type": "premise_check",
+      "title": "Which initial KK population does the cosmology assume?",
+      "rationale": "The linear analysis inherits hot-brane production with an initially empty bulk and a specified initial temperature. This is an initial-condition route, not source equivalence.",
+      "decisionId": "decision:kk-navigation:4",
+      "status": "accepted_navigation",
+      "evidenceCount": 1,
+      "detail": {
+        "shardId": "relation-details-0000",
+        "recordSha256": "f43ce667fb993cdd3d4c341456fc2a9d5a133e2f3c9abe14267da587e4259765"
+      }
+    }
+  ],
+  "blackHoleEntry": {
+    "destinationId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+    "availableUniqueDestinations": 21
+  },
+  "unresolved": {
+    "unitId": "unit:0486f470080e57cff9499a6687e71807d24a273dc6fd41613b5b8b77981e81e8",
+    "destinationId": "source-question:0486f470080e57cff9499a6687e71807d24a273dc6fd41613b5b8b77981e81e8",
+    "sourceHomeStatus": "unresolved",
+    "reason": "Retain unresolved status. Unlike an unknown calculation outcome, these missing premises determine the scientific system and operation being placed. The interaction, parent sector, reduction setup and dualization convention are unidentified. Those omissions prevent establishing which physical reduction question is covered, even though q13 and q19 provide thematic connections. q13 explicitly preserves this source only as an underspecified boundary access point.",
+    "semanticHMass": 0
+  },
+  "compound": {
+    "paperId": "2604.19817",
+    "rows": [
+      {
+        "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+        "destinationId": "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+        "weight": 0.5,
+        "placementStatus": "accepted",
+        "decisionId": "decision:explicit-cut-03:placement-continuation-0029:u20:q18",
+        "originalBinId": "multiview_preserve_candidates:region:6b153a5510a5ae504519",
+        "coverageMode": "explicit_compound_union",
+        "targetCoverage": [
+          {
+            "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+            "destinationIds": [
+              "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+            ],
+            "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+          },
+          {
+            "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+            "destinationIds": [
+              "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+            ],
+            "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+          }
+        ],
+        "wholeQuestionCoveredByEachHome": false,
+        "allocationMeaning": "Organizational fraction, not a physical probability."
+      },
+      {
+        "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+        "destinationId": "q025-candidate-question:aef9c55b0263c0b3a8221f65",
+        "weight": 0.5,
+        "placementStatus": "accepted",
+        "decisionId": "decision:explicit-cut-03:placement-continuation-0029:u20:q14",
+        "originalBinId": "multiview_preserve_candidates:region:6b153a5510a5ae504519",
+        "coverageMode": "explicit_compound_union",
+        "targetCoverage": [
+          {
+            "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+            "destinationIds": [
+              "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+            ],
+            "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+          },
+          {
+            "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+            "destinationIds": [
+              "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+            ],
+            "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+          }
+        ],
+        "wholeQuestionCoveredByEachHome": false,
+        "allocationMeaning": "Organizational fraction, not a physical probability."
+      }
+    ],
+    "meaning": "Each destination covers one stated part; the complete map and normalized organizational weights remain visible."
+  },
+  "aliases": {
+    "q025-candidate-question:647f4b3de8eb982fbd1db9af": "q025-candidate-question:0fe511cad863493858f2321b",
+    "q025-candidate-question:39594f3f2592c9816c879036": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+    "q025-candidate-question:44cfc530ee4b7053d438805d": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+    "q025-candidate-question:3f58b634e6f7439e502be440": "q-kk-decay-linear-cosmology",
+    "q025-candidate-question:49d3e894f117509cb5f6a9f2": "q025-candidate-question:891203df753b324531020eb9",
+    "q025-candidate-question:2ed35c0e62570949d976b307": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+    "q025-candidate-question:a4f67137d6a4a477cc097c6a": "q025-candidate-question:b6a72d6d11c8f9c783284067"
+  },
+  "methodOnUnresolvedPaper": {
+    "unitId": "unit:545911ee0ebeb8dafc52021ff2b46b1a2fe07d64ce59d1daec1112bccf51b43e",
+    "paperId": "0705.1725",
+    "browserVectorRow": 8542,
+    "descriptionSha256": "a387d679a5d0f930b6d76ab3c550179e223f7d05e7449af656c7e134c9421452",
+    "availability": "available",
+    "objects": 159,
+    "exactAnchors": 1,
+    "unresolvedSourcePaper": true
+  },
+  "sourceMethodRoutes": {
+    "path": "source-method-routes.json",
+    "sha256": "2d3fc77b042d1dd1bfd42addded3edfcba41de625db1f1d5174ab5cce85b1bfc",
+    "bytes": 105807
+  }
+}
