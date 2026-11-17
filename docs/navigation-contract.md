@@ -259,6 +259,10 @@ grouped by paper; static destination pages preserve the complete explicit list.
 
 Typed contributions are also available through the existing source reader: `navigator_sources({destinationId, collection:"contributions", offset:0, limit:20})`, CLI `sources --destination ID --collection contributions`, or browser `sources(selector,{collection:"contributions"})`. Each page returns its exact role, reading basis, qualification, review/evidence references and hydrated excerpt. The default collection remains `membership`; membership filters such as USING cannot be combined with contributions. These reads do not change the session.
 
+### Compound source coverage
+
+A source can retain one immutable question while separate homes cover its explicitly mapped targets. Membership rows with `coverageMode:"explicit_compound_union"` retain `wholeQuestionCoveredByEachHome:false` and the complete `targetCoverage:[{sourceSpan,destinationIds,explanation}]` map. Hydrated source pages and scoped view nodes preserve these fields. The mapped-home notice is “This view covers one part of the source’s question.” Broader ancestor views retain the map without inferring whole-source coverage from their combined weights. Source scope and provenance exposes the exact map, placement decisions and qualifications; weights are organizational fractions, not confidence. Unscoped source evidence remains unchanged, and these fields create no USING relation.
+
 ### Exact source-object inspection
 
 Prepared states may carry `sourceInspection:{originUnitId,relationId,objectId,unitId}`.

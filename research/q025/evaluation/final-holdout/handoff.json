@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "q025-existing-holdout-handoff/1",
+  "status": "prepared_without_opening_reserved_content; waiting_exact_candidate_freeze",
+  "protocol": {
+    "path": "research/q025/evaluation/FINAL-HOLDOUT-PROTOCOL.md",
+    "sha256": "fe12decec01193628e6e1fa21c49d2e7cc185c7adc2690ffbc176a06d2ccdee5",
+    "bytes": 4121
+  },
+  "commitment": {
+    "path": "research/q025/evaluation/holdout-commitment.json",
+    "sha256": "3f90d00a400c40632c715332c94e15968ac6e435a84b4861209818a5b3bd69ef",
+    "bytes": 534
+  },
+  "reservation": {
+    "path": "research/q025/evaluation/final-holdout-reservation.local.json",
+    "expectedSha256": "ce2a2fbf97fa67de8060ff71b7bda46666083338cdc18b50b491661c1a79da29",
+    "contentOpenedByPreparation": false
+  },
+  "counts": {
+    "paperCases": 24,
+    "withheldQuestionUnits": 43,
+    "eligiblePreHoldoutUnits": 8430
+  },
+  "benchmarkMeaning": "Transductive semantic withholding: these 24 papers/43 question units were excluded from scientific scope/home review and downstream decisions. Existing extraction, encoder training or unsupervised affinities may include them. This is not a wholly unseen or inductive model benchmark.",
+  "candidateFreezeRequired": [
+    "exact release-candidate catalog/manifest hash",
+    "exact scope and membership/accounting artifact hashes",
+    "canonical identity/redirect inventory hash",
+    "adapter/runtime version or commit",
+    "actual public/static/MCP entry point"
+  ],
+  "workflow": [
+    "After root/geometry freeze, verify the reservation commitment and read bounded actual primary excerpts per reserved paper; keep unsuitable, poorly extracted and ambiguous cases. Do not substitute papers.",
+    "Write two independent prose formulations and one material contrast per case, without source paper/title/IDs or copied card wording. Record the exact excerpt locators and reading limits privately.",
+    "Inspect the frozen atlas and commit the expected scoped destination(s), useful broad orientation or genuine gap with reasons before seeing any routing outputs. Prior numeric bins or paper membership are not an answer key.",
+    "Give a fresh navigator only the prose, contrast and frozen public/static/MCP interface. Keep expected matches, paper identities, source membership and reviewer verdicts hidden. Capture actual tool states, selected destination, scope and evidence, connections, gaps and shared URLs.",
+    "For at least eight cases, use both a direct entry and an alternative plausible scientific route. Preserve the protocol requirement for extra-dimension/cosmology and at least three ordinary fields where the reserved cases support it.",
+    "Score identity, scientific scope, readability, connections and interface behavior separately. Keep correct specific matches, correct explicit gaps, broad orientation, wrong scope, duplicate identity, content gaps and interface failures distinct.",
+    "Only after scoring, write a dated 43-source placement/source-facet amendment. Any changed scope/home/route remains a post-test repair; never relabel the frozen candidate result or its repair as an untouched independent success."
+  ],
+  "caseEvidenceFields": [
+    "caseId",
+    "stratum",
+    "private_sourceAndExcerptPins",
+    "readingLimit",
+    "target",
+    "materialAssumptionsRegime",
+    "methods",
+    "proseFormulations[2]",
+    "materialContrast",
+    "expectedFrozenDestinationOrGap",
+    "expectationReason",
+    "expectationCommittedBeforeRoutingSha256",
+    "actualNavigationReceipt",
+    "caseOutcome",
+    "postTestAmendmentIfAny"
+  ],
+  "newBroadCampaign": false,
+  "wholePaperRederivation": false,
+  "noReservedDescriptionOrPageReadBeforeFreeze": true
+}

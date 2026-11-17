@@ -1,11 +1,12 @@
 import {loadAtlas,createAtlasNavigator,atlasAddress} from '/lib/geometry/prepared-atlas.mjs';
 import {placeChartLabel} from '/chart-labels.mjs';
 import {classificationChartDisplay} from '/classification-layout.mjs';
+import {detailOverviewFrontier} from '/detail-frontier.mjs';
 import {destinationPresentation} from '/lib/protocol/display-editorial.mjs';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;};
 const svg=(tag,attrs,text)=>{const node=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))node.setAttribute(k,v);if(text!==undefined)node.textContent=text;return node;};
-let loaded,navigator,records=new Map(),selectedId,classificationAnchor=null,space='classification',points=new Map(),visibleIds=[],camera={x:0,y:0,width:100,height:100},baseCamera,request=0;
+let loaded,navigator,records=new Map(),selectedId,classificationAnchor=null,space='classification',points=new Map(),visibleIds=[],topicIds=[],camera={x:0,y:0,width:100,height:100},baseCamera,request=0;
 const map=$('atlas-map');
 let displayPoints=new Map(),classificationDisplay;
 const textMeasure=document.createElement('canvas').getContext('2d');textMeasure.font='14px Arial';
@@ -38,10 +39,10 @@ function zoom(factor){if(!baseCamera)return;const width=Math.min(baseCamera.widt
 function portalFor(id){return loaded.catalog.orientation?.portals?.filter(p=>p.destinationId===id)||[];}
 function draw(){
   map.replaceChildren();const chart=layout();document.querySelector('.atlas-map-workspace').classList.toggle('classification-workspace',space==='classification');
-  if(!chart){visibleIds=[];map.style.display='none';$('atlas-map-caption').textContent=space==='classification'?'This release has no classification map. Recorded destinations remain readable in the list.':'This release has no detailed source chart. No coordinates have been invented.';return;}
+  if(!chart){visibleIds=[];topicIds=[];map.style.display='none';$('atlas-map-caption').textContent=space==='classification'?'This release has no classification map. Recorded destinations remain readable in the list.':'This release has no detailed source chart. No coordinates have been invented.';return;}
   map.style.display='block';const childIds=children(selectedId).filter(id=>points.has(id));
   if(points.has(selectedId))visibleIds=[selectedId,...(childIds.length?childIds:parents(selectedId).flatMap(id=>children(id)))];else if(space==='classification'&&classificationAnchor&&points.has(classificationAnchor))visibleIds=[classificationAnchor,...children(classificationAnchor)];else visibleIds=roots();
-  if(space==='detail'&&points.has(selectedId))visibleIds.push(...relations(selectedId).filter(r=>!['broader','narrower'].includes(r.navigationKind)).map(r=>r.destinationId));
+  if(space==='detail'){const frontier=detailOverviewFrontier({selectedId,points,metadataOnly:records.get(selectedId)?.metadataOnly,connections:relations(selectedId),childrenOf:children,parents:parents(selectedId),roots:roots()});visibleIds=frontier.plotted;topicIds=frontier.topics;}else topicIds=visibleIds;
   visibleIds=[...new Set(visibleIds)].filter(id=>points.has(id));const visible=new Set(visibleIds);
   if(space==='classification'){drawClassification(chart);return;}
   classificationDisplay=null;displayPoints=points;map.style.height='';map.classList.remove('classification-display');document.querySelector('.atlas-map-workspace').classList.remove('classification-workspace');
@@ -51,7 +52,7 @@ function draw(){
     group.addEventListener('click',()=>select(id));group.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();select(id);}});map.append(group);
   });
   fit();
-  $('atlas-map-caption').textContent=space==='classification'?'Physics classification: links follow the recorded vocabulary hierarchy. Positions organize labels; distances are not physical or embedding distances. The detailed source atlas is a separate chart.':'Detailed source chart: positions use the recorded source geometry. Gray links are geometric affinities, not scientific implications. Broader classifications have a separate coordinate system.';
+  $('atlas-map-caption').textContent=space==='classification'?'Physics classification: links follow the recorded vocabulary hierarchy. Positions organize labels; distances are not physical or embedding distances. The detailed source atlas is a separate chart.':'Detailed source chart: positions use the recorded source geometry. Gray links are geometric affinities, not scientific implications. Unplotted destinations remain accessible in the list and text explorer. Broader classifications have a separate coordinate system.';
   $('atlas-map-provenance').textContent=JSON.stringify({layoutId:chart.layoutId,kind:chart.kind,provenance:chart.provenance,displayAdjustment:space==='classification'?'Full labels occupy nonoverlapping screen cards assigned near the recorded positions by minimum total displacement. Stored coordinates and classification links are unchanged; screen distances have no metric meaning.':undefined,diagnostics:chart.diagnostics,limitations:chart.limitations},null,2);
 }
 function drawClassification(chart){
@@ -91,7 +92,7 @@ async function select(id){
 }
 function renderTopics(){
   const host=$('atlas-topics');host.replaceChildren();$('atlas-topics-heading').textContent=space==='classification'?(selectedId===layout()?.entryDestinationId?'Choose a field':'Topics in this view'):'Destinations in this view';
-  const ids=visibleIds.length?visibleIds:[selectedId];ids.forEach((id,index)=>{const li=el('li');li.append(button(`${index+1}. ${records.get(id)?.title||id}`,()=>select(id)));host.append(li);});
+  const ids=topicIds.length?topicIds:[selectedId];ids.forEach((id,index)=>{const li=el('li');li.append(button(`${index+1}. ${records.get(id)?.title||id}`,()=>select(id)));host.append(li);});
 }
 function switchSpace(next,destination){
   space=next;classificationAnchor=null;$('atlas-space').value=space;const chart=layout();points=new Map();

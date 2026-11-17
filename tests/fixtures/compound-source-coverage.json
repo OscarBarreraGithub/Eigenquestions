@@ -1,0 +1,146 @@
+{
+  "provenance": {
+    "componentPath": "research/q025/assembly/placement-incremental-v1/explicit-cut-03/component.json",
+    "componentSha256": "e2de6975d9868569f83b13acedd5bb7b7e9392913e4f5072bc9a8939c20b9d4d",
+    "unitShard": {
+      "path": "units-003.json",
+      "sha256": "e24f49243a3bbfcded9425991b52a90b35fd2637cf113808ad1bda9cd355ce92",
+      "bytes": 2342997,
+      "start": 6144,
+      "count": 2048
+    },
+    "paperShard": {
+      "path": "papers.json",
+      "sha256": "d27fa82c789ac01fc529d83602dea76451cf5edd37dd4eecfc009402dbbdce0b",
+      "bytes": 2772900
+    },
+    "purpose": "Exact approved compound source and placements; surrounding destination cards in the regression are test scaffolding, not a release catalog."
+  },
+  "placements": [
+    {
+      "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+      "destinationId": "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+      "role": "member",
+      "status": "accepted",
+      "basis": "description_checked",
+      "allocationWeight": 0.5,
+      "reason": "Covers the cross-framework geometric encoding of supersymmetric vacuum dynamics, including Seiberg–Witten theory.",
+      "qualification": "Explicit compound union: geometry target at ef3f4c0d with 0.5 and alpha-prime-cubed KKLT sensitivity at aef9c55b with 0.5. No uplift is inferred. These are component homes whose union covers the immutable whole source.",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+          "paperId": "2604.19817",
+          "textSha256": "0a0b7f6b6b67aac138ce28934d869d3ef6496bc84df631a0baf4b43ee9945a23"
+        }
+      ],
+      "decisionId": "decision:explicit-cut-03:placement-continuation-0029:u20:q18",
+      "coverageMode": "explicit_compound_union",
+      "targetCoverage": [
+        {
+          "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+          "destinationIds": [
+            "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+          ],
+          "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+        },
+        {
+          "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+          "destinationIds": [
+            "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+          ],
+          "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+        }
+      ],
+      "coverageReason": "The two scopes collectively cover the whole immutable source: q18 covers the cross-framework geometry and q14 the specified correction sensitivity. q18 expressly leaves the correction question separate; q14 lacks the general Seiberg–Witten geometry target. q19's compactification/supergravity domain does not establish full coverage of that gauge-theory conceptual range, and q23 does not establish such coverage through an uplift interpretation. No supplied whole composite home is established. The equal weights are organizational, and the union requires separate coordinator scrutiny. The minimum's uplift phase remains unspecified."
+    },
+    {
+      "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+      "destinationId": "q025-candidate-question:aef9c55b0263c0b3a8221f65",
+      "role": "member",
+      "status": "accepted",
+      "basis": "description_checked",
+      "allocationWeight": 0.5,
+      "reason": "Covers leading α′³ sensitivity of single-modulus KKLT minima without presuming their uplift phase.",
+      "qualification": "Explicit compound union: geometry target at ef3f4c0d with 0.5 and alpha-prime-cubed KKLT sensitivity at aef9c55b with 0.5. No uplift is inferred. These are component homes whose union covers the immutable whole source.",
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+          "paperId": "2604.19817",
+          "textSha256": "0a0b7f6b6b67aac138ce28934d869d3ef6496bc84df631a0baf4b43ee9945a23"
+        }
+      ],
+      "decisionId": "decision:explicit-cut-03:placement-continuation-0029:u20:q14",
+      "coverageMode": "explicit_compound_union",
+      "targetCoverage": [
+        {
+          "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+          "destinationIds": [
+            "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+          ],
+          "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+        },
+        {
+          "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+          "destinationIds": [
+            "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+          ],
+          "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+        }
+      ],
+      "coverageReason": "The two scopes collectively cover the whole immutable source: q18 covers the cross-framework geometry and q14 the specified correction sensitivity. q18 expressly leaves the correction question separate; q14 lacks the general Seiberg–Witten geometry target. q19's compactification/supergravity domain does not establish full coverage of that gauge-theory conceptual range, and q23 does not establish such coverage through an uplift interpretation. No supplied whole composite home is established. The equal weights are organizational, and the union requires separate coordinator scrutiny. The minimum's uplift phase remains unspecified."
+    }
+  ],
+  "unit": {
+    "id": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+    "paperId": "2604.19817",
+    "lens": "physical_question",
+    "text": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification, and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+    "mass": 1.0,
+    "vectorRow": 6951,
+    "evidence": {
+      "kind": "source_scoped_extraction",
+      "facetIds": [
+        "facet:18b322e9c3b927297d8ed2f8fae0f612"
+      ],
+      "sourceRecordIds": [
+        "record:f149b551ef6207920e9334f60b7308e0"
+      ],
+      "sourceNodeIds": [
+        "obj:7bb68f5443f1492afcfe:question:06f4ced23c645e6b96e9626f"
+      ],
+      "textSha256": "0a0b7f6b6b67aac138ce28934d869d3ef6496bc84df631a0baf4b43ee9945a23",
+      "originalEmbeddingRows": [
+        258801
+      ],
+      "anchors": [
+        "ev:68ad87d9ddc0dc8e23b254d5255a20ed",
+        "ev:73bf987d05feecb16619171a9370dc1a",
+        "ev:c6ec497500cf33346fcb9a8a0a86b7c0"
+      ],
+      "sourceSha256": "62f69800cc29cb51d81b4b1d93d0128f91b68e3fc0ea0c05a91416ab59ff018a",
+      "reviewStatus": "source_backed_first_pass",
+      "readingScopeId": "2f88b29f283103f6d1fc5ef008c85824f8bcac372dac6ca943a327aae00547be",
+      "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+    }
+  },
+  "paper": {
+    "id": "2604.19817",
+    "title": "Supersymmetry, Supergravity and Non--Perturbative Dynamics of Gauge Theories",
+    "year": 2026,
+    "date": "2026-04",
+    "datePrecision": "month",
+    "url": "https://arxiv.org/abs/2604.19817",
+    "arxivId": "2604.19817",
+    "authors": [
+      "Obikhod, Tetiana"
+    ],
+    "sourceSha256": "62f69800cc29cb51d81b4b1d93d0128f91b68e3fc0ea0c05a91416ab59ff018a",
+    "sourceNotice": null,
+    "scientificStatus": null
+  },
+  "browserVectorRow": 6951,
+  "corpusId": "swampland-navigation-20261105-minilm-v1",
+  "corpusContentHash": "5957a5437e4d7e2c3c8089cc885a6ea03069bd8c6fc78cd104eb3024672ff300"
+}

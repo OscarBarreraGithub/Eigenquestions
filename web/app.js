@@ -8,6 +8,7 @@ import {sourceContextDisclosure} from '/source-context.mjs';
 import {pageSourceContext} from '/lib/protocol/context-page.mjs';
 import {physicsPath,sourceInspectionHistory} from '/physics-path.mjs';
 import {paperTitle} from '/paper-title.mjs';
+import {appendSourceCoverage} from '/source-coverage.mjs';
 
 const $ = id => document.getElementById(id);
 let lastRenderedInspection = null;
@@ -554,6 +555,7 @@ function renderEvidence() {
     if(node.atlasMembershipChecked===false)details.append(el('p','','This description is shown as context. The complete membership list has not been loaded for this selection; this is a display-coverage limit, not a claim about how much of the paper has been read.'));
     if (node.retrieval?.workRelation?.basis) details.append(el('p', '', `Role assessment: ${node.retrieval.workRelation.basis}.`));
     if (evidence.sourceNotice) details.append(el('p', '', evidence.sourceNotice));
+    appendSourceCoverage(card,node,{provenance:details,navigator:view.atlas?installedAtlases.get(atlasKey(view.atlas.selector))?.navigator:undefined,selector:view.atlas?.selector,onNavigate:action});
     details.append(el('p', '', `Source ID: ${node.id}`));
     if (evidence.sourceRecordIds?.length) details.append(el('p', '', `Source records: ${evidence.sourceRecordIds.join(', ')}`));
     if (view.chart?.kind === 'affine-plane') details.append(el('p', '', `Distance from this local plane: ${readable(node.residual)}. ${node.inSlab === false ? 'Outside' : 'Within'} the chosen residual cutoff.`)); card.append(details);

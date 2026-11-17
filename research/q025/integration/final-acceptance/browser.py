@@ -146,11 +146,30 @@ def main():
         check('MCP reads and follows exact source method without a new scientific destination or extra physics column',relationId=source['relationId'])
         page.screenshot(path=str(out/'source-desktop.png'),full_page=True)
         closed=call('navigator_navigate',{'type':'close-source','expectedRevision':inspected['revision']}); render(closed)
+        report['phase']='compound-source-coverage'
+        compound=cases['compound']; current,_=navigate(compound['destinationId'])
+        node=next(row for row in current['view']['nodes'] if row['id']==compound['unitId'])
+        assert node['coverageMode']=='explicit_compound_union' and node['wholeQuestionCoveredByEachHome'] is False
+        assert node['targetCoverage']==compound['targetCoverage'] and node['evidence']['text']==compound['sourceText']
+        assert node['coverageNotice']=='This view covers one part of the source’s question.'
+        more=page.locator('#evidence > button')
+        if more.count(): more.click()
+        source_card=page.locator('[data-source-id="'+compound['unitId']+'"]')
+        if not source_card.count(): page.locator('#evidence .source-paper[data-paper-id="'+node['paperId']+'"] > .source-facets > summary').click()
+        source_card.get_by_text(node['coverageNotice'],exact=True).wait_for(state='attached')
+        provenance=source_card.locator(':scope > details').filter(has=page.locator('summary',has_text='Source scope & provenance')).first
+        assert not provenance.evaluate('(node)=>node.open'), 'Coverage provenance should begin collapsed'
+        provenance.locator(':scope > summary').click()
+        for part in compound['targetCoverage']: assert part['sourceSpan'] in provenance.inner_text()
+        result=call('navigator_sources',{'destinationId':compound['destinationId'],'offset':compound['sourceOffset'],'limit':1})
+        assert result['items'][0]['unitId']==compound['unitId'] and result['items'][0]['targetCoverage']==compound['targetCoverage']
+        page.screenshot(path=str(out/'compound-source-desktop.png'),full_page=True)
+        check('Compound source remains one unchanged question with precise component-home coverage in browser and agent reads',unitId=compound['unitId'],destinationId=compound['destinationId'])
         current,_=navigate(cases['production']); page.set_viewport_size({'width':390,'height':844}); page.evaluate('window.scrollTo(0,0)')
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
         page.screenshot(path=str(out/'kk-production-mobile.png'),full_page=True)
         check('Actual KK production choices and source disclosures fit a 390px mobile viewport')
-        report['screenshots']=['physics-desktop.png','dark-sectors-desktop.png','kk-production-desktop.png','linear-desktop.png','source-desktop.png','kk-production-mobile.png']
+        report['screenshots']=['compound-source-desktop.png','physics-desktop.png','dark-sectors-desktop.png','kk-production-desktop.png','linear-desktop.png','source-desktop.png','kk-production-mobile.png']
         # The separate overview is exercised on the actual final geometry, not a fixture.
         from urllib.parse import urlencode
         overview=cases['overview']; chart=context.new_page();chart.on('pageerror',lambda error:report['pageErrors'].append(str(error)))

@@ -1,0 +1,82 @@
+{
+  "status": "FROZEN_STAGE_SAFE",
+  "baseCommit": "4e53712c090897e6ed3d931b0ea89aa03a8db06a",
+  "validation": {
+    "runtimeTests": 108,
+    "focusedRealSourceTests": 2,
+    "build": "pass; 111 retained baseline files",
+    "siteCheck": "pass; verifiedAtlasFiles0",
+    "pythonSyntax": "pass",
+    "javascriptSyntax": "pass",
+    "finalDataBrowser": "prepared, not run",
+    "independentAgent": "not run",
+    "publicHttps": "not run"
+  },
+  "files": [
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 73236,
+      "sha256": "af1e8f20110464d8724ad5cb2e4122c54972e1d37d0017d37d896ef7bf2695ff"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "0f2ab107e4f24af946cd12d6ba89a245b938bb606c1902598afbbb9af7ea5300"
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 93889,
+      "sha256": "b5e35fe615d922187891df0feb4b9b3dcd958dbe7facd2653b15ddf0d9b23c42"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 22394,
+      "sha256": "4f543429303ada5dffd76828cd81fee091d67deb2bf28232436bc146ba6ce0ef"
+    },
+    {
+      "path": "web/source-coverage.mjs",
+      "bytes": 1217,
+      "sha256": "5e0059157e705c339775c92932df9db6a3f6d4a1476b7e3eab0bb2095dabbf7a"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 21928,
+      "sha256": "998f0bb8a57ac0edcc3eb1e5e39cbedf69737e0133e6d888668230361047a4b4"
+    },
+    {
+      "path": "tests/fixtures/compound-source-coverage.json",
+      "bytes": 8198,
+      "sha256": "88af2b313547252cc4608a5b64be61e0c8426eb8ada718642c570ee0150351bc"
+    },
+    {
+      "path": "tests/integration/compound-source-coverage.test.mjs",
+      "bytes": 8075,
+      "sha256": "45b323f2be2edef98492f8707e3c58555129f154a0ba6bcf0323fdbe87bb8f87"
+    },
+    {
+      "path": "tests/integration/work-note-fallback.test.mjs",
+      "bytes": 2901,
+      "sha256": "c8f2c24849a5192314790d5f9e9dd05f8a68cfc77a46920d67813a1a1faaa5c8"
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "bytes": 31345,
+      "sha256": "b5355a1c4b9bacedd0adb0a232fd3af6827fe1e0f6553f85d083775cf4be2232"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/browser.py",
+      "bytes": 22270,
+      "sha256": "31ce7b4b90bfba8d898ac10e68c2ff1984a81ffad0329ff921278734f8ab2eaf"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/README.md",
+      "bytes": 6167,
+      "sha256": "a6b1f0ac5012253be87dd97a78bc3f8ca8153053cdab99ad6caed122c429d62e"
+    },
+    {
+      "path": "research/q025/integration/compound-display-v1/README.md",
+      "bytes": 1716,
+      "sha256": "b716ba5aaf2bcff701802306d12e1e809adaf81bfa2a0b2ac5730031c411e9fb"
+    }
+  ]
+}
