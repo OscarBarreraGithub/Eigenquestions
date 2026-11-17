@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "q025-explicit-placement-exception-admission/1",
+  "status": "accepted_explicit_placement",
+  "authority": "Root explicitly approved two n8-region homes, four challenger-changed whole homes and four separately source-context-adjudicated homes. Native proposals and challenges retain their original limitations; they are not relabeled as primary-reading agreements.",
+  "homeAuthorization": {
+    "path": "research/q025/evaluation/full-pass/placement-scope-review-v2/eight-home-authorization.json",
+    "sha256": "804569a994335180930a0ff16eda2583cdb775a77a8066dcd0fc237b9fc6adf1",
+    "bytes": 67885
+  },
+  "n8ScopeMapping": {
+    "path": "research/q025/evaluation/full-pass/placement-scope-review-v2/n8-scope-mapping.json",
+    "sha256": "5327a77f4687271ab1abcb2b2586fd0b84c1a3a503b5ab24876f7ce8d214b43f",
+    "bytes": 1320
+  },
+  "n8ScopeComponent": {
+    "path": "research/q025/evaluation/full-pass/placement-scope-review-v2/n8-scope-component.json",
+    "sha256": "2dff0795c352970aafcc00d0dda07ce8f8b01ee41706b174aac54fceb579a18d",
+    "bytes": 12009
+  },
+  "n8ScopeAdmission": {
+    "path": "research/q025/evaluation/full-pass/placement-scope-review-v2/n8-scope-admission.json",
+    "sha256": "dc7a8366079719ce51c0b2fcb645da1e75392233e1c9d63dea6fa20af55c2f80",
+    "bytes": 3348
+  },
+  "sourceIntake": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+    "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+    "bytes": 2044150
+  },
+  "previousAssembly": {
+    "path": "research/q025/assembly/placement-incremental-v1/cut-01/candidate-6294/aggregate.local.json",
+    "sha256": "e9bb797bb6595e24e42191e8ea20112bdc619dc326ff62efc61cbcaa9bb54d75",
+    "bytes": 106896310
+  },
+  "otherAdmittedPlacements": [
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-02/admitted/component.json",
+      "sha256": "3d57c1bb9052987b57125d84277c99ac62472527fc154d51851245f68c5b8ff9",
+      "bytes": 506170
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/new-scope-cut-01/component.json",
+      "sha256": "c83804d9a6228751dd12bf9c15d01caa2474513bb6a8f5f17504e881095c3f1d",
+      "bytes": 100520
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/cut-03/admitted/component.json",
+      "sha256": "d916c3012110e4e52992e8bf40d57f5dc15156e459c8a10effbfcc250ad0336c",
+      "bytes": 2033654
+    }
+  ],
+  "homeBindings": [
+    {
+      "unitId": "unit:af44c07e443460f77f6b31675bb1f2f57f5e1d68ecd840db8d1310ef6382980a",
+      "destinationId": "q025-candidate-region:5e859f17a7a066becd631f59",
+      "scopeContentSha256": "fedc68c21acd86bfda5bace3ce08acb65cc269987004199361bad3f23a590a5e",
+      "placementContentSha256": "4361966751763e5562bb8030866898d973c3bac4b5d93a7de21f2d3df6ed688e",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0005:proposal",
+        "explicit-home-cut01:placement-continuation-0005:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0005",
+        "unitRef": "u13"
+      },
+      "adjudicationClass": "accepted_explicit_changed_existing_whole_home",
+      "primaryReadingAuthority": null
+    },
+    {
+      "unitId": "unit:e7ee0683cf6c632ef491e038d7474b1f539b0e780f0346e6d0bfdbeabc0453c3",
+      "destinationId": "q025-candidate-question:c502f222eaf45d4d5c9abd24",
+      "scopeContentSha256": "81941f8229c7ca263a0710cabb7782895ca379d1c1196b0d8c8e6cd72d1b3dd1",
+      "placementContentSha256": "04c4be677efe61f9dc3c36cfcc1aa90d01076caaeb975c0a9c8e3e301aef169b",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0001:proposal",
+        "explicit-home-cut01:placement-continuation-0001:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0001",
+        "unitRef": "u24"
+      },
+      "adjudicationClass": "accepted_explicit_changed_existing_whole_home",
+      "primaryReadingAuthority": null
+    },
+    {
+      "unitId": "unit:fbf40b6d4807285c6bd7514cd39c5c1eada19fc21f9b5473f80f03e7584b8b04",
+      "destinationId": "q025-candidate-question:503518828b60243ad6ef86db",
+      "scopeContentSha256": "229c7fa1d5087fb81ab7a1cc1224287a3ffac1743b2ff46e28425f7c719aaa96",
+      "placementContentSha256": "39980c64c2b4fb1e67f9844b7d7607bd28c7360548f4aa4840daf76f52144211",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0003:proposal",
+        "explicit-home-cut01:placement-continuation-0003:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0003",
+        "unitRef": "u26"
+      },
+      "adjudicationClass": "accepted_explicit_changed_existing_whole_home",
+      "primaryReadingAuthority": null
+    },
+    {
+      "unitId": "unit:a49a8c0c450b0ce8a23326f25168db760c64027333dfa7f7229aa9350033d061",
+      "destinationId": "q025-candidate-region:2344420c44d7bc2f2826b23a",
+      "scopeContentSha256": "f15b0fdbed89f7305ee333f8fcd0de2296ca7c881f22157cd9bced7791acf86b",
+      "placementContentSha256": "9e1a9e2844647267ea975065738e0e4e6c0e8ba88b4c08c6c5bb0d7e943b0639",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0008:proposal",
+        "explicit-home-cut01:placement-continuation-0008:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0008",
+        "unitRef": "u23"
+      },
+      "adjudicationClass": "accepted_explicit_changed_existing_whole_home",
+      "primaryReadingAuthority": null
+    },
+    {
+      "unitId": "unit:bfec1c0ac07fd397043af6a2e551f102680aa5eb9478e93c6b37aaab5dddd4e7",
+      "destinationId": "q025-candidate-question:4723858a27075d6ac6ef24e2",
+      "scopeContentSha256": "ec0627bb3f8ba5bb12bb5357002d42915d2118ab1b983a214350ae2ba581c00c",
+      "placementContentSha256": "a94d69b51c6fa9d6b5d7952da476fb9a0e6dab45c4828f3d9fdcdd5f1da43249",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0001:proposal",
+        "explicit-home-cut01:placement-continuation-0001:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0001",
+        "unitRef": "u13"
+      },
+      "adjudicationClass": "accepted_explicit_source_context_whole_home",
+      "primaryReadingAuthority": "root_only_not_native_pair"
+    },
+    {
+      "unitId": "unit:67be77ac1d48e620de91033fb72d379691da81b3a996d162efdfd5bcfe18c1e9",
+      "destinationId": "q025-candidate-question:5bd03e3b39d5ff867121e8a2",
+      "scopeContentSha256": "45525ab339edf527265e83c91f4db9710a1d559ecc040bdb735a5fb5f5c460d9",
+      "placementContentSha256": "f929598ba80f192240290f6adf5957ec0d481db9faf6a069e6b1fdbd0afaf0f9",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0001:proposal",
+        "explicit-home-cut01:placement-continuation-0001:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0001",
+        "unitRef": "u23"
+      },
+      "adjudicationClass": "accepted_explicit_source_context_whole_home",
+      "primaryReadingAuthority": "root_only_not_native_pair"
+    },
+    {
+      "unitId": "unit:e0adfb17d36510a24f811fdd52291a41c5ae7fc85d21687f375bef64d19e8cfa",
+      "destinationId": "q025-candidate-region:b4d08fb421593b2978269858",
+      "scopeContentSha256": "ef5676541487a7a5dd01cbe61b6ac47a9096439aa2156355140bf9ba11bdabba",
+      "placementContentSha256": "1b9407b56f6f1b2f49abb2df207ca904d0b503d75e41b7733615989b8f4cb81c",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0004:proposal",
+        "explicit-home-cut01:placement-continuation-0004:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0004",
+        "unitRef": "u7"
+      },
+      "adjudicationClass": "accepted_explicit_source_context_whole_home",
+      "primaryReadingAuthority": "root_only_not_native_pair"
+    },
+    {
+      "unitId": "unit:0a3bfe18cb3e981f9e3c155a4f189e3396700ee5f3fdf97721de91ffa202c7a9",
+      "destinationId": "q025-candidate-question:d4a77dae979a60717ba399e7",
+      "scopeContentSha256": "e996b25c2e0c5ed494f36001d8553cae0b690ed9a8c5f74bf1d9e2c83d78e1b4",
+      "placementContentSha256": "662c47739ef5a0e792eb8df7706f41b7f94832a2a566d09dfd68119380eb9dfb",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0006:proposal",
+        "explicit-home-cut01:placement-continuation-0006:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0006",
+        "unitRef": "u0"
+      },
+      "adjudicationClass": "accepted_explicit_source_context_whole_home",
+      "primaryReadingAuthority": "root_only_not_native_pair"
+    },
+    {
+      "unitId": "unit:5e91d8d52e5cc3bbda39ce8b0e0d170a5f366072216964a4d3c2b720071bf67f",
+      "destinationId": "q025-placement-question:ff923932b46e15ebfdfa3eee",
+      "scopeContentSha256": "99c979ce77e37444fd2208c7deaaebda1f3466587e8e29db96c8ca8186b6ba55",
+      "placementContentSha256": "693b7054f9a1b7729066f00b8485d24e2cef8756063907f871c590cc604f97c6",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0000:proposal",
+        "explicit-home-cut01:placement-continuation-0000:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0000",
+        "unitRef": "u25"
+      },
+      "adjudicationClass": "explicit_new_region_whole_home",
+      "primaryReadingAuthority": null
+    },
+    {
+      "unitId": "unit:30fff49bf370a30ca7eddcdf6cf037161cc9f2491f09a25bd424ccb1d126f0a9",
+      "destinationId": "q025-placement-question:ff923932b46e15ebfdfa3eee",
+      "scopeContentSha256": "99c979ce77e37444fd2208c7deaaebda1f3466587e8e29db96c8ca8186b6ba55",
+      "placementContentSha256": "4b0b9412afaa7dd9fc60fc6cf24d8a2c02b4f4e0e1b1800b546cdb6e816dacf2",
+      "sourceReviewIds": [
+        "explicit-home-cut01:placement-continuation-0000:proposal",
+        "explicit-home-cut01:placement-continuation-0000:challenge"
+      ],
+      "sourceBinding": {
+        "path": "research/q025/assembly/placement-incremental-v1/cut-01/exception-intake.json",
+        "sha256": "71263a9f0021efdb21ad157d46dc559b5271318bbabb074cf7b3d6ec8a9658a9",
+        "bytes": 2044150,
+        "familyId": "placement-continuation-0000",
+        "unitRef": "u27"
+      },
+      "adjudicationClass": "explicit_new_region_whole_home",
+      "primaryReadingAuthority": null
+    }
+  ],
+  "primaryResolution": {
+    "path": "research/q025/assembly/placement-incremental-v1/explicit-cut-01/primary-resolution.json",
+    "sha256": "9e170eeb14f72a2ab62745bf537c3ce05960b7cd47bccb192c20fbc9c2c4263d",
+    "bytes": 26198
+  },
+  "readingLimit": "Only the root-read thirteen bounded source windows support the four source-context amendments; no full-paper/proof verification or source-facet identity claim.",
+  "noNewRolesOrRoutesOrAliases": true
+}

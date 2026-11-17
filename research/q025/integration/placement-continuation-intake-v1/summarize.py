@@ -15,7 +15,7 @@ def stage(d):
  return receipt,reply,packet,side,{'jobPath':str(d.relative_to(W)),'pins':[pin(d/n)for n in ['request.json','receipt.json','packet.actual.json','reply.json','reply.raw.txt','normalization.json']],'sourceSidecar':pin(sidepath),'placementCounts':dict(collections.Counter(r['status']for r in reply['placements'])),'coverageModeCounts':dict(collections.Counter(r['coverageMode']for r in reply['placements'])),'wholeTargetCoverageCounts':dict(collections.Counter(r['wholeTargetCoverage']for r in reply['placements'])),'priorPlacementJudgments':dict(collections.Counter(r['verdict']for r in reply['priorPlacementReviews'])),'priorScopeJudgments':dict(collections.Counter(r['verdict']for r in reply['priorScopeReviews'])),'newScopeCount':len(reply['newScopes']),'representationDerivations':normal.get('representationDerivations',[])}
 def collect():
  families=[];states={};seen=set()
- for lane in ['placement-continuation-v1','placement-successors-v1','placement-tail-recovery-v1']:
+ for lane in ['placement-continuation-v1','placement-successors-v1','placement-tail-recovery-v1','placement-validator-recovery-v1']:
   statepath=L/lane/'state.json'
   if not statepath.exists():continue
   state=read(statepath);states[lane]=dict(collections.Counter(v['status']for v in state['jobs'].values()))

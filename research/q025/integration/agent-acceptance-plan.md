@@ -13,12 +13,16 @@ Playwright and Chromium paths from `qa14/run.sbatch`. Budget initially 2 CPU,
 No owner's Chrome, local browser automation workaround, new service or copied
 model-account credentials. Reuse the existing SSH alias privately.
 
-The job installs the hash-pinned final site/archive, verifies its complete asset
+The job starts from the complete pinned Git archive plus exact runtime/data overlays,
+prevalidates the explicit default-home selector against the final manifest, then
+installs the hash-pinned final site/archive and verifies its complete asset
 manifest, starts `bin/navigate.mjs serve --atlas ... --connection ...`, and opens
 its local token link in a fresh nonpersistent Chromium context. Extend QA14's
 browser observer only to remain open while a real agent works. The observer may
 initialize a case, record state/revision/DOM/screenshots and check expectations;
-it must not choose the agent's destination or send navigation calls for it.
+it must not choose the agent's destination or send navigation calls for it. Keep
+the browser alive through failure capture; record the exact failed stage, current
+DOM and sanitized state before closing the context.
 
 Root starts a fresh Astra agent with `fork_turns:"none"` after the gate. Its input
 contains only the portable skill/reference paths, a bounded command prefix, the
@@ -29,6 +33,28 @@ Slurm allocation. Label this evidence **independent agent CLI → bridge → ren
 browser**, separately from the existing scripted stdio-MCP proof. Do not claim it
 tests native MCP-client installation. The same MCP mutation guard is covered by
 QA15 and the real stdio integration tests.
+
+Prepared passive observer: `research/q025/integration/agent-browser-observer.py`.
+It is Slurm-only, starts the existing companion/browser, writes a token-free
+`agent-run.json`, records revision/DOM acknowledgements and screenshots, and waits
+for a root `stop.json` marker. It sends no navigation commands. It has passed
+syntax checking only; actual accepted-data execution remains gated.
+
+For the final allocation, unpack and build in `$SLURM_TMPDIR` (or a private
+job-specific node-local temporary directory), verify every input hash there, and
+copy compact reports back to shared scratch. Keep the connection file node-local;
+only its path goes to the agent wrapper. The shared-filesystem overhead observed
+in QA23 is not a reason to change any scientific package bytes.
+
+```sh
+python research/q025/integration/agent-browser-observer.py \
+  --project "$NODE_LOCAL_PROJECT" --atlas "$NODE_LOCAL_ATLAS" \
+  --node "$NODE_BIN" --output "$PRIVATE_RUN_OUTPUT" --minutes 40
+```
+
+The separate public run adds `--public-origin https://eigenquestions.com` and
+`--permission-mode default` or `consent`. It verifies the exact live manifest
+before attaching and records these permission outcomes separately.
 
 Safe command wrapper, with the exact allocation paths supplied in a private run
 configuration at launch (no token contents in that configuration):
@@ -91,10 +117,13 @@ scientific holdout. A missing accepted destination is an explicit coverage resul
    defining assumptions. It must converge to the same accepted question selector
    as case 1 through its own interpretation and route. Changing the governing
    regime is a separate boundary probe, not required to converge.
-3. **Independent physics case.** A fresh agent follows black-hole evaporation to
-   the information question and an applicable island/replica-wormhole source.
-   Require source-backed scope and honest limitations, not forced membership in
-   the KK story. Bind actual admitted targets before launch; do not invent an edge.
+3. **Independent physics case.** A fresh agent asks what ultraviolet-gravity
+   models imply for black-hole behavior, then asks which renormalization-group
+   mechanism underlies the selected application. The observer binds the actually
+   admitted black-hole → RG application route after the final data freeze. The
+   agent receives only the scientific request, not endpoint IDs, route labels or
+   a suggested lookup. Require exact scope, reading limits and an inspected
+   relation proof; do not substitute an unadmitted island/replica-wormhole route.
 4. **Premise-sensitive independent case.** A fresh agent asks about weak dissipation
    at CMB scales becoming strong late enough for a primordial-black-hole mechanism,
    then whether a compatibility argument requiring strong dissipation throughout

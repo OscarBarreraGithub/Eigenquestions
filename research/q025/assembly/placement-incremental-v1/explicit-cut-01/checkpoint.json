@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "q025-explicit-placement-and-source-anchor-checkpoint/1",
+  "status": "frozen_stage_safe",
+  "files": [
+    {
+      "path": "research/q025/assembly/primary-evidence.mjs",
+      "sha256": "24604daed1d5b46359dd1b4de059925951f5ff00a8f023db404a025927da0b2c",
+      "bytes": 5143
+    },
+    {
+      "path": "research/q025/assembly/primary-evidence.test.mjs",
+      "sha256": "1146a2b4f4fec2af47651c409ece0d295ac9cf0ca63c1915f42fbc784e040cf1",
+      "bytes": 5298
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/compile_explicit_cut01.mjs",
+      "sha256": "511ac39af397af145ed7a2747d99a81db1effae1e978cf9e390a2c17dce78387",
+      "bytes": 10630
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/explicit-cut-01/component.json",
+      "sha256": "123e4cdb7241fcdec258db77c55e4cb61639bce924ea505742a3807fd4f116f5",
+      "bytes": 61846
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/explicit-cut-01/admission.json",
+      "sha256": "85701911093be3e75d3e2441256645f0244c34e54c621cf046da64e526da693d",
+      "bytes": 12746
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/explicit-cut-01/report.json",
+      "sha256": "64c95833dc12876d460c4ab63f15e2b986fb1ba446c3303550d2528b37d94e9f",
+      "bytes": 963
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/explicit-cut-01/primary-resolution.json",
+      "sha256": "9e170eeb14f72a2ab62745bf537c3ce05960b7cd47bccb192c20fbc9c2c4263d",
+      "bytes": 26198
+    },
+    {
+      "path": "research/q025/assembly/placement-incremental-v1/explicit-cut-01/tests.log",
+      "sha256": "ac1c6a253aa7467f29727d4996723c2c924ed0d37a58c53ad1bfd68beb3bf367",
+      "bytes": 9376
+    },
+    {
+      "path": "research/q025/assembly/placement-latent-lookup-v1/supplement.py",
+      "sha256": "898f6d69aae786fda55fd6d44ef658a1d5ef7ef02f88b6775cc46134c93ff2d9",
+      "bytes": 8617
+    },
+    {
+      "path": "research/q025/assembly/placement-latent-lookup-v1/report.json",
+      "sha256": "413f137b7ae4acf68709463d5e08f4cbe83f12fa7fd9d0d70f016f552cfc93b2",
+      "bytes": 749
+    },
+    {
+      "path": "research/q025/assembly/lazy-proofs-v1/final-asset-estimate.json",
+      "sha256": "207f20c7de4d7ce39e6f8eab06caa90cc100b3fd2281ee7bfd7497cc92f44369",
+      "bytes": 2464
+    }
+  ],
+  "totalBytes": 144030,
+  "compiledQuestionHomes": 7185,
+  "newExplicitHomes": 10,
+  "primaryWindows": 13,
+  "archiveOnlyAnchors": 1,
+  "assemblyTests": 111,
+  "noNewScientificReadingByCompiler": true,
+  "latentCandidatesNotAdmissions": true,
+  "bulkExcluded": [
+    "placement-latent-lookup-v1/supplement.json (hash in report; reproducible existinggraph join)",
+    "rawprimarytext",
+    "nativeinput/replyfiles",
+    "browserpackages"
+  ],
+  "limitations": [
+    "Final geometry and complete source accounting remain pending.",
+    "The archive-only anchor establishes exact bounded source reading, not an extracted semantic object."
+  ]
+}

@@ -536,7 +536,8 @@ function renderEvidence() {
   const direction = view.directions.find(item => item.id === selectedDirectionId);
   if (direction) { const ids = new Set(direction.memberIds || direction.evidenceIds); nodes = nodes.filter(node => ids.has(node.id)); }
   $('clear-evidence').hidden = !direction;
-  $('evidence-description').textContent = direction ? `Sources behind: ${direction.label}` : view.atlas ? `${view.atlas.matchingSourceCount} primary descriptions${view.atlas.matchingContextCount?` and ${view.atlas.matchingContextCount} contextual method descriptions`:''} match this selection. This view shows ${nodes.length} descriptions across ${new Set(nodes.map(n=>n.paperId).filter(Boolean)).size} papers; supporting context is labeled separately.` : 'Read the extracted descriptions, then check the original papers.';
+  const primaryCount=view.atlas?.matchingSourceCount,contextCount=view.atlas?.matchingContextCount||0,paperCount=new Set(nodes.map(n=>n.paperId).filter(Boolean)).size;
+  $('evidence-description').textContent = direction ? `Sources behind: ${direction.label}` : view.atlas ? `${primaryCount} primary description${primaryCount===1?'':'s'}${contextCount?` and ${contextCount} contextual method description${contextCount===1?'':'s'}`:''} ${primaryCount+contextCount===1?'matches':'match'} this selection. This view shows ${nodes.length} description${nodes.length===1?'':'s'} across ${paperCount} paper${paperCount===1?'':'s'}; supporting context is labeled separately.` : 'Read the extracted descriptions, then check the original papers.';
   if (selectedId) nodes.sort((a, b) => Number(b.id === selectedId) - Number(a.id === selectedId));
   const papers = view.atlas ? [...Map.groupBy(nodes,node=>node.paperId || node.id).values()] : nodes.map(node=>[node]);
   const shown = allEvidence ? papers : papers.slice(0, 7);
@@ -544,12 +545,13 @@ function renderEvidence() {
     const evidence = node.evidence || {}, card = el('article', `evidence-card${node.id === selectedId ? ' selected' : ''}`);
     card.dataset.sourceId = node.id;
     const relation = node.retrieval?.workRelation?.kind;
-    card.append(el('p', 'source-meta', `${evidence.date || evidence.year || node.year || 'date unavailable'} · ${labels[evidence.lens || node.lens] || 'Source'}${relation ? ` · ${relation === 'ambiguous' ? 'role uncertain' : relation}` : ''}${node.atlasContextScope==='same_paper_context'?' · Same-paper context; check applicability':node.atlasRole ? ` · ${node.atlasRole==='context-evidence'?(node.atlasMembershipChecked===false?'Context witness; full membership not read':'Context evidence (outside current source selection)'):'Matches current source selection'}` : ''}`));
+    card.append(el('p', 'source-meta', `${evidence.date || evidence.year || node.year || 'date unavailable'} · ${labels[evidence.lens || node.lens] || 'Source'}${relation ? ` · ${relation === 'ambiguous' ? 'role uncertain' : relation}` : ''}${node.atlasContextScope==='same_paper_context'?' · Same-paper context; check applicability':node.atlasRole ? ` · ${node.atlasRole==='context-evidence'?'Related source; outside this view’s primary selection':'Matches current source selection'}` : ''}`));
     const title = el('h3'), paperUrl = safeUrl(node.sourceUrl || evidence.url);
     if (paperUrl) { const link = el('a', '', paperTitle(node.title)); link.title=node.title; link.href = paperUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; title.append(link); } else title.textContent = paperTitle(node.title); if(!repeatTitle)card.append(title);
     card.append(el('p', 'passage', evidence.text || node.label));
     const details = el('details'); details.append(el('summary', '', 'Source scope & provenance'));
     details.append(el('p', '', node.kind==='vocabulary'?'Classification vocabulary reference. This field does not yet claim detailed paper coverage.':'Extracted source description, not a direct quotation or independently verified result.'));
+    if(node.atlasMembershipChecked===false)details.append(el('p','','This description is shown as context. The complete membership list has not been loaded for this selection; this is a display-coverage limit, not a claim about how much of the paper has been read.'));
     if (node.retrieval?.workRelation?.basis) details.append(el('p', '', `Role assessment: ${node.retrieval.workRelation.basis}.`));
     if (evidence.sourceNotice) details.append(el('p', '', evidence.sourceNotice));
     details.append(el('p', '', `Source ID: ${node.id}`));

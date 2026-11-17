@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "q025-browser-completion/1",
+  "jobId": "61559089",
+  "state": "COMPLETED",
+  "exitCode": "0:0",
+  "elapsed": "00:10:45",
+  "observedAt": "2026-11-17T17:26:19.516643+00:00",
+  "passed": true,
+  "checksPassed": 10,
+  "manifestSha256": "3c1674dbb3e8e0c44e2e4c7cbef58adfc182b7b130d5efa972d0a132cc1f0d59",
+  "partialCandidate": true,
+  "browserEvidence": "Scripted MCP and isolated Slurm Chromium only; no independent-agent, final accepted-data or public HTTPS claim.",
+  "artifacts": [
+    {
+      "path": "build.log",
+      "bytes": 191,
+      "sha256": "ef91b9a9083e273076423a50417ce90c3ae21ca3e5d50a834b8e47006241a507"
+    },
+    {
+      "path": "site-check.log",
+      "bytes": 274,
+      "sha256": "02c509984457840b39248674830633fcd419c4f523dde821d9e3762a71628fc5"
+    },
+    {
+      "path": "browser.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build-size.json",
+      "bytes": 162,
+      "sha256": "9d64b633007bae00b8100a25184c3b2d119bcc83487229dfe80e9488ba7dd571"
+    },
+    {
+      "path": "slurm-61559089.out",
+      "bytes": 158,
+      "sha256": "6cc3b6de92fe6a9fb4c1760e2844a9d78d4acf1c9794a823e5ecd717a68d7dbf"
+    },
+    {
+      "path": "slurm-61559089.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/dark-sectors-desktop.png",
+      "bytes": 533994,
+      "sha256": "b549c75426a32e2cc2e9f6a2f87da4a0e3c5ddeb4e7a36625f848dad422c2689"
+    },
+    {
+      "path": "artifacts/kk-production-desktop.png",
+      "bytes": 431850,
+      "sha256": "2730e0a06f6f2db01ebb358dd29b1a1eefb2f9706767f44b9267721397b97f75"
+    },
+    {
+      "path": "artifacts/kk-production-mobile.png",
+      "bytes": 296619,
+      "sha256": "9de2e31abd0e8707a422205adecbca69770d3094262fe6d3fedaf602d3459074"
+    },
+    {
+      "path": "artifacts/linear-desktop.png",
+      "bytes": 423850,
+      "sha256": "b147fc4f1fc6a41b213239be5de2f28fedfd65dd72d2f2a13d20f82c5df8a0f5"
+    },
+    {
+      "path": "artifacts/physics-desktop.png",
+      "bytes": 148644,
+      "sha256": "cf083832ebe11ba8acfb6d560570f930304c05c08ab2061f702fe6ddc2371704"
+    },
+    {
+      "path": "artifacts/report.json",
+      "bytes": 19504,
+      "sha256": "fd54c17b7f8f13486b61b9b586bb8d9fb621e1964e6f7adb141e5db0b78f5600"
+    },
+    {
+      "path": "artifacts/source-desktop.png",
+      "bytes": 591506,
+      "sha256": "8628d81146f5093288009385b96d4b90604e8c19404fb40a810c70eabafd7c03"
+    }
+  ],
+  "remoteAndLocalArtifactHashesMatch": true,
+  "credentialScan": {
+    "patterns": "URL token values and Bearer token values of at least 12 characters",
+    "matches": 0,
+    "redactionApplied": false,
+    "note": "Harness redacts its ephemeral token before writing reports. Downloaded originals retained unchanged."
+  },
+  "priorFailuresPreserved": [
+    "qa19",
+    "qa20",
+    "qa21",
+    "qa22"
+  ],
+  "limits": [
+    "Same-host uncompressed HTTP; timings do not predict public networks or other devices.",
+    "No cold long tasks; one 54 ms task recorded over the full journey.",
+    "Browser all-connections disclosure renders all 75 incident rows; API paging is separate.",
+    "Build and input copying used shared scratch; final acceptance will use node-local temporary storage with one ingress integrity check."
+  ]
+}

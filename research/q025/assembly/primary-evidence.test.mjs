@@ -41,3 +41,9 @@ test('wrong character offsets cannot borrow a valid span hash',async t=>{
 test('modified archived bytes fail the pinned file check',async t=>{
   const {ref,verification}=await primaryFixture(t);await writeFile(join(verification.archiveRoot,ref.sourceContext.path),'{"pages":["changed"]}');await assert.rejects(verifyPrimaryEvidence(verification),/checksum mismatch/);
 });
+test('an explicit archived document/page anchor needs no invented extraction ID',async t=>{
+  const {ref,verification}=await primaryFixture(t);delete ref.sourceId;ref.anchorKind='archived_document_page';const v=await verifyPrimaryEvidence(verification);assert.equal(v.report.archiveOnlyAnchorCount,1);assert.equal(v.report.records[0].extractedEvidenceIdentityAsserted,false);assert.equal(v.report.records[0].sourceId,undefined);
+});
+test('archive-only anchors cannot carry an extraction ID or skip exact span identity',async t=>{
+  const {ref,verification}=await primaryFixture(t);ref.anchorKind='archived_document_page';await assert.rejects(verifyPrimaryEvidence(verification),/malformed exact/);delete ref.sourceId;ref.sourceContext.start++;await assert.rejects(verifyPrimaryEvidence(verification),/span\/hash mismatch/);
+});

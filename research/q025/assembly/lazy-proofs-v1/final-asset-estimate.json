@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "q025-final-asset-count-estimate/1",
+  "baselinePackage": "research/q025/assembly/outputs/organization-candidate-6294-proof-transport-v9",
+  "baselineManifestSha256": "f6cbc5f221e2b98d4545117a45ada7a64037e6d64f369d2f117faf366bb5e5b0",
+  "baselineProjectedFiles": 16267,
+  "baselineSourceContextAndSupplementalAssets": 6770,
+  "baselineTransportAssets": 810,
+  "baselineDestinationPages": 8187,
+  "ordinarySiteReserveAlreadyIncluded": 500,
+  "fullSourceFacetCount": 8473,
+  "newDefinitionObservedCount": 148,
+  "newDefinitionObservedSourceCount": 1223,
+  "linearObservedDefinitionEstimateAcross2313": 280,
+  "scenarios": [
+    {
+      "additionalAuthoredScopes": 150,
+      "additionalSourceFacetPages": 2179,
+      "additionalFineDetailShardsAtCurrentDensity": 32,
+      "authoredDetailUpperAllowance": 150,
+      "otherTransportAllowance": 100,
+      "projectedFiles": 18878,
+      "headroomTo20000": 1122
+    },
+    {
+      "additionalAuthoredScopes": 300,
+      "additionalSourceFacetPages": 2179,
+      "additionalFineDetailShardsAtCurrentDensity": 32,
+      "authoredDetailUpperAllowance": 300,
+      "otherTransportAllowance": 100,
+      "projectedFiles": 19178,
+      "headroomTo20000": 822
+    },
+    {
+      "additionalAuthoredScopes": 500,
+      "additionalSourceFacetPages": 2179,
+      "additionalFineDetailShardsAtCurrentDensity": 32,
+      "authoredDetailUpperAllowance": 500,
+      "otherTransportAllowance": 100,
+      "projectedFiles": 19578,
+      "headroomTo20000": 422
+    },
+    {
+      "additionalAuthoredScopes": 700,
+      "additionalSourceFacetPages": 2179,
+      "additionalFineDetailShardsAtCurrentDensity": 32,
+      "authoredDetailUpperAllowance": 700,
+      "otherTransportAllowance": 100,
+      "projectedFiles": 19978,
+      "headroomTo20000": 22
+    }
+  ],
+  "meaning": "Planning upper allowances, not a built final asset census. All8473source-facet pages are retained in every scenario. Current810transport count already includes256fine lookup buckets; existing6770external assets include full sourcecontext. New authored scopes normally co-pack, so one asset each is conservative. Final build still enforces exact20000file/25MiBlimits.",
+  "fallbackWithinExistingFormat": "If measured total approaches cap, increase bounded destination-detail bucket target and co-pack relation/membership records; preserve every static source-facet page and exact lazy record. No new storage service or scientific merge."
+}
