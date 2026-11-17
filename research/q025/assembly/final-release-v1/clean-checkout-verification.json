@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "q025-clean-git-checkout-verification/1",
+  "status": "passed",
+  "commit": "67ec3a2d1486915f211c50eb3f0512ff880c835d",
+  "input": {
+    "path": "research/q025/assembly/final-release-v1/clean-checkout-input.json",
+    "sha256": "c7f86636231a9f3aceef06a98bfa4f9d2fa903abc0a7e5172668b817b4c48632",
+    "bytes": 450
+  },
+  "sourceArchiveSha256": "8d1e5ecfeef76aba0353965112168c0589a42f595a52fb37db3a6e7c447e24a5",
+  "sourceArchiveBytes": 768798720,
+  "scientificManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "inputOrigin": "Only git archive of the exact commit; no filesystem links or copies from ignored research, local data staging, or owner source pack. npm ci uses the committed package lock.",
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/clean-npm-ci.log",
+        "sha256": "5b6dea5faee8a7b1f317b0596ac9aec4d353241d9b10601d24c7c5ae93e26f62",
+        "bytes": 783
+      }
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/clean-build.log",
+        "sha256": "5566110294d0ca0e5441e8f05610026baf15a77228f246edda338bab0ec3e629",
+        "bytes": 253
+      }
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/clean-tests.log",
+        "sha256": "cf6afa025e94dbed3ad81a4962224efe25c1b75a38d9798f623163028adda5e9",
+        "bytes": 13196
+      }
+    },
+    {
+      "command": "npm run check:site",
+      "exitCode": 0,
+      "log": {
+        "path": "research/q025/assembly/final-release-v1/clean-site-check.log",
+        "sha256": "458d253866634520a338492e3a04c8285ed07a251b22af0259a5509e8c9ab2b9",
+        "bytes": 340
+      }
+    }
+  ],
+  "tests": {
+    "tests": 114,
+    "pass": 114,
+    "fail": 0,
+    "skipped": 0
+  },
+  "build": {
+    "files": 18454,
+    "bytes": 698595419,
+    "largestFile": "dist/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/catalog.json",
+    "largestFileBytes": 7021318,
+    "fileLimit": 20000,
+    "perFileLimit": 26214400
+  },
+  "nodeVersion": "v26.7.0",
+  "npmVersion": "11.19.0",
+  "missingTrackedDependencies": [],
+  "sharedDistModified": false,
+  "committed": false,
+  "deployed": false,
+  "scope": "Clean-checkout CI dependency verification only. Existing scientific, browser, and independent-agent evidence remain separate."
+}

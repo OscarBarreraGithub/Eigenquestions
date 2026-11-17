@@ -1,0 +1,36 @@
+{
+  "status": "SUBMITTED",
+  "jobId": "61597266",
+  "submittedAt": "2026-11-17T19:29:15.097257+00:00",
+  "supersedesFailedJob": "61596083",
+  "baseCommit": "a17c9ea3f7e660e4154172f574304bad14315722",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "finalInputSha256": "f612ca9b0f7b40fd9b7086f603126bcf9a2ab3a3a7bdfbb6321e9a44fd9e2c78",
+  "archives": [
+    {
+      "path": "repository.tar.gz",
+      "sha256": "fec0f908ec2d29c3fe1e97f719553799011160503741549d8d0df8e605e2f78c",
+      "bytes": 156619326
+    },
+    {
+      "path": "overlay.tar.gz",
+      "sha256": "0e1a8793f569a4c6ef5a9d2f8e2a5b4adee005cfd162a3dab1d263dc213dd4b1",
+      "bytes": 50706811
+    }
+  ],
+  "resourceLimits": {
+    "cpus": 4,
+    "memoryGB": 16,
+    "minutes": 45,
+    "account": "randall_lab",
+    "partition": "test"
+  },
+  "externalSourceAssetsReused": 6735,
+  "remoteEnvelopeChecksums": "All five files matched before sbatch",
+  "remoteRunDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/final-acceptance-v2",
+  "phases": [
+    "browser",
+    "observer"
+  ],
+  "limitations": "Submitted only; original compact-field omission preserved separately. No owner browser used."
+}

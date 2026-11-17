@@ -1,0 +1,14 @@
+{
+  "kind": "q025-clean-git-checkout-input",
+  "commit": "67ec3a2d1486915f211c50eb3f0512ff880c835d",
+  "project": "/var/folders/p_/718wtqxj401_cdjn7vkq0b700000gn/T/q025-clean-release-bsuo43lx/project",
+  "archiveSha256": "8d1e5ecfeef76aba0353965112168c0589a42f595a52fb37db3a6e7c447e24a5",
+  "archiveBytes": 768798720,
+  "noExternalFilesOrLinks": true,
+  "commands": [
+    "npm ci",
+    "npm run build",
+    "npm test",
+    "npm run check:site"
+  ]
+}

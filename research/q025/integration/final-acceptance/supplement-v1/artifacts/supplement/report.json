@@ -1,0 +1,56 @@
+{
+  "kind": "final-scripted-supplement",
+  "jobId": "61597944",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "freshObserverTouched": false,
+  "checks": [
+    {
+      "name": "Real zero-member question retains paged source contributions and zero USING without mutating state",
+      "passed": true,
+      "destinationId": "q025-candidate-question:72d41d3456dd196085af10c9",
+      "contributions": 7
+    },
+    {
+      "name": "Actual source filters distinguish primary questions, contextual methods and USING",
+      "passed": true,
+      "primary": 1,
+      "contextMethods": 2,
+      "using": 0
+    },
+    {
+      "name": "Unavailable-source inventory is linked and retains withdrawn no-text record",
+      "passed": true
+    },
+    {
+      "name": "Synthetic work note survives scripted companion updates, Back, replay and New path; exported view omits note",
+      "passed": true
+    },
+    {
+      "name": "Compact prepared URL and actual downloaded capsule import preserve selector without publishing note",
+      "passed": true
+    },
+    {
+      "name": "Five exact approved display treatments separate workflow history in actual browser and static pages",
+      "passed": true,
+      "destinations": [
+        "q025-candidate-question:0df1cb0c987af0d359f479ae",
+        "q025-candidate-region:a0f723b38ca7f47ed567e044",
+        "q025-candidate-region:35fb420b1e4e6b2953db581e",
+        "q025-candidate-region:6342a86dd1d7177d13cc836d",
+        "q025-candidate-region:ab32fe5068d3093c0140abe9"
+      ]
+    }
+  ],
+  "screenshots": [
+    "contribution-only.png",
+    "manual-view-import.png",
+    "editorial-1.png",
+    "editorial-2.png",
+    "editorial-3.png",
+    "editorial-4.png",
+    "editorial-5.png"
+  ],
+  "pageErrors": [],
+  "passed": true,
+  "phase": "five-editorial-pages"
+}

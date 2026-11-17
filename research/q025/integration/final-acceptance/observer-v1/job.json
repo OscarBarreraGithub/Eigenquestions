@@ -1,0 +1,26 @@
+{
+  "kind": "q025-passive-final-agent-observer-submission",
+  "jobId": "61597944",
+  "statusAtReceipt": "RUNNING",
+  "baseCommit": "a17c9ea3f7e660e4154172f574304bad14315722",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "inputSha256": "e9dc27537a0b383386377bdf205c9b3d2a10c56874a01a5eee70c5fefd177a77",
+  "resourceLimits": {
+    "cpus": 4,
+    "memoryGB": 16,
+    "minutes": 45,
+    "account": "randall_lab",
+    "partition": "test"
+  },
+  "observerReadyAt": "2026-11-17T19:32:21Z",
+  "observerDeadline": "2026-11-17T20:02:21Z",
+  "remoteRunDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/final-observer-v1",
+  "phases": [
+    "observer only; no scripted navigation"
+  ],
+  "independentAgentNavigation": true,
+  "observerMutations": false,
+  "ownerBrowserUsed": false,
+  "scope": "Final same-origin loopback rendering. Actual public HTTPS proof remains separate. Agent-chosen CLI calls and scientific review retained separately by coordinator.",
+  "privateTokenPolicy": "Connection token remains in node-local private connection file. No token is copied into this receipt."
+}

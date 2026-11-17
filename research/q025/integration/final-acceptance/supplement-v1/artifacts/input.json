@@ -1,0 +1,39 @@
+{
+  "baseCommit": "a17c9ea3f7e660e4154172f574304bad14315722",
+  "applicationCommit": "756df26acf233424154edbf6ef5290f01f778cfd",
+  "scientificManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "files": [
+    {
+      "path": "docs/atlas-presentation.md",
+      "sha256": "0deaba3c92ff4d241fe2c7719252554c2a8b0baf149f8252aec0bb680a56bea9",
+      "bytes": 2988
+    },
+    {
+      "path": "lib/protocol/approved-display-editorial.mjs",
+      "sha256": "592cf342b71c9ca67607aa27b3fc3d5067d99f994928904716b96dc2d344ea15",
+      "bytes": 11799
+    },
+    {
+      "path": "lib/protocol/display-editorial.mjs",
+      "sha256": "55e5fa9e0f3a09aed209193b0c390a8c16e3c8869da8798cac51b869a77f79cb",
+      "bytes": 6011
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "sha256": "d7dbbf2a93c37d60c74eda7c990d197837a5e8cb58b00be18afa5e1c55e024c4",
+      "bytes": 22010
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/browser.py",
+      "sha256": "9970629686bfcec55a52377054858df5e3e7d307da1b0209d2333638f7e7372f",
+      "bytes": 24978
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/supplemental.py",
+      "sha256": "b3b2bc9ae147ead62ef7598da2154030147e19300a334a134d164b4c37e38408",
+      "bytes": 11463
+    }
+  ],
+  "overlaySha256": "8a60ea23a34e243fd5034d67be8aef249863b7c72677024b5984d2d890bda1b0",
+  "policy": "Separate node-local hardlinked copy; unlink patched files before writing; never mutate observer application/source data; same immutable science package."
+}
