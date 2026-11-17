@@ -1,0 +1,82 @@
+{
+  "status": "FROZEN_STAGE_SAFE",
+  "baseCommit": "17662cfb306191499b447af97f0b6d1b9270c8cd",
+  "validation": {
+    "stagingPythonTests": 3,
+    "readonlyCliRuntimeTests": 1,
+    "finalIngressTests": 3,
+    "runtimeTests": 112,
+    "exactSchematicBinding": {
+      "nodes": 16,
+      "recordedEdges": 15
+    },
+    "build": "pass;112 baseline assets",
+    "siteCheck": "pass;verifiedAtlasFiles0",
+    "realPreholdoutStage": "pending geometry freeze",
+    "reservedContentOpened": false,
+    "modelCalls": 0,
+    "browserMutationTest": false
+  },
+  "files": [
+    {
+      "path": "research/q025/integration/preholdout-access-v1/prepare.py",
+      "bytes": 5808,
+      "sha256": "f2d4e1caa19a93db6f145297db2f958c499302c9f6f444576b4e6f092e996bd2"
+    },
+    {
+      "path": "research/q025/integration/preholdout-access-v1/read.mjs",
+      "bytes": 4491,
+      "sha256": "321e77e8766d79b8aaeb7a6b58bd0756f6c3b72db027cc4438058ba16c085fc6"
+    },
+    {
+      "path": "research/q025/integration/preholdout-access-v1/test_prepare.py",
+      "bytes": 1919,
+      "sha256": "1ed0cd9069d8b7998e7967199fd48cbaa141246bb9ce2551449f382bdb874ef5"
+    },
+    {
+      "path": "research/q025/integration/preholdout-access-v1/read.test.mjs",
+      "bytes": 3737,
+      "sha256": "cd845e37f56cd05fb1d36b5a8c13da3e27a17a3f69f0cfd7f36f4781a66a60b5"
+    },
+    {
+      "path": "research/q025/integration/preholdout-access-v1/README.md",
+      "bytes": 5099,
+      "sha256": "248a030dd68870fbdcfe1ed79440855631e3e0290cb2710251ff3d556a393021"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/prepare.py",
+      "bytes": 5768,
+      "sha256": "24e21bf58ad9b9df940d37c6a92190741f37b9b65a92f0efb44d6bc614d8bbe2"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/stage.py",
+      "bytes": 4531,
+      "sha256": "a39828506527733545d9fff6d667d8774261912f96d00bdf8bf87a8556b3e5a8"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/test_stage.py",
+      "bytes": 2946,
+      "sha256": "48050fec152ac42d5628e6bb8feedcb4980d91519858fd100f967bc6beaf30e8"
+    },
+    {
+      "path": "web/source-coverage.mjs",
+      "bytes": 1762,
+      "sha256": "1a0f908eafd54e537f17bbecbbf14d1a59ecaea4949378c73ae51393c7264686"
+    },
+    {
+      "path": "web/atlas-overview.js",
+      "bytes": 20832,
+      "sha256": "85cbe7f4f8dd3f27d8c5bade35ce13e0184c97fbe12945ac5552f214d0190cf5"
+    },
+    {
+      "path": "web/detail-frontier.mjs",
+      "bytes": 1823,
+      "sha256": "efd2462e84a70de5a3facaafd6b7d52fa03af5e5c96fea4d0a07e4ea0e4869f5"
+    },
+    {
+      "path": "tests/site/detail-frontier.test.mjs",
+      "bytes": 3102,
+      "sha256": "ea433fd7f9074b7ddd2f1e9e97b895bf383c2e69483bb9f470fc94c8b8485644"
+    }
+  ]
+}

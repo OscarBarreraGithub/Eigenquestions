@@ -15,6 +15,7 @@ def main():
  subprocess.run(['git','diff','--quiet','HEAD','--','bin','lib','web','scripts','schemas','skills','docs','package.json','package-lock.json','wrangler.toml'],cwd=ROOT,check=True)
  manifest_body=(candidate/'manifest.json').read_bytes();assert sha(manifest_body)==a.manifest_sha;manifest=json.loads(manifest_body)
  assert not manifest['scope'].get('partialRehearsal') and not manifest['scope'].get('partialCandidate'),'Partial package cannot be final QA'
+ assert manifest['scope'].get('sourceAccountingComplete')is True and manifest['scope'].get('reservedQuestionCount')==0,'Final QA requires complete source accounting and no reserved cases'
  cases=json.loads(Path(a.cases).read_text());assert cases['finalAccounting'] is True and cases['manifestSha256']==a.manifest_sha
  assert (cases['atlasId'],cases['atlasVersion'],cases['entryDestinationId'])==(manifest['atlasId'],manifest['atlasVersion'],manifest['entryDestinationId'])
  base=out/'repository.tar.gz';subprocess.run(['git','archive','--format=tar.gz','--output',str(base),a.commit],cwd=ROOT,check=True)

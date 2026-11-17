@@ -1,0 +1,42 @@
+{
+  "kind": "q025-preholdout-access-ready",
+  "status": "READY_READ_ONLY",
+  "manifestSha256": "62b2444c60f743adc9569d33ffe475211c9770d48f05abf5b976843e4e8d920c",
+  "runtimeCommit": "17662cfb306191499b447af97f0b6d1b9270c8cd",
+  "accessConfigSha256": "9a559f2c59ab77e90e5be8588404d9eda939fbf3837c8be91654a434b3b7a2b7",
+  "wrapperSha256": "321e77e8766d79b8aaeb7a6b58bd0756f6c3b72db027cc4438058ba16c085fc6",
+  "applicationFiles": 509,
+  "linkedFiles": 7694,
+  "linkedBytes": 521848997,
+  "copiedSourceBytes": 0,
+  "checks": [
+    "exact manifest and all delivery/source metadata hashes verified",
+    "read-only info",
+    "actual prepared describe at metadata-only all-physics entrance",
+    "actual existing CLI compute at same metadata-only entrance"
+  ],
+  "entryDestinationId": "classification:physics",
+  "entryChoiceCount": 17,
+  "sourceAccountingComplete": false,
+  "reservedQuestionCount": 43,
+  "unresolvedQuestionCount": 31,
+  "allocatedQuestionCount": 8399,
+  "reservedContentInspected": false,
+  "evaluationQueriesExecuted": 0,
+  "modelCalls": 0,
+  "browserMutationTest": false,
+  "publicInstalled": false,
+  "staticEntry": "application/atlas/manifest.json",
+  "privateAccessDirectory": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/integration/native-local/preholdout-access-v1",
+  "readCommand": [
+    "node",
+    "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/integration/native-local/preholdout-access-v1/read.mjs",
+    "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/integration/native-local/preholdout-access-v1/access.json"
+  ],
+  "limitations": [
+    "Static entry is checksummed JSON, not generated HTML.",
+    "Pre-holdout package remains blocked by final-release guards.",
+    "Fresh navigator judgments and rendered-browser/public acceptance remain separate.",
+    "Linked source files are immutable inputs; never write or chmod them."
+  ]
+}

@@ -3,9 +3,9 @@ from pathlib import Path
 spec=importlib.util.spec_from_file_location('final_stage',Path(__file__).with_name('stage.py'));stage_module=importlib.util.module_from_spec(spec);spec.loader.exec_module(stage_module)
 sha=lambda data:hashlib.sha256(data).hexdigest()
 class IngressTests(unittest.TestCase):
- def envelope(self,root,partial=False,wrong_home=False):
+ def envelope(self,root,partial=False,wrong_home=False,incomplete=False,reserved=0):
   files={p:b'test' for p in ['package.json','package-lock.json','wrangler.toml','scripts/build-site.mjs','scripts/site-check.mjs','bin/navigate.mjs','bin/mcp-navigator.mjs','skills/physics-navigator/SKILL.md','research/q025/integration/agent-browser-observer.py']}
-  manifest={'atlasId':'test','atlasVersion':'v1','entryDestinationId':'physics','scope':{'partialRehearsal':partial,'unallocatedQuestionCount':43}};body=json.dumps(manifest).encode();files['data/atlas/test/v1/manifest.json']=body
+  manifest={'atlasId':'test','atlasVersion':'v1','entryDestinationId':'physics','scope':{'partialRehearsal':partial,'unallocatedQuestionCount':43,'sourceAccountingComplete':not incomplete,'reservedQuestionCount':reserved}};body=json.dumps(manifest).encode();files['data/atlas/test/v1/manifest.json']=body
   files['data/atlas/index.json']=json.dumps({'home':{'atlasId':'test','atlasVersion':'v1','destinationId':'wrong'if wrong_home else'physics'}}).encode();files['accounting.json']=b'{"unresolvedFacets":43,"allSourcesAccounted":true}'
   archive=root/'application.tar.gz'
   with tarfile.open(archive,'w:gz')as tar:
@@ -16,7 +16,7 @@ class IngressTests(unittest.TestCase):
   with tempfile.TemporaryDirectory()as tmp:
    root=Path(tmp);receipt=stage_module.stage(self.envelope(root),root/'project');self.assertEqual(receipt['verifiedFileCount'],12)
  def test_partial_and_wrong_explicit_home_fail(self):
-  for options in [{'partial':True},{'wrong_home':True}]:
+  for options in [{'partial':True},{'wrong_home':True},{'incomplete':True},{'reserved':43}]:
    with self.subTest(options=options),tempfile.TemporaryDirectory()as tmp:
     root=Path(tmp)
     with self.assertRaises(AssertionError):stage_module.stage(self.envelope(root,**options),root/'project')

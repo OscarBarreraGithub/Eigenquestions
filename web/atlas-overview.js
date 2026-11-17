@@ -1,7 +1,7 @@
 import {loadAtlas,createAtlasNavigator,atlasAddress} from '/lib/geometry/prepared-atlas.mjs';
 import {placeChartLabel} from '/chart-labels.mjs';
 import {classificationChartDisplay} from '/classification-layout.mjs';
-import {detailOverviewFrontier} from '/detail-frontier.mjs';
+import {detailOverviewFrontier,validateNavigationSchematic} from '/detail-frontier.mjs';
 import {destinationPresentation} from '/lib/protocol/display-editorial.mjs';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;};
@@ -52,7 +52,7 @@ function draw(){
     group.addEventListener('click',()=>select(id));group.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();select(id);}});map.append(group);
   });
   fit();
-  $('atlas-map-caption').textContent=space==='classification'?'Physics classification: links follow the recorded vocabulary hierarchy. Positions organize labels; distances are not physical or embedding distances. The detailed source atlas is a separate chart.':'Detailed source chart: positions use the recorded source geometry. Gray links are geometric affinities, not scientific implications. Unplotted destinations remain accessible in the list and text explorer. Broader classifications have a separate coordinate system.';
+  $('atlas-map-caption').textContent=chart.kind==='navigation_schematic'?'Scientific directions — schematic; distances have no meaning. Lines are recorded collection routes, not scientific containment or physical implications. Fine exploration remains in the text destinations and source explorer.':space==='classification'?'Physics classification: links follow the recorded vocabulary hierarchy. Positions organize labels; distances are not physical or embedding distances. The detailed source atlas is a separate chart.':'Detailed source chart: positions use the recorded source geometry. Gray links are geometric affinities, not scientific implications. Unplotted destinations remain accessible in the list and text explorer. Broader classifications have a separate coordinate system.';
   $('atlas-map-provenance').textContent=JSON.stringify({layoutId:chart.layoutId,kind:chart.kind,provenance:chart.provenance,displayAdjustment:space==='classification'?'Full labels occupy nonoverlapping screen cards assigned near the recorded positions by minimum total displacement. Stored coordinates and classification links are unchanged; screen distances have no metric meaning.':undefined,diagnostics:chart.diagnostics,limitations:chart.limitations},null,2);
 }
 function drawClassification(chart){
@@ -96,7 +96,7 @@ function renderTopics(){
 }
 function switchSpace(next,destination){
   space=next;classificationAnchor=null;$('atlas-space').value=space;const chart=layout();points=new Map();
-  if(chart){const expected=space==='classification'?'classification_graph':'diffusion_chart';if(chart.kind!==expected||!Array.isArray(chart.nodes)||chart.nodes.length>1500)throw new Error('Unsupported or oversized map; use the static catalog.');for(const p of chart.nodes){if(!records.has(p.destinationId)||!Number.isFinite(p.x)||!Number.isFinite(p.y))throw new Error('Invalid map destination or coordinate');points.set(p.destinationId,p);}for(const edge of chart.edges||[])if(edge.kind!==(space==='classification'?'classification':'geometric_affinity'))throw new Error('Unexpected map relation type');}
+  if(chart){const allowed=space==='classification'?['classification_graph']:['diffusion_chart','navigation_schematic'];if(!allowed.includes(chart.kind)||!Array.isArray(chart.nodes)||chart.nodes.length>1500)throw new Error('Unsupported or oversized map; use the static catalog.');for(const p of chart.nodes){if(!records.has(p.destinationId)||!Number.isFinite(p.x)||!Number.isFinite(p.y))throw new Error('Invalid map destination or coordinate');points.set(p.destinationId,p);}if(chart.kind==='navigation_schematic')validateNavigationSchematic(chart,records,loaded.catalog.relations);else for(const edge of chart.edges||[])if(edge.kind!==(space==='classification'?'classification':'geometric_affinity'))throw new Error('Unexpected map relation type');}
   const fallback=space==='classification'?chart?.entryDestinationId||loaded.manifest.entryDestinationId:chart?.entryDestinationId||loaded.catalog.orientation?.portals?.find(p=>p.target==='detail')?.entryDestinationId||roots()[0]||loaded.manifest.entryDestinationId;
   select(destination&&records.has(destination)?destination:fallback);
 }

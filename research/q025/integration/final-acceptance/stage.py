@@ -47,6 +47,7 @@ def stage(config_path,project):
  assert digest(atlas/'manifest.json')==config['manifestSha256'],'Wrong scientific package'
  manifest=json.loads((atlas/'manifest.json').read_text());scope=manifest['scope']
  assert scope.get('partialRehearsal') is not True and scope.get('partialCandidate') is not True,'Partial package is not final acceptance'
+ assert scope.get('sourceAccountingComplete')is True and scope.get('reservedQuestionCount')==0,'Final QA requires complete source accounting and no reserved cases'
  assert config['releaseAccountingReceipt']['sha256'] and config['releaseAccountingReceipt']['path'],'Final accounting receipt required'
  accounting=config['releaseAccountingReceipt'];assert digest(project/safe_path(accounting['path']))==accounting['sha256'],'Wrong accounting receipt'
  index=json.loads((project/'data/atlas/index.json').read_text())
