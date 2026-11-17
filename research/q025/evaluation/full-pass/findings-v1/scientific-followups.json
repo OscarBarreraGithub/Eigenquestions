@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "q025-scientific-followups/1",
+  "scope": "Development/calibration findings; no held-out evidence consumed and no new theorem, refutation or paper error claimed.",
+  "findings": [
+    {
+      "id": "gauge-charge-bound-sign-followup",
+      "status": "unresolved_source_followup",
+      "question": "How should the charge-bound signs in equations (7.2) and (7.3) be read in the conventions of arXiv:1803.04447?",
+      "paperId": "1803.04447",
+      "evidence": [
+        {
+          "ref": "e19",
+          "kind": "primary",
+          "sourceId": "ev:feb942d064b04b36ecbd24d0a2e707f7",
+          "paperId": "1803.04447",
+          "sourceSha256": "8585859104818c8b57015315189d242916a804f4971ce6c6ea1eb78e2001d62c",
+          "sourceContext": {
+            "path": "papers/c680ea73d3dc2e889f86/reading-order.json",
+            "fileSha256": "4a75c31fe0c25c59c9353fb47b5e69785e953c4b09e2c74e15209c25358b44e8",
+            "pdfPage": 37,
+            "start": 0,
+            "end": 2174,
+            "textSha256": "ed78cb93aac49539d65db113b3ba82ee467f8ede85447fa6325d7f2cd81b4d40",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        }
+      ],
+      "location": "PDF page37, printed page35, section7.1, equations7.2–7.3",
+      "finding": "The supplied reading-order text shows different signs when the stated general bound is followed by its Q=3 specialization. Extraction, printing and convention issues remain unresolved; no correction or paper error is asserted.",
+      "readingLimit": "Archived text only; page image, surrounding full derivation and version history were not inspected.",
+      "reviewSha256": "5e196a3a0caf3706f76b375d05f80df21a0ab1b7e4115b85bf6f316dffbc735e"
+    },
+    {
+      "id": "multifield-dbi-determinant-comparison",
+      "status": "source_scoped_comparison_candidate",
+      "question": "How do the early sharp-turn DBI setup and later full-determinant treatments differ in their perturbation predictions?",
+      "primaryUnitId": "unit:f58c44f782a16f9d0b82fea6f4d1505f7090f9e7efc69e4b8d8a7b782df25b10",
+      "paperId": "0709.3299",
+      "comparisonUnitIds": [
+        "unit:298b889dc866ae123d3a0e70654389025f208f4450f05d9ca8b01f6a67c9f991",
+        "unit:5b9429b74df830760fe197f64c3c7830f3ae6c59e45df1ee2d048369fd986854"
+      ],
+      "evidence": [
+        {
+          "ref": "e11",
+          "kind": "primary",
+          "sourceId": "ev:82eeeb121be9a0eb853ee249bb1c56f9",
+          "paperId": "0709.3299",
+          "sourceSha256": "68e6e2a7c12e0cdc1e5ffc75f1223d880d07c3be860c3bf9fcef3fb5ceb106d1",
+          "sourceContext": {
+            "path": "papers/28875e968ccbfbcd7578/reading-order.json",
+            "fileSha256": "9a2dc63f6a666b3112fe224b9c65319e489c51d95ebce6204eb823721d6ffaf8",
+            "pdfPage": 1,
+            "start": 102,
+            "end": 3498,
+            "textSha256": "7f5f993c15448669b1e78960c4a9409d9cd43a31395499a985d6f6d65c7bd8c3",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "e13",
+          "kind": "primary",
+          "sourceId": "ev:b88ab034234088e1b71934de788d1ba4",
+          "paperId": "0709.3299",
+          "sourceSha256": "68e6e2a7c12e0cdc1e5ffc75f1223d880d07c3be860c3bf9fcef3fb5ceb106d1",
+          "sourceContext": {
+            "path": "papers/28875e968ccbfbcd7578/reading-order.json",
+            "fileSha256": "9a2dc63f6a666b3112fe224b9c65319e489c51d95ebce6204eb823721d6ffaf8",
+            "pdfPage": 1,
+            "start": 1299,
+            "end": 4473,
+            "textSha256": "37f1389c2f803195d8094a19172cc996ab95923bde5b484195827fc803843373",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+          }
+        },
+        {
+          "ref": "d21",
+          "kind": "description",
+          "unitIndex": 21,
+          "unitId": "unit:298b889dc866ae123d3a0e70654389025f208f4450f05d9ca8b01f6a67c9f991",
+          "textSha256": "0947b16dc986e3153c656fdbe31b6eb19aaf78288eb283d48f8d0e8d1759191f"
+        },
+        {
+          "ref": "d47",
+          "kind": "description",
+          "unitIndex": 47,
+          "unitId": "unit:5b9429b74df830760fe197f64c3c7830f3ae6c59e45df1ee2d048369fd986854",
+          "textSha256": "57005e64eae83add09dc8927a8a9e9d2af6ff4af1cce7dcee930af631d2c5284"
+        }
+      ],
+      "finding": "The reviewer explicitly cites the two other descriptions as comparisons to the primary setup. Those references remain cross-unit contextual evidence, not premises or primary reading for the source row. No disagreement is resolved here.",
+      "readingLimit": "Own supplied primary excerpts plus the two other descriptions; no complete action or perturbation calculation compared.",
+      "originalFailedReceiptSha256": "71f954da728e84109dc5ec73fcdc134fa90e5faaf2493d839106a43ddaf70e3d"
+    },
+    {
+      "id": "compound-compactification-inverse-attractor-question",
+      "status": "fine_identity_split_candidate",
+      "unitId": "unit:ade68997314b20e6fa12b920c3f53cca37dadcc9b6d6b8eab510c7dba0aff90d",
+      "paperId": "0809.5149",
+      "evidence": [
+        {
+          "ref": "d121",
+          "kind": "description",
+          "unitIndex": 121,
+          "unitId": "unit:ade68997314b20e6fa12b920c3f53cca37dadcc9b6d6b8eab510c7dba0aff90d",
+          "textSha256": "26b3c9b4456fb895607f8206502d83a5164e0579c44da276ad44c2fd8bf43aee"
+        }
+      ],
+      "finding": "One frozen source description contains compactification/inflation and inverse black-hole-attractor targets. The source facet must remain intact, but it can support multiple separately scoped questions. A source singleton is not proof of atomicity or canonical uniqueness.",
+      "requiredFollowup": "Review each target and premise separately; use typed many-to-many source contributions, and retain an unresolved identity if the available evidence does not support a clean split.",
+      "readingLimit": "Description-level atomicity observation, not verification of the source calculations.",
+      "reviewSha256": "45805c7addb4fbab2254768c8c57c9d8a3a34c591010ed3ead8d2ee415ab7467"
+    }
+  ]
+}

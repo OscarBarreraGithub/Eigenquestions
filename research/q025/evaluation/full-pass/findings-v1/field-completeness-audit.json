@@ -1,0 +1,3254 @@
+{
+  "schemaVersion": "q025-native-field-completeness-audit/2",
+  "observedAt": "2026-11-17T11:04:31.455783+00:00",
+  "counts": {
+    "nativeReplies": 63,
+    "allStringFieldsScanned": 81504,
+    "flaggedFields": 136,
+    "fieldsAtCap": 93,
+    "factorQualificationsAtCap": 25,
+    "factor_qualificationFlags": 25,
+    "other_review_annotationFlags": 81,
+    "admission_justificationFlags": 30
+  },
+  "inspectedInputs": [
+    {
+      "jobId": "leaf-0594a24f01f9b493cef4-challenge",
+      "rawSha256": "90cedcb4f3b493dfb9c3dd108264595e3a86d7ae46bf0174dc9b532a510b9598",
+      "receiptSha256": "07b9eac2b2748626e237cb7852ed49d99aa39a12a9afcd254123e84cbdb9414c"
+    },
+    {
+      "jobId": "leaf-0594a24f01f9b493cef4-proposal",
+      "rawSha256": "a5a714066f8bbc96c3b1186ac9a78aeabbd4d30f9d92e4b0bd42fe3274871c0c",
+      "receiptSha256": "b6a90b40107978bf158ac744ae5bbe8b5c58a2b185b681271617303dd1d56909"
+    },
+    {
+      "jobId": "leaf-0dd2c748860e78df66b5-challenge",
+      "rawSha256": "cf0832a54eb2c2956e1bb806e25880edda1ba5bcc0a403db07ac97bf351b4854",
+      "receiptSha256": "196ce23801cde449a9ed656893c50bb3c23308525a327c58aaa7e2fac048c4b0"
+    },
+    {
+      "jobId": "leaf-0dd2c748860e78df66b5-proposal",
+      "rawSha256": "7eab3dd8722ff9bb94c3c3ffaca44497e40b0476f175eabea96e1ec900f86ba3",
+      "receiptSha256": "cbc7ced8927e4e25ebad0a54f53a3950a9dd20416edb3009a00f67390813c3c1"
+    },
+    {
+      "jobId": "leaf-134e6a0b7019801adad3-challenge",
+      "rawSha256": "f3049a188bbd1f236f42c879e3a9eeb780b632ba65304fc3f5d763ff7b214e56",
+      "receiptSha256": "fb5e6a1d9d72eb7247e3104c2578094952e1f934ddfcf8ae8398e8db33faf9c3"
+    },
+    {
+      "jobId": "leaf-134e6a0b7019801adad3-proposal",
+      "rawSha256": "96a6d462e2f1ad0cce9993e878975b8d4dd7e4f698f46088c34888121951a330",
+      "receiptSha256": "3e90f6ff9bfd8d23a071eff76fc2a8148c31ed9e6c175cbc76b9b4b39f7968ee"
+    },
+    {
+      "jobId": "leaf-1ac6a9be121832bace66-challenge",
+      "rawSha256": "c43e666c91260c7fb780a2b5ddc22855d9fef1d3b3271be4e9c69b16372bd609",
+      "receiptSha256": "26dc484894fab5d5f37d736c43570864c7dc6b2bfaafc2b89ab823319245ec54"
+    },
+    {
+      "jobId": "leaf-1ac6a9be121832bace66-proposal",
+      "rawSha256": "4d5133f804c37d3889f3705bfbf1faa9543ad94200f0749e41ac4c13ad0bcc68",
+      "receiptSha256": "badb2013b1185a3dfd81cef1c8c09de5decacb7320c286458216b5bbd8d9b70d"
+    },
+    {
+      "jobId": "leaf-1d046938b25365a62fba-challenge",
+      "rawSha256": "55bcdf27e20daac2e215de8d05e871b6387ce52a8311cd8537c4d27ff1c138fe",
+      "receiptSha256": "a793d53d5c9b731734c641a31a20c3ac0f70e522c46ac3f1ff843b8ad6f5ba2d"
+    },
+    {
+      "jobId": "leaf-1d046938b25365a62fba-proposal",
+      "rawSha256": "dec5f0a673d8a284a11d764c9b1c8e8b49db93d9b159913c1db1de888af13d64",
+      "receiptSha256": "7acb832ce18cdad00530a0fd241f0dc9303985145688cca5d3ed7fa819b7a494"
+    },
+    {
+      "jobId": "leaf-248bde69de2c0409078e-proposal",
+      "rawSha256": "0f41a7711330f5bac40243940bdb61ffec8d320e2133cfc8c445282300f2e996",
+      "receiptSha256": "95978deec84cad7dadbce32dd8629d3eb5d24e59ec12cbeeef4558c483831d20"
+    },
+    {
+      "jobId": "leaf-2dad2cf3c52909259c00-proposal",
+      "rawSha256": "c701e2a3f58d5a940f1b86cfa8af7faed1cc32144fdc27cbf332e2cfdbc880c3",
+      "receiptSha256": "deadc33599ce189ba7ccf1de0074dc23de2114a3c25b9d15551c13b66792776b"
+    },
+    {
+      "jobId": "leaf-3e586699180f4bb42528-challenge",
+      "rawSha256": "abb5d5ca85d46a19fa18e159947e9531c1c0efa1f0de757d35897185ac5ec4b2",
+      "receiptSha256": "23faf08f7fd460456281a71de460efc4bd549f3165652d91b570f631f01948c5"
+    },
+    {
+      "jobId": "leaf-3e586699180f4bb42528-proposal",
+      "rawSha256": "66eb39ae5f1d379c091a2ad6e15a41ed5ec3cd985c45139156bf8a9d6a855824",
+      "receiptSha256": "f9ebfef59a472f4f22549bf0b11897805659f3835ddc87019259264f32a531bf"
+    },
+    {
+      "jobId": "leaf-423440c0413bb3814c19-challenge",
+      "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+      "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+    },
+    {
+      "jobId": "leaf-423440c0413bb3814c19-proposal",
+      "rawSha256": "1ff009551004ebf2994fe292d7ccbe6507b097da04123f87cb0cbf46c6dc9fcb",
+      "receiptSha256": "f2630f90ff86db71fb9b0d41fb25d23fa5dc990fa7c84af37a6dcdf2b9414fb1"
+    },
+    {
+      "jobId": "leaf-4317c30b131ec7fbc5ef-proposal",
+      "rawSha256": "00c108bfb9db39bb6b7b1f7bd16e91dec3a91589650ab86f7e7da04c261b314f",
+      "receiptSha256": "374db99d7fef924b917f01b58c06953ebe6265f1da0ee365746e4100168ea4c9"
+    },
+    {
+      "jobId": "leaf-435f493b9a3a1b52277e-challenge",
+      "rawSha256": "034a59075510dd0346fafd98251c5b675d4029d55d46eb4b4f001d006aafc7e0",
+      "receiptSha256": "b49b1822f637983e8c9c8860c423676231d16be2ddab523ba666fdcd8c73552a"
+    },
+    {
+      "jobId": "leaf-435f493b9a3a1b52277e-proposal",
+      "rawSha256": "a3730f7f3c7296692ada888efa35b7a8205625551d1d50076f166fd06ca60493",
+      "receiptSha256": "5ff6f2c4ab7be14c59ffa5390535cbb7f541e17e2e77c30df9c920965e7ab8b0"
+    },
+    {
+      "jobId": "leaf-48776508c4bd6798ab21-proposal",
+      "rawSha256": "c53c593c42c666f315145e9866008df8a29a48b036417467c00a4b968afab7f6",
+      "receiptSha256": "fe1bb9c25ef8c4750cf5446ff648f08361d803ad734b1328e630e3651c864b9f"
+    },
+    {
+      "jobId": "leaf-48ae6db969bee38e8050-challenge",
+      "rawSha256": "194e0d68b724a2f69e2f6db537075e4579b4d0c181db201fd111d51357966c17",
+      "receiptSha256": "3a5622434e1c9e043fdca10a22afa443b1773b9afdaac4baa135e030e2292e87"
+    },
+    {
+      "jobId": "leaf-48ae6db969bee38e8050-proposal",
+      "rawSha256": "2d950f66e5388f61027dff5d988c0c5977350124d59ded644602085cb010468c",
+      "receiptSha256": "48364e777985cded733d2bdf808d314cc9de3819518000318023048ca8545719"
+    },
+    {
+      "jobId": "leaf-4c7fc4cccbcfee39ef45-challenge",
+      "rawSha256": "6e3ac53b028b40b6c5b04e5f5ca4f7422be55c9cb539d73905aa01fd0cd9355f",
+      "receiptSha256": "6178d2d94ac6bf0da483f57b68b2791de21d86686631f2c7f69d35717c8e49a3"
+    },
+    {
+      "jobId": "leaf-4c7fc4cccbcfee39ef45-proposal",
+      "rawSha256": "b3345f2a5f385df3cd9ad03fcb584e137995ce551af42c531263d1aac63088b2",
+      "receiptSha256": "616449900be73265ec732b38ffbce75b16884671f806413c36a0b3e5ee1f2745"
+    },
+    {
+      "jobId": "leaf-4c962dd12d07e9d303a0-proposal",
+      "rawSha256": "6a544848cee7dfc15d8f3ec1db963de28c05a95bfdba994f1eb36cec6ebc96ee",
+      "receiptSha256": "bbf55c63231ab68e9f0cf168864910d007db9fef535b75089442c09d7ef258ce"
+    },
+    {
+      "jobId": "leaf-54aab275ab4a0ea75137-challenge",
+      "rawSha256": "ef74113bd31cd887f973d0c052ff852a088499252bbf4f781f54b34d3ade45f4",
+      "receiptSha256": "3a7a09373e2b95e2b25a90e7cbde1e461ab48dd7b59c2742c3ae07c8f85ee447"
+    },
+    {
+      "jobId": "leaf-54aab275ab4a0ea75137-proposal",
+      "rawSha256": "23e6db28731cd99d097e94b81877f6bbf618bdda7ce4c03cf33a68801f967e91",
+      "receiptSha256": "f41c9559a34cbb77e3246f18977180d29d5b0f305d1f2dd57e6129fcc43c9c89"
+    },
+    {
+      "jobId": "leaf-56e3a84a9ddbd4b99ab7-challenge",
+      "rawSha256": "ce27df9fbb457619764a44ca6efcf66e2f2b358a8de4d17c7f4e2c04a3bd7570",
+      "receiptSha256": "dd7d9b91193c8bf756616b3610c156aedc02f97bd1472d19a4577c34efaa54b7"
+    },
+    {
+      "jobId": "leaf-56e3a84a9ddbd4b99ab7-proposal",
+      "rawSha256": "30e23e2d26a84cbd5cc6df62eb1b8937afc6706cb2d34dd95759b859656a2438",
+      "receiptSha256": "756ed096d80b0899fb33481106d0aa5a5ed395ae7a3fe09ba3b6d07af1d146f9"
+    },
+    {
+      "jobId": "leaf-5cfdc2682c70266ad55a-proposal",
+      "rawSha256": "045c0e7301f6a7cec08872e23c284125665b9cdfa722a72e022f6b73c9f1f70b",
+      "receiptSha256": "fc767b1adde0513f9c892e60c27ee3dfc678efcb5c37bf001f2a9702e3404816"
+    },
+    {
+      "jobId": "leaf-5ead4e26cf383a1fc84c-challenge",
+      "rawSha256": "ecf9ffe5c6a50a8d1e24397786134f860b0787e070bc4681c677706c5701d13d",
+      "receiptSha256": "75b16122ed2c38bfa6880868a88d101db30a946d5cdc9eb0a60f61a676c3a902"
+    },
+    {
+      "jobId": "leaf-5ead4e26cf383a1fc84c-proposal",
+      "rawSha256": "0bbdafd04430629e0afb6611925b1b54430627652d67acdaf15924cc601e9435",
+      "receiptSha256": "bd622af08f89418810e8776faf73856f814af4a6290c91680f1136dcf5f5797e"
+    },
+    {
+      "jobId": "leaf-6076fa300fd58f6c5261-proposal",
+      "rawSha256": "4638f6538391f0b9153cec71641727bd0135420ea6ce595d2b6cb4894bbf54bb",
+      "receiptSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a"
+    },
+    {
+      "jobId": "leaf-620823287c48f0904333-proposal",
+      "rawSha256": "b2aaf23b25013cff2195ecc19d43d6ca5c4d8878504fe913780ef726f8d7c577",
+      "receiptSha256": "c52d2511fe425f03f69d24009141a89a329fac39458209b7fc3f8b52b0ac13cd"
+    },
+    {
+      "jobId": "leaf-628d4cf06b5d1f3ad38b-challenge",
+      "rawSha256": "09f9c158ccdefe13512288c52b27923a8989454116bc198ba90e9c6f721f7cd7",
+      "receiptSha256": "64f109c6d803dbf6c9b024c1960ff8deb02243dfe533c0e209ffdd888524086d"
+    },
+    {
+      "jobId": "leaf-628d4cf06b5d1f3ad38b-proposal",
+      "rawSha256": "a6b75eeb86830880ba8cf23715509b84d871d5faec476be16b3f6ac0f3d1e7bd",
+      "receiptSha256": "03f4431908fce2c06755ac888a8e104ad732192547f28511a499cebbaec1ea54"
+    },
+    {
+      "jobId": "leaf-6b153a5510a5ae504519-challenge",
+      "rawSha256": "81d991752919c10474c9496fe6254e781ef1372b0c897e17273721f6a4a5e32c",
+      "receiptSha256": "3a79e5b2e002cfdcdf5e6473f6266f396bfd52c868f33a243c94dfb164cf9816"
+    },
+    {
+      "jobId": "leaf-6b153a5510a5ae504519-proposal",
+      "rawSha256": "45b865941b0ad3e14ea542532c96790cea0020233cb188b0fc0d05c2b83b6afb",
+      "receiptSha256": "8ee79f225dc250da1d749e559216703100bfda347ef327fa283f6568117dca38"
+    },
+    {
+      "jobId": "leaf-74dbe506ca55c51eb56a-proposal",
+      "rawSha256": "79d4fa5adf635d4c27e4174d37b418c418ba71aad41026f1ccb73fc5ebed1599",
+      "receiptSha256": "20e97278a293eb0f0a65b6a88d0d8414c25fbdabc8cc49ef938d859de3ee1b8a"
+    },
+    {
+      "jobId": "leaf-917023476c8ed7e389e0-challenge",
+      "rawSha256": "d47fc5145ac9335180ad0bc1bc1153e4bbeb1fe527eb6b4f8523acb0e11dc30d",
+      "receiptSha256": "925b65dc49d9ea1960d90d9b59d9c52b5ee04db43d16b50b28413396d72a71d9"
+    },
+    {
+      "jobId": "leaf-917023476c8ed7e389e0-proposal",
+      "rawSha256": "8ec84517b75ea244c0094b168899ec27177a3e41670e5013de360b293c74b696",
+      "receiptSha256": "01bcc8f01d2786bd7433063891e90fea550dcbe6f9104b41f239b04e88f30d3c"
+    },
+    {
+      "jobId": "leaf-9256206ee3dfc1044991-challenge",
+      "rawSha256": "97517398c1b4bf54a613eeee06def3baad38a3412345318b115fd3a1e28eba42",
+      "receiptSha256": "681f85f8eb5dac9203bd914dce996264a3f5f11fb00c83f282e4d78420ad4da5"
+    },
+    {
+      "jobId": "leaf-9256206ee3dfc1044991-proposal",
+      "rawSha256": "53aa778f746d763bbc0637c6049bfadd8e20f5d45354f8861c5bd93c5e50d425",
+      "receiptSha256": "bcb0ae77aafa4bfd11ab90b7dabafdf3e12f484626fd043ec1995b32c1b314c2"
+    },
+    {
+      "jobId": "leaf-9362f80cb5012707a1cc-challenge",
+      "rawSha256": "c3e78e86683e1841b64af72eae2dc21bc9b71228195a954465f2d99e51528025",
+      "receiptSha256": "6ad4ca38550f2407cfd967b42dbfeca6fc21114b830ab0115ce52335ef94d763"
+    },
+    {
+      "jobId": "leaf-9362f80cb5012707a1cc-proposal",
+      "rawSha256": "19b7441cf0b3c693e2dc3fa7950df3e5497a783079eb1cac8a2b0de48be2ba89",
+      "receiptSha256": "e9312506f46fe682f54fa53d4a3e5bf51e062535885e9ca94be20269a08b3b6e"
+    },
+    {
+      "jobId": "leaf-a81daa8b4bf4c5133863-challenge",
+      "rawSha256": "c964c250e19b88207297b70836d94ba93d7ec932fea2ab73865a4ac80c8e5602",
+      "receiptSha256": "f3fe14a502be5d3e8352e183be43775ed9a4df55497334799bf09f7e5eba2e1d"
+    },
+    {
+      "jobId": "leaf-a81daa8b4bf4c5133863-proposal",
+      "rawSha256": "f6f851702d3fc0419edbf6131c882c501c3c7595cc54a85a850497b39b81cdb1",
+      "receiptSha256": "8b6765c8458f0985c47fc8a15ce8546173404ffbc70b00fd2cc8450f105b7208"
+    },
+    {
+      "jobId": "leaf-b2e631ff674dfe9f6385-challenge",
+      "rawSha256": "dbcec978d0de71c34370b3040193d62f950e75a3e118c439a5bc54c3093c268e",
+      "receiptSha256": "ea78ad73959112ec928de8c455814cff8f6daaffee6f11c9238476478bdde9cc"
+    },
+    {
+      "jobId": "leaf-b2e631ff674dfe9f6385-proposal",
+      "rawSha256": "81020c7c1a78c7233194232ea6ad666bdb29252771471e800aff7971b5d29de0",
+      "receiptSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45"
+    },
+    {
+      "jobId": "leaf-bc459549ef9e43d5a378-challenge",
+      "rawSha256": "668f7fe4feeac98267d7db18ea7d55309887c2fa538ef52736ccb2882c5a0b27",
+      "receiptSha256": "6a33f1de066f31a5f3182cc21e89c642fa8aeb9066b5caed6c417d7b619a85b7"
+    },
+    {
+      "jobId": "leaf-bc459549ef9e43d5a378-proposal",
+      "rawSha256": "4d9aaacf7e78f11c1d600cfcb53009f082e010167f55d7f49b78f43e688da7a7",
+      "receiptSha256": "ea81bb1cc8c7064a37931418ca45f72c98670ffe6670376728230e75d5b0145d"
+    },
+    {
+      "jobId": "leaf-c0f344101cf345acf854-challenge",
+      "rawSha256": "e71afe01afaac6830c02a85bf7033892fbaa70041e398351339425a90dbe5a4d",
+      "receiptSha256": "c1ed2d6037e7b0b66725d5579adadb2ce312fc8b2f9e243519f59b3761bcce18"
+    },
+    {
+      "jobId": "leaf-c0f344101cf345acf854-proposal",
+      "rawSha256": "6346d1b81dee40a87abbfda2a1d33711e3e738fb51d5c82b1ed5b9ccce5964b1",
+      "receiptSha256": "8c635560d8dfc08cb7ede5a9917dbf8a18aa98ed21f6a5c0b612b5027c2e614e"
+    },
+    {
+      "jobId": "leaf-c1e10f17a647735eaa1d-challenge",
+      "rawSha256": "f6e8be053ae3568b2d6ce9f53edc6f120acc2ca2176c4a4ce88475753510f023",
+      "receiptSha256": "7b9f697a5771e41311391e75c34037ac45d9a7dfb921edd9014c143cfcfb5f34"
+    },
+    {
+      "jobId": "leaf-c1e10f17a647735eaa1d-proposal",
+      "rawSha256": "c70718a26690b3aa54e6f76858a92a0f6a8251b6c07d411fa94e75e8ee6c3823",
+      "receiptSha256": "73b2ca176a9daeead85aeae10b24ff11572684d8b072868e438627110262a3c1"
+    },
+    {
+      "jobId": "leaf-eb2b14b890c0c74ca5f6-challenge",
+      "rawSha256": "7a98381eb82f72944a02c224654591fe5e8fd3feab7778aafcacbbb69a5ac01e",
+      "receiptSha256": "c73b87db1bc2d66d1e2b7a1c07695b4e7948ec85852a88257d0373336718c1a6"
+    },
+    {
+      "jobId": "leaf-eb2b14b890c0c74ca5f6-proposal",
+      "rawSha256": "09adf1914b5bccf358373443505e96d24c691f179611d9f25dbd91ff7be70140",
+      "receiptSha256": "863bf92c80578de3b05933aebdf32d260c0a298bf80dac0b2a4770bafbad8049"
+    },
+    {
+      "jobId": "leaf-f78166e21bc03445425d-proposal",
+      "rawSha256": "98b318842ffc7f86f81a6a2818c2015fa7dba952cfa1f6f73e3866495ff1bdd5",
+      "receiptSha256": "51dcffeae458f7c138523905bed0f9515f273058df60b7826e64000ee756780a"
+    },
+    {
+      "jobId": "leaf-fc950e4a565d1ce2661a-challenge",
+      "rawSha256": "7382c5c6b875300c9c5e70c7c2d5c8ca7bc63945f171dd91290df075f0c0487c",
+      "receiptSha256": "db53902ac0f4dccc2c42dd218243a7f3b2527dcf18084adc34fda36551a4d8c0"
+    },
+    {
+      "jobId": "leaf-fc950e4a565d1ce2661a-proposal",
+      "rawSha256": "67eba2dfc85614d3e553103e4cf73d2265d69bf7a8b9545af8f0a44788560f64",
+      "receiptSha256": "34586ca67abaff26d3b892b31ce3d8c3156553a03744d455f5ebc8b06bcc6b6b"
+    },
+    {
+      "jobId": "leaf-fd2851a3260c57d77fb1-challenge",
+      "rawSha256": "8171de30af2b3b0eff9427d435b30a42c19974102eb4c52f8d79b71e75fe730e",
+      "receiptSha256": "855897bec6fc8b0334ea070b7345c1e07a390e32934ecbf26d2daa77a3f970f6"
+    },
+    {
+      "jobId": "leaf-fd2851a3260c57d77fb1-proposal",
+      "rawSha256": "8f9f2ed06bb3cdb7bb1eeee3edda290b2189c14b86aa243e7f14ce29a2bb7596",
+      "receiptSha256": "f35f62cc171ef0281ff278d37b0abbd1a7925a2660f68d4c03ebdcb558a64410"
+    },
+    {
+      "jobId": "leaf-fe59991f52eabad350a7-proposal",
+      "rawSha256": "e87467c23928b181f754afff74dde51f19d977c3e44077a226e48027eefa571a",
+      "receiptSha256": "61bfd45822a7cea68a64f3ddc260b6a0784383c1db47aa5e3ee16c4b4f77beca"
+    }
+  ],
+  "findings": [
+    {
+      "jobId": "leaf-0594a24f01f9b493cef4-challenge",
+      "rawSha256": "90cedcb4f3b493dfb9c3dd108264595e3a86d7ae46bf0174dc9b532a510b9598",
+      "receiptSha256": "07b9eac2b2748626e237cb7852ed49d99aa39a12a9afcd254123e84cbdb9414c",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[0].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ive, nonperturbative and threshold effects; α′ Kähler corrections underlie the announced breaking-vɑ",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e8"
+          ],
+          "factorId": "f0",
+          "kind": "method"
+        },
+        {
+          "path": "$.units[10].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "e's nonnegative-CC breaking minima require at least two light moduli; no complete string model is su",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e15",
+            "e19"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-0594a24f01f9b493cef4-proposal",
+      "rawSha256": "a5a714066f8bbc96c3b1186ac9a78aeabbd4d30f9d92e4b0bd42fe3274871c0c",
+      "receiptSha256": "b6a90b40107978bf158ac744ae5bbe8b5c58a2b185b681271617303dd1d56909",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[39].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "rections for the announced nonsupersymmetric vacua. Flux-free low-energy alternatives have extra top",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e8"
+          ],
+          "factorId": "f39",
+          "kind": "method"
+        },
+        {
+          "path": "$.units[10].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "The source requires at least two light moduli for its nonnegative-CC breaking minima, lacks a fullyl",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e15",
+            "e19"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-0dd2c748860e78df66b5-challenge",
+      "rawSha256": "cf0832a54eb2c2956e1bb806e25880edda1ba5bcc0a403db07ac97bf351b4854",
+      "receiptSha256": "196ce23801cde449a9ed656893c50bb3c23308525a327c58aaa7e2fac048c4b0",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[0].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " generally. The statement about then-known examples is dated 2010; localized violations alone do not",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e20",
+            "e27"
+          ]
+        },
+        {
+          "path": "$.units[6].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "mains conditional; o26's formula/image addendum and o27's phase reconstruction are unverified object",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e28",
+            "e4",
+            "e9",
+            "o26",
+            "o27",
+            "o29"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-0dd2c748860e78df66b5-proposal",
+      "rawSha256": "7eab3dd8722ff9bb94c3c3ffaca44497e40b0476f175eabea96e1ec900f86ba3",
+      "receiptSha256": "cbc7ced8927e4e25ebad0a54f53a3950a9dd20416edb3009a00f67390813c3c1",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[0].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "paces generally, with de Sitter as a motivation. The 2010 statement about then-known examples is not",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e20",
+            "e27"
+          ]
+        },
+        {
+          "path": "$.units[14].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": ". Reported dS vacua are unstable; embedding is unestablished and the cited FL bound is inapplicable.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e19",
+            "e5"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-134e6a0b7019801adad3-challenge",
+      "rawSha256": "f3049a188bbd1f236f42c879e3a9eeb780b632ba65304fc3f5d763ff7b214e56",
+      "receiptSha256": "fb5e6a1d9d72eb7247e3104c2578094952e1f934ddfcf8ae8398e8db33faf9c3",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[7].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "th a heavy orthogonal direction. One nonperturbative effect fails to supply both inflation and exit;",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e14",
+            "e17",
+            "e19"
+          ]
+        },
+        {
+          "path": "$.units[13].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "gher period corrections and mass hierarchies; equivalence with the negligible-warping question is un",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": []
+        },
+        {
+          "path": "$.units[23].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": " Closed-string stabilization, largest-cycle localization and the axion truncation remain model-local",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e4",
+            "e5"
+          ]
+        },
+        {
+          "path": "$.units[24].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "all volume inflates in a K3-fibred geometry; robustness concerns specified winding-loop and F4 terms",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e12",
+            "e16"
+          ]
+        },
+        {
+          "path": "$.units[39].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "xample simultaneously stabilizing the axio-dilaton and all complex-structure moduli, which the sourc",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e11",
+            "e15"
+          ]
+        },
+        {
+          "path": "$.cardReviews[0].note",
+          "length": 159,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "membership does not define a homogeneous inflaton sector or establish scientific closure. Its usable",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d2",
+            "d15",
+            "d19",
+            "d21",
+            "d28",
+            "e4",
+            "e10",
+            "e12",
+            "e18",
+            "e22"
+          ],
+          "cardId": "r"
+        },
+        {
+          "path": "$.cardReviews[1].note",
+          "length": 158,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "anism alternatives. Mixed volume–axion motion, distinct racetrack exponentials and overall-volume in",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d5",
+            "d6",
+            "d10",
+            "d17",
+            "d26",
+            "d33",
+            "e14",
+            "e17",
+            "e0",
+            "e12",
+            "e22"
+          ],
+          "cardId": "p0"
+        },
+        {
+          "path": "$.cardReviews[2].note",
+          "length": 159,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ported. Two light fields, all retained heavy/light fields, approximate spectra and transient three-f",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d0",
+            "d3",
+            "d25",
+            "d36",
+            "e10",
+            "e21"
+          ],
+          "cardId": "p1"
+        },
+        {
+          "path": "$.cardReviews[3].note",
+          "length": 159,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "trailing_space_or_hyphen",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "culations from inflationary construction. The 2024 robustness test covers identified terms; the BHP ",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d19",
+            "d20",
+            "d34",
+            "e12",
+            "e16",
+            "e15"
+          ],
+          "cardId": "p2"
+        },
+        {
+          "path": "$.cardReviews[4].note",
+          "length": 158,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "oundaries: transforming only K changes the specified construction, positive-energy rolling is not au",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d1",
+            "d14",
+            "d15",
+            "d18",
+            "d21",
+            "e4",
+            "e5",
+            "o15",
+            "o34"
+          ],
+          "cardId": "p3"
+        },
+        {
+          "path": "$.cardReviews[5].note",
+          "length": 158,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": " sectors without identifying them. The card correctly leaves the chaotic inflaton unspecified and pr",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d8",
+            "d11",
+            "d12",
+            "d13",
+            "d31",
+            "e4",
+            "e5",
+            "e1",
+            "e8",
+            "e11",
+            "e15"
+          ],
+          "cardId": "p4"
+        },
+        {
+          "path": "$.cardReviews[6].note",
+          "length": 158,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "erview target. Field count, geometry and individual bounds remain distinct; the proceedings does not",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d27",
+            "d29",
+            "d30"
+          ],
+          "cardId": "p5"
+        },
+        {
+          "path": "$.cardReviews[7].note",
+          "length": 159,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ssary, particularly for the unification question. Compound sources support separate vacuum and infla",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d2",
+            "d12",
+            "d13",
+            "d17",
+            "d31",
+            "e6",
+            "e3"
+          ],
+          "cardId": "p6"
+        },
+        {
+          "path": "$.cardReviews[8].note",
+          "length": 159,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": " explicit but different targets. The card correctly avoids inferring one model realizing every epoch",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d11",
+            "d28",
+            "e3",
+            "e18"
+          ],
+          "cardId": "p7"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-134e6a0b7019801adad3-proposal",
+      "rawSha256": "96a6d462e2f1ad0cce9993e878975b8d4dd7e4f698f46088c34888121951a330",
+      "receiptSha256": "3e90f6ff9bfd8d23a071eff76fc2a8148c31ed9e6c175cbc76b9b4b39f7968ee",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[24].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "all volume is the inflaton in a K3-fibred geometry; the correction test is an explicitly identified,",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e12",
+            "e16"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-1ac6a9be121832bace66-challenge",
+      "rawSha256": "c43e666c91260c7fb780a2b5ddc22855d9fef1d3b3271be4e9c69b16372bd609",
+      "receiptSha256": "26dc484894fab5d5f37d736c43570864c7dc6b2bfaafc2b89ab823319245ec54",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[17].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "rgets. Transforming away axions also changes the embedding tensor; the stability spectrum is not in,",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e3",
+            "e7",
+            "e22"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-1ac6a9be121832bace66-proposal",
+      "rawSha256": "4d5133f804c37d3889f3705bfbf1faa9543ad94200f0749e41ac4c13ad0bcc68",
+      "receiptSha256": "badb2013b1185a3dfd81cef1c8c09de5decacb7320c286458216b5bbd8d9b70d",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[58].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "istinct targets; gauge-invariance constraints do not alone certify a universal consistent truncation",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e4",
+            "e10",
+            "e26"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-1d046938b25365a62fba-challenge",
+      "rawSha256": "55bcdf27e20daac2e215de8d05e871b6387ce52a8311cd8537c4d27ff1c138fe",
+      "receiptSha256": "a793d53d5c9b731734c641a31a20c3ac0f70e522c46ac3f1ff843b8ad6f5ba2d",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[22].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " noncompact gauging, FI terms and relative rotations; its ingredients are not universal necessities.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e20",
+            "e22"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-1d046938b25365a62fba-proposal",
+      "rawSha256": "dec5f0a673d8a284a11d764c9b1c8e8b49db93d9b159913c1db1de888af13d64",
+      "receiptSha256": "7acb832ce18cdad00530a0fd241f0dc9303985145688cca5d3ed7fa819b7a494",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[47].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "age length when N_s is bounded and N_f² has a positive lower bound. This is necessary for that route",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e5",
+            "e19",
+            "o10"
+          ],
+          "factorId": "f47",
+          "kind": "regime"
+        },
+        {
+          "path": "$.units[28].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "rarchies remain a loophole; satisfying that escape condition does not construct a controlled vacuum.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e19",
+            "e5"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-3e586699180f4bb42528-challenge",
+      "rawSha256": "abb5d5ca85d46a19fa18e159947e9531c1c0efa1f0de757d35897185ac5ec4b2",
+      "receiptSha256": "23faf08f7fd460456281a71de460efc4bd549f3165652d91b570f631f01948c5",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[18].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "evel moduli and quantum-dependent fate. d19 is other-unit criticism context, not this unit's primary",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e13",
+            "e24",
+            "e26",
+            "d19"
+          ]
+        },
+        {
+          "path": "$.units[33].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "trailing_space_or_hyphen"
+          ],
+          "suffix": "y-breaking, source and antibrane-decay control, without correction-suppression criteria. The target ",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": []
+        },
+        {
+          "path": "$.cardReviews[0].note",
+          "length": 159,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "amily with its stated exclusions. Its breadth is supported independently of numerical membership; it",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d8",
+            "d33",
+            "d45",
+            "d47",
+            "d48",
+            "e13",
+            "e8",
+            "e23"
+          ],
+          "cardId": "r"
+        },
+        {
+          "path": "$.cardReviews[1].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "support this overview. Necessary conditions, numerical critical points and complete solutions remain",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d2",
+            "d4",
+            "d8",
+            "d10",
+            "d11",
+            "d33",
+            "d39",
+            "e13"
+          ],
+          "cardId": "p0"
+        },
+        {
+          "path": "$.cardReviews[2].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "on-two cancellation, local horizons and finite thickness. The excerpts do not adjudicate the O8 disp",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e18",
+            "e21",
+            "e7",
+            "e16",
+            "d28",
+            "d30",
+            "d46"
+          ],
+          "cardId": "p1"
+        },
+        {
+          "path": "$.cardReviews[3].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "tion dynamics are valid distinct targets within this overview. e6 expressly reports failure to prove",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d16",
+            "d24",
+            "d33",
+            "d35",
+            "d36",
+            "d48",
+            "e6"
+          ],
+          "cardId": "p2"
+        },
+        {
+          "path": "$.cardReviews[4].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "scale-separation distinctions are supported. The local factor correction on unit 33 does not require",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d15",
+            "d17",
+            "d22",
+            "d32",
+            "e0",
+            "e11",
+            "e22",
+            "e5"
+          ],
+          "cardId": "p3"
+        },
+        {
+          "path": "$.cardReviews[6].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "fic slopes from the missing general EFT derivation. Membrane extremality remains a conditional route",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d3",
+            "d43",
+            "e9",
+            "e12",
+            "e20"
+          ],
+          "cardId": "p5"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-3e586699180f4bb42528-proposal",
+      "rawSha256": "66eb39ae5f1d379c091a2ad6e15a41ed5ec3cd985c45139156bf8a9d6a855824",
+      "receiptSha256": "f9ebfef59a472f4f22549bf0b11897805659f3835ddc87019259264f32a531bf",
+      "origin": "imported_native_output",
+      "fields": [
+        {
+          "path": "$.units[19].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "tion and also tests Romans-mass-only AdS; added higher-codimension sources are outside that stated s",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e15",
+            "e16"
+          ]
+        },
+        {
+          "path": "$.units[44].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "nterexample is claimed. Reported tachyons and a co-scaling KK tower separate this target from metast",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e5",
+            "e11",
+            "e22"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-423440c0413bb3814c19-challenge",
+      "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+      "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[1].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ve terms support the reported 10 TeV gravitino example; this alone does not establish a viable super",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e16",
+            "e1"
+          ]
+        },
+        {
+          "path": "$.units[4].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "preserves that compound question; the excerpts report an explicit example without supplying its full",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e13",
+            "e18",
+            "e6"
+          ]
+        },
+        {
+          "path": "$.cardReviews[0].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "trailing_space_or_hyphen",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ation. Numerical membership does not establish scientific unity; the explicit comparison and method ",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d0",
+            "d3",
+            "d5",
+            "d8",
+            "d11",
+            "e16",
+            "e5",
+            "e13",
+            "e0",
+            "e15",
+            "e22",
+            "e23",
+            "e21",
+            "e4"
+          ],
+          "cardId": "r"
+        },
+        {
+          "path": "$.cardReviews[1].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "stability and scales. It accommodates the single-modulus limitations and purely perturbative alterna",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e16",
+            "e22",
+            "e17",
+            "e4"
+          ],
+          "cardId": "p0"
+        },
+        {
+          "path": "$.cardReviews[2].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "divisor requirements, visible sector and inflation distinguish the constructions. Announced examples",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d2",
+            "e13",
+            "e18",
+            "e6",
+            "e0",
+            "e3"
+          ],
+          "cardId": "p1"
+        },
+        {
+          "path": "$.cardReviews[3].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ucture and blow-up mechanisms. Its explicit description-only limits prevent claims of verified traje",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d0",
+            "d3",
+            "e6",
+            "e13",
+            "e25"
+          ],
+          "cardId": "p2"
+        },
+        {
+          "path": "$.cardReviews[4].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "d questions. The specified EDE parameters are source targets, and the fourth challenge—explicit glob",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e15",
+            "e8",
+            "e24",
+            "d11"
+          ],
+          "cardId": "p3"
+        },
+        {
+          "path": "$.cardReviews[5].note",
+          "length": 157,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "LP phenomenology are supported targets. The no-go hypotheses and present observational status remain",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e25",
+            "e23"
+          ],
+          "cardId": "p4"
+        },
+        {
+          "path": "$.cardReviews[6].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "S3 stabilization from dS indications, shape-modulus problems and quantization obstacles to scale sep",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e5",
+            "e11"
+          ],
+          "cardId": "p5"
+        },
+        {
+          "path": "$.cardReviews[7].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ological overview. The broader IIB convention source contributes by overlap; neither canonical param",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d5",
+            "d8",
+            "e25",
+            "e4"
+          ],
+          "cardId": "p6"
+        },
+        {
+          "path": "$.cardReviews[8].note",
+          "length": 156,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "trailing_space_or_hyphen",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "in IIA/M-theory and conifold dynamics in IIB. Small completion regions qualify the reported generic ",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e21",
+            "e10"
+          ],
+          "cardId": "p7"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-423440c0413bb3814c19-proposal",
+      "rawSha256": "1ff009551004ebf2994fe292d7ccbe6507b097da04123f87cb0cbf46c6dc9fcb",
+      "receiptSha256": "f2630f90ff86db71fb9b0d41fb25d23fa5dc990fa7c84af37a6dcdf2b9414fb1",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[9].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "control, decoupling and tuning challenges are addressed, without establishing all requested outcomes",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e15",
+            "e8"
+          ]
+        },
+        {
+          "path": "$.units[14].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "the conifold-transition sector. Different systems and targets prevent an atomic identity assignment.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e21",
+            "e10"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-435f493b9a3a1b52277e-proposal",
+      "rawSha256": "a3730f7f3c7296692ada888efa35b7a8205625551d1d50076f166fd06ca60493",
+      "receiptSha256": "5ff6f2c4ab7be14c59ffa5390535cbb7f541e17e2e77c30df9c920965e7ab8b0",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[23].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "-gravity limits are alternative future directions. They are not simultaneous assumptions or derived,",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e4",
+            "e16",
+            "e14",
+            "o18",
+            "o19",
+            "o20"
+          ],
+          "factorId": "f23",
+          "kind": "regime"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-48ae6db969bee38e8050-challenge",
+      "rawSha256": "194e0d68b724a2f69e2f6db537075e4579b4d0c181db201fd111d51357966c17",
+      "receiptSha256": "3a5622434e1c9e043fdca10a22afa443b1773b9afdaac4baa135e030e2292e87",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[20].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " remain compound; completeness is sector-relative and nonzero KK contributions are outside the focus",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e16",
+            "e17",
+            "e22"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-4c7fc4cccbcfee39ef45-challenge",
+      "rawSha256": "6e3ac53b028b40b6c5b04e5f5ca4f7422be55c9cb539d73905aa01fd0cd9355f",
+      "receiptSha256": "6178d2d94ac6bf0da483f57b68b2791de21d86686631f2c7f69d35717c8e49a3",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[31].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "erm is not supplied; p3 becomes comparison. Forces, inflation and uplift remain compound targets, om",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": []
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-4c962dd12d07e9d303a0-proposal",
+      "rawSha256": "6a544848cee7dfc15d8f3ec1db963de28c05a95bfdba994f1eb36cec6ebc96ee",
+      "receiptSha256": "bbf55c63231ab68e9f0cf168864910d007db9fef535b75089442c09d7ef258ce",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[78].title",
+          "length": 90,
+          "schemaMaxLength": 90,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "Protected couplings and the H-flux Bianchi identity in minimal eight-dimensional supergrav",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": []
+        },
+        {
+          "path": "$.units[91].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ss. The characteristic gravitational vector is reported for F-theory, not derived as a general low-E",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e9",
+            "e11"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-54aab275ab4a0ea75137-challenge",
+      "rawSha256": "ef74113bd31cd887f973d0c052ff852a088499252bbf4f781f54b34d3ade45f4",
+      "receiptSha256": "3a7a09373e2b95e2b25a90e7cbde1e461ab48dd7b59c2742c3ae07c8f85ee447",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[0].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "e. Earlier index and power displays differ. Within the displayed potential, e23 excludes A_R6≤0, but",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e23",
+            "e22",
+            "o35",
+            "o36",
+            "o37",
+            "o41"
+          ],
+          "factorId": "f0",
+          "kind": "convention"
+        },
+        {
+          "path": "$.units[4].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "a. Integrated equations and retained-mode truncation do not certify localization or a low-energy EFT",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e11",
+            "e10",
+            "e25"
+          ]
+        },
+        {
+          "path": "$.units[7].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": ". Continuous-flux stationary points initially fail full quantization and physical tadpole conditions",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e13",
+            "e19"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-54aab275ab4a0ea75137-proposal",
+      "rawSha256": "23e6db28731cd99d097e94b81877f6bbf618bdda7ce4c03cf33a68801f967e91",
+      "receiptSha256": "f41c9559a34cbb77e3246f18977180d29d5b0f305d1f2dd57e6129fcc43c9c89",
+      "origin": "imported_native_output",
+      "fields": [
+        {
+          "path": "$.factors[42].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "lier index/power displays differ, and e22's negative-curvature sentence conflicts with e23 and the A",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e23",
+            "e22",
+            "o35",
+            "o36",
+            "o37",
+            "o41"
+          ],
+          "factorId": "f42",
+          "kind": "convention"
+        },
+        {
+          "path": "$.factors[44].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "trailing_space_or_hyphen"
+          ],
+          "suffix": "iscussion. Complete conjecture statements and source ansatz are omitted. Curvature frames and the A-",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e12",
+            "e9",
+            "o18",
+            "o19",
+            "o20",
+            "o21",
+            "o22"
+          ],
+          "factorId": "f44",
+          "kind": "assumption"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-56e3a84a9ddbd4b99ab7-challenge",
+      "rawSha256": "ce27df9fbb457619764a44ca6efcf66e2f2b358a8de4d17c7f4e2c04a3bd7570",
+      "receiptSha256": "dd7d9b91193c8bf756616b3610c156aedc02f97bd1472d19a4577c34efaa54b7",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[6].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "ible vector-multiplet effects. Neither uplift terms nor no-scale-breaking Kähler corrections are the",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e6",
+            "e25",
+            "e13"
+          ]
+        },
+        {
+          "path": "$.units[36].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "lly. Compound flavour, rolling-cosmology and conjecture targets involve unstable dS saddles, not a d",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e4",
+            "e5"
+          ]
+        },
+        {
+          "path": "$.cardReviews[0].note",
+          "length": 157,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "merical membership. Ordinary stabilization, failed mechanisms and cosmological applications remain e",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d0",
+            "d1",
+            "d18",
+            "e2",
+            "e4",
+            "e5",
+            "e6",
+            "e19"
+          ],
+          "cardId": "r"
+        },
+        {
+          "path": "$.cardReviews[1].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "onditional reconstruction and sector-coupling methods. Its exclusions correctly retain the one-modul",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d4",
+            "d10",
+            "e6",
+            "e25",
+            "e7",
+            "e10",
+            "e8",
+            "e9"
+          ],
+          "cardId": "p0"
+        },
+        {
+          "path": "$.cardReviews[3].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "uestions. The card correctly avoids deriving class-wide exclusion from one model, assuming tadpole s",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d0",
+            "d1",
+            "d26",
+            "d27",
+            "d28",
+            "d29",
+            "d30",
+            "d33",
+            "d39"
+          ],
+          "cardId": "p2"
+        },
+        {
+          "path": "$.cardReviews[4].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ts fit this scope. The dated KKLT defense is not evidence that subsequent nilpotent, condensate-resp",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e12",
+            "e24",
+            "d21",
+            "d22",
+            "d23"
+          ],
+          "cardId": "p3"
+        },
+        {
+          "path": "$.cardReviews[5].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "from local stability, as stated. Unit 35 also explicitly asks for long-lived vacua and now contribut",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e19",
+            "d2",
+            "d5",
+            "d35",
+            "d38",
+            "d40",
+            "d41"
+          ],
+          "cardId": "p4"
+        },
+        {
+          "path": "$.cardReviews[8].note",
+          "length": 155,
+          "schemaMaxLength": 420,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "calization question, including g=F²Q. No boundary conditions, solution or vacuum-energy uplift follo",
+          "impact": "admission_justification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "d18"
+          ],
+          "cardId": "p7"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-56e3a84a9ddbd4b99ab7-proposal",
+      "rawSha256": "30e23e2d26a84cbd5cc6df62eb1b8937afc6706cb2d34dd95759b859656a2438",
+      "receiptSha256": "756ed096d80b0899fb33481106d0aa5a5ed395ae7a3fe09ba3b6d07af1d146f9",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[51].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "try-dependent; symmetric spaces need O(N) tuning and multiple-no-scale extensions remain future work",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e9"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-5ead4e26cf383a1fc84c-challenge",
+      "rawSha256": "ecf9ffe5c6a50a8d1e24397786134f860b0787e070bc4681c677706c5701d13d",
+      "receiptSha256": "75b16122ed2c38bfa6880868a88d101db30a946d5cdc9eb0a60f61a676c3a902",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[0].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "tator fields and a throat that fits inside the compactification are assumed. Perturbative use also48",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e8",
+            "o22",
+            "o23",
+            "o24",
+            "o30",
+            "g16",
+            "g17",
+            "g18",
+            "g19"
+          ],
+          "factorId": "f0",
+          "kind": "assumption"
+        },
+        {
+          "path": "$.factors[1].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "formulas set Mpl=1. Modulus scalings keep flux data and stated spectator parameters fixed unless a f",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e13",
+            "o48",
+            "o49",
+            "o50",
+            "o51",
+            "o55",
+            "g8",
+            "g9",
+            "g11",
+            "g12"
+          ],
+          "factorId": "f1",
+          "kind": "convention"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-5ead4e26cf383a1fc84c-proposal",
+      "rawSha256": "0bbdafd04430629e0afb6611925b1b54430627652d67acdaf15924cc601e9435",
+      "receiptSha256": "bd622af08f89418810e8776faf73856f814af4a6290c91680f1136dcf5f5797e",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[27].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "axio-dilaton are assumed heavier; the throat must fit. The retained Kähler correction must also be a",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e8",
+            "o22",
+            "o23",
+            "o24",
+            "o30"
+          ],
+          "factorId": "f27",
+          "kind": "assumption"
+        },
+        {
+          "path": "$.factors[28].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "tion between geometric KS deformation and axio-dilaton are retained. Extracted context flags other,未",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e13",
+            "o48",
+            "o49",
+            "o50",
+            "o51",
+            "g8",
+            "g9",
+            "g11",
+            "g12"
+          ],
+          "factorId": "f28",
+          "kind": "convention"
+        },
+        {
+          "path": "$.units[39].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "es. The shortened inflationary throat differs from its ground state; string-theoretic reheating is a",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e9",
+            "e10",
+            "e11"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-6076fa300fd58f6c5261-proposal",
+      "rawSha256": "4638f6538391f0b9153cec71641727bd0135420ea6ce595d2b6cb4894bbf54bb",
+      "receiptSha256": "67e5006756c1ad8f159017948490d50f6e56cbcfedc7653e4ae8077657b0016a",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[34].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "metry is reported for RR flux at the effective-theory level, while the NS case is not readily stated",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e14",
+            "e17"
+          ],
+          "factorId": "f34",
+          "kind": "convention"
+        },
+        {
+          "path": "$.factors[47].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "shes a subtler Sp(N) anomaly with suggested but unspecified cancellation. No detected G2 anomaly is,",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e13"
+          ],
+          "factorId": "f47",
+          "kind": "target"
+        },
+        {
+          "path": "$.units[17].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": ". Classification and diagnostic targets remain compound; modified-WGC tests do not prove universival",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e12"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-628d4cf06b5d1f3ad38b-challenge",
+      "rawSha256": "09f9c158ccdefe13512288c52b27923a8989454116bc198ba90e9c6f721f7cd7",
+      "receiptSha256": "64f109c6d803dbf6c9b024c1960ff8deb02243dfe533c0e209ffdd888524086d",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[17].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "symmetric flux fixing of complex structure and axiodilaton. D-terms alone are insufficient in the no",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e18",
+            "e9"
+          ]
+        },
+        {
+          "path": "$.units[27].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "perturbative in α′, and the affected region may occupy an order-one fraction of the compactification",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": []
+        },
+        {
+          "path": "$.units[36].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ixing sector; large-modulus behavior is runaway and the de Sitter feature is a hill. Uplift is a sep",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e14",
+            "e16",
+            "e17"
+          ]
+        },
+        {
+          "path": "$.units[45].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ve Euler characteristic, further topology and tuned flux are required; no explicit geometry or dynam",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e6",
+            "e24"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-628d4cf06b5d1f3ad38b-proposal",
+      "rawSha256": "a6b75eeb86830880ba8cf23715509b84d871d5faec476be16b3f6ac0f3d1e7bd",
+      "receiptSha256": "03f4431908fce2c06755ac888a8e104ad732192547f28511a499cebbaec1ea54",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[17].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "mplex structure and axiodilaton first. D-terms alone are insufficient in the stated zero-charged-VEV",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e18",
+            "e9"
+          ]
+        },
+        {
+          "path": "$.units[36].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ixing sector. Large-modulus behavior is runaway; the de Sitter feature is a hill. Uplift is a later,",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e14",
+            "e16",
+            "e17"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-6b153a5510a5ae504519-challenge",
+      "rawSha256": "81d991752919c10474c9496fe6254e781ef1372b0c897e17273721f6a4a5e32c",
+      "receiptSha256": "3a79e5b2e002cfdcdf5e6473f6266f396bfd52c868f33a243c94dfb164cf9816",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[0].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "o not by themselves establish coupling to dynamical four-dimensional supergravity. Replaces pf1 only",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e23",
+            "e13",
+            "d8",
+            "e4",
+            "e18"
+          ],
+          "factorId": "f0",
+          "kind": "framework"
+        },
+        {
+          "path": "$.factors[1].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "rgravity units belong to extracted setting context. Independent effective b,c scans do not establish",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e26",
+            "o29",
+            "o31",
+            "o32",
+            "o33",
+            "o34",
+            "o37"
+          ],
+          "factorId": "f1",
+          "kind": "convention"
+        },
+        {
+          "path": "$.units[7].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "worldvolume matching without establishing dynamical 4D gravity. Vector/scalar identifications remain",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e13",
+            "e23"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-6b153a5510a5ae504519-proposal",
+      "rawSha256": "45b865941b0ad3e14ea542532c96790cea0020233cb188b0fc0d05c2b83b6afb",
+      "receiptSha256": "8ee79f225dc250da1d749e559216703100bfda347ef327fa283f6568117dca38",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[34].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ity units belong to extracted setting context. Independent effective b,c scans do not establish a UV",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e26",
+            "o29",
+            "o31",
+            "o32",
+            "o33",
+            "o34",
+            "o37"
+          ],
+          "factorId": "f34",
+          "kind": "convention"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-917023476c8ed7e389e0-challenge",
+      "rawSha256": "d47fc5145ac9335180ad0bc1bc1153e4bbeb1fe527eb6b4f8523acb0e11dc30d",
+      "receiptSha256": "925b65dc49d9ea1960d90d9b59d9c52b5ee04db43d16b50b28413396d72a71d9",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[37].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "tion, not an admission requirement for every discussed solution; the stated review excludes slow-run",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e13",
+            "e17"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-917023476c8ed7e389e0-proposal",
+      "rawSha256": "8ec84517b75ea244c0094b168899ec27177a3e41670e5013de360b293c74b696",
+      "receiptSha256": "01bcc8f01d2786bd7433063891e90fea550dcbe6f9104b41f239b04e88f30d3c",
+      "origin": "imported_native_output",
+      "fields": [
+        {
+          "path": "$.factors[44].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "reverify glyph placement from images; the supplied window does not explicitly fix frame and Planck-m",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "o34",
+            "o35",
+            "o36",
+            "o39",
+            "g15"
+          ],
+          "factorId": "f44",
+          "kind": "convention"
+        },
+        {
+          "path": "$.units[19].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "d the stated source setting. Finite controlled vacua remain open; illustrative finite values are not",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e6",
+            "e21",
+            "e20",
+            "g0",
+            "g2"
+          ]
+        },
+        {
+          "path": "$.units[25].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "o even (1,1) directions. Generic D-terms do not certify an uplift or control in that specialization.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e10",
+            "e9",
+            "e26",
+            "g12",
+            "g13",
+            "g15",
+            "g16"
+          ]
+        },
+        {
+          "path": "$.units[37].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "discussed de Sitter solution to admit a lower-dimensional EFT, and excludes slow-roll scenarios from",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e13",
+            "e17"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-9256206ee3dfc1044991-challenge",
+      "rawSha256": "97517398c1b4bf54a613eeee06def3baad38a3412345318b115fd3a1e28eba42",
+      "receiptSha256": "681f85f8eb5dac9203bd914dce996264a3f5f11fb00c83f282e4d78420ad4da5",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[4].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ity remain unsettled. The volume-form flux is an explicit exception to a blanket static-flux reading",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e3",
+            "e18",
+            "e6",
+            "o61",
+            "o62",
+            "o59"
+          ]
+        },
+        {
+          "path": "$.units[13].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " vacuum/state interpretation are separate questions explicitly left open despite the reported count.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e8",
+            "e9",
+            "g35",
+            "o48"
+          ]
+        },
+        {
+          "path": "$.units[23].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "upporting fields. The three-scalar surrogate is explicit graph context, not a full tensor derivation",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e10",
+            "e20",
+            "e23",
+            "g25",
+            "g26",
+            "g29",
+            "o37"
+          ]
+        },
+        {
+          "path": "$.units[28].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " separate reconciliation. The abstract/introduction announces NEC compatibility without a supplied b",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e19",
+            "e22"
+          ]
+        },
+        {
+          "path": "$.units[36].note",
+          "length": 154,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "terminal_function_word"
+          ],
+          "suffix": " in a restricted smeared closed-string problem. General localization and the parallel-source no-go a",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e16",
+            "e7",
+            "o18",
+            "o16",
+            "g48"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-9256206ee3dfc1044991-proposal",
+      "rawSha256": "53aa778f746d763bbc0637c6049bfadd8e20f5d45354f8861c5bd93c5e50d425",
+      "receiptSha256": "bcb0ae77aafa4bfd11ab90b7dabafdf3e12f484626fd043ec1995b32c1b314c2",
+      "origin": "imported_native_output",
+      "fields": [
+        {
+          "path": "$.factors[25].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "imit. Open-string equations, source α′ terms and other corrections excluded by o18 are outside this.",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e7",
+            "e16",
+            "o18"
+          ],
+          "factorId": "f25",
+          "kind": "assumption"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-9362f80cb5012707a1cc-challenge",
+      "rawSha256": "c3e78e86683e1841b64af72eae2dc21bc9b71228195a954465f2d99e51528025",
+      "receiptSha256": "6ad4ca38550f2407cfd967b42dbfeca6fc21114b830ab0115ce52335ef94d763",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[0].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "IIB with O5/O7-planes on different orientifolds of SU(2)×SU(2). Singular supersymmetric limits, a 3,",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e16",
+            "e11"
+          ],
+          "factorId": "f0",
+          "kind": "system"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-9362f80cb5012707a1cc-proposal",
+      "rawSha256": "19b7441cf0b3c693e2dc3fa7950df3e5497a783079eb1cac8a2b0de48be2ba89",
+      "receiptSha256": "e9312506f46fe682f54fa53d4a3e5bf51e062535885e9ca94be20269a08b3b6e",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[9].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ic limits and small SUSY breaking to the instability analysis; this is not an arbitrary-compactmnant",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e16",
+            "e11"
+          ],
+          "factorId": "f9",
+          "kind": "system"
+        },
+        {
+          "path": "$.factors[11].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "trailing_space_or_hyphen"
+          ],
+          "suffix": "ing is absent. Relaxing these conditions supplies possible escape routes, not guaranteed metastable ",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e9",
+            "e14"
+          ],
+          "factorId": "f11",
+          "kind": "assumption"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-b2e631ff674dfe9f6385-challenge",
+      "rawSha256": "dbcec978d0de71c34370b3040193d62f950e75a3e118c439a5bc54c3093c268e",
+      "receiptSha256": "ea78ad73959112ec928de8c455814cff8f6daaffee6f11c9238476478bdde9cc",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[9].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "rent. No breaking premise is supplied; restricted coupling conjectures remain distinct from the negi",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e20",
+            "e1",
+            "e9"
+          ]
+        },
+        {
+          "path": "$.units[26].note",
+          "length": 158,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "trailing_space_or_hyphen"
+          ],
+          "suffix": "wording and infinite canonical excursion require clarification; neither control nor an embedding is ",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e23"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-b2e631ff674dfe9f6385-proposal",
+      "rawSha256": "81020c7c1a78c7233194232ea6ad666bdb29252771471e800aff7971b5d29de0",
+      "receiptSha256": "210a1537fc7f0e08218faad016a738719e21ec0d2cb5a4162d826b53bb838c45",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[38].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ull metric. The extracted context distinguishes fixed-field g→0 from scalar limits and does not find",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e24",
+            "o42",
+            "o43",
+            "g15",
+            "g16"
+          ],
+          "factorId": "f38",
+          "kind": "convention"
+        },
+        {
+          "path": "$.factors[41].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "o dark energy and requires a positive Kähler metric. Separation does not eliminate gravitational cou",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e12",
+            "e19",
+            "g19",
+            "g20",
+            "g21",
+            "g24"
+          ],
+          "factorId": "f41",
+          "kind": "assumption"
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-bc459549ef9e43d5a378-challenge",
+      "rawSha256": "668f7fe4feeac98267d7db18ea7d55309887c2fa538ef52736ccb2882c5a0b27",
+      "receiptSha256": "6a33f1de066f31a5f3182cc21e89c642fa8aeb9066b5caed6c417d7b619a85b7",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[7].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "hysical excitations. The dP2 example need not yield a perturbative heterotic string. Uncertain graph",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e15",
+            "e19"
+          ]
+        },
+        {
+          "path": "$.units[28].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ion, island construction and theta-dependent charges are compound targets; pf52 remains rejected-p 歌",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e10",
+            "e20",
+            "e13"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-c0f344101cf345acf854-challenge",
+      "rawSha256": "e71afe01afaac6830c02a85bf7033892fbaa70041e398351339425a90dbe5a4d",
+      "receiptSha256": "c1ed2d6037e7b0b66725d5579adadb2ce312fc8b2f9e243519f59b3761bcce18",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[10].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "Non-topological fusion specifies only a universal OPE contribution; Chern–Simons arguments require修改",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e14",
+            "e16",
+            "o49"
+          ]
+        },
+        {
+          "path": "$.units[44].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "the stated defect-group data. Repeated abstract text does not independently verify the prescription.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e18"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-c1e10f17a647735eaa1d-challenge",
+      "rawSha256": "f6e8be053ae3568b2d6ce9f53edc6f120acc2ca2176c4a4ce88475753510f023",
+      "receiptSha256": "7b9f697a5771e41311391e75c34037ac45d9a7dfb921edd9014c143cfcfb5f34",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[5].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "The reported example contrasts single-modulus runaway with several-modulus minima whose vacuum sign,",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e19",
+            "e16"
+          ]
+        },
+        {
+          "path": "$.units[6].note",
+          "length": 156,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "moduli problem is an explicit target. Soft terms and cosmology remain separate outputs; gauge domina",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e4",
+            "e10"
+          ]
+        },
+        {
+          "path": "$.units[7].note",
+          "length": 155,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "trailing_space_or_hyphen",
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "linked targets. Regular breaking modes need not represent localized sources; IR boundary conditions ",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e9",
+            "e21"
+          ]
+        },
+        {
+          "path": "$.units[24].note",
+          "length": 157,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": " IIB no-scale structure at α′³ is qualified by nonzero Euler number; the M-theory analogue and furth",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e20"
+          ]
+        },
+        {
+          "path": "$.units[25].note",
+          "length": 157,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": " (0,3) component, apparently easier to satisfy with long throats. It establishes neither a visible s",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e12",
+            "e3"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-c1e10f17a647735eaa1d-proposal",
+      "rawSha256": "c70718a26690b3aa54e6f76858a92a0f6a8251b6c07d411fa94e75e8ee6c3823",
+      "receiptSha256": "73b2ca176a9daeead85aeae10b24ff11572684d8b072868e438627110262a3c1",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[5].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "The excerpt contrasts single-modulus runaway with several-modulus minima; vacuum sign depends on its",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e19",
+            "e16"
+          ]
+        },
+        {
+          "path": "$.units[24].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ts. The α′³ result is qualified by nonzero Euler number; its M-theory analogue and further radial-st",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e20"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-f78166e21bc03445425d-proposal",
+      "rawSha256": "98b318842ffc7f86f81a6a2818c2015fa7dba952cfa1f6f73e3866495ff1bdd5",
+      "receiptSha256": "51dcffeae458f7c138523905bed0f9515f273058df60b7826e64000ee756780a",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.factors[21].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "·a≥−2. Nondecoupling fixes j²=1 and the Planck scale, uses nonzero future-directed Q with Q²≥0, and,",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e3",
+            "o30",
+            "o31",
+            "o32",
+            "o33",
+            "o34",
+            "o39",
+            "o40"
+          ],
+          "factorId": "f21",
+          "kind": "assumption"
+        },
+        {
+          "path": "$.factors[27].qualification",
+          "length": 240,
+          "schemaMaxLength": 240,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "elian factors, independently of an assumed F-theory completion; strongly coupled conformal matter is",
+          "impact": "factor_qualification",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e19",
+            "o7",
+            "o8",
+            "o11"
+          ],
+          "factorId": "f27",
+          "kind": "assumption"
+        },
+        {
+          "path": "$.units[8].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length",
+            "terminal_function_word"
+          ],
+          "suffix": "eness. Characteristic gravitational anomaly vectors are reported for F-theory, not derived here from",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e14",
+            "e15"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-fc950e4a565d1ce2661a-challenge",
+      "rawSha256": "7382c5c6b875300c9c5e70c7c2d5c8ca7bc63945f171dd91290df075f0c0487c",
+      "receiptSha256": "db53902ac0f4dccc2c42dd218243a7f3b2527dcf18084adc34fda36551a4d8c0",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[21].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "tachyon concerns the pre-uplift phase; its suggested exclusionary interpretation remains historical.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e10",
+            "e18"
+          ]
+        },
+        {
+          "path": "$.units[24].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ntibranes are the replaced comparator; charged-field cancellation and excessive FI contributions can",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e3",
+            "e17"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-fd2851a3260c57d77fb1-challenge",
+      "rawSha256": "8171de30af2b3b0eff9427d435b30a42c19974102eb4c52f8d79b71e75fe730e",
+      "receiptSha256": "855897bec6fc8b0334ea070b7345c1e07a390e32934ecbf26d2daa77a3f970f6",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[1].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " assumes other modes stabilized separately; the protection argument does not calculate a complete yo",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e5",
+            "e28"
+          ]
+        },
+        {
+          "path": "$.units[3].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": " and control conditions; the supplied large-volume example ends before its stabilization calculation",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e8",
+            "e16",
+            "e24"
+          ]
+        },
+        {
+          "path": "$.units[61].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "otential, moduli and dilaton targets retain pure-gauge/massive-matter and twisted-Yukawa qualificati",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e20",
+            "e13"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-fd2851a3260c57d77fb1-proposal",
+      "rawSha256": "8f9f2ed06bb3cdb7bb1eeee3edda290b2189c14b86aa243e7f14ce29a2bb7596",
+      "receiptSha256": "f35f62cc171ef0281ff278d37b0abbd1a7925a2660f68d4c03ebdcb558a64410",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[60].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "ization and later FI-assisted inflation are separate targets; unlike d62, this proposal avoids non-G",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e7",
+            "e18",
+            "d62"
+          ]
+        },
+        {
+          "path": "$.units[61].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "s include moduli determination and dilaton stabilization; the excerpt does not establish a complete,",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e1",
+            "e20",
+            "e13"
+          ]
+        },
+        {
+          "path": "$.units[62].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "e-modulus racetrack. Inflationary fit claims require later evidence beyond the cited previous model.",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e22",
+            "e26",
+            "d60"
+          ]
+        }
+      ]
+    },
+    {
+      "jobId": "leaf-fe59991f52eabad350a7-proposal",
+      "rawSha256": "e87467c23928b181f754afff74dde51f19d977c3e44077a226e48027eefa571a",
+      "receiptSha256": "61bfd45822a7cea68a64f3ddc260b6a0784383c1db47aa5e3ee16c4b4f77beca",
+      "origin": "native_output",
+      "fields": [
+        {
+          "path": "$.units[0].note",
+          "length": 160,
+          "schemaMaxLength": 160,
+          "atSchemaCap": true,
+          "reasons": [
+            "exact_schema_max_length"
+          ],
+          "suffix": "elm the small scale; warping control is better understood in IIB. Explicit corrected AdS solutions,K",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e19",
+            "e1",
+            "e14"
+          ]
+        },
+        {
+          "path": "$.units[10].note",
+          "length": 158,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "gin, four-dimensional effective vacua and combined F/D breaking are explicit; spectrum examples areM",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e0",
+            "e13"
+          ]
+        },
+        {
+          "path": "$.units[20].note",
+          "length": 159,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "kowski vacua and then stable de Sitter minima with fourteen real scalars. Exponential terms may be p",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": []
+        },
+        {
+          "path": "$.units[32].note",
+          "length": 159,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "sation are proposed ingredients. The excerpt explicitly separates obtaining de Sitter from solving t",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e2",
+            "e10"
+          ]
+        },
+        {
+          "path": "$.units[33].note",
+          "length": 159,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "hat D-terms cannot uplift a supersymmetric minimum and qualifies its extra-field argument by simpleK",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e5",
+            "e8"
+          ]
+        },
+        {
+          "path": "$.units[37].note",
+          "length": 158,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "moduli for Nf≥Nc, and different singularity interpretations. Larger-flavor conclusions are expressly",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e18",
+            "e9",
+            "e23"
+          ]
+        },
+        {
+          "path": "$.units[40].note",
+          "length": 157,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "ims intrinsic F-term de Sitter without an additional uplift sector; control and full stabilization r",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e11",
+            "e12",
+            "e16"
+          ]
+        },
+        {
+          "path": "$.units[41].note",
+          "length": 157,
+          "schemaMaxLength": 160,
+          "atSchemaCap": false,
+          "reasons": [
+            "clustered_short_unpunctuated_notes"
+          ],
+          "suffix": "xtension question. The no-FI rigid result and conditional large-CC supergravity argument must remain",
+          "impact": "other_review_annotation",
+          "status": "screening_flag_requires_inspection_not_proof_of_truncation",
+          "refs": [
+            "e3",
+            "e6",
+            "e17"
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "All raw string fields are traversed against the frozen schema. Exact maxLength, syntactically suspicious endings and clusters of short unpunctuated notes are separate screening reasons, not automatic scientific failures. The423440c0413bb3814c19 challenge cardReview notes already end at155–157 characters in native output although their schema permits420; this is distinct from240-character factor qualifications. No compiler repair or clipping is inferred. Exact native emitting cause remains unresolved.",
+  "admissionPolicy": "Scope definition, admission justification, factor premise and unit annotation are separate. Do not treat a severed justification as complete or an incomplete factor as an admitted premise. An intact independently supported scope/source contribution is not automatically rejected because a separate annotation is incomplete. Targeted source repair only where the missing clause affects a conclusion; preserve original bytes and never guess missing words."
+}

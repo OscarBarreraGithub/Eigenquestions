@@ -1,0 +1,46 @@
+{
+  "observedAt": "2026-11-17T10:30:25.099001+00:00",
+  "campaigns": [
+    {
+      "campaign": "compact-v1",
+      "heartbeat": 1794910875507,
+      "active": 0,
+      "statuses": {
+        "complete": 2,
+        "failed": 5
+      },
+      "importedCompletions": 0,
+      "quotaPause": null,
+      "validationPause": null
+    },
+    {
+      "campaign": "full-leaf-wave-v2",
+      "heartbeat": 1794911425093,
+      "active": 0,
+      "statuses": {
+        "failed": 3,
+        "blocked": 3,
+        "complete": 1,
+        "pending": 365
+      },
+      "importedCompletions": 0,
+      "quotaPause": null,
+      "validationPause": null
+    },
+    {
+      "campaign": "full-leaf-wave-v3",
+      "heartbeat": 1794911425088,
+      "active": 8,
+      "statuses": {
+        "complete": 4,
+        "launched": 8,
+        "pending": 360
+      },
+      "importedCompletions": 4,
+      "quotaPause": null,
+      "validationPause": null
+    }
+  ],
+  "totalReportedActive": 8,
+  "meaning": "Read-only supervisor snapshots; heartbeat timestamps retained, not an independent process census."
+}
