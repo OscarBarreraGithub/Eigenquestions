@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "q025-final-holdout-expectation-commitment/1",
+  "committedAt": "2026-11-17T18:37:39.000955+00:00",
+  "candidateFreeze": {
+    "path": "research/q025/evaluation/final-holdout/candidate-freeze.json",
+    "sha256": "7fc46c314ed543fb4aa9edcf4949b7e366654c437ab62ecd3f07d27277c3ed55",
+    "bytes": 2542
+  },
+  "privateExpectations": {
+    "path": "research/q025/evaluation/final-holdout/native-local/expectations.json",
+    "sha256": "8068422e947878e90222af9727c3fe807cf06b89957ea21b6f2413cd98c2c998",
+    "bytes": 1675901
+  },
+  "routingPackets": [
+    {
+      "path": "research/q025/evaluation/final-holdout/routing-A.json",
+      "sha256": "6a1c3251888c08676949ac566ed1667c57d5f6b96eeaf07399c1e366f69f68d8",
+      "bytes": 14850
+    },
+    {
+      "path": "research/q025/evaluation/final-holdout/routing-B.json",
+      "sha256": "50d69f2beec2028f659c111c521e66e915161fe770f2bc2daffefbe4edb3171d",
+      "bytes": 18137
+    },
+    {
+      "path": "research/q025/evaluation/final-holdout/routing-C.json",
+      "sha256": "3dbdb71ae26e5fd424e0351f3793df5a714c424c475c1f057d3601eb0b41e910",
+      "bytes": 13399
+    }
+  ],
+  "counts": {
+    "papers": 24,
+    "questionUnits": 43,
+    "queries": 72,
+    "alternateStartCases": 8
+  },
+  "sourceReadingArtifacts": [
+    {
+      "path": "research/q025/evaluation/final-holdout/native-local/source-reading-initial.json",
+      "sha256": "c5d29d70acc29c8b5423c74671f676c3ac947e87019cee2a33383f139709043b",
+      "bytes": 161288
+    },
+    {
+      "path": "research/q025/evaluation/final-holdout/native-local/source-reading-supplement.json",
+      "sha256": "3d6ae77d75450f9345b9aeba4ecb88f4819a0bdfb8e7c4ba0bde14fdbce618c7",
+      "bytes": 15743
+    },
+    {
+      "path": "research/q025/evaluation/final-holdout/native-local/source-reading-supplement-2.json",
+      "sha256": "d70cb43ad2f57c6bc6bbe96f5f04ddd7c62062ded923202976f239c54b21e81d",
+      "bytes": 13889
+    }
+  ],
+  "completeScopesInspected": 40,
+  "routingOutputsSeen": false,
+  "candidateTuned": false,
+  "reservationVerified": true,
+  "readingLimit": "Bounded archived primary windows for24papers plus43 complete source descriptions, with supplemental passages for multi-unit witnesses. No full-paper/proof/fit reproduction.",
+  "benchmark": "Transductive semantic withholding, not wholly unseen/inductive encoder evaluation.",
+  "resultStatus": "No routing results yet. Expectations are an independent pre-routing commitment, not acceptance scores."
+}
