@@ -1,0 +1,75 @@
+[
+  {
+    "stage": "inputs_verified",
+    "elapsed": 3.4598469734191895,
+    "units": 8473,
+    "relations": 97
+  },
+  {
+    "stage": "baseline_done",
+    "elapsed": 3.874183416366577
+  },
+  {
+    "stage": "diffusion_035",
+    "elapsed": 4.422969341278076,
+    "alpha": 0.35,
+    "iterations": 17,
+    "max_residual": 3.3645286556804876e-10,
+    "retention": "all memberships >= 0.2 of largest; row normalized",
+    "dropoutPrimaryARI": 1.0,
+    "dropoutMeanRowL1": 0.0032207284636416823
+  },
+  {
+    "stage": "diffusion_065",
+    "elapsed": 5.136002063751221,
+    "alpha": 0.65,
+    "iterations": 36,
+    "max_residual": 6.209595060369111e-10,
+    "retention": "all memberships >= 0.2 of largest; row normalized",
+    "dropoutPrimaryARI": 1.0,
+    "dropoutMeanRowL1": 0.025648786328750253
+  },
+  {
+    "stage": "diffusion_085",
+    "elapsed": 6.09032130241394,
+    "alpha": 0.85,
+    "iterations": 72,
+    "max_residual": 9.894001173904599e-10,
+    "retention": "all memberships >= 0.2 of largest; row normalized",
+    "dropoutPrimaryARI": 0.9792296509437208,
+    "dropoutMeanRowL1": 0.032050349440826506
+  },
+  {
+    "stage": "multiview_graph",
+    "elapsed": 6.301085948944092,
+    "nnz": 2495578,
+    "methodNNZ": 2019810
+  },
+  {
+    "stage": "multiview_done",
+    "elapsed": 193.65052366256714,
+    "family": "encoder and method multiview hierarchy",
+    "layerWeights": {
+      "minilmQuestion": 0.5,
+      "qwenQuestion": 0.3,
+      "samePaperMethodProjection": 0.2
+    },
+    "seedLeafARI": 0.43463108736896144,
+    "dropoutLeafARI": 0.3372331163205487,
+    "scientificRelationsAffectPartition": false
+  },
+  {
+    "stage": "relation_ablation_done",
+    "elapsed": 253.36754870414734,
+    "family": "relation-injection ablation only",
+    "scientificRelationsAffectPartition": true,
+    "warning": "Artificial symmetrized attraction; preserves original edge separately but is not a scientific inference.",
+    "relationWeight": 0.03,
+    "baseLeafARI": 0.5857415101562958,
+    "relationTouchedUnits": 220
+  },
+  {
+    "stage": "complete",
+    "elapsed": 253.39708423614502
+  }
+]

@@ -1,0 +1,1219 @@
+{
+  "unitCount": 8473,
+  "representedPapers": 6477,
+  "coverageFraction": 1.0,
+  "rowWeightMaxError": 0.0,
+  "regionCount": 148,
+  "primaryUnitsMinMedianMax": [
+    13,
+    42.0,
+    729
+  ],
+  "massMinMedianMax": [
+    12.125,
+    33.83452380952381,
+    471.4837301587297
+  ],
+  "overlapUnitCount": 0,
+  "meanMembershipCount": 1.0,
+  "primaryConductanceMedian": 0.7091328008447079,
+  "internalFraction": 0.3519635653391099,
+  "coarseOffDiagonalMassTop6Retained": 0.4879277148303161,
+  "leafDepthMinMedianMax": [
+    2,
+    3.0,
+    4
+  ],
+  "largestTerminalNodes": [
+    {
+      "id": "region:e216581a59d87c4cff7a",
+      "mass": 471.48373015873017,
+      "units": 729,
+      "depth": 2,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 5,
+        "masses": [
+          139.83829365079367,
+          123.25972222222222,
+          124.18333333333334,
+          72.75238095238095,
+          11.45
+        ],
+        "units": [
+          233,
+          211,
+          173,
+          98,
+          14
+        ]
+      }
+    },
+    {
+      "id": "region:6df57d46d56df9c77805",
+      "mass": 202.42973137973138,
+      "units": 229,
+      "depth": 2,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 5,
+        "masses": [
+          61.42857142857143,
+          46.29084249084249,
+          49.22222222222222,
+          37.23809523809524,
+          8.25
+        ],
+        "units": [
+          71,
+          56,
+          54,
+          39,
+          9
+        ]
+      }
+    },
+    {
+      "id": "region:076a8e988b123c215a92",
+      "mass": 158.73877788877786,
+      "units": 190,
+      "depth": 3,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 4,
+        "masses": [
+          57.166483516483524,
+          55.53333333333333,
+          36.51428571428571,
+          9.524675324675325
+        ],
+        "units": [
+          76,
+          61,
+          40,
+          13
+        ]
+      }
+    },
+    {
+      "id": "region:b518fa2038910d956e04",
+      "mass": 113.01216006216006,
+      "units": 187,
+      "depth": 3,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 6,
+        "masses": [
+          35.81230158730158,
+          30.13956043956044,
+          17.91080586080586,
+          7.331635031635031,
+          16.192857142857143,
+          5.625
+        ],
+        "units": [
+          52,
+          49,
+          34,
+          23,
+          21,
+          8
+        ]
+      }
+    },
+    {
+      "id": "region:e8d0c428c737a887a324",
+      "mass": 106.96862026862027,
+      "units": 129,
+      "depth": 3,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 5,
+        "masses": [
+          32.831318681318685,
+          27.102777777777778,
+          24.941666666666666,
+          12.967857142857142,
+          9.125
+        ],
+        "units": [
+          38,
+          32,
+          29,
+          20,
+          10
+        ]
+      }
+    },
+    {
+      "id": "region:31256938ec369089ee3f",
+      "mass": 83.87866300366301,
+      "units": 158,
+      "depth": 3,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 4,
+        "masses": [
+          27.45332722832723,
+          31.75866910866911,
+          17.0,
+          7.666666666666666
+        ],
+        "units": [
+          64,
+          61,
+          24,
+          9
+        ]
+      }
+    },
+    {
+      "id": "region:0177419a6060a2f477fb",
+      "mass": 81.95906593406593,
+      "units": 97,
+      "depth": 3,
+      "stopReason": "split_gate",
+      "rejectedSplit": {
+        "childCount": 5,
+        "masses": [
+          27.99798534798535,
+          20.166666666666664,
+          19.181318681318682,
+          9.113095238095237,
+          5.5
+        ],
+        "units": [
+          34,
+          22,
+          21,
+          13,
+          7
+        ]
+      }
+    },
+    {
+      "id": "region:778d942f6c1caa8a4096",
+      "mass": 78.25757575757575,
+      "units": 88,
+      "depth": 3,
+      "stopReason": "size_or_depth",
+      "rejectedSplit": null
+    }
+  ],
+  "relationChecks": [
+    {
+      "relationId": "scientific:pilot-ads-kk-spectrometry-method",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:pilot-wgc-convex-hull-reduction",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-001",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-002",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-003",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-004",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-005",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-006",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-007",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-009",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-010",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-011",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-013",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-014",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-015",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-017",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-018",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-019",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 5,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-020",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-021",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-022",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-023",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-024",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-025",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-026",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-027",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-028",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-029",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-030",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 4,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-031",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-032",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-033",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-034",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 5,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-035",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 7,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-036",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-037",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-038",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-039",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-040",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-041",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-042",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-043",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-044",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-045",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-047",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-050",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-051",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-053",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-054",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-055",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-056",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-059",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-060",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-062",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 11,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-064",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-065",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-068",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-070",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-072",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-073",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-074",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-075",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-076",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 4,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-077",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-078",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-079",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-081",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-082",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-083",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 14,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-084",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-085",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-086",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-087",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-089",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-090",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-091",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 11,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-092",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-093",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-094",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-095",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-096",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-097",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-098",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-099",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 5,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-100",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-101",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-103",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-104",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-105",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-106",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-107",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-108",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-109",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 11,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-111",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-112",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-113",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-114",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    }
+  ],
+  "lexicalBridgeDiagnostics": {
+    "kk": {
+      "units": 129,
+      "primaryRegions": [
+        0,
+        2,
+        4,
+        8,
+        9,
+        11,
+        19,
+        21,
+        24,
+        32,
+        33,
+        36,
+        38,
+        41,
+        43,
+        44,
+        45,
+        46,
+        48,
+        51,
+        53,
+        54,
+        55,
+        57,
+        70,
+        72,
+        73,
+        76,
+        81,
+        95,
+        97,
+        102,
+        108,
+        109,
+        110,
+        114,
+        119,
+        121,
+        124,
+        127,
+        128,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        140,
+        141,
+        142,
+        143,
+        144
+      ]
+    },
+    "dark_matter": {
+      "units": 274,
+      "primaryRegions": [
+        21,
+        36,
+        57,
+        58,
+        59,
+        60,
+        63,
+        64,
+        65,
+        67,
+        72,
+        73,
+        74,
+        77,
+        80,
+        82,
+        98,
+        107,
+        109,
+        110,
+        125,
+        127,
+        129,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        147
+      ]
+    },
+    "cosmology": {
+      "units": 1000,
+      "primaryRegions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        17,
+        18,
+        19,
+        21,
+        31,
+        33,
+        38,
+        39,
+        41,
+        44,
+        45,
+        46,
+        48,
+        49,
+        51,
+        52,
+        53,
+        55,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        84,
+        85,
+        86,
+        87,
+        88,
+        93,
+        94,
+        95,
+        97,
+        98,
+        99,
+        101,
+        103,
+        104,
+        105,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        115,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        147
+      ]
+    },
+    "kk__dark_matter": {
+      "minCoarseHops": 0.0,
+      "samePrimaryRegions": 18
+    },
+    "dark_matter__cosmology": {
+      "minCoarseHops": 0.0,
+      "samePrimaryRegions": 35
+    }
+  },
+  "scientificValidation": false,
+  "limits": [
+    "Lexical bridge masks are diagnostics, not scientific labels.",
+    "Coverage and repeatability are not semantic correctness.",
+    "All imported scientific links remain explicit regardless of coarse affinity pruning."
+  ],
+  "family": "encoder and method multiview hierarchy",
+  "layerWeights": {
+    "minilmQuestion": 0.5,
+    "qwenQuestion": 0.3,
+    "samePaperMethodProjection": 0.2
+  },
+  "seedLeafARI": 0.43463108736896144,
+  "dropoutLeafARI": 0.3372331163205487,
+  "scientificRelationsAffectPartition": false
+}

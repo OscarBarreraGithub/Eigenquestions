@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "q025-native-pilot/1",
+  "status": "prepared_not_launched",
+  "sourceRowsSha256": "46b1744d38fcd4ec12e6be91bd2de65c381f437c1d94f528dcabb33677b8c973",
+  "inputManifestSha256": "74598fe665886a333874c349f286c9ec2f3ea8619a23526ad04f0be90bc44c70",
+  "foundationManifestSha256": "438a23da4f90932f1b67a41d77f5e8ee180e28de62476eb673ebe93ecce4f339",
+  "nativeSchemaSandboxVerified": "ThreadStartParams SandboxMode includes read-only",
+  "reservedFinalPapersConsumed": 0,
+  "freshPreviouslyExposedPapers": 0,
+  "jobs": [
+    {
+      "jobId": "compactification3127-proposal",
+      "dependsOn": null,
+      "requestSha256": "7cf948f82997e56efdb310ddaa32609106a8252f39af31175bc03820cb76f327"
+    },
+    {
+      "jobId": "compactification3127-challenge",
+      "dependsOn": "compactification3127-proposal",
+      "requestSha256": "edbbdef1f9405fc38b226cd077859e2d4a8c51536f568a41e2998b0079cac59e"
+    },
+    {
+      "jobId": "compactification3127-fresh",
+      "dependsOn": "compactification3127-challenge",
+      "requestSha256": "56e54f32c9b56e8ce6fd81e322a7a7d6faebadc19945719010f4b7d883994083"
+    },
+    {
+      "jobId": "inflation729-proposal",
+      "dependsOn": null,
+      "requestSha256": "54c34520684d1c3f95f799211c301a15a9eae8a0aa6c317a068a0669634226c9"
+    },
+    {
+      "jobId": "inflation729-challenge",
+      "dependsOn": "inflation729-proposal",
+      "requestSha256": "f11cff3582d81b1088818f0c24e032672cc96013ab8392b2e458a9a07bf7c6a0"
+    },
+    {
+      "jobId": "inflation729-fresh",
+      "dependsOn": "inflation729-challenge",
+      "requestSha256": "5eea269ab8fd95c0efb5b6fbbe803dae52d4cee222b5cc5b6d8b1bba6eba15ab"
+    }
+  ],
+  "families": [
+    {
+      "familyId": "compactification3127",
+      "regionId": "inherited_ncut:cluster:0d3470d258c24660e7103d7dbc6acbdc6f5e734804b4ea1f95298debae5d1827",
+      "candidate": "inherited_ncut",
+      "memberCount": 3127,
+      "memberIdsSha256": "0d3470d258c24660e7103d7dbc6acbdc6f5e734804b4ea1f95298debae5d1827",
+      "stopReason": "unstable_candidate"
+    },
+    {
+      "familyId": "inflation729",
+      "regionId": "multiview:region:e216581a59d87c4cff7a",
+      "candidate": "multiview",
+      "memberCount": 729,
+      "memberIdsSha256": "11f0dbd1dbab93b91e8da33381b5f6c0168fa909e8f182185672608f55d758ca",
+      "stopReason": "split_gate"
+    }
+  ],
+  "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+  "sourcePacketCount": 6,
+  "sourceAnchorCount": 60,
+  "nativeLaunches": 0
+}

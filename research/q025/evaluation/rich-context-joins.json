@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "q025-rich-source-context-audit/1",
+  "foundationManifestSha256": "438a23da4f90932f1b67a41d77f5e8ee180e28de62476eb673ebe93ecce4f339",
+  "nodeCounts": {
+    "edges": 400435,
+    "evidence": 392553,
+    "excluded_retrieval_views:generic_reading_or_execution_limit": 194,
+    "node_layer:breadth_confirmed_correction": 6044,
+    "node_layer:breadth_original": 143486,
+    "node_layer:catalog": 6478,
+    "node_layer:deep_accepted": 125108,
+    "node_layer:focused_reconstruction": 12,
+    "node_type:assumption": 52438,
+    "node_type:caveat": 16169,
+    "node_type:claim": 36131,
+    "node_type:control_regime": 18893,
+    "node_type:convention": 33160,
+    "node_type:dataset": 247,
+    "node_type:definition": 290,
+    "node_type:derivation": 4110,
+    "node_type:limitation": 47728,
+    "node_type:method": 17477,
+    "node_type:paper": 6478,
+    "node_type:quantity": 362,
+    "node_type:question": 6765,
+    "node_type:representation": 1150,
+    "node_type:retrieval_hint": 10845,
+    "node_type:setting": 12793,
+    "node_type:symmetry": 16092,
+    "nodes": 281128,
+    "nominations": 6533,
+    "retrieval-facets": 296130,
+    "source-records": 18370
+  },
+  "edgeTypes": {
+    "contains": 163818,
+    "has_assumption": 39060,
+    "has_symmetry": 8641,
+    "has_convention": 21295,
+    "has_limitation": 31028,
+    "has_control_regime": 6710,
+    "derived_from": 5291,
+    "constrains": 1382,
+    "specializes": 1091,
+    "uses_method": 2090,
+    "assumes": 1722,
+    "instantiates": 658,
+    "supports": 1255,
+    "has_derivation": 4098,
+    "defined_in": 643,
+    "addresses": 981,
+    "mentions": 372,
+    "challenges": 508,
+    "approximates": 166,
+    "measures": 18,
+    "literal_identifier_mention": 109608
+  },
+  "edgeSemanticStatuses": {
+    "structural": 274650,
+    "source_local_assertion": 14499,
+    "extraction_inference": 1069,
+    "local_nomination_only": 609,
+    "unvalidated_mention": 109608
+  },
+  "edgeTypesBySemanticStatus": {
+    "structural": {
+      "contains": 163818,
+      "has_assumption": 39060,
+      "has_symmetry": 8641,
+      "has_convention": 21295,
+      "has_limitation": 31028,
+      "has_control_regime": 6710,
+      "has_derivation": 4098
+    },
+    "source_local_assertion": {
+      "derived_from": 4819,
+      "constrains": 1203,
+      "specializes": 1000,
+      "uses_method": 1833,
+      "assumes": 1548,
+      "instantiates": 607,
+      "supports": 1115,
+      "defined_in": 606,
+      "addresses": 950,
+      "mentions": 353,
+      "challenges": 299,
+      "approximates": 149,
+      "measures": 17
+    },
+    "extraction_inference": {
+      "assumes": 150,
+      "defined_in": 19,
+      "derived_from": 358,
+      "supports": 116,
+      "uses_method": 141,
+      "constrains": 94,
+      "instantiates": 36,
+      "specializes": 80,
+      "mentions": 19,
+      "challenges": 12,
+      "addresses": 29,
+      "approximates": 14,
+      "measures": 1
+    },
+    "local_nomination_only": {
+      "uses_method": 116,
+      "derived_from": 114,
+      "constrains": 85,
+      "challenges": 197,
+      "assumes": 24,
+      "defined_in": 18,
+      "specializes": 11,
+      "supports": 24,
+      "instantiates": 15,
+      "addresses": 2,
+      "approximates": 3
+    },
+    "unvalidated_mention": {
+      "literal_identifier_mention": 109608
+    }
+  },
+  "questionUnitCount": 8473,
+  "questionUnitsWithNoncontainmentIncidentRelation": 2408,
+  "questionUnitsWithDirectAttachedContextByType": {
+    "has_assumption": 2354,
+    "has_convention": 1679,
+    "has_control_regime": 302,
+    "has_limitation": 2346,
+    "has_derivation": 61
+  },
+  "joinKeys": {
+    "unit_to_source_nodes": "navigation.units[].evidence.sourceNodeIds[] -> nodes.id",
+    "unit_to_facets": "navigation.units[].evidence.facetIds[] -> retrieval-facets.id",
+    "facet_to_node": "retrieval-facets.node_id -> nodes.id",
+    "facet_vector": "navigation originalEmbeddingRows correspond only after embedding row manifest identity validation; do not assume JSONL ordinal is vector row",
+    "edge_to_nodes": "edges.source / edges.target -> nodes.id",
+    "node_to_evidence": "nodes.evidence_ids[] -> evidence.id; retain evidence_scope",
+    "edge_to_evidence": "edges.evidence_ids[] -> evidence.id",
+    "node_to_original_record": "nodes.provenance.record_id -> source-records.id; retain bundle hash, source_unit_id and JSON pointer",
+    "record_to_file": "source-records.path + record hash under upstream root",
+    "paper_context": "nodes.paper_node_id and paper_id; same paper is context, not automatic premise compatibility"
+  },
+  "safeAttachmentLayers": [
+    {
+      "kind": "direct_record_relation",
+      "meaning": "Exact scoped local relation; preserve semantic_status, direction and evidence."
+    },
+    {
+      "kind": "shared_extraction_window_context",
+      "meaning": "Sibling record/window material; useful supporting context, not a demonstrated logical premise of every question."
+    },
+    {
+      "kind": "same_paper_context",
+      "meaning": "Additional paper material; never attach every paper assumption to every question as if proven applicable."
+    }
+  ],
+  "examples": {
+    "contains": {
+      "source": "paper:0bfa52911c6689be51e5:fe1b283a93c72a6d",
+      "target": "obj:0bfa52911c6689be51e5:question:c37d667e99172b03a70aa9a2",
+      "type": "contains",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:e43931c8c0ab5d9d5346162ffb01c310",
+        "ev:1aab4159a46091f3bdf6f5f4a7626467",
+        "ev:57fa5b9cfa84e2ba6d2fccbe1a140d74"
+      ]
+    },
+    "has_assumption": {
+      "source": "obj:10fa9c565a2db347ef6c:setting:2061996fad585b52f96d14fb",
+      "target": "obj:10fa9c565a2db347ef6c:assumption:cca9355ff469b9bf83caa15d",
+      "type": "has_assumption",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:4ae95a26c16fcbde498f2e49add7396e",
+        "ev:358958a93b11b2f955aa27678d2162eb",
+        "ev:3c5107f89c6d85a0b7a0cc782a9e1145"
+      ]
+    },
+    "has_symmetry": {
+      "source": "obj:10fa9c565a2db347ef6c:setting:2061996fad585b52f96d14fb",
+      "target": "obj:10fa9c565a2db347ef6c:symmetry:f7978f44eadf2b477e1ee095",
+      "type": "has_symmetry",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:4ae95a26c16fcbde498f2e49add7396e",
+        "ev:358958a93b11b2f955aa27678d2162eb",
+        "ev:3c5107f89c6d85a0b7a0cc782a9e1145"
+      ]
+    },
+    "has_convention": {
+      "source": "obj:10fa9c565a2db347ef6c:setting:2061996fad585b52f96d14fb",
+      "target": "obj:10fa9c565a2db347ef6c:convention:b4f778907556bebf6a5a6185",
+      "type": "has_convention",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:4ae95a26c16fcbde498f2e49add7396e",
+        "ev:358958a93b11b2f955aa27678d2162eb",
+        "ev:3c5107f89c6d85a0b7a0cc782a9e1145"
+      ]
+    },
+    "has_limitation": {
+      "source": "obj:10fa9c565a2db347ef6c:setting:2061996fad585b52f96d14fb",
+      "target": "obj:10fa9c565a2db347ef6c:limitation:da3ca673e8989dbf3159cdfd",
+      "type": "has_limitation",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:4ae95a26c16fcbde498f2e49add7396e",
+        "ev:358958a93b11b2f955aa27678d2162eb",
+        "ev:3c5107f89c6d85a0b7a0cc782a9e1145"
+      ]
+    },
+    "has_control_regime": {
+      "source": "obj:10fa9c565a2db347ef6c:method:5c8eade9a6ce71561ae29523",
+      "target": "obj:10fa9c565a2db347ef6c:control_regime:8ad5c9cc4aef67cc2c9a6f0b",
+      "type": "has_control_regime",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:997ff54f193da8cb06bee1c2688d74bd",
+        "ev:7ba717209dd26aa0fbd6c5ec5e364d07"
+      ]
+    },
+    "derived_from": {
+      "source": "obj:10fa9c565a2db347ef6c:claim:5958bfc63344f02ecbb7c41b",
+      "target": "obj:10fa9c565a2db347ef6c:claim:598b9f968b3c2e6d46e63971",
+      "type": "derived_from",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:f4b2e18cd38455ab4b1c014901a95891"
+      ]
+    },
+    "constrains": {
+      "source": "obj:10fa9c565a2db347ef6c:quantity:c34c4186cc75965cdaba079d",
+      "target": "obj:10fa9c565a2db347ef6c:claim:5958bfc63344f02ecbb7c41b",
+      "type": "constrains",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:c5944eafe1d6b8c522b1a2e7bfce1b2d"
+      ]
+    },
+    "specializes": {
+      "source": "obj:10fa9c565a2db347ef6c:claim:1bf88ca1496110efbee91463",
+      "target": "obj:10fa9c565a2db347ef6c:setting:f834ecf07b4534a031c14e3f",
+      "type": "specializes",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:f88f4ebedfda0600283c6fa435e68986"
+      ]
+    },
+    "uses_method": {
+      "source": "obj:10fa9c565a2db347ef6c:claim:1bf88ca1496110efbee91463",
+      "target": "obj:10fa9c565a2db347ef6c:method:5c8eade9a6ce71561ae29523",
+      "type": "uses_method",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:62eb53a9f7c2b365eab07d81370e3f96"
+      ]
+    },
+    "assumes": {
+      "source": "obj:10fa9c565a2db347ef6c:setting:93d70d0ef7ac416ef642320b",
+      "target": "obj:10fa9c565a2db347ef6c:setting:2061996fad585b52f96d14fb",
+      "type": "assumes",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:8003a3f0bb0c2871979aa167c82da2d5"
+      ]
+    },
+    "instantiates": {
+      "source": "obj:10fa9c565a2db347ef6c:claim:d3d67fc9dc36063c466cc2f0",
+      "target": "obj:10fa9c565a2db347ef6c:claim:a17405b6269e28b573f8b49c",
+      "type": "instantiates",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:3f9ac3129c2dfd2189c1da87f6a6c8f8"
+      ]
+    },
+    "supports": {
+      "source": "obj:10fa9c565a2db347ef6c:claim:11ac058a0255045830e68c7e",
+      "target": "obj:10fa9c565a2db347ef6c:claim:dfcc9a6a2b340140419615e6",
+      "type": "supports",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:36ad649484037778072e3e2b8e64011d"
+      ]
+    },
+    "has_derivation": {
+      "source": "obj:10fa9c565a2db347ef6c:claim:598b9f968b3c2e6d46e63971",
+      "target": "obj:10fa9c565a2db347ef6c:derivation:0d332d850257fa400adbcd93",
+      "type": "has_derivation",
+      "semantic_status": "structural",
+      "evidence_ids": [
+        "ev:e71227db5314f47c11fc05e59c01861f",
+        "ev:db43b48a4a1b9480a02b60a83669d32c",
+        "ev:83575216e4fd73892d3c7b27dc9956ac"
+      ]
+    },
+    "defined_in": {
+      "source": "obj:9fb3aa6bbc00ce801b60:method:952c237857522a5c8909eea5",
+      "target": "obj:9fb3aa6bbc00ce801b60:setting:92da380cc23dacbb6d130e2f",
+      "type": "defined_in",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:3377ee18d5dec6ad75f9851d989f4997"
+      ]
+    },
+    "addresses": {
+      "source": "obj:9fb3aa6bbc00ce801b60:claim:17782d3eed3cb8a9615ed7f7",
+      "target": "obj:9fb3aa6bbc00ce801b60:question:cde6b466c5b53f0a9d029f3c",
+      "type": "addresses",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:225e87ceef3bb006d8683e428e7319b2"
+      ]
+    },
+    "mentions": {
+      "source": "obj:08ff0c941e066f66deea:claim:98f4f9b7adfad37430f7fff5",
+      "target": "obj:08ff0c941e066f66deea:claim:31936f1b0cf1fabb17a48f41",
+      "type": "mentions",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:5487e44a493c1e715ac45ff366397a36"
+      ]
+    },
+    "challenges": {
+      "source": "obj:08ff0c941e066f66deea:claim:f1a5303b35222c1e739549fb",
+      "target": "obj:08ff0c941e066f66deea:assumption:74388b294792cd017b2cbfa1",
+      "type": "challenges",
+      "semantic_status": "local_nomination_only",
+      "evidence_ids": [
+        "ev:26b4212b91af495d5731d7ed2e52da70"
+      ]
+    },
+    "approximates": {
+      "source": "obj:d885ce57a2181dacd61f:representation:ce7284ae2ca249f157eeafdf",
+      "target": "obj:d885ce57a2181dacd61f:claim:1e78259f2289d7f2407424cc",
+      "type": "approximates",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:87907e476aca6fb96fe4e051bbd2d7af"
+      ]
+    },
+    "measures": {
+      "source": "obj:204fc6bf0f1c03dc60ac:method:db98eed2b699caf3dff32b18",
+      "target": "obj:204fc6bf0f1c03dc60ac:claim:3b7698d28fcc35c197f7ba57",
+      "type": "measures",
+      "semantic_status": "source_local_assertion",
+      "evidence_ids": [
+        "ev:92c698279886a28a468c8f85abbf0662"
+      ]
+    },
+    "literal_identifier_mention": {
+      "source": "paper:0bfa52911c6689be51e5:fe1b283a93c72a6d",
+      "target": "paper:cad3ccac05d34ebaa76c:ed380a071fa05850",
+      "type": "literal_identifier_mention",
+      "semantic_status": "unvalidated_mention",
+      "evidence_ids": [
+        "ev:18393fec854c1c08e4a58182261eafb7"
+      ]
+    }
+  },
+  "limits": [
+    "This scan reconstructs identities and counts, not scientific validation.",
+    "A source-local assertion, extraction inference, and local nomination are distinct; do not collapse them.",
+    "97 admitted cross-paper scientific relations are in the separate current receipt ledger.",
+    "A direct attachment can inherit source evidence rather than independently anchor a child claim."
+  ]
+}

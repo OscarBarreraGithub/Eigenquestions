@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": "Q-025",
+  "checks": [
+    {
+      "name": "prepared route renders without native vectors or graph shards",
+      "passed": true
+    },
+    {
+      "name": "manual alternate routes converge; browser Back restores path; local work note follows destination without public export",
+      "passed": true
+    },
+    {
+      "name": "read-only orientation leaves path intact and stale result cannot replace newer destination",
+      "passed": true
+    },
+    {
+      "name": "compact URL and reload restore exact prepared destination",
+      "passed": true
+    },
+    {
+      "name": "actual stdio MCP mutation reaches prepared browser through SSE and receives state/revision render acknowledgement",
+      "passed": true,
+      "destinationId": "shared"
+    },
+    {
+      "name": "no browser page errors",
+      "passed": true,
+      "errorCount": 0
+    }
+  ],
+  "screenshots": [
+    "prepared-shared.png",
+    "prepared-connected.png"
+  ],
+  "scope": "Isolated Slurm Chromium, synthetic prepared atlas, actual shared controller and local MCP bridge. Not the owner Chrome and not scientific acceptance.",
+  "passed": true
+}

@@ -1,0 +1,1344 @@
+{
+  "schemaVersion": "q025-pilot-review-summary/2",
+  "status": "pilot_complete_scientific_revision_required",
+  "interpretation": "Six completed source-only sampled reviews; no accepted full-region map. Exclusion from a narrow conjecture-testing question does not remove a source from a broader inflation family. Candidate memberships and numerical hierarchy remain proposals. Frozen requests and outputs unchanged.",
+  "operationalValidation": {
+    "jobs": 6,
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "sourceOnly": true,
+    "toolUseAttempts": 0,
+    "allRawReplyHashesMatch": true,
+    "allParsedRepliesMatchRaw": true,
+    "fullMembershipCertified": false
+  },
+  "coverage": {
+    "distinctSourcePapers": 28,
+    "assessmentOccurrences": 44,
+    "dispositions": {
+      "include": 23,
+      "overlap": 7,
+      "exclude": 14
+    },
+    "verdicts": {
+      "needs_revision": 6
+    }
+  },
+  "usage": {
+    "inputTokens": 300546,
+    "cachedInputTokens": 16640,
+    "outputTokens": 79057,
+    "reasoningOutputTokens": 24409
+  },
+  "records": [
+    {
+      "jobId": "compactification3127-proposal",
+      "verdict": "needs_revision",
+      "title": "Compactification backgrounds, effective descriptions and their limits",
+      "summary": "The excerpts support a question hub with distinct branches for flux-background consistency, warped supersymmetric effective data, global model construction and infinite-distance limits. They do not establish a common mechanism. Proposed sampled changes retain the three central units, include the outside global-quiver construction, retain overlaps with kinetic-mixing phenomenology and UV-framework comparisons, and exclude conformal-string quantization and the null-pinch setting from the core. This organization faces two boundaries: a flux-vacuum-only scope would lose the five-dimensional central example, while an unrestricted compact-dimensions scope would absorb unrelated quantization and spacetime-singularity questions. The reported dispute over a specific massive-IIA construction remains unresolved by this packet.",
+      "replyArtifactSha256": "c2a780a8c917ff441a79a3d81c0d86a64feb3ef5e402a250fd35d2a0bcae0c89",
+      "rawReplySha256": "64ad5a44a21f5a4fbb03abb223af4cc5869cc546c28a0f8074cf2e7acfba5e6e",
+      "receiptSha256": "81427261cb1d19948c04ca49661b07d55e1824bee92a8584149e035b04aaf1f7",
+      "inputPins": {
+        "requestSha256": "7cf948f82997e56efdb310ddaa32609106a8252f39af31175bc03820cb76f327",
+        "packetSha256": "cffbfb4534332c306774a878a7aaeff29435cb419aa38d95ea6afcf5e054259b",
+        "promptSha256": "d7dd504d62c688199ddadfc08fb1b0120a3905a19289cc793036c2b771b17783",
+        "schemaSha256": "07c111d4e4ea5a992d958e795482cf3f2a1f857643e75fb9753c2f645e95e1c6",
+        "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+        "runnerSha256": "a561247ad60c11c1eebd8cc654a6b667a9ac9c2be39460a9223a618a3a07c37e",
+        "dependency": null
+      },
+      "elapsedSeconds": 477.1,
+      "usage": {
+        "inputTokens": 47718,
+        "cachedInputTokens": 0,
+        "outputTokens": 14186,
+        "reasoningOutputTokens": 4142
+      },
+      "membershipAssessments": [
+        {
+          "unitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "disposition": "include",
+          "proposedScope": "Core flux-background consistency; keep charge-tadpole evasion and the massive-IIA scale-separation critique as separate question facets.",
+          "evidenceIds": [
+            "ev:285a07a33e9751072b6edcffc2228577",
+            "ev:7799445183bfbabf4a41522d2ffaed6c",
+            "ev:0b8f021c3a1d89e0da3e42a45a098b0c"
+          ],
+          "reason": "The passages directly ask what permits internal four-form flux and a four-dimensional description. They distinguish boundary mechanisms, conventional IIA and a disputed massive-IIA proposal. Inclusion does not endorse the proposed mechanism or turn the critique into a universal theorem.",
+          "paperId": "1208.0261"
+        },
+        {
+          "unitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "disposition": "include",
+          "proposedScope": "Core method for warped supersymmetric effective data, with a separate nonperturbative-extension facet.",
+          "evidenceIds": [
+            "ev:d00693c9dedb668e8624f18422a199fc",
+            "ev:232665f820809f139674770f6aa46a9b"
+          ],
+          "reason": "The abstract explicitly connects ten-dimensional supersymmetry conditions with four-dimensional F- and D-flatness and describes instanton/gaugino corrections. Its two anchors share the same abstract context, so they provide one source report rather than independent confirmation.",
+          "paperId": "0803.3149"
+        },
+        {
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "disposition": "include",
+          "proposedScope": "Core infinite-distance-limit branch, distinct from four-dimensional flux-vacuum construction.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:f0fd5b2d4c23ab8d5367405d41129287",
+            "ev:ad7cbb807bbf1fc735c7bf6b9c9f9581"
+          ],
+          "reason": "Gauge-coupling asymptotics and Calabi–Yau BPS indices address when a five-dimensional description approaches decompactification or emergent strings. This supports the proposed broader hub, but challenges any interpretation of the candidate as exclusively flux stabilization or four-dimensional vacua.",
+          "paperId": "2309.10024"
+        },
+        {
+          "unitId": "unit:4b28c09f7391264daeff2374f349855645aa4d0a3915824f72d7f38ef77531c5",
+          "disposition": "overlap",
+          "proposedScope": "Overlap between compactification-dependent effective couplings and hidden-sector phenomenology; retain an application connection.",
+          "evidenceIds": [
+            "ev:d1631a98c70fc2ce767ae0d39af6dea6",
+            "ev:f28e901a56a9855d50fff18563039407"
+          ],
+          "reason": "The central calculation derives kinetic and mass mixing from branes and closed-string propagation in compact backgrounds. Its primary question concerns a specific coupling and its phenomenology, rather than the existence or limiting classification of a vacuum. The distinction between pole and non-pole contributions is essential to this overlap.",
+          "paperId": "0803.1449"
+        },
+        {
+          "unitId": "unit:ee2f49cd0be8d32bf755e1c8d65ab5ce4096dfb3bfac06bb0d6421bcaad0631a",
+          "disposition": "exclude",
+          "proposedScope": "Remove from the compactification core; retain a related contrast under conformal tensionless-string quantization.",
+          "evidenceIds": [
+            "ev:22d22fefa2ccdafbb16bd8cd0aeea0ae",
+            "ev:95ef678492c4c328a1e696b8470d600a"
+          ],
+          "reason": "The supplied question concerns quantum preservation of spacetime conformal symmetry, BRST consistency and a critical dimension. No compact internal geometry, dimensional reduction or identification with an emergent string at infinite moduli distance is supplied. The boundary label does not supply that missing connection.",
+          "paperId": "hep-th/9410143"
+        },
+        {
+          "unitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "disposition": "include",
+          "proposedScope": "Add the outside-neighbor sample to the proposed core as an explicit global compactification construction, with phenomenology and inflation application links.",
+          "evidenceIds": [
+            "ev:9046e87b89cc1d52de94ede88a4164cb",
+            "ev:6a1540b8b88a76b5793c48212ec4980f",
+            "ev:2aa926afad1a9230974048b981d249d2"
+          ],
+          "reason": "Global embedding, orientifold charges, fluxes and closed-string moduli stabilization directly meet the proposed scope. Its outside-neighbor assignment therefore challenges the numerical boundary. The claimed de Sitter vacuum and successful inflation remain attributed results; detailed control and tunability are not demonstrated in these passages.",
+          "paperId": "1706.06128"
+        },
+        {
+          "unitId": "unit:e070c63df767c836b99861d8dc4ed56fcdd5a6e88849cd5c40741e4c5a388bdf",
+          "disposition": "overlap",
+          "proposedScope": "Overlap with UV-completion and swampland-universality questions through its comparison of string compactification EFTs with asymptotic safety.",
+          "evidenceIds": [
+            "ev:0c91d172ad5d1fd7a0ec438788be4145",
+            "ev:9018c5c45a85408d47133a4aa369cf15",
+            "ev:a827ffe161aab59efd951bf4bdea90f9"
+          ],
+          "reason": "The review uses compactification-derived EFTs as one side of a broader framework comparison. Its main question is whether constraints are relative or universal, so the whole review should not become a compactification child. The supplied excerpts motivate possible differences but do not establish a particular cross-framework counterexample.",
+          "paperId": "2405.20386"
+        },
+        {
+          "unitId": "unit:6473e6def09a2177dc59fdeeca4f20e03cb263df30cb2963ae8c603615ff827a",
+          "disposition": "exclude",
+          "proposedScope": "Remove this sampled setting from the core; retain a related boundary example in time-dependent Lorentz quotients and spacetime singularities.",
+          "evidenceIds": [
+            "ev:0870d9e8035e1e531ff31d1e4f025f88"
+          ],
+          "reason": "The supplied setting establishes a supersymmetry-preserving quotient with a lightcone-time-dependent pinching circle. It does not establish the effective-theory or moduli-space question organizing the core. This assessment concerns the sampled setting, not the full paper, and does not exclude cosmological applications of independently established compactification EFTs.",
+          "paperId": "0705.2146"
+        }
+      ],
+      "identityAssessments": [
+        {
+          "leftUnitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "rightUnitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "decision": "distinct_question",
+          "scopeKey": "flux-existence-versus-supersymmetry-dictionary",
+          "reason": "Charge-source requirements and supergravity obstructions differ from encoding N=1 supersymmetry in effective data. The first source explicitly does not require supersymmetry for its constraints. Shared flux terminology does not justify a canonical merge.",
+          "evidenceIds": [
+            "ev:7799445183bfbabf4a41522d2ffaed6c",
+            "ev:d00693c9dedb668e8624f18422a199fc"
+          ]
+        },
+        {
+          "leftUnitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "rightUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "decision": "distinct_question",
+          "scopeKey": "four-dimensional-vacuum-hierarchy-versus-five-dimensional-infinite-distance",
+          "reason": "A hierarchy between AdS and compactification scales in a proposed four-dimensional vacuum is not the classification of five-dimensional infinite-distance limits by couplings and BPS indices. Kaluza–Klein scales enter both questions in different roles.",
+          "evidenceIds": [
+            "ev:7799445183bfbabf4a41522d2ffaed6c",
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:f0fd5b2d4c23ab8d5367405d41129287"
+          ]
+        },
+        {
+          "leftUnitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "rightUnitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "decision": "distinct_question",
+          "scopeKey": "general-effective-data-method-versus-global-quiver-model",
+          "reason": "A general warped supersymmetry formalism and an explicit chiral global embedding have different targets and success criteria. Nonperturbative superpotentials support a possible method comparison, not identity or a demonstrated derivational dependence.",
+          "evidenceIds": [
+            "ev:232665f820809f139674770f6aa46a9b",
+            "ev:9046e87b89cc1d52de94ede88a4164cb",
+            "ev:6a1540b8b88a76b5793c48212ec4980f"
+          ]
+        },
+        {
+          "leftUnitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "rightUnitId": "unit:4b28c09f7391264daeff2374f349855645aa4d0a3915824f72d7f38ef77531c5",
+          "decision": "distinct_question",
+          "scopeKey": "warped-supersymmetry-conditions-versus-visible-hidden-mixing",
+          "reason": "The shared warped type-II setting does not identify a supersymmetry dictionary with the pole/non-pole calculation distinguishing kinetic and Stückelberg mixing.",
+          "evidenceIds": [
+            "ev:d00693c9dedb668e8624f18422a199fc",
+            "ev:d1631a98c70fc2ce767ae0d39af6dea6"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:4b28c09f7391264daeff2374f349855645aa4d0a3915824f72d7f38ef77531c5",
+          "decision": "distinct_question",
+          "scopeKey": "asymptotic-gauge-couplings-versus-off-diagonal-kinetic-mixing",
+          "reason": "Asymptotic coupling behavior used to classify light towers differs from a visible/hidden mixing coefficient in a specified compact background. The shared gauge-coupling language does not establish interchangeable quantities or limits.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:d1631a98c70fc2ce767ae0d39af6dea6"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:ee2f49cd0be8d32bf755e1c8d65ab5ce4096dfb3bfac06bb0d6421bcaad0631a",
+          "decision": "distinct_question",
+          "scopeKey": "emergent-string-limit-versus-conformal-string-quantization",
+          "reason": "One question classifies infinite-distance limits through effective couplings and BPS indices; the other tests BRST consistency of a particular bosonic zero-tension model. No source bridge identifies their strings, assumptions or consistency conditions.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:22d22fefa2ccdafbb16bd8cd0aeea0ae",
+            "ev:95ef678492c4c328a1e696b8470d600a"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:6473e6def09a2177dc59fdeeca4f20e03cb263df30cb2963ae8c603615ff827a",
+          "decision": "distinct_question",
+          "scopeKey": "moduli-space-limit-versus-lightcone-time-pinch",
+          "reason": "A limit in vector-multiplet moduli space and a circle collapse at a specified spacetime lightcone time are different operations. A shrinking geometric quantity is insufficient to merge them or infer a shared light-tower description.",
+          "evidenceIds": [
+            "ev:ad7cbb807bbf1fc735c7bf6b9c9f9581",
+            "ev:0870d9e8035e1e531ff31d1e4f025f88"
+          ]
+        },
+        {
+          "leftUnitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "rightUnitId": "unit:e070c63df767c836b99861d8dc4ed56fcdd5a6e88849cd5c40741e4c5a388bdf",
+          "decision": "distinct_question",
+          "scopeKey": "claimed-de-sitter-construction-versus-framework-universality",
+          "reason": "Constructing a particular stabilized compactification differs from comparing the framework dependence of conjectural constraints. The review excerpts provide no detailed de-Sitter criterion with which to establish a direct contradiction to the construction.",
+          "evidenceIds": [
+            "ev:6a1540b8b88a76b5793c48212ec4980f",
+            "ev:9018c5c45a85408d47133a4aa369cf15",
+            "ev:a827ffe161aab59efd951bf4bdea90f9"
+          ]
+        }
+      ],
+      "limitations": [
+        "Only eight sampled units were assessed. The 3127-member candidate is pinned and marked unstable, but its complete membership was not reviewed or certified. Sampling roles do not establish scientific truth or representative proportions.",
+        "Evidence consists of bounded archived anchors and nearby extracted page text, often abstracts or introductions. Full derivations, omitted anchors, images, numerical data and cited opposing sources are unavailable.",
+        "Several anchors share the same page context, especially the two 0803.3149 abstract anchors. Such repetition is not independent scientific corroboration.",
+        "Checksum verification establishes the supplied provenance claim, not scientific correctness. Equation extraction, interrupted sentences and interleaved columns limit detailed mathematical adjudication.",
+        "The 0705.2146 anchor is marked quoteExactInPage=false. Its nearby context supports the circle-collapse description, but exact quotation and image-based geometry were not verified; the sampled unit is a setting rather than a whole-paper question.",
+        "The massive-IIA dispute is represented through the critic's account only. No current resolution is inferred. Likewise, the claimed type-IIB de Sitter construction and the review's discussion of de-Sitter conjectures do not, in these excerpts, establish a directly adjudicable disagreement.",
+        "The proposed cross-source comparisons are organizational hypotheses. Similar settings, source mentions and numerical adjacency provide no scientific implication, and no sampled canonical-question merge is justified."
+      ],
+      "fullMembershipCertified": false,
+      "sampledOnly": true
+    },
+    {
+      "jobId": "compactification3127-challenge",
+      "verdict": "needs_revision",
+      "title": "Compactification consistency, effective data and asymptotic limits",
+      "summary": "The sources support most of the proposal as a navigation hub connecting distinct questions, without establishing a common mechanism. I retain its four core inclusions, kinetic-mixing overlap and two exclusions. I disagree with overlapping membership for the UV-framework review: the supplied passages support a related universality question but do not demonstrate a compactification-specific investigation. The massive-IIA criticism remains a reported scientific disagreement, represented only through the critic. No canonical-question merge is supported. These judgments concern eight samples, not the full candidate.",
+      "replyArtifactSha256": "f82a59a84dd263944fd5af65c9742fc520b283de88de2b58117b55a3c4586bbb",
+      "rawReplySha256": "4fc1daff6dd7943fb9611bd94caedb9d326de6b6d6a9c89636858b71f2c95279",
+      "receiptSha256": "7abce8bc180b96e50a0a535346d02456c10f57a1f699fc40b2e3b68e3da3dd77",
+      "inputPins": {
+        "requestSha256": "edbbdef1f9405fc38b226cd077859e2d4a8c51536f568a41e2998b0079cac59e",
+        "packetSha256": "35d05500ab2a3d22a8db9f6ae7ccead114d322fb248d91340fde4e4e22fa39d8",
+        "promptSha256": "8ca005d307d95c6398252bb2aa21d3034eddec1f8637289d686b13822f558a0d",
+        "schemaSha256": "07c111d4e4ea5a992d958e795482cf3f2a1f857643e75fb9753c2f645e95e1c6",
+        "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+        "runnerSha256": "a561247ad60c11c1eebd8cc654a6b667a9ac9c2be39460a9223a618a3a07c37e",
+        "dependency": {
+          "jobId": "compactification3127-proposal",
+          "receiptSha256": "81427261cb1d19948c04ca49661b07d55e1824bee92a8584149e035b04aaf1f7",
+          "replySha256": "c2a780a8c917ff441a79a3d81c0d86a64feb3ef5e402a250fd35d2a0bcae0c89"
+        }
+      },
+      "elapsedSeconds": 454.5,
+      "usage": {
+        "inputTokens": 57767,
+        "cachedInputTokens": 0,
+        "outputTokens": 13389,
+        "reasoningOutputTokens": 3395
+      },
+      "membershipAssessments": [
+        {
+          "unitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "disposition": "include",
+          "proposedScope": "Retain in the compactification-consistency branch, with separate navigation for four-form charge sources and the massive-IIA hierarchy critique.",
+          "evidenceIds": [
+            "ev:285a07a33e9751072b6edcffc2228577",
+            "ev:7799445183bfbabf4a41522d2ffaed6c",
+            "ev:0b8f021c3a1d89e0da3e42a45a098b0c"
+          ],
+          "reason": "I agree with the proposal's inclusion. These passages directly address permitted compact flux backgrounds and four-dimensional scale hierarchies. They support neither a general scale-separated-AdS no-go theorem nor an adjudication of the massive-IIA dispute.",
+          "paperId": "1208.0261"
+        },
+        {
+          "unitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "disposition": "include",
+          "proposedScope": "Retain as a method addressing warped supersymmetric effective data and nonperturbative modifications.",
+          "evidenceIds": [
+            "ev:d00693c9dedb668e8624f18422a199fc",
+            "ev:232665f820809f139674770f6aa46a9b"
+          ],
+          "reason": "I agree with inclusion, conditional on keeping the reported supersymmetry dictionary distinct from a controlled finite-field EFT or global existence result. The two anchors share one abstract context and provide no independent derivational check.",
+          "paperId": "0803.3149"
+        },
+        {
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "disposition": "include",
+          "proposedScope": "Retain in a distinct five-dimensional infinite-distance branch, including separate bottom-up and compactification-based evidence.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:f0fd5b2d4c23ab8d5367405d41129287",
+            "ev:ad7cbb807bbf1fc735c7bf6b9c9f9581"
+          ],
+          "reason": "I agree with inclusion in the broader hub. The unit directly studies limiting effective descriptions and Calabi–Yau diagnostics, but it would not fit a scope restricted to four-dimensional flux-vacuum stabilization. Its reported numerical agreement is bounded evidence, not universal certification.",
+          "paperId": "2309.10024"
+        },
+        {
+          "unitId": "unit:4b28c09f7391264daeff2374f349855645aa4d0a3915824f72d7f38ef77531c5",
+          "disposition": "overlap",
+          "proposedScope": "Retain overlap between compactification-dependent effective couplings and hidden-sector phenomenology.",
+          "evidenceIds": [
+            "ev:d1631a98c70fc2ce767ae0d39af6dea6",
+            "ev:f28e901a56a9855d50fff18563039407"
+          ],
+          "reason": "I agree with overlap because compact geometry and closed-string propagation directly enter the calculation, rather than appearing only as background motivation. Its principal target remains a particular coupling and its distinction from mass mixing, not construction of a vacuum.",
+          "paperId": "0803.1449"
+        },
+        {
+          "unitId": "unit:ee2f49cd0be8d32bf755e1c8d65ab5ce4096dfb3bfac06bb0d6421bcaad0631a",
+          "disposition": "exclude",
+          "proposedScope": "Remove from hub membership; retain a related contrast under conformal tensionless-string quantization.",
+          "evidenceIds": [
+            "ev:22d22fefa2ccdafbb16bd8cd0aeea0ae",
+            "ev:95ef678492c4c328a1e696b8470d600a"
+          ],
+          "reason": "I agree with exclusion. The supplied question concerns quantum conformal symmetry, BRST consistency and critical dimension. Neither compactification nor identification with the five-dimensional emergent string is demonstrated. This exclusion does not deny that a connection could be established by other evidence.",
+          "paperId": "hep-th/9410143"
+        },
+        {
+          "unitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "disposition": "include",
+          "proposedScope": "Add the outside-neighbor sample as an explicit global compactification construction, with separate phenomenology and inflation links.",
+          "evidenceIds": [
+            "ev:9046e87b89cc1d52de94ede88a4164cb",
+            "ev:6a1540b8b88a76b5793c48212ec4980f",
+            "ev:2aa926afad1a9230974048b981d249d2"
+          ],
+          "reason": "I agree with the proposed boundary correction. Global embedding, orientifold charges, flux consistency and closed-string moduli stabilization directly satisfy the scope. Inclusion recognizes the question studied; it does not certify the claimed de Sitter vacuum, inflation, tunability or quantitative control.",
+          "paperId": "1706.06128"
+        },
+        {
+          "unitId": "unit:e070c63df767c836b99861d8dc4ed56fcdd5a6e88849cd5c40741e4c5a388bdf",
+          "disposition": "exclude",
+          "proposedScope": "Do not add this outside-neighbor as a member or overlapping member on current evidence; retain a related link to framework-relative and universal constraints.",
+          "evidenceIds": [
+            "ev:0c91d172ad5d1fd7a0ec438788be4145",
+            "ev:9018c5c45a85408d47133a4aa369cf15",
+            "ev:a827ffe161aab59efd951bf4bdea90f9"
+          ],
+          "reason": "I disagree with the proposal's overlap assignment. The supplied substantive question is universality across UV frameworks; compactification and the KK scale supply background for the string-theory side. No particular compactification calculation or criterion is examined in these excerpts. A related comparison is supported, while overlap membership would require additional evidence or an explicitly broader scope.",
+          "paperId": "2405.20386"
+        },
+        {
+          "unitId": "unit:6473e6def09a2177dc59fdeeca4f20e03cb263df30cb2963ae8c603615ff827a",
+          "disposition": "exclude",
+          "proposedScope": "Remove the sampled setting from hub membership; retain a boundary link to time-dependent quotient geometries.",
+          "evidenceIds": [
+            "ev:0870d9e8035e1e531ff31d1e4f025f88"
+          ],
+          "reason": "I agree with exclusion under the stated effective-description scope. The excerpt establishes a supersymmetry-preserving parabolic quotient with a lightcone-time pinch, but supplies no compactification EFT or infinite-distance moduli analysis. The assessment applies to this setting node, not the entire paper or every time-dependent compactification.",
+          "paperId": "0705.2146"
+        }
+      ],
+      "identityAssessments": [
+        {
+          "leftUnitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "rightUnitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "decision": "distinct_question",
+          "scopeKey": "charge-source-existence-versus-supersymmetry-encoding",
+          "reason": "Requirements for permitting internal flux differ from encoding supersymmetry in effective data. The first source's constraints do not require supersymmetry; the second specifically assumes N=1 backgrounds. The proposal correctly rejects a merge.",
+          "evidenceIds": [
+            "ev:7799445183bfbabf4a41522d2ffaed6c",
+            "ev:d00693c9dedb668e8624f18422a199fc"
+          ]
+        },
+        {
+          "leftUnitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "rightUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "decision": "distinct_question",
+          "scopeKey": "vacuum-scale-hierarchy-versus-infinite-distance-classification",
+          "reason": "A proposed four-dimensional AdS/KK hierarchy and classification of five-dimensional infinite-distance limits have different observables, regimes and success criteria. Shared KK terminology does not identify the questions.",
+          "evidenceIds": [
+            "ev:7799445183bfbabf4a41522d2ffaed6c",
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:f0fd5b2d4c23ab8d5367405d41129287"
+          ]
+        },
+        {
+          "leftUnitId": "unit:811179a15875a83c446cdf3098bbd645ecebb99050bd8a2a8fb392fe288a674a",
+          "rightUnitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "decision": "distinct_question",
+          "scopeKey": "m-theory-iia-obstructions-versus-iib-global-construction",
+          "reason": "The first unit's charge-source problem and massive-IIA critique do not become the second unit's type-IIB chiral construction merely because both concern flux vacua. Their theories, ingredients and construction targets differ; a direct contradiction is not established.",
+          "evidenceIds": [
+            "ev:285a07a33e9751072b6edcffc2228577",
+            "ev:0b8f021c3a1d89e0da3e42a45a098b0c",
+            "ev:6a1540b8b88a76b5793c48212ec4980f"
+          ]
+        },
+        {
+          "leftUnitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "rightUnitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "decision": "distinct_question",
+          "scopeKey": "general-supersymmetry-method-versus-specific-global-model",
+          "reason": "A general warped supersymmetry dictionary and a global orientifolded-quiver construction ask different questions. Shared instanton ingredients permit a conditional comparison, not identity or an established method-application dependence.",
+          "evidenceIds": [
+            "ev:232665f820809f139674770f6aa46a9b",
+            "ev:9046e87b89cc1d52de94ede88a4164cb",
+            "ev:2aa926afad1a9230974048b981d249d2"
+          ]
+        },
+        {
+          "leftUnitId": "unit:48fbaa251fed86bf6f0bbb247b170250bd30178e292c00d97b936faf013c9fce",
+          "rightUnitId": "unit:4b28c09f7391264daeff2374f349855645aa4d0a3915824f72d7f38ef77531c5",
+          "decision": "distinct_question",
+          "scopeKey": "supersymmetry-conditions-versus-gauge-mixing-amplitudes",
+          "reason": "Shared warped type-II settings do not equate F- and D-flatness with the pole/non-pole distinction in visible/hidden gauge mixing.",
+          "evidenceIds": [
+            "ev:d00693c9dedb668e8624f18422a199fc",
+            "ev:d1631a98c70fc2ce767ae0d39af6dea6"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:4b28c09f7391264daeff2374f349855645aa4d0a3915824f72d7f38ef77531c5",
+          "decision": "distinct_question",
+          "scopeKey": "asymptotic-coupling-diagnostic-versus-kinetic-mixing",
+          "reason": "Gauge-coupling asymptotics classifying limiting towers and an off-diagonal kinetic-mixing coefficient in a compact background are different mathematical targets. Neither their quantities nor their regimes can be interchanged.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:d1631a98c70fc2ce767ae0d39af6dea6"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:ee2f49cd0be8d32bf755e1c8d65ab5ce4096dfb3bfac06bb0d6421bcaad0631a",
+          "decision": "distinct_question",
+          "scopeKey": "emergent-string-diagnosis-versus-conformal-brst-quantization",
+          "reason": "The former classifies moduli limits using couplings and BPS indices; the latter quantizes a specified bosonic zero-tension model. No identification of the strings or transfer of the D=2 condition is supported.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:22d22fefa2ccdafbb16bd8cd0aeea0ae",
+            "ev:95ef678492c4c328a1e696b8470d600a"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:6473e6def09a2177dc59fdeeca4f20e03cb263df30cb2963ae8c603615ff827a",
+          "decision": "distinct_question",
+          "scopeKey": "moduli-distance-versus-lightcone-time",
+          "reason": "An infinite-distance limit in vector-multiplet moduli space and collapse of a quotient circle at a specified lightcone time are different operations. The source packet supplies no map between them.",
+          "evidenceIds": [
+            "ev:ad7cbb807bbf1fc735c7bf6b9c9f9581",
+            "ev:0870d9e8035e1e531ff31d1e4f025f88"
+          ]
+        },
+        {
+          "leftUnitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "rightUnitId": "unit:e070c63df767c836b99861d8dc4ed56fcdd5a6e88849cd5c40741e4c5a388bdf",
+          "decision": "distinct_question",
+          "scopeKey": "specified-five-dimensional-evidence-versus-framework-universality",
+          "reason": "Testing an emergent-string prediction under stated five-dimensional assumptions differs from asking whether constraints agree across UV frameworks. The review excerpts do not evaluate this particular conjecture.",
+          "evidenceIds": [
+            "ev:c58116c501c02fa35cbce7bd6bafd083",
+            "ev:9018c5c45a85408d47133a4aa369cf15",
+            "ev:a827ffe161aab59efd951bf4bdea90f9"
+          ]
+        },
+        {
+          "leftUnitId": "unit:459a501400bd831a1c4638f5a60153a660c19228793faf1c2be51c2297f68784",
+          "rightUnitId": "unit:e070c63df767c836b99861d8dc4ed56fcdd5a6e88849cd5c40741e4c5a388bdf",
+          "decision": "distinct_question",
+          "scopeKey": "claimed-de-sitter-model-versus-universality-of-constraints",
+          "reason": "A concrete construction and a review of framework dependence have distinct targets. Mentioning de-Sitter conjectures supplies no precise criterion with which to adjudicate the construction, so neither identity nor a direct contradiction follows.",
+          "evidenceIds": [
+            "ev:6a1540b8b88a76b5793c48212ec4980f",
+            "ev:9018c5c45a85408d47133a4aa369cf15",
+            "ev:a827ffe161aab59efd951bf4bdea90f9"
+          ]
+        }
+      ],
+      "limitations": [
+        "Only eight supplied samples were assessed. The 3127-member candidate is pinned and marked unstable; neither its complete membership nor the prevalence of any proposed branch is certified.",
+        "The review used only the supplied packet. Evidence is limited to bounded anchors and extracted nearby page text, frequently abstracts or introductions; omitted anchors, full derivations, cited opposing sources, figures and numerical data were unavailable.",
+        "The packet reports checksum verification. That provenance claim was not independently checked here and does not establish scientific correctness.",
+        "Repeated or overlapping page contexts do not constitute independent corroboration. All supplied source identities remain distinct, and no canonical-question merge is supported.",
+        "Equation extraction and interleaved columns limit mathematical interpretation. The 0705.2146 anchor is marked quoteExactInPage=false; its nearby context supports the pinch description, but exact quotation and image-based claims were not verified.",
+        "The massive-IIA disagreement is available only through the critic's account. No resolution is inferred. The claimed type-IIB de Sitter model and the review's introduction to de-Sitter conjectures do not establish a directly adjudicable contradiction.",
+        "The changed disposition for the UV-framework review is a scoped organizational disagreement with the proposal, not a claim that the full review contains no compactification analysis. Additional evidence could change it.",
+        "Proposed comparisons are navigation choices rather than established scientific implications. Similarity, source mentions and numerical adjacency provide no derivational support."
+      ],
+      "fullMembershipCertified": false,
+      "sampledOnly": true
+    },
+    {
+      "jobId": "compactification3127-fresh",
+      "verdict": "needs_revision",
+      "title": "Compactification consistency, spectra and effective descriptions",
+      "summary": "The fresh sources support a navigation hub containing several distinct questions. I would broaden the previous scope's four-/five-dimensional emphasis to accommodate eight-dimensional gauge realizability and explicit KK spectroscopy. Five samples directly investigate compactification data or constructions; the four-derivative torsion study warrants overlap through its dimension-specific effective action, without establishing an internal compactification model. No canonical-question merge is supported. The sources report a concrete flux-quantization/tadpole obstruction, conjectural anomaly and stability connections, and conditional inflationary constructions; these should remain distinct from validated general conclusions.",
+      "replyArtifactSha256": "d98cbb2f6943074f53fb99902b03f33bd8d6c256dd77219c5096bbf1c488ad19",
+      "rawReplySha256": "e79f11bc200fdf2edcd618615e05dc46117e96cfc5712d191269c037e2d67560",
+      "receiptSha256": "abd7d754b866bdce2c1c2304a5645c5666f61520c67d0230ead1873316a25f90",
+      "inputPins": {
+        "requestSha256": "56e54f32c9b56e8ce6fd81e322a7a7d6faebadc19945719010f4b7d883994083",
+        "packetSha256": "f5cfc6ab59854541232227f205ec531163624731bff3078eab91522b2fbb9473",
+        "promptSha256": "ce4e4d0db98890f8554f3f5c8c5839d85044ed0d53f405608a6bfb5dc7923f5b",
+        "schemaSha256": "07c111d4e4ea5a992d958e795482cf3f2a1f857643e75fb9753c2f645e95e1c6",
+        "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+        "runnerSha256": "a561247ad60c11c1eebd8cc654a6b667a9ac9c2be39460a9223a618a3a07c37e",
+        "dependency": {
+          "jobId": "compactification3127-challenge",
+          "receiptSha256": "7abce8bc180b96e50a0a535346d02456c10f57a1f699fc40b2e3b68e3da3dd77",
+          "replySha256": "f82a59a84dd263944fd5af65c9742fc520b283de88de2b58117b55a3c4586bbb"
+        }
+      },
+      "elapsedSeconds": 442.4,
+      "usage": {
+        "inputTokens": 50937,
+        "cachedInputTokens": 0,
+        "outputTokens": 13274,
+        "reasoningOutputTokens": 4142
+      },
+      "membershipAssessments": [
+        {
+          "unitId": "unit:89532602eae3619289935e8e286f7892edd6592c8185ed8d90a66f69c92327d5",
+          "disposition": "include",
+          "proposedScope": "Include in a distinct gauge-realizability branch, extending the hub beyond its previously named four-/five-dimensional settings.",
+          "evidenceIds": [
+            "ev:1cb642e17d0a45670f2391ca68278668",
+            "ev:c80aa855817b610a1147e01cca8215f4"
+          ],
+          "reason": "The source directly compares a specified compactification's allowed gauge sectors with alternative constructions. This supports membership in a revised compactification-consistency hub. It does not establish a universal exclusion, an alternative realization or a global-anomaly explanation.",
+          "paperId": "2007.10358"
+        },
+        {
+          "unitId": "unit:9b3c9f1fc7ff981e0a49b1e5d8d800722719cba89c154dbfa394b45b76089f44",
+          "disposition": "include",
+          "proposedScope": "Include in compactification spectroscopy, with separate routes for boundary conditions and conjectural nonsupersymmetric AdS stability.",
+          "evidenceIds": [
+            "ev:7bd21e1302b836790f0f6bc1936afb1e",
+            "ev:92f3ab3277cb4b54039597e089a791fe"
+          ],
+          "reason": "Internal operators and lower-dimensional masses are the explicit subject, so membership is direct. The abstract reports spectral achievements, but its possible stability relevance and suggested singleton Higgsing must not be promoted to established conclusions.",
+          "paperId": "2412.04208"
+        },
+        {
+          "unitId": "unit:859e68ff0c656adbd329ddf823df7644695047d69de709d1c913bc372b76aa1b",
+          "disposition": "include",
+          "proposedScope": "Include as a fixed-volume scalar-KK spectral question and numerical method, with a conditional link to distance-conjecture diagnostics.",
+          "evidenceIds": [
+            "ev:7dc9e97a3e0ec542d98497f0c6673187",
+            "ev:aae9377dbad313d544063af5713f8ec7",
+            "ev:fbf6bcc3335849ec1642cf7c81a21259"
+          ],
+          "reason": "The supplied metric reduction and numerical eigenproblem directly relate internal geometry to physical mass data. The evidence concerns a finite parameter range and reliable low modes; it does not establish the full string spectrum, an infinite-distance law or a numerical value of its exponent.",
+          "paperId": "2103.07472"
+        },
+        {
+          "unitId": "unit:b3a90add8e225ee26c236eba585b44b58f53e1282ad3afc89b34cf0a7a25fd66",
+          "disposition": "include",
+          "proposedScope": "Include in flux effective data and compactification consistency, retaining separate stabilization, quantization and higher-dimensional-construction questions.",
+          "evidenceIds": [
+            "ev:2967d860d4eb0479b459e72801f76da1",
+            "ev:4534d84db97ded297695c165adf40dff",
+            "ev:ef0622862201efafd5dcc8b7dd72e1dd"
+          ],
+          "reason": "The source directly addresses the hub's effective-theory/existence boundary. Its corrected-quantization tadpole failure is material evidence against treating all reported stabilized extrema as completed compactifications. The authors' proposed explanation remains unresolved.",
+          "paperId": "0705.3410"
+        },
+        {
+          "unitId": "unit:8420abacef31caf0d4bc225d7b4d13afb25ef066b24cce9128cb46aaa79d452c",
+          "disposition": "overlap",
+          "proposedScope": "Assign overlap with higher-derivative effective-action consistency and running-vacuum cosmology; do not treat it as an explicit internal-background construction.",
+          "evidenceIds": [
+            "ev:15b93273f774826e53547c2a2c398af9",
+            "ev:f6cddbcd2d2bcacfe49676177a559bbc"
+          ],
+          "reason": "Four-dimensional compatibility of the torsion and unitarity requirements, followed by corrected axion dualization, is a substantive reduction-dependent question. That supports more than a related mention, but the excerpts provide no internal geometry, compactification spectrum or moduli-stabilization analysis. Claimed cosmological suppression remains an attributed introductory result.",
+          "paperId": "2602.16076"
+        },
+        {
+          "unitId": "unit:4280a9997fa9bce959e29c0e0b884b8a7f2cf98990583a72ffa337b9621400ba",
+          "disposition": "include",
+          "proposedScope": "Include as a compactification-based inflation application, with an overlapping cosmology route and an explicit moduli-control question.",
+          "evidenceIds": [
+            "ev:744d34742d115d181b4f9b03f6f0c854",
+            "ev:8c69cb59113140d5d1b5d2eddcf07d92"
+          ],
+          "reason": "The D7-position potential, large-complex-structure shift symmetry, flux tuning and remaining-moduli stabilization make compactification central to the question. Inclusion does not certify the claimed controlled regime, flux choices or stability over the full large-field trajectory.",
+          "paperId": "1404.3711"
+        }
+      ],
+      "identityAssessments": [
+        {
+          "leftUnitId": "unit:89532602eae3619289935e8e286f7892edd6592c8185ed8d90a66f69c92327d5",
+          "rightUnitId": "unit:b3a90add8e225ee26c236eba585b44b58f53e1282ad3afc89b34cf0a7a25fd66",
+          "decision": "distinct_question",
+          "scopeKey": "eight-dimensional-gauge-realizability-versus-four-dimensional-flux-consistency",
+          "reason": "Gauge-algebra realizability with 16 supercharges and N=1 orientifold flux consistency have different construction classes and required data. A speculative global-anomaly explanation is not the same condition as Bianchi identities, flux quantization or tadpole cancellation.",
+          "evidenceIds": [
+            "ev:1cb642e17d0a45670f2391ca68278668",
+            "ev:c80aa855817b610a1147e01cca8215f4",
+            "ev:2967d860d4eb0479b459e72801f76da1"
+          ]
+        },
+        {
+          "leftUnitId": "unit:89532602eae3619289935e8e286f7892edd6592c8185ed8d90a66f69c92327d5",
+          "rightUnitId": "unit:4280a9997fa9bce959e29c0e0b884b8a7f2cf98990583a72ffa337b9621400ba",
+          "decision": "distinct_question",
+          "scopeKey": "d7-algebra-factor-versus-d7-brane-position",
+          "reason": "D7 labels an algebra factor in the first question and a brane in the second. The questions concern eight-dimensional gauge realizability and four-dimensional inflation respectively; the shared notation supplies no identity or scientific implication.",
+          "evidenceIds": [
+            "ev:1cb642e17d0a45670f2391ca68278668",
+            "ev:744d34742d115d181b4f9b03f6f0c854"
+          ]
+        },
+        {
+          "leftUnitId": "unit:9b3c9f1fc7ff981e0a49b1e5d8d800722719cba89c154dbfa394b45b76089f44",
+          "rightUnitId": "unit:859e68ff0c656adbd329ddf823df7644695047d69de709d1c913bc372b76aa1b",
+          "decision": "distinct_question",
+          "scopeKey": "squashed-s7-ads-multiplets-versus-quintic-scalar-shape-spectrum",
+          "reason": "Both investigate internal spectra, but the first treats several operators, AdS mass matrices and boundary-dependent multiplets, while the second varies a scalar Laplacian on a fixed-volume quintic family. A shared spectral-method route does not make their observables or success criteria identical.",
+          "evidenceIds": [
+            "ev:7bd21e1302b836790f0f6bc1936afb1e",
+            "ev:aae9377dbad313d544063af5713f8ec7",
+            "ev:7dc9e97a3e0ec542d98497f0c6673187"
+          ]
+        },
+        {
+          "leftUnitId": "unit:9b3c9f1fc7ff981e0a49b1e5d8d800722719cba89c154dbfa394b45b76089f44",
+          "rightUnitId": "unit:b3a90add8e225ee26c236eba585b44b58f53e1282ad3afc89b34cf0a7a25fd66",
+          "decision": "distinct_question",
+          "scopeKey": "spectrum-of-a-background-versus-construction-of-flux-vacua",
+          "reason": "Determining spectra and possible stability implications for a specified Freund–Rubin background differs from constructing quantized orientifold flux vacua and stabilizing moduli. AdS and supersymmetry terminology does not identify these tasks.",
+          "evidenceIds": [
+            "ev:7bd21e1302b836790f0f6bc1936afb1e",
+            "ev:4534d84db97ded297695c165adf40dff"
+          ]
+        },
+        {
+          "leftUnitId": "unit:859e68ff0c656adbd329ddf823df7644695047d69de709d1c913bc372b76aa1b",
+          "rightUnitId": "unit:4280a9997fa9bce959e29c0e0b884b8a7f2cf98990583a72ffa337b9621400ba",
+          "decision": "distinct_question",
+          "scopeKey": "complex-structure-dependent-kk-masses-versus-brane-inflaton-dynamics",
+          "reason": "The quintic parameter controls a family of internal scalar spectra; the D7-position direction is a proposed inflaton with other moduli stabilized. The excerpts supply no identification of their geometries or trajectories and no transfer of a distance-conjecture conclusion to the inflation model.",
+          "evidenceIds": [
+            "ev:fbf6bcc3335849ec1642cf7c81a21259",
+            "ev:aae9377dbad313d544063af5713f8ec7",
+            "ev:744d34742d115d181b4f9b03f6f0c854"
+          ]
+        },
+        {
+          "leftUnitId": "unit:b3a90add8e225ee26c236eba585b44b58f53e1282ad3afc89b34cf0a7a25fd66",
+          "rightUnitId": "unit:4280a9997fa9bce959e29c0e0b884b8a7f2cf98990583a72ffa337b9621400ba",
+          "decision": "distinct_question",
+          "scopeKey": "iia-supersymmetric-flux-vacua-versus-iib-monodromy-inflation",
+          "reason": "Shared stabilization language does not merge the IIA flux-classification problem with the IIB D7 inflation construction. The former's tadpole difficulty and conditional Minkowski restriction do not contradict the latter's stabilization claim under different ingredients and broken supersymmetry.",
+          "evidenceIds": [
+            "ev:ef0622862201efafd5dcc8b7dd72e1dd",
+            "ev:4534d84db97ded297695c165adf40dff",
+            "ev:744d34742d115d181b4f9b03f6f0c854"
+          ]
+        },
+        {
+          "leftUnitId": "unit:b3a90add8e225ee26c236eba585b44b58f53e1282ad3afc89b34cf0a7a25fd66",
+          "rightUnitId": "unit:8420abacef31caf0d4bc225d7b4d13afb25ef066b24cce9128cb46aaa79d452c",
+          "decision": "distinct_question",
+          "scopeKey": "internal-flux-data-versus-spacetime-torsion-dualization",
+          "reason": "The orientifold study organizes internal flux parameters and their consistency conditions. The torsion study reorganizes higher-derivative spacetime interactions and integrates out H in four dimensions. Shared NS-NS notation and effective-action language do not identify their quantities or calculations.",
+          "evidenceIds": [
+            "ev:2967d860d4eb0479b459e72801f76da1",
+            "ev:15b93273f774826e53547c2a2c398af9",
+            "ev:f6cddbcd2d2bcacfe49676177a559bbc"
+          ]
+        },
+        {
+          "leftUnitId": "unit:8420abacef31caf0d4bc225d7b4d13afb25ef066b24cce9128cb46aaa79d452c",
+          "rightUnitId": "unit:4280a9997fa9bce959e29c0e0b884b8a7f2cf98990583a72ffa337b9621400ba",
+          "decision": "distinct_question",
+          "scopeKey": "running-vacuum-corrections-versus-d7-monodromy-construction",
+          "reason": "One asks whether additional O(α′) torsion/axion terms alter a running-vacuum scenario; the other constructs a tuned D7-position potential with stabilized remaining moduli. Inflation and axion terminology do not establish one mechanism, one canonical question or mutual validation.",
+          "evidenceIds": [
+            "ev:f6cddbcd2d2bcacfe49676177a559bbc",
+            "ev:744d34742d115d181b4f9b03f6f0c854",
+            "ev:8c69cb59113140d5d1b5d2eddcf07d92"
+          ]
+        }
+      ],
+      "limitations": [
+        "Only the six fresh samples were assessed. The pinned 3127-member candidate is marked unstable; neither complete membership nor the distribution of scientific topics is certified.",
+        "The review used only the supplied excerpts. Several findings are available only through abstracts or introductions; full derivations, cited papers, figures, spectra and numerical datasets were unavailable.",
+        "The packet reports checksum-verified anchors. That provenance statement was not independently checked and does not establish scientific correctness.",
+        "Overlapping anchors and repeated page contexts are not independent evidence. All source identities remain distinct; no canonical-question merge is recommended.",
+        "Extracted equations and interleaved columns limit mathematical reading, particularly in the quintic appendix. Only the clearly supplied scalar mass and volume relations were used.",
+        "The revised dimensional and spectral scope is an organizational disagreement with an exhaustive reading of the previous scope. Earlier membership decisions and the previously reported massive-IIA dispute cannot be re-adjudicated from these fresh sources.",
+        "The IIA source explicitly exposes a failure of naive quantization and an unresolved tadpole problem. Its suggested explanation is not a demonstrated solution, and it does not contradict the different IIB inflation construction.",
+        "The torsion source contrasts its four-dimensional claim with higher-dimensional literature, but the cited treatments are unavailable. Different dimensional hypotheses prevent treating that contrast as an adjudicated disagreement under identical assumptions.",
+        "The proposed scientific relations are conditional navigation choices. Shared vocabulary, citations, numerical membership and geometric adjacency establish no scientific implication."
+      ],
+      "fullMembershipCertified": false,
+      "sampledOnly": true
+    },
+    {
+      "jobId": "inflation729-proposal",
+      "verdict": "needs_revision",
+      "title": "Inflation under conjectural quantum-gravity restrictions",
+      "summary": "The excerpts support an organizing question about conditional compatibility with quantum-gravity restrictions, spanning several distinct dynamics. They do not support one mechanism for the whole candidate. Proposed organization: include explicit restriction tests, retain partial overlaps for rapid-turn generalization and warm inflation, and place the two Gauss–Bonnet questions in related regions unless further evidence establishes a restriction test. The minimal-gauge boundary sample belongs directly in the proposed core. The sources preserve disagreement: 1807.11938 explicitly describes the conjectures as disputed, while 0706.2215 and 1305.1947 give different expectations for small-field tensor signals under different assumptions. Neither disagreement is resolved by these excerpts. These are proposed actions for eight samples, not certification of the 729-member candidate.",
+      "replyArtifactSha256": "b46aabc86cb054235a7a3f89d78fb89ddadb9c13479578698674ab5f43f37af7",
+      "rawReplySha256": "14ec4ecc413a4d7fecb46b0bb6a24e8cb3bede5406f70e1353a75a480c9f4e45",
+      "receiptSha256": "a9d1a81f4a34a1791cba5534318badb82455bbf1fa978f869f34a840f5e7984f",
+      "inputPins": {
+        "requestSha256": "54c34520684d1c3f95f799211c301a15a9eae8a0aa6c317a068a0669634226c9",
+        "packetSha256": "c643a30c2f364f22bd5598e7b3972feeb4054efdbbcb56895373985ae4822e9e",
+        "promptSha256": "885fb04d4460692386e36db010c87c6eaa2821d9ccf8197329ea5a7bd4844fc7",
+        "schemaSha256": "07c111d4e4ea5a992d958e795482cf3f2a1f857643e75fb9753c2f645e95e1c6",
+        "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+        "runnerSha256": "a561247ad60c11c1eebd8cc654a6b667a9ac9c2be39460a9223a618a3a07c37e",
+        "dependency": null
+      },
+      "elapsedSeconds": 542.7,
+      "usage": {
+        "inputTokens": 45537,
+        "cachedInputTokens": 0,
+        "outputTokens": 14106,
+        "reasoningOutputTokens": 5482
+      },
+      "membershipAssessments": [
+        {
+          "unitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "disposition": "include",
+          "proposedScope": "Core: conditional self-reproduction under distance and gradient conjectures.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c"
+          ],
+          "reason": "The supplied introduction explicitly asks whether eternal inflation satisfies the two conjectures and acknowledges their disputed status. Include this conditional question, preserving its single slowly rolling inflaton scope. The announced chaotic-type result and unusual coefficient requirements remain attributed because the calculation is absent.",
+          "paperId": "1807.11938"
+        },
+        {
+          "unitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "disposition": "include",
+          "proposedScope": "Core: proposed field-range restrictions and their inflationary consequences.",
+          "evidenceIds": [
+            "ev:074bbfadd80d61fdc659af3c1ccdff05",
+            "ev:e2995f84f96c2e1d3e9ff8fac59a13d8"
+          ],
+          "reason": "The source explicitly conjectures a Planck-scale restriction and tests selected constructions using distinct cutoff and geometric premises. Its proposed negative answer is not a demonstrated universal landscape classification. Keep the associated negligible-tensor claim conditional on the analysis rather than incorporating it into the family definition.",
+          "paperId": "0706.2215"
+        },
+        {
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "disposition": "overlap",
+          "proposedScope": "Overlap between rapid-turn model generalization and explicit swampland-compatibility questions.",
+          "evidenceIds": [
+            "ev:ac902b89c9f67cfd87e88d7f57dce744",
+            "ev:bcb6bacbde4e69a47020b56c6e1278c1"
+          ],
+          "reason": "The source poses two separable questions: which assumptions of hyperinflation are necessary, and whether steep, short-excursion models satisfy the proposed conjectures. The latter directly overlaps the core; the former belongs to a broader dynamics region. Preserve the source unit and both facets without treating the excerpt as a successful compatibility demonstration.",
+          "paperId": "1901.08603"
+        },
+        {
+          "unitId": "unit:4e8d650f770ee4df1d2bfcc209a892c736be694143c55968acec62cbf9488aa5",
+          "disposition": "include",
+          "proposedScope": "Core: refined de Sitter tests of minimal gauge inflation with source-era CMB constraints.",
+          "evidenceIds": [
+            "ev:46d003850f5e60dfe1ae94ce268ac531"
+          ],
+          "reason": "Despite its numerical boundary role, this is an explicit conjecture-consistency test and fits the proposed core directly. Preserve the gradient-or-Hessian formulation and unknown universal constants. The abstract's landscape language is not sufficient evidence of an actual quantum-gravity embedding.",
+          "paperId": "1810.11279"
+        },
+        {
+          "unitId": "unit:463a12e2dc332616a250839452fd03c929ad36babb54cc885f759d809b487dbd",
+          "disposition": "exclude",
+          "proposedScope": "Related region: potential-free scalar–Gauss–Bonnet backgrounds, truncation control and exits.",
+          "evidenceIds": [
+            "ev:545d2a0c763e5133dcac95a2fb5fa2f1",
+            "ev:736e7c8b41199b6daa263097e50c44cf"
+          ],
+          "reason": "The supplied question concerns background solutions after dropping the Einstein–Hilbert term, with no imposed scalar self-potential. String inspiration and de Sitter expansion do not establish a test of the core's field-range or potential-derivative restrictions. Exclude from this proposed core on the supplied evidence while retaining a related link; do not infer that the full paper lacks every possible connection.",
+          "paperId": "1503.01579"
+        },
+        {
+          "unitId": "unit:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15",
+          "disposition": "overlap",
+          "proposedScope": "Primary PBH and induced-wave application, with a restricted overlap through warm-inflation consistency arguments.",
+          "evidenceIds": [
+            "ev:63553f3cec0501b4387f21f44c5a93fd",
+            "ev:690f0a5ac70fc02101cc36589367770b",
+            "ev:988923559651f6baba865f6926c2fee2"
+          ],
+          "reason": "The main calculation targets late amplification and its PBH and gravitational-wave consequences. The context also supplies a substantive conditional argument about warm slow-roll bounds and strong dissipation. That supports limited overlap, beyond a passing mention, but it does not establish conjecture compatibility for the selected weak-to-strong dissipative history.",
+          "paperId": "2105.08045"
+        },
+        {
+          "unitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+          "disposition": "exclude",
+          "proposedScope": "Related region: Gauss–Bonnet-assisted CMB fitting, PBH production and scalar-induced gravitational waves.",
+          "evidenceIds": [
+            "ev:9145380deb122f97186111cba70adebd",
+            "ev:9d03deae85636a69d3ab47fd515b48d3"
+          ],
+          "reason": "The supplied sections motivate and specify a coupling intended to address large-scale constraints and small-scale amplification. They do not supply a field-range, de Sitter-conjecture or string-embedding restriction test. Shared inflation and Gauss–Bonnet terminology does not justify inclusion in the proposed core.",
+          "paperId": "2403.00021"
+        },
+        {
+          "unitId": "unit:3d4f835fdc59859ee7b9157c2f4863e7109395619a126626d0e84d5e1446892c",
+          "disposition": "include",
+          "proposedScope": "Core application: primordial tensors under string-motivated axion-range restrictions.",
+          "evidenceIds": [
+            "ev:2a5f681a59eae8154fe93b4f334dc0b5",
+            "ev:6d59ae5642c7d4b28989cc60a2afab6d",
+            "ev:7cc6fe5496e07dd87545f6849adbb5df"
+          ],
+          "reason": "This is more than a generic small-field tensor model: the source explicitly applies string-motivated decay-constant restrictions alongside tilt and running constraints. Include its conditional observable question, with a separate link to hybrid-inflation dynamics. Its enhancement relative to a constant-r estimate does not establish a violation of every formulation of the Lyth bound.",
+          "paperId": "1305.1947"
+        }
+      ],
+      "identityAssessments": [
+        {
+          "leftUnitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "rightUnitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "decision": "distinct_question",
+          "scopeKey": "self-reproduction-versus-field-range-admissibility",
+          "reason": "One asks about self-reproduction under two restrictions; the other proposes and tests a field-range exclusion. They share a compatibility theme but differ in target phenomenon, restrictions and required calculation. Preserve both canonical questions.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c",
+            "ev:074bbfadd80d61fdc659af3c1ccdff05",
+            "ev:e2995f84f96c2e1d3e9ff8fac59a13d8"
+          ]
+        },
+        {
+          "leftUnitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "rightUnitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "decision": "distinct_question",
+          "scopeKey": "eternal-slow-roll-versus-generalized-hyperinflation",
+          "reason": "Generalizing rapid-turn dynamics and testing its compatibility does not answer the self-reproduction question. Within the rapid-turn source, keep geometry generalization and conjecture testing as distinguishable facets without duplicating or merging the source identity.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c",
+            "ev:ac902b89c9f67cfd87e88d7f57dce744",
+            "ev:bcb6bacbde4e69a47020b56c6e1278c1"
+          ]
+        },
+        {
+          "leftUnitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "rightUnitId": "unit:4e8d650f770ee4df1d2bfcc209a892c736be694143c55968acec62cbf9488aa5",
+          "decision": "distinct_question",
+          "scopeKey": "distance-plus-gradient-eternality-versus-refined-gauge-test",
+          "reason": "The refined disjunction changes the restriction being tested, and the gauge source asks about a specified potential and CMB inputs rather than eternal inflation. A shared de Sitter label does not make the questions equivalent.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c",
+            "ev:46d003850f5e60dfe1ae94ce268ac531"
+          ]
+        },
+        {
+          "leftUnitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "rightUnitId": "unit:3d4f835fdc59859ee7b9157c2f4863e7109395619a126626d0e84d5e1446892c",
+          "decision": "distinct_question",
+          "scopeKey": "field-range-exclusion-versus-tensors-within-the-range",
+          "reason": "The hybrid question seeks tensors while respecting a restricted range; it is not a test of whether a trans-Planckian trajectory is allowed. The tensor expectations differ, but the hybrid source identifies a different epsilon history and exit condition. Do not merge the questions or suppress that conditional disagreement.",
+          "evidenceIds": [
+            "ev:e2995f84f96c2e1d3e9ff8fac59a13d8",
+            "ev:2a5f681a59eae8154fe93b4f334dc0b5",
+            "ev:6d59ae5642c7d4b28989cc60a2afab6d",
+            "ev:7cc6fe5496e07dd87545f6849adbb5df"
+          ]
+        },
+        {
+          "leftUnitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "rightUnitId": "unit:4e8d650f770ee4df1d2bfcc209a892c736be694143c55968acec62cbf9488aa5",
+          "decision": "distinct_question",
+          "scopeKey": "gauge-origin-field-range-example-versus-minimal-gauge-refined-test",
+          "reason": "The extra-natural example in the field-range paper uses gauge and cutoff assumptions to constrain a canonical range. The minimal-gauge paper tests a specified potential against gradient-or-Hessian conditions. Gauge origin alone establishes neither model identity nor equivalence of the tests.",
+          "evidenceIds": [
+            "ev:074bbfadd80d61fdc659af3c1ccdff05",
+            "ev:46d003850f5e60dfe1ae94ce268ac531"
+          ]
+        },
+        {
+          "leftUnitId": "unit:463a12e2dc332616a250839452fd03c929ad36babb54cc885f759d809b487dbd",
+          "rightUnitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+          "decision": "distinct_question",
+          "scopeKey": "potential-free-GB-background-versus-potential-present-GB-PBH",
+          "reason": "The first asks for de Sitter backgrounds and exits after a gravitational truncation without a self-potential. The second designs a coupling alongside a power-law potential to address CMB and small-scale perturbations. A common curvature invariant does not identify their mechanisms or scientific questions.",
+          "evidenceIds": [
+            "ev:545d2a0c763e5133dcac95a2fb5fa2f1",
+            "ev:736e7c8b41199b6daa263097e50c44cf",
+            "ev:9145380deb122f97186111cba70adebd",
+            "ev:9d03deae85636a69d3ab47fd515b48d3"
+          ]
+        },
+        {
+          "leftUnitId": "unit:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15",
+          "rightUnitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+          "decision": "distinct_question",
+          "scopeKey": "dissipative-versus-GB-small-scale-amplification",
+          "reason": "Both can be navigated through PBHs and induced waves, but their model-specific questions retain different amplification mechanisms, parameters and observational targets. The warm source's high-frequency prediction and the Gauss–Bonnet source's PTA objective are not interchangeable.",
+          "evidenceIds": [
+            "ev:690f0a5ac70fc02101cc36589367770b",
+            "ev:988923559651f6baba865f6926c2fee2",
+            "ev:9145380deb122f97186111cba70adebd",
+            "ev:9d03deae85636a69d3ab47fd515b48d3"
+          ]
+        }
+      ],
+      "limitations": [
+        "Only eight supplied samples were assessed. Candidate hashes and membership counts identify the pinned dataset in the packet; they do not certify scientific homogeneity.",
+        "Evidence consists of at most three archived anchors per sample with bounded page context. No full-paper reading, image inspection, calculation or independent provenance verification was performed.",
+        "Several anchors are not flagged as exact page matches, and extracted equations contain layout artifacts. Detailed numerical inequalities, including the hybrid axion bound and some higher-curvature expressions, require source verification before reuse.",
+        "The two hyperinflation evidence IDs reproduce the same page context; overlapping contexts elsewhere also do not constitute independent confirmations.",
+        "Introductory compatibility claims, advertised parameter spaces and observational objectives have been distinguished from supplied derivations and demonstrated results.",
+        "Observational limits and detectability statements are source-era claims. The packet does not support a common updated likelihood or current experimental forecast.",
+        "No cross-unit canonical merge is supported by the reviewed excerpts. Proposed overlaps preserve every source identity, and scientificRelations are candidate comparisons rather than validated implication or citation edges.",
+        "Exclusions apply to the proposed organizing question on sampled evidence; they are not claims that the excluded full papers have no relevant connections."
+      ],
+      "fullMembershipCertified": false,
+      "sampledOnly": true
+    },
+    {
+      "jobId": "inflation729-challenge",
+      "verdict": "needs_revision",
+      "title": "Conditional quantum-gravity restrictions on inflation",
+      "summary": "The sources support most of the proposal's organization, including direct inclusion of minimal gauge inflation and separation of the two Gauss–Bonnet questions. I disagree with assigning warm-PBH question membership from its discussion of another dissipative regime: change that sample from overlap to exclude from this core, while retaining a related method link. The resulting sampled actions are four includes, one overlap and three exclusions. This is a question-level organizational judgment, not a denial of the warm source's substantive compatibility discussion. Preserve the different tensor expectations of the 2007 and hybrid-natural sources; the excerpts do not establish a contradiction under identical assumptions. The acknowledged dispute over swampland conjectures also remains unresolved. No single mechanism or cross-source canonical merge is justified, and no assessment of all 729 candidate members is possible.",
+      "replyArtifactSha256": "33615aa11afedac435c1a68fcf8416939932da65a3bc9c11518e9c0e6d283bdf",
+      "rawReplySha256": "503df0900a0d8c7a09e56d9d2505ec1026b772bc23e99bec729c043ba70ef057",
+      "receiptSha256": "f89b5ad12dcbb97722590b2df8e2a7932f0b3f1fb218fa8aa04fc81602bd3fad",
+      "inputPins": {
+        "requestSha256": "f11cff3582d81b1088818f0c24e032672cc96013ab8392b2e458a9a07bf7c6a0",
+        "packetSha256": "68c70e99cd172988820c6a8bed1435ad90f2b461b7f178c6192d0705aefe6bbc",
+        "promptSha256": "a90a780c155b52e16703e161d39beb4a875032c54db5dcdf3afc5e9e3a0c6b6a",
+        "schemaSha256": "07c111d4e4ea5a992d958e795482cf3f2a1f857643e75fb9753c2f645e95e1c6",
+        "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+        "runnerSha256": "a561247ad60c11c1eebd8cc654a6b667a9ac9c2be39460a9223a618a3a07c37e",
+        "dependency": {
+          "jobId": "inflation729-proposal",
+          "receiptSha256": "a9d1a81f4a34a1791cba5534318badb82455bbf1fa978f869f34a840f5e7984f",
+          "replySha256": "b46aabc86cb054235a7a3f89d78fb89ddadb9c13479578698674ab5f43f37af7"
+        }
+      },
+      "elapsedSeconds": 362.0,
+      "usage": {
+        "inputTokens": 54166,
+        "cachedInputTokens": 16640,
+        "outputTokens": 11957,
+        "reasoningOutputTokens": 3106
+      },
+      "membershipAssessments": [
+        {
+          "unitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "disposition": "include",
+          "proposedScope": "Conditional self-reproduction under distance and potential-gradient restrictions.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c"
+          ],
+          "reason": "Retain the proposal's inclusion. The introduction explicitly asks whether eternal inflation satisfies both conjectures and acknowledges their disputed status. The sampled question specifies a single slowly rolling inflaton. The announced chaotic-type result and coefficient requirements remain attributed because their calculation is not supplied.",
+          "paperId": "1807.11938"
+        },
+        {
+          "unitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "disposition": "include",
+          "proposedScope": "Proposed canonical field-range restrictions and conditional inflationary consequences.",
+          "evidenceIds": [
+            "ev:074bbfadd80d61fdc659af3c1ccdff05",
+            "ev:e2995f84f96c2e1d3e9ff8fac59a13d8"
+          ],
+          "reason": "Retain inclusion: proposing and testing a landscape field-range restriction is the explicit question. The examples have different cutoff, perturbative and geometric premises. Their collection does not establish a universal theorem. Preserve the source's negligible-tensor expectation as an analysis-dependent claim, not a family-wide consequence.",
+          "paperId": "0706.2215"
+        },
+        {
+          "unitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "disposition": "overlap",
+          "proposedScope": "Overlap of hyperinflation generalization with explicit conjecture-compatibility testing.",
+          "evidenceIds": [
+            "ev:ac902b89c9f67cfd87e88d7f57dce744",
+            "ev:bcb6bacbde4e69a47020b56c6e1278c1"
+          ],
+          "reason": "Retain overlap. Unlike the warm-PBH question, this source explicitly makes compatibility one of its research questions alongside relaxing geometric and initial-condition assumptions. Preserve these as distinguishable canonical facets with one source identity. The repeated page context does not demonstrate successful compatibility or scalar-observation agreement.",
+          "paperId": "1901.08603"
+        },
+        {
+          "unitId": "unit:4e8d650f770ee4df1d2bfcc209a892c736be694143c55968acec62cbf9488aa5",
+          "disposition": "include",
+          "proposedScope": "Minimal gauge inflation under the refined de Sitter disjunction and source-era CMB constraints.",
+          "evidenceIds": [
+            "ev:46d003850f5e60dfe1ae94ce268ac531"
+          ],
+          "reason": "Retain inclusion despite the numerical boundary role. This is a direct restriction test. The gradient-or-Hessian alternatives, universal constants and selected branch matter. The abstract's claim of landscape parameter space is stronger than the supplied evidence can independently establish; neither an embedding nor the allowed constant ranges are shown.",
+          "paperId": "1810.11279"
+        },
+        {
+          "unitId": "unit:463a12e2dc332616a250839452fd03c929ad36babb54cc885f759d809b487dbd",
+          "disposition": "exclude",
+          "proposedScope": "Related question on potential-free scalar–Gauss–Bonnet backgrounds, truncation control and exits.",
+          "evidenceIds": [
+            "ev:545d2a0c763e5133dcac95a2fb5fa2f1",
+            "ev:736e7c8b41199b6daa263097e50c44cf"
+          ],
+          "reason": "Retain exclusion from this core. The supplied action and stated goal concern inflationary solutions after neglecting the Ricci term, without an imposed self-potential. String motivation does not supply an explicit field-range or potential-derivative restriction test. Retain a related link without inferring that the full paper has no other relevant connections.",
+          "paperId": "1503.01579"
+        },
+        {
+          "unitId": "unit:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15",
+          "disposition": "exclude",
+          "proposedScope": "PBH and induced-wave application with a related warm-inflation consistency method.",
+          "evidenceIds": [
+            "ev:63553f3cec0501b4387f21f44c5a93fd",
+            "ev:690f0a5ac70fc02101cc36589367770b",
+            "ev:988923559651f6baba865f6926c2fee2"
+          ],
+          "reason": "Revise the proposal's overlap. Its substantive compatibility discussion concerns strong dissipation throughout, whereas the selected PBH history seeks weak dissipation at CMB scales and strong dissipation near the end. No explicit restriction test for that history is supplied. Under the adopted question-level rule, retain a related method link instead of membership. This organizational disagreement does not deny the source's broader warm-inflation connection.",
+          "paperId": "2105.08045"
+        },
+        {
+          "unitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+          "disposition": "exclude",
+          "proposedScope": "Related Gauss–Bonnet model question addressing CMB constraints, PBHs and scalar-induced waves.",
+          "evidenceIds": [
+            "ev:9145380deb122f97186111cba70adebd",
+            "ev:9d03deae85636a69d3ab47fd515b48d3"
+          ],
+          "reason": "Retain exclusion. The own-model passages specify a two-part coupling intended to meet large- and small-scale objectives, without an explicit quantum-gravity restriction test. PTA viability is a research goal in the supplied context. Shared Gauss–Bonnet terminology neither establishes core membership nor identifies this question with the potential-free 2015 background problem.",
+          "paperId": "2403.00021"
+        },
+        {
+          "unitId": "unit:3d4f835fdc59859ee7b9157c2f4863e7109395619a126626d0e84d5e1446892c",
+          "disposition": "include",
+          "proposedScope": "Conditional tensor predictions under string-motivated axion-range, tilt and running restrictions.",
+          "evidenceIds": [
+            "ev:2a5f681a59eae8154fe93b4f334dc0b5",
+            "ev:6d59ae5642c7d4b28989cc60a2afab6d",
+            "ev:7cc6fe5496e07dd87545f6849adbb5df"
+          ],
+          "reason": "Retain inclusion because the restrictions are actually applied to the observable question. The source distinguishes an illustrative large tensor fraction from its much smaller restricted example. Its waterfall placement and epsilon history are essential. Preserve its different tensor expectations from the 2007 source without calling it a refutation of the field-range conjecture or an unconditional Lyth-bound violation.",
+          "paperId": "1305.1947"
+        }
+      ],
+      "identityAssessments": [
+        {
+          "leftUnitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "rightUnitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "decision": "distinct_question",
+          "scopeKey": "self-reproduction-versus-field-range-admissibility",
+          "reason": "Retain separate canonical questions. Self-reproduction under two restrictions differs from proposing and testing an exclusion of trans-Planckian excursions. A common field-range theme does not make their target phenomena or required calculations identical.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c",
+            "ev:074bbfadd80d61fdc659af3c1ccdff05",
+            "ev:e2995f84f96c2e1d3e9ff8fac59a13d8"
+          ]
+        },
+        {
+          "leftUnitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "rightUnitId": "unit:a373f914c70791b9711cbeaeb950a55f37271b4df6a6d4ee136f93b4835c8e0b",
+          "decision": "distinct_question",
+          "scopeKey": "eternal-inflation-versus-hyperinflation-generalization",
+          "reason": "Hyperinflation generalization and compatibility do not answer the self-reproduction question. Within the hyperinflation source, distinguish the necessary-assumptions question from the conjecture test while retaining the original source ID.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c",
+            "ev:ac902b89c9f67cfd87e88d7f57dce744",
+            "ev:bcb6bacbde4e69a47020b56c6e1278c1"
+          ]
+        },
+        {
+          "leftUnitId": "unit:e8a506532850319212502f3f2f75b8bc3a1965f04745f06ac4b2fb348cfc331b",
+          "rightUnitId": "unit:4e8d650f770ee4df1d2bfcc209a892c736be694143c55968acec62cbf9488aa5",
+          "decision": "distinct_question",
+          "scopeKey": "distance-and-gradient-eternality-versus-refined-gauge-test",
+          "reason": "The refined disjunction changes the restriction, and minimal gauge inflation supplies a model and CMB target different from self-reproduction. Neither source excerpt answers the other's question.",
+          "evidenceIds": [
+            "ev:f6b6bbf7a6e84f619586f3c0950a177c",
+            "ev:46d003850f5e60dfe1ae94ce268ac531"
+          ]
+        },
+        {
+          "leftUnitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "rightUnitId": "unit:4e8d650f770ee4df1d2bfcc209a892c736be694143c55968acec62cbf9488aa5",
+          "decision": "distinct_question",
+          "scopeKey": "gauge-origin-range-example-versus-refined-potential-test",
+          "reason": "The extra-natural example uses gauge and cutoff premises to constrain a canonical range. The minimal-gauge question tests potential derivatives and observations. Gauge origin alone establishes neither model identity nor an equivalent question.",
+          "evidenceIds": [
+            "ev:074bbfadd80d61fdc659af3c1ccdff05",
+            "ev:46d003850f5e60dfe1ae94ce268ac531"
+          ]
+        },
+        {
+          "leftUnitId": "unit:86af21b54647c64fd7c2b3569f2d026e5b45e3c8f1a37cc3f404acb867159cff",
+          "rightUnitId": "unit:3d4f835fdc59859ee7b9157c2f4863e7109395619a126626d0e84d5e1446892c",
+          "decision": "distinct_question",
+          "scopeKey": "range-exclusion-versus-tensors-within-a-restricted-range",
+          "reason": "The hybrid source seeks tensors within a restricted range, rather than permission for a trans-Planckian trajectory. Its advertised tensor expectation differs from the 2007 abstract, but missing common assumptions prevent treating this as a demonstrated contradiction. Preserve both questions and both claims.",
+          "evidenceIds": [
+            "ev:e2995f84f96c2e1d3e9ff8fac59a13d8",
+            "ev:2a5f681a59eae8154fe93b4f334dc0b5",
+            "ev:6d59ae5642c7d4b28989cc60a2afab6d",
+            "ev:7cc6fe5496e07dd87545f6849adbb5df"
+          ]
+        },
+        {
+          "leftUnitId": "unit:463a12e2dc332616a250839452fd03c929ad36babb54cc885f759d809b487dbd",
+          "rightUnitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+          "decision": "distinct_question",
+          "scopeKey": "potential-free-GB-background-versus-potential-present-GB-perturbations",
+          "reason": "A truncated potential-free background and exit problem differs from designing a coupling with a power-law potential for CMB and small-scale perturbations. Shared use of the Gauss–Bonnet invariant does not transfer solutions, stability results or observables.",
+          "evidenceIds": [
+            "ev:545d2a0c763e5133dcac95a2fb5fa2f1",
+            "ev:736e7c8b41199b6daa263097e50c44cf",
+            "ev:9145380deb122f97186111cba70adebd",
+            "ev:9d03deae85636a69d3ab47fd515b48d3"
+          ]
+        },
+        {
+          "leftUnitId": "unit:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15",
+          "rightUnitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+          "decision": "distinct_question",
+          "scopeKey": "warm-versus-GB-PBH-and-induced-wave-models",
+          "reason": "A shared PBH and induced-wave comparison question can connect these sources, but their model-specific questions retain different dynamics and parameters. The warm high-frequency prediction and the Gauss–Bonnet PTA objective are also different targets. Do not merge their canonical identities.",
+          "evidenceIds": [
+            "ev:690f0a5ac70fc02101cc36589367770b",
+            "ev:988923559651f6baba865f6926c2fee2",
+            "ev:9145380deb122f97186111cba70adebd",
+            "ev:9d03deae85636a69d3ab47fd515b48d3"
+          ]
+        },
+        {
+          "leftUnitId": "unit:3d4f835fdc59859ee7b9157c2f4863e7109395619a126626d0e84d5e1446892c",
+          "rightUnitId": "unit:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15",
+          "decision": "distinct_question",
+          "scopeKey": "CMB-tensor-fraction-versus-small-scale-scalar-induced-waves",
+          "reason": "The hybrid source targets a primordial tensor fraction under range restrictions. The warm source targets amplified scalar fluctuations, PBHs and tensors sourced at second order. The words tensors and gravitational waves do not identify the quantities, scales or questions.",
+          "evidenceIds": [
+            "ev:6d59ae5642c7d4b28989cc60a2afab6d",
+            "ev:690f0a5ac70fc02101cc36589367770b"
+          ]
+        }
+      ],
+      "limitations": [
+        "Only the eight supplied samples, including outside neighbors, were assessed. The pinned count of 729 and its hashes are packet metadata, not evidence of scientific homogeneity or full coverage.",
+        "This challenge used only supplied excerpts and sample descriptions. No tools, full-paper reading, image inspection, calculation or independent checksum verification was performed.",
+        "Several anchors are not flagged as exact page matches, and equations contain extraction artifacts. Exact numerical inequalities, the hybrid axion bound and detailed higher-curvature expressions cannot be fully verified here.",
+        "The two hyperinflation evidence IDs reproduce the same page context. Other overlapping contexts likewise do not provide independent confirmation.",
+        "The warm exclusion is an explicit disagreement with the proposal's admission rule. A source-topic organization could retain its overlap, but that should not be presented as a demonstrated restriction test for the sampled PBH question.",
+        "The 2024 introductory discussion includes prior models. Properties of those referenced models cannot be assigned to the source's own construction without further evidence.",
+        "Scientific relations are proposed comparisons with stated premises, not validated implication edges or evidence of direct citation relationships.",
+        "No cross-source canonical merge is proposed. All source IDs remain distinct; question facets and related regions may overlap without forming a strict hierarchy.",
+        "Exclusions concern the proposed core on sampled evidence. They do not establish that the corresponding full papers lack every relevant connection."
+      ],
+      "fullMembershipCertified": false,
+      "sampledOnly": true
+    },
+    {
+      "jobId": "inflation729-fresh",
+      "verdict": "needs_revision",
+      "title": "Conditional quantum-gravity restrictions on inflation and its holographic description",
+      "summary": "The fresh excerpts support two direct conjecture questions: a conditional TCC translation into dual RG constraints and an announced swampland test of hybrid metric–Palatini inflation. The other four samples address initial states, entropy diagnostics, nonminimal-coupling dynamics, and supergravity construction without supplying an explicit conjectural restriction test. Proposed organization: retain the question-level admission rule, explicitly extend it to holographic TCC constraints, include two samples, and exclude four from this core while retaining useful connections. Preserve the entropy source's objection to interpreting variable growth as physical destabilisation and the nonminimal-coupling source's negative graceful-exit conclusion. These findings do not establish a common mechanism, successful joint observational compatibility, or membership of all 729 candidates.",
+      "replyArtifactSha256": "451249aca179c76dfb28a008199a293d00b2f0af1d828824925a84e215fc8030",
+      "rawReplySha256": "df4b69023b2242ef0d86254728d3848406a8e4e3fec8415e036fb48eb8e729a8",
+      "receiptSha256": "77f02db973e0ec1036c67348985cdf48d2812d128d493fcc7ee9ff237965fba5",
+      "inputPins": {
+        "requestSha256": "5eea269ab8fd95c0efb5b6fbbe803dae52d4cee222b5cc5b6d8b1bba6eba15ab",
+        "packetSha256": "867a5f3287ec7b31a97db0ad655b95e34886f23cdde1b4002f944e05ea4d412c",
+        "promptSha256": "296eb836dcfb1ceafa22c08f2b06fd0ce606487f01ae45f93780becfc71972f3",
+        "schemaSha256": "07c111d4e4ea5a992d958e795482cf3f2a1f857643e75fb9753c2f645e95e1c6",
+        "pilotSha256": "9499698afc1dd71458839e0d6cb1d222858246ef1f7f3982629863c5c3d1a358",
+        "runnerSha256": "a561247ad60c11c1eebd8cc654a6b667a9ac9c2be39460a9223a618a3a07c37e",
+        "dependency": {
+          "jobId": "inflation729-challenge",
+          "receiptSha256": "f89b5ad12dcbb97722590b2df8e2a7932f0b3f1fb218fa8aa04fc81602bd3fad",
+          "replySha256": "33615aa11afedac435c1a68fcf8416939932da65a3bc9c11518e9c0e6d283bdf"
+        }
+      },
+      "elapsedSeconds": 466.3,
+      "usage": {
+        "inputTokens": 44421,
+        "cachedInputTokens": 0,
+        "outputTokens": 12145,
+        "reasoningOutputTokens": 4142
+      },
+      "membershipAssessments": [
+        {
+          "unitId": "unit:583a5875470de3a68c980d9e72283cf914f88031e798bd78e05eda3de4e8e724",
+          "disposition": "include",
+          "proposedScope": "Conditional TCC restrictions on holographic RG evolution and the validity range of a scalar-deformed CFT description.",
+          "evidenceIds": [
+            "ev:46b73cb0fcf3d0eb151d9bff9e7ff59d"
+          ],
+          "reason": "The excerpt explicitly assumes the TCC and translates its bound into QFT language, displaying an RG-scale inequality. This directly meets the restriction-testing rule, while requiring the previous scope to name holographic TCC constraints explicitly. The detailed coupling constraints and extra-deformation threshold are announced but not derived in the supplied page. This is not evidence that the full dual theory ceases to exist above that scale.",
+          "paperId": "1912.00100"
+        },
+        {
+          "unitId": "unit:7405da195cb830f27b2cd597163f8f4435a5030c41d088896b6f666b1bb2db6a",
+          "disposition": "exclude",
+          "proposedScope": "Related question on perturbation initial states and historical CMB reconciliation in chaotic inflation.",
+          "evidenceIds": [
+            "ev:643f1eb804162288e73a27ed35ea006b",
+            "ev:ea22995627a007a3a8b854e2209f1603"
+          ],
+          "reason": "The source changes the initial quantum state to alter spectral predictions and relax a standard consistency relation. The supplied question and excerpts do not impose a quantum-gravity conjecture or test a conjectural cutoff or field-range restriction. Retain a related observational/state-choice connection. The announced Planck/BICEP2 reconciliation remains historical and does not establish a current fit.",
+          "paperId": "1403.6099"
+        },
+        {
+          "unitId": "unit:3a7730d4ec62fa2ad5770700b2b234e70248104544bb957b5c8911c9bc101909",
+          "disposition": "exclude",
+          "proposedScope": "Related methodological question on entropy variables, physical destabilisation, and reheating-dependent observable matching.",
+          "evidenceIds": [
+            "ev:487be8ed1c1c2afd68a88b77c08db062",
+            "ev:64d179d10743bf75caabaac07c76abbc",
+            "ev:d20db23041c3b57f88a9a573ec3a1505"
+          ],
+          "reason": "The explicit target is the physical interpretation and matching of multifield entropy variables. String and nonminimal-coupling motivation does not supply a conjectural restriction test. Preserve the authors' objection that common variables can produce unphysical apparent destabilisation for light kinetically coupled spectators; do not turn that objection into a general absence of instability or a completed reheating calculation.",
+          "paperId": "2107.03391"
+        },
+        {
+          "unitId": "unit:c39b1e13e266003fe355cc1c9fa50b5dc93c1851b1645718b1b378615021c864",
+          "disposition": "include",
+          "proposedScope": "An explicitly proposed swampland test of inflation in hybrid metric–Palatini gravity.",
+          "evidenceIds": [
+            "ev:2330572ef2c4620142e8df85216253e2"
+          ],
+          "reason": "The nearby source context explicitly states the aim of studying inflation in this formalism from the swampland viewpoint. That establishes membership at the question level. The power-law potential, exact de Sitter inequalities, n_s and r calculations, and successful common parameter regime in the sample description are not verified by this excerpt. Inclusion is not a positive compatibility verdict.",
+          "paperId": "2207.09793"
+        },
+        {
+          "unitId": "unit:8790be309011888c107c62bc41c18ebc86d601b966b7054a9df144f16f16b635",
+          "disposition": "exclude",
+          "proposedScope": "Related nonminimal matter–curvature questions on background evolution, inflationary observables, and the failure to rescue old inflation in the studied regime.",
+          "evidenceIds": [
+            "ev:aa7317a300b7aba3ad95b54881125efa",
+            "ev:ce072d71067093acbd8d9b61ba8aa5d6"
+          ],
+          "reason": "The source studies dynamical and observational consequences of a coupling, not an explicit quantum-gravity restriction test. Its renormalization motivation does not make it a holographic TCC question. Preserve the negative exit result under the stated assumptions; it is separate from the announced beyond-slow-roll and new-inflation calculations. Exclusion follows scope, not the negative result.",
+          "paperId": "2509.01532"
+        },
+        {
+          "unitId": "unit:d1e570bdc586ff44b483addd72a5cba2e14624d75ebbcf3922b4df618de70ca4",
+          "disposition": "exclude",
+          "proposedScope": "Related supergravity construction question concerning phase monodromy, stabilization, effective field reduction, and claimed UV control.",
+          "evidenceIds": [
+            "ev:96ac8c15f2ca68c3843a4d5ff6a1d645",
+            "ev:ddcfd7d89179230ec518146c44fbadc2"
+          ],
+          "reason": "The source announces a helical construction and claims UV insensitivity, but the supplied material imposes no explicit conjectural field-range, cutoff, or potential-derivative restriction. An effective super-Planckian phase decay constant is insufficient to infer either violation or satisfaction of such a restriction. Retain construction and UV-control connections without broadening the core to every UV-motivated inflation model.",
+          "paperId": "1412.5093"
+        }
+      ],
+      "identityAssessments": [
+        {
+          "leftUnitId": "unit:583a5875470de3a68c980d9e72283cf914f88031e798bd78e05eda3de4e8e724",
+          "rightUnitId": "unit:c39b1e13e266003fe355cc1c9fa50b5dc93c1851b1645718b1b378615021c864",
+          "decision": "distinct_question",
+          "scopeKey": "holographic-TCC-translation-versus-metric-Palatini-swampland-test",
+          "reason": "Both belong to an explicit-conjecture core, but one translates a TCC bound into dual RG restrictions and the other proposes a model-specific swampland test. Their mathematical targets and required dictionaries differ. The hybrid excerpt does not provide enough detail to identify any shared inequality, much less equivalent questions.",
+          "evidenceIds": [
+            "ev:46b73cb0fcf3d0eb151d9bff9e7ff59d",
+            "ev:2330572ef2c4620142e8df85216253e2"
+          ]
+        },
+        {
+          "leftUnitId": "unit:583a5875470de3a68c980d9e72283cf914f88031e798bd78e05eda3de4e8e724",
+          "rightUnitId": "unit:d1e570bdc586ff44b483addd72a5cba2e14624d75ebbcf3922b4df618de70ca4",
+          "decision": "distinct_question",
+          "scopeKey": "conditional-RG-restriction-versus-helical-UV-control",
+          "reason": "A conjectural RG-range constraint and a construction claimed to avoid UV sensitivity are different questions. The latter supplies no holographic map or TCC test. Its separate construction, stabilization, and UV-control facets should remain distinguishable without creating new source identities.",
+          "evidenceIds": [
+            "ev:46b73cb0fcf3d0eb151d9bff9e7ff59d",
+            "ev:96ac8c15f2ca68c3843a4d5ff6a1d645",
+            "ev:ddcfd7d89179230ec518146c44fbadc2"
+          ]
+        },
+        {
+          "leftUnitId": "unit:7405da195cb830f27b2cd597163f8f4435a5030c41d088896b6f666b1bb2db6a",
+          "rightUnitId": "unit:d1e570bdc586ff44b483addd72a5cba2e14624d75ebbcf3922b4df618de70ca4",
+          "decision": "distinct_question",
+          "scopeKey": "quadratic-model-state-choice-versus-supergravity-realization",
+          "reason": "The non-Bunch–Davies source changes perturbation initial states to address historical spectra; the helical source constructs phase dynamics and discusses stabilization and reductions. Mentioning quadratic inflation does not identify their actions, states, observables, or canonical questions. The helical-to-KYY claim does not establish identity with the non-Bunch–Davies setup.",
+          "evidenceIds": [
+            "ev:ea22995627a007a3a8b854e2209f1603",
+            "ev:96ac8c15f2ca68c3843a4d5ff6a1d645"
+          ]
+        },
+        {
+          "leftUnitId": "unit:c39b1e13e266003fe355cc1c9fa50b5dc93c1851b1645718b1b378615021c864",
+          "rightUnitId": "unit:8790be309011888c107c62bc41c18ebc86d601b966b7054a9df144f16f16b635",
+          "decision": "distinct_question",
+          "scopeKey": "hybrid-gravity-conjecture-test-versus-matter-curvature-dynamics",
+          "reason": "Shared modified-gravity vocabulary does not establish the same action or test. The hybrid source proposes a swampland assessment; the nonminimal matter–curvature source studies background predictions and exit. Within the latter, background/observable calculations and old-inflation percolation should be separate navigable question facets, retaining the supplied unit identity.",
+          "evidenceIds": [
+            "ev:2330572ef2c4620142e8df85216253e2",
+            "ev:aa7317a300b7aba3ad95b54881125efa",
+            "ev:ce072d71067093acbd8d9b61ba8aa5d6"
+          ]
+        },
+        {
+          "leftUnitId": "unit:3a7730d4ec62fa2ad5770700b2b234e70248104544bb957b5c8911c9bc101909",
+          "rightUnitId": "unit:d1e570bdc586ff44b483addd72a5cba2e14624d75ebbcf3922b4df618de70ca4",
+          "decision": "distinct_question",
+          "scopeKey": "light-spectator-entropy-diagnostics-versus-heavy-field-stabilization",
+          "reason": "Diagnosing entropy variables for light kinetically coupled spectators differs from establishing stabilization and integrating out heavy fields in a helical construction. Neither excerpt supplies the conditions needed to apply the entropy critique to the helical model. Stability language alone does not merge these questions.",
+          "evidenceIds": [
+            "ev:487be8ed1c1c2afd68a88b77c08db062",
+            "ev:d20db23041c3b57f88a9a573ec3a1505",
+            "ev:96ac8c15f2ca68c3843a4d5ff6a1d645"
+          ]
+        },
+        {
+          "leftUnitId": "unit:7405da195cb830f27b2cd597163f8f4435a5030c41d088896b6f666b1bb2db6a",
+          "rightUnitId": "unit:3a7730d4ec62fa2ad5770700b2b234e70248104544bb957b5c8911c9bc101909",
+          "decision": "distinct_question",
+          "scopeKey": "initial-quantum-state-versus-entropy-variable-and-transfer",
+          "reason": "Selecting a perturbation quantum state changes the predicted spectra, whereas choosing an entropy representation and specifying reheating determines how multifield perturbations are interpreted and matched to species observables. These are different operations even though both affect comparison with CMB data.",
+          "evidenceIds": [
+            "ev:ea22995627a007a3a8b854e2209f1603",
+            "ev:487be8ed1c1c2afd68a88b77c08db062",
+            "ev:64d179d10743bf75caabaac07c76abbc"
+          ]
+        }
+      ],
+      "limitations": [
+        "Exactly the six supplied fresh samples were assessed. The pinned candidate count and hashes do not establish scientific homogeneity, representative sampling, or full membership.",
+        "Only the supplied sample descriptions and bounded original page contexts were used. No tools, external sources, full-paper reading, image inspection, calculation, or independent checksum verification was performed.",
+        "The packet marks its anchors as exact matches to extracted page text, but this does not verify equation layout, omitted context, derivations, or scientific correctness.",
+        "Several passages are introductions or announcements. The hybrid excerpt supports its research aim much more strongly than the detailed power-law and joint-fit formulation in the sample description.",
+        "The entropy abstract anchors overlap, and both helical anchors share the same page context. Distinct evidence IDs are preserved without treating repeated text as independent corroboration.",
+        "The entropy source's disagreement with interpretations of apparent destabilisation is preserved as its claim. The disputed analyses and the source's detailed demonstrations are not supplied, so this review cannot adjudicate the controversy.",
+        "The earlier warm-inflation membership disagreement and tensor-expectation comparison cannot be rechecked from this fresh packet; this review neither resolves nor overrides them.",
+        "Exclusions apply to the proposed conjecture-testing core on sampled evidence. They do not assert that the corresponding full papers lack every relevant connection.",
+        "No cross-source canonical merge is supported. Proposed question facets retain their supplied source identities, and related methods or applications need not become children of the core.",
+        "Scientific relations are explicitly conditional proposals, not validated implication edges or evidence of direct citation relationships."
+      ],
+      "fullMembershipCertified": false,
+      "sampledOnly": true
+    }
+  ]
+}

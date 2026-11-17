@@ -1,0 +1,3669 @@
+{
+  "unitCount": 8473,
+  "representedPapers": 6477,
+  "coverageFraction": 1.0,
+  "rowWeightMaxError": 0.0,
+  "regionCount": 88,
+  "primaryUnitsMinMedianMax": [
+    11,
+    46.0,
+    731
+  ],
+  "massMinMedianMax": [
+    8.41025641025641,
+    35.32061965811966,
+    585.7128601790364
+  ],
+  "overlapUnitCount": 0,
+  "meanMembershipCount": 1.0,
+  "primaryConductanceMedian": 0.7297062040568717,
+  "internalFraction": 0.4598412333319682,
+  "coarseOffDiagonalMassTop6Retained": 0.5862027275874878,
+  "leafDepthMinMedianMax": [
+    2,
+    5.0,
+    7
+  ],
+  "largestTerminalNodes": [
+    {
+      "id": "cluster:e17aad3f42df7bbe8668a78132e9ea69c714cdb0d0a2323ca43f902ab4e62f61",
+      "mass": 585.7128601790366,
+      "units": 731,
+      "depth": 4,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:afe02c6bcb75a1c2a24c1c9c921e354e3cb380a61721eff314ece249608cf941",
+      "mass": 570.9519674769675,
+      "units": 682,
+      "depth": 4,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:d63cb90f1eb3b05eb4d094d33c38052cb9c946626538c618774f106c3b4cd9ef",
+      "mass": 423.0552364302364,
+      "units": 552,
+      "depth": 5,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:556aeee58744dc19c326d708e90c197624d81b71622813cbde97df40026b7eab",
+      "mass": 421.9063034188034,
+      "units": 721,
+      "depth": 6,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "spectral:4aaefd58317dd62d1d56",
+      "mass": 393.8995473480768,
+      "units": 533,
+      "depth": 2,
+      "stopReason": "isolated_units_preserved",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:90d005028c91b5296e2ec590e48156fd44e18d18d446e7ca8f6bd0c963e6a677",
+      "mass": 370.08492063492065,
+      "units": 497,
+      "depth": 6,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:a54e0653eb3908c8a02d7e50b9bef5db573af7fd2a947539f7a8e96aec6ffb68",
+      "mass": 345.41976634476634,
+      "units": 442,
+      "depth": 3,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:8bebb7dfc5df48b19970a9dd78b830889ab6bb0b729e22e413a9dfddb6b1e0e9",
+      "mass": 198.98801655860478,
+      "units": 259,
+      "depth": 6,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    }
+  ],
+  "relationChecks": [
+    {
+      "relationId": "scientific:pilot-ads-kk-spectrometry-method",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:pilot-wgc-convex-hull-reduction",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-001",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-002",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-003",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-004",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-005",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-006",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-007",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-009",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-010",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-011",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-013",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-014",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-015",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-017",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-018",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-019",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-020",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-021",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-022",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-023",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-024",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-025",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-026",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-027",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-028",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-029",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-030",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-031",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-032",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-033",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-034",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 4,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-035",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 6,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-036",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-037",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-038",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-039",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-040",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-041",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-042",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-043",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-044",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-045",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-047",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-050",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-051",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-053",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-054",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-055",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-056",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-059",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-060",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-062",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 7,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-064",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-065",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-068",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-070",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-072",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-073",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-074",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-075",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-076",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 7,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-077",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-078",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-079",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-081",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-082",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-083",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 47,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-084",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-085",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-086",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-087",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-089",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-090",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-091",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 9,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-092",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-093",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-094",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-095",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-096",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-097",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-098",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-099",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-100",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-101",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-103",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-104",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-105",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-106",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-107",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-108",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-109",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 8,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-111",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-112",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-113",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-114",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    }
+  ],
+  "lexicalBridgeDiagnostics": {
+    "kk": {
+      "units": 129,
+      "primaryRegions": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        39,
+        40,
+        41,
+        43,
+        45,
+        47,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        66,
+        70,
+        72,
+        73,
+        75,
+        78,
+        83,
+        86,
+        87
+      ]
+    },
+    "dark_matter": {
+      "units": 274,
+      "primaryRegions": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        10,
+        12,
+        13,
+        21,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        82,
+        83,
+        84,
+        85,
+        87
+      ]
+    },
+    "cosmology": {
+      "units": 1000,
+      "primaryRegions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        20,
+        23,
+        25,
+        31,
+        32,
+        34,
+        37,
+        38,
+        39,
+        41,
+        42,
+        43,
+        46,
+        47,
+        48,
+        51,
+        52,
+        53,
+        55,
+        56,
+        58,
+        59,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    "kk__dark_matter": {
+      "minCoarseHops": 0.0,
+      "samePrimaryRegions": 16
+    },
+    "dark_matter__cosmology": {
+      "minCoarseHops": 0.0,
+      "samePrimaryRegions": 27
+    }
+  },
+  "scientificValidation": false,
+  "limits": [
+    "Lexical bridge masks are diagnostics, not scientific labels.",
+    "Coverage and repeatability are not semantic correctness.",
+    "All imported scientific links remain explicit regardless of coarse affinity pruning."
+  ],
+  "family": "targeted multiway spectral refinement",
+  "targetOriginalLeafSizes": [
+    3127,
+    936
+  ],
+  "dropoutAgreementGlobal": {
+    "levelARI": {
+      "1": 1.0,
+      "2": 0.9907335480747766,
+      "3": 0.9835839705513756,
+      "4": 0.9787718644713759,
+      "5": 0.9486414948388519,
+      "6": 0.9498260161639959,
+      "7": 0.9564314525301677,
+      "8": 0.9564314525301677
+    },
+    "leafARI": 0.9564314525301677,
+    "meanBestClusterJaccard": 0.5382153447238331,
+    "unitWeightedBestClusterJaccard": 0.7986709469657309,
+    "bestMatchCoreCoverage": 0.8815059601085802
+  },
+  "dropoutAgreementGiant": {
+    "levelARI": {
+      "1": 1.0,
+      "2": 0.9360586032570397,
+      "3": 0.8590867904119261,
+      "4": 0.8196769764226172,
+      "5": 0.7895062090766769,
+      "6": 0.7895062090766769,
+      "7": 0.7895062090766769,
+      "8": 0.7895062090766769
+    },
+    "leafARI": 0.7895062090766769,
+    "meanBestClusterJaccard": 0.44039320762782064,
+    "unitWeightedBestClusterJaccard": 0.6046172926709933,
+    "bestMatchCoreCoverage": 0.7831787655900224
+  },
+  "splitPolicy": "Eigengap chooses 2–12 children. Keep low-support children explicit/source-visible rather than reject all siblings. No scientific acceptance inferred.",
+  "spectralSplits": [
+    {
+      "nodeId": "cluster:0d3470d258c24660e7103d7dbc6acbdc6f5e734804b4ea1f95298debae5d1827",
+      "units": 3127,
+      "mass": 2431.4376949847538,
+      "chosenChildren": 4,
+      "eigenvalues": [
+        0.999999999999998,
+        0.856238807607099,
+        0.829525494465751,
+        0.8075961409040839,
+        0.7659613892552044,
+        0.7578474177486852,
+        0.7406942730979648,
+        0.7245693178766187,
+        0.711139417913147,
+        0.6960175489821104,
+        0.671478757143768,
+        0.6676694715396413,
+        0.6577312440359117
+      ],
+      "eigengaps": [
+        {
+          "k": 4,
+          "gap": 0.04163475164887953
+        },
+        {
+          "k": 2,
+          "gap": 0.02671331314134806
+        },
+        {
+          "k": 10,
+          "gap": 0.0245387918383424
+        },
+        {
+          "k": 3,
+          "gap": 0.02192935356166703
+        },
+        {
+          "k": 6,
+          "gap": 0.017153144650720487
+        },
+        {
+          "k": 7,
+          "gap": 0.01612495522134605
+        },
+        {
+          "k": 9,
+          "gap": 0.01512186893103662
+        },
+        {
+          "k": 8,
+          "gap": 0.013429899963471659
+        },
+        {
+          "k": 12,
+          "gap": 0.009938227503729635
+        },
+        {
+          "k": 5,
+          "gap": 0.008113971506519158
+        },
+        {
+          "k": 11,
+          "gap": 0.0038092856041267442
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        1191,
+        435,
+        533,
+        968
+      ],
+      "childMasses": [
+        947.1928619583032,
+        362.36112221112217,
+        393.8995473480768,
+        727.9841634672516
+      ]
+    },
+    {
+      "nodeId": "spectral:33e2c2839443e81fbc98",
+      "units": 1191,
+      "mass": 947.1928619583032,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        1.0000000000000002,
+        0.81838051071795,
+        0.7982674555502948,
+        0.7152938183035408,
+        0.7010468305430825,
+        0.6937007783321592,
+        0.6649591296490117,
+        0.6535930463075936,
+        0.5993157545558562,
+        0.5902721666717302,
+        0.5841238023045302,
+        0.5576925408144724,
+        0.5459637532241689
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.082973637246754
+        },
+        {
+          "k": 8,
+          "gap": 0.054277291751737455
+        },
+        {
+          "k": 6,
+          "gap": 0.028741648683147436
+        },
+        {
+          "k": 11,
+          "gap": 0.02643126149005781
+        },
+        {
+          "k": 2,
+          "gap": 0.02011305516765527
+        },
+        {
+          "k": 4,
+          "gap": 0.014246987760458296
+        },
+        {
+          "k": 12,
+          "gap": 0.011728787590303491
+        },
+        {
+          "k": 7,
+          "gap": 0.011366083341418087
+        },
+        {
+          "k": 9,
+          "gap": 0.009043587884125959
+        },
+        {
+          "k": 5,
+          "gap": 0.007346052210923326
+        },
+        {
+          "k": 10,
+          "gap": 0.00614836436720001
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        257,
+        559,
+        375
+      ],
+      "childMasses": [
+        210.68716977466977,
+        440.3652201556613,
+        296.140472027972
+      ]
+    },
+    {
+      "nodeId": "spectral:9d7ec1b5fb6c6bba4dfa",
+      "units": 257,
+      "mass": 210.68716977466977,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        1.0000000000000009,
+        0.6655969388092363,
+        0.6576210432203782,
+        0.6128567486551968,
+        0.6091969458889738,
+        0.5793388493223776,
+        0.5651163725157643,
+        0.5239623614248166,
+        0.5209269707035507,
+        0.5091030791596795,
+        0.485787008416709,
+        0.4812558708200684,
+        0.4717918105031274
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.044764294565181384
+        },
+        {
+          "k": 7,
+          "gap": 0.04115401109094774
+        },
+        {
+          "k": 5,
+          "gap": 0.029858096566596215
+        },
+        {
+          "k": 10,
+          "gap": 0.02331607074297043
+        },
+        {
+          "k": 6,
+          "gap": 0.01422247680661326
+        },
+        {
+          "k": 9,
+          "gap": 0.011823891543871201
+        },
+        {
+          "k": 12,
+          "gap": 0.00946406031694097
+        },
+        {
+          "k": 2,
+          "gap": 0.00797589558885814
+        },
+        {
+          "k": 11,
+          "gap": 0.004531137596640644
+        },
+        {
+          "k": 4,
+          "gap": 0.0036598027662230193
+        },
+        {
+          "k": 8,
+          "gap": 0.003035390721265907
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        57,
+        105,
+        95
+      ],
+      "childMasses": [
+        43.61660561660561,
+        93.63968253968254,
+        73.43088161838162
+      ]
+    },
+    {
+      "nodeId": "spectral:0d4e77f1b202a72880f1",
+      "units": 105,
+      "mass": 93.63968253968254,
+      "chosenChildren": 5,
+      "eigenvalues": [
+        1.0000000000000009,
+        0.6080550651788114,
+        0.592108515143871,
+        0.5595063706085307,
+        0.5331579574048751,
+        0.4641876648183859,
+        0.4470952533690226,
+        0.44037114223418083,
+        0.4105694200699633,
+        0.4072776122022504,
+        0.3836204754953063,
+        0.3643950803128367,
+        0.353049699037856
+      ],
+      "eigengaps": [
+        {
+          "k": 5,
+          "gap": 0.06897029258648923
+        },
+        {
+          "k": 3,
+          "gap": 0.03260214453534027
+        },
+        {
+          "k": 8,
+          "gap": 0.02980172216421756
+        },
+        {
+          "k": 4,
+          "gap": 0.026348413203655552
+        },
+        {
+          "k": 10,
+          "gap": 0.023657136706944082
+        },
+        {
+          "k": 11,
+          "gap": 0.01922539518246963
+        },
+        {
+          "k": 6,
+          "gap": 0.0170924114493633
+        },
+        {
+          "k": 2,
+          "gap": 0.015946550034940388
+        },
+        {
+          "k": 12,
+          "gap": 0.011345381274980693
+        },
+        {
+          "k": 7,
+          "gap": 0.0067241111348417815
+        },
+        {
+          "k": 9,
+          "gap": 0.0032918078677128815
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        31,
+        15,
+        17,
+        28,
+        14
+      ],
+      "childMasses": [
+        29.28333333333333,
+        12.394444444444446,
+        15.333333333333334,
+        24.53333333333333,
+        12.095238095238095
+      ]
+    },
+    {
+      "nodeId": "spectral:9ca765c48e8ace578540",
+      "units": 95,
+      "mass": 73.43088161838162,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        0.9999999999999993,
+        0.7394278695205174,
+        0.7216141289849484,
+        0.6133283295620579,
+        0.5616221986363428,
+        0.5457043581514421,
+        0.5258879481239268,
+        0.4811651791489346,
+        0.45722240818707727,
+        0.4272980757122262,
+        0.41511924137602996,
+        0.3852399725684956,
+        0.3649816669649692
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.10828579942289052
+        },
+        {
+          "k": 4,
+          "gap": 0.05170613092571508
+        },
+        {
+          "k": 7,
+          "gap": 0.04472276897499222
+        },
+        {
+          "k": 9,
+          "gap": 0.029924332474851045
+        },
+        {
+          "k": 11,
+          "gap": 0.02987926880753433
+        },
+        {
+          "k": 8,
+          "gap": 0.023942770961857318
+        },
+        {
+          "k": 12,
+          "gap": 0.020258305603526428
+        },
+        {
+          "k": 6,
+          "gap": 0.01981641002751533
+        },
+        {
+          "k": 2,
+          "gap": 0.017813740535569056
+        },
+        {
+          "k": 5,
+          "gap": 0.015917840484900636
+        },
+        {
+          "k": 10,
+          "gap": 0.012178834336196265
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        27,
+        57,
+        11
+      ],
+      "childMasses": [
+        18.39058857808858,
+        46.63003663003663,
+        8.41025641025641
+      ]
+    },
+    {
+      "nodeId": "spectral:98a3f4d7383639eec86c",
+      "units": 559,
+      "mass": 440.3652201556613,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        1.0000000000000007,
+        0.7799377144304268,
+        0.7606021902852109,
+        0.6989609312463411,
+        0.6695700165414222,
+        0.6455538841077955,
+        0.6297873582234713,
+        0.611726488685905,
+        0.5973636846062466,
+        0.5812250220698878,
+        0.5670121521167473,
+        0.5482568160799723,
+        0.533325417524809
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.061641259038869856
+        },
+        {
+          "k": 4,
+          "gap": 0.029390914704918836
+        },
+        {
+          "k": 5,
+          "gap": 0.02401613243362677
+        },
+        {
+          "k": 2,
+          "gap": 0.019335524145215888
+        },
+        {
+          "k": 11,
+          "gap": 0.018755336036774928
+        },
+        {
+          "k": 7,
+          "gap": 0.01806086953756636
+        },
+        {
+          "k": 9,
+          "gap": 0.01613866253635876
+        },
+        {
+          "k": 6,
+          "gap": 0.015766525884324145
+        },
+        {
+          "k": 12,
+          "gap": 0.014931398555163344
+        },
+        {
+          "k": 8,
+          "gap": 0.014362804079658398
+        },
+        {
+          "k": 10,
+          "gap": 0.014212869953140528
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        57,
+        263,
+        239
+      ],
+      "childMasses": [
+        45.32424242424243,
+        206.52903134447251,
+        188.5119463869464
+      ]
+    },
+    {
+      "nodeId": "spectral:73b218f8b059d69e78ac",
+      "units": 263,
+      "mass": 206.52903134447251,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        1.0000000000000007,
+        0.7441301069206312,
+        0.6845837179614177,
+        0.6564017836665034,
+        0.6308413144602253,
+        0.5992941930682175,
+        0.5698921276962046,
+        0.5625879405299393,
+        0.5346445479550916,
+        0.520985836141885,
+        0.5173430498258178,
+        0.5077287880458614,
+        0.4739579406298371
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.05954638895921349
+        },
+        {
+          "k": 12,
+          "gap": 0.03377084741602432
+        },
+        {
+          "k": 5,
+          "gap": 0.03154712139200777
+        },
+        {
+          "k": 6,
+          "gap": 0.029402065372012953
+        },
+        {
+          "k": 3,
+          "gap": 0.028181934294914335
+        },
+        {
+          "k": 8,
+          "gap": 0.02794339257484768
+        },
+        {
+          "k": 4,
+          "gap": 0.02556046920627808
+        },
+        {
+          "k": 9,
+          "gap": 0.013658711813206659
+        },
+        {
+          "k": 11,
+          "gap": 0.00961426177995639
+        },
+        {
+          "k": 7,
+          "gap": 0.007304187166265241
+        },
+        {
+          "k": 10,
+          "gap": 0.0036427863160671814
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        147,
+        116
+      ],
+      "childMasses": [
+        127.1075147075147,
+        79.42151663695782
+      ]
+    },
+    {
+      "nodeId": "spectral:3eaf6e008ec8bf17c2f9",
+      "units": 239,
+      "mass": 188.5119463869464,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        1.0000000000000002,
+        0.7611942922684185,
+        0.7321115949229774,
+        0.667446699513294,
+        0.6259891477743503,
+        0.6118829385615163,
+        0.5835955869989854,
+        0.5479541466311232,
+        0.5342406736436549,
+        0.5227194925330538,
+        0.5062365283390321,
+        0.4885792942709886,
+        0.4628463016273819
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.06466489540968334
+        },
+        {
+          "k": 4,
+          "gap": 0.04145755173894372
+        },
+        {
+          "k": 7,
+          "gap": 0.03564144036786221
+        },
+        {
+          "k": 2,
+          "gap": 0.02908269734544111
+        },
+        {
+          "k": 6,
+          "gap": 0.028287351562530927
+        },
+        {
+          "k": 12,
+          "gap": 0.025732992643606734
+        },
+        {
+          "k": 11,
+          "gap": 0.01765723406804348
+        },
+        {
+          "k": 10,
+          "gap": 0.016482964194021732
+        },
+        {
+          "k": 5,
+          "gap": 0.014106209212834009
+        },
+        {
+          "k": 8,
+          "gap": 0.013713472987468278
+        },
+        {
+          "k": 9,
+          "gap": 0.011521181110601075
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        39,
+        159,
+        41
+      ],
+      "childMasses": [
+        30.785714285714285,
+        122.29289876789878,
+        35.43333333333334
+      ]
+    },
+    {
+      "nodeId": "spectral:eb15f9f16e27cb9e6d73",
+      "units": 375,
+      "mass": 296.140472027972,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999981,
+        0.789845286357969,
+        0.6693523323591039,
+        0.5947951328646354,
+        0.5834043536928047,
+        0.5735934256711759,
+        0.5299198450514301,
+        0.5178643108665902,
+        0.5061896170107401,
+        0.4883271776137701,
+        0.4789716634833342,
+        0.4716647564262968,
+        0.4615356123511603
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.12049295399886517
+        },
+        {
+          "k": 3,
+          "gap": 0.07455719949446848
+        },
+        {
+          "k": 6,
+          "gap": 0.0436735806197458
+        },
+        {
+          "k": 9,
+          "gap": 0.017862439396969965
+        },
+        {
+          "k": 7,
+          "gap": 0.012055534184839845
+        },
+        {
+          "k": 8,
+          "gap": 0.011674693855850182
+        },
+        {
+          "k": 4,
+          "gap": 0.011390779171830623
+        },
+        {
+          "k": 12,
+          "gap": 0.010129144075136487
+        },
+        {
+          "k": 5,
+          "gap": 0.009810928021628862
+        },
+        {
+          "k": 10,
+          "gap": 0.009355514130435894
+        },
+        {
+          "k": 11,
+          "gap": 0.007306907057037404
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        155,
+        220
+      ],
+      "childMasses": [
+        112.13408674658675,
+        184.0063852813853
+      ]
+    },
+    {
+      "nodeId": "spectral:9c26c3e868fbfc012fa0",
+      "units": 155,
+      "mass": 112.13408674658675,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999992,
+        0.6845435932202462,
+        0.5968151444119599,
+        0.5655447289900766,
+        0.5310477023872097,
+        0.48123064882714356,
+        0.4715259943890325,
+        0.4526115434866511,
+        0.4462053521236226,
+        0.4109587694460094,
+        0.39633367644042805,
+        0.3703496974745751,
+        0.3514617524088754
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.08772844880828623
+        },
+        {
+          "k": 5,
+          "gap": 0.049817053560066105
+        },
+        {
+          "k": 9,
+          "gap": 0.035246582677613214
+        },
+        {
+          "k": 4,
+          "gap": 0.03449702660286691
+        },
+        {
+          "k": 3,
+          "gap": 0.03127041542188336
+        },
+        {
+          "k": 11,
+          "gap": 0.025983978965852972
+        },
+        {
+          "k": 7,
+          "gap": 0.018914450902381363
+        },
+        {
+          "k": 12,
+          "gap": 0.018887945065699685
+        },
+        {
+          "k": 10,
+          "gap": 0.014625093005581347
+        },
+        {
+          "k": 6,
+          "gap": 0.009704654438111082
+        },
+        {
+          "k": 8,
+          "gap": 0.006406191363028502
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        131,
+        24
+      ],
+      "childMasses": [
+        95.09251165501166,
+        17.04157509157509
+      ]
+    },
+    {
+      "nodeId": "spectral:099d742b5f35df61095b",
+      "units": 220,
+      "mass": 184.0063852813853,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        1.0000000000000002,
+        0.7107378177276125,
+        0.6249199290773738,
+        0.5908525798051705,
+        0.544948102708879,
+        0.5145817740911097,
+        0.5103658867588231,
+        0.49555497226600465,
+        0.4850828441624233,
+        0.4790209070634656,
+        0.4635397170127871,
+        0.46059862401084883,
+        0.4411196647023209
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.08581788865023865
+        },
+        {
+          "k": 4,
+          "gap": 0.04590447709629153
+        },
+        {
+          "k": 3,
+          "gap": 0.03406734927220334
+        },
+        {
+          "k": 5,
+          "gap": 0.030366328617769223
+        },
+        {
+          "k": 12,
+          "gap": 0.019478959308527943
+        },
+        {
+          "k": 10,
+          "gap": 0.015481190050678495
+        },
+        {
+          "k": 7,
+          "gap": 0.014810914492818461
+        },
+        {
+          "k": 8,
+          "gap": 0.010472128103581335
+        },
+        {
+          "k": 9,
+          "gap": 0.006061937098957693
+        },
+        {
+          "k": 6,
+          "gap": 0.004215887332286616
+        },
+        {
+          "k": 11,
+          "gap": 0.0029410930019382886
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        93,
+        127
+      ],
+      "childMasses": [
+        75.66392496392496,
+        108.34246031746031
+      ]
+    },
+    {
+      "nodeId": "spectral:18f76efd308d85d5d492",
+      "units": 435,
+      "mass": 362.36112221112217,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999991,
+        0.8530448426158146,
+        0.6985877879630418,
+        0.6751090684397552,
+        0.6458171950267088,
+        0.6205902949242644,
+        0.5973341176044936,
+        0.5758046980987035,
+        0.5346354016499895,
+        0.5026361044835939,
+        0.4955955310481221,
+        0.47712855642548124,
+        0.4643282450079409
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.15445705465277282
+        },
+        {
+          "k": 8,
+          "gap": 0.04116929644871403
+        },
+        {
+          "k": 9,
+          "gap": 0.0319992971663956
+        },
+        {
+          "k": 4,
+          "gap": 0.0292918734130464
+        },
+        {
+          "k": 5,
+          "gap": 0.025226900102444327
+        },
+        {
+          "k": 3,
+          "gap": 0.023478719523286617
+        },
+        {
+          "k": 6,
+          "gap": 0.02325617731977081
+        },
+        {
+          "k": 7,
+          "gap": 0.021529419505790126
+        },
+        {
+          "k": 11,
+          "gap": 0.018466974622640853
+        },
+        {
+          "k": 12,
+          "gap": 0.012800311417540344
+        },
+        {
+          "k": 10,
+          "gap": 0.007040573435471764
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        204,
+        231
+      ],
+      "childMasses": [
+        179.20360750360751,
+        183.1575147075147
+      ]
+    },
+    {
+      "nodeId": "spectral:5445548956122ae9896a",
+      "units": 204,
+      "mass": 179.20360750360751,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        1.0000000000000004,
+        0.7456747472730247,
+        0.653403321133953,
+        0.6234419714310275,
+        0.5679616798733848,
+        0.5400959231013694,
+        0.5056578210107487,
+        0.4879731700758817,
+        0.46731600154021513,
+        0.46152849168024207,
+        0.4529328204711668,
+        0.4440233843210193,
+        0.42573454923425974
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.09227142613907169
+        },
+        {
+          "k": 4,
+          "gap": 0.05548029155764278
+        },
+        {
+          "k": 6,
+          "gap": 0.034438102090620704
+        },
+        {
+          "k": 3,
+          "gap": 0.02996134970292552
+        },
+        {
+          "k": 5,
+          "gap": 0.027865756772015304
+        },
+        {
+          "k": 8,
+          "gap": 0.02065716853566657
+        },
+        {
+          "k": 12,
+          "gap": 0.018288835086759547
+        },
+        {
+          "k": 7,
+          "gap": 0.01768465093486704
+        },
+        {
+          "k": 11,
+          "gap": 0.008909436150147498
+        },
+        {
+          "k": 10,
+          "gap": 0.008595671209075284
+        },
+        {
+          "k": 9,
+          "gap": 0.005787509859973061
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        55,
+        149
+      ],
+      "childMasses": [
+        49.65,
+        129.5536075036075
+      ]
+    },
+    {
+      "nodeId": "spectral:53b4c4ece17c7b6da191",
+      "units": 149,
+      "mass": 129.5536075036075,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        1.0,
+        0.688575751240967,
+        0.6441224647968741,
+        0.5737551725775565,
+        0.5445203209039821,
+        0.5239381771096313,
+        0.4878182989785571,
+        0.4622606002219223,
+        0.43730171371783355,
+        0.42782821414813693,
+        0.3989868202921055,
+        0.3811199348833633,
+        0.369467592439223
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.07036729221931759
+        },
+        {
+          "k": 2,
+          "gap": 0.044453286444092965
+        },
+        {
+          "k": 6,
+          "gap": 0.0361198781310742
+        },
+        {
+          "k": 4,
+          "gap": 0.029234851673574425
+        },
+        {
+          "k": 10,
+          "gap": 0.028841393856031405
+        },
+        {
+          "k": 7,
+          "gap": 0.025557698756634828
+        },
+        {
+          "k": 8,
+          "gap": 0.02495888650408873
+        },
+        {
+          "k": 5,
+          "gap": 0.02058214379435075
+        },
+        {
+          "k": 11,
+          "gap": 0.017866885408742206
+        },
+        {
+          "k": 12,
+          "gap": 0.011652342444140318
+        },
+        {
+          "k": 9,
+          "gap": 0.00947349956969662
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        75,
+        46,
+        28
+      ],
+      "childMasses": [
+        63.05797258297258,
+        40.90277777777778,
+        25.59285714285714
+      ]
+    },
+    {
+      "nodeId": "spectral:05bb22ccb36ee61f3119",
+      "units": 231,
+      "mass": 183.1575147075147,
+      "chosenChildren": 4,
+      "eigenvalues": [
+        0.9999999999999994,
+        0.7127976040590567,
+        0.6907395760847269,
+        0.6460467737444422,
+        0.5423741785278352,
+        0.5297259796538701,
+        0.48970562286327596,
+        0.46056887609748076,
+        0.44731512229454135,
+        0.43632817818412123,
+        0.40475122272294634,
+        0.40258491293413196,
+        0.3918140043674621
+      ],
+      "eigengaps": [
+        {
+          "k": 4,
+          "gap": 0.10367259521660699
+        },
+        {
+          "k": 3,
+          "gap": 0.04469280234028472
+        },
+        {
+          "k": 6,
+          "gap": 0.04002035679059418
+        },
+        {
+          "k": 10,
+          "gap": 0.031576955461174894
+        },
+        {
+          "k": 7,
+          "gap": 0.029136746765795196
+        },
+        {
+          "k": 2,
+          "gap": 0.022058027974329764
+        },
+        {
+          "k": 8,
+          "gap": 0.013253753802939416
+        },
+        {
+          "k": 5,
+          "gap": 0.012648198873965066
+        },
+        {
+          "k": 9,
+          "gap": 0.010986944110420116
+        },
+        {
+          "k": 12,
+          "gap": 0.010770908566669846
+        },
+        {
+          "k": 11,
+          "gap": 0.00216630978881438
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        40,
+        95,
+        71,
+        25
+      ],
+      "childMasses": [
+        31.56111111111111,
+        71.29402264402265,
+        59.41904761904762,
+        20.883333333333333
+      ]
+    },
+    {
+      "nodeId": "spectral:e12d0b863290201dd163",
+      "units": 95,
+      "mass": 71.29402264402265,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        0.9999999999999991,
+        0.5080231841096424,
+        0.49855987754133846,
+        0.41835842377964927,
+        0.39985577231995245,
+        0.37678363454147495,
+        0.3191872939269563,
+        0.3058132792183443,
+        0.29714486383540867,
+        0.27485899509696626,
+        0.23852811634235785,
+        0.22571641762350786,
+        0.21806450926517126
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.08020145376168919
+        },
+        {
+          "k": 6,
+          "gap": 0.05759634061451868
+        },
+        {
+          "k": 10,
+          "gap": 0.036330878754608414
+        },
+        {
+          "k": 5,
+          "gap": 0.023072137778477497
+        },
+        {
+          "k": 9,
+          "gap": 0.022285868738442405
+        },
+        {
+          "k": 4,
+          "gap": 0.018502651459696817
+        },
+        {
+          "k": 7,
+          "gap": 0.013374014708611992
+        },
+        {
+          "k": 11,
+          "gap": 0.01281169871884999
+        },
+        {
+          "k": 2,
+          "gap": 0.009463306568303964
+        },
+        {
+          "k": 8,
+          "gap": 0.008668415382935613
+        },
+        {
+          "k": 12,
+          "gap": 0.0076519083583365954
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        28,
+        37,
+        30
+      ],
+      "childMasses": [
+        17.31666666666667,
+        28.98568931068931,
+        24.991666666666667
+      ]
+    },
+    {
+      "nodeId": "spectral:4aaefd58317dd62d1d56",
+      "isolated": 1
+    },
+    {
+      "nodeId": "spectral:38ba0559ac84b8390ea9",
+      "units": 968,
+      "mass": 727.9841634672516,
+      "chosenChildren": 5,
+      "eigenvalues": [
+        0.9999999999999998,
+        0.8436131401293965,
+        0.8160537686917362,
+        0.7858990258217902,
+        0.7607850505073557,
+        0.7137520307154986,
+        0.6921623250932515,
+        0.6480590574194806,
+        0.6303139576261759,
+        0.6230870619205446,
+        0.6118911954454731,
+        0.6025663061355172,
+        0.5962797874664338
+      ],
+      "eigengaps": [
+        {
+          "k": 5,
+          "gap": 0.047033019791857034
+        },
+        {
+          "k": 7,
+          "gap": 0.04410326767377093
+        },
+        {
+          "k": 3,
+          "gap": 0.030154742869946016
+        },
+        {
+          "k": 2,
+          "gap": 0.027559371437660296
+        },
+        {
+          "k": 4,
+          "gap": 0.02511397531443449
+        },
+        {
+          "k": 6,
+          "gap": 0.021589705622247157
+        },
+        {
+          "k": 8,
+          "gap": 0.01774509979330463
+        },
+        {
+          "k": 10,
+          "gap": 0.011195866475071536
+        },
+        {
+          "k": 11,
+          "gap": 0.009324889309955897
+        },
+        {
+          "k": 9,
+          "gap": 0.007226895705631287
+        },
+        {
+          "k": 12,
+          "gap": 0.006286518669083363
+        }
+      ],
+      "kmeansSeedARI": 0.9920912037155457,
+      "childSizes": [
+        142,
+        174,
+        142,
+        304,
+        206
+      ],
+      "childMasses": [
+        117.89139928698754,
+        135.4737234987235,
+        94.47772227772228,
+        212.68060411810413,
+        167.4607142857143
+      ]
+    },
+    {
+      "nodeId": "spectral:96954c8bde071a0f1501",
+      "units": 142,
+      "mass": 117.89139928698754,
+      "chosenChildren": 5,
+      "eigenvalues": [
+        1.0000000000000004,
+        0.7130556200368785,
+        0.6855133314968629,
+        0.6539522394376889,
+        0.6288661880324988,
+        0.5114322105832423,
+        0.49817667429661905,
+        0.48180798420278903,
+        0.45531334842093796,
+        0.4353617219353271,
+        0.4251441518641348,
+        0.4189156951833739,
+        0.3764004121023731
+      ],
+      "eigengaps": [
+        {
+          "k": 5,
+          "gap": 0.11743397744925654
+        },
+        {
+          "k": 12,
+          "gap": 0.042515283081000776
+        },
+        {
+          "k": 3,
+          "gap": 0.03156109205917401
+        },
+        {
+          "k": 2,
+          "gap": 0.027542288540015614
+        },
+        {
+          "k": 8,
+          "gap": 0.026494635781851072
+        },
+        {
+          "k": 4,
+          "gap": 0.025086051405190046
+        },
+        {
+          "k": 9,
+          "gap": 0.019951626485610885
+        },
+        {
+          "k": 7,
+          "gap": 0.01636869009383002
+        },
+        {
+          "k": 6,
+          "gap": 0.013255536286623237
+        },
+        {
+          "k": 10,
+          "gap": 0.010217570071192283
+        },
+        {
+          "k": 11,
+          "gap": 0.006228456680760885
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        31,
+        40,
+        34,
+        18,
+        19
+      ],
+      "childMasses": [
+        27.95,
+        33.22473262032086,
+        29.499999999999996,
+        14.05,
+        13.166666666666668
+      ]
+    },
+    {
+      "nodeId": "spectral:a9d88d62ea6650772f32",
+      "units": 174,
+      "mass": 135.4737234987235,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999997,
+        0.7275342914524268,
+        0.652217648358539,
+        0.646552979750465,
+        0.5787588270224373,
+        0.5484021863812377,
+        0.5433808177879743,
+        0.5003195159053729,
+        0.45589371139001145,
+        0.4492101105977715,
+        0.42829725104017125,
+        0.4093655998964089,
+        0.38335566214197103
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.07531664309388775
+        },
+        {
+          "k": 4,
+          "gap": 0.06779415272802769
+        },
+        {
+          "k": 8,
+          "gap": 0.04442580451536149
+        },
+        {
+          "k": 7,
+          "gap": 0.04306130188260138
+        },
+        {
+          "k": 5,
+          "gap": 0.030356640641199584
+        },
+        {
+          "k": 12,
+          "gap": 0.026009937754437884
+        },
+        {
+          "k": 10,
+          "gap": 0.02091285955760025
+        },
+        {
+          "k": 11,
+          "gap": 0.01893165114376233
+        },
+        {
+          "k": 9,
+          "gap": 0.006683600792239952
+        },
+        {
+          "k": 3,
+          "gap": 0.005664668608074019
+        },
+        {
+          "k": 6,
+          "gap": 0.005021368593263409
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        98,
+        76
+      ],
+      "childMasses": [
+        74.68013375513375,
+        60.79358974358974
+      ]
+    },
+    {
+      "nodeId": "spectral:a4392d5805f61dba8537",
+      "units": 98,
+      "mass": 74.68013375513375,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        0.9999999999999999,
+        0.6974475182440801,
+        0.6610106884590361,
+        0.5675372948283431,
+        0.5099516771670711,
+        0.4700012437791987,
+        0.4456347910464022,
+        0.40980519604295246,
+        0.39342903391847467,
+        0.3444987611075047,
+        0.3246916045214581,
+        0.30196788357326854,
+        0.29233136631691675
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.09347339363069296
+        },
+        {
+          "k": 4,
+          "gap": 0.057585617661272015
+        },
+        {
+          "k": 9,
+          "gap": 0.048930272810969955
+        },
+        {
+          "k": 5,
+          "gap": 0.03995043338787241
+        },
+        {
+          "k": 2,
+          "gap": 0.036436829785044034
+        },
+        {
+          "k": 7,
+          "gap": 0.03582959500344973
+        },
+        {
+          "k": 6,
+          "gap": 0.02436645273279653
+        },
+        {
+          "k": 11,
+          "gap": 0.022723720948189585
+        },
+        {
+          "k": 10,
+          "gap": 0.019807156586046593
+        },
+        {
+          "k": 8,
+          "gap": 0.01637616212447779
+        },
+        {
+          "k": 12,
+          "gap": 0.009636517256351784
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        40,
+        11,
+        47
+      ],
+      "childMasses": [
+        30.691666666666666,
+        10.25,
+        33.7384670884671
+      ]
+    },
+    {
+      "nodeId": "spectral:a2c631e74620b47ab92c",
+      "units": 142,
+      "mass": 94.47772227772228,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999972,
+        0.7360564252184367,
+        0.6713629875691399,
+        0.6152233459588318,
+        0.5527065242881751,
+        0.5424638585040753,
+        0.5222040707734955,
+        0.4736884367322657,
+        0.42635597086210575,
+        0.40663459391916756,
+        0.3811270349318072,
+        0.36598626339080703,
+        0.35635868540095056
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.0646934376492968
+        },
+        {
+          "k": 4,
+          "gap": 0.06251682167065664
+        },
+        {
+          "k": 3,
+          "gap": 0.056139641610308155
+        },
+        {
+          "k": 7,
+          "gap": 0.04851563404122983
+        },
+        {
+          "k": 8,
+          "gap": 0.047332465870159934
+        },
+        {
+          "k": 10,
+          "gap": 0.025507558987360346
+        },
+        {
+          "k": 6,
+          "gap": 0.020259787730579792
+        },
+        {
+          "k": 9,
+          "gap": 0.019721376942938185
+        },
+        {
+          "k": 11,
+          "gap": 0.015140771541000186
+        },
+        {
+          "k": 5,
+          "gap": 0.010242665784099825
+        },
+        {
+          "k": 12,
+          "gap": 0.009627577989856473
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        80,
+        62
+      ],
+      "childMasses": [
+        56.11328393828394,
+        38.364438339438344
+      ]
+    },
+    {
+      "nodeId": "spectral:d05129a670beed8de78c",
+      "units": 304,
+      "mass": 212.68060411810413,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999998,
+        0.7944448784441615,
+        0.7218993573673512,
+        0.7011823919265846,
+        0.6807775198920927,
+        0.6448381363918813,
+        0.6294974484273596,
+        0.5930703071658783,
+        0.5721312039061924,
+        0.5346586084341712,
+        0.5060651661333231,
+        0.493244157188411,
+        0.46735832579784176
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.07254552107681023
+        },
+        {
+          "k": 9,
+          "gap": 0.0374725954720212
+        },
+        {
+          "k": 7,
+          "gap": 0.03642714126148128
+        },
+        {
+          "k": 5,
+          "gap": 0.03593938350021142
+        },
+        {
+          "k": 10,
+          "gap": 0.02859344230084815
+        },
+        {
+          "k": 12,
+          "gap": 0.02588583139056927
+        },
+        {
+          "k": 8,
+          "gap": 0.020939103259685843
+        },
+        {
+          "k": 3,
+          "gap": 0.02071696544076662
+        },
+        {
+          "k": 4,
+          "gap": 0.020404872034491928
+        },
+        {
+          "k": 6,
+          "gap": 0.015340687964521704
+        },
+        {
+          "k": 11,
+          "gap": 0.01282100894491206
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        154,
+        150
+      ],
+      "childMasses": [
+        95.87553141303141,
+        116.8050727050727
+      ]
+    },
+    {
+      "nodeId": "spectral:085ef2fdc94d22089e10",
+      "units": 154,
+      "mass": 95.87553141303141,
+      "chosenChildren": 4,
+      "eigenvalues": [
+        0.9999999999999977,
+        0.7400381561713852,
+        0.6820968297339053,
+        0.6620410841286911,
+        0.598421944735003,
+        0.5470118682558414,
+        0.5205481258942388,
+        0.5061767616531974,
+        0.4844620277368519,
+        0.43392549283650583,
+        0.3829738492281013,
+        0.37302777052563707,
+        0.36703634998649926
+      ],
+      "eigengaps": [
+        {
+          "k": 4,
+          "gap": 0.06361913939368813
+        },
+        {
+          "k": 2,
+          "gap": 0.057941326437479956
+        },
+        {
+          "k": 5,
+          "gap": 0.051410076479161626
+        },
+        {
+          "k": 10,
+          "gap": 0.05095164360840454
+        },
+        {
+          "k": 9,
+          "gap": 0.05053653490034604
+        },
+        {
+          "k": 6,
+          "gap": 0.026463742361602538
+        },
+        {
+          "k": 8,
+          "gap": 0.021714733916345486
+        },
+        {
+          "k": 3,
+          "gap": 0.02005574560521417
+        },
+        {
+          "k": 7,
+          "gap": 0.014371364241041462
+        },
+        {
+          "k": 11,
+          "gap": 0.009946078702464223
+        },
+        {
+          "k": 12,
+          "gap": 0.005991420539137815
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        32,
+        50,
+        18,
+        54
+      ],
+      "childMasses": [
+        15.410166222666223,
+        36.27097624597624,
+        11.48452380952381,
+        32.70986513486513
+      ]
+    },
+    {
+      "nodeId": "spectral:8d5896d6197680a5f3e6",
+      "units": 150,
+      "mass": 116.8050727050727,
+      "chosenChildren": 4,
+      "eigenvalues": [
+        1.0,
+        0.7721085145023553,
+        0.7486890475273359,
+        0.6630808130451217,
+        0.5764842898531186,
+        0.553507779081973,
+        0.5241952978085406,
+        0.4872326134706281,
+        0.4490739147008625,
+        0.41282714194340525,
+        0.40161783341443813,
+        0.38298433233783347,
+        0.37689348712808984
+      ],
+      "eigengaps": [
+        {
+          "k": 4,
+          "gap": 0.08659652319200306
+        },
+        {
+          "k": 3,
+          "gap": 0.08560823448221422
+        },
+        {
+          "k": 8,
+          "gap": 0.038158698769765576
+        },
+        {
+          "k": 7,
+          "gap": 0.0369626843379125
+        },
+        {
+          "k": 9,
+          "gap": 0.036246772757457246
+        },
+        {
+          "k": 6,
+          "gap": 0.029312481273432445
+        },
+        {
+          "k": 2,
+          "gap": 0.0234194669750194
+        },
+        {
+          "k": 5,
+          "gap": 0.022976510771145597
+        },
+        {
+          "k": 11,
+          "gap": 0.018633501076604664
+        },
+        {
+          "k": 10,
+          "gap": 0.011209308528967121
+        },
+        {
+          "k": 12,
+          "gap": 0.006090845209743623
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        66,
+        40,
+        32,
+        12
+      ],
+      "childMasses": [
+        55.08571428571429,
+        25.551501276501277,
+        25.801190476190477,
+        10.366666666666667
+      ]
+    },
+    {
+      "nodeId": "spectral:5960873481121de0550c",
+      "units": 206,
+      "mass": 167.4607142857143,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        1.0000000000000007,
+        0.8598501133394032,
+        0.7269042496623596,
+        0.6615179916800425,
+        0.641229501094002,
+        0.5847385409799319,
+        0.5643111768295849,
+        0.5203579639491676,
+        0.49872511044674833,
+        0.484278123988815,
+        0.4600626087584143,
+        0.45774849019151403,
+        0.4208462325523105
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.13294586367704364
+        },
+        {
+          "k": 3,
+          "gap": 0.06538625798231701
+        },
+        {
+          "k": 5,
+          "gap": 0.056490960114070066
+        },
+        {
+          "k": 7,
+          "gap": 0.043953212880417314
+        },
+        {
+          "k": 12,
+          "gap": 0.03690225763920352
+        },
+        {
+          "k": 10,
+          "gap": 0.024215515230400664
+        },
+        {
+          "k": 8,
+          "gap": 0.021632853502419225
+        },
+        {
+          "k": 6,
+          "gap": 0.02042736415034707
+        },
+        {
+          "k": 4,
+          "gap": 0.020288490586040542
+        },
+        {
+          "k": 9,
+          "gap": 0.014446986457933353
+        },
+        {
+          "k": 11,
+          "gap": 0.0023141185669002806
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        104,
+        102
+      ],
+      "childMasses": [
+        86.36230158730159,
+        81.09841269841269
+      ]
+    },
+    {
+      "nodeId": "spectral:06044645c1713ddbfefb",
+      "units": 104,
+      "mass": 86.36230158730159,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        0.9999999999999996,
+        0.7686883666552043,
+        0.6205614651868643,
+        0.5251703882629128,
+        0.5083995293282275,
+        0.48332615334013274,
+        0.4480979504307795,
+        0.4215113370869764,
+        0.3848626090877432,
+        0.3717340915285535,
+        0.3422046703110695,
+        0.32395765757285055,
+        0.30332917680718113
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.14812690146834007
+        },
+        {
+          "k": 3,
+          "gap": 0.09539107692395143
+        },
+        {
+          "k": 8,
+          "gap": 0.03664872799923319
+        },
+        {
+          "k": 6,
+          "gap": 0.035228202909353246
+        },
+        {
+          "k": 10,
+          "gap": 0.02952942121748403
+        },
+        {
+          "k": 7,
+          "gap": 0.02658661334380308
+        },
+        {
+          "k": 5,
+          "gap": 0.02507337598809478
+        },
+        {
+          "k": 12,
+          "gap": 0.02062848076566942
+        },
+        {
+          "k": 11,
+          "gap": 0.018247012738218937
+        },
+        {
+          "k": 4,
+          "gap": 0.01677085893468533
+        },
+        {
+          "k": 9,
+          "gap": 0.0131285175591897
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        34,
+        70
+      ],
+      "childMasses": [
+        25.458333333333336,
+        60.90396825396825
+      ]
+    },
+    {
+      "nodeId": "spectral:61ee44fcb892aa318802",
+      "units": 102,
+      "mass": 81.09841269841269,
+      "chosenChildren": 4,
+      "eigenvalues": [
+        0.9999999999999996,
+        0.7324033270418349,
+        0.6808520507653455,
+        0.6273882767932416,
+        0.5536709302498611,
+        0.484984573879464,
+        0.4655105601381598,
+        0.4303846856903028,
+        0.40594550985428496,
+        0.37540821885384,
+        0.3678191477076801,
+        0.34569602853774944,
+        0.33317095597447566
+      ],
+      "eigengaps": [
+        {
+          "k": 4,
+          "gap": 0.07371734654338047
+        },
+        {
+          "k": 5,
+          "gap": 0.06868635637039716
+        },
+        {
+          "k": 3,
+          "gap": 0.05346377397210389
+        },
+        {
+          "k": 2,
+          "gap": 0.051551276276489366
+        },
+        {
+          "k": 7,
+          "gap": 0.035125874447856975
+        },
+        {
+          "k": 9,
+          "gap": 0.030537291000444944
+        },
+        {
+          "k": 8,
+          "gap": 0.024439175836017846
+        },
+        {
+          "k": 11,
+          "gap": 0.02212311916993065
+        },
+        {
+          "k": 6,
+          "gap": 0.019474013741304197
+        },
+        {
+          "k": 12,
+          "gap": 0.012525072563273787
+        },
+        {
+          "k": 10,
+          "gap": 0.00758907114615992
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        23,
+        29,
+        19,
+        31
+      ],
+      "childMasses": [
+        18.067857142857143,
+        24.775,
+        15.055555555555557,
+        23.200000000000003
+      ]
+    },
+    {
+      "nodeId": "cluster:d520b1a12c2a2491aeb5a8e00cc5318f0bfd702b22c99f9a583faa8bcd7fcbe1",
+      "units": 936,
+      "mass": 685.3226753638519,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        0.9999999999999997,
+        0.8237835668068832,
+        0.8206099223157971,
+        0.7778786757080484,
+        0.7736156420849358,
+        0.7346399187946359,
+        0.7315960021059913,
+        0.7142829003517215,
+        0.7013300132977996,
+        0.6634013939093064,
+        0.655109070957334,
+        0.6538757014165156,
+        0.6459537117083172
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.04273124660774874
+        },
+        {
+          "k": 5,
+          "gap": 0.03897572329029997
+        },
+        {
+          "k": 9,
+          "gap": 0.037928619388493234
+        },
+        {
+          "k": 7,
+          "gap": 0.01731310175426981
+        },
+        {
+          "k": 8,
+          "gap": 0.012952887053921835
+        },
+        {
+          "k": 10,
+          "gap": 0.008292322951972464
+        },
+        {
+          "k": 12,
+          "gap": 0.007921989708198462
+        },
+        {
+          "k": 4,
+          "gap": 0.004263033623112533
+        },
+        {
+          "k": 2,
+          "gap": 0.003173644491086147
+        },
+        {
+          "k": 6,
+          "gap": 0.0030439166886445657
+        },
+        {
+          "k": 11,
+          "gap": 0.0012333695408183187
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        368,
+        472,
+        96
+      ],
+      "childMasses": [
+        312.7964285714286,
+        320.8430153180153,
+        51.68323147440795
+      ]
+    },
+    {
+      "nodeId": "spectral:81b444a9978aaf0b7128",
+      "units": 368,
+      "mass": 312.7964285714286,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        1.0,
+        0.7905236722797484,
+        0.7382105400926698,
+        0.7223877142461418,
+        0.7019957736731441,
+        0.6522538358964796,
+        0.6226421896690026,
+        0.6062216014290673,
+        0.555484099048124,
+        0.542492694568941,
+        0.5331391050015108,
+        0.530531202325162,
+        0.5095997283369799
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.05231313218707856
+        },
+        {
+          "k": 8,
+          "gap": 0.05073750238094332
+        },
+        {
+          "k": 5,
+          "gap": 0.04974193777666458
+        },
+        {
+          "k": 6,
+          "gap": 0.029611646227476918
+        },
+        {
+          "k": 12,
+          "gap": 0.02093147398818218
+        },
+        {
+          "k": 4,
+          "gap": 0.020391940572997647
+        },
+        {
+          "k": 7,
+          "gap": 0.016420588239935308
+        },
+        {
+          "k": 3,
+          "gap": 0.015822825846528055
+        },
+        {
+          "k": 9,
+          "gap": 0.01299140447918301
+        },
+        {
+          "k": 10,
+          "gap": 0.009353589567430154
+        },
+        {
+          "k": 11,
+          "gap": 0.0026079026763488056
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        241,
+        127
+      ],
+      "childMasses": [
+        198.07222222222222,
+        114.72420634920634
+      ]
+    },
+    {
+      "nodeId": "spectral:741609ff839ed26402b6",
+      "units": 241,
+      "mass": 198.07222222222222,
+      "chosenChildren": 5,
+      "eigenvalues": [
+        1.0,
+        0.7655122159682807,
+        0.7218366186028837,
+        0.6802901732468882,
+        0.6476114513871303,
+        0.5917409297469498,
+        0.5587767242619657,
+        0.5548518687662611,
+        0.5440188453508141,
+        0.5336756450071386,
+        0.5191945017154552,
+        0.4835592399388418,
+        0.46862746387603527
+      ],
+      "eigengaps": [
+        {
+          "k": 5,
+          "gap": 0.05587052164018047
+        },
+        {
+          "k": 2,
+          "gap": 0.043675597365396945
+        },
+        {
+          "k": 3,
+          "gap": 0.0415464453559955
+        },
+        {
+          "k": 11,
+          "gap": 0.035635261776613414
+        },
+        {
+          "k": 6,
+          "gap": 0.03296420548498413
+        },
+        {
+          "k": 4,
+          "gap": 0.03267872185975795
+        },
+        {
+          "k": 12,
+          "gap": 0.014931776062806545
+        },
+        {
+          "k": 10,
+          "gap": 0.014481143291683374
+        },
+        {
+          "k": 8,
+          "gap": 0.010833023415447007
+        },
+        {
+          "k": 9,
+          "gap": 0.01034320034367553
+        },
+        {
+          "k": 7,
+          "gap": 0.003924855495704538
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        51,
+        47,
+        84,
+        33,
+        26
+      ],
+      "childMasses": [
+        45.17916666666667,
+        40.31944444444445,
+        61.19920634920635,
+        26.231547619047618,
+        25.142857142857142
+      ]
+    },
+    {
+      "nodeId": "spectral:b35a159a9e4d5c23e38d",
+      "units": 127,
+      "mass": 114.72420634920634,
+      "chosenChildren": 3,
+      "eigenvalues": [
+        0.9999999999999993,
+        0.8393644764331625,
+        0.7855937570834873,
+        0.6507670658514209,
+        0.6333833814237951,
+        0.5757011675144348,
+        0.5589717580257326,
+        0.5337224559091036,
+        0.4901080756897814,
+        0.4776599316834298,
+        0.44198685887396244,
+        0.4206575686707608,
+        0.3974186803579393
+      ],
+      "eigengaps": [
+        {
+          "k": 3,
+          "gap": 0.13482669123206648
+        },
+        {
+          "k": 5,
+          "gap": 0.05768221390936035
+        },
+        {
+          "k": 2,
+          "gap": 0.053770719349675145
+        },
+        {
+          "k": 8,
+          "gap": 0.043614380219322235
+        },
+        {
+          "k": 10,
+          "gap": 0.035673072809467354
+        },
+        {
+          "k": 7,
+          "gap": 0.025249302116629013
+        },
+        {
+          "k": 12,
+          "gap": 0.023238888312821504
+        },
+        {
+          "k": 11,
+          "gap": 0.021329290203201623
+        },
+        {
+          "k": 4,
+          "gap": 0.017383684427625723
+        },
+        {
+          "k": 6,
+          "gap": 0.016729409488702163
+        },
+        {
+          "k": 9,
+          "gap": 0.01244814400635158
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        45,
+        46,
+        36
+      ],
+      "childMasses": [
+        40.83333333333333,
+        43.57142857142857,
+        30.319444444444443
+      ]
+    },
+    {
+      "nodeId": "spectral:e8c316606b47449562b6",
+      "units": 472,
+      "mass": 320.8430153180153,
+      "chosenChildren": 9,
+      "eigenvalues": [
+        1.0000000000000004,
+        0.8426418489689588,
+        0.8300483331215435,
+        0.8049928174052486,
+        0.7809542749271992,
+        0.7525116907893231,
+        0.7167122390146486,
+        0.6996003120459151,
+        0.67170466338259,
+        0.5990630456907671,
+        0.5868094356287632,
+        0.5629249543505793,
+        0.5562372754913781
+      ],
+      "eigengaps": [
+        {
+          "k": 9,
+          "gap": 0.07264161769182298
+        },
+        {
+          "k": 6,
+          "gap": 0.03579945177467447
+        },
+        {
+          "k": 5,
+          "gap": 0.028442584137876037
+        },
+        {
+          "k": 8,
+          "gap": 0.027895648663325057
+        },
+        {
+          "k": 3,
+          "gap": 0.02505551571629483
+        },
+        {
+          "k": 4,
+          "gap": 0.024038542478049485
+        },
+        {
+          "k": 11,
+          "gap": 0.023884481278183878
+        },
+        {
+          "k": 7,
+          "gap": 0.017111926968733537
+        },
+        {
+          "k": 2,
+          "gap": 0.012593515847415304
+        },
+        {
+          "k": 10,
+          "gap": 0.012253610062003872
+        },
+        {
+          "k": 12,
+          "gap": 0.006687678859201185
+        }
+      ],
+      "kmeansSeedARI": 0.9959762638128964,
+      "childSizes": [
+        96,
+        52,
+        98,
+        51,
+        20,
+        102,
+        19,
+        19,
+        15
+      ],
+      "childMasses": [
+        61.2257326007326,
+        31.535353535353536,
+        54.01217948717949,
+        35.207905982905984,
+        20.0,
+        76.08968253968253,
+        17.5,
+        14.672161172161172,
+        10.6
+      ]
+    },
+    {
+      "nodeId": "spectral:35352ca8cd4464f3e7ae",
+      "units": 102,
+      "mass": 76.08968253968253,
+      "chosenChildren": 2,
+      "eigenvalues": [
+        1.0000000000000007,
+        0.690722150719488,
+        0.6136467467651597,
+        0.5706034419012501,
+        0.5167067946477288,
+        0.4748065834852908,
+        0.460521059923547,
+        0.4418720314791271,
+        0.4152116682514262,
+        0.3480969676444595,
+        0.34102199172625214,
+        0.3303484413735123,
+        0.296612639052633
+      ],
+      "eigengaps": [
+        {
+          "k": 2,
+          "gap": 0.07707540395432821
+        },
+        {
+          "k": 9,
+          "gap": 0.06711470060696667
+        },
+        {
+          "k": 4,
+          "gap": 0.05389664725352128
+        },
+        {
+          "k": 3,
+          "gap": 0.043043304863909615
+        },
+        {
+          "k": 5,
+          "gap": 0.04190021116243803
+        },
+        {
+          "k": 12,
+          "gap": 0.033735802320879305
+        },
+        {
+          "k": 8,
+          "gap": 0.026660363227700934
+        },
+        {
+          "k": 7,
+          "gap": 0.0186490284444199
+        },
+        {
+          "k": 6,
+          "gap": 0.014285523561743785
+        },
+        {
+          "k": 11,
+          "gap": 0.010673550352739813
+        },
+        {
+          "k": 10,
+          "gap": 0.007074975918207382
+        }
+      ],
+      "kmeansSeedARI": 1.0,
+      "childSizes": [
+        35,
+        67
+      ],
+      "childMasses": [
+        30.405555555555555,
+        45.68412698412699
+      ]
+    }
+  ]
+}

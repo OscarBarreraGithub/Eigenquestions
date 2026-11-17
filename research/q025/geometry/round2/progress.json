@@ -1,0 +1,73 @@
+[
+  {
+    "stage": "inputs_ready",
+    "elapsed": 0.7514889240264893,
+    "targetSizes": [
+      3127,
+      936
+    ]
+  },
+  {
+    "stage": "local_spectral_minilm",
+    "elapsed": 6.027129650115967,
+    "leaves": 88,
+    "haloCount": 3672,
+    "giantDropoutARI": 0.7895062090766769
+  },
+  {
+    "stage": "local_spectral_qwen",
+    "elapsed": 6.65376877784729,
+    "leaves": 16,
+    "haloCount": 3661,
+    "giantDropoutARI": 1.0
+  },
+  {
+    "stage": "local_spectral_consensus",
+    "elapsed": 12.29752492904663,
+    "leaves": 106,
+    "haloCount": 3582,
+    "giantDropoutARI": 0.6712487987916488
+  },
+  {
+    "stage": "paired_tree",
+    "elapsed": 76.88151478767395,
+    "seed": 20261117,
+    "variant": "base",
+    "leaves": 148
+  },
+  {
+    "stage": "paired_tree",
+    "elapsed": 137.63799357414246,
+    "seed": 20261117,
+    "variant": "all_types_attraction",
+    "leaves": 145
+  },
+  {
+    "stage": "paired_tree",
+    "elapsed": 200.5365092754364,
+    "seed": 20261117,
+    "variant": "result_specialization_attraction",
+    "leaves": 151
+  },
+  {
+    "stage": "paired_tree",
+    "elapsed": 267.48161244392395,
+    "seed": 20261118,
+    "variant": "base",
+    "leaves": 137
+  },
+  {
+    "stage": "paired_tree",
+    "elapsed": 339.55411434173584,
+    "seed": 20261118,
+    "variant": "all_types_attraction",
+    "leaves": 136
+  },
+  {
+    "stage": "paired_tree",
+    "elapsed": 404.91860485076904,
+    "seed": 20261118,
+    "variant": "result_specialization_attraction",
+    "leaves": 136
+  }
+]

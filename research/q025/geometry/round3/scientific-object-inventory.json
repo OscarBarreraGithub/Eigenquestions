@@ -1,0 +1,61 @@
+{
+  "allSourceNodeTypes": {
+    "paper": 6478,
+    "question": 6765,
+    "setting": 12793,
+    "method": 17477,
+    "assumption": 52438,
+    "convention": 33160,
+    "symmetry": 16092,
+    "control_regime": 18893,
+    "limitation": 47728,
+    "caveat": 16169,
+    "claim": 36131,
+    "retrieval_hint": 10845,
+    "representation": 1150,
+    "quantity": 362,
+    "definition": 290,
+    "derivation": 4110,
+    "dataset": 247
+  },
+  "allEdgeSemanticStatuses": {
+    "structural": 274650,
+    "source_local_assertion": 14499,
+    "extraction_inference": 1069,
+    "local_nomination_only": 609,
+    "unvalidated_mention": 109608
+  },
+  "allEdgeTypes": {
+    "contains": 163818,
+    "has_assumption": 39060,
+    "has_symmetry": 8641,
+    "has_convention": 21295,
+    "has_limitation": 31028,
+    "has_control_regime": 6710,
+    "derived_from": 5291,
+    "constrains": 1382,
+    "specializes": 1091,
+    "uses_method": 2090,
+    "assumes": 1722,
+    "instantiates": 658,
+    "supports": 1255,
+    "has_derivation": 4098,
+    "defined_in": 643,
+    "addresses": 981,
+    "mentions": 372,
+    "challenges": 508,
+    "approximates": 166,
+    "measures": 18,
+    "literal_identifier_mention": 109608
+  },
+  "attachmentCounts": {
+    "units": 8473,
+    "unitsWithDirectLocalEdges": 2408,
+    "unitsWithPropertyPaths": 2408,
+    "unitsWithSameRecordContext": 8473
+  },
+  "attachedSourceObjects": 274565,
+  "attachedLocalEdges": 47327,
+  "sourceRecordsUsed": 6642,
+  "statusBoundary": "Source-local assertions and extraction inferences retain their status. These are not independently reviewed cross-paper relations. Unvalidated mentions excluded from scientific attachments."
+}

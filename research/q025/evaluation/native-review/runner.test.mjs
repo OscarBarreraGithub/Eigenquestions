@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {readFileSync,mkdtempSync,symlinkSync,rmSync,writeFileSync} from 'node:fs';import {tmpdir} from 'node:os';import {join} from 'node:path';
+import {validateReply,validateSchema,within,verifyPrepared} from './runner.mjs';
+const packet={samples:[{unitId:'u1'},{unitId:'u2'}],evidence:[{id:'e1'},{id:'e2'}]},request={familyId:'f',stage:'fresh'};
+const base=()=>({schemaVersion:'q025-source-review/1',familyId:'f',stage:'fresh',verdict:'needs_revision',sampledOnly:true,fullMembershipCertified:false,membershipAssessments:[{unitId:'u1',evidenceIds:['e1']},{unitId:'u2',evidenceIds:['e2']}],directions:[],identityAssessments:[],scientificRelations:[]});
+test('accepts a complete scoped negative scientific assessment',()=>assert.equal(validateReply(base(),packet,request),true));
+test('fresh stage cannot copy evidence from prior papers',()=>{const x=base();x.membershipAssessments[0].evidenceIds=['old-evidence'];assert.throws(()=>validateReply(x,packet,request),/Unbound evidence/);});
+test('cannot omit or duplicate boundary dispositions',()=>{const x=base();x.membershipAssessments[1].unitId='u1';assert.throws(()=>validateReply(x,packet,request),/duplicate/);});
+test('cannot certify uninspected full memberships',()=>{const x=base();x.fullMembershipCertified=true;assert.throws(()=>validateReply(x,packet,request),/certification/);});
+test('cannot promote candidate scientific implication',()=>{const x=base();x.scientificRelations=[{sourceUnitId:'u1',targetUnitId:'u2',evidenceIds:['e1'],status:'accepted'}];assert.throws(()=>validateReply(x,packet,request),/promoted/);});
+test('cannot change native job identity',()=>{const x=base();x.stage='proposal';assert.throws(()=>validateReply(x,packet,request),/identity/);});
+test('output schema rejects missing fields and coercion',()=>{const s={type:'object',required:['flag'],properties:{flag:{type:'boolean',enum:[false]}}};assert.throws(()=>validateSchema({},s),/Missing/);assert.throws(()=>validateSchema({flag:'false'},s),/enum/);assert.equal(validateSchema({flag:false},s),true);});
+test('runtime path guard resolves symlink escapes',()=>{const d=mkdtempSync(join(tmpdir(),'q025-guard-'));try{symlinkSync(tmpdir(),join(d,'escape'));assert.throws(()=>within(d,join(d,'escape')),/outside/);}finally{rmSync(d,{recursive:true,force:true});}});
+test('six actual prepared jobs and source contexts verify with zero native calls',()=>assert.equal(verifyPrepared().jobs.length,6));

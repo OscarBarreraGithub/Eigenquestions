@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "1.0.0",
+  "request": "Q-025",
+  "checks": [
+    {
+      "name": "prepared route renders without native vectors or graph shards",
+      "passed": true
+    },
+    {
+      "name": "manual alternate routes converge; browser Back restores path; local work note follows destination without public export",
+      "passed": true
+    },
+    {
+      "name": "read-only orientation leaves path intact and stale result cannot replace newer destination",
+      "passed": true
+    },
+    {
+      "name": "compact URL and reload restore exact prepared destination",
+      "passed": true
+    },
+    {
+      "name": "actual stdio MCP mutation reaches prepared browser through SSE and receives state/revision render acknowledgement",
+      "passed": true,
+      "destinationId": "shared"
+    },
+    {
+      "name": "real source-reading draft keeps conditional 2026 challenge visible, labels draft identity, distinguishes listed-source filters and shows primary choices above disclosures",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "prepared-shared.png",
+    "prepared-connected.png",
+    "real-draft-desktop.png"
+  ],
+  "scope": "Isolated Slurm Chromium, synthetic prepared atlas, actual shared controller and local MCP bridge. Not the owner Chrome and not scientific acceptance.",
+  "fixturePerformance": {
+    "readyMs": 779.7000000476837,
+    "longTasks": [
+      {
+        "start": 110.5,
+        "duration": 59
+      }
+    ],
+    "resources": [
+      {
+        "name": "/styles.css",
+        "duration": 7.599999904632568,
+        "transferSize": 26242,
+        "decodedBodySize": 25942
+      },
+      {
+        "name": "/app.js",
+        "duration": 7.700000047683716,
+        "transferSize": 84897,
+        "decodedBodySize": 84597
+      },
+      {
+        "name": "/lib/protocol/session.mjs",
+        "duration": 8,
+        "transferSize": 11748,
+        "decodedBodySize": 11448
+      },
+      {
+        "name": "/lib/protocol/capsule.mjs",
+        "duration": 14,
+        "transferSize": 12777,
+        "decodedBodySize": 12477
+      },
+      {
+        "name": "/chart-labels.mjs",
+        "duration": 13.799999952316284,
+        "transferSize": 2200,
+        "decodedBodySize": 1900
+      },
+      {
+        "name": "/lib/protocol/presentation.mjs",
+        "duration": 13.899999856948853,
+        "transferSize": 1805,
+        "decodedBodySize": 1505
+      },
+      {
+        "name": "/lib/geometry/prepared-atlas.mjs",
+        "duration": 14.099999904632568,
+        "transferSize": 25831,
+        "decodedBodySize": 25531
+      },
+      {
+        "name": "/atlas-panel.mjs",
+        "duration": 13.900000095367432,
+        "transferSize": 7580,
+        "decodedBodySize": 7280
+      },
+      {
+        "name": "/source-context.mjs",
+        "duration": 19.5,
+        "transferSize": 4031,
+        "decodedBodySize": 3731
+      },
+      {
+        "name": "/lib/geometry/prepared-identity.mjs",
+        "duration": 11.399999856948853,
+        "transferSize": 478,
+        "decodedBodySize": 178
+      },
+      {
+        "name": "/data/atlas/acceptance-fixture/2026-11-17-test/manifest.json",
+        "duration": 5.300000190734863,
+        "transferSize": 818,
+        "decodedBodySize": 518
+      },
+      {
+        "name": "/data/atlas/index.json",
+        "duration": 10.699999809265137,
+        "transferSize": 516,
+        "decodedBodySize": 216
+      },
+      {
+        "name": "/data/atlas/acceptance-fixture/2026-11-17-test/catalog.json",
+        "duration": 4.400000095367432,
+        "transferSize": 4565,
+        "decodedBodySize": 4265
+      }
+    ]
+  },
+  "draftPerformance": {
+    "readyMs": 1152.2999999523163,
+    "longTasks": [],
+    "resources": [
+      {
+        "name": "/styles.css",
+        "duration": 7.200000047683716,
+        "transferSize": 26242,
+        "decodedBodySize": 25942
+      },
+      {
+        "name": "/app.js",
+        "duration": 7.099999904632568,
+        "transferSize": 84897,
+        "decodedBodySize": 84597
+      },
+      {
+        "name": "/lib/protocol/capsule.mjs",
+        "duration": 7.800000190734863,
+        "transferSize": 12777,
+        "decodedBodySize": 12477
+      },
+      {
+        "name": "/lib/protocol/session.mjs",
+        "duration": 7.900000095367432,
+        "transferSize": 11748,
+        "decodedBodySize": 11448
+      },
+      {
+        "name": "/lib/protocol/presentation.mjs",
+        "duration": 7.700000047683716,
+        "transferSize": 1805,
+        "decodedBodySize": 1505
+      },
+      {
+        "name": "/chart-labels.mjs",
+        "duration": 7.5,
+        "transferSize": 2200,
+        "decodedBodySize": 1900
+      },
+      {
+        "name": "/lib/geometry/prepared-atlas.mjs",
+        "duration": 11.700000047683716,
+        "transferSize": 25831,
+        "decodedBodySize": 25531
+      },
+      {
+        "name": "/atlas-panel.mjs",
+        "duration": 7.700000047683716,
+        "transferSize": 7580,
+        "decodedBodySize": 7280
+      },
+      {
+        "name": "/source-context.mjs",
+        "duration": 11.700000047683716,
+        "transferSize": 4031,
+        "decodedBodySize": 3731
+      },
+      {
+        "name": "/lib/geometry/prepared-identity.mjs",
+        "duration": 7.199999809265137,
+        "transferSize": 478,
+        "decodedBodySize": 178
+      },
+      {
+        "name": "/data/atlas/acceptance-fixture/2026-11-17-test/manifest.json",
+        "duration": 3.299999952316284,
+        "transferSize": 818,
+        "decodedBodySize": 518
+      },
+      {
+        "name": "/data/atlas/index.json",
+        "duration": 6.200000047683716,
+        "transferSize": 516,
+        "decodedBodySize": 216
+      },
+      {
+        "name": "/data/atlas/acceptance-fixture/2026-11-17-test/catalog.json",
+        "duration": 4.5,
+        "transferSize": 4565,
+        "decodedBodySize": 4265
+      },
+      {
+        "name": "/api/session",
+        "duration": 2.5,
+        "transferSize": 6427,
+        "decodedBodySize": 6127
+      },
+      {
+        "name": "/api/viewer",
+        "duration": 6.1000001430511475,
+        "transferSize": 417,
+        "decodedBodySize": 117
+      },
+      {
+        "name": "/api/viewer",
+        "duration": 2.8999998569488525,
+        "transferSize": 417,
+        "decodedBodySize": 117
+      },
+      {
+        "name": "/data/atlas/kk-source-reading-draft/2026-11-17-local-review/manifest.json",
+        "duration": 6.700000047683716,
+        "transferSize": 1138,
+        "decodedBodySize": 838
+      },
+      {
+        "name": "/data/atlas/kk-source-reading-draft/2026-11-17-local-review/catalog.json",
+        "duration": 2.799999952316284,
+        "transferSize": 54272,
+        "decodedBodySize": 53972
+      }
+    ]
+  },
+  "passed": false,
+  "error": "Page.wait_for_function: Timeout 30000ms exceeded."
+}

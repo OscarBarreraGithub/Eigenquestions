@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "q025-geometry-job/1",
+  "jobId": "61411183",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 4,
+  "memory": "16G",
+  "timeLimit": "00:30:00",
+  "remoteRoot": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/round2",
+  "scriptSha256": "afd69671eec7b14bcdefd641a803813ed4778e941b035f29c366cc25edc96513",
+  "helperSha256": "f320b751604e296cde055481f7129b51f4a0e11945e5f43795de8283fde2c628",
+  "sbatchSha256": "d964a83098b8e1397d9f218d360499ef1fed44bd090aff44b95013e31a5c8104",
+  "statusAtSubmission": "submitted",
+  "computeOnLoginNode": false,
+  "status": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:06:52",
+  "maxRSS": "616768K",
+  "failure": "Final progress marker duplicate elapsed keyword after comparison.json and paired-relation-audit.json were written",
+  "originalScriptPath": "failures/round2-v1/run_round2.py",
+  "numericalOutputsRetained": true
+}

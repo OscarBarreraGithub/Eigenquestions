@@ -1,0 +1,71 @@
+[
+  {
+    "stage": "inputs_verified",
+    "elapsed": 1.3035690784454346
+  },
+  {
+    "stage": "scientific_attachments",
+    "elapsed": 30.038506031036377,
+    "units": 8473,
+    "unitsWithDirectLocalEdges": 2408,
+    "unitsWithPropertyPaths": 2408,
+    "unitsWithSameRecordContext": 8473
+  },
+  {
+    "stage": "global_qwen",
+    "elapsed": 30.90612030029297,
+    "leaves": 46
+  },
+  {
+    "stage": "isolation_diagnosed",
+    "elapsed": 30.957683086395264,
+    "units": 17
+  },
+  {
+    "stage": "facet_graph",
+    "elapsed": 33.37238049507141,
+    "facet": "result",
+    "paperCount": 6476,
+    "questionUnitsWithContext": 8472,
+    "paperGraphEdges": 129649,
+    "questionGraphEdges": 548661,
+    "sourceFacetCount": 37176
+  },
+  {
+    "stage": "facet_graph",
+    "elapsed": 34.398616313934326,
+    "facet": "applicability",
+    "paperCount": 6477,
+    "questionUnitsWithContext": 8473,
+    "paperGraphEdges": 128113,
+    "questionGraphEdges": 517881,
+    "sourceFacetCount": 140870
+  },
+  {
+    "stage": "facet_graph",
+    "elapsed": 34.486536741256714,
+    "facet": "mathematical_structure",
+    "paperCount": 486,
+    "questionUnitsWithContext": 2473,
+    "paperGraphEdges": 9298,
+    "questionGraphEdges": 322046,
+    "sourceFacetCount": 9647
+  },
+  {
+    "stage": "multiview_preserve_candidates",
+    "elapsed": 107.40148067474365,
+    "leaves": 186,
+    "seedLeafARI": 0.5036694439609797
+  },
+  {
+    "stage": "extra_facet_context",
+    "elapsed": 229.38082242012024,
+    "leaves": 175,
+    "seedLeafARI": 0.5576540643245896
+  },
+  {
+    "stage": "complete",
+    "elapsed": 229.46747088432312,
+    "wallSeconds": 229.46746802330017
+  }
+]

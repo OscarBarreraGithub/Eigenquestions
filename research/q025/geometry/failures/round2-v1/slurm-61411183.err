@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/round2/run_round2.py", line 141, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/round2/run_round2.py", line 139, in main
+    dump(a.out/'comparison.json',results);mark('complete',elapsed=time.time()-start)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/round2/run_round2.py", line 84, in mark
+    def mark(stage,**details):progress.append(dict(stage=stage,elapsed=time.time()-start,**details));dump(a.out/'progress.json',progress);print(stage,json.dumps(details),flush=True)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'elapsed'

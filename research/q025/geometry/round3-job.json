@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "q025-geometry-job/1",
+  "jobId": "61412355",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 4,
+  "memory": "16G",
+  "timeLimit": "00:30:00",
+  "remoteRoot": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/round3-v2",
+  "scriptSha256": "738b287fa8429bea20d7433e15f286b66146afa906c5f92a99e0c3b0d8e1c8fe",
+  "helperHashes": {
+    "run_round1.py": "f320b751604e296cde055481f7129b51f4a0e11945e5f43795de8283fde2c628",
+    "run_round2.py": "ca4200df884b87d98fd9480a91755624e8f37fbf7e7dc057750e085e949756cd"
+  },
+  "sbatchSha256": "3d368aa01b3795e037995e8c282a002dbb61080cde99b01e9dd88cec60963132",
+  "supersededAttempt": {
+    "jobId": "61412170",
+    "remoteRoot": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/round3",
+    "status": "CANCELLED by 65266",
+    "reason": "Known final progress marker bug discovered in round2; original script/partial outputs retained",
+    "elapsed": "00:00:59"
+  },
+  "statusAtSubmission": "submitted",
+  "computeOnLoginNode": false,
+  "status": "COMPLETED",
+  "exitCode": "0:0",
+  "elapsed": "00:04:03",
+  "maxRSS": "1569056K"
+}

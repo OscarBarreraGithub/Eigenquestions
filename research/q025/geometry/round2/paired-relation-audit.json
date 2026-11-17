@@ -1,0 +1,128 @@
+{
+  "paired": {
+    "20261117": {
+      "all_types_attraction": {
+        "levelARI": {
+          "1": 0.9521430290536034,
+          "2": 0.6227641353954215,
+          "3": 0.6006609292591384,
+          "4": 0.5857415101562958,
+          "5": 0.5857415101562958,
+          "6": 0.5857415101562958,
+          "7": 0.5857415101562958,
+          "8": 0.5857415101562958
+        },
+        "leafARI": 0.5857415101562958,
+        "meanBestClusterJaccard": 0.45283130256842996,
+        "unitWeightedBestClusterJaccard": 0.5018115819881258,
+        "bestMatchCoreCoverage": 0.6851174318423227
+      },
+      "result_specialization_attraction": {
+        "levelARI": {
+          "1": 0.9714892735343441,
+          "2": 0.6917586267117242,
+          "3": 0.47887583174590953,
+          "4": 0.3763880530153891,
+          "5": 0.3763880530153891,
+          "6": 0.3763880530153891,
+          "7": 0.3763880530153891,
+          "8": 0.3763880530153891
+        },
+        "leafARI": 0.3763880530153891,
+        "meanBestClusterJaccard": 0.4375681085780376,
+        "unitWeightedBestClusterJaccard": 0.4404437689325826,
+        "bestMatchCoreCoverage": 0.6435737047090759
+      }
+    },
+    "20261118": {
+      "all_types_attraction": {
+        "levelARI": {
+          "1": 0.9771270549040515,
+          "2": 0.7828079163998845,
+          "3": 0.6042141155090497,
+          "4": 0.5564436781044676,
+          "5": 0.5543253151746406,
+          "6": 0.5543253151746406,
+          "7": 0.5543253151746406,
+          "8": 0.5543253151746406
+        },
+        "leafARI": 0.5543253151746406,
+        "meanBestClusterJaccard": 0.47371072963156124,
+        "unitWeightedBestClusterJaccard": 0.5220200780805812,
+        "bestMatchCoreCoverage": 0.7167473150005901
+      },
+      "result_specialization_attraction": {
+        "levelARI": {
+          "1": 0.9870726812894102,
+          "2": 0.8058713542886595,
+          "3": 0.5678672851987524,
+          "4": 0.47021646474564516,
+          "5": 0.4681345758322038,
+          "6": 0.4681345758322038,
+          "7": 0.4681345758322038,
+          "8": 0.4681345758322038
+        },
+        "leafARI": 0.4681345758322038,
+        "meanBestClusterJaccard": 0.48725135594747576,
+        "unitWeightedBestClusterJaccard": 0.48628567707328374,
+        "bestMatchCoreCoverage": 0.6761477634840081
+      }
+    }
+  },
+  "seedBackground": {
+    "base": {
+      "levelARI": {
+        "1": 0.9106603317102214,
+        "2": 0.6404664096815946,
+        "3": 0.4920693777775871,
+        "4": 0.43463108736896144,
+        "5": 0.43463108736896144,
+        "6": 0.43463108736896144,
+        "7": 0.43463108736896144,
+        "8": 0.43463108736896144
+      },
+      "leafARI": 0.43463108736896144,
+      "meanBestClusterJaccard": 0.45334844218005704,
+      "unitWeightedBestClusterJaccard": 0.48185889080949473,
+      "bestMatchCoreCoverage": 0.6650536999881979
+    },
+    "all_types_attraction": {
+      "levelARI": {
+        "1": 0.9198213941097066,
+        "2": 0.7139062921492221,
+        "3": 0.5345630945013412,
+        "4": 0.43458908412600455,
+        "5": 0.43384630101533744,
+        "6": 0.43384630101533744,
+        "7": 0.43384630101533744,
+        "8": 0.43384630101533744
+      },
+      "leafARI": 0.43384630101533744,
+      "meanBestClusterJaccard": 0.4607818487219592,
+      "unitWeightedBestClusterJaccard": 0.48280275263015215,
+      "bestMatchCoreCoverage": 0.6793343561902514
+    },
+    "result_specialization_attraction": {
+      "levelARI": {
+        "1": 0.929070166500007,
+        "2": 0.6814730240860041,
+        "3": 0.5168640915177718,
+        "4": 0.42073825614937227,
+        "5": 0.4228022786805314,
+        "6": 0.4228022786805314,
+        "7": 0.4228022786805314,
+        "8": 0.4228022786805314
+      },
+      "leafARI": 0.4228022786805314,
+      "meanBestClusterJaccard": 0.4106723292740151,
+      "unitWeightedBestClusterJaccard": 0.4497058868749248,
+      "bestMatchCoreCoverage": 0.6487666706007318
+    }
+  },
+  "relationCounts": {
+    "all": 97,
+    "resultAndSpecialization": 6
+  },
+  "causalLimit": "Two paired seeds characterize this bounded implementation; no population inference. Paper-projected attraction does not prove a relation between every question in endpoint papers.",
+  "typeAwareAlternative": "typed-relation-review-constraints.json preserves scoped endpoint-specific obligations, with explicit abstention where claim-to-question mapping is not established; no forced question merges."
+}

@@ -1,0 +1,977 @@
+{
+  "unitCount": 8473,
+  "representedPapers": 6477,
+  "coverageFraction": 1.0,
+  "rowWeightMaxError": 0.0,
+  "regionCount": 46,
+  "primaryUnitsMinMedianMax": [
+    45,
+    75.0,
+    1218
+  ],
+  "massMinMedianMax": [
+    40.133333333333326,
+    61.02006535131535,
+    993.1985911147683
+  ],
+  "overlapUnitCount": 0,
+  "meanMembershipCount": 1.0,
+  "primaryConductanceMedian": 0.6763565546413453,
+  "internalFraction": 0.43758788978968044,
+  "coarseOffDiagonalMassTop6Retained": 0.6937444222504535,
+  "leafDepthMinMedianMax": [
+    3,
+    6.0,
+    8
+  ],
+  "largestTerminalNodes": [
+    {
+      "id": "cluster:1a8d7fc921087ff964269487c987afb0600b0d1ead3e648404455455b8de4a04",
+      "mass": 993.1985911147676,
+      "units": 1218,
+      "depth": 5,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:cb5839f0ac9c92da38cd8f3ae7b2eddfdfd834aa11b8e666c12904b82dfd1045",
+      "mass": 562.6921565362743,
+      "units": 731,
+      "depth": 5,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:a0d760687062fef9109dbf3d10e0d278154e67020d2f06f19363936eb8766e64",
+      "mass": 448.7226565101565,
+      "units": 519,
+      "depth": 7,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:31cb34ba26ddf061157c9e3d24d700af3ee16ba7dec8957752cba93258166e84",
+      "mass": 414.10608974358973,
+      "units": 648,
+      "depth": 6,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:6a33ccea31fc218b3a234cdf6ea9ac06be1fffa1b02decf0c1ce1ddccf89f84d",
+      "mass": 401.3307831057831,
+      "units": 500,
+      "depth": 8,
+      "stopReason": "max_depth",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:897e7a11197de20646ab422f65e52810974ef090132b97092e18604154f98784",
+      "mass": 357.7929195804196,
+      "units": 483,
+      "depth": 7,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:242da59a0e0e60f6fcf2b48883810b1a4d536b44c44ca51d08dcc09cf69cbace",
+      "mass": 339.824161949162,
+      "units": 441,
+      "depth": 5,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    },
+    {
+      "id": "cluster:670896696512d9da70438acfd16436655812e895ad62a5dfe2a706ceece45d66",
+      "mass": 256.15430402930406,
+      "units": 302,
+      "depth": 6,
+      "stopReason": "unstable_candidate",
+      "rejectedSplit": null
+    }
+  ],
+  "relationChecks": [
+    {
+      "relationId": "scientific:pilot-ads-kk-spectrometry-method",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:pilot-wgc-convex-hull-reduction",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-001",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-002",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-003",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-004",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-005",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-006",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-007",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-009",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-010",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-011",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-013",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-014",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-015",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-017",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-018",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-019",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 4,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-020",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-021",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-022",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-023",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-024",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-025",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-026",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-027",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-028",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-029",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-030",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-031",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-032",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-033",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-034",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 4,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-035",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 5,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-036",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-037",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-038",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-039",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-040",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-041",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-042",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-043",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-044",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-045",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-047",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-050",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-051",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-053",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-054",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-055",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-056",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 2,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-059",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-060",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-062",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 16,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-064",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-065",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-068",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-070",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-072",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-073",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-074",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-075",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-076",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-077",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-078",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-079",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-081",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-082",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 3,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-083",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 9,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-084",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-085",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-086",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-087",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-089",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-090",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-091",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 9,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-092",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-093",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-094",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-095",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-096",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-097",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-098",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-099",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 4,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-100",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-101",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-103",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-104",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-105",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-106",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-107",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-108",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-109",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 9,
+      "geometricTop6RetainsAny": true,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-111",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-112",
+      "represented": true,
+      "samePrimaryRegion": false,
+      "crossRegionPairs": 1,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-113",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    },
+    {
+      "relationId": "scientific:production-114",
+      "represented": true,
+      "samePrimaryRegion": true,
+      "crossRegionPairs": 0,
+      "geometricTop6RetainsAny": false,
+      "typedScientificEdgeRetained": true
+    }
+  ],
+  "lexicalBridgeDiagnostics": {
+    "kk": {
+      "units": 129,
+      "primaryRegions": [
+        5,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31,
+        35,
+        36,
+        37,
+        39,
+        41
+      ]
+    },
+    "dark_matter": {
+      "units": 274,
+      "primaryRegions": [
+        5,
+        6,
+        7,
+        9,
+        12,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        31,
+        32,
+        34,
+        38,
+        41,
+        43
+      ]
+    },
+    "cosmology": {
+      "units": 1000,
+      "primaryRegions": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        38,
+        39,
+        41,
+        43,
+        45
+      ]
+    },
+    "kk__dark_matter": {
+      "minCoarseHops": 0.0,
+      "samePrimaryRegions": 10
+    },
+    "dark_matter__cosmology": {
+      "minCoarseHops": 0.0,
+      "samePrimaryRegions": 16
+    }
+  },
+  "scientificValidation": false,
+  "limits": [
+    "Lexical bridge masks are diagnostics, not scientific labels.",
+    "Coverage and repeatability are not semantic correctness.",
+    "All imported scientific links remain explicit regardless of coarse affinity pruning."
+  ],
+  "family": "independent inherited global Qwen hierarchy"
+}
