@@ -1,10 +1,11 @@
 # Accepted package → existing build → independent acceptance
 
-Status, 2026-11-17: the full accepted organization is not available. The eight-scope
-KK/UHECR package is explicitly partial (5 of 8,473 questions allocated). It remains
-research evidence and must not be installed as the complete atlas. The actual
-1,022-scope support component, 1,055-home delta and canonical pilot operations are
-inputs to admission/assembly, not interchangeable release catalogs.
+Status, 2026-11-17: QA23 passed ten scripted browser/MCP checks on the
+6,294-source partial candidate, including the actual black-hole → RG route and
+lazy relation proofs. All placement review pools have settled; final scientific
+intake and the full package freeze are still pending. Earlier partial packages
+remain research evidence and must not be installed as the final atlas. Fresh-agent
+routing and public HTTPS acceptance remain separate, unexecuted final gates.
 
 ## One handoff
 
@@ -30,10 +31,17 @@ Original component files and their scientific hashes remain unchanged.
 
 Integration/root checks before installation:
 
-- Handoff and manifest agree on exact atlas/version, full coverage, zero
-  unallocated questions, and no `partialRehearsal` or partial-candidate status.
-  A scientifically complete package still requires root's final release decision;
+- Handoff and manifest agree on the exact atlas/version and final accounting
+  policy, with no `partialRehearsal` or partial-candidate status. Every frozen
+  source must be accounted for and discoverable. Unresolved scientific identity
+  may remain an explicit source facet with zero semantic allocation mass and a
+  stated reason; no home is invented merely to reach a numeric coverage target.
+  Root's final release decision remains required;
   `accepted_organization_for_integration_review` alone is not publication approval.
+- Every supported home is reachable through actual rendered scientific routes or
+  qualified organizational access. Test the scientific narrower DAG separately.
+  Collection portals and shared-source access establish browsing reachability,
+  not hierarchical coverage, scientific containment or transfer of H mass.
 - Full logical validation and exact partition round trip pass. Every available
   source question has access; 6,477 represented papers and the withdrawn/no-PDF
   bibliographic stub remain discoverable. Current source counts come from this
@@ -75,7 +83,9 @@ no provider migration or deployment is part of this preparation.
 
 ## Final QA on that exact package
 
-Reuse QA14/15's authorized isolated Slurm environment and existing browser/bridge.
+Reuse QA23's authorized isolated Slurm environment and existing browser/bridge.
+Unpack/build in node-local temporary storage, verify inputs once at ingress, and
+copy compact receipts back to shared scratch. Preserve full hash-bound inputs.
 Do not rerun synthetic fixtures as a substitute for the accepted data.
 
 1. Verify cold physics entrance, a large parent, a direct fine URL, local drilldown

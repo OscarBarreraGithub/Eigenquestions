@@ -1,0 +1,1972 @@
+{
+  "schemaVersion": "q025-cut03-changed-home-coordinator/1",
+  "authority": "root",
+  "input": {
+    "path": "research/q025/evaluation/full-pass/native-local/placement-scope-review-v4/root-exceptions.json",
+    "sha256": "1260e4cdfdcd63d86b09f08c82d9876c0c1a16529ed698128bb6d333665fdd26",
+    "bytes": 655418
+  },
+  "rootReading": "Complete target definitions, whole source descriptions, both judgments and original mapping for all 12 cases. No fresh primary reading.",
+  "approvedRows": 11,
+  "withheldRows": 1,
+  "rows": [
+    {
+      "index": 0,
+      "familyId": "placement-continuation-0015",
+      "unitRef": "u29",
+      "unitId": "unit:d6d3703a33b72592a011dff9152cc4413b8ef50491b7cad42689df4eea4a05fd",
+      "descriptionSha256": "129801d0b5daad518c644455f63eb40c4552db94bc5ac9d1b54c197434d20092",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Whole neutrino/B−L regional home; no implementation of symmetry breaking or Dirac/Majorana outcome is asserted.",
+      "originalProposal": {
+        "unitRef": "u29",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q14",
+            "weight": 1,
+            "coverageReason": "Explicitly covers Dark Dimension bulk fields, right-handed-neutrino content, mass generation and gauge-sector restrictions."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can a bulk gauged B−L symmetry in the Dark Dimension explain the required right-handed neutrinos through anomaly cancellation, generate active neutrino masses after B−L breaking, and satisfy gauge-boson bounds?",
+            "scopeRefs": [
+              "q14"
+            ],
+            "explanation": "q14 covers the anomaly-conditioned bulk field inventory, the subsequent active-mass mechanism and gauge-boson constraints within the same Dark Dimension construction."
+          }
+        ],
+        "coverageReason": "The anomaly-cancellation target determines the bulk right-handed-neutrino inventory of the same mass-and-gauge construction covered by q14. All three targets therefore fit one home. The source specifies B−L breaking but neither its implementation nor the active-neutrino mass character; q14 does not require assigning either one.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r3",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "Retain the q14 bulk-neutrino home and the joint anomaly, mass and gauge targets, but revise the breaking annotation to implementation-unspecified B−L breaking, as supported by the description and paired correction. No Dirac/Majorana character is established.",
+            "refs": [
+              "u29",
+              "r3",
+              "q14"
+            ]
+          },
+          {
+            "reviewRef": "r3",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The visible correction appropriately avoids specifying how B−L breaks and preserves the three targets. Its truncated ending is not completed; the full description and q14 already establish coverage without a mass-character assignment.",
+            "refs": [
+              "u29",
+              "r3",
+              "q14"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "The unspecified implementation matters to detailed model claims, but not to the unchanged q14 definition. Partial symmetry and observational contributions to q13 and q10 do not require a union.",
+        "refs": [
+          "u29",
+          "r3",
+          "q10",
+          "q13",
+          "q14"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u29",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q20",
+            "weight": 1,
+            "coverageReason": "Covers extra-dimensional neutrino constructions, model-dependent consistency restrictions, mass generation and observable gauge-sector constraints within one neutrino-focused region."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can a bulk gauged B−L symmetry in the Dark Dimension explain the required right-handed neutrinos through anomaly cancellation,",
+            "scopeRefs": [
+              "q20"
+            ],
+            "explanation": "q20 includes neutrino sectors in extra-dimensional constructions and their conditional consistency restrictions. Here anomaly cancellation is the stated model-consistency explanation of the right-handed-neutrino inventory, not an assumed quantum-gravity conjecture."
+          },
+          {
+            "sourceSpan": "generate active neutrino masses after B−L breaking,",
+            "scopeRefs": [
+              "q20"
+            ],
+            "explanation": "q20 explicitly covers neutrino-mass generation and separately specified symmetry-breaking realizations. The source does not establish the breaking implementation or active-neutrino mass character."
+          },
+          {
+            "sourceSpan": "and satisfy gauge-boson bounds?",
+            "scopeRefs": [
+              "q20"
+            ],
+            "explanation": "q20's observable-signature and observational-constraint scope covers gauge-boson restrictions on the same bulk B−L neutrino construction."
+          }
+        ],
+        "coverageReason": "The question asks for three outcomes: explaining the required field inventory through anomaly cancellation, generating active masses after breaking and satisfying gauge bounds. q14 expressly covers bulk mass mechanisms and gauge restrictions, but treats bulk field content as something to specify; its definition does not establish the independent anomaly-based explanation target. q20 supplies a whole home through its extra-dimensional neutrino systems, conditional construction-consistency restrictions, mass-generation targets and observations. The unspecified breaking implementation and mass character are not required for this allocation.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r3",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "Retain the three-target characterization, but remove the unsupported specificity about B−L breaking identified by the paired correction. Also revise the whole home from q14: explaining the anomaly-required inventory is an independent target beyond its stated bulk-mass and gauge-constraint coverage.",
+            "refs": [
+              "u29",
+              "r3",
+              "q14",
+              "q20"
+            ]
+          },
+          {
+            "reviewRef": "r3",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The visible correction to implementation-unspecified B−L breaking is sound, and the truncated ending remains unreconstructed. Revise the q14 whole-home choice because its definition does not establish anomaly-based inventory explanation; q20 covers that consistency target together with masses and gauge bounds.",
+            "refs": [
+              "u29",
+              "r3",
+              "q14",
+              "q20"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Use the supplied neutrino-focused q20 region for complete coverage. q14 remains a relevant bulk-mechanism contribution, but positive contributions alone do not prove whole-question coverage.",
+        "refs": [
+          "u29",
+          "r3",
+          "q10",
+          "q13",
+          "q14",
+          "q20"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q20",
+          "weight": 1,
+          "coverageReason": "Covers extra-dimensional neutrino constructions, model-dependent consistency restrictions, mass generation and observable gauge-sector constraints within one neutrino-focused region.",
+          "destinationId": "q025-candidate-region:dcf0e518cc7236cee97e18e3",
+          "scopeContentSha256": "5a97781a49b8a5ade517876d6c4a13cc40cf523e97cd5d003fb4b9c9edad6399",
+          "currentCanonicalId": "q025-candidate-region:dcf0e518cc7236cee97e18e3"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 1,
+      "familyId": "placement-continuation-0018",
+      "unitRef": "u7",
+      "unitId": "unit:025f7c01d6ed7339b6294c8cdceb402ee8c94403c06ab257d9e99a06cb4647d1",
+      "descriptionSha256": "cd4c858aeb221e9ac1202a614302b3bc294528d6e8bc61bb0eb476e9e7bf00bc",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Foundational completion via the separately approved exact a4f671 to b6a72d alias; preserve the proposed diagnostic and its source-specific limits.",
+      "originalProposal": {
+        "unitRef": "u7",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q10",
+            "weight": 1,
+            "coverageReason": "Covers a proposed quantum-gravity consistency test of modified gravitational equations and their source content."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can a quantum-gravity bound expose artificial removal of a source that should drive spacetime evolution? The proposed test follows charged objects away from a supersymmetric vacuum while examining the modified background equations.",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Covers the consistency question and its charged-object/background-equation diagnostic, preserving the departure from a supersymmetric vacuum."
+          }
+        ],
+        "coverageReason": "The whole question tests the legitimacy of a source-modified gravitational effective description using a proposed quantum-gravity bound. q10 includes model-specific consistency evidence while distinguishing candidate restrictions from established obstructions.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r1",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The proposed source-removal diagnostic is accurately characterized. Charged-object motion and modified background equations are linked components of that test.",
+            "refs": [
+              "u7",
+              "r1",
+              "q10"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge correctly preserves the test's proposed status and does not infer that the bound already proves an inconsistency or a completion.",
+            "refs": [
+              "u7",
+              "r1",
+              "q10"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Although not nominated, q10 is a more specific complete home than the nominated cosmological scopes: the explicit target is consistency of the modified theory, not an acceleration history.",
+        "refs": [
+          "u7",
+          "r1",
+          "q3",
+          "q10",
+          "q18"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u7",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q10",
+            "weight": 1,
+            "coverageReason": "Covers a proposed quantum-gravity consistency test of modified gravitational equations and their source content."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can a quantum-gravity bound expose artificial removal of a source that should drive spacetime evolution? The proposed test follows charged objects away from a supersymmetric vacuum while examining the modified background equations.",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Covers the consistency question and its charged-object/background-equation diagnostic, preserving the departure from a supersymmetric vacuum."
+          }
+        ],
+        "coverageReason": "q10 covers assessment of a proposed consistency restriction on a modified gravitational effective description. Charged-object motion, departure from a supersymmetric vacuum, and the modified background equations are components of that one diagnostic.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r1",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The proposed method interpretation is supported: the source asks whether a bound detects artificial source removal through charged-object motion and background equations. It does not supply a demonstrated exclusion.",
+            "refs": [
+              "u7",
+              "r1",
+              "q10"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge correctly retains the proposed status of the test and its linked dynamical ingredients. This reasoning supports q10 without requiring an acceleration-history target.",
+            "refs": [
+              "u7",
+              "r1",
+              "q10"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Retain the non-nominated q10 choice because it directly covers the theory-consistency target.",
+        "refs": [
+          "u7",
+          "r1",
+          "q3",
+          "q10",
+          "q18"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q10",
+          "weight": 1,
+          "coverageReason": "Covers a proposed quantum-gravity consistency test of modified gravitational equations and their source content.",
+          "destinationId": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "scopeContentSha256": "b3bb9a1ebbd3bde977ca4596d60d79c76ed658ac7f508b38dcc836602f200d50",
+          "currentCanonicalId": "q025-candidate-question:b6a72d6d11c8f9c783284067"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 2,
+      "familyId": "placement-continuation-0018",
+      "unitRef": "u24",
+      "unitId": "unit:b6a5c7260e520c527819b931951aab1aabc704b3772102b1a058aaf095328345",
+      "descriptionSha256": "fab7636a970b2c0b3b428476091a12f0c3bc2a7e80fc8583dfaabb0eb9f0321f",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Foundational completion via the separately approved alias; preserve the large-D regime and conditional interpretation.",
+      "originalProposal": {
+        "unitRef": "u24",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q10",
+            "weight": 1,
+            "coverageReason": "Covers quantum-gravity compatibility of a large-dimensional EFT and comparison or extension of proposed consistency restrictions."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can the large-D limit of an apparently consistent gravity effective theory belong to quantum gravity?",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Preserves the distinction between apparent EFT consistency and quantum-gravity completion in the large-dimensional regime."
+          },
+          {
+            "sourceSpan": "The paper asks whether known conjectures remain restrictive and whether dimension-dependent tower masses suggest additional restrictions.",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Includes both assessment of existing conjectures and the use of tower-mass behavior to motivate further candidate restrictions."
+          }
+        ],
+        "coverageReason": "q10 covers the complete completion-compatibility question in source-specific dimensions, including the strength and limits of conjectural evidence. Tower masses remain diagnostics; no kinetic metric for dimension or complete large-dimensional quantum theory is inferred.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "q0 supports the geometric-limit and tower-proxy part, but does not expressly cover the full comparison of completion restrictions. q10 covers those targets together. The truncated charge/coupling qualification is not reconstructed or needed for placement.",
+            "refs": [
+              "u24",
+              "r0",
+              "q0",
+              "q10"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The challenge appropriately preserves compound conjecture comparisons and qualified mass inference, but its sole q0 home remains narrower than the whole completion question. Use q10 while retaining the large-dimensional regime and evidential limits.",
+            "refs": [
+              "u24",
+              "r0",
+              "q0",
+              "q10"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "q10 is the most specific supplied question covering completion compatibility, comparison of conjectures, and proposed additional restrictions without splitting off the tower diagnostic.",
+        "refs": [
+          "u24",
+          "r0",
+          "q0",
+          "q10"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u24",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q10",
+            "weight": 1,
+            "coverageReason": "Covers quantum-gravity compatibility of a large-dimensional EFT and comparison or extension of proposed consistency restrictions."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can the large-D limit of an apparently consistent gravity effective theory belong to quantum gravity?",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Preserves the distinction between apparent EFT consistency and quantum-gravity completion in the large-dimensional regime."
+          },
+          {
+            "sourceSpan": "The paper asks whether known conjectures remain restrictive and whether dimension-dependent tower masses suggest additional restrictions.",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Includes both assessment of existing conjectures and the use of tower-mass behavior to motivate further candidate restrictions."
+          }
+        ],
+        "coverageReason": "q10 covers completion compatibility in source-specific dimensions, comparison of known conjectures, and assessment of proposed additional restrictions. Tower masses remain evidence to assess, without supplying a kinetic metric for dimension or an arbitrary-dimensional completion.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "q0 covers the large-dimensional geometric limit and tower diagnostic, but the whole source also asks about completion compatibility and the restrictiveness of multiple conjectures. q10 directly covers those linked targets. The truncated qualification is not reconstructed.",
+            "refs": [
+              "u24",
+              "r0",
+              "q0",
+              "q10"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "Retain its cautions about weakening coefficients and conditional mass inference, but revise the sole q0 home to q10 for whole-question coverage. No missing charge/coupling wording is needed to make that organizational choice.",
+            "refs": [
+              "u24",
+              "r0",
+              "q0",
+              "q10"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Retain the actual proposal's q10 placement, which incorporates the tower diagnostic without reducing the source to it.",
+        "refs": [
+          "u24",
+          "r0",
+          "q0",
+          "q10"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q10",
+          "weight": 1,
+          "coverageReason": "Covers quantum-gravity compatibility of a large-dimensional EFT and comparison or extension of proposed consistency restrictions.",
+          "destinationId": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "scopeContentSha256": "b3bb9a1ebbd3bde977ca4596d60d79c76ed658ac7f508b38dcc836602f200d50",
+          "currentCanonicalId": "q025-candidate-question:b6a72d6d11c8f9c783284067"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 3,
+      "familyId": "placement-continuation-0018",
+      "unitRef": "u25",
+      "unitId": "unit:6631f3e6512f608e27c8ea1f68a6f3605533630b7bc969278502e4ae0f34a92b",
+      "descriptionSha256": "2506e738ca718c7d6c26b884ba255b99bf411ed6930b45b75fa8a4816920a309",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Foundational completion via the separately approved alias; preserve the controlled-limit qualifications.",
+      "originalProposal": {
+        "unitRef": "u25",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q10",
+            "weight": 1,
+            "coverageReason": "Covers tests of several quantum-gravity criteria within one controlled compactification example."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Which conjectured quantum-gravity constraints can be tested by a controlled compactification limit with a weak gauge interaction and finite gravitational coupling?",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Retains the plurality of conjecture tests and the shared controlled, weak-gauge, finite-gravity regime."
+          }
+        ],
+        "coverageReason": "q10 covers comparison of candidate quantum-gravity restrictions using known controlled constructions. The inherited charge and distance tests remain parts of one question; charge completeness is not equated with superextremality, and conclusions are not extended beyond the controlled limit.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "q5 covers the charge and force tests, but the annotation itself identifies several conjecture tests, including the distance-related component. q10 covers the whole comparison while preserving the distinction between charge population and superextremality.",
+            "refs": [
+              "u25",
+              "r0",
+              "q0",
+              "q5",
+              "q10"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "Its cautions about charge completeness and example-specific superextremality are sound, but q5 alone is not a complete home for all conjecture tests. Select q10; the damaged away-limit ending is not reconstructed or used to extend the regime.",
+            "refs": [
+              "u25",
+              "r0",
+              "q5",
+              "q10"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "The source asks which restrictions can be tested in a shared construction, making q10 a complete home without requiring a union of charge and geometric-limit scopes.",
+        "refs": [
+          "u25",
+          "r0",
+          "q0",
+          "q5",
+          "q10"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u25",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q10",
+            "weight": 1,
+            "coverageReason": "Covers tests of several quantum-gravity criteria within one controlled compactification example."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Which conjectured quantum-gravity constraints can be tested by a controlled compactification limit with a weak gauge interaction and finite gravitational coupling?",
+            "scopeRefs": [
+              "q10"
+            ],
+            "explanation": "Retains the plurality of conjecture tests and the shared controlled, weak-gauge, finite-gravity regime."
+          }
+        ],
+        "coverageReason": "q10 covers testing several completion criteria within one controlled construction, including the inherited charge and distance targets. Weak gauge coupling and finite gravity remain the specified limit; charge population is distinct from superextremality, and away-limit persistence is not established.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The proposal's charge-completeness caution is sound, but its q5 home covers only part of the multiple-conjecture question identified by the description and annotation. q10 covers the shared construction and both charge and distance tests.",
+            "refs": [
+              "u25",
+              "r0",
+              "q0",
+              "q5",
+              "q10"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "Retain the distinction between completeness and example-specific superextremality, while changing the whole home to q10. The truncated away-limit ending is neither reconstructed nor used to enlarge the controlled regime.",
+            "refs": [
+              "u25",
+              "r0",
+              "q5",
+              "q10"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Retain the actual proposal's q10 allocation; a union of charge and geometric-limit homes is unnecessary.",
+        "refs": [
+          "u25",
+          "r0",
+          "q0",
+          "q5",
+          "q10"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q10",
+          "weight": 1,
+          "coverageReason": "Covers tests of several quantum-gravity criteria within one controlled compactification example.",
+          "destinationId": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "scopeContentSha256": "b3bb9a1ebbd3bde977ca4596d60d79c76ed658ac7f508b38dcc836602f200d50",
+          "currentCanonicalId": "q025-candidate-question:b6a72d6d11c8f9c783284067"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 4,
+      "familyId": "placement-continuation-0019",
+      "unitRef": "u5",
+      "unitId": "unit:5de647cd03f2d3e695f7cb21ac37f2252812c88af5380f5de32847739bdc1f0e",
+      "descriptionSha256": "019f14ab5bd233921ce15d1293f848a5c3f83b99bbfc7e95b575d59149e865d2",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Whole composite supergravity target; truncation consistency is not stability or completeness.",
+      "originalProposal": {
+        "unitRef": "u5",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q11",
+            "weight": 1,
+            "coverageReason": "Covers the two heterotic/type-II AdS3 deformation families, their spectra and stability tests, and worldsheet/holographic operator interpretation."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Which continuous deformations of AdS3×S3×T4 and AdS3×S3×S3×S1 can be constructed uniformly in heterotic and type II supergravity, what are their Kaluza–Klein spectra and perturbative stability properties, and how should their worldsheet and holographic operators be interpreted?",
+            "scopeRefs": [
+              "q11"
+            ],
+            "explanation": "Both internal families and both supergravity settings remain together with construction, KK spectra, perturbative stability and the two operator interpretations."
+          }
+        ],
+        "coverageReason": "q11 combines the specified AdS3 deformation systems with operator spectra and holographic interpretation. Stability is an explicit test of the deformations, not a consequence inferred from their existence.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r1",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The q11 placement and inclusion of both internal families are supported, but the proposal's attached supersymmetry target is not stated in u5. Remove that extra support attribution while preserving spectra, stability and operator interpretation.",
+            "refs": [
+              "u5",
+              "r1",
+              "q11",
+              "q15",
+              "q18"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge correctly removes the unsupported supersymmetry target. The unchanged description still supports one composite deformation, spectrum, stability and operator-interpretation question in q11.",
+            "refs": [
+              "u5",
+              "r1",
+              "q11",
+              "q15",
+              "q18"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "q11 covers the complete composite question; separate allocations to spectral and stability scopes would unnecessarily divide its coverage.",
+        "refs": [
+          "u5",
+          "r1",
+          "q11",
+          "q15",
+          "q18"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u5",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q19",
+            "weight": 1,
+            "coverageReason": "Explicitly combines compactification and deformation construction, KK spectra, perturbative stability and associated operator data for the two heterotic/type-II AdS3 families."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Which continuous deformations of AdS3×S3×T4 and AdS3×S3×S3×S1 can be constructed uniformly in heterotic and type II supergravity, what are their Kaluza–Klein spectra and perturbative stability properties, and how should their worldsheet and holographic operators be interpreted?",
+            "scopeRefs": [
+              "q19"
+            ],
+            "explanation": "Covers both internal families and both supergravity settings, uniform deformation construction, KK spectra, an independent perturbative-stability assessment, and worldsheet/holographic operator interpretation in the associated backgrounds."
+          }
+        ],
+        "coverageReason": "q19 expressly combines the construction, deformation, spectrum, stability and operator-data branches of this unchanged question. q11 provides specific deformation and holographic access, but its spectral methods and warning against inferring stability do not establish full coverage of the separately requested perturbative-stability assessment.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r1",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "Both internal families and operator interpretations are material, but the paired challenge identifies an unsupported additional supersymmetry target. Also, q11 alone does not explicitly cover the independent stability target; retain the connections to q11, q18 and q15 without treating them as complete single-home coverage.",
+            "refs": [
+              "u5",
+              "r1",
+              "q11",
+              "q15",
+              "q18",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "Removing the unstated supersymmetry target is justified. The retained q11 home nevertheless needs revision for whole-question placement because the source separately asks for perturbative stability as well as deformation, spectra and operator interpretation.",
+            "refs": [
+              "u5",
+              "r1",
+              "q11",
+              "q15",
+              "q18",
+              "q19"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Revise the proposed q11 allocation to q19, whose admitted composite scope explicitly covers all requested branches. No union or source split is necessary.",
+        "refs": [
+          "u5",
+          "r1",
+          "q11",
+          "q15",
+          "q18",
+          "q19"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q19",
+          "weight": 1,
+          "coverageReason": "Explicitly combines compactification and deformation construction, KK spectra, perturbative stability and associated operator data for the two heterotic/type-II AdS3 families.",
+          "destinationId": "q025-candidate-region:1be95b360ae1e67db1740fe6",
+          "scopeContentSha256": "607680562d8b7d901e873cedd67b88d5ad42c04e34fcf609d5a42f9a9efaee2f",
+          "currentCanonicalId": "q025-candidate-region:1be95b360ae1e67db1740fe6"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 5,
+      "familyId": "placement-continuation-0019",
+      "unitRef": "u16",
+      "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+      "descriptionSha256": "e8ec3115be3c89d2a146767159855bae9b1142fe39ddf3d3f3e513dc23a14b54",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Whole composite supergravity target; retain every stated branch and no universal stability conclusion.",
+      "originalProposal": {
+        "unitRef": "u16",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q16",
+            "weight": 1,
+            "coverageReason": "Covers universal consistent reduction with massive modes, resulting matter and gaugings, its AdS solution sector and invariant subtruncations."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can eleven-dimensional supergravity on any seven-dimensional tri-Sasakian manifold admit a universal consistent truncation retaining massive modes, and what four-dimensional gauged supergravity, AdS vacua and subtruncations result?",
+            "scopeRefs": [
+              "q16"
+            ],
+            "explanation": "Retains the universal tri-Sasakian premise, eleven-to-four-dimensional reduction, massive-mode retention, resulting gauged theory, AdS vacua and subtruncations."
+          }
+        ],
+        "coverageReason": "q16 combines consistent finite reductions and retained modes with gaugings, universal truncations, invariant subsectors and the higher-dimensional interpretation of their solutions. These cover every output requested by the question; vacuum supersymmetry is not identified with retained-theory supersymmetry.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The annotation correctly distinguishes truncation, vacua and subtruncations and the inherited N=4 retained-theory versus N=3 vacuum labels. Its compound warning does not require splitting this complete source.",
+            "refs": [
+              "u16",
+              "r0",
+              "q1",
+              "q0",
+              "q17",
+              "q16"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The visible challenge correctly retains the separate outputs and theory/vacuum supersymmetry distinction. The unfinished Pope–Warner clause is not reconstructed or used as an additional result.",
+            "refs": [
+              "u16",
+              "r0",
+              "q1",
+              "q0",
+              "q17",
+              "q16"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The description supports the q16 consistent-reduction placement and a q5 vacuum connection. Whole-source coverage must retain the resulting AdS vacua and subtruncations alongside massive-mode construction, as the current placement does.",
+            "refs": [
+              "u16",
+              "r1",
+              "q16",
+              "q5"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge's reduction placement is supported by the universal consistent-truncation target. q16 also admits the retained theory, its solution interpretation and invariant subtruncations, so the composite source need not be divided.",
+            "refs": [
+              "u16",
+              "r1",
+              "q16",
+              "q5"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "q16 is the most specific complete scope for universal consistent reductions retaining massive modes and their resulting sectors. q1 is a broader reduction alternative; q5 alone omits the truncation construction.",
+        "refs": [
+          "u16",
+          "r0",
+          "r1",
+          "q1",
+          "q5",
+          "q16",
+          "q17"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u16",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q19",
+            "weight": 1,
+            "coverageReason": "Explicitly combines universal consistent reduction, massive-mode retention, resulting four-dimensional gaugings, AdS vacua and subtruncations within the compactification family."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can eleven-dimensional supergravity on any seven-dimensional tri-Sasakian manifold admit a universal consistent truncation retaining massive modes, and what four-dimensional gauged supergravity, AdS vacua and subtruncations result?",
+            "scopeRefs": [
+              "q19"
+            ],
+            "explanation": "Covers the universal seven-dimensional tri-Sasakian premise, eleven-to-four-dimensional reduction, retained massive modes, resulting gauged theory, determination of AdS vacua and subtruncations. Theory supersymmetry and vacuum supersymmetry remain distinct."
+          }
+        ],
+        "coverageReason": "q19 expressly combines consistent reductions, lower-dimensional theories, gaugings and vacua. q16 covers universal reduction, retained modes and invariant subsectors, but interpretation of solutions as uplifts does not by itself cover the separate request to determine which AdS vacua result.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The annotation correctly distinguishes truncation, vacua and subtruncations and retains the N=4 theory versus N=3 vacuum distinction. Its specialization and construction links remain supported, without establishing a complete single reduction-only home.",
+            "refs": [
+              "u16",
+              "r0",
+              "q1",
+              "q0",
+              "q17",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The visible challenge preserves the separate outputs and theory/vacuum supersymmetry distinction. Its unfinished Pope–Warner clause is not reconstructed and is unnecessary to cover the question as posed.",
+            "refs": [
+              "u16",
+              "r0",
+              "q1",
+              "q0",
+              "q17",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The q16 reduction and q5 vacuum connections are supported, but a complete placement in q16 alone omits the independently requested determination of resulting AdS vacua. q19 explicitly combines these targets.",
+            "refs": [
+              "u16",
+              "r1",
+              "q16",
+              "q5",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r1",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The unchanged q16 home supports universal truncation and massive-mode retention, but whole-source coverage must also include the AdS-vacuum output. Solution uplift interpretation is not equivalent to that target.",
+            "refs": [
+              "u16",
+              "r1",
+              "q16",
+              "q5",
+              "q19"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Revise q16 to the existing composite q19. The narrower reduction scopes and vacuum scopes provide complementary coverage, while q19 covers the whole question without a union.",
+        "refs": [
+          "u16",
+          "r0",
+          "r1",
+          "q0",
+          "q1",
+          "q5",
+          "q16",
+          "q17",
+          "q19",
+          "q20"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q19",
+          "weight": 1,
+          "coverageReason": "Explicitly combines universal consistent reduction, massive-mode retention, resulting four-dimensional gaugings, AdS vacua and subtruncations within the compactification family.",
+          "destinationId": "q025-candidate-region:1be95b360ae1e67db1740fe6",
+          "scopeContentSha256": "607680562d8b7d901e873cedd67b88d5ad42c04e34fcf609d5a42f9a9efaee2f",
+          "currentCanonicalId": "q025-candidate-region:1be95b360ae1e67db1740fe6"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 6,
+      "familyId": "placement-continuation-0020",
+      "unitRef": "u9",
+      "unitId": "unit:59c6d382871013025851763b99a7220b712303f41583f17746c9f62e172b1a79",
+      "descriptionSha256": "6ff182bc085ac2a155101925b2f35cbed333306290e5a811477a7188624c1acb",
+      "outcome": "withheld_existing_home",
+      "basis": "description_checked",
+      "qualification": "WITHHELD: the dark-sector definition admits general force tests through qualified routes, not as unconditional whole homes. This source establishes no dark-sector identity or specified criterion. Preserve its facet and supported access.",
+      "originalProposal": {
+        "unitRef": "u9",
+        "status": "unresolved",
+        "coverageMode": "unresolved",
+        "wholeTargetCoverage": "incomplete",
+        "homes": [],
+        "targetCoverage": [],
+        "coverageReason": "The quiver bridge and added charged matter are identified, but the massive-particle force test is not. q16 can describe construction context, q12 would require a relevant conditional consistency criterion, and q19's general-force-test inclusion does not supply the missing criterion.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r3",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The proposal correctly leaves the source unresolved because neither the force criterion nor its observable is supplied, and it does not infer a WGC premise from charged matter alone.",
+            "refs": [
+              "u9",
+              "r3",
+              "q16",
+              "q12"
+            ]
+          },
+          {
+            "reviewRef": "r3",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge independently preserves the decisive missing-test qualification. A boundary relation to U(1) construction cannot establish complete coverage of the force question.",
+            "refs": [
+              "u9",
+              "r3",
+              "q16"
+            ]
+          },
+          {
+            "reviewRef": "r4",
+            "stage": "proposal",
+            "verdict": "insufficient_evidence",
+            "reason": "Its warnings about absent dark-matter targeting and inherited graph context are supported. Its q12 method/home association cannot be established without knowing which force criterion is actually tested.",
+            "refs": [
+              "u9",
+              "r4",
+              "q12",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r4",
+            "stage": "challenge",
+            "verdict": "insufficient_evidence",
+            "reason": "The challenge correctly keeps the criterion missing and separates inherited growth, mixing and spectrum context. That same gap prevents substantiating its q12 method placement.",
+            "refs": [
+              "u9",
+              "r4",
+              "q12",
+              "q19"
+            ]
+          }
+        ],
+        "missingPremises": [
+          "The massive-particle force criterion and observable, including which interactions are compared and whether any gauge–gravity conjecture is an actual premise."
+        ],
+        "reason": "The missing information concerns the scientific target, not merely an unavailable derivation or unknown answer. A broad regional association would not resolve it.",
+        "refs": [
+          "u9",
+          "r3",
+          "r4",
+          "q12",
+          "q16",
+          "q18",
+          "q19"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u9",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q19",
+            "weight": 1,
+            "coverageReason": "The region accommodates gauge-sector constituent questions and explicitly includes general force tests without requiring every source to have a dark-matter target or a quantum-gravity conjecture."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "The bridge supplies charged matter absent from the individual odd quivers and permits a concrete massive-particle force test.",
+            "scopeRefs": [
+              "q19"
+            ],
+            "explanation": "The changed charged-matter content and the enabled massive-particle force test fit the region's constituent/construction coverage and explicit general-force-test inclusion. The unknown force criterion is not identified with WGC, FL or any particular observable."
+          }
+        ],
+        "coverageReason": "q19 covers the whole bridge-and-force-test description through its constituent/construction scope and explicit general-force-test inclusion. Its conventions preserve graph context and do not require a dark-matter identity. The missing criterion prevents a justified q12 assignment and substantive interpretation of the test, but does not prevent this broader home, which imposes no particular force criterion.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r3",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The missing-criterion and no-WGC cautions are sound. The unresolved allocation is unnecessarily restrictive once q19's explicit general-force-test inclusion is considered: that home requires neither a light sector nor an identified conjecture.",
+            "refs": [
+              "u9",
+              "r3",
+              "q12",
+              "q16",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r3",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The challenge correctly withholds the force criterion and light-sector relevance. Those gaps block narrower assignments, but q19 covers the supplied bridge/test question without either premise.",
+            "refs": [
+              "u9",
+              "r3",
+              "q16",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r4",
+            "stage": "proposal",
+            "verdict": "insufficient_evidence",
+            "reason": "The absent dark-matter target and separation of inherited graph qualifications are supported. The q12 method/home association still lacks an identified WGC, FL or positivity criterion; q19 coverage does not establish that narrower association.",
+            "refs": [
+              "u9",
+              "r4",
+              "q12",
+              "q19"
+            ]
+          },
+          {
+            "reviewRef": "r4",
+            "stage": "challenge",
+            "verdict": "insufficient_evidence",
+            "reason": "The challenge correctly preserves the missing criterion and inherited status of growth, mixing and ultraviolet context. These do not substantiate q12, although q19's general-force-test inclusion supplies a whole regional home.",
+            "refs": [
+              "u9",
+              "r4",
+              "q12",
+              "q19"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Revise the proposal's unresolved status. The unspecified test criterion is consequential for narrower placement and scientific interpretation, but is not required by q19's explicit general-test coverage.",
+        "refs": [
+          "u9",
+          "r3",
+          "r4",
+          "q12",
+          "q16",
+          "q19"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q19",
+          "weight": 1,
+          "coverageReason": "The region accommodates gauge-sector constituent questions and explicitly includes general force tests without requiring every source to have a dark-matter target or a quantum-gravity conjecture.",
+          "destinationId": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "scopeContentSha256": "780e7d88c33c88a06afc2782340318dd9df3383f39da0e90f2f49a475d3d3d62",
+          "currentCanonicalId": "q025-candidate-region:7961ee3cebdb154299e78b58"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 7,
+      "familyId": "placement-continuation-0025",
+      "unitRef": "u20",
+      "unitId": "unit:2a2ba189805c0d350b6df81dbc7866065b8acd45a6f7ebb55fd5940dc0db3123",
+      "descriptionSha256": "f45412b1d69d54fa5b9d7ecce794c86219b0c2542f367ea78f98fa5581cc1c9b",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Species-family organizational home; unnamed asymptotic tests are not narrowed to a potential criterion.",
+      "originalProposal": {
+        "unitRef": "u20",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q22",
+            "weight": 1,
+            "coverageReason": "Combines differential species-scale methods and asymptotic constraints with species-regulated loop stabilization of no-scale moduli."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can differential equations for moduli-dependent species scales explain asymptotic Swampland constraints",
+            "scopeRefs": [
+              "q22"
+            ],
+            "explanation": "Covers species-scale differential equations and asymptotic constraints at the generality stated, without assigning an unspecified named conjecture."
+          },
+          {
+            "sourceSpan": "can using that scale as a loop cutoff generate potentials that stabilize no-scale moduli?",
+            "scopeRefs": [
+              "q22"
+            ],
+            "explanation": "Species-scale loop regulation and loop-induced no-scale stabilization are explicit methods and targets of q22."
+          }
+        ],
+        "coverageReason": "q22 covers both components as distinct applications of species-scale information. The cutoff prescription and stabilization remain conditional; asymptotic conclusions are not extended to the interior and unspecified constraints are not identified with another particular question.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r4",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "Retain q22 and the two-target diagnosis, but remove the additional method connection: the supplied description does not identify which asymptotic constraint would justify it. The challenge's correction is independently supported by that lack of specificity.",
+            "refs": [
+              "u20",
+              "r4",
+              "q22",
+              "q6"
+            ]
+          },
+          {
+            "reviewRef": "r4",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The withdrawal of the unsupported method relation is warranted. q22 covers differential scale constraints and loop stabilization without that relation; the damaged final phrase is not reconstructed or treated as an additional premise.",
+            "refs": [
+              "u20",
+              "r4",
+              "q22",
+              "q6"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "q22 explicitly supplies both targets and the differential-equation method; q6 covers only the stabilization application and q29 is broader.",
+        "refs": [
+          "u20",
+          "r4",
+          "q6",
+          "q22",
+          "q29"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u20",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q29",
+            "weight": 1,
+            "coverageReason": "Covers moduli-dependent species-cutoff variation and its conditional asymptotic constraints together with cutoff-regulated scalar-potential dynamics."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can differential equations for moduli-dependent species scales explain asymptotic Swampland constraints",
+            "scopeRefs": [
+              "q29"
+            ],
+            "explanation": "q29 explicitly covers species-cutoff reconstruction and variation in asymptotic limits. The unnamed constraints remain conditional and are not narrowed to potential or cosmological bounds."
+          },
+          {
+            "sourceSpan": "can using that scale as a loop cutoff generate potentials that stabilize no-scale moduli?",
+            "scopeRefs": [
+              "q29"
+            ],
+            "explanation": "The same region covers quantum corrections and scalar-potential dynamics, including the proposed use of the species scale as a loop cutoff for no-scale stabilization."
+          }
+        ],
+        "coverageReason": "q29 covers both the differential constraints on moduli-dependent species scales and the loop-cutoff application to no-scale stabilization. q22 explicitly covers the latter and lists differential equations as a method, but its potential/cosmological targets do not establish coverage of unspecified asymptotic Swampland constraints in general. No named conjecture, universally valid cutoff prescription or extension of asymptotic claims to the interior is inferred.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r4",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The additional method connection is unsupported because the asymptotic constraints are unspecified. Moreover, a q22 potential specialization does not establish whole coverage of the independent species-scale constraint target; q29 covers both parts.",
+            "refs": [
+              "u20",
+              "r4",
+              "q22",
+              "q6",
+              "q29"
+            ]
+          },
+          {
+            "reviewRef": "r4",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "Retain removal of the unsupported method connection, but revise sole q22 placement. Its loop-stabilization application is covered, whereas the first target is not expressly limited to potential or cosmological constraints. The damaged ending is not reconstructed.",
+            "refs": [
+              "u20",
+              "r4",
+              "q22",
+              "q6",
+              "q29"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Use the existing species-scale region for complete coverage. The unspecified constraint identity prevents narrowing to q22 but is not consequential for containment in q29.",
+        "refs": [
+          "u20",
+          "r4",
+          "q6",
+          "q22",
+          "q29"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q29",
+          "weight": 1,
+          "coverageReason": "Covers moduli-dependent species-cutoff variation and its conditional asymptotic constraints together with cutoff-regulated scalar-potential dynamics.",
+          "destinationId": "q025-candidate-region:c4fc982735d93d85981d33e7",
+          "scopeContentSha256": "daeb26e0e2d07d15641b9521833aadd4b10651c78d985441b6a28b3603f15f1e",
+          "currentCanonicalId": "q025-candidate-region:c4fc982735d93d85981d33e7"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 8,
+      "familyId": "placement-continuation-0027",
+      "unitRef": "u1",
+      "unitId": "unit:b1b91da2ca46e4bf35ff546df3818bf50ec40765c72e3a4824433ca4662bca9d",
+      "descriptionSha256": "ff00433a8b839b5770babd86eb023f67991d31bb47d53d7d42b52007096a9501",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Broad string/brane effective-physics home; stabilization is a setting and ultraviolet completion remains prospective.",
+      "originalProposal": {
+        "unitRef": "u1",
+        "status": "new_scope_proposed",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "n0",
+            "weight": 1,
+            "coverageReason": "The proposed scope jointly covers black-brane Lorentz breaking, a gravitational Higgs phase and the prospective ultraviolet completion of gauged ghost condensation."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can a parallel black brane in a stabilized string compactification spontaneously break Lorentz symmetry and realize a Higgs phase of gravity,",
+            "scopeRefs": [
+              "n0"
+            ],
+            "explanation": "Includes the specified compactification setting and both spontaneous Lorentz breaking and the gravitational Higgs target."
+          },
+          {
+            "sourceSpan": "potentially providing a UV completion of gauged ghost condensation?",
+            "scopeRefs": [
+              "n0"
+            ],
+            "explanation": "Retains ultraviolet completion as a prospective connection requiring investigation."
+          }
+        ],
+        "coverageReason": "n0 preserves the linked mechanism and completion question. Stabilization is a premise of the setting, not the requested result. The existing stabilization, compactification-EFT and broad string-family scopes do not explicitly cover the combined Lorentz-breaking gravitational-Higgs and ghost-condensation target.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The annotation correctly distinguishes the stabilized setting from the actual Lorentz-breaking and gravity-Higgs targets. Its proposed alternate direction is supported by the complete description.",
+            "refs": [
+              "u1",
+              "r0",
+              "q26",
+              "n0"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge also retains the proposed ultraviolet-completion target without claiming completion. All three linked targets belong together in n0.",
+            "refs": [
+              "u1",
+              "r0",
+              "q26",
+              "n0"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "A dedicated composite scope is proposed because the supplied existing scopes provide neighboring stabilization or effective-physics coverage without this complete modified-gravity question.",
+        "refs": [
+          "u1",
+          "r0",
+          "q3",
+          "q23",
+          "q26",
+          "q27",
+          "n0"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u1",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q27",
+            "weight": 1,
+            "coverageReason": "q27 jointly covers source-specific string and brane backgrounds, their effective interactions and proposed quantum-consistent formulations. This includes the linked Lorentz-breaking gravitational phase and proposed string completion of gauged ghost condensation."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can a parallel black brane in a stabilized string compactification spontaneously break Lorentz symmetry and realize a Higgs phase of gravity,",
+            "scopeRefs": [
+              "q27"
+            ],
+            "explanation": "The specified string/brane setting and its proposed Lorentz-breaking gravitational effective phase fall within q27's background and effective-physics scope."
+          },
+          {
+            "sourceSpan": "potentially providing a UV completion of gauged ghost condensation?",
+            "scopeRefs": [
+              "q27"
+            ],
+            "explanation": "The proposed connection between the string construction and the modified-gravity effective description is covered by q27's formulation and quantum-consistency targets, with completion remaining prospective."
+          }
+        ],
+        "coverageReason": "q27 supplies one existing composite home for the entire string-background-to-effective-gravity question. Lorentz breaking and the gravitational Higgs phase concern the resulting effective physics; the possible UV completion concerns its proposed string formulation and consistency. Stabilization remains a condition of the setting. q23 is a narrower effective-coupling neighbor, while q3 does not cover the independent modified-gravity targets.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The annotation correctly treats stabilization as the setting and Lorentz breaking and a gravitational Higgs phase as targets. That distinction excludes a stabilization-only placement but does not exclude q27's broader effective-physics scope.",
+            "refs": [
+              "u1",
+              "r0",
+              "q3",
+              "q26",
+              "q27"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge correctly retains all three linked targets, including the possible UV completion. q27 accommodates them together without treating a Higgs phase of gravity as a vacuum-stability subcase.",
+            "refs": [
+              "u1",
+              "r0",
+              "q26",
+              "q27"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Revise the proposed n0 allocation. q27, although not nominated, already covers the complete question through its combined string/brane formulation, quantum-consistency and effective-interaction scope; a dedicated new definition is unnecessary.",
+        "refs": [
+          "u1",
+          "r0",
+          "q3",
+          "q23",
+          "q26",
+          "q27",
+          "n0"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q27",
+          "weight": 1,
+          "coverageReason": "q27 jointly covers source-specific string and brane backgrounds, their effective interactions and proposed quantum-consistent formulations. This includes the linked Lorentz-breaking gravitational phase and proposed string completion of gauged ghost condensation.",
+          "destinationId": "q025-candidate-region:f1c244b7e3959d7ede8fc3d5",
+          "scopeContentSha256": "2370963d8915b758f22c642063127bd8b3da590fefde67f9062088299e11fdaa",
+          "currentCanonicalId": "q025-candidate-region:f1c244b7e3959d7ede8fc3d5"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 9,
+      "familyId": "placement-continuation-0028",
+      "unitRef": "u7",
+      "unitId": "unit:678d250d2f73a8369ee679e3dc490704f6c8436a282dddfdc891d9dd080c3311",
+      "descriptionSha256": "5b090184b0fc104d7f5d61c893119f09aee73bd6a9696b7988ead42124a8a108",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Gauged CRT home; no equivalence between antiunitary and unitary operations is inferred.",
+      "originalProposal": {
+        "unitRef": "u7",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q25",
+            "weight": 1,
+            "coverageReason": "Its combined scope explicitly spans topology sums, fields on time-unorientable spacetimes, causal conditions and quantum-state questions."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "What does gauging spacetime inversions, especially antiunitary CRT, mean for topology sums,",
+            "scopeRefs": [
+              "q25"
+            ],
+            "explanation": "Covers topology sums under a specified gauged spacetime symmetry, preserving antiunitary CRT as the stated convention."
+          },
+          {
+            "sourceSpan": "quantum fields on time-unorientable spacetimes, causality,",
+            "scopeRefs": [
+              "q25"
+            ],
+            "explanation": "Explicitly matches the field-consistency and causal branches on time-unorientable backgrounds."
+          },
+          {
+            "sourceSpan": "and quantum mechanics in closed universes?",
+            "scopeRefs": [
+              "q25"
+            ],
+            "explanation": "Covers the associated quantum-state and interpretive questions in the stated closed-universe setting."
+          }
+        ],
+        "coverageReason": "q25 supplies one composite home for all consequences of gauging spacetime inversions: topology sums, field consistency, causality and closed-universe quantum mechanics. Antiunitary CRT is not identified with the proposed linear-unitary time-reversal construction of another source.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The compound diagnosis is supported. Canonical decomposition remains unperformed, but is unnecessary for preserving the complete question within q25.",
+            "refs": [
+              "u7",
+              "r0",
+              "q25",
+              "q7"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The challenge correctly distinguishes the gauging, topology-sum, field and closed-universe targets. Its decomposition caveat does not require splitting an organizationally coherent question.",
+            "refs": [
+              "u7",
+              "r0",
+              "q25",
+              "q7"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "q7 directly supports inversion and causality questions, but q25 more explicitly covers the additional topology-sum and quantum-state targets. The selected region is a whole-source home, not an identity claim between these targets.",
+        "refs": [
+          "u7",
+          "q25",
+          "q7",
+          "r0"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u7",
+        "status": "existing_homes",
+        "coverageMode": "whole_question_per_home",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q7",
+            "weight": 1,
+            "coverageReason": "Explicitly includes gauged spacetime inversions, quantum constructions on time-unorientable spacetimes and closed universes, with antiunitary CRT distinguished from proposed unitary time reversal."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "What does gauging spacetime inversions, especially antiunitary CRT, mean for topology sums,",
+            "scopeRefs": [
+              "q7"
+            ],
+            "explanation": "The admitted gauged-inversion target covers the associated topology-sum prescription in its quantum regime, retaining the antiunitary CRT convention."
+          },
+          {
+            "sourceSpan": "quantum fields on time-unorientable spacetimes, causality,",
+            "scopeRefs": [
+              "q7"
+            ],
+            "explanation": "These are explicit systems and causal-consistency questions within q7's orientation-dependent quantum constructions."
+          },
+          {
+            "sourceSpan": "and quantum mechanics in closed universes?",
+            "scopeRefs": [
+              "q7"
+            ],
+            "explanation": "q7 expressly includes closed universes and source-scoped orientation constructions; the quantum-mechanical consequences of gauging remain part of that composite target."
+          }
+        ],
+        "coverageReason": "All clauses ask for consequences of one specified gauging construction. q7's explicit gauged-inversion target, time-unorientable and closed-universe systems, quantum regime and orientation convention cover topology sums, field consistency, causality and closed-universe quantum mechanics together. The definition need not enumerate each consequence again to cover this unchanged question.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r0",
+            "stage": "proposal",
+            "verdict": "retain",
+            "reason": "The annotation correctly preserves the compound gauging, topology-sum and closed-universe targets. Its unresolved decomposition does not prevent placement in q7's already composite scope.",
+            "refs": [
+              "u7",
+              "r0",
+              "q7"
+            ]
+          },
+          {
+            "reviewRef": "r0",
+            "stage": "challenge",
+            "verdict": "retain",
+            "reason": "The field-consistency and quantum-mechanical branches must remain visible. Retaining that distinction does not require decomposition or a broader region when q7 contains the governing construction and systems.",
+            "refs": [
+              "u7",
+              "r0",
+              "q7"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Revise q25 to q7. The proposal treated q7 as principally an inversion-and-causality home, but its admitted definition also covers orientation-dependent quantum constructions and closed universes. q7 is therefore the more specific complete composite home.",
+        "refs": [
+          "u7",
+          "q7",
+          "q25",
+          "r0"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q7",
+          "weight": 1,
+          "coverageReason": "Explicitly includes gauged spacetime inversions, quantum constructions on time-unorientable spacetimes and closed universes, with antiunitary CRT distinguished from proposed unitary time reversal.",
+          "destinationId": "q025-candidate-question:9c2f98677d728597452724c5",
+          "scopeContentSha256": "b9d5e748969d392b55d3d7f3b9b4ece50eafdf0f916b1a1336c8552033b2bc8f",
+          "currentCanonicalId": "q025-candidate-question:9c2f98677d728597452724c5"
+        }
+      ],
+      "compoundUnion": false,
+      "coverageModeMustRemain": "whole_question_per_home"
+    },
+    {
+      "index": 10,
+      "familyId": "placement-continuation-0029",
+      "unitRef": "u20",
+      "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+      "descriptionSha256": "0a0b7f6b6b67aac138ce28934d869d3ef6496bc84df631a0baf4b43ee9945a23",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Explicit compound union: geometry target at ef3f4c0d with 0.5 and alpha-prime-cubed KKLT sensitivity at aef9c55b with 0.5. No uplift is inferred. These are component homes whose union covers the immutable whole source.",
+      "originalProposal": {
+        "unitRef": "u20",
+        "status": "existing_homes",
+        "coverageMode": "explicit_compound_union",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q18",
+            "weight": 0.5,
+            "coverageReason": "Covers the cross-framework geometric encoding of supersymmetric vacuum dynamics, including Seiberg–Witten theory."
+          },
+          {
+            "scopeRef": "q14",
+            "weight": 0.5,
+            "coverageReason": "Covers leading α′³ sensitivity of single-modulus KKLT minima without presuming their uplift phase."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+            "scopeRefs": [
+              "q18"
+            ],
+            "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+          },
+          {
+            "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+            "scopeRefs": [
+              "q14"
+            ],
+            "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+          }
+        ],
+        "coverageReason": "The union collectively covers every stated target while retaining one immutable source question. q18 expressly leaves the accompanying correction question separate, and q14 does not cover the general Seiberg–Witten-to-compactification geometry target. The broad q19 definition does not explicitly cover that full gauge-theory conceptual range, and q23 does not turn general vacuum geometry into an uplift target. No supplied whole composite home is therefore established. Equal weights are organizational allocations, not evidential confidence. Separate coordinator scrutiny is required.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r2",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The proposal correctly distinguishes the general geometry and correction-sensitivity targets and leaves the uplift phase unspecified. Its q18 home alone is incomplete; make the q18/q14 collective coverage explicit without inventing atomic source units.",
+            "refs": [
+              "u20",
+              "r2",
+              "q18",
+              "q14"
+            ]
+          },
+          {
+            "reviewRef": "r2",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The challenge preserves the essential distinctions but still leaves correction sensitivity outside the selected q18 definition. The explicit union supplies the missing organizational coverage while retaining the qualification about uplift.",
+            "refs": [
+              "u20",
+              "r2",
+              "q18",
+              "q14"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Neither component scope independently covers the whole question, and no adequate supplied whole home is established. The unspecified uplift phase is not needed to place the correction question in q14.",
+        "refs": [
+          "u20",
+          "q14",
+          "q18",
+          "q19",
+          "q23",
+          "r2"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u20",
+        "status": "existing_homes",
+        "coverageMode": "explicit_compound_union",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q18",
+            "weight": 0.5,
+            "coverageReason": "Covers the cross-framework geometric encoding of supersymmetric vacuum dynamics, including Seiberg–Witten theory."
+          },
+          {
+            "scopeRef": "q14",
+            "weight": 0.5,
+            "coverageReason": "Covers leading α′³ sensitivity of single-modulus KKLT minima without presuming their uplift phase."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+            "scopeRefs": [
+              "q18"
+            ],
+            "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+          },
+          {
+            "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+            "scopeRefs": [
+              "q14"
+            ],
+            "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+          }
+        ],
+        "coverageReason": "The two scopes collectively cover the whole immutable source: q18 covers the cross-framework geometry and q14 the specified correction sensitivity. q18 expressly leaves the correction question separate; q14 lacks the general Seiberg–Witten geometry target. q19's compactification/supergravity domain does not establish full coverage of that gauge-theory conceptual range, and q23 does not establish such coverage through an uplift interpretation. No supplied whole composite home is established. The equal weights are organizational, and the union requires separate coordinator scrutiny. The minimum's uplift phase remains unspecified.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r2",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The proposal correctly distinguishes the geometry and correction targets and leaves the uplift phase open. Its q18 home alone omits the second target; explicit q18/q14 collective coverage is needed while preserving one source question.",
+            "refs": [
+              "u20",
+              "r2",
+              "q18",
+              "q14"
+            ]
+          },
+          {
+            "reviewRef": "r2",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The challenge retains the essential qualification but the same incomplete q18 allocation. q14 covers correction sensitivity without assuming uplifted de Sitter, making the explicit union complete.",
+            "refs": [
+              "u20",
+              "r2",
+              "q18",
+              "q14"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Independent scrutiny supports the proposed union: neither component is a whole home, and the broader supplied definitions do not establish complete cross-framework coverage.",
+        "refs": [
+          "u20",
+          "q14",
+          "q18",
+          "q19",
+          "q23",
+          "r2"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q18",
+          "weight": 0.5,
+          "coverageReason": "Covers the cross-framework geometric encoding of supersymmetric vacuum dynamics, including Seiberg–Witten theory.",
+          "destinationId": "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+          "scopeContentSha256": "14dd690349c6793376ff0528ed24853b9ac476d498bfe1a2e5e48226bd0dff97",
+          "currentCanonicalId": "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+        },
+        {
+          "scopeRef": "q14",
+          "weight": 0.5,
+          "coverageReason": "Covers leading α′³ sensitivity of single-modulus KKLT minima without presuming their uplift phase.",
+          "destinationId": "q025-candidate-question:aef9c55b0263c0b3a8221f65",
+          "scopeContentSha256": "8528141f077d192aeb5bf471a00637e2a0410cc11537badbf0dc770178b9bb0d",
+          "currentCanonicalId": "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+        }
+      ],
+      "compoundUnion": true,
+      "coverageModeMustRemain": "explicit_compound_union"
+    },
+    {
+      "index": 11,
+      "familyId": "placement-continuation-0031",
+      "unitRef": "u10",
+      "unitId": "unit:ade68997314b20e6fa12b920c3f53cca37dadcc9b6d6b8eab510c7dba0aff90d",
+      "descriptionSha256": "26b3c9b4456fb895607f8206502d83a5164e0579c44da276ad44c2fd8bf43aee",
+      "outcome": "accepted_explicit_placement",
+      "basis": "description_checked",
+      "qualification": "Explicit compound union: de Sitter construction at 524e2f5f weight 0.34, inflation at f138007c weight 0.33, inverse attractor at edbb1ba5 weight 0.33. Preserve exact source-span coverage and independent component targets.",
+      "originalProposal": {
+        "unitRef": "u10",
+        "status": "existing_homes",
+        "coverageMode": "explicit_compound_union",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q12",
+            "weight": 0.34,
+            "coverageReason": "Covers the corrected Swiss-cheese nonsupersymmetric de Sitter construction without anti-D3 uplift."
+          },
+          {
+            "scopeRef": "q26",
+            "weight": 0.33,
+            "coverageReason": "Covers the axionic slow-roll inflation target in the same compactification setting."
+          },
+          {
+            "scopeRef": "q24",
+            "weight": 0.33,
+            "coverageReason": "Covers inverse reconstruction of extremal black-hole charges and fake superpotentials from prescribed attractor moduli."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can corrected Swiss-cheese compactifications support a nonsupersymmetric de Sitter minimum without anti-D3 uplift",
+            "scopeRefs": [
+              "q12"
+            ],
+            "explanation": "The correction-dependent compactification mechanism, nonsupersymmetric minimum and exclusion of anti-D3 uplift are retained together."
+          },
+          {
+            "sourceSpan": "and axionic slow-roll inflation?",
+            "scopeRefs": [
+              "q26"
+            ],
+            "explanation": "Both supplied annotations identify axionic inflation as an additional target in the corrected Swiss-cheese setting; it is not inferred from the existence of a static minimum."
+          },
+          {
+            "sourceSpan": "Separately, how can extremal black-hole charges and fake superpotentials be obtained from prescribed attractor moduli?",
+            "scopeRefs": [
+              "q24"
+            ],
+            "explanation": "The explicitly separate black-hole inverse problem retains both charge and fake-superpotential reconstruction."
+          }
+        ],
+        "coverageReason": "The three selected scopes collectively cover every stated target while retaining one immutable source. No supplied whole-question scope explicitly combines the cosmological targets with inverse black-hole attractors; q31 expressly excludes absorbing black-hole reconstruction, and q33 does not state that target. This union requires separate coordinator scrutiny.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r3",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The three-part compound identification is correct, but q12 alone omits inflation and the separate black-hole reconstruction problem. The proposed union supplies an explicit complete coverage map.",
+            "refs": [
+              "u10",
+              "r3",
+              "q12",
+              "q26",
+              "q24"
+            ]
+          },
+          {
+            "reviewRef": "r3",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The challenge rightly leaves fine identity unresolved across these distinct targets. Preserve that distinction and the single source through a reviewed union, rather than treating q12 as a whole-source home.",
+            "refs": [
+              "u10",
+              "r3",
+              "q12",
+              "q26",
+              "q24"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "A complete composite home is absent from the supplied definitions. The union uses three existing target-specific scopes and creates neither atomic source units nor a new bundled definition.",
+        "refs": [
+          "u10",
+          "r3",
+          "q12",
+          "q24",
+          "q26",
+          "q31",
+          "q33"
+        ]
+      },
+      "exactChallenge": {
+        "unitRef": "u10",
+        "status": "existing_homes",
+        "coverageMode": "explicit_compound_union",
+        "wholeTargetCoverage": "complete",
+        "homes": [
+          {
+            "scopeRef": "q12",
+            "weight": 0.34,
+            "coverageReason": "Covers the corrected Swiss-cheese nonsupersymmetric de Sitter construction without anti-D3 uplift."
+          },
+          {
+            "scopeRef": "q26",
+            "weight": 0.33,
+            "coverageReason": "Covers the axionic slow-roll inflation target in the same compactification setting."
+          },
+          {
+            "scopeRef": "q24",
+            "weight": 0.33,
+            "coverageReason": "Covers inverse reconstruction of extremal black-hole charges and fake superpotentials from prescribed attractor moduli."
+          }
+        ],
+        "targetCoverage": [
+          {
+            "sourceSpan": "Can corrected Swiss-cheese compactifications support a nonsupersymmetric de Sitter minimum without anti-D3 uplift",
+            "scopeRefs": [
+              "q12"
+            ],
+            "explanation": "The correction-dependent compactification mechanism, nonsupersymmetric minimum and exclusion of anti-D3 uplift are retained together."
+          },
+          {
+            "sourceSpan": "and axionic slow-roll inflation?",
+            "scopeRefs": [
+              "q26"
+            ],
+            "explanation": "Both supplied annotations identify axionic inflation as an additional target in the corrected Swiss-cheese setting; it is not inferred from the existence of a static minimum."
+          },
+          {
+            "sourceSpan": "Separately, how can extremal black-hole charges and fake superpotentials be obtained from prescribed attractor moduli?",
+            "scopeRefs": [
+              "q24"
+            ],
+            "explanation": "The explicitly separate black-hole inverse problem retains both charge and fake-superpotential reconstruction."
+          }
+        ],
+        "coverageReason": "The exact paired annotations identify inflation as an additional target, resolving the sentence's conjunction for placement purposes. q12, q26 and q24 collectively cover construction, axionic inflation and inverse attractors while retaining one immutable source. No supplied composite scope includes all three: q31 expressly excludes absorbing black-hole reconstruction, and q33 does not specify that target. Separate coordinator scrutiny remains required.",
+        "priorAssessments": [
+          {
+            "reviewRef": "r3",
+            "stage": "proposal",
+            "verdict": "revise",
+            "reason": "The three-part compound interpretation is supported, but q12 alone omits inflation and inverse black-hole reconstruction. The explicit union preserves every target without creating atomic source units.",
+            "refs": [
+              "u10",
+              "r3",
+              "q12",
+              "q26",
+              "q24"
+            ]
+          },
+          {
+            "reviewRef": "r3",
+            "stage": "challenge",
+            "verdict": "revise",
+            "reason": "The fine-identity caution is appropriate. It does not establish whole-source coverage in q12; the mapped union is required unless a complete composite scope is supplied elsewhere.",
+            "refs": [
+              "u10",
+              "r3",
+              "q12",
+              "q26",
+              "q24"
+            ]
+          }
+        ],
+        "missingPremises": [],
+        "reason": "Retain the proposed union and weights. This is collective coverage, not a claim that any selected home independently covers the complete source.",
+        "refs": [
+          "u10",
+          "r3",
+          "q12",
+          "q24",
+          "q26",
+          "q31",
+          "q33"
+        ]
+      },
+      "exactHomes": [
+        {
+          "scopeRef": "q12",
+          "weight": 0.34,
+          "coverageReason": "Covers the corrected Swiss-cheese nonsupersymmetric de Sitter construction without anti-D3 uplift.",
+          "destinationId": "q025-candidate-question:524e2f5f36cb09c5956aa59f",
+          "scopeContentSha256": "f420e09a4cc2e9d40175d7f540c29ed011087a20e085d4a3c2af3359e0b3884a",
+          "currentCanonicalId": "q025-candidate-question:524e2f5f36cb09c5956aa59f"
+        },
+        {
+          "scopeRef": "q26",
+          "weight": 0.33,
+          "coverageReason": "Covers the axionic slow-roll inflation target in the same compactification setting.",
+          "destinationId": "q025-candidate-question:f138007c6b9cb93954811273",
+          "scopeContentSha256": "415f34d29d669ea4ee617c917a714ffcd0c5ce9064597d47550ab71d206d3dc1",
+          "currentCanonicalId": "q025-candidate-question:f138007c6b9cb93954811273"
+        },
+        {
+          "scopeRef": "q24",
+          "weight": 0.33,
+          "coverageReason": "Covers inverse reconstruction of extremal black-hole charges and fake superpotentials from prescribed attractor moduli.",
+          "destinationId": "q025-candidate-question:edbb1ba5fc83a80d04330ea4",
+          "scopeContentSha256": "174008f7316110870e221d7b9ba881eed7e7055c3fdda00a8e456735e17b8c5d",
+          "currentCanonicalId": "q025-candidate-question:edbb1ba5fc83a80d04330ea4"
+        }
+      ],
+      "compoundUnion": true,
+      "coverageModeMustRemain": "explicit_compound_union"
+    }
+  ],
+  "noAtomicSourceSplitOrEquivalence": true,
+  "weightsAreOrganizationalNotConfidence": true,
+  "homesRemainWithGeometryCompiler": true
+}

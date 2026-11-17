@@ -1,0 +1,103 @@
+{
+  "status": "FROZEN_STAGE_SAFE",
+  "baseCommit": "fc7ba90d387c4a7b4cba7067b6b44627b4e9fb6f",
+  "validation": {
+    "focusedRuntimeTests": 19,
+    "allRuntimeTests": 106,
+    "build": "pass; retained baseline110 assets",
+    "siteCheck": "pass; verifiedAtlasFiles0",
+    "ingressTests": 3,
+    "pythonSyntax": "pass",
+    "shellSyntax": "pass",
+    "finalFullDataBrowser": "not run; exact final handoff pending",
+    "independentAgent": "not run",
+    "publicHttps": "not run"
+  },
+  "files": [
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "bytes": 71126,
+      "sha256": "72965f585c664e83990f5d2cfa5e0d33c9c583fd72dd3ef88ab2397267da8811"
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "bytes": 178,
+      "sha256": "efff55519afa83f205996a2fbb6ef45d240612076c8eaf3ff87b14006d7d9a7d"
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "bytes": 22122,
+      "sha256": "c5384587e3c9dddf37fcbb8be3a756937d4ff50ab5dd63a7588b72835626578d"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "bytes": 20897,
+      "sha256": "8030857dfd00702b19b9989db5d387c980510e8d5d6143c38efea3c50edcba4c"
+    },
+    {
+      "path": "tests/integration/access-observations.test.mjs",
+      "bytes": 9226,
+      "sha256": "809c0846ecde6d5a5a74f950e9840b1b5103503190adfc0fa3f9e47fe0200124"
+    },
+    {
+      "path": "tests/integration/work-note-fallback.test.mjs",
+      "bytes": 2811,
+      "sha256": "2741fd5a3e909ac5ec086e20e60a8745b4f35efa1d65c415fa0fd95a3590fc75"
+    },
+    {
+      "path": "research/q025/integration/accepted-release-path.md",
+      "bytes": 7453,
+      "sha256": "b2aa574cfe80c07a0f760c658198866e0c4d3bcc95d2f5b710b268c4f930df2b"
+    },
+    {
+      "path": "research/q025/integration/agent-browser-observer.py",
+      "bytes": 7717,
+      "sha256": "d9ad459722ba97d50b69ecfba63fe99b2fe41b5c88807824cab3ae19bb8d5abb"
+    },
+    {
+      "path": "research/q025/integration/agent-acceptance-plan.md",
+      "bytes": 12122,
+      "sha256": "38705f538cec4dfb31ecc9b6b774a18196bb8fdcf2e3e7c5b183983e32404cc9"
+    },
+    {
+      "path": "research/q025/integration/public-bridge-acceptance.py",
+      "bytes": 11787,
+      "sha256": "4712d27c4b27bbd30acffc14b5df2b837bd1c490dec9cec4dc5ad5c118c0daac"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/README.md",
+      "bytes": 5567,
+      "sha256": "90d53afe5a545cf66d1d04feeadfaef700e036107b71c990e65b27b3f4399e09"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/browser.py",
+      "bytes": 20340,
+      "sha256": "526386098b8ea07be59ebee661bf222e411f5bbe4a83b7b94208af98773e60c5"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/prepare.py",
+      "bytes": 5580,
+      "sha256": "46ac25b82e38e35875dd8147ef618ded1091edf8a520887e5d1538863dc2e440"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/run.sbatch",
+      "bytes": 3565,
+      "sha256": "dc8e4c4f5f827a9812dab74886bd5d13ae20f797b3856bdc9d5c14278e9ff6a9"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/stage.py",
+      "bytes": 4367,
+      "sha256": "328687b7682156c2dcc91ac67e099dcc77f316872291e56a0cfe3281dfb5caaf"
+    },
+    {
+      "path": "research/q025/integration/final-acceptance/test_stage.py",
+      "bytes": 2807,
+      "sha256": "76d2e9be0475948ce8c4aa9cf9d969911739b6cb651e83f368a49ebbdcef094d"
+    },
+    {
+      "path": "research/q025/integration/collection-entry-v1/README.md",
+      "bytes": 2186,
+      "sha256": "39dd7f1654d82fd3b604c6ae5b360a110d76b9f421df4533858c94b131f8b10b"
+    }
+  ]
+}

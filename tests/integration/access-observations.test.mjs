@@ -41,3 +41,17 @@ test('one foreground destination preserves multiple directed scientific and orga
  assert.equal(view.atlas.connectionCount,6);assert.equal(nav.connections('current').total,6);assert.equal(view.directions.length,4);assert.ok(!choice.label.includes('must never'));
  const runtime=createRuntime(nav,'test'),next=runtime.action({type:'select',directionId:choice.id});assert.equal(next.view.atlas.destination.id,'science');assert.equal(next.view.atlas.destination.title,'science');
 });
+
+test('curated collection access stays organizational without inventing shared-source witnesses',async()=>{
+ const x=fixture(),access=x.catalog.relations.find(r=>r.id==='access');
+ access.provenance={navigationBasis:'curated_collection_entry',decisionId:'curation:approved'};
+ delete access.organizationalAccess;
+ const nav=createAtlasNavigator(x),view=nav.computeView(nav.initialState),choice=view.directions.find(d=>d.selector.destinationId==='access');
+ assert.deepEqual(view.directions.map(d=>d.selector.destinationId),['narrow','science','broad','access','facet']);
+ assert.equal(choice.navigationKind,'collection_access');assert.equal(choice.label,'access');assert.equal(choice.relation.organizationalAccess,undefined);assert.match(choice.relation.accessNotice,/does not assert containment/);
+ const selected=nav.createSession({selector:choice.selector,workRelation:'using'}),arrived=nav.computeView(selected.states[0]);
+ assert.equal(arrived.atlas.membershipCount,0);assert.equal(arrived.atlas.matchingSourceCount,0);assert.equal(arrived.directions[0].label,'current');assert.equal(arrived.directions[0].relation.traversal,'incoming');
+ const runtime=createRuntime(nav,'test'),before=JSON.stringify(runtime.snapshot()),read=await runtime.connections({destinationId:'access'});
+ assert.equal(read.items[0].navigationKind,'collection_access');assert.equal(read.items[0].source,'current');assert.equal(read.items[0].target,'access');assert.equal(JSON.stringify(runtime.snapshot()),before);
+ access.type='narrower';assert.throws(()=>validateAtlas(x.manifest,x.catalog),/curated collection access/);
+});

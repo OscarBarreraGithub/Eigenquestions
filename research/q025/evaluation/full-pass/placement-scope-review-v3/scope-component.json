@@ -1,0 +1,2218 @@
+{
+  "schemaVersion": "q025-placement-new-scope-component/1",
+  "destinations": [
+    {
+      "id": "q025-placement-question:838a1000b5817b7003d0f4ac",
+      "kind": "question",
+      "title": "Beyond-BPS observables in instanton-only limits",
+      "question": "How can an instanton-retaining, anti-instanton-suppressing solvable limit describe observables beyond the BPS sector and support perturbation theory without linearizing field space?",
+      "summary": "Organizes the observable-calculation target that exceeds the solution/background remit of q4 and the effective-interaction remit of q1.",
+      "scope": {
+        "systems": [
+          "Instanton theories admitting the specified instanton-only limit"
+        ],
+        "targets": [
+          "Description beyond the BPS sector",
+          "Perturbation theory for general observables",
+          "Retention of nonlinear field space"
+        ],
+        "regimes": [
+          "A solvable limit retaining instantons and removing anti-instantons",
+          "Perturbative use of that limit"
+        ],
+        "assumptions": [
+          "The existence and usefulness of the proposed perturbative framework are questions to assess",
+          "No universal applicability to all instanton theories is assumed"
+        ],
+        "conventions": [
+          "Beyond-BPS observables are not identified with protected effective-interaction coefficients",
+          "Removing anti-instantons is part of the specified limiting construction"
+        ],
+        "includes": [
+          "The relation between the solvable limit and its proposed perturbative extension",
+          "The requirement not to linearize the space of fields"
+        ],
+        "excludes": [
+          "A claim that construction of instanton solutions alone computes general observables",
+          "Unstated convergence or all-orders validity results"
+        ]
+      },
+      "methods": [
+        "Instanon-only limiting construction",
+        "Perturbation theory retaining nonlinear field space"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:a15161de2dbf09b20b49e55a9b7c3f728dc6ef954e66622e73bbe21c96332abc"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u3's complete description and exact paired annotations only. No primary text, observable calculation or validity proof was read. The supplied scopes were compared locally; global exact-source/target-neighbor lookup remains required before admission. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n0",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n0",
+          "definition": {
+            "id": "n0",
+            "kind": "question",
+            "title": "Beyond-BPS observables in instanton-only limits",
+            "question": "How can an instanton-retaining, anti-instanton-suppressing solvable limit describe observables beyond the BPS sector and support perturbation theory without linearizing field space?",
+            "summary": "Organizes the observable-calculation target that exceeds the solution/background remit of q4 and the effective-interaction remit of q1.",
+            "scope": {
+              "systems": [
+                "Instanton theories admitting the specified instanton-only limit"
+              ],
+              "targets": [
+                "Description beyond the BPS sector",
+                "Perturbation theory for general observables",
+                "Retention of nonlinear field space"
+              ],
+              "regimes": [
+                "A solvable limit retaining instantons and removing anti-instantons",
+                "Perturbative use of that limit"
+              ],
+              "assumptions": [
+                "The existence and usefulness of the proposed perturbative framework are questions to assess",
+                "No universal applicability to all instanton theories is assumed"
+              ],
+              "conventions": [
+                "Beyond-BPS observables are not identified with protected effective-interaction coefficients",
+                "Removing anti-instantons is part of the specified limiting construction"
+              ],
+              "includes": [
+                "The relation between the solvable limit and its proposed perturbative extension",
+                "The requirement not to linearize the space of fields"
+              ],
+              "excludes": [
+                "A claim that construction of instanton solutions alone computes general observables",
+                "Unstated convergence or all-orders validity results"
+              ]
+            },
+            "methods": [
+              "Instanon-only limiting construction",
+              "Perturbation theory retaining nonlinear field space"
+            ],
+            "readingCoverage": "Supported by u3's complete description and exact paired annotations only. No primary text, observable calculation or validity proof was read. The supplied scopes were compared locally; global exact-source/target-neighbor lookup remains required before admission.",
+            "refs": [
+              "u3",
+              "q1",
+              "q4",
+              "q8"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n0",
+          "verdict": "retain",
+          "reason": "The unchanged definition is supported by u3's beyond-BPS observable and nonlinear-field-space perturbation targets. Its regime explicitly removes anti-instantons. q4 includes the limiting construction but does not establish the entire general-observable target; n0 is therefore more than a renamed solution scope.",
+          "refs": [
+            "n0",
+            "u3",
+            "q1",
+            "q4",
+            "q8"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "19d1bf1e9942466f20247c81d75ffa5d7f2e5730a86d71e7805984e95d3ee688",
+          "candidateIds": [
+            "q025-candidate-question:4916978371350c65b64c5f8a",
+            "q025-candidate-question:aec6cc0af0ce7f8d24ce87c2",
+            "q025-candidate-region:bbf5b94408d4b85f34e31f16",
+            "q025-candidate-question:05f33ddeb9c34e0770b210b5",
+            "q025-candidate-question:12a2e56e9a3e4a85989a684c",
+            "q025-candidate-question:02c287951dcba0c0dec708ce",
+            "q025-candidate-question:8cea3e33646035904a76c1cd",
+            "q025-candidate-question:e356a66ea835237726bb7474"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u3's complete description and exact paired annotations only. No primary text, observable calculation or validity proof was read. The supplied scopes were compared locally; global exact-source/target-neighbor lookup remains required before admission."
+      },
+      "scopeContentSha256": "a82336c56196ba2a742d8e6474bb582cb249ba1a8ce21b8bae3cd02437e715e4"
+    },
+    {
+      "id": "q025-placement-question:c2c4d376fded4fd9ec845c4f",
+      "kind": "question",
+      "title": "Light towers in the AdS zero-cosmological-constant limit",
+      "question": "Which towers become light as an AdS family approaches zero cosmological constant?",
+      "summary": "A spectral question about a specified limit of AdS families.",
+      "scope": {
+        "systems": [
+          "Families of AdS backgrounds"
+        ],
+        "targets": [
+          "Identification of towers becoming light"
+        ],
+        "regimes": [
+          "Approach to zero cosmological constant along an AdS family"
+        ],
+        "assumptions": [
+          "The family and its spectrum must be specified for a concrete answer",
+          "No universal tower identity or mass-scaling exponent is assumed"
+        ],
+        "conventions": [
+          "The limiting spectral question is distinct from constructing an AdS instanton",
+          "No equivalence with every infinite-distance limit is imposed"
+        ],
+        "includes": [
+          "Comparison of candidate light towers within the stated limit"
+        ],
+        "excludes": [
+          "A universal tower classification",
+          "An assumed proof of a distance conjecture",
+          "Unstated dimensions or compactification choices"
+        ]
+      },
+      "methods": [],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:1a7bb8b466813a46cd781eb458484122b6450008a2740cd27a0ea6eee97a3ac3"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u21's complete description. Both old annotations were assessed, but their historical home definition is unavailable. No primary reading or spectral calculation was performed. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n1",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n1",
+          "definition": {
+            "id": "n1",
+            "kind": "question",
+            "title": "Light towers in the AdS zero-cosmological-constant limit",
+            "question": "Which towers become light as an AdS family approaches zero cosmological constant?",
+            "summary": "A spectral question about a specified limit of AdS families.",
+            "scope": {
+              "systems": [
+                "Families of AdS backgrounds"
+              ],
+              "targets": [
+                "Identification of towers becoming light"
+              ],
+              "regimes": [
+                "Approach to zero cosmological constant along an AdS family"
+              ],
+              "assumptions": [
+                "The family and its spectrum must be specified for a concrete answer",
+                "No universal tower identity or mass-scaling exponent is assumed"
+              ],
+              "conventions": [
+                "The limiting spectral question is distinct from constructing an AdS instanton",
+                "No equivalence with every infinite-distance limit is imposed"
+              ],
+              "includes": [
+                "Comparison of candidate light towers within the stated limit"
+              ],
+              "excludes": [
+                "A universal tower classification",
+                "An assumed proof of a distance conjecture",
+                "Unstated dimensions or compactification choices"
+              ]
+            },
+            "methods": [],
+            "readingCoverage": "Supported by u21's complete description. Both old annotations were assessed, but their historical home definition is unavailable. No primary reading or spectral calculation was performed. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u21"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n1",
+          "verdict": "retain",
+          "reason": "The definition preserves the complete AdS limiting spectral question without inventing a tower, mass law, dimension or conjecture proof. The supplied existing scopes do not establish an equivalent target.",
+          "refs": [
+            "n1",
+            "u21",
+            "q4",
+            "q5"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "bad27b8c7a047c35610bed75ac4ac4177de844be1ae508dfcdc3d9571506a5e1",
+          "candidateIds": [
+            "q025-candidate-question:0dbcc81b0ff04126f3ad97e2",
+            "q025-candidate-region:f3e29a3e470894cf13cebe86",
+            "q025-candidate-question:924bb488507866e5220a92ec",
+            "q025-candidate-region:0125afaa2cbd203936f8d054",
+            "q025-candidate-question:1be677c9a0a26161fd1e91a0"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u21's complete description. Both old annotations were assessed, but their historical home definition is unavailable. No primary reading or spectral calculation was performed. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "1d6f11ff8f07983d48abc4c1bd6c2ea01d3ff61f96dbf9aa729cec5a71bdb377"
+    },
+    {
+      "id": "q025-placement-question:44697e3691f6e44e3e1e1bb0",
+      "kind": "question",
+      "title": "Multifield cosmological motion in curved kinetic geometry",
+      "question": "How do potential gradients, Hubble friction and field-space connection forces determine homogeneous multifield motion, and under what conditions can curved kinetic geometry support a quasi-de Sitter background?",
+      "summary": "Connects the general background-force question with the specified quasi-de Sitter application while distinguishing total potential gradient from actual motion.",
+      "scope": {
+        "systems": [
+          "Homogeneous cosmological scalar fields",
+          "Multiple scalar fields with curved kinetic geometry"
+        ],
+        "targets": [
+          "Joint effects of potential gradients, Hubble friction and field-space connection forces",
+          "Background trajectories",
+          "Quasi-de Sitter cosmological backgrounds",
+          "Relation between the total potential gradient and the actual direction of motion"
+        ],
+        "regimes": [
+          "Homogeneous multifield evolution",
+          "The quasi-de Sitter setting specified by u31"
+        ],
+        "assumptions": [
+          "Background motion need not be identified with the direction of the total potential gradient",
+          "The quasi-de Sitter application does not characterize every multifield solution"
+        ],
+        "conventions": [
+          "Kinetic field-space curvature is distinct from cosmological spatial curvature",
+          "Background evolution is distinct from quantum corrections to a moduli-space metric"
+        ],
+        "includes": [
+          "The complete force-balance question of u22",
+          "The curved-geometry quasi-de Sitter question of u31"
+        ],
+        "excludes": [
+          "Unstated perturbation spectra or observational predictions",
+          "A universal slow-roll or gradient-alignment assumption",
+          "Scalar–fluid scaling stability under spatial curvature"
+        ]
+      },
+      "methods": [
+        "Field-space-covariant background dynamics"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:3cf01eca46c2fe19ec950e902ea40c0b0e4229b189bff2924b9d206f4e14e59d",
+        "unit:1dc49a878e8b206f4a56ba197748a2af221312c767a3a300b623ad7a31ca2566"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by the complete descriptions of u22 and u31 and their exact paired annotations. Their common historical destination has no supplied definition and is not reconstructed. No equations or primary papers were reread. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n2",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n2",
+          "definition": {
+            "id": "n2",
+            "kind": "question",
+            "title": "Multifield cosmological motion in curved kinetic geometry",
+            "question": "How do potential gradients, Hubble friction and field-space connection forces determine homogeneous multifield motion, and under what conditions can curved kinetic geometry support a quasi-de Sitter background?",
+            "summary": "Connects the general background-force question with the specified quasi-de Sitter application while distinguishing total potential gradient from actual motion.",
+            "scope": {
+              "systems": [
+                "Homogeneous cosmological scalar fields",
+                "Multiple scalar fields with curved kinetic geometry"
+              ],
+              "targets": [
+                "Joint effects of potential gradients, Hubble friction and field-space connection forces",
+                "Background trajectories",
+                "Quasi-de Sitter cosmological backgrounds",
+                "Relation between the total potential gradient and the actual direction of motion"
+              ],
+              "regimes": [
+                "Homogeneous multifield evolution",
+                "The quasi-de Sitter setting specified by u31"
+              ],
+              "assumptions": [
+                "Background motion need not be identified with the direction of the total potential gradient",
+                "The quasi-de Sitter application does not characterize every multifield solution"
+              ],
+              "conventions": [
+                "Kinetic field-space curvature is distinct from cosmological spatial curvature",
+                "Background evolution is distinct from quantum corrections to a moduli-space metric"
+              ],
+              "includes": [
+                "The complete force-balance question of u22",
+                "The curved-geometry quasi-de Sitter question of u31"
+              ],
+              "excludes": [
+                "Unstated perturbation spectra or observational predictions",
+                "A universal slow-roll or gradient-alignment assumption",
+                "Scalar–fluid scaling stability under spatial curvature"
+              ]
+            },
+            "methods": [
+              "Field-space-covariant background dynamics"
+            ],
+            "readingCoverage": "Supported by the complete descriptions of u22 and u31 and their exact paired annotations. Their common historical destination has no supplied definition and is not reconstructed. No equations or primary papers were reread. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u22",
+              "u31"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n2",
+          "verdict": "retain",
+          "reason": "This is a supported composite question: u22 supplies the general force/evolution target, and u31 supplies the curved-geometry quasi-de Sitter application and gradient/motion distinction. Its qualifications prevent the application from being imposed on every multifield solution.",
+          "refs": [
+            "n2",
+            "u22",
+            "u31",
+            "q2",
+            "q5"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "571d14c203d41f9939f1c6b69d7a6c834c4d84431109fdca4b2699957c90a6e0",
+          "candidateIds": [
+            "q025-candidate-region:2dcea686e639bc720cccb3ba",
+            "q025-candidate-question:f986059b2c7fcb2dec263c8f",
+            "q025-candidate-question:cddea25176cb8afb89dbce93",
+            "q025-candidate-question:123b6bb223b0d0da0785731c",
+            "q025-candidate-question:c5283438d7645c848e6300a4"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by the complete descriptions of u22 and u31 and their exact paired annotations. Their common historical destination has no supplied definition and is not reconstructed. No equations or primary papers were reread. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "8f597999eeaed1a5ca53d92a89da2be85f93ac7c11d8259b9a1425dde8274bf2"
+    },
+    {
+      "id": "q025-placement-question:a6c431fffc9d99f097798fa0",
+      "kind": "question",
+      "title": "Domain-wall entropy and landscape probability",
+      "question": "Can the entropy of domain walls associated with four-dimensional AdS flux vacua define a landscape probability functional?",
+      "summary": "Retains the proposed entropy-to-probability relation as a question about the specified flux-vacuum setting.",
+      "scope": {
+        "systems": [
+          "Four-dimensional AdS flux vacua",
+          "Domain walls associated with those vacua"
+        ],
+        "targets": [
+          "Domain-wall entropy as input to a landscape probability functional",
+          "Whether that input defines the proposed functional"
+        ],
+        "regimes": [
+          "The stated four-dimensional AdS flux-vacuum setting"
+        ],
+        "assumptions": [
+          "A well-defined probability functional is a target to establish, not a supplied result"
+        ],
+        "conventions": [
+          "Domain-wall entropy is not identified with a distance-dependent wall force",
+          "The probability proposal is distinct from entropy–moduli-compactness links in probe reconstruction"
+        ],
+        "includes": [
+          "The full connection between the wall entropy and the landscape probability proposal"
+        ],
+        "excludes": [
+          "An assumed normalized universal landscape measure",
+          "Transfer to arbitrary cosmological vacua",
+          "Unstated entropy formulas"
+        ]
+      },
+      "methods": [
+        "Entropy-based probability proposal"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:eb660f73f37eff5179f9524519d7725bcbad5440cdb7bfa193e46756e2317ce8"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u23's complete description and paired historical annotations, whose home definition is unavailable. No entropy derivation or probability construction was independently checked. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n3",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n3",
+          "definition": {
+            "id": "n3",
+            "kind": "question",
+            "title": "Domain-wall entropy and landscape probability",
+            "question": "Can the entropy of domain walls associated with four-dimensional AdS flux vacua define a landscape probability functional?",
+            "summary": "Retains the proposed entropy-to-probability relation as a question about the specified flux-vacuum setting.",
+            "scope": {
+              "systems": [
+                "Four-dimensional AdS flux vacua",
+                "Domain walls associated with those vacua"
+              ],
+              "targets": [
+                "Domain-wall entropy as input to a landscape probability functional",
+                "Whether that input defines the proposed functional"
+              ],
+              "regimes": [
+                "The stated four-dimensional AdS flux-vacuum setting"
+              ],
+              "assumptions": [
+                "A well-defined probability functional is a target to establish, not a supplied result"
+              ],
+              "conventions": [
+                "Domain-wall entropy is not identified with a distance-dependent wall force",
+                "The probability proposal is distinct from entropy–moduli-compactness links in probe reconstruction"
+              ],
+              "includes": [
+                "The full connection between the wall entropy and the landscape probability proposal"
+              ],
+              "excludes": [
+                "An assumed normalized universal landscape measure",
+                "Transfer to arbitrary cosmological vacua",
+                "Unstated entropy formulas"
+              ]
+            },
+            "methods": [
+              "Entropy-based probability proposal"
+            ],
+            "readingCoverage": "Supported by u23's complete description and paired historical annotations, whose home definition is unavailable. No entropy derivation or probability construction was independently checked. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u23"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n3",
+          "verdict": "retain",
+          "reason": "The entropy input, domain walls, four-dimensional AdS flux setting and probability-functional target all follow from u23. The definition preserves the proposed status and does not assert a universal landscape measure.",
+          "refs": [
+            "n3",
+            "u23",
+            "q3",
+            "q4",
+            "q6"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "f2a48c4d671c23adc5cc60f1e2fe39af271b265d8a218907f8ba91ae8c284035",
+          "candidateIds": [
+            "q025-candidate-question:3f09077739cfd786283becd0",
+            "q025-candidate-question:2e257eb06b754198fc59e77b",
+            "q025-candidate-question:fa67fe69aee2cc8bd46a24f2",
+            "q025-candidate-question:38ea8d7b16f6a8726c81a6f3",
+            "q025-candidate-question:3b3cef107f1cba22638adb2a"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u23's complete description and paired historical annotations, whose home definition is unavailable. No entropy derivation or probability construction was independently checked. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "30107c53a8adb99b85fa51ff876ede758dd6df6128e2f4784484e919aea1e549"
+    },
+    {
+      "id": "q025-placement-question:0ac74cef244ac2c3f1f39dc2",
+      "kind": "question",
+      "title": "Regular complex saddles approaching real cosmologies",
+      "question": "Which regular complex scalar-gravity saddles can emerge from a vanishing scale factor and approach real expanding cosmologies?",
+      "summary": "Organizes the complete regularity-and-expansion question for complex scalar-gravity configurations.",
+      "scope": {
+        "systems": [
+          "Complex scalar-gravity saddles"
+        ],
+        "targets": [
+          "Regularity at a vanishing scale factor",
+          "Approach to real expanding cosmologies",
+          "Identification of saddles satisfying both conditions"
+        ],
+        "regimes": [
+          "Complex configurations near the vanishing-scale-factor end",
+          "An approach to real expanding cosmological evolution"
+        ],
+        "assumptions": [
+          "Regularity and approach to real expansion are conditions to assess",
+          "No particular contour or weighting prescription is supplied"
+        ],
+        "conventions": [
+          "A complex saddle is not automatically identified with an instanton sector in the admitted scopes",
+          "Approaching a real cosmology does not require assuming a real configuration throughout"
+        ],
+        "includes": [
+          "The joint boundary and evolution conditions in u24"
+        ],
+        "excludes": [
+          "Unstated probability measures",
+          "A selected cosmological contour prescription",
+          "Unstated perturbation or observational predictions"
+        ]
+      },
+      "methods": [
+        "Complex-saddle regularity analysis",
+        "Analysis of approach to real expansion"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:35e8fb1f5aed449bd86e082f7e7523b974982487065d859765dde33b9044908a"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u24's complete description; the old placement lacks a supplied home definition. No saddle equations, contour choice or primary derivation was checked. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n4",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n4",
+          "definition": {
+            "id": "n4",
+            "kind": "question",
+            "title": "Regular complex saddles approaching real cosmologies",
+            "question": "Which regular complex scalar-gravity saddles can emerge from a vanishing scale factor and approach real expanding cosmologies?",
+            "summary": "Organizes the complete regularity-and-expansion question for complex scalar-gravity configurations.",
+            "scope": {
+              "systems": [
+                "Complex scalar-gravity saddles"
+              ],
+              "targets": [
+                "Regularity at a vanishing scale factor",
+                "Approach to real expanding cosmologies",
+                "Identification of saddles satisfying both conditions"
+              ],
+              "regimes": [
+                "Complex configurations near the vanishing-scale-factor end",
+                "An approach to real expanding cosmological evolution"
+              ],
+              "assumptions": [
+                "Regularity and approach to real expansion are conditions to assess",
+                "No particular contour or weighting prescription is supplied"
+              ],
+              "conventions": [
+                "A complex saddle is not automatically identified with an instanton sector in the admitted scopes",
+                "Approaching a real cosmology does not require assuming a real configuration throughout"
+              ],
+              "includes": [
+                "The joint boundary and evolution conditions in u24"
+              ],
+              "excludes": [
+                "Unstated probability measures",
+                "A selected cosmological contour prescription",
+                "Unstated perturbation or observational predictions"
+              ]
+            },
+            "methods": [
+              "Complex-saddle regularity analysis",
+              "Analysis of approach to real expansion"
+            ],
+            "readingCoverage": "Supported by u24's complete description; the old placement lacks a supplied home definition. No saddle equations, contour choice or primary derivation was checked. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u24"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n4",
+          "verdict": "retain",
+          "reason": "The definition retains all regularity and limiting-reality conditions in u24 without adding a contour, weighting prescription or automatic identification with the existing instanton systems.",
+          "refs": [
+            "n4",
+            "u24",
+            "q4"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "a2c0be5332bbd2239ed68abe11fcd93258813a6fc5936b64ccbfcd0bdd2ab9d8",
+          "candidateIds": [
+            "q025-candidate-question:da24413bd97039698784cfc4",
+            "q025-candidate-question:c0acabd5a23eb0c33269a155",
+            "q025-candidate-question:ac398ae007a3f2038b8af540",
+            "q025-candidate-question:4592028a976cb6e398ae76a2",
+            "q025-candidate-question:779f0a1b4e7a47d76b4ddee6"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u24's complete description; the old placement lacks a supplied home definition. No saddle equations, contour choice or primary derivation was checked. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "6c4e4180769bad16fc625fe53b33e25ef556517890a396ac79389bd0db9e9dd2"
+    },
+    {
+      "id": "q025-placement-question:8ab6f869887ed8c458a9ad0d",
+      "kind": "question",
+      "title": "Independent principles for completeness",
+      "question": "What independently justified quantum-gravity principle excludes non-invertible topological operators and permits completeness to follow without assuming it?",
+      "summary": "Makes the independence and noncircularity requirements part of the physical question.",
+      "scope": {
+        "systems": [
+          "Quantum-gravity settings with candidate non-invertible topological operators"
+        ],
+        "targets": [
+          "An independently justified exclusion principle",
+          "Its implication for completeness",
+          "Avoidance of assuming completeness in the argument"
+        ],
+        "regimes": [
+          "The general principle-level question stated in u25"
+        ],
+        "assumptions": [
+          "Completeness cannot serve as a premise for the requested derivation",
+          "No successful exclusion principle is supplied by the packet"
+        ],
+        "conventions": [
+          "Non-invertible topological operators retain their stated meaning and are not replaced by an ordinary symmetry prohibition",
+          "A proposed implication is distinct from an independently justified premise"
+        ],
+        "includes": [
+          "Assessment of the logical dependence between the operator prohibition and completeness"
+        ],
+        "excludes": [
+          "Circular derivations assuming completeness",
+          "An assumed universal no-symmetry theorem",
+          "Reduction to a specified instanton charge-normalization problem"
+        ]
+      },
+      "methods": [
+        "Analysis of premises and implications"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:8fe0d15685de104a1e722a1ea8e9760aab859192ae93400289220e1b36f20cb3"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u25's complete description. Historical scope membership is unverified because its definition is absent. No primary proof or proposed principle was reread. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n5",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n5",
+          "definition": {
+            "id": "n5",
+            "kind": "question",
+            "title": "Independent principles for completeness",
+            "question": "What independently justified quantum-gravity principle excludes non-invertible topological operators and permits completeness to follow without assuming it?",
+            "summary": "Makes the independence and noncircularity requirements part of the physical question.",
+            "scope": {
+              "systems": [
+                "Quantum-gravity settings with candidate non-invertible topological operators"
+              ],
+              "targets": [
+                "An independently justified exclusion principle",
+                "Its implication for completeness",
+                "Avoidance of assuming completeness in the argument"
+              ],
+              "regimes": [
+                "The general principle-level question stated in u25"
+              ],
+              "assumptions": [
+                "Completeness cannot serve as a premise for the requested derivation",
+                "No successful exclusion principle is supplied by the packet"
+              ],
+              "conventions": [
+                "Non-invertible topological operators retain their stated meaning and are not replaced by an ordinary symmetry prohibition",
+                "A proposed implication is distinct from an independently justified premise"
+              ],
+              "includes": [
+                "Assessment of the logical dependence between the operator prohibition and completeness"
+              ],
+              "excludes": [
+                "Circular derivations assuming completeness",
+                "An assumed universal no-symmetry theorem",
+                "Reduction to a specified instanton charge-normalization problem"
+              ]
+            },
+            "methods": [
+              "Analysis of premises and implications"
+            ],
+            "readingCoverage": "Supported by u25's complete description. Historical scope membership is unverified because its definition is absent. No primary proof or proposed principle was reread. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u25"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n5",
+          "verdict": "retain",
+          "reason": "The independently justified premise and prohibition on assuming completeness are essential source targets and are preserved. The definition does not substitute an ordinary-symmetry theorem for the stated non-invertible-operator question.",
+          "refs": [
+            "n5",
+            "u25",
+            "q7"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "959fae3ee794a0810a866881230d98490a017be6536d3ffe9e4844019f96582a",
+          "candidateIds": [
+            "q025-candidate-question:3bdab6beac0e39be69944477",
+            "q025-candidate-question:efd0ae79fc058ceedfe0e8a7",
+            "q025-candidate-question:f02ef484483cc4f79d7bca63",
+            "pending-placement-scope:placement-continuation-0000:proposal:n7",
+            "q025-candidate-region:39632ea50ec10697c519422f"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u25's complete description. Historical scope membership is unverified because its definition is absent. No primary proof or proposed principle was reread. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "71e7f8761948547996b14ae9d5fac40d40edabc281445480dada78f389767e99"
+    },
+    {
+      "id": "q025-placement-question:8779f55609707e9925082731",
+      "kind": "question",
+      "title": "Consistency and positivity bounds on random Dirac spectra",
+      "question": "How can Schwinger–Dyson consistency and moment positivity constrain large-N random Dirac spectra without explicitly solving multitrace, multimatrix models?",
+      "summary": "A spectral-constraint question combining consistency equations with positivity.",
+      "scope": {
+        "systems": [
+          "Random Dirac operators",
+          "Multitrace, multimatrix models in the stated setting"
+        ],
+        "targets": [
+          "Constraints on large-N spectra",
+          "Joint use of Schwinger–Dyson consistency and moment positivity"
+        ],
+        "regimes": [
+          "Large N",
+          "Inference without explicit model solution"
+        ],
+        "assumptions": [
+          "Constraint strength and spectral determination remain questions to assess",
+          "No exact spectrum or finite-N extension is assumed"
+        ],
+        "conventions": [
+          "Bounds and consistency constraints are distinct from explicit model solutions",
+          "Moment positivity is retained alongside Schwinger–Dyson consistency"
+        ],
+        "includes": [
+          "The combined constraint strategy for the stated random Dirac systems"
+        ],
+        "excludes": [
+          "An assumed exact solution of all multitrace, multimatrix models",
+          "Transfer to arbitrary random operators",
+          "Unstated finite-N guarantees"
+        ]
+      },
+      "methods": [
+        "Schwinger–Dyson consistency",
+        "Moment positivity"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:5725c6aa774b18e89c8af2990edf6321e5de778b69207580aae3d9e3b798a29b"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u26's complete description. Historical excerpt locators were not treated as supplied primary text, and the historical home definition is absent. No model calculation was checked. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n6",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n6",
+          "definition": {
+            "id": "n6",
+            "kind": "question",
+            "title": "Consistency and positivity bounds on random Dirac spectra",
+            "question": "How can Schwinger–Dyson consistency and moment positivity constrain large-N random Dirac spectra without explicitly solving multitrace, multimatrix models?",
+            "summary": "A spectral-constraint question combining consistency equations with positivity.",
+            "scope": {
+              "systems": [
+                "Random Dirac operators",
+                "Multitrace, multimatrix models in the stated setting"
+              ],
+              "targets": [
+                "Constraints on large-N spectra",
+                "Joint use of Schwinger–Dyson consistency and moment positivity"
+              ],
+              "regimes": [
+                "Large N",
+                "Inference without explicit model solution"
+              ],
+              "assumptions": [
+                "Constraint strength and spectral determination remain questions to assess",
+                "No exact spectrum or finite-N extension is assumed"
+              ],
+              "conventions": [
+                "Bounds and consistency constraints are distinct from explicit model solutions",
+                "Moment positivity is retained alongside Schwinger–Dyson consistency"
+              ],
+              "includes": [
+                "The combined constraint strategy for the stated random Dirac systems"
+              ],
+              "excludes": [
+                "An assumed exact solution of all multitrace, multimatrix models",
+                "Transfer to arbitrary random operators",
+                "Unstated finite-N guarantees"
+              ]
+            },
+            "methods": [
+              "Schwinger–Dyson consistency",
+              "Moment positivity"
+            ],
+            "readingCoverage": "Supported by u26's complete description. Historical excerpt locators were not treated as supplied primary text, and the historical home definition is absent. No model calculation was checked. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u26"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n6",
+          "verdict": "retain",
+          "reason": "Both Schwinger–Dyson consistency and moment positivity, the random Dirac system, large N and avoidance of explicit multitrace/multimatrix solution are supported. No exact spectrum or finite-N guarantee is added.",
+          "refs": [
+            "n6",
+            "u26"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "5973390c046bc9829585bc622de9438c2c2c36d58c0708ec2a6f43b0f03fce66",
+          "candidateIds": [
+            "q025-candidate-question:19f7dbb37fc41e3b6a8cd4fa",
+            "q025-candidate-question:e4152f3d61427952901dca29",
+            "q025-candidate-question:683a4c742946ecd5f0e14519",
+            "q025-candidate-question:7ebf30528dd9aea4b5abce70",
+            "q025-candidate-question:4047767467a9c5d201e4af04"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u26's complete description. Historical excerpt locators were not treated as supplied primary text, and the historical home definition is absent. No model calculation was checked. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "4cca4cff289e7cc3ddfc9a9c34f8f95af5b7df19fbe8dee5fff05d6904eccd78"
+    },
+    {
+      "id": "q025-placement-question:201e248a4305b81251c0280b",
+      "kind": "question",
+      "title": "Connections among distinct quantum-gravity approaches",
+      "question": "Which shared physical questions, mathematical techniques and concrete connections can advance distinct quantum-gravity approaches while preserving their different starting principles?",
+      "summary": "A comparative methodological question, not an umbrella allocation for every quantum-gravity topic.",
+      "scope": {
+        "systems": [
+          "Distinct quantum-gravity approaches considered in the source"
+        ],
+        "targets": [
+          "Shared physical questions",
+          "Transferable mathematical techniques",
+          "Concrete connections that advance the approaches"
+        ],
+        "regimes": [
+          "Comparison across approaches with different starting principles"
+        ],
+        "assumptions": [
+          "The approaches retain their different starting principles",
+          "Useful connections do not by themselves establish equivalence"
+        ],
+        "conventions": [
+          "Methodological transfer is distinct from identity of theories",
+          "No list of approaches absent from the description is supplied"
+        ],
+        "includes": [
+          "Joint assessment of physical questions, techniques and concrete connections"
+        ],
+        "excludes": [
+          "An assumed unification into one theory",
+          "Generic placement of every quantum-gravity source",
+          "Unsupported equivalence of starting principles"
+        ]
+      },
+      "methods": [
+        "Comparative analysis of questions, techniques and connections"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:9bb34b100efaa642ac27a074cbde4a347a12828aa3965f9b314756b80ca4c3a9"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u27's complete description and exact annotations. No underlying survey, named approach inventory or historical home definition was supplied. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n7",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n7",
+          "definition": {
+            "id": "n7",
+            "kind": "question",
+            "title": "Connections among distinct quantum-gravity approaches",
+            "question": "Which shared physical questions, mathematical techniques and concrete connections can advance distinct quantum-gravity approaches while preserving their different starting principles?",
+            "summary": "A comparative methodological question, not an umbrella allocation for every quantum-gravity topic.",
+            "scope": {
+              "systems": [
+                "Distinct quantum-gravity approaches considered in the source"
+              ],
+              "targets": [
+                "Shared physical questions",
+                "Transferable mathematical techniques",
+                "Concrete connections that advance the approaches"
+              ],
+              "regimes": [
+                "Comparison across approaches with different starting principles"
+              ],
+              "assumptions": [
+                "The approaches retain their different starting principles",
+                "Useful connections do not by themselves establish equivalence"
+              ],
+              "conventions": [
+                "Methodological transfer is distinct from identity of theories",
+                "No list of approaches absent from the description is supplied"
+              ],
+              "includes": [
+                "Joint assessment of physical questions, techniques and concrete connections"
+              ],
+              "excludes": [
+                "An assumed unification into one theory",
+                "Generic placement of every quantum-gravity source",
+                "Unsupported equivalence of starting principles"
+              ]
+            },
+            "methods": [
+              "Comparative analysis of questions, techniques and connections"
+            ],
+            "readingCoverage": "Supported by u27's complete description and exact annotations. No underlying survey, named approach inventory or historical home definition was supplied. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u27"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n7",
+          "verdict": "retain",
+          "reason": "The definition covers the three stated forms of cross-approach connection while retaining distinct starting principles. It neither invents an approach inventory nor admits unrelated quantum-gravity sources by subject label.",
+          "refs": [
+            "n7",
+            "u27",
+            "q6",
+            "q8"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "cab9c328c36211accd67dd4b74050b1b62d91d2568e4f4facf09d174f8304c0f",
+          "candidateIds": [
+            "q025-candidate-question:c9d0790b8faad7cde651a267",
+            "q025-candidate-question:51b73f047b59e889b2cc01d0",
+            "q025-candidate-question:77dff83e075a7e6f4501c022",
+            "q025-candidate-region:9cc6623edc9d8c83bc264832",
+            "q025-candidate-question:c7d14e246f2b522b5c285fbe"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u27's complete description and exact annotations. No underlying survey, named approach inventory or historical home definition was supplied. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "1e138b7b64a9c4e9795f4185a76a1931f35495940d0b0d0a6ad9ca3394f738d2"
+    },
+    {
+      "id": "q025-placement-question:f90a05102f27ddce5318b376",
+      "kind": "question",
+      "title": "KM-state purity in a limiting observable algebra",
+      "question": "How does the choice of observables surviving an ensemble-averaged double-scaling limit determine purity of a sequence of pure KM states in its emergent operator algebra?",
+      "summary": "Retains observable selection and the limiting algebra as essential parts of the purity question.",
+      "scope": {
+        "systems": [
+          "Sequences of pure KM states",
+          "Their emergent operator algebras"
+        ],
+        "targets": [
+          "Selection of surviving observables",
+          "Purity in the emergent algebra",
+          "Dependence of limiting purity on observable selection"
+        ],
+        "regimes": [
+          "Ensemble-averaged double-scaling limit"
+        ],
+        "assumptions": [
+          "Purity must be assessed relative to the specified surviving observable algebra",
+          "Purity before the limit does not supply the requested conclusion by itself"
+        ],
+        "conventions": [
+          "Original-state purity and limiting-algebra purity are distinct statements",
+          "Ensemble averaging and double scaling remain explicit parts of the setting"
+        ],
+        "includes": [
+          "The entire dependence of the limiting purity question on retained observables"
+        ],
+        "excludes": [
+          "A universal purity-loss or purity-preservation claim",
+          "Unstated thermality conclusions",
+          "An assumed identification of the full original and emergent algebras"
+        ]
+      },
+      "methods": [
+        "Analysis of states relative to the surviving observable algebra"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:e950a4a9e0c3f8cf3484be6d530b8a6a63216f84d81bba8f914b3d64c108acda"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u28's complete description. The old home is undefined in the packet. No primary operator-algebra construction or limiting calculation was checked. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n8",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n8",
+          "definition": {
+            "id": "n8",
+            "kind": "question",
+            "title": "KM-state purity in a limiting observable algebra",
+            "question": "How does the choice of observables surviving an ensemble-averaged double-scaling limit determine purity of a sequence of pure KM states in its emergent operator algebra?",
+            "summary": "Retains observable selection and the limiting algebra as essential parts of the purity question.",
+            "scope": {
+              "systems": [
+                "Sequences of pure KM states",
+                "Their emergent operator algebras"
+              ],
+              "targets": [
+                "Selection of surviving observables",
+                "Purity in the emergent algebra",
+                "Dependence of limiting purity on observable selection"
+              ],
+              "regimes": [
+                "Ensemble-averaged double-scaling limit"
+              ],
+              "assumptions": [
+                "Purity must be assessed relative to the specified surviving observable algebra",
+                "Purity before the limit does not supply the requested conclusion by itself"
+              ],
+              "conventions": [
+                "Original-state purity and limiting-algebra purity are distinct statements",
+                "Ensemble averaging and double scaling remain explicit parts of the setting"
+              ],
+              "includes": [
+                "The entire dependence of the limiting purity question on retained observables"
+              ],
+              "excludes": [
+                "A universal purity-loss or purity-preservation claim",
+                "Unstated thermality conclusions",
+                "An assumed identification of the full original and emergent algebras"
+              ]
+            },
+            "methods": [
+              "Analysis of states relative to the surviving observable algebra"
+            ],
+            "readingCoverage": "Supported by u28's complete description. The old home is undefined in the packet. No primary operator-algebra construction or limiting calculation was checked. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u28"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n8",
+          "verdict": "retain",
+          "reason": "The definition preserves the full observable-selection and limiting-algebra purity question, including ensemble averaging and double scaling, without assuming either purity loss or preservation.",
+          "refs": [
+            "n8",
+            "u28"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "b55a51fa1bead175a8bb8eb1e8dd33e25a47eb6e6e9ece4a42bb94b43c98b4a0",
+          "candidateIds": [
+            "q025-candidate-question:407a45488c47e1a4cafa2b59",
+            "q025-candidate-question:552965597638ad3f895b1783",
+            "q025-candidate-question:31b6460aff92468130074887",
+            "q025-candidate-question:7a1badc30b46cd0f3f7047a5",
+            "q025-candidate-question:8e4149c7991f4ca5156a5299"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u28's complete description. The old home is undefined in the packet. No primary operator-algebra construction or limiting calculation was checked. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "7948b0c1f598b86af440bbcbea8261f3f0b0e9830b6a0c99bab5418c669a323e"
+    },
+    {
+      "id": "q025-placement-question:770ce54bb09582713cece152",
+      "kind": "question",
+      "title": "Exponential quintessence in NEC-preserving CRF compactifications",
+      "question": "Can observationally allowed exponential quintessence be embedded in the NEC-preserving CRF compactifications examined by the source?",
+      "summary": "A compatibility question restricted to the stated observational condition and compactification class.",
+      "scope": {
+        "systems": [
+          "Exponential quintessence",
+          "The NEC-preserving CRF compactifications examined by the source"
+        ],
+        "targets": [
+          "Compatibility of the specified compactifications with observationally allowed exponential quintessence"
+        ],
+        "regimes": [
+          "The source's observationally allowed exponential-quintessence regime",
+          "NEC preservation",
+          "The examined CRF class"
+        ],
+        "assumptions": [
+          "The compactification class remains source-bounded",
+          "No numerical observational bound or embedding result is supplied"
+        ],
+        "conventions": [
+          "Observational allowance and compactification consistency are separate requirements",
+          "NEC and CRF are retained as stated without importing additional model assumptions"
+        ],
+        "includes": [
+          "The complete embedding-compatibility question under all stated restrictions"
+        ],
+        "excludes": [
+          "A conclusion for all compactifications",
+          "NEC-violating alternatives",
+          "Non-exponential quintessence",
+          "An assumed general no-go theorem"
+        ]
+      },
+      "methods": [
+        "Comparison of the stated observational and compactification requirements"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:f9bed7c935c8da6d3f6ef1562535fd2b6aca68f0f2ce8e18636a3aab96d01343"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u29's complete description. The historical unresolved scope flag has no supplied explanatory text and is not reconstructed. No primary compactification assumptions, numerical bounds or current observational data were checked. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n9",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n9",
+          "definition": {
+            "id": "n9",
+            "kind": "question",
+            "title": "Exponential quintessence in NEC-preserving CRF compactifications",
+            "question": "Can observationally allowed exponential quintessence be embedded in the NEC-preserving CRF compactifications examined by the source?",
+            "summary": "A compatibility question restricted to the stated observational condition and compactification class.",
+            "scope": {
+              "systems": [
+                "Exponential quintessence",
+                "The NEC-preserving CRF compactifications examined by the source"
+              ],
+              "targets": [
+                "Compatibility of the specified compactifications with observationally allowed exponential quintessence"
+              ],
+              "regimes": [
+                "The source's observationally allowed exponential-quintessence regime",
+                "NEC preservation",
+                "The examined CRF class"
+              ],
+              "assumptions": [
+                "The compactification class remains source-bounded",
+                "No numerical observational bound or embedding result is supplied"
+              ],
+              "conventions": [
+                "Observational allowance and compactification consistency are separate requirements",
+                "NEC and CRF are retained as stated without importing additional model assumptions"
+              ],
+              "includes": [
+                "The complete embedding-compatibility question under all stated restrictions"
+              ],
+              "excludes": [
+                "A conclusion for all compactifications",
+                "NEC-violating alternatives",
+                "Non-exponential quintessence",
+                "An assumed general no-go theorem"
+              ]
+            },
+            "methods": [
+              "Comparison of the stated observational and compactification requirements"
+            ],
+            "readingCoverage": "Supported by u29's complete description. The historical unresolved scope flag has no supplied explanatory text and is not reconstructed. No primary compactification assumptions, numerical bounds or current observational data were checked. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u29"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n9",
+          "verdict": "retain",
+          "reason": "The definition is limited to the described exponential quintessence and examined NEC-preserving CRF class. Its source-bounded terms and reading limits appropriately avoid reconstructing the historical scope flag or importing observational numbers.",
+          "refs": [
+            "n9",
+            "u29",
+            "r0"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "ea1e3e3c662fa04bbcc148b52a0983b145b4c4058ec858685db35f9a88bc1261",
+          "candidateIds": [
+            "q025-candidate-region:b6066d8938d079cd5060a13f",
+            "q025-candidate-question:690548efb26af1f935d2d594",
+            "q025-candidate-question:0a8ba98b6557f2e4185aab0c",
+            "q025-candidate-question:10e333580bdbf051baa6cb7f",
+            "q025-candidate-region:d3c0a735706addaa936e68c5",
+            "q025-candidate-region:b158f80b6c1808f1550fae42"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u29's complete description. The historical unresolved scope flag has no supplied explanatory text and is not reconstructed. No primary compactification assumptions, numerical bounds or current observational data were checked. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "5215df7c96c9a3db0f2ccfd6a1efc4e087e7503914cbcdba7ccb2ab8c75bd67a"
+    },
+    {
+      "id": "q025-placement-question:1ff0f83a16ce3f98aa3e6fb4",
+      "kind": "question",
+      "title": "Spatial-curvature stability and scalar–fluid asymptotics",
+      "question": "Which scalar–fluid scaling solutions remain stable when spatial curvature is admitted, and what determines the past and future asymptotic states of expanding Robertson–Walker models?",
+      "summary": "Keeps scaling stability and both asymptotic limits together in the curved cosmological setting.",
+      "scope": {
+        "systems": [
+          "Expanding Robertson–Walker models containing a scalar and a fluid"
+        ],
+        "targets": [
+          "Stability of scalar–fluid scaling solutions",
+          "Effect of admitting spatial curvature",
+          "Past asymptotic states",
+          "Future asymptotic states"
+        ],
+        "regimes": [
+          "Expanding cosmological models with spatial curvature admitted"
+        ],
+        "assumptions": [
+          "No particular scalar potential or fluid equation of state is added",
+          "A stable scaling branch or universal asymptotic state is not assumed"
+        ],
+        "conventions": [
+          "Spatial curvature is distinct from kinetic field-space curvature",
+          "Past and future asymptotics are separate targets"
+        ],
+        "includes": [
+          "The full stability-and-asymptotics question in the stated scalar–fluid setting"
+        ],
+        "excludes": [
+          "Restriction to spatially flat models",
+          "Unstated multifield quasi-de Sitter conclusions",
+          "Unstated perturbation spectra"
+        ]
+      },
+      "methods": [
+        "Stability analysis",
+        "Asymptotic analysis"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:0451ea791f106674b6ae4dd220aaa37b25218f2646c5278ee742c1a6e5f81504"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported by u30's complete description. The historical home definition is absent. No dynamical-system equations, stability eigenvalues or asymptotic classification were independently checked. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0014:n10",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0014",
+          "localRef": "n10",
+          "definition": {
+            "id": "n10",
+            "kind": "question",
+            "title": "Spatial-curvature stability and scalar–fluid asymptotics",
+            "question": "Which scalar–fluid scaling solutions remain stable when spatial curvature is admitted, and what determines the past and future asymptotic states of expanding Robertson–Walker models?",
+            "summary": "Keeps scaling stability and both asymptotic limits together in the curved cosmological setting.",
+            "scope": {
+              "systems": [
+                "Expanding Robertson–Walker models containing a scalar and a fluid"
+              ],
+              "targets": [
+                "Stability of scalar–fluid scaling solutions",
+                "Effect of admitting spatial curvature",
+                "Past asymptotic states",
+                "Future asymptotic states"
+              ],
+              "regimes": [
+                "Expanding cosmological models with spatial curvature admitted"
+              ],
+              "assumptions": [
+                "No particular scalar potential or fluid equation of state is added",
+                "A stable scaling branch or universal asymptotic state is not assumed"
+              ],
+              "conventions": [
+                "Spatial curvature is distinct from kinetic field-space curvature",
+                "Past and future asymptotics are separate targets"
+              ],
+              "includes": [
+                "The full stability-and-asymptotics question in the stated scalar–fluid setting"
+              ],
+              "excludes": [
+                "Restriction to spatially flat models",
+                "Unstated multifield quasi-de Sitter conclusions",
+                "Unstated perturbation spectra"
+              ]
+            },
+            "methods": [
+              "Stability analysis",
+              "Asymptotic analysis"
+            ],
+            "readingCoverage": "Supported by u30's complete description. The historical home definition is absent. No dynamical-system equations, stability eigenvalues or asymptotic classification were independently checked. Global exact-source/target-neighbor lookup is required before admission.",
+            "refs": [
+              "u30"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0014:proposal",
+          "placement-scope:placement-continuation-0014:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n10",
+          "verdict": "retain",
+          "reason": "The definition preserves the scalar–fluid system, admitted spatial curvature, scaling stability and both asymptotic limits. It adds no potential, fluid equation of state or identification with kinetic field-space curvature.",
+          "refs": [
+            "n10",
+            "u30",
+            "n2",
+            "q5"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "4a2a41a40bef713e4d923efd742c9e2d7ebf3babe56b8c31a2aa95e207083996",
+          "candidateIds": [
+            "q025-candidate-question:c8d3fbad94a53baf0bffa5fe",
+            "q025-candidate-question:4592028a976cb6e398ae76a2",
+            "q025-candidate-question:c5267f5181cc7692f3008718",
+            "q025-candidate-question:a05f59a1dec059e15829abff",
+            "q025-candidate-question:d9e9e00415abb7105f05f79c"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported by u30's complete description. The historical home definition is absent. No dynamical-system equations, stability eigenvalues or asymptotic classification were independently checked. Global exact-source/target-neighbor lookup is required before admission."
+      },
+      "scopeContentSha256": "b510063e0fa83429f54048630601fe7fe522cb2113084bff13cc12979f53d2a1"
+    },
+    {
+      "id": "q025-placement-question:69a6091a1d7d4b6c798204a8",
+      "kind": "question",
+      "title": "Minimal MSSM quivers as periodic cascade endpoints",
+      "question": "Can the minimal quiver realization of the MSSM terminate a periodic Seiberg-duality cascade after adding only one gauge node, and what restrictions follow on Higgs content and generations?",
+      "summary": "Organizes the existence and matter-content constraints of the specified minimal quiver extension as one gauge-dynamics question.",
+      "scope": {
+        "systems": [
+          "The minimal quiver realization of the MSSM and its extension by one additional gauge node"
+        ],
+        "targets": [
+          "Whether the minimal MSSM quiver can terminate a periodic Seiberg-duality cascade",
+          "Restrictions on Higgs content",
+          "Restrictions on the number or organization of generations"
+        ],
+        "regimes": [
+          "Periodic Seiberg-duality cascades in the stated quiver setting",
+          "The restriction to adding only one gauge node"
+        ],
+        "assumptions": [
+          "The source supplies a gauge-dynamics question, not an established compactification realization",
+          "Cascade existence and the resulting matter restrictions remain questions to be assessed together"
+        ],
+        "conventions": [
+          "Minimality refers to the source's MSSM quiver and the stated one-node extension",
+          "Higgs and generation restrictions are not a complete phenomenological fit"
+        ],
+        "includes": [
+          "The linked endpoint, Higgs-content and generation targets of the complete source question"
+        ],
+        "excludes": [
+          "Inferring a brane or string compactification from the quiver description",
+          "Claims about arbitrary additional-node extensions",
+          "Identification with Wilson-line constructions or a different exact-RG problem based only on shared gauge-theory terminology",
+          "A general classification of all MSSM quivers or all Seiberg-duality cascades"
+        ]
+      },
+      "methods": [
+        "Seiberg-duality cascade analysis",
+        "Quiver gauge-node and matter-content constraints"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:38a3c890431305696dc7c50f878d095950aae7af5df93a4d8fe020a074a7857a"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported only by the complete u3 description and its exact paired annotations in r0. No primary text or proof was read. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0002:n0",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0002",
+          "localRef": "n0",
+          "definition": {
+            "id": "n0",
+            "kind": "question",
+            "title": "Minimal MSSM quivers as periodic cascade endpoints",
+            "question": "Can the minimal quiver realization of the MSSM terminate a periodic Seiberg-duality cascade after adding only one gauge node, and what restrictions follow on Higgs content and generations?",
+            "summary": "Organizes the existence and matter-content constraints of the specified minimal quiver extension as one gauge-dynamics question.",
+            "scope": {
+              "systems": [
+                "The minimal quiver realization of the MSSM and its extension by one additional gauge node"
+              ],
+              "targets": [
+                "Whether the minimal MSSM quiver can terminate a periodic Seiberg-duality cascade",
+                "Restrictions on Higgs content",
+                "Restrictions on the number or organization of generations"
+              ],
+              "regimes": [
+                "Periodic Seiberg-duality cascades in the stated quiver setting",
+                "The restriction to adding only one gauge node"
+              ],
+              "assumptions": [
+                "The source supplies a gauge-dynamics question, not an established compactification realization",
+                "Cascade existence and the resulting matter restrictions remain questions to be assessed together"
+              ],
+              "conventions": [
+                "Minimality refers to the source's MSSM quiver and the stated one-node extension",
+                "Higgs and generation restrictions are not a complete phenomenological fit"
+              ],
+              "includes": [
+                "The linked endpoint, Higgs-content and generation targets of the complete source question"
+              ],
+              "excludes": [
+                "Inferring a brane or string compactification from the quiver description",
+                "Claims about arbitrary additional-node extensions",
+                "Identification with Wilson-line constructions or a different exact-RG problem based only on shared gauge-theory terminology",
+                "A general classification of all MSSM quivers or all Seiberg-duality cascades"
+              ]
+            },
+            "methods": [
+              "Seiberg-duality cascade analysis",
+              "Quiver gauge-node and matter-content constraints"
+            ],
+            "readingCoverage": "Supported only by the complete u3 description and its exact paired annotations in r0. No primary text or proof was read. The proposed definition requires the pinned global exact-source/target-neighbor lookup before admission; absence of an adequate supplied scope does not establish global novelty.",
+            "refs": [
+              "u3",
+              "r0",
+              "q0",
+              "q9",
+              "q10"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0002:proposal",
+          "placement-scope:placement-continuation-0002:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n0",
+          "verdict": "retain",
+          "reason": "Retain the exact scientific definition: u3 supports its minimal MSSM quiver, periodic cascade, one-added-node restriction and linked Higgs/generation targets. No supplied existing scope establishes complete coverage, and no unsupported cascade result or compactification is built into the definition. The inherited empty revisesRef identifies no valid revision target; it is a record defect requiring correction before admission, not grounds to invent a target or duplicate the unchanged definition.",
+          "refs": [
+            "n0",
+            "u3",
+            "r0",
+            "q0",
+            "q9",
+            "q10"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "41ade0ebb689b2144e7acb0f0d43f7e3b1f20609dd5937850c6af46fc760cb51",
+          "candidateIds": [
+            "q025-candidate-question:06a7757496a767fab50ad207",
+            "q025-candidate-question:8066d1926be7f40e262b07b6",
+            "q025-candidate-region:7b614634ab6daa5c973dec85",
+            "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+            "q025-candidate-question:3c7adda67c8ba19b9611dbda"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported only by the complete u3 description and its exact paired annotations in r0. No primary text or proof was read. The proposed definition requires the pinned global exact-source/target-neighbor lookup before admission; absence of an adequate supplied scope does not establish global novelty."
+      },
+      "scopeContentSha256": "3f1532f91c2fc9f2666840e8c1b3cd2b40d584fcf5df95891f20ac2d3239cc82"
+    },
+    {
+      "id": "q025-placement-question:675ca09570a796f3bba899ec",
+      "kind": "question",
+      "title": "Two-dimensional field theories for automorphism-glued targets",
+      "question": "How can a target with automorphism-valued global gluing be represented by a concrete two-dimensional field theory?",
+      "summary": "Construct a field-theoretic realization of specified target gluing, keeping gluing automorphisms distinct from an independently established physical symmetry.",
+      "scope": {
+        "systems": [
+          "Two-dimensional field theories representing targets with automorphism-valued global gluing"
+        ],
+        "targets": [
+          "Concrete field-theory realization of the target",
+          "Compatibility of the field-theory construction with the target's global gluing data"
+        ],
+        "regimes": [
+          "Two-dimensional field-theory descriptions with the specified global target gluing"
+        ],
+        "assumptions": [
+          "Automorphism-valued gluing is supplied target data; it does not by itself establish a physical global-symmetry target"
+        ],
+        "conventions": [
+          "Target gluing automorphisms, gauge redundancy and physical global symmetry are not identified without an explicit physical construction"
+        ],
+        "includes": [
+          "The relation between target gluing data and a concrete two-dimensional theory"
+        ],
+        "excludes": [
+          "Quantum-gravity symmetry restrictions inferred solely from the word global",
+          "Unspecified supersymmetry, brane content, duality group or gravitational coupling"
+        ]
+      },
+      "methods": [
+        "Construction of a two-dimensional field theory compatible with the specified target gluing"
+      ],
+      "aliases": [],
+      "evidenceIds": [
+        "unit:91158543faac0787adb952dc93b2b0c5eabbfc34d5e3b0d879daba8e67770f33"
+      ],
+      "scientificStatus": "source_description_supported",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Supported only by u29's complete supplied description and its paired r2 annotations. No primary text or additional model details were supplied or reread. Global scope comparison is bounded; no global uniqueness is claimed.",
+        "sourceReadingScope": "Complete exact source descriptions, supplied historical annotations and independent retained scope/whole-target judgments. Missing historical definitions and empty annotation fields remain unavailable rather than reconstructed. No new primary reading, full-paper or proof verification."
+      },
+      "scopeDecisionId": "decision:placement-new-scope:placement-continuation-0007:n0",
+      "provenance": {
+        "originalScope": {
+          "familyId": "placement-continuation-0007",
+          "localRef": "n0",
+          "definition": {
+            "id": "n0",
+            "kind": "question",
+            "title": "Two-dimensional field theories for automorphism-glued targets",
+            "question": "How can a target with automorphism-valued global gluing be represented by a concrete two-dimensional field theory?",
+            "summary": "Construct a field-theoretic realization of specified target gluing, keeping gluing automorphisms distinct from an independently established physical symmetry.",
+            "scope": {
+              "systems": [
+                "Two-dimensional field theories representing targets with automorphism-valued global gluing"
+              ],
+              "targets": [
+                "Concrete field-theory realization of the target",
+                "Compatibility of the field-theory construction with the target's global gluing data"
+              ],
+              "regimes": [
+                "Two-dimensional field-theory descriptions with the specified global target gluing"
+              ],
+              "assumptions": [
+                "Automorphism-valued gluing is supplied target data; it does not by itself establish a physical global-symmetry target"
+              ],
+              "conventions": [
+                "Target gluing automorphisms, gauge redundancy and physical global symmetry are not identified without an explicit physical construction"
+              ],
+              "includes": [
+                "The relation between target gluing data and a concrete two-dimensional theory"
+              ],
+              "excludes": [
+                "Quantum-gravity symmetry restrictions inferred solely from the word global",
+                "Unspecified supersymmetry, brane content, duality group or gravitational coupling"
+              ]
+            },
+            "methods": [
+              "Construction of a two-dimensional field theory compatible with the specified target gluing"
+            ],
+            "readingCoverage": "Supported only by u29's complete supplied description and its paired r2 annotations. No primary text or additional model details were supplied or reread. The scope remains a proposal and requires the pinned global exact-source/target-neighbor lookup before admission.",
+            "refs": [
+              "u29",
+              "r2"
+            ],
+            "revisesRef": ""
+          }
+        },
+        "sourceReviewIds": [
+          "placement-scope:placement-continuation-0007:proposal",
+          "placement-scope:placement-continuation-0007:challenge"
+        ],
+        "independentScopeAssessment": {
+          "ref": "n0",
+          "verdict": "retain",
+          "reason": "Retain the exact scientific definition: u29 supports a concrete two-dimensional realization of automorphism-valued target gluing, and n0 adds no unsupported physical system or regime. No supplied admitted scope affirmatively covers that target. The prior revisesRef value is an empty string, which supplies no valid revision target; this is a provenance defect to resolve before admission, not grounds to invent a target or duplicate the supported definition under a new ID.",
+          "refs": [
+            "n0",
+            "u29",
+            "r2",
+            "q19"
+          ]
+        },
+        "globalLookup": {
+          "input": "research/q025/assembly/placement-incremental-v1/cut-02/exception-intake.json",
+          "definitionSha256": "4e1d940081bde25fad922b8ebe9737808f6c83d8c35b5a72062ca3b353f2cb83",
+          "candidateIds": [
+            "q025-candidate-question:c124179f43a09ee9ccfafac7",
+            "q025-candidate-question:0cd6cb3f68868453b5558f45",
+            "q025-candidate-question:da2b38749f8c655a444b47b0",
+            "q025-candidate-region:4cc7822d1087586ac5fdc244",
+            "q025-candidate-region:cea1d45ac3ad0a880f6e9112"
+          ],
+          "method": "Exact source support plus inverse-frequency weighted title/question/target overlap; deterministic nominations only, no semantic equality or global-absence claim."
+        },
+        "atomicSourceIdentityNotAsserted": true,
+        "currentWorkflowStatus": "scope_admitted_by_delegated_unchanged_pair_class",
+        "originalReadingLimit": "Supported only by u29's complete supplied description and its paired r2 annotations. No primary text or additional model details were supplied or reread. The scope remains a proposal and requires the pinned global exact-source/target-neighbor lookup before admission."
+      },
+      "scopeContentSha256": "d8b57b981e305e97454881a4947fad9a16ceaaa4231426831d40643ce43aec1d"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:838a1000b5817b7003d0f4ac"
+      ],
+      "scopeContentSha256": "a82336c56196ba2a742d8e6474bb582cb249ba1a8ce21b8bae3cd02437e715e4",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:a15161de2dbf09b20b49e55a9b7c3f728dc6ef954e66622e73bbe21c96332abc",
+          "textSha256": "d62c081e1e8f4f0807372133c0e85a9a0209bb5c7f60853fb624935782b9e1fd"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n1",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:c2c4d376fded4fd9ec845c4f"
+      ],
+      "scopeContentSha256": "1d6f11ff8f07983d48abc4c1bd6c2ea01d3ff61f96dbf9aa729cec5a71bdb377",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:1a7bb8b466813a46cd781eb458484122b6450008a2740cd27a0ea6eee97a3ac3",
+          "textSha256": "8da19eb6675b0f865ae1189bf28c637f365c3d942a78429876b5e0b87047c311"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n2",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:44697e3691f6e44e3e1e1bb0"
+      ],
+      "scopeContentSha256": "8f597999eeaed1a5ca53d92a89da2be85f93ac7c11d8259b9a1425dde8274bf2",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:3cf01eca46c2fe19ec950e902ea40c0b0e4229b189bff2924b9d206f4e14e59d",
+          "textSha256": "970b5a32744f667fe172905f1715d53b172477de8de30980b08287a2d13f25ff"
+        },
+        {
+          "kind": "description",
+          "unitId": "unit:1dc49a878e8b206f4a56ba197748a2af221312c767a3a300b623ad7a31ca2566",
+          "textSha256": "bd7d168665c1dd76cd0e7ef8fc1ff68bec52bcf14acf2adfb387d5e768169bae"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n3",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:a6c431fffc9d99f097798fa0"
+      ],
+      "scopeContentSha256": "30107c53a8adb99b85fa51ff876ede758dd6df6128e2f4784484e919aea1e549",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:eb660f73f37eff5179f9524519d7725bcbad5440cdb7bfa193e46756e2317ce8",
+          "textSha256": "2ce8248d74a05128e8b9a98f22425ca2590b457fa8e74b3b3adc94ebe732cece"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n4",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:0ac74cef244ac2c3f1f39dc2"
+      ],
+      "scopeContentSha256": "6c4e4180769bad16fc625fe53b33e25ef556517890a396ac79389bd0db9e9dd2",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:35e8fb1f5aed449bd86e082f7e7523b974982487065d859765dde33b9044908a",
+          "textSha256": "f6e031d0ed26329280c0e06ee11497e160b9b51381cf130f3cee45f59147881b"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n5",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:8ab6f869887ed8c458a9ad0d"
+      ],
+      "scopeContentSha256": "71e7f8761948547996b14ae9d5fac40d40edabc281445480dada78f389767e99",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:8fe0d15685de104a1e722a1ea8e9760aab859192ae93400289220e1b36f20cb3",
+          "textSha256": "30149dee581c2367f7098502386d77e06c1facc1e5c0a26642f00294a299e1e2"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n6",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:8779f55609707e9925082731"
+      ],
+      "scopeContentSha256": "4cca4cff289e7cc3ddfc9a9c34f8f95af5b7df19fbe8dee5fff05d6904eccd78",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:5725c6aa774b18e89c8af2990edf6321e5de778b69207580aae3d9e3b798a29b",
+          "textSha256": "2dffd935c02bc17dff9254b6519ae6b68c5d9c868fab8c32787efa8a28e27100"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n7",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:201e248a4305b81251c0280b"
+      ],
+      "scopeContentSha256": "1e138b7b64a9c4e9795f4185a76a1931f35495940d0b0d0a6ad9ca3394f738d2",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:9bb34b100efaa642ac27a074cbde4a347a12828aa3965f9b314756b80ca4c3a9",
+          "textSha256": "a66026726f4dfc784c724bcf10980831f05d1a21bb441210675954c06a77d5eb"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n8",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:f90a05102f27ddce5318b376"
+      ],
+      "scopeContentSha256": "7948b0c1f598b86af440bbcbea8261f3f0b0e9830b6a0c99bab5418c669a323e",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:e950a4a9e0c3f8cf3484be6d530b8a6a63216f84d81bba8f914b3d64c108acda",
+          "textSha256": "0d19a80c7aa238d875a303d12ab95fa6294d46631b7c2d7fc9c89c8eee8bb8c4"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n9",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:770ce54bb09582713cece152"
+      ],
+      "scopeContentSha256": "5215df7c96c9a3db0f2ccfd6a1efc4e087e7503914cbcdba7ccb2ab8c75bd67a",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:f9bed7c935c8da6d3f6ef1562535fd2b6aca68f0f2ce8e18636a3aab96d01343",
+          "textSha256": "77cae9b20b6ceed28e3e3fbb15afee7652e4a000bd2ffc588e0e81e8fd5dbe08"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0014:n10",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:1ff0f83a16ce3f98aa3e6fb4"
+      ],
+      "scopeContentSha256": "b510063e0fa83429f54048630601fe7fe522cb2113084bff13cc12979f53d2a1",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0014:proposal",
+        "placement-scope:placement-continuation-0014:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:0451ea791f106674b6ae4dd220aaa37b25218f2646c5278ee742c1a6e5f81504",
+          "textSha256": "7540f6c517b005fbaf34e9482ffa92e61ed3a5dc2b9c5bb8db9637bdb7f75b1a"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0002:n0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:69a6091a1d7d4b6c798204a8"
+      ],
+      "scopeContentSha256": "3f1532f91c2fc9f2666840e8c1b3cd2b40d584fcf5df95891f20ac2d3239cc82",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0002:proposal",
+        "placement-scope:placement-continuation-0002:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:38a3c890431305696dc7c50f878d095950aae7af5df93a4d8fe020a074a7857a",
+          "textSha256": "778c4fcbff6e43468f54256152ae5c361bcf5f9f3c31461dd9d40052c43a6800"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    },
+    {
+      "id": "decision:placement-new-scope:placement-continuation-0007:n0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-placement-question:675ca09570a796f3bba899ec"
+      ],
+      "scopeContentSha256": "d8b57b981e305e97454881a4947fad9a16ceaaa4231426831d40643ce43aec1d",
+      "challengerAgreement": "coordinator_adjudicated_scope",
+      "sourceReviewIds": [
+        "placement-scope:placement-continuation-0007:proposal",
+        "placement-scope:placement-continuation-0007:challenge",
+        "root-policy:placement-scope-class-cut02"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "description",
+          "unitId": "unit:91158543faac0787adb952dc93b2b0c5eabbfc34d5e3b0d879daba8e67770f33",
+          "textSha256": "8d5d3406c67251436455fd9ec66fd11d9ecbb519da8bdbef4c3aac3d1104c67d"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+          "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+          "bytes": 23508
+        }
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "placement-scope:placement-continuation-0014:proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/placement-successors-v1/jobs/successor-placement-continuation-0014-proposal/reply.json",
+      "sha256": "083c649ff4b19b4bb96c2b31f1e437d970327ba26fbe8ea1036b08d419f1d706",
+      "bytes": 97739,
+      "kind": "source_description_and_prior_annotation_review",
+      "stage": "proposal"
+    },
+    {
+      "id": "placement-scope:placement-continuation-0014:challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/placement-successors-v1/jobs/successor-placement-continuation-0014-challenge/reply.json",
+      "sha256": "31094e6a8b93628c65a9330bc5d49d7d965a8ba8ff0343c6ff8573c1d06b25fa",
+      "bytes": 91186,
+      "kind": "source_description_and_prior_annotation_review",
+      "stage": "challenge"
+    },
+    {
+      "id": "placement-scope:placement-continuation-0002:proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/placement-tail-recovery-v1/jobs/placement-tail-0002-proposal/reply.json",
+      "sha256": "e946e2eb9b83065e0721064c8b1f41a9f29d23dec9eca1eb62a5211b2f61430e",
+      "bytes": 82733,
+      "kind": "source_description_and_prior_annotation_review",
+      "stage": "proposal"
+    },
+    {
+      "id": "placement-scope:placement-continuation-0002:challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/placement-tail-recovery-v1/jobs/placement-tail-0002-challenge/reply.json",
+      "sha256": "f08d80bff06b49d3913abda8c2fd5dd588241c10de7a6531ebb920483f85bcca",
+      "bytes": 91413,
+      "kind": "source_description_and_prior_annotation_review",
+      "stage": "challenge"
+    },
+    {
+      "id": "placement-scope:placement-continuation-0007:proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/placement-tail-recovery-v1/jobs/placement-tail-0007-proposal/reply.json",
+      "sha256": "d5ae37433faa9fc12f669e0c4ab424018ff1dd3220c6d95cd73f84952fd444cf",
+      "bytes": 87040,
+      "kind": "source_description_and_prior_annotation_review",
+      "stage": "proposal"
+    },
+    {
+      "id": "placement-scope:placement-continuation-0007:challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/placement-tail-recovery-v1/jobs/placement-tail-0007-challenge/reply.json",
+      "sha256": "83a577795c4794588264c6daf455d40e3695a70cc74a0c52c216108416080654",
+      "bytes": 96040,
+      "kind": "source_description_and_prior_annotation_review",
+      "stage": "challenge"
+    },
+    {
+      "id": "root-policy:placement-scope-class-cut02",
+      "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+      "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+      "bytes": 23508,
+      "kind": "explicit_coordinator_scope_class_admission"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/placement-scope-review-v3/scope-class-admission.json",
+    "sha256": "28a11fdf505e371dbd2e93681758862248b73fd198ab11261eb92b6ca041753f",
+    "bytes": 23508
+  },
+  "placements": [],
+  "sourceContributions": [],
+  "relations": [],
+  "aliases": [],
+  "typedCanonicalOperations": [],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [],
+  "fullAtlasAdmission": false
+}
