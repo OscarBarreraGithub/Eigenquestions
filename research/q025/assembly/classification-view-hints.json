@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "q025-classification-display-hints/1",
+  "orientationSha256": "ba62b1d78cc13d47c22c5fbee147291a6b5a7d28859b0b1c22d896b5c60f1771",
+  "destinationsSha256": "4d271d9334b6519a7e7046b99ccb86f20614363034b375733fd60de67cd6d434",
+  "layoutId": "physics-classification-v2.8.0-shared-descendants-graph-stress-v2",
+  "storedCoordinatesChanged": false,
+  "edgesAdded": 0,
+  "counts": {
+    "disciplineAnchors": 17,
+    "faintAreaPoints": 194,
+    "exactClassificationEdges": 211,
+    "sharedAreas": 13,
+    "excessParentAssignments": 17
+  },
+  "components": [
+    {
+      "component": 0,
+      "nodeCount": 197,
+      "disciplineCount": 16,
+      "areaCount": 181,
+      "bounds": {
+        "minX": -0.8246596477331618,
+        "maxX": 0.9983694900316095,
+        "minY": -0.8618894984264168,
+        "maxY": 0.9222526018334704
+      },
+      "interComponentDistancesMeaningful": false
+    },
+    {
+      "component": 1,
+      "nodeCount": 14,
+      "disciplineCount": 1,
+      "areaCount": 13,
+      "bounds": {
+        "minX": 2.0671061636967756,
+        "maxX": 3.9600192687907705,
+        "minY": -0.9297238519289927,
+        "maxY": 0.9299206421391093
+      },
+      "interComponentDistancesMeaningful": false,
+      "label": "Physics education classification branch",
+      "meaning": "Separate component under shared descendant-concept affinity; this does not imply intellectual isolation."
+    }
+  ],
+  "disciplineAnchors": [
+    {
+      "destinationId": "classification:c3ec1cb0-fc2e-4669-a886-a82178c6ceda",
+      "x": 0.14597250310950793,
+      "y": 0.7315282742171598,
+      "depth": 0,
+      "mass": 43,
+      "component": 0,
+      "title": "Accelerators & Beams",
+      "childCount": 5,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:8ab3d2b7-b50b-460e-b086-8990cfcbd350",
+      "x": 0.3804207766196622,
+      "y": 0.16675649851966182,
+      "depth": 0,
+      "mass": 274,
+      "component": 0,
+      "title": "Atomic, Molecular & Optical",
+      "childCount": 7,
+      "sharedChildCount": 0
+    },
+    {
+      "destinationId": "classification:a48f173e-6459-4642-a711-a6e731807625",
+      "x": 0.031316242825733094,
+      "y": 0.19321399939581535,
+      "depth": 0,
+      "mass": 536,
+      "component": 0,
+      "title": "Condensed Matter, Materials & Applied Physics",
+      "childCount": 18,
+      "sharedChildCount": 4
+    },
+    {
+      "destinationId": "classification:e6f3f236-70e5-473b-bcca-82da13857537",
+      "x": 0.22517157492355475,
+      "y": 0.07498651281796513,
+      "depth": 0,
+      "mass": 111,
+      "component": 0,
+      "title": "Energy Science & Technology",
+      "childCount": 4,
+      "sharedChildCount": 0
+    },
+    {
+      "destinationId": "classification:512fd433-7b6d-4535-bb60-78f3bf431bc3",
+      "x": -0.20160527039697174,
+      "y": -0.1682004620818659,
+      "depth": 0,
+      "mass": 223,
+      "component": 0,
+      "title": "Fluid Dynamics",
+      "childCount": 31,
+      "sharedChildCount": 2
+    },
+    {
+      "destinationId": "classification:0f4313da-ec73-46f5-b24f-521a1fcb6db7",
+      "x": 0.6138220963516346,
+      "y": -0.34759089574073776,
+      "depth": 0,
+      "mass": 74,
+      "component": 0,
+      "title": "Gravitation, Cosmology & Astrophysics",
+      "childCount": 8,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:e4211828-5d99-4bc4-b986-eb2bbbc8b248",
+      "x": 0.06868474487992132,
+      "y": -0.10657682289428179,
+      "depth": 0,
+      "mass": 83,
+      "component": 0,
+      "title": "Interdisciplinary Physics",
+      "childCount": 13,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:c9174048-b368-4b5b-b065-20094708fa4d",
+      "x": -0.5647429403076645,
+      "y": 0.15537393416394624,
+      "depth": 0,
+      "mass": 57,
+      "component": 0,
+      "title": "Networks",
+      "childCount": 13,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:6f025065-4b96-4156-b146-2c285d0994c4",
+      "x": -0.26397821115670944,
+      "y": -0.019442238085194255,
+      "depth": 0,
+      "mass": 26,
+      "component": 0,
+      "title": "Nonlinear Dynamics",
+      "childCount": 7,
+      "sharedChildCount": 3
+    },
+    {
+      "destinationId": "classification:0213a5a0-0742-43f3-804b-3ccea08a13c0",
+      "x": 0.6914959576878202,
+      "y": -0.03379082434621119,
+      "depth": 0,
+      "mass": 131,
+      "component": 0,
+      "title": "Nuclear Physics",
+      "childCount": 8,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:9f5c878e-b7b7-4030-bdb9-21a24ad97422",
+      "x": 0.6376313256322691,
+      "y": -0.12650855634686148,
+      "depth": 0,
+      "mass": 158,
+      "component": 0,
+      "title": "Particles & Fields",
+      "childCount": 12,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:88db3168-1ae3-4ee7-a7f8-b83018cc5f17",
+      "x": 2.9813056791443544,
+      "y": -0.00009219456108822032,
+      "depth": 0,
+      "mass": 14,
+      "component": 1,
+      "title": "Physics Education Research",
+      "childCount": 13,
+      "sharedChildCount": 0
+    },
+    {
+      "destinationId": "classification:0e9db8ef-5aa8-40bc-a0c8-9d93f5fcc2eb",
+      "x": -0.4200503261984571,
+      "y": -0.07956955490914654,
+      "depth": 0,
+      "mass": 278,
+      "component": 0,
+      "title": "Physics of Living Systems",
+      "childCount": 5,
+      "sharedChildCount": 0
+    },
+    {
+      "destinationId": "classification:5375b253-b0a1-4ece-bb50-4c34ea7218bd",
+      "x": -0.10024279259608593,
+      "y": -0.5594682405269955,
+      "depth": 0,
+      "mass": 114,
+      "component": 0,
+      "title": "Plasma Physics",
+      "childCount": 18,
+      "sharedChildCount": 1
+    },
+    {
+      "destinationId": "classification:2bd35371-7fda-477a-8e1a-c346c797a232",
+      "x": -0.019871071097200942,
+      "y": 0.16500624603041486,
+      "depth": 0,
+      "mass": 406,
+      "component": 0,
+      "title": "Polymers & Soft Matter",
+      "childCount": 23,
+      "sharedChildCount": 7
+    },
+    {
+      "destinationId": "classification:510fc218-8774-4547-ab09-fc6cef0c9a03",
+      "x": 0.21961881486446158,
+      "y": 0.3990343589825464,
+      "depth": 0,
+      "mass": 126,
+      "component": 0,
+      "title": "Quantum Information, Science & Technology",
+      "childCount": 4,
+      "sharedChildCount": 0
+    },
+    {
+      "destinationId": "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60",
+      "x": -0.04058291281113845,
+      "y": 0.1502223369494905,
+      "depth": 0,
+      "mass": 184,
+      "component": 0,
+      "title": "Statistical Physics & Thermodynamics",
+      "childCount": 22,
+      "sharedChildCount": 7
+    }
+  ],
+  "sharedAreas": [
+    {
+      "destinationId": "classification:5f099028-76e7-4a1c-b549-61c441f6241f",
+      "title": "Radio frequency techniques",
+      "parentIds": [
+        "classification:c3ec1cb0-fc2e-4669-a886-a82178c6ceda",
+        "classification:a48f173e-6459-4642-a711-a6e731807625"
+      ],
+      "parentTitles": [
+        "Accelerators & Beams",
+        "Condensed Matter, Materials & Applied Physics"
+      ]
+    },
+    {
+      "destinationId": "classification:36754399-ec2b-4962-bb07-ca12c79834e8",
+      "title": "Transport phenomena",
+      "parentIds": [
+        "classification:a48f173e-6459-4642-a711-a6e731807625",
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Condensed Matter, Materials & Applied Physics",
+        "Polymers & Soft Matter",
+        "Statistical Physics & Thermodynamics"
+      ]
+    },
+    {
+      "destinationId": "classification:eef7c13b-c67f-4d33-be97-76cee58e700a",
+      "title": "Surface & interfacial phenomena",
+      "parentIds": [
+        "classification:a48f173e-6459-4642-a711-a6e731807625",
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232"
+      ],
+      "parentTitles": [
+        "Condensed Matter, Materials & Applied Physics",
+        "Polymers & Soft Matter"
+      ]
+    },
+    {
+      "destinationId": "classification:f2a9db78-1651-4a94-b66e-3e3d72056760",
+      "title": "Phase transitions",
+      "parentIds": [
+        "classification:a48f173e-6459-4642-a711-a6e731807625",
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Condensed Matter, Materials & Applied Physics",
+        "Polymers & Soft Matter",
+        "Statistical Physics & Thermodynamics"
+      ]
+    },
+    {
+      "destinationId": "classification:87e64a0f-c935-44dd-a3ef-ae868d3a6389",
+      "title": "Rheology",
+      "parentIds": [
+        "classification:512fd433-7b6d-4535-bb60-78f3bf431bc3",
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232"
+      ],
+      "parentTitles": [
+        "Fluid Dynamics",
+        "Polymers & Soft Matter"
+      ]
+    },
+    {
+      "destinationId": "classification:c25108e7-4697-4565-b484-221b808d454e",
+      "title": "Magnetohydrodynamics",
+      "parentIds": [
+        "classification:512fd433-7b6d-4535-bb60-78f3bf431bc3",
+        "classification:5375b253-b0a1-4ece-bb50-4c34ea7218bd"
+      ],
+      "parentTitles": [
+        "Fluid Dynamics",
+        "Plasma Physics"
+      ]
+    },
+    {
+      "destinationId": "classification:2f065729-56f9-49ab-b8e6-f2daa86321bd",
+      "title": "Global Positioning System",
+      "parentIds": [
+        "classification:0f4313da-ec73-46f5-b24f-521a1fcb6db7",
+        "classification:e4211828-5d99-4bc4-b986-eb2bbbc8b248"
+      ],
+      "parentTitles": [
+        "Gravitation, Cosmology & Astrophysics",
+        "Interdisciplinary Physics"
+      ]
+    },
+    {
+      "destinationId": "classification:5b3df46f-4812-4196-8c68-7fb8577cdd80",
+      "title": "Synchronization",
+      "parentIds": [
+        "classification:c9174048-b368-4b5b-b065-20094708fa4d",
+        "classification:6f025065-4b96-4156-b146-2c285d0994c4",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Networks",
+        "Nonlinear Dynamics",
+        "Statistical Physics & Thermodynamics"
+      ]
+    },
+    {
+      "destinationId": "classification:50cc79d6-1a27-4ef3-9ea8-40f8f29ce40e",
+      "title": "Population dynamics",
+      "parentIds": [
+        "classification:6f025065-4b96-4156-b146-2c285d0994c4",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Nonlinear Dynamics",
+        "Statistical Physics & Thermodynamics"
+      ]
+    },
+    {
+      "destinationId": "classification:8e35265c-459a-43fc-9eb8-73e1dd82b47c",
+      "title": "Pattern formation",
+      "parentIds": [
+        "classification:6f025065-4b96-4156-b146-2c285d0994c4",
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Nonlinear Dynamics",
+        "Polymers & Soft Matter",
+        "Statistical Physics & Thermodynamics"
+      ]
+    },
+    {
+      "destinationId": "classification:0b08c33f-27b1-4bbf-90f9-1eb1bf63d1eb",
+      "title": "Strong interaction",
+      "parentIds": [
+        "classification:0213a5a0-0742-43f3-804b-3ccea08a13c0",
+        "classification:9f5c878e-b7b7-4030-bdb9-21a24ad97422"
+      ],
+      "parentTitles": [
+        "Nuclear Physics",
+        "Particles & Fields"
+      ]
+    },
+    {
+      "destinationId": "classification:609a2adc-099f-463f-9e2a-dd85c0101044",
+      "title": "Thermodynamics",
+      "parentIds": [
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Polymers & Soft Matter",
+        "Statistical Physics & Thermodynamics"
+      ]
+    },
+    {
+      "destinationId": "classification:c6d9db47-7b2d-4d3b-868a-606b65695e3c",
+      "title": "Fluctuations & noise",
+      "parentIds": [
+        "classification:2bd35371-7fda-477a-8e1a-c346c797a232",
+        "classification:419d860e-ce5c-42f1-b6ad-4dee9f4fbf60"
+      ],
+      "parentTitles": [
+        "Polymers & Soft Matter",
+        "Statistical Physics & Thermodynamics"
+      ]
+    }
+  ],
+  "displayPolicy": {
+    "graph": "Draw all recorded area points and classification edges faintly; emphasize actual selected/hovered incidence.",
+    "labels": "Readable discipline labels may move in screen space only; leader lines terminate at their unchanged projected source coordinates.",
+    "mobile": "Show the actual graph above accessible full-name field selectors; avoid replacing points with a grid.",
+    "education": "A framed packed component or labeled inset is valid; use a uniform component display transform and disclose that between-component spacing has no meaning.",
+    "edgeMeaning": "Only the exact recorded discipline-to-area assignments are taxonomy edges; shared areas have one ID and every recorded parent.",
+    "noEmpiricalAllPhysicsMetric": true
+  }
+}

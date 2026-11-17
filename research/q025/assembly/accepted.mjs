@@ -1,13 +1,15 @@
 /** Deterministic compilation of explicit adjudicated organization decisions. */
 import {hydrateSources,sha256} from './corpus.mjs';
+import {validateCanonicalIdentity} from './fine-identities.mjs';
 
 const fail=message=>{throw new Error(`Accepted assembly: ${message}`);};
 const setHash=ids=>sha256([...new Set(ids)].sort().join('\n'));
 const mapUnique=(rows,name)=>{const out=new Map();for(const row of rows){if(!row?.id||out.has(row.id))fail(`duplicate/missing ${name} ID`);out.set(row.id,row);}return out;};
 const navigationTypes=new Set(['narrower','method_for','application_of','comparison','premise_check','related_question']);
-const emptyScope=()=>Object.fromEntries(['assumptions','includes','excludes','regimes','conventions'].map(k=>[k,[]]));
 export const scopeContentHash=d=>sha256(JSON.stringify(Object.fromEntries(['kind','title','question','summary','scope','scientificStatus','readingCoverage','evidenceIds'].map(k=>[k,d[k]]))));
 export const acceptedContentHash=packet=>sha256(JSON.stringify(Object.fromEntries(Object.entries(packet).filter(([key])=>key!=='acceptance'))));
+export const sourceContributionContentHash=(row,scopeContentSha256)=>sha256(JSON.stringify({unitId:row.unitId,destinationId:row.destinationId,role:row.role,basis:row.basis,evidenceRefs:row.evidenceRefs,scopeContentSha256,...(row.qualification!==undefined?{qualification:row.qualification}:{})}));
+export const provenanceRelationContentHash=row=>sha256(JSON.stringify({sourceReviewId:row.sourceReviewId,sourceRef:row.sourceRef,targetRef:row.targetRef,proposedType:row.proposedType,interpretation:row.interpretation,evidenceRefs:row.evidenceRefs}));
 
 export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,verifiedReceiptHashes=new Set(),fixture=false}) {
   if(packet.schemaVersion!=='q025-accepted-atlas/1')fail('unsupported acceptance packet');
@@ -25,7 +27,7 @@ export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,
   }
   for(const bin of leaves)for(const uid of bin.memberIds){if(priorByUnit.has(uid))fail('original leaf partition is not unique');priorByUnit.set(uid,bin.id);}
   if(questions.some(u=>!priorByUnit.has(u.id)))fail('original leaf partition does not conserve the question corpus');
-  const decisions=mapUnique(packet.decisions||[],'decision'),reviews=new Set((packet.reviewRegistry||[]).map(r=>r.id));
+  const decisions=mapUnique(packet.decisions||[],'decision'),reviewRecords=mapUnique(packet.reviewRegistry||[],'review'),reviews=new Set(reviewRecords.keys());
   function decision(id,types){
     const d=decisions.get(id);if(!d||d.status!=='accepted'||!types.includes(d.type))fail(`missing admitted decision ${id}`);
     if(!d.sourceReviewIds?.length||d.sourceReviewIds.some(r=>!reviews.has(r)))fail(`unresolved review provenance ${id}`);
@@ -47,21 +49,52 @@ export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,
     admitScope(d);
     if(!d.title||!d.question||!d.summary||!d.scientificStatus||!d.readingCoverage)fail(`missing reviewed readable scope ${d.id}`);
     if(d.aliases?.length)fail('aliases must be separate equivalence decisions');
-    d.scope={...emptyScope(),...d.scope};d.aliases=[];d.contextSourceIds=d.contextSourceIds||[];
+    if(!d.scope||typeof d.scope!=='object'||Array.isArray(d.scope))fail(`missing exact reviewed scope ${d.id}`);
+    // Retain the exact admitted nested key order; even a harmless default-field
+    // normalization would invalidate the shared content hash.
+    d.scope={...d.scope};d.aliases=[];d.contextSourceIds=d.contextSourceIds||[];
     if(!d.evidenceIds?.length||d.evidenceIds.some(uid=>!units.has(uid)))fail(`invalid representative evidence ${d.id}`);
     if((d.originalBinIds||[]).some(id=>!bins.has(id)))fail(`unknown original bin provenance ${d.id}`);
     d.provenance={...d.provenance,scopeDecisionId:d.scopeDecisionId,readingCoverage:d.readingCoverage,originalCandidateId:packet.originalCandidate.candidateId,originalBinIds:d.originalBinIds||[]};
     d.membershipStatus=d.kind==='region'?'complete':'representative';
   }
+  // A source's scientific contribution is independent of its direct home and
+  // independent of whether multiple formulations denote one fine question.
+  const sourceContributions=[],contributionKeys=new Set(),contributionRoles=new Set(['addresses','instantiates','specializes','method','boundary','comparison']);
+  for(const row of packet.sourceContributions||[]){
+    if(Object.keys(row).some(key=>!['unitId','destinationId','role','basis','evidenceRefs','decisionId','qualification'].includes(key)))fail('unbound typed contribution field');
+    if(row.qualification!==undefined&&(typeof row.qualification!=='string'||row.qualification.length>8000))fail('invalid typed contribution qualification');
+    const source=units.get(row.unitId),destination=dest.get(row.destinationId);if(!source||!destination)fail('unknown typed contribution endpoint');
+    if(!contributionRoles.has(row.role)||!['description_checked','source_excerpt_checked'].includes(row.basis))fail('invalid typed contribution role/basis');
+    if(!row.evidenceRefs?.length)fail('typed contribution lacks exact source evidence');
+    const ownDescription=row.evidenceRefs.some(ref=>ref.kind==='description'&&ref.unitId===row.unitId&&ref.textSha256===source.evidence.textSha256),ownPrimary=row.evidenceRefs.some(ref=>['primary','source_excerpt'].includes(ref.kind)&&ref.paperId===source.paperId&&(ref.textSha256||ref.sha256||ref.id||ref.sourceId&&ref.sourceContext?.textSha256));
+    if(!ownDescription&&!ownPrimary||row.basis==='source_excerpt_checked'&&!ownPrimary)fail('typed contribution evidence does not bind its exact source/basis');
+    const proof=decision(row.decisionId,['source_contribution']),scopeHash=scopeContentHash(destination),agreement=proof.reviewAgreement;
+    if(!proof.subjectIds?.includes(row.unitId)||!proof.subjectIds?.includes(row.destinationId))fail('typed contribution decision has wrong subjects');
+    if(proof.scopeContentSha256!==scopeHash||proof.contributionContentSha256!==sourceContributionContentHash(row,scopeHash))fail('typed contribution changed after admission or names a different scope');
+    if(proof.challengerAgreement!=='independently_agreed'||!agreement?.proposalReviewId||!agreement.challengeReviewId||agreement.proposalReviewId===agreement.challengeReviewId||[agreement.proposalReviewId,agreement.challengeReviewId].some(id=>!reviews.has(id)||!proof.sourceReviewIds.includes(id)))fail('typed contribution lacks distinct pinned proposal and challenge evidence');
+    if(!reviewRecords.get(agreement.proposalReviewId).sha256||reviewRecords.get(agreement.proposalReviewId).sha256===reviewRecords.get(agreement.challengeReviewId).sha256)fail('typed contribution repeats one review artifact under two IDs');
+    const key=[row.unitId,row.destinationId,row.role].join('\n');if(contributionKeys.has(key))fail('duplicate typed contribution');contributionKeys.add(key);
+    sourceContributions.push({...row,scopeContentSha256:scopeHash,browserVectorRow:source.browserVectorRow,sourceRow:source.sourceRow,paperId:source.paperId,lens:source.lens,contributionStatus:'accepted_typed_contribution',provenance:{decisionId:row.decisionId,sourceReviewIds:proof.sourceReviewIds,reviewAgreement:agreement,doesNotAssertDirectHome:true,doesNotAssertEquivalence:true,doesNotAssertMethodApplicability:true}});
+  }
+  for(const d of destinations){if(d.sourceContributions?.length)fail('typed contributions must use the separately admitted packet table');d.sourceContributions=sourceContributions.filter(row=>row.destinationId===d.id);}
   const relations=[],parents=new Map(destinations.map(d=>[d.id,[]])),children=new Map(destinations.map(d=>[d.id,[]]));
   for(const raw of packet.relations||[]){
     if(!dest.has(raw.source)||!dest.has(raw.target)||raw.source===raw.target)fail(`unknown/self navigation endpoint ${raw.id}`);
     if(!navigationTypes.has(raw.type))fail(`source-science relation cannot be promoted to destination navigation: ${raw.type}`);
     const proof=decision(raw.decisionId,raw.type==='narrower'?['reparent','navigation']:['navigation']);
+    if(proof.relationUse!=='public_navigation'||proof.relationType!==raw.type)fail('public navigation needs its explicit admitted semantic use and exact type');
     if(!proof.subjectIds?.includes(raw.source)||!proof.subjectIds?.includes(raw.target))fail(`navigation decision has wrong subjects ${raw.id}`);
     if(!raw.rationale||!raw.evidenceIds?.length||raw.evidenceIds.some(uid=>!units.has(uid)))fail(`navigation lacks source rationale ${raw.id}`);
     relations.push({...raw,status:'accepted_navigation',provenance:{...raw.provenance,decisionId:raw.decisionId,sourceScienceLayerSeparate:true}});
     if(raw.type==='narrower'){parents.get(raw.target).push(raw.source);children.get(raw.source).push(raw.target);}
+  }
+  const provenanceRelations=[];
+  for(const row of packet.provenanceRelations||[]){
+    const proof=decision(row.decisionId,['provenance_link']);
+    if(!reviews.has(row.sourceReviewId)||!row.sourceRef||!row.targetRef||!row.proposedType||row.interpretation!=='review_batch_provenance'||!row.evidenceRefs?.length)fail('invalid review-batch provenance link');
+    if(proof.relationUse!=='provenance_only'||proof.provenanceRelationContentSha256!==provenanceRelationContentHash(row))fail('provenance link lacks explicit interpretation or exact binding');
+    provenanceRelations.push({...row,publicNavigation:false,affectsContainment:false,affectsGeometry:false});
   }
   const visiting=new Set(),visited=new Set(),order=[];
   function visit(id){if(visiting.has(id))fail('cyclic accepted containment');if(visited.has(id))return;visiting.add(id);for(const child of children.get(id))visit(child);visiting.delete(id);visited.add(id);order.push(id);}
@@ -119,12 +152,14 @@ export function assembleAccepted({packet,corpus,originalBins,originalBinsSha256,
   for(const r of relations.filter(r=>r.type==='narrower'))for(const uid of dest.get(r.target).memberIds)if(!members.get(r.source).has(uid)||members.get(r.source).get(uid).placementStatus==='context_only')fail('primary child escapes parent');
   const rootMembers=new Set(dest.get(packet.atlas.entryDestinationId).memberIds);if(questions.some(u=>!rootMembers.has(u.id)))fail('detailed entry does not reach every question through accepted containment');
   const methodVisible=new Set(memberships.filter(m=>m.lens==='method').map(m=>m.unitId));if(methods.some(u=>!methodVisible.has(u.id)))fail('method source has no source/context view');
-  for(const a of packet.aliases||[]){const d=dest.get(a.destinationId),proof=decision(a.decisionId,['question_equivalence']);if(!d||proof.outcome!=='equivalent_as_scoped'||proof.challengerAgreement!=='independently_agreed'||proof.changedPremises?.length||!proof.subjectIds?.includes(d.id))fail('alias lacks accepted scoped equivalence');d.aliases.push(a.alias);}
-  const representedPapers=new Set(corpus.units.map(u=>u.paperId)),unrepresentedPapers=[...corpus.papers.values()].filter(p=>!representedPapers.has(p.id)).map(p=>({id:p.id,title:p.title,sourceUrl:p.url,sourceSha256:p.sourceSha256,sourceNotice:p.sourceNotice,reason:'No vector-covered question/method unit in this frozen navigation corpus; source availability is not inferred.'}));
-  const catalog={destinations,sources:hydrateSources(corpus),memberships,relations,unrepresentedPapers,organizationProvenance:{originalCandidate:{candidateId:packet.originalCandidate.candidateId,regionsSha256:packet.originalCandidate.regionsSha256},originalBins:originalRows,acceptance:{status:packet.acceptance.status,receipt:{sha256:packet.acceptance.receipt.sha256}},decisionIds:[...decisions.keys()],geometryMembershipsAreOrganizationalAllocations:true}};
+  if(packet.identityResolution&&!fixture&&!verifiedReceiptHashes.has(packet.identityResolution.registry?.sha256))fail('identity comparison inventory is not verified');
+  const identityResolution=validateCanonicalIdentity({resolution:packet.identityResolution,destinations,decision,scopeHash:scopeContentHash,reviewRecords});
+  for(const a of packet.aliases||[]){const d=dest.get(a.destinationId),group=identityResolution.groups.find(g=>g.id===a.identityGroupId);if(!d||!group||group.destinationId!==d.id||group.decisionId!==a.decisionId||!group.memberIds.includes(a.sourceRecordId)||typeof a.alias!=='string'||!a.alias.trim())fail('alias lacks accepted conflict-free whole-group equivalence');d.aliases.push(a.alias);}
+  const representedPapers=new Set(corpus.units.map(u=>u.paperId)),unrepresentedPapers=[...corpus.papers.values()].filter(p=>!representedPapers.has(p.id)).map(p=>({id:p.id,title:p.title,sourceUrl:p.url,sourceSha256:p.sourceSha256,sourceNotice:p.sourceNotice,scientificStatus:p.scientificStatus,reason:'No vector-covered question/method unit in this frozen navigation corpus; source availability is not inferred.'}));
+  const catalog={destinations,sources:hydrateSources(corpus),memberships,relations,sourceContributions,unrepresentedPapers,organizationProvenance:{originalCandidate:{candidateId:packet.originalCandidate.candidateId,regionsSha256:packet.originalCandidate.regionsSha256},originalBins:originalRows,acceptance:{status:packet.acceptance.status,receipt:{sha256:packet.acceptance.receipt.sha256}},decisionIds:[...decisions.keys()],provenanceRelations,identityResolution,geometryMembershipsAreOrganizationalAllocations:true}};
   const paperCounts=new Map();for(const u of questions)paperCounts.set(u.paperId,(paperCounts.get(u.paperId)||0)+1);
   const geometryInput={schemaVersion:'q025-accepted-geometry-input/1',corpus:packet.corpus,originalCandidate:packet.originalCandidate,acceptanceReceipt:packet.acceptance.receipt,allocations,units:questions.map(u=>({unitId:u.id,paperId:u.paperId,browserVectorRow:u.browserVectorRow,sourceRow:u.sourceRow,textSha256:u.evidence.textSha256,paperBalancedMass:1/paperCounts.get(u.paperId)})),destinations:destinations.map(d=>({id:d.id,kind:d.kind,memberIds:d.memberIds.filter(id=>units.get(id).lens==='physical_question'),parentIds:parents.get(d.id)})),baseDestinationIds:packet.geometry?.baseDestinationIds||[],allocationMeaning:'Organizational mass among explicit reviewed/provisional homes, not confidence or relevance.',contextMembershipRowsUsedAsAllocations:false};
   const allocationSums=new Map();for(const a of allocations)allocationSums.set(a.unitId,(allocationSums.get(a.unitId)||0)+a.weight);
-  const report={allSourceUnitsConserved:catalog.sources.length===corpus.units.length,sourceUnits:corpus.units.length,questionUnits:questions.length,methodUnits:methods.length,representedPaperCount:representedPapers.size,unrepresentedPapers,questionAllocationMaxError:Math.max(0,...questions.map(u=>Math.abs(allocationSums.get(u.id)-1))),visibleAmbiguousPlacements:ambiguous,originalLeafCount:leaves.length,originalBinCount:originalBins.length,sourceTextAndRowIdentity:'Exact frozen corpus hydration; no source rewrites.',methodAssociationMeaning:'Same-paper context is not primary membership or actual uses.',sourceScienceImportedAsNavigation:false};
+  const report={allSourceUnitsConserved:catalog.sources.length===corpus.units.length,sourceUnits:corpus.units.length,questionUnits:questions.length,methodUnits:methods.length,representedPaperCount:representedPapers.size,unrepresentedPapers,questionAllocationMaxError:Math.max(0,...questions.map(u=>Math.abs(allocationSums.get(u.id)-1))),visibleAmbiguousPlacements:ambiguous,originalLeafCount:leaves.length,originalBinCount:originalBins.length,sourceTextAndRowIdentity:'Exact frozen corpus hydration; no source rewrites.',methodAssociationMeaning:'Same-paper context is not primary membership or actual uses.',acceptedTypedContributions:sourceContributions.length,typedContributionsAffectAllocation:false,sourceScienceImportedAsNavigation:false};
   return {catalog,geometryInput,report};
 }

@@ -1,0 +1,26 @@
+"""Two exact cross-batch pilot neighborhoods; no native calls or gold labels."""
+import hashlib,json
+from pathlib import Path
+B=Path(__file__).resolve().parent;F=B.parent;E=F.parent;L=F/'native-local/canonical-pilot-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();registry_path=F/'reconciliation-v1/authored-scope-registry.json';registry=json.loads(registry_path.read_text());records={x['recordId']:x for x in registry['records']};sealed={x['paperId'] for x in json.loads((E/'final-holdout-reservation.local.json').read_text())['records']}
+sets={'mediation-scope':['0594a24f01f9b493cef4:p1','0594a24f01f9b493cef4:p2','0594a24f01f9b493cef4:p7','c1e10f17a647735eaa1d:p0','c1e10f17a647735eaa1d:p1','fc950e4a565d1ce2661a:p3','fc950e4a565d1ce2661a:p5','fd2851a3260c57d77fb1:p4'],'control-statistics':['3e586699180f4bb42528:p0','3e586699180f4bb42528:p3','54aab275ab4a0ea75137:p0','54aab275ab4a0ea75137:p2','917023476c8ed7e389e0:p2','917023476c8ed7e389e0:p4','9362f80cb5012707a1cc:p0','9362f80cb5012707a1cc:p4','0dd2c748860e78df66b5:p3']};index=[]
+for key,items in sets.items():
+ rows=[records['leaf-'+x.replace(':','-challenge:')] for x in items];packet={'schemaVersion':'q025-canonical-source-packet/1','familyId':key,'stage':'proposal','scopes':[],'units':[],'evidence':[],'objects':[],'relations':[],'refRegistry':{},'priorReview':None,'sourceReviews':[]};unitmap={};evmap={};requested_primary={};provided_primary=set()
+ for n,row in enumerate(rows):
+  d=F/'native-local/full-leaf-wave-v3/jobs'/row['reviewId'];p=json.loads((d/'packet.actual.json').read_text());assert sha(d/'packet.actual.json')==row['pins']['challengePacketSha256'];assert sha(d/'reply.json')==row['pins']['challengeReplySha256'];units={p['refRegistry'][u['sourceRef']]['unitId']:u for u in p['units']};s={'ref':f'c{n}','recordId':row['recordId'],'candidateId':row['candidateId'],'kind':row['kind'],'scopeStatus':row['scopeStatus'],'definition':row['definition'],'methods':row['methods'],'sourceContributions':[],'readingBasis':'Inherited completed source review plus the actual descriptions/excerpts supplied here; no claim of fresh full-paper verification.'};packet['sourceReviews'].append({'reviewId':row['reviewId'],'pins':row['pins']})
+  refs={x['localRef'] for x in row['evidenceRefs']};relevantpapers={x['paperId'] for x in row['contributions']}
+  for contribution in row['contributions']:
+   unitid=contribution['unitId'];u=units[unitid];assert u['paperId'] not in sealed
+   if unitid not in unitmap:
+    ref='u'+str(len(unitmap));unitmap[unitid]=ref;packet['units'].append({'ref':ref,'unitId':unitid,'paperId':u['paperId'],'description':u['description']});packet['refRegistry'][ref]={'kind':'description','unitId':unitid,'paperId':u['paperId'],'textSha256':p['refRegistry'][u['descriptionRef']]['textSha256']}
+   s['sourceContributions'].append({'unitRef':unitmap[unitid],'role':contribution['role'],'priorRoleAgreement':contribution['independentRoleAgreement'],'basis':contribution['basis'],'sourceOrigin':contribution['sourceOrigin']})
+   refs.update(x['localRef'] for x in contribution['evidenceRefs'] if x['kind']=='primary')
+  # Use whole supplied windows; duplicate windows count once. No character slicing.
+  for e in p['evidence']:
+   if e['ref'] not in refs:continue
+   meta=p['refRegistry'][e['ref']];assert meta['paperId'] not in sealed;identity=json.dumps({k:meta['sourceContext'][k] for k in ['path','pdfPage','start','end','textSha256']},sort_keys=True);requested_primary[identity]=meta
+   if identity not in evmap:
+    ref='e'+str(len(evmap));evmap[identity]=ref;packet['evidence'].append({'ref':ref,'text':e['text']});packet['refRegistry'][ref]=meta;provided_primary.add(identity)
+  s['evidenceRefs']=[unitmap[x['unitId']] for x in row['contributions']]+[evmap[json.dumps({k:p['refRegistry'][e['ref']]['sourceContext'][k] for k in ['path','pdfPage','start','end','textSha256']},sort_keys=True)] for e in p['evidence'] if e['ref'] in refs]
+  s['evidenceRefs']=list(dict.fromkeys(s['evidenceRefs']));packet['scopes'].append(s)
+ packet['coverage']={'authoredScopes':len(rows),'sourceDescriptions':len(packet['units']),'primaryWindows':len(packet['evidence']),'requestedPrimaryWindows':len(requested_primary),'omittedPrimaryWindows':len(set(requested_primary)-provided_primary),'reservedPapersExcluded':len(sealed),'graphContext':'No unrelated paper graph objects included. Exact authored scope/method/role context comes from pinned prior source reviews; primary texts and descriptions supplied explicitly.'};packet['nominationBasis']='Independent geometry agent nominated scientifically related authored scopes with nearby changed-premise/target contrasts. No equivalence outcomes are supplied.';path=L/'sources'/f'{key}.json';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(packet,ensure_ascii=False,separators=(',',':'))+'\n');index.append({'familyId':key,'sourcePacketPath':str(path.relative_to(E)),'sourcePacketSha256':sha(path),'bytes':path.stat().st_size,'counts':packet['coverage'],'recordIds':[x['recordId'] for x in rows]})
+(B/'source-index.json').write_text(json.dumps({'schemaVersion':'q025-canonical-pilot-intake/1','registrySha256':sha(registry_path),'families':index,'nativeLaunches':0},indent=2)+'\n');print(json.dumps(index,indent=2))

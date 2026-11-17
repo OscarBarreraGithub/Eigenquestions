@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "q025-paper-coverage-audit/1",
+  "basis": "Frozen catalog and exact question/method row joins; sourceSha256 denotes archived source availability, not a new live PDF availability check.",
+  "corpus": {
+    "id": "swampland-navigation-20261105-minilm-v1",
+    "contentHash": "5957a5437e4d7e2c3c8089cc885a6ea03069bd8c6fc78cd104eb3024672ff300",
+    "inputs": [
+      {
+        "sha256": "ce54ebbf9b74bcdf40261bede9b7213b5702f4deaa0321e7f043f170ab7b0839",
+        "bytes": 10631,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/manifest.json"
+      },
+      {
+        "sha256": "d27fa82c789ac01fc529d83602dea76451cf5edd37dd4eecfc009402dbbdce0b",
+        "bytes": 2772900,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/papers.json"
+      },
+      {
+        "sha256": "e8b54bcca051204033a8b1b6cc30fe37d2112cdb48775de929e6a76a5ee59794",
+        "bytes": 2320566,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-000.json"
+      },
+      {
+        "sha256": "4eb8058d42d6ff23e1d4b8f453fd00980331a614f47e524065bf719a9516f015",
+        "bytes": 2283340,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-001.json"
+      },
+      {
+        "sha256": "bc6dd41792b2369396266907e9157f3ce396d862e2ce0a1f1daac5ab375831e1",
+        "bytes": 2309830,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-002.json"
+      },
+      {
+        "sha256": "e24f49243a3bbfcded9425991b52a90b35fd2637cf113808ad1bda9cd355ce92",
+        "bytes": 2342997,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-003.json"
+      },
+      {
+        "sha256": "65b31ac1860947fed2a4f54d0bbdee09362c05015aa5ceb2360456bd016cc9af",
+        "bytes": 2417359,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-004.json"
+      },
+      {
+        "sha256": "f530d6aed90116f80249015317a20ea20a3ab5dd639a123bf9affc2955da0259",
+        "bytes": 2450398,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-005.json"
+      },
+      {
+        "sha256": "216f7d46303ed234bac5dd3baaceccbe5d72d0557e7e00692c811d99724dc90d",
+        "bytes": 2406114,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-006.json"
+      },
+      {
+        "sha256": "2ad61105672e07214844e9254743e89ae9dd4dfe20b120e934bee19a9e3adc6c",
+        "bytes": 2404072,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-007.json"
+      },
+      {
+        "sha256": "5b4f3ef945bd1fbd22ba8dd13f6941924cc47355d94972a51072da048f401bee",
+        "bytes": 2423587,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-008.json"
+      },
+      {
+        "sha256": "88cb4eca3657f4aeabfc4abd32206a7ca9b6983c7b0b98a37ef8b8138b908384",
+        "bytes": 2451616,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-009.json"
+      },
+      {
+        "sha256": "149bd6fd28755f5f61f1d0885eaf4d331c5c6d288e63495d11f7f25a547d705b",
+        "bytes": 2477415,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-010.json"
+      },
+      {
+        "sha256": "6064a25c88d5b47854fef143e8a55562405044da7f6fca523af8eeb373af7af3",
+        "bytes": 2468400,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-011.json"
+      },
+      {
+        "sha256": "852a33a1473533b1894a3016cd63820d73ac1242874398443c20f252c6a8560b",
+        "bytes": 2194038,
+        "path": "/Users/emmy/Documents/Eigenquestions-atlas/data/navigation/units-012.json"
+      }
+    ]
+  },
+  "counts": {
+    "catalogPapers": 6478,
+    "availableSourcePapers": 6477,
+    "unavailableCatalogStubs": 1,
+    "questionUnits": 8473,
+    "methodUnits": 17937,
+    "questionPapers": 6477,
+    "methodPapers": 6474,
+    "anyVectorPapers": 6477,
+    "bothLensPapers": 6474,
+    "availableWithoutQuestionVectors": 0,
+    "availableWithoutMethodVectors": 3,
+    "availableWithoutAnyVectors": 0,
+    "sourceContextPapers": 6477
+  },
+  "paperSets": {
+    "questionIdsSha256": "d2519bdfcf4a9dae9e0942b3ed2f7d82a27a9f6e025373d0739435d7ce9866c0",
+    "methodIdsSha256": "5b2ee2cfc5da9bc5f4a5697aaebf04eba2d22d26eed3654ff32d31d9976092b5",
+    "anyVectorIdsSha256": "d2519bdfcf4a9dae9e0942b3ed2f7d82a27a9f6e025373d0739435d7ce9866c0",
+    "availableWithoutAnyVectors": [],
+    "questionOnly": [
+      {
+        "id": "2109.07176",
+        "title": "Theory Closing Talk",
+        "year": 2021,
+        "date": "2021-09",
+        "datePrecision": "month",
+        "url": "https://arxiv.org/abs/2109.07176",
+        "arxivId": "2109.07176",
+        "authors": [
+          "Giudice, Gian F."
+        ],
+        "sourceSha256": "1a8b6dee2f1c30c47386281758f108b9cf10290cdd81c014f89c1a4a6d9b7238",
+        "sourceNotice": null,
+        "scientificStatus": null
+      },
+      {
+        "id": "2301.08155",
+        "title": "AI Insights into Theoretical Physics and the Swampland Program: A Journey Through the Cosmos with ChatGPT",
+        "year": 2023,
+        "date": "2023-01",
+        "datePrecision": "month",
+        "url": "https://arxiv.org/abs/2301.08155",
+        "arxivId": "2301.08155",
+        "authors": [
+          "Lehnert, Kay"
+        ],
+        "sourceSha256": "c5a2e657b1db3fca3ad1417351fc56de5627dc2aa6e25d4bdc83f2e174b99d96",
+        "sourceNotice": null,
+        "scientificStatus": null
+      },
+      {
+        "id": "2303.17680",
+        "title": "Trustworthy de Sitter compactifications of string theory: a comprehensive review",
+        "year": 2023,
+        "date": "2023-03",
+        "datePrecision": "month",
+        "url": "https://arxiv.org/abs/2303.17680",
+        "arxivId": "2303.17680",
+        "authors": [
+          "Bena, Iosif",
+          "Graña, Mariana",
+          "Van Riet, Thomas"
+        ],
+        "sourceSha256": "70a3dbeebaa7ab8df1cc895fb76a998da7114a1d87e1b29551e1fe29ac58d09c",
+        "sourceNotice": null,
+        "scientificStatus": null
+      }
+    ],
+    "unavailableCatalogStubs": [
+      {
+        "id": "hep-th/9307152",
+        "title": "Discrete gauge anomalies in string theory",
+        "year": 1993,
+        "date": "1993-07",
+        "datePrecision": "month",
+        "url": "https://arxiv.org/abs/hep-th/9307152",
+        "arxivId": "hep-th/9307152",
+        "authors": [
+          "Dine, Michael",
+          "Leigh, R.G.",
+          "MacIntire, D.A."
+        ],
+        "sourceSha256": null,
+        "sourceNotice": "Withdrawn on arXiv. The authors report an error that changes the original conclusion; arXiv lists no PDF for either version. INSPIRE retains the earlier scientific abstract, reproduced below only for bibliographic context.",
+        "scientificStatus": "withdrawn"
+      }
+    ]
+  },
+  "context": {
+    "manifest": {
+      "path": "research/q025/geometry/source-context-v3-compact/pack/manifest.json",
+      "sha256": "c86bc90966007c28ce40523348e51e4ace4d20d62354f79928133d371f77c6f5"
+    },
+    "summary": {
+      "path": "source-context-summary-v3.1.json",
+      "sha256": "4d9191003c0f57985d02380713a5b6fc8fd66247624fa1dde9777d3c672f09aa",
+      "bytes": 5619971
+    },
+    "unavailableNodeExclusions": [
+      {
+        "id": "paper:d27c5a2cd841f6565a2a:unavailable",
+        "reason": "Source graph unavailable-paper stub has no browser question/method entries or incident edges; a PDF is not inferred to exist."
+      }
+    ]
+  },
+  "discovery": {
+    "availablePapers": "Every available-source paper has at least one exact fine source-question destination, frozen source records and a lazy context summary entry. All Q units must receive an explicit home before accepted assembly passes.",
+    "fullBibliographicInventory": {
+      "path": "data/navigation/papers.json",
+      "sha256": "d27fa82c789ac01fc529d83602dea76451cf5edd37dd4eecfc009402dbbdce0b"
+    },
+    "unavailableStub": "Preserved in catalog.unrepresentedPapers, delivered as unrepresented-papers.json ancillary; integration must link the inventory/coverage disclosure so this status remains discoverable.",
+    "geometryMeaning": "Q-only source-balanced geometry includes every available-source paper. Three papers lack a method extraction; no method is invented."
+  }
+}

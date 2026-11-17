@@ -1,0 +1,2169 @@
+{
+  "schemaVersion": "q025-global-scope-nomination-report/1",
+  "registryPath": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry.json",
+  "registrySha256": "76d5d17dd6557271239db4e14a7f14358658956d555e5aa7efda43630314df35",
+  "registryCreatedAt": "2026-11-17T11:06:11.320059+00:00",
+  "scriptSha256": "40c68f790c1bac84d2ae042921083c47c0cfa1d02deaa9904042524ea057e8dc",
+  "authoredScopes": 260,
+  "authoredQuestions": 231,
+  "crossReviewSameKindPairsExamined": 26166,
+  "candidatePairs": 370,
+  "scopesWithCandidates": 186,
+  "unmatchedScopes": 74,
+  "candidateChannels": {
+    "same_exact_source_unit": 181,
+    "same_bounded_primary_window": 59,
+    "repeated_title": 187,
+    "authored_target_overlap": 13,
+    "screened_target_factor_overlap": 7,
+    "authored_question_overlap": 4
+  },
+  "scopeStatuses": {
+    "independently_supported": 244,
+    "limits_require_adjudication": 16
+  },
+  "screenedFactorExclusions": {
+    "historical_or_flagged_refs": 103
+  },
+  "candidateFile": {
+    "path": "research/q025/assembly/outputs/scope-candidates-v1/candidates.json",
+    "sha256": "5696f011672b1ebf749b36a183dceb66b8fd6533f6241820d47740a7ffa1eb3a",
+    "bytes": 484584
+  },
+  "topCandidates": [
+    {
+      "id": "scope-nomination:309f2613b219a7a40d05ce65",
+      "records": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p3",
+          "title": "String consistency and control",
+          "question": "Can a proposed solution satisfy correction suppression, discrete consistency conditions and the claimed scale hierarchy, either at a finite point or parametrically?"
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p2",
+          "title": "Control and string consistency",
+          "question": "Under what source-specific conditions do compactification candidates satisfy quantization, source consistency and effective-theory control requirements?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "repeated_title",
+        "authored_target_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:db1da7fc8f9868ed77110bfe577656b9105f361209e522d50ff0ff56dde81c89"
+      ],
+      "rankingScore": 60.500688
+    },
+    {
+      "id": "scope-nomination:78dafbe268cd19728899a8d4",
+      "records": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p3",
+          "title": "String consistency and control",
+          "question": "Can a proposed solution satisfy correction suppression, discrete consistency conditions and the claimed scale hierarchy, either at a finite point or parametrically?"
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p2",
+          "title": "Control, consistency and asymptotic families",
+          "question": "When does a proposed compactification remain consistent and quantitatively controlled at finite parameters or along an asymptotic family?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "repeated_title",
+        "authored_target_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:781d9a4a0f2322b2f8d03809553253b32604528df15a476cc965c86f5be426b6"
+      ],
+      "rankingScore": 54.502956
+    },
+    {
+      "id": "scope-nomination:16779cfeb55212c299d98326",
+      "records": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p0",
+          "title": "Gaugings and matter couplings",
+          "question": "Which matter couplings and gaugings are compatible with the specified local supersymmetry, scalar geometry and field representations?"
+        },
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p5",
+          "title": "Scalar geometry, gaugings and amplitudes",
+          "question": "How do scalar geometry and local supersymmetry constrain vector and gravitino couplings and compact gaugings, and support geometric scalar-amplitude calculations?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "authored_target_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:758c763a952fd56bb27aa456bd0ec0e85fe8fd22e34602e6cb5f9c455775b891"
+      ],
+      "rankingScore": 54.447689
+    },
+    {
+      "id": "scope-nomination:09f4716f48076cae340c08d5",
+      "records": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p0",
+          "title": "Existence and compactification ingredients",
+          "question": "Which ingredients, internal geometries and source configurations permit de Sitter solutions in each stated theory and dimension?"
+        },
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p0",
+          "title": "Existence and obstruction under specified string assumptions",
+          "question": "Which specified string backgrounds admit de Sitter geometry, and which assumptions or additional ingredients determine an obstruction or possible evasion?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "screened_target_factor_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:adb83ac3bccd28c2b053256ba8f51d7d22709d24e3d8cb8be9fa0907a755a68e",
+        "unit:cb1fdf169d94d0179508f3e7a1c385fa5c835d55e56a53a7ddc7286fbf82970a",
+        "unit:fc300ffd0a3125ffe40301e238bc0e77d713c2b597a9543cb1aa772f69dd4d79"
+      ],
+      "rankingScore": 52.887264
+    },
+    {
+      "id": "scope-nomination:17544e78a5f42655060e4e0e",
+      "records": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p4",
+          "title": "Quantum corrections and evolving compactifications",
+          "question": "Can specified quantum corrections or condensates support de Sitter geometry with a consistent truncation or controlled effective description, and how do static and evolving internal configurations differ?"
+        },
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p1",
+          "title": "Effective control of compactification backgrounds",
+          "question": "When do compactification equations and quantum corrections admit an organized effective expansion, and what further work is needed to obtain a Wilsonian description?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "screened_target_factor_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:0c18ad4cd9b05b142b219de867695c608554ca0a995e5ea3b967d3467f853cf0",
+        "unit:5d44db45b25d450de0329358dd75fed0db273e0034f8088dee99ea6acba04fd2",
+        "unit:b917d5f832bb2bb4eae66cf23862dfa977547883c15f7da206d402fe7462e339",
+        "unit:fc300ffd0a3125ffe40301e238bc0e77d713c2b597a9543cb1aa772f69dd4d79"
+      ],
+      "rankingScore": 51.617215
+    },
+    {
+      "id": "scope-nomination:64ba36bbd43a9eb1dd50fb7f",
+      "records": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "title": "Reductions, truncations and higher-dimensional realization",
+          "question": "What lower-dimensional theories arise through the specified reductions, and which candidate theories admit consistent higher-dimensional realizations?"
+        },
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:p7",
+          "title": "Matter-retaining truncations around supersymmetric AdS5 vacua",
+          "question": "Which consistent truncations of eleven-dimensional AdS5 vacua preserving 16 supercharges retain vector multiplets in five-dimensional half-maximal gauged supergravity?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "authored_target_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3"
+      ],
+      "rankingScore": 51.326203
+    },
+    {
+      "id": "scope-nomination:a23830d354c2ac42b544f8c8",
+      "records": [
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p3",
+          "title": "Component actions and their validity",
+          "question": "How can superspace, superconformal and component methods construct matter and gravitational interactions, and which auxiliary-field, fermionic, anomaly or cutoff conditions limit those actions?"
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p7",
+          "title": "Six-dimensional curvature-squared supergravity with matter",
+          "question": "How can six-dimensional supergravity with matter admit consistent supersymmetric curvature-squared interactions, including hypermultiplet completion and a gravitational Green\u2013Schwarz counterterm with a proper tensor-field action?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "authored_target_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:4f26635e940ba724aa972e257201f32cb4179e5c0a19eb95f09ec07ba56339de"
+      ],
+      "rankingScore": 51.172797
+    },
+    {
+      "id": "scope-nomination:1bf71f7efd0476861be077b1",
+      "records": [
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p4",
+          "title": "Vacuum survival and thermal histories",
+          "question": "How do tunneling, decompactification and thermal effects constrain the survival and cosmological use of stabilized vacua?"
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p3",
+          "title": "Vacuum dynamics and cosmological use",
+          "question": "Can a candidate compactification survive thermal or tunneling effects and support its intended inflationary or rolling cosmology?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:478c397d11929dfaa143d4c812563ae364ed3839c075ee00f7a7e583e236ff1d"
+      ],
+      "rankingScore": 50.730149
+    },
+    {
+      "id": "scope-nomination:73cb8b9a712e84eeaa886a76",
+      "records": [
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p0",
+          "title": "Stabilized vacua and supersymmetry breaking",
+          "question": "Under which geometric and correction assumptions can IIB compactifications stabilize moduli in AdS, nearly Minkowski or de Sitter vacua, and what supersymmetry-breaking scales follow?"
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p5",
+          "title": "Moduli stabilization and extensions of the potential",
+          "question": "How do classical flux ingredients and explicitly added correction or supersymmetry-breaking sectors affect moduli stabilization, vacuum energy and physical scales?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:ca01af2138e69abe18d84225e620bdf481d60abbd18695693fc57e58de21b027"
+      ],
+      "rankingScore": 50.728841
+    },
+    {
+      "id": "scope-nomination:2f8efa38b6f68dafb26381b2",
+      "records": [
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p4",
+          "title": "Connecting cosmological phases in one potential",
+          "question": "Can one effective supergravity potential connect inflation, metastable de Sitter, Minkowski crossings and asymptotic supersymmetric AdS while retaining control over moduli and canonical field excursions?"
+        },
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p2",
+          "title": "Inflation, uplift and cosmological vacuum structure",
+          "question": "How do choices of scalar geometry and supersymmetry-breaking sector shape inflation, vacuum energy and transitions between cosmological phases?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:3c4486ea85d575afc91632de44c50542f001cf62b4a5eeea97136d5ee1ba8a95"
+      ],
+      "rankingScore": 49.875976
+    },
+    {
+      "id": "scope-nomination:7dd4cd3b385a16b1f9f4ae70",
+      "records": [
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p1",
+          "title": "Internal geometry and classical control",
+          "question": "Which local geometric, source and quantization conditions permit classical compactifications relevant to de Sitter, and can their weak-coupling and large-length limits be realized?"
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p2",
+          "title": "Control, consistency and asymptotic families",
+          "question": "When does a proposed compactification remain consistent and quantitatively controlled at finite parameters or along an asymptotic family?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:781d9a4a0f2322b2f8d03809553253b32604528df15a476cc965c86f5be426b6"
+      ],
+      "rankingScore": 49.588752
+    },
+    {
+      "id": "scope-nomination:55d2a9a6682fb438bef4d4c8",
+      "records": [
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p0",
+          "title": "Supergravity stability and sector coupling",
+          "question": "Which geometric conditions, supersymmetry-breaking directions, sector couplings and superpotential deformations permit metastable Minkowski or de Sitter critical points?"
+        },
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p0",
+          "title": "Vacua from Minkowski seeds and no-scale constructions",
+          "question": "Under what model-specific conditions do no-scale deformations, Minkowski-superpotential pairings or generalized-flux polynomials yield controlled Minkowski, de Sitter or anti-de Sitter configurations?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:41a3eb3b375ce9513ff65f1268a22de0acc55096043e38855cb7c1f4835af30a"
+      ],
+      "rankingScore": 49.585235
+    },
+    {
+      "id": "scope-nomination:c69b16a14baf96ca21f1d161",
+      "records": [
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p1",
+          "title": "Mixed and nonperturbative stabilization",
+          "question": "How do nonperturbative superpotentials, alone or combined with perturbative corrections, determine moduli stabilization and vacuum extrema?"
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p6",
+          "title": "Corrections and the background for stabilization",
+          "question": "How do stringy or quantum corrections change moduli potentials, vacuum-energy hierarchies and the validity of the background used for stabilization?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:2c2f9bbf1d6521a0e9eaa4058ce65013ebec33f04c693ba881240f2800595e22"
+      ],
+      "rankingScore": 49.396525
+    },
+    {
+      "id": "scope-nomination:4d2fcf1b144a170ef29429a8",
+      "records": [
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p1",
+          "title": "Mechanisms for stabilized nonnegative-energy vacua",
+          "question": "Can specified perturbative, nonperturbative, F-term, D-term or antibrane mechanisms stabilize the modeled moduli in metastable de Sitter or Minkowski vacua?"
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p0",
+          "title": "Stabilization and de Sitter construction",
+          "question": "Which compactification ingredients can stabilize the relevant fields and produce de Sitter critical points or metastable minima?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:2949679f28bf5644d49f865e0eafb2b3360da2217571b3b99016198d8af69d78",
+        "unit:478c397d11929dfaa143d4c812563ae364ed3839c075ee00f7a7e583e236ff1d",
+        "unit:d79efaa50b0d69a670da5d8e7c1792dccc1ea2a6cf29997052165a097f26cfea"
+      ],
+      "rankingScore": 49.257241
+    },
+    {
+      "id": "scope-nomination:a19583e02b14cfed9ae9cec7",
+      "records": [
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p1",
+          "title": "Internal geometry and classical control",
+          "question": "Which local geometric, source and quantization conditions permit classical compactifications relevant to de Sitter, and can their weak-coupling and large-length limits be realized?"
+        },
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p3",
+          "title": "String consistency and control",
+          "question": "Can a proposed solution satisfy correction suppression, discrete consistency conditions and the claimed scale hierarchy, either at a finite point or parametrically?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:781d9a4a0f2322b2f8d03809553253b32604528df15a476cc965c86f5be426b6",
+        "unit:db1da7fc8f9868ed77110bfe577656b9105f361209e522d50ff0ff56dde81c89"
+      ],
+      "rankingScore": 49.227118
+    },
+    {
+      "id": "scope-nomination:ca937ab03863dfc590878076",
+      "records": [
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p1",
+          "title": "Existence and scalar-stability restrictions",
+          "question": "Which equations, flux restrictions and scalar directions permit or exclude de Sitter and related Minkowski extrema in a specified compactification?"
+        },
+        {
+          "recordId": "leaf-9362f80cb5012707a1cc-challenge:p4",
+          "title": "Necessary existence and selected-sector stability conditions",
+          "question": "Which classical type-II compactifications survive necessary de Sitter existence and selected-sector stability tests when source arrangements and spacetime dimension are kept explicit?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "repeated_title"
+      ],
+      "sharedUnitIds": [
+        "unit:c819731843def5df5d6c475dbd8ef1c2e5fe25b711c6156e5806c1d00c4e479a"
+      ],
+      "rankingScore": 49.212625
+    },
+    {
+      "id": "scope-nomination:98610bff118ec7b757c6b9d8",
+      "records": [
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p1",
+          "title": "Internal geometry and classical control",
+          "question": "Which local geometric, source and quantization conditions permit classical compactifications relevant to de Sitter, and can their weak-coupling and large-length limits be realized?"
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p2",
+          "title": "Control and string consistency",
+          "question": "Under what source-specific conditions do compactification candidates satisfy quantization, source consistency and effective-theory control requirements?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:db1da7fc8f9868ed77110bfe577656b9105f361209e522d50ff0ff56dde81c89"
+      ],
+      "rankingScore": 49.011935
+    },
+    {
+      "id": "scope-nomination:41491f5e9b0749045830060d",
+      "records": [
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p5",
+          "title": "Anti-D3 effects and effective descriptions",
+          "question": "How do anti-D3 sources affect uplift, matter couplings, modular consistency and the viability of nonperturbative K\u00e4hler stabilization?"
+        },
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p1",
+          "title": "Embedding and stabilization interactions",
+          "question": "Can an anti-D3 uplift sector be embedded globally and coexist with moduli stabilization and visible sectors, including the effects of antibrane-sourced fluxes?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:93b976f2d1f726378e1d7db6724e6e146750fe9ad81e0a10c43c3ef0da9eb0e7",
+        "unit:a3b7823d6c82542b388bee53058edfc5cd3c2259fd27cfcd25cf06901fe8a04d"
+      ],
+      "rankingScore": 48.699983
+    },
+    {
+      "id": "scope-nomination:e3db0e06ddf59d7d7632cf3b",
+      "records": [
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p3",
+          "title": "Potential bounds and hierarchy tests",
+          "question": "Are proposed potential inequalities and restrictions on scale separation compatible with the particular compactifications and effective actions used to test them?"
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p6",
+          "title": "Conjecture tests and low-energy applications",
+          "question": "What do specified compactification tests or conditional de Sitter restrictions imply for vacuum criteria and low-energy model building?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:781d9a4a0f2322b2f8d03809553253b32604528df15a476cc965c86f5be426b6"
+      ],
+      "rankingScore": 48.648671
+    },
+    {
+      "id": "scope-nomination:2cdd90acb89b5cd345a391ad",
+      "records": [
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p2",
+          "title": "Generalized symmetries, gauging and anomaly constraints",
+          "question": "How do generalized symmetries, extended operators and anomalies constrain gauging, infrared phases and localized inflow mechanisms?"
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p0",
+          "title": "Higher-form and higher-group symmetry",
+          "question": "How are invertible generalized symmetries defined through extended operators, combined into higher groups, and coupled to backgrounds?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:b3243010621ba839c60d57fc9a6563615a68974ba45c407927be707fc3fada88",
+        "unit:bcb930350cfb30cb461ddebd3d55950894281611fce99b74467d22f1b7048f22"
+      ],
+      "rankingScore": 48.623338
+    },
+    {
+      "id": "scope-nomination:01a3e4e808802cbcaf89af18",
+      "records": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p0",
+          "title": "Existence and compactification ingredients",
+          "question": "Which ingredients, internal geometries and source configurations permit de Sitter solutions in each stated theory and dimension?"
+        },
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p3",
+          "title": "Stabilization, metastability and uplift consistency",
+          "question": "Can the specified ingredients stabilize a candidate de Sitter configuration with the claimed stability and control, and can its effective description be reconciled with the required higher-dimensional constraints?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window",
+        "screened_target_factor_overlap"
+      ],
+      "sharedUnitIds": [
+        "unit:adb83ac3bccd28c2b053256ba8f51d7d22709d24e3d8cb8be9fa0907a755a68e",
+        "unit:cb1fdf169d94d0179508f3e7a1c385fa5c835d55e56a53a7ddc7286fbf82970a"
+      ],
+      "rankingScore": 48.530509
+    },
+    {
+      "id": "scope-nomination:31d32fc74fd9237a763c43c3",
+      "records": [
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "title": "Stabilized vacua, couplings and scale hierarchies",
+          "question": "Which stabilization mechanisms and geometries realize the desired vacua, couplings and physical scale hierarchies, including cases without an inflationary target?"
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p0",
+          "title": "Stabilization mechanisms and their realizations",
+          "question": "Which source-specific flux, quantum and localized contributions can fix moduli, and which geometric or gauge-sector conditions permit those mechanisms?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:ac833f8a2f16c94da090aea819f0f62d4bb59337f7e6789791dbf86698634146",
+        "unit:f99f7bf5f8c60b89408bc8c1b0adfdb96c577a2d8e02f6a67d19b1dfab159b71"
+      ],
+      "rankingScore": 48.352521
+    },
+    {
+      "id": "scope-nomination:cb857f5c3e03b54d2ea92669",
+      "records": [
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+          "title": "Supersymmetry breaking, scales and vacuum energy",
+          "question": "How do stabilization corrections affect soft terms, gravitino and string scales, and possible radiative vacuum-energy hierarchies?"
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p6",
+          "title": "Corrections and the background for stabilization",
+          "question": "How do stringy or quantum corrections change moduli potentials, vacuum-energy hierarchies and the validity of the background used for stabilization?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:2c2f9bbf1d6521a0e9eaa4058ce65013ebec33f04c693ba881240f2800595e22"
+      ],
+      "rankingScore": 48.344782
+    },
+    {
+      "id": "scope-nomination:d761ab80f1a924d5c7580f89",
+      "records": [
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p2",
+          "title": "Generalized symmetries, gauging and anomaly constraints",
+          "question": "How do generalized symmetries, extended operators and anomalies constrain gauging, infrared phases and localized inflow mechanisms?"
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p4",
+          "title": "Dynamical and particle-physics consequences",
+          "question": "What constraints do generalized symmetries impose on RG flows, phases, spectra, couplings and symmetry breaking?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:b3243010621ba839c60d57fc9a6563615a68974ba45c407927be707fc3fada88",
+        "unit:bcb930350cfb30cb461ddebd3d55950894281611fce99b74467d22f1b7048f22"
+      ],
+      "rankingScore": 48.336657
+    },
+    {
+      "id": "scope-nomination:c2b4a3f9f91fdac67e318fc1",
+      "records": [
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p5",
+          "title": "Anti-D3 effects and effective descriptions",
+          "question": "How do anti-D3 sources affect uplift, matter couplings, modular consistency and the viability of nonperturbative K\u00e4hler stabilization?"
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p6",
+          "title": "Small-superpotential mechanisms for uplift",
+          "question": "Can the specified mechanism generate a sufficiently small superpotential compatible with K\u00e4hler stabilization and uplift, while satisfying its accompanying control and hierarchy conditions?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:93b976f2d1f726378e1d7db6724e6e146750fe9ad81e0a10c43c3ef0da9eb0e7"
+      ],
+      "rankingScore": 48.044293
+    },
+    {
+      "id": "scope-nomination:5022a5c528dc84b9f89ba489",
+      "records": [
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p1",
+          "title": "Embedding and stabilization interactions",
+          "question": "Can an anti-D3 uplift sector be embedded globally and coexist with moduli stabilization and visible sectors, including the effects of antibrane-sourced fluxes?"
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p6",
+          "title": "Small-superpotential mechanisms for uplift",
+          "question": "Can the specified mechanism generate a sufficiently small superpotential compatible with K\u00e4hler stabilization and uplift, while satisfying its accompanying control and hierarchy conditions?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:93b976f2d1f726378e1d7db6724e6e146750fe9ad81e0a10c43c3ef0da9eb0e7"
+      ],
+      "rankingScore": 47.849929
+    },
+    {
+      "id": "scope-nomination:53dd6e03b8b286f018ea6fa6",
+      "records": [
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "title": "Stabilized vacua, couplings and scale hierarchies",
+          "question": "Which stabilization mechanisms and geometries realize the desired vacua, couplings and physical scale hierarchies, including cases without an inflationary target?"
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p5",
+          "title": "Cosmological evolution of moduli",
+          "question": "Can the specified stabilized, light or evolving moduli support inflation or quintessence, avoid overshoot and destabilization, and remain compatible with the assumed hierarchies?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:ac833f8a2f16c94da090aea819f0f62d4bb59337f7e6789791dbf86698634146",
+        "unit:f99f7bf5f8c60b89408bc8c1b0adfdb96c577a2d8e02f6a67d19b1dfab159b71"
+      ],
+      "rankingScore": 47.803142
+    },
+    {
+      "id": "scope-nomination:d5984d2f66081a7a8872e1a9",
+      "records": [
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p6",
+          "title": "Physical scales, volume dependence and conventions",
+          "question": "How do volume and flux choices affect physical masses and couplings, and how should frame, length-unit and 2\u03c0 conventions be translated when comparing those predictions?"
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p5",
+          "title": "Moduli stabilization and extensions of the potential",
+          "question": "How do classical flux ingredients and explicitly added correction or supersymmetry-breaking sectors affect moduli stabilization, vacuum energy and physical scales?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:ca01af2138e69abe18d84225e620bdf481d60abbd18695693fc57e58de21b027"
+      ],
+      "rankingScore": 47.737976
+    },
+    {
+      "id": "scope-nomination:f7e067b67c4ebd68c226b6b7",
+      "records": [
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p5",
+          "title": "De Sitter versus rolling dark energy",
+          "question": "Can string constructions realize de Sitter or sufficiently flat rolling dark energy, and what evidence could distinguish these possibilities?"
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p6",
+          "title": "Conjecture tests and low-energy applications",
+          "question": "What do specified compactification tests or conditional de Sitter restrictions imply for vacuum criteria and low-energy model building?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:781d9a4a0f2322b2f8d03809553253b32604528df15a476cc965c86f5be426b6"
+      ],
+      "rankingScore": 47.420819
+    },
+    {
+      "id": "scope-nomination:3163f17baac16dc95c742576",
+      "records": [
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p0",
+          "title": "Inflation driven by K\u00e4hler moduli",
+          "question": "Which source-specific stabilization and correction mechanisms allow K\u00e4hler saxions or axions to drive inflation, with a stable endpoint where addressed?"
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p5",
+          "title": "Cosmological evolution of moduli",
+          "question": "Can the specified stabilized, light or evolving moduli support inflation or quintessence, avoid overshoot and destabilization, and remain compatible with the assumed hierarchies?"
+        }
+      ],
+      "channels": [
+        "same_exact_source_unit",
+        "same_bounded_primary_window"
+      ],
+      "sharedUnitIds": [
+        "unit:3267740f211252bd12f44b0c848cf418e59f929650f231d45f4371bc63b44ec4",
+        "unit:ac833f8a2f16c94da090aea819f0f62d4bb59337f7e6789791dbf86698634146",
+        "unit:f99f7bf5f8c60b89408bc8c1b0adfdb96c577a2d8e02f6a67d19b1dfab159b71"
+      ],
+      "rankingScore": 47.30687
+    }
+  ],
+  "unmatched": [
+    {
+      "recordId": "leaf-0594a24f01f9b493cef4-challenge:p4",
+      "title": "Entanglement-induced coupling statistics",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "rankingScore": 2.229594711981751
+        },
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p5",
+          "rankingScore": 2.1245057729107706
+        },
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p6",
+          "rankingScore": 2.092821119412256
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-0594a24f01f9b493cef4-challenge:p5",
+      "title": "Radiative displacement for modular flavor",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p5",
+          "rankingScore": 2.867387686525214
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p4",
+          "rankingScore": 2.3752846966259984
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p3",
+          "rankingScore": 2.321640183771177
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-0dd2c748860e78df66b5-challenge:p7",
+      "title": "String spectra, moduli and vacuum connectivity",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p5",
+          "rankingScore": 3.7862329168946856
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p4",
+          "rankingScore": 3.0226979262229197
+        },
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p3",
+          "rankingScore": 2.9509410269215826
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-134e6a0b7019801adad3-challenge:p1",
+      "title": "Coupled K\u00e4hler dynamics and primordial spectra",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p4",
+          "rankingScore": 2.402389534054789
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p4",
+          "rankingScore": 2.1234199522073505
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p1",
+          "rankingScore": 2.0606047870475175
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-134e6a0b7019801adad3-challenge:r",
+      "title": "K\u00e4hler stabilization, inflation and related cosmological constraints",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:r",
+          "rankingScore": 6.055789087116646
+        },
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:r",
+          "rankingScore": 4.021092492664348
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:r",
+          "rankingScore": 3.9138912321048305
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+      "title": "Duality and geometric formulations",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:p5",
+          "rankingScore": 4.127788394846134
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p5",
+          "rankingScore": 3.7279213722597992
+        },
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p7",
+          "rankingScore": 3.6261724451217856
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1ac6a9be121832bace66-challenge:p4",
+      "title": "Solutions, supersymmetry, stability and charges",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p6",
+          "rankingScore": 2.91854497117155
+        },
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p7",
+          "rankingScore": 2.4700656314124543
+        },
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p7",
+          "rankingScore": 2.4526149614451898
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1ac6a9be121832bace66-challenge:p5",
+      "title": "Quantum-consistency tests and alternative realizations",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p6",
+          "rankingScore": 4.084359667152745
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p7",
+          "rankingScore": 3.7862329168946856
+        },
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p3",
+          "rankingScore": 3.4152014726054793
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1ac6a9be121832bace66-challenge:p6",
+      "title": "Unified and exotic supergravities",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p4",
+          "rankingScore": 3.4878667531351346
+        },
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p6",
+          "rankingScore": 2.4165032584427633
+        },
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p2",
+          "rankingScore": 2.347592993816661
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1ac6a9be121832bace66-challenge:p7",
+      "title": "Five-dimensional amplitude methods",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p5",
+          "rankingScore": 5.186630120055934
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p7",
+          "rankingScore": 2.7249998589091295
+        },
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p5",
+          "rankingScore": 2.0422412608671108
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1ac6a9be121832bace66-challenge:r",
+      "title": "Supergravity constructions, reductions, dualities and solutions",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:r",
+          "rankingScore": 4.59946348191594
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:r",
+          "rankingScore": 3.780693606294971
+        },
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:r",
+          "rankingScore": 3.574632994017421
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1d046938b25365a62fba-challenge:p2",
+      "title": "Gaugings, truncations and positive-extremum spectra",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p0",
+          "rankingScore": 4.408864702166814
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "rankingScore": 3.8206508172095615
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p6",
+          "rankingScore": 3.4719451856325185
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1d046938b25365a62fba-challenge:p3",
+      "title": "Effective-supergravity construction and metastability",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p3",
+          "rankingScore": 4.1118294050570645
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p6",
+          "rankingScore": 3.901717778126277
+        },
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "rankingScore": 3.7924325050087466
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-1d046938b25365a62fba-challenge:p6",
+      "title": "Supersymmetric Galileons and double-copy puzzles",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p4",
+          "rankingScore": 4.699389220501194
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p7",
+          "rankingScore": 2.3364615733374614
+        },
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p3",
+          "rankingScore": 1.6897470631810325
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-3e586699180f4bb42528-challenge:p6",
+      "title": "Alternate home: Festina Lente for extended objects",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p3",
+          "rankingScore": 2.497331008050369
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p7",
+          "rankingScore": 1.9909472573676896
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p3",
+          "rankingScore": 1.831182410119237
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-3e586699180f4bb42528-challenge:p7",
+      "title": "Alternate home: four-form strong-CP relaxation",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p5",
+          "rankingScore": 3.5681780207735914
+        },
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p4",
+          "rankingScore": 3.5172676535944998
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p6",
+          "rankingScore": 3.4316580955607936
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-423440c0413bb3814c19-challenge:p4",
+      "title": "QCD axions and the LVS axiverse",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p5",
+          "rankingScore": 4.3026080579308505
+        },
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p7",
+          "rankingScore": 3.5172676535944998
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p3",
+          "rankingScore": 2.730081447508492
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-423440c0413bb3814c19-challenge:p5",
+      "title": "Three-dimensional co-calibrated G2 vacua",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p4",
+          "rankingScore": 3.54288946445276
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p1",
+          "rankingScore": 3.234321615719643
+        },
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "rankingScore": 2.9459400029458034
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p0",
+      "title": "Supercurrents and off-shell gravity",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p3",
+          "rankingScore": 2.3740005503257713
+        },
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:p7",
+          "rankingScore": 2.133232604478438
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+          "rankingScore": 1.9491131836393039
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p4",
+      "title": "Brane interactions and Galileon extensions",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:p6",
+          "rankingScore": 4.699389220501194
+        },
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p0",
+          "rankingScore": 4.173835905206497
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p5",
+          "rankingScore": 3.259346327658323
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p6",
+      "title": "Completion and gravitational-regime tests",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p6",
+          "rankingScore": 2.922120727868233
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p5",
+          "rankingScore": 2.771863389329514
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p3",
+          "rankingScore": 2.6957934261289074
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:r",
+      "title": "Supersymmetric matter and gravity: constructions and consistency",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:r",
+          "rankingScore": 4.59946348191594
+        },
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:r",
+          "rankingScore": 2.6381920873137092
+        },
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:r",
+          "rankingScore": 2.21615197569143
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-435f493b9a3a1b52277e-challenge:p0",
+      "title": "Wilson-line enhancement, lattices and spectra",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+          "rankingScore": 3.172173305745253
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p6",
+          "rankingScore": 2.7998138878603864
+        },
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p5",
+          "rankingScore": 2.538402505634096
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-435f493b9a3a1b52277e-challenge:p1",
+      "title": "Anomaly tests, J conditions and discrete remnants",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+          "rankingScore": 2.7755122634306018
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p3",
+          "rankingScore": 2.2241110788768657
+        },
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p4",
+          "rankingScore": 1.957830767927491
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-435f493b9a3a1b52277e-challenge:p2",
+      "title": "Spinor\u2013vector duality and heterotic embeddings",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p2",
+          "rankingScore": 3.8744502421908695
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p6",
+          "rankingScore": 2.9234666303286723
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+          "rankingScore": 2.1655119802837883
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-435f493b9a3a1b52277e-challenge:p6",
+      "title": "Canonical normalization and exact Wilsonian RG constraints",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p6",
+          "rankingScore": 2.6433479760194296
+        },
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p2",
+          "rankingScore": 2.2909653500361493
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p1",
+          "rankingScore": 2.044357507117379
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-435f493b9a3a1b52277e-challenge:p7",
+      "title": "EFT amplitude constraints and conditional Veneziano selection",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p5",
+          "rankingScore": 3.4288812862267335
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p0",
+          "rankingScore": 2.732571762826261
+        },
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p5",
+          "rankingScore": 1.9783837159232633
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-435f493b9a3a1b52277e-challenge:r",
+      "title": "Wilson-line string constructions and neighboring gauge-theory questions",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:r",
+          "rankingScore": 2.798658694879633
+        },
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:r",
+          "rankingScore": 2.010687280677673
+        },
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:r",
+          "rankingScore": 1.798661969224261
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-48ae6db969bee38e8050-challenge:p0",
+      "title": "Four-dimensional R\u2074 supersymmetry",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p0",
+          "rankingScore": 2.5974868874959562
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+          "rankingScore": 2.5133553006602485
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "rankingScore": 2.388003464736512
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-48ae6db969bee38e8050-challenge:p3",
+      "title": "Black objects and holographic observables",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p5",
+          "rankingScore": 2.7317845116546655
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p7",
+          "rankingScore": 2.1769166785730443
+        },
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p1",
+          "rankingScore": 1.9138733380691704
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-48ae6db969bee38e8050-challenge:p4",
+      "title": "Spectra and allowed higher-derivative interactions",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p4",
+          "rankingScore": 3.525769489773693
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "rankingScore": 3.2388766187850955
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p7",
+          "rankingScore": 3.0226979262229197
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-48ae6db969bee38e8050-challenge:p5",
+      "title": "BPS counts in the \u2207\u2074R\u2074 coupling",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p0",
+          "rankingScore": 2.478258200783315
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p2",
+          "rankingScore": 1.598641256674891
+        },
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p2",
+          "rankingScore": 1.5005592733809592
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-48ae6db969bee38e8050-challenge:r",
+      "title": "Higher-derivative interactions, supersymmetry and duality",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:r",
+          "rankingScore": 3.780693606294971
+        },
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:r",
+          "rankingScore": 2.420195744432676
+        },
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:r",
+          "rankingScore": 2.142823999589572
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p0",
+      "title": "Condensate backreaction and the ten-dimensional action",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-4317c30b131ec7fbc5ef-challenge:p4",
+          "rankingScore": 4.173835905206497
+        },
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p3",
+          "rankingScore": 3.434614093033738
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p0",
+          "rankingScore": 3.142557894860027
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p2",
+      "title": "Admissible nonperturbative sectors and chirality",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p1",
+          "rankingScore": 6.119951990545323
+        },
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p4",
+          "rankingScore": 4.872356008057008
+        },
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p1",
+          "rankingScore": 4.189979877013368
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p3",
+      "title": "D-terms, condensation and proposed uplifts",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p1",
+          "rankingScore": 5.397814462795251
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p2",
+          "rankingScore": 4.930751523395112
+        },
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p3",
+          "rankingScore": 4.904294785268054
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p4",
+      "title": "Condensation and coupled-modulus stabilization",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p0",
+          "rankingScore": 4.678209720545223
+        },
+        {
+          "recordId": "leaf-0594a24f01f9b493cef4-challenge:p0",
+          "rankingScore": 4.254553372746583
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p6",
+          "rankingScore": 3.8431022881481818
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:r",
+      "title": "Flux, condensation and brane consistency in moduli physics",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:r",
+          "rankingScore": 5.467594043509381
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:r",
+          "rankingScore": 4.918007089830031
+        },
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:r",
+          "rankingScore": 4.065574184102827
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-54aab275ab4a0ea75137-challenge:p4",
+      "title": "Warping and restrictions on the background",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p1",
+          "rankingScore": 3.5714928864185334
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p6",
+          "rankingScore": 3.287624442163544
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p1",
+          "rankingScore": 3.2034208425927493
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-54aab275ab4a0ea75137-challenge:p6",
+      "title": "Strong scalar-WGC tests",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p7",
+          "rankingScore": 3.4316580955607936
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p1",
+          "rankingScore": 3.0012609129727355
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p5",
+          "rankingScore": 2.878555683361824
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-54aab275ab4a0ea75137-challenge:p7",
+      "title": "Analytic continuations of toroidal scalar theories",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:p3",
+          "rankingScore": 2.5773448519166546
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p1",
+          "rankingScore": 2.4233354983841218
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p1",
+          "rankingScore": 2.386281629377383
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p7",
+      "title": "Localized charge in a Taub\u2013NUT lift",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p4",
+          "rankingScore": 2.4700656314124543
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p7",
+          "rankingScore": 1.9496832104141024
+        },
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p4",
+          "rankingScore": 1.940118305918944
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:p0",
+      "title": "Building and preserving warped hierarchies",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p4",
+          "rankingScore": 3.390071828026737
+        },
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "rankingScore": 3.2979750939322265
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+          "rankingScore": 2.260977080218718
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:p3",
+      "title": "Warped excitations and scale separation",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "rankingScore": 2.6768086907092705
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p4",
+          "rankingScore": 2.615767903966465
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+          "rankingScore": 2.0100256225135436
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:r",
+      "title": "Warped compactifications: hierarchies, effective dynamics and cosmology",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:r",
+          "rankingScore": 4.2970657450988226
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:r",
+          "rankingScore": 3.107546497071123
+        },
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:r",
+          "rankingScore": 3.0830669999289757
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-6076fa300fd58f6c5261-challenge:p4",
+      "title": "Large-N expansions and microscopic dual descriptions",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p0",
+          "rankingScore": 3.630894264554697
+        },
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p3",
+          "rankingScore": 2.3623745106343033
+        },
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p6",
+          "rankingScore": 2.295814053564585
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-6076fa300fd58f6c5261-challenge:p5",
+      "title": "N=4 S-duality and modular observables",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p3",
+          "rankingScore": 2.7317845116546655
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p2",
+          "rankingScore": 2.7137173713789147
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+          "rankingScore": 2.7009270030470045
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-6076fa300fd58f6c5261-challenge:p7",
+      "title": "Compactification and geometric engineering",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p5",
+          "rankingScore": 3.882776634082787
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+          "rankingScore": 3.6261724451217856
+        },
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p7",
+          "rankingScore": 3.620477504139351
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-6076fa300fd58f6c5261-challenge:r",
+      "title": "Gauge dynamics, exact structures and large-N descriptions",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:r",
+          "rankingScore": 2.798658694879633
+        },
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:r",
+          "rankingScore": 2.7879793412674787
+        },
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:r",
+          "rankingScore": 2.778288579773847
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p6",
+      "title": "Species-regulated one-loop self-fixing",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p0",
+          "rankingScore": 2.7998138878603864
+        },
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p5",
+          "rankingScore": 2.544231037313932
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p4",
+          "rankingScore": 2.412330551100916
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-6b153a5510a5ae504519-challenge:p2",
+      "title": "Gauge and throat diagnostics of antibrane states",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p2",
+          "rankingScore": 5.292997196690816
+        },
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p4",
+          "rankingScore": 3.826648557020059
+        },
+        {
+          "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p1",
+          "rankingScore": 2.919402681633896
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p0",
+      "title": "TFT construction, boundaries and quantum equivalence",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p3",
+          "rankingScore": 3.955405051939204
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p6",
+          "rankingScore": 3.1802871024914814
+        },
+        {
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p4",
+          "rankingScore": 2.954243294297039
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p1",
+      "title": "SPT and invertible phases",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p3",
+          "rankingScore": 3.563499062473875
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p2",
+          "rankingScore": 3.5301417934996353
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p1",
+          "rankingScore": 1.9307252113268372
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p3",
+      "title": "Lattice topological order and quantum information",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p4",
+          "rankingScore": 3.59921844671966
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p3",
+          "rankingScore": 2.3642032558681816
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p6",
+          "rankingScore": 1.9298134623842913
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p4",
+      "title": "Topological response and boundary diagnostics",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p2",
+          "rankingScore": 2.7393158278611054
+        },
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p3",
+          "rankingScore": 2.7000536519428673
+        },
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+          "rankingScore": 2.42044981191924
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p5",
+      "title": "TQFT ensembles, condensation and factorization",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p1",
+          "rankingScore": 3.446592255184287
+        },
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p4",
+          "rankingScore": 2.179805820967051
+        },
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p6",
+          "rankingScore": 1.894670825174248
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p7",
+      "title": "S-duality of q-map geometry",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-435f493b9a3a1b52277e-challenge:p3",
+          "rankingScore": 2.970777645870359
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+          "rankingScore": 2.752376858646098
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p2",
+          "rankingScore": 2.67317120018539
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-917023476c8ed7e389e0-challenge:p7",
+      "title": "Black-hole attractor reconstruction",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-56e3a84a9ddbd4b99ab7-challenge:p0",
+          "rankingScore": 2.3418224260633
+        },
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p0",
+          "rankingScore": 2.1828461763868416
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p3",
+          "rankingScore": 2.1769166785730443
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-9362f80cb5012707a1cc-challenge:p0",
+      "title": "Statistical rarity and uplift-induced mixing",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p2",
+          "rankingScore": 3.824380759882348
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p1",
+          "rankingScore": 2.9079277378389055
+        },
+        {
+          "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p3",
+          "rankingScore": 2.8250335615503754
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-9362f80cb5012707a1cc-challenge:p3",
+      "title": "Effective candidates testing refined de Sitter bounds",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p0",
+          "rankingScore": 3.083676310108265
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p0",
+          "rankingScore": 2.623890115349851
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p6",
+          "rankingScore": 2.5166113238840495
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-9362f80cb5012707a1cc-challenge:p6",
+      "title": "Quantum-breaking arguments at unstable extrema",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p1",
+          "rankingScore": 2.4282971337594406
+        },
+        {
+          "recordId": "leaf-54aab275ab4a0ea75137-challenge:p0",
+          "rankingScore": 2.0989144979245804
+        },
+        {
+          "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:p6",
+          "rankingScore": 2.0860459882999147
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-a81daa8b4bf4c5133863-challenge:p7",
+      "title": "Euclidean hypermultiplet saddles",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p1",
+          "rankingScore": 2.0526317385953763
+        },
+        {
+          "recordId": "leaf-1d046938b25365a62fba-challenge:p0",
+          "rankingScore": 1.6408076348673972
+        },
+        {
+          "recordId": "leaf-4c7fc4cccbcfee39ef45-challenge:p4",
+          "rankingScore": 1.6112889805666688
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p7",
+      "title": "Frozen graviphoton coupling with massless spectators",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p5",
+          "rankingScore": 2.143986856596269
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p0",
+          "rankingScore": 2.1068893195282916
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p3",
+          "rankingScore": 2.0651393279571684
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-bc459549ef9e43d5a378-challenge:p5",
+      "title": "Vacua, matter spectra and duality organization",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-0594a24f01f9b493cef4-challenge:p1",
+          "rankingScore": 3.8221602511133805
+        },
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p2",
+          "rankingScore": 2.991875508258248
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p4",
+          "rankingScore": 2.93264382385172
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-bc459549ef9e43d5a378-challenge:p7",
+      "title": "Standard Model operator bases",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-b2e631ff674dfe9f6385-challenge:p7",
+          "rankingScore": 1.9619076155654094
+        },
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p5",
+          "rankingScore": 1.4909812916705372
+        },
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p2",
+          "rankingScore": 1.4706982747326733
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-c0f344101cf345acf854-challenge:p3",
+      "title": "Non-invertible remnants of anomalous symmetries",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p1",
+          "rankingScore": 3.563499062473875
+        },
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p2",
+          "rankingScore": 2.7102810743849055
+        },
+        {
+          "recordId": "leaf-74dbe506ca55c51eb56a-challenge:p3",
+          "rankingScore": 2.3642032558681816
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-c0f344101cf345acf854-challenge:p5",
+      "title": "SymTFT and geometric realization",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6076fa300fd58f6c5261-challenge:p7",
+          "rankingScore": 3.882776634082787
+        },
+        {
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p2",
+          "rankingScore": 3.7279213722597992
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p0",
+          "rankingScore": 2.7730015111662594
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p2",
+      "title": "Anomalous U(1), D-flatness and mediation",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-0594a24f01f9b493cef4-challenge:p1",
+          "rankingScore": 4.899833455802464
+        },
+        {
+          "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:p4",
+          "rankingScore": 4.479846275506093
+        },
+        {
+          "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p3",
+          "rankingScore": 4.230240239722102
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p5",
+      "title": "Local Yukawas and radiative fermion masses",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-0594a24f01f9b493cef4-challenge:p5",
+          "rankingScore": 2.867387686525214
+        },
+        {
+          "recordId": "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+          "rankingScore": 2.018718064709807
+        },
+        {
+          "recordId": "leaf-fd2851a3260c57d77fb1-challenge:p2",
+          "rankingScore": 1.970830345895896
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p1",
+      "title": "Dynamical throats, deformation and hierarchy",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p2",
+          "rankingScore": 2.919402681633896
+        },
+        {
+          "recordId": "leaf-0dd2c748860e78df66b5-challenge:p3",
+          "rankingScore": 2.4611498098929534
+        },
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p7",
+          "rankingScore": 2.2104182221130197
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p3",
+      "title": "KPV corrections and tension-based uplift tuning",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-9256206ee3dfc1044991-challenge:p3",
+          "rankingScore": 2.9285649418408517
+        },
+        {
+          "recordId": "leaf-6b153a5510a5ae504519-challenge:p3",
+          "rankingScore": 2.360359029940701
+        },
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p2",
+          "rankingScore": 2.2823427486662684
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p4",
+      "title": "Throat towers and EFT hierarchies",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-134e6a0b7019801adad3-challenge:p6",
+          "rankingScore": 3.8216827412210033
+        },
+        {
+          "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:p0",
+          "rankingScore": 3.390071828026737
+        },
+        {
+          "recordId": "leaf-5ead4e26cf383a1fc84c-challenge:p2",
+          "rankingScore": 3.3327628112542254
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-eb2b14b890c0c74ca5f6-challenge:p7",
+      "title": "K3 degeneration and wrapped-brane form degree",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-c0f344101cf345acf854-challenge:p0",
+          "rankingScore": 2.413499340846512
+        },
+        {
+          "recordId": "leaf-bc459549ef9e43d5a378-challenge:p3",
+          "rankingScore": 2.0646411419082433
+        },
+        {
+          "recordId": "leaf-48ae6db969bee38e8050-challenge:p1",
+          "rankingScore": 2.0278362548083164
+        }
+      ]
+    },
+    {
+      "recordId": "leaf-fc950e4a565d1ce2661a-challenge:p5",
+      "title": "PQ-preserving saxion stabilization",
+      "status": "no_cross_review_candidate_under_current_rules_not_certified_unique",
+      "nearestLexicalReviewCandidates": [
+        {
+          "recordId": "leaf-423440c0413bb3814c19-challenge:p4",
+          "rankingScore": 4.3026080579308505
+        },
+        {
+          "recordId": "leaf-c1e10f17a647735eaa1d-challenge:p0",
+          "rankingScore": 3.614344613383888
+        },
+        {
+          "recordId": "leaf-3e586699180f4bb42528-challenge:p7",
+          "rankingScore": 3.5681780207735914
+        }
+      ]
+    }
+  ],
+  "coverageMeaning": "Every current registry record is examined and explicitly accounted for. A nomination or absence of one never resolves identity. Candidate pairs remain queued until reviewed; new campaign records require a new pinned run.",
+  "limitations": [
+    "No embeddings, model calls, semantic entailment or automatic canonicalization.",
+    "Source reuse may be a comparison, compound target or outside probe; it does not establish equivalence or add geometric mass.",
+    "Factor label matches nominate comparisons only; even unflagged factor annotations are not independently certified premises.",
+    "All systems, regimes, exclusions and qualifications must be compared by review before equivalence or parent decisions.",
+    "High-weight broad vocabulary may still generate false positives; weak/unmatched scopes remain explicit review work."
+  ],
+  "sealedHoldout": "Only the evaluator registry was read; it declares exclusion of24reservedpapers. No sealed-source packet was opened."
+}

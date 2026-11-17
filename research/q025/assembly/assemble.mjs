@@ -17,6 +17,11 @@ export async function runAssembly({root,packetPath,out,overviewPath}) {
   const verifiedReceiptHashes=new Set([admission.sha256]),verifiedReviews=[];
   for(const r of packet.reviewRegistry){if(!r.path||!r.sha256)throw new Error('Review registry needs exact local artifact and hash');const bytes=await readFile(resolveInput(r.path));if(sha256(bytes)!==r.sha256)throw new Error(`Review artifact changed: ${r.id}`);verifiedReceiptHashes.add(r.sha256);verifiedReviews.push({id:r.id,sha256:r.sha256,bytes:bytes.length});}
   for(const d of packet.decisions)if(d.adjudication?.receipt){const r=d.adjudication.receipt;const read=await readPinnedJson(resolveInput(r.path),r.sha256);verifiedReceiptHashes.add(read.sha256);}
+  if(packet.identityResolution){
+    const resolution=packet.identityResolution,registry=await readPinnedJson(resolveInput(resolution.registry.path),resolution.registry.sha256);
+    if(JSON.stringify(registry.value.records)!==JSON.stringify(resolution.records)||JSON.stringify(registry.value.comparisons)!==JSON.stringify(resolution.comparisons))throw new Error('Identity resolution omits or changes its pinned complete comparison inventory');
+    verifiedReceiptHashes.add(registry.sha256);
+  }
   const corpus=await loadFrozenCorpus(join(root,'data/navigation'));
   const bins=await readPinnedJson(resolveInput(packet.originalCandidate.regionsPath),packet.originalCandidate.regionsSha256);
   const assembled=assembleAccepted({packet,corpus,originalBins:bins.value,originalBinsSha256:bins.sha256,verifiedReceiptHashes});
