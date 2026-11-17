@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "q025-canonical-role-exceptions/1",
+  "cases": [
+    {
+      "caseId": "mediation:z5",
+      "unitId": "unit:a8608d668baf939bb50b3c9d59e92fd71cbd98ecf7715e9aa2b84780e122fc5f",
+      "paperId": "hep-th/0701034",
+      "targetId": "q025-candidate-question:79af33e2c6c3ace19ae14365",
+      "oldRole": "specializes",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "Within the stated fluxless supergravity class with at least two strongly coupled hidden sectors and the particular Kähler potential, e7 reports gaugino suppression in all de Sitter vacua but only most AdS vacua."
+      ],
+      "reason": "The restricted generality analysis supports specializes. Its vacuum-sign-dependent extent should remain explicit alongside the original hidden-sector and Kähler restrictions.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/mediation-z5.json",
+        "sha256": "89b8300b6b71b56c6470615ae6ab23af2962d43762af20ee6009f405492054ee"
+      }
+    },
+    {
+      "caseId": "mediation:z11",
+      "unitId": "unit:a3b7823d6c82542b388bee53058edfc5cd3c2259fd27cfcd25cf06901fe8a04d",
+      "paperId": "2211.14381",
+      "targetId": "q025-candidate-question:ff12d63a413ff3a6aad7bf0c",
+      "oldRole": "addresses",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The supplied 25 Nov 2022 v1 abstract identifies the calculated stabilization effect as that of the (0,3) flux component. The discussion of (1,2) contributions supplies motivation, not a separately verified calculation here."
+      ],
+      "reason": "The windows directly address induced breaking in the condensing D7 sector and a stabilization constraint. The original qualitative long-throat/small-warping distinction and absence of the bound itself remain valid.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/mediation-z11.json",
+        "sha256": "c306e8247e7e79b2e3fdfb53417cc711b87d1f88de25268fad129a01ca42813e"
+      }
+    },
+    {
+      "caseId": "mediation:z14",
+      "unitId": "unit:7139ae5c53e95da53670a7fb105bd80b93f45dee91ec41d25b551c1dc7e7149d",
+      "paperId": "0705.3330",
+      "targetId": "q025-candidate-question:af337204c813bd266536fe8a",
+      "oldRole": "instantiates",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "e13/e16/e22 establish a conditional mirage construction but do not independently display a gaugino-to-gravitino mass relation. This is a setting-level instance, not a verified hierarchy calculation from u10; another unit's hierarchy evidence cannot fill that gap."
+      ],
+      "reason": "The supersymmetrically prestabilized, IR-breaking/UV-visible construction fits pq10's explicit inclusion of mirage examples. The original restriction against generalizing across IIB vacua remains necessary.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/mediation-z14.json",
+        "sha256": "6d4472a999872c4fb1cee3f659a7ed224a9b86cf840972be4b180beea1bdf6e1"
+      }
+    },
+    {
+      "caseId": "mediation:z37",
+      "unitId": "unit:e099fe7e2079b29968571779cf594c70ea8aa885f8ede2257fabfdf59314c74c",
+      "paperId": "hep-th/0611279",
+      "targetId": "q025-candidate-question:26a014ebdbaff0d4a20f59a9",
+      "oldRole": "specializes",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The reported spectrum belongs to the PQ-invariant h1,1 > 1 construction with warped-brane uplift; the saxion tachyon concerns the pre-uplift phase.",
+        "Flavor/CP preservation uses approximate scaling and axionic-shift symmetries, with universal moduli F-components relevant to flavor. It is not a general geometric-sequestering result."
+      ],
+      "reason": "e37/e40 directly support the moduli-spectrum, mixed-mediation and flavor/CP contribution to c3. Its construction and symmetry conditions should remain explicit; the full axion/saxion target remains c6.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/mediation-z37.json",
+        "sha256": "2decc761d8d3af0271526e09d2820d047ddc1839085eb4b79789622783a7a858"
+      }
+    },
+    {
+      "caseId": "statistics:z4",
+      "unitId": "unit:ebcce2e9c0fc487c4491cb251b57648fae3869c2b4c4bd5b9e93ff8f6cc3351a",
+      "paperId": "1902.08209",
+      "targetId": "q025-candidate-question:97f54791c4e9f3485e17eb02",
+      "oldRole": "boundary",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The objection uses classical O8/D8 couplings without additional higher-codimension sources. Its separate application to the proposed Romans-mass-only AdS solutions retains that source-specific setting."
+      ],
+      "reason": "The windows directly challenge the proposed identification of singular boundary behavior with physical O8 sources; the argument's source restrictions must remain explicit.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z4.json",
+        "sha256": "af6b1cda6c822e940eb0ddcb8b16527ef69d2195148e802c4ec51945d2092e48"
+      }
+    },
+    {
+      "caseId": "statistics:z6",
+      "unitId": "unit:92dfbdc3775c4d6d029d8c9ee9f14ff9938b9fa875220fc9f9513495fad11ab4",
+      "paperId": "2007.12084",
+      "targetId": "q025-candidate-question:97f54791c4e9f3485e17eb02",
+      "oldRole": "boundary",
+      "verdict": "revise_role",
+      "proposedRole": "specializes",
+      "newQualification": [
+        "Retain the three-dimensional construction and its source and supersymmetry-breaking validity questions. Anti-brane decay is a separate stability issue; the description supplies no explicit correction-suppression criterion."
+      ],
+      "reason": "The source-control component directly narrows pq0. The description supplies no countercondition supporting boundary, and a different external dimension alone does not establish one.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z6.json",
+        "sha256": "fd288558ecda37b1438065604ed5c2a9d259e237312c4f2fd3bb9d050697ddb3"
+      }
+    },
+    {
+      "caseId": "statistics:z18",
+      "unitId": "unit:0823baa35b5b7bdf26b2bfba1f69f431bbd96f2e14713f032b8c581c14ff473e",
+      "paperId": "1808.09440",
+      "targetId": "q025-candidate-question:97f54791c4e9f3485e17eb02",
+      "oldRole": "boundary",
+      "verdict": "revise_role",
+      "proposedRole": "specializes",
+      "newQualification": [
+        "Apply this role to the stated classical-potential control questions and nilpotent extension. The description establishes neither a controlled uplift nor a specific obstruction to finite validity."
+      ],
+      "reason": "This is a narrower effective-description setting already permitted by pq0. Enlarging the ingredients does not itself supply a countercondition to that target.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z18.json",
+        "sha256": "da652631dd105d923eb1034f84d3dddd3a2b56e6c8ba7cff15dca680c01e90f1"
+      }
+    },
+    {
+      "caseId": "statistics:z19",
+      "unitId": "unit:9705ad3d292e33395fde36eb3ebdf125da55c529e7231576925cea450628a092",
+      "paperId": "2203.10125",
+      "targetId": "q025-candidate-question:97f54791c4e9f3485e17eb02",
+      "oldRole": "addresses",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The opening curvature-sign wording in e28 conflicts with e15, e29 and the later conditions in e28. Preserve that discrepancy without repairing it or certifying a sign-sensitive conclusion."
+      ],
+      "reason": "The description and restricted potential analysis support the control question, but their unresolved sign wording also limits this finite-control use.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z19.json",
+        "sha256": "ebc384bd444cc9e6be3febaa7b5047c7b18ae9aa8942a6657d3991f0d08071eb"
+      }
+    },
+    {
+      "caseId": "statistics:z20",
+      "unitId": "unit:fff6a7782b613baac41e699dabffd995958cf249265239c921f2d9ad3646f9dc",
+      "paperId": "0912.3287",
+      "targetId": "q025-candidate-question:97f54791c4e9f3485e17eb02",
+      "oldRole": "boundary",
+      "verdict": "revise_role",
+      "proposedRole": "specializes",
+      "newQualification": [
+        "Support concerns the controlled-stabilization component in the specified O5/O7 setting. Metastability and slow-roll inflation remain separate components, and no finite control calculation is supplied."
+      ],
+      "reason": "The description directly narrows pq0 to O5/O7 compactifications; it supplies no particular obstruction or contrast supporting boundary.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z20.json",
+        "sha256": "dfdd7cbaca80944fe55da71d97a108bb31c36c6a191a466cb3ad3ebe332385d6"
+      }
+    },
+    {
+      "caseId": "statistics:z32",
+      "unitId": "unit:5e345ae19ffde267e9877634c9c24f0651d42b9ba5d0f28070824123449ec388",
+      "paperId": "2202.12840",
+      "targetId": "q025-candidate-question:97f54791c4e9f3485e17eb02",
+      "oldRole": "boundary",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "An unfixed axionic combination limits complete stabilization but does not by itself invalidate an effective description. The unresolved additional Bianchi identities supply the distinct consistency limitation."
+      ],
+      "reason": "The primary text supports a finite-consistency boundary, provided flatness is not conflated with failure of effective-theory validity.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z32.json",
+        "sha256": "402914d331aa2a408e6d9595fc227ca4102399bc8accfde6f745b4a0abc2e7c2"
+      }
+    },
+    {
+      "caseId": "statistics:z35",
+      "unitId": "unit:adb83ac3bccd28c2b053256ba8f51d7d22709d24e3d8cb8be9fa0907a755a68e",
+      "paperId": "1812.04147",
+      "targetId": "q025-candidate-question:f245e1f38096549c488c89ac",
+      "oldRole": "addresses",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The abstract's parametric weak-coupling and weak-curvature claim does not supply the discrete-family checks required by pq1 or a uniform correction estimate at singular sources. The reported tree-level moduli remain."
+      ],
+      "reason": "The parametric claim directly addresses pq1, while admissibility of a quantized family is not demonstrated in these windows; u16 supplies the separate boundary-condition objection.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z35.json",
+        "sha256": "9654f6554894e141f1f3678b04b75e29d9bd2e202f164ba4e48456e547833d5a"
+      }
+    },
+    {
+      "caseId": "statistics:z45",
+      "unitId": "unit:db1da7fc8f9868ed77110bfe577656b9105f361209e522d50ff0ff56dde81c89",
+      "paperId": "1902.10093",
+      "targetId": "q025-candidate-question:1be677c9a0a26161fd1e91a0",
+      "oldRole": "addresses",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The reported internal-hierarchy implication is for p=4,5,6 within the restricted source ansatz. L is an average internal length; the supplied summary does not identify a complete KK spectral gap."
+      ],
+      "reason": "The conditional relation to external scale separation directly addresses pq2, but its source range and geometric proxy must accompany that use.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z45.json",
+        "sha256": "8d7f1f28d0a09b13804446d2db4f0d9ad4e2a6d305bcd794ae5cd2e726e56019"
+      }
+    },
+    {
+      "caseId": "statistics:z51",
+      "unitId": "unit:a265ef02a67606ac501a5c6c33eafdbaade2c49f426a0aa2c5adbdcf7e9906e8",
+      "paperId": "2510.11794",
+      "targetId": "q025-candidate-question:1be677c9a0a26161fd1e91a0",
+      "oldRole": "addresses",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The stated scale-separation result concerns the (A)dS4 × S2 branch with two-form flux only in the external U(1), subject to anomaly-coefficient conditions.",
+        "The treatment includes the gauge Green–Schwarz completion at two derivatives and omits the gravitational anomaly completion, with suppression conditions discussed by the source. Its reported dS solutions are unstable; no string embedding is established."
+      ],
+      "reason": "The spectrum and conditional hierarchy results directly address pq2, but their gauging, flux-branch and omitted-correction premises must remain explicit.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z51.json",
+        "sha256": "6ab6ee19224c6c75d7b98ee8144154552721a3b3d0f1a654b23c7906f1de5abb"
+      }
+    },
+    {
+      "caseId": "statistics:z65",
+      "unitId": "unit:18e6b118e8e5b947204bd0483aede08ea42e9b93fbe8e8fc68b8ef1a7818389d",
+      "paperId": "1902.10093",
+      "targetId": "q025-candidate-question:1c2f7b605b90533b39bf3f76",
+      "oldRole": "addresses",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "e58 reports failure to prove a systematic tachyon. The diagonal anisotropy derivative in e61 is an ingredient, not a complete mass matrix or evidence that the sector is stable."
+      ],
+      "reason": "The intersecting-source question directly addresses pq9; retaining its inconclusive result and derivative coverage prevents overreading this new application.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z65.json",
+        "sha256": "6ac1399110956970e349dd4222ef70f03a09d66b3c9cf14719f201f95930776e"
+      }
+    },
+    {
+      "caseId": "statistics:z69",
+      "unitId": "unit:81d6ae180f0fc0d1d901a11693eed9bb75ffff826320fdba51a47c15351aef64",
+      "paperId": "2004.00030",
+      "targetId": "q025-candidate-question:2dfc72ced638f6212bf6d625",
+      "oldRole": "method",
+      "verdict": "supported_with_limits",
+      "proposedRole": "unchanged",
+      "newQualification": [
+        "The displayed reduction omits warping. Its source-aligned anisotropy construction and group-manifold simplifications retain their separately specified source and background restrictions."
+      ],
+      "reason": "Recasting conditional no-go results into normalized gradient inequalities supplies the stated method, with the displayed framework's restrictions preserved.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z69.json",
+        "sha256": "f2e4d29ee554add119f97884c6edc528ccc5c97bb6aa5c4271cd2e464208701e"
+      }
+    },
+    {
+      "caseId": "statistics:z74",
+      "unitId": "unit:534908b2a900978c99d219c4139dc3f742da62895566ff90d5f8675f310a2c17",
+      "paperId": "2608.19166",
+      "targetId": "q025-candidate-question:d9456263d2fefe53de6cf8d5",
+      "oldRole": "boundary",
+      "verdict": "revise_role",
+      "proposedRole": "specializes",
+      "newQualification": [
+        "Only the conditional eight-dimensional conjecture-test component supports pq11; classification and scalar-instability surveys retain their distinct targets. The hypotheses, kinetic normalization and one-loop calculation are not supplied in primary text."
+      ],
+      "reason": "The conditional heterotic test is explicitly within pq11 and narrows it by theory and dimension. The description supplies no particular countercondition supporting boundary.",
+      "packet": {
+        "path": "research/q025/evaluation/full-pass/native-local/canonical-role-adjudication-v1/statistics-z74.json",
+        "sha256": "9b56372fa77e948e3f3d5f7b464c7e2ea59db216fd246c96211fedbe0a848391"
+      }
+    }
+  ],
+  "counts": {
+    "supported_with_limits": 12,
+    "revise_role": 4
+  }
+}

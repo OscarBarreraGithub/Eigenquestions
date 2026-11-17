@@ -11,7 +11,7 @@ function progressive(host,items,render,label,batch=20){
 }
 function provenance(record,value){let populated=false;record.addEventListener('toggle',()=>{if(record.open&&!populated){populated=true;record.append(el('pre',JSON.stringify(value,null,2)));}});}
 
-export function sourceContextDisclosure(load) {
+export function sourceContextDisclosure(load,{onInspect}={}) {
   const details=el('details');details.className='source-scientific-context';details.append(el('summary','Methods, assumptions and scientific source connections'));
   let requested=false;
   details.addEventListener('toggle',async()=>{
@@ -21,6 +21,7 @@ export function sourceContextDisclosure(load) {
       const context=await load();if(!details.isConnected)return;body.replaceChildren();
       body.append(el('p',context.notice),el('p','An exact attachment identifies a source object or incident edge; it does not make every attached record a premise or result of this question.'));
       if(context.coverage)body.append(el('p',typeof context.coverage.description==='string'?context.coverage.description:JSON.stringify(context.coverage)));
+      if(context.sourceRoutes?.status!=='available'&&context.sourceRoutes?.notice)body.append(el('p',context.sourceRoutes.notice));
       if(context.availability!=='available'){body.append(el('p','No context was exported for this source in this atlas version. Read the paper for its assumptions and methods.'));return;}
       const objects=new Map(context.sourceObjects.map(item=>[item.id,item])),relations=new Map(context.sourceRelations.map(item=>[item.id,item]));
       for(const attachment of context.sourceAttachments){
@@ -32,7 +33,9 @@ export function sourceContextDisclosure(load) {
         const relationList=el('div');progressive(relationList,(attachment.relationIds||[]).map(id=>relations.get(id)).filter(Boolean).sort(compareSourceRelations),relation=>{
           const record=el('details'),source=objects.get(relation.source),target=objects.get(relation.target);record.append(el('summary',`${relation.type.replaceAll('_',' ')} · ${relation.semanticStatus.replaceAll('_',' ')}`),el('p',`${source?.kind||'Object'} ${source?.paperId||relation.source} → ${target?.kind||'object'} ${target?.paperId||relation.target}`));
           const statement=relation.statement||relation.provenance?.attributes?.scope;if(statement)record.append(el('p',typeof statement==='string'?statement:JSON.stringify(statement)));if(relation.readerNote)record.append(el('p',relation.readerNote));
-          if(relation.premises?.length){record.append(el('h4','Premises'));const list=el('ul');for(const premise of relation.premises)list.append(el('li',typeof premise==='string'?premise:JSON.stringify(premise)));record.append(list);}
+          if(relation.premises&&Object.keys(relation.premises).length){const conditions=el('details');conditions.append(el('summary','Conditions and qualifications'));for(const [kind,values]of Array.isArray(relation.premises)?[['Premises',relation.premises]]:Object.entries(relation.premises)){if(!values?.length)continue;conditions.append(el('h4',kind.replaceAll('_',' ')));const list=el('ul');for(const premise of values)list.append(el('li',typeof premise==='string'?premise:premise.statement||JSON.stringify(premise)));conditions.append(list);}record.append(conditions);}
+          const route=context.sourceRoutes?.items.find(item=>item.relationId===relation.id);
+          if(route)for(const endpoint of route.endpoints){if(!endpoint.choices.length){record.append(el('p',`${endpoint.side==='source'?'Source':'Target'} endpoint has no exact frozen method mapping; its statement remains readable.`));continue;}for(const choice of endpoint.choices){const button=el('button',`Inspect ${endpoint.side} method · ${choice.paperId}`);button.type='button';button.disabled=!onInspect;button.addEventListener('click',()=>onInspect(choice.action));record.append(button);}}
           record.append(el('p','This relation concerns these source objects under their recorded scope. It is not an implication between their entire topics.'));provenance(record,relation);return record;
         },'source relations');group.append(relationList);body.append(group);
       }

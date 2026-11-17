@@ -35,7 +35,9 @@ source collection.
 A useful failure is the numerical KK/GZK neighborhood: a spectral-cutoff question
 and KK-decay cosmology can be nearby while asking about different systems and
 observables. The source challenge calls for separating their scientific questions
-while retaining justified framework connections. This is a steering example, not
+without a scientific KK↔HiRes edge. A possible Dark Dimension framework route
+requires its own scoped admission; the cosmic-ray observation does not establish
+that mechanism. This is a steering example, not
 permission to declare the unreviewed numerical cluster a canonical question.
 [Source-qualified examples and construction](../construction.html) describe that
 case and five other ways assumptions change interpretation. The

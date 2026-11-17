@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa16/project/research/q025/integration/source-endpoint-browser-acceptance.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa16/project/research/q025/integration/source-endpoint-browser-acceptance.py", line 56, in main
+    except Exception as e:report['error']=str(e).replace(token,'[redacted-session-token]') if token else str(e);raise RuntimeError(report['error']) from None
+                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#source-inspection-panel > details.source-scientific-context").get_by_role("button", name="Inspect source method · 2309.16542").first
+

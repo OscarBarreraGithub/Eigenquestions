@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "q025-admission-continuation-report/3",
+  "counts": {
+    "acceptedScopes": 1608,
+    "acceptedQuestionScopes": 1414,
+    "acceptedRegionScopes": 194,
+    "acceptedTypedContributions": 13180,
+    "addedScopes": 586,
+    "addedTypedRoles": 4177,
+    "addedBroadRepresentativeScopes": 76,
+    "addedRoleBasis": {
+      "description_checked": 3107,
+      "source_excerpt_checked": 1070
+    },
+    "excludedScopeRecords": 186,
+    "excludedRoles": 753,
+    "resolvedScopeAssessmentNotesApplied": 30,
+    "newHomes": 0,
+    "newIdentities": 0,
+    "newRelations": 0,
+    "carried124RolesAdmitted": 0
+  },
+  "component": {
+    "path": "research/q025/evaluation/full-pass/admissions-v3/supported-scope-role-component-v3.json",
+    "sha256": "278c869e629b4308af296018d4ed365318fd762e0dd5c9db0a7677804bed9bf6",
+    "bytes": 55104527
+  },
+  "receipt": {
+    "path": "research/q025/evaluation/full-pass/admissions-v3/scope-role-admission-v3.json",
+    "sha256": "814536aec90aabf250309c4cd63bd6cc0e926e931bcaffcd285cf710aca7cf03",
+    "bytes": 2534560
+  },
+  "compiler": {
+    "path": "research/q025/evaluation/full-pass/admissions-v3/compile_current.py",
+    "sha256": "8fbc0bc7730d5a559b48a7496b4c20a358eaa36740a7001c3fb3b0ee65372580"
+  },
+  "exclusionReasons": {
+    "limits_require_adjudication": 140,
+    "unresolved_scope_change": 2,
+    "new_challenger_proposal": 2,
+    "no_exact_representative_source_unit_for_scope": 3,
+    "explicitly_adjudicated_scope_pending_final_organization": 1,
+    "explicitly_admitted_scope": 8,
+    "explicitly_admitted_canonical_pilot_scope_global_identity_pending": 30
+  },
+  "roleExclusionReasons": {
+    "explicit_changed_regime_or_scope_mismatch": 672,
+    "no_exact_independent_role_agreement": 81
+  },
+  "representativeNewScopes": [
+    {
+      "id": "q025-candidate-question:e7f1f7e0dfa9ec3de0d57a1e",
+      "kind": "question",
+      "title": "Constructing and protecting monodromy inflation",
+      "question": "How can branes, fluxes and effective gauge sectors generate monodromy inflation while controlling symmetry breaking and ultraviolet corrections?",
+      "scopeContentSha256": "50aa6ffa517e52a913f94e4dd0b1066b80e546177137edb108db91ada43f38f9",
+      "recordId": "leaf-03743073a7938a015819-challenge:p0",
+      "readingCoverage": {
+        "descriptionCheckedCount": 20,
+        "excerptCheckedCount": 8,
+        "readingLimit": "Descriptions and bounded abstracts/introductions support construction targets, not full compactification certification. Supplied versions include D7 v2, 28 Apr 2014, and D6 v2, 2 Dec 2015.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:b5305578f582f8c846d69fcb",
+      "kind": "question",
+      "title": "GW and spin probes of ultralight scalars",
+      "question": "How can individual gravitational-wave signals, unresolved backgrounds and black-hole measurements detect or constrain ultralight scalars?",
+      "scopeContentSha256": "f904e41a72cbaeb7bbc9c7d93293e339b3388ebffbdb90e3aa57badd8f1dc3a7",
+      "recordId": "leaf-0ec228b53f325a877cb0-challenge:p1",
+      "readingCoverage": {
+        "descriptionCheckedCount": 9,
+        "excerptCheckedCount": 5,
+        "readingLimit": "Forecasts remain tied to supplied source versions, including 1706.06311v2 dated 4 October 2017. No current sensitivity or exclusion is certified.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:3ebc416ecf9a89192ae34fd8",
+      "kind": "question",
+      "title": "BPS thermodynamic limits and ensembles",
+      "question": "How do black-hole thermodynamics and phase structure approach the BPS sector, and how do ensemble and fugacity choices affect the resulting action and observables?",
+      "scopeContentSha256": "076b8581abe2be6d9c1950853cd70be515f163764befeaf587ca94bff5d670cb",
+      "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p3",
+      "readingCoverage": {
+        "descriptionCheckedCount": 4,
+        "excerptCheckedCount": 3,
+        "readingLimit": "AdS5 limit and fugacity distinctions are supported by bounded primary passages. The asymptotically flat OSV and fixed-point targets remain description-only.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:1bbcd69d5a64c2a520457b52",
+      "kind": "question",
+      "title": "Entropy bounds and generalized entropy balance",
+      "question": "Which entropy bounds and second-law statements hold for specified systems, observers and gravitational regimes?",
+      "scopeContentSha256": "cd2d44ea236d1b19218e0c58d21f68e199a0dcf9d122a6c6f34a68feb3006e0b",
+      "recordId": "leaf-44e36a0a0b29e8b5ec8a-challenge:p2",
+      "readingCoverage": {
+        "descriptionCheckedCount": 42,
+        "excerptCheckedCount": 4,
+        "readingLimit": "The observer-dependent example explicitly stops short of a general GSL proof; the proceedings critique does not establish that the proposed bounds are false.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:c15c0ac3eadf6d17ac366e0e",
+      "kind": "question",
+      "title": "Discharge spectra, stability and censorship",
+      "question": "How do corrected charged backgrounds affect Nariai discharge diagnostics or thermodynamic and scattering tests of stability and cosmic censorship?",
+      "scopeContentSha256": "11c7409035e796cb10d951418e205df63a75a78b7db2c34585d39cd944e86d2a",
+      "recordId": "leaf-5f459b239777fdeeab87-challenge:p7",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 1,
+        "readingLimit": "Bounded introductions and an abstract establish the targets and reported conclusions, not a verified universal stability or censorship theorem.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:b80d9be255d603c6fcec5d57",
+      "kind": "question",
+      "title": "Proton protection compatible with neutrino masses",
+      "question": "Which gauge symmetries suppress dangerous baryon or lepton violation while allowing the intended fermion masses in the specified low-cutoff or string-inspired models?",
+      "scopeContentSha256": "2181b5b5d8fd0f605a1f7286a98fcc8111d44c218018e4f194efdd8d149c49a3",
+      "recordId": "leaf-76e3d3dd115e5b73a21b-challenge:p7",
+      "readingCoverage": {
+        "descriptionCheckedCount": 3,
+        "excerptCheckedCount": 2,
+        "readingLimit": "Bounded TSSM pages and the 15 Jun 2011 v1 heterotic-inspired abstract/introduction support the joint targets. They do not certify complete embeddings or present phenomenological viability.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:891203df753b324531020eb9",
+      "kind": "question",
+      "title": "Vector dark matter from axion oscillations",
+      "question": "Under what conditions can an oscillating axion transfer enough energy to massive dark photons to produce viable cold vector dark matter?",
+      "scopeContentSha256": "29568c2987edd191c2ecb3d4eff6bab587e0aac2cfed8d1a2d50261b52c488f2",
+      "recordId": "leaf-971fa8dc901b31a1c07e-challenge:p7",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 2,
+        "readingLimit": "Bounded 2018 and 2019-version excerpts support the mechanisms and their differing requirements; they do not establish equivalence or viability throughout all parameter space.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:ac556fe6132529060ab93220",
+      "kind": "question",
+      "title": "Learning tame EFT couplings",
+      "question": "Under what assumptions does proposed o-minimal structure make EFT couplings and derived classification or regression problems statistically learnable with finite samples?",
+      "scopeContentSha256": "8f27249e67fbe0a59598c16036c5db925b951320c5ce023dd31e2f37aba3be52",
+      "recordId": "leaf-b93dba7f3b569b6b854f-challenge:p2",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "Description only; no learning theorem, loss function, sampling assumptions or sample-bound derivation is supplied.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-question:1875779453ec527d906a2d9d",
+      "kind": "question",
+      "title": "Classical geometric entropy and covariant consistency",
+      "question": "When can boundary subregion entropy be represented by a static minimal surface or a Lorentzian extremal surface, and which checks establish the prescription's consistency?",
+      "scopeContentSha256": "f7a23711ad209f0a9454806f0d2907e94d6678777ec398ed949a75f897b96cf7",
+      "recordId": "leaf-de6c996ab0f533ff9545-challenge:p0",
+      "readingCoverage": {
+        "descriptionCheckedCount": 15,
+        "excerptCheckedCount": 3,
+        "readingLimit": "Primary excerpts support the proposals and selected checks. The light-sheet equivalence argument is explicitly speculative; maximin and several applications are description-only.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": null
+      }
+    },
+    {
+      "id": "q025-candidate-region:277d9b2e77af3c3b06134952",
+      "kind": "region",
+      "title": "Axions and strong CP: construction, consistency and tests",
+      "question": "How do axion sectors and alternative strong-CP mechanisms arise, retain their intended symmetry and vacuum structure, and meet their cosmological and observational requirements?",
+      "scopeContentSha256": "7734d59030556adba6007612e4ad7e852c30cf220ff043dd355dc4753138f07a",
+      "recordId": "parent-6b469f457790957ff7ee-challenge:r",
+      "readingCoverage": {
+        "descriptionCheckedCount": 4,
+        "excerptCheckedCount": 4,
+        "readingLimit": "This parent pass reads the supplied contrast descriptions, bounded primary excerpts and exact graph context. Descendant coverage comes only from attributed child ledgers; their unresolved assignments and reserved unread material remain unresolved. Existing x* questions retain their original reading limits and dates. No equation-image, full-paper, cited-paper or current-observation verification was performed. This newly authored parent scope requires independent review or explicit coordinator adjudication.",
+        "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+        "inheritedParentCoverage": {
+          "fullDescendantMembers": 171,
+          "providedContrastDescriptions": 5,
+          "providedPrimaryContrastUnits": 5,
+          "completeMemberIdsPinnedExternally": true,
+          "descendantCoverage": "Only the child ledgers establish descendant description coverage; this parent pass reviews supplied contrasts and scope synthesis."
+        },
+        "directContrastDescriptions": 4,
+        "allDescendantsFreshlyRead": false
+      }
+    }
+  ],
+  "separateExplicitComponents": [
+    {
+      "path": "research/q025/evaluation/full-pass/canonical-pilot-admissions-v1/admitted-scope-role-operation-component.json",
+      "sha256": "f4b8b1badded4a9dbb5c178f61798e8d1a2b54b73fda8b58a0ec3c8ff67b7a87"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    }
+  ],
+  "allPriorScopesAndRolesByteEquivalent": true
+}

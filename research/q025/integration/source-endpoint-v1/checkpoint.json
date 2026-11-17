@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "q025-integration-checkpoint/1",
+  "wave": "J-exact-source-endpoints",
+  "status": "runtime_tested_protocol_browser_passed_final_scientific_data_pending",
+  "files": [
+    {
+      "path": "bin/navigate.mjs",
+      "sha256": "eac13e0c588f443ffe7e9a1fd6d20f735a745a516d6f93d371e808e3dcebe120",
+      "bytes": 9454
+    },
+    {
+      "path": "docs/agent-interface.md",
+      "sha256": "3305b161e0d5700b35988f4d9f5699aa7144205555ced821bb794e92d6358944",
+      "bytes": 26329
+    },
+    {
+      "path": "docs/contextual-view-showcase.md",
+      "sha256": "1e32763640e5c074b6bbd56dc9223c4c53c61603817d6b3bb2a46e38f6327a5e",
+      "bytes": 5262
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "sha256": "2b7842f33008e4902b32887cf98cd0c14db11289cde807d74ba53393301ff4a3",
+      "bytes": 24167
+    },
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "sha256": "8e29815d3d675720e43ef01d666e4fb64797ba6958c64256efa4da7fb7361ff4",
+      "bytes": 61529
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "sha256": "1bffdaca8dff5c19ec24cd7d08b15788728e3faa70a06c3c716c8b91a9b90a60",
+      "bytes": 178
+    },
+    {
+      "path": "lib/protocol/capsule.mjs",
+      "sha256": "151664a27d6ab3cb353f77c97cdf857c1ee97774b72d460d7f7f48751c7df7d3",
+      "bytes": 13202
+    },
+    {
+      "path": "lib/protocol/context-page.mjs",
+      "sha256": "50b22949ecb4ba112e41a07b8b4760122243cd06bd6b07f5b834077e156ed49e",
+      "bytes": 7326
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "sha256": "044f7c6a2b0ac675a418adf8ff74c4c72ceb4d841141fbd5e060d7c26804675f",
+      "bytes": 9195
+    },
+    {
+      "path": "lib/protocol/runtime.mjs",
+      "sha256": "e4fcff717b88226e83c95c461c3c003f58c7cb45d1b98846bd5be819c5a48b71",
+      "bytes": 11474
+    },
+    {
+      "path": "lib/protocol/session.mjs",
+      "sha256": "0c346b0074c33e8428d4af1d933894a44567d85a247187108dabf15906faaec9",
+      "bytes": 13099
+    },
+    {
+      "path": "research/q025/integration/qa16/browser.log",
+      "sha256": "80e6056132042615b75b0c378496c4f43bf408b79bbb3cdd57df2d5c8616562c",
+      "bytes": 1014
+    },
+    {
+      "path": "research/q025/integration/qa16/content-manifest.json",
+      "sha256": "5ce9cd988a9c19bc3704f70a3fbe5569744bfd5c85acb937e53a84bbe3e8f770",
+      "bytes": 119960
+    },
+    {
+      "path": "research/q025/integration/qa16/job.json",
+      "sha256": "59f4d87a63ba735f5252d24b4a14fcbfcdfbe410bf650973ac6d01c5c75661f1",
+      "bytes": 1158
+    },
+    {
+      "path": "research/q025/integration/qa16/public-evidence-scan.json",
+      "sha256": "c678f98dfa1d72d7299837ce0d77c010d40fd641578154d17570e8485b951302",
+      "bytes": 685
+    },
+    {
+      "path": "research/q025/integration/qa16/report.json",
+      "sha256": "3a63544c0267ae8883ccdc6b954c857ef135ffcbe02976c0f979b255090f7442",
+      "bytes": 976
+    },
+    {
+      "path": "research/q025/integration/qa16/run.sbatch",
+      "sha256": "4298498029df1540ff2879d2908017969cad7ae29918495a06ad836d78138072",
+      "bytes": 3148
+    },
+    {
+      "path": "research/q025/integration/qa17/browser.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/q025/integration/qa17/content-manifest.json",
+      "sha256": "edccdc5051e5486bc04cad5d451d75eaa657a200d26b3b3573dd9444ee28a2be",
+      "bytes": 120117
+    },
+    {
+      "path": "research/q025/integration/qa17/job.json",
+      "sha256": "8b5f09619d850aeb8943ffc9e79e5d32e5a41e880e5f3a65e2d14a39b359c77a",
+      "bytes": 1318
+    },
+    {
+      "path": "research/q025/integration/qa17/public-evidence-scan.json",
+      "sha256": "41c06f48a55f75decdb89fe2fe3de360f0f1eb1856826a83aa5042e8bde130aa",
+      "bytes": 700
+    },
+    {
+      "path": "research/q025/integration/qa17/report.json",
+      "sha256": "8652885fc56577be322619fce5ca7d079b3d187dd1e3965db46f6c4bb55a75b8",
+      "bytes": 1468
+    },
+    {
+      "path": "research/q025/integration/qa17/run.sbatch",
+      "sha256": "bd16cc37233aa2bcc44dcd7bc677680175899b2d50b2d5b3e1cedced836aaeb1",
+      "bytes": 3148
+    },
+    {
+      "path": "research/q025/integration/qa17/slurm-accounting.txt",
+      "sha256": "af38fa2142578681e118490fc64e700ee112c01912413083b83ebd29abc822cb",
+      "bytes": 138
+    },
+    {
+      "path": "research/q025/integration/qa17/source-endpoint-desktop.png",
+      "sha256": "3d956b3571838b75f642b5469e4bdf8e2835709211646a537d8acb01c1d72c53",
+      "bytes": 167559
+    },
+    {
+      "path": "research/q025/integration/qa17/source-endpoint-mobile.png",
+      "sha256": "f31269d734e7131b9673d22fdb51a175f5baa341b7c8674304e245720cf51cdb",
+      "bytes": 130719
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-browser-acceptance.py",
+      "sha256": "d29192acb8d0e404e9e8bcd5b9411c2ec2f376d031fc3d56102a4ec3b5ff43ee",
+      "bytes": 8631
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-v1/REPORT.md",
+      "sha256": "2a2b4eaa7133734b262b0f65041eb7cdd1c6c0c1f5a2687aa9981ceb2aaf4e4d",
+      "bytes": 4724
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-v1/create-browser-fixture.mjs",
+      "sha256": "b2cc4f2add854f5d6e6bebec8fc0d2212347ad614c35e6b2084b9c8e8e3a2090",
+      "bytes": 2372
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-v1/fixtures.json",
+      "sha256": "c2282b892bfe4c86e3c215d57a4943a06ec7a18e9f79cf1eb32e77d1ad3dfd7c",
+      "bytes": 203520
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-v1/prepare-fixtures.mjs",
+      "sha256": "2e2f924946b5445df5ff1a21d2882f49f4c1b93b3dc9b3a8db2f694ccb68a66a",
+      "bytes": 5276
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-v1/prepare-scope-evidence-fixture.mjs",
+      "sha256": "199954f60a7738b774a0dbcbae2d93d40d2d4324f4ea4e25799007356235e6bd",
+      "bytes": 999
+    },
+    {
+      "path": "research/q025/integration/source-endpoint-v1/scope-evidence-fixture.json",
+      "sha256": "f9020a1c0671215c4f8c8c49886297b3b651c7fb3bcb2c8eb5f6e3ce294ad7bb",
+      "bytes": 26899
+    },
+    {
+      "path": "schemas/navigation-state.schema.json",
+      "sha256": "5c5de20bf50bd6385df00baa6c6b853d38be69c14b98c57a9014a3042a47465d",
+      "bytes": 3859
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "sha256": "981b47d857dc279935e38ce6d6b1cee31fa5b477d2958120f139b6c1d9d273e4",
+      "bytes": 16413
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "sha256": "b1224c780296833c4bbda685f24c611212d9819633f0ce14a5aa9659aed38803",
+      "bytes": 8996
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "sha256": "541c198daed6d85b06d55bd20352daee6a414b398cdb8e9b4846e9553533f49e",
+      "bytes": 8869
+    },
+    {
+      "path": "tests/integration/scope-evidence-bound.test.mjs",
+      "sha256": "baa22a144109f91b4f0389ba13c00583d7e73f4eedd634f077ad7651fb98f17f",
+      "bytes": 3132
+    },
+    {
+      "path": "tests/integration/source-endpoint.test.mjs",
+      "sha256": "ca9251944b1d70fff0de3dc1931af68ade5112abb6b621435ca8a676f91b46c5",
+      "bytes": 7827
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "65817f3c9718cf615d10e45cc1bb1bfc369415623d0c049bccb547f8dc3e5b0c",
+      "bytes": 92064
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "sha256": "c56cc20a9c272c367896c1cd2819ea986dc7d55fa6293cfae962fecb9c022e4d",
+      "bytes": 17040
+    },
+    {
+      "path": "web/construction.html",
+      "sha256": "2dfbd55a30a3f194198e4386297986ff658756b0fe800962090c83b28213c19c",
+      "bytes": 11516
+    },
+    {
+      "path": "web/source-context.mjs",
+      "sha256": "ca823c2f79a837ca68c49bdfb4b90054bd0a194b35c81eb0762655305dc968ac",
+      "bytes": 7286
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "13acd24d7a74b854927516ec9e144d3009a12bb6288bff1e10966be373125ade",
+      "bytes": 27973
+    }
+  ],
+  "verification": {
+    "command": "npm run build && npm test && npm run check:site && git diff --check",
+    "exitCode": 0,
+    "tests": 88,
+    "observedExecSession": 56281,
+    "browserReport": "research/q025/integration/qa17/report.json",
+    "browserJob": "61512093",
+    "browserChecks": 5,
+    "pageErrors": 0,
+    "priorFailedBrowserJob": "61511007",
+    "postBrowserChanges": [
+      {
+        "path": "lib/geometry/prepared-atlas.mjs",
+        "qa17Sha256": "6f55ad4fc90d5b34b15471ef4b9cda6c438c377e55a2d30bd96e5836405d6a5f",
+        "currentSha256": "8e29815d3d675720e43ef01d666e4fb64797ba6958c64256efa4da7fb7361ff4"
+      },
+      {
+        "path": "lib/geometry/prepared-identity.mjs",
+        "qa17Sha256": "4bde273bed07e19d70a773778b96e1c2f3749cf0988adb271d5f82e2aba1a4d9",
+        "currentSha256": "1bffdaca8dff5c19ec24cd7d08b15788728e3faa70a06c3c716c8b91a9b90a60"
+      }
+    ],
+    "postBrowserChangeReason": "Measured destination evidence bound only; exact 103/122-ID logical/lazy regressions. No source-path presentation change yet."
+  },
+  "externalInputs": [
+    {
+      "path": "research/q025/geometry/relation-retrieval-v1/source-method-routes.json",
+      "sha256": "2d3fc77b042d1dd1bfd42addded3edfcba41de625db1f1d5174ab5cce85b1bfc",
+      "owner": "geometry"
+    }
+  ],
+  "scientificDefinitionsChanged": false,
+  "finalAcceptedPackageInstalled": false,
+  "limitations": [
+    "Protocol destination with actual source relations; not full accepted scientific data",
+    "Scripted MCP/browser, not fresh independent agent research",
+    "Isolated Slurm Chromium; not owner Chrome or public HTTPS acceptance",
+    "Source inspection still duplicates physics path columns; bounded presentation correction is next"
+  ]
+}

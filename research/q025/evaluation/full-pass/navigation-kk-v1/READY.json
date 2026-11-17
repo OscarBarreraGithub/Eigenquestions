@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "q025-kk-navigation-ready/1",
+  "status": "ready_for_root_review",
+  "jobs": 2,
+  "initialConcurrency": 1,
+  "maxAuthorizedConcurrency": 2,
+  "campaignSha256": "f1f270babfa295662f9ad6d1ac8c416963d7b5b02a6852cef31cbae45a453ebe",
+  "manifestSha256": "c2ed0e071eac8f42c3edfb1d81954840d02c9aea1606e25ac6a6933457b05450",
+  "tests": {
+    "python": 6,
+    "node": 2,
+    "verify": 2
+  },
+  "preflight": {
+    "schemaVersion": "q025-kk-navigation-preflight/1",
+    "coverage": {
+      "scopes": 14,
+      "wholeDescriptions": 16,
+      "pairedUnitContexts": 17,
+      "primaryWindows": 20,
+      "scopeSupportInheritedBeyondSelectedWitnesses": true,
+      "selectedWitnessPolicy": "Every narrow physical KK source contribution plus fixed-destination evidence units and one broad-family witness. Unselected broad members retain their previous review; no fresh complete-member reading claimed."
+    },
+    "nominatedPairs": 20,
+    "candidateRoutes": 12,
+    "fixedAdmittedRoutes": 7,
+    "actualProposalPromptCharacters": 154029,
+    "schemaCharacters": 11895,
+    "maxOutputCharacters": 80000,
+    "worstChallengeWithMaximumPriorOutputTokens": 127975,
+    "dispatchGuardTokens": 220000,
+    "all20PrimaryLocatorsValid": true,
+    "sealedUnitsIncluded": 0,
+    "actualDependentPromptCheckedAtDispatch": true,
+    "promptSha256": "ad1238364bc6ab2d531c4997bd9644b6d0df661b9cabff5b6b4e692421000af7",
+    "packetSha256": "1f022dee1593d248f10697eaec93f47b12187a0e369f1364d6b6610968386d1f",
+    "nativeLaunches": 0
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/prepare_packet.py",
+      "sha256": "b0d243198bc64fb0d4575924f0eb703bb002d6ae2c63df54ecc1d786fd51cdbd"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/contract.py",
+      "sha256": "03049e431e52b0cc121b2cd09bb79f36426fdaa65bcc9ea9f43bf0236b1d5ae9"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/materialize.py",
+      "sha256": "59cbd50e0ecaf2faf7d29095dedf5cc9a647529202bd4bfb280d530c7842f9ab"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/INSTRUCTIONS.md",
+      "sha256": "8113fa4d5df70def50e195af89d1433b8230cabff479c324bad8aa8506d1ae72"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/source-index.json",
+      "sha256": "3c7efc312e103bced66249c3eee1f4435455647dc0355a96c9c0aa5d5e31cb95"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/runner.mjs",
+      "sha256": "04edff43bef650e87f29d69957ed7d1bf416d7c34712fcd35dd5b737329fb2fc"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/test_contract.py",
+      "sha256": "37be8ba841522bdb65b403b1fcda88a494f359866fdd7429b1eee67014889228"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/runner.test.mjs",
+      "sha256": "f583f35647e71f90860e1c2d344c88413460420a9b70efcb0a0d904364d0af4d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/preflight.json",
+      "sha256": "d7cc25e64fac34d58c8ea5f957f58b4cc80cea47b71d1d7f43a5f0a2727055ac"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/manifest.json",
+      "sha256": "c2ed0e071eac8f42c3edfb1d81954840d02c9aea1606e25ac6a6933457b05450"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-kk-v1/construction.json",
+      "sha256": "68ee2bdccc3a4c9c037b41c160f4230f9f9722fa4717ac9d955368a721d110b5"
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/navigation-kk-v1/runner.mjs --run --enable",
+  "nativeLaunches": 0
+}

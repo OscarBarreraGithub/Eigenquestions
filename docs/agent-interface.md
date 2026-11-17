@@ -54,6 +54,28 @@ shared-extraction context and same-paper context are visibly distinct; a source
 relation is never promoted to a claim about an entire destination. Missing exported
 context reports its coverage limit, not absence of assumptions or methods.
 
+Exact reviewed endpoint inspection uses the same controller. A relations page may
+include `sourceRoutes.items[].endpoints[].choices[].action`. Each action names an
+exact reviewed relation, its origin source unit, an endpoint object and a frozen
+method unit. Submit it through `navigator_navigate` (with `expectedRevision`) or
+browser `navigate(action,{expectedRevision})`. The CLI equivalent is:
+
+```sh
+node bin/navigate.mjs inspect-source --origin ORIGIN_UNIT \
+  --source-relation RELATION_ID --object OBJECT_ID --unit METHOD_UNIT \
+  --expected-revision CAPTURED_REVISION
+```
+
+The resulting `state.sourceInspection` and `view.atlas.sourceInspection` preserve
+the physical destination selector, query, membership, source counts and perspective.
+Only the view/history focus changes. Original relation direction, status, complete
+premises and reader notes remain attached. Following toward a source endpoint does
+not assert a converse. The checksummed endpoint map is loaded only when inspecting
+source context; it matches exact source-node IDs and verifies frozen method text.
+Unmapped endpoints have no follow action—there is no same-paper fallback.
+`close-source` clears the focus; Back/replay/import restore it. Export the full
+capsule to share an inspection; a compact destination link has no source focus.
+
 The optional source-context index uses exact unit-hash prefix buckets. Opening one source reads the small index, its checksummed bucket and one checksummed paper shard; it does not load the complete scientific graph. Method/source attachment overrides use exact source IDs and numbered extraction windows only. Whole-paper first-pass context is separately labeled, and missing requested anchors remain explicit. The reader preserves optional plain source locators and the exact compressed-file descriptor. Static `.json.gz` files are hashed as stored bytes and decoded explicitly; they must not be served with a `Content-Encoding: gzip` transformation.
 
 The local bridge/MCP exposes the same read-only operations as `navigator_sources`,

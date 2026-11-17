@@ -1,0 +1,18 @@
+{
+  "kind": "q025-exact-source-endpoint-browser",
+  "scope": "Isolated Slurm Chromium; protocol destination and exact recorded source-method relations. Scripted MCP/browser proof, not independent agent routing or complete scientific acceptance.",
+  "manifestSha256": "7c99a9cfb3c50987c6a4be2bc8481aa628b54379793fe9f0794348558b9a4cb5",
+  "checks": [
+    {
+      "name": "MCP follows the exact reviewed target method with unchanged physical selector, membership and USING",
+      "passed": true,
+      "revision": 1,
+      "relationId": "scientific:production-001",
+      "sourceObjectId": "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73"
+    }
+  ],
+  "passed": false,
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "error": "Locator.wait_for: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#source-inspection-panel > details.source-scientific-context\").get_by_role(\"button\", name=\"Inspect source method \u00b7 2309.16542\").first\n"
+}

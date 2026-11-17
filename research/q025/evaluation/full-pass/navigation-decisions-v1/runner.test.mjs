@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {verifyPrepared,reviewIndependence}from'./runner.mjs';
+test('four bounded jobs have independent per-family challenge dependencies',()=>{const x=verifyPrepared();assert.equal(x.jobs.length,4);assert.equal(x.maxAuthorizedConcurrency,4);assert.equal(x.jobs.filter(j=>j.dependsOn).length,2);});
+test('proposal and challenge receipt independence differ truthfully',()=>{assert.equal(reviewIndependence('proposal'),'source_only_first_proposal');assert.equal(reviewIndependence('challenge'),'separate_ephemeral_thread; previous_stage_visible');});

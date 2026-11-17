@@ -258,3 +258,23 @@ metadata in the initial catalog. Browser disclosures read twenty rows at a time,
 grouped by paper; static destination pages preserve the complete explicit list.
 
 Typed contributions are also available through the existing source reader: `navigator_sources({destinationId, collection:"contributions", offset:0, limit:20})`, CLI `sources --destination ID --collection contributions`, or browser `sources(selector,{collection:"contributions"})`. Each page returns its exact role, reading basis, qualification, review/evidence references and hydrated excerpt. The default collection remains `membership`; membership filters such as USING cannot be combined with contributions. These reads do not change the session.
+
+### Exact source-object inspection
+
+Prepared states may carry `sourceInspection:{originUnitId,relationId,objectId,unitId}`.
+`inspect-source` and `close-source` use the same transition/revision controller.
+The canonical physical selector, query, perspective, membership and scientific
+identity remain unchanged; the normalized view/history state includes this focus.
+Ordinary destination navigation clears it. Back/replay/import restore it only
+after the exact versioned source context and endpoint map are prepared.
+
+Optional `manifest.files.sourceMethodRoutes` pins the small exact method-route map.
+A route must agree with the reviewed source relation's ID, direction, type, receipt
+and both exact endpoints. A selected method must contain that source-node anchor
+and reproduce its frozen row/text hash. Missing mappings never use co-paper or
+similarity fallback. Unmapped relations remain readable. A mapped route does not
+create a destination, home, scientific alias, primary mass or USING applicability.
+The source inspection snapshot retains the exact object, source description,
+relation conditions and provenance within the bounded capsule; complete context
+remains lazily readable. Captured-parent guards apply to all visible inspection
+actions, including zero, and to asynchronous source reads before commit.

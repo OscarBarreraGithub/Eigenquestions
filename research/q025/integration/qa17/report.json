@@ -1,0 +1,40 @@
+{
+  "kind": "q025-exact-source-endpoint-browser",
+  "scope": "Isolated Slurm Chromium; protocol destination and exact recorded source-method relations. Scripted MCP/browser proof, not independent agent routing or complete scientific acceptance.",
+  "manifestSha256": "7c99a9cfb3c50987c6a4be2bc8481aa628b54379793fe9f0794348558b9a4cb5",
+  "checks": [
+    {
+      "name": "MCP follows the exact reviewed target method with unchanged physical selector, membership and USING",
+      "passed": true,
+      "revision": 1,
+      "relationId": "scientific:production-001",
+      "sourceObjectId": "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73"
+    },
+    {
+      "name": "Browser follows the source endpoint without reversing the original relation or changing the physics destination",
+      "passed": true,
+      "revision": 2
+    },
+    {
+      "name": "Back/replay restore exact source inspections and a stale inspection cannot replace the browser state",
+      "passed": true,
+      "revision": 4
+    },
+    {
+      "name": "Focused source inspection has no horizontal overflow at 390 pixels",
+      "passed": true
+    },
+    {
+      "name": "Closing inspection restores the exact original view; session import restores the focused source",
+      "passed": true,
+      "revision": 6
+    }
+  ],
+  "passed": true,
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "screenshots": [
+    "source-endpoint-desktop.png",
+    "source-endpoint-mobile.png"
+  ]
+}

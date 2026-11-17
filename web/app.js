@@ -8,6 +8,7 @@ import {sourceContextDisclosure} from '/source-context.mjs';
 import {pageSourceContext} from '/lib/protocol/context-page.mjs';
 
 const $ = id => document.getElementById(id);
+let lastRenderedInspection = null;
 const initialCorpusScope = $('corpus-scope').textContent;
 const svgNS = 'http://www.w3.org/2000/svg';
 const labels = { explore: 'Explore connections', derive: 'How is it derived?', phenomenology: 'Physical implications', recent: 'Recent within this corpus', using: 'Work using this idea', combined: 'Question + method', physical_question: 'Physical question', method: 'Methods', on: 'work on this idea', either: 'work on or using this idea' };
@@ -30,7 +31,7 @@ const installedIdentity = capsule => {const selector=capsule?.snapshot.session?.
 async function ensureAtlas(selector) {
   if(!selector||selector.kind!=='atlas-destination'||![selector.atlasId,selector.atlasVersion,selector.destinationId].every(value=>typeof value==='string'&&/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,199}$/.test(value)))throw new Error('Invalid prepared atlas selector.');
   const key=atlasKey(selector);
-  if(!atlasLoads.has(key))atlasLoads.set(key,loadAtlas(`/data/atlas/${encodeURIComponent(selector.atlasId)}/${encodeURIComponent(selector.atlasVersion)}`).then(atlas=>{const loaded={atlas,navigator:createAtlasNavigator(atlas),readSources:createAtlasSourceReader(atlas),readContext:createAtlasContextReader(atlas)};installedAtlases.set(key,loaded);return loaded;}).catch(error=>{atlasLoads.delete(key);throw error;}));
+  if(!atlasLoads.has(key))atlasLoads.set(key,loadAtlas(`/data/atlas/${encodeURIComponent(selector.atlasId)}/${encodeURIComponent(selector.atlasVersion)}`).then(atlas=>{const navigator=createAtlasNavigator(atlas),loaded={atlas,navigator,readSources:createAtlasSourceReader(atlas),readContext:navigator.readContext};installedAtlases.set(key,loaded);return loaded;}).catch(error=>{atlasLoads.delete(key);throw error;}));
   const loaded=await atlasLoads.get(key);await loaded.navigator.prepareDestination?.(selector.destinationId);return loaded;
 }
 function retainBranch(capsule) {
@@ -293,7 +294,7 @@ function render() {
   $('path').replaceChildren();
   session.states.forEach((item, index) => {
     if (index) $('path').append(el('span', 'path-arrow', '›'));
-    const pathQuestion = bridge ? item.query : stateQuestion(item);
+    const pathQuestion = item.sourceInspection ? `Source inspection · ${item.query}` : bridge ? item.query : stateQuestion(item);
     const earlier = builtIn(activeCapsule) && !columnViews.get(item.id)?.authored ? previousVisitIndex(session,index) : -1;
     const button = el('button', '', earlier>=0 ? `Return to step ${stepNumber(earlier)}` : displayExcerpt(pathQuestion,48) || 'New path'); button.type = 'button'; button.title = `${item.query || 'New path'} · ${labels[item.intent]}`;
     button.setAttribute('aria-label', pathQuestion ? `Step ${stepNumber(index)}: ${pathQuestion}` : 'New path');
@@ -314,8 +315,10 @@ function render() {
   if (!view.chart && activePanel === 'geometry') switchPanel('sources');
   updateOptionsSummary(); renderColumns(); renderEvidence();
   const selector=state.selector,loaded=selector&&installedAtlases.get(atlasKey(selector));
-  const renderPreparedPanel=()=>renderAtlasPanel({capsule:activeCapsule,navigator:loaded?.navigator,manifest:loaded?.atlas.manifest,readSources:loaded?.readSources,contextForSource:loaded?unitId=>sourceContextDisclosure(()=>loaded.readContext(unitId)):undefined,onNavigate:payload=>action(payload),onNative:query=>startNativeBranch(query),onError:message=>status(message,true)});
+  const renderPreparedPanel=()=>renderAtlasPanel({capsule:activeCapsule,navigator:loaded?.navigator,manifest:loaded?.atlas.manifest,readSources:loaded?.readSources,contextForSource:loaded?unitId=>sourceContextDisclosure(()=>loaded.readContext(unitId),{onInspect:payload=>action(payload)}):undefined,onNavigate:payload=>action(payload),onNative:query=>startNativeBranch(query),onError:message=>status(message,true)});
   renderPreparedPanel();
+  if(state.sourceInspection&&lastRenderedInspection!==state.id){const focusedStateId=state.id;requestAnimationFrame(()=>{if(currentState(session).id===focusedStateId)$('source-inspection-panel')?.scrollIntoView({block:'start'});});}
+  lastRenderedInspection=state.sourceInspection?state.id:null;
   if(selector&&!loaded){const identity=state.id;ensureAtlas(selector).then(()=>{if(currentState(session).id===identity)render();}).catch(error=>status(`This exact snapshot remains readable; prepared continuation unavailable: ${error.message}`,true));}
   if (activePanel === 'geometry') { renderChart(); renderDetails(); }
   status(view.atlas?.destination.metadataOnly ? 'Classification vocabulary · paper coverage is a separate atlas' : view.nodes.length ? `${view.directions.length} ${canAttemptContinuation() ? (view.directions.length===1?'next direction':'next directions') : (view.directions.length===1?'supplied group':'supplied groups')} · ${authored ? `${view.nodes.length} source descriptions` : `${paperCount} papers`} in this view` : state.query ? view.warnings?.[0] || 'No supported sources found. Try another focus.' : 'Ready for your first question.');
@@ -323,6 +326,8 @@ function render() {
   document.documentElement.dataset.stateId = state.id;
   document.documentElement.dataset.corpusId = state.corpusId;
   document.documentElement.dataset.destinationId = state.selector?.destinationId || '';
+  document.documentElement.dataset.sourceObjectId = state.sourceInspection?.objectId || '';
+  document.documentElement.dataset.sourceUnitId = state.sourceInspection?.unitId || '';
 }
 function renderColumns() {
   const host = $('columns'); host.replaceChildren();
@@ -538,7 +543,7 @@ function renderEvidence() {
     details.append(el('p', '', `Source ID: ${node.id}`));
     if (evidence.sourceRecordIds?.length) details.append(el('p', '', `Source records: ${evidence.sourceRecordIds.join(', ')}`));
     if (view.chart?.kind === 'affine-plane') details.append(el('p', '', `Distance from this local plane: ${readable(node.residual)}. ${node.inSlab === false ? 'Outside' : 'Within'} the chosen residual cutoff.`)); card.append(details);
-    if(view.atlas&&node.kind!=='vocabulary'){const selector=structuredClone(currentState(session).selector);card.append(sourceContextDisclosure(async()=>{const prepared=await ensureAtlas(selector);return prepared.readContext(node.id);}));}
+    if(view.atlas&&node.kind!=='vocabulary'){const selector=structuredClone(currentState(session).selector);card.append(sourceContextDisclosure(async()=>{const prepared=await ensureAtlas(selector);return prepared.readContext(node.id);},{onInspect:payload=>action(payload)}));}
     const actions = el('div', 'source-actions'), url = safeUrl(node.sourceUrl || evidence.url);
     if (url) { const link = el('a', '', node.kind==='vocabulary'?'Read vocabulary source ↗':'Read paper ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; actions.append(link); }
     const focus = el('button', '', 'Explore this source'); focus.type = 'button'; focus.disabled = !canAttemptContinuation() || activeCapsule.builder.id !== NATIVE_BUILDER; focus.addEventListener('click', () => action({ type: 'refine', query: String(evidence.text || node.label).slice(0, 2000), focusIds: [node.id] })); actions.append(focus); card.append(actions); return card;

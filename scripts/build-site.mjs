@@ -40,6 +40,7 @@ if(atlasIndex){
     if(manifest.files.logicalValidation)await checkedFile(manifest.files.logicalValidation);
     const unrepresented=manifest.files.unrepresentedPapers?await checkedFile(manifest.files.unrepresentedPapers,true):[];if(!Array.isArray(unrepresented))throw new Error('Unrepresented paper inventory must be an array');
     if(manifest.files.sourceContextSummary)await checkedFile(manifest.files.sourceContextSummary);
+    if(manifest.files.sourceMethodRoutes)await checkedFile(manifest.files.sourceMethodRoutes);
     const inventoryPath=descriptor=>`/data/atlas/${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}/${escapeHtml(descriptor.path)}`;
     const coverageLinks=[manifest.files.sourceContextSummary?`<a href="${inventoryPath(manifest.files.sourceContextSummary)}">Frozen source inventory and context coverage</a>`:'',manifest.files.unrepresentedPapers?`<a href="${inventoryPath(manifest.files.unrepresentedPapers)}">Bibliographic records without source text (${unrepresented.length})</a>`:''].filter(Boolean).join(' · ');
 

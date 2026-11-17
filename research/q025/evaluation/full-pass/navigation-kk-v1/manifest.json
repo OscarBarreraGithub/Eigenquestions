@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "q025-native-navigation-decisions/1",
+  "status": "prepared_not_launched",
+  "jobs": [
+    {
+      "jobId": "kk-cross-field-routes-proposal",
+      "dependsOn": null,
+      "requestSha256": "34a9dc096de83d1fe8686541eb7bb0872aa7117ccc611f48d2e78b5dd5ab503e"
+    },
+    {
+      "jobId": "kk-cross-field-routes-challenge",
+      "dependsOn": "kk-cross-field-routes-proposal",
+      "requestSha256": "f09874903e166abe46cb75ae5a7ebbefa5b7c7717f27bc9f84823aad7df634ef"
+    }
+  ],
+  "maxAuthorizedConcurrency": 2,
+  "initialConcurrency": 1,
+  "publicPins": [
+    {
+      "path": "full-pass/navigation-kk-v1/contract.py",
+      "sha256": "03049e431e52b0cc121b2cd09bb79f36426fdaa65bcc9ea9f43bf0236b1d5ae9"
+    },
+    {
+      "path": "full-pass/navigation-kk-v1/materialize.py",
+      "sha256": "59cbd50e0ecaf2faf7d29095dedf5cc9a647529202bd4bfb280d530c7842f9ab"
+    },
+    {
+      "path": "full-pass/navigation-kk-v1/INSTRUCTIONS.md",
+      "sha256": "8113fa4d5df70def50e195af89d1433b8230cabff479c324bad8aa8506d1ae72"
+    },
+    {
+      "path": "full-pass/navigation-kk-v1/source-index.json",
+      "sha256": "3c7efc312e103bced66249c3eee1f4435455647dc0355a96c9c0aa5d5e31cb95"
+    },
+    {
+      "path": "full-pass/canonical-v1/contract.py",
+      "sha256": "03e737f407dd23c92782bcb738a86c86216bf43c027f149b3f5fb2d48f7bc158"
+    },
+    {
+      "path": "recovery/compact_contract.py",
+      "sha256": "88b2434673f401360d3cf5eef39949a2071b209809d88335142d12c11fdc16a2"
+    }
+  ],
+  "schemaSha256": "50df133dd8f9f040d25c09561135acf1f82648f78847255dfce95475f03be9e8",
+  "compilerSha256": "59cbd50e0ecaf2faf7d29095dedf5cc9a647529202bd4bfb280d530c7842f9ab",
+  "nativeLaunches": 0,
+  "campaignSha256": "f1f270babfa295662f9ad6d1ac8c416963d7b5b02a6852cef31cbae45a453ebe",
+  "runnerSha256": "04edff43bef650e87f29d69957ed7d1bf416d7c34712fcd35dd5b737329fb2fc",
+  "launchGate": "Root verifies exact source/control semantics before the separate KK pair."
+}

@@ -135,3 +135,12 @@ exports contain canonical native state; full contextual capsules preserve more
 authored meaning. Neither format should contain executable code or session tokens.
 
 Typed contributions are also available through the existing source reader: `navigator_sources({destinationId, collection:"contributions", offset:0, limit:20})`, CLI `sources --destination ID --collection contributions`, or browser `sources(selector,{collection:"contributions"})`. Each page returns its exact role, reading basis, qualification, review/evidence references and hydrated excerpt. The default collection remains `membership`; membership filters such as USING cannot be combined with contributions. These reads do not change the session.
+
+Exact reviewed source endpoints: request `navigator_context` with
+`section:"relations"`. A returned `sourceRoutes` choice contains an
+`inspect-source` action; submit it through `navigator_navigate` with the captured
+`expectedRevision`. `close-source` clears the inspection. Browser and CLI expose
+the same action. The physical destination is unchanged; reverse browsing is not
+a converse relation, a question home or method applicability. Unmapped endpoints
+remain readable and have no follow action. Full capsule export preserves this
+source focus; compact links identify the physical destination only.

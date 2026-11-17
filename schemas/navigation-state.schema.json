@@ -122,6 +122,39 @@
           "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._:-]*$"
         }
       }
+    },
+    "sourceInspection": {
+      "type": "object",
+      "description": "Presentation/history focus on an exact reviewed source-relation endpoint; does not change scientific destination identity.",
+      "required": [
+        "originUnitId",
+        "relationId",
+        "objectId",
+        "unitId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "originUnitId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "relationId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "objectId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "unitId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      }
     }
   },
   "additionalProperties": false,
@@ -147,5 +180,10 @@
         }
       }
     }
-  ]
+  ],
+  "dependentRequired": {
+    "sourceInspection": [
+      "selector"
+    ]
+  }
 }

@@ -35,6 +35,13 @@ the human's path unless a visible update is part of the request. Read the
    Exact incidence and same-paper context do not establish universal premises or
    applicability; absence from a page or filter does not establish absence in
    physics. Extracted descriptions are not guaranteed verbatim quotations.
+   On a relations page, `sourceRoutes` lists only exact mapped source endpoints.
+   To inspect one visibly, submit its returned `inspect-source` action with the
+   captured revision. The physics destination stays fixed; source inspection
+   creates no home, equivalence or USING claim. Preserve the recorded direction
+   and conditions even when inspecting the source endpoint. Unmapped endpoints
+   remain readable without a follow action. `close-source` returns to the question;
+   Back/replay and a full capsule preserve the inspection history.
 4. For an authorized visible update, use `navigate({type:'navigate',selector})`
    or `select` with a current direction ID. Use `back` / `replay` to revisit a path.
    Every visible mutation, including import, must supply the parent revision captured

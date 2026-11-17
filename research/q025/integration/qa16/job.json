@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "q025-integration-job/1",
+  "jobId": "61511007",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 2,
+  "memory": "8G",
+  "timeLimit": "00:08:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/qa16",
+  "baseArchiveSha256": "f7ef7e78dadc5a5d5dc0fbddec732a5e72bd4e3d02f5eb3a03feb42171b2f2c5",
+  "priorOverlaySha256": "d152930b95e92a23b1b7ef21d5d25a290042befde6b139c6ac9c9257e8dc9d1e",
+  "overlayArchiveSha256": "8102911aa504e530faffc70420588936115526fcbc736560136ffdae11d48fb2",
+  "overlayArchiveBytes": 157214,
+  "contentManifestSha256": "5ce9cd988a9c19bc3704f70a3fbe5569744bfd5c85acb937e53a84bbe3e8f770",
+  "sbatchSha256": "4298498029df1540ff2879d2908017969cad7ae29918495a06ad836d78138072",
+  "baseCommit": "3c3fed3c546e355dd5efe941f67e7fb2d16d0309",
+  "includesUncommittedFiles": true,
+  "statusAtSubmission": "submitted",
+  "scope": "QA14 archive + frozen QA15 overlay + exact current source-endpoint overlay. Protocol destination, exact recorded source relations; no full scientific acceptance.",
+  "finalStatus": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:00:48"
+}

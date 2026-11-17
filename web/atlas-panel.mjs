@@ -34,6 +34,17 @@ export function renderAtlasPanel({capsule,navigator,manifest,readSources,context
   const {atlas}=capsule.snapshot.view,record=atlas.destination,selector=atlas.selector;
   const presentation=destinationPresentation(record);
   let currentSummary=document.getElementById('atlas-current-summary');if(!currentSummary){currentSummary=element('p',undefined,'atlas-summary');currentSummary.id='atlas-current-summary';document.getElementById('full-question-details').insertBefore(currentSummary,document.getElementById('full-question-text'));}currentSummary.textContent=presentation.summary;currentSummary.hidden=false;
+  if(atlas.sourceInspection){
+    const inspected=atlas.sourceInspection,panel=element('section',undefined,'source-inspection');panel.id='source-inspection-panel';panel.setAttribute('data-object-id',inspected.object.id);
+    panel.append(element('h2',`Source method · ${inspected.source.paperId}`),element('p',`Within the current physics destination: ${record.title}`),element('p',inspected.notice),element('p',inspected.object.text));
+    if(/^https?:\/\//.test(inspected.source.sourceUrl||'')){const link=element('a',inspected.source.title);link.href=inspected.source.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';panel.append(link);}
+    const relation=element('details');relation.append(element('summary',`${inspected.relation.type.replaceAll('_',' ')} · ${inspected.relation.semanticStatus.replaceAll('_',' ')}`),element('p',`${inspected.relation.source} → ${inspected.relation.target}`));
+    if(inspected.relation.statement)relation.append(element('p',inspected.relation.statement));if(inspected.relation.readerNote)relation.append(element('p',inspected.relation.readerNote));
+    relation.append(element('p',`Inspecting the ${inspected.endpointSide} endpoint does not reverse this recorded direction.`));
+    if(inspected.relation.premises)relation.append(element('h3','Conditions and qualifications'),element('pre',JSON.stringify(inspected.relation.premises,null,2)));
+    const origin=element('details');origin.append(element('summary','Exact source identity and provenance'),element('pre',JSON.stringify({target:inspected.target,mapping:inspected.mapping,object:inspected.object,relation:inspected.relation},null,2)));relation.append(origin);panel.append(relation);
+    if(contextForSource)panel.append(contextForSource(inspected.target.unitId));const close=element('button','Return to this physics question');close.type='button';close.addEventListener('click',()=>onNavigate({type:'close-source'}));panel.append(close);host.append(panel);
+  }
   const scope=element('details'),summary=element('summary',record.metadataOnly?'Classification source and coverage':'Scope, assumptions and sources');scope.append(summary);
   if(record.whyItMatters)scope.append(element('p',record.whyItMatters));
   for(const [key,label]of[['systems','Systems'],['targets','Targets'],['includes','Includes'],['excludes','Distinctions and exclusions'],['assumptions','Assumptions'],['regimes','Regimes'],['conventions','Conventions']]){

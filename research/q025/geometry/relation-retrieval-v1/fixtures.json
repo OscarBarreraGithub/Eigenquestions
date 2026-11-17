@@ -1,0 +1,1348 @@
+{
+  "schemaVersion": "q025-exact-method-route-fixtures/1",
+  "mapping": {
+    "path": "research/q025/geometry/relation-retrieval-v1/source-method-routes.json",
+    "sha256": "2d3fc77b042d1dd1bfd42addded3edfcba41de625db1f1d5174ab5cce85b1bfc",
+    "bytes": 105807
+  },
+  "fixtures": [
+    {
+      "sourceRelation": {
+        "taskId": "production-001",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/production-001.json",
+        "receiptSha256": "baaee555ee38e3109e0adf1a28a7ef42325654f102d42f94ccff7ab903d07aa1",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "admittedScientificEdge": true,
+        "relationCategory": "uses_method",
+        "direction": "right_to_left",
+        "nodeIds": [
+          "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73",
+          "obj:b5f0ec67030dbefac468:method:f8d6435ed3a4a59325aa4675"
+        ],
+        "endpoints": [
+          {
+            "id": "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73",
+            "paper_id": "2305.01722",
+            "paper_key": "113d16e2ff1f6e908859",
+            "type": "method",
+            "text": "Dimensional reduction and Weyl rescaling to Einstein frame; extremization of the universal volume/dilaton potential; comparison with traced, integrated higher-dimensional Einstein and dilaton equations.",
+            "evidence_ids": [
+              "ev:b72a42905cdbc89abe461048022194a6",
+              "ev:492b908c53eef4fa7fbb26e8278766c7",
+              "ev:99f00ec1448b88df94b43ae5c53f46fe"
+            ]
+          },
+          {
+            "id": "obj:b5f0ec67030dbefac468:method:f8d6435ed3a4a59325aa4675",
+            "paper_id": "2309.16542",
+            "paper_key": "b5f0ec67030dbefac468",
+            "type": "method",
+            "text": "Dimensionally reduce the string-frame action and Weyl-rescale to four-dimensional Einstein frame. Require every contribution to the scalar potential to have the same N-scaling, solving for dilaton and subvolume exponents in terms of the independent F₄ exponents.",
+            "evidence_ids": [
+              "ev:3bf633f528453e3c3fcbe18d2e108e79",
+              "ev:9492f32c4b7ed7d4df4b98f7d8eb7cef",
+              "ev:dfe1c737f30120e71bc8522d8bcedec5"
+            ]
+          }
+        ],
+        "exactAssertion": "Within the displayed classical, smeared, Ricci-flat H3/F0/F4/O6 reduction, the right method uses the Einstein-frame dimensional-reduction and universal volume/dilaton weighting component of the left method. The dictionary vol_R=rho^3, tau=sqrt(vol_R)*exp(-phi), vi=rho*s_i with product(s_i)=1 makes the Weyl factors identical and maps every displayed right potential contribution to the corresponding left universal monomial. The right equal-N-power analysis is an additional step with anisotropic shapes retained. This is reconstructed structural method use, without a claim of bibliographic dependence. It excludes equivalence of the complete methods, identification of power matching with extremization, and conclusions about localized vacua, stability, supersymmetry, physical control or scale separation.",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0032s002",
+                "113d16e2ff1f6e908859:p0033s001",
+                "b5f0ec67030dbefac468:p0006s001",
+                "b5f0ec67030dbefac468:p0006s002",
+                "b5f0ec67030dbefac468:p0007s002"
+              ],
+              "statement": "The common setting is a classical, unwarped reduction from ten-dimensional string frame to four-dimensional Einstein frame, retaining the internal volume and dilaton. The right source supplies the particular smeared, Ricci-flat orbifold model."
+            },
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0033s001",
+                "b5f0ec67030dbefac468:p0007s002",
+                "b5f0ec67030dbefac468:p0008s001"
+              ],
+              "statement": "The compared potential sector contains H3, F0, F4 and O6 contributions, with F2=0 and the right source's axion backgrounds set to zero. Anisotropic shape dependence remains in coefficients of the universal volume/dilaton powers."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0032s002",
+                "b5f0ec67030dbefac468:p0006s001",
+                "b5f0ec67030dbefac468:p0007s002"
+              ],
+              "statement": "Use positive internal metric moduli and a common fixed reference-volume normalization when identifying the two volume variables and Einstein metrics."
+            },
+            {
+              "evidence_ids": [
+                "b5f0ec67030dbefac468:p0006s002",
+                "b5f0ec67030dbefac468:p0008s001"
+              ],
+              "statement": "Restrict the comparison to the displayed smeared, internally constant-dilaton, Ricci-flat reduction and its axion-zero potential; do not add localization or correction terms."
+            },
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0033s001",
+                "b5f0ec67030dbefac468:p0008s001",
+                "b5f0ec67030dbefac468:p0008s002"
+              ],
+              "statement": "Universal volume/dilaton weights are evaluated at fixed fluxes and shape. In the separate N-scaling calculation, retain the nonvanishing terms of the stated ansatz, with p and m0 fixed and ei scaling as N^fi; universal coefficients need not remain constant along this family."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0032s002",
+                "b5f0ec67030dbefac468:p0006s001",
+                "b5f0ec67030dbefac468:p0007s002"
+              ],
+              "statement": "The volume and Weyl definitions permit the explicit dictionary rho=(v1*v2*v3)^(1/3), tau=(v1*v2*v3)^(1/2)*exp(-phi); positivity is the metric branch used in this comparison."
+            },
+            {
+              "evidence_ids": [
+                "b5f0ec67030dbefac468:p0006s002",
+                "b5f0ec67030dbefac468:p0008s001"
+              ],
+              "statement": "The right source explicitly adopts smearing, Ricci flatness and internally constant dilaton, and explicitly sets the axion backgrounds to zero in presenting the compared potential."
+            },
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0033s001",
+                "b5f0ec67030dbefac468:p0008s001",
+                "b5f0ec67030dbefac468:p0008s002"
+              ],
+              "statement": "The left coefficients are stated to be independent of rho and tau. The right source explicitly fixes the N-powers of p and m0, assigns independent fi to the F4 components, and imposes equal powers on the retained contributions."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0032s001",
+                "113d16e2ff1f6e908859:p0033s001",
+                "b5f0ec67030dbefac468:p0008s002"
+              ],
+              "statement": "The left method includes extremization and a reported correspondence with integrated higher-dimensional equations. The right method's equal-N-power condition is an additional scaling ansatz; it does not itself impose those extremum equations."
+            },
+            {
+              "evidence_ids": [
+                "113d16e2ff1f6e908859:p0033s001",
+                "b5f0ec67030dbefac468:p0006s001",
+                "b5f0ec67030dbefac468:p0008s001"
+              ],
+              "statement": "The left universal weights cover more ingredients and geometries. The right calculation retains specific fluxes and anisotropic torus moduli, whose dependence must remain inside the universal coefficients."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "Dimensions and Einstein-frame Weyl factor",
+            "conversion": "Identify the left ds4^2 with the right Einstein metric g_tilde, and the external string metric with g_string=tau^(-2)*g_E. With vol_R=rho^3 and tau=rho^(3/2)*exp(-phi), tau^(-2)=exp(2phi)/vol_R, exactly the right Eq. (3.3). Images image:2 and image:4 confirm the factors and direction of rescaling.",
+            "evidence_ids": [
+              "113d16e2ff1f6e908859:p0032s001",
+              "113d16e2ff1f6e908859:p0032s002",
+              "b5f0ec67030dbefac468:p0007s002",
+              "b5f0ec67030dbefac468:p0008s001"
+            ],
+            "left_definition": "Ten-dimensional string metric ds10^2=tau^(-2)ds4^2+rho*ds6^2, with ds4^2 Einstein and ds6^2 unit-volume.",
+            "right_definition": "Ten-dimensional string-frame reduction with external metric g=exp(2phi)/vol*g_tilde; g_tilde is four-dimensional Einstein.",
+            "status": "established"
+          },
+          {
+            "concept": "Volume versus anisotropic shape",
+            "conversion": "Define s_i=v_i/rho and rho=(v1*v2*v3)^(1/3). Then product(s_i)=1. Dividing the right internal metric by rho produces the left unit-volume metric, retaining the s_i as shape variables.",
+            "evidence_ids": [
+              "113d16e2ff1f6e908859:p0032s002",
+              "113d16e2ff1f6e908859:p0033s001",
+              "b5f0ec67030dbefac468:p0006s001"
+            ],
+            "left_definition": "rho tracks overall volume: vol(M6)=rho^3. The coefficients U in the universal potential are independent of rho and tau.",
+            "right_definition": "Positive subvolume moduli v_i parameterize the three two-tori, with vol_R=v1*v2*v3.",
+            "status": "established"
+          },
+          {
+            "concept": "Dilaton and unrelated circle radion",
+            "conversion": "Identify the string dilaton phi between the ten-to-four-dimensional formulas. Do not identify it with the left circle radion varphi. Image image:1 confirms the separate circle conditions beta=-(D-2)alpha and alpha^(-2)=2(D-1)(D-2), D>2.",
+            "evidence_ids": [
+              "113d16e2ff1f6e908859:p0013s001",
+              "113d16e2ff1f6e908859:p0013s002",
+              "113d16e2ff1f6e908859:p0032s002",
+              "b5f0ec67030dbefac468:p0004s002"
+            ],
+            "left_definition": "phi in Section 4.3 is the string dilaton; varphi in Section 3.1 is a canonically normalized circle-size scalar.",
+            "right_definition": "The string coupling is gs=<exp(phi)>; phi is not presented as a canonically normalized four-dimensional scalar in the scaling ansatz.",
+            "status": "established"
+          },
+          {
+            "concept": "Flux degree, source dimension and signs",
+            "conversion": "Use n=0,4 for the retained RR degrees and q=6 for the source dimension. Rename the right NS flux parameter p_H to avoid confusing it with the left source-dimension label p. Image image:5 confirms the source term -2*m0*p_H*exp(3phi)/vol_R^(3/2); its coefficient is negative when m0*p_H>0. No flux-sign choice is needed for the weight comparison.",
+            "evidence_ids": [
+              "113d16e2ff1f6e908859:p0033s001",
+              "b5f0ec67030dbefac468:p0007s002",
+              "b5f0ec67030dbefac468:p0008s001"
+            ],
+            "left_definition": "V_n^RR=U_n*tau^(-4)*rho^(3-n), and V_source=U_s*tau^(-3)*rho^((p-6)/2).",
+            "right_definition": "F0=m0, F4=sum(e_i*w_tilde_i), H3=-p_H*beta, and the displayed source contribution is from O6 planes.",
+            "status": "established"
+          },
+          {
+            "concept": "Universal coefficients and potential normalization",
+            "conversion": "In the right potential's own normalization, substitution gives U_H=p_H^2/2, U_0=m0^2/2, U_4=sum(e_i^2*s_i^2)/2 and U_s=-2*m0*p_H. These identify the left monomial structure, without asserting equality of absolute action normalizations. U_4 can change with N because fluxes and shapes change.",
+            "evidence_ids": [
+              "113d16e2ff1f6e908859:p0033s001",
+              "b5f0ec67030dbefac468:p0008s001"
+            ],
+            "left_definition": "Universal U coefficients are independent of rho and tau; this does not state independence from every other field or flux.",
+            "right_definition": "Eq. (3.5) specifies the coefficients of H3, F4, F0 and O6 contributions; the action contains -V.",
+            "status": "established"
+          },
+          {
+            "concept": "Units and Planck coefficient",
+            "conversion": "Compare moduli dependence using a common fixed string-length and reference-volume convention. Both string-frame Planck coefficients depend on vol*exp(-2phi), while the Einstein-frame coefficient is fixed. Images image:3 and image:6 confirm these statements. Fixed numerical and length factors, absolute potentials and cosmological-constant normalizations are not identified.",
+            "evidence_ids": [
+              "113d16e2ff1f6e908859:p0009s001",
+              "113d16e2ff1f6e908859:p0033s001",
+              "b5f0ec67030dbefac468:p0005s002",
+              "b5f0ec67030dbefac468:p0008s001",
+              "b5f0ec67030dbefac468:p0010s001",
+              "b5f0ec67030dbefac468:p0010s002"
+            ],
+            "left_definition": "Eq. (2.12) uses dimensionless string-unit volume and M_p^2=gs^(-2)*vol6*ls^(-2); Eq. (4.57) discusses the reference-vev convention.",
+            "right_definition": "alpha'=ls^2 and 2*kappa10^2=(2*pi)^7*alpha'^4; Einstein-frame M_Pl is constant, while the string-frame coefficient is vol*exp(-2phi) in the stated units.",
+            "status": "established"
+          },
+          {
+            "concept": "N-powers and reused exponent notation",
+            "conversion": "Rename the right dilaton exponent d to delta and every common term exponent to lambda. Define U=sum(u_i), S=sum(f_i). This avoids identifying the printed RHS placeholder d in Eq. (3.11) with the dilaton exponent; image image:5 and the surrounding explanation establish that RHS letters label term powers.",
+            "evidence_ids": [
+              "b5f0ec67030dbefac468:p0008s001",
+              "b5f0ec67030dbefac468:p0008s002",
+              "b5f0ec67030dbefac468:p0009s001"
+            ],
+            "left_definition": "rho and tau are universal fields; independence of their coefficients is defined at fixed other data, not along an arbitrary flux family.",
+            "right_definition": "ei~N^fi, exp(phi)~N^d, vi~N^ui, with p_H,m0~N^0; all retained potential terms are required to share one N-power.",
+            "status": "established"
+          }
+        ],
+        "evidenceIds": [
+          "113d16e2ff1f6e908859:p0013s001",
+          "113d16e2ff1f6e908859:p0013s002",
+          "113d16e2ff1f6e908859:p0032s001",
+          "113d16e2ff1f6e908859:p0032s002",
+          "113d16e2ff1f6e908859:p0033s001",
+          "b5f0ec67030dbefac468:p0006s001",
+          "b5f0ec67030dbefac468:p0006s002",
+          "b5f0ec67030dbefac468:p0007s002",
+          "b5f0ec67030dbefac468:p0008s001",
+          "b5f0ec67030dbefac468:p0008s002",
+          "b5f0ec67030dbefac468:p0009s001"
+        ],
+        "limitations": [
+          "This is a local equation comparison and manual algebraic reconstruction from the supplied packet, not a derivation of either complete compactification or full-paper certification.",
+          "The left correspondence with higher-dimensional equations is retained as the source's reported statement. Image image:2 explicitly limits it to integrated equations; its complete derivation is not reproduced here (113d16e2ff1f6e908859:p0032s001).",
+          "Only the explicit right potential (3.5) is transformed. Absolute action normalization, the intermediate tilde-V convention and cosmological-constant normalization are excluded from the assertion (b5f0ec67030dbefac468:p0008s001).",
+          "Equal powers do not establish stationary amplitudes, flux-sign conditions or stabilization. The right source's stronger vacuum statements are not adopted as consequences of this comparison (b5f0ec67030dbefac468:p0009s001; b5f0ec67030dbefac468:p0009s002).",
+          "A physically controlled anisotropic limit additionally requires checking individual subvolumes and weak coupling; growing total volume alone is insufficient for that stronger conclusion. No control or scale-separation conclusion is transferred (113d16e2ff1f6e908859:p0009s001; b5f0ec67030dbefac468:p0011s002).",
+          "Earlier reviewer assertions and node metadata were not used as scientific premises."
+        ],
+        "readerNote": null,
+        "withholdingReason": null,
+        "reviewExposure": "proposal_visible",
+        "sourcePacketPath": "atlas-relations/jobs/production-001/proposal/packet.json",
+        "sourcePacketSha256": "e2bbc94eedcbd95a40beb4d50b4649c3d7137ff33314f3565439f56fe8428cf1"
+      },
+      "route": {
+        "id": "scientific:production-001",
+        "type": "uses_method",
+        "sourceObjectId": "obj:b5f0ec67030dbefac468:method:f8d6435ed3a4a59325aa4675",
+        "targetObjectId": "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73",
+        "sourceMethodUnitIds": [
+          "unit:96b615c6c308eea90a5bf5ba08528bbb6bf6d51a3542749b77ee5987aec678a1"
+        ],
+        "targetMethodUnitIds": [
+          "unit:2e38ab5402be87458dcd141e9825d470feee5e26c686e31752a92ce13398cc8c"
+        ],
+        "originalDirection": "right_to_left",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "receiptSha256": "baaee555ee38e3109e0adf1a28a7ef42325654f102d42f94ccff7ab903d07aa1",
+        "bothEndpointsRepresented": true,
+        "mappingBasis": "exact_source_node_id_in_frozen_method_unit_evidence",
+        "questionEquivalenceInferred": false,
+        "methodApplicabilityExtended": false
+      },
+      "sourceMethods": [
+        {
+          "id": "unit:96b615c6c308eea90a5bf5ba08528bbb6bf6d51a3542749b77ee5987aec678a1",
+          "paperId": "2309.16542",
+          "lens": "method",
+          "text": "Dimensionally reduce the string-frame action and Weyl-rescale to four-dimensional Einstein frame. Require every contribution to the scalar potential to have the same N-scaling, solving for dilaton and subvolume exponents in terms of the independent F₄ exponents.",
+          "mass": 0.5,
+          "vectorRow": 19955,
+          "evidence": {
+            "kind": "source_scoped_extraction",
+            "facetIds": [
+              "facet:ef0adfa009ea3c2d90b5ca3db19d97bc"
+            ],
+            "sourceRecordIds": [
+              "record:644587b7535a2c47a1ad1c69f20a1045"
+            ],
+            "sourceNodeIds": [
+              "obj:b5f0ec67030dbefac468:method:f8d6435ed3a4a59325aa4675"
+            ],
+            "textSha256": "1b8486d98d645563fa5af3d8635ed55f6edb0038ae55f09eeb3b9947dec71936",
+            "originalEmbeddingRows": [
+              231771
+            ],
+            "anchors": [
+              "ev:3bf633f528453e3c3fcbe18d2e108e79",
+              "ev:9492f32c4b7ed7d4df4b98f7d8eb7cef",
+              "ev:dfe1c737f30120e71bc8522d8bcedec5"
+            ],
+            "sourceSha256": "a5bba0015765b63c882f08f20de0f44e3bca5354b3cccfeb6144b12b1a470a8b",
+            "reviewStatus": "source_backed_first_pass",
+            "readingScopeId": "af06b5465e8e88b284f02387cfd932973986674235d8b31f864e88769c85cad3",
+            "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+          }
+        }
+      ],
+      "targetMethods": [
+        {
+          "id": "unit:2e38ab5402be87458dcd141e9825d470feee5e26c686e31752a92ce13398cc8c",
+          "paperId": "2305.01722",
+          "lens": "method",
+          "text": "Dimensional reduction and Weyl rescaling to Einstein frame; extremization of the universal volume/dilaton potential; comparison with traced, integrated higher-dimensional Einstein and dilaton equations.",
+          "mass": 0.5,
+          "vectorRow": 19532,
+          "evidence": {
+            "kind": "source_scoped_extraction",
+            "facetIds": [
+              "facet:0a02a0cdb2ecb65a48cb2e9828962c43"
+            ],
+            "sourceRecordIds": [
+              "record:8811d6d3a39563afec1a56e1bcb15056"
+            ],
+            "sourceNodeIds": [
+              "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73"
+            ],
+            "textSha256": "8ef83a57c4b2a9fac9c91404614a41efa511ff165de93a652d854db76f304660",
+            "originalEmbeddingRows": [
+              227444
+            ],
+            "anchors": [
+              "ev:492b908c53eef4fa7fbb26e8278766c7",
+              "ev:99f00ec1448b88df94b43ae5c53f46fe",
+              "ev:b72a42905cdbc89abe461048022194a6"
+            ],
+            "sourceSha256": "564af4a5605006407df14a58b237e1d888b0a865bf02f89ed91b9c19f2c154eb",
+            "reviewStatus": "source_backed_first_pass",
+            "readingScopeId": "6fddefedf3da46263a87b722a6aa25a5518e3f29268f3eb7bb13533bf3f04260",
+            "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+          }
+        }
+      ],
+      "expected": "exact_follow_available"
+    },
+    {
+      "sourceRelation": {
+        "taskId": "production-026",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/production-026.json",
+        "receiptSha256": "286c7210dc04803a2e9b442d6c204979fc5879dbed8318323961f7012a009b4c",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "admittedScientificEdge": true,
+        "relationCategory": "uses_method",
+        "direction": "left_to_right",
+        "nodeIds": [
+          "obj:81e90d90727ad688e2db:method:24b279632f3e4d2fb1f8738b",
+          "obj:be6b2d2c22e403f85088:method:4f581be38456f0e02246e058"
+        ],
+        "endpoints": [
+          {
+            "id": "obj:81e90d90727ad688e2db:method:24b279632f3e4d2fb1f8738b",
+            "paper_id": "1901.11096",
+            "paper_key": "81e90d90727ad688e2db",
+            "type": "method",
+            "text": "Numerical construction of static axisymmetric solutions uses the Einstein–DeTurck equations, a reference metric, and coordinates compactifying the Poincaré patch. Additional DeTurck-flow searches approached singular configurations rather than finding regular solutions beyond the reported boundaries; this is numerical evidence rather than an existence theorem.",
+            "evidence_ids": [
+              "ev:6908bb602a53e17b1bd4d7be41fd5c87",
+              "ev:2b41cd3beed09b1397a59b8b47bb1497",
+              "ev:c5a5f02ad795b996f33f054187da5950",
+              "ev:8004c7029a10d23f1d0ea20fff50c515"
+            ]
+          },
+          {
+            "id": "obj:be6b2d2c22e403f85088:method:4f581be38456f0e02246e058",
+            "paper_id": "2401.07866",
+            "paper_key": "be6b2d2c22e403f85088",
+            "type": "method",
+            "text": "The Einstein–DeTurck formulation fixes coordinate freedom using a reference metric with matching asymptotics and gauge. Solutions represent the original Einstein system only when the DeTurck vector vanishes; a nonzero vector instead indicates a Ricci soliton.",
+            "evidence_ids": [
+              "ev:b0a418b14eed8927a6b6a848266cf724",
+              "ev:b6fddb959d6dcbc6009f95948b0dde3f"
+            ]
+          }
+        ],
+        "exactAssertion": "The left numerical construction uses the reference-metric Einstein–DeTurck gauge-fixing method characterized by the right endpoint: ξ^a=g^{bc}[Γ^a_bc(g)−Γ^a_bc(ḡ)] and subtraction of ∇_(a ξ_b) from the metric equation. The identification is restricted to the static axisymmetric asymptotically AdS4 metric formulation, with compatible pure-Poincaré-AdS references at L=1. It asserts no historical dependence on the later paper, equality of matter equations or solution families, demonstrated ξ=0 for numerical outputs, necessity of ξ=0, soliton-exclusion theorem, or nonexistence theorem from the left's unsuccessful flow searches.",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0020s001",
+                "81e90d90727ad688e2db:p0021s001",
+                "be6b2d2c22e403f85088:p0005s002",
+                "be6b2d2c22e403f85088:p0006s001"
+              ],
+              "statement": "Static axisymmetric asymptotically AdS4 metric problems, formulated using a reference metric and compactified Poincaré coordinates. Both choose the pure-AdS reference through Q1=Q2=Q4=Q5=1 and Q3=0."
+            },
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0019s001",
+                "81e90d90727ad688e2db:p0020s001",
+                "be6b2d2c22e403f85088:p0005s001"
+              ],
+              "statement": "The shared operation is subtraction of the symmetrized derivative of the same connection-difference DeTurck vector. This comparison does not require identical matter sectors."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0019s001",
+                "81e90d90727ad688e2db:p0020s001",
+                "be6b2d2c22e403f85088:p0005s001"
+              ],
+              "statement": "The method identification requires matching the DeTurck-vector definition and the sign and coefficient of its contribution to the metric equation."
+            },
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0004s001",
+                "81e90d90727ad688e2db:p0021s001",
+                "be6b2d2c22e403f85088:p0004s001",
+                "be6b2d2c22e403f85088:p0006s001"
+              ],
+              "statement": "The stated common reference-metric setting requires the same AdS-length convention and compatible pure-Poincaré-AdS reference geometry."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0019s001",
+                "81e90d90727ad688e2db:p0020s001",
+                "be6b2d2c22e403f85088:p0005s001"
+              ],
+              "statement": "Both define ξ using the physical inverse metric contracted with Γ(g)−Γ(ḡ), and both subtract ∇_(a ξ_b) with coefficient one. Images image:1 and image:4 confirm the subtraction sign and lower-index ξ_b."
+            },
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0004s001",
+                "81e90d90727ad688e2db:p0021s001",
+                "be6b2d2c22e403f85088:p0004s001",
+                "be6b2d2c22e403f85088:p0006s001"
+              ],
+              "statement": "The left uses unit AdS length; the right explicitly sets L=1. Their reference-metric assignments are identical, and their displayed background metrics are Poincaré AdS."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0006s002",
+                "81e90d90727ad688e2db:p0022s001",
+                "be6b2d2c22e403f85088:p0004s001"
+              ],
+              "statement": "The left includes dilatonic and two-Maxwell constructions; the right describes Einstein–Maxwell theory with a massive charged complex scalar. Equality of their matter equations or solution families is not part of the method identification."
+            },
+            {
+              "evidence_ids": [
+                "81e90d90727ad688e2db:p0022s001",
+                "be6b2d2c22e403f85088:p0005s001",
+                "be6b2d2c22e403f85088:p0005s002"
+              ],
+              "statement": "The left's additional DeTurck-flow search and the right's Newton–Raphson solve are distinct numerical procedures. Failure to find a regular solution by flow is not an exclusion of nonzero-ξ solutions."
+            },
+            {
+              "evidence_ids": [
+                "be6b2d2c22e403f85088:p0004s001",
+                "be6b2d2c22e403f85088:p0005s001"
+              ],
+              "statement": "Image:4, Eq. (2.5), prints F_ad F^{cd} in the nominal Maxwell trace, whereas image:5, Eq. (2.2a), prints F_cd F^{cd}. Full equation equality would require resolving that index discrepancy. The proposed edge compares the unambiguous geometric gauge-fixing terms only."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "Dimension, metric signature, units and frame",
+            "conversion": "Use L=1 on both sides and the metrics appearing in the respective Einstein–Hilbert actions. No conformal-frame transformation or numerical identification of G is needed.",
+            "evidence_ids": [
+              "81e90d90727ad688e2db:p0004s001",
+              "81e90d90727ad688e2db:p0006s002",
+              "81e90d90727ad688e2db:p0020s001",
+              "be6b2d2c22e403f85088:p0004s001",
+              "be6b2d2c22e403f85088:p0005s002"
+            ],
+            "left_definition": "Four-dimensional bulk action with R+6 and unit AdS length; the Poincaré metric has signature (−+++).",
+            "right_definition": "Four-dimensional bulk action with Λ=−3/L², explicitly L=1; the Poincaré metric has signature (−+++).",
+            "status": "established"
+          },
+          {
+            "concept": "DeTurck vector and reference metric",
+            "conversion": "Relabel dummy indices bc↔cd. The physical inverse metric, rather than the reference inverse metric, contracts the connection difference in both definitions.",
+            "evidence_ids": [
+              "81e90d90727ad688e2db:p0020s001",
+              "be6b2d2c22e403f85088:p0005s001"
+            ],
+            "left_definition": "ξ^a=[Γ^a_bc(g)−Γ^a_bc(ḡ)]g^{bc}; ḡ controls the coordinate gauge.",
+            "right_definition": "ξ^a=[Γ^a_cd(g)−Γ^a_cd(ḡ)]g^{cd}; ḡ controls the coordinate gauge and must have appropriate asymptotics.",
+            "status": "established"
+          },
+          {
+            "concept": "Geometric operator and symmetrization",
+            "conversion": "Set L=1. Read parentheses consistently as symmetrization, B_ab=∇_(a ξ_b); under normalized symmetrization B_ab=(∇a ξb+∇b ξa)/2. No relative sign or factor conversion is needed. Images image:1 and image:4 resolve the critical subtraction sign.",
+            "evidence_ids": [
+              "81e90d90727ad688e2db:p0019s001",
+              "be6b2d2c22e403f85088:p0005s001"
+            ],
+            "left_definition": "Eq. (A.1) has R_ab+3g_ab−∇_(a ξ_b).",
+            "right_definition": "Eq. (2.5) has R_ab+(3/L²)g_ab−∇_(a ξ_b).",
+            "status": "established"
+          },
+          {
+            "concept": "Reference geometry and compactified coordinates",
+            "conversion": "Identify the reference geometry and metric-function assignments at L=1. The edge does not require reconstructing the extraction-scrambled coordinate-map formulas.",
+            "evidence_ids": [
+              "81e90d90727ad688e2db:p0020s001",
+              "81e90d90727ad688e2db:p0021s001",
+              "be6b2d2c22e403f85088:p0005s002",
+              "be6b2d2c22e403f85088:p0006s001"
+            ],
+            "left_definition": "Poincaré AdS is rewritten using x,y; the reference sets Q1=Q2=Q4=Q5=1 and Q3=0.",
+            "right_definition": "Poincaré AdS is compactified to x,y∈[0,1]; the reference sets Q1=Q2=Q4=Q5=1 and Q3=0.",
+            "status": "established"
+          },
+          {
+            "concept": "Matter symbols and normalization",
+            "conversion": "Do not identify the neutral dilaton φ with the charged scalar Φ. Keep their matter equations separate. Images image:3 and image:5 establish their different actions; no charge or scalar-amplitude conversion is used.",
+            "evidence_ids": [
+              "81e90d90727ad688e2db:p0006s002",
+              "be6b2d2c22e403f85088:p0004s001"
+            ],
+            "left_definition": "The displayed dilatonic action contains −e^(−2αφ)F²−2(∇φ)², with neutral φ and dilatonic coupling α.",
+            "right_definition": "The action contains −F²−4(DΦ)(DΦ)†−4m²ΦΦ†, with D=∇−iqA and charged complex Φ.",
+            "status": "not_applicable"
+          },
+          {
+            "concept": "Recovery of the original metric equation",
+            "conversion": "For the left equations, subtraction gives E_ab^DT=E_ab−B_ab. Thus ξ=0 suffices to recover E_ab=0 from E_ab^DT=0. Simultaneously satisfying the two metric equations requires B_ab=0; the algebra alone does not establish that ξ=0 is necessary.",
+            "evidence_ids": [
+              "81e90d90727ad688e2db:p0006s002",
+              "81e90d90727ad688e2db:p0019s001",
+              "be6b2d2c22e403f85088:p0005s001"
+            ],
+            "left_definition": "Eq. (A.1) differs from Eq. (3.2a) by −B_ab; image:1 and image:3 confirm this directly.",
+            "right_definition": "Section 2.2 reports that ξ=0 recovers the original system and calls nonzero-ξ solutions Ricci solitons.",
+            "status": "conditional"
+          }
+        ],
+        "evidenceIds": [
+          "81e90d90727ad688e2db:p0004s001",
+          "81e90d90727ad688e2db:p0006s002",
+          "81e90d90727ad688e2db:p0019s001",
+          "81e90d90727ad688e2db:p0020s001",
+          "81e90d90727ad688e2db:p0021s001",
+          "81e90d90727ad688e2db:p0022s001",
+          "be6b2d2c22e403f85088:p0004s001",
+          "be6b2d2c22e403f85088:p0005s001",
+          "be6b2d2c22e403f85088:p0005s002",
+          "be6b2d2c22e403f85088:p0006s001"
+        ],
+        "limitations": [
+          "The right's Eq. (2.5) has a trace-index discrepancy visible in image:4 relative to Eq. (2.2a) in image:5. Full matter-equation equivalence is explicitly excluded rather than silently repairing it [be6b2d2c22e403f85088:p0005s001; be6b2d2c22e403f85088:p0004s001].",
+          "No universal ellipticity or absence-of-solitons theorem is established here. The right reports exclusions in many circumstances, while the left refers elsewhere for gauge and uniqueness details [be6b2d2c22e403f85088:p0005s001; 81e90d90727ad688e2db:p0020s001].",
+          "Neither numerical ξ convergence nor completeness of the left's flow search was reproduced. Image:2 records failure to find regular solutions and approach to a singular configuration, without establishing a mathematical nonexistence result [81e90d90727ad688e2db:p0022s001].",
+          "This is a supplied-page method comparison. Endpoint labels, inherited reviews and bibliography entries are not independent mathematical validation."
+        ],
+        "readerNote": null,
+        "withholdingReason": null,
+        "reviewExposure": "proposal_visible",
+        "sourcePacketPath": "atlas-relations/jobs/production-026/proposal/packet.json",
+        "sourcePacketSha256": "ad92ea2f77e34463c7cee74ba27e1d8aa14069d7a1ae67120cf8504dc03281d3"
+      },
+      "route": {
+        "id": "scientific:production-026",
+        "type": "uses_method",
+        "sourceObjectId": "obj:81e90d90727ad688e2db:method:24b279632f3e4d2fb1f8738b",
+        "targetObjectId": "obj:be6b2d2c22e403f85088:method:4f581be38456f0e02246e058",
+        "sourceMethodUnitIds": [
+          "unit:2de23bffd4275f480aa53815969de3b62d1fdac86b73d73cbc3682e7b280263f"
+        ],
+        "targetMethodUnitIds": [
+          "unit:628259063e12c84129675624b0cc3048c2c28b461f9fe03bd660cb17bd1d529c"
+        ],
+        "originalDirection": "left_to_right",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "receiptSha256": "286c7210dc04803a2e9b442d6c204979fc5879dbed8318323961f7012a009b4c",
+        "bothEndpointsRepresented": true,
+        "mappingBasis": "exact_source_node_id_in_frozen_method_unit_evidence",
+        "questionEquivalenceInferred": false,
+        "methodApplicabilityExtended": false
+      },
+      "sourceMethods": [
+        {
+          "id": "unit:2de23bffd4275f480aa53815969de3b62d1fdac86b73d73cbc3682e7b280263f",
+          "paperId": "1901.11096",
+          "lens": "method",
+          "text": "Numerical construction of static axisymmetric solutions uses the Einstein–DeTurck equations, a reference metric, and coordinates compactifying the Poincaré patch. Additional DeTurck-flow searches approached singular configurations rather than finding regular solutions beyond the reported boundaries; this is numerical evidence rather than an existence theorem.",
+          "mass": 0.5,
+          "vectorRow": 14034,
+          "evidence": {
+            "kind": "source_scoped_extraction",
+            "facetIds": [
+              "facet:864179e9ae59417d8c4816738484a355"
+            ],
+            "sourceRecordIds": [
+              "record:8a9d6a87afb71384c2fb7dea33f51a6d"
+            ],
+            "sourceNodeIds": [
+              "obj:81e90d90727ad688e2db:method:24b279632f3e4d2fb1f8738b"
+            ],
+            "textSha256": "b9758c4775818485f96fd9f1b2d52766324848e68536166bd9534107182114e1",
+            "originalEmbeddingRows": [
+              103593
+            ],
+            "anchors": [
+              "ev:2b41cd3beed09b1397a59b8b47bb1497",
+              "ev:6908bb602a53e17b1bd4d7be41fd5c87",
+              "ev:8004c7029a10d23f1d0ea20fff50c515",
+              "ev:c5a5f02ad795b996f33f054187da5950"
+            ],
+            "sourceSha256": "76c7886dda7db2d122381fff66eeb23fae02bf34f0e8efeb8b2bdae0dad4dec9",
+            "reviewStatus": "source_backed_first_pass",
+            "readingScopeId": "aef6a52bc7d318ceea779a6af00281383453e1db27da21b1ece27696f03b02e3",
+            "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+          }
+        }
+      ],
+      "targetMethods": [
+        {
+          "id": "unit:628259063e12c84129675624b0cc3048c2c28b461f9fe03bd660cb17bd1d529c",
+          "paperId": "2401.07866",
+          "lens": "method",
+          "text": "The Einstein–DeTurck formulation fixes coordinate freedom using a reference metric with matching asymptotics and gauge. Solutions represent the original Einstein system only when the DeTurck vector vanishes; a nonzero vector instead indicates a Ricci soliton.",
+          "mass": 0.3333333333333333,
+          "vectorRow": 20329,
+          "evidence": {
+            "kind": "source_scoped_extraction",
+            "facetIds": [
+              "facet:5f705261f64bb360837e8e7e762b2a84"
+            ],
+            "sourceRecordIds": [
+              "record:8fe54a36a779726c8a6c9993465b71ce"
+            ],
+            "sourceNodeIds": [
+              "obj:be6b2d2c22e403f85088:method:4f581be38456f0e02246e058"
+            ],
+            "textSha256": "2103cb760ae8b5875b0151424bfd4cbd2cc4fde56f04d3779b287723e9ee7bc4",
+            "originalEmbeddingRows": [
+              235387
+            ],
+            "anchors": [
+              "ev:b0a418b14eed8927a6b6a848266cf724",
+              "ev:b6fddb959d6dcbc6009f95948b0dde3f"
+            ],
+            "sourceSha256": "ffc72e9ed258446ef131db5ae8ef72117cf7ddcf309e50618fe7abe51bd2586d",
+            "reviewStatus": "source_backed_first_pass",
+            "readingScopeId": "479d91f103264d7ea6ac6cd1b96bfcbcdf53eef3f81db084521884229d25cbc2",
+            "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+          }
+        }
+      ],
+      "expected": "exact_follow_available"
+    },
+    {
+      "sourceRelation": {
+        "taskId": "production-097",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/production-097.json",
+        "receiptSha256": "f85f40fbd5ace98c060d92e103ca8935aa2d263ccc50b069b5fa8961c650c60b",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "admittedScientificEdge": true,
+        "relationCategory": "uses_method",
+        "direction": "right_to_left",
+        "nodeIds": [
+          "obj:ebd908faa7eec3fc42c9:method:d83a49ad3d3e953949ee0bd0",
+          "obj:240fad48770cf4cf7a24:method:826b94cf8b413d024e491cc7"
+        ],
+        "endpoints": [
+          {
+            "id": "obj:ebd908faa7eec3fc42c9:method:d83a49ad3d3e953949ee0bd0",
+            "paper_id": "1407.7865",
+            "paper_key": "ebd908faa7eec3fc42c9",
+            "type": "method",
+            "text": "For 3D forward scattering, the paper uses M(s)=16A3s², a Cauchy contour integral of M(s)/s³, crossing symmetry and the optical theorem. With the boundary contribution absent, the resulting cross-section integral is nonnegative.",
+            "evidence_ids": [
+              "ev:6d8e5544b26bb3f967c81c9e803ef9d7",
+              "ev:1c1f6d8040d6df6969078695e2ea9d76",
+              "ev:465b2c9abb7fa361c605e1617c8d6284",
+              "ev:9cd987907a995f9c1422bb994f906e82"
+            ]
+          },
+          {
+            "id": "obj:240fad48770cf4cf7a24:method:826b94cf8b413d024e491cc7",
+            "paper_id": "1802.04287",
+            "paper_key": "240fad48770cf4cf7a24",
+            "type": "method",
+            "text": "Use crossing-symmetric forward amplitudes, a contour integral of M(s)/s³, Schwarz reflection, a Froissart-bound assumption, and the optical theorem to relate four-derivative coefficients to nonnegative spectral integrals.",
+            "evidence_ids": [
+              "ev:5cac458a4d746a3664bde466cff32ea2",
+              "ev:1f69e8a7a0954661c72c204382bab6dc",
+              "ev:c8d6497f08fbf06ad262cb2f0f68179b"
+            ]
+          }
+        ],
+        "exactAssertion": "The right method uses the left method's single-amplitude forward-dispersion construction at the level of its displayed analytic argument: extract the s² coefficient with ∮ds M/(2πi s³), deform to real-axis cuts with no boundary term, use Schwarz reflection and crossing, and obtain positivity from the optical theorem. For the right projection Q(u,v)=Σu_i v_j u_k v_l C_(ij)(kl), defining a′_eff=Q/4 gives 16a′_eff=4Q=(2/π)∫_{s₀}^∞ds Im M_uv(s)/s³≥0, which has precisely the left construction's form before substituting Im M_L=sσ_L. This is a reconstructed method-use relation under the passages' stated analytic and boundedness hypotheses. It excludes a claim of documented historical dependence, equality of physical Wilson coefficients or theories, equality of spectral functions, validation of an unregulated massless limit, 4D applicability, and any charge-to-mass or WGC implication.",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0009s001",
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0011s001",
+                "240fad48770cf4cf7a24:p0011s002",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "Both constructions concern 3D forward amplitudes and extract their low-energy s² coefficient using the same contour kernel ds/(2πi s³). The right construction first projects the species amplitude onto real product states specified by u and v."
+            },
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0009s002",
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "The shared domain is conditional on an analytic coefficient-extraction contour, real-axis discontinuities, crossing, Schwarz reflection, a vanishing contribution at infinity and optical-theorem positivity. The comparison establishes reuse of this construction, without establishing these hypotheses for an arbitrary physical UV completion."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0009s001",
+                "ebd908faa7eec3fc42c9:p0009s002",
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0011s001",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "To apply either dispersion argument, the amplitude must admit the stated low-energy coefficient extraction and contour deformation without an unresolved singularity at the origin. The left supplies a photon-mass regulator prescription; the right uses a Taylor expansion and separated thresholds. Their physical regulator limits are not equated."
+            },
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "ebd908faa7eec3fc42c9:p0010s002",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "The large-circle integral of M(s)/s³ must vanish. Both passages invoke Froissart behavior for this purpose; the relation retains this as a hypothesis rather than independently deriving UV boundedness."
+            },
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0009s001",
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0011s002",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "The selected amplitude must obey Schwarz reflection and forward crossing, so that its negative-cut contribution equals its positive-cut contribution."
+            },
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0011s002",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "Optical-theorem intermediate-state weights must be nonnegative. On the right, u and v are real unit vectors, so contraction of the optical theorem produces an absolute square for each intermediate state."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0009s001",
+                "240fad48770cf4cf7a24:p0011s001",
+                "240fad48770cf4cf7a24:p0011s002"
+              ],
+              "statement": "The displayed equations establish that both sources actually choose forward amplitudes, the s⁻³ contour kernel and an s² residue. Images image:1 and image:4 confirm the respective factors 16 and 4."
+            },
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "Both passages explicitly perform the same crossing reduction and invoke optical-theorem positivity. Images image:2 and image:5 confirm the common factor 2/π and the right-hand spectral denominator s³. This establishes the method comparison, not physical verification of the assumed amplitude properties."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0007s001",
+                "ebd908faa7eec3fc42c9:p0030s002",
+                "240fad48770cf4cf7a24:p0006s001",
+                "240fad48770cf4cf7a24:p0011s002"
+              ],
+              "statement": "The left treats one photon, represented by a scalar dual; the right treats N photons and an entire family of species projections. Image image:3 confirms that multiple photons are future work in the left paper. The left inequality alone therefore does not establish the full right family."
+            },
+            {
+              "evidence_ids": [
+                "ebd908faa7eec3fc42c9:p0010s001",
+                "240fad48770cf4cf7a24:p0012s001"
+              ],
+              "statement": "The left expresses its spectral weight through a total cross-section, whereas the right keeps an imaginary amplitude and intermediate-state products. Their positivity mechanisms coincide without identifying numerical cross-sections between different theories."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "Printed left coefficient and endpoint alias",
+            "conversion": "Use a′ for the printed source coefficient. A3 in the node is an endpoint label; the extracted a0 glyph is not a distinct coefficient. Image image:1, Eq. (2.15), and image:2, Eq. (2.18), resolve the prime.",
+            "evidence_ids": [
+              "ebd908faa7eec3fc42c9:p0009s001",
+              "ebd908faa7eec3fc42c9:p0010s001"
+            ],
+            "left_definition": "M_L,IR(s)=16a′ s².",
+            "right_definition": "No original a′ symbol is required on the right.",
+            "status": "established"
+          },
+          {
+            "concept": "Amplitude coefficient normalization",
+            "conversion": "Define c₂=[s²]M_IR. Then c₂,L=16a′ and c₂,R=4Q(u,v). Defining a′_eff(u,v)=Q(u,v)/4 places the right amplitude in the left template. This is an on-shell template definition, not an identification of the two theories' Wilson coefficients.",
+            "evidence_ids": [
+              "ebd908faa7eec3fc42c9:p0009s001",
+              "240fad48770cf4cf7a24:p0011s001",
+              "240fad48770cf4cf7a24:p0011s002"
+            ],
+            "left_definition": "The residue of M_L(s)/s³ is 16a′.",
+            "right_definition": "Q(u,v)=Σ_ijkl u_i v_j u_k v_l C_(ij)(kl); the residue is 4Q, as printed in image:4, Eq. (2.31).",
+            "status": "established"
+          },
+          {
+            "concept": "Dimension, signature and kinematic variable",
+            "conversion": "Compare the positive physical s-channel variable, not raw squared norms across opposite metric signatures. The right definition compensates its mostly-plus signature with the explicit minus sign. No curvature-sign or gravitational-coupling identification is needed for the contour comparison.",
+            "evidence_ids": [
+              "ebd908faa7eec3fc42c9:p0003s002",
+              "ebd908faa7eec3fc42c9:p0009s001",
+              "240fad48770cf4cf7a24:p0006s002",
+              "240fad48770cf4cf7a24:p0011s001"
+            ],
+            "left_definition": "Three spacetime dimensions, metric signature (+,−,−), forward t→0 and massless relation s+t+u=0.",
+            "right_definition": "Three spacetime dimensions, mostly-plus signature and s=−(k₁+k₂)². The vectors u and v carry species indices and are unrelated to the Mandelstam variable u.",
+            "status": "established"
+          },
+          {
+            "concept": "Discontinuity, contour and threshold",
+            "conversion": "Both use I[M]=∮ds M(s)/(2πi s³) and Disc M=M(s+iε)−M(s−iε)=2i Im M. Their s₀ values have corresponding threshold roles but need not be numerically equal.",
+            "evidence_ids": [
+              "ebd908faa7eec3fc42c9:p0009s001",
+              "ebd908faa7eec3fc42c9:p0009s002",
+              "ebd908faa7eec3fc42c9:p0010s001",
+              "240fad48770cf4cf7a24:p0012s001"
+            ],
+            "left_definition": "s₀ bounds the analytic neighborhood after the stated treatment of photon-loop cuts.",
+            "right_definition": "s₀ is the squared lowest energy at which nonanalyticity appears; the contour and IR expansion presume the stated separation from the origin.",
+            "status": "established"
+          },
+          {
+            "concept": "Optical-theorem spectral weight",
+            "conversion": "Use ρ(s)=Im M(s) as the common spectral weight. On the right, contracting Eq. (2.35) gives 2ρ_R=Σ_n|Σ_ij u_i v_j M_ij→n|²≥0. The n sum is inherited from Eq. (2.35); image:5 confirms the absolute-square glyph in Eq. (2.36), whose displayed formula does not repeat that sum.",
+            "evidence_ids": [
+              "ebd908faa7eec3fc42c9:p0010s001",
+              "240fad48770cf4cf7a24:p0011s002",
+              "240fad48770cf4cf7a24:p0012s001"
+            ],
+            "left_definition": "ρ_L(s)=sσ_L(s), with σ_L the nonnegative total cross-section.",
+            "right_definition": "2 Im M_ij,kl=Σ_n M_ij→n M*_kl→n; real product-state contraction supplies positivity.",
+            "status": "established"
+          },
+          {
+            "concept": "Mass dimensions and units",
+            "conversion": "Dimensional reconstruction from the canonical Maxwell actions and displayed amplitudes gives [s]=[s₀]=2, [a′]=[Q]=[C]=−3, [M]=1 and [σ_L]=−1. Thus both dispersion integrals have dimension −3. No numerical conversion between Planck conventions or charge-to-mass ratios is asserted.",
+            "evidence_ids": [
+              "ebd908faa7eec3fc42c9:p0003s001",
+              "ebd908faa7eec3fc42c9:p0003s002",
+              "ebd908faa7eec3fc42c9:p0010s002",
+              "240fad48770cf4cf7a24:p0006s001",
+              "240fad48770cf4cf7a24:p0007s001",
+              "240fad48770cf4cf7a24:p0011s002"
+            ],
+            "left_definition": "Natural units include 4πG=ε₀=1. The source explicitly gives [M]=1 and [σ]=−1 in 3D.",
+            "right_definition": "M₃ is retained explicitly, the Maxwell kinetic term is canonically normalized, and C multiplies four field strengths. Image:6 confirms the action normalization.",
+            "status": "established"
+          }
+        ],
+        "evidenceIds": [
+          "ebd908faa7eec3fc42c9:p0003s001",
+          "ebd908faa7eec3fc42c9:p0003s002",
+          "ebd908faa7eec3fc42c9:p0007s001",
+          "ebd908faa7eec3fc42c9:p0009s001",
+          "ebd908faa7eec3fc42c9:p0009s002",
+          "ebd908faa7eec3fc42c9:p0010s001",
+          "ebd908faa7eec3fc42c9:p0010s002",
+          "ebd908faa7eec3fc42c9:p0030s002",
+          "240fad48770cf4cf7a24:p0006s001",
+          "240fad48770cf4cf7a24:p0006s002",
+          "240fad48770cf4cf7a24:p0007s001",
+          "240fad48770cf4cf7a24:p0011s001",
+          "240fad48770cf4cf7a24:p0011s002",
+          "240fad48770cf4cf7a24:p0012s001"
+        ],
+        "limitations": [
+          "This comparison checks the supplied contour identities and their algebraic composition. It does not establish full-paper mathematical correctness or the existence of a UV completion satisfying the dispersion hypotheses.",
+          "The asserted relation is mathematical method reuse, not a claim that the right paper explicitly attributes this particular contour argument to the left paper. No bibliography identification is inferred.",
+          "The comparison uses Q exactly as displayed in Eq. (2.31). A componentwise Wilson-coefficient identification would additionally require the explicit pair-symmetrization convention and the dual-action normalization referenced by right Eq. (2.15); that stronger identification is excluded.",
+          "The left reports a photon-mass regulator prescription, while the supplied right analyticity passage does not establish a corresponding regulator-removal argument. Equality or validity of unregulated massless amplitudes is excluded.",
+          "No loop matching, charge normalization, gravitational normalization, spectrum bound, tower claim, or 4D argument is reproduced. Earlier reviews and node labels supply no independent scientific premises."
+        ],
+        "readerNote": null,
+        "withholdingReason": null,
+        "reviewExposure": "proposal_visible",
+        "sourcePacketPath": "atlas-relations/jobs/production-097/proposal/packet.json",
+        "sourcePacketSha256": "ce7c0c12d1c7af08939422054ae9c92f059598cb9620cc1093369e451e289cb9"
+      },
+      "route": {
+        "id": "scientific:production-097",
+        "type": "uses_method",
+        "sourceObjectId": "obj:240fad48770cf4cf7a24:method:826b94cf8b413d024e491cc7",
+        "targetObjectId": "obj:ebd908faa7eec3fc42c9:method:d83a49ad3d3e953949ee0bd0",
+        "sourceMethodUnitIds": [
+          "unit:ab3b7e1e998e6428efdb717eff9c98a383e09104d5e22c291ea9987cd048ed22"
+        ],
+        "targetMethodUnitIds": [
+          "unit:4b7e3714281457a41ede129cd64bc34fab8e2563a58d8f8fc80e5acf476cca0b"
+        ],
+        "originalDirection": "right_to_left",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "receiptSha256": "f85f40fbd5ace98c060d92e103ca8935aa2d263ccc50b069b5fa8961c650c60b",
+        "bothEndpointsRepresented": true,
+        "mappingBasis": "exact_source_node_id_in_frozen_method_unit_evidence",
+        "questionEquivalenceInferred": false,
+        "methodApplicabilityExtended": false
+      },
+      "sourceMethods": [
+        {
+          "id": "unit:ab3b7e1e998e6428efdb717eff9c98a383e09104d5e22c291ea9987cd048ed22",
+          "paperId": "1802.04287",
+          "lens": "method",
+          "text": "Use crossing-symmetric forward amplitudes, a contour integral of M(s)/s³, Schwarz reflection, a Froissart-bound assumption, and the optical theorem to relate four-derivative coefficients to nonnegative spectral integrals.",
+          "mass": 0.3333333333333333,
+          "vectorRow": 12954,
+          "evidence": {
+            "kind": "source_scoped_extraction",
+            "facetIds": [
+              "facet:1e55343c91d3ae50688a703309cb22ff"
+            ],
+            "sourceRecordIds": [
+              "record:f9f6661ac8e26e7221d63bcdfbff0759"
+            ],
+            "sourceNodeIds": [
+              "obj:240fad48770cf4cf7a24:method:826b94cf8b413d024e491cc7"
+            ],
+            "textSha256": "cb68c90747fef97ac1b9c0f78d8dd5bbbd70e0f45705b0421d6833c11c16dadc",
+            "originalEmbeddingRows": [
+              70066
+            ],
+            "anchors": [
+              "ev:1f69e8a7a0954661c72c204382bab6dc",
+              "ev:5cac458a4d746a3664bde466cff32ea2",
+              "ev:c8d6497f08fbf06ad262cb2f0f68179b"
+            ],
+            "sourceSha256": "b8f182478808288d93e31be0cbe378dbf80f8cb4cca49410437aa91becfd9bed",
+            "reviewStatus": "source_backed_first_pass",
+            "readingScopeId": "87d0c29993d4bc4a59991bd6fc8db503114e3b749b58a5458e5b770c045d58b7",
+            "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+          }
+        }
+      ],
+      "targetMethods": [
+        {
+          "id": "unit:4b7e3714281457a41ede129cd64bc34fab8e2563a58d8f8fc80e5acf476cca0b",
+          "paperId": "1407.7865",
+          "lens": "method",
+          "text": "For 3D forward scattering, the paper uses M(s)=16A3s², a Cauchy contour integral of M(s)/s³, crossing symmetry and the optical theorem. With the boundary contribution absent, the resulting cross-section integral is nonnegative.",
+          "mass": 0.3333333333333333,
+          "vectorRow": 11135,
+          "evidence": {
+            "kind": "source_scoped_extraction",
+            "facetIds": [
+              "facet:bae02472f538f04a1a6c49f7c2feeb23"
+            ],
+            "sourceRecordIds": [
+              "record:9c0f9bc5425e15e393e4484894074a33"
+            ],
+            "sourceNodeIds": [
+              "obj:ebd908faa7eec3fc42c9:method:d83a49ad3d3e953949ee0bd0"
+            ],
+            "textSha256": "8fb73f54e505b24cc465e7a4e85603326acc42b7cd4c2f99f78df9ce23f0f6a4",
+            "originalEmbeddingRows": [
+              46837
+            ],
+            "anchors": [
+              "ev:1c1f6d8040d6df6969078695e2ea9d76",
+              "ev:465b2c9abb7fa361c605e1617c8d6284",
+              "ev:6d8e5544b26bb3f967c81c9e803ef9d7",
+              "ev:9cd987907a995f9c1422bb994f906e82"
+            ],
+            "sourceSha256": "2d60a61b3ce90ece1ed0dd1748be198d7e2979e2d9289ab5fc859f15c92df9cf",
+            "reviewStatus": "independently_confirmed_scoped_correction",
+            "readingScopeId": "c548dcfadadfd89d465836e2dc99f4fa624bb29fe7e5a5f1c6c132b2efb74888",
+            "claimStatus": "retrieval_nomination_only; not independent scientific certification"
+          }
+        }
+      ],
+      "expected": "exact_follow_available"
+    },
+    {
+      "sourceRelation": {
+        "taskId": "production-020",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/production-020.json",
+        "receiptSha256": "961852f3bf7736c9de41c78d1d29ad712bf1bc3a8215b116415075d10d30d351",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "admittedScientificEdge": true,
+        "relationCategory": "uses_method",
+        "direction": "right_to_left",
+        "nodeIds": [
+          "obj:9c44a326cd0e679d37ed:claim:34fbc3e58cc9f5fac30c3aef",
+          "obj:43ed00b9bc39e2445e7b:claim:ec06528c477de0d330c0f89e"
+        ],
+        "endpoints": [
+          {
+            "id": "obj:9c44a326cd0e679d37ed:claim:34fbc3e58cc9f5fac30c3aef",
+            "paper_id": "2212.06169",
+            "paper_key": "9c44a326cd0e679d37ed",
+            "type": "claim",
+            "text": "The authors propose connecting adjacent F4 flux vacua using spacetime-filling D4-branes wrapping contractible one-cycles that sweep the dual two-cycles and annihilate. Their position moduli supply scalar interpolation directions. This is distinct from a spontaneous decay: supersymmetric D4 domain-wall transitions are marginal and do not dynamically expand.",
+            "evidence_ids": [
+              "ev:f270b0d0cfdd98c1edfa6618d321debc",
+              "ev:978c58ff3cba686034f48b34187da749",
+              "ev:8cc503198beaf9b40d19e631d0ca7364"
+            ]
+          },
+          {
+            "id": "obj:43ed00b9bc39e2445e7b:claim:ec06528c477de0d330c0f89e",
+            "paper_id": "2304.14372",
+            "paper_key": "43ed00b9bc39e2445e7b",
+            "type": "claim",
+            "text": "A space-filling probe D4 wrapping a contractible two-cycle inside Φ7 is proposed to connect flux vacua non-dynamically. Sweeping the three-cycle shifts F4,q by one quantum (2π)³; the brane pinches off at vacuum endpoints. DBI energy relative to |Vflux| scales as N^{-1/2} at S=0 and N^0 at S=−1/7.",
+            "evidence_ids": [
+              "ev:5361117588ddffb3db8f17230999161f",
+              "ev:28981543d2a0fa87ccec8d30da4decd9",
+              "ev:d162dd29250645398ab2bf77287b220a",
+              "ev:402107d88cac9a38386263377947b424"
+            ]
+          }
+        ],
+        "exactAssertion": "Within the sources' stated smeared/probe descriptions, the right construction uses the left endpoint's proposed F4-interpolation method: introduce a spacetime-filling D4 wrapping a contractible cycle, use its internal position as an open-string scalar, and sweep the dual internal cycle so that the brane disappears at the endpoints while the relevant F4 integer changes by one per elementary sweep. The right adapts the AdS4/one-cycle/two-cycle construction to AdS3/two-cycle/three-cycle geometry and its own flux ansatz. This is a reconstructed identification of the explicit procedure. It excludes equivalence of vacuum families, actions, kinetic metrics, energy powers or distances; spontaneous decay; a proven fully localized interpolation; and verified bibliographic identification of the right paper's reference [62].",
+        "applicability": {
+          "intersection": [
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0005s002",
+                "9c44a326cd0e679d37ed:p0007s001",
+                "43ed00b9bc39e2445e7b:p0004s001",
+                "43ed00b9bc39e2445e7b:p0019s001"
+              ],
+              "statement": "The intersection is a flux-interpolation procedure in massive IIA orientifold AdS constructions, rather than a common vacuum family: a spacetime-filling D4 wraps a contractible internal cycle and sweeps the cycle dual to the relevant F4 component."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0007s002",
+                "9c44a326cd0e679d37ed:p0008s001",
+                "43ed00b9bc39e2445e7b:p0019s001",
+                "43ed00b9bc39e2445e7b:p0019s002"
+              ],
+              "statement": "Within the displayed transverse-four-cycle smearing or suppressed-backreaction description, the sourced F4 Bianchi identity gives a step across the internal D4 location."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0006s001",
+                "9c44a326cd0e679d37ed:p0006s002",
+                "9c44a326cd0e679d37ed:p0011s002",
+                "43ed00b9bc39e2445e7b:p0006s001",
+                "43ed00b9bc39e2445e7b:p0019s002",
+                "43ed00b9bc39e2445e7b:p0021s001"
+              ],
+              "statement": "Both descriptions use a brane-position scalar and disappearing branes at vacuum endpoints to propose a field-space interpolation. This intersection concerns the proposed construction; it does not establish spontaneous decay or a continuous family of vacuum solutions."
+            }
+          ],
+          "missing_assumptions": [],
+          "required_assumptions": [
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0007s002",
+                "43ed00b9bc39e2445e7b:p0019s001",
+                "43ed00b9bc39e2445e7b:p0019s002"
+              ],
+              "statement": "Compare the sourced Bianchi equations within their stated four-cycle smearing or suppressed-backreaction approximation."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0008s001",
+                "9c44a326cd0e679d37ed:p0011s002",
+                "43ed00b9bc39e2445e7b:p0020s001",
+                "43ed00b9bc39e2445e7b:p0021s001"
+              ],
+              "statement": "A unit operation means one elementary oriented D4 completing one internal sweep, with flux measured in each paper's own quantum units."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0007s001",
+                "9c44a326cd0e679d37ed:p0011s001",
+                "43ed00b9bc39e2445e7b:p0020s001",
+                "43ed00b9bc39e2445e7b:p0021s001"
+              ],
+              "statement": "Match the position scalar's function in the procedure while retaining the different external dimensions, wrapped-cycle dimensions and effective actions."
+            },
+            {
+              "evidence_ids": [
+                "43ed00b9bc39e2445e7b:p0019s001",
+                "43ed00b9bc39e2445e7b:p0020s002",
+                "43ed00b9bc39e2445e7b:p0021s002"
+              ],
+              "statement": "Retain the right construction's probe prescription and special B2 profile, including its vanishing pullback and absence of induced net D2 charge."
+            }
+          ],
+          "satisfied_assumptions": [
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0007s002",
+                "43ed00b9bc39e2445e7b:p0019s001",
+                "43ed00b9bc39e2445e7b:p0019s002"
+              ],
+              "statement": "Both sources explicitly state the four-cycle approximation used to obtain the reduced Bianchi identity. This establishes the stipulated comparison regime, without proving a localized completion."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0008s001",
+                "9c44a326cd0e679d37ed:p0011s002",
+                "43ed00b9bc39e2445e7b:p0020s001",
+                "43ed00b9bc39e2445e7b:p0021s001"
+              ],
+              "statement": "The left explicitly depicts N to N+1 and describes pinching after a sweep. The right gives one quantum per sweep and describes repeated sweeps by consecutive branes, without a stack."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0011s001",
+                "9c44a326cd0e679d37ed:p0011s002",
+                "43ed00b9bc39e2445e7b:p0020s001",
+                "43ed00b9bc39e2445e7b:p0021s001"
+              ],
+              "statement": "Each source explicitly promotes the transverse brane position to an external scalar. The correspondence concerns this role, rather than equality of scalar metrics."
+            },
+            {
+              "evidence_ids": [
+                "43ed00b9bc39e2445e7b:p0020s002",
+                "43ed00b9bc39e2445e7b:p0021s002"
+              ],
+              "statement": "The right states its fixed-moduli probe prescription and its choice of B2 with zero pullback on the brane. These are source assumptions adopted for identifying the reported method."
+            }
+          ],
+          "scope_mismatches": [
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0005s002",
+                "9c44a326cd0e679d37ed:p0008s001",
+                "43ed00b9bc39e2445e7b:p0004s001",
+                "43ed00b9bc39e2445e7b:p0019s001"
+              ],
+              "statement": "The selected left construction fills AdS4 and wraps a contractible one-cycle inside a two-cycle in a six-dimensional compactification. The right fills AdS3 and wraps a contractible two-cycle inside a three-cycle in a seven-dimensional G2 orbifold."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0008s001",
+                "43ed00b9bc39e2445e7b:p0004s001",
+                "43ed00b9bc39e2445e7b:p0020s001"
+              ],
+              "statement": "The left discusses three D4 position moduli to change all three DGKT F4 components. The right varies the selected F4,q component. Their flux parameters and vacuum families are not identified."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0020s001",
+                "9c44a326cd0e679d37ed:p0020s002",
+                "43ed00b9bc39e2445e7b:p0021s002"
+              ],
+              "statement": "The left paper's AdS3 extension includes induced D2 charge from worldvolume flux. The right explicitly chooses a different H3/B2 configuration with no induced net D2 charge. Reusing the interpolation procedure does not identify these charge sectors."
+            },
+            {
+              "evidence_ids": [
+                "9c44a326cd0e679d37ed:p0011s001",
+                "43ed00b9bc39e2445e7b:p0021s001",
+                "43ed00b9bc39e2445e7b:p0023s001"
+              ],
+              "statement": "The left displayed DBI calculation is in string frame and four external dimensions; the right uses Einstein frame and three external dimensions. The right's energy-ratio powers are model-specific and supply no common numerical energy law for the two endpoints."
+            }
+          ]
+        },
+        "conventionDictionary": [
+          {
+            "concept": "Dimensions and wrapped cycles",
+            "conversion": "The adaptation is (external dimension, wrapped dimension, swept dimension) = (4,1,2) to (3,2,3). In both cases the D4 worldvolume has dimension five and is codimension one inside the swept internal cycle. This is a procedural correspondence, not a dimensional reduction identifying the two vacua.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0007s001",
+              "9c44a326cd0e679d37ed:p0008s001",
+              "43ed00b9bc39e2445e7b:p0019s001",
+              "43ed00b9bc39e2445e7b:p0020s001"
+            ],
+            "left_definition": "D4 fills AdS4 and wraps a contractible one-cycle inside the holomorphic two-cycle Σ2; Figure 2 specifies this explicitly, checked in image:2.",
+            "right_definition": "D4 fills AdS3 and wraps a contractible two-cycle inside Σ3,7, spanned by y2,y4,y6.",
+            "status": "established"
+          },
+          {
+            "concept": "Flux form and dual cycle",
+            "conversion": "Match the role of the transverse four-form and its dual swept cycle. No equality of ε4 and Ψ7 as forms on one manifold is asserted. The right's notation Σ3,7 ≡ Φ7 and Σ4,7 ≡ Ψ7 is read as cycle/form shorthand, not a literal equality of a cycle and a differential form.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0007s002",
+              "9c44a326cd0e679d37ed:p0008s001",
+              "43ed00b9bc39e2445e7b:p0006s002",
+              "43ed00b9bc39e2445e7b:p0019s001"
+            ],
+            "left_definition": "ε4 is the volume form in the F4 direction; Σ2 is its Poincaré-dual cycle.",
+            "right_definition": "The relevant invariant forms are Φ7 = +dy246 and Ψ7 = +dy1357, with the stated pairing integral Φi∧Ψj = δij; image:4 confirms these signs. Section 4.1 sets the normalized four-form ε4 = Ψ7.",
+            "status": "established"
+          },
+          {
+            "concept": "Bianchi identity and flux quantum",
+            "conversion": "Compare integer increments only. Differentiating the left step gives its displayed source; integrating the right source gives Δf4,q = (2π)^7 Q_R = (2π)^3. Thus, with n_q = f4,q/(2π)^3, one elementary sweep changes |ΔN_L| = |Δn_q| = 1. The absolute normalization of Q_L is not equated to Q_R.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0007s002",
+              "9c44a326cd0e679d37ed:p0008s001",
+              "43ed00b9bc39e2445e7b:p0019s002",
+              "43ed00b9bc39e2445e7b:p0020s001"
+            ],
+            "left_definition": "Equation (3.2), checked in image:2, reads F4 = [N + Q_D4 θ(y)] ε4. Figure 2 labels the elementary endpoints N and N+1.",
+            "right_definition": "Equation (4.2) reads dF4 = (2π)^7 Q_D4 δ(ψ−ψ0)dψ∧Ψ7. Equation (4.3) gives the jump, and physical page 20 states Q_D4 = (2π)^−4 in its units.",
+            "status": "established"
+          },
+          {
+            "concept": "Orientation and jump sign",
+            "conversion": "Match oriented increments after choosing compatible normals and sweep directions. Reversing the right's illustrated sweep matches the left's illustrated increasing-flux sweep. A spatial crossing of a brane in the Bianchi equation and advancement of the sweep scalar are distinct operations.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0008s001",
+              "43ed00b9bc39e2445e7b:p0019s002",
+              "43ed00b9bc39e2445e7b:p0021s001",
+              "43ed00b9bc39e2445e7b:p0023s001"
+            ],
+            "left_definition": "The left illustration uses N to N+1; the positive source convention gives a positive jump on crossing toward positive y.",
+            "right_definition": "Equation (4.3) gives a positive jump on crossing toward larger transverse ψ, while the sweep ψ:0→π is described as reducing q by (2π)^3. The latter sign is confirmed by Figure 2 in image:5.",
+            "status": "established"
+          },
+          {
+            "concept": "Position scalar and kinetic normalization",
+            "conversion": "Identify the function of ψ as an interpolation coordinate. No equality of canonical displacements, field-space metrics or geodesic distances follows.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0011s001",
+              "9c44a326cd0e679d37ed:p0011s002",
+              "43ed00b9bc39e2445e7b:p0020s001",
+              "43ed00b9bc39e2445e7b:p0021s001",
+              "43ed00b9bc39e2445e7b:p0023s002"
+            ],
+            "left_definition": "ψ locates the contractible D4 inside Σ2. Image:3 confirms gψψ = 2πμ4 ℓs^3 L^3 e^−φ |f(ψ)| and the cumulative endpoint convention ψ = πN.",
+            "right_definition": "ψ is the transverse position inside Σ3,7, promoted to a three-dimensional scalar. A single reducing sweep spans [0,π]; repeated consecutive sweeps are assigned cumulative travel nπ. Equation (4.19), checked in image:5, supplies a different kinetic coefficient.",
+            "status": "established"
+          },
+          {
+            "concept": "Units and frames",
+            "conversion": "The method comparison uses flux quantum counts and the sourced Bianchi identity, so it requires no equality of dimensionful DBI coefficients or lower-dimensional Planck units. No Weyl conversion or numerical identification of scalar metrics is performed.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0005s002",
+              "9c44a326cd0e679d37ed:p0011s001",
+              "43ed00b9bc39e2445e7b:p0004s002",
+              "43ed00b9bc39e2445e7b:p0005s001",
+              "43ed00b9bc39e2445e7b:p0021s001"
+            ],
+            "left_definition": "The background and displayed brane metric are in ten-dimensional string frame. The brane formulas retain ℓs and use μ4 = 2π/(2πℓs)^5 with the DBI factor e^−φ; checked in image:3.",
+            "right_definition": "The stated bulk convention and D4 action are in Einstein frame. The paper sets α′ = 1 and uses T4 = (2π)^−4, with the D4 DBI dilaton factor e^(ϕ/4). Image:6 confirms the stated bulk frame.",
+            "status": "established"
+          },
+          {
+            "concept": "Worldvolume flux and induced D2 charge",
+            "conversion": "Retain the right's zero-pullback condition as part of its adaptation. The left appendix's induced-charge mechanism and any cancellation formula are not transferred.",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0020s001",
+              "9c44a326cd0e679d37ed:p0020s002",
+              "43ed00b9bc39e2445e7b:p0019s001",
+              "43ed00b9bc39e2445e7b:p0021s002"
+            ],
+            "left_definition": "The left paper's AdS3 extension has nonvanishing worldvolume flux and states that a single full sweep generates h units of D2 charge.",
+            "right_definition": "The chosen H3/B2 configuration has integral of H3 over Σ3,7 equal to zero and allows B2 to have no pullback to the D4, removing the stated induced net D2 coupling.",
+            "status": "established"
+          },
+          {
+            "concept": "Large-flux parameter and energy-ratio labels",
+            "conversion": "There is no asserted map between the two N parameters or their energy scalings. For the right source assertion, S is used only to label the two regimes explicitly displayed in Equation (4.18).",
+            "evidence_ids": [
+              "9c44a326cd0e679d37ed:p0006s001",
+              "43ed00b9bc39e2445e7b:p0020s001",
+              "43ed00b9bc39e2445e7b:p0023s001"
+            ],
+            "left_definition": "N is the left vacuum's unconstrained F4 flux integer.",
+            "right_definition": "N appears in the right's scaling analysis, while the interpolating flux component is F4,q. Equation (4.18) gives V(ψ)/|Vflux| ∼ N^−1/2 at S=0 and ∼ N^0 at S=−1/7; image:5 resolves the exponent −1/2.",
+            "status": "not_applicable"
+          }
+        ],
+        "evidenceIds": [
+          "9c44a326cd0e679d37ed:p0006s001",
+          "9c44a326cd0e679d37ed:p0006s002",
+          "9c44a326cd0e679d37ed:p0007s001",
+          "9c44a326cd0e679d37ed:p0007s002",
+          "9c44a326cd0e679d37ed:p0008s001",
+          "9c44a326cd0e679d37ed:p0011s001",
+          "9c44a326cd0e679d37ed:p0011s002",
+          "43ed00b9bc39e2445e7b:p0004s002",
+          "43ed00b9bc39e2445e7b:p0006s001",
+          "43ed00b9bc39e2445e7b:p0019s001",
+          "43ed00b9bc39e2445e7b:p0019s002",
+          "43ed00b9bc39e2445e7b:p0020s001",
+          "43ed00b9bc39e2445e7b:p0020s002",
+          "43ed00b9bc39e2445e7b:p0021s001",
+          "43ed00b9bc39e2445e7b:p0021s002"
+        ],
+        "limitations": [
+          "The right source says it uses the probe D4 proposed in [62] and begins its construction with 'Following [62]' (43ed00b9bc39e2445e7b:p0004s002; 43ed00b9bc39e2445e7b:p0019s001). That bibliography entry is absent. Historical citation attribution is excluded; the relation is reconstructed from the explicit matching operations.",
+          "The simplified flux step uses smearing or suppressed backreaction on the transverse four-cycle. The right introduction also assumes orientifold backreaction is benign. No fully localized ten-dimensional path is certified (9c44a326cd0e679d37ed:p0007s002; 43ed00b9bc39e2445e7b:p0004s001; 43ed00b9bc39e2445e7b:p0019s001).",
+          "Contractible wrapping and global sweeping are retained as source proposals. The right's coordinate construction has nontrivial boundary conditions and fixes background moduli during the probe stage; this comparison does not independently solve that global embedding problem (9c44a326cd0e679d37ed:p0008s001; 43ed00b9bc39e2445e7b:p0020s002).",
+          "The right energy-ratio powers are directly checked against image:5, not independently derived. Their derivation would require the omitted physical page 22, including the preceding DBI potential and scaling equations. Such a quantitative derivation is excluded from the method relation (43ed00b9bc39e2445e7b:p0023s001).",
+          "Geodesic distances, distance-conjecture exponents and general induced-charge cancellation are excluded. Neither earlier reviewers' conclusions nor node review labels substitute for reproduction. Only the supplied source spans and six attached images were used."
+        ],
+        "readerNote": null,
+        "withholdingReason": null,
+        "reviewExposure": "proposal_visible",
+        "sourcePacketPath": "atlas-relations/jobs/production-020/proposal/packet.json",
+        "sourcePacketSha256": "e7e684d8bb320fdfda24277524fab358bbadc4cef225897e03275c51d72a77ce"
+      },
+      "route": {
+        "id": "scientific:production-020",
+        "type": "uses_method",
+        "sourceObjectId": "obj:43ed00b9bc39e2445e7b:claim:ec06528c477de0d330c0f89e",
+        "targetObjectId": "obj:9c44a326cd0e679d37ed:claim:34fbc3e58cc9f5fac30c3aef",
+        "sourceMethodUnitIds": [],
+        "targetMethodUnitIds": [],
+        "originalDirection": "right_to_left",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "receiptSha256": "961852f3bf7736c9de41c78d1d29ad712bf1bc3a8215b116415075d10d30d351",
+        "bothEndpointsRepresented": false,
+        "mappingBasis": "exact_source_node_id_in_frozen_method_unit_evidence",
+        "questionEquivalenceInferred": false,
+        "methodApplicabilityExtended": false
+      },
+      "sourceMethods": [],
+      "targetMethods": [],
+      "expected": "unmapped_no_co_paper_fallback"
+    }
+  ],
+  "noNewScientificAdmission": true
+}

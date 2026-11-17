@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "q025-navigation-decisions-ready/1",
+  "status": "ready_for_root_review",
+  "jobs": 4,
+  "initialConcurrency": 2,
+  "maxAuthorizedConcurrency": 4,
+  "campaignSha256": "548e9aea3613ad173103d75ed62988b2d08d6af9e7513abf6e8e8e1c0a8e2cad",
+  "manifestSha256": "8dc56095185b642b80980f6e331dd3f36d85a75e674d4cbac171332a4d5c9f4e",
+  "tests": {
+    "python": 6,
+    "node": 2,
+    "verify": 4
+  },
+  "preflight": {
+    "schemaVersion": "q025-navigation-preflight/1",
+    "families": [
+      {
+        "familyId": "amplitude-reuse-and-parent-routes",
+        "scopes": 5,
+        "pairs": 10,
+        "sourceUnits": 76,
+        "pairedContexts": 78,
+        "primaryWindows": 3,
+        "actualProposalPromptCharacters": 191884,
+        "schemaCharacters": 11895,
+        "maxResponseCharacters": 80000,
+        "worstChallengeWithMaximumPriorOutputTokens": 140593,
+        "dispatchGuardTokens": 220000,
+        "promptSha256": "1790878c959552505f225c67334684300fff71412c44560ed30b7699e9e44787",
+        "packetSha256": "458b8dcc5374fb9e75bcca09b7bef87064dea6e062a6de513d6360c0ea25ca51"
+      },
+      {
+        "familyId": "inflation-and-late-time-scope-reuse",
+        "scopes": 7,
+        "pairs": 21,
+        "sourceUnits": 76,
+        "pairedContexts": 87,
+        "primaryWindows": 0,
+        "actualProposalPromptCharacters": 203624,
+        "schemaCharacters": 11895,
+        "maxResponseCharacters": 80000,
+        "worstChallengeWithMaximumPriorOutputTokens": 144507,
+        "dispatchGuardTokens": 220000,
+        "promptSha256": "f20516d9255f33bd4dc864126c58579423cc0056d01da73ac47768433facb03e",
+        "packetSha256": "f2013efc274abc9784b99b0307a8a95774191acad76699988ef1860b22fee86f"
+      }
+    ],
+    "primaryLocatorFailures": 0,
+    "sealedUnitsIncluded": 0,
+    "maxOutputCharacterContract": 80000,
+    "actualDependentPromptCheckedAgainAtDispatch": true,
+    "nativeLaunches": 0
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/prepare_packets.py",
+      "sha256": "b48d57a8d198a5bd140bf1a826305799d48fbf196d72562df8d2613a9cd3e026"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/contract.py",
+      "sha256": "03049e431e52b0cc121b2cd09bb79f36426fdaa65bcc9ea9f43bf0236b1d5ae9"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/materialize.py",
+      "sha256": "59cbd50e0ecaf2faf7d29095dedf5cc9a647529202bd4bfb280d530c7842f9ab"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/INSTRUCTIONS.md",
+      "sha256": "850055e98e6bb2622c140d4b835b37bb9b6ff7ec5ed0d8a7552b7d7aa218242e"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/source-index.json",
+      "sha256": "333f4056d351302025239c77ae9ff277c329c0cb82a1b1c7f4d72d31b99464bf"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/prepare.py",
+      "sha256": "8339ff77ed50894cf889487ecffa903b510585d7018494f4fd631710d1a657fd"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/runner.mjs",
+      "sha256": "cc05615f50d6af4c57b8439fe5ded272f3a508b4f22a9e8148f62573fd75211b"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/test_contract.py",
+      "sha256": "37be8ba841522bdb65b403b1fcda88a494f359866fdd7429b1eee67014889228"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/runner.test.mjs",
+      "sha256": "531f18b872c92c9d5d725571f7f0ad41076f648ce0c7d56d74d6672e6d4f0816"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/preflight.json",
+      "sha256": "9165c8c2fa8a233b650b430d617b5d2cc3e02d7ce5c60f8eb1e89e037e088575"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-decisions-v1/manifest.json",
+      "sha256": "8dc56095185b642b80980f6e331dd3f36d85a75e674d4cbac171332a4d5c9f4e"
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/navigation-decisions-v1/runner.mjs --run --enable",
+  "nativeLaunches": 0
+}
