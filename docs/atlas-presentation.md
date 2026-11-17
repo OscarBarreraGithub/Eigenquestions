@@ -29,6 +29,14 @@ scientific content hash. A lazy catalog may carry the annotated display synopsis
 for lookup and next choices; the complete original definition remains in its
 checksummed destination detail. A new package version pins any display change.
 
+The shared display code also retains five explicitly approved annotations in a
+small registry. It applies one only when both destination ID and scientific scope
+hash match, then verifies every original field before displaying it. This restores
+the approved presentation when a frozen package lacks the optional annotation;
+it does not change that package or its scientific record. The display-code version
+pins this treatment, and the original wording remains in record history. Explicit
+annotations carried by a package take precedence.
+
 An unresolved source facet may carry an explicit `sourceHomeNotice` alongside
 `sourceHomeStatus: "unresolved"` and its unchanged `sourceHomeReason`. The browser
 and static page show that notice and retain the full reason in “Placement context”.

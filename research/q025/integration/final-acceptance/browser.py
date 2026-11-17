@@ -187,6 +187,7 @@ def main():
         check('Actual KK production choices and source disclosures fit a 390px mobile viewport')
         report['screenshots']=['placement-notice-desktop.png','compound-source-desktop.png','physics-desktop.png','dark-sectors-desktop.png','kk-production-desktop.png','linear-desktop.png','source-desktop.png','kk-production-mobile.png']
         # The separate overview is exercised on the actual final geometry, not a fixture.
+        report['phase']='overview-classification'
         from urllib.parse import urlencode
         overview=cases['overview']; chart=context.new_page();chart.on('pageerror',lambda error:report['pageErrors'].append(str(error)))
         chart.set_default_timeout(60000)
@@ -221,7 +222,8 @@ def main():
         assert detail_metrics['bodyWidth']<=detail_metrics['viewport']+1
         chart.set_viewport_size({'width':390,'height':844});chart.screenshot(path=str(out/'overview-detail-mobile.png'),full_page=True)
         assert chart.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
-        fragment.update(destination=cases['entryDestinationId'],space='classification');chart.goto(base+urlencode(fragment),wait_until='domcontentloaded')
+        report['phase']='overview-mobile-return'
+        chart.locator('#atlas-map-breadcrumb').get_by_role('button',name='All physics fields',exact=True).click()
         chart.wait_for_function('document.querySelectorAll("#atlas-topics button").length===17')
         assert chart.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
         assert all(r['height']>=44 for r in chart.locator('#atlas-topics button').evaluate_all('nodes=>nodes.map(n=>({height:n.getBoundingClientRect().height}))'))
@@ -231,6 +233,11 @@ def main():
         report['longTasksAll']=page.evaluate('window.__qaLong'); assert not report['pageErrors']; report['passed']=True; browser.close()
     except Exception as error:
         report['error']=str(error).replace(token,'[redacted-session-token]') if token else str(error)
+        if 'chart' in locals() and not chart.is_closed():
+            try:
+                report['overviewFailure']={'url':chart.url,'body':chart.locator('body').inner_text(),'selectedSpace':chart.locator('#atlas-space').input_value()}
+                chart.screenshot(path=str(out/'overview-failure.png'),full_page=True)
+            except Exception: pass
         if page:
             try:
                 report['failureState']=page.evaluate("({title:document.title,body:document.body.innerText.slice(0,12000),read:window.eigenquestionsNavigator?.read(),longTasks:window.__qaLong,parses:window.__qaParse})")

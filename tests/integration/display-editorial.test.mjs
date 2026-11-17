@@ -20,6 +20,17 @@ test('explicit admitted-record annotations preserve scientific definitions and r
   assert.deepEqual(destinationPresentation(unchanged).scope,unchanged.scope);
 });
 
+test('approved registry applies only the five exact ID and scope bindings without modifying raw records',()=>{
+  for(const annotated of examples.records){
+    const raw=structuredClone(annotated);delete raw.displayEditorial;const original=structuredClone(raw);
+    assert.deepEqual(destinationPresentation(raw),destinationPresentation(annotated));assert.deepEqual(raw,original);
+    assert.equal(destinationPresentation({...raw,id:raw.id+'-different'}).notes.length,0);
+    assert.equal(destinationPresentation({...raw,scopeContentSha256:'f'.repeat(64)}).notes.length,0);
+    const changed=structuredClone(raw),note=annotated.displayEditorial.relocations[0],[,,field,index]=note.path.split('/');changed.scope[field][Number(index)]+=' Changed';
+    assert.throws(()=>destinationPresentation(changed),/original field text changed/);
+  }
+});
+
 test('stale scope bindings, moved text, source summaries and duplicate paths fail closed',()=>{
   const original=examples.records.find(record=>record.displayEditorial.summary&&record.displayEditorial.relocations.length);
   for(const change of [record=>record.scopeContentSha256='a'.repeat(64),record=>{const [,,field,index]=record.displayEditorial.relocations[0].path.split('/');record.scope[field][index]='Changed physics';},record=>record.summary+=' Changed',record=>record.displayEditorial.origin.artifactPath='../private.json',record=>record.displayEditorial.relocations.push(record.displayEditorial.relocations[0])]){
