@@ -1,0 +1,1733 @@
+{
+  "schemaVersion": "q025-source-journeys/1",
+  "purpose": "Falsification and navigation acceptance, not an accuracy estimate or a gold taxonomy. Witnesses identify evidence to inspect; they do not prescribe a cluster or prove the scientific claims.",
+  "identityRule": "Equivalent accepted question prompts resolve to one scoped destination ID across entry routes. Boundary prompts changing target, hypotheses or regime may require distinct linked IDs. Region IDs are never substitutes for canonical question identity.",
+  "splitPolicy": "Known regressions are development cases. Navigation challenges reuse previously scoped scientific evidence; they are new navigation tests but not new blind scientific adjudications. Do not tune on all challenge answers and call them held out.",
+  "cases": [
+    {
+      "id": "J01",
+      "title": "A decaying KK tower as cosmological dark matter",
+      "split": "known_regression",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "In the Dark Dimension setting, how do repeated decays within a KK-graviton dark-matter tower change its cosmological evolution and linear observational signatures?",
+        "Starting from a dark sector made of extra-dimensional graviton modes, follow the population as heavier modes feed lighter ones, then locate the effects of their recoil on cosmological observables."
+      ],
+      "entryRoutes": [
+        [
+          "extra dimensions",
+          "KK towers",
+          "KK-graviton dark matter",
+          "intra-tower evolution",
+          "linear signatures"
+        ],
+        [
+          "dark matter cosmology",
+          "dynamical dark matter",
+          "KK-graviton tower",
+          "intra-tower evolution",
+          "linear signatures"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "2311.05318",
+        "2209.09249",
+        "2212.08527"
+      ],
+      "definingConstraints": [
+        "KK gravitons are the dark-matter sector",
+        "repeated intra-tower decays and daughter recoil",
+        "linear perturbation/observational question distinguished from initial abundance"
+      ],
+      "boundaryPrompts": [
+        "Now ask only how the initial tower abundance is gravitationally produced from the hot Standard Model brane.",
+        "Now replace the tower by a single stable axion."
+      ],
+      "failureConditions": [
+        "Entry through extra dimensions hides cosmological exits or reverse entry hides spectra/couplings",
+        "Initial production and late-time decay/signature questions silently merged",
+        "Generic axion/moduli decay substitutes for KK daughters"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:d5031ab16d8b871bddd917aa4e9de3e7203c9cda1499e4fcfe9a5f463cd4a4ac",
+          "paperId": "2209.09249",
+          "lens": "physical_question",
+          "text": "Can gravitational production from a hot Standard Model brane supply viable dark matter in the dark dimension, while relating its abundance to the dark-energy scale?",
+          "nodeIds": [
+            "obj:4d3ed4ed08b412802344:question:442b63dbc506df86ae946532"
+          ],
+          "evidenceIds": [
+            "ev:56ab749f6d7f127fad9a93188d48d010",
+            "ev:9cb213d0a80ac51fad01d7e9c044f466",
+            "ev:b2b5ab20831ae1378c1bac4d2049dc26"
+          ],
+          "sourceSha256": "cf23b3e9f2fced33455df8250706b38b7f550a1556ad54ccae5e1a33ce3dcde7"
+        },
+        {
+          "unitId": "unit:b59524684d5008dc2936cff6727b58bbe951d7371b29012d495ed0e1ff303066",
+          "paperId": "2212.08527",
+          "lens": "physical_question",
+          "text": "Can a micron-scale dark dimension accommodate neutrino masses, produce distinguishable cosmological and local signals from dynamical KK-graviton dark matter, and support inflation despite the light spin-2 tower?",
+          "nodeIds": [
+            "obj:ed7850947235a1f94870:question:e2940d725de943635c43c9e8"
+          ],
+          "evidenceIds": [
+            "ev:15343970aece90a7d0fe093f85c25e3b",
+            "ev:df382ead20d0450a8c05a719ad43d0b7"
+          ],
+          "sourceSha256": "4b0f5734f82691aac77f1d30774a6e2312e9eb851670802c3956a7226e28a1b6"
+        },
+        {
+          "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+          "paperId": "2311.05318",
+          "lens": "physical_question",
+          "text": "What linear cosmological signatures arise from repeated decays within a dark-matter KK-graviton tower, and what do CMB, BAO and weak-lensing data imply for its kick velocity and Dark Dimension parameters?",
+          "nodeIds": [
+            "obj:fab9bf3fee6db124cc91:question:59101e9ad5e12ded5f115b26"
+          ],
+          "evidenceIds": [
+            "ev:2fad585ea0fd6a9e881beb23831ceaa7",
+            "ev:98101f0d696c278269902e9cbb5320e0",
+            "ev:bbf52e208ce8497a6b71719219ba7d85"
+          ],
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903"
+        },
+        {
+          "unitId": "unit:d3887234965b5e3e9d140318aad409dd55443ac72acf08c7f898c784033142e5",
+          "paperId": "2209.09249",
+          "lens": "method",
+          "text": "Numerically solves coupled Boltzmann equations for individual KK abundances, including brane production, decays back to Standard Model fields, and intratower daughter production. Early production also receives an analytic treatment using Bessel-function kernels.",
+          "nodeIds": [
+            "obj:4d3ed4ed08b412802344:method:9a7cade48a69360c50e7e2fb"
+          ],
+          "evidenceIds": [
+            "ev:0445f77689bb454e335a9b200b50b6da",
+            "ev:1ef76fe73ac5052adbeff674a7ba809e",
+            "ev:53077b4033d532108998e0c147cbd00f",
+            "ev:6a8d964d4cf4bef8614f8a390a335c9d"
+          ],
+          "sourceSha256": "cf23b3e9f2fced33455df8250706b38b7f550a1556ad54ccae5e1a33ce3dcde7"
+        },
+        {
+          "unitId": "unit:cbe07596c8d7162448244d0ed6d2acd631c2fd9f133f76a4bedc25135383638e",
+          "paperId": "2209.09249",
+          "lens": "method",
+          "text": "Dimensional analysis of universal graviton\u2013stress-tensor coupling estimates brane-to-bulk production. The expansion-compensated quantity y=\u03c1KK/s gives production dominated by the initial temperature, conditional on approximate preservation of dark-sector mass.",
+          "nodeIds": [
+            "obj:4d3ed4ed08b412802344:method:829ceea23c27bc92541ac8fe"
+          ],
+          "evidenceIds": [
+            "ev:03cb9a6991c743a06f4c8b8b2442cda1",
+            "ev:0ee97a95646074290f52393cc31c71dc",
+            "ev:e6b10521aabc1b3aaa5ad1acd3a9819b"
+          ],
+          "sourceSha256": "cf23b3e9f2fced33455df8250706b38b7f550a1556ad54ccae5e1a33ce3dcde7"
+        },
+        {
+          "unitId": "unit:faff4be0103cc96f8975542216bbed9c3e2714b751d686c36aa7105e300527d1",
+          "paperId": "2212.08527",
+          "lens": "method",
+          "text": "The neutrino analysis uses an infinite KK decomposition and Dirac mass matrix, with volume-suppressed brane\u2013bulk masses m_i^D \u2248 y_i\u27e8H\u27e9/\u221a(R MUV). Oscillation probabilities are parametrized by the six standard oscillation parameters plus R and the lightest Dirac-mass parameter.",
+          "nodeIds": [
+            "obj:ed7850947235a1f94870:method:46c7b9307bdac0a917d77e84"
+          ],
+          "evidenceIds": [
+            "ev:35a0a1b8cd4198fe7a038ec4de5f4762",
+            "ev:82554777e5f64f2d75199d40b42e7da5",
+            "ev:abf6739dbe44f40df8974f861b409faa"
+          ],
+          "sourceSha256": "4b0f5734f82691aac77f1d30774a6e2312e9eb851670802c3956a7226e28a1b6"
+        },
+        {
+          "unitId": "unit:ce0ec03d342b66fec27337f8981813ac3a472555eb518505b1f0ce39392f1f2d",
+          "paperId": "2212.08527",
+          "lens": "method",
+          "text": "Following the earlier DDG model, a lifetime-threshold estimate assumes states heavier than the mass corresponding to lifetime t have already decayed. This yields characteristic mass evolution m_l \u221d t^(-2/7); the visible decay width scales cubically with mass. High-redshift normalization is then propagated to the local universe.",
+          "nodeIds": [
+            "obj:ed7850947235a1f94870:method:36b5696e293ae6c18546f550"
+          ],
+          "evidenceIds": [
+            "ev:41fa488b04912a67a2a1dba4f9595fcb",
+            "ev:43f264936b18295dcf822dd22ce75c10",
+            "ev:e476488af74939042cd812eb3a4aa7b9"
+          ],
+          "sourceSha256": "4b0f5734f82691aac77f1d30774a6e2312e9eb851670802c3956a7226e28a1b6"
+        },
+        {
+          "unitId": "unit:2ec3bf97f6cb220fa7ed47b9ed27a9e2ed73d33a726d0b46a6b127d7620cdd42",
+          "paperId": "2311.05318",
+          "lens": "method",
+          "text": "Restrict weak lensing to estimated linear scales using k_NL^3 P_lin(k_NL,z)/(2\u03c0^2)=\u0394_NL. Apply redshift-dependent multipole cuts, requiring cross-bin measurements to pass both cuts; compare \u0394_NL=0.5 and 1.0.",
+          "nodeIds": [
+            "obj:fab9bf3fee6db124cc91:method:c7160c21c5e685b6b3c271ba"
+          ],
+          "evidenceIds": [
+            "ev:37050e4d099b9a7bf8cc52796591c8b5",
+            "ev:3cfa662558cea623e418a8c5a9bc2481"
+          ],
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903"
+        },
+        {
+          "unitId": "unit:95b3691eb20601e1b2671844cafd772a5769f6bcbd668c86ac1c3898db8dddb7",
+          "paperId": "2311.05318",
+          "lens": "method",
+          "text": "Modify CLASS and sample v_today alongside six \u039bCDM parameters with MontePython. Use Planck 2018 temperature, polarization and lensing, BAO, and KiDS-1000 band powers; sampling uses Metropolis\u2013Hastings, with nested sampling for KiDS-only analyses.",
+          "nodeIds": [
+            "obj:fab9bf3fee6db124cc91:method:d69196cc08916f0d48daecfe"
+          ],
+          "evidenceIds": [
+            "ev:21fd27509d96e5523cad818fe15375bc",
+            "ev:6d7a277cfc345d7aaa649f97885d1126"
+          ],
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903"
+        },
+        {
+          "unitId": "unit:df543fbaeb1acc2f6d8024cd2ac82e30069a5c36c63dd2610b60d590e314381f",
+          "paperId": "2311.05318",
+          "lens": "method",
+          "text": "Model the background momentum distribution with a moving Gaussian-like peak and fixed width parameter \u03b7=0.25. Use distribution moments and a fluid approximation truncating the Boltzmann hierarchy at multipole \u2113_max=2; shear terms are retained in the full analysis.",
+          "nodeIds": [
+            "obj:fab9bf3fee6db124cc91:method:24284af4097c2887135386ec"
+          ],
+          "evidenceIds": [
+            "ev:16243c950ce76060276aa4b6728d95bd",
+            "ev:2493ceddf3c0cd5eec29592d377901eb",
+            "ev:91ae56d011113356bc6f1fdbcff6b5b8"
+          ],
+          "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903"
+        }
+      ]
+    },
+    {
+      "id": "J02",
+      "title": "Axion WGC constraints on early dark energy",
+      "split": "known_regression",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "Which assumptions in an axion weak-gravity bound constrain the decay constant and cosmological energy fraction of axion early dark energy?",
+        "For an axion intended to supply early dark energy, connect its quantum-gravity consistency conditions to the allowed cosmological contribution."
+      ],
+      "entryRoutes": [
+        [
+          "early dark energy",
+          "axion realization",
+          "weak-gravity conditions"
+        ],
+        [
+          "axion instantons",
+          "weak gravity",
+          "early-dark-energy application"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "2203.05575"
+      ],
+      "definingConstraints": [
+        "early dark energy application retained",
+        "decay constants and energy fractions",
+        "formulation and assumptions of the axion WGC explicit"
+      ],
+      "boundaryPrompts": [
+        "Keep the axion WGC but switch the application to primordial inflation."
+      ],
+      "failureConditions": [
+        "Following the method drops EDE and returns generic instantons",
+        "Conjectural input shown as established exclusion"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:a63af1f399a818071def931852f274e26e4b6ba1a36b770c5f7fbf6187291439",
+          "paperId": "2203.05575",
+          "lens": "physical_question",
+          "text": "Can axion models of early dark energy be embedded in quantum gravity, and how strongly does the axion weak gravity conjecture constrain their decay constants and cosmologically relevant energy fractions?",
+          "nodeIds": [
+            "obj:91d2624fc86c18b015eb:question:2178b39692c9c88becd9e5d8"
+          ],
+          "evidenceIds": [
+            "ev:26bb1647f5d32f5bc95a1e55a559a874",
+            "ev:86f04d72392310f74bdda87d648ca78c",
+            "ev:f40f9b58ecec8e5e0129f2bdf2b029b4"
+          ],
+          "sourceSha256": "ec43d068936b42cb343bb216635c06aa2a0eee7e96906175a2a3ed0e8c9d0626"
+        },
+        {
+          "unitId": "unit:f5d8a7e9cb80403ea583e2f4bb44df7a2f690032e6afd174b49df1c0d2ee4ff3",
+          "paperId": "2203.05575",
+          "lens": "method",
+          "text": "The cosmological translation adds the axion to a specified \u039bCDM background with \u03a90,M=0.31, \u03a90,R=9\u00d710\u207b\u2075 and \u03a9\u039b=0.69. Starting at rest with \u03c70=(\u03c0\u22120.01)f, the author fits the axion density evolution to a phenomenological EDE interpolation to obtain ac and fEDE.",
+          "nodeIds": [
+            "obj:91d2624fc86c18b015eb:method:2db908e2ce549ce6885f260e"
+          ],
+          "evidenceIds": [
+            "ev:294df07dcb77ce9046bf7928e72a191a",
+            "ev:4b768edeb3b7788f1e25402e067d0d0e",
+            "ev:b201404696b0c52cade00c1159af2636"
+          ],
+          "sourceSha256": "ec43d068936b42cb343bb216635c06aa2a0eee7e96906175a2a3ed0e8c9d0626"
+        },
+        {
+          "unitId": "unit:3fa3b7d19670eb7682119b977121ccbfae92ca74387fefb633cc52010086e3c3",
+          "paperId": "2203.05575",
+          "lens": "method",
+          "text": "The instanton action is related to the potential amplitude through m\u03c7\u00b2=\u039bUV\u2074e^(\u2212S)/feff\u00b2. Substitution into the axion WGC produces an n-independent inequality involving feff and a logarithm of \u039bUV\u2074/(feff\u00b2m\u03c7\u00b2). The bound is evaluated for representative EDE parameters.",
+          "nodeIds": [
+            "obj:91d2624fc86c18b015eb:method:31e6c493a8bc9b4f4a25d063"
+          ],
+          "evidenceIds": [
+            "ev:2f8cc4e60a228fbeba15e7bf7fd9ca4e",
+            "ev:48776c82803e234c64b1bc80f44f55d1",
+            "ev:b201404696b0c52cade00c1159af2636"
+          ],
+          "sourceSha256": "ec43d068936b42cb343bb216635c06aa2a0eee7e96906175a2a3ed0e8c9d0626"
+        }
+      ]
+    },
+    {
+      "id": "J03",
+      "title": "Higher-derivative corrections to rotating black-hole thermodynamics",
+      "split": "known_regression",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "For Kerr black holes in a gravitational effective theory, how can first-order higher-derivative corrections to thermodynamics be obtained without constructing the corrected metric, and when is the entropy sign controlled?",
+        "Find the perturbative thermodynamic method for six- and eight-derivative operators on Kerr and its restrictions on statements about entropy."
+      ],
+      "entryRoutes": [
+        [
+          "black-hole thermodynamics",
+          "Kerr entropy",
+          "higher-derivative EFT"
+        ],
+        [
+          "higher-derivative methods",
+          "thermodynamic corrections",
+          "rotating black holes"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "1901.11535",
+        "1003.2850"
+      ],
+      "definingConstraints": [
+        "Kerr background",
+        "first order in higher-derivative couplings",
+        "ensemble/quantities held fixed explicit"
+      ],
+      "boundaryPrompts": [
+        "Does entropy necessarily increase for arbitrary coefficients, any ensemble and any mass?"
+      ],
+      "failureConditions": [
+        "Fixed-mass and fixed-temperature comparisons merged",
+        "A method cited from earlier work shown as a new derivation",
+        "Positivity generalized beyond stated regime"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:d313a3e57e3d5b0b63b152d4aaf611ace5d7e12663d0834851b16c948b643967",
+          "paperId": "1901.11535",
+          "lens": "method",
+          "text": "Use I = \u03b2G, G = M\u2212TS\u2212\u03a9HJ and the first law to differentiate thermodynamic quantities. A change-of-variables argument relates the fixed-(M,J) entropy correction to minus the higher-derivative Euclidean action evaluated on Kerr.",
+          "nodeIds": [
+            "obj:8285ccb92f2fe5be90e0:method:4e0dbdf0980753d2130787b0"
+          ],
+          "evidenceIds": [
+            "ev:2772a9e4fbe18335d34fcb29febf3756",
+            "ev:4a231bb4069dd1512409ebc94c12ae5e",
+            "ev:8bea6313c92e723224170e0e46e1db8a",
+            "ev:e2566716ec4f3f0f98ff100c14938250"
+          ],
+          "sourceSha256": "9fd52330f599590a3fe7e3733c89602f8964c69507152e7f7a788bfc0046e853"
+        },
+        {
+          "unitId": "unit:2e68b575daefdc40e5a1c7f146f5151265577d875688c8985d38a583c2522c6e",
+          "paperId": "1901.11535",
+          "lens": "method",
+          "text": "Regulate the Euclidean Einstein action at a large-radius boundary and subtract a matching flat-space action. Boundary falloffs show that its first variation vanishes at fixed T and \u03a9H; higher-derivative boundary terms decay at infinity.",
+          "nodeIds": [
+            "obj:8285ccb92f2fe5be90e0:method:430b3b0066623f08777ff4f4"
+          ],
+          "evidenceIds": [
+            "ev:3acbac85242ec820c841c2cfd9c983b2",
+            "ev:626aae8896ab862e4991207726374ed6",
+            "ev:d73f349c0be07da45fd62bbcadec7867",
+            "ev:ddd536d28290d6b25243314492af46c6"
+          ],
+          "sourceSha256": "9fd52330f599590a3fe7e3733c89602f8964c69507152e7f7a788bfc0046e853"
+        },
+        {
+          "unitId": "unit:1f829ae4c7c01c42589d96b9c3eabac2ae3472bef6a8ad8915cb5259962f8767",
+          "paperId": "1901.11535",
+          "lens": "method",
+          "text": "Evaluate curvature-invariant integrals with computer algebra using x = cos\u03b8, integrating x before the radial coordinate. Express results through \u03c4 = 2\u03c0T/\u03a9H, then perturbatively invert the grand-canonical relations to obtain fixed-(M,J) corrections.",
+          "nodeIds": [
+            "obj:8285ccb92f2fe5be90e0:method:667324cad604190ba35c89e2"
+          ],
+          "evidenceIds": [
+            "ev:1d21c6cf62dc7bdb074789615a68f252",
+            "ev:371715ff00706005ad9b62e42d6ea64d",
+            "ev:91fa446f04d144a7d6b2775b922b961f",
+            "ev:b1d6d91ddb7797259cb6379af18ff1ed"
+          ],
+          "sourceSha256": "9fd52330f599590a3fe7e3733c89602f8964c69507152e7f7a788bfc0046e853"
+        },
+        {
+          "unitId": "unit:0ed95e528a288703f7751e234c589c0655402a51dd74007bdc2b1ffa8f9b7dff",
+          "paperId": "1003.2850",
+          "lens": "physical_question",
+          "text": "In weakly coupled unitary extensions of Einstein gravity, does semiclassical black-hole entropy exceed the number of light species, and is Einstein entropy minimal at fixed mass? The paper also investigates analogous AdS black-brane entropy-density statements.",
+          "nodeIds": [
+            "obj:afc1d5c014ebe88dbc28:question:1789b3ddc2253f0479dbb6f2"
+          ],
+          "evidenceIds": [
+            "ev:8bada016e789fe642b1d6c2fedd9749a",
+            "ev:b304ce382899248858dee7ad2b33ae02"
+          ],
+          "sourceSha256": "76c67c73e3d7e8756dae3023799ab395005a55a432a369abd36e6216d4224fb0"
+        },
+        {
+          "unitId": "unit:618c7476e9bd17d716b6730a0c83a5b14174deb00690e4bdd359630f74f131ed",
+          "paperId": "1901.11535",
+          "lens": "physical_question",
+          "text": "How do six- and eight-derivative gravitational EFT operators change Kerr thermodynamics at first order, can those changes be obtained without the corrected metric, and when do entropy corrections have definite signs?",
+          "nodeIds": [
+            "obj:8285ccb92f2fe5be90e0:question:beff607bb79fa8fa897402af"
+          ],
+          "evidenceIds": [
+            "ev:18cfd1e446b9bf6e5cbf12e255bbe2a3",
+            "ev:6c1ab7c0dba2b976820a3306181c5eb4",
+            "ev:988e4e359446b43bd863850646c0ed12"
+          ],
+          "sourceSha256": "9fd52330f599590a3fe7e3733c89602f8964c69507152e7f7a788bfc0046e853"
+        },
+        {
+          "unitId": "unit:9ff40487402e82016e989605b2e3ca4f73cf9c57ab93b64e65ed92d919ff23e1",
+          "paperId": "1003.2850",
+          "lens": "method",
+          "text": "A tortoise-coordinate Klein\u2013Gordon analysis motivates effectively massless radial propagation near a simple horizon. The authors then use a flat-space 1PI graviton propagator and K\u00e4ll\u00e9n\u2013Lehmann spectral positivity to argue for enhanced gravitational couplings.",
+          "nodeIds": [
+            "obj:afc1d5c014ebe88dbc28:method:abb4800838557f201142242d"
+          ],
+          "evidenceIds": [
+            "ev:3c15eb52d38bf78df88f2d5013315efa",
+            "ev:b477f287621be46514d6b926d11f03ed",
+            "ev:b4f493b387b87da67cd3a717045bcec9",
+            "ev:f5ed3beeaacad24ac58a836389f26082"
+          ],
+          "sourceSha256": "76c67c73e3d7e8756dae3023799ab395005a55a432a369abd36e6216d4224fb0"
+        },
+        {
+          "unitId": "unit:9da2900375b5c79ce964768dea7368c33e1463d2eaa2135bd5b38764e0c89f31",
+          "paperId": "1003.2850",
+          "lens": "method",
+          "text": "Integrate the first law dS=\u03b2(M)dM and use \u03b2\u2265RS together with the asserted radius relation RS;X=M[1+IX(M)] in Planck units. Combine the resulting entropy estimate with an imported semiclassical evaporation bound.",
+          "nodeIds": [
+            "obj:afc1d5c014ebe88dbc28:method:2227d8fa407202e44f80f0ee"
+          ],
+          "evidenceIds": [
+            "ev:6e5d42cabeeb2483158d7a5245ab5788",
+            "ev:83b9a368235ac2519e7cb5a8b513cc18",
+            "ev:f8676bdd826fc4fd8e6a0e3948f95008"
+          ],
+          "sourceSha256": "76c67c73e3d7e8756dae3023799ab395005a55a432a369abd36e6216d4224fb0"
+        },
+        {
+          "unitId": "unit:e77aee16b3a9edcf311c83bd12b3ad362ab6b8b010e4bf1f6a5f12774b35b661",
+          "paperId": "1003.2850",
+          "lens": "method",
+          "text": "Wald entropy is expressed using an effective coupling for r,t-polarized gravitons. For Lovelock branes, the analysis examines purely spatial Riemann components at the horizon and argues that their higher-curvature entropy contributions vanish.",
+          "nodeIds": [
+            "obj:afc1d5c014ebe88dbc28:method:f0efbc51ed3b081fef3b36e2"
+          ],
+          "evidenceIds": [
+            "ev:019978368dd254f6015b8325ed0ed782",
+            "ev:268deb24f2a37568046f9d74e543e47e",
+            "ev:b4f493b387b87da67cd3a717045bcec9"
+          ],
+          "sourceSha256": "76c67c73e3d7e8756dae3023799ab395005a55a432a369abd36e6216d4224fb0"
+        }
+      ]
+    },
+    {
+      "id": "J04",
+      "title": "Integrated curvature is not automatically a spectral gap",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "Does a bound on an integrated internal-curvature ratio establish a bound on the lightest spin-two Kaluza\u2013Klein mass, and what geometric control connects them?",
+        "Compare a scalar-curvature diagnostic of scale separation with direct weighted spin-two spectral bounds in warped compactifications."
+      ],
+      "entryRoutes": [
+        [
+          "flux compactifications",
+          "scale separation",
+          "curvature diagnostics",
+          "spectral bounds"
+        ],
+        [
+          "KK spectra",
+          "weighted Laplacians",
+          "geometric controls",
+          "AdS scale separation"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "1512.00457",
+        "2104.12773"
+      ],
+      "definingConstraints": [
+        "weighted integrated curvature distinguished from eigenvalue",
+        "warp/dilaton control",
+        "geometric hypotheses required for spectral comparison"
+      ],
+      "boundaryPrompts": [
+        "Assume only the integrated curvature ratio; conclude every KK mass is of order the AdS scale."
+      ],
+      "failureConditions": [
+        "Deferred comparison promoted to theorem",
+        "Different geometric quantities collapsed under the label KK scale"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:66cb0f576400ed50e9bc05f3838837c0fec10ff2637fc3bc264f9c16bf32b9b8",
+          "paperId": "1512.00457",
+          "lens": "physical_question",
+          "text": "Can Maldacena\u2013Nu\u00f1ez-type restrictions on Minkowski and de Sitter flux vacua also obstruct AdS vacua whose KK masses are parametrically above the cosmological curvature scale? What would this imply for classical Romans-mass smoothing of O6 singularities?",
+          "nodeIds": [
+            "obj:932b50c6e4bb8aba300e:question:dc416b7701dbda6850caa3c5"
+          ],
+          "evidenceIds": [
+            "ev:1ffb6f3a44779ddd6433cbfef37bbf66",
+            "ev:7bd4d4e0d44aa942fd7d89ba7bbf5db2"
+          ],
+          "sourceSha256": "e1166a78f538ebc697c653d0348b8d541e1ddd65eec566af23a9e9d5a177e2fa"
+        },
+        {
+          "unitId": "unit:214c9db6f2441a2a555dec817e446c159317113ea20ce92ff1c55b555c33b85b",
+          "paperId": "2104.12773",
+          "lens": "physical_question",
+          "text": "What rigorous restrictions do higher-dimensional equations place on Kaluza\u2013Klein masses and scale separation, and can Romans mass replace the problematic O6 loci in promising supersymmetric AdS4 compactifications by smooth local geometry?",
+          "nodeIds": [
+            "obj:77332f6e18faf6938fe2:question:31eb0e88912cc13e0fe50e0c"
+          ],
+          "evidenceIds": [
+            "ev:0949f405f7db075b8eb594fa62d8c6e8",
+            "ev:6b8afc0b9cc0a476d75882f159e715a0",
+            "ev:dacce1d54de0bf3d6d8df6803be2932f"
+          ],
+          "sourceSha256": "30a1f552ec0a584d197723161c3b50da592518f799c61c5c3cb0696fad87fe92"
+        },
+        {
+          "unitId": "unit:fba9dda29ab07fae7e39213d3a7c08c23dc5d84cd17c7e28f8ec4eb7fb530b7a",
+          "paperId": "2104.12773",
+          "lens": "method",
+          "text": "Boundary conditions are investigated through nonlinear Frobenius-type power series and backward numerical evolution. Matching uses initial data from the perturbative weak-coupling solution; robustness tests include approximately 10^5 random evolutions and another approximately 10^5 with up to 10% boundary-data noise.",
+          "nodeIds": [
+            "obj:77332f6e18faf6938fe2:method:6950a5cc4740096b7770fae4"
+          ],
+          "evidenceIds": [
+            "ev:08238346f459cfe57c57ea5b1dbec680",
+            "ev:44c1a11bb87e0df72c60aa0b1d2f50d4",
+            "ev:47b1d81c884d9a5c772e75617f7ad40c",
+            "ev:99f57f7d248c598760da00be042d29fb",
+            "ev:cfeac1cfdfa289cdde53c6ad198dd85d"
+          ],
+          "sourceSha256": "30a1f552ec0a584d197723161c3b50da592518f799c61c5c3cb0696fad87fe92"
+        },
+        {
+          "unitId": "unit:c7a05ad60f5b197adafc65855a86f0d852c401746708e904f78347daf8f4e531",
+          "paperId": "2104.12773",
+          "lens": "method",
+          "text": "Combining internal and external Einstein equations removes the indefinite warp Laplacian and bounds a Bakry\u2013\u00c9mery Ricci tensor. Existing weighted-Laplacian eigenvalue theorems then constrain the universally decoupled spin-two tower, rather than estimating its masses from integrated scalar-curvature ratios.",
+          "nodeIds": [
+            "obj:77332f6e18faf6938fe2:method:0cbb08b8c8f7ab30905a1c46"
+          ],
+          "evidenceIds": [
+            "ev:0dd35e7078e25077c3a7e0ffeac4ed48",
+            "ev:1551645f676e5f09e8255e11cf5cee1c",
+            "ev:3c90b3b0ef39c33cbc5572c1efc2732d",
+            "ev:afd6c4e513288da05ac97d43aaabfb1f"
+          ],
+          "sourceSha256": "30a1f552ec0a584d197723161c3b50da592518f799c61c5c3cb0696fad87fe92"
+        },
+        {
+          "unitId": "unit:b8eb97be6d977322e01a379cc35ba944b34c6074acfc6eb2216988a4d1ff7a1d",
+          "paperId": "2104.12773",
+          "lens": "method",
+          "text": "Pure-form supersymmetry equations, Bianchi identities and orientifold parities are reduced using the imposed local symmetry. Algebraic constraints and radial-coordinate freedom leave seven first-order equations; the chosen radial gauge sets g_rr=e^(\u22122A).",
+          "nodeIds": [
+            "obj:77332f6e18faf6938fe2:method:e23c7e134d9f7607c34923b6"
+          ],
+          "evidenceIds": [
+            "ev:1c9e101dea14696f6f1c8e88e4ebb948",
+            "ev:ab4f1da8fd9ea8d46ccbcfe109d01628",
+            "ev:d1a029f296caa5bcec9222ea8f6dcf2f",
+            "ev:e669e634dc1a8459ec478021a3fbf964"
+          ],
+          "sourceSha256": "30a1f552ec0a584d197723161c3b50da592518f799c61c5c3cb0696fad87fe92"
+        },
+        {
+          "unitId": "unit:83fa94044d697fd7e5076588de522dedd6a0cc46454eeaa1525c96005898e620",
+          "paperId": "1512.00457",
+          "lens": "method",
+          "text": "Replace a direct calculation of the lowest nonzero internal Laplacian eigenvalue by the estimate MKK^(2\u2212d) \u223c \u222b\u221agd e^(4A)Rd. Dimensional analysis and a quoted Lichnerowicz result motivate this proxy; the actual KK spectrum is not computed.",
+          "nodeIds": [
+            "obj:932b50c6e4bb8aba300e:method:b991b3c8a99d3508a531dd34"
+          ],
+          "evidenceIds": [
+            "ev:6d41319db36ff5683e5725e23f7579d2",
+            "ev:8b2143783ddb2e96346079476cedca0d",
+            "ev:e6a76fccdacf992d15e37a00b9c6e289"
+          ],
+          "sourceSha256": "e1166a78f538ebc697c653d0348b8d541e1ddd65eec566af23a9e9d5a177e2fa"
+        },
+        {
+          "unitId": "unit:0430cec072ec6ca097403ab937f5ba275fc039ce02157ef965c3a1027de822d9",
+          "paperId": "1512.00457",
+          "lens": "method",
+          "text": "Repeat the integrated argument with an e^(2\u03c6) weight. This weight is selected using a classical scaling symmetry; integrating the weighted dilaton equation by parts introduces a dilaton-gradient term into the denominator of the curvature-ratio diagnostic.",
+          "nodeIds": [
+            "obj:932b50c6e4bb8aba300e:method:f5e9718b63cc1f55c495667e"
+          ],
+          "evidenceIds": [
+            "ev:061807a2da2f70c58e290a7c8c6aee0c",
+            "ev:0dbc1d137b9bf44b1bdeb322795c4f06"
+          ],
+          "sourceSha256": "e1166a78f538ebc697c653d0348b8d541e1ddd65eec566af23a9e9d5a177e2fa"
+        },
+        {
+          "unitId": "unit:d8851ba09f8f941157fe4598cdd5c5a168aab5f4774a453e3f65c821b870d853",
+          "paperId": "1512.00457",
+          "lens": "method",
+          "text": "Use traced external and internal Einstein equations to express curvature integrals through flux energies, dilaton gradients, and source tensions. In ten dimensions, the integrated dilaton equation eliminates the NS-flux contribution and exposes positivity bounds.",
+          "nodeIds": [
+            "obj:932b50c6e4bb8aba300e:method:c7f1b352deab23425ce7fa40"
+          ],
+          "evidenceIds": [
+            "ev:10843dc4ba67bfdea12c7de5f075e855",
+            "ev:6d41319db36ff5683e5725e23f7579d2",
+            "ev:87105f96fe61852ffb1721ac5705909e"
+          ],
+          "sourceSha256": "e1166a78f538ebc697c653d0348b8d541e1ddd65eec566af23a9e9d5a177e2fa"
+        }
+      ],
+      "reviewWitness": {
+        "taskId": "pilot-ads-curvature-spectral-bounds",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/pilot-ads-curvature-spectral-bounds.json",
+        "receiptSha256": "da1c6050f783b47ebc328e2741322818aff1d7470520ca1a968480e9023047d3",
+        "status": "deferred",
+        "promotionWithheld": false,
+        "relationCategory": "insufficient_evidence",
+        "direction": "none",
+        "exactAssertion": "Defer a directed relation: the supplied evidence does not establish an implication, specialization or method dependency between the left e^(2\u03c6)-weighted curvature-ratio bound and the right spin-two spectral bounds. The decisive missing premise is a controlled comparison between that scalar-curvature ratio and the spectral, warp-gradient, weighted-volume or barred-diameter data. The left's explicit proxy caveat and the right's explicit statement that its bounds alone do not exclude scale separation prevent treating either endpoint as an unconditional spectral no-go.",
+        "evidenceIds": [
+          "932b50c6e4bb8aba300e:p0009s002",
+          "932b50c6e4bb8aba300e:p0010s001",
+          "932b50c6e4bb8aba300e:p0011s001",
+          "932b50c6e4bb8aba300e:p0011s002",
+          "77332f6e18faf6938fe2:p0013s001",
+          "77332f6e18faf6938fe2:p0014s001",
+          "77332f6e18faf6938fe2:p0014s002",
+          "77332f6e18faf6938fe2:p0015s001",
+          "77332f6e18faf6938fe2:p0015s002",
+          "77332f6e18faf6938fe2:p0016s001",
+          "77332f6e18faf6938fe2:p0016s002",
+          "77332f6e18faf6938fe2:p0017s001"
+        ],
+        "readerNote": null
+      }
+    },
+    {
+      "id": "J05",
+      "title": "Convex-hull method versus a strict decay implication",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "When the lattice WGC uses a convex-hull discharge test after compactification, what matches the earlier multi-charge method and what extra conditions are needed for strictly positive mass release?",
+        "Track the common charge-to-mass geometry while distinguishing inclusive extremality coverage from actual strict decay into fundamental particles."
+      ],
+      "entryRoutes": [
+        [
+          "weak gravity",
+          "multiple U(1)s",
+          "convex hull",
+          "compactification and lattice spectrum"
+        ],
+        [
+          "KK photons",
+          "lattice spectrum",
+          "extremality coordinates",
+          "convex hull"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "1402.2287",
+        "1509.06374"
+      ],
+      "definingConstraints": [
+        "normalization identifies actual extremality regions",
+        "inclusive versus strict inequalities",
+        "spectrum and integer charge conservation",
+        "method use is not full implication"
+      ],
+      "boundaryPrompts": [
+        "Let every lattice state saturate extremality exactly. Must an extremal black hole have a final state with strictly lower total rest mass?"
+      ],
+      "failureConditions": [
+        "Historical deferred status reported as current status",
+        "Current uses_method upgraded to unconditional implication",
+        "Equality silently replaced by strict inequality"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:3133a54ac11c0c65ee3ba185cbc0d9ef6cf70573adee4ceae7e818b7291b5690",
+          "paperId": "1402.2287",
+          "lens": "physical_question",
+          "text": "Can natural scalar masses coexist with the weak gravity conjecture at very small gauge charge? The authors also seek a generalization to product Abelian groups and models in which a hypothetical fifth-force discovery could test electroweak naturalness.",
+          "nodeIds": [
+            "obj:d3ba6459ff2ca7a247e8:question:f4a1fc7f00ddf4f30fe56747"
+          ],
+          "evidenceIds": [
+            "ev:6cca7096169941d8ff2255e20f66defc",
+            "ev:a0470cabadd8b73ea2862e07cb8c1e98",
+            "ev:c7414ff02564c6062cb5c636a85bf0b3"
+          ],
+          "sourceSha256": "dcc531dab091d36702deec314d9b1193255f35dd5c6705c1a1070fdc9c835398"
+        },
+        {
+          "unitId": "unit:ea2129ac6e7dfd542549a7202edfba610e6440b0b5f7335908058d5f5ce19294",
+          "paperId": "1509.06374",
+          "lens": "physical_question",
+          "text": "Is the WGC preserved under toroidal compactification and scalar stabilization, what strengthening accommodates KK photons, and how far can black-hole extremality arguments extend to axions?",
+          "nodeIds": [
+            "obj:c76887d48c011ad5f52e:question:d38d7c8a8d2d05840d685d58"
+          ],
+          "evidenceIds": [
+            "ev:12f67889bc3126f83d7dd3cd0127dbaf",
+            "ev:7dd995145ef1e54d45bd6bc0e6296a5f"
+          ],
+          "sourceSha256": "122a9b008efcf49f454f348990e82b7bb73b57ac47be43cb2dc9020824cf4123"
+        },
+        {
+          "unitId": "unit:89369cc0dba74771e415ee8cdc41d1befacb6218fa1600f546654eb9b0e3057f",
+          "paperId": "1402.2287",
+          "lens": "method",
+          "text": "Generalizes black-hole decay kinematics using charge and energy conservation. Mass-fraction weights give Z=\u03a3\u03c3_i z_i with \u03a3\u03c3_i<1; convex geometry of particle and antiparticle charge-to-mass vectors translates this into a discharge criterion.",
+          "nodeIds": [
+            "obj:d3ba6459ff2ca7a247e8:method:d609151e836ca23b5935fc51"
+          ],
+          "evidenceIds": [
+            "ev:b58c12c3681319698f223fe0cb285be6",
+            "ev:d48b91fca4541e943e819185b68c3a0a"
+          ],
+          "sourceSha256": "dcc531dab091d36702deec314d9b1193255f35dd5c6705c1a1070fdc9c835398"
+        },
+        {
+          "unitId": "unit:a19b874e214ed6d69ccd67a6dcc798f1ccba491a4623fd4b95453e62257f64a3",
+          "paperId": "1402.2287",
+          "lens": "method",
+          "text": "Uses cutoff-sensitive scalar mass corrections \u03b4m\u00b2=\u039b\u00b2(aq\u00b2+b\u03bb)/(16\u03c0\u00b2), then compares the natural physical scalar mass with the WGC charge-to-mass requirement. The coefficients a,b encode ultraviolet sensitivity.",
+          "nodeIds": [
+            "obj:d3ba6459ff2ca7a247e8:method:e57369fc60d47c6de003a739"
+          ],
+          "evidenceIds": [
+            "ev:fc4eef9253e008bf3c27b081743a6c15"
+          ],
+          "sourceSha256": "dcc531dab091d36702deec314d9b1193255f35dd5c6705c1a1070fdc9c835398"
+        },
+        {
+          "unitId": "unit:aeeb4ec04b129f44215673b2b534151d6b12242f932a0754138fbae08f81b1f0",
+          "paperId": "1509.06374",
+          "lens": "method",
+          "text": "Generate charged black branes from the Horowitz\u2013Strominger solutions by lifting and dimensional reduction; rotate scalar combinations into coupled and decoupled fields. Lift charged black holes to strings, boost along the compact direction, and reduce to obtain mixed KK charges and ADM extremality bounds.",
+          "nodeIds": [
+            "obj:c76887d48c011ad5f52e:method:a75b158e300bc9b6a455a912"
+          ],
+          "evidenceIds": [
+            "ev:63e7194be91021a1fefc5c9d5f49a365",
+            "ev:dc86e7fd4c95741eafdd18c4f1c97937",
+            "ev:f65c47e4e157858ac76b5d8d8e3b2be2"
+          ],
+          "sourceSha256": "122a9b008efcf49f454f348990e82b7bb73b57ac47be43cb2dc9020824cf4123"
+        },
+        {
+          "unitId": "unit:5f177209df434b281ecd2e0079c72eb1d0c076f378d499eaaa256b878e6c1120",
+          "paperId": "1509.06374",
+          "lens": "method",
+          "text": "Evaluate Euclidean instanton actions with Gibbons\u2013Hawking\u2013York boundary terms, reduce the on-shell action to boundary contributions, and minimize over the core parameter. Compare the resulting boundary expression with the higher-dimensional ADM mass.",
+          "nodeIds": [
+            "obj:c76887d48c011ad5f52e:method:25363339e34953191d3f8642"
+          ],
+          "evidenceIds": [
+            "ev:547180752b676b249e7b4d9c15f8fda4",
+            "ev:57834443a65dd9ca51d9c43c47f52ce8",
+            "ev:dc290c1d515cd84b9ef1d9b4cb5b549b",
+            "ev:df82730796f96e012f30d4823c09811c"
+          ],
+          "sourceSha256": "122a9b008efcf49f454f348990e82b7bb73b57ac47be43cb2dc9020824cf4123"
+        }
+      ],
+      "reviewWitness": {
+        "taskId": "pilot-wgc-convex-hull-reduction",
+        "contextRevision": 1,
+        "receiptPath": "atlas-relations/results/pilot-wgc-convex-hull-reduction/context-1.json",
+        "receiptSha256": "f26a9bb7d3aceca16781354b1b46f4e2c7fbeda37782771b7052e907c5262ab5",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "relationCategory": "uses_method",
+        "direction": "right_to_left",
+        "exactAssertion": "Right_to_left uses_method: the right endpoint's LWGC proposal uses the same charge-to-mass convex-hull discharge test derived at the left endpoint. Section 4 explicitly motivates the proposal from \u00a73.3, which applies that test to the actual compactified black-hole region. The unit-ball versions agree after matching ellipsoidal extremality coordinates. This establishes use of the geometric method, without establishing a complete implication to the left's strict extremal discharge into fundamental particles or its finite-N bound.",
+        "evidenceIds": [
+          "d3ba6459ff2ca7a247e8:p0003s002",
+          "d3ba6459ff2ca7a247e8:p0003s003",
+          "d3ba6459ff2ca7a247e8:p0004s001",
+          "c76887d48c011ad5f52e:p0021s001",
+          "c76887d48c011ad5f52e:p0021s002",
+          "c76887d48c011ad5f52e:p0024s002",
+          "c76887d48c011ad5f52e:p0025s001",
+          "c76887d48c011ad5f52e:p0025s002"
+        ],
+        "readerNote": null
+      }
+    },
+    {
+      "id": "J06",
+      "title": "Extremality versus long-range repulsion",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "With multiple photons and massless scalars, when do superextremality and long-range repulsion differ, and which spectrum assumptions matter?",
+        "Compare the black-hole charge-to-mass criterion with repulsive-force criteria, retaining scalar forces and single-particle versus spectrum-wide qualifications."
+      ],
+      "entryRoutes": [
+        [
+          "weak gravity",
+          "black-hole extremality",
+          "scalar couplings",
+          "repulsive forces"
+        ],
+        [
+          "long-range forces",
+          "massless scalars",
+          "repulsive-force conjecture",
+          "extremality"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "1509.06374",
+        "1906.02206"
+      ],
+      "definingConstraints": [
+        "massless scalars explicit",
+        "superextremality versus force balance",
+        "self-repulsion versus mutual pairwise repulsion",
+        "single-particle versus multi-particle/spectrum assertions"
+      ],
+      "boundaryPrompts": [
+        "Remove massless scalars and restrict to the common Einstein\u2013Maxwell regime; which part of the distinction remains?"
+      ],
+      "failureConditions": [
+        "Promotion-withheld dossier presented as accepted equivalence",
+        "Change of scalar assumptions treated as presentation only"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:0835ebfb26c3d63e7247f981f1c434db7fdc621f643163a055b6f258d15df17f",
+          "paperId": "1906.02206",
+          "lens": "method",
+          "text": "Evaluate leading large-distance forces from gauge charges, masses or tensions, and moduli derivatives. The brane force coefficient contains gauge repulsion minus the scalar inner product minus gravitational attraction; tension derivatives hold the Planck scale fixed.",
+          "nodeIds": [
+            "obj:711219fbcd53cd8d1a7c:method:0448e6eea7d15985dcb29bde"
+          ],
+          "evidenceIds": [
+            "ev:41195b1a9e4bd85ebeee1627f19e9b6a",
+            "ev:7b110500e368c08c7b5d325fca2a10c4"
+          ],
+          "sourceSha256": "b6d9a085daf13d86fddd7f550ed47c9f331039905804e47c03ec356d09e536b1"
+        },
+        {
+          "unitId": "unit:04c22030b4037c6710058c60ae5d1d4d99f91c5e2c0d962ed2a76e6cb174e8aa",
+          "paperId": "1906.02206",
+          "lens": "method",
+          "text": "Track radion-dependent masses, tensions and kinetic terms through circle reduction, then include axions and graviphoton charge. Appendix A uses a nonrelativistic radial Schr\u00f6dinger problem to distinguish classical attraction from quantum binding.",
+          "nodeIds": [
+            "obj:711219fbcd53cd8d1a7c:method:a420c73a2dba573da5e26d4c"
+          ],
+          "evidenceIds": [
+            "ev:2dad71c8deb72362a8c7a63b20963125",
+            "ev:6a674b2807088c4bd1d9212de7dcb628",
+            "ev:a56110de47705920e0ba1bf003b81c9f",
+            "ev:f900bfcbb9cdc94f580a265dbeeb583c"
+          ],
+          "sourceSha256": "b6d9a085daf13d86fddd7f550ed47c9f331039905804e47c03ec356d09e536b1"
+        },
+        {
+          "unitId": "unit:ea2129ac6e7dfd542549a7202edfba610e6440b0b5f7335908058d5f5ce19294",
+          "paperId": "1509.06374",
+          "lens": "physical_question",
+          "text": "Is the WGC preserved under toroidal compactification and scalar stabilization, what strengthening accommodates KK photons, and how far can black-hole extremality arguments extend to axions?",
+          "nodeIds": [
+            "obj:c76887d48c011ad5f52e:question:d38d7c8a8d2d05840d685d58"
+          ],
+          "evidenceIds": [
+            "ev:12f67889bc3126f83d7dd3cd0127dbaf",
+            "ev:7dd995145ef1e54d45bd6bc0e6296a5f"
+          ],
+          "sourceSha256": "122a9b008efcf49f454f348990e82b7bb73b57ac47be43cb2dc9020824cf4123"
+        },
+        {
+          "unitId": "unit:c6214d47eef85c8576b1d85fbb1ce2a25ab523cd0429710e3a182400ba1c2397",
+          "paperId": "1906.02206",
+          "lens": "physical_question",
+          "text": "How should the superextremality-based WGC and long-range Repulsive Force Conjecture be distinguished with multiple photons and massless scalars, and could a stronger principle imply both?",
+          "nodeIds": [
+            "obj:711219fbcd53cd8d1a7c:question:6ad7cbe159964f707df4d96d"
+          ],
+          "evidenceIds": [
+            "ev:8303f10271f331c0b5f79c88af2c9161"
+          ],
+          "sourceSha256": "b6d9a085daf13d86fddd7f550ed47c9f331039905804e47c03ec356d09e536b1"
+        },
+        {
+          "unitId": "unit:aeeb4ec04b129f44215673b2b534151d6b12242f932a0754138fbae08f81b1f0",
+          "paperId": "1509.06374",
+          "lens": "method",
+          "text": "Generate charged black branes from the Horowitz\u2013Strominger solutions by lifting and dimensional reduction; rotate scalar combinations into coupled and decoupled fields. Lift charged black holes to strings, boost along the compact direction, and reduce to obtain mixed KK charges and ADM extremality bounds.",
+          "nodeIds": [
+            "obj:c76887d48c011ad5f52e:method:a75b158e300bc9b6a455a912"
+          ],
+          "evidenceIds": [
+            "ev:63e7194be91021a1fefc5c9d5f49a365",
+            "ev:dc86e7fd4c95741eafdd18c4f1c97937",
+            "ev:f65c47e4e157858ac76b5d8d8e3b2be2"
+          ],
+          "sourceSha256": "122a9b008efcf49f454f348990e82b7bb73b57ac47be43cb2dc9020824cf4123"
+        },
+        {
+          "unitId": "unit:5f177209df434b281ecd2e0079c72eb1d0c076f378d499eaaa256b878e6c1120",
+          "paperId": "1509.06374",
+          "lens": "method",
+          "text": "Evaluate Euclidean instanton actions with Gibbons\u2013Hawking\u2013York boundary terms, reduce the on-shell action to boundary contributions, and minimize over the core parameter. Compare the resulting boundary expression with the higher-dimensional ADM mass.",
+          "nodeIds": [
+            "obj:c76887d48c011ad5f52e:method:25363339e34953191d3f8642"
+          ],
+          "evidenceIds": [
+            "ev:547180752b676b249e7b4d9c15f8fda4",
+            "ev:57834443a65dd9ca51d9c43c47f52ce8",
+            "ev:dc290c1d515cd84b9ef1d9b4cb5b549b",
+            "ev:df82730796f96e012f30d4823c09811c"
+          ],
+          "sourceSha256": "122a9b008efcf49f454f348990e82b7bb73b57ac47be43cb2dc9020824cf4123"
+        }
+      ],
+      "reviewWitness": {
+        "taskId": "dossier-wgc-extremality-repulsion",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/dossier-wgc-extremality-repulsion.json",
+        "receiptSha256": "d081d12705b568a3d4c06a2e901987066325ec6799ebb458d81b052c7bbca6e7",
+        "status": "deferred",
+        "promotionWithheld": true,
+        "relationCategory": null,
+        "direction": null,
+        "exactAssertion": null,
+        "evidenceIds": [],
+        "readerNote": "The native review proposed acceptance, but a required acceptance check failed or the dossier remained incomplete. The coordinator explicitly withheld acceptance and retained the unchanged review as a deferred outcome. Its partial calculations and limitations remain available; no accepted relation or reconstruction is promoted."
+      }
+    },
+    {
+      "id": "J07",
+      "title": "Tilted-torus inverse metric and shifted tower scales",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "In a tilted Scherk\u2013Schwarz torus compactification, how does the inverse-metric component controlling a mass differ from the reciprocal metric entry, and how does a half-shift mass differ from tower spacing?",
+        "Keep off-diagonal torus moduli and distinguish G inverse in the ninth direction from one over G99 before comparing the shifted light mode to the KK step."
+      ],
+      "entryRoutes": [
+        [
+          "compactification geometry",
+          "torus metric",
+          "Scherk\u2013Schwarz spectra"
+        ],
+        [
+          "supersymmetry breaking",
+          "shifted towers",
+          "inverse metric conventions"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "1812.09714"
+      ],
+      "definingConstraints": [
+        "off-diagonal metric entries allowed",
+        "inverse matrix component versus reciprocal component",
+        "half-shift lowest mass versus spacing"
+      ],
+      "boundaryPrompts": [
+        "Set all mixed metric entries to zero.",
+        "Treat a half-shift mass as the spacing without recording a conversion."
+      ],
+      "failureConditions": [
+        "G^99 automatically replaced by 1/G_99",
+        "Conditional factor-two conversion asserted as source intent"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:51ff1d12f1684a4e96f7227b62c34f5d45f85b9d5025c3f7d5a36ef8ee69c57d",
+          "paperId": "1812.09714",
+          "lens": "method",
+          "text": "Expose modular invariance in a Lagrangian lattice, unfold wrapping orbits, impose level matching by strip integration, and resum the Scherk\u2013Schwarz momentum. The sequence distinguishes a physical light closed-string tower from non-level-matched terms in the original integrand.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:method:e739fd5053b28359e6f26697"
+          ],
+          "evidenceIds": [
+            "ev:ae09f49ec4cd8a64c8776868a39ed450",
+            "ev:dfb3f137b5ecf1549f487cc56359cd6b"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:3680567c3d0ea47066aea8bf6fddbcf778171b08b937b0714f96537896108644",
+          "paperId": "1812.09714",
+          "lens": "method",
+          "text": "Resum compact momenta, transform characters when changing worldsheet channel, and retain all topology-dependent factors. The resulting massless transverse coefficients permit tadpole factorization. Resummation alone can also reorganize a direct-channel amplitude without changing its physical channel.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:method:aeda25cfdda96b950e690dc7"
+          ],
+          "evidenceIds": [
+            "ev:14135c2ed88f8bd968480dceb7db10eb",
+            "ev:b97316af79a3caf348e7cecfc016f5a2",
+            "ev:ba54826801816bc7d7b344913fcfab20"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:0886c0c117521149cd7687fcf766e9314712be363ad0f5a61f0fdf63c854208d",
+          "paperId": "1812.09714",
+          "lens": "method",
+          "text": "One-loop vacuum amplitudes combine torus, Klein bottle, annulus and M\u00f6bius strip contributions. Poisson resummation, unfolding the modular fundamental domain, and modified-Bessel-function asymptotics isolate dominant KK contributions from exponentially suppressed heavy states.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:method:5f1c7794fc12a01e65655dce"
+          ],
+          "evidenceIds": [
+            "ev:049e1cbe8fa2720754711655d668d3c5",
+            "ev:9a3a2fc003d61c2e80f5943a4cf3b0b4",
+            "ev:fcc2bbf55da84e6fe9dd7ba9592ce905"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:6ffdccfabfe4deb51cfa38bbc2565349ee4aa9b51d562d2e16d0b2430aae3dfd",
+          "paperId": "1812.09714",
+          "lens": "method",
+          "text": "Expand oscillator characters, resum m9 alone, and integrate proper time. Retain transverse momenta and Wilson-line shifts in the effective tower mass. Comparing that mass to lambda identifies which sectors can survive the low-breaking-scale limit.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:method:d34b36d5fb734e5cb31b2a16"
+          ],
+          "evidenceIds": [
+            "ev:1c49af9d008d6e676e9bd0018b3af392",
+            "ev:d3e4f8942d16ad2c478008b238b7b42d"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:47cf9f9f03edd27effd70efa354293f1d0a606963eff919f3e033b01ca108081",
+          "paperId": "1812.09714",
+          "lens": "method",
+          "text": "T-dual brane geometry supplies spectrum counting and candidate extrema. A complementary Schwinger proper-time supertrace, expanded in Cartan Wilson lines, relates quadratic masses to differences between bosonic and fermionic Dynkin indices.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:method:e6cc23ea94c61bfdf0cbb949"
+          ],
+          "evidenceIds": [
+            "ev:02cfb8144d028b22d1ba42e736d17e07",
+            "ev:8729908ca611261932cc5df4b5ec1837",
+            "ev:aa0757373daf7ac639e4964e87787564"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:2d506b09ed0ccd6a675a495ed8017e17495107fd50acd5a1a13188a0b36dbd69",
+          "paperId": "1812.09714",
+          "lens": "method",
+          "text": "Replace explicit stack-by-stack momentum shifts with matrix traces, then transform each topology to its transverse channel. This representation separates brane-distribution information from universal character and lattice factors and exposes the tadpole condition.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:representation:470854cceeaf5d8b2b1440d4"
+          ],
+          "evidenceIds": [
+            "ev:51baa4f040950cdfcf34ad7617a1c5c2",
+            "ev:a7958fb80b63bf5e536651239879406a"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:7e9bf861891adc9f8fc5beb04a30c207b40d394c66cf665385a9e9c28431c11d",
+          "paperId": "1812.09714",
+          "lens": "physical_question",
+          "text": "How do torus geometry and brane distributions control the spectrum and vacuum energy in D-dimensional orientifolds with a single Scherk\u2013Schwarz direction? Corner backgrounds reduce the brane data to integer multiplicities paired across that direction.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:setting:272b6339437c3eb115543bfa"
+          ],
+          "evidenceIds": [
+            "ev:f495b1b623f7977a1d5743c22a2bbcdb",
+            "ev:fa656fdceca80eba2dec0f75615b4e32"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:60774f133d3beece5114dec5186a02a24fc038437d660e3afe472e458a028673",
+          "paperId": "1812.09714",
+          "lens": "physical_question",
+          "text": "Can Scherk\u2013Schwarz compactifications of open string theory have exponentially suppressed or positive one-loop vacuum energy without developing tachyonic Wilson-line moduli?",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:question:09b86000a388e1b32b6e7e02"
+          ],
+          "evidenceIds": [
+            "ev:0587fe41ee2a5b17d84405af0e51d570",
+            "ev:47fdbfbece57689e0bf65a00f015ca8d",
+            "ev:6efee637bce4c0b2f62560940bb690be"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        },
+        {
+          "unitId": "unit:1971f374786037d49162ca51b8c9e48f9553ebf7b78513dac318e659c6651237",
+          "paperId": "1812.09714",
+          "lens": "physical_question",
+          "text": "How do orientifold-compatible brane positions determine the massless spectrum and one-loop vacuum energy after supersymmetry is broken along a circle? The T-dual description makes Wilson lines geometric and separates endpoint half-branes from mirror-paired stacks.",
+          "nodeIds": [
+            "obj:a96526a3d5c4eb5c83fa:setting:dd21055b759d8f645cdbf814"
+          ],
+          "evidenceIds": [
+            "ev:057429c4143d3bba48cd647b01ba1631",
+            "ev:9cfab073c9e6ce2cd2013db9920da6a2"
+          ],
+          "sourceSha256": "b6ff19466f3b31b5159d1b25c79fada9df34ada158cc6783332e9123df699453"
+        }
+      ],
+      "reviewWitness": {
+        "taskId": "dossier-torus-inverse-metric",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/dossier-torus-inverse-metric.json",
+        "receiptSha256": "b45a70974201e83891a5da97d41054e15beea5d7d9e87b15bc67888fa3fae05c",
+        "status": "accepted_dossier",
+        "promotionWithheld": false,
+        "relationCategory": null,
+        "direction": null,
+        "exactAssertion": null,
+        "evidenceIds": [],
+        "readerNote": null
+      }
+    },
+    {
+      "id": "J08",
+      "title": "DGKT scales and the strong AdS distance claim",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "How do the AdS and KK scales in the DGKT flux family compare with the strong AdS distance claim, and which localization and control assumptions limit the comparison?",
+        "Follow the flux-scaling construction to the statement of a parametrically separated tower, then inspect why the comparison with the strong AdS conjecture remains conditional."
+      ],
+      "entryRoutes": [
+        [
+          "flux stabilization",
+          "massive IIA",
+          "DGKT family",
+          "AdS/KK hierarchy"
+        ],
+        [
+          "distance conjectures",
+          "strong AdS claim",
+          "candidate tension",
+          "DGKT"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "hep-th/0505160",
+        "2305.01722"
+      ],
+      "definingConstraints": [
+        "large-flux/large-volume weak-coupling regime",
+        "KK versus AdS mass conventions",
+        "localized sources/control qualifications"
+      ],
+      "boundaryPrompts": [
+        "Does the recorded hierarchy establish a complete ultraviolet counterexample without further assumptions?"
+      ],
+      "failureConditions": [
+        "Withheld dossier upgraded to established refutation",
+        "AdS radius and mass scale interchanged without inversion"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:47f773fcfe90206eafa826d73747a827d229e104d4ba7564e03d86d7088adf66",
+          "paperId": "2305.01722",
+          "lens": "physical_question",
+          "text": "How do flux compactifications stabilize moduli and determine the sign and size of vacuum energy? Can they yield parametrically controlled metastable de Sitter or AdS vacua with decoupled massive towers?",
+          "nodeIds": [
+            "obj:113d16e2ff1f6e908859:question:69baf9adc9da487ae99e47cf"
+          ],
+          "evidenceIds": [
+            "ev:0e3788823aaab0c62ab8757cd2b1fc8c",
+            "ev:63e81659a48336b26a5a9a675aca8018",
+            "ev:92295bc3aa09082ca082b72b20df913c"
+          ],
+          "sourceSha256": "564af4a5605006407df14a58b237e1d888b0a865bf02f89ed91b9c19f2c154eb"
+        },
+        {
+          "unitId": "unit:41214a545a81a191b636493fe52812bac54313a4910374ffce82899bd05f591f",
+          "paperId": "hep-th/0505160",
+          "lens": "physical_question",
+          "text": "Can classical type IIA flux compactifications stabilize all geometric moduli, and admit explicit families with parametrically large volume, weak coupling and a valid four-dimensional description?",
+          "nodeIds": [
+            "obj:07e9f01f15afdbb3c8bf:question:47e8ce9e94865dce612bd7e4"
+          ],
+          "evidenceIds": [
+            "ev:3c5ef6e64762512e50405b22cbc08d10",
+            "ev:9fa689b26cc30f94442295f854934c8b",
+            "ev:fb46cd51b9c0e4af6601dec6a994d532"
+          ],
+          "sourceSha256": "bc52518315fa0cc1cb62469b564bed95a6c365fac00cd9db48974a93ee6f286f"
+        },
+        {
+          "unitId": "unit:1058d0c8ebe5216f5955156d3aac6c543ab51eeafaa3362b49eb448746c79a95",
+          "paperId": "hep-th/0505160",
+          "lens": "method",
+          "text": "Direct dimensional reduction of massive IIA supergravity gives a zero-mode potential including flux and O6 contributions. Eliminating the nondynamical spacetime-polarized F4 fixes the RR axion combination; extrema and quadratic fluctuation masses are then analyzed.",
+          "nodeIds": [
+            "obj:07e9f01f15afdbb3c8bf:method:fc894f8fc4d86fcba197a588"
+          ],
+          "evidenceIds": [
+            "ev:1bc173a4fdfd1604dcda07e59029a66a",
+            "ev:a2ddc37f0550ad737c195c018ffe0e51",
+            "ev:b61e290262926ce47adb9b268c4e4434",
+            "ev:da90c1c5f87f9994209f4474aeb0a9f7",
+            "ev:fb43722f9e920b2b258049881c0e445d"
+          ],
+          "sourceSha256": "bc52518315fa0cc1cb62469b564bed95a6c365fac00cd9db48974a93ee6f286f"
+        },
+        {
+          "unitId": "unit:a14ebe522df9b46ed14f7a75aa83872a5b8edf3363e5b24d77113ad08bebd1e1",
+          "paperId": "hep-th/0505160",
+          "lens": "method",
+          "text": "Using the imported orientifold effective-action framework, the authors solve D_iW=0 with W=\u222b\u03a9_c\u2227H3+e0+e_a t^a+(1/2)\u03ba_abc m^a t^b t^c\u2212(m0/6)\u03ba_abc t^a t^b t^c. Complex-structure and K\u00e4hler equations decouple; the dilaton is fixed afterward.",
+          "nodeIds": [
+            "obj:07e9f01f15afdbb3c8bf:method:3a7ab6574b47dfdee201da02"
+          ],
+          "evidenceIds": [
+            "ev:09e6b65ebd783cdd4b790a551e2af1d1",
+            "ev:27a7dd5b740873ea9a841caca3122838",
+            "ev:c3c9d558396a1de066dd5fa3c605ed9a",
+            "ev:f96137e9bcf9d22c573647de3aa71cb6"
+          ],
+          "sourceSha256": "bc52518315fa0cc1cb62469b564bed95a6c365fac00cd9db48974a93ee6f286f"
+        },
+        {
+          "unitId": "unit:2e38ab5402be87458dcd141e9825d470feee5e26c686e31752a92ce13398cc8c",
+          "paperId": "2305.01722",
+          "lens": "method",
+          "text": "Dimensional reduction and Weyl rescaling to Einstein frame; extremization of the universal volume/dilaton potential; comparison with traced, integrated higher-dimensional Einstein and dilaton equations.",
+          "nodeIds": [
+            "obj:113d16e2ff1f6e908859:method:95418566b4ea1ee4e2a6ee73"
+          ],
+          "evidenceIds": [
+            "ev:492b908c53eef4fa7fbb26e8278766c7",
+            "ev:99f00ec1448b88df94b43ae5c53f46fe",
+            "ev:b72a42905cdbc89abe461048022194a6"
+          ],
+          "sourceSha256": "564af4a5605006407df14a58b237e1d888b0a865bf02f89ed91b9c19f2c154eb"
+        },
+        {
+          "unitId": "unit:12f1044ec1bbfd9124b7856324495dba29c4721e51929de26df2b0aefb6b0a5b",
+          "paperId": "2305.01722",
+          "lens": "method",
+          "text": "Integrated Bianchi identities impose tadpoles. Internal Laplacian eigenvalues estimate KK masses; holographic scalar dimensions diagnose scale separation once operators dual to KK modes are identified.",
+          "nodeIds": [
+            "obj:113d16e2ff1f6e908859:method:44724e350ba0a665fbabb5c3"
+          ],
+          "evidenceIds": [
+            "ev:12516e8dbc84f773d03d940095d7a47c",
+            "ev:2ece912cc5fa04bef29c8ec3282270b3",
+            "ev:f3807a4099a8268c9729e7b876a7dd63"
+          ],
+          "sourceSha256": "564af4a5605006407df14a58b237e1d888b0a865bf02f89ed91b9c19f2c154eb"
+        }
+      ],
+      "reviewWitness": {
+        "taskId": "dossier-dgkt-adc-scales",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/dossier-dgkt-adc-scales.json",
+        "receiptSha256": "86fb03c8361a05d9f3cd9fa7a12cf115dd4781cbc8fa50c9f93372ab53e34d78",
+        "status": "deferred",
+        "promotionWithheld": true,
+        "relationCategory": null,
+        "direction": null,
+        "exactAssertion": null,
+        "evidenceIds": [],
+        "readerNote": "The native review proposed acceptance, but a required acceptance check failed or the dossier remained incomplete. The coordinator explicitly withheld acceptance and retained the unchanged review as a deferred outcome. Its partial calculations and limitations remain available; no accepted relation or reconstruction is promoted."
+      }
+    },
+    {
+      "id": "J09",
+      "title": "Finite moduli-space volume versus infinite-distance limits",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "Can a quantum-gravity moduli space have finite regulated volume while containing an infinite-geodesic-distance limit, and what metric and domain make those statements compatible?",
+        "Distinguish the volume restriction on a moduli space from its geodesic diameter before using distance-conjecture language."
+      ],
+      "entryRoutes": [
+        [
+          "moduli spaces",
+          "geometric restrictions",
+          "volume and distance"
+        ],
+        [
+          "distance conjecture",
+          "infinite-distance boundary",
+          "moduli-space volume"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "hep-th/0605264"
+      ],
+      "definingConstraints": [
+        "metric specified",
+        "volume measure versus geodesic distance",
+        "domain/regulator/limits explicit"
+      ],
+      "boundaryPrompts": [
+        "Infer finite diameter from finite total volume alone."
+      ],
+      "failureConditions": [
+        "Volume and diameter treated as the same property",
+        "Two uses of dimension symbol d merged without dictionary"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:8e5c5554af6775f98a05e3a2939e55c5b69c696c4b65a4959508d21281b6f986",
+          "paperId": "hep-th/0605264",
+          "lens": "physical_question",
+          "text": "Which geometric restrictions distinguish continuous moduli spaces of consistent quantum gravity from those of nongravitational field theories, and what constraints follow for effective theories, inflation and axions?",
+          "nodeIds": [
+            "obj:122874becc132b271c71:question:b8b5d35eeef13c60a28033f7"
+          ],
+          "evidenceIds": [
+            "ev:08ca826ed3acc3c846b7c03fee4f54be",
+            "ev:62e3c1a472cedf776f07ce75675693bf",
+            "ev:8a05ae2cbc2dd23ddd0f215afa6df9c0"
+          ],
+          "sourceSha256": "580f85b059936c0440924f1b509642ce3002caacd5eed17ef27f6f9e6095362b"
+        },
+        {
+          "unitId": "unit:b0dcc256e332dc45cd49e509efa787066d17fe675f66cc98287d1e4e4ac80899",
+          "paperId": "hep-th/0605264",
+          "lens": "method",
+          "text": "Compare explicit moduli-space metrics, geodesic distances and light spectra in compactification limits, including changes to Einstein frame and quotients by discrete dualities.",
+          "nodeIds": [
+            "obj:122874becc132b271c71:method:7de78332005c84ba45832383"
+          ],
+          "evidenceIds": [
+            "ev:4f00fdb9f951187298b0ae14f39db70d",
+            "ev:79e76cb139633e2a55a72b8f0a566041",
+            "ev:c7346f271d4e6ef8cc0cae7c62fa33e8",
+            "ev:f66eff08bf8e0dfae50dfb961bc39073"
+          ],
+          "sourceSha256": "580f85b059936c0440924f1b509642ce3002caacd5eed17ef27f6f9e6095362b"
+        },
+        {
+          "unitId": "unit:582d39855e6036d2bec5ee2cf6912f02e56d0d0bfdcddc23ca2221dcbf72bd65",
+          "paperId": "hep-th/0605264",
+          "lens": "method",
+          "text": "Estimate one-loop corrections to scalar kinetic terms after integrating out a generically heavy particle with moduli-dependent mass. The authors find that finitely many particles becoming massless do not themselves generate infinite distance for D > 2; an infinite tower can do so.",
+          "nodeIds": [
+            "obj:122874becc132b271c71:method:2cd05614d68216be42a235a3"
+          ],
+          "evidenceIds": [
+            "ev:0c1aea6b3c114de8cd75a1ab0e30b0e1",
+            "ev:926582b1b30181d1d6bb08b298631d55"
+          ],
+          "sourceSha256": "580f85b059936c0440924f1b509642ce3002caacd5eed17ef27f6f9e6095362b"
+        },
+        {
+          "unitId": "unit:e62e171d523f418736fe2cd1236059d1aa49c1a339420d78dc85dc1426f416fd",
+          "paperId": "hep-th/0605264",
+          "lens": "method",
+          "text": "For Calabi\u2013Yau vector moduli, analyze the integrated scalar curvature through the first Chern class and K\u00e4hler form, decomposing it into compactification and singularity contributions. Infinite-distance singularities are asserted to contribute negatively.",
+          "nodeIds": [
+            "obj:122874becc132b271c71:method:eb97ff1d8deac3cd2f897a69"
+          ],
+          "evidenceIds": [
+            "ev:75f38e2d12b6579cb3e7697274f6d201"
+          ],
+          "sourceSha256": "580f85b059936c0440924f1b509642ce3002caacd5eed17ef27f6f9e6095362b"
+        }
+      ]
+    },
+    {
+      "id": "J10",
+      "title": "Recover a holographic superconductor outside its old placement",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "How does a simple gravitational model describe a charged condensate, superconducting transition and optical conductivity in a strongly coupled 2+1-dimensional system?",
+        "Locate the gravity-dual model of a superconducting phase and continue to its conductivity gap, even if its earlier EFT-consistency assignment was removed."
+      ],
+      "entryRoutes": [
+        [
+          "holography",
+          "strongly coupled matter",
+          "charged condensate",
+          "conductivity"
+        ],
+        [
+          "superconductivity",
+          "gravity dual",
+          "bulk charged field"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "0803.3295"
+      ],
+      "definingConstraints": [
+        "boundary 2+1-dimensional system",
+        "gravity-dual model",
+        "condensate and conductivity observables"
+      ],
+      "boundaryPrompts": [
+        "Interpret removal from an EFT-consistency region as evidence the paper is scientifically unreliable."
+      ],
+      "failureConditions": [
+        "Source disappears because placement is unresolved",
+        "Unresolved placement rendered as low scientific confidence",
+        "Old cluster assignment used as gold alternative home"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:8c65125fd882c45c78df25e00cd596633cdd42d59c8d52669ea62f3747f4b7ba",
+          "paperId": "0803.3295",
+          "lens": "physical_question",
+          "text": "Can a simple gravitational model describe a strongly coupled 2+1-dimensional system with a charged condensate, a superconducting transition and a gap in its frequency-dependent conductivity?",
+          "nodeIds": [
+            "obj:43be8d42c6dfdd941b33:question:0b3e35e5d56e71f26b434b0e"
+          ],
+          "evidenceIds": [
+            "ev:24d0b3ebb9cf55cf58485a2d996c5b28",
+            "ev:7e081044d45af9b0310b3c538d309d1e",
+            "ev:c99567689e1d6217b5c15f65e52e57d9"
+          ],
+          "sourceSha256": "7101dec6f6e07ccafe7ac12551e00594a5f93cee9f7d4367ea5b492aca1fec53"
+        },
+        {
+          "unitId": "unit:91c69ac65c5461a1c56e25075698185b9d01368c4300462f4323f0a2d124759e",
+          "paperId": "0803.3295",
+          "lens": "method",
+          "text": "Compute zero-spatial-momentum conductivity from an Ax perturbation with e^{-i\u03c9t} dependence and ingoing horizon boundary conditions. Use its boundary coefficients for linear response and Kramers\u2013Kronig relations to associate an imaginary pole with a real conductivity delta function.",
+          "nodeIds": [
+            "obj:43be8d42c6dfdd941b33:method:a31291b00c16f3b545719b79"
+          ],
+          "evidenceIds": [
+            "ev:4e2856d3941f71574ffb755e48f55ed2",
+            "ev:abcc15f063113a19c2aad2922e48f88a",
+            "ev:cd60e9c8fc04ceab114a44ff0486a69c"
+          ],
+          "sourceSha256": "7101dec6f6e07ccafe7ac12551e00594a5f93cee9f7d4367ea5b492aca1fec53"
+        },
+        {
+          "unitId": "unit:925f1989d2a48f5ea87d5f7a18d746e60055690b687faa3e32830cba84a7dbaa",
+          "paperId": "0803.3295",
+          "lens": "method",
+          "text": "Numerically integrate the coupled nonlinear radial scalar and electrostatic equations from regular horizon data to the boundary, impose one vanishing scalar coefficient, and fit the resulting condensate curves near the critical temperature.",
+          "nodeIds": [
+            "obj:43be8d42c6dfdd941b33:method:4a2988e534016a73f979e17c"
+          ],
+          "evidenceIds": [
+            "ev:3933bc1245bd6c6853e3dfdaca43cbdc",
+            "ev:91c5c6ea992aa97338e3528d767a5fb4",
+            "ev:fa8a26d1588c9dc9febeb163d935e3a3"
+          ],
+          "sourceSha256": "7101dec6f6e07ccafe7ac12551e00594a5f93cee9f7d4367ea5b492aca1fec53"
+        }
+      ]
+    },
+    {
+      "id": "J11",
+      "title": "Restricted ExFT KK spectrometry specialization",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "For linear bosonic fluctuations about round AdS5\u00d7S5 with identity scalar dressing, how does harmonic-frame exceptional-field-theory machinery reduce KK spectroscopy to finite matrices?",
+        "Follow the generalized-frame harmonic algorithm into the round AdS5\u00d7S5 example, preserving the restrictions on fields, dressing and gauge treatment."
+      ],
+      "entryRoutes": [
+        [
+          "KK spectra",
+          "harmonic expansion",
+          "exceptional field theory",
+          "round AdS5\u00d7S5"
+        ],
+        [
+          "exceptional field theory",
+          "harmonic matrices",
+          "KK mass operators"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "1911.12640",
+        "2009.03347"
+      ],
+      "definingConstraints": [
+        "linear bosonic fluctuations",
+        "round AdS5\u00d7S5",
+        "identity scalar dressing",
+        "operation-level specialization"
+      ],
+      "boundaryPrompts": [
+        "Extend the accepted relation to all normalized mass operators, all gauge projections and nonidentity scalar dressings."
+      ],
+      "failureConditions": [
+        "Restricted specializes edge shown as complete equivalence",
+        "Coordinator scope note omitted"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:fae5631056cbac246bd00d39852a35ac9ebee58fb7a83449d8b75467b94be89e",
+          "paperId": "1911.12640",
+          "lens": "method",
+          "text": "Linearize the ExFT field equations, evaluate internal derivatives through the embedding tensor and harmonic generators, and diagonalize finite matrices level by level. Tensor equations require St\u00fcckelberg gauge fixing and yield first-order equations for topologically massive two-forms.",
+          "nodeIds": [
+            "obj:2f831cabaf0e79f412bd:method:a4b7eb05e67b5562ec012c2e"
+          ],
+          "evidenceIds": [
+            "ev:0365a6031cf47ed23b5c6ee4e66a48e7",
+            "ev:389ab5583618ab755e498e6882dfbb87",
+            "ev:6590be4343cb7b68f405bdbc5fb56f50",
+            "ev:d862a5a507b41814bc7cdfa561d5cb64"
+          ],
+          "sourceSha256": "1161a85ece0a5e9429e13b9840d99fd8f139c60eea8d4db81ed38e09faa859f9"
+        },
+        {
+          "unitId": "unit:f393660c66acc97d50dd1ee3483b7d5bdac9e4fd8ebbceefaaa438eaa8cf12df",
+          "paperId": "1911.12640",
+          "lens": "method",
+          "text": "For another stationary point of the same lower-dimensional theory, dress the original twist, embedding tensor and harmonic generators with a constant E6(6) matrix representing that vacuum. The authors apply the resulting mass operators without rebuilding harmonics of the deformed metric.",
+          "nodeIds": [
+            "obj:2f831cabaf0e79f412bd:method:f7a6233218b4f0ba160c6e82"
+          ],
+          "evidenceIds": [
+            "ev:46d0ef25a7f11cc07fd587f141050010",
+            "ev:50c8bb4ccb4ba08756b3c5ba548baf64"
+          ],
+          "sourceSha256": "1161a85ece0a5e9429e13b9840d99fd8f139c60eea8d4db81ed38e09faa859f9"
+        },
+        {
+          "unitId": "unit:4e0f45a3a4d2185dbb865c82f13ceb2255fe77571e79e84be7e10947cd094de1",
+          "paperId": "1911.12640",
+          "lens": "method",
+          "text": "Start from a generalized Scherk\u2013Schwarz reduction with twist U and weight \u03c1, then multiply the generalized-frame expressions by an infinite tower of scalar harmonics. The twist carries tensor structure, allowing scalar harmonics to describe fluctuations of every bosonic spin.",
+          "nodeIds": [
+            "obj:2f831cabaf0e79f412bd:method:b115c64be711f239fa90ae66"
+          ],
+          "evidenceIds": [
+            "ev:315560e2dba40ed170009c23e3273d89",
+            "ev:6385f628c5fd28d38e7d661121258890",
+            "ev:73a27efe380ef2a17b3feed88d175638",
+            "ev:902b690fff83bb602b429bce9f81236c"
+          ],
+          "sourceSha256": "1161a85ece0a5e9429e13b9840d99fd8f139c60eea8d4db81ed38e09faa859f9"
+        },
+        {
+          "unitId": "unit:eb3455f9ed813d7f66154a55af9877fcec0fea02c5640d2a36a265056df73298",
+          "paperId": "2009.03347",
+          "lens": "method",
+          "text": "Linearize ExFT equations and replace internal differentiation by dressed harmonic-action matrices T_A. Mass matrices depend on X and T; scalar contributions organize as XX+XT+TT. Diagonalized modes can be mapped back through the ExFT/supergravity dictionary.",
+          "nodeIds": [
+            "obj:2273259eb0d16ae67a48:method:fe9597b217268a5259a2e109"
+          ],
+          "evidenceIds": [
+            "ev:149eff79861a0766b1ca5b1b97469db7",
+            "ev:324ebb719c01e174e3ec5628a558a18f",
+            "ev:95da5cccd6d27ff39f497bdfd7b9166b"
+          ],
+          "sourceSha256": "e434a778d1c6aca54435538158a35eb89c1e181b9402c9c9eb31e32cbfb6b1c5"
+        },
+        {
+          "unitId": "unit:3adf68c7bbdcd16a999a13e25a18d765c436934798ca225f4826c316efb27258",
+          "paperId": "2009.03347",
+          "lens": "method",
+          "text": "Use generalized Scherk-Schwarz reduction and a global generalized frame satisfying L_UM UN=X_MN^P UP. Dressing the frame with the vacuum scalar vielbein produces the corresponding dressed embedding tensor.",
+          "nodeIds": [
+            "obj:2273259eb0d16ae67a48:method:f37a603c768649d6a5f6b3ff"
+          ],
+          "evidenceIds": [
+            "ev:044d8ff8d2d9ba2874a02f5683798929",
+            "ev:f01d45e94df22462d4ae0ff1534d7fcb"
+          ],
+          "sourceSha256": "e434a778d1c6aca54435538158a35eb89c1e181b9402c9c9eb31e32cbfb6b1c5"
+        },
+        {
+          "unitId": "unit:8f09f6d5f2a6a86ce7fff36c47a3fbcfb253f7bda9800d0ec8d7c08953ddf1c4",
+          "paperId": "2009.03347",
+          "lens": "method",
+          "text": "Expand every fluctuation using the same complete basis of scalar harmonics; the generalized vielbein carries its tensor structure. Choose harmonics at the maximally symmetric scalar configuration, which need not itself solve the equations of motion.",
+          "nodeIds": [
+            "obj:2273259eb0d16ae67a48:method:adf90b8f308ab82296176543"
+          ],
+          "evidenceIds": [
+            "ev:b278bf8ca19f723d62fc9d4cb7d9c91e",
+            "ev:effacd4a30539b14721ce56565d954b8"
+          ],
+          "sourceSha256": "e434a778d1c6aca54435538158a35eb89c1e181b9402c9c9eb31e32cbfb6b1c5"
+        },
+        {
+          "unitId": "unit:bc8fda2450a08f2d0f91085a38cf4f9ce1c68b434e8626f52d7156f3c756975e",
+          "paperId": "1911.12640",
+          "lens": "physical_question",
+          "text": "Can exceptional field theory efficiently determine KK masses and identify the corresponding higher-dimensional fluctuations, including lower-spin sectors mixed by background fluxes, when residual isometries provide little help?",
+          "nodeIds": [
+            "obj:2f831cabaf0e79f412bd:question:1b3663e68f6800c05bb429dc"
+          ],
+          "evidenceIds": [
+            "ev:0037b9e405ded84a56bbbce5725d61e2",
+            "ev:4ab1d075790eb4e20cbf95e8f80a39c4",
+            "ev:9b12c6a1278417201020d6584a21c179",
+            "ev:af0c003b3cc93156bd1ebdf78d0262d8"
+          ],
+          "sourceSha256": "1161a85ece0a5e9429e13b9840d99fd8f139c60eea8d4db81ed38e09faa859f9"
+        },
+        {
+          "unitId": "unit:a808fc8aa81e2fa1b2fa2dfc4184cbc721cbf27da5df2f6f87917d8422553748",
+          "paperId": "2009.03347",
+          "lens": "physical_question",
+          "text": "How can exceptional field theory compute Kaluza-Klein masses and identify higher-dimensional mass eigenstates around vacua in maximal consistent truncations, including backgrounds with few or no surviving symmetries?",
+          "nodeIds": [
+            "obj:2273259eb0d16ae67a48:question:0f9981168bac0004da09bd64"
+          ],
+          "evidenceIds": [
+            "ev:a3840c55080235aa7f32e7af0deeca50",
+            "ev:b73bcfda049a497be3831cca998228ee"
+          ],
+          "sourceSha256": "e434a778d1c6aca54435538158a35eb89c1e181b9402c9c9eb31e32cbfb6b1c5"
+        }
+      ],
+      "reviewWitness": {
+        "taskId": "pilot-ads-kk-spectrometry-method",
+        "contextRevision": 0,
+        "receiptPath": "atlas-relations/results/pilot-ads-kk-spectrometry-method.json",
+        "receiptSha256": "6c70a8d0ab831e3e48b0b9c5e8ea6af66b105dc0b54d551498550e71a6abee1e",
+        "status": "accepted_relation",
+        "promotionWithheld": false,
+        "relationCategory": "specializes",
+        "direction": "left_to_right",
+        "exactAssertion": "Restricted to linear bosonic fluctuations about round AdS5 \u00d7 S5 with identity scalar dressing, the left construction specializes the right harmonic-frame KK algorithm: the generalized twist and harmonic fluctuation ansatz coincide, internal derivatives are represented through embedding data X and harmonic matrices T, finite harmonic blocks are diagonalized, and eigenvectors are reconstructed through the ExFT/IIB dictionary. This is an operation-level specialization reconstructed from the supplied sources. It does not certify equality of all normalized mass operators, all gauge projections, or the conversion for nonidentity scalar dressings.",
+        "evidenceIds": [
+          "2f831cabaf0e79f412bd:p0002s003",
+          "2f831cabaf0e79f412bd:p0003s001",
+          "2f831cabaf0e79f412bd:p0003s002",
+          "2f831cabaf0e79f412bd:p0003s003",
+          "2f831cabaf0e79f412bd:p0004s001",
+          "2f831cabaf0e79f412bd:p0004s002",
+          "2f831cabaf0e79f412bd:p0004s003",
+          "2273259eb0d16ae67a48:p0012s001",
+          "2273259eb0d16ae67a48:p0012s002",
+          "2273259eb0d16ae67a48:p0013s001",
+          "2273259eb0d16ae67a48:p0013s002",
+          "2273259eb0d16ae67a48:p0014s001",
+          "2273259eb0d16ae67a48:p0014s002",
+          "2273259eb0d16ae67a48:p0018s002",
+          "2273259eb0d16ae67a48:p0019s001",
+          "2273259eb0d16ae67a48:p0019s002",
+          "2273259eb0d16ae67a48:p0020s001",
+          "2273259eb0d16ae67a48:p0021s001",
+          "2273259eb0d16ae67a48:p0021s002",
+          "2273259eb0d16ae67a48:p0022s001",
+          "2273259eb0d16ae67a48:p0022s002"
+        ],
+        "readerNote": "The native Astra review accepted this restricted relation but listed questions explicitly outside its scope. A coordinator request and independent semantic audit map each unchanged question to an existing native gap exclusion. Raw answers and their stated limitations are preserved; no broader claim or missing premise is promoted."
+      }
+    },
+    {
+      "id": "J12",
+      "title": "Charge-lattice projection versus a full matrix identity",
+      "split": "navigation_challenge",
+      "scientificGoldLabel": false,
+      "questionPrompts": [
+        "In the finite-volume K3\u00d7K3 M-theory setting, which premises let a proposed WGC charge-lattice comparison be restricted to a positive line, and is that the same as a full-matrix identity?",
+        "Separate a calculation after projecting charges onto an allowed positive direction from a claim about the entire lattice metric."
+      ],
+      "entryRoutes": [
+        [
+          "M-theory compactification",
+          "K3\u00d7K3",
+          "three-dimensional EFT",
+          "asymptotic charge lattice"
+        ],
+        [
+          "weak gravity",
+          "strong-coupling proposal",
+          "charge subspace",
+          "projection premises"
+        ]
+      ],
+      "requiredWitnessPaperIds": [
+        "2402.08389"
+      ],
+      "definingConstraints": [
+        "finite volume gravity-coupled 3D EFT",
+        "physical charge domain explicit",
+        "positive-line restriction versus full matrix identity"
+      ],
+      "boundaryPrompts": [
+        "Apply the projected equality to arbitrary physical charges without proving they lie in the selected subspace."
+      ],
+      "failureConditions": [
+        "Projected equality promoted to full matrix identity",
+        "Necessary physical-charge premise silently filled in"
+      ],
+      "witnesses": [
+        {
+          "unitId": "unit:8556eb113cb2153935c80795c008337c14331b583fc647da940290ed1d435d2f",
+          "paperId": "2402.08389",
+          "lens": "physical_question",
+          "text": "Can the asymptotic WGC extend to gravity-coupled 3D EFTs from finite-volume M-theory compactifications on K3\u00d7K3, including a proposed strong-coupling counterpart?",
+          "nodeIds": [
+            "obj:01e8a03a732cc26fd5ab:question:2f1b029053a4c7af6d1b1657"
+          ],
+          "evidenceIds": [
+            "ev:26b1cb7b10a8aa20489f5e18453b1aa3",
+            "ev:afc5e2503b8d4edfc4440748c2251794"
+          ],
+          "sourceSha256": "f85e9c17e602bf6c93a37be74efc80f514aeaeec273b30ca3bd4ec99c7836893"
+        },
+        {
+          "unitId": "unit:692f0d398fceda7c7789e0b9e817fca72430eb15a531beab3d9b2381608cb865",
+          "paperId": "2402.08389",
+          "lens": "method",
+          "text": "Test the repulsive-force inequality by comparing Coulomb repulsion with scalar-gradient attraction, using mass homogeneity and inverse kinetic matrices. The classical gravitational-force coefficient vanishes at D=3.",
+          "nodeIds": [
+            "obj:01e8a03a732cc26fd5ab:method:452e9ce31374e3b1f5270c8c"
+          ],
+          "evidenceIds": [
+            "ev:65a6a6ec4a811341284d4bf5c1cf95ab",
+            "ev:ae5a115b838e267fc0233229a21b94d7",
+            "ev:d409fa4c08c1f25969db3bae2db61fea"
+          ],
+          "sourceSha256": "f85e9c17e602bf6c93a37be74efc80f514aeaeec273b30ca3bd4ec99c7836893"
+        },
+        {
+          "unitId": "unit:90b322e6a454a66b8130b7cd0c096baf08cf160750904f36383cc8eb814100c3",
+          "paperId": "2402.08389",
+          "lens": "method",
+          "text": "Expand the K\u00e4hler form along a scaling parameter \u03bb, organize quartic intersections, reduce the bosonic supergravity action, and extract charge-dependent couplings using gq\u00b2=g3D\u00b2 qa G^ab qb.",
+          "nodeIds": [
+            "obj:01e8a03a732cc26fd5ab:method:113fd5619050c37e64091638"
+          ],
+          "evidenceIds": [
+            "ev:6ac480c3ef6c60b352655c288132a6c7",
+            "ev:ad047d81682f49f9604a4d15eb476b77",
+            "ev:ec1e59e61af4e1c97c811cee8fc4922a"
+          ],
+          "sourceSha256": "f85e9c17e602bf6c93a37be74efc80f514aeaeec273b30ca3bd4ec99c7836893"
+        }
+      ]
+    }
+  ]
+}

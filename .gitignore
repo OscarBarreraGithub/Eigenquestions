@@ -56,3 +56,8 @@ data/*.db-shm
 # cloudflare
 .open-next/
 .wrangler/
+
+# Local-only primary-source QA excerpts and private review notes
+/research/q025/**/*.local.json
+/research/q025/**/native-local/
+/docs/Q-015-swampwiki-review.md

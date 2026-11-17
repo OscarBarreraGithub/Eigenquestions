@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "q025-geometry-inputs/1",
+  "inputs": {
+    "minilm:physical_question": {
+      "files": {
+        "units.jsonl": {
+          "sha256": "03917639e5c309de0091f22bb97b538bdd470770119e5fec55981c1ed6318398",
+          "bytes": 44631021
+        },
+        "vectors.npy": {
+          "sha256": "d21ef5bf10ded0b58bc6bb8c87a8c37621979c5fa5a1a03a25d74b8337d3d906",
+          "bytes": 13014656
+        },
+        "affinity.npz": {
+          "sha256": "516b9f3974023edae147519b0741059aa4a3705d5dc7288a2e5594a0708923bb",
+          "bytes": 3003727
+        },
+        "partition.json": {
+          "sha256": "a9072d2ed35d861408d01882eebc42c75db935b5b2a9cf8872101318bee02433",
+          "bytes": 4441078
+        }
+      },
+      "unitCount": 8473,
+      "unitIdOrderSha256": "a37b33fde62e4401a5018fe4c87227b2f63d7f061165b851e6b4e53c826c1b29",
+      "graphShape": [
+        8473,
+        8473
+      ],
+      "graphNNZ": 316986
+    },
+    "minilm:method": {
+      "files": {
+        "units.jsonl": {
+          "sha256": "6ab2bf87ee6b8dc1b15fab1e030cefaa90bcfc76d2ed4f1fbaf40b48ae49406d",
+          "bytes": 89079823
+        },
+        "vectors.npy": {
+          "sha256": "2801292a513a63a1825f6fd98ec53d2a9fb8822af1312fc4915811c827466b86",
+          "bytes": 27551360
+        },
+        "affinity.npz": {
+          "sha256": "3cf1f6b01406a72ea3d0bcf1fb3e15458955c32a8e31f185f7df223afbd5231a",
+          "bytes": 6541565
+        },
+        "partition.json": {
+          "sha256": "1229da937bbd6673ca3a014c06950b5e1df7a86a2ed4883dee983ecefa7d6ac2",
+          "bytes": 13323724
+        }
+      },
+      "unitCount": 17937,
+      "unitIdOrderSha256": "a6bfadfeb3c69bc57199946ed1fa6d1d4ec1e00a06189b721502373dd96a4382",
+      "graphShape": [
+        17937,
+        17937
+      ],
+      "graphNNZ": 667130
+    },
+    "qwen-4b-raw:physical_question": {
+      "files": {
+        "units.jsonl": {
+          "sha256": "03917639e5c309de0091f22bb97b538bdd470770119e5fec55981c1ed6318398",
+          "bytes": 44631021
+        },
+        "vectors.npy": {
+          "sha256": "8e1dd18c463270ff26cb79baf3c436ba7a2790da9510e8523fa86689057fc67d",
+          "bytes": 86763648
+        },
+        "affinity.npz": {
+          "sha256": "94ee2fec48fa495d3ae0c8baa023e281fb67db44b3272d8ca6157a5f23157c45",
+          "bytes": 3190327
+        },
+        "partition.json": {
+          "sha256": "8fbdb9540ff0f6775a2499ab33f42b66aaa36367ebbf6d2390597b65c5bca604",
+          "bytes": 6271988
+        }
+      },
+      "unitCount": 8473,
+      "unitIdOrderSha256": "a37b33fde62e4401a5018fe4c87227b2f63d7f061165b851e6b4e53c826c1b29",
+      "graphShape": [
+        8473,
+        8473
+      ],
+      "graphNNZ": 338940
+    },
+    "qwen-4b-raw:method": {
+      "files": {
+        "units.jsonl": {
+          "sha256": "6ab2bf87ee6b8dc1b15fab1e030cefaa90bcfc76d2ed4f1fbaf40b48ae49406d",
+          "bytes": 89079823
+        },
+        "vectors.npy": {
+          "sha256": "40c1547d782347d58d0e9b375287b91d34701b0aba7f8d6da5924da39875c877",
+          "bytes": 183675008
+        },
+        "affinity.npz": {
+          "sha256": "8fb6971f91d3ac857235f62917db1595110a34c9f645e0d2195bf20b2c86cef8",
+          "bytes": 6958763
+        },
+        "partition.json": {
+          "sha256": "ef911335575f7589f0b9d2d595d63a0e8e7e6c6ff9b7d61e64c097e2c23c94cf",
+          "bytes": 13739584
+        }
+      },
+      "unitCount": 17937,
+      "unitIdOrderSha256": "a6bfadfeb3c69bc57199946ed1fa6d1d4ec1e00a06189b721502373dd96a4382",
+      "graphShape": [
+        17937,
+        17937
+      ],
+      "graphNNZ": 714614
+    }
+  },
+  "relationFileSha256": "d1fbb7de394839dfd5f0ead77e07ffdae3bbde47b9c400529ce9fb65ca3a96ae",
+  "relationCount": 97,
+  "software": {
+    "python": "3.12.5",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "igraph": "0.11.9"
+  },
+  "scriptSha256": "f320b751604e296cde055481f7129b51f4a0e11945e5f43795de8283fde2c628"
+}
