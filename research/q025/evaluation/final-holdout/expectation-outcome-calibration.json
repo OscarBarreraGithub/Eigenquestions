@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "q025-expectation-outcome-calibration/1",
+  "createdAt": "2026-11-17T18:56:21.333629+00:00",
+  "unchangedScoreSha256": "33bcc63eb32213decf0582a03ee968509d45241466d1570fb60b319af693fe1c",
+  "unchangedKeySha256": "8068422e947878e90222af9727c3fe807cf06b89957ea21b6f2413cd98c2c998",
+  "precommittedDistribution": {
+    "broad_orientation_with_fine_gap": {
+      "count": 5,
+      "caseIds": [
+        "H01",
+        "H12",
+        "H14",
+        "H16",
+        "H24"
+      ],
+      "A": {
+        "useful_broad_or_related_orientation": 4,
+        "explicit_gap": 1
+      },
+      "B": {
+        "useful_broad_or_related_orientation": 3,
+        "explicit_gap": 2
+      }
+    },
+    "scoped_question_match": {
+      "count": 10,
+      "caseIds": [
+        "H02",
+        "H03",
+        "H05",
+        "H06",
+        "H08",
+        "H11",
+        "H13",
+        "H15",
+        "H18",
+        "H23"
+      ],
+      "A": {
+        "useful_broad_or_related_orientation": 7,
+        "explicit_gap": 1,
+        "scoped_source_facet": 2
+      },
+      "B": {
+        "useful_broad_or_related_orientation": 6,
+        "scoped_canonical_question": 1,
+        "scoped_source_facet": 2,
+        "explicit_gap": 1
+      }
+    },
+    "scoped_family_match": {
+      "count": 1,
+      "caseIds": [
+        "H04"
+      ],
+      "A": {
+        "useful_broad_or_related_orientation": 1
+      },
+      "B": {
+        "useful_broad_or_related_orientation": 1
+      }
+    },
+    "scoped_overview_with_specialization_gap": {
+      "count": 7,
+      "caseIds": [
+        "H07",
+        "H09",
+        "H10",
+        "H17",
+        "H19",
+        "H20",
+        "H22"
+      ],
+      "A": {
+        "useful_broad_or_related_orientation": 6,
+        "explicit_gap": 1
+      },
+      "B": {
+        "useful_broad_or_related_orientation": 5,
+        "explicit_gap": 2
+      }
+    },
+    "genuine_specific_scope_gap": {
+      "count": 1,
+      "caseIds": [
+        "H21"
+      ],
+      "A": {
+        "explicit_gap": 1
+      },
+      "B": {
+        "explicit_gap": 1
+      }
+    }
+  },
+  "summary": {
+    "scopedCanonicalExpected": 10,
+    "sourceSpecificCounterpartExplicitlyExpected": 0,
+    "familyOrOverviewWithSpecificityGapExpected": 13,
+    "genuineSpecificGapExpected": 1
+  },
+  "interpretation": [
+    "The key predicted ten scoped canonical matches, not ten independently verified calculations. Preserve this prediction rather than relabeling it after seeing outputs.",
+    "Within those ten, A resolved zero precise canonical destinations, two source-specific counterparts, seven broad orientations and one gap; B resolved one canonical destination, two source counterparts, six broad orientations and one gap.",
+    "The remaining fourteen cases were precommitted as broad/family orientation or a genuine specific gap; they are not fourteen recoverable precise canonical targets.",
+    "H02/H03/H06/H08 reached the key-nominated destination but explicitly judged its displayed scope broader than the detailed query. These are shared destination retrieval with specificity shortfall, not absent topic access; the key was more optimistic about fine coverage.",
+    "H11 is an actual routing disagreement: B finds the exact precommitted proton/neutrino protection scope, A misses it.",
+    "Source-facet convergence H15/H18 was discovered through routing; it is not retroactively an expected canonical-identity success.",
+    "No source amendment has been written at this supplement freeze."
+  ]
+}

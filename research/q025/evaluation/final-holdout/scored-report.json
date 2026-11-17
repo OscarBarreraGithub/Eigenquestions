@@ -1,0 +1,898 @@
+{
+  "schemaVersion": "q025-final-holdout-score/1",
+  "frozenAt": "2026-11-17T18:55:54.425770+00:00",
+  "candidateManifestSha256": "62b2444c60f743adc9569d33ffe475211c9770d48f05abf5b976843e4e8d920c",
+  "expectationCommitment": {
+    "path": "research/q025/evaluation/final-holdout/expectation-commitment.json",
+    "sha256": "68f3d7f02ee9b2c3316d50d69acb142f6e24216233c7c1b87e48c244c5452437"
+  },
+  "privateKeySha256": "8068422e947878e90222af9727c3fe807cf06b89957ea21b6f2413cd98c2c998",
+  "runHashes": {
+    "A": "fa876103e7fcf0215668556ab9b728c41aa0849c62f84c0ee3ba2f731e6f7e6d",
+    "B": "7f7cda2047d82ba9acf018623e382b793813d183c125a97028517f331e3ed162",
+    "C": "2779157041b9c22f06d53ad037b5be237882b10d6dc89396dc27a4684677f424"
+  },
+  "counts": {
+    "A": {
+      "useful_broad_or_related_orientation": 18,
+      "explicit_gap": 4,
+      "scoped_source_facet": 2
+    },
+    "B": {
+      "useful_broad_or_related_orientation": 15,
+      "explicit_gap": 6,
+      "scoped_canonical_question": 1,
+      "scoped_source_facet": 2
+    },
+    "C": {
+      "qualified_alternative_orientation": 14,
+      "scoped_alternative": 4,
+      "explicit_gap": 6
+    }
+  },
+  "denominators": {
+    "papers": 24,
+    "reservedSourceUnits": 43,
+    "Aqueries": 24,
+    "Bqueries": 24,
+    "CmaterialContrasts": 24,
+    "canonicalFineIdentityBothResolvedCases": 0,
+    "sameSourceFacetPairs": {
+      "agreement": 2,
+      "eligible": 2
+    },
+    "contrastDistinctionsPreserved": 24,
+    "wrongScopeAssertionsObserved": 0,
+    "duplicateIdentityFailuresEstablished": 0,
+    "alternateStartTasks": 8,
+    "alternatePreciseCanonicalConvergence": 1,
+    "alternateBroadConvergence": 1,
+    "alternateComparisonConvergence": 1,
+    "alternateDidNotConverge": 5
+  },
+  "receiptAudit": {
+    "actualCalls": 431,
+    "successfulManifestBound": 428,
+    "rejectedLimitRequests": 3,
+    "errors": [
+      {
+        "run": "A",
+        "caseId": "H01",
+        "receipt": "research/q025/evaluation/final-holdout/native-local/routing-A-run/H01-search2.json",
+        "reason": "Pre-holdout read: Search limit must be between 1 and 30\n"
+      },
+      {
+        "run": "A",
+        "caseId": "H04",
+        "receipt": "research/q025/evaluation/final-holdout/native-local/routing-A-run/H04-search2.json",
+        "reason": "Pre-holdout read: Search limit must be between 1 and 30\n"
+      },
+      {
+        "run": "C",
+        "caseId": "H21",
+        "receipt": "research/q025/evaluation/final-holdout/native-local/routing-C-run/H21-search-timelike-complete.json",
+        "reason": "Pre-holdout read: Search limit must be between 1 and 30\n"
+      }
+    ],
+    "receiptInventory": "native-local/scoring-receipts.json"
+  },
+  "cases": [
+    {
+      "caseId": "H01",
+      "precommittedClass": "broad_orientation_with_fine_gap",
+      "reason": "Both resolve the heterotic overview; the joint construction/bundle/moduli program remains finer than the selected destination. Alternate geometric path does not reach that separately searched overview.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-region:08e506f6e18913013e767c3c",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-region:08e506f6e18913013e767c3c",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:762c1ff742be91780d6845e9",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": true,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 2,
+        "reachesDeclaredChoiceOrComparison": false,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "route_did_not_converge_separate_search_or_gap"
+      }
+    },
+    {
+      "caseId": "H02",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both reach the species/evaporation scope but explicitly leave brane localization and sub-string horizon emission weighting unresolved.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:04ea1b1376fe4c1d2d1be282",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:04ea1b1376fe4c1d2d1be282",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "scoped_alternative",
+        "destinationId": "q-kk-graviton-thermal-production",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": true,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H03",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both reach Kähler-inflation construction; neither resolves the historical joint e-fold/tilt/running calculation as a precise destination.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:220ee460807b8b403ee4cb11",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:220ee460807b8b403ee4cb11",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:31a15a4f31aee9aae28673fc",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": true,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H04",
+      "precommittedClass": "scoped_family_match",
+      "reason": "Reheating and post-inflation overviews are useful. Heavy/light LVS spectrum and late signal conditions remain finer gaps; alternate stabilization path does not converge.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:6f2856469e2c88a50c46fdbf",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:233aadf7a55f0583fd9fae59",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "source-question:ade1654383f126e278cfd6836b5fa78793177147af3af75c41969138d083d75c",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 2,
+        "reachesDeclaredChoiceOrComparison": false,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "route_did_not_converge_separate_search_or_gap"
+      }
+    },
+    {
+      "caseId": "H05",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both reach the same distance/geodesic overview, retaining finite-phase and many-modulus limitations. This is not exact identity of the phase-specific question.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:875e439e55eb5ed9df26b4f0",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:875e439e55eb5ed9df26b4f0",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:e8e6b3ce91854a1f951673cb",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": true,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H06",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both reach AdS decay-channel orientation, not the full nonsupersymmetric lower-flux microscopic interpretation. Alternate brane route remains different.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:19ab030eb55337ead0d27de0",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:19ab030eb55337ead0d27de0",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:3b8dd929725c71ca2311287e",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": true,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 1,
+        "reachesDeclaredChoiceOrComparison": false,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "route_did_not_converge_separate_search_or_gap"
+      }
+    },
+    {
+      "caseId": "H07",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "Different conditional distance/no-force entrances; both retain the missing geodesic-density and alignment premises. No duplicate scoped question established.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:d58b725e794d43e870c72b96",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H08",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both reach the gradient/interior overview and explicitly withhold the precise 5d BPS scale identity.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:cddea25176cb8afb89dbce93",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:cddea25176cb8afb89dbce93",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": true,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H09",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "A reports a gap; B supplies massive-vector orientation while preserving the missing fundamental-axion versus regular-Higgs distinction.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "explicit_gap",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:104115c4f0da1aab99316ee8",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:104115c4f0da1aab99316ee8",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H10",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "A finds anomaly-remnant orientation; B follows a valid two-edge route to a duality-defect comparison but correctly leaves the precise Page-charge target unresolved.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:3bdab6beac0e39be69944477",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "gap_with_comparison",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:866210e6afd3379279bf6405",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 2,
+        "reachesDeclaredChoiceOrComparison": true,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "comparison_only_reached"
+      }
+    },
+    {
+      "caseId": "H11",
+      "precommittedClass": "scoped_question_match",
+      "reason": "A misses the precise destination; B reaches the precommitted proton-protection/neutrino/anomaly scope through two scoped moves. This is retrieval/route asymmetry, not two competing identities.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "explicit_gap",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "scoped_canonical_question",
+        "destinationId": "q025-candidate-question:b80d9be255d603c6fcec5d57",
+        "navigatorStatus": "selected_scoped_destination",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:82487b8cbf0848b5967846bd",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 2,
+        "reachesDeclaredChoiceOrComparison": true,
+        "reachesPreciseCanonicalTarget": true,
+        "outcome": "precise_target_reached"
+      }
+    },
+    {
+      "caseId": "H12",
+      "precommittedClass": "broad_orientation_with_fine_gap",
+      "reason": "Distinct higher-form/geometric entrances preserve the missing explicit 5d screening/intersection computation.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:cdf3b6e758cba27041bd357e",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:2064d452abd633e46ee9dab6",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H13",
+      "precommittedClass": "scoped_question_match",
+      "reason": "A emphasizes relic/modulus cosmology; B reaches the whole post-inflation overview. Both retain model dependence; neither is counted as exact source-level identity.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:f39333b08ebf2cd4de3e3f4a",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:233aadf7a55f0583fd9fae59",
+        "navigatorStatus": "selected_orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-placement-question:31b003987651ba8ace513cd7",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H14",
+      "precommittedClass": "broad_orientation_with_fine_gap",
+      "reason": "Both correctly reject the horizon-entropy card as a match to reheating thermal entropy. C separately matches that horizon-bound question: a successful material-premise distinction.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "explicit_gap",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "gap_with_comparison",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "scoped_alternative",
+        "destinationId": "q025-candidate-question:872859db35d058debdc17556",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H15",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both find the same source-specific rescaled-Einstein counterpart and preserve approximation/criterion limits. Counted as source-facet resolution, not canonical identity.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "scoped_source_facet",
+        "destinationId": "source-question:9156955508a8756107cee61ffad260a71fc53041bada2ba94409675a46709b0f",
+        "navigatorStatus": "scoped_source_example",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "scoped_source_facet",
+        "destinationId": "source-question:9156955508a8756107cee61ffad260a71fc53041bada2ba94409675a46709b0f",
+        "navigatorStatus": "selected_source_scoped",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": true,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H16",
+      "precommittedClass": "broad_orientation_with_fine_gap",
+      "reason": "A finds a related source; B a landscape overview. Neither verifies the exact accidental-alignment and bubble-to-slow-roll chain.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "source-question:14b8531a6d64ece2c2a0faa7508b33058ba2bbce068f0cb28552ffd7d5397a02",
+        "navigatorStatus": "related_source_with_unresolved_assumptions",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:6a4acdd5504a55612dbfce6e",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "scoped_alternative",
+        "destinationId": "q025-placement-question:b0a7ce200c00425361fa9359",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H17",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "Both retain the hierarchy-only gap; KNP, monodromy and other range mechanisms are not silently substituted.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:9e41a3868dcdcfebf87974e3",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:b4e72d1e5154d5d9e59989d8",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:e7f1f7e0dfa9ec3de0d57a1e",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H18",
+      "precommittedClass": "scoped_question_match",
+      "reason": "Both find the same gauged-flavor/open-string-axion source-specific counterpart with qualifications. B alternate route fails to reach it and search resolves it separately.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "scoped_source_facet",
+        "destinationId": "source-question:944221aa2e1f8114212e2effc081466279c5cea06b426cb7890b90341b48fd03",
+        "navigatorStatus": "scoped_source_example",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "scoped_source_facet",
+        "destinationId": "source-question:944221aa2e1f8114212e2effc081466279c5cea06b426cb7890b90341b48fd03",
+        "navigatorStatus": "selected_source_scoped",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "scoped_alternative",
+        "destinationId": "q025-candidate-question:640f7ec0f16f70df737f20a5",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": true,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 2,
+        "reachesDeclaredChoiceOrComparison": false,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "route_did_not_converge_separate_search_or_gap"
+      }
+    },
+    {
+      "caseId": "H19",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "Dispersive orientation succeeds; B reaches UV-spectral orientation by four scoped moves, while both leave the precise impact-parameter pole-generation target unresolved.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:3193b8d7483071b6c5ef1193",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:ba83a10fc3f76f6befff7e35",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:3193b8d7483071b6c5ef1193",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 4,
+        "scopedDestinationMoves": 4,
+        "reachesDeclaredChoiceOrComparison": true,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "broader_orientation_reached"
+      }
+    },
+    {
+      "caseId": "H20",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "Loop and general gravitational-dispersion entrances preserve the missing scalar-potential inequality; no general positivity theorem substituted.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:d7eff9c143cead9be06735d4",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:3193b8d7483071b6c5ef1193",
+        "navigatorStatus": "orientation",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:2f1a39d17de3d528d60633bf",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H21",
+      "precommittedClass": "genuine_specific_scope_gap",
+      "reason": "Both explicitly retain the timelike local-algebra gap. Screening-number continuation is only a contrast. C also rejects the unsupported positive-Hilbert strengthening.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "explicit_gap",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "gap_with_comparison",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H22",
+      "precommittedClass": "scoped_overview_with_specialization_gap",
+      "reason": "A offers conditional compactification/neutrino orientation; B records a gap and rejects profiled-IIB substitution. Exact metric-ansatz specialization remains unresolved.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-placement-question:3be1cc8035532d213ca580a6",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "gap_with_comparison",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:8be01c4d39f1dbfac4e9bf69",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    },
+    {
+      "caseId": "H23",
+      "precommittedClass": "scoped_question_match",
+      "reason": "A offers correlated-signal orientation. B rejects scalar/Higgs-mixing substitution and its alternate route fails to reach the fermionic target.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:5c3a70858517139579f1e590",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "gap_with_comparison",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      },
+      "alternateRoute": {
+        "attempted": true,
+        "recordedMoves": 2,
+        "scopedDestinationMoves": 1,
+        "reachesDeclaredChoiceOrComparison": false,
+        "reachesPreciseCanonicalTarget": false,
+        "outcome": "route_did_not_converge_separate_search_or_gap"
+      }
+    },
+    {
+      "caseId": "H24",
+      "precommittedClass": "broad_orientation_with_fine_gap",
+      "reason": "A offers compact-object orientation only; B records the missing combined membrane/string/cosmology target. BPS horizonlessness is not substituted.",
+      "contrastOutcome": "material_distinction_preserved",
+      "wrongScopeAsserted": false,
+      "duplicateIdentityEstablished": false,
+      "A": {
+        "outcome": "useful_broad_or_related_orientation",
+        "destinationId": "q025-candidate-question:503518828b60243ad6ef86db",
+        "navigatorStatus": "broad_orientation",
+        "specificityLimitRetained": true
+      },
+      "B": {
+        "outcome": "explicit_gap",
+        "destinationId": null,
+        "navigatorStatus": "gap_with_comparison",
+        "specificityLimitRetained": true
+      },
+      "C": {
+        "outcome": "qualified_alternative_orientation",
+        "destinationId": "q025-candidate-question:779625291a2a70986077f251",
+        "retainedChangedPremise": true
+      },
+      "identityComparison": {
+        "canonicalIdentityTestEligible": false,
+        "sameSourceFacet": false,
+        "sameBroadDestinationOnly": false,
+        "explanation": "No canonical fine-identity success is credited for broad orientation or explicit gaps. H15/H18 are separately reported exact source-facet convergence."
+      }
+    }
+  ],
+  "interpretation": [
+    "This is transductive semantic withholding: encoders/corpus/unsupervised inputs may already include these papers.",
+    "Precommitted scoped-match expectations named promising destinations; actual broad or source-facet outcomes are not upgraded to canonical fine-identity successes.",
+    "H14 convenience alternative ID is a material contrast; H21 convenience preferred ID is explicitly not a scientific match. Their committed reasons govern scoring.",
+    "Zero observed wrong-scope assertions or duplicate failures is not proof of correctness or canonical uniqueness; most specific targets were not resolved.",
+    "The source-only stateless CLI was exercised. No rendered-browser journey is claimed.",
+    "All 24 contrasts preserve material distinctions or honest gaps; this measures premise protection, not complete coverage of alternative science.",
+    "Scores were frozen before any dated source-placement amendment; no candidate tuning or rerouting occurred."
+  ]
+}

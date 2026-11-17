@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "q025-score-receipt-count-correction/1",
+  "createdAt": "2026-11-17T18:59:30.626397+00:00",
+  "originalScoredReportSha256": "33bcc63eb32213decf0582a03ee968509d45241466d1570fb60b319af693fe1c",
+  "scientificOutcomesChanged": false,
+  "listedReceiptReferences": 431,
+  "uniqueCaseCallReceipts": 427,
+  "caseSuccessful": 424,
+  "caseRejected": 3,
+  "additionalMetadataInfoReads": [
+    {
+      "path": "research/q025/evaluation/final-holdout/native-local/routing-A-run/global-info.json",
+      "sha256": "baf2f6009a462d96758a4c73758d91a5823063a1d8991f9df1762bc973779ac8",
+      "exitCode": 0
+    },
+    {
+      "path": "research/q025/evaluation/final-holdout/native-local/routing-C-run/GLOBAL-info.json",
+      "sha256": "e2b582fe1d4e55f273b3bee0599c7e286e04551d289d62f47b46d8542cf03edd",
+      "exitCode": 0
+    }
+  ],
+  "uniqueActualRecordedCalls": 429,
+  "successfulIncludingInfo": 426,
+  "rejected": 3,
+  "reason": "Four reused receipt references are not new executions; two separately frozen metadata info reads were not listed in the case inventory."
+}
