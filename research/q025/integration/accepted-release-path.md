@@ -1,13 +1,14 @@
 # Accepted package → existing build → independent acceptance
 
-Status, 2026-11-17: QA23 passed ten scripted browser/MCP checks on the
-6,294-source partial candidate, including the actual black-hole → RG route and
-lazy relation proofs. The independent read-only diagnostic is scored and root has
-approved the dated 43-source amendment: 8,436 placed sources, 37 explicitly
-unresolved placements, zero reserved. Geometry is binding the final immutable
-package. Earlier partial packages remain research evidence and must not be
-installed as the final atlas. Fresh-agent rendered-browser navigation and public
-HTTPS acceptance remain separate, unexecuted final gates.
+Status, 2026-11-17: final manifest `15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb`
+is installed locally with 8,436 placed sources, 37 explicit unresolved placements
+and zero reserved. The normal build, 115 tests and site check pass. Final scripted
+browser checks pass 13 core and 6 supplemental cases; four fresh-agent journeys
+have matching rendered acknowledgements (88 calls, 87 successful and one bounded
+search rejection). The dated reading-history correction is checked separately.
+Earlier partial packages remain historical evidence. Public deployment, default
+and scoped-consent loopback tests, and a public-origin fresh-agent proof remain
+pending; local success does not stand in for them.
 
 ## One handoff
 

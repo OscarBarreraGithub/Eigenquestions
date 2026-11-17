@@ -260,7 +260,8 @@ evidence IDs, directions, geometric diagnostics and warnings. `--full` returns
 all points, provenance and the full chart basis/center. A subsequent `state` call
 reports `browserStatus.acknowledgedCurrent` once an attached browser has rendered
 that exact revision; a successful action alone does not prove a render. `search`
-and `evidence` inspect without navigation:
+and `evidence` inspect without navigation. CLI/MCP search limits are 1–30. Use
+small search limits and bounded source/context pages to avoid truncated tool output:
 
 ```sh
 node bin/navigate.mjs search --query 'KK towers' --intent recent --relation using --connection /tmp/eigenquestions-session.json

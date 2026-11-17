@@ -4,8 +4,8 @@ Q-025 source-accounting decision, 2026-11-17. All 8,473 extracted questions are
 accounted for: 8,436 have reviewed topic placements and 37 remain discoverable
 without a precise placement, with individual reasons. No source is still reserved.
 Placement organizes source descriptions; it does not establish a unique fine
-canonical question for each one. Final rendered-browser and public-origin
-acceptance are separate release gates.
+canonical question for each one. Final local rendering and four selected fresh-agent
+browser journeys have passed; public-origin acceptance remains a separate gate.
 
 A researcher should be able to reach the same scoped question through different
 topics or a justified paraphrase, inspect its sources, and continue from the same
@@ -61,13 +61,27 @@ and can use a saved link when hosted storage is available. Local work notes atta
 to destination IDs and export separately; ordinary destination links and view
 exports do not publish them. Graph orientation supplements independent research.
 
-**Verified development evidence:** QA23 passed ten isolated Chromium checks on a
-6,294-source partial candidate, including actual KK navigation, the black-hole/RG
-route, lazy source proofs, source-method inspection and mobile rendering.
-[Receipt](../research/q025/integration/qa23/artifacts/report.json).
-This is scripted local HTTP evidence, not final-data acceptance or proof of
-public HTTPS-to-loopback behavior. Default-policy and explicit scoped-consent
-public tests remain distinct from operation of the owner's browser.
+**Final local rendering:** the installed immutable atlas passes thirteen scripted
+core checks and six supplemental checks, including both overview spaces, source
+filters/contributions, exact proofs, mobile rendering, private work notes and
+manual view import. The five exact editorial treatments and one dated
+reading-history correction preserve the scientific records.
+[Final reports](../research/q025/integration/final-acceptance/supplement-v1/receipt.json),
+[reading-history check](../research/q025/integration/final-reading-history-v1/report.json).
+
+**Selected fresh-agent browser journeys:** four independent contexts made 88
+recorded CLI/static calls: 87 succeeded, and one oversized search was rejected
+and corrected. Two different entries reached the same scoped KK threshold-rate
+question; another followed the black-hole/RG application route, and the fourth
+kept a source-specific weak-CMB/strong-late dissipation question distinct from a
+strong-throughout argument. Every accepted revision has a matching rendered state
+and browser acknowledgement. Back, replay, reset and export were also exercised.
+The fourth case used five lexical searches, exceeding the suggested single
+follow-up search; this process deviation is retained. These selected successes
+do not establish general recall or erase the diagnostic below.
+[Token-free receipt and limits](../research/q025/integration/final-acceptance/fresh-agent-v1/receipt.json).
+This is isolated same-origin Slurm browser evidence. Public HTTPS default-policy,
+scoped-consent and fresh-agent tests remain pending; none operates the owner's browser.
 
 **Independent read-only diagnostic:** three fresh agents answered 72 prose queries
 against a frozen candidate, with expectations committed before routing. It showed
@@ -77,8 +91,9 @@ and short generic search guidance are post-test changes, not an independent
 retest. [Frozen scored report](../research/q025/evaluation/final-holdout/scored-report.json).
 Read-only selectors and tool receipts do not prove a visible browser update.
 
-**Publication and storage:** the exact installed version and final browser/public
-receipts are recorded at release. Hosted authored-view storage remains inactive;
+**Publication and storage:** the complete local installation is the immutable
+17 November 2026 post-test atlas; public deployment and its receipts remain pending.
+Hosted authored-view storage remains inactive;
 prepared links do not depend on it. If saving an authored view fails, retain its
 file and report that no durable saved link was made.
 

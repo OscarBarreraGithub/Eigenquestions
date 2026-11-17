@@ -90,7 +90,7 @@ MCP clients launch `node /absolute/checkout/bin/mcp-navigator.mjs --connection
 | MCP tool | Arguments | CLI equivalent |
 |---|---|---|
 | `navigator_state` | `{}`; optional `full:true` for full basis | `state` |
-| `navigator_search` | `{query, intent?, workRelation?, limit?}` | `search --query '…' --intent recent --relation using` |
+| `navigator_search` | `{query, intent?, workRelation?, limit?}`; limit 1–30 | `search --query '…' --intent recent --relation using` |
 | `navigator_evidence` | `{ids:[stableSourceId]}` | `evidence --ids 'unit:…'` |
 | `navigator_sources` | `{destinationId?,collection?,offset?,limit?,lens?,workRelation?,constraints?}` | `sources --destination ID --offset 0 --limit 20` |
 | `navigator_connections` | `{destinationId?,offset?,limit?}` | `connections --destination ID` |
@@ -98,6 +98,8 @@ MCP clients launch `node /absolute/checkout/bin/mcp-navigator.mjs --connection
 | `navigator_navigate` | action below plus `expectedRevision` | `action --json '{…}' --expected-revision N` |
 | `navigator_export` | `{}` | `export --out session.json` |
 | `navigator_import` | `{payload: exportedObject,expectedRevision}` | `import --file session.json --expected-revision N` |
+
+Use small search limits and bounded source/context pages to avoid truncated tool output; continue at the returned page offset.
 
 Native navigation action example (prepared navigation uses an exact `selector`):
 

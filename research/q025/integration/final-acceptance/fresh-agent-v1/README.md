@@ -1,0 +1,11 @@
+# Four selected fresh-agent browser journeys
+
+Four separate fresh contexts used the portable interface and actual maintained CLI/static adapter. They made 88 logged calls: 87 successful, one case3 search with limit 40 rejected by the 1–30 bound and then corrected. Coordinator setup/export/reset calls are inventoried separately. No observer command selected a scientific destination.
+
+Case1 and case2 reached the same scoped KK threshold-rate destination from different initial topics and prose. Conditional linear cosmology, decay-law validity and flat-model bounds remained distinct. Case3 followed the exact black-hole→RG application route and read its full proof without claiming fresh primary reading. Case4 selected a source-specific warm-inflation facet, retaining weak/moderate CMB versus strong late dissipation, distinction from strong-throughout compatibility, and negligible selected PBH abundance. It used five lexical searches rather than the suggested one follow-up and repeated bounded reads after truncation; no blind rerun hides that deviation.
+
+The passive observer retained 19 render events for bridge revisions 0–16, including transient intermediate frames. The latest event for every revision has matching state ID, DOM state ID, render revision and browser acknowledgement. Zero page errors occurred. Root stopped the observer after all four cases and evidence capture.
+
+`receipt.json` is a token-free projection with hashes of all private raw results and command receipts. Originals remain private and unchanged. The four screenshots show representative final states; `observer-report.json` retains every event. Query prose, full tool outputs and connection configuration are omitted from the public derivative. No real work note was created in fresh cases.
+
+The running application was frozen at a17c9ea3. Subsequent exact display-only changes were verified in separate contexts. This is isolated Slurm same-origin browser evidence, not owner Chrome or public HTTPS proof, and these selected cases do not overturn the earlier 72-query diagnostic of uneven fine-question resolution. The interface pagination clarification is a dated post-test amendment, not a new blind result.

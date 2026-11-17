@@ -1,0 +1,893 @@
+{
+  "kind": "four-fresh-agent-local-browser-acceptance",
+  "status": "SELECTED_CASES_COMPLETED",
+  "date": "2026-11-17",
+  "applicationCommit": "a17c9ea3f7e660e4154172f574304bad14315722",
+  "scientificManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "jobId": "61597944",
+  "origin": "Isolated Slurm same-origin loopback; not public HTTPS or owner Chrome",
+  "agentInputs": "Separate fresh contexts, portable skill, natural prose and actual CLI/static wrapper. No cases/oracle/research-answer files supplied; this is a task boundary, not filesystem sandbox isolation.",
+  "recordedAgentCalls": 88,
+  "successfulAgentCalls": 87,
+  "rejectedCalls": 1,
+  "cases": [
+    {
+      "case": "case1",
+      "rawResultPrivatePath": "case1-result.json",
+      "rawResultSha256": "728222b0718e1da302515f44261f8a9085502b90858b7f4f46ef640d399b1a09",
+      "recordedCalls": 23,
+      "successfulCalls": 23,
+      "commands": {
+        "state": 6,
+        "search": 2,
+        "static": 6,
+        "sources": 2,
+        "action": 5,
+        "context": 2
+      },
+      "errors": [],
+      "mutations": [
+        {
+          "command": "action",
+          "expectedRevision": 0,
+          "acceptedRevision": 1,
+          "stateId": "state-5b27038443f2aaf8",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q-kk-graviton-thermal-production"
+          },
+          "observerDomStateId": "state-5b27038443f2aaf8",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 1,
+          "acceptedRevision": 2,
+          "stateId": "state-9d8d04fbc0d03b83",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q-kk-decay-linear-cosmology"
+          },
+          "observerDomStateId": "state-9d8d04fbc0d03b83",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 2,
+          "acceptedRevision": 3,
+          "stateId": "state-625623e15a8b39cd",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q-kk-graviton-threshold-decay"
+          },
+          "observerDomStateId": "state-625623e15a8b39cd",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 3,
+          "acceptedRevision": 4,
+          "stateId": "state-fb4c9e6c7cb0fa68",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q025-candidate-question:3837596ccc94dbb619230dc6"
+          },
+          "observerDomStateId": "state-fb4c9e6c7cb0fa68",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 4,
+          "acceptedRevision": 5,
+          "stateId": "state-6954ea4f5505472f",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q-flat-darkdimension-freezein-bounds"
+          },
+          "observerDomStateId": "state-6954ea4f5505472f",
+          "browserAcknowledgedCurrent": true
+        }
+      ],
+      "processQualification": null,
+      "receipts": [
+        {
+          "privateReceipt": "agent-receipts/case1/193408612382-0edc46d6.json",
+          "sha256": "713ea9eed48ba7fd5936d0d3cf3fff92875af30899213851aa51255b6982c2ee",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193417727103-5986cb8a.json",
+          "sha256": "e0232c6c8c95ef4f8fb67ddd9f9d752d65926da45a21fd221087977bf490bada",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193423501626-b5530d2b.json",
+          "sha256": "87d54bb7746489b50690c7f86e3d64694c56181699218495e5f6351add21329f",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193429886365-5a9b7975.json",
+          "sha256": "5a1d7f156b5f467663d7a25ce11a71af346459a8cadc9befe821995eca448222",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193436391440-1353f4b2.json",
+          "sha256": "af3a5c4a809cc1838e681eb3892f303fce4290a53c3040f093123e7964fbf2cb",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193436673704-e827d5d4.json",
+          "sha256": "e208f8db5941c2bc1691df5b13b460683400ecce4612f89c63903a7a96552437",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193447257037-c5814384.json",
+          "sha256": "aced98e79d1bc4de93704bd0a094c57dad94ca43b3d638b803be697858ea1583",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193509803211-0ab47fe2.json",
+          "sha256": "af804e5e2e3236da140730587c12001b0fe77c00df76bbbfa14b8df1622cae01",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193525745888-9c6cbcc1.json",
+          "sha256": "dcacca24109f6a8ff19036b6eca17792eb3e16dd504e16f711ecc26849633458",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193525878080-e732715d.json",
+          "sha256": "de6808212a78ac4d0efde5fa205a719af526d37f277dd354bc597a71fa47ee2d",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193536252574-6bc02979.json",
+          "sha256": "6b9a5da3436dc54032787bcdd77db31f99219a901ea0f9546fdf49913c93ca17",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193544767848-ec505640.json",
+          "sha256": "e0e19cd1ee85e853b9910f4b2cfaf70b6315deaeb0e90e1b42a43f4e6ccc27c9",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193552721342-41fad9b1.json",
+          "sha256": "ef5a23cb98db20c586807f8f0acbaf9208008a03233ce8295b7fefa35616b139",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193618866705-1687b6ae.json",
+          "sha256": "cfd5ff1fa93c02992c6759f4a4cd40b117b41a7e5065823f3990fc8338e6ae8d",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193629395503-a2567df6.json",
+          "sha256": "81ee204e4db4504cd7482c5192038bcbede15b3f1d034538ead094f385c3e7d1",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193638301754-430de42c.json",
+          "sha256": "2378d1e2e6565a2150a2f981680bdce4edb9ba46b71d06def2c47d0cda32caef",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193652017439-57b5a790.json",
+          "sha256": "5c1c04bdda105bc82f3d26cf8a5c45423a5bbf9cc7639cfef7b9e4c5efe1c4cf",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193653293707-696b78a6.json",
+          "sha256": "1c16737483b332229dd343a197cd08ef2d6fd1924a55fe5a72bafd051abcafb9",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193708667941-7e3cb379.json",
+          "sha256": "9897479caf7fd990cca8192e8709805f57a5b58066d8c55cc2c617ad610bd607",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193718135241-67167c55.json",
+          "sha256": "c9ef74658943e7663bf24d591e41caa9f355c1312a335050904f8469e243a360",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193725428738-7f56fa96.json",
+          "sha256": "63781bd6528ce7daee87df12e4549898e5673cbcb6e482d2932c6465e8ea812a",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193735556661-2bdbbac1.json",
+          "sha256": "3a1174910cd06bce64219a1c56672ebb6a0b6ba063cf5461122d3c24994cfad7",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case1/193745148995-34c37a7f.json",
+          "sha256": "f4741265b682c1bbc4fb0dc150dbda02d971b9333f9f268e76be42cb63e94617",
+          "command": "state",
+          "returnCode": 0
+        }
+      ]
+    },
+    {
+      "case": "case2",
+      "rawResultPrivatePath": "case2-result.json",
+      "rawResultSha256": "ef04136e8dc159b4f48fdc50e0583c80e6f6422ccd6837ba43b452db6c26f478",
+      "recordedCalls": 21,
+      "successfulCalls": 21,
+      "commands": {
+        "state": 7,
+        "search": 1,
+        "connections": 1,
+        "sources": 2,
+        "static": 1,
+        "action": 5,
+        "context": 3,
+        "export": 1
+      },
+      "errors": [],
+      "mutations": [
+        {
+          "command": "action",
+          "expectedRevision": 7,
+          "acceptedRevision": 8,
+          "stateId": "state-08bd4075d83500c9",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q025-candidate-question:62dacb9af0517b2a3ba9ed97"
+          },
+          "observerDomStateId": "state-08bd4075d83500c9",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 8,
+          "acceptedRevision": 9,
+          "stateId": "state-625623e15a8b39cd",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q-kk-graviton-threshold-decay"
+          },
+          "observerDomStateId": "state-625623e15a8b39cd",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 9,
+          "acceptedRevision": 10,
+          "stateId": "state-08bd4075d83500c9",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q025-candidate-question:62dacb9af0517b2a3ba9ed97"
+          },
+          "observerDomStateId": "state-08bd4075d83500c9",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 10,
+          "acceptedRevision": 11,
+          "stateId": "state-625623e15a8b39cd",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q-kk-graviton-threshold-decay"
+          },
+          "observerDomStateId": "state-625623e15a8b39cd",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 11,
+          "acceptedRevision": 12,
+          "stateId": "state-2cfe119a080fb6e2",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "classification:physics"
+          },
+          "observerDomStateId": "state-2cfe119a080fb6e2",
+          "browserAcknowledgedCurrent": true
+        }
+      ],
+      "processQualification": null,
+      "receipts": [
+        {
+          "privateReceipt": "agent-receipts/case2/194013725772-8bd8dc2a.json",
+          "sha256": "f289e4d127f1a8983c103d7ea631646f138c4109020223047ea9d764ef653e8e",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194032184388-78f9ac62.json",
+          "sha256": "f633ffb2d7c9b864190fd421195609e1e659de280737331791efaaef23d1fdae",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194033854418-df690203.json",
+          "sha256": "7f363a662c484c35fc012f79bc63a9caff681a20d64c6400910c07cb9cd58e40",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194042422027-ccc07269.json",
+          "sha256": "408f9929998fde98c87b6bea9c41d0f946d520ae703a1bd283c77ba47b7e5791",
+          "command": "connections",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194057084245-a39902e3.json",
+          "sha256": "6e8ba084ad25ca47cf0ffdf86397c1670f4ed2cb159a43a30072a0a4b47b11d9",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194059639693-794555d2.json",
+          "sha256": "32662aa6d011828e6aa491b6b9f53cd97b5ad7e1477ce04917ab68d298c393d4",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194115705995-461c0068.json",
+          "sha256": "bf5c989c2a9e4b3b955af613ed8b72938c555eb6a60d4b271c8e19f169437832",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194129472986-448581a0.json",
+          "sha256": "5759258a6d9f09e5419929c15f46aeb8be08cb3c17d1bac0ccee5b787c781fa4",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194134162661-25b44019.json",
+          "sha256": "357cf371988b687c64e6e13f37b746387afca7ef0c978d6dd7a2ca435d4d0874",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194148107346-5a245720.json",
+          "sha256": "663c3d58fa2723c52052c869c45ea9d4f064d57c3c9a1b2fec817d5baa0705b2",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194148108940-eb03c297.json",
+          "sha256": "b7f63f3e78b01db845e2a1e66be2c470bc37f923792b08e172339de401d0e6d7",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194148852368-86234597.json",
+          "sha256": "ee7dd93adac875a8977ba75defba24db7f1332aa8b1a38a9cd2edc258f21ae6d",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194207202055-43a94aed.json",
+          "sha256": "07e5920e4c62da2284cda4a3d8709fa76ce27162aac27498e5c8562744243b03",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194218028334-a3a990f9.json",
+          "sha256": "153da27b8c11f330f61ea1890f69822ce24167cb3007794f79dfa89477b270a5",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194223431994-e0de0da6.json",
+          "sha256": "17cd7aa95224b58f44724e93880d61cfe0122638badc09342577b74e265762ed",
+          "command": "export",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194233507396-c7887771.json",
+          "sha256": "330a24ce44f8d61ae06f7d9279191d9917153c313b886be2689003c95ab1abf8",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194236441619-a88d2e7b.json",
+          "sha256": "20f01c7374cc5fefe7c196cbb043034db3eeef6a97b2d619d81e13b88d1cb647",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194247196758-73eb7442.json",
+          "sha256": "9d3017bcda207ba4f7523653443baa4d5588d1a634c526801288ff37f0df2e9d",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194249031091-d6a58c85.json",
+          "sha256": "1d38a4cf1033b563017dcd0af5d8930d00d4b3d5b58b6189e98947aee62ae3cc",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194258412535-c0866061.json",
+          "sha256": "71f846fcec50ba8967d3f43761ff76376b90ef45038872b45fa5f19a2ea3c2c8",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case2/194307051544-496208fb.json",
+          "sha256": "3193b55341f494a6d10cff94d6333475de081f9393fb6208ac2f0eebff6f179b",
+          "command": "state",
+          "returnCode": 0
+        }
+      ]
+    },
+    {
+      "case": "case3",
+      "rawResultPrivatePath": "case3-result.json",
+      "rawResultSha256": "78399a336296c60481b16fd20a12ab4c2524d4f88d61d92cb621f475a1b1ab66",
+      "recordedCalls": 22,
+      "successfulCalls": 21,
+      "commands": {
+        "state": 3,
+        "search": 4,
+        "static": 5,
+        "connections": 3,
+        "action": 2,
+        "sources": 1,
+        "context": 4
+      },
+      "errors": [
+        {
+          "command": "search",
+          "returnCode": 1,
+          "qualification": "Search limit 40 was rejected by the 1–30 contract; a later valid request succeeded."
+        }
+      ],
+      "mutations": [
+        {
+          "command": "action",
+          "expectedRevision": 12,
+          "acceptedRevision": 13,
+          "stateId": "state-b3ac469748a26c2b",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q025-candidate-question:81aa3e6e98bedb1c9b443b59"
+          },
+          "observerDomStateId": "state-b3ac469748a26c2b",
+          "browserAcknowledgedCurrent": true
+        },
+        {
+          "command": "action",
+          "expectedRevision": 13,
+          "acceptedRevision": 14,
+          "stateId": "state-6e869746ce53eaf2",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "q025-candidate-question:77971b65c8e87c3c7e4b0e48"
+          },
+          "observerDomStateId": "state-6e869746ce53eaf2",
+          "browserAcknowledgedCurrent": true
+        }
+      ],
+      "processQualification": null,
+      "receipts": [
+        {
+          "privateReceipt": "agent-receipts/case3/194430214877-0f2aba80.json",
+          "sha256": "b623ccbe64658c7505e95aac5b43fd497978f37430def31de4f4c419d4ba2f5d",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194433806120-a7e50886.json",
+          "sha256": "f899a47bcfef1540871777006cbec96c234a4e87c1b1de4d014f395e4c9e353f",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194444517453-602e3cec.json",
+          "sha256": "3a9e90e7a3d7e241273b9563b5ab0808fdd32ac60038383e27a78b07a40b6cc0",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194451993861-62b2b45a.json",
+          "sha256": "e4455f73d8019b8c76a949583ebf7dd10ac96bd202073e896b5a1bd07326291b",
+          "command": "search",
+          "returnCode": 1
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194506027219-b66fa8e4.json",
+          "sha256": "141f09da9fd0c96246f5003e58a2aa91049b012ef99779daf5b728bbaa01357b",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194508625848-7ff192c7.json",
+          "sha256": "a806dbe2e12e2c1dc1390ae0ca98409c624ee46d50c3e0541e525ec3f6631442",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194517547767-89881119.json",
+          "sha256": "c88c042f278cbc074c15d316f579f35234a3a741b6a19e64d2d46fe0cac640f3",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194517820161-f2b4fa52.json",
+          "sha256": "3d5c3ad952b695503dc9b7e43b3be71c71981f2c29711b2ed7d4c46bb8bb1e5c",
+          "command": "connections",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194531599890-51745496.json",
+          "sha256": "a6134d17c02ae0a2e293a4fe21d39bc64cf413d3b4efd665ea8507f3c8b6667c",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194533407721-922d40d5.json",
+          "sha256": "cf7d71514b152dae90c670ed68496490dacbab64325367f528e24bab561e29a4",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194544579214-f31d3c98.json",
+          "sha256": "807faa76b226a5319c9d76829d847770942f6bf9bf2d962225e1723ac9b05afc",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194544598416-bd29b123.json",
+          "sha256": "d72d189d9373839badb9ed7c7a20c788b382f6df3a9e96cfa8e4a23f1d144a4c",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194544803752-6f2f73b3.json",
+          "sha256": "1d46087187d7fa8158a569924254867d76e04d321b8e2c4ee226c4142051dbfb",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194556482545-e0c8e6c1.json",
+          "sha256": "b7bc8d052d74ecdee1a163905dc208cf8ad060b771ba615e701e5276df77e1f3",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194557141140-a39a8719.json",
+          "sha256": "7ef8708281bd445beb765477849a5160b3828b196a9b656cbad31f59906eaf00",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194557141140-f5d322a5.json",
+          "sha256": "cb42e1585affa65da8fa3557cb535333c3ad0b1ff3f7df3f39f5e8ed2707387a",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194609815214-55491c08.json",
+          "sha256": "c9bea4bb692f3ed105e5494558f9e6601814a8e346049774a9f162623d6bf399",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194609871164-ca99c3ae.json",
+          "sha256": "6fde325a10fc39a640ba962ebcc74cb4f255a99cee34fe00a5aa3a4812f5cf85",
+          "command": "connections",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194627740742-b1f88f7c.json",
+          "sha256": "8568737f8a2099c31258f23419eebae94df63b406328b1fae32a90a882a39c61",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194630309780-f1f21227.json",
+          "sha256": "90b17205b9ab18391bbdd1d34b28cc7796569f435d34b0802a891eaddf088521",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194647999948-b9f2df48.json",
+          "sha256": "33d8ca6b3256f50e5c33d432fb4067926e23776756b5e8ca12593f69c2a4f17c",
+          "command": "connections",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case3/194647999949-b7610da9.json",
+          "sha256": "6ffabf740810936ec00840722c98a17f0b507ab918ee4bbcee6e69fe1ec8a5bb",
+          "command": "context",
+          "returnCode": 0
+        }
+      ]
+    },
+    {
+      "case": "case4",
+      "rawResultPrivatePath": "case4-result.json",
+      "rawResultSha256": "b0813e72491a6d2534de9e5be92414398fba33f4fff0eaff36f2d954896f1558",
+      "recordedCalls": 22,
+      "successfulCalls": 22,
+      "commands": {
+        "state": 2,
+        "search": 5,
+        "connections": 2,
+        "sources": 7,
+        "static": 3,
+        "context": 2,
+        "action": 1
+      },
+      "errors": [],
+      "mutations": [
+        {
+          "command": "action",
+          "expectedRevision": 15,
+          "acceptedRevision": 16,
+          "stateId": "state-56885c01b1492b6d",
+          "selector": {
+            "kind": "atlas-destination",
+            "atlasId": "q025-approved-organization-candidate",
+            "atlasVersion": "2026-11-17-post-test-accounted-v1",
+            "destinationId": "source-question:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15"
+          },
+          "observerDomStateId": "state-56885c01b1492b6d",
+          "browserAcknowledgedCurrent": true
+        }
+      ],
+      "processQualification": "Five lexical searches exceeded the suggested single follow-up search; repeated bounded reads were also used after truncated output. All 22 calls retained; no blind rerun.",
+      "receipts": [
+        {
+          "privateReceipt": "agent-receipts/case4/194926917800-71e77619.json",
+          "sha256": "64206697f9118c739bdb9bbc172fca8a0a14ae680975f28d68245d689ad253c2",
+          "command": "state",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/194934174601-e2bc0d67.json",
+          "sha256": "baa16cc2ce5e92e6b1d4cceaf3fac4deabaf202457148dee7bb02f17969f0bf8",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/194939985544-26a581f7.json",
+          "sha256": "ece31aee0f29a7f152004d47f4fb93200e885ee9ab5f3352e37a5c5bf5d7de78",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/194950650148-50224375.json",
+          "sha256": "7fec08230f2c0f56c6c8683aa34c0c4d0bc3aa25d33903d1f77fe8c69452ceb6",
+          "command": "connections",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/194950650159-2af64bcf.json",
+          "sha256": "63fb551205d845e467d7a13dbb6c2297773c47c752fdcb4e9a899104364ad727",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195006564034-519a17aa.json",
+          "sha256": "33f2ec8c1896dd6b14ca4621195fe76513186d50ea7bd7d6ca8671c8f3df1c8f",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195006853220-a26285b2.json",
+          "sha256": "da3ac85bf3ed161f17a5578e6fa0366c080e90b9e8b44084448fc736eed0bb25",
+          "command": "connections",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195022367158-75c6b273.json",
+          "sha256": "748656efa63c36b41396c16680d75ffed521fc5a5993ac3c426eca9925621a49",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195041814134-7aa3e8c1.json",
+          "sha256": "fe80053dba24debb51a757f08268cd018ac3c282b4850687811312ef7833180f",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195052163542-cb21a944.json",
+          "sha256": "087649f4fb83c2751b653b094382c05acfff86944da1de73676182398d46d079",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195106512801-a80ef39f.json",
+          "sha256": "9d08fe1a5668a38149fe48dbabe7813b55645eea695efcb01afbaeea396d8b56",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195124495901-a59f5240.json",
+          "sha256": "55e219c1e285938cec0a6117efe446b0ddd1a0bda4a137d9cfb8e9e065f51593",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195138948154-66349e81.json",
+          "sha256": "85cc14c7f9608957fd4dcb6c0d0af6c1d377c806e718a3608cc46910685ab9e7",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195153285510-4b7acbd1.json",
+          "sha256": "e3392d28db58a4265e54316ad5e38e4b4c6575036f4006d252c805de0a6a451d",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195209522033-467b9cdf.json",
+          "sha256": "df4a54a8f09a3585e4dcc52880c7b4ac7534ebed00ab5a1d1e14fd2dccd28a7b",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195224178771-38b10cf8.json",
+          "sha256": "a3a5a926ec02c9cb37264c37387b840b5a53a618e0986ee7eeeba9fe8bd6b3ca",
+          "command": "search",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195233908954-d0c8283c.json",
+          "sha256": "a51ee509e334389c0687edf548c0b82c7867e3704b933e693b802508a974cd14",
+          "command": "static",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195234197294-ac9da5ba.json",
+          "sha256": "43fd7f2cb86f9bcad5fa6dbb74b0d7040ce7de4cb52e3b5c41da44a06789a9a0",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195300051122-763434c0.json",
+          "sha256": "5b0fc10a99bca0d0ccde7ec2760c846f4873eaa0ac02c5f81cc0bbf8c88d9f72",
+          "command": "context",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195300052144-39861d84.json",
+          "sha256": "4f5f01baeaa6a1930cf66c33c2d9bd3a14055481bff9db724599d792fc7f86dc",
+          "command": "sources",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195310611298-4103c214.json",
+          "sha256": "4216f0ad3fd06cbd375928d8a471071b8a9d98748cd8c7776568fcc6c717b9de",
+          "command": "action",
+          "returnCode": 0
+        },
+        {
+          "privateReceipt": "agent-receipts/case4/195326584219-994c0611.json",
+          "sha256": "146483af6a42d8cbee20ef904b4267ee328aa8b507be17a4ab3e734c739b2db5",
+          "command": "state",
+          "returnCode": 0
+        }
+      ]
+    }
+  ],
+  "coordinatorCalls": [
+    {
+      "privateReceipt": "agent-receipts/coordinator-case2-initialize/193909274179-55b3e4c7.json",
+      "sha256": "1892fc46dd0f906233ba33dd3ff9c4a74b52e1bb0df959dbbe2d67ced5505057",
+      "command": "state",
+      "returnCode": 0
+    },
+    {
+      "privateReceipt": "agent-receipts/coordinator-case2-initialize/193913053710-3a88a686.json",
+      "sha256": "da8f0c2a5b2d8a2758ce83316716efadc7922ed93acee3b24718d8045539a3c4",
+      "command": "export",
+      "returnCode": 0
+    },
+    {
+      "privateReceipt": "agent-receipts/coordinator-case2-initialize/193915619927-89bee509.json",
+      "sha256": "cbb455bab99496abb66ee7909c619e1165e1e7be81a405fa647663e6f6f1ebf8",
+      "command": "action",
+      "returnCode": 0
+    },
+    {
+      "privateReceipt": "agent-receipts/coordinator-case2-initialize/193917430539-d11dc50b.json",
+      "sha256": "70b0a823c5dd63695b5f0a545cb09963ad25f0c672169154e1c322a9373d7e65",
+      "command": "state",
+      "returnCode": 0
+    },
+    {
+      "privateReceipt": "agent-receipts/coordinator-case2-initialize/193923176947-0f76cfc9.json",
+      "sha256": "36dbf5fdb16c193fec6f2a7361be972a75d35a638e3ab185dbfedd05cf6f86e8",
+      "command": "action",
+      "returnCode": 0
+    },
+    {
+      "privateReceipt": "agent-receipts/coordinator-case4-initialize/194846698503-268be582.json",
+      "sha256": "5dd4ad53d4b93107a35811dc5375076f4ba0726bf13652a6d33b3947ffb56207",
+      "command": "state",
+      "returnCode": 0
+    },
+    {
+      "privateReceipt": "agent-receipts/coordinator-case4-initialize/194848693438-19d49103.json",
+      "sha256": "3702f8b4ea67a1dbfb8d28c9e1bbcb70ac25916493c0ca3511a9effb1ec3b738",
+      "command": "action",
+      "returnCode": 0
+    }
+  ],
+  "observer": {
+    "rawCapturedReportSha256": "e7e395ee45d8c349f5a86f52927e7e374e24c08e25911761b3e9a27064c4cb25",
+    "report": "observer-report.json",
+    "events": 19,
+    "distinctBridgeRevisions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "allLatestRevisionStateDomAndAcknowledgementsMatch": true,
+    "transientFramesRetained": true,
+    "pageErrors": [],
+    "stopReason": "root stop marker"
+  },
+  "redaction": "Public derivative contains receipt hashes, command names/counts, return codes, exact selectors, revisions and rendered acknowledgements. Query prose, full tool/source output, private connection paths and configuration are omitted. Original private result/receipt bytes are unchanged. Observer redacts ephemeral token at capture; screenshots contain scientific UI, no work notes.",
+  "limits": "Selected live cases do not establish general scientific recall or overturn the earlier 72-query diagnostic. Display-only fixes after a17 were verified separately. Public-origin default/consent and fresh-agent proof remain pending."
+}
