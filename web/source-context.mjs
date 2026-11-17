@@ -1,5 +1,6 @@
+import {compareSourceRelations} from '/lib/protocol/context-page.mjs';
 const el=(tag,value)=>{const node=document.createElement(tag);if(value!==undefined)node.textContent=value;return node;};
-const scopes={direct_record_relation:'Direct recorded source relation',shared_extraction_window_context:'Shared extraction window — applicability is not established',same_paper_context:'Same-paper context — applicability is not established'};
+const scopes={direct_record_relation:'Exact source anchors and incident relations',shared_extraction_window_context:'Shared extraction window — applicability is not established',same_paper_context:'Same-paper context — applicability is not established'};
 
 // Detail records are built progressively, including their provenance. A large
 // paper shard may be complete without putting every object into the DOM at once.
@@ -18,19 +19,19 @@ export function sourceContextDisclosure(load) {
     const body=el('div');body.append(el('p','Loading pinned source context…'));details.append(body);
     try{
       const context=await load();if(!details.isConnected)return;body.replaceChildren();
-      body.append(el('p',context.notice));
+      body.append(el('p',context.notice),el('p','An exact attachment identifies a source object or incident edge; it does not make every attached record a premise or result of this question.'));
       if(context.coverage)body.append(el('p',typeof context.coverage.description==='string'?context.coverage.description:JSON.stringify(context.coverage)));
       if(context.availability!=='available'){body.append(el('p','No context was exported for this source in this atlas version. Read the paper for its assumptions and methods.'));return;}
       const objects=new Map(context.sourceObjects.map(item=>[item.id,item])),relations=new Map(context.sourceRelations.map(item=>[item.id,item]));
       for(const attachment of context.sourceAttachments){
         const group=el('section');group.append(el('h4',scopes[attachment.scope]||attachment.scope));
         if(attachment.warning)group.append(el('p',attachment.warning));
-        const objectRows=(attachment.objectIds||[]).map(id=>objects.get(id)).filter(Boolean);
+        const anchors=new Set(attachment.anchorObjectIds||[]),objectRows=(attachment.objectIds||[]).map(id=>objects.get(id)).filter(Boolean).sort((a,b)=>Number(!anchors.has(a.id))-Number(!anchors.has(b.id))||Number(a.kind==='paper')-Number(b.kind==='paper')||a.id.localeCompare(b.id));
         group.append(el('p',`${objectRows.length} source objects · ${(attachment.relationIds||[]).length} recorded relations`));
         const objectList=el('div');progressive(objectList,objectRows,object=>{const record=el('details');record.append(el('summary',`${object.kind} · ${object.paperId}`),el('p',object.text));provenance(record,{id:object.id,evidenceScope:object.evidenceScope,evidenceRefs:object.evidenceRefs,provenance:object.provenance});return record;},'source objects');group.append(objectList);
-        const relationList=el('div');progressive(relationList,(attachment.relationIds||[]).map(id=>relations.get(id)).filter(Boolean),relation=>{
+        const relationList=el('div');progressive(relationList,(attachment.relationIds||[]).map(id=>relations.get(id)).filter(Boolean).sort(compareSourceRelations),relation=>{
           const record=el('details'),source=objects.get(relation.source),target=objects.get(relation.target);record.append(el('summary',`${relation.type.replaceAll('_',' ')} · ${relation.semanticStatus.replaceAll('_',' ')}`),el('p',`${source?.kind||'Object'} ${source?.paperId||relation.source} → ${target?.kind||'object'} ${target?.paperId||relation.target}`));
-          if(relation.statement)record.append(el('p',relation.statement));if(relation.readerNote)record.append(el('p',relation.readerNote));
+          const statement=relation.statement||relation.provenance?.attributes?.scope;if(statement)record.append(el('p',typeof statement==='string'?statement:JSON.stringify(statement)));if(relation.readerNote)record.append(el('p',relation.readerNote));
           if(relation.premises?.length){record.append(el('h4','Premises'));const list=el('ul');for(const premise of relation.premises)list.append(el('li',typeof premise==='string'?premise:JSON.stringify(premise)));record.append(list);}
           record.append(el('p','This relation concerns these source objects under their recorded scope. It is not an implication between their entire topics.'));provenance(record,relation);return record;
         },'source relations');group.append(relationList);body.append(group);

@@ -5,6 +5,7 @@ import { placeChartLabel } from '/chart-labels.mjs';
 import {loadAtlas,createAtlasNavigator,createAtlasSourceReader,createAtlasContextReader,atlasAddress} from '/lib/geometry/prepared-atlas.mjs';
 import {renderAtlasPanel} from '/atlas-panel.mjs';
 import {sourceContextDisclosure} from '/source-context.mjs';
+import {pageSourceContext} from '/lib/protocol/context-page.mjs';
 
 const $ = id => document.getElementById(id);
 const initialCorpusScope = $('corpus-scope').textContent;
@@ -269,7 +270,8 @@ function render() {
   document.querySelector('.reading-pane').hidden = empty;
   document.querySelector('.navigator-note').hidden = empty || !canAttemptContinuation();
   $('current-context').hidden = empty;
-  $('current-question').textContent = (view.atlas ? view.atlas.destination.shortTitle || displayQuestion : displayExcerpt(displayQuestion,90)) || 'Start a new path';
+  $('atlas-lookup-note').hidden = !state.selector;
+  $('current-question').textContent = (view.atlas ? view.atlas.destination.shortTitle || view.atlas.destination.title || displayQuestion : displayExcerpt(displayQuestion,90)) || 'Start a new path';
   $('full-question-details').hidden = !displayQuestion || $('current-question').textContent === displayQuestion;
   $('full-question-text').textContent = displayQuestion;
   const normalizedQuestion = displayQuestion.trim().replace(/\s+/g,' ');
@@ -292,12 +294,12 @@ function render() {
   });
   $('corpus-scope').textContent = activeCapsule.builder.id === 'browser-empty' ? initialCorpusScope : `${(scope.paperCount || 0).toLocaleString()} papers · Swampland-centered collection · ${scope.earliestYear || '?'}–${scope.latestYear || '?'} · Snapshot ${view.diagnostics?.snapshotDate || 'dated in manifest'}. Recent means recent within this collection.`;
   const paperCount = view.diagnostics?.distinctPapers ?? new Set(view.nodes.map(n => n.paperId).filter(Boolean)).size;
-  $('evidence-count').textContent = String(activeCapsule.builder.id === NATIVE_BUILDER ? paperCount : view.nodes.length);
+  $('evidence-count').textContent = view.atlas ? view.atlas.destination.metadataOnly ? `${view.nodes.length} references` : `${paperCount} papers` : String(activeCapsule.builder.id === NATIVE_BUILDER ? paperCount : view.nodes.length);
   const authored = !builtIn(activeCapsule);
   $('snapshot-notice').hidden = !authored || activeCapsule.builder.id === 'browser-empty';
   $('snapshot-notice').textContent = authored ? `Supplied view · ${activeCapsule.builder.id} ${activeCapsule.builder.version}. Labels and relationships are author interpretations, not verified corpus results. ${activeCapsule.continuation.description}` : '';
   if (authored && activeCapsule.builder.id !== 'browser-empty') { $('current-context').textContent = activeCapsule.context.summary || 'The supplied scientific context and source groups are preserved in this view.'; $('corpus-scope').textContent = `Supplied corpus: ${view.corpusId}`; }
-  if(view.atlas){$('current-context').textContent=`${view.atlas.destination.metadataOnly?'Field landmark':labels[state.intent]} · ${labels[state.lens]} · ${view.atlas.membershipCount.toLocaleString()} sources`;$('corpus-scope').textContent=`${scope.description || 'Physics atlas'} · ${view.atlas.atlasVersion}. ${view.atlas.destination.metadataOnly?'Vocabulary landmark; no detailed paper coverage claimed.':'Sources belong to the dated frozen collection.'}`;}
+  if(view.atlas){$('current-context').textContent=`${view.atlas.destination.metadataOnly?'Field landmark':labels[state.intent]} · ${labels[state.lens]} · ${view.atlas.membershipCount.toLocaleString()} listed descriptions`;$('corpus-scope').textContent=`${scope.description || 'Physics atlas'} · ${view.atlas.atlasVersion}. ${view.atlas.destination.metadataOnly?'Vocabulary landmark; no detailed paper coverage claimed.':'Sources belong to the dated frozen collection.'}`;}
   $('view-geometry').disabled = !view.chart;
   $('export').disabled = !activeCapsule.snapshot.session;
   $('share').disabled = authored || !activeCapsule.snapshot.session;
@@ -347,7 +349,7 @@ function renderColumns() {
         button.append(el('span', 'direction-number', String(directionIndex + 1).padStart(2, '0')));
         const content = el('span', 'direction-content'); content.append(el('h3', '', label));
         if(info.sourceTitle && !fullLabel.includes(info.sourceTitle))content.append(el('span','direction-source direction-source-title',displayExcerpt(info.sourceTitle,72)));
-        const meta=el('span','direction-meta');meta.append(el('span','direction-kind',info.kind),document.createTextNode(` · ${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} sources`));
+        const meta=el('span','direction-meta');meta.append(el('span','direction-kind',info.kind),document.createTextNode(` · ${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} ${direction.selector?'listed descriptions':'sources'}`));
         if(followed)meta.append(el('span','direction-state','Followed'));
         if(revisit>=0)meta.append(el('span','direction-state',`Return to step ${stepNumber(revisit)}`));
         content.append(meta);
@@ -509,7 +511,7 @@ function renderEvidence() {
   const direction = view.directions.find(item => item.id === selectedDirectionId);
   if (direction) { const ids = new Set(direction.memberIds || direction.evidenceIds); nodes = nodes.filter(node => ids.has(node.id)); }
   $('clear-evidence').hidden = !direction;
-  $('evidence-description').textContent = direction ? `Sources behind: ${direction.label}` : view.atlas ? `${view.atlas.matchingSourceCount} sources match this selection. Displayed excerpts are a sample; supporting context evidence is labeled separately.` : 'Read the extracted descriptions, then check the original papers.';
+  $('evidence-description').textContent = direction ? `Sources behind: ${direction.label}` : view.atlas ? `${view.atlas.matchingSourceCount} primary descriptions${view.atlas.matchingContextCount?` and ${view.atlas.matchingContextCount} contextual method descriptions`:''} match this selection. This view shows ${nodes.length} descriptions across ${new Set(nodes.map(n=>n.paperId).filter(Boolean)).size} papers; supporting context is labeled separately.` : 'Read the extracted descriptions, then check the original papers.';
   if (selectedId) nodes.sort((a, b) => Number(b.id === selectedId) - Number(a.id === selectedId));
   const papers = view.atlas ? [...Map.groupBy(nodes,node=>node.paperId || node.id).values()] : nodes.map(node=>[node]);
   const shown = allEvidence ? papers : papers.slice(0, 7);
@@ -534,7 +536,7 @@ function renderEvidence() {
     const focus = el('button', '', 'Explore this source'); focus.type = 'button'; focus.disabled = !canAttemptContinuation() || activeCapsule.builder.id !== NATIVE_BUILDER; focus.addEventListener('click', () => action({ type: 'refine', query: String(evidence.text || node.label).slice(0, 2000), focusIds: [node.id] })); actions.append(focus); card.append(actions); return card;
   }
   for(const group of shown){
-    group.sort((a,b)=>Number(b.id===selectedId)-Number(a.id===selectedId)||Number(a.atlasRole==='context-evidence')-Number(b.atlasRole==='context-evidence')||Number(a.lens==='methods')-Number(b.lens==='methods'));
+    group.sort((a,b)=>Number(b.id===selectedId)-Number(a.id===selectedId)||Number(a.atlasRole==='context-evidence')-Number(b.atlasRole==='context-evidence')||Number(Boolean(b.atlasContextMatchesFilters))-Number(Boolean(a.atlasContextMatchesFilters))||Number(a.lens==='methods')-Number(b.lens==='methods'));
     const paper=el('section','source-paper');paper.dataset.paperId=group[0].paperId||group[0].id;paper.append(sourceCard(group[0]));
     if(group.length>1){const extra=el('details','source-facets');extra.append(el('summary','',`${group.length-1} more extracted descriptions from this paper`));let populated=false;extra.addEventListener('toggle',()=>{if(!extra.open||populated)return;populated=true;for(const node of group.slice(1))extra.append(sourceCard(node,{repeatTitle:true}));});paper.append(extra);}
     $('evidence').append(paper);
@@ -783,7 +785,7 @@ window.eigenquestionsNavigator = Object.freeze({
   describe:async selector => {const prepared=await ensureAtlas(selector);return prepared.navigator.destination(selector.destinationId);},
   sources:async (selector,{offset=0,limit=20,...filters}={}) => {const prepared=await ensureAtlas(selector),page=prepared.navigator.sources(selector.destinationId,{offset,limit,...filters});return {...page,items:await prepared.readSources(page.items)};},
   connections:async selector => {const prepared=await ensureAtlas(selector);return prepared.navigator.connections(selector.destinationId);},
-  context:async (unitId,selector=currentState(session)?.selector) => {const prepared=await ensureAtlas(selector);return prepared.readContext(unitId);},
+  context:async (unitId,selector=currentState(session)?.selector,options={}) => {const prepared=await ensureAtlas(selector);return pageSourceContext(await prepared.readContext(unitId),options);},
   evidence:async ids => {if(!Array.isArray(ids)||ids.length>100)throw new Error('Supply at most 100 evidence IDs.');const found=ids.map(id=>activeCapsule?.snapshot.view.nodes.find(node=>node.id===id));if(found.every(Boolean))return structuredClone(found);await ensureWorker();return callWorker('evidence',{ids});},
   apply:(capsule,{expectedRevision}={}) => {assertRevision(expectedRevision);return acceptCapsule(capsule,{expectedRevision});},
   navigate:async (payload,{expectedRevision}={}) => {assertRevision(expectedRevision);const result=await action(payload,{explicitContinuation:true});if(result?.error)throw new Error(result.error);if(!result)throw new Error('Navigation was superseded. Read current state.');return result;},

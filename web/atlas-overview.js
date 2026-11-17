@@ -1,36 +1,90 @@
 import {loadAtlas,createAtlasNavigator,atlasAddress} from '/lib/geometry/prepared-atlas.mjs';
-const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg',el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;},svg=(tag,attrs,text)=>{const node=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))node.setAttribute(k,v);if(text!==undefined)node.textContent=text;return node;};
-let loaded,navigator,selectedId,points=new Map(),camera={x:0,y:0,width:100,height:100},baseCamera,request=0;
+import {placeChartLabel} from '/chart-labels.mjs';
+const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
+const el=(tag,text)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;};
+const svg=(tag,attrs,text)=>{const node=document.createElementNS(NS,tag);for(const[k,v]of Object.entries(attrs))node.setAttribute(k,v);if(text!==undefined)node.textContent=text;return node;};
+let loaded,navigator,records=new Map(),selectedId,classificationAnchor=null,space='classification',points=new Map(),visibleIds=[],camera={x:0,y:0,width:100,height:100},baseCamera,request=0;
 const map=$('atlas-map');
-function viewBox(){map.setAttribute('viewBox',`${camera.x-camera.width/2} ${camera.y-camera.height/2} ${camera.width} ${camera.height}`);}
-function fit(ids=[...points.keys()]){const values=ids.map(id=>points.get(id)).filter(Boolean);if(!values.length)return;const xs=values.map(p=>p.x),ys=values.map(p=>p.y),width=Math.max(.01,Math.max(...xs)-Math.min(...xs)),height=Math.max(.01,Math.max(...ys)-Math.min(...ys)),aspect=map.clientWidth/Math.max(1,map.clientHeight);camera={x:(Math.max(...xs)+Math.min(...xs))/2,y:(Math.max(...ys)+Math.min(...ys))/2,width:Math.max(width,height*aspect)*1.25,height:Math.max(height,width/aspect)*1.25};viewBox();}
+const layout=()=>space==='classification'?loaded.catalog.orientation:loaded.catalog.overview;
+const selector=id=>({kind:'atlas-destination',atlasId:loaded.manifest.atlasId,atlasVersion:loaded.manifest.atlasVersion,destinationId:id});
+function relations(id){const items=[];let offset=0,total;do{const page=navigator.connections(id,{offset,limit:100});items.push(...page.items);total=page.total;offset+=page.items.length;}while(offset<total);return items;}
+function children(id){return space==='classification'?(layout()?.edges||[]).filter(e=>e.source===id).map(e=>e.target):relations(id).filter(r=>r.navigationKind==='narrower').map(r=>r.destinationId);}
+function parents(id){return space==='classification'?(layout()?.edges||[]).filter(e=>e.target===id).map(e=>e.source):relations(id).filter(r=>r.navigationKind==='broader').map(r=>r.destinationId);}
+function roots(){const values=[...points.values()];if(!values.length)return[];const minimum=Math.min(...values.map(p=>p.depth??0));return values.filter(p=>(p.depth??0)===minimum).map(p=>p.destinationId);}
+function labelPositions(){
+  if(!points.size||!map.clientWidth)return;
+  const scale=camera.width/map.clientWidth,minX=camera.x-camera.width/2,minY=camera.y-camera.height/2,markers=visibleIds.map(id=>points.get(id)).filter(Boolean).map(p=>({x:(p.x-minX)/scale,y:(p.y-minY)/scale,radius:14})),boxes=[];
+  for(const group of map.querySelectorAll('.atlas-map-node')){
+    const p=points.get(group.dataset.destinationId),label=group.querySelector('.atlas-map-label'),number=group.querySelector('.atlas-map-number');
+    group.querySelector('.atlas-map-dot').setAttribute('r',6*scale);group.querySelector('.atlas-map-hit').setAttribute('r',22*scale);
+    number.setAttribute('font-size',11*scale);number.setAttribute('y',p.y+3.5*scale);label.setAttribute('font-size',13*scale);label.removeAttribute('transform');label.style.display='block';
+    const size=label.getBBox(),anchor={x:(p.x-minX)/scale,y:(p.y-minY)/scale,radius:14};
+    const placed=placeChartLabel({anchor,width:size.width/scale+6,height:size.height/scale+6,bounds:{width:map.clientWidth,height:map.clientHeight},circles:markers,labels:boxes});
+    if(placed){label.setAttribute('transform',`translate(${minX+(placed.x+3)*scale-size.x} ${minY+(placed.y+3)*scale-size.y})`);boxes.push(placed);}else label.style.display='none';
+  }
+}
+function viewBox(){map.setAttribute('viewBox',`${camera.x-camera.width/2} ${camera.y-camera.height/2} ${camera.width} ${camera.height}`);labelPositions();}
+function fit(){
+  const values=visibleIds.map(id=>points.get(id)).filter(Boolean);if(!values.length)return;
+  const xs=values.map(p=>p.x),ys=values.map(p=>p.y),width=Math.max(.01,Math.max(...xs)-Math.min(...xs)),height=Math.max(.01,Math.max(...ys)-Math.min(...ys)),aspect=map.clientWidth/Math.max(1,map.clientHeight);
+  camera={x:(Math.max(...xs)+Math.min(...xs))/2,y:(Math.max(...ys)+Math.min(...ys))/2,width:Math.max(width,height*aspect)*1.35,height:Math.max(height,width/aspect)*1.35};baseCamera={...camera};viewBox();
+}
 function zoom(factor){if(!baseCamera)return;const width=Math.min(baseCamera.width*3,Math.max(baseCamera.width/80,camera.width*factor));camera.height*=width/camera.width;camera.width=width;viewBox();}
-function selector(id){return {kind:'atlas-destination',atlasId:loaded.manifest.atlasId,atlasVersion:loaded.manifest.atlasVersion,destinationId:id};}
-function select(id,{focus=false}={}){
-  const record=navigator.destination(id);selectedId=id;const links=navigator.connections(id).items,children=links.filter(r=>r.navigationKind==='narrower');
-  const panel=$('atlas-selected');panel.replaceChildren(el('h2',record.title),el('p',record.summary));if(record.metadataOnly)panel.append(el('p','Vocabulary landmark: detailed literature navigation has not yet been prepared for this field.'));
-  const open=el('a','Explore this destination →');open.href=atlasAddress(navigator.createSession({selector:selector(id)}).states[0],location.origin);panel.append(open);
-  panel.append(el('h3',children.length?'Narrower questions and regions':'Recorded connections'));
-  for(const connection of [...children,...links.filter(r=>r.navigationKind!=='narrower')]){const button=el('button',`${connection.title} · ${connection.navigationKind.replaceAll('_',' ')}`);button.type='button';button.addEventListener('click',()=>select(connection.destinationId,{focus:true}));panel.append(button);}
-  if(!links.length)panel.append(el('p',record.metadataOnly?'This field is awaiting detailed source-backed preparation.':'This record has no further prepared connection. Its sources remain available in the text explorer.'));
-  for(const node of map.querySelectorAll('.atlas-map-node')){const active=node.dataset.destinationId===id;node.setAttribute('aria-current',String(active));node.querySelector('circle').setAttribute('fill',active?'#a52929':node.dataset.kind==='question'?'#754c4c':'#3f607c');}
-  if(focus&&points.has(id))fit([id,...children.map(r=>r.destinationId)]);
-  const hash=new URLSearchParams({atlas:loaded.manifest.atlasId,version:loaded.manifest.atlasVersion,destination:id});history.replaceState(null,'',`#${hash}`);
-}
+function portalFor(id){return loaded.catalog.orientation?.portals?.filter(p=>p.destinationId===id)||[];}
 function draw(){
-  map.replaceChildren();points=new Map();const overview=loaded.catalog.overview;
-  if(!overview){map.style.display='none';$('atlas-map-caption').textContent='This atlas has no geometric chart yet. Use the recorded topic and connection lists; no coordinates have been invented.';$('atlas-map-provenance').textContent=JSON.stringify({coverage:loaded.manifest.scope},null,2);return;}map.style.display='block';
-  if(overview.kind!=='diffusion_chart'||!Array.isArray(overview.nodes)||overview.nodes.length>1500)throw new Error('Unsupported or oversized prepared overview. Use the static catalog.');
-  const records=new Map(loaded.catalog.destinations.map(d=>[d.id,d]));
-  for(const point of overview.nodes){if(!records.has(point.destinationId)||!Number.isFinite(point.x)||!Number.isFinite(point.y))throw new Error('Invalid prepared overview identity or coordinate');points.set(point.destinationId,point);}
-  fit();baseCamera={...camera};const unit=baseCamera.width/1000;
-  for(const edge of overview.edges||[]){if(edge.kind!=='geometric_affinity')throw new Error('Overview chart edges must declare geometric affinity');const a=points.get(edge.source),b=points.get(edge.target);if(a&&b)map.append(svg('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'atlas-map-edge'}));}
-  for(const point of points.values()){const record=records.get(point.destinationId),group=svg('g',{class:'atlas-map-node',tabindex:0,role:'button','aria-label':record.title});group.dataset.destinationId=point.destinationId;group.dataset.kind=record.kind;group.append(svg('circle',{cx:point.x,cy:point.y,r:4.5*unit,fill:record.kind==='question'?'#754c4c':'#3f607c'}),svg('text',{x:point.x+7*unit,y:point.y+3.5*unit,'font-size':11*unit,fill:'#292929'},record.title.length>52?record.title.slice(0,49)+'…':record.title));group.addEventListener('click',()=>select(point.destinationId,{focus:true}));group.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();select(point.destinationId,{focus:true});}});map.append(group);}
-  $('atlas-map-caption').textContent='Positions come from the recorded diffusion chart of the covered sources. Gray links are geometric affinities, not scientific implications. Metadata-only physics fields are listed separately without invented coordinates.';
-  $('atlas-map-provenance').textContent=JSON.stringify({layoutId:overview.layoutId,provenance:overview.provenance,diagnostics:overview.diagnostics,limitations:overview.limitations},null,2);
+  map.replaceChildren();const chart=layout();
+  if(!chart){visibleIds=[];map.style.display='none';$('atlas-map-caption').textContent=space==='classification'?'This release has no classification map. Recorded destinations remain readable in the list.':'This release has no detailed source chart. No coordinates have been invented.';return;}
+  map.style.display='block';const childIds=children(selectedId).filter(id=>points.has(id));
+  if(points.has(selectedId))visibleIds=[selectedId,...(childIds.length?childIds:parents(selectedId).flatMap(id=>children(id)))];else if(space==='classification'&&classificationAnchor&&points.has(classificationAnchor))visibleIds=[classificationAnchor,...children(classificationAnchor)];else visibleIds=roots();
+  if(space==='detail'&&points.has(selectedId))visibleIds.push(...relations(selectedId).filter(r=>!['broader','narrower'].includes(r.navigationKind)).map(r=>r.destinationId));
+  visibleIds=[...new Set(visibleIds)].filter(id=>points.has(id));const visible=new Set(visibleIds);
+  for(const edge of chart.edges||[]){if(!visible.has(edge.source)||!visible.has(edge.target))continue;const a=points.get(edge.source),b=points.get(edge.target);map.append(svg('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'atlas-map-edge'}));}
+  visibleIds.forEach((id,index)=>{const p=points.get(id),record=records.get(id),group=svg('g',{class:'atlas-map-node',tabindex:0,role:'button','aria-label':record.title,'aria-current':String(id===selectedId)});group.dataset.destinationId=id;
+    group.append(svg('circle',{cx:p.x,cy:p.y,r:1,fill:'transparent',class:'atlas-map-hit'}),svg('circle',{cx:p.x,cy:p.y,r:1,fill:id===selectedId?'#a52929':space==='classification'?'#5b6268':record.kind==='question'?'#754c4c':'#3f607c',class:'atlas-map-dot'}),svg('text',{x:p.x,y:p.y,'text-anchor':'middle',fill:'#fff',class:'atlas-map-number'},String(index+1)),svg('text',{x:0,y:0,fill:'#292929'},record.title.length>62?record.title.slice(0,59)+'…':record.title),svg('title',{},record.title));
+    // The final non-number text is the movable label.
+    const texts=group.querySelectorAll('text');texts[1].classList.add('atlas-map-label');
+    group.addEventListener('click',()=>select(id));group.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();select(id);}});map.append(group);
+  });
+  fit();
+  $('atlas-map-caption').textContent=space==='classification'?'Physics classification: links follow the recorded vocabulary hierarchy. Positions organize labels; distances are not physical or embedding distances. The detailed source atlas is a separate chart.':'Detailed source chart: positions use the recorded source geometry. Gray links are geometric affinities, not scientific implications. Broader classifications have a separate coordinate system.';
+  $('atlas-map-provenance').textContent=JSON.stringify({layoutId:chart.layoutId,kind:chart.kind,provenance:chart.provenance,diagnostics:chart.diagnostics,limitations:chart.limitations},null,2);
 }
-async function open(entry,destination){const ticket=++request;$('atlas-map-status').textContent='Opening the prepared atlas…';loaded=await loadAtlas(`/data/atlas/${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}`);if(ticket!==request)return;navigator=createAtlasNavigator(loaded);$('atlas-map-scope').textContent=loaded.manifest.scope.description;draw();const root=loaded.manifest.entryDestinationId,rootLinks=navigator.connections(root).items.filter(r=>r.navigationKind==='narrower');const topics=$('atlas-topics');topics.replaceChildren();for(const record of rootLinks.length?rootLinks.map(r=>navigator.destination(r.destinationId)):[navigator.destination(root)]){const li=el('li'),button=el('button',record.title+(record.metadataOnly?' · landmark':''));button.type='button';button.addEventListener('click',()=>select(record.id,{focus:true}));li.append(button);topics.append(li);}select(destination||root);$('atlas-map-status').textContent=`${loaded.catalog.destinations.length} recorded destinations · ${points.size} with chart coordinates. Coverage and scientific status remain explicit on each destination.`;}
-$('atlas-zoom-in').addEventListener('click',()=>zoom(.8));$('atlas-zoom-out').addEventListener('click',()=>zoom(1.25));$('atlas-fit').addEventListener('click',()=>fit());
+function button(label,handler){const node=el('button',label);node.type='button';node.addEventListener('click',handler);return node;}
+function select(id){
+  const record=navigator.destination(id);selectedId=id;if(space==='classification'&&points.has(id))classificationAnchor=id;const links=relations(id),childIds=children(id),panel=$('atlas-selected');panel.replaceChildren(el('h2',record.title),el('p',record.summary));
+  if(record.metadataOnly)panel.append(el('p','Classification or field landmark. This node does not claim detailed coverage of its literature.'));
+  const open=el('a','Open this destination in the text explorer →');open.href=atlasAddress(navigator.createSession({selector:selector(id)}).states[0],location.origin);panel.append(open);
+  for(const portal of portalFor(id))panel.append(button(portal.label||'Enter the detailed source atlas →',()=>portal.target==='destination'?select(portal.entryDestinationId):switchSpace('detail',portal.entryDestinationId)));
+  const related=space==='classification'?[...new Set([...childIds,...parents(id)])].map(target=>({destinationId:target,title:records.get(target)?.title||target,navigationKind:childIds.includes(target)?'narrower classification':'broader classification'})):links;
+  panel.append(el('h3',childIds.length?'More specific topics and connections':'Recorded connections'));
+  for(const relation of related)panel.append(button(`${relation.title} · ${relation.navigationKind.replaceAll('_',' ')}`,()=>select(relation.destinationId)));
+  if(!related.length)panel.append(el('p',record.metadataOnly?'Detailed source-backed navigation has not yet been prepared for this field.':'No additional recorded connection. Its source material remains available in the text explorer.'));
+  const breadcrumb=$('atlas-map-breadcrumb');breadcrumb.replaceChildren(button('All physics fields',()=>switchSpace('classification',loaded.catalog.orientation?.entryDestinationId||loaded.manifest.entryDestinationId)),el('span',` › ${space==='classification'?'Classification':'Detailed sources'} › ${record.title}`));
+  draw();renderTopics();const hash=new URLSearchParams({atlas:loaded.manifest.atlasId,version:loaded.manifest.atlasVersion,destination:id,space});history.replaceState(null,'',`#${hash}`);
+}
+function renderTopics(){
+  const host=$('atlas-topics');host.replaceChildren();$('atlas-topics-heading').textContent=space==='classification'?'Fields in this view':'Destinations in this view';
+  const ids=visibleIds.length?visibleIds:[selectedId];ids.forEach((id,index)=>{const li=el('li');li.append(button(`${index+1}. ${records.get(id)?.title||id}`,()=>select(id)));host.append(li);});
+}
+function switchSpace(next,destination){
+  space=next;classificationAnchor=null;$('atlas-space').value=space;const chart=layout();points=new Map();
+  if(chart){const expected=space==='classification'?'classification_graph':'diffusion_chart';if(chart.kind!==expected||!Array.isArray(chart.nodes)||chart.nodes.length>1500)throw new Error('Unsupported or oversized map; use the static catalog.');for(const p of chart.nodes){if(!records.has(p.destinationId)||!Number.isFinite(p.x)||!Number.isFinite(p.y))throw new Error('Invalid map destination or coordinate');points.set(p.destinationId,p);}for(const edge of chart.edges||[])if(edge.kind!==(space==='classification'?'classification':'geometric_affinity'))throw new Error('Unexpected map relation type');}
+  const fallback=space==='classification'?chart?.entryDestinationId||loaded.manifest.entryDestinationId:chart?.entryDestinationId||loaded.catalog.orientation?.portals?.find(p=>p.target==='detail')?.entryDestinationId||roots()[0]||loaded.manifest.entryDestinationId;
+  select(destination&&records.has(destination)?destination:fallback);
+}
+async function open(entry,destination,requestedSpace){
+  const ticket=++request;$('atlas-map-status').textContent='Opening the atlas…';const atlas=await loadAtlas(`/data/atlas/${encodeURIComponent(entry.atlasId)}/${encodeURIComponent(entry.atlasVersion)}`);if(ticket!==request)return;
+  loaded=atlas;navigator=createAtlasNavigator(atlas);records=new Map(atlas.catalog.destinations.map(d=>[d.id,d]));$('atlas-map-scope').textContent=atlas.manifest.scope.description;
+  switchSpace(requestedSpace|| (atlas.catalog.orientation?'classification':'detail'),destination);$('atlas-map-status').textContent=`${atlas.catalog.destinations.length} recorded destinations. Source coverage and scientific status remain explicit on every destination.`;
+}
+$('atlas-space').addEventListener('change',()=>{try{switchSpace($('atlas-space').value);}catch(error){$('atlas-map-status').textContent=error.message;}});
+$('atlas-zoom-in').addEventListener('click',()=>zoom(.8));$('atlas-zoom-out').addEventListener('click',()=>zoom(1.25));$('atlas-fit').addEventListener('click',fit);
 let drag;map.addEventListener('pointerdown',event=>{if(event.target.closest('.atlas-map-node'))return;drag={x:event.clientX,y:event.clientY,camera:{...camera}};map.setPointerCapture(event.pointerId);});map.addEventListener('pointermove',event=>{if(!drag)return;camera.x=drag.camera.x-(event.clientX-drag.x)/map.clientWidth*camera.width;camera.y=drag.camera.y-(event.clientY-drag.y)/map.clientHeight*camera.height;viewBox();});map.addEventListener('pointerup',()=>drag=null);map.addEventListener('pointercancel',()=>drag=null);map.addEventListener('wheel',event=>{event.preventDefault();zoom(event.deltaY>0?1.12:.89);},{passive:false});map.addEventListener('keydown',event=>{if(event.key==='+')zoom(.8);if(event.key==='-')zoom(1.25);if(event.key==='Home')fit();});
-$('atlas-find').addEventListener('input',()=>{if(!navigator)return;const query=$('atlas-find').value.trim();if(!query)return;const items=navigator.search(query,{limit:15}),list=$('atlas-topics');list.replaceChildren();for(const result of items){const li=el('li'),button=el('button',result.title);button.type='button';button.addEventListener('click',()=>select(result.id,{focus:true}));li.append(button);list.append(li);}});
-try{const response=await fetch('/data/atlas/index.json');if(!response.ok)throw new Error('No prepared atlas is installed in this retained release. The original source embedding map remains available.');const index=await response.json(),fragment=new URLSearchParams(location.hash.slice(1));for(const entry of index.atlases||[]){const option=el('option',entry.title);option.value=`${entry.atlasId}/${entry.atlasVersion}`;$('atlas-select').append(option);}const entry=index.atlases.find(e=>e.atlasId===fragment.get('atlas')&&e.atlasVersion===fragment.get('version'))||index.atlases[0];if(!entry)throw new Error('The prepared catalog is empty.');$('atlas-select').value=`${entry.atlasId}/${entry.atlasVersion}`;$('atlas-select').addEventListener('change',()=>{const chosen=index.atlases.find(e=>`${e.atlasId}/${e.atlasVersion}`===$('atlas-select').value);open(chosen).catch(error=>$('atlas-map-status').textContent=error.message);});await open(entry,fragment.get('destination')||undefined);}catch(error){$('atlas-map-status').textContent=error.message;$('atlas-map-scope').textContent='Prepared atlas unavailable.';}
+window.addEventListener('resize',()=>{if(loaded)fit();});
+$('atlas-find').addEventListener('input',()=>{if(!navigator)return;const query=$('atlas-find').value.trim();if(!query){renderTopics();return;}const list=$('atlas-topics');list.replaceChildren();for(const result of navigator.search(query,{limit:15})){const li=el('li');li.append(button(result.title,()=>select(result.id)));list.append(li);}});
+try{
+  const response=await fetch('/data/atlas/index.json');if(!response.ok)throw new Error('No prepared atlas is installed in this retained release.');const index=await response.json(),fragment=new URLSearchParams(location.hash.slice(1));
+  for(const entry of index.atlases||[]){const option=el('option',entry.title);option.value=`${entry.atlasId}/${entry.atlasVersion}`;$('atlas-select').append(option);}
+  const entry=index.atlases.find(e=>e.atlasId===fragment.get('atlas')&&e.atlasVersion===fragment.get('version'))||index.atlases[0];if(!entry)throw new Error('The atlas catalog is empty.');$('atlas-select').value=`${entry.atlasId}/${entry.atlasVersion}`;
+  $('atlas-select').addEventListener('change',()=>{const chosen=index.atlases.find(e=>`${e.atlasId}/${e.atlasVersion}`===$('atlas-select').value);open(chosen).catch(error=>$('atlas-map-status').textContent=error.message);});await open(entry,fragment.get('destination')||undefined,['classification','detail'].includes(fragment.get('space'))?fragment.get('space'):undefined);
+}catch(error){$('atlas-map-status').textContent=error.message;$('atlas-map-scope').textContent='Atlas unavailable.';}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "q025-recovered-reference-coverage/1",
+  "records": [
+    {
+      "jobId": "axions-proposal",
+      "providedUnits": 114,
+      "recordedUnitAssessments": 114,
+      "completeUnitRecordCoverage": true,
+      "questionReferenceKinds": {
+        "authored_or_existing_card": 189
+      },
+      "unboundQuestionReferences": [],
+      "unitsWithoutAuthoredOverviewCard": 11,
+      "fineCanonicalIdentityEstablished": false,
+      "positiveAliasDecisions": 0
+    },
+    {
+      "jobId": "gauge-geometry-anomaly-proposal",
+      "providedUnits": 149,
+      "recordedUnitAssessments": 149,
+      "completeUnitRecordCoverage": true,
+      "questionReferenceKinds": {
+        "authored_or_existing_card": 184,
+        "exact_source_object_not_canonical_question": 25
+      },
+      "unboundQuestionReferences": [],
+      "unitsWithoutAuthoredOverviewCard": 28,
+      "fineCanonicalIdentityEstablished": false,
+      "positiveAliasDecisions": 0
+    },
+    {
+      "jobId": "inflation-dynamics-proposal",
+      "providedUnits": 129,
+      "recordedUnitAssessments": 0,
+      "completeUnitRecordCoverage": false,
+      "questionReferenceKinds": {
+        "authored_or_existing_card": 16
+      },
+      "unboundQuestionReferences": [
+        {
+          "path": "$.regionCard.directions[8].targetQuestionRef",
+          "value": "q-prehistory"
+        },
+        {
+          "path": "$.regionCard.directions[9].targetQuestionRef",
+          "value": "q-assisted"
+        },
+        {
+          "path": "$.questionCards[7].nextDirections[2].targetQuestionRef",
+          "value": "q-prehistory"
+        }
+      ],
+      "unitsWithoutAuthoredOverviewCard": 0,
+      "fineCanonicalIdentityEstablished": false,
+      "positiveAliasDecisions": 0
+    },
+    {
+      "jobId": "kk-production-decay-proposal",
+      "providedUnits": 89,
+      "recordedUnitAssessments": 89,
+      "completeUnitRecordCoverage": true,
+      "questionReferenceKinds": {
+        "authored_or_existing_card": 103,
+        "source_facet_pointer_not_canonical_question": 129
+      },
+      "unboundQuestionReferences": [],
+      "unitsWithoutAuthoredOverviewCard": 50,
+      "fineCanonicalIdentityEstablished": false,
+      "positiveAliasDecisions": 0
+    },
+    {
+      "jobId": "effective-actions-vacua-proposal",
+      "providedUnits": 191,
+      "recordedUnitAssessments": 191,
+      "completeUnitRecordCoverage": true,
+      "questionReferenceKinds": {
+        "authored_or_existing_card": 245
+      },
+      "unboundQuestionReferences": [],
+      "unitsWithoutAuthoredOverviewCard": 3,
+      "fineCanonicalIdentityEstablished": false,
+      "positiveAliasDecisions": 0
+    }
+  ],
+  "interpretation": "Source object/facet references are retained context, not canonical question destinations. No original failure status changed. Zero unit records cannot certify coverage."
+}

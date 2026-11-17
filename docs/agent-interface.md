@@ -33,18 +33,21 @@ reads typed incident relations, preserving their actual direction.
 `sources(selector,{offset,limit,lens,intent,workRelation,constraints})` pages through
 recorded membership and fetches checksum-verified source metadata/excerpts without
 loading embeddings. Full membership may be much larger than a displayed capsule.
-Missing filter metadata is an explicit error. Context witnesses are labeled apart
+Same-paper method associations are counted separately from primary membership and excluded from complete-containment checks. Method/derive perspectives expose them as context only; explicit `includeContext:true` includes them in source paging, with `primaryTotal` and `contextTotal`. They retain evidence role and are excluded by USING filters. Missing filter metadata is an explicit error. Context witnesses are labeled apart
 from matching sources; recent refers only to recorded years in the frozen corpus.
 
-`context(unitId, selector)` lazily reads the checksummed source-context shard.
+`context(unitId, selector, options)` reads one bounded page from the checksummed source-context shard. The default is 20 objects; set `section` to `objects`, `relations`, `evidence` or `assessments`, `offset` to the returned `page.nextOffset`, and `limit` up to 40. Optional `scope`, `kinds` and exact `objectIds` narrow the page. Unfiltered totals, filtered totals, returned count and omitted-context notice remain explicit. Relations include exact endpoint references even when their full text is outside the object page; request those IDs in the objects section. Always inspect applicable withheld/nonpositive assessments: their full `readerNote` is retained. A 256 KiB record budget may end a page before its requested count; continue at the explicit next offset. Direct substantive source relations are presented before structural containment or mentions; structural records remain available through continuation pages with their original status. Browser disclosures use the complete underlying reader and build their DOM progressively.
 It preserves exact scientific object endpoints, semantic status, premises,
 convention dictionaries and evidence namespaces. Direct source relations,
 shared-extraction context and same-paper context are visibly distinct; a source
 relation is never promoted to a claim about an entire destination. Missing exported
 context reports its coverage limit, not absence of assumptions or methods.
+
+The optional source-context index uses exact unit-hash prefix buckets. Opening one source reads the small index, its checksummed bucket and one checksummed paper shard; it does not load the complete scientific graph. Method/source attachment overrides use exact source IDs and numbered extraction windows only. Whole-paper first-pass context is separately labeled, and missing requested anchors remain explicit. The reader preserves optional plain source locators and the exact compressed-file descriptor. Static `.json.gz` files are hashed as stored bytes and decoded explicitly; they must not be served with a `Content-Encoding: gzip` transformation.
+
 The local bridge/MCP exposes the same read-only operations as `navigator_sources`,
 `navigator_connections` and `navigator_context`; CLI equivalents are `sources`,
-`connections` and `context --id UNIT_ID`. Start a prepared companion with
+`connections` and `context --id UNIT_ID --section objects --offset 0 --limit 20`. Start a prepared companion with
 `node bin/navigate.mjs serve --atlas data/atlas/ID/VERSION`.
 
 The selector's atlas/version/destination and explicit perspective define the

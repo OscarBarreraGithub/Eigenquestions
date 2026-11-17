@@ -1,0 +1,683 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "q025-compact-review/1"
+    },
+    "familyId": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "proposal",
+        "challenge",
+        "fresh"
+      ]
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "usable_with_limits",
+        "needs_revision",
+        "insufficient_evidence"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 1500
+    },
+    "region": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "maxLength": 90
+        },
+        "question": {
+          "type": "string",
+          "maxLength": 420
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "scope": {
+          "type": "object",
+          "properties": {
+            "systems": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "targets": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "regimes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "assumptions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "conventions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "includes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "excludes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "systems",
+            "targets",
+            "regimes",
+            "assumptions",
+            "conventions",
+            "includes",
+            "excludes"
+          ],
+          "additionalProperties": false
+        },
+        "readingLimit": {
+          "type": "string",
+          "maxLength": 450
+        }
+      },
+      "required": [
+        "title",
+        "question",
+        "summary",
+        "scope",
+        "readingLimit"
+      ],
+      "additionalProperties": false
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 90
+          },
+          "question": {
+            "type": "string",
+            "maxLength": 420
+          },
+          "summary": {
+            "type": "string",
+            "maxLength": 650
+          },
+          "scope": {
+            "type": "object",
+            "properties": {
+              "systems": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "targets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "regimes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "assumptions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "conventions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "includes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "excludes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "systems",
+              "targets",
+              "regimes",
+              "assumptions",
+              "conventions",
+              "includes",
+              "excludes"
+            ],
+            "additionalProperties": false
+          },
+          "methods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "readingLimit": {
+            "type": "string",
+            "maxLength": 400
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "question",
+          "summary",
+          "scope",
+          "methods",
+          "refs",
+          "readingLimit",
+          "aliases"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 8
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "system",
+              "framework",
+              "target",
+              "regime",
+              "method",
+              "assumption",
+              "convention"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 140
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "scope_candidate",
+              "uncertain",
+              "historical_or_rejected"
+            ]
+          },
+          "qualification": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "label",
+          "status",
+          "qualification",
+          "refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "i": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "b": {
+            "type": "string",
+            "enum": [
+              "description",
+              "excerpt"
+            ]
+          },
+          "d": {
+            "type": "string",
+            "enum": [
+              "member",
+              "overlap",
+              "alternate",
+              "unresolved"
+            ]
+          },
+          "q": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "addresses",
+                    "instantiates",
+                    "specializes",
+                    "method",
+                    "boundary",
+                    "comparison"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "role"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "f": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "a": {
+            "type": "string",
+            "enum": [
+              "initial",
+              "same",
+              "changed",
+              "not_compared"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "central",
+              "specialized",
+              "distinct_target",
+              "method_bridge",
+              "application",
+              "scope_mismatch",
+              "changed_regime",
+              "weak_support",
+              "ambiguous",
+              "unresolved"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "home": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "identity": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 90
+          }
+        },
+        "required": [
+          "i",
+          "b",
+          "d",
+          "q",
+          "f",
+          "refs",
+          "a",
+          "reason",
+          "note",
+          "home",
+          "identity",
+          "title"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "identityGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "representative": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 90
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 360
+          },
+          "definingDifferences": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "representative",
+          "title",
+          "reason",
+          "definingDifferences",
+          "refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "cardReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "supported_as_written",
+              "supported_with_limits",
+              "revise",
+              "insufficient_evidence",
+              "not_evaluable"
+            ]
+          },
+          "scopeChange": {
+            "type": "string",
+            "enum": [
+              "same",
+              "broader",
+              "narrower",
+              "different",
+              "unclear"
+            ]
+          },
+          "replacement": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 420
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "decision",
+          "scopeChange",
+          "replacement",
+          "note",
+          "refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "groupReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "supported_as_written",
+              "supported_with_limits",
+              "revise",
+              "insufficient_evidence",
+              "not_evaluable"
+            ]
+          },
+          "scopeChange": {
+            "type": "string",
+            "enum": [
+              "same",
+              "broader",
+              "narrower",
+              "different",
+              "unclear"
+            ]
+          },
+          "replacement": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 420
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "decision",
+          "scopeChange",
+          "replacement",
+          "note",
+          "refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "narrows",
+              "broadens",
+              "method",
+              "application",
+              "comparison",
+              "premise_check",
+              "related",
+              "source_context"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "type",
+          "reason",
+          "refs"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 64
+    },
+    "identityComparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "left": {
+            "type": "string"
+          },
+          "right": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "equivalent_candidate",
+              "distinct",
+              "unresolved"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 360
+          },
+          "changedPremises": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "left",
+          "right",
+          "decision",
+          "reason",
+          "changedPremises",
+          "refs"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 24
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "familyId",
+    "stage",
+    "verdict",
+    "summary",
+    "region",
+    "cards",
+    "factors",
+    "units",
+    "identityGroups",
+    "cardReviews",
+    "groupReviews",
+    "links",
+    "identityComparisons",
+    "limitations",
+    "unresolved"
+  ],
+  "additionalProperties": false
+}

@@ -215,3 +215,5 @@ The page controller additionally exposes `lookup`, `describe`, `connections` and
 agent must preserve the parent revision captured before interpretation/computation.
 A freshly read revision must never be used to launder an older result. Display
 acknowledgement and public-to-loopback limitations remain as specified above.
+
+Prepared source associations can carry `associationScope: same_paper_context`, `placementStatus: context_only`, `role: evidence`, `lens: method`, an exact `paperId` and `associationProvenance`. Such rows remain outside primary membership counts and complete-child subset proofs. Method/derive reading and explicit contextual paging may expose them, always with contextual counts and labels; they do not become a primary method membership or USING claim.

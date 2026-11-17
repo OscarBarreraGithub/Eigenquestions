@@ -3,8 +3,13 @@
 Root chose the186-leaf multiview proposal as the starting coverage bins. These bins
 are immutable provenance, not the final scientific regions. The pinned
 `coverage-plan.json` accounts for all8,473 units exactly once at leaf level and
-plans372 leaf requests plus110 parent requests. No full-pass source packets or
-native requests are prepared or launched yet; calibration outcomes gate that work.
+plans372 leaf requests plus110 parent requests. All241 source packets are now
+prepared:186 leaf packets and55 bounded parent-contrast packets, with1,615
+representative source units and4,170 primary anchors. The372 leaf request
+templates and110 parent templates preserve the first preparation lineage, but
+its verbose leaf output contract is superseded and is **not authorized to run**.
+No full-pass native calls have launched. The compact recovery challenge gates
+new request preparation and rollout; its source packets can be reused by hash.
 
 The smallest useful implementation reuses the calibrated source-packet compiler,
 source-only native request, per-member factor output and validator. Add only the
@@ -38,7 +43,12 @@ parts required for complete coverage:
    useful alternate homes and reparenting. Preserve old numerical member IDs and
    file hashes. Changed placements carry both the old and new scope plus the
    source-supported reason; they are challenged against the actual assembled paths.
-5. Reconcile canonical questions in a shared registry. Typed `addresses`,
+5. Keep fine question resolution separate from the few overview cards. Every
+   source unit receives an explicit proposed singleton, named equivalence
+   candidate group or unresolved identity state. A singleton preserves its exact
+   scientific statement; it is not certified unique across the corpus. Derive
+   group members and reverse card contributions from the one authoritative unit
+   mapping. Reconcile canonical questions in a shared registry. Typed `addresses`,
    `instantiates`, `specializes`, `method`, `boundary` and `comparison` contributions
    never assert equivalence of full source statements. Reuse agreed target/scope
    records across routes. Consequential duplicate candidates get an explicit
@@ -65,11 +75,18 @@ Parent synthesis consumes this artifact, not an unqualified latest review blob.
 No extra majority-vote, identity service or automatic scientific-edge promotion is
 needed. Source objects, source relations and destination navigation stay distinct.
 
+The compact rollout starts with6–8 diverse jobs after the one-job recovery
+challenge validates. Concurrency12–24 is considered only after valid coverage,
+scientific distinctions and measured output/throughput on that wave. The failed
+original calibration never resumes. Recovered proposals can provide prior work;
+inflation needs all129 unit records and distance needs a compact redo because
+no complete or partial answer was persisted by the old runner.
+
 Operationally, preserve isolated runtime directories, exact request/source/schema
 hashes, read-only source-only workers, actual-prompt context sizing, heartbeat,
-per-job cancellation, start-rate limits and failures. Calibration begins at four
-workers and root may raise it to eight. Full-pass concurrency12–24 can be selected
-only after observed validation and throughput justify it; it is not enabled by
-this plan. Parent requests need multiple child dependencies, so their final
+per-job cancellation, start-rate limits and failures. Each new campaign has explicit launch authorization and bounded concurrency.
+Persist streamed answer deltas so interrupted outputs remain inspectable. Stop
+new starts on authoritative quota denial or repeated explicit exhaustion; an
+unknown quota field is not a denial or evidence of reset recovery. Parent requests need multiple child dependencies, so their final
 packets should be assembled only when the referenced child review artifacts are
 frozen. No active calibration files are changed by this work.

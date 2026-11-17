@@ -104,6 +104,7 @@ Read `/data/atlas/index.json`, the exact catalog manifest and the small static
 destination pages before routing. `lookup` matches titles/aliases only; the agent
 interprets prose, checks defining assumptions and selects an explicit ID. Region
 membership and similar embeddings do not establish canonical question equivalence.
+Use `context` for bounded pages of exact source objects, relations, evidence locators and assessments (default 20 objects; sections and offsets are explicit). Read applicable withheld reader notes before using a source relation; exact incident edges and same-paper context have different scopes. Missing filtered context is not scientific absence.
 Use `describe`, `connections` and paginated `sources`; a displayed source sample
 is not complete membership. Do not omit available cross-links because the question
 was entered through a different parent. Metadata-only broad fields are vocabulary

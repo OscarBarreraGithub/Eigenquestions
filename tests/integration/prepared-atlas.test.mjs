@@ -115,9 +115,25 @@ test('source science preserves exact object endpoints, semantic status and attac
   const reader=createAtlasContextReader(atlas,{readText:async filename=>filename.endsWith('source-context-index.json')?indexBody:body});
   const result=await reader('source-a');assert.equal(result.sourceRelations[0].source,'claim-a');assert.equal(result.sourceAttachments[0].scope,'shared_extraction_window_context');assert.deepEqual(result.sourceRelations[0].premises,['Only the declared synthetic limit']);
   const compressed=gzipSync(body),gzipIndex=structuredClone(index);gzipIndex.units['source-a']={path:'context-0.json.gz',encoding:'gzip',uncompressedBytes:Buffer.byteLength(body),sha256:createHash('sha256').update(compressed).digest('hex')};const gzipIndexBody=JSON.stringify(gzipIndex),gzipAtlas=structuredClone(atlas);gzipAtlas.manifest.files.sourceContextIndex.sha256=createHash('sha256').update(gzipIndexBody).digest('hex');
-  assert.deepEqual(await createAtlasContextReader(gzipAtlas,{readText:async()=>gzipIndexBody,readBinary:async()=>compressed})('source-a'),result);
+  const gzipResult=await createAtlasContextReader(gzipAtlas,{readText:async()=>gzipIndexBody,readBinary:async()=>compressed})('source-a');assert.equal(gzipResult.sourceContextFile.encoding,'gzip');assert.deepEqual({...gzipResult,sourceContextFile:undefined},{...result,sourceContextFile:undefined});
   await assert.rejects(createAtlasContextReader(gzipAtlas,{readText:async()=>gzipIndexBody,readBinary:async()=>new Uint8Array([1,2,3])})('source-a'),/checksum mismatch/);
   assert.equal((await reader('unrepresented-unit')).availability,'not-exported');assert.match((await reader('unrepresented-unit')).notice,/does not establish/);
   const bad=structuredClone(context);bad.sourceRelations[0].source='root';assert.throws(()=>validateSourceContext(bad),/endpoint/);bad.sourceRelations[0].source='claim-a';delete bad.sourceRelations[0].semanticStatus;assert.throws(()=>validateSourceContext(bad),/semanticStatus/);
   assert.equal(atlas.catalog.relations.length,5,'source-science relation never becomes a destination arrow');
+});
+
+test('same-paper methods remain contextual associations, outside primary containment and USING',()=>{
+  const atlas=atlasFixture(),question=atlas.catalog.destinations.find(d=>d.id==='shared');question.membershipStatus='complete';
+  const methodId='context-method';atlas.catalog.sources.push({id:methodId,paperId:'source-a',title:'Synthetic method from the same paper',year:2024,evidence:{text:'Contextual method; applicability is not established.',lens:'method'}});
+  atlas.catalog.memberships.push({destinationId:'shared',unitId:methodId,weight:1,year:2024,lens:'method',role:'evidence',associationScope:'same_paper_context',placementStatus:'context_only',paperId:'source-a',associationProvenance:{kind:'same_paper_join',questionUnitIds:['source-a']}});
+  // Complete parent contains the primary question units; contextual associations
+  // are not silently added to the scientific containment set.
+  for(const id of ['left','right'])atlas.catalog.destinations.find(d=>d.id===id).membershipStatus='complete';
+  const nav=createAtlasNavigator(atlas),selector={...nav.initialState.selector,destinationId:'shared'};
+  assert.equal(nav.sources('shared').total,2);assert.equal(nav.sources('shared',{includeContext:true}).contextTotal,1);
+  assert.equal(nav.sources('shared',{lens:'method'}).primaryTotal,0);assert.equal(nav.sources('shared',{intent:'derive'}).contextTotal,1);
+  assert.equal(nav.sources('shared',{lens:'method',workRelation:'using'}).total,0);
+  const view=nav.computeView(currentState(nav.createSession({selector,lens:'method'})));assert.equal(view.atlas.membershipCount,2);assert.equal(view.atlas.contextMembershipCount,1);assert.equal(view.atlas.matchingSourceCount,0);assert.equal(view.atlas.matchingContextCount,1);
+  const method=view.nodes.find(n=>n.id===methodId);assert.equal(method.atlasRole,'context-evidence');assert.equal(method.atlasContextScope,'same_paper_context');
+  const bad=structuredClone(atlas);bad.catalog.memberships.at(-1).role='using';assert.throws(()=>validateAtlas(bad.manifest,bad.catalog),/contextual methods require/);
 });
