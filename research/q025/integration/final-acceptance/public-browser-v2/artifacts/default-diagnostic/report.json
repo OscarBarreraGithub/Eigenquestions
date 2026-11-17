@@ -1,0 +1,65 @@
+{
+  "kind": "q025-public-origin-bridge-acceptance",
+  "scope": "Isolated Slurm Chromium at real public HTTPS origin; not the owner Chrome. Exact accepted package, normal browser security. Permission mode is recorded separately; a scoped API grant simulates consent, not a native prompt click.",
+  "publicOrigin": "https://eigenquestions.com",
+  "permissionMode": "default",
+  "selector": {
+    "kind": "atlas-destination",
+    "atlasId": "q025-approved-organization-candidate",
+    "atlasVersion": "2026-11-17-post-test-accounted-v1",
+    "destinationId": "q-kk-graviton-thermal-production"
+  },
+  "localManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "checks": [
+    {
+      "name": "public compact URL independently renders exact pinned accepted destination without upload",
+      "passed": true,
+      "stateId": "state-5b27038443f2aaf8"
+    }
+  ],
+  "screenshots": [
+    "public-prepared-destination.png",
+    "public-default-diagnostic.png"
+  ],
+  "passed": false,
+  "capturedParentRevision": 0,
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "permissionStatesBefore": {
+    "local-network-access": "prompt",
+    "local-network": "prompt",
+    "loopback-network": "prompt"
+  },
+  "consentSimulation": {
+    "enabled": false,
+    "origin": "https://eigenquestions.com",
+    "permission": "local-network-access",
+    "mechanism": "Playwright BrowserContext.grant_permissions with exact origin in a fresh nonpersistent context",
+    "nativePromptClickDemonstrated": false,
+    "ownerBrowserModified": false
+  },
+  "permissionStatesAfter": {
+    "local-network-access": "prompt",
+    "local-network": "prompt",
+    "loopback-network": "prompt"
+  },
+  "defaultDiagnostic": {
+    "acknowledged": false,
+    "bridgeRevision": 1,
+    "bridgeStateId": "state-5b27038443f2aaf8",
+    "expectedPreparedStateId": "state-5b27038443f2aaf8",
+    "browserStatus": {
+      "acknowledgedCurrent": false,
+      "acknowledgingViewers": 0,
+      "knownViewers": 0,
+      "lastRenderedStateId": null
+    },
+    "ui": {
+      "mode": "browser",
+      "revision": 1,
+      "renderedRevision": 1,
+      "stateId": "state-5b27038443f2aaf8"
+    }
+  },
+  "error": "render acknowledgement/current state predicate failed"
+}

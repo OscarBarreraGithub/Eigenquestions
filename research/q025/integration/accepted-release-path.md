@@ -6,9 +6,13 @@ and zero reserved. The normal build, 115 tests and site check pass. Final script
 browser checks pass 13 core and 6 supplemental cases; four fresh-agent journeys
 have matching rendered acknowledgements (88 calls, 87 successful and one bounded
 search rejection). The dated reading-history correction is checked separately.
-Earlier partial packages remain historical evidence. Public deployment, default
-and scoped-consent loopback tests, and a public-origin fresh-agent proof remain
-pending; local success does not stand in for them.
+Earlier partial packages remain historical evidence. The aeda8e75 release is now
+deployed and its live manifest/assets verified. Public compact URLs and scoped-consent
+loopback rendering pass; default permissions did not establish attachment or an
+acknowledgement. One fresh public-origin agent completed 16 successful calls and
+an exact revision/state/DOM acknowledgement, with bounded-reading limitations.
+The independent public proof and separate permission outcomes are retained in
+`final-acceptance/public-browser-v2/`; no owner browser was operated.
 
 ## One handoff
 

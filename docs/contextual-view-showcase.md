@@ -5,7 +5,8 @@ accounted for: 8,436 have reviewed topic placements and 37 remain discoverable
 without a precise placement, with individual reasons. No source is still reserved.
 Placement organizes source descriptions; it does not establish a unique fine
 canonical question for each one. Final local rendering and four selected fresh-agent
-browser journeys have passed; public-origin acceptance remains a separate gate.
+browser journeys have passed. The public release is live; connected public-browser
+checks pass with consent scoped to this site, while default attachment is not established.
 
 A researcher should be able to reach the same scoped question through different
 topics or a justified paraphrase, inspect its sources, and continue from the same
@@ -80,8 +81,21 @@ The fourth case used five lexical searches, exceeding the suggested single
 follow-up search; this process deviation is retained. These selected successes
 do not establish general recall or erase the diagnostic below.
 [Token-free receipt and limits](../research/q025/integration/final-acceptance/fresh-agent-v1/receipt.json).
-This is isolated same-origin Slurm browser evidence. Public HTTPS default-policy,
-scoped-consent and fresh-agent tests remain pending; none operates the owner's browser.
+These four cases used isolated same-origin Slurm browsers. A separate fresh agent
+then made 16 successful calls against the deployed public-origin browser and
+rendered a broad axion-engineering comparison with an exact revision/state/DOM
+acknowledgement. It retained output-truncation recovery and bounded-reading limits;
+an empty assessment page was not interpreted as absence of assumptions.
+[Public fresh-agent proof](../research/q025/integration/final-acceptance/public-browser-v2/fresh-agent.json).
+
+**Public connection policy:** compact URLs work independently. Under default
+permissions, the companion had no viewers or render acknowledgement and the UI
+returned to browser mode. Merely matching the already-loaded state was not a
+successful agent render. A separate consent case passed the actual public
+HTTPS→local companion→render acknowledgement and source-parity checks. Consent
+was simulated with a normal permission grant only for `https://eigenquestions.com`;
+no native prompt click, owner-browser access or disabled security is claimed.
+[Separate policy results](../research/q025/integration/final-acceptance/public-browser-v2/scripted-outcomes.json).
 
 **Independent read-only diagnostic:** three fresh agents answered 72 prose queries
 against a frozen candidate, with expectations committed before routing. It showed
@@ -92,7 +106,8 @@ retest. [Frozen scored report](../research/q025/evaluation/final-holdout/scored-
 Read-only selectors and tool receipts do not prove a visible browser update.
 
 **Publication and storage:** the complete local installation is the immutable
-17 November 2026 post-test atlas; public deployment and its receipts remain pending.
+17 November 2026 post-test atlas, now deployed at [Eigenquestions](https://eigenquestions.com).
+The live manifest and application assets were verified against the release.
 Hosted authored-view storage remains inactive;
 prepared links do not depend on it. If saving an authored view fails, retain its
 file and report that no durable saved link was made.

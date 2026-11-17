@@ -1,0 +1,286 @@
+{
+  "kind": "q025-public-origin-bridge-acceptance",
+  "scope": "Isolated Slurm Chromium at real public HTTPS origin; not the owner Chrome. Exact accepted package, normal browser security. Permission mode is recorded separately; a scoped API grant simulates consent, not a native prompt click.",
+  "publicOrigin": "https://eigenquestions.com",
+  "permissionMode": "consent",
+  "selector": {
+    "kind": "atlas-destination",
+    "atlasId": "q025-approved-organization-candidate",
+    "atlasVersion": "2026-11-17-post-test-accounted-v1",
+    "destinationId": "q-kk-graviton-thermal-production"
+  },
+  "localManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "checks": [
+    {
+      "name": "public compact URL independently renders exact pinned accepted destination without upload",
+      "passed": true,
+      "stateId": "state-5b27038443f2aaf8"
+    },
+    {
+      "name": "actual public HTTPS origin accepts local stdio MCP update through SSE and acknowledges exact rendered state",
+      "passed": true,
+      "stateId": "state-5b27038443f2aaf8",
+      "consentSimulated": true
+    },
+    {
+      "name": "public static source discovery and lazy context agree with the connected agent",
+      "passed": true,
+      "sourceIds": [
+        "unit:d5031ab16d8b871bddd917aa4e9de3e7203c9cda1499e4fcfe9a5f463cd4a4ac"
+      ],
+      "contextAvailability": "available"
+    }
+  ],
+  "screenshots": [
+    "public-prepared-destination.png",
+    "public-mcp-connected.png"
+  ],
+  "passed": true,
+  "capturedParentRevision": 0,
+  "browserVersion": "145.0.7632.6",
+  "pageErrors": [],
+  "permissionStatesBefore": {
+    "local-network-access": "prompt",
+    "local-network": "prompt",
+    "loopback-network": "prompt"
+  },
+  "consentSimulation": {
+    "enabled": true,
+    "origin": "https://eigenquestions.com",
+    "permission": "local-network-access",
+    "mechanism": "Playwright BrowserContext.grant_permissions with exact origin in a fresh nonpersistent context",
+    "nativePromptClickDemonstrated": false,
+    "ownerBrowserModified": false
+  },
+  "permissionStatesAfter": {
+    "local-network-access": "granted",
+    "local-network": "granted",
+    "loopback-network": "granted"
+  },
+  "performance": {
+    "sampleMs": 9489.099999904633,
+    "longTasks": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "at": 1972
+      },
+      {
+        "name": "first-contentful-paint",
+        "at": 1972
+      }
+    ],
+    "resources": [
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/styles.css",
+        "transferSize": 7180,
+        "decodedBodySize": 27973
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/app.js",
+        "transferSize": 28107,
+        "decodedBodySize": 94031
+      },
+      {
+        "origin": "https://static.cloudflareinsights.com",
+        "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+        "transferSize": 0,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/protocol/session.mjs",
+        "transferSize": 4300,
+        "decodedBodySize": 13099
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/protocol/capsule.mjs",
+        "transferSize": 5097,
+        "decodedBodySize": 13202
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/protocol/presentation.mjs",
+        "transferSize": 1077,
+        "decodedBodySize": 1505
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/geometry/prepared-atlas.mjs",
+        "transferSize": 21563,
+        "decodedBodySize": 73327
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/chart-labels.mjs",
+        "transferSize": 1049,
+        "decodedBodySize": 1900
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/atlas-panel.mjs",
+        "transferSize": 7402,
+        "decodedBodySize": 22427
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/source-context.mjs",
+        "transferSize": 2950,
+        "decodedBodySize": 7286
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/protocol/context-page.mjs",
+        "transferSize": 3065,
+        "decodedBodySize": 7326
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/physics-path.mjs",
+        "transferSize": 926,
+        "decodedBodySize": 1219
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/paper-title.mjs",
+        "transferSize": 774,
+        "decodedBodySize": 675
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/source-coverage.mjs",
+        "transferSize": 1185,
+        "decodedBodySize": 1762
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/protocol/display-editorial.mjs",
+        "transferSize": 2348,
+        "decodedBodySize": 6011
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/geometry/prepared-identity.mjs",
+        "transferSize": 465,
+        "decodedBodySize": 178
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/lib/protocol/approved-display-editorial.mjs",
+        "transferSize": 3274,
+        "decodedBodySize": 12584
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/manifest.json",
+        "transferSize": 1944,
+        "decodedBodySize": 3108
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/index.json",
+        "transferSize": 637,
+        "decodedBodySize": 642
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/catalog.json",
+        "transferSize": 1123081,
+        "decodedBodySize": 7021318
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/destination-details-authored-0389.json",
+        "transferSize": 38031,
+        "decodedBodySize": 225737
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "http://127.0.0.1:42343",
+        "path": "/api/session",
+        "transferSize": 0,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/cdn-cgi/rum",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "http://127.0.0.1:42343",
+        "path": "/api/viewer",
+        "transferSize": 0,
+        "decodedBodySize": 0
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/destination-memberships-0038.json",
+        "transferSize": 72495,
+        "decodedBodySize": 755788
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/source-context-index-v3.1.json",
+        "transferSize": 12476,
+        "decodedBodySize": 33678
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/unit-index-d5.json",
+        "transferSize": 20854,
+        "decodedBodySize": 69585
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/context-4d3ed4ed08b412802344410b.json.gz",
+        "transferSize": 46122,
+        "decodedBodySize": 45822
+      },
+      {
+        "origin": "https://eigenquestions.com",
+        "path": "/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/source-method-routes.json",
+        "transferSize": 19882,
+        "decodedBodySize": 105807
+      }
+    ]
+  }
+}

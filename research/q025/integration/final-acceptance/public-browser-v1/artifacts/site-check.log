@@ -1,0 +1,16 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Missing repository documentation target in docs/contextual-view-showcase.md: https://github.com/OscarBarreraGithub/Eigenquestions/blob/main/research/q025/integration/final-acceptance/supplement-v1/receipt.json
+    at checkSite (file:///tmp/q025-final-61605316-ZBCPpZ/project/scripts/site-check.mjs:42:32)
+    at async file:///tmp/q025-final-61605316-ZBCPpZ/project/scripts/site-check.mjs:101:117 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: null,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v25.7.0

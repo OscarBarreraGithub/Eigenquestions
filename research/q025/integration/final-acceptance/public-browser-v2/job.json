@@ -1,0 +1,50 @@
+{
+  "status": "SUBMITTED",
+  "jobId": "61606465",
+  "submittedAt": "2026-11-17T20:09:41.615387+00:00",
+  "applicationCommit": "aeda8e75a36b62ab4d063a897262be9095e19485",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "inputSha256": "de2291374f21c07a32be4bb7cf39fafcd97658c4f2f14bd0110d589f3d76b692",
+  "resourceLimits": {
+    "cpus": 4,
+    "memoryGB": 16,
+    "minutes": 45,
+    "account": "randall_lab",
+    "partition": "test"
+  },
+  "deploymentGate": {
+    "rootVerified": true,
+    "mainCommit": "aeda8e75a36b62ab4d063a897262be9095e19485",
+    "githubRun": "44164561867",
+    "origin": "https://eigenquestions.com",
+    "liveManifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb"
+  },
+  "phases": [
+    "public default policy; failure recorded independently",
+    "public exact-origin simulated consent",
+    "15-minute passive public-origin observer for fresh agent"
+  ],
+  "observerMutatesNavigation": false,
+  "ownerChromeUsed": false,
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/integration/final-public-v2",
+  "reusedArchives": [
+    {
+      "path": "repository.tar.gz",
+      "sha256": "fec0f908ec2d29c3fe1e97f719553799011160503741549d8d0df8e605e2f78c",
+      "bytes": 156619326
+    },
+    {
+      "path": "overlay.tar.gz",
+      "sha256": "0e1a8793f569a4c6ef5a9d2f8e2a5b4adee005cfd162a3dab1d263dc213dd4b1",
+      "bytes": 50706811
+    },
+    {
+      "path": "commit-delta.tar.gz",
+      "sha256": "1056d58be00df2a3e71a05f6aa12cea00059aa1c55e0f1f634a1fe2d6fd4e347",
+      "bytes": 17059070
+    }
+  ],
+  "externalSourceAssetPolicy": "Existing exact source pack reused; checksum verification at node-local ingress. No new scientific copy uploaded.",
+  "supersedesFailedPackagingJob": "61605316",
+  "wholeCommittedTreeVerification": "closure.json"
+}

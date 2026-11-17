@@ -1,0 +1,33 @@
+{
+  "kind": "public-origin-scripted-outcomes",
+  "applicationCommit": "aeda8e75a36b62ab4d063a897262be9095e19485",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "jobId": "61606465",
+  "origin": "https://eigenquestions.com",
+  "publicCompactUrl": "passed independently in both contexts without upload",
+  "defaultPolicy": {
+    "status": "NO_ATTACHMENT_OR_RENDER_PROOF",
+    "originalReport": "artifacts/public-default/report.json",
+    "captureOnlyDiagnostic": "artifacts/default-diagnostic/report.json",
+    "predicate": "acknowledged && bridgeStateId === expectedPreparedStateId",
+    "acknowledged": false,
+    "knownViewers": 0,
+    "lastRenderedStateId": null,
+    "uiMode": "browser",
+    "permissions": "prompt",
+    "interpretation": "The independently loaded compact state happened to equal the requested state. It is not evidence of an agent-caused render. UI returned to disconnected browser mode."
+  },
+  "scopedConsent": {
+    "status": "PASS",
+    "report": "artifacts/public-consent/report.json",
+    "checksPassed": 3,
+    "mechanism": "Playwright BrowserContext.grant_permissions([local-network-access], origin=https://eigenquestions.com), in a fresh isolated context",
+    "nativePromptClickDemonstrated": false,
+    "ownerBrowserModified": false,
+    "securityDisabled": false,
+    "requestInterception": false
+  },
+  "freshAgentProof": "fresh-agent.json",
+  "originalFailuresUnchanged": true,
+  "noRuntimeOrScienceChanges": true
+}

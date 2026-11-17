@@ -1,0 +1,227 @@
+{
+  "kind": "actual-public-deployment-byte-verification",
+  "checkedAt": "2026-11-17T20:03:20.673486+00:00",
+  "commit": "aeda8e75a36b62ab4d063a897262be9095e19485",
+  "workflow": {
+    "conclusion": "success",
+    "headSha": "aeda8e75a36b62ab4d063a897262be9095e19485",
+    "jobs": [
+      {
+        "completedAt": "2026-11-17T20:02:13Z",
+        "conclusion": "success",
+        "databaseId": 134327048775,
+        "name": "deploy",
+        "startedAt": "2026-11-17T19:59:58Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-17T19:59:59Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-17T19:59:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:00:11Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-17T19:59:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:00:14Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-node@v4",
+            "number": 3,
+            "startedAt": "2026-11-17T20:00:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:00:20Z",
+            "conclusion": "success",
+            "name": "Install dependencies",
+            "number": 4,
+            "startedAt": "2026-11-17T20:00:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:00:50Z",
+            "conclusion": "success",
+            "name": "Validate the explorer and bounded stored-view service",
+            "number": 5,
+            "startedAt": "2026-11-17T20:00:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:02:08Z",
+            "conclusion": "success",
+            "name": "Deploy the explorer to the existing domain",
+            "number": 6,
+            "startedAt": "2026-11-17T20:00:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:02:11Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-node@v4",
+            "number": 11,
+            "startedAt": "2026-11-17T20:02:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:02:11Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 12,
+            "startedAt": "2026-11-17T20:02:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-17T20:02:11Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-17T20:02:11Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/44164561867/job/134327048775"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/OscarBarreraGithub/Eigenquestions/actions/runs/44164561867"
+  },
+  "checks": [
+    {
+      "path": "index.html",
+      "url": "https://eigenquestions.com/",
+      "bytes": 10241,
+      "sha256": "26ae1013c4c37833d0e8cbe6de1aee42a738b2007f34437305b18869580aefae",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "styles.css",
+      "url": "https://eigenquestions.com/styles.css",
+      "bytes": 27973,
+      "sha256": "13acd24d7a74b854927516ec9e144d3009a12bb6288bff1e10966be373125ade",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "overview.html",
+      "url": "https://eigenquestions.com/overview.html",
+      "bytes": 4629,
+      "sha256": "a5750488d76c2f457789cf4aaf3585a4b8963802d465f5db212daa2cdc290b93",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "construction.html",
+      "url": "https://eigenquestions.com/construction.html",
+      "bytes": 12980,
+      "sha256": "94e9a1429a82f855085b1e495baa26ba75d74ae8677315deb15454eb8a1cd35e",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "llms.txt",
+      "url": "https://eigenquestions.com/llms.txt",
+      "bytes": 3031,
+      "sha256": "e747accc061683ea82a79c556b649539827ec5bf22d4bfc0d95aeeb126332a94",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "skills/physics-navigator/SKILL.md",
+      "url": "https://eigenquestions.com/skills/physics-navigator/SKILL.md",
+      "bytes": 9325,
+      "sha256": "05cb339ba2cf0193c1e1bc5aaa3f96e0913d81f815601d27e4fbf9aa1f1f6260",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "skills/physics-navigator/references/interface.md",
+      "url": "https://eigenquestions.com/skills/physics-navigator/references/interface.md",
+      "bytes": 9314,
+      "sha256": "5212a3f0f51d709148e2adc255ddbe75d26254647552216bc83f13905a776663",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "data/atlas/index.json",
+      "url": "https://eigenquestions.com/data/atlas/index.json",
+      "bytes": 642,
+      "sha256": "c6f4ad5787b0ee1f271d6803448fe3dc6ea1efbc6a436cdc4bdd200bd02e9ef9",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/manifest.json",
+      "url": "https://eigenquestions.com/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/manifest.json",
+      "bytes": 3108,
+      "sha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/catalog.json",
+      "url": "https://eigenquestions.com/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/catalog.json",
+      "bytes": 7021318,
+      "sha256": "03e82c326fbc67f7a8f43a2c7ea947db00728d0bef70c24fc75e2c5b72e15207",
+      "exactLocalBytes": true,
+      "gzipMagic": null
+    },
+    {
+      "path": "data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/context-88898bf52d60de1eec39b2bb.json.gz",
+      "url": "https://eigenquestions.com/data/atlas/q025-approved-organization-candidate/2026-11-17-post-test-accounted-v1/context-88898bf52d60de1eec39b2bb.json.gz",
+      "bytes": 33483,
+      "sha256": "ba9773295a296748e05bcd311eaf4788cddf83d4fcbd26366e4cf0daefd1fd16",
+      "exactLocalBytes": true,
+      "gzipMagic": "1f8b"
+    },
+    {
+      "path": "app.js",
+      "url": "https://eigenquestions.com/app.js",
+      "bytes": 94031,
+      "sha256": "8a10beb2b204787bff0a9e2b60b39d18c5e0fcb3c874f091ef03b5c7f70a34c1",
+      "exactLocalBytes": true
+    },
+    {
+      "path": "overview.js",
+      "url": "https://eigenquestions.com/overview.js",
+      "bytes": 31678,
+      "sha256": "53f17eb244ce630b96e053382f3cc948c71fe2d290fdf6ba7e3eba7d35ca9c95",
+      "exactLocalBytes": true
+    },
+    {
+      "path": "lib/protocol/approved-display-editorial.mjs",
+      "url": "https://eigenquestions.com/lib/protocol/approved-display-editorial.mjs",
+      "bytes": 12584,
+      "sha256": "3bb613579c1a699c8acecc9f94091506456da16d2eb7c3560a6efc4bcec93e3b",
+      "exactLocalBytes": true
+    },
+    {
+      "path": "docs/agent-interface.md",
+      "url": "https://eigenquestions.com/docs/agent-interface.md",
+      "bytes": 26441,
+      "sha256": "54465aadab3c0a7e7ba57e662584998dd124558802b9507b3e6c4fd4db22078c",
+      "exactLocalBytes": true
+    }
+  ],
+  "limitations": "HTTP byte verification is separate from browser operation. Initial Python urllib received 403. The first curl check omitted normal redirects and saw an empty redirect body for overview.html; this corrected check follows public redirects and uses an up-to-date local build. No runtime changes.",
+  "hostedStorage": {
+    "method": "GET",
+    "url": "https://eigenquestions.com/api/views/0000000000000000000000",
+    "status": 503,
+    "body": {
+      "error": {
+        "code": "storage_unavailable",
+        "message": "Stored-view retrieval is not configured. You can still import a view file."
+      }
+    },
+    "action": "Read-only availability probe; no upload or object created."
+  }
+}
