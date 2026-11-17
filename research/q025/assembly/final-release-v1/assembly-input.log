@@ -1,0 +1,12 @@
+file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/fine-identities.mjs:3
+const fail=message=>{throw new Error(`Fine identity assembly: ${message}`);};
+                           ^
+
+Error: Fine identity assembly: canonical group lacks one admitted final scope and exact complete-group decision
+    at fail (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/fine-identities.mjs:3:28)
+    at validateCanonicalIdentity (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/fine-identities.mjs:34:401)
+    at assembleAccepted (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/accepted.mjs:227:28)
+    at runAssembly (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/assemble.mjs:34:19)
+    at async file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/assemble.mjs:66:102
+
+Node.js v26.7.0

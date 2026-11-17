@@ -165,11 +165,23 @@ def main():
         assert result['items'][0]['unitId']==compound['unitId'] and result['items'][0]['targetCoverage']==compound['targetCoverage']
         page.screenshot(path=str(out/'compound-source-desktop.png'),full_page=True)
         check('Compound source remains one unchanged question with precise component-home coverage in browser and agent reads',unitId=compound['unitId'],destinationId=compound['destinationId'])
+        report['phase']='dated-placement-notice'
+        unresolved=cases['unresolved']; current,_=navigate(unresolved['destinationId'])
+        record=current['view']['atlas']['destination']
+        assert record['sourceHomeStatus']=='unresolved' and record['sourceHomeNotice']==unresolved['notice'] and record['sourceHomeReason']==unresolved['reason']
+        scope=page.locator('#atlas-panel > details').filter(has=page.locator('summary',has_text='Scope, assumptions and sources')).first
+        assert not scope.evaluate('(node)=>node.open'); scope.locator(':scope > summary').click()
+        scope.get_by_text(unresolved['notice'],exact=True).wait_for(state='visible')
+        reason=scope.locator('details').filter(has=page.locator('summary',has_text='Placement context')).first
+        assert not reason.evaluate('(node)=>node.open'); reason.locator(':scope > summary').click()
+        assert unresolved['reason'] in reason.inner_text() and 'More source context is needed' not in scope.inner_text()
+        page.screenshot(path=str(out/'placement-notice-desktop.png'),full_page=True)
+        check('Dated unresolved source shows explicit placement notice and unchanged reason without inventing missing context',destinationId=unresolved['destinationId'])
         current,_=navigate(cases['production']); page.set_viewport_size({'width':390,'height':844}); page.evaluate('window.scrollTo(0,0)')
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
         page.screenshot(path=str(out/'kk-production-mobile.png'),full_page=True)
         check('Actual KK production choices and source disclosures fit a 390px mobile viewport')
-        report['screenshots']=['compound-source-desktop.png','physics-desktop.png','dark-sectors-desktop.png','kk-production-desktop.png','linear-desktop.png','source-desktop.png','kk-production-mobile.png']
+        report['screenshots']=['placement-notice-desktop.png','compound-source-desktop.png','physics-desktop.png','dark-sectors-desktop.png','kk-production-desktop.png','linear-desktop.png','source-desktop.png','kk-production-mobile.png']
         # The separate overview is exercised on the actual final geometry, not a fixture.
         from urllib.parse import urlencode
         overview=cases['overview']; chart=context.new_page();chart.on('pageerror',lambda error:report['pageErrors'].append(str(error)))

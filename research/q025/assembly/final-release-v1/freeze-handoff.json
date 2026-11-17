@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "q025-dated-final-release-freeze/1",
+  "status": "frozen_for_final_integration_acceptance",
+  "packageDirectory": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/final-release-v1",
+  "notApprovedForSiteRelease": true,
+  "files": [
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/manifest.json",
+      "sha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+      "bytes": 3108
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/catalog.json",
+      "sha256": "03e82c326fbc67f7a8f43a2c7ea947db00728d0bef70c24fc75e2c5b72e15207",
+      "bytes": 7021318
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/accepted-geometry-input.json",
+      "sha256": "b05144e6b73246fc6e1424a63cd70aad43794a6c8208c48d24cb7d79f2eb76df",
+      "bytes": 9574207
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/assembly-report.json",
+      "sha256": "4891f2a6dc01c02e48956056804c891d04edcc41b6b13683f3c8c5b006e4b5cd",
+      "bytes": 3579285
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/partition-validation.json",
+      "sha256": "11646d7f5ccf92bc71a2281b76b9a5f02a08c7976e3b2d41b17aec45a0e5f7f3",
+      "bytes": 2891758
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/handoff.json",
+      "sha256": "ff11902e1aaa9e478b84c413460f497ead6b7c53cc2eb03a6fbe18191a90490a",
+      "bytes": 253056
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/asset-plan.json",
+      "sha256": "98ac10f4b3a8cadef9a084c5cb83b13a4ed5f91c6b174cb5b3c5d216aaff0c56",
+      "bytes": 1984911
+    },
+    {
+      "path": "research/q025/assembly/outputs/final-release-v1/delivery-assets.json",
+      "sha256": "b99f328398cad2752226eaec0e9842041efc2b67fd98f2a268e3d208700b7710",
+      "bytes": 1076780
+    }
+  ],
+  "packet": {
+    "path": "research/q025/assembly/final-release-v1/packet/aggregate.local.json",
+    "sha256": "a81fd0ffdd12ac44ca77a2ceb9b71c263a1ae77ce555e9cfd9e1730ee069b4cd",
+    "bytes": 152099233
+  },
+  "admissionReceipt": {
+    "path": "research/q025/assembly/final-release-v1/packet/aggregate-admission.json",
+    "sha256": "5c0b10c367393f238c9ce6175827e11af6e133e4117d78c3835ea4c7aa4216fd",
+    "bytes": 1177
+  },
+  "accountingReceipt": {
+    "path": "research/q025/assembly/final-release-v1/packet/source-accounting-admission.json",
+    "sha256": "2379ffa55b32ac0b7fbd446bd97082f2c0f9c853f8be3b0447a26a3e4cb88053",
+    "bytes": 1111
+  },
+  "rootAdjudication": {
+    "path": "research/q025/evaluation/final-holdout/root-43-source-adjudication.json",
+    "sha256": "4fbc122ec2ad1053d3af2fcb9499e23984c736e3182e1ce92540f8b33d1e79ca",
+    "bytes": 74654
+  },
+  "candidateFreeze": {
+    "path": "research/q025/evaluation/final-holdout/candidate-freeze.json",
+    "sha256": "7fc46c314ed543fb4aa9edcf4949b7e366654c437ab62ecd3f07d27277c3ed55",
+    "bytes": 2542
+  },
+  "scoreFreeze": {
+    "path": "research/q025/evaluation/final-holdout/score-freeze.json",
+    "sha256": "512877ad59ee711a5ea5108731804057f46a11eb59fcf163da1ca397c0db176c",
+    "bytes": 696
+  },
+  "acceptanceCases": {
+    "path": "research/q025/assembly/final-release-v1/acceptance-cases.json",
+    "sha256": "2dbc84d084aa90394ab1722c1fa7b32d1bfd360bf87bd2f0ad9c608b43b3152b",
+    "bytes": 45613
+  },
+  "scope": {
+    "paperCount": 6478,
+    "vectorCoveredPaperCount": 6477,
+    "unitCount": 26410,
+    "earliestPublicationDate": "1969",
+    "latestPublicationDate": "2026-11",
+    "earliestYear": 1969,
+    "latestYear": 2026,
+    "recentMeaning": "Recent within this frozen corpus, not a live literature search. Month precision from arXiv identifier when available; otherwise year.",
+    "limitations": [
+      "Swampland-centered collection; not all physics or all relevant literature.",
+      "Unit text is a source-scoped extraction, not a quotation or independently certified result.",
+      "Affinities are retrieval similarities, not physical implications.",
+      "No query encoder runs in v1; matching source facets provide real embedding anchors."
+    ],
+    "description": "As of 17 November 2026, this Swampland-centered atlas includes all 8,473 source questions: 8,436 have reviewed topic placements and 37 remain source facets without a precise placement.",
+    "partialRehearsal": false,
+    "scientificCoverageComplete": false,
+    "deliveryState": "accepted_organization_for_integration_review",
+    "partialCandidateReason": null,
+    "sourceAccountingComplete": true,
+    "sourceInventoryAccounted": true,
+    "unresolvedQuestionCount": 37,
+    "reservedQuestionCount": 0,
+    "accountingReason": "complete_release",
+    "allocatedQuestionCount": 8436,
+    "unallocatedQuestionCount": 37
+  },
+  "counts": {
+    "destinations": 10653,
+    "sources": 26623,
+    "memberships": 66970,
+    "navigationRelations": 13364,
+    "orientationNodes": 211,
+    "detailOverviewNodes": 16
+  },
+  "publicEntryReachability": {
+    "entryCount": 19,
+    "reachableScientificDestinations": 1965,
+    "unreachableAllocatedHomes": 0,
+    "meaning": "Rendered incident navigation is traversable in either direction; incoming traversal does not assert a converse physical relation."
+  },
+  "identity": {
+    "groups": 6,
+    "redirects": 7,
+    "originalDefinitionsRetained": 13,
+    "suppressedSelfRelations": 3,
+    "sourceContributionObservations": 13416,
+    "sourceContributionRelationships": 13397,
+    "ancestorClosureRecomputed": true,
+    "addedAncestorRows": 42,
+    "massChanged": false,
+    "homeRowsRemapped": 0,
+    "sourceStatementEquivalence": false
+  },
+  "sourceMass": {
+    "global": 6476.999999999985,
+    "allocated": 6469.160342435328,
+    "unresolved": 7.839657564657563,
+    "reserved": 0,
+    "unassigned": 7.839657564657563,
+    "renormalized": false
+  },
+  "scientificInputsUnchanged": [
+    "scopes",
+    "routes",
+    "source-role observations",
+    "aliases",
+    "complete identity inventory",
+    "public entry frontier",
+    "old source allocations",
+    "old unresolved source reasons"
+  ],
+  "newSourceFacetCount": 43,
+  "newSourceAccessLinks": 37,
+  "geometry": {
+    "manifest": {
+      "path": "research/q025/geometry/final-release-v1/results/manifest.json",
+      "sha256": "8b239c101ba1639611e9f51f8e79c72cba667485f1ce90436c252900ffe1a8d6",
+      "bytes": 1197
+    },
+    "schematic": {
+      "path": "research/q025/geometry/final-release-v1/schematic-overview.json",
+      "sha256": "e9ce5958e39e094ad20d8599ca7fd08a37ae5a3a379795238540831974139239",
+      "bytes": 15083
+    },
+    "diagnostics": {
+      "path": "research/q025/geometry/final-release-v1/results/diagnostics.json",
+      "sha256": "d0e65ec37df5f5edba656d817bc13511ca4643fcb6007a27a1e89fe712d2ca01",
+      "bytes": 1384
+    },
+    "unchangedF": {
+      "path": "../final-overview-v1/attempt-1/results/complete-F.npz",
+      "sha256": "7cc2f9c820ac6efb87577a0337611b86e0f3c7575dfbc5c70fa1a83b9ac0e4da"
+    },
+    "membershipSha256": "b05144e6b73246fc6e1424a63cd70aad43794a6c8208c48d24cb7d79f2eb76df",
+    "historicalFailedProjectionMembershipSha256": "738f78084a1908a8c7e3057021d400319ef1044344ecbaeaccf71f4d999f3bff",
+    "newFits": 0
+  },
+  "transport": {
+    "verifiedAssetPaths": 7679,
+    "externalAssets": 6770,
+    "maxFileBytes": 26214400,
+    "maxFileCount": 20000,
+    "staticDestinationPages": 10653,
+    "ordinarySiteAssetReserve": 500,
+    "projectedFileCount": 18833,
+    "passed": true,
+    "remoteSourcePack": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/geometry/source-context-v3-compact/pack"
+  },
+  "interfacePins": [
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "sha256": "b23d4767901321588374a3d4573c7305cfa5dff85611f44e892edf71dcc8d7b0",
+      "bytes": 73327
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "sha256": "c99eb56559e11e3bd2199563d63c8758e3758557582be21fa1840195c9fba67d",
+      "bytes": 178
+    },
+    {
+      "path": "lib/protocol/display-editorial.mjs",
+      "sha256": "f2ea42010729ca63cc192f9e42997a1d55942681948f12fe00faa615ac975f47",
+      "bytes": 5781
+    }
+  ],
+  "tests": {
+    "path": "research/q025/assembly/final-release-v1/tests.log",
+    "sha256": "d001f7cdd149b980610a659f2adac9728b28be667fd0117b403719c9ecee1a25",
+    "bytes": 10467
+  },
+  "releaseLimit": "Scientific accounting is complete, including honest zero-H unresolved facets. Root still owns final browser/agent acceptance, installation and deployment. This dated amendment is not independent retest evidence."
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "manifestSha256": "15b2dc99f216462e7d0deaec9f16b4de416cf0a291c76bcda6b973cd3b4ff3cb",
+  "catalogSha256": "03e82c326fbc67f7a8f43a2c7ea947db00728d0bef70c24fc75e2c5b72e15207",
+  "assetPlanSha256": "98ac10f4b3a8cadef9a084c5cb83b13a4ed5f91c6b174cb5b3c5d216aaff0c56",
+  "geometryAcceptanceCasesSha256": "5fe1f3cc42e895e76d5c1e42b0d9ab866c1bb1ad9e149339c5c5f6004fb73bc9",
+  "casesSha256": "bfa23423d92f0ac563712521d580c12461397bf5cc68c3f25abeac37fbf05bc8",
+  "finalAccounting": true,
+  "checks": [
+    {
+      "name": "Existing scientific journey route",
+      "passed": true,
+      "from": "q025-candidate-region:7961ee3cebdb154299e78b58",
+      "to": "q025-candidate-question:190bdf4415c78268d594ff95",
+      "relationId": "navigation:kk:pn1",
+      "type": "narrower",
+      "proofDecision": "decision:navigation-kk:route:pn1",
+      "foreground": true
+    },
+    {
+      "name": "Existing scientific journey route",
+      "passed": true,
+      "from": "q025-candidate-question:190bdf4415c78268d594ff95",
+      "to": "q-kk-graviton-thermal-production",
+      "relationId": "navigation:kk:pn7",
+      "type": "narrower",
+      "proofDecision": "decision:navigation-kk:route:pn7",
+      "foreground": true
+    },
+    {
+      "name": "Existing scientific journey route",
+      "passed": true,
+      "from": "q-kk-graviton-thermal-production",
+      "to": "q-kk-graviton-threshold-decay",
+      "relationId": "navigation:kk:0",
+      "type": "comparison",
+      "proofDecision": "decision:kk-navigation:0",
+      "foreground": true
+    },
+    {
+      "name": "Existing scientific journey route",
+      "passed": true,
+      "from": "q-kk-graviton-threshold-decay",
+      "to": "q-kk-decay-linear-cosmology",
+      "relationId": "navigation:kk:2",
+      "type": "comparison",
+      "proofDecision": "decision:kk-navigation:2",
+      "foreground": true
+    },
+    {
+      "name": "All existing aliases preserve exact original definitions",
+      "passed": true,
+      "aliases": 7
+    },
+    {
+      "name": "Largest complete incident collection measured",
+      "passed": true,
+      "id": "q025-candidate-region:839da90831bec9d6ef0a811b",
+      "title": "Compactification geometry, gauge sectors and consistency",
+      "connectionCount": 75
+    },
+    {
+      "name": "Existing preview has scientific foreground subtitle and retained exact history",
+      "passed": true
+    },
+    {
+      "name": "Existing black-hole to RG route retains exact direction and proof",
+      "passed": true
+    },
+    {
+      "name": "Existing exact source-method map remains checksum-bound",
+      "passed": true,
+      "relationId": "scientific:production-001",
+      "mapSha256": "2d3fc77b042d1dd1bfd42addded3edfcba41de625db1f1d5174ab5cce85b1bfc"
+    },
+    {
+      "name": "Existing two-space portal and schematic marker bind exact supplied records",
+      "passed": true,
+      "kind": "navigation_schematic",
+      "classificationNodeCount": 211,
+      "classificationEdgeCount": 211,
+      "classificationFieldId": "classification:0f4313da-ec73-46f5-b24f-521a1fcb6db7",
+      "portalSteps": [
+        {
+          "buttonLabel": "Explore high energy theory",
+          "destinationId": "landmark:arxiv-hep-th"
+        },
+        {
+          "buttonLabel": "Open the detailed Swampland atlas",
+          "destinationId": "collection:q025-quantum-gravity"
+        }
+      ],
+      "detailEntryId": "collection:q025-quantum-gravity",
+      "detailEntryTitle": "Quantum gravity and connected physics",
+      "detailNodeCount": 16,
+      "detailEdgeCount": 15,
+      "clickTargetId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+      "clickTargetTitle": "Black-hole structure, entropy and dynamical consistency"
+    },
+    {
+      "name": "Existing approved compound case keeps exact full source and complete map",
+      "passed": true,
+      "destinationId": "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+      "sourceOffset": 0,
+      "wholeQuestionCoveredByEachHome": false
+    }
+  ],
+  "reservedQueriesRead": false,
+  "newModelCalls": 0,
+  "browserStarted": false,
+  "note": "Existing QA23 and explicitly supplied non-reserved acceptance fixtures only. Re-run on the post-holdout manifest before final job packaging; this report is not browser or scientific acceptance."
+}

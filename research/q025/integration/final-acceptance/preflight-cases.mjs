@@ -4,18 +4,22 @@ import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {loadAtlas,createAtlasNavigator,createAtlasSourceReader} from '../../../../lib/geometry/prepared-atlas.mjs';
 import {validateNavigationSchematic} from '../../../../web/detail-frontier.mjs';
-const [candidateArg,outputArg]=process.argv.slice(2);if(!candidateArg||!outputArg)throw Error('Usage: node preflight-cases.mjs FROZEN_CANDIDATE NEW_OUTPUT_DIRECTORY');
+const [candidateArg,outputArg,geometryCasesArg]=process.argv.slice(2);if(!candidateArg||!outputArg)throw Error('Usage: node preflight-cases.mjs FROZEN_CANDIDATE NEW_OUTPUT_DIRECTORY [GEOMETRY_CASES]');
 const candidate=path.resolve(candidateArg),output=path.resolve(outputArg),sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 const planBody=await readFile(path.join(candidate,'asset-plan.json')),plan=JSON.parse(planBody),external=new Map(plan.assets.map(row=>[row.path,row]));
 const read=async filename=>{try{return await readFile(filename,'utf8');}catch(error){if(error.code!=='ENOENT')throw error;const relative=path.relative(candidate,filename),row=external.get(relative);if(!row)throw error;const bytes=await readFile(row.sourcePath);if(bytes.length!==row.bytes||sha(bytes)!==row.sha256)throw Error('External proof mismatch');return bytes.toString('utf8');}};
 const atlas=await loadAtlas(candidate,{readText:read}),nav=createAtlasNavigator(atlas),index=new Map(atlas.catalog.destinations.map(d=>[d.id,d]));
 const seed=JSON.parse(await readFile(new URL('../qa23/cases.json',import.meta.url),'utf8'));
-const geometryPath=new URL('../../assembly/final-preholdout-v1/acceptance-cases.json',import.meta.url),geometryBody=await readFile(geometryPath),geometry=JSON.parse(geometryBody);
+const geometryPath=geometryCasesArg?path.resolve(geometryCasesArg):new URL('../../assembly/final-preholdout-v1/acceptance-cases.json',import.meta.url),geometryBody=await readFile(geometryPath),geometryPacket=JSON.parse(geometryBody),geometry=geometryPacket.unchangedPreholdoutCases??geometryPacket;
 const checks=[];const check=(name,fields={})=>checks.push({name,passed:true,...fields});
 const describe=async id=>{await nav.prepareDestination(id);return nav.destination(id);};
 const links=id=>{const result=[];let page;do{page=nav.connections(id,{offset:result.length,limit:100});result.push(...page.items);}while(result.length<page.total);return result;};
 const view=async id=>{await nav.prepareState({...nav.initialState,selector:{...nav.initialState.selector,destinationId:id}});const session=nav.createSession({selector:{...nav.initialState.selector,destinationId:id}});return nav.computeView(session.states[0]);};
 const cases={...seed,atlasId:atlas.manifest.atlasId,atlasVersion:atlas.manifest.atlasVersion,entryDestinationId:atlas.manifest.entryDestinationId,manifestSha256:atlas.manifestSha256,finalAccounting:atlas.manifest.scope.sourceAccountingComplete===true&&atlas.manifest.scope.reservedQuestionCount===0,partialCandidate:atlas.manifest.scope.sourceAccountingComplete!==true,aliases:atlas.catalog.destinationAliases};
+if(geometryPacket.sixExplicitNotices){
+  for(const row of geometryPacket.sixExplicitNotices){const record=await describe(row.sourceFacetId);if(record.sourceHomeStatus!=='unresolved'||record.sourceHomeNotice!==row.notice||record.sourceHomeReason!==row.reason)throw Error('Dated unresolved-source notice or exact reason changed');}
+  const row=geometryPacket.sixExplicitNotices[0];cases.unresolved={destinationId:row.sourceFacetId,notice:row.notice,reason:row.reason};check('Dated unresolved facets preserve explicit notices and exact reasons',{count:geometryPacket.sixExplicitNotices.length});
+}
 for(let i=0;i<cases.journey.length;i++){await describe(cases.journey[i]);if(i){const from=cases.journey[i-1],to=cases.journey[i],relation=links(from).find(r=>r.destinationId===to&&r.type!=='source_question');if(!relation)throw Error('Planned scientific journey lost its route');const proof=await nav.readRelation(relation.id);check('Existing scientific journey route',{from,to,relationId:relation.id,type:relation.type,proofDecision:proof.decisionId,foreground:(await view(from)).directions.some(d=>d.selector.destinationId===to)});}}
 cases.journeyTitles=await Promise.all(cases.journey.map(async id=>(await describe(id)).title));
 for(const [former,canonical]of Object.entries(cases.aliases)){const record=await describe(former);if(record.id!==canonical||!record.scopedIdentity.originalDefinitions.some(d=>d.id===former))throw Error('Alias or retained definition changed');}check('All existing aliases preserve exact original definitions',{aliases:Object.keys(cases.aliases).length});

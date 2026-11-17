@@ -1,0 +1,806 @@
+{
+  "schemaVersion": "q025-final-release-acceptance-cases/1",
+  "unchangedPreholdoutCases": {
+    "classification": {
+      "entry": "classification:physics",
+      "nodes": 211,
+      "portals": [
+        {
+          "destinationId": "classification:0f4313da-ec73-46f5-b24f-521a1fcb6db7",
+          "target": "destination",
+          "entryDestinationId": "landmark:arxiv-hep-th",
+          "label": "Explore high energy theory",
+          "provenance": {
+            "kind": "curator_navigation",
+            "classificationEquivalence": false
+          }
+        },
+        {
+          "destinationId": "classification:9f5c878e-b7b7-4030-bdb9-21a24ad97422",
+          "target": "destination",
+          "entryDestinationId": "landmark:arxiv-hep-th",
+          "label": "Explore high energy theory",
+          "provenance": {
+            "kind": "curator_navigation",
+            "classificationEquivalence": false
+          }
+        },
+        {
+          "destinationId": "classification:cbc41431-fba0-4ff0-8134-2ded6e598922",
+          "target": "destination",
+          "entryDestinationId": "landmark:arxiv-hep-th",
+          "label": "Explore high energy theory",
+          "provenance": {
+            "kind": "curator_navigation",
+            "classificationEquivalence": false
+          }
+        },
+        {
+          "destinationId": "landmark:arxiv-hep-th",
+          "target": "detail",
+          "entryDestinationId": "collection:q025-quantum-gravity",
+          "label": "Open the detailed Swampland atlas",
+          "provenance": {
+            "kind": "curator_collection_navigation",
+            "sharedCoordinateMetric": false,
+            "reviewOnly": false
+          }
+        }
+      ],
+      "sharedCoordinateMetric": false
+    },
+    "overview": {
+      "entry": "collection:q025-quantum-gravity",
+      "kind": "navigation_schematic",
+      "nodes": 16,
+      "recordedEdges": 15,
+      "choices": [
+        {
+          "destinationId": "q025-candidate-region:2826f594e622ec820a3a006c",
+          "title": "String, brane and quantum-gravity descriptions and consistency"
+        },
+        {
+          "destinationId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "title": "Calabi–Yau geometry, computation and compactification physics"
+        },
+        {
+          "destinationId": "q025-candidate-region:8574187d747387068f02fe63",
+          "title": "Compactification, supersymmetry and vacuum dynamics"
+        },
+        {
+          "destinationId": "q025-candidate-region:79dd11c4632243fb25aa5bad",
+          "title": "Moduli dynamics, stabilization and compactification tests"
+        },
+        {
+          "destinationId": "q025-candidate-region:62d736e5f22beae93d504a44",
+          "title": "De Sitter backgrounds: existence, stability and control"
+        },
+        {
+          "destinationId": "q025-candidate-region:525f7ea42c33dd644d118772",
+          "title": "Gravitational EFTs: consistency, structure and limits"
+        },
+        {
+          "destinationId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+          "title": "Black-hole structure, entropy and dynamical consistency"
+        },
+        {
+          "destinationId": "q025-candidate-region:b35c5857878f0111cd402204",
+          "title": "Holographic descriptions, dynamics and gravitational information"
+        },
+        {
+          "destinationId": "q025-candidate-region:e3c867c46139e156f816e00f",
+          "title": "Inflationary dynamics, primordial observables and theory limits"
+        },
+        {
+          "destinationId": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "title": "Dark sectors: candidates, cosmic histories and tests"
+        },
+        {
+          "destinationId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "title": "Dark-energy mechanisms, inference and conditional consistency"
+        },
+        {
+          "destinationId": "q025-candidate-region:277d9b2e77af3c3b06134952",
+          "title": "Axions and strong CP: construction, consistency and tests"
+        },
+        {
+          "destinationId": "q025-candidate-region:ec6e08226449cb148b80a2d2",
+          "title": "Anomalies, consistency and six-dimensional theory structure"
+        },
+        {
+          "destinationId": "q025-candidate-region:f87c99e7c23e7d82e9d1db78",
+          "title": "Particle scales, supersymmetry and cosmological viability"
+        },
+        {
+          "destinationId": "q025-candidate-region:88aac1f2c237b6c3e063f6e0",
+          "title": "Fields, gravity and cosmology: construction and tests"
+        }
+      ],
+      "coordinatesAreMetric": false
+    },
+    "darkSectorToProduction": [
+      {
+        "from": "q025-candidate-region:7961ee3cebdb154299e78b58",
+        "to": "q025-candidate-question:190bdf4415c78268d594ff95",
+        "title": "Extra dimensions and conditional quantum-gravity tests",
+        "relationId": "navigation:kk:pn1",
+        "type": "narrower",
+        "traversal": "outgoing",
+        "navigationBasis": "reviewed_scientific_navigation"
+      },
+      {
+        "from": "q025-candidate-question:190bdf4415c78268d594ff95",
+        "to": "q-kk-graviton-thermal-production",
+        "title": "How does a hot brane produce KK gravitons?",
+        "relationId": "navigation:kk:pn7",
+        "type": "narrower",
+        "traversal": "outgoing",
+        "navigationBasis": "reviewed_scientific_navigation"
+      }
+    ],
+    "kkConditionalRoutes": [
+      {
+        "id": "navigation:kk:0",
+        "source": "q-kk-graviton-thermal-production",
+        "target": "q-kk-graviton-threshold-decay",
+        "type": "comparison",
+        "title": "Does the produced population have the assumed subsequent cascade?",
+        "rationale": "Adequate initial production does not establish cascade efficiency. Check the background and couplings before applying the reported threshold scaling.",
+        "decisionId": "decision:kk-navigation:0",
+        "status": "accepted_navigation",
+        "evidenceCount": 2,
+        "detail": {
+          "shardId": "relation-details-0000",
+          "recordSha256": "e5f8cfd78a43fcd8117326295c50a5b2a621f0332236f73d32212abb29eb0286"
+        }
+      },
+      {
+        "id": "navigation:kk:2",
+        "source": "q-kk-graviton-threshold-decay",
+        "target": "q-kk-decay-linear-cosmology",
+        "type": "comparison",
+        "title": "How does the conditional recoil model depend on the decay history?",
+        "rationale": "Compare a microscopic rate question with a conditional linear-cosmology calculation. Their targets differ; the latter does not establish that its assumed cascade occurs.",
+        "decisionId": "decision:kk-navigation:2",
+        "status": "accepted_navigation",
+        "evidenceCount": 2,
+        "detail": {
+          "shardId": "relation-details-0000",
+          "recordSha256": "ce4c02afe4e80ad7e973390254726691d50b597b13c796c6391b905935d4f09b"
+        }
+      },
+      {
+        "id": "navigation:kk:3",
+        "source": "q-kk-decay-linear-cosmology",
+        "target": "q-kk-graviton-threshold-decay",
+        "type": "premise_check",
+        "title": "Is the assumed repeated-decay history microscopically supported?",
+        "rationale": "The linear model presupposes repeated near-threshold decays. Check the applicable threshold rate without replacing the conditional calculation by a universal exclusion.",
+        "decisionId": "decision:kk-navigation:3",
+        "status": "accepted_navigation",
+        "evidenceCount": 2,
+        "detail": {
+          "shardId": "relation-details-0000",
+          "recordSha256": "6bf805304aac25e1139381e75f9b33a2adc3c9f2b28bbb6c36a26250f9bac5ca"
+        }
+      },
+      {
+        "id": "navigation:kk:4",
+        "source": "q-kk-decay-linear-cosmology",
+        "target": "q-kk-graviton-thermal-production",
+        "type": "premise_check",
+        "title": "Which initial KK population does the cosmology assume?",
+        "rationale": "The linear analysis inherits hot-brane production with an initially empty bulk and a specified initial temperature. This is an initial-condition route, not source equivalence.",
+        "decisionId": "decision:kk-navigation:4",
+        "status": "accepted_navigation",
+        "evidenceCount": 1,
+        "detail": {
+          "shardId": "relation-details-0000",
+          "recordSha256": "f43ce667fb993cdd3d4c341456fc2a9d5a133e2f3c9abe14267da587e4259765"
+        }
+      }
+    ],
+    "blackHoleEntry": {
+      "destinationId": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+      "availableUniqueDestinations": 21
+    },
+    "unresolved": {
+      "unitId": "unit:0486f470080e57cff9499a6687e71807d24a273dc6fd41613b5b8b77981e81e8",
+      "destinationId": "source-question:0486f470080e57cff9499a6687e71807d24a273dc6fd41613b5b8b77981e81e8",
+      "sourceHomeStatus": "unresolved",
+      "reason": "Retain unresolved status. Unlike an unknown calculation outcome, these missing premises determine the scientific system and operation being placed. The interaction, parent sector, reduction setup and dualization convention are unidentified. Those omissions prevent establishing which physical reduction question is covered, even though q13 and q19 provide thematic connections. q13 explicitly preserves this source only as an underspecified boundary access point.",
+      "semanticHMass": 0
+    },
+    "compound": {
+      "paperId": "2604.19817",
+      "rows": [
+        {
+          "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+          "destinationId": "q025-candidate-question:ef3f4c0d957e0389682f15bb",
+          "weight": 0.5,
+          "placementStatus": "accepted",
+          "decisionId": "decision:explicit-cut-03:placement-continuation-0029:u20:q18",
+          "originalBinId": "multiview_preserve_candidates:region:6b153a5510a5ae504519",
+          "coverageMode": "explicit_compound_union",
+          "targetCoverage": [
+            {
+              "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+              "destinationIds": [
+                "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+              ],
+              "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+            },
+            {
+              "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+              "destinationIds": [
+                "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+              ],
+              "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+            }
+          ],
+          "wholeQuestionCoveredByEachHome": false,
+          "allocationMeaning": "Organizational fraction, not a physical probability."
+        },
+        {
+          "unitId": "unit:e736a6d3506e76b18402c20d025399890a9e0ba022a83fdd3032f00229d99916",
+          "destinationId": "q025-candidate-question:aef9c55b0263c0b3a8221f65",
+          "weight": 0.5,
+          "placementStatus": "accepted",
+          "decisionId": "decision:explicit-cut-03:placement-continuation-0029:u20:q14",
+          "originalBinId": "multiview_preserve_candidates:region:6b153a5510a5ae504519",
+          "coverageMode": "explicit_compound_union",
+          "targetCoverage": [
+            {
+              "sourceSpan": "How does supersymmetry encode vacuum dynamics geometrically, from Seiberg–Witten theory through supergravity and string compactification",
+              "destinationIds": [
+                "q025-candidate-question:ef3f4c0d957e0389682f15bb"
+              ],
+              "explanation": "q18 exactly covers this conceptual comparison across all three stated frameworks."
+            },
+            {
+              "sourceSpan": "and when do leading α′³ corrections preserve or remove a single-modulus KKLT minimum?",
+              "destinationIds": [
+                "q025-candidate-question:aef9c55b0263c0b3a8221f65"
+              ],
+              "explanation": "q14 explicitly includes corrected minima and leading α′³ corrections. Its assumption that correction sensitivity alone does not establish uplifted de Sitter preserves the unspecified uplift phase."
+            }
+          ],
+          "wholeQuestionCoveredByEachHome": false,
+          "allocationMeaning": "Organizational fraction, not a physical probability."
+        }
+      ],
+      "meaning": "Each destination covers one stated part; the complete map and normalized organizational weights remain visible."
+    },
+    "aliases": {
+      "q025-candidate-question:647f4b3de8eb982fbd1db9af": "q025-candidate-question:0fe511cad863493858f2321b",
+      "q025-candidate-question:39594f3f2592c9816c879036": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "q025-candidate-question:44cfc530ee4b7053d438805d": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "q025-candidate-question:3f58b634e6f7439e502be440": "q-kk-decay-linear-cosmology",
+      "q025-candidate-question:49d3e894f117509cb5f6a9f2": "q025-candidate-question:891203df753b324531020eb9",
+      "q025-candidate-question:2ed35c0e62570949d976b307": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "q025-candidate-question:a4f67137d6a4a477cc097c6a": "q025-candidate-question:b6a72d6d11c8f9c783284067"
+    },
+    "methodOnUnresolvedPaper": {
+      "unitId": "unit:545911ee0ebeb8dafc52021ff2b46b1a2fe07d64ce59d1daec1112bccf51b43e",
+      "paperId": "0705.1725",
+      "browserVectorRow": 8542,
+      "descriptionSha256": "a387d679a5d0f930b6d76ab3c550179e223f7d05e7449af656c7e134c9421452",
+      "availability": "available",
+      "objects": 159,
+      "exactAnchors": 1,
+      "unresolvedSourcePaper": true
+    },
+    "sourceMethodRoutes": {
+      "path": "source-method-routes.json",
+      "sha256": "2d3fc77b042d1dd1bfd42addded3edfcba41de625db1f1d5174ab5cce85b1bfc",
+      "bytes": 105807
+    }
+  },
+  "dated43Cases": [
+    {
+      "caseId": "H01",
+      "paperId": "1804.08792",
+      "unitId": "unit:5c62117de477890a3cfd2382a6577cd191e4356d2a4db659ea788b43709d64ad",
+      "sourceFacetId": "source-question:5c62117de477890a3cfd2382a6577cd191e4356d2a4db659ea788b43709d64ad",
+      "destinationId": "q025-candidate-region:08e506f6e18913013e767c3c",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole construction, effective-theory, bundle and simultaneous-moduli question fits this broad heterotic-centered compactification family. Counting is a bounded construction task, not a claim of completed classification."
+    },
+    {
+      "caseId": "H02",
+      "paperId": "0912.3167",
+      "unitId": "unit:9862895c7d5cdaf8e58dc488fe0b261708a1c624b84b1d4cc166eee51ed9040d",
+      "sourceFacetId": "source-question:9862895c7d5cdaf8e58dc488fe0b261708a1c624b84b1d4cc166eee51ed9040d",
+      "destinationId": "q025-candidate-question:04ea1b1376fe4c1d2d1be282",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire KK/Regge emission-multiplicity and evaporation/species-bound target fits this broad species question. Retain D-brane localization and the sub-string-horizon validity question; no efficient-emission formula is certified."
+    },
+    {
+      "caseId": "H03",
+      "paperId": "1006.2876",
+      "unitId": "unit:8f2878cacb07503ae7bda9642c9001011feeaa2f08a0090fe9ec7d1abc0e6235",
+      "sourceFacetId": "source-question:8f2878cacb07503ae7bda9642c9001011feeaa2f08a0090fe9ec7d1abc0e6235",
+      "destinationId": "q025-candidate-question:220ee460807b8b403ee4cb11",
+      "unresolved": false,
+      "notice": null,
+      "reason": "Source-dated inflationary predictions encompass e-folds, tilt and running for the explicit Kähler constructions; the simpler exponential potential remains a comparison within the same inflation test, not a claimed compactification."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:a4fd8de130a2ce4a11542bdca1a9f3990f51b93e4b66d6e755db176fb2be2fac",
+      "sourceFacetId": "source-question:a4fd8de130a2ce4a11542bdca1a9f3990f51b93e4b66d6e755db176fb2be2fac",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "This immutable row is a declarative setting about calculable masses/interactions. It is preserved as context; no standalone physical question or home is inferred from paper membership."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:605a758449c8c01c6127fa8be1ebe7a09948f8ad4e2799a47cda5733ec1f5605",
+      "sourceFacetId": "source-question:605a758449c8c01c6127fa8be1ebe7a09948f8ad4e2799a47cda5733ec1f5605",
+      "destinationId": "q025-candidate-region:08e506f6e18913013e767c3c",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete cycle/matter-wavefunction/canonical-coupling question fits the compactification-couplings family, independently of the paper's later decay applications."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:84a51cc8aaa9caf2b358b39ab87f6d120a1b3f8f3acb97f7eafbcc51d3929b78",
+      "sourceFacetId": "source-question:84a51cc8aaa9caf2b358b39ab87f6d120a1b3f8f3acb97f7eafbcc51d3929b78",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "The source explicitly assumes the primordial-inflation/low-SUSY endpoint problem rather than calculating it. The inspected post-inflation homes do not cover this entire construction target; no unspecified inflaton identity is invented."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:ae0b824d52d3aeb47e33e7d3a8655a664c3c585ee8c1860a1e3229382c39de1b",
+      "sourceFacetId": "source-question:ae0b824d52d3aeb47e33e7d3a8655a664c3c585ee8c1860a1e3229382c39de1b",
+      "destinationId": "q025-candidate-region:70d75ef9abfe7226ec3f9a4a",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The proposed photon, energy-injection and low-energy-interaction tests all concern the specified long-lived modulus within the family's source-specific phenomenological constraints. They remain prospective extensions."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:21f45394a9ccfc5ae164d558f0cab7a192e0103ca9c621fee61d3795b42616da",
+      "sourceFacetId": "source-question:21f45394a9ccfc5ae164d558f0cab7a192e0103ca9c621fee61d3795b42616da",
+      "destinationId": "q025-candidate-region:70d75ef9abfe7226ec3f9a4a",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete reheating, relic-abundance and decay-signal comparison is the broad modulus-cosmology target, with calculated mass/coupling distinctions retained."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:03b5522134c00187a39d258af46e7286e884ba4ba82d42e6ecfb3423c3d8605a",
+      "sourceFacetId": "source-question:03b5522134c00187a39d258af46e7286e884ba4ba82d42e6ecfb3423c3d8605a",
+      "destinationId": "q025-candidate-region:70d75ef9abfe7226ec3f9a4a",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole conditional Galactic/cosmological photon-signal question is a modulus phenomenology specialization. Abundance and distribution remain inputs, not predictions of dilution."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:33b47edf9b387ede26a2651b0a5cc095fcd8d3b2f2ed9e74a0669270bb7923f5",
+      "sourceFacetId": "source-question:33b47edf9b387ede26a2651b0a5cc095fcd8d3b2f2ed9e74a0669270bb7923f5",
+      "destinationId": "q025-candidate-region:70d75ef9abfe7226ec3f9a4a",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole review separates heavy-modulus early decay, gravitino production, relic abundance and vacuum stability; all are explicit family targets with independent assumptions."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:85dc97afbed44456d34efb0d8786126ed2ad9021e9ad062b7f0b337df72b7e72",
+      "sourceFacetId": "source-question:85dc97afbed44456d34efb0d8786126ed2ad9021e9ad062b7f0b337df72b7e72",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "P2 versus P1 hybrid widths and logarithmic scales are a finite-region/onset specialization; no universal dimensional trend is asserted."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:1c18de28c89eb44b2bccecae1230acb138f438643ca345cfa8162edccd02befe",
+      "sourceFacetId": "source-question:1c18de28c89eb44b2bccecae1230acb138f438643ca345cfa8162edccd02befe",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire unstabilized vector-moduli distance/EFT-change question fits the distance/onset family, without importing a flux-generated potential."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:157ec102a6e45cc7e1d3b34d00dd7fc56916d7a88f1be05b21ce048bb06beb8e",
+      "sourceFacetId": "source-question:157ec102a6e45cc7e1d3b34d00dd7fc56916d7a88f1be05b21ce048bb06beb8e",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The second-model P1/orbifold comparison tests finite-region and logarithmic onset within the family; it does not establish universality."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:d20029184c5b9035f386744df5fd8190e4ba727c13b408137b512ec647c5b063",
+      "sourceFacetId": "source-question:d20029184c5b9035f386744df5fd8190e4ba727c13b408137b512ec647c5b063",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete Planck-order excursion/onset question is a restricted finite-region test; retain the studied models and scale convention."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:b347fe869fdc9844c7e5a46094ad4b557c76e0e8a85f9e321ba70a41a84d5728",
+      "sourceFacetId": "source-question:b347fe869fdc9844c7e5a46094ad4b557c76e0e8a85f9e321ba70a41a84d5728",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "Many-region accumulation versus shortest geodesic distance is a whole finite-preasymptotic-range question. Parametric growth remains an open test, not a derived consequence."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:4abcfcfabe5532e87068d0541eac7dc73874359a970844dc2b40760c6e41b4df",
+      "sourceFacetId": "source-question:4abcfcfabe5532e87068d0541eac7dc73874359a970844dc2b40760c6e41b4df",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The symmetry-restricted many-modulus calculation tests finite excursions; the scope allows this question while the restriction blocks global certification."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:04e542dfd0afbfef16bbe81c9beb0bbe52e86f2f80f9941ec370103ada615704",
+      "sourceFacetId": "source-question:04e542dfd0afbfef16bbe81c9beb0bbe52e86f2f80f9941ec370103ada615704",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete delay-before-asymptotic-lightening question is explicitly the onset/finite-region target."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:ba76b96a8b428c8f2cc3597403e7e75e05e4567765fabd7d6dbc340bf48cf001",
+      "sourceFacetId": "source-question:ba76b96a8b428c8f2cc3597403e7e75e05e4567765fabd7d6dbc340bf48cf001",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "This row is the declarative quintic LG starting setting and chart comparison. Preserve it as an exact contextual facet, without fabricating an independent question or canonical alias."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:d70ac4685500975ab36887d470330b22cfbf281ba0571b11eb944f07bcd2f5c2",
+      "sourceFacetId": "source-question:d70ac4685500975ab36887d470330b22cfbf281ba0571b11eb944f07bcd2f5c2",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The full geometric/LG/hybrid proper-distance comparison belongs to the specified compactification examples and finite/asymptotic distinction."
+    },
+    {
+      "caseId": "H06",
+      "paperId": "1908.04352",
+      "unitId": "unit:5e7826f4a6bc9add7f182afe071f2fbbd7b9ffdd610bea5516d4c2db26768f3c",
+      "sourceFacetId": "source-question:5e7826f4a6bc9add7f182afe071f2fbbd7b9ffdd610bea5516d4c2db26768f3c",
+      "destinationId": "q025-candidate-question:19ab030eb55337ead0d27de0",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The full nonperturbative decay and brane-annihilation interpretation belongs to the specified AdS decay-channel question. Lower flux need not improve control; bubble, probe and throat arguments remain distinct evidence."
+    },
+    {
+      "caseId": "H07",
+      "paperId": "2308.01331",
+      "unitId": "unit:b68acd3b7e8bbb6ca8616a434ba51647462d4a74c4b5b0973b844abddf21146d",
+      "sourceFacetId": "source-question:b68acd3b7e8bbb6ca8616a434ba51647462d4a74c4b5b0973b844abddf21146d",
+      "destinationId": "q025-candidate-question:d292e0749341c9b371266594",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire local-condition to asymptotic-rate connection is a conditional distance-conjecture formulation/test. Curvature, geodesic density and tower alignment remain additional hypotheses, not universal consequences."
+    },
+    {
+      "caseId": "H08",
+      "paperId": "2312.00120",
+      "unitId": "unit:d03513a236e063edc8002c17ec8b26c543c9b5170794d2fe7b9f21909ed7264d",
+      "sourceFacetId": "source-question:d03513a236e063edc8002c17ec8b26c543c9b5170794d2fe7b9f21909ed7264d",
+      "destinationId": "q025-candidate-question:cddea25176cb8afb89dbce93",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole BPS particle/string-gradient interior-extension question is explicitly a beyond-asymptotic diagnostic. Its tension-derived scale is not silently an arbitrary species cutoff."
+    },
+    {
+      "caseId": "H09",
+      "paperId": "1808.09966",
+      "unitId": "unit:966d5d0aa7a0afce0166f02da20abbd89063fb9f63981eaf011d1b94f758e3fb",
+      "sourceFacetId": "source-question:966d5d0aa7a0afce0166f02da20abbd89063fb9f63981eaf011d1b94f758e3fb",
+      "destinationId": "q025-candidate-question:897ff5bc3babcd74cbc0c530",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire small-period fundamental-axion consistency question is an axion quantum-gravity criterion with a required fundamental-versus-Higgs distinction."
+    },
+    {
+      "caseId": "H09",
+      "paperId": "1808.09966",
+      "unitId": "unit:c4b1e10ca729886d4f2daa96cfdc1a29ff64c84159d1b7fae7796fac1ecaabd1",
+      "sourceFacetId": "source-question:c4b1e10ca729886d4f2daa96cfdc1a29ff64c84159d1b7fae7796fac1ecaabd1",
+      "destinationId": "q025-candidate-question:104115c4f0da1aab99316ee8",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete applicability question for isolated versus intrinsically tower-valued/mixed light vectors fits massive-vector cutoff premises. Excluded regimes remain excluded."
+    },
+    {
+      "caseId": "H09",
+      "paperId": "1808.09966",
+      "unitId": "unit:ca18ce0dd555e6f0d97e812370a43fc75bd4bf3b2107905337cbf5265b4d7e6b",
+      "sourceFacetId": "source-question:ca18ce0dd555e6f0d97e812370a43fc75bd4bf3b2107905337cbf5265b4d7e6b",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "The nonconserved-current/single-trace-scalar CFT test is a distinct proposed holographic criterion. The inspected bulk-vector and axion scopes provide context, but no complete current-gap/operator home is established."
+    },
+    {
+      "caseId": "H09",
+      "paperId": "1808.09966",
+      "unitId": "unit:2c58da578620285c1e77fc11a6daba739d99627908108fe9152986a62fb558c9",
+      "sourceFacetId": "source-question:2c58da578620285c1e77fc11a6daba739d99627908108fe9152986a62fb558c9",
+      "destinationId": "q025-candidate-question:104115c4f0da1aab99316ee8",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire charge-unit/Higgs loophole question fits physical-charge normalization and tiny-photon cutoff applicability; no unavoidable photon-mass exclusion follows."
+    },
+    {
+      "caseId": "H09",
+      "paperId": "1808.09966",
+      "unitId": "unit:b396046c989ba3265619c1ffcec4b5510c1932891ef75dbd1fa73c56abab27a8",
+      "sourceFacetId": "source-question:b396046c989ba3265619c1ffcec4b5510c1932891ef75dbd1fa73c56abab27a8",
+      "destinationId": "q025-candidate-question:104115c4f0da1aab99316ee8",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole radiative-QFT-consistency versus quantum-gravity masslessness question fits the conditional tiny-vector cutoff target, not an established masslessness theorem."
+    },
+    {
+      "caseId": "H10",
+      "paperId": "2212.04499",
+      "unitId": "unit:a00dc530c08fc14ef46ef00bff5c12d6af2cd7c94c52833f772d82dc6313a602",
+      "sourceFacetId": "source-question:a00dc530c08fc14ef46ef00bff5c12d6af2cd7c94c52833f772d82dc6313a602",
+      "destinationId": "q025-candidate-question:3bdab6beac0e39be69944477",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire minimal axion-Maxwell Gauss-law/non-invertible constraint question fits the anomaly-remnant question, with model-specific defect construction and Page-charge conditions retained."
+    },
+    {
+      "caseId": "H11",
+      "paperId": "hep-ph/0306003",
+      "unitId": "unit:f5ed886d5b97dab1057b5430b244de6f0a271f2abef193c7f5023777ca3920fe",
+      "sourceFacetId": "source-question:f5ed886d5b97dab1057b5430b244de6f0a271f2abef193c7f5023777ca3920fe",
+      "destinationId": "q025-candidate-question:b80d9be255d603c6fcec5d57",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole nucleon-protection, neutrino-mass and anomaly-free gauge-origin target is directly covered. Continuous origin and discrete remnant are distinguished; no universal gauged-B−L sufficiency."
+    },
+    {
+      "caseId": "H12",
+      "paperId": "2005.12296",
+      "unitId": "unit:0ae432fb12c8449d46896175d8294f891696f4818d583a05d391733792737adc",
+      "sourceFacetId": "source-question:0ae432fb12c8449d46896175d8294f891696f4818d583a05d391733792737adc",
+      "destinationId": "q025-candidate-question:2064d452abd633e46ee9dab6",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire gauge-screening versus M-theory-geometric determination is a generalized-symmetry/screening question using explicit geometric data. The five-dimensional/non-Lagrangian calculation remains source-specific; no universal geometric algorithm is certified."
+    },
+    {
+      "caseId": "H13",
+      "paperId": "1502.07746",
+      "unitId": "unit:6fa8ad7be09256f4dd2419f18700d15cdd4440bee4c97ad6c8211461c3bf2488",
+      "sourceFacetId": "source-question:6fa8ad7be09256f4dd2419f18700d15cdd4440bee4c97ad6c8211461c3bf2488",
+      "destinationId": "q025-candidate-question:233aadf7a55f0583fd9fae59",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete pre-BBN history, particle/baryon consequences, CMB inference and small-scale perturbations are covered by intermediate-domination/reheating and its stated particle/perturbation consequences."
+    },
+    {
+      "caseId": "H14",
+      "paperId": "2005.09688",
+      "unitId": "unit:7de4f6b585851da96d52f17492285b64b898e757eb8e7a72c851bdd11205c0f2",
+      "sourceFacetId": "source-question:7de4f6b585851da96d52f17492285b64b898e757eb8e7a72c851bdd11205c0f2",
+      "destinationId": "q025-candidate-region:e049d8410deac03afa74e256",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole interaction-entanglement versus reheating-entropy duration test fits this broad entropy/inflation family. Thermal and horizon entropy remain different premises; no home at the horizon-bound-only card."
+    },
+    {
+      "caseId": "H15",
+      "paperId": "2105.11935",
+      "unitId": "unit:57849f8c18876f8d7064648339a9657fa5add99420b14ae6b859045206ba0414",
+      "sourceFacetId": "source-question:57849f8c18876f8d7064648339a9657fa5add99420b14ae6b859045206ba0414",
+      "destinationId": "q025-candidate-question:690efd65319fe5597ecdd907",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire source-dated Planck-2018 plus invoked-criterion compatibility question belongs to specified inflationary modifications. Which models/criteria are meant remains anchored to this exact source, not reconstructed from the short facet."
+    },
+    {
+      "caseId": "H15",
+      "paperId": "2105.11935",
+      "unitId": "unit:8ea0e050f08e60dee58d52b740725aee17a2cece0d500bbd12ba891ea4399760",
+      "sourceFacetId": "source-question:8ea0e050f08e60dee58d52b740725aee17a2cece0d500bbd12ba891ea4399760",
+      "destinationId": "q025-candidate-question:690efd65319fe5597ecdd907",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete high-curvature rescaled-Einstein compatibility and potential/parameter question is explicitly covered; the approximation, original-action conventions and conditional cuts remain attached."
+    },
+    {
+      "caseId": "H16",
+      "paperId": "1409.8409",
+      "unitId": "unit:722a6595a0a1cd854870d79fe0477521180d946e6c24a76146334e3103181048",
+      "sourceFacetId": "source-question:722a6595a0a1cd854870d79fe0477521180d946e6c24a76146334e3103181048",
+      "destinationId": "q025-candidate-question:6a4acdd5504a55612dbfce6e",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire multiple-axion vacuum longevity/selection and post-tunneling inflation program fits the landscape/cosmological-history family. Breaking-source count, accidental alignment and each dynamical stage remain source-specific conditions, not a single demonstrated chain."
+    },
+    {
+      "caseId": "H17",
+      "paperId": "1404.7773",
+      "unitId": "unit:3148fd80717c0f66c127781744ff86208b32bd503a36ded3e527068ff743394d",
+      "sourceFacetId": "source-question:3148fd80717c0f66c127781744ff86208b32bd503a36ded3e527068ff743394d",
+      "destinationId": "q025-candidate-question:9e41a3868dcdcfebf87974e3",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The full two-axion hierarchy/nonperturbative-range mechanism belongs to the existing general axion-engineering question, whose systems include compact pseudo-Goldstone fields and whose summary explicitly includes hierarchy generation. The original string-compactification home is too restrictive: bounded source pages present a field-theory mechanism and prospective embedding strategies, not an established string realization. Retain hierarchy-only and nonperturbative premises; enhanced range alone establishes neither inflation nor ultraviolet control."
+    },
+    {
+      "caseId": "H18",
+      "paperId": "1003.4233",
+      "unitId": "unit:911480ef7d514660f6eb7573b6eba4ada5f28b07544e4dbc4e95827380ecd536",
+      "sourceFacetId": "source-question:911480ef7d514660f6eb7573b6eba4ada5f28b07544e4dbc4e95827380ecd536",
+      "destinationId": "q025-candidate-question:b86bf1e8cdd7302fe82532cb",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete nonsupersymmetric FN/axion/neutrino-scale program fits the flavor/PQ family. Green–Schwarz/Stückelberg details and incomplete flavor solution remain source-local."
+    },
+    {
+      "caseId": "H19",
+      "paperId": "2410.21499",
+      "unitId": "unit:d204fe209e4489a678355d622266b0fc484f38719f34e7ae9ef25f3adc0a7d6d",
+      "sourceFacetId": "source-question:d204fe209e4489a678355d622266b0fc484f38719f34e7ae9ef25f3adc0a7d6d",
+      "destinationId": "q025-candidate-question:ba83a10fc3f76f6befff7e35",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The complete high-energy spectral mechanism and impact-parameter EFT-breakdown target fits the amplitude/UV-spectrum question as a specialization. Pole generation is not silently pole subtraction or scattering unitarization."
+    },
+    {
+      "caseId": "H20",
+      "paperId": "2105.01436",
+      "unitId": "unit:d5870bb2f3deb3bdb1fe81880d99cb26537926b3e2db60e0af1841292dd9adb3",
+      "sourceFacetId": "source-question:d5870bb2f3deb3bdb1fe81880d99cb26537926b3e2db60e0af1841292dd9adb3",
+      "destinationId": "q025-candidate-question:3193b8d7483071b6c5ef1193",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole conditional scalar-potential/new-physics inference is a gravitational scalar-scattering dispersive constraint on EFT/UV data. Weak coupling, Regge behavior and loop input remain necessary source qualifications; no universal positivity sign."
+    },
+    {
+      "caseId": "H21",
+      "paperId": "2605.29203",
+      "unitId": "unit:bf289c674585839ad7a0179326fe791dd2ca087f62dd04015ea25e2db6be39e2",
+      "sourceFacetId": "source-question:bf289c674585839ad7a0179326fe791dd2ca087f62dd04015ea25e2db6be39e2",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "Adequate bounded source context identifies a timelike local-algebra/Lorentzian-continuation question, but the inspected Liouville destination changes the continuation prescription and target. This is atlas scope coverage, not missing source context; retain a discoverable facet without H."
+    },
+    {
+      "caseId": "H22",
+      "paperId": "2306.15383",
+      "unitId": "unit:ca9f29f04892f9d6113b6ea042c68334467bcd151850c9ced7b4384ba5260fee",
+      "sourceFacetId": "source-question:ca9f29f04892f9d6113b6ea042c68334467bcd151850c9ced7b4384ba5260fee",
+      "destinationId": "q025-placement-question:46b4e01ae7946168d7424b0f",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The whole metric-ansatz-dependent neutrino restriction is a circle-spectrum conjectural test. Use only its explicitly allowed distinct non-SUSY-AdS branch: no AdS-Distance or multiple-point-criticality premise is inherited; profiled-coordinate quantization remains a source claim."
+    },
+    {
+      "caseId": "H23",
+      "paperId": "2311.12487",
+      "unitId": "unit:278a067096f734e9b369554488ff5574faa51b87751783614fb13a603707ce87",
+      "sourceFacetId": "source-question:278a067096f734e9b369554488ff5574faa51b87751783614fb13a603707ce87",
+      "destinationId": "q025-candidate-question:5c3a70858517139579f1e590",
+      "unresolved": false,
+      "notice": null,
+      "reason": "The entire fermionic freeze-in decay/domain-wall joint-constraint question is a correlated symmetry-breaking cosmology specialization. The common effective QG scale is an assumption; no thermal scalar substitution or PTA detection claim."
+    },
+    {
+      "caseId": "H24",
+      "paperId": "gr-qc/0405011",
+      "unitId": "unit:a1033e21e8fb518757b87ea00eed5b7958dbfd6343d990303c7e6dd20c21de99",
+      "sourceFacetId": "source-question:a1033e21e8fb518757b87ea00eed5b7958dbfd6343d990303c7e6dd20c21de99",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "The immutable question combines a membrane/radial-string compact-object alternative with a cosmological/string-DM model. The inspected compact-object and BPS scopes do not cover that entire compound target. Retain source-facet access and qualified partial orientation, not a fabricated whole home."
+    }
+  ],
+  "h17Override": {
+    "caseId": "H17",
+    "paperId": "1404.7773",
+    "unitId": "unit:3148fd80717c0f66c127781744ff86208b32bd503a36ded3e527068ff743394d",
+    "sourceFacetId": "source-question:3148fd80717c0f66c127781744ff86208b32bd503a36ded3e527068ff743394d",
+    "destinationId": "q025-candidate-question:9e41a3868dcdcfebf87974e3",
+    "unresolved": false,
+    "notice": null,
+    "reason": "The full two-axion hierarchy/nonperturbative-range mechanism belongs to the existing general axion-engineering question, whose systems include compact pseudo-Goldstone fields and whose summary explicitly includes hierarchy generation. The original string-compactification home is too restrictive: bounded source pages present a field-theory mechanism and prospective embedding strategies, not an established string realization. Retain hierarchy-only and nonperturbative premises; enhanced range alone establishes neither inflation nor ultraviolet control."
+  },
+  "sixExplicitNotices": [
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:a4fd8de130a2ce4a11542bdca1a9f3990f51b93e4b66d6e755db176fb2be2fac",
+      "sourceFacetId": "source-question:a4fd8de130a2ce4a11542bdca1a9f3990f51b93e4b66d6e755db176fb2be2fac",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "This immutable row is a declarative setting about calculable masses/interactions. It is preserved as context; no standalone physical question or home is inferred from paper membership."
+    },
+    {
+      "caseId": "H04",
+      "paperId": "0705.3460",
+      "unitId": "unit:84a51cc8aaa9caf2b358b39ab87f6d120a1b3f8f3acb97f7eafbcc51d3929b78",
+      "sourceFacetId": "source-question:84a51cc8aaa9caf2b358b39ab87f6d120a1b3f8f3acb97f7eafbcc51d3929b78",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "The source explicitly assumes the primordial-inflation/low-SUSY endpoint problem rather than calculating it. The inspected post-inflation homes do not cover this entire construction target; no unspecified inflaton identity is invented."
+    },
+    {
+      "caseId": "H05",
+      "paperId": "1803.04989",
+      "unitId": "unit:ba76b96a8b428c8f2cc3597403e7e75e05e4567765fabd7d6dbc340bf48cf001",
+      "sourceFacetId": "source-question:ba76b96a8b428c8f2cc3597403e7e75e05e4567765fabd7d6dbc340bf48cf001",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "This row is the declarative quintic LG starting setting and chart comparison. Preserve it as an exact contextual facet, without fabricating an independent question or canonical alias."
+    },
+    {
+      "caseId": "H09",
+      "paperId": "1808.09966",
+      "unitId": "unit:ca18ce0dd555e6f0d97e812370a43fc75bd4bf3b2107905337cbf5265b4d7e6b",
+      "sourceFacetId": "source-question:ca18ce0dd555e6f0d97e812370a43fc75bd4bf3b2107905337cbf5265b4d7e6b",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "The nonconserved-current/single-trace-scalar CFT test is a distinct proposed holographic criterion. The inspected bulk-vector and axion scopes provide context, but no complete current-gap/operator home is established."
+    },
+    {
+      "caseId": "H21",
+      "paperId": "2605.29203",
+      "unitId": "unit:bf289c674585839ad7a0179326fe791dd2ca087f62dd04015ea25e2db6be39e2",
+      "sourceFacetId": "source-question:bf289c674585839ad7a0179326fe791dd2ca087f62dd04015ea25e2db6be39e2",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "Adequate bounded source context identifies a timelike local-algebra/Lorentzian-continuation question, but the inspected Liouville destination changes the continuation prescription and target. This is atlas scope coverage, not missing source context; retain a discoverable facet without H."
+    },
+    {
+      "caseId": "H24",
+      "paperId": "gr-qc/0405011",
+      "unitId": "unit:a1033e21e8fb518757b87ea00eed5b7958dbfd6343d990303c7e6dd20c21de99",
+      "sourceFacetId": "source-question:a1033e21e8fb518757b87ea00eed5b7958dbfd6343d990303c7e6dd20c21de99",
+      "destinationId": null,
+      "unresolved": true,
+      "notice": "A precise topic placement has not been established for this source.",
+      "reason": "The immutable question combines a membrane/radial-string compact-object alternative with a cosmological/string-DM model. The inspected compact-object and BPS scopes do not cover that entire compound target. Retain source-facet access and qualified partial orientation, not a fabricated whole home."
+    }
+  ],
+  "scientificRoutesUnchanged": true,
+  "sourceFacetCount": 8473,
+  "sourceAccessAdded": 37
+}

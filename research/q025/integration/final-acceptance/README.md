@@ -42,3 +42,17 @@ The observer sends no navigation commands. Root starts fresh Astra contexts only
 Current preparation checks: three ingress tests (accounted unresolved facets, partial/home mismatch rejection, archive integrity/path rejection), Python syntax and shell syntax. The new overview check is prepared but not yet executed. QA23's original scripts and receipts remain unchanged. A final frozen-input preflight must validate archive closure, all cases/route proofs and the final asset envelope before submission. No final success is claimed by preparation.
 
 The final cases also bind one approved `compound` placement: `destinationId`, `unitId`, exact `targetCoverage`, full `sourceText` and its pinned `sourceOffset` in the default membership ordering. Preflight chooses a mapped home where that unit is in the visible source sample. The added check compares the unchanged source/map in MCP and the browser, checks the concise notice and initially collapsed provenance, and saves `compound-source-desktop.png`. This is a scripted coverage check, not an additional scientific review or fresh-agent routing hint. It has not run before the final data freeze.
+
+For the dated final package, supply geometry's final case wrapper explicitly:
+
+```sh
+node research/q025/integration/final-acceptance/preflight-cases.mjs \
+  "$FINAL_PACKAGE" "$NEW_PREFLIGHT_DIRECTORY" \
+  research/q025/assembly/final-release-v1/acceptance-cases.json
+```
+
+This binds the unchanged route fixtures plus the six post-test source notices to
+the actual new manifest. The final browser pass checks one supplied notice and its
+unchanged reason in the initially collapsed placement disclosure, saving
+`placement-notice-desktop.png`. It does not interpret these scripted fixtures as a
+new independent routing test or supply them to a fresh navigator.

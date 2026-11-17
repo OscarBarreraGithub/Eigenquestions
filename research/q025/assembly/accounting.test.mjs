@@ -33,6 +33,15 @@ test('accounting rejects disappeared, double-accounted and secretly allocated so
   for(const mutation of [x=>x.packet.coverage.unresolved=[],x=>x.packet.coverage.resolvedUnitIds.push('unit:q3')]){const x=accounted();mutation(x);bind(x,x.packet.coverage,'source_accounting','accepted_explicit_source_accounting');assert.throws(()=>assembleAccepted(x),/disappears|duplicate/);}
   const x=accounted();x.packet.placements.push(fixtureInput().packet.placements.find(p=>p.unitId==='unit:q3'));assert.throws(()=>assembleAccepted(x),/unresolved\/reserved source/);
 });
+test('an explicit unresolved notice survives without rewriting its reason or creating H',()=>{
+  const x=accounted(),row=x.packet.coverage.unresolved[0],reason=row.reason;
+  row.sourceHomeNotice='A precise topic placement has not been established for this source.';
+  bind(x,x.packet.coverage,'source_accounting','accepted_explicit_source_accounting');
+  const r=assembleAccepted(x);attachFineSourceAccess(r.catalog,{corpus:x.corpus,policyDecisionId:'source-access'});
+  const d=r.catalog.destinations.find(d=>d.id===sourceQuestionId(row.unitId));
+  assert.equal(d.sourceHomeNotice,row.sourceHomeNotice);assert.equal(d.sourceHomeReason,reason);
+  assert.equal(r.geometryInput.allocations.filter(a=>a.unitId===row.unitId).length,0);
+});
 test('approved frontier must bind exact scope and cannot conceal a disconnected allocated home',()=>{
   const x=accounted();x.packet.publicEntryFrontier.entries[0].scopeContentSha256='f'.repeat(64);bind(x,x.packet.publicEntryFrontier,'collection_frontier','accepted_explicit_collection_frontier');assert.throws(()=>assembleAccepted(x),/collection entry changed/);
   const y=accounted();y.packet.publicEntryFrontier.entries=y.packet.publicEntryFrontier.entries.filter(e=>e.destinationId!=='destination:b');bind(y,y.packet.publicEntryFrontier,'collection_frontier','accepted_explicit_collection_frontier');assert.throws(()=>assembleAccepted(y),/unreachable from the approved/);

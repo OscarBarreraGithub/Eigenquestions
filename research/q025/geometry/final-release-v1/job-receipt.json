@@ -1,0 +1,33 @@
+{
+  "jobId": "61593670",
+  "status": "completed",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 2,
+  "memory": "8G",
+  "walltime": "00:05:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/final-release-v1",
+  "inputs": {
+    "research/q025/geometry/final-release-v1/update_flow.py": {
+      "sha256": "e8314f1f8421c5b5da7f62c8d4ce343e47819d77510456436e9eeab5a405af26",
+      "bytes": 5213
+    },
+    "research/q025/geometry/final-release-v1/run.sbatch": {
+      "sha256": "e287df6b0d018022fba4dfe8e956707ce4b03b7ebb343d702ad87ee51de064b4",
+      "bytes": 972
+    },
+    "research/q025/assembly/outputs/final-release-input-v1/accepted-geometry-input.json": {
+      "sha256": "b05144e6b73246fc6e1424a63cd70aad43794a6c8208c48d24cb7d79f2eb76df",
+      "bytes": 9574207
+    }
+  },
+  "unchangedF": {
+    "sha256": "7cc2f9c820ac6efb87577a0337611b86e0f3c7575dfbc5c70fa1a83b9ac0e4da",
+    "remotePath": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/final-overview-v1/attempt-1/results/complete-F.npz"
+  },
+  "newFits": 0,
+  "exitCode": "0:0",
+  "elapsed": "00:00:05",
+  "allResultHashesVerified": true,
+  "resultManifestSha256": "8b239c101ba1639611e9f51f8e79c72cba667485f1ce90436c252900ffe1a8d6"
+}
