@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "q025-successor-preflight/1",
+  "campaignSha256": "a4f347a517feab091f688675e6d2bbe9dbe6268d89934e2c6bfccd87726bfd0e",
+  "runnerSha256": "f2ee4550aff2f624ce8050086239040c6e313629043e8ecc49b78e37cc95faf4",
+  "nativeLaunches": 0,
+  "sourceHashVerification": "Every actually materialized excerpt and archived source file verified by the same dispatch function. Future dependency-bearing packets are compiled and checked only after their receipts exist.",
+  "actualJobDirectoriesMaterialized": 0,
+  "results": [
+    {
+      "jobId": "successor-leaf-55a2311c12b246ddbd15-challenge",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "b56bd2f35620a2cb846b4fec44cfd70b3566b7efdcf803fdc2febc4ff946d7b5",
+      "promptSha256": "eeaacb41ec1672e53a443f4c10582878a0ae287904d821e19902beed86601df0",
+      "schemaSha256": "6001015cc0f3ca11db66075223860b41b5cce0132b00c7504e794b037cbe39a9",
+      "sourceUnitCount": 32,
+      "primaryExcerptCount": 27,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 153012,
+        "schemaCharacters": 6417,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 109143
+      }
+    },
+    {
+      "jobId": "successor-leaf-90980b7a8339256bfea7-challenge",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "991fd930eca425fd87433d74c15c35c519e643cf49b920f70e489aeca0e792ab",
+      "promptSha256": "e63e23b3036ae7db04ea72e009338132b8becad5433face31fb65c7bda12180b",
+      "schemaSha256": "6001015cc0f3ca11db66075223860b41b5cce0132b00c7504e794b037cbe39a9",
+      "sourceUnitCount": 40,
+      "primaryExcerptCount": 22,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 155870,
+        "schemaCharacters": 6417,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 110096
+      }
+    },
+    {
+      "jobId": "successor-leaf-ce36cae0274019373c8a-proposal",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "58ce6b66366acba84ded85dda12a16f46a4977fbbd47f83af3eb750bf34ff23c",
+      "promptSha256": "55066f5d09dd52201137c17cc767db935dfcbf0181e16401b0e95a60d7a43fdd",
+      "schemaSha256": "740c2dd30bd798457c802b564b4f935b6838a1f26547b0c030be45b52f16fb60",
+      "sourceUnitCount": 51,
+      "primaryExcerptCount": 26,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 238676,
+        "schemaCharacters": 4376,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 137018
+      }
+    },
+    {
+      "jobId": "successor-leaf-ce36cae0274019373c8a-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-leaf-ce36cae0274019373c8a-proposal",
+      "childReadiness": {
+        "status": "ready"
+      }
+    },
+    {
+      "jobId": "successor-leaf-ce2e0c80657f40e352ee-proposal",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "568f0baed803e5550321b544f72a84f2cf4b88a35a4f98057d9a9de1651bb05c",
+      "promptSha256": "064f0d80f3254acd9d3c9bf135d57b070e14bbfa0a634f9ce2de2618b5dd6eee",
+      "schemaSha256": "80c4618a0ec9f60e573a3f6b34e576b1edeb95d64d7399106b37cb3353e5a838",
+      "sourceUnitCount": 39,
+      "primaryExcerptCount": 25,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 226375,
+        "schemaCharacters": 1793,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 132056
+      }
+    },
+    {
+      "jobId": "successor-leaf-ce2e0c80657f40e352ee-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-leaf-ce2e0c80657f40e352ee-proposal",
+      "childReadiness": {
+        "status": "ready"
+      }
+    },
+    {
+      "jobId": "successor-parent-076a8e988b123c215a92-proposal",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "8f32c9816c88693b1073966b7a701a9b37bb56e07d9ba2cad4a63d5f1402c9e9",
+      "promptSha256": "2cef3d3148fbff668a1a251864eb51bad140eb74d1df510581ab8831a6799930",
+      "schemaSha256": "07bc44d748c2d180f38dc5950fda0f56dc283da60fd87f02ce7f52d2aefb493b",
+      "sourceUnitCount": 5,
+      "primaryExcerptCount": 10,
+      "childArtifacts": 0,
+      "budget": {
+        "promptCharacters": 114225,
+        "schemaCharacters": 5932,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 96053
+      }
+    },
+    {
+      "jobId": "successor-parent-076a8e988b123c215a92-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-076a8e988b123c215a92-proposal",
+      "childReadiness": {
+        "status": "ready"
+      }
+    },
+    {
+      "jobId": "successor-parent-3e5edc9beef1248c32eb-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-3e5edc9beef1248c32eb-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-3e5edc9beef1248c32eb-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-73840db6800ed57ab471-proposal",
+      "status": "ready_materialized_sources_verified",
+      "packetSha256": "a9634b5c853f4d76b3c68f92bc2f7bb4f140d1fc3e24406af9b86ae29f9759ae",
+      "promptSha256": "4f07ff1e5bd99854fe4f27ae09f79f136e40fa70b0b7185578a59f90456607cd",
+      "schemaSha256": "6001015cc0f3ca11db66075223860b41b5cce0132b00c7504e794b037cbe39a9",
+      "sourceUnitCount": 6,
+      "primaryExcerptCount": 16,
+      "childArtifacts": 5,
+      "budget": {
+        "promptCharacters": 147583,
+        "schemaCharacters": 6417,
+        "maxResponseCharacters": 120000,
+        "reasoningAndProtocolHeadroomTokens": 16000,
+        "dispatchGuardTokens": 220000,
+        "conservativeCombinedTokens": 107334
+      }
+    },
+    {
+      "jobId": "successor-parent-73840db6800ed57ab471-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-73840db6800ed57ab471-proposal",
+      "childReadiness": {
+        "status": "ready"
+      }
+    },
+    {
+      "jobId": "successor-parent-b7f81485b7d06aed5b64-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-b7f81485b7d06aed5b64-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-b7f81485b7d06aed5b64-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-c0a1010fd9bb5b1dc0d7-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-c0a1010fd9bb5b1dc0d7-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-c0a1010fd9bb5b1dc0d7-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-17324a9d1c6d231abdd8-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-17324a9d1c6d231abdd8-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-17324a9d1c6d231abdd8-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-6695e767a08bf35f78fe-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-6695e767a08bf35f78fe-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-6695e767a08bf35f78fe-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-e216581a59d87c4cff7a-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-e216581a59d87c4cff7a-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-e216581a59d87c4cff7a-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-ede3e74822319a5ec5a5-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-ede3e74822319a5ec5a5-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-ede3e74822319a5ec5a5-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-0f746a8c818c4fa5bc2d-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-0f746a8c818c4fa5bc2d-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-0f746a8c818c4fa5bc2d-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-4fde62f72cf6b83a34be-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-4fde62f72cf6b83a34be-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-4fde62f72cf6b83a34be-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-c8776465ed44d9e65c4c-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-c8776465ed44d9e65c4c-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-c8776465ed44d9e65c4c-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-8faef27ce1cad100b7fe-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-8faef27ce1cad100b7fe-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-8faef27ce1cad100b7fe-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-5eef7911f1a80cb73c18-proposal",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": null,
+      "childReadiness": {
+        "status": "pending"
+      }
+    },
+    {
+      "jobId": "successor-parent-5eef7911f1a80cb73c18-challenge",
+      "status": "deferred_until_dependencies_complete",
+      "dependsOn": "successor-parent-5eef7911f1a80cb73c18-proposal",
+      "childReadiness": {
+        "status": "pending"
+      }
+    }
+  ]
+}

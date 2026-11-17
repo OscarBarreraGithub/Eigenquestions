@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {verifyPrepared,observeWhitespaceRun} from './runner.mjs';
+test('two whole challenges adopt immutable completed science with explicit context',()=>{const p=verifyPrepared();assert.equal(p.jobs.length,2);assert.equal(p.derivations.length,2);assert.equal(p.maxAuthorizedConcurrency,2);});
+test('whitespace guard does not reject source strings',()=>{const j={};observeWhitespaceRun(j,JSON.stringify({text:' '.repeat(5000)}));assert.equal(j.cancelReason,undefined);observeWhitespaceRun(j,'\n'.repeat(4097));assert.match(j.cancelReason,/Degenerate/);});

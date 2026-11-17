@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "q025-real-admitted-rehearsal-verification/1",
+  "passed": true,
+  "fixtureBypassUsed": false,
+  "manifestSha256": "602c6eaafe5ab382a36ef6884bb19634c72ef9c9f324fcddd2dd855cef4a4052",
+  "runtimeSha256": "3a5d820721457e85bff2d82521eff08f382d239bd302a8724b12b768803c05b1",
+  "scriptSha256": "926491e11a113cf1dae34d52f32358ad44de9530e9ec9c66801ce8497195a551",
+  "partialCoverage": {
+    "allocated": 5,
+    "unallocated": 8468,
+    "finalInstallationAllowed": false
+  },
+  "routes": [
+    {
+      "destinationIds": [
+        "q-kk-graviton-thermal-production",
+        "q-kk-graviton-threshold-decay",
+        "q-kk-decay-linear-cosmology"
+      ],
+      "finalStateId": "state-1d2a43b828c7cc08"
+    },
+    {
+      "destinationIds": [
+        "q-kk-decay-linear-cosmology",
+        "q-kk-graviton-thermal-production",
+        "q-kk-graviton-threshold-decay"
+      ],
+      "finalStateId": "state-52a0868ad690127e"
+    },
+    {
+      "destinationIds": [
+        "q-flat-darkdimension-freezein-bounds",
+        "q-kk-graviton-threshold-decay",
+        "q-kk-decay-linear-cosmology"
+      ],
+      "finalStateId": "state-1d2a43b828c7cc08"
+    },
+    {
+      "destinationIds": [
+        "q-kk-decay-linear-cosmology",
+        "q-kk-graviton-threshold-decay",
+        "q-flat-darkdimension-freezein-bounds"
+      ],
+      "finalStateId": "state-335406368190a562"
+    },
+    {
+      "destinationIds": [
+        "q-kk-graviton-threshold-decay",
+        "q-kk-decay-linear-cosmology",
+        "q-kk-graviton-thermal-production"
+      ],
+      "finalStateId": "state-b859db596d402af1"
+    }
+  ],
+  "sameDestinationDifferentRouteSameStateAndView": true,
+  "scientificRoutes": [
+    {
+      "id": "navigation:kk:0",
+      "source": "q-kk-graviton-thermal-production",
+      "target": "q-kk-graviton-threshold-decay",
+      "type": "comparison",
+      "rationale": "Adequate initial production does not establish cascade efficiency. Check the background and couplings before applying the reported threshold scaling."
+    },
+    {
+      "id": "navigation:kk:1",
+      "source": "q-kk-graviton-threshold-decay",
+      "target": "q-flat-darkdimension-freezein-bounds",
+      "type": "related_question",
+      "rationale": "The 2026 source applies its reported suppression to irreducible production and reheating bounds in a flat dimension; the numerical bound remains source-attributed."
+    },
+    {
+      "id": "navigation:kk:2",
+      "source": "q-kk-graviton-threshold-decay",
+      "target": "q-kk-decay-linear-cosmology",
+      "type": "comparison",
+      "rationale": "Compare a microscopic rate question with a conditional linear-cosmology calculation. Their targets differ; the latter does not establish that its assumed cascade occurs."
+    },
+    {
+      "id": "navigation:kk:3",
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-threshold-decay",
+      "type": "premise_check",
+      "rationale": "The linear model presupposes repeated near-threshold decays. Check the applicable threshold rate without replacing the conditional calculation by a universal exclusion."
+    },
+    {
+      "id": "navigation:kk:4",
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-thermal-production",
+      "type": "premise_check",
+      "rationale": "The linear analysis inherits hot-brane production with an initially empty bulk and a specified initial temperature. This is an initial-condition route, not source equivalence."
+    },
+    {
+      "id": "navigation:kk:5",
+      "source": "q-kk-graviton-thermal-production",
+      "target": "q-kk-decay-linear-cosmology",
+      "type": "related_question",
+      "rationale": "Follow initial production to a distinct calculation that additionally assumes a repeated-decay history, symmetric nonrelativistic daughter kinematics and a linear regime. Production alone does not entail those premises."
+    },
+    {
+      "id": "navigation:kk:6",
+      "source": "q-flat-darkdimension-freezein-bounds",
+      "target": "q-kk-graviton-threshold-decay",
+      "type": "premise_check",
+      "rationale": "Check the rate premise used by the flat-model freeze-in analysis; this reverse route does not broaden the bound to warped dimensions or other species."
+    }
+  ],
+  "inventories": [
+    {
+      "destinationId": "q-kk-graviton-thermal-production",
+      "primaryCount": 1,
+      "contextMethodCount": 2,
+      "contributionCount": 4,
+      "usingCount": 0,
+      "readableEvidenceCards": 5,
+      "supportState": "explicit_source_home"
+    },
+    {
+      "destinationId": "q-kk-graviton-threshold-decay",
+      "primaryCount": 2,
+      "contextMethodCount": 5,
+      "contributionCount": 3,
+      "usingCount": 0,
+      "readableEvidenceCards": 5,
+      "supportState": "explicit_source_home"
+    },
+    {
+      "destinationId": "q-kk-decay-linear-cosmology",
+      "primaryCount": 1,
+      "contextMethodCount": 3,
+      "contributionCount": 3,
+      "usingCount": 0,
+      "readableEvidenceCards": 4,
+      "supportState": "explicit_source_home"
+    },
+    {
+      "destinationId": "q-flat-darkdimension-freezein-bounds",
+      "primaryCount": 1,
+      "contextMethodCount": 3,
+      "contributionCount": 4,
+      "usingCount": 0,
+      "readableEvidenceCards": 6,
+      "supportState": "explicit_source_home"
+    },
+    {
+      "destinationId": "q-relic-abundance-early-matter-domination",
+      "primaryCount": 0,
+      "contextMethodCount": 0,
+      "contributionCount": 12,
+      "usingCount": 0,
+      "readableEvidenceCards": 8,
+      "supportState": "admitted_scope_with_typed_contributions"
+    },
+    {
+      "destinationId": "q-portal-dark-radiation",
+      "primaryCount": 0,
+      "contextMethodCount": 0,
+      "contributionCount": 5,
+      "usingCount": 0,
+      "readableEvidenceCards": 4,
+      "supportState": "admitted_scope_with_typed_contributions"
+    },
+    {
+      "destinationId": "q-historical-uhecr-suppression",
+      "primaryCount": 1,
+      "contextMethodCount": 3,
+      "contributionCount": 0,
+      "usingCount": 0,
+      "readableEvidenceCards": 5,
+      "supportState": "explicit_source_home"
+    },
+    {
+      "destinationId": "q-electroweak-alp-misalignment",
+      "primaryCount": 0,
+      "contextMethodCount": 0,
+      "contributionCount": 0,
+      "usingCount": 0,
+      "readableEvidenceCards": 5,
+      "supportState": "admitted_scope_with_representative_evidence_only"
+    }
+  ],
+  "sourceContributionsDoNotSupplyHomesOrUsing": true,
+  "linearProductionRoleRemainsContextual": true,
+  "compoundSourceWeights": [
+    0.5,
+    0.5
+  ],
+  "uhecr": {
+    "separateAdmittedHome": true,
+    "scientificLinksToKK": 0,
+    "geometricAffinitiesToKK": 3
+  },
+  "geometry": {
+    "onlyAdmittedScientificBases": true,
+    "originalNumericalBinsPlotted": 0,
+    "zeroMassQuestionsPlotted": 0,
+    "retainedFullAffinityFraction": 0.07005899056760964,
+    "flowMass": 5,
+    "displayedStress": 0.05532667589855423,
+    "topFiveRecallIsTrivialAndNotUsedAsEvidence": true
+  },
+  "completeTransportValidation": {
+    "destinations": 226,
+    "completeMemberships": 0,
+    "checkedContainment": 0,
+    "primaryRows": 11,
+    "contextRows": 16
+  },
+  "checksummedFilesRead": [
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/manifest.json",
+      "bytes": 2454
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/catalog.json",
+      "bytes": 515466
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-authored-0000.json",
+      "bytes": 172302
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-memberships-0000.json",
+      "bytes": 15943
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/fine-index.json",
+      "bytes": 6175
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-entry-0000.json",
+      "bytes": 2391
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0000.json",
+      "bytes": 65168
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0001.json",
+      "bytes": 65918
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0002.json",
+      "bytes": 65928
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0003.json",
+      "bytes": 66012
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0004.json",
+      "bytes": 65735
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0005.json",
+      "bytes": 65620
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0006.json",
+      "bytes": 65790
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-metadata-0007.json",
+      "bytes": 48501
+    },
+    {
+      "path": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/destination-details-fine-0000.json",
+      "bytes": 21897
+    }
+  ],
+  "limitations": [
+    "Five-source partial rehearsal, not a completed atlas or global geometry validation.",
+    "Scope and route correctness inherits the explicit source-bound admissions and reading limits; runtime success is not an independent scientific review.",
+    "Geometric affinity is not a navigation assertion; UHECR remains semantically separate.",
+    "Browser rendering still requires separate QA."
+  ]
+}

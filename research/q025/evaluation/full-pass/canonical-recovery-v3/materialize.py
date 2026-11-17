@@ -1,0 +1,11 @@
+import hashlib,json,sys
+from pathlib import Path
+from derive import old
+B=Path(__file__).resolve().parent;F=B.parent;E=F.parent;sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def dump(p,x):Path(p).write_text(json.dumps(x,ensure_ascii=False,separators=(',',':'))+'\n')
+def materialize(request_path,runtime):
+ d=Path(request_path).resolve().parent;req=json.loads(Path(request_path).read_text())
+ for pin in req['recoveryPins']:assert sha(E/pin['path'])==pin['sha256'],'Recovery lineage changed'
+ source=E/req['originalPacketPath'];assert sha(source)==req['originalPacketSha256'];packet=json.loads(source.read_text());packet['stage']='challenge';normal=json.loads((E/req['adoptedProposalPath']).read_text());receipt=json.loads((E/req['derivationPath']).read_text());old.base.evaluate({**packet,'stage':'proposal','priorReview':None},normal);packet['priorReview']=normal;packet['priorOriginalScopeDispositions']=receipt['originalScopeDispositions'];packet['priorDispositionContext']=receipt['contextualDispositionReferences'];packet['priorStreamVariantAssessments']=receipt['streamVariantAssessments'];packet['recoveryLineage']={'originalFailedReceiptUnchanged':True,'derivationSha256':sha(E/req['derivationPath']),'transform':receipt['transform'],'scientificContentChanged':False};packet.pop('preservedComponents',None);packet.pop('prefixArtifactSha256',None)
+ dump(d/'packet.actual.json',packet);view={k:v for k,v in packet.items() if k!='sourceReviews'};instructions=(B/'INSTRUCTIONS.md').read_text();assert instructions.count('{{MAX_OUTPUT_CHARACTERS}}')==1;instructions=instructions.replace('{{MAX_OUTPUT_CHARACTERS}}',str(req['maxOutputCharacters']));(d/'prompt-base.actual.txt').write_text(instructions+'\n\nEXACT INDEPENDENT CHALLENGE PACKET\n'+json.dumps(view,ensure_ascii=False,separators=(',',':'))+'\n');actual={**req,'baseRequestSha256':sha(request_path),'packetSha256':sha(d/'packet.actual.json'),'promptBaseSha256':sha(d/'prompt-base.actual.txt'),'priorReplySha256':sha(E/req['adoptedProposalPath']),'priorRawReplySha256':receipt['sourceArtifacts']['reply.raw.txt'],'priorReceiptSha256':receipt['sourceArtifacts']['receipt.json']};dump(d/'dispatch-request.json',actual);return actual
+if __name__=='__main__':print(json.dumps({'materialized':materialize(sys.argv[1],sys.argv[2])['jobId']}))

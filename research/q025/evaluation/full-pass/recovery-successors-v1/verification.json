@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "q025-successor-verification/1",
+  "nativeLaunches": 0,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/q025/evaluation/full-pass/recovery-successors-v1",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_complete_prefix_rows_are_reused_not_reemitted (test_successors.RecoveryTests.test_complete_prefix_rows_are_reused_not_reemitted) ... ok\ntest_current_manifest_rewires_affected_ancestors_only (test_successors.RecoveryTests.test_current_manifest_rewires_affected_ancestors_only) ... ok\ntest_model_view_preserves_every_locked_value_without_duplicate_archives (test_successors.RecoveryTests.test_model_view_preserves_every_locked_value_without_duplicate_archives) ... ok\ntest_multiple_attempts_retain_conflicting_complete_values (test_successors.RecoveryTests.test_multiple_attempts_retain_conflicting_complete_values) ... ok\ntest_no_per_string_caps_in_successor_schema (test_successors.RecoveryTests.test_no_per_string_caps_in_successor_schema) ... ok\ntest_parent_handoff_retains_prior_annotation_namespace (test_successors.RecoveryTests.test_parent_handoff_retains_prior_annotation_namespace) ... ok\ntest_partial_nested_fields_are_locked (test_successors.RecoveryTests.test_partial_nested_fields_are_locked) ... ok\ntest_pf28_is_exact_prior_context_never_primary (test_successors.RecoveryTests.test_pf28_is_exact_prior_context_never_primary) ... ok\ntest_revalidated_imports_keep_failed_originals (test_successors.RecoveryTests.test_revalidated_imports_keep_failed_originals) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.027s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "research/q025/evaluation/full-pass/recovery-successors-v1/runner.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "\u2714 whitespace guard follows string and escape state across deltas (1.509875ms)\n\u2714 explicit quota denial is distinguished from ordinary scientific prose (0.107708ms)\n\u2714 failed child blocks a successor without coverage omission (0.663292ms)\n\u2714 prepared requests verify without starting a native model (33.225917ms)\n\u2714 runtime budget and output schema use the actual request consistently (0.150791ms)\n\u2139 tests 5\n\u2139 suites 0\n\u2139 pass 5\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 76.549417\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/recovery-successors-v1/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":34,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    }
+  ]
+}

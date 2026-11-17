@@ -1,0 +1,279 @@
+{
+  "layoutId": "accepted-scientific-destinations-source-balanced-v2",
+  "kind": "diffusion_chart",
+  "sourceCandidateId": "multiview_preserve_candidates",
+  "referenceGraphSha256": "b83b8c17a267a7ea0cc664a05657e0cc443868ff3e0fd26730f2285e9404ac62",
+  "membershipSha256": "5b7f777d7c19770b99ac73f84b53d58738e81d32cd60c2da098d110cd6525cda",
+  "nodes": [
+    {
+      "destinationId": "q-kk-graviton-thermal-production",
+      "x": 0.9956804092341359,
+      "y": 0.092846769827191,
+      "mass": 1.0,
+      "directAllocationMass": 1.0,
+      "scopeKind": "question",
+      "depth": 0,
+      "sourceUnitCount": 1,
+      "componentIds": [
+        0
+      ],
+      "spansDisconnectedComponents": false,
+      "coordinateMeaning": "source-balanced centroid of admitted scientific membership; descendant-inclusive scope mass is distinct from direct allocation mass and is never fed back into H; a centroid spanning disconnected components inherits arbitrary display packing"
+    },
+    {
+      "destinationId": "q-kk-graviton-threshold-decay",
+      "x": -0.17530400305610522,
+      "y": -0.2211529763426467,
+      "mass": 2.0,
+      "directAllocationMass": 1.5,
+      "scopeKind": "question",
+      "depth": 0,
+      "sourceUnitCount": 2,
+      "componentIds": [
+        0
+      ],
+      "spansDisconnectedComponents": false,
+      "coordinateMeaning": "source-balanced centroid of admitted scientific membership; descendant-inclusive scope mass is distinct from direct allocation mass and is never fed back into H; a centroid spanning disconnected components inherits arbitrary display packing"
+    },
+    {
+      "destinationId": "q-kk-decay-linear-cosmology",
+      "x": -0.18855075563527704,
+      "y": -0.13907449922632734,
+      "mass": 1.0,
+      "directAllocationMass": 1.0,
+      "scopeKind": "question",
+      "depth": 0,
+      "sourceUnitCount": 1,
+      "componentIds": [
+        0
+      ],
+      "spansDisconnectedComponents": false,
+      "coordinateMeaning": "source-balanced centroid of admitted scientific membership; descendant-inclusive scope mass is distinct from direct allocation mass and is never fed back into H; a centroid spanning disconnected components inherits arbitrary display packing"
+    },
+    {
+      "destinationId": "q-flat-darkdimension-freezein-bounds",
+      "x": -0.18569104607685866,
+      "y": -0.19160419842951898,
+      "mass": 1.0,
+      "directAllocationMass": 0.5,
+      "scopeKind": "question",
+      "depth": 0,
+      "sourceUnitCount": 1,
+      "componentIds": [
+        0
+      ],
+      "spansDisconnectedComponents": false,
+      "coordinateMeaning": "source-balanced centroid of admitted scientific membership; descendant-inclusive scope mass is distinct from direct allocation mass and is never fed back into H; a centroid spanning disconnected components inherits arbitrary display packing"
+    },
+    {
+      "destinationId": "q-historical-uhecr-suppression",
+      "x": -0.43574756144514154,
+      "y": 0.42943612625817423,
+      "mass": 1.0,
+      "directAllocationMass": 1.0,
+      "scopeKind": "question",
+      "depth": 0,
+      "sourceUnitCount": 1,
+      "componentIds": [
+        0
+      ],
+      "spansDisconnectedComponents": false,
+      "coordinateMeaning": "source-balanced centroid of admitted scientific membership; descendant-inclusive scope mass is distinct from direct allocation mass and is never fed back into H; a centroid spanning disconnected components inherits arbitrary display packing"
+    }
+  ],
+  "edges": [
+    {
+      "source": "q-flat-darkdimension-freezein-bounds",
+      "target": "q-historical-uhecr-suppression",
+      "kind": "geometric_affinity",
+      "weight": 0.09415036423184246,
+      "normalizedWeight": 0.13314872199903835
+    },
+    {
+      "source": "q-flat-darkdimension-freezein-bounds",
+      "target": "q-kk-decay-linear-cosmology",
+      "kind": "geometric_affinity",
+      "weight": 0.14224917707642323,
+      "normalizedWeight": 0.2011707154578897
+    },
+    {
+      "source": "q-flat-darkdimension-freezein-bounds",
+      "target": "q-kk-graviton-thermal-production",
+      "kind": "geometric_affinity",
+      "weight": 0.025515497797886283,
+      "normalizedWeight": 0.03608436303647162
+    },
+    {
+      "source": "q-flat-darkdimension-freezein-bounds",
+      "target": "q-kk-graviton-threshold-decay",
+      "kind": "geometric_affinity",
+      "weight": 0.23808496089384804,
+      "normalizedWeight": 0.2749168325241294
+    },
+    {
+      "source": "q-historical-uhecr-suppression",
+      "target": "q-kk-decay-linear-cosmology",
+      "kind": "geometric_affinity",
+      "weight": 0.17956555814093528,
+      "normalizedWeight": 0.17956555814093528
+    },
+    {
+      "source": "q-historical-uhecr-suppression",
+      "target": "q-kk-graviton-threshold-decay",
+      "kind": "geometric_affinity",
+      "weight": 0.09415036423184246,
+      "normalizedWeight": 0.07687345048839944
+    },
+    {
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-thermal-production",
+      "kind": "geometric_affinity",
+      "weight": 0.06300054344352864,
+      "normalizedWeight": 0.06300054344352864
+    },
+    {
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-threshold-decay",
+      "kind": "geometric_affinity",
+      "weight": 0.4943243245388741,
+      "normalizedWeight": 0.40361412085539833
+    },
+    {
+      "source": "q-kk-graviton-thermal-production",
+      "target": "q-kk-graviton-threshold-decay",
+      "kind": "geometric_affinity",
+      "weight": 0.0848158194886943,
+      "normalizedWeight": 0.06925182662110209
+    }
+  ],
+  "provenance": {
+    "operator": "Metropolis source-balanced reversible flow; H^T F H; lazy diffusion distances",
+    "retrievalLayers": {
+      "minilmQuestion": 0.5,
+      "qwenQuestion": 0.3,
+      "samePaperMethodContext": 0.2
+    },
+    "directCatchmentMeaning": "Explicitly admitted scientific home/base destinations, including broad scoped questions and nearest approved ancestors. Broad residual allocations differ from descendant-union displayed scope mass. No numerical review bin is automatically a public base.",
+    "diffusionTime": 4,
+    "layoutSelection": "two_diffusion_modes_with_diagnostics",
+    "coordinateTransform": "Rigid axis orientation; uniform per-component scale; explicit disconnected-component packing. Scientific destination positions are source-balanced membership centroids.",
+    "scriptSha256": "8de155dee7907aa8b454689be5676cbeef632c56b2633e0e51324eeb8dbf84dc",
+    "referenceInputs": {
+      "geometry-minilm-physical_question/units.jsonl": {
+        "sha256": "03917639e5c309de0091f22bb97b538bdd470770119e5fec55981c1ed6318398",
+        "bytes": 44631021
+      },
+      "geometry-minilm-physical_question/affinity.npz": {
+        "sha256": "516b9f3974023edae147519b0741059aa4a3705d5dc7288a2e5594a0708923bb",
+        "bytes": 3003727
+      },
+      "geometry-qwen-4b-raw-physical_question/units.jsonl": {
+        "sha256": "03917639e5c309de0091f22bb97b538bdd470770119e5fec55981c1ed6318398",
+        "bytes": 44631021
+      },
+      "geometry-qwen-4b-raw-physical_question/affinity.npz": {
+        "sha256": "94ee2fec48fa495d3ae0c8baa023e281fb67db44b3272d8ca6157a5f23157c45",
+        "bytes": 3190327
+      },
+      "geometry-minilm-method/units.jsonl": {
+        "sha256": "6ab2bf87ee6b8dc1b15fab1e030cefaa90bcfc76d2ed4f1fbaf40b48ae49406d",
+        "bytes": 89079823
+      },
+      "geometry-minilm-method/affinity.npz": {
+        "sha256": "3cf1f6b01406a72ea3d0bcf1fb3e15458955c32a8e31f185f7df223afbd5231a",
+        "bytes": 6541565
+      }
+    }
+  },
+  "diagnostics": {
+    "coverage": {
+      "partialRehearsal": true,
+      "allocatedQuestionCount": 5,
+      "unallocatedQuestionCount": 8468,
+      "cohortUnitIdsSha256": "b15de282e457ad3c831a601740249d3628e22a18c1443283840e3422a7c8d07b",
+      "independentEntryDestinationIds": [
+        "q-historical-uhecr-suppression"
+      ],
+      "paperMassPolicy": "cohort_renormalized_one_mass_per_represented_paper",
+      "globalQuestionCount": 8473,
+      "globalPaperCount": 6477,
+      "questionUnits": 5,
+      "papers": 5,
+      "regionNodes": 0,
+      "scopedQuestionBaseNodes": 5,
+      "directScientificCatchments": 5,
+      "methodUnitsAreGeometryVertices": false,
+      "contextMembershipRowsUsedAsAllocations": false,
+      "provisionalAllocationCount": 0
+    },
+    "flow": {
+      "isolatedSourceCount": 0,
+      "selfFlowFraction": 0.3384233717049109,
+      "sourceMassMaxError": 0.0
+    },
+    "coarseFlowTotal": 5.0,
+    "expectedPaperMass": 5,
+    "components": [
+      {
+        "component": 0,
+        "atomCount": 5,
+        "layout": "two_diffusion_modes",
+        "atomProjection": {
+          "distanceStress": 0.031485411568347214,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "leadingLazyEigenvalues": [
+          1.0,
+          0.897161147720076,
+          0.7529211441399573,
+          0.42753641166608297,
+          0.40842059815555243
+        ],
+        "twoModeEnergyFraction": 0.9963982437802374,
+        "displayPackingOffset": [
+          0,
+          0
+        ],
+        "interComponentDistancesMeaningful": false,
+        "displayedRegionCentroids": {
+          "distanceStress": 0.05532667589855423,
+          "topFiveNeighborRecall": 1.0,
+          "degenerateTarget": false
+        },
+        "diagnosticDistinction": "atomProjection describes the computational diffusion atoms; displayedRegionCentroids evaluates actual shown region positions against the same full diffusion distances."
+      }
+    ],
+    "regionsSpanningDisconnectedComponents": [],
+    "sourceFacetsPlotted": false,
+    "zeroMassQuestionDestinationIds": [
+      "q-relic-abundance-early-matter-domination",
+      "q-portal-dark-radiation",
+      "q-electroweak-alp-misalignment"
+    ],
+    "referenceSelection": {
+      "referenceQuestionCount": 8473,
+      "selectedQuestionCount": 5,
+      "affinityPolicy": "full pinned multiview operator, then induced cohort subgraph",
+      "flowMassPolicy": "Metropolis flow is recomputed from the selected graph and selected paper-balanced masses; full-corpus outside flow is not retained.",
+      "selectedSourceFullOffDiagonalAffinity": 5.110915608782869,
+      "retainedWithinSelectionOffDiagonalAffinity": 0.3580655884275679,
+      "retainedAffinityFraction": 0.07005899056760964,
+      "perSourceRetainedFraction": {
+        "min": 0.013690289359336987,
+        "mean": 0.07349221970784588,
+        "max": 0.12406850624496969
+      }
+    },
+    "selectedInheritedGlobalPaperMass": 5
+  },
+  "limitations": [
+    "Geometry is downstream of reviewed organization and does not certify its science.",
+    "Membership weights are organizational allocations, not confidence or relevance.",
+    "Partial rehearsals restrict the pinned source graph to the explicitly admitted cohort and renormalize mass to one per selected paper; stress and flow totals are cohort diagnostics, not full-atlas metrics. Full assembly uses every global question count per paper.",
+    "The fixed retrieval operator includes a same-paper method-context layer with weight0.2; method membership rows are excluded from Q-only allocations. Reviewed scientific edges are separately navigable.",
+    "Two dimensions are lossy; inspect component distortion before interpreting proximity.",
+    "Disconnected-component display spacing has no metric meaning.",
+    "Exact source-question facets and zero-mass contribution-only destinations remain accessible through text/navigation without fabricated coordinates."
+  ]
+}

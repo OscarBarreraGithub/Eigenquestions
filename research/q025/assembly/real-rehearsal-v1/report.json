@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "q025-real-rehearsal-report/1",
+  "status": "passed_production_assembly_and_native_navigation_browser_pending",
+  "createdAt": "2026-11-17T12:34:44.038340+00:00",
+  "partialCandidateReason": "scientific_rehearsal",
+  "scientificCoverageComplete": false,
+  "coverage": {
+    "allocatedQuestionUnits": 5,
+    "unallocatedQuestionUnits": 8468,
+    "fullQuestionCorpus": 8473,
+    "logicalFrozenSourceInventory": 26410,
+    "scientificScopeDestinations": 8,
+    "explicitSourceHomes": 6,
+    "typedSourceContributions": 31,
+    "scientificNavigationRoutes": 7,
+    "independentScientificEntries": [
+      "q-historical-uhecr-suppression"
+    ],
+    "zeroMassContributionBackedQuestions": 2,
+    "zeroMassScopeOnlyQuestions": 1,
+    "contextualMethodUnits": 13
+  },
+  "validation": {
+    "fixtureBypassUsed": false,
+    "exactPrimaryLocators": 21,
+    "testsPassed": 71,
+    "assemblyTests": 58,
+    "runtimeFocusedTests": 13,
+    "navigationJourneys": 5,
+    "alternatePathsSameStateAndView": true,
+    "usingCountAllScientificDestinations": 0,
+    "originalNumericalBinsPublic": 0
+  },
+  "geometry": {
+    "inputSha256": "5b7f777d7c19770b99ac73f84b53d58738e81d32cd60c2da098d110cd6525cda",
+    "displayedScientificBases": 5,
+    "paperMassPolicy": "cohort_renormalized_one_mass_per_represented_paper",
+    "inheritedGlobalMassOfSelectedSources": 5,
+    "cohortFlowMass": 5.0,
+    "retainedFullSourceAffinityFraction": 0.07005899056760964,
+    "displayedPointStress": 0.05532667589855423,
+    "atomProjectionStress": 0.031485411568347214,
+    "topFiveNeighborRecallNotEvidence": "With five points k=min(n-1,5)=4 contains every other point; its value1 is tautological.",
+    "uhecrLatentAffinities": 3,
+    "uhecrScientificKKRoutes": 0,
+    "displayMembershipMassVersusDirectAllocation": "Threshold displayed source membership mass2 but direct allocation mass1.5; flat-bounds displayed membership mass1 but direct allocation mass0.5. The compound source contributes one unit total to H. Display centroids use whole admitted membership, while C uses normalized direct allocations only."
+  },
+  "delivery": {
+    "directory": "research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze",
+    "manifestSha256": "602c6eaafe5ab382a36ef6884bb19634c72ef9c9f324fcddd2dd855cef4a4052",
+    "catalogSha256": "a620fd1bc0fa687346c380844e745266d1f3b1a6b4b186825201bff5cc03b896",
+    "initialCatalogBytes": 515466,
+    "totalPackageShardBytes": 737138,
+    "largestDetailShardBytes": 172302,
+    "externalContextAssetsCopied": false,
+    "assetPlan": {
+      "path": "asset-plan.json",
+      "sha256": "f2f7a6f8d4b42906ee164eea83a0aab0508e3ff978e63cf0ba729419f1b8304b",
+      "assetCount": 6735
+    },
+    "notApprovedForSiteRelease": true
+  },
+  "canonicalRegistry": {
+    "path": "research/q025/assembly/reconciliation-refresh-v3.json",
+    "sha256": "731a7181cb4ec9e14511fde69a21a4375b4fd82be863da0836fc87a844c7dae7",
+    "bytes": 57612
+  },
+  "kkRegistryCoverageAudit": {
+    "path": "research/q025/assembly/kk-registry-coverage-v3.json",
+    "sha256": "954280b1af59dfb9f5c88c8c207770c59f553e0b89dfb32813065bb1de21a0aa",
+    "bytes": 5681
+  },
+  "remainingGates": [
+    "Browser QA of this actual five-point scientific chart and source disclosures.",
+    "Complete canonical disposition of every authored and admitted scope, including all unmatched and pending comparisons; no batch-bin canonicalization.",
+    "Explicit reviewed source homes and compound overlaps across the unallocated corpus.",
+    "Pre-holdout candidate must declare8430 admitted homes and43 reserved/unassigned IDs under pre_holdout_freeze; final release requires8473 homes after separately adjudicated blind-test amendment.",
+    "Final global H and F must use every global source question-per-paper count; this induced five-source graph retains only7% of its full affinity and cannot predict global geometry quality.",
+    "Parent pilot provenance-only c links remain excluded from public containment; parent scopes/routes pending final canonical organization are not included in this KK packet."
+  ],
+  "noSealedHoldoutAccess": true
+}

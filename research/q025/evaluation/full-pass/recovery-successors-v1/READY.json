@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "q025-successor-ready/1",
+  "status": "READY_FOR_ROOT_VERIFIED_LAUNCH",
+  "generatedAt": "2026-11-17T12:32:14.099962+00:00",
+  "campaignSha256": "a4f347a517feab091f688675e6d2bbe9dbe6268d89934e2c6bfccd87726bfd0e",
+  "runnerSha256": "f2ee4550aff2f624ce8050086239040c6e313629043e8ecc49b78e37cc95faf4",
+  "publicManifestSha256": "3ed7b27f36a5d76ba38ea11b07d77b33b8d2beeb52655adec21421e341995684",
+  "nativeLaunches": 0,
+  "nativeJobs": 34,
+  "readyPreflightJobs": 6,
+  "dependentJobs": 28,
+  "pythonTestsPassed": 9,
+  "nodeTestsPassed": 5,
+  "observedOriginalFailures": {
+    "full-leaf-wave-v3": [
+      "leaf-54e3e83d0ccbf2700b0f-proposal",
+      "leaf-55a2311c12b246ddbd15-proposal",
+      "leaf-90980b7a8339256bfea7-proposal",
+      "leaf-ce36cae0274019373c8a-proposal",
+      "leaf-ce2e0c80657f40e352ee-proposal"
+    ],
+    "parents-wave-v1": [
+      "parent-076a8e988b123c215a92-proposal",
+      "parent-8d2b5fd7cc13cefc77fe-challenge"
+    ]
+  },
+  "originalStatesModified": false,
+  "runtimeControl": {
+    "enabled": false,
+    "maxActive": 2,
+    "maxAuthorizedConcurrency": 8,
+    "globalLimit": 48,
+    "globalLimitOwner": "root"
+  },
+  "limits": {
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "sourceOnly": true,
+    "sandbox": "read-only",
+    "timeoutSeconds": 1800,
+    "maxOutputCharacters": 120000,
+    "perStringCaps": false,
+    "outsideStringWhitespaceRunLimit": 4096,
+    "dispatchGuardTokens": 220000,
+    "automaticRetries": false
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/INSTRUCTIONS.md",
+      "sha256": "02663e42dffb9967be320c7b5abae3dd9f6a06fb0c247950c1cc3b46a5a4cfe4",
+      "bytes": 3028
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/README.md",
+      "sha256": "fbbe3918e57df36eba3aee729fbd1d46e8515ef544cd75aeb3aa13aa20fb83a4",
+      "bytes": 5742
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/contract.py",
+      "sha256": "41b1fb75e0f1bd829e378d7ea974ede93766b1faca466c52ace248a45747d56a",
+      "bytes": 5055
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/failure-audit.json",
+      "sha256": "a76827f8b7072c858eebb4057ed0bc9534584ecbf1a3b421ac2dcec8db4b2978",
+      "bytes": 6055
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/manifest.json",
+      "sha256": "3ed7b27f36a5d76ba38ea11b07d77b33b8d2beeb52655adec21421e341995684",
+      "bytes": 109930
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/materialize.py",
+      "sha256": "e059f4e3b86d96c5954c03a0d533262dce84a0cd0e3012d0af2fbfa4d7fdb2ec",
+      "bytes": 7868
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/prefix.py",
+      "sha256": "6d64359813f19e4b168650f1f0455d477eb55d738115fd9ba5fd362be63ebf00",
+      "bytes": 4014
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/preflight-run-001.json",
+      "sha256": "0e35a7ff9ccba66fe288d61782a75844f09683868f237283aa9065809da77415",
+      "bytes": 12012
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/preflight-run-002.json",
+      "sha256": "46c56ed9a4e9f5c1346f26e61f0f1ab3b7495a612099cb4b0065d6c1dcf159aa",
+      "bytes": 12012
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/preflight.mjs",
+      "sha256": "37afe9abfe8a8827ae04795c2d05a4cac0560d7e38dd86fa6af4373e2edc50aa",
+      "bytes": 3416
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/prepare.py",
+      "sha256": "2ef189f9c673cc658588b99427359626fc0b137883e9cee1328d8a898f1144f5",
+      "bytes": 14812
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/runner.mjs",
+      "sha256": "f2ee4550aff2f624ce8050086239040c6e313629043e8ecc49b78e37cc95faf4",
+      "bytes": 24918
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/runner.test.mjs",
+      "sha256": "77d67d9c90c4c519faec431bcc3f4a6046543b54224af61c461ae1c95437e25d",
+      "bytes": 2140
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/test_successors.py",
+      "sha256": "c41611345ba803cb43fdde408221a80f4f7e6cf9c9e3393bfca4aeed39070260",
+      "bytes": 7365
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/recovery-successors-v1/verification.json",
+      "sha256": "d8479f5b141e2758490d2683a0790444bb388678d8b3db318595a9a81ff2755a",
+      "bytes": 2877
+    }
+  ],
+  "privateArtifacts": "Ignored native-local recovery directory; no raw source excerpts or execution configuration are included in this public file list."
+}

@@ -1,0 +1,1648 @@
+{
+  "schemaVersion": "q025-annotation-admission/1",
+  "status": "accepted_annotation_only",
+  "adjudicator": "root",
+  "authorization": "Root independently compared all12 replacement strings and assessments and approved exact annotation replacements, preserving original strings and unresolved mathematical/source limits.",
+  "rows": [
+    {
+      "caseId": "parent-b518fa2038910d956e04:f0",
+      "status": "accepted_annotation_replacement",
+      "originalText": "Proposed replacement for truncated pf14. The dual IIA coupling tracks time dependence. In the constant-Newton branch, perturbative corrections acquire time dependence, while possible nonlocal time-independent corrections require small IIB-c",
+      "originalTextSha256": "110fe28d97d11b384eab59292199cd17e2e4522183b9b36407d3274503d0adc7",
+      "replacementText": "For the time-dependent internal geometry and fluxes considered in the type IIB construction of 1908.05288, the authors classify local and non-local M-theory corrections by their scaling with the type IIA string coupling, which also tracks their time dependence. Their choice with a time-independent four-dimensional Newton's constant gives time dependence to all perturbative quantum corrections. Possible non-local time-independent corrections remain and are suppressed only at small type IIB string coupling. The authors report that positive four-dimensional curvature can be achieved provided the leading quantum corrections satisfy required inequalities; their explicit form is not supplied in these windows.",
+      "replacementTextSha256": "9f6cec5e314f2fc9e0ac8ffca7556686ddcd281e275d230242f085a3837c36ce",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "challenger_replacement_also_ends_incomplete"
+      ],
+      "originalObject": {
+        "id": "f0",
+        "kind": "method",
+        "label": "Time and coupling ordering of quantum corrections",
+        "status": "scope_candidate",
+        "qualification": "Proposed replacement for truncated pf14. The dual IIA coupling tracks time dependence. In the constant-Newton branch, perturbative corrections acquire time dependence, while possible nonlocal time-independent corrections require small IIB-c",
+        "refs": [
+          "e2",
+          "e17",
+          "e19"
+        ]
+      },
+      "originalSourcePins": {
+        "subsetPacketSha256": "dad72e2b4071f16dba69a12066a794a53df5e1015e0ba8b6123c10bf6d3f8072",
+        "sourcePacketSha256": "bd21ecf62b1b8ff6a753a6f5bcd470472066aaa1c5c48132155e26dc45df1d3c",
+        "proposalReplySha256": "5fe65cb11a8cece114c8251b3211fde1dc929900bbd739d3f641dc2b00617505",
+        "challengeReplySha256": "7a85148d0923a4c87f1b28f8a516e5b993c902aa4d9270c311efefc92ffe5a45"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-parent-factor-clauses-proposal/reply.json",
+          "sha256": "9cde3aa7f311a6b6fcbb2969ad6c8f7bbbd81ffccb3f53c4321118928db1c941",
+          "receiptSha256": "eb390f0327d3b833d306f315fe3f2d8c20b7ad5b070e7d489dfa6baf125896d2"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-parent-factor-clauses-challenge/reply.json",
+          "sha256": "0f53ee3b56f3af39e0c8728695158e78f300a9814275b0c5e4715e534abef23e",
+          "receiptSha256": "7d67e7a3552668b708ac435aac6b46f6fdb8745f4dd75cb69a0bf43be2edb86c"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "parent-b518fa2038910d956e04:f0",
+        "decision": "supported_as_written",
+        "reason": "Independent comparison with e2/e17 confirms the distinct IIA scaling and IIB suppression roles, the constant-Newton branch and the conditional positive-curvature claim. e19 supports the stated construction setting. The prior replacement preserves the missing-inequality limitation and attributes the result to the authors.",
+        "refs": [
+          "e2",
+          "e17",
+          "e19"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e2",
+          "kind": "primary",
+          "sourceId": "ev:24f15c2b8cbf3ff01679d73aaeb3bc72",
+          "paperId": "1908.05288",
+          "sourceSha256": "e15950180bebf307566890d8faf81a6482c067fa2a82b4443006a339fa8691c7",
+          "sourceContext": {
+            "path": "papers/b5d9c81f7dd59925c159/reading-order.json",
+            "fileSha256": "bfb565412ad1584f3281d30de3f460d5c0ffad4cf07c1a1e5b404e2569049ca8",
+            "pdfPage": 4,
+            "start": 1285,
+            "end": 3704,
+            "textSha256": "69324a2763479caed0950d09377c7abc5177808af008ac878606dde1e08e5bd2",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e17",
+          "kind": "primary",
+          "sourceId": "ev:cb33d0c41a6c7d92cda8764d8939682e",
+          "paperId": "1908.05288",
+          "sourceSha256": "e15950180bebf307566890d8faf81a6482c067fa2a82b4443006a339fa8691c7",
+          "sourceContext": {
+            "path": "papers/b5d9c81f7dd59925c159/reading-order.json",
+            "fileSha256": "bfb565412ad1584f3281d30de3f460d5c0ffad4cf07c1a1e5b404e2569049ca8",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "b1c796e53c76313afbd71bb1026e5cc47caeb53d085fc65f731ef124cdb617d9",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e19",
+          "kind": "primary",
+          "sourceId": "ev:f37c0f2edf0adb46762cc9557eb3f5a4",
+          "paperId": "1908.05288",
+          "sourceSha256": "e15950180bebf307566890d8faf81a6482c067fa2a82b4443006a339fa8691c7",
+          "sourceContext": {
+            "path": "papers/b5d9c81f7dd59925c159/reading-order.json",
+            "fileSha256": "bfb565412ad1584f3281d30de3f460d5c0ffad4cf07c1a1e5b404e2569049ca8",
+            "pdfPage": 1,
+            "start": 103,
+            "end": 2242,
+            "textSha256": "8c059144d3bc7b45fd5f63cedadbc5cbddadad9ffac4ac58e3dfa00750e4bc59",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "parent-b518fa2038910d956e04:f1",
+      "status": "accepted_annotation_replacement",
+      "originalText": "Proposed replacement for truncated pf18. Extracted context supplies the ten-dimensional string frame; the displayed reduction uses four-dimensional Einstein frame and canonical kinetic fields. M4 is retained in section 2.2 and set to one",
+      "originalTextSha256": "db5046c7479183aa5ef9de5803a50eba63780d56db3f52b6efeaa96e34513899",
+      "replacementText": "For the unwarped product of a maximally symmetric four-dimensional spacetime and a compact six-dimensional internal manifold in 2004.00030, the displayed reduction gives a four-dimensional Einstein-frame action with canonically normalized scalar kinetic terms. The authors drop the Einstein-frame subscript and define M4 by Eq. (2.8), noting that their M4 differs by a factor of two from the earlier convention they cite. They retain M4 throughout section 2.2 and set it to one in the rest of the paper. The source contribution T10 includes source charges and delta functions localizing sources in their transverse directions. The potential terms involving ∗6 F5 and F6 require proper treatment of four-dimensional four-forms; that treatment is not provided in these windows. The designation of the parent ten-dimensional action as string-frame is inherited from convention o16 and is not independently established by the supplied primary excerpts e8 and e0.",
+      "replacementTextSha256": "8fa765d2e4d01a13c738ee50ea2fe7034ed8ac821ca13671252e77027dc0ca0a",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "challenger_replacement_also_ends_incomplete"
+      ],
+      "originalObject": {
+        "id": "f1",
+        "kind": "convention",
+        "label": "Reduced-frame and source normalizations",
+        "status": "scope_candidate",
+        "qualification": "Proposed replacement for truncated pf18. Extracted context supplies the ten-dimensional string frame; the displayed reduction uses four-dimensional Einstein frame and canonical kinetic fields. M4 is retained in section 2.2 and set to one",
+        "refs": [
+          "e8",
+          "e0",
+          "o15",
+          "o16",
+          "g12",
+          "g13"
+        ]
+      },
+      "originalSourcePins": {
+        "subsetPacketSha256": "757aa97259d3c2ea673d6748af352aab5172b3240c0618f18c876fa4be1abba0",
+        "sourcePacketSha256": "bd21ecf62b1b8ff6a753a6f5bcd470472066aaa1c5c48132155e26dc45df1d3c",
+        "proposalReplySha256": "5fe65cb11a8cece114c8251b3211fde1dc929900bbd739d3f641dc2b00617505",
+        "challengeReplySha256": "7a85148d0923a4c87f1b28f8a516e5b993c902aa4d9270c311efefc92ffe5a45"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-parent-factor-clauses-proposal/reply.json",
+          "sha256": "9cde3aa7f311a6b6fcbb2969ad6c8f7bbbd81ffccb3f53c4321118928db1c941",
+          "receiptSha256": "eb390f0327d3b833d306f315fe3f2d8c20b7ad5b070e7d489dfa6baf125896d2"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-parent-factor-clauses-challenge/reply.json",
+          "sha256": "0f53ee3b56f3af39e0c8728695158e78f300a9814275b0c5e4715e534abef23e",
+          "receiptSha256": "7d67e7a3552668b708ac435aac6b46f6fdb8745f4dd75cb69a0bf43be2edb86c"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "parent-b518fa2038910d956e04:f1",
+        "decision": "supported_as_written",
+        "reason": "e8/e0 directly support the reduced frame, normalization statements, section-dependent Planck-mass convention, localization content and four-form caveat. The prior replacement correctly treats ten-dimensional string frame as inherited context rather than independently supplied primary evidence, and its reason correctly declines to infer truncation from the screening flag.",
+        "refs": [
+          "e8",
+          "e0",
+          "o15",
+          "o16",
+          "g12",
+          "g13"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e8",
+          "kind": "primary",
+          "sourceId": "ev:8e4f2f39cf51b6876528f7517d9a7c5c",
+          "paperId": "2004.00030",
+          "sourceSha256": "72285ce41685876cd61583783ff41e660693fbfab89a59fcf7cb6a9c9510baff",
+          "sourceContext": {
+            "path": "papers/8d3d92aaecc5f322a70e/reading-order.json",
+            "fileSha256": "0fdd4204cf9de2ce9e77d1735820f719a6596f82c7156ddda7d46f7199ef7c34",
+            "pdfPage": 10,
+            "start": 0,
+            "end": 2783,
+            "textSha256": "5e1e873a3f8705d9babb03e3a3228df1b22890d6f21bcf113a3434ba54e152d1",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e0",
+          "kind": "primary",
+          "sourceId": "ev:01542975d4127ca8070cf84ca3cbb327",
+          "paperId": "2004.00030",
+          "sourceSha256": "72285ce41685876cd61583783ff41e660693fbfab89a59fcf7cb6a9c9510baff",
+          "sourceContext": {
+            "path": "papers/8d3d92aaecc5f322a70e/reading-order.json",
+            "fileSha256": "0fdd4204cf9de2ce9e77d1735820f719a6596f82c7156ddda7d46f7199ef7c34",
+            "pdfPage": 11,
+            "start": 0,
+            "end": 2100,
+            "textSha256": "68de0d545fdbc93ef9c18a6074734d0eeaa60097c917307b877e8afa4cb4c4a4",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "o15",
+          "kind": "source_object",
+          "sourceId": "obj:8d3d92aaecc5f322a70e:convention:130daa87d3ccb4e2f7ed1211",
+          "objectKind": "convention",
+          "paperId": "2004.00030"
+        },
+        {
+          "ref": "o16",
+          "kind": "source_object",
+          "sourceId": "obj:8d3d92aaecc5f322a70e:convention:f52e55e838d7e52ac1cb715f",
+          "objectKind": "convention",
+          "paperId": "2004.00030"
+        },
+        {
+          "ref": "g12",
+          "kind": "source_relation",
+          "sourceId": "edge:97ba7445fceaa4cf54fa61ee78ea207a",
+          "source": "obj:8d3d92aaecc5f322a70e:setting:ecaf79879d1c0cd84f1730b7",
+          "target": "obj:8d3d92aaecc5f322a70e:convention:f52e55e838d7e52ac1cb715f",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            3
+          ]
+        },
+        {
+          "ref": "g13",
+          "kind": "source_relation",
+          "sourceId": "edge:992e7a8b3acfc1e4fffe32ec2c83a18b",
+          "source": "obj:8d3d92aaecc5f322a70e:setting:ecaf79879d1c0cd84f1730b7",
+          "target": "obj:8d3d92aaecc5f322a70e:convention:130daa87d3ccb4e2f7ed1211",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            3
+          ]
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "supported_clarification_not_established_truncation"
+    },
+    {
+      "caseId": "parent-b518fa2038910d956e04:f2",
+      "status": "accepted_annotation_replacement",
+      "originalText": "Proposed replacement for truncated pf29. The imported NS constraint is stated at least for homogeneous overlap. Generic intersections relax parallel-source restrictions. A separate dominant-set case, with the sum of other source traces",
+      "originalTextSha256": "d3c130d92c592c87d559a61328c9ffa42eb9214629f3e34df7af040c43b0ff14",
+      "replacementText": "For classical de Sitter solutions with intersecting Op/Dp sources, 1902.10093 reports that the imported NS curvature/H-flux 'combi' constraint extends at least to homogeneous overlap; its exact inequality is not supplied here. Intersections generally relax the parallel-source requirement that f^{||}_{⊥⊥} be nonzero, and the authors do not obtain the associated λ-based existence constraints in their generic intersecting-source analysis. Separately, section 4.4 considers a dominant-set case with p = 4, 5, 6 and N_o unfixed, subject to ∑_{J ≠ I} T10^J = T10 − T10^I ≤ 0 for a selected set I. In the paper's source-trace convention, the authors describe the other sets as collectively dominated by brane contributions and set I as mostly orientifold dominated. They identify this summed sign condition as permitting extensions of parallel-source existence constraints; the supplied window does not contain the complete resulting bounds.",
+      "replacementTextSha256": "60d9ff47940ea0e690a45955b7242a52fd9d19b218c6fe904234f69cf3101f5b",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "challenger_replacement_also_ends_incomplete"
+      ],
+      "originalObject": {
+        "id": "f2",
+        "kind": "assumption",
+        "label": "Overlap and dominant-source special cases",
+        "status": "scope_candidate",
+        "qualification": "Proposed replacement for truncated pf29. The imported NS constraint is stated at least for homogeneous overlap. Generic intersections relax parallel-source restrictions. A separate dominant-set case, with the sum of other source traces",
+        "refs": [
+          "e4",
+          "e7",
+          "o2",
+          "o6",
+          "g17",
+          "g20"
+        ]
+      },
+      "originalSourcePins": {
+        "subsetPacketSha256": "8b855bc8f6114fcf1f1f819644e8c33de7e1e3f8187a3ffdb08cf59386ae39b4",
+        "sourcePacketSha256": "bd21ecf62b1b8ff6a753a6f5bcd470472066aaa1c5c48132155e26dc45df1d3c",
+        "proposalReplySha256": "5fe65cb11a8cece114c8251b3211fde1dc929900bbd739d3f641dc2b00617505",
+        "challengeReplySha256": "7a85148d0923a4c87f1b28f8a516e5b993c902aa4d9270c311efefc92ffe5a45"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-parent-factor-clauses-proposal/reply.json",
+          "sha256": "9cde3aa7f311a6b6fcbb2969ad6c8f7bbbd81ffccb3f53c4321118928db1c941",
+          "receiptSha256": "eb390f0327d3b833d306f315fe3f2d8c20b7ad5b070e7d489dfa6baf125896d2"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-parent-factor-clauses-challenge/reply.json",
+          "sha256": "0f53ee3b56f3af39e0c8728695158e78f300a9814275b0c5e4715e534abef23e",
+          "receiptSha256": "7d67e7a3552668b708ac435aac6b46f6fdb8745f4dd75cb69a0bf43be2edb86c"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "parent-b518fa2038910d956e04:f2",
+        "decision": "supported_as_written",
+        "reason": "e4/e7 support the prior replacement's separation of the qualified imported NS constraint, generic relaxation and dominant-set extension. The stated summed sign, p range and source-trace interpretation match the supplied section 4.4 text. The prior result preserves the absent bounds and e4 extraction limitation without treating structural context as additional primary evidence.",
+        "refs": [
+          "e4",
+          "e7",
+          "o2",
+          "o6",
+          "g17",
+          "g20"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:312e7c9b9407e9b31b89cae868fd37c0",
+          "paperId": "1902.10093",
+          "sourceSha256": "b8e800b08d85f5c341209eb2dd290b49f172ccf807a60650580af130ef05b2d7",
+          "sourceContext": {
+            "path": "papers/4fb0a89f6fdae30196df/reading-order.json",
+            "fileSha256": "8ac381906afc2217f9480e052d5ab890b4bb6c4fa41ef41793f81d9365a20781",
+            "pdfPage": 18,
+            "start": 0,
+            "end": 2616,
+            "textSha256": "e57bbf55f9044d1a02c08998a7d159b167ed543d71d827f3196d2e0754a4921d",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e7",
+          "kind": "primary",
+          "sourceId": "ev:6ea480f48f5ab09b145be824be8ccf6a",
+          "paperId": "1902.10093",
+          "sourceSha256": "b8e800b08d85f5c341209eb2dd290b49f172ccf807a60650580af130ef05b2d7",
+          "sourceContext": {
+            "path": "papers/4fb0a89f6fdae30196df/reading-order.json",
+            "fileSha256": "8ac381906afc2217f9480e052d5ab890b4bb6c4fa41ef41793f81d9365a20781",
+            "pdfPage": 24,
+            "start": 0,
+            "end": 2393,
+            "textSha256": "7acd082ee3e9e900956c821a92d42e1c577a29fb1e96e11d3ae0a0da13917856",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "o2",
+          "kind": "source_object",
+          "sourceId": "obj:4fb0a89f6fdae30196df:assumption:d56584b568be52e3ec5088cb",
+          "objectKind": "assumption",
+          "paperId": "1902.10093"
+        },
+        {
+          "ref": "o6",
+          "kind": "source_object",
+          "sourceId": "obj:4fb0a89f6fdae30196df:limitation:d653ea1a12ba15f7aed4557b",
+          "objectKind": "limitation",
+          "paperId": "1902.10093"
+        },
+        {
+          "ref": "g17",
+          "kind": "source_relation",
+          "sourceId": "edge:89da96e4622c94593bf0426927e6e186",
+          "source": "obj:4fb0a89f6fdae30196df:setting:5315364760f47ef75b8f91af",
+          "target": "obj:4fb0a89f6fdae30196df:assumption:d56584b568be52e3ec5088cb",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            6
+          ]
+        },
+        {
+          "ref": "g20",
+          "kind": "source_relation",
+          "sourceId": "edge:e986a996e8f9569d578c9374ffbccf6c",
+          "source": "obj:4fb0a89f6fdae30196df:setting:5315364760f47ef75b8f91af",
+          "target": "obj:4fb0a89f6fdae30196df:limitation:d653ea1a12ba15f7aed4557b",
+          "semanticStatus": "structural",
+          "directUnitIndices": [
+            6
+          ]
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:r:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "The original broad scope is supported as qualified navigation. Numerical membership does not establish scientific unity; the explicit comparison and method ",
+      "originalTextSha256": "be88f28991fc780f59d751f9c5f829ee7fef83923424bc1ae5f0f2a6682f6c59",
+      "replacementText": "The supplied evidence supports this broad scope as a navigation comparison among distinct compactification problems. The IIB primary passages cover single-Kähler-modulus vacuum searches, large-volume and purely perturbative stabilization schemes, reported global chiral constructions, axion phenomenology and EDE model-building targets. These contributions retain their separate geometric, correction, consistency and phenomenological conditions. In particular, the controlled de Sitter requirement in the EDE passage is a condition of that model-building target, not a premise of every source. The three-dimensional IIB construction concerns toroidal O5 orientifolds with co-calibrated G2 structure and RR flux; its reported supersymmetric AdS3 stabilization remains distinct from de Sitter indications troubled by shape-modulus stabilization and flux quantization, and from scale separation hindered by geometric-flux quantization. The adjacent thesis assigns its explicit SU(3)-structure stabilization examples to four-dimensional IIA/M-theory N=2 supergravities and its classical conifold-transition dynamics to IIB, where small completion regions coexist with reported generic trapping. The trans-Planckian, complex-structure/reheating, volume-dependence, convention-translation and large-extra-dimension/late-time questions have descriptions only in this case. The grouping therefore supports comparison without imposing a common dimension, vacuum sign or stabilization mechanism, inferring scientific identity from numerical membership, or establishing universal viability.",
+      "replacementTextSha256": "e6ee52475953331a93d1e43f1c0dab441dba940472b2b9cd6cf1625ed3f56602",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "trailing_space_or_hyphen",
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "r",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "The original broad scope is supported as qualified navigation. Numerical membership does not establish scientific unity; the explicit comparison and method ",
+        "refs": [
+          "d0",
+          "d3",
+          "d5",
+          "d8",
+          "d11",
+          "e16",
+          "e5",
+          "e13",
+          "e0",
+          "e15",
+          "e22",
+          "e23",
+          "e21",
+          "e4"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:r:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement accurately separates description-only questions from attributed primary reports. It retains the three-dimensional IIB setting and the IIA/M-theory versus IIB division of the compound thesis, and correctly treats controlled de Sitter stabilization as an EDE target rather than a universal premise. Its annotation-only classification is supported independently of the severed original.",
+        "refs": [
+          "d0",
+          "d3",
+          "d5",
+          "d8",
+          "d11",
+          "e16",
+          "e5",
+          "e13",
+          "e0",
+          "e15",
+          "e22",
+          "e23",
+          "e21",
+          "e4"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "d0",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:3fc1572c3f7481bdd200cd0cbd46ad752c9edd315e1e2dd56f74cbd7088c7d5a",
+          "textSha256": "e483472d6758e5a28032551a3eedaa7dbb0afae2e2fbe681e3fb13492b55e69a"
+        },
+        {
+          "ref": "d3",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:10af72cea8d6fd19b38f2106610897a8685debf109da5c00daad3f1b558c5a4a",
+          "textSha256": "2761d7e4d5ed0aed6132d964af65d4df0de8517a6efe1827baaa6e1b6a82f339"
+        },
+        {
+          "ref": "d5",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:8443dd496835a26133210ab9fdd8fd6b622bb73bbfae465d903f31b9e88063e7",
+          "textSha256": "321a907966105e647416443a70729afe27f1511bbe9d14bea618d7eef273a4fd"
+        },
+        {
+          "ref": "d8",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:54b4aa3a55c1d040f3dd81d4f74aa30fc931cb68d612329214d9122b55cb35c4",
+          "textSha256": "bdf670288fe1a0877e6cc0f9fabcc139df0e65a4b33aafe6ba909b1d7bb903fe"
+        },
+        {
+          "ref": "d11",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:7b5411cf44e76f1cc2871fd0d88900d2d96c9f419ec673bf1dc38ec1d43b0616",
+          "textSha256": "cf0acab4dc5436d648f1a6f3d4462eed1d2648e0a122785351dd2660cece68c2"
+        },
+        {
+          "ref": "e16",
+          "kind": "primary",
+          "sourceId": "ev:740a8306397ab01a562da24ce068f6b7",
+          "paperId": "1106.0759",
+          "sourceSha256": "b7713c5221d4baed4250aa40ce13f670a3ca69b68f726dd9a5d0fda0b9e70754",
+          "sourceContext": {
+            "path": "papers/4dac1ba25883c42df221/reading-order.json",
+            "fileSha256": "b02630d60fa4a48484f9f5eeb885c54517532830ad3d50bfbfdc65d2e089a587",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 583,
+            "textSha256": "98bdde83fe082ecb30bc849389c02e319550578b3a62a9fe6ce8864579fb211f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e5",
+          "kind": "primary",
+          "sourceId": "ev:28ba0482cb5dc90f6c2508114df12afa",
+          "paperId": "2103.03282",
+          "sourceSha256": "e7ee15067a8120322b084d29c57926c0233d526fcc956c6f4be281b1433ab2f4",
+          "sourceContext": {
+            "path": "papers/0cab9de990ad7bfb2677/reading-order.json",
+            "fileSha256": "28a9a211037776068e583b3d8939a92702ac670e8ef6a5f73e4f161d48062e6e",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1240,
+            "textSha256": "a02acf38945cee5ac8184b8c094962a1e703c5f15e4601a3abf2d4a8a5448e60",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e13",
+          "kind": "primary",
+          "sourceId": "ev:6a1540b8b88a76b5793c48212ec4980f",
+          "paperId": "1706.06128",
+          "sourceSha256": "f34db230ef3a0a7608ac62730c56ee4ac88aed0d1b1bd2c4b205084947032112",
+          "sourceContext": {
+            "path": "papers/8fb59bd0af9e0f851db7/reading-order.json",
+            "fileSha256": "b2b9826e460efd021c8fe519cdc37683be20a299ad6a07a5b61b33c64d1f805d",
+            "pdfPage": 1,
+            "start": 106,
+            "end": 1723,
+            "textSha256": "1bfbd81c4c34fa7bd8c87d40ed7553da04ce90a5f84fad90e2dc50d06e8cb437",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e0",
+          "kind": "primary",
+          "sourceId": "ev:0c2e7557d35001ab11330915ebfed620",
+          "paperId": "2106.11964",
+          "sourceSha256": "4023fe1cf639ca2e59d8cb5e17dcfb67f3526bbb0adbd8343a01499863a71cd1",
+          "sourceContext": {
+            "path": "papers/6ece6b9f3a185747d3e2/reading-order.json",
+            "fileSha256": "d2c304ff8991ca044657ffff1849f9b2014ed2af22ffb29f46545b8522967327",
+            "pdfPage": 1,
+            "start": 99,
+            "end": 1935,
+            "textSha256": "dbf53f77ed2fd89586fe34301557894302fb1d4608641fa87c807b8a5bfe72f4",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e15",
+          "kind": "primary",
+          "sourceId": "ev:6aafcc5b352d1ea89302d6ca7012921e",
+          "paperId": "2303.03414",
+          "sourceSha256": "4afa7c333bba486b6df353df34a70c73c71909cc4dc3c3a2f1535d55bafce7fc",
+          "sourceContext": {
+            "path": "papers/b1a679c855f46984e4fc/reading-order.json",
+            "fileSha256": "a457886124e3740c6c0c09524372808ea31175b559425791f2112d50f0c63e1c",
+            "pdfPage": 3,
+            "start": 1296,
+            "end": 3585,
+            "textSha256": "7eb21106d6130a9ada400f1438c02a30a9f53566b30fcd1368a2d188d773660b",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e22",
+          "kind": "primary",
+          "sourceId": "ev:c68beb762fa3e40f07a705c9b99f65ad",
+          "paperId": "2303.16689",
+          "sourceSha256": "eba57a20f5b9e692a9daebacb1ee9493a782bf7d53e889f1e92bc9edc808c45b",
+          "sourceContext": {
+            "path": "papers/bf7707e82ea729fdb7dc/reading-order.json",
+            "fileSha256": "d4c612f931e064f2a99d48e90b1d090194d16b64237e1d473f1a4f68973cf823",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 2183,
+            "textSha256": "58cb073624faa895fd7980c077d4524ef62027e4148af776be67917fa847fddb",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e23",
+          "kind": "primary",
+          "sourceId": "ev:d531501ededb58f9bf90f1bc4fb332dc",
+          "paperId": "1206.0819",
+          "sourceSha256": "c81d866f4e777ddbd74420ed0eb6ea43df62da6309b1bb2473a4254ad8fc48f6",
+          "sourceContext": {
+            "path": "papers/f745c4708ad567debd75/reading-order.json",
+            "fileSha256": "98f61b6356468fd9b729f2077f03764746187b3b70f6a7e2723e6c9b1ddf4dc1",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1685,
+            "textSha256": "a94c8e059a9e31300c4317412c26552cc312e7b43d8fdffe54852c01969f582f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e21",
+          "kind": "primary",
+          "sourceId": "ev:a87a580e9678aaef9bef9526f2d7edc5",
+          "paperId": "hep-th/0608033",
+          "sourceSha256": "4cf0be89e7b7cd58056012ac9cb5814a7fa4d1c5a6e60d5c2a03d4c550b6ad64",
+          "sourceContext": {
+            "path": "papers/395ccdf7a43c9dbf2435/reading-order.json",
+            "fileSha256": "f4f884d68213420cc77477e035f09c5dfdd0999bf06dfb69e55e19fea9f9d5e2",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 689,
+            "textSha256": "9e05a75426f59b0960df5bd8cca93054a2b1be92f05a9184c86e012b8a337ba7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:250673d2ae8a01cbc113cbc2bc37e411",
+          "paperId": "hep-th/0502058",
+          "sourceSha256": "015d41ad3b0bdbf3ed59741e806f28e4177265874306d26f96b02147fdece611",
+          "sourceContext": {
+            "path": "papers/6d1ac08472019c2146e2/reading-order.json",
+            "fileSha256": "d234cb3b7cb41f4c9b106b47ca76981b187ede25cf27586cbbbc5e36bd412dea",
+            "pdfPage": 3,
+            "start": 97,
+            "end": 2893,
+            "textSha256": "ce51257c9a211afbd51999ff46dec7dc4ce647fb45d17b65a5befe48d0b8cca7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p0:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "The scope correctly separates vacuum existence, uplift, stability and scales. It accommodates the single-modulus limitations and purely perturbative alterna",
+      "originalTextSha256": "f230633cb24b52a711e00c94104ac17db53c49c8ba0ab49ab756b27d2d67b45e",
+      "replacementText": "The supplied passages support comparing vacuum existence, uplift, stability and particle scales as separate requirements. In the single-Kähler-modulus study, the complex-structure moduli are stabilized with the supersymmetry-breaking direction orthogonal to them, while the axio-dilaton may or may not participate in supersymmetry breaking. The source distinguishes this procedure from first integrating out presumed heavy dilaton and complex-structure fields. It reports supersymmetry-breaking minima with nearly zero cosmological constant, high gravitino and soft masses in the simplest cases, and a numerical example with a 10 TeV gravitino mass using several nonperturbative terms. For its stated h12 > h11 > 1 large-volume class, the 2005 source argues that (α′)^3 corrections and nonperturbative superpotential contributions produce nonsupersymmetric AdS minima with Kähler-sector supersymmetry breaking; its footnote allows some moduli to lie near the string scale despite the large total volume. The thesis summary reports volume-suppressed gravitino and soft scales and states a requirement for nonperturbative superpotential effects in Kähler stabilization. The supplied 2023 review separately reports a concrete orientifold lacking the divisor topologies needed for those effects, with entirely perturbative Kähler stabilization to AdS and D-term or T-brane uplift prescriptions. These different source statements do not establish a universal requirement for nonperturbative superpotentials. The bounded passages support the comparative question but do not certify full stability or controlled de Sitter vacua.",
+      "replacementTextSha256": "3ca8dded3862d55a9546ef81ee68663158681e03792b2989084a56ae00cbc192",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p0",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "The scope correctly separates vacuum existence, uplift, stability and scales. It accommodates the single-modulus limitations and purely perturbative alterna",
+        "refs": [
+          "e1",
+          "e16",
+          "e22",
+          "e17",
+          "e4"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p0:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement preserves e1's supersymmetry-breaking assumptions and distinction from two-stage integration, its high-scale limitation and reported 10 TeV example, and e4's geometric and correction conditions. It also keeps e17's nonperturbative requirement attributed while acknowledging e22's purely perturbative construction. The unsupported flavor motivation is explicitly omitted as a premise, so the comparative scope does not require revision.",
+        "refs": [
+          "e1",
+          "e16",
+          "e22",
+          "e17",
+          "e4"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e1",
+          "kind": "primary",
+          "sourceId": "ev:1713eba86db8b98e68571b8f034c5183",
+          "paperId": "1106.0759",
+          "sourceSha256": "b7713c5221d4baed4250aa40ce13f670a3ca69b68f726dd9a5d0fda0b9e70754",
+          "sourceContext": {
+            "path": "papers/4dac1ba25883c42df221/reading-order.json",
+            "fileSha256": "b02630d60fa4a48484f9f5eeb885c54517532830ad3d50bfbfdc65d2e089a587",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2851,
+            "textSha256": "50da84c9eef302682eb7668336f1ac24c5b6155fa4b935acf93f45d41428a340",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e16",
+          "kind": "primary",
+          "sourceId": "ev:740a8306397ab01a562da24ce068f6b7",
+          "paperId": "1106.0759",
+          "sourceSha256": "b7713c5221d4baed4250aa40ce13f670a3ca69b68f726dd9a5d0fda0b9e70754",
+          "sourceContext": {
+            "path": "papers/4dac1ba25883c42df221/reading-order.json",
+            "fileSha256": "b02630d60fa4a48484f9f5eeb885c54517532830ad3d50bfbfdc65d2e089a587",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 583,
+            "textSha256": "98bdde83fe082ecb30bc849389c02e319550578b3a62a9fe6ce8864579fb211f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e22",
+          "kind": "primary",
+          "sourceId": "ev:c68beb762fa3e40f07a705c9b99f65ad",
+          "paperId": "2303.16689",
+          "sourceSha256": "eba57a20f5b9e692a9daebacb1ee9493a782bf7d53e889f1e92bc9edc808c45b",
+          "sourceContext": {
+            "path": "papers/bf7707e82ea729fdb7dc/reading-order.json",
+            "fileSha256": "d4c612f931e064f2a99d48e90b1d090194d16b64237e1d473f1a4f68973cf823",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 2183,
+            "textSha256": "58cb073624faa895fd7980c077d4524ef62027e4148af776be67917fa847fddb",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e17",
+          "kind": "primary",
+          "sourceId": "ev:798a088ab604b6c0d08d3159643479c6",
+          "paperId": "hep-th/0611039",
+          "sourceSha256": "0f513d4410a68f96c9a4eed8cbea769e24ddf53f03b24b2a4eee581e334ac68e",
+          "sourceContext": {
+            "path": "papers/e02e7df865e6398fdfd2/reading-order.json",
+            "fileSha256": "065a25193a41244329c6facc8ee411a4e3fa83d43f69c570c9f79d3fec10f21a",
+            "pdfPage": 7,
+            "start": 0,
+            "end": 2607,
+            "textSha256": "a0e1404c6df21348e31a02b9da32d85c780f5bc2fcd1571ca45f82a4e3d96248",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:250673d2ae8a01cbc113cbc2bc37e411",
+          "paperId": "hep-th/0502058",
+          "sourceSha256": "015d41ad3b0bdbf3ed59741e806f28e4177265874306d26f96b02147fdece611",
+          "sourceContext": {
+            "path": "papers/6d1ac08472019c2146e2/reading-order.json",
+            "fileSha256": "d234cb3b7cb41f4c9b106b47ca76981b187ede25cf27586cbbbc5e36bd412dea",
+            "pdfPage": 3,
+            "start": 97,
+            "end": 2893,
+            "textSha256": "ce51257c9a211afbd51999ff46dec7dc4ce647fb45d17b65a5befe48d0b8cca7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p1:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "Global consistency is shared, while orientifold action, divisor requirements, visible sector and inflation distinguish the constructions. Announced examples",
+      "originalTextSha256": "20d459ea2bfc03eb688acb406e78ff1be031efb61ea6af5829c8429c0843b9b4",
+      "replacementText": "The supplied scope is supported as a comparison of local quivers embedded in compact IIB orientifolds with global brane consistency and moduli stabilization. The general fractional-D3 question in d2 remains description-only. The 2017 passages distinguish oriented quivers with exchanged singularities from orientifolded quivers and describe the roles of orientifold involutions, charge cancellation, gauge fluxes and stabilization ingredients. Their selected inflationary construction uses two geometric del Pezzo blow-up modes, one as the inflaton and the other to maintain volume stabilization. It focuses on transversally invariant divisors supporting O(1) instantons, leaving the exchanged-divisor U(1)-instanton option aside. The 2021 dP5 construction has its own requirements: a diagonal divisor that can shrink without forcing other divisors to shrink, and an involution under which it is transversely invariant and intersects the O7-plane. Its abstract reports a Higgsed and orientifolded local model embedded with tadpole and Freed-Witten anomaly cancellations, T-brane de Sitter stabilization and an MSSM low-energy spectrum. These reported constructions support the shared embedding question while retaining their distinct visible sectors, involutions, divisor conditions and cosmological targets. They neither identify every chiral quiver with a Standard Model construction nor establish inflation for every embedding; the supplied passages do not provide a complete consistency or control audit.",
+      "replacementTextSha256": "be391017139ac3d6918182ddaf7fa5a39462c6d1660ed4f614f535f86a3008ae",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p1",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "Global consistency is shared, while orientifold action, divisor requirements, visible sector and inflation distinguish the constructions. Announced examples",
+        "refs": [
+          "d2",
+          "e13",
+          "e18",
+          "e6",
+          "e0",
+          "e3"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p1:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement correctly keeps d2 description-only, the 2017 O(1)-instanton and two-blow-up-mode conditions specific to the selected construction, and the diagonal dP5 and O7-intersecting involution requirements specific to the 2021 embedding. Its reported consistency and phenomenology claims match the supplied passages without turning them into an independent audit or a universal inflation claim.",
+        "refs": [
+          "d2",
+          "e13",
+          "e18",
+          "e6",
+          "e0",
+          "e3"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "d2",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:dd9865cda12c52f54e3411ea29635d4426b4d9080a1b7b6039d52f8225835a79",
+          "textSha256": "09b850558f09f11bbc4e93992c2efed0e0e520650e5844fca6790801f4c19240"
+        },
+        {
+          "ref": "e13",
+          "kind": "primary",
+          "sourceId": "ev:6a1540b8b88a76b5793c48212ec4980f",
+          "paperId": "1706.06128",
+          "sourceSha256": "f34db230ef3a0a7608ac62730c56ee4ac88aed0d1b1bd2c4b205084947032112",
+          "sourceContext": {
+            "path": "papers/8fb59bd0af9e0f851db7/reading-order.json",
+            "fileSha256": "b2b9826e460efd021c8fe519cdc37683be20a299ad6a07a5b61b33c64d1f805d",
+            "pdfPage": 1,
+            "start": 106,
+            "end": 1723,
+            "textSha256": "1bfbd81c4c34fa7bd8c87d40ed7553da04ce90a5f84fad90e2dc50d06e8cb437",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e18",
+          "kind": "primary",
+          "sourceId": "ev:9046e87b89cc1d52de94ede88a4164cb",
+          "paperId": "1706.06128",
+          "sourceSha256": "f34db230ef3a0a7608ac62730c56ee4ac88aed0d1b1bd2c4b205084947032112",
+          "sourceContext": {
+            "path": "papers/8fb59bd0af9e0f851db7/reading-order.json",
+            "fileSha256": "b2b9826e460efd021c8fe519cdc37683be20a299ad6a07a5b61b33c64d1f805d",
+            "pdfPage": 3,
+            "start": 94,
+            "end": 3415,
+            "textSha256": "e1e768d9e1971bdbd73204d83bf89a8007fdf69a4c55101d0546ebe58cdcbe40",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e6",
+          "kind": "primary",
+          "sourceId": "ev:2aa926afad1a9230974048b981d249d2",
+          "paperId": "1706.06128",
+          "sourceSha256": "f34db230ef3a0a7608ac62730c56ee4ac88aed0d1b1bd2c4b205084947032112",
+          "sourceContext": {
+            "path": "papers/8fb59bd0af9e0f851db7/reading-order.json",
+            "fileSha256": "b2b9826e460efd021c8fe519cdc37683be20a299ad6a07a5b61b33c64d1f805d",
+            "pdfPage": 4,
+            "start": 104,
+            "end": 2439,
+            "textSha256": "010211ddf27aac8228f2c0d23376499c6b9348d56955266862b43fb3350572b1",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e0",
+          "kind": "primary",
+          "sourceId": "ev:0c2e7557d35001ab11330915ebfed620",
+          "paperId": "2106.11964",
+          "sourceSha256": "4023fe1cf639ca2e59d8cb5e17dcfb67f3526bbb0adbd8343a01499863a71cd1",
+          "sourceContext": {
+            "path": "papers/6ece6b9f3a185747d3e2/reading-order.json",
+            "fileSha256": "d2c304ff8991ca044657ffff1849f9b2014ed2af22ffb29f46545b8522967327",
+            "pdfPage": 1,
+            "start": 99,
+            "end": 1935,
+            "textSha256": "dbf53f77ed2fd89586fe34301557894302fb1d4608641fa87c807b8a5bfe72f4",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e3",
+          "kind": "primary",
+          "sourceId": "ev:1b509a69a599e964afc5ee14c3a443f8",
+          "paperId": "2106.11964",
+          "sourceSha256": "4023fe1cf639ca2e59d8cb5e17dcfb67f3526bbb0adbd8343a01499863a71cd1",
+          "sourceContext": {
+            "path": "papers/6ece6b9f3a185747d3e2/reading-order.json",
+            "fileSha256": "d2c304ff8991ca044657ffff1849f9b2014ed2af22ffb29f46545b8522967327",
+            "pdfPage": 26,
+            "start": 98,
+            "end": 2678,
+            "textSha256": "6efc1990f7d039fe25f4836424f99baf95f19f0630d478f600e4f603a44c588e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p2:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "The card preserves distinct trans-Planckian, complex-structure and blow-up mechanisms. Its explicit description-only limits prevent claims of verified traje",
+      "originalTextSha256": "dcb07f1015ec9d491ef0c0bf1bf4bf88f0faf4cf49a2c7948d59650a47bcbe7a",
+      "replacementText": "The supplied scope supports comparison among distinct inflation and reheating questions, with inflaton identity and stabilization conditions kept model-specific. The trans-Planckian slow-roll and primordial-tensor question in d0, including its proposed large-volume control and parameter-insensitivity targets, has description-only support. The complex-structure or right-handed-sneutrino question in d3 likewise has description-only support and concerns moderately large-radius IIB/F-theory settings with volume stabilization. Separately, the 2017 primary passages report an explicit compact chiral model with closed-string moduli stabilization and del Pezzo inflation. In the selected embedding, two geometric del Pezzo divisors are transversally invariant and support O(1) instantons; one blow-up mode can inflate while the other maintains volume stabilization. The thesis summary reports an inflationary application of a large-volume construction using the no-scale Kähler potential to avoid the η problem. These sources support the comparison without identifying complex-structure dynamics with Kähler blow-up dynamics. The supplied windows contain neither complete trajectories nor perturbation and full stability calculations, and they provide no current observational validation.",
+      "replacementTextSha256": "eb4e852d25fc5a5e6a2a3aef7e220149446624ea83f1b7aaa17c5ec44268faa3",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p2",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "The card preserves distinct trans-Planckian, complex-structure and blow-up mechanisms. Its explicit description-only limits prevent claims of verified traje",
+        "refs": [
+          "d0",
+          "d3",
+          "e6",
+          "e13",
+          "e25"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p2:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement gives d0 and d3 only their supplied descriptive status. Its distinct account of del Pezzo inflation and volume stabilization is supported by e6 and e13, while the no-scale η-problem statement is attributed to e25. It supplies no missing trajectory, perturbation calculation or current observational result.",
+        "refs": [
+          "d0",
+          "d3",
+          "e6",
+          "e13",
+          "e25"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "d0",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:3fc1572c3f7481bdd200cd0cbd46ad752c9edd315e1e2dd56f74cbd7088c7d5a",
+          "textSha256": "e483472d6758e5a28032551a3eedaa7dbb0afae2e2fbe681e3fb13492b55e69a"
+        },
+        {
+          "ref": "d3",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:10af72cea8d6fd19b38f2106610897a8685debf109da5c00daad3f1b558c5a4a",
+          "textSha256": "2761d7e4d5ed0aed6132d964af65d4df0de8517a6efe1827baaa6e1b6a82f339"
+        },
+        {
+          "ref": "e6",
+          "kind": "primary",
+          "sourceId": "ev:2aa926afad1a9230974048b981d249d2",
+          "paperId": "1706.06128",
+          "sourceSha256": "f34db230ef3a0a7608ac62730c56ee4ac88aed0d1b1bd2c4b205084947032112",
+          "sourceContext": {
+            "path": "papers/8fb59bd0af9e0f851db7/reading-order.json",
+            "fileSha256": "b2b9826e460efd021c8fe519cdc37683be20a299ad6a07a5b61b33c64d1f805d",
+            "pdfPage": 4,
+            "start": 104,
+            "end": 2439,
+            "textSha256": "010211ddf27aac8228f2c0d23376499c6b9348d56955266862b43fb3350572b1",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e13",
+          "kind": "primary",
+          "sourceId": "ev:6a1540b8b88a76b5793c48212ec4980f",
+          "paperId": "1706.06128",
+          "sourceSha256": "f34db230ef3a0a7608ac62730c56ee4ac88aed0d1b1bd2c4b205084947032112",
+          "sourceContext": {
+            "path": "papers/8fb59bd0af9e0f851db7/reading-order.json",
+            "fileSha256": "b2b9826e460efd021c8fe519cdc37683be20a299ad6a07a5b61b33c64d1f805d",
+            "pdfPage": 1,
+            "start": 106,
+            "end": 1723,
+            "textSha256": "1bfbd81c4c34fa7bd8c87d40ed7553da04ce90a5f84fad90e2dc50d06e8cb437",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e25",
+          "kind": "primary",
+          "sourceId": "ev:f0c842a8458abd3f47b00b1f89a5b131",
+          "paperId": "hep-th/0611039",
+          "sourceSha256": "0f513d4410a68f96c9a4eed8cbea769e24ddf53f03b24b2a4eee581e334ac68e",
+          "sourceContext": {
+            "path": "papers/e02e7df865e6398fdfd2/reading-order.json",
+            "fileSha256": "065a25193a41244329c6facc8ee411a4e3fa83d43f69c570c9f79d3fec10f21a",
+            "pdfPage": 7,
+            "start": 1290,
+            "end": 2607,
+            "textSha256": "33620a90b4e82c2c673e7be0007de5565ab7364dcf3b832b43899c54ad8f32c2",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p3:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "EDE and late-time acceleration remain separate phases and questions. The specified EDE parameters are source targets, and the fourth challenge—explicit glob",
+      "originalTextSha256": "4dcd019a31e378b8dc814f8b149dbaaacd85eb5192d7828207c260e83ca06c50",
+      "replacementText": "The supplied scope appropriately keeps axion early dark energy and late-time acceleration as separate cosmological questions. The EDE source investigates C2 and C4 axion candidates in KKLT and LVS, targeting V = V0[1 − cos(ϕ/f)]³ with V0 approximately eV⁴ and f approximately 0.2 MP. Its requirements include controlled de Sitter stabilization, sufficiently heavy non-EDE modes, separation of the EDE scale from supersymmetry-breaking and gravitino scales, and natural microscopic parameters or enough freedom to implement any necessary tuning. The passages describe competing control requirements: large volume can help the expansions and EDE energy scale while lowering the decay constant and mass scales, whereas lowering nonperturbative prefactors at moderate volume introduces exponential tuning. The authors state that they address the first three challenges. The fourth requirement—an explicit globally consistent Calabi–Yau orientifold and brane setup permitting tadpole cancellation and all ingredients needed for stabilization and the EDE potential—is not established by the supplied passages. The source also leaves uncertain whether the D5 gaugino-condensation mechanism discussed for an earlier C2-axion proposal produces a nonzero superpotential contribution for cycles in the geometric regime. The separate one-or-two-large-extra-dimension question in d11 has description-only support and does not establish late-time acceleration or acceptable phenomenology.",
+      "replacementTextSha256": "d38ca470f06f147e455096ae17c49c94a215d3732a568abb2b68a141eb773fff",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p3",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "EDE and late-time acceleration remain separate phases and questions. The specified EDE parameters are source targets, and the fourth challenge—explicit glob",
+        "refs": [
+          "e15",
+          "e8",
+          "e24",
+          "d11"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p3:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement preserves the cubic potential, numerical EDE targets, conditional tuning requirement and volume tradeoffs. It accurately distinguishes the authors' statement that they address three challenges from the unestablished fourth challenge and retains the geometric-regime uncertainty about the earlier D5 mechanism. The separate late-time question remains description-only, and the overlapping windows are not counted as independent evidence.",
+        "refs": [
+          "e15",
+          "e8",
+          "e24",
+          "d11"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e15",
+          "kind": "primary",
+          "sourceId": "ev:6aafcc5b352d1ea89302d6ca7012921e",
+          "paperId": "2303.03414",
+          "sourceSha256": "4afa7c333bba486b6df353df34a70c73c71909cc4dc3c3a2f1535d55bafce7fc",
+          "sourceContext": {
+            "path": "papers/b1a679c855f46984e4fc/reading-order.json",
+            "fileSha256": "a457886124e3740c6c0c09524372808ea31175b559425791f2112d50f0c63e1c",
+            "pdfPage": 3,
+            "start": 1296,
+            "end": 3585,
+            "textSha256": "7eb21106d6130a9ada400f1438c02a30a9f53566b30fcd1368a2d188d773660b",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e8",
+          "kind": "primary",
+          "sourceId": "ev:39f0b686cf889edc75397655da68c653",
+          "paperId": "2303.03414",
+          "sourceSha256": "4afa7c333bba486b6df353df34a70c73c71909cc4dc3c3a2f1535d55bafce7fc",
+          "sourceContext": {
+            "path": "papers/b1a679c855f46984e4fc/reading-order.json",
+            "fileSha256": "a457886124e3740c6c0c09524372808ea31175b559425791f2112d50f0c63e1c",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "6b12e3a26137a9c3c3c94775519db3eda093d4d572543742bf7fd7f539fc9fed",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e24",
+          "kind": "primary",
+          "sourceId": "ev:db053c64baa24724de3953904538d65d",
+          "paperId": "2303.03414",
+          "sourceSha256": "4afa7c333bba486b6df353df34a70c73c71909cc4dc3c3a2f1535d55bafce7fc",
+          "sourceContext": {
+            "path": "papers/b1a679c855f46984e4fc/reading-order.json",
+            "fileSha256": "a457886124e3740c6c0c09524372808ea31175b559425791f2112d50f0c63e1c",
+            "pdfPage": 4,
+            "start": 94,
+            "end": 3165,
+            "textSha256": "6f341485cf44d4044ba6be25b9b31af9ad491a1a198eb8f1b8402abe55795015",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "d11",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:7b5411cf44e76f1cc2871fd0d88900d2d96c9f419ec673bf1dc38ec1d43b0616",
+          "textSha256": "cf0acab4dc5436d648f1a6f3d4462eed1d2648e0a122785351dd2660cece68c2"
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p4:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "Stabilization compatibility, uneaten-axion survival and ALP phenomenology are supported targets. The no-go hypotheses and present observational status remain",
+      "originalTextSha256": "7e493510df05242af55627d25c53f02ae8f6c86b55f0333c12e9ed0d65dfe1b6",
+      "replacementText": "The supplied passages support a scope about QCD-axion compatibility with stabilization, survival against removal by an anomalous Abelian gauge boson, and the broader LVS axiverse. The thesis summary reports a no-go theorem concerning QCD axions and supersymmetric moduli stabilization, and separately describes coexistence with nonsupersymmetric perturbative stabilization. Because the supplied summary gives neither the theorem's precise hypotheses nor its proof, it supports attribution of that reported result but not a universal exclusion or its application to an unspecified model. The 1206.0819v2 abstract dated 21 September 2012 reports, for natural background-flux values, an LVS axiverse containing a QCD axion and light ALPs with logarithmically hierarchical masses. It describes semi-realistic examples with stable moduli and an uneaten QCD-axion candidate, together with studies of masses, matter and gauge couplings, inflation-dependent cosmology and phenomenological constraints. The uneaten-candidate condition does not by itself establish that every strong-CP and phenomenological requirement is satisfied. The anomaly motivations and prospective searches remain source-dated statements; the supplied material establishes neither current observational status nor detailed quantitative viability.",
+      "replacementTextSha256": "93ba7f808bb801a7b8b3d79cb13a968cc818a16f2e12df2c8146f3ab79b70d0b",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p4",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "Stabilization compatibility, uneaten-axion survival and ALP phenomenology are supported targets. The no-go hypotheses and present observational status remain",
+        "refs": [
+          "e25",
+          "e23"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p4:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement appropriately limits the no-go claim to a reported theorem whose hypotheses and proof are absent. It retains the natural-background-flux condition, uneaten-candidate qualification and dated status of the axiverse phenomenology. It does not infer universal incompatibility, complete strong-CP viability or present observational confirmation.",
+        "refs": [
+          "e25",
+          "e23"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e25",
+          "kind": "primary",
+          "sourceId": "ev:f0c842a8458abd3f47b00b1f89a5b131",
+          "paperId": "hep-th/0611039",
+          "sourceSha256": "0f513d4410a68f96c9a4eed8cbea769e24ddf53f03b24b2a4eee581e334ac68e",
+          "sourceContext": {
+            "path": "papers/e02e7df865e6398fdfd2/reading-order.json",
+            "fileSha256": "065a25193a41244329c6facc8ee411a4e3fa83d43f69c570c9f79d3fec10f21a",
+            "pdfPage": 7,
+            "start": 1290,
+            "end": 2607,
+            "textSha256": "33620a90b4e82c2c673e7be0007de5565ab7364dcf3b832b43899c54ad8f32c2",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e23",
+          "kind": "primary",
+          "sourceId": "ev:d531501ededb58f9bf90f1bc4fb332dc",
+          "paperId": "1206.0819",
+          "sourceSha256": "c81d866f4e777ddbd74420ed0eb6ea43df62da6309b1bb2473a4254ad8fc48f6",
+          "sourceContext": {
+            "path": "papers/f745c4708ad567debd75/reading-order.json",
+            "fileSha256": "98f61b6356468fd9b729f2077f03764746187b3b70f6a7e2723e6c9b1ddf4dc1",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1685,
+            "textSha256": "a94c8e059a9e31300c4317412c26552cc312e7b43d8fdffe54852c01969f582f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p5:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "The card accurately separates reported supersymmetric AdS3 stabilization from dS indications, shape-modulus problems and quantization obstacles to scale sep",
+      "originalTextSha256": "1a820228cd30836c35bf3b9047f880b21a1bb63124b407a1da075f5ab2cc8579",
+      "replacementText": "For type IIB supergravity on toroidal O5 orientifolds with co-calibrated G2 structure and RR background flux, the supplied source reports a three-dimensional N=1 closed-string superpotential and full closed-string moduli stabilization in supersymmetric AdS3 vacua. Its introductory account describes direct dimensional reduction and an S-duality check of the superpotential. The related brane-supersymmetry-breaking construction has separate de Sitter qualifications: stable critical points are reported first in the volume-dilaton sector, while including shape moduli threatens stabilization and the abstract identifies difficulties with flux quantization. Stability in the truncated sector therefore does not establish full de Sitter stability. The source also reports tension between scale separation and quantization conditions, specifically geometric-flux quantization in the abstract. These statements support investigating the allowed possibilities while establishing neither a fully controlled de Sitter solution nor a parametric scale-separation limit; they do not constitute a general no-go theorem.",
+      "replacementTextSha256": "85b905f19aadc942e002eecb16fa20381bd0dc4d5c4b2ff3167a67e88ea5ea5b",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p5",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "The card accurately separates reported supersymmetric AdS3 stabilization from dS indications, shape-modulus problems and quantization obstacles to scale sep",
+        "refs": [
+          "e5",
+          "e11"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p5:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement follows both supplied windows: reported closed-string stabilization in supersymmetric AdS3, stable critical points restricted initially to the volume-dilaton sector, shape-modulus threats and quantization obstacles. Its refusal to turn these obstacles into a general no-go is justified. Its reason also correctly leaves open whether 'scale sep' is an abbreviation or a cut expression; the replacement is supported without proving truncation.",
+        "refs": [
+          "e5",
+          "e11"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e5",
+          "kind": "primary",
+          "sourceId": "ev:28ba0482cb5dc90f6c2508114df12afa",
+          "paperId": "2103.03282",
+          "sourceSha256": "e7ee15067a8120322b084d29c57926c0233d526fcc956c6f4be281b1433ab2f4",
+          "sourceContext": {
+            "path": "papers/0cab9de990ad7bfb2677/reading-order.json",
+            "fileSha256": "28a9a211037776068e583b3d8939a92702ac670e8ef6a5f73e4f161d48062e6e",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1240,
+            "textSha256": "a02acf38945cee5ac8184b8c094962a1e703c5f15e4601a3abf2d4a8a5448e60",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e11",
+          "kind": "primary",
+          "sourceId": "ev:52c4568edbc96af84e7ed508128c0724",
+          "paperId": "2103.03282",
+          "sourceSha256": "e7ee15067a8120322b084d29c57926c0233d526fcc956c6f4be281b1433ab2f4",
+          "sourceContext": {
+            "path": "papers/0cab9de990ad7bfb2677/reading-order.json",
+            "fileSha256": "28a9a211037776068e583b3d8939a92702ac670e8ef6a5f73e4f161d48062e6e",
+            "pdfPage": 3,
+            "start": 1289,
+            "end": 3525,
+            "textSha256": "8ce362ed09912462b25e60ce2b81f102ef9fbd4fbe185f7f92516c68896669eb",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "supported_clarification_not_established_truncation"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p6:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "The scale and convention questions form a useful methodological overview. The broader IIB convention source contributes by overlap; neither canonical param",
+      "originalTextSha256": "760697ca7497b236e714901c82fa1e02f2084e1013e4b4b7f21111d3b3f2e0f7",
+      "replacementText": "The supplied scope is supported as a methodological comparison of physical scales and volume dependence in large-volume IIB compactifications, supplemented where relevant by the broader IIB convention-translation question. Description d5 supplies a logarithmic relation between the canonical volume field and volume, but this parametrization alone establishes no stabilized dynamical trajectory. Description d8 identifies string/Einstein-frame, length-unit and 2π conversions as comparison tasks; no primary conversion formulas or agreement between conventions are supplied here. In its stated h12 > h11 > 1 large-volume setting with (α′)^3 and nonperturbative superpotential contributions, the 2005 source reports Kähler-sector supersymmetry breaking, a gravitino mass that does not scan with flux at fixed Calabi–Yau, and a flux-dependent string-to-four-dimensional-Planck-scale ratio. These remain that source's claims within its argument, rather than a universal flux-scaling law; it also cautions that some moduli may lie near the string scale despite large total volume. The thesis summary separately reports volume suppression of gravitino and soft masses in its large-volume models. The supplied material supports comparing these claims while leaving their complete derivations, quantitative convention conversions and any dynamical field range unverified.",
+      "replacementTextSha256": "1545ff49b304eaf9ca745c334244903d5ed3a9073e1123601eb0eb107e049dc6",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p6",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "The scale and convention questions form a useful methodological overview. The broader IIB convention source contributes by overlap; neither canonical param",
+        "refs": [
+          "d5",
+          "d8",
+          "e25",
+          "e4"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p6:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement treats d5's parametrization and d8's convention question as methodological support. It retains e4's dated, source-local flux claim and hypotheses rather than asserting a universal law, and attributes volume suppression to e25. No conversion formula, later convention, reconstructed equation or stabilized excursion is asserted beyond the supplied evidence.",
+        "refs": [
+          "d5",
+          "d8",
+          "e25",
+          "e4"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "d5",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:8443dd496835a26133210ab9fdd8fd6b622bb73bbfae465d903f31b9e88063e7",
+          "textSha256": "321a907966105e647416443a70729afe27f1511bbe9d14bea618d7eef273a4fd"
+        },
+        {
+          "ref": "d8",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:54b4aa3a55c1d040f3dd81d4f74aa30fc931cb68d612329214d9122b55cb35c4",
+          "textSha256": "bdf670288fe1a0877e6cc0f9fabcc139df0e65a4b33aafe6ba909b1d7bb903fe"
+        },
+        {
+          "ref": "e25",
+          "kind": "primary",
+          "sourceId": "ev:f0c842a8458abd3f47b00b1f89a5b131",
+          "paperId": "hep-th/0611039",
+          "sourceSha256": "0f513d4410a68f96c9a4eed8cbea769e24ddf53f03b24b2a4eee581e334ac68e",
+          "sourceContext": {
+            "path": "papers/e02e7df865e6398fdfd2/reading-order.json",
+            "fileSha256": "065a25193a41244329c6facc8ee411a4e3fa83d43f69c570c9f79d3fec10f21a",
+            "pdfPage": 7,
+            "start": 1290,
+            "end": 2607,
+            "textSha256": "33620a90b4e82c2c673e7be0007de5565ab7364dcf3b832b43899c54ad8f32c2",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e4",
+          "kind": "primary",
+          "sourceId": "ev:250673d2ae8a01cbc113cbc2bc37e411",
+          "paperId": "hep-th/0502058",
+          "sourceSha256": "015d41ad3b0bdbf3ed59741e806f28e4177265874306d26f96b02147fdece611",
+          "sourceContext": {
+            "path": "papers/6d1ac08472019c2146e2/reading-order.json",
+            "fileSha256": "d234cb3b7cb41f4c9b106b47ca76981b187ede25cf27586cbbbc5e36bd412dea",
+            "pdfPage": 3,
+            "start": 97,
+            "end": 2893,
+            "textSha256": "ce51257c9a211afbd51999ff46dec7dc4ce647fb45d17b65a5befe48d0b8cca7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    },
+    {
+      "caseId": "leaf-423440c0413bb3814c19-challenge:p7:note",
+      "status": "accepted_annotation_replacement",
+      "originalText": "The alternate home correctly locates flux stabilization in IIA/M-theory and conifold dynamics in IIB. Small completion regions qualify the reported generic ",
+      "originalTextSha256": "8837533370de7d5b4282902ec69003a1ac6f36c4ad983120c4b4c3c8bcbf5952",
+      "replacementText": "The supplied thesis passages support this comparison home while keeping its theory sectors distinct. The flux-stabilization constructions concern type IIA and M-theory on SU(3)-structure manifolds, yielding four-dimensional N=2 supergravities for which the abstract reports explicit examples with all moduli stabilized. The IIB component concerns effective actions and classical dynamics of conifold transitions on Calabi–Yau manifolds. Its abstract reports small phase-space regions in which a transition completes, alongside generic trapping of the moduli at the conifold point that halts the transition. The completion regions prevent interpreting generic trapping as an absolute impossibility. The chapter overview also announces an investigation of possible cosmic-string signatures, without establishing such a signature in the supplied window. These passages justify comparison with IIB stabilization questions without assigning the IIA/M-theory stabilization examples to IIB. They preserve the compound source question but do not resolve its canonical decomposition or verify the detailed stabilization and transition calculations.",
+      "replacementTextSha256": "92b38f6e6f3e79fe5e8e27483e82d4f4c7a4a2a1561ce0f5e73f5fa356eac1ca",
+      "meaningChange": "clarification_within_supplied_scope",
+      "scopeImpact": "annotation_only",
+      "basis": "Root-approved exact independently supported replacement, not recovered missing original text.",
+      "screeningReasons": [
+        "trailing_space_or_hyphen",
+        "clustered_short_unpunctuated_notes"
+      ],
+      "originalObject": {
+        "id": "p7",
+        "decision": "supported_as_written",
+        "scopeChange": "same",
+        "replacement": "",
+        "note": "The alternate home correctly locates flux stabilization in IIA/M-theory and conifold dynamics in IIB. Small completion regions qualify the reported generic ",
+        "refs": [
+          "e21",
+          "e10"
+        ]
+      },
+      "originalSourcePins": {
+        "sourcePacketSha256": "b5979e31876acd3d9143bced0e58264b0eef20b9a8d01092c5ed9aad3f7c85c1",
+        "rawSha256": "bcb9732707b4c85a22cc466857ca62af481d4d649b97e119a4895a56c65cdc7a",
+        "receiptSha256": "ea2543250cd51e53d3c11d1b27cc561eb058606295318bd7a5303157f915548d"
+      },
+      "reviewAgreement": {
+        "proposal": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-proposal/reply.json",
+          "sha256": "af059e8d512d34ec62fff7e88314d450cd93c38519ed8ee4f9ce141b0c6fe09d",
+          "receiptSha256": "4d781f9e1d65bb52cd156c24d6167c58dbbbd8bd57c4c92ebdb932857ac214e5"
+        },
+        "challenge": {
+          "path": "research/q025/evaluation/full-pass/native-local/clause-pilot-v1/jobs/clause-severed-scope-notes-challenge/reply.json",
+          "sha256": "605ae398fa6a94e229754f983b05679622f35e378b1513703c86484a8fac5735",
+          "receiptSha256": "ea57a8182bf672ad3612f38f44f07dec6c932fc118bde40bb6efe87a07577f5f"
+        }
+      },
+      "challengeAssessment": {
+        "caseId": "leaf-423440c0413bb3814c19-challenge:p7:note",
+        "decision": "supported_as_written",
+        "reason": "The prior replacement correctly assigns the N=2 SU(3)-structure stabilization examples to IIA/M-theory and the classical conifold dynamics to IIB. It preserves the small completion regions that qualify generic trapping and treats cosmic strings only as an announced investigation. The unresolved canonical decomposition remains separate from support for the comparison scope.",
+        "refs": [
+          "e21",
+          "e10"
+        ]
+      },
+      "evidenceRefs": [
+        {
+          "ref": "e21",
+          "kind": "primary",
+          "sourceId": "ev:a87a580e9678aaef9bef9526f2d7edc5",
+          "paperId": "hep-th/0608033",
+          "sourceSha256": "4cf0be89e7b7cd58056012ac9cb5814a7fa4d1c5a6e60d5c2a03d4c550b6ad64",
+          "sourceContext": {
+            "path": "papers/395ccdf7a43c9dbf2435/reading-order.json",
+            "fileSha256": "f4f884d68213420cc77477e035f09c5dfdd0999bf06dfb69e55e19fea9f9d5e2",
+            "pdfPage": 3,
+            "start": 0,
+            "end": 689,
+            "textSha256": "9e05a75426f59b0960df5bd8cca93054a2b1be92f05a9184c86e012b8a337ba7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "ref": "e10",
+          "kind": "primary",
+          "sourceId": "ev:446a0d742b99a1d6381cdfc4fe9d0d0f",
+          "paperId": "hep-th/0608033",
+          "sourceSha256": "4cf0be89e7b7cd58056012ac9cb5814a7fa4d1c5a6e60d5c2a03d4c550b6ad64",
+          "sourceContext": {
+            "path": "papers/395ccdf7a43c9dbf2435/reading-order.json",
+            "fileSha256": "f4f884d68213420cc77477e035f09c5dfdd0999bf06dfb69e55e19fea9f9d5e2",
+            "pdfPage": 48,
+            "start": 0,
+            "end": 2283,
+            "textSha256": "a2cb7677bf999edd5e4c135d3a86ecfb35fed7c74a6abe2119e4afd3c4285b56",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "readingLimit": "Only bounded supplied windows and exact scope context; mathematical derivations and other source portions remain unverified.",
+      "doesNotAdmit": [
+        "scope_change",
+        "placement",
+        "alias",
+        "physical_result"
+      ],
+      "truncationClaim": "screening_reason_retained_without_claim_to_recover_lost_text"
+    }
+  ],
+  "sourceScopesChanged": 0,
+  "placementsChanged": 0,
+  "identityMerges": 0,
+  "coverage": "The12completed pilot cases only.46baseline cases and later unscreened outputs remain outside this admission."
+}

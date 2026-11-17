@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "q025-assembly-handoff/1",
+  "publicationStatus": "partial_admitted_cohort_rehearsal",
+  "notApprovedForSiteRelease": true,
+  "packageDirectory": "/Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze",
+  "manifestSha256": "602c6eaafe5ab382a36ef6884bb19634c72ef9c9f324fcddd2dd855cef4a4052",
+  "catalogSha256": "a620fd1bc0fa687346c380844e745266d1f3b1a6b4b186825201bff5cc03b896",
+  "catalogBytes": 515466,
+  "counts": {
+    "destinations": 226,
+    "sources": 26623,
+    "memberships": 27,
+    "navigationRelations": 245,
+    "orientationNodes": 211,
+    "detailOverviewNodes": 5
+  },
+  "partition": {
+    "validation": {
+      "path": "partition-validation.json",
+      "sha256": "6f451e2650114d6aa3307589f5866a0fb2e48f4cd1d3131ad60fd310edb6a55f",
+      "bytes": 54017
+    },
+    "deliveryAssets": {
+      "path": "delivery-assets.json",
+      "sha256": "0526633132722d0e61f3531d18ed4661b7dcd6fe4ba2c5b9c1ef9dd7420ca9ed",
+      "bytes": 953533
+    },
+    "assetCount": 24,
+    "totalShardBytes": 737138,
+    "largestMembershipShardBytes": 15943,
+    "largestDetailShardBytes": 172302,
+    "fileCountGate": {
+      "maxFileBytes": 26214400,
+      "maxFileCount": 20000,
+      "staticDestinationPages": 226,
+      "ordinarySiteAssetReserve": 500,
+      "projectedFileCount": 7485,
+      "passed": true
+    }
+  },
+  "provenance": {
+    "acceptedPacketSha256": "7d983ab44a0c62a87627a530f13e38ea60455bcd9a11b319c1b0c78feb797ace",
+    "admissionReceiptSha256": "9026d16f200bfae9d59db82ef705469571bc86a804188edddafc05b49a8311fa",
+    "originalBinsSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+    "geometryInputSha256": "5b7f777d7c19770b99ac73f84b53d58738e81d32cd60c2da098d110cd6525cda",
+    "contextManifestSha256": "c86bc90966007c28ce40523348e51e4ace4d20d62354f79928133d371f77c6f5",
+    "orientationSha256": "ba62b1d78cc13d47c22c5fbee147291a6b5a7d28859b0b1c22d896b5c60f1771",
+    "verifiedReviews": [
+      {
+        "id": "kk-normalized-original",
+        "sha256": "6400339a20b1cdeda9158e17479e47a245979db7fdce8c9fe6d1a53eb6c178d6",
+        "bytes": 503128
+      },
+      {
+        "id": "kk-compact-challenge",
+        "sha256": "04e0ada928a7e1037fdd8af9e5219cc7042babaf3d7580450a50070965521065",
+        "bytes": 91607
+      },
+      {
+        "id": "rehearsal-admitted-component",
+        "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee",
+        "bytes": 254563
+      },
+      {
+        "id": "rehearsal-organization-adjudication",
+        "sha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512",
+        "bytes": 11379
+      },
+      {
+        "id": "rehearsal-component-receipt:admissionReceipt",
+        "sha256": "3e724e9877924b1ed6b3e84b7d4f7455c5a1f60f4965e1f3c51f54909cd66b19",
+        "bytes": 1688
+      },
+      {
+        "id": "rehearsal-component-receipt:scopeAdjudicationReceipt",
+        "sha256": "e6f9f10d8a2c751b76028aa2575e0b5560b256fb5675f0ef3e2bfebb08faf677",
+        "bytes": 32755
+      },
+      {
+        "id": "rehearsal-component-receipt:boundaryExtensionAdjudicationReceipt",
+        "sha256": "5d4e369546b79ab8d10406087ebdd50f880686360c5642aed4ff5874a4b5438a",
+        "bytes": 4640
+      }
+    ]
+  },
+  "partialCandidateReason": "scientific_rehearsal",
+  "partialRehearsal": true,
+  "scientificCoverageComplete": false,
+  "unallocatedQuestionCount": 8468,
+  "assetPlan": {
+    "path": "asset-plan.json",
+    "sha256": "f2f7a6f8d4b42906ee164eea83a0aab0508e3ff978e63cf0ba729419f1b8304b",
+    "assetCount": 6735
+  },
+  "fullAssetCopyPending": true,
+  "detailEntryDestinationId": "q-kk-graviton-thermal-production"
+}

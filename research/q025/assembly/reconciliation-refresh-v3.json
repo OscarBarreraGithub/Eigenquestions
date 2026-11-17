@@ -1,0 +1,1754 @@
+{
+  "schemaVersion": "q025-reconciliation-refresh/3",
+  "status": "nomination_and_coverage_plan_not_admission",
+  "registry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-v3-20261117T121953Z.json",
+    "sha256": "c9c419d7ded388f1355e31b1bef413ab09ca12de0e7cd60be996f687655fcf8a",
+    "bytes": 36316550
+  },
+  "currentCandidates": {
+    "path": "research/q025/assembly/outputs/scope-candidates-v3/candidates.json",
+    "sha256": "7dbe13c22c7d464abd7fa37d72fe8c3d969e1417de8770ff384fbf5eed6eb35c",
+    "bytes": 4883958
+  },
+  "previousCandidatePins": [
+    {
+      "path": "research/q025/assembly/outputs/scope-candidates-v1/candidates.json",
+      "sha256": "5696f011672b1ebf749b36a183dceb66b8fd6533f6241820d47740a7ffa1eb3a",
+      "bytes": 484584
+    },
+    {
+      "path": "research/q025/assembly/outputs/scope-candidates-v2/candidates.json",
+      "sha256": "e1edf02f864af797825e6818b2c08331402ff50876d7c8cff301c58387307771",
+      "bytes": 2541606
+    }
+  ],
+  "counts": {
+    "scopes": 1112,
+    "questions": 973,
+    "currentPairs": 3748,
+    "scopesWithCurrentCandidates": 980,
+    "unmatchedScopes": 132,
+    "priorPairsNotRenominated": 42,
+    "cumulativePairs": 3790,
+    "admittedScopesPreserved": 8,
+    "admittedScopeCrossReviewPairs": 5,
+    "admittedScopeSharedSourcePairs": 0
+  },
+  "admittedScopeCoverage": [
+    {
+      "recordId": "admitted:q-kk-graviton-thermal-production",
+      "admittedDestinationId": "q-kk-graviton-thermal-production",
+      "candidateId": "q-kk-graviton-thermal-production",
+      "scopeContentSha256": "4275a9582722b9f5f77acde6fa53b419bb1c605de0527ff97df850153fc7d5fa",
+      "candidates": [],
+      "status": "unmatched_review_required_not_certified_unique"
+    },
+    {
+      "recordId": "admitted:q-kk-graviton-threshold-decay",
+      "admittedDestinationId": "q-kk-graviton-threshold-decay",
+      "candidateId": "q-kk-graviton-threshold-decay",
+      "scopeContentSha256": "206baf6ffa291d6327e37311f13fe1f436e0f87e304acc8b238ed4a8eb39fef7",
+      "candidates": [],
+      "status": "unmatched_review_required_not_certified_unique"
+    },
+    {
+      "recordId": "admitted:q-kk-decay-linear-cosmology",
+      "admittedDestinationId": "q-kk-decay-linear-cosmology",
+      "candidateId": "q-kk-decay-linear-cosmology",
+      "scopeContentSha256": "69fa9f0f6b17e46e71e526415368140409596c60de30144cfed2ae7227905815",
+      "candidates": [
+        {
+          "pairId": "scope-nomination:b49e1cbaa509508b0193d7a1",
+          "otherRecords": [
+            {
+              "recordId": "leaf-e1ff019ab19d4359202a-challenge:p5",
+              "title": "Perturbations, reconstruction and empirical tests"
+            }
+          ],
+          "channels": [
+            "authored_target_overlap"
+          ],
+          "sharedUnitIds": []
+        },
+        {
+          "pairId": "scope-nomination:8c02ef6689dd69eb29cc0746",
+          "otherRecords": [
+            {
+              "recordId": "leaf-70849169a294e1fa570e-challenge:p5",
+              "title": "Positive-vacuum structure, stabilization and decay"
+            }
+          ],
+          "channels": [
+            "repeated_title"
+          ],
+          "sharedUnitIds": []
+        }
+      ],
+      "status": "explicitly_pending_comparison"
+    },
+    {
+      "recordId": "admitted:q-flat-darkdimension-freezein-bounds",
+      "admittedDestinationId": "q-flat-darkdimension-freezein-bounds",
+      "candidateId": "q-flat-darkdimension-freezein-bounds",
+      "scopeContentSha256": "a4505fda8d88e59e71ea43415520a4dbfca1bea3fb5e31137f5ee0d9042678c4",
+      "candidates": [
+        {
+          "pairId": "scope-nomination:31af743679731ded887d7885",
+          "otherRecords": [
+            {
+              "recordId": "leaf-1084a296ab33ed67069b-challenge:p3",
+              "title": "Higgs stability through cosmic history"
+            }
+          ],
+          "channels": [
+            "authored_target_overlap"
+          ],
+          "sharedUnitIds": []
+        }
+      ],
+      "status": "explicitly_pending_comparison"
+    },
+    {
+      "recordId": "admitted:q-relic-abundance-early-matter-domination",
+      "admittedDestinationId": "q-relic-abundance-early-matter-domination",
+      "candidateId": "q-relic-abundance-early-matter-domination",
+      "scopeContentSha256": "63f9c93561235dd2757636d30607450451320364a7360de54bb98010fb8cf022",
+      "candidates": [
+        {
+          "pairId": "scope-nomination:3e648d6b263ff516bf1376f0",
+          "otherRecords": [
+            {
+              "recordId": "leaf-bd82eaf89f08295fe285-challenge:p6",
+              "title": "Secondary inflation and relic dilution"
+            }
+          ],
+          "channels": [
+            "repeated_title"
+          ],
+          "sharedUnitIds": []
+        }
+      ],
+      "status": "explicitly_pending_comparison"
+    },
+    {
+      "recordId": "admitted:q-portal-dark-radiation",
+      "admittedDestinationId": "q-portal-dark-radiation",
+      "candidateId": "q-portal-dark-radiation",
+      "scopeContentSha256": "35912534fb140df4b16d26ad0d41c187723cbc3f721c34d2ef647480bf581c64",
+      "candidates": [
+        {
+          "pairId": "scope-nomination:9bb78eccad636ad0c8ae11dd",
+          "otherRecords": [
+            {
+              "recordId": "leaf-0c43e24ef1344f8f7623-challenge:p7",
+              "title": "Dark matter, asymmetry and radiation signatures"
+            }
+          ],
+          "channels": [
+            "repeated_title"
+          ],
+          "sharedUnitIds": []
+        }
+      ],
+      "status": "explicitly_pending_comparison"
+    },
+    {
+      "recordId": "admitted:q-historical-uhecr-suppression",
+      "admittedDestinationId": "q-historical-uhecr-suppression",
+      "candidateId": "q-historical-uhecr-suppression",
+      "scopeContentSha256": "83e21d8303d089c102bb5f6d5b62e5590b6e991954f34ec46cc308545bd63a5e",
+      "candidates": [],
+      "status": "unmatched_review_required_not_certified_unique"
+    },
+    {
+      "recordId": "admitted:q-electroweak-alp-misalignment",
+      "admittedDestinationId": "q-electroweak-alp-misalignment",
+      "candidateId": "q-electroweak-alp-misalignment",
+      "scopeContentSha256": "f6eafd1904d38b19db3071c386d58df3039af6a40b82e93c9b4f583bdf06bd73",
+      "candidates": [],
+      "status": "unmatched_review_required_not_certified_unique"
+    }
+  ],
+  "priorNominationsStillPending": [
+    {
+      "id": "scope-nomination:71d50322ab350a590ed3cfcb",
+      "recordIds": [
+        "leaf-a81daa8b4bf4c5133863-challenge:p5",
+        "leaf-fd2851a3260c57d77fb1-challenge:p2"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 5.712209,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.07544601360553331,
+        "targetWeightedTokenJaccard": 0.18453056861201586,
+        "titleWeightedTokenJaccard": 0.1812560012015787
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:92075b4adb30a4dca51d42a5",
+      "recordIds": [
+        "leaf-5ead4e26cf383a1fc84c-challenge:p2",
+        "leaf-9256206ee3dfc1044991-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.606355,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.018731076530789485,
+        "targetWeightedTokenJaccard": 0.09828755346206137,
+        "titleWeightedTokenJaccard": 0.18510758654223322
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:59a66a55f48641639980adcd",
+      "recordIds": [
+        "leaf-b2e631ff674dfe9f6385-challenge:p5",
+        "leaf-bc459549ef9e43d5a378-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.438679,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.02061174872415669,
+        "targetWeightedTokenJaccard": 0.08533977535827261,
+        "titleWeightedTokenJaccard": 0.1849406257663446
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:a421375aeaf738a4853f8729",
+      "recordIds": [
+        "leaf-134e6a0b7019801adad3-challenge:p5",
+        "leaf-fd2851a3260c57d77fb1-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.253915,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.016871212511518203,
+        "targetWeightedTokenJaccard": 0.062366144393252367,
+        "titleWeightedTokenJaccard": 0.2065355026010689
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:845b1a00bb24a840ae4ba903",
+      "recordIds": [
+        "leaf-423440c0413bb3814c19-challenge:p3",
+        "leaf-56e3a84a9ddbd4b99ab7-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.973659,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.04611355169311212,
+        "targetWeightedTokenJaccard": 0.03179037277186514,
+        "titleWeightedTokenJaccard": 0.18051001229260194
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:c13d3743c1629a2fa18cf6b7",
+      "recordIds": [
+        "leaf-9256206ee3dfc1044991-challenge:p6",
+        "leaf-fd2851a3260c57d77fb1-challenge:p2"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.934369,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.031077005464926713,
+        "targetWeightedTokenJaccard": 0.044330310389962366,
+        "titleWeightedTokenJaccard": 0.18032592759801463
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:6a1d8ad63c4704b2f32fc6f2",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p6",
+        "leaf-48ae6db969bee38e8050-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.530617,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.04610796613807985,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18389977841978394
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:4b4774677c46532b86c584cc",
+      "recordIds": [
+        "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+        "leaf-9256206ee3dfc1044991-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.513626,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.0,
+        "targetWeightedTokenJaccard": 0.04129064304235717,
+        "titleWeightedTokenJaccard": 0.1894266513442381
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:f4a01073e03741e6f50e4814",
+      "recordIds": [
+        "leaf-71f9bd087ee989805def-challenge:p6",
+        "leaf-f4bd79c6fc317999d078-challenge:p4"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "authored_question_overlap"
+      ],
+      "rankingScore": 6.806639,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.2829220814949258,
+        "targetWeightedTokenJaccard": 0.0856906950017428,
+        "titleWeightedTokenJaccard": 0.127744704098897
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:8d6a7a27d2d938c12d57aef6",
+      "recordIds": [
+        "leaf-3de3f7d3229146ca8e58-challenge:r",
+        "leaf-ae62356d300a62e86120-challenge:r"
+      ],
+      "kind": "region",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 5.356544,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.1599894481032303,
+        "targetWeightedTokenJaccard": 0.07023548213907138,
+        "titleWeightedTokenJaccard": 0.19031701717255492
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:1a10482d5ea11f7eeff39602",
+      "recordIds": [
+        "leaf-951cd9c26d20519fe596-challenge:p2",
+        "leaf-a425570e0e4ae58f03ce-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 5.032637,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.09626683089355557,
+        "targetWeightedTokenJaccard": 0.11695811791083578,
+        "titleWeightedTokenJaccard": 0.183426305967055
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "limits_require_adjudication"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:1b5988d97afa55b1d907bdb2",
+      "recordIds": [
+        "leaf-1ddd8c662faffd2b9587-challenge:p6",
+        "leaf-b826c032aa9fcad09ba2-challenge:p5"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "authored_target_overlap"
+      ],
+      "rankingScore": 4.976928,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.10803578717047542,
+        "targetWeightedTokenJaccard": 0.22375943303303705,
+        "titleWeightedTokenJaccard": 0.0
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:0a8c2524e3518cd6379241ad",
+      "recordIds": [
+        "leaf-e983c122c2a533d08364-challenge:p0",
+        "leaf-fe59991f52eabad350a7-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 4.653857,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.07819361276437582,
+        "targetWeightedTokenJaccard": 0.1087273859352497,
+        "titleWeightedTokenJaccard": 0.18500424865328466
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:9f493e1c72cdefc45f959334",
+      "recordIds": [
+        "leaf-83f6f5397e92d26dec7e-challenge:p3",
+        "leaf-8cbd232bf6adad063a61-challenge:p2"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "authored_target_overlap"
+      ],
+      "rankingScore": 4.397213,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.0,
+        "targetWeightedTokenJaccard": 0.22258746211179836,
+        "titleWeightedTokenJaccard": 0.10584007124398158
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:4cbdd92f438388e2caf1993c",
+      "recordIds": [
+        "leaf-56e3a84a9ddbd4b99ab7-challenge:p6",
+        "leaf-fe59991f52eabad350a7-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 4.347163,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.06524372602526696,
+        "targetWeightedTokenJaccard": 0.09901691610548098,
+        "titleWeightedTokenJaccard": 0.18832534322215627
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:4efe8363cb81167d87ff5995",
+      "recordIds": [
+        "leaf-e983c122c2a533d08364-challenge:p1",
+        "leaf-fe59991f52eabad350a7-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 4.197985,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.08402793274650572,
+        "targetWeightedTokenJaccard": 0.046489704927382566,
+        "titleWeightedTokenJaccard": 0.224022044974381
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:f1a5c6e7d0d84a419ce56aac",
+      "recordIds": [
+        "leaf-54aab275ab4a0ea75137-challenge:r",
+        "leaf-6fd2ff4266c7a7ef4bf4-challenge:r"
+      ],
+      "kind": "region",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 4.023353,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.08993650511506344,
+        "targetWeightedTokenJaccard": 0.05816539137727117,
+        "titleWeightedTokenJaccard": 0.180182441739808
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "limits_require_adjudication",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:a1453e47a58a5f5ae30f3627",
+      "recordIds": [
+        "leaf-1a6ed099f0ad715a2e8a-challenge:p7",
+        "leaf-fd2851a3260c57d77fb1-challenge:p2"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.960661,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.05376824469634532,
+        "targetWeightedTokenJaccard": 0.08833039625660341,
+        "titleWeightedTokenJaccard": 0.18291817924615533
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:c5a65850ea9afa82947f449b",
+      "recordIds": [
+        "leaf-8682907465d027e5a8b0-challenge:p6",
+        "leaf-a81daa8b4bf4c5133863-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.859642,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.08287000806864292,
+        "targetWeightedTokenJaccard": 0.03151811839965429,
+        "titleWeightedTokenJaccard": 0.214381968291175
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:34b628c492e5a17cefcefb85",
+      "recordIds": [
+        "leaf-4c7fc4cccbcfee39ef45-challenge:r",
+        "leaf-ae62356d300a62e86120-challenge:r"
+      ],
+      "kind": "region",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.84046,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.05765510426394608,
+        "targetWeightedTokenJaccard": 0.06879494717625238,
+        "titleWeightedTokenJaccard": 0.19437087860413602
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:c37a633c342be60be9b68294",
+      "recordIds": [
+        "leaf-1af99ca66bfed8e0bf6f-challenge:p4",
+        "leaf-71f9bd087ee989805def-challenge:p0"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "authored_target_overlap"
+      ],
+      "rankingScore": 3.818917,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.031851834404560624,
+        "targetWeightedTokenJaccard": 0.22274264682929754,
+        "titleWeightedTokenJaccard": 0.0
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:076f47ff60247b31e2e6fe2a",
+      "recordIds": [
+        "leaf-435f493b9a3a1b52277e-challenge:p7",
+        "leaf-ea65aa3aa0acd8b2e111-challenge:p5"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.664033,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.048157039982958096,
+        "targetWeightedTokenJaccard": 0.06298655623348869,
+        "titleWeightedTokenJaccard": 0.1996879088794975
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "limits_require_adjudication"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:0abc3d30c0d35783a3c7123e",
+      "recordIds": [
+        "leaf-a425570e0e4ae58f03ce-challenge:r",
+        "leaf-b826c032aa9fcad09ba2-challenge:r"
+      ],
+      "kind": "region",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.551215,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.0300319051961706,
+        "targetWeightedTokenJaccard": 0.08595061129313963,
+        "titleWeightedTokenJaccard": 0.18114773843091017
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:c6bdf142fd4be4736ab927bf",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p5",
+        "leaf-a425570e0e4ae58f03ce-challenge:p5"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.487497,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.061073979230047294,
+        "targetWeightedTokenJaccard": 0.04502393237408473,
+        "titleWeightedTokenJaccard": 0.18960283533901598
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:7cc6e48ca450b4cd281c3c88",
+      "recordIds": [
+        "leaf-83f6f5397e92d26dec7e-challenge:p4",
+        "leaf-bea4433b3d92cecb48c7-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.487416,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.025383994805556934,
+        "targetWeightedTokenJaccard": 0.08601822792408319,
+        "titleWeightedTokenJaccard": 0.1816383090765572
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:b6b3c0061d385503245fd7f0",
+      "recordIds": [
+        "leaf-15e4ee95696901bc525a-challenge:p3",
+        "leaf-e983c122c2a533d08364-challenge:p0"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.182158,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.0,
+        "targetWeightedTokenJaccard": 0.09117419445836764,
+        "titleWeightedTokenJaccard": 0.181454507908102
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:42993a33903e9a3684a65c61",
+      "recordIds": [
+        "leaf-496f2098d49aa45afa29-challenge:p7",
+        "leaf-fe59991f52eabad350a7-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.135415,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.06471513656181024,
+        "targetWeightedTokenJaccard": 0.0237827970721676,
+        "titleWeightedTokenJaccard": 0.18079455981596607
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "limits_require_adjudication",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:d743f16a9d012a4df687d644",
+      "recordIds": [
+        "leaf-137910ef0e05f3c93520-challenge:p1",
+        "leaf-9256206ee3dfc1044991-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.0731,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.04567759177598812,
+        "targetWeightedTokenJaccard": 0.03711131919597579,
+        "titleWeightedTokenJaccard": 0.1831266457970728
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:9bb81e02b00d667c562f6c95",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p5",
+        "leaf-e983c122c2a533d08364-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.036079,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.05306865720147682,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.22400494175245333
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:1e67fc5aa8e5475272a62461",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p5",
+        "leaf-e983c122c2a533d08364-challenge:p0"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.895048,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.06967481722416367,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18499258416756886
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:5cf559a7ff8c7df97034d29d",
+      "recordIds": [
+        "leaf-9256206ee3dfc1044991-challenge:p6",
+        "leaf-fe59991f52eabad350a7-challenge:p0"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.892571,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.06646751437873202,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18955582381612526
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:7f4ee334671d587cc720e73d",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p3",
+        "leaf-297710f585b0edbffa67-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.848372,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.04799205570248212,
+        "targetWeightedTokenJaccard": 0.021879645098955985,
+        "titleWeightedTokenJaccard": 0.18002968972024902
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:3577dcb7476fc623a0f975cb",
+      "recordIds": [
+        "leaf-423440c0413bb3814c19-challenge:p3",
+        "leaf-e983c122c2a533d08364-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.771184,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.04271264145066146,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.2130494707821241
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:760082e49d8dd85675cc80c9",
+      "recordIds": [
+        "leaf-951cd9c26d20519fe596-challenge:p5",
+        "leaf-fe59991f52eabad350a7-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.703352,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.05366444380122333,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18983854872798142
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:7ee2985e6160ce0093306762",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p5",
+        "leaf-496f2098d49aa45afa29-challenge:p7"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.68936,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.05876837368053237,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18078342011505058
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "limits_require_adjudication"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:daaad747d7a3aa0b5cc39e71",
+      "recordIds": [
+        "leaf-423440c0413bb3814c19-challenge:p3",
+        "leaf-a425570e0e4ae58f03ce-challenge:p5"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.533198,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.047750148250435644,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.181694595530769
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:c259737a43d4fc4388ddcdee",
+      "recordIds": [
+        "leaf-15e4ee95696901bc525a-challenge:p3",
+        "leaf-e983c122c2a533d08364-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.492738,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.02029048944308517,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.21883809438787694
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:24f5cf366c28cea7381d8b85",
+      "recordIds": [
+        "leaf-423440c0413bb3814c19-challenge:p3",
+        "leaf-951cd9c26d20519fe596-challenge:p5"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.42465,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.040376812731359256,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.181899767080151
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:a51b73b9120e9af21e1fa514",
+      "recordIds": [
+        "leaf-431e39adaf172dcc211a-challenge:p0",
+        "leaf-eb2b14b890c0c74ca5f6-challenge:p7"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.376359,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.03809348257381991,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18049569659374015
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:12f4cd8072c6454b67fac194",
+      "recordIds": [
+        "leaf-15e4ee95696901bc525a-challenge:p3",
+        "leaf-56e3a84a9ddbd4b99ab7-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.233149,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.025777760430716622,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18464827909848386
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:524d19e79ae56ca23479ea5b",
+      "recordIds": [
+        "leaf-1a6ed099f0ad715a2e8a-challenge:p7",
+        "leaf-7239d34ee0bb0924a274-challenge:p4"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.155967,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.023099808992690395,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18094701877964192
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:47c6b02fdcce9abdb8372fd0",
+      "recordIds": [
+        "leaf-134e6a0b7019801adad3-challenge:p5",
+        "leaf-ae07ccaa1f3a15dc2044-challenge:p2"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 1.880871,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.0,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18808711974618236
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    }
+  ],
+  "sourceGroundedNeighborhoodReceipt": {
+    "path": "research/q025/assembly/reconciliation-refresh-v2.json",
+    "sha256": "975362d59128b5e6ed4d376ce3a8c692bf0c915683da7d209c05552b01916ff1",
+    "bytes": 72848
+  },
+  "sourceGroundedDefinitionsStillExact": [
+    {
+      "recordId": "leaf-297710f585b0edbffa67-challenge:p0",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:be4aae9994094ea6585a604a"
+    },
+    {
+      "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02"
+    },
+    {
+      "recordId": "leaf-431e39adaf172dcc211a-challenge:p4",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:c5b67908bdf276767d3d3ec6"
+    },
+    {
+      "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:34990732591a1b91983b1849"
+    },
+    {
+      "recordId": "leaf-f4bd79c6fc317999d078-challenge:p6",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:a7f02a40bbc535293336ef21"
+    },
+    {
+      "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:144691c70786c15357e04bcf"
+    },
+    {
+      "recordId": "leaf-04442f0e58623f0db643-challenge:p7",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:227bcabe1a131da14d692580"
+    },
+    {
+      "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p5",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:cba58e77b93be4129225e5a3"
+    },
+    {
+      "recordId": "leaf-917023476c8ed7e389e0-challenge:p7",
+      "definitionUnchanged": true,
+      "candidateId": "q025-candidate-question:edbb1ba5fc83a80d04330ea4"
+    }
+  ],
+  "scientificReadingCautions": [
+    "The five present KK-to-wave nominations are weak vocabulary/target nominations with no exact shared source. Flat-dimension freeze-in versus Higgs stability and linear KK cosmology versus vacuum decay are explicit likely contrast cases, not proposed equivalences.",
+    "No match for thermal production, threshold dynamics or UHECR presently certifies uniqueness. Their exact stable IDs remain in the same registry and unmatched review queue.",
+    "Gauss–Bonnet inflation versus late-time phantom dynamics remains a compound-source/method-bridge review target; the nine previously inspected definitions remain exact in this snapshot.",
+    "Original review-bin regions and parent c/x references are not new canonical scientific identities. Reused parent question IDs must converge to the same accepted target."
+  ],
+  "completionGates": [
+    "Every final authored/admitted scope requires an explicit canonical disposition, including unmatched records; bounded pair review alone is insufficient.",
+    "Retain all nominated-but-unreviewed pairs across registry versions; changes in lexical IDF do not clear a pending identity comparison.",
+    "Keep known distinction, changed-premise and specialization constraints when checking any complete canonical group; common-target parents are not equivalence unions.",
+    "After canonical decisions, admit each source home separately with scope/premise compatibility and normalized compound weights; contributions do not supply mass automatically.",
+    "Final geometry uses admitted scientific homes and exact global question-per-paper counts; original numerical bins survive as provenance only."
+  ],
+  "noNewScienceAdmission": true,
+  "noSealedHoldoutAccess": true
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "q025-canonical-context-recovery-index/1",
+  "families": [
+    {
+      "familyId": "mediation-scope",
+      "sourceJobPath": "full-pass/native-local/canonical-recovery-v2/jobs/canonical-recovery-mediation-scope-proposal",
+      "sourceArtifacts": {
+        "packet.actual.json": "1bed9b1076cdb13bf211b06932c4b7b47401e15d89ce64c5c407769c0da62b12",
+        "reply.raw.txt": "b59f823b7c47a6de0fdd31b98d8a1b4055f293875a61bf4b604868a5ebd6b173",
+        "receipt.json": "b14d5992758ab8833705046a15b76af399703136dcd439ee926bb060d56396d7"
+      },
+      "proposalPath": "full-pass/native-local/canonical-recovery-v3/derived/mediation-scope/proposal.json",
+      "proposalSha256": "7c0204542f9718dde5aa3e8a1f81ec635f761df98c8569ed69280b9ae21fdff2",
+      "derivationPath": "full-pass/native-local/canonical-recovery-v3/derived/mediation-scope/derivation.json",
+      "derivationSha256": "d249b85dc57eecf8de83db944e759f73b34bc457d2e6fdcd6122f4c4a2b1e3d0",
+      "contextualRefs": 1,
+      "validation": {
+        "valid": true,
+        "scopeCount": 8,
+        "decisionCount": 32,
+        "newQuestionCount": 14
+      }
+    },
+    {
+      "familyId": "control-statistics",
+      "sourceJobPath": "full-pass/native-local/canonical-recovery-v2/jobs/canonical-recovery-control-statistics-proposal",
+      "sourceArtifacts": {
+        "packet.actual.json": "d5d4f3a476faf18dc662f6c7aca6a9b2d15d09386ccaaa16927418db59ee8925",
+        "reply.raw.txt": "8e55d26ec82ea96bfde0810d3b170467b1945f05888f30962f2118e83f0a75f2",
+        "receipt.json": "331263030e9aefa58752c51d801156218ee151ad8fb0127a534aa3efbf0fba84"
+      },
+      "proposalPath": "full-pass/native-local/canonical-recovery-v3/derived/control-statistics/proposal.json",
+      "proposalSha256": "7145c6ebe0ba292137753f3a1bd39eaad243792fdb6c35067945a8bb410a83e0",
+      "derivationPath": "full-pass/native-local/canonical-recovery-v3/derived/control-statistics/derivation.json",
+      "derivationSha256": "79fcd6e45ba73c958117664e8de5a99fb1a8fcdac60034336552972d812f2756",
+      "contextualRefs": 5,
+      "validation": {
+        "valid": true,
+        "scopeCount": 9,
+        "decisionCount": 33,
+        "newQuestionCount": 13
+      }
+    }
+  ],
+  "nativeTurns": 0,
+  "oldFailuresUnchanged": true
+}

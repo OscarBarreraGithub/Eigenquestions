@@ -108,6 +108,7 @@ export function partitionCatalog(logical,{entryDestinationId,detailTargetBytes=2
 }
 
 export async function writeLazyPackage({directory,manifest,catalog:logical,provenance,publicationStatus,validateLogical,externalAssets=[],ordinarySiteAssetReserve=500}){
+  if(manifest.scope?.partialRehearsal&&publicationStatus==='accepted_for_installation')throw new Error('Partial cohort rehearsal cannot be installed as the complete accepted atlas');
   if(!validateLogical)throw new Error('Lazy export requires full logical atlas validation');
   const validation=await validateLogical(logical);
   const partition=partitionCatalog(logical,{entryDestinationId:manifest.entryDestinationId});await mkdir(directory,{recursive:true});

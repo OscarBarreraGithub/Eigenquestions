@@ -1,0 +1,1497 @@
+{
+  "schemaVersion": "q025-reconciliation-refresh/2",
+  "status": "nomination_and_coverage_plan_not_admission",
+  "registry": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/authored-scope-registry-20261117T115627Z.json",
+    "sha256": "39187b3a765534a28d3748ae40da99a4974e4830d4b6445cc1ea15cdcd3d3a09",
+    "bytes": 25597283
+  },
+  "currentCandidates": {
+    "path": "research/q025/assembly/outputs/scope-candidates-v2/candidates.json",
+    "sha256": "e1edf02f864af797825e6818b2c08331402ff50876d7c8cff301c58387307771",
+    "bytes": 2541606
+  },
+  "previousCandidates": {
+    "path": "research/q025/assembly/outputs/scope-candidates-v1/candidates.json",
+    "sha256": "5696f011672b1ebf749b36a183dceb66b8fd6533f6241820d47740a7ffa1eb3a",
+    "bytes": 484584
+  },
+  "existingAdmittedScopes": {
+    "path": "research/q025/evaluation/recovery/kk-admitted-scopes.json",
+    "sha256": "4ec54350b5215b222668204a53855afb2748ec9a2508bac69ebe78f1d2a804d4",
+    "bytes": 108866
+  },
+  "counts": {
+    "scopes": 794,
+    "questions": 705,
+    "currentPairs": 2191,
+    "retainedPreviousPairs": 364,
+    "previousPairsNotRenominated": 6,
+    "cumulativePairs": 2197,
+    "currentUnmatchedScopes": 110,
+    "existingAdmittedScopeComparisons": 0,
+    "uniqueAssessedUnitsWithoutAnyAuthoredQuestionContribution": 41
+  },
+  "previousNominationsStillPending": [
+    {
+      "id": "scope-nomination:92075b4adb30a4dca51d42a5",
+      "recordIds": [
+        "leaf-5ead4e26cf383a1fc84c-challenge:p2",
+        "leaf-9256206ee3dfc1044991-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.606355,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.018731076530789485,
+        "targetWeightedTokenJaccard": 0.09828755346206137,
+        "titleWeightedTokenJaccard": 0.18510758654223322
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:59a66a55f48641639980adcd",
+      "recordIds": [
+        "leaf-b2e631ff674dfe9f6385-challenge:p5",
+        "leaf-bc459549ef9e43d5a378-challenge:p3"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.438679,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.02061174872415669,
+        "targetWeightedTokenJaccard": 0.08533977535827261,
+        "titleWeightedTokenJaccard": 0.1849406257663446
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:a421375aeaf738a4853f8729",
+      "recordIds": [
+        "leaf-134e6a0b7019801adad3-challenge:p5",
+        "leaf-fd2851a3260c57d77fb1-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 3.253915,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.016871212511518203,
+        "targetWeightedTokenJaccard": 0.062366144393252367,
+        "titleWeightedTokenJaccard": 0.2065355026010689
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:c13d3743c1629a2fa18cf6b7",
+      "recordIds": [
+        "leaf-9256206ee3dfc1044991-challenge:p6",
+        "leaf-fd2851a3260c57d77fb1-challenge:p2"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.934369,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.031077005464926713,
+        "targetWeightedTokenJaccard": 0.044330310389962366,
+        "titleWeightedTokenJaccard": 0.18032592759801463
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:6a1d8ad63c4704b2f32fc6f2",
+      "recordIds": [
+        "leaf-0dd2c748860e78df66b5-challenge:p6",
+        "leaf-48ae6db969bee38e8050-challenge:p1"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.530617,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.04610796613807985,
+        "targetWeightedTokenJaccard": 0.0,
+        "titleWeightedTokenJaccard": 0.18389977841978394
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    },
+    {
+      "id": "scope-nomination:4b4774677c46532b86c584cc",
+      "recordIds": [
+        "leaf-628d4cf06b5d1f3ad38b-challenge:p4",
+        "leaf-9256206ee3dfc1044991-challenge:p6"
+      ],
+      "kind": "question",
+      "nominationChannels": [
+        "repeated_title"
+      ],
+      "rankingScore": 2.513626,
+      "scoreMeaning": "Queue ordering only; not equivalence probability or scientific confidence.",
+      "sharedUnitIds": [],
+      "sharedPrimaryWindows": [],
+      "metrics": {
+        "questionWeightedTokenJaccard": 0.0,
+        "targetWeightedTokenJaccard": 0.04129064304235717,
+        "titleWeightedTokenJaccard": 0.1894266513442381
+      },
+      "factorOverlap": {},
+      "scopeStatuses": [
+        "independently_supported",
+        "independently_supported"
+      ],
+      "reviewStatus": "unreviewed_nomination",
+      "allowedReviewOutcomes": [
+        "same_question_as_scoped",
+        "specialization",
+        "shared_parent_distinct_questions",
+        "method_bridge",
+        "comparison",
+        "different",
+        "unresolved"
+      ],
+      "premiseComparisonRequired": true
+    }
+  ],
+  "existingAdmittedScopeCandidates": [],
+  "assessedUnitsWithoutAuthoredQuestionContributions": [
+    {
+      "unitId": "unit:6914d5c313b600139983688a2faf1acb36a3d351b395d6244c313b353fc456db",
+      "paperId": "2605.00452",
+      "title": "Graph spectra to string geometry and singularity resolution",
+      "disposition": "alternate",
+      "home": "Graph spectra, topological recursion and spacetime singularities",
+      "note": "Compound and insufficiently specified: graph-to-curve construction, continuum/string geometry, unitary scattering and BKL resolution. No primary arguments are "
+    },
+    {
+      "unitId": "unit:ae796eb4fe351f8e384a608195a63297f43f499faeb7b9acc790ab64a092c66e",
+      "paperId": "2409.00254",
+      "title": "D1 winding and annihilation as a mechanism for three large dimensions",
+      "disposition": "alternate",
+      "home": "Emergent spatial dimension in Lorentzian IKKT",
+      "note": "The proposed transition breaks spatial rotational symmetry in a stated supersymmetric matrix model."
+    },
+    {
+      "unitId": "unit:b1b91da2ca46e4bf35ff546df3818bf50ec40765c72e3a4824433ca4662bca9d",
+      "paperId": "hep-th/0610254",
+      "title": "Black-brane Lorentz breaking and gauged ghost condensation",
+      "disposition": "alternate",
+      "home": "Lorentz breaking and ultraviolet completion of modified gravity",
+      "note": "Stabilization is the setting; Lorentz breaking, a gravity Higgs phase and proposed UV completion are the targets."
+    },
+    {
+      "unitId": "unit:fa0f5398d2c758e3f1619d88b736200c935ad67f6dcde611418e9cdc5094dafe",
+      "paperId": "2503.20866",
+      "title": "Agreement of KSW, geometric and trace-convergence saddle criteria",
+      "disposition": "alternate",
+      "home": "Gravitational-index saddles and microscopic trace convergence",
+      "note": "The target compares index-saddle criteria in AF4/AAdS4; no compactification-spectrum target is supplied."
+    },
+    {
+      "unitId": "unit:cd4a51d50cdf5172c0bcb8ec839f6a15bee021e5ce1c2f6268b696229afed1f8",
+      "paperId": "1610.07392",
+      "title": "Symmetry-based relativistic magnetohydrodynamics",
+      "disposition": "alternate",
+      "home": "Relativistic magnetohydrodynamics from conserved magnetic flux",
+      "note": "Conserved magnetic flux supplies no compactification or moduli-stabilization connection here."
+    },
+    {
+      "unitId": "unit:305b23c7a32a760d2f98fb8bba488a932835ec2325c066ab8097b7e7de95f028",
+      "paperId": "1812.06520",
+      "title": "Exact modular constraints on a one-modulus action",
+      "disposition": "alternate",
+      "home": "Modular identifications of N=1 effective actions",
+      "note": "No flux-stabilization or tadpole target is supplied."
+    },
+    {
+      "unitId": "unit:01f2ee7d0d2ffc8a99d32b8c859c452ac0468b3b94083a23a47e50b1dcb2da0a",
+      "paperId": "hep-th/9304026",
+      "title": "Elliptic-genus and algebra tests of the LG/minimal-model correspondence",
+      "disposition": "alternate",
+      "home": "Worldsheet Landau–Ginzburg flows and minimal models",
+      "note": "The worldsheet flow and algebra targets have no supplied spacetime flux-vacuum application."
+    },
+    {
+      "unitId": "unit:455a8184fc34940155e61505468d8891add06881079200d99db402db7381910c",
+      "paperId": "2606.30341",
+      "title": "Cubic-coupling cancellations beyond the original DGKT orbifold",
+      "disposition": "alternate",
+      "home": "Extremal cubic couplings in DGKT-related compactifications",
+      "note": "No supplied evidence identifies these extremal cancellations with heterotic Yukawa or superpotential vanishing."
+    },
+    {
+      "unitId": "unit:1f98af1511527759a0f7fd05c67811d7b98b15b5b2ee58ecaa5c180eef58c9cf",
+      "paperId": "1306.4669",
+      "title": "Spinor unification versus supergravity fermion assignments",
+      "disposition": "alternate",
+      "home": "Spinor unification and fermion families",
+      "note": "Unification, family/mass structure and tensor-spinor compatibility remain a source-scoped bundle."
+    },
+    {
+      "unitId": "unit:40f1f62ad50a805c2101f90a9233ff140e57643d8bd464a296ae94fe911e268a",
+      "paperId": "1608.02952",
+      "title": "Localization methods and chapter-dependency map",
+      "disposition": "alternate",
+      "home": "Localization surveys and methods",
+      "note": "An introductory volume map rather than a single new localization result."
+    },
+    {
+      "unitId": "unit:48b62033b6ef1ed9391753b90fdca0d6fb2a90ffaaeef490dcc97176baf070f4",
+      "paperId": "2102.05550",
+      "title": "Different reheating times with identical final local observations",
+      "disposition": "alternate",
+      "home": "Action weighting of indistinguishable reheating histories",
+      "note": "Action treatment of observational indistinguishability has its own home outside the energy-transfer core."
+    },
+    {
+      "unitId": "unit:d46af6877655509df449aee78483c12a9471b8102cbfbd8a61a2fae831981c90",
+      "paperId": "2208.09842",
+      "title": "Scalar EFT for a dimension-four composite inflaton state",
+      "disposition": "alternate",
+      "home": "Composite-inflaton effective actions",
+      "note": "A scalar effective-action setting; this unit specifies neither a dissipative bath nor a conjecture test."
+    },
+    {
+      "unitId": "unit:91158543faac0787adb952dc93b2b0c5eabbfc34d5e3b0d879daba8e67770f33",
+      "paperId": "0801.4080",
+      "title": "Field theory for automorphism-valued gluing",
+      "disposition": "alternate",
+      "home": "Two-dimensional field theories for globally glued targets",
+      "note": "Automorphism-valued global gluing alone does not establish a physical global-symmetry target."
+    },
+    {
+      "unitId": "unit:015b2d0cb9553bc5e53e925b7f63b79d25d33c51f6b8f0102db1b6f748823e31",
+      "paperId": "0811.2161",
+      "title": "Surviving ribbon-network topology and the classical limit",
+      "disposition": "alternate",
+      "home": "Topology and evolution of embedded networks",
+      "note": "Conserved network topology and classical-GR recovery do not establish a gauge-charge completeness target."
+    },
+    {
+      "unitId": "unit:977a39ba3b16132afbd16a910890d5d9ab90cc8ab6854c461c18693132add5ca",
+      "paperId": "2509.06646",
+      "title": "Emergent gravity from momentum matrices and bilocal fields",
+      "disposition": "alternate",
+      "home": "Matrix-model emergence of gravity and unitarity",
+      "note": "Compound emergence target: diffeomorphisms, gravitational excitations and unitarity."
+    },
+    {
+      "unitId": "unit:70d2dd494f919aed56e852dfd582fb7a6a6541e12c67c3bc3647dffe91691661",
+      "paperId": "hep-th/9207036",
+      "title": "Recursive Euler–Lagrange termination and integrability",
+      "disposition": "alternate",
+      "home": "Variational hierarchies and classical integrability",
+      "note": "Variational termination and possible integrability are explicit; a symmetry/charge diagnostic is not supplied."
+    },
+    {
+      "unitId": "unit:b48de792ba4c639ef7c70c40d568b67b7c27392f2680000db5e3f3ccac6e4d72",
+      "paperId": "1208.6019",
+      "title": "Supersymmetric higher-spin families across signatures",
+      "disposition": "alternate",
+      "home": "Higher-spin constructions and consistent truncations",
+      "note": "Higher-spin construction and truncation have no specified effective-action correction target here."
+    },
+    {
+      "unitId": "unit:c853006c00b8c53afb0686276be1b115ca11baf41ac4a540fc3182a4e500b8fe",
+      "paperId": "2606.08190",
+      "title": "BRST-invariant supercharges on fixed heterotic backgrounds",
+      "disposition": "alternate",
+      "home": "Worldsheet characterization of preserved supersymmetry",
+      "note": "Fixed-background worldsheet charges and preserved supersymmetry have no stated correction-action target."
+    },
+    {
+      "unitId": "unit:74cdf807466730edcdfb20b3d825e6cc26a8f33cb965c2e8298a8424e021560a",
+      "paperId": "hep-th/9507005",
+      "title": "Symplectic stationary dilaton–axion gravity",
+      "disposition": "alternate",
+      "home": "Classical duality and solution generation",
+      "note": "Classical formulation and solution generation have no stated higher-derivative target."
+    },
+    {
+      "unitId": "unit:1b97227f33b5f59f3b2bcc6737d09077efead9ee6877c7a6763206688656dec2",
+      "paperId": "1404.7849",
+      "title": "Strong-coupling anomalous dimensions from an M/N expansion",
+      "disposition": "alternate",
+      "home": "Strongly coupled Chern–Simons matter and anomalous dimensions",
+      "note": "The target is scaling dimensions; no symmetry-anomaly consistency test is supplied."
+    },
+    {
+      "unitId": "unit:55f443c572269cc0c9b609c2a608567a8247a9d7064b5a19b091409695a42fdb",
+      "paperId": "0706.2114",
+      "title": "Holomorphic scales and gravitational gauge running",
+      "disposition": "alternate",
+      "home": "Gauge thresholds, holomorphy and N=1 deformations",
+      "note": "Warping is not explicit. Running corrections and N=1 extensions remain compound targets; flux and brane deformations are alternatives."
+    },
+    {
+      "unitId": "unit:a09981096826885b2b9f958d2e81642b1eda5b213840ff1d36b096f2ba37bec4",
+      "paperId": "2205.00612",
+      "title": "Squashing, deformation and conifold condensates",
+      "disposition": "alternate",
+      "home": "Conifold reductions and geometric order parameters",
+      "note": "Conifold overlap does not establish a warped hierarchy or compactification target."
+    },
+    {
+      "unitId": "unit:c879d65456edb0619e757cbef4193705f770fba84d66f1fd4d1778f3e56b2876",
+      "paperId": "1812.06097",
+      "title": "Finiteness for a point-localized transverse current",
+      "disposition": "alternate",
+      "home": "Localized-current regularization and perfect-square prescriptions",
+      "note": "No scalar-distance or light-tower connection is supplied."
+    },
+    {
+      "unitId": "unit:b6637e45223ed40e8a0bce3cd90c0e929853484f179c3c822e36e9cc51460319",
+      "paperId": "2006.01144",
+      "title": "Metastable vacua in pure SU(3) Yang–Mills",
+      "disposition": "alternate",
+      "home": "Pure Yang–Mills vacuum structure",
+      "note": "Metastability remains unresolved; uncontrolled small-Nc extrapolation does not establish absence. No compactification connection is supplied."
+    },
+    {
+      "unitId": "unit:7dd7049c0ef8ba20d5bbecf11ab4d7f790b80cc8a9599a5c855b901b3412f2e1",
+      "paperId": "2312.12387",
+      "title": "Third-way gravity, fermions and unitary AdS vacua",
+      "disposition": "alternate",
+      "home": "Third-way gravity actions and AdS unitarity",
+      "note": "Compound action, matter, supersymmetrization and unitarity targets need reconciliation. No compactification or KK hierarchy is supplied."
+    },
+    {
+      "unitId": "unit:435f5783301b9a221b4a3d0a3afcb26cb9f22d1217e555627c496b2b1f696945",
+      "paperId": "1809.11171",
+      "title": "Local 16n/15n-Weyl lattice models without unwanted mirrors",
+      "disposition": "alternate",
+      "home": "Nonperturbative chiral lattice gauge theory",
+      "note": "The description establishes a chiral lattice-definition target without supplying a mechanism tying it to the phase-classification core."
+    },
+    {
+      "unitId": "unit:b3d435039a6c94f0c3cd472d8c7216c4ee4003f4d979fef5a5aa35c2c38af667",
+      "paperId": "2012.10109",
+      "title": "Chiral anomalies in equilibration, criticality and periodic driving",
+      "disposition": "alternate",
+      "home": "Chiral anomalies in strongly coupled nonequilibrium dynamics",
+      "note": "Equilibration, magnetic critical dynamics and periodically driven stability remain compound targets."
+    },
+    {
+      "unitId": "unit:5c2572fb5ac4d8164d8608d971866a2cfe81b455b1af43cf8bc57636d9f25636",
+      "paperId": "0809.1525",
+      "title": "Are extremal repulsons physical quantum configurations?",
+      "disposition": "alternate",
+      "home": "Physicality and quantum resolution of repulson singularities",
+      "note": "Physical survival of these classical configurations remains an open premise."
+    },
+    {
+      "unitId": "unit:c9ee70a1c6ec3bb8a298892ac4f78bbc86ef2d8398129200ca262df85543eab2",
+      "paperId": "1709.09159",
+      "title": "Finite-N failures of an infinite-N endpoint",
+      "disposition": "alternate",
+      "home": "Finite-N consistency of proposed endpoints",
+      "note": "Endpoint and system are underspecified; nonunitarity, running and instability are distinct mechanisms."
+    },
+    {
+      "unitId": "unit:2a33225bea83cbbad0f22f262d3c164f953d2712f1fc5a95ea57418aff6c4a41",
+      "paperId": "2111.06404",
+      "title": "Many QFTs with different constant couplings",
+      "disposition": "alternate",
+      "home": "Multiple QFT copies in one string construction",
+      "note": "Remove pf17: different constant couplings are specified, but their moduli dependence is unassessed."
+    },
+    {
+      "unitId": "unit:12284c81c3ef37bb496d90713afb3243923988deaa1662eed765ce0996284a92",
+      "paperId": "hep-th/0012071",
+      "title": "The ten-dimensional USp(32) gravitino–matter action",
+      "disposition": "alternate",
+      "home": "Consistent gravitino couplings in nonsupersymmetric Type I strings",
+      "note": ""
+    },
+    {
+      "unitId": "unit:39979f4d44f2ec7c4ad0132ab13db8066cb3beb607f6a842d30a8c8dc417178e",
+      "paperId": "2104.05726",
+      "title": "Defining a G2 saxionic cone despite wall crossing",
+      "disposition": "alternate",
+      "home": "G2 saxionic cones and associative-cycle stability",
+      "note": "A working G2 stability assumption, with no supplied Calabi–Yau identification."
+    },
+    {
+      "unitId": "unit:19d7266b3d2936d31b4717919302be76edd15431d270e7b9632c8210378eaa95",
+      "paperId": "2501.03312",
+      "title": "Uniform, non-uniform and localized string-star phases",
+      "disposition": "alternate",
+      "home": "String-star thermodynamics and phase transitions",
+      "note": "The supplied system has a large spatial circle and quartic corrections, with no Calabi–Yau-moduli connection."
+    },
+    {
+      "unitId": "unit:08a7c0eef95e600eb72bc79e0b8a8456b9b600e6633b60cd1b23ec15c162f002",
+      "paperId": "1507.08642",
+      "title": "Repairing an obstruction with direct-product factors",
+      "disposition": "unresolved",
+      "home": "Unresolved fixed-dimension product obstruction",
+      "note": "The physical system, obstructed quantity and product rule are unspecified; the claim-kind parent does not resolve them."
+    },
+    {
+      "unitId": "unit:a05602964cc4cd38335a9786bfe545f1306f8f9d22fccd95277e4ac1b8f6258f",
+      "paperId": "2002.11746",
+      "title": "Five-form backgrounds with temporal target directions",
+      "disposition": "alternate",
+      "home": "Alternative-signature five-form backgrounds",
+      "note": "Signature and form-sign changes are the supplied target; a hierarchy question is absent."
+    },
+    {
+      "unitId": "unit:0a3bfe18cb3e981f9e3c155a4f189e3396700ee5f3fdf97721de91ffa202c7a9",
+      "paperId": "2205.12373",
+      "title": "Landscape search categories by orientifold and flux labels",
+      "disposition": "unresolved",
+      "home": "Orientifold and flux-landscape search visualization",
+      "note": "Plot categories do not specify a physical question, diagnostic or compactification scope sufficiently for a question assignment."
+    },
+    {
+      "unitId": "unit:9348c648eb6d5adf0f43f0678d2f2e8cac2d220dbd7cc4ef3a91fde2a4bb8650",
+      "paperId": "1507.08642",
+      "title": "Low-rank exceptions to a sixth-order-trace exclusion",
+      "disposition": "unresolved",
+      "home": "Rank-dependent trace identities and anomaly exclusions",
+      "note": "System, dimension, gauge group and precise trace-based exclusion are unspecified."
+    },
+    {
+      "unitId": "unit:4d42ed0f9fc26395baecac4e6da1b3b00a7604e88b1e64ab7e5afb9c75b6baec",
+      "paperId": "hep-th/9406064",
+      "title": "Kac classification of SO(10) and E6 matter parities",
+      "disposition": "alternate",
+      "home": "Discrete gauge actions and matter parities in supersymmetric GUT models",
+      "note": "No six-dimensional gravity system is specified."
+    },
+    {
+      "unitId": "unit:50e6b62956281bbed68065a26dd90fa1ef9ade5c3803438dd0f92a8c361d277f",
+      "paperId": "hep-th/9603142",
+      "title": "Anomaly determination of an eleven-dimensional boundary coupling",
+      "disposition": "alternate",
+      "home": "Eleven-dimensional supergravity, boundary vectors and coupling normalization",
+      "note": "Compound targets: supersymmetric bulk–boundary coupling and anomaly determination of η=λ⁶/κ⁴ without an adjustable scalar. pf2 records anomaly analysis only."
+    },
+    {
+      "unitId": "unit:3ee6eb43b9637dc2ce955bbaf6a1764f09c78a0f897eb3f555b2073437567c57",
+      "paperId": "1003.5985",
+      "title": "Preserving global G after supergravity coupling",
+      "disposition": "alternate",
+      "home": "Global symmetry in supergravity sigma models",
+      "note": ""
+    },
+    {
+      "unitId": "unit:814b81e8c86ba587b3531cd1b7e40d21aa48839a4fad0c7a3bb20cae71506ee5",
+      "paperId": "hep-th/0703276",
+      "title": "Axion-dilaton bifurcations and fake supersymmetry",
+      "disposition": "alternate",
+      "home": "Domain-wall dynamics and fake supersymmetry",
+      "note": "Compound domain-wall dynamics/truncation question; fake supersymmetry remains a separate framework."
+    }
+  ],
+  "neighborhoods": [
+    {
+      "id": "gauss-bonnet-inflation-late-time",
+      "records": [
+        {
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p0",
+          "candidateId": "q025-candidate-question:be4aae9994094ea6585a604a",
+          "definition": {
+            "title": "Gauss–Bonnet inflation: backgrounds, exits and reconstruction",
+            "question": "Under which specified scalar–Gauss–Bonnet models can inflation arise, end and produce the targeted perturbation spectra, and how can suitable couplings or potentials be constructed?",
+            "summary": "Connects background dynamics, reconstruction and inflationary predictions while retaining differences in gravitational sector, field content and approximation.",
+            "scope": {
+              "systems": [
+                "Scalar–Gauss–Bonnet models with retained, omitted or rescaled Einstein terms",
+                "Axion–Gauss–Bonnet models in R² gravity",
+                "Two-field Gauss–Bonnet inflation"
+              ],
+              "targets": [
+                "Inflationary solutions and exits",
+                "Coupling–potential construction",
+                "Scalar and tensor spectra",
+                "Potential/Hubble slow-roll relations and field-space consistency"
+              ],
+              "regimes": [
+                "Source-specific slow-roll, fixed-point, non-scalar-slow-roll and rapid-turn settings"
+              ],
+              "assumptions": [
+                "Potential omission, Einstein-term omission and luminal propagation apply only where explicitly imposed"
+              ],
+              "conventions": [
+                "Hypergeometric couplings and hypergeometric potentials are different construction targets"
+              ],
+              "includes": [
+                "Ordinary inflationary phenomenology without Swampland requirements"
+              ],
+              "excludes": [
+                "Equivalence of the different actions or reconstruction procedures",
+                "Automatic stability or a completed observational fit"
+              ]
+            },
+            "readingLimit": "Several branches have descriptions only. The supplied primary passages establish models, methods and reported targets; they do not certify every derivation, exit or stability condition."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "62ec38fd21da9be24a1c1f04a99c7ca2a04e8b5b7fd2c73161691f8a57fe9752",
+            "challengeReplySha256": "27e7e5967f54601ab70860f410eed20af5eec30f669c0c666a0b1c13d93dd631",
+            "challengeRawSha256": "a87c23e130f4ffc7f048f1ed8d2831370326999a5d92634860a823d2ddae7cc2",
+            "challengePacketSha256": "ea5e80fa63168eda14472ddf823c0163d29b61bd2a48f1d6b43ab2ee9811f001",
+            "normalizationSha256": "4e4aedfafb3c246fc30e5a419207a784a9be325dbedf573e3f1bd838275c6820",
+            "proposalReceiptSha256": "ca99fb3d486adf7e5d14fcdab5421ffe080d0ff6b1c42a61b6001800e6999524"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:773784b08409d8ea957c66e64daebc7c73baa977d4866eac775a22b42023d9e2",
+              "paperId": "0806.4594",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:463a12e2dc332616a250839452fd03c929ad36babb54cc885f759d809b487dbd",
+              "paperId": "1503.01579",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+              "paperId": "1804.03004",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:a12dced2c434cd214b603d54c8973157874a382b3ab2024bd0a7833624e96b77",
+              "paperId": "1808.05045",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:685ac62972033825224fde06a8902d8af6c4f738e96f69cef7458297be5e00d7",
+              "paperId": "2003.13724",
+              "role": "method",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "central_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:fdd6840fb5a08b1bcd115a4969b678ef023369137dadda894a8c5aa91ecc6708",
+              "paperId": "2004.00479",
+              "role": "instantiates",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:67c09070f4c9d7f5517a22755b2ee8dfe05b8f91ad5576c820e522bf8f95cdfc",
+              "paperId": "2105.04386",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:ee4c1e5b76b704da3d11c49c8cd7b71c22b3848574de5fb3e670d12088263805",
+              "paperId": "2202.06381",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:b14eabbea3d42077605448698eef39b035a7320656a7c2d611221424aa3ab7ca",
+              "paperId": "2301.08126",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:fe9d1d74a29632fd6f731b8e82031e0a5194e745914b5523fdbe132ac5749b71",
+              "paperId": "2302.07147",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:2f2f21a71e129fdab42758d9be2d55325472fd0e7b6a768fd8a1646d6f31da50",
+              "paperId": "2303.14594",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:90490747fd6559692e630f224afa86079fca7f3488aed4d9f1f7be5fd7357e76",
+              "paperId": "2407.00785",
+              "role": "method",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "central_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:6f1a3bbd08d1932fc86d2b9655fef94c8b3f24a5a899e1b5c233f998f182cb08",
+              "paperId": "2407.06070",
+              "role": "method",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "central_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:e1722646067e81c5a7fd5593808bb50f234b3b5687ff83629a4da3e8f29aff03",
+              "paperId": "2407.15445",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+              "paperId": "2610.41636",
+              "role": "method",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "central_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:fabe82b5e57d5aab5222dff868d228184be033c3da2d6310e2bec3e5ca845e0b",
+              "paperId": "1811.01625",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:870b499a9aad654a12b3ebaca34503bb3a1391408150aa7c4fab85b77aeaa0f9",
+              "paperId": "2403.00021",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": false
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-297710f585b0edbffa67-challenge:p4",
+          "candidateId": "q025-candidate-question:8d27c10725a1f68d46910a02",
+          "definition": {
+            "title": "Postinflationary and late-time scalar cosmology",
+            "question": "What postinflationary or late-time evolution is compatible with each specified scalar–gravity model?",
+            "summary": "Connects reheating, proposed stiff eras, GR attraction and phantom-like dark energy as distinct temporal and physical targets.",
+            "scope": {
+              "systems": [
+                "Scalar-dependent gravitational and Gauss–Bonnet models",
+                "Kinetic-misalignment axions in R² gravity",
+                "Multifield Gauss–Bonnet dark energy",
+                "The scalarization EFT as a late-time consistency boundary"
+              ],
+              "targets": [
+                "Effective reheating equations of state and expansion duration",
+                "Proposed postinflationary stiff evolution",
+                "Consequences for gravitational-wave spectra",
+                "Late-time GR attraction",
+                "Phantom-like dark-energy behavior"
+              ],
+              "regimes": [
+                "Reheating",
+                "Postinflationary evolution",
+                "Late-time cosmology"
+              ],
+              "assumptions": [
+                "The supplied multifield phantom discussion requires non-negligible dark matter while excluding a direct dark-matter/dark-energy interaction"
+              ],
+              "conventions": [
+                "Phantom-like effective behavior is not identified with a wrong-sign scalar kinetic term"
+              ],
+              "includes": [
+                "Different late-time outcomes as separate model questions"
+              ],
+              "excludes": [
+                "A common evolution sequence shared by all entries",
+                "Inference of reheating success from an inflationary fit alone"
+              ]
+            },
+            "readingLimit": "Most postinflationary applications are description-only. The primary dark-energy passages announce general conditions but do not provide their complete derivation."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "62ec38fd21da9be24a1c1f04a99c7ca2a04e8b5b7fd2c73161691f8a57fe9752",
+            "challengeReplySha256": "27e7e5967f54601ab70860f410eed20af5eec30f669c0c666a0b1c13d93dd631",
+            "challengeRawSha256": "a87c23e130f4ffc7f048f1ed8d2831370326999a5d92634860a823d2ddae7cc2",
+            "challengePacketSha256": "ea5e80fa63168eda14472ddf823c0163d29b61bd2a48f1d6b43ab2ee9811f001",
+            "normalizationSha256": "4e4aedfafb3c246fc30e5a419207a784a9be325dbedf573e3f1bd838275c6820",
+            "proposalReceiptSha256": "ca99fb3d486adf7e5d14fcdab5421ffe080d0ff6b1c42a61b6001800e6999524"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:5920fd499acb284d4ee6bc42afe33c003bc6ef4e1eaed3f34ce4e68d8697000b",
+              "paperId": "1804.03004",
+              "role": "addresses",
+              "independentRoleAgreement": false,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:1ec134bf9e80cf29bfe0d57c40fa095ba7d11c974e816c4d4e0bfdd194b507b8",
+              "paperId": "2011.13957",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:746ab2aacce1512e73baafb439337e3ed62f802e7271c2ba94adbe5cbb5973ea",
+              "paperId": "2203.06030",
+              "role": "boundary",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "boundary_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:fe9d1d74a29632fd6f731b8e82031e0a5194e745914b5523fdbe132ac5749b71",
+              "paperId": "2302.07147",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:2f2f21a71e129fdab42758d9be2d55325472fd0e7b6a768fd8a1646d6f31da50",
+              "paperId": "2303.14594",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+              "paperId": "2610.41636",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "central_source",
+              "materialScopeFlag": false
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p4",
+          "candidateId": "q025-candidate-question:c5b67908bdf276767d3d3ec6",
+          "definition": {
+            "title": "Steep-potential inflation and rapid-turn consistency",
+            "question": "Which mechanisms permit inflation on steep potentials, and what background, attractor and rapid-turn consistency conditions must they satisfy?",
+            "summary": "Canonical assistance, modified expansion, curved-field-space turning and Gauss–Bonnet coupling provide distinct questions about background support and viability.",
+            "scope": {
+              "systems": [
+                "Additive exponential scalar potentials",
+                "Brane-modified cosmological expansion",
+                "Hyperinflation",
+                "Two-field models coupled to Gauss–Bonnet curvature"
+              ],
+              "targets": [
+                "Relations between potential steepness and slow evolution",
+                "Inflationary duration and scaling attractors",
+                "Rapid-turn consistency conditions",
+                "Perturbative, microscopic and reheating viability"
+              ],
+              "regimes": [
+                "Canonical assisted inflation",
+                "Slow-roll and rapid-turn backgrounds",
+                "Steep small-field hyperinflation as a restricted case"
+              ],
+              "assumptions": [
+                "Assisted fields interact through their contribution to expansion, with additive potentials and no direct coupling.",
+                "Variable curvature scale L is a proposed extension, not an established escape."
+              ],
+              "conventions": [
+                "Common rapid-turn language does not establish identical equations or local Hessian conditions.",
+                "Swampland conditions remain conjectural and source-specific."
+              ],
+              "includes": [
+                "Pre-Swampland mechanisms",
+                "Open ultraviolet and non-Gaussianity questions",
+                "Convex DBI tensor suppression as a comparison"
+              ],
+              "excludes": [
+                "Equating canonical assistance, DBI motion, hyperinflation and Gauss–Bonnet dynamics",
+                "Claiming a demonstrated ultraviolet completion from the hyperinflation outlook"
+              ]
+            },
+            "readingLimit": "The assisted-inflation page identifies arXiv v2 dated 22 June 1998 and separately prints 1 February 2008. Hyperinflation extensions remain open in the supplied text. Gauss–Bonnet results are reported in v1 dated 30 October 2026; the excerpts do not independently establish their derivations."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "5a300b377fec3a768cc50b78e68ec2337bcef9548a991297cb75fd7b2f1aad3a",
+            "challengeReplySha256": "684d3accd93bdde369a343fa012304e4fa095bc798550eba60c82d520e27ef73",
+            "challengeRawSha256": "670f037af3ac16dc8044dc0aa854f6f1e4309234f9b4ba35c5251c508bb72289",
+            "challengePacketSha256": "8f9cbf3588f6f4e3287962087c3ec9047f888835837864b336121d28e75781d4",
+            "normalizationSha256": "4120911a2f79ab5020f4c0c7d89cb4077ee1443cd0d8f795761318e91dd135ef",
+            "proposalReceiptSha256": "01bc9b6fb1eefd9136ee1f0d9ead5f9ca47f6c8a0de78a529eb08a2b5d364e52"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:530b5c10f302865c9ddf79946ebb5fe4fd74ca5c6eb95b8f9133777d475b4c09",
+              "paperId": "1808.06424",
+              "role": "comparison",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "central_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:c42bb4415cdf36bc4dc5f1ac29f7f7dc5d24ed0eb65a67694d3108f62e5e1ac5",
+              "paperId": "1810.01644",
+              "role": "instantiates",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:51af4ccc0af140887bc46277dff4590cd4237a304cf4ae9a5363765a7fbf07bb",
+              "paperId": "1901.08603",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "boundary_source",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:580b2ff44089ad93797ed8623b3d352d27d68389b215c5fe8be127d01c2f8d42",
+              "paperId": "astro-ph/9804177",
+              "role": "instantiates",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+              "paperId": "2610.41636",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": false
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-431e39adaf172dcc211a-challenge:p7",
+          "candidateId": "q025-candidate-question:34990732591a1b91983b1849",
+          "definition": {
+            "title": "Gauss–Bonnet coupling and phantom-like dark energy",
+            "question": "Under what conditions can scalar–Gauss–Bonnet coupling produce phantom-like multifield dark energy, and what role does dark matter play?",
+            "summary": "An adjacent late-time question shares a source and coupling framework with rapid-turn inflation but changes the epoch and observable target.",
+            "scope": {
+              "systems": [
+                "Multifield dark energy coupled to Gauss–Bonnet curvature",
+                "Dark matter"
+              ],
+              "targets": [
+                "Conditions for a dark-energy equation of state below -1"
+              ],
+              "regimes": [
+                "Late-time cosmology",
+                "Non-negligible dark matter"
+              ],
+              "assumptions": [
+                "No direct dark-matter–dark-energy interaction is introduced in the described analysis."
+              ],
+              "conventions": [
+                "Phantom-like effective behavior is not automatically the Galileon Genesis mechanism or a claim of ghost matter."
+              ],
+              "includes": [
+                "An alternate home for the late-time component of a compound source"
+              ],
+              "excludes": [
+                "A primordial-spectrum result",
+                "Independent confirmation of the source's cited observational indications"
+              ]
+            },
+            "readingLimit": "Abstract and introduction-level reports from v1 dated 30 October 2026. The detailed conditions and their derivation are outside the supplied reading."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "5a300b377fec3a768cc50b78e68ec2337bcef9548a991297cb75fd7b2f1aad3a",
+            "challengeReplySha256": "684d3accd93bdde369a343fa012304e4fa095bc798550eba60c82d520e27ef73",
+            "challengeRawSha256": "670f037af3ac16dc8044dc0aa854f6f1e4309234f9b4ba35c5251c508bb72289",
+            "challengePacketSha256": "8f9cbf3588f6f4e3287962087c3ec9047f888835837864b336121d28e75781d4",
+            "normalizationSha256": "4120911a2f79ab5020f4c0c7d89cb4077ee1443cd0d8f795761318e91dd135ef",
+            "proposalReceiptSha256": "01bc9b6fb1eefd9136ee1f0d9ead5f9ca47f6c8a0de78a529eb08a2b5d364e52"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+              "paperId": "2610.41636",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": false
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p6",
+          "candidateId": "q025-candidate-question:a7f02a40bbc535293336ef21",
+          "definition": {
+            "title": "Matter and curvature extensions of inflation",
+            "question": "How do gauge fields, antisymmetric tensors or scalar-dependent curvature couplings change inflationary backgrounds and their consistency conditions?",
+            "summary": "These are distinct theory extensions with separate background, perturbation and stability questions.",
+            "scope": {
+              "systems": [
+                "Chromo-Natural and gauge-modified scalar models",
+                "Single or triplet antisymmetric rank-2 fields",
+                "Single-field and multifield Gauss–Bonnet theories",
+                "Brans–Dicke hybrid examples as a related scalar–gravity construction"
+              ],
+              "targets": [
+                "Inflationary solutions and model relations",
+                "Modified slow-roll relations",
+                "Anisotropy, isotropy and perturbative stability"
+              ],
+              "regimes": [
+                "Source-specific slow-roll, turning and anisotropic regimes"
+              ],
+              "assumptions": [
+                "Changes to matter content or gravitational interactions are explicit premise changes",
+                "The inverse-potential Gauss–Bonnet ansatz belongs only to the specified single-field example"
+              ],
+              "conventions": [
+                "Three two-form fields are not three scalar fields",
+                "The scalar-dependent Gauss–Bonnet interaction is retained despite the constant-coefficient invariant's topological character"
+              ],
+              "includes": [
+                "Alternative homes for tensor-field inflation"
+              ],
+              "excludes": [
+                "Transferring scalar-only stability or slow-roll formulas unchanged",
+                "Inferring full stability from a background construction"
+              ]
+            },
+            "readingLimit": "Gauss–Bonnet excerpts supply bounded setup and announced results. Gauge, tensor and Brans–Dicke scopes are description-supported."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "fc93ffd175ee5e6e4b0cc02332f29503ee6779a1d7889cbde2943b347a62b2ff",
+            "challengeReplySha256": "7fb6fa2cd8864a7ca4136c14e63fd8709fd61da163c48cde2bdfbda7b97411ab",
+            "challengeRawSha256": "35baee401bac2cab46f7faa9672f74896851b9b0b01f0345cccc04352f4a2779",
+            "challengePacketSha256": "504203a41da09773515633110950145a93ee972f6936166548184ff1697e11a2",
+            "normalizationSha256": "cd27be20502140a2c8779d44d67f4c430ee7b87ec4c5142e64dfbdbeec019288",
+            "proposalReceiptSha256": "03255bb8af88bad3c1bcc7e6917cdc85c7da8656bb92616fbb913b8192bf255c"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:bde6ed68595aa4d57d08996f5ffb38328603e8ee12abe47ee2ea1ca7f1327c18",
+              "paperId": "1203.2264",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:35bfd5270623ff6b30cb39a3f313cf642ff2a6822d8deb7bf616dd88173136e2",
+              "paperId": "2106.04813",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:1dee11c90a73df90c4130eaa05b37f0bf2fd9d65a12ee45a6d627db65b9379a7",
+              "paperId": "2212.13508",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": true
+            },
+            {
+              "unitId": "unit:ac8e1ccbd7e9792f7d9f8ae66be583f7a4c37b2c144ac4300931a55539fac6f3",
+              "paperId": "2508.10159",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:6b8c1de83952ef3ae9db76275daeef94b869b2ff5079301aeecfd802840ecd62",
+              "paperId": "astro-ph/9307002",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+              "paperId": "2610.41636",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": true
+            },
+            {
+              "unitId": "unit:fabe82b5e57d5aab5222dff868d228184be033c3da2d6310e2bec3e5ca845e0b",
+              "paperId": "1811.01625",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": true
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-f4bd79c6fc317999d078-challenge:p7",
+          "candidateId": "q025-candidate-question:144691c70786c15357e04bcf",
+          "definition": {
+            "title": "Turning and Gauss–Bonnet models of late-time acceleration",
+            "question": "Under what model-specific conditions can turning scalar fields or Gauss–Bonnet couplings support late-time acceleration, including phantom-like behavior?",
+            "summary": "Late-time scalar turning and Gauss–Bonnet phantom-like behavior provide separate applications beyond inflation.",
+            "scope": {
+              "systems": [
+                "Two-field turning dark energy",
+                "Multifield Gauss–Bonnet dark energy with dark matter"
+              ],
+              "targets": [
+                "Late-time acceleration",
+                "Conditions for phantom-like effective behavior"
+              ],
+              "regimes": [
+                "Late universe"
+              ],
+              "assumptions": [
+                "The supplied Gauss–Bonnet account requires non-negligible dark matter without a direct dark-matter–dark-energy interaction"
+              ],
+              "conventions": [
+                "Late-time attractors are not automatically inflationary solutions"
+              ],
+              "includes": [
+                "Comparison with inflationary turning methods"
+              ],
+              "excludes": [
+                "Current observational confirmation of phantom behavior",
+                "A demonstrated perturbative stability result"
+              ]
+            },
+            "readingLimit": "The turning model is description-supported; the Gauss–Bonnet conditions are announced in the supplied 30 October 2026 source and introductory text."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "fc93ffd175ee5e6e4b0cc02332f29503ee6779a1d7889cbde2943b347a62b2ff",
+            "challengeReplySha256": "7fb6fa2cd8864a7ca4136c14e63fd8709fd61da163c48cde2bdfbda7b97411ab",
+            "challengeRawSha256": "35baee401bac2cab46f7faa9672f74896851b9b0b01f0345cccc04352f4a2779",
+            "challengePacketSha256": "504203a41da09773515633110950145a93ee972f6936166548184ff1697e11a2",
+            "normalizationSha256": "cd27be20502140a2c8779d44d67f4c430ee7b87ec4c5142e64dfbdbeec019288",
+            "proposalReceiptSha256": "03255bb8af88bad3c1bcc7e6917cdc85c7da8656bb92616fbb913b8192bf255c"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:ec32c018b6b28fb4ac93c87da80d24b9ccbb1ccf46209fcd375882c5f51c1dfe",
+              "paperId": "2201.08841",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": true
+            },
+            {
+              "unitId": "unit:f022123c5f0e7c0f8d9742966fef7d49f05bb9c1abbcd3f26f9046a1fb86423e",
+              "paperId": "2610.41636",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": true
+            }
+          ]
+        }
+      ],
+      "readingBasis": "Exact reviewed definitions, paired typed source roles, and bounded primary2610.41636v1 pp1/4 windows; no full derivation or current observational verification.",
+      "inspectedPrimaryLocators": [
+        {
+          "localRef": "e3",
+          "kind": "primary",
+          "sourceId": "ev:189be3e4f24f99d68de0e3cf07d4563e",
+          "paperId": "2610.41636",
+          "sourceSha256": "e88352dcd22ad489eb3530aa6ad5d1981c4280964e8b3701c5875e30af356f63",
+          "sourceContext": {
+            "path": "papers/024fb03a344a4d4ca693/reading-order.json",
+            "fileSha256": "5d41fa3db86127029cd521e18604d58d91f1dfb802a507e827765652c13a76ec",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1354,
+            "textSha256": "3c0b1487738d80b781aaa959c2d3269a01ae6ffc10aaa7952c01641b89fa558e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e6",
+          "kind": "primary",
+          "sourceId": "ev:23ef52f1656da80bcbf325dc33eb441f",
+          "paperId": "2610.41636",
+          "sourceSha256": "e88352dcd22ad489eb3530aa6ad5d1981c4280964e8b3701c5875e30af356f63",
+          "sourceContext": {
+            "path": "papers/024fb03a344a4d4ca693/reading-order.json",
+            "fileSha256": "5d41fa3db86127029cd521e18604d58d91f1dfb802a507e827765652c13a76ec",
+            "pdfPage": 4,
+            "start": 91,
+            "end": 3031,
+            "textSha256": "3e301bcd8c175f3685da589e04e9b80892451803d0f31cb588a933559dc3cdeb",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "nomination": "Reuse or specialize the narrow Gauss–Bonnet phantom-dark-energy question across late-time routes, while preserving an explicit method/related connection to inflationary consistency. The common source contains two physical targets; it does not make their scopes equivalent.",
+      "contrasts": [
+        "Inflationary slow-roll/rapid-turn conditions versus late-universe equation-of-state target.",
+        "Dark matter is non-negligible in the claimed phantom regime although no direct dark-sector interaction is introduced.",
+        "The same unit is method, specializes or addresses across the reviewed cards; geometry must not allocate all these roles automatically.",
+        "The f4bd source row has a materialScopeFlag and remains adjudication work."
+      ]
+    },
+    {
+      "id": "black-hole-title-false-positive-control",
+      "records": [
+        {
+          "recordId": "leaf-04442f0e58623f0db643-challenge:p7",
+          "candidateId": "q025-candidate-question:227bcabe1a131da14d692580",
+          "definition": {
+            "title": "S-fold black holes and AdS2 horizons",
+            "question": "How can S-fold truncations construct supersymmetric AdS4 black holes, and do additional AdS2 horizons retain controlled scale separation after uplift?",
+            "summary": "An alternate home retaining the separate black-hole construction and horizon-control targets.",
+            "scope": {
+              "systems": [
+                "Type-IIB S-folds"
+              ],
+              "targets": [
+                "Universal supersymmetric AdS4 black hole",
+                "Additional AdS2 horizon solutions",
+                "Control after uplift"
+              ],
+              "regimes": [
+                "Matter-coupled consistent truncation",
+                "Black-hole and near-horizon geometries"
+              ],
+              "assumptions": [
+                "The hierarchy question concerns the horizon solutions specified by the source"
+              ],
+              "conventions": [
+                "AdS2 horizon scales are not identified with the parent AdS4 vacuum scales"
+              ],
+              "includes": [
+                "Truncation and uplift"
+              ],
+              "excludes": [
+                "Treating a black-hole solution as a new scale-separated AdS4 vacuum"
+              ]
+            },
+            "readingLimit": "Description only; horizon control and uplift properties are announced questions, not verified results."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "05debbee52d0e4c5ee5b715c549df04f194f951577ea15607c1e8e96cb7a9712",
+            "challengeReplySha256": "5a919f9aad4552d7e4a8490e222016abfd27a7d1aae053293c22204b9596a481",
+            "challengeRawSha256": "4b5f9094e0d7281cb2d72b5d3a5f04f9b2332979bfa339bb2c81b44b2ab96ca9",
+            "challengePacketSha256": "4e8b8e790ef3c598dc6f289ebe2af47111da49da7c16574e683ef5026441c830",
+            "normalizationSha256": "2a48a153c4813c7b6825a5f423b1d898341363a5759a2da94b1baa5137cd8185",
+            "proposalReceiptSha256": "8433cdfa8d7cb0f2dbe57957f79bbd0cf5ccccfc4377d2adf9809f9b251b2c77"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:e63c8aeb86a7dbced52369e3038b1964af32b7d4fec831ddc46f7d395f3725eb",
+              "paperId": "2407.11593",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p5",
+          "candidateId": "q025-candidate-question:cba58e77b93be4129225e5a3",
+          "definition": {
+            "title": "Relics, black holes and gravitational-wave backgrounds",
+            "question": "How can inflation and neighboring epochs produce relic particles, primordial black holes or gravitational-wave backgrounds with source-specific abundance and observable signatures?",
+            "summary": "Preserves distinct production mechanisms and separates surviving dark matter from evaporating black holes.",
+            "scope": {
+              "systems": [
+                "Massive vectors",
+                "Enhanced scalar perturbations",
+                "Phase transitions",
+                "Preheating fields",
+                "Scalar Warm Little Inflation"
+              ],
+              "targets": [
+                "Relic abundance and density perturbations",
+                "Primordial black-hole formation and survival",
+                "Induced, transition-generated and preheating gravitational waves"
+              ],
+              "regimes": [
+                "During and near the end of inflation",
+                "Postinflationary production and horizon re-entry",
+                "Later inflation stretching previously emitted wavelengths"
+              ],
+              "assumptions": [
+                "Vacuum production, polarized production and resonant production remain separate mechanisms.",
+                "A large wave amplitude does not establish accessibility in a detector band."
+              ],
+              "conventions": [
+                "The scalar WLI source predicts evaporating black holes, not surviving black-hole dark matter.",
+                "Detector and CMB statements retain their source dates."
+              ],
+              "includes": [
+                "Ordinary relic and wave phenomenology",
+                "Conjecture-conditioned relic scenarios"
+              ],
+              "excludes": [
+                "Identification of all primordial black-hole targets with dark matter"
+              ]
+            },
+            "readingLimit": "The scalar WLI primary excerpt is 2105.08045v2, 15 Dec 2021. Its forecasts and detector-reach statements are reported at that date."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "e2e7e8beddf35f28b648b3dc8d6220e6f327dae2b604c9288a210397af4b2263",
+            "challengeReplySha256": "5229664bc582082fc03dcdff8880293382d649f34418bbce021279518a1d59c6",
+            "challengeRawSha256": "81cc1fb52f125c64dbc180dd82eb21a52dc5b4799a1268b039376eaeb137e8ec",
+            "challengePacketSha256": "237206f3906c4222ddc1f76065d27ee783a65cebdea534f5975343c031633915",
+            "normalizationSha256": "d41881d98fd0a244d7838d2ff5d4ab7f693b70100fe177b2f2959a19712cab55",
+            "proposalReceiptSha256": "42fb379c56ea6af26204813f73e556751ae4398d0884c4e352cc4ec84237a42f"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:2c0f0f910a3406266fbe76ca0e9aad97ddbb010e9870f70a9375a83b4c065d1c",
+              "paperId": "1504.02102",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:2c66ed60fc05bb414891ae1c5a8386b89026ad2528de41be085377c06ea553ce",
+              "paperId": "1810.02547",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:d42dbdbbeb2868c3a6134bb772c54041b53492e95e7cf60b465b6332b8017d3f",
+              "paperId": "1810.07208",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:825c370aa58fb2c7bd7272d7d5d3445a67c9759729b0f95f33e7a8fae131d698",
+              "paperId": "2009.14663",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:72364b0bb2da07f616df011923e5d6218949c140b84d5cfe4ccb5a5c870cf1bf",
+              "paperId": "2012.02761",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:599cc852565db79a0be46d992716fff003256bd81ad64b4351914db83946cbea",
+              "paperId": "2211.03902",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:b8d954c52b5e8e664c3da846ed64f6215e4486c9c0e961143af5ca00c5a6eb3a",
+              "paperId": "2301.06598",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            },
+            {
+              "unitId": "unit:cf723505f653c86b3b6a942976202d35855372bf3163e8191f826159f4292e15",
+              "paperId": "2105.08045",
+              "role": "specializes",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "outside_source_probe",
+              "materialScopeFlag": false
+            }
+          ]
+        },
+        {
+          "recordId": "leaf-917023476c8ed7e389e0-challenge:p7",
+          "candidateId": "q025-candidate-question:edbb1ba5fc83a80d04330ea4",
+          "definition": {
+            "title": "Black-hole attractor reconstruction",
+            "question": "How can extremal black-hole charges and fake superpotentials be reconstructed from prescribed attractor moduli?",
+            "summary": "Retain the distinct black-hole question carried by a compound compactification source.",
+            "scope": {
+              "systems": [
+                "Extremal black-hole attractor models"
+              ],
+              "targets": [
+                "Inverse charge reconstruction",
+                "Fake superpotentials"
+              ],
+              "regimes": [
+                "Prescribed attractor-modulus data"
+              ],
+              "assumptions": [
+                "Shared source material does not identify this target with a de Sitter construction"
+              ],
+              "conventions": [
+                "Attractor and vacuum-stabilization questions retain separate identities"
+              ],
+              "includes": [
+                "Alternate access for the black-hole component of a compound source"
+              ],
+              "excludes": [
+                "A black-hole result inferred from a de Sitter minimum"
+              ]
+            },
+            "readingLimit": "The mapped question is description-supported. Related attractor material in e24 supplies paper context only."
+          },
+          "scopeStatus": "independently_supported",
+          "pins": {
+            "challengeReceiptSha256": "925b65dc49d9ea1960d90d9b59d9c52b5ee04db43d16b50b28413396d72a71d9",
+            "challengeReplySha256": "d9d85e59c4970772d838a25c5bf1aa3c81f069bb2264fa9b4ebf8fc7a051de8f",
+            "challengeRawSha256": "d47fc5145ac9335180ad0bc1bc1153e4bbeb1fe527eb6b4f8523acb0e11dc30d",
+            "challengePacketSha256": "baf9191568347f3942e3e9d19a28aeb2b735a6d6f6a340cc4c098c2570f3369c",
+            "normalizationSha256": "b03c8ca82f3082a6334f8448ee62287c3749034c753412cfa99be628b1c097c3",
+            "proposalReceiptSha256": "01bcc8f01d2786bd7433063891e90fea550dcbe6f9104b41f239b04e88f30d3c"
+          },
+          "sourceRoles": [
+            {
+              "unitId": "unit:ade68997314b20e6fa12b920c3f53cca37dadcc9b6d6b8eab510c7dba0aff90d",
+              "paperId": "0809.5149",
+              "role": "addresses",
+              "independentRoleAgreement": true,
+              "sourceOrigin": "candidate_member_description",
+              "materialScopeFlag": false
+            }
+          ]
+        }
+      ],
+      "readingBasis": "Reviewed definitions and exact contributing source descriptions/IDs only; no additional primary reading.",
+      "nomination": "Retain as a deliberate contrast check: supersymmetric AdS4 S-fold black holes, cosmological primordial-black-hole production and extremal attractor reconstruction have different systems/targets. Shared black-hole vocabulary alone should not create one canonical question or a direct specialization.",
+      "contrasts": [
+        "2407.11593: S-fold construction/uplift and AdS2 scale separation.",
+        "2105.08045 and neighboring sources: early-universe relic/PBH/GW production.",
+        "0809.5149: inverse attractor/charge/fake-superpotential reconstruction."
+      ]
+    }
+  ],
+  "fullCoveragePlan": [
+    "Rebuild a versioned authoritative registry as completed leaf and parent outputs arrive; include newly authored parent questions and retain reused exact candidate IDs.",
+    "Include existing admitted scoped questions as fixed reference candidates, not only newly authored leaf cards.",
+    "Keep the cumulative nomination ledger: six prior nominations lost a lexical threshold after IDF changed, but remain pending rather than silently disappearing.",
+    "Obtain one explicit canonical disposition for every authored scope, including unmatched scopes; pair sampling alone cannot certify uniqueness.",
+    "Use bounded scientific neighborhoods and changed-premise controls; split large queue components for reading, never treat a queue component as an equivalence class.",
+    "Record exact same-scope/common-target/specialization/comparison distinctions in the complete conflict inventory before canonical groups or aliases.",
+    "After identity decisions, separately admit exact source organizational homes and normalized compound overlaps; the no-contribution units need meaningful reviewed homes, not generic leftovers.",
+    "Keep remaining source/fine identity and coverage unresolved explicitly until the final complete-corpus assembly checks pass."
+  ],
+  "noSealedHoldoutAccess": true,
+  "noNewModelEmbeddingOrNumericalJob": true
+}

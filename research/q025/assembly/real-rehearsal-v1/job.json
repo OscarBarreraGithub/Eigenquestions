@@ -1,0 +1,35 @@
+{
+  "jobId": "61485801",
+  "state": "COMPLETED",
+  "exitCode": "0:0",
+  "elapsed": "00:00:06",
+  "account": "randall_lab",
+  "partition": "test",
+  "cpus": 2,
+  "memory": "8G",
+  "timeLimit": "00:10:00",
+  "remoteDirectory": "/n/netscratch/randall_lab/Everyone/obarrera/eigenquestions-q025/assembly/kk-uhecr-rehearsal-v2",
+  "script": {
+    "path": "research/q025/assembly/overview.py",
+    "sha256": "8de155dee7907aa8b454689be5676cbeef632c56b2633e0e51324eeb8dbf84dc",
+    "bytes": 17299
+  },
+  "batchScript": {
+    "path": "research/q025/assembly/kk-rehearsal.sbatch",
+    "sha256": "44518ef57a55c8723d62ba58ff2c72596d6839b061162699316dc5d793d1e4b3",
+    "bytes": 975
+  },
+  "input": {
+    "path": "research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/delivery-freeze/accepted-geometry-input.json",
+    "sha256": "5b7f777d7c19770b99ac73f84b53d58738e81d32cd60c2da098d110cd6525cda",
+    "bytes": 6010
+  },
+  "outputManifest": {
+    "path": "research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/geometry/manifest.json",
+    "sha256": "5cfdb5f8296c923b4fb22fd632c04d37256aa6ca844c2231cea0890c862fe69e",
+    "bytes": 804
+  },
+  "reportedBatchMaxRSS": "88K",
+  "memoryMeasurementLimit": "Very short-job Slurm RSS accounting is not a credible peak memory measurement.",
+  "noModelOrEmbeddingRun": true
+}

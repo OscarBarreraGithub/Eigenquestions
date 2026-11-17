@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "q025-rehearsal-boundary-extension/1",
+  "status": "accepted_explicit_boundary_extension",
+  "adjudicator": "root",
+  "priorComponent": {
+    "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-admitted-rehearsal-component.json",
+    "sha256": "3e2500b715ca31075d7f2987aa24abcf6991b6f35e65aeb6a8134e6d872150df"
+  },
+  "inputPacket": {
+    "path": "research/q025/evaluation/recovery/native-local/jobs/kk-compact-challenge/packet.json",
+    "sha256": "ede8c80d673eeb7f9ff34429ae862737a0bf3d4ad1125d3954d7dd2dac0e2f97"
+  },
+  "approval": "Root read complete d46, the current admitted historical-UHECR scope, original/challenge row and exact e1/e14 primary windows; approved this exact unit at weight1 only in the historical UHECR scope as a separate fifth scientific base.",
+  "placement": {
+    "unitId": "unit:8bb9290e0c6baf0fb1ad7c21c15591676b37660343311852ca5a04b453c20cc8",
+    "destinationId": "q-historical-uhecr-suppression",
+    "role": "member",
+    "status": "accepted",
+    "basis": "source_excerpt_checked",
+    "allocationWeight": 1,
+    "workRelation": "on",
+    "qualification": "Historical observed UHECR spectral suppression and feature energies. The supplied HiRes abstract is source-attributed; no unique mechanism, species scale or KK connection is inferred, and the statistics were not reproduced.",
+    "evidenceRefs": [
+      {
+        "ref": "d46",
+        "kind": "description",
+        "unitIndex": 46,
+        "unitId": "unit:8bb9290e0c6baf0fb1ad7c21c15591676b37660343311852ca5a04b453c20cc8",
+        "textSha256": "3beee23af8db5d041d9cf833e99b1aaf29baaf0736d5242725d4c8919c12272c"
+      },
+      {
+        "ref": "e1",
+        "kind": "primary",
+        "sourceId": "ev:0b6908c31cba99938f4ef319efd928a5",
+        "paperId": "astro-ph/0703099",
+        "sourceSha256": "28e721a5792cbc14109eea0fc79fa043512fc234e82703ee8932a5e07c5a90ce",
+        "sourceContext": {
+          "path": "papers/79d81f12efe58fd79488/reading-order.json",
+          "fileSha256": "1e6b709da6832a46ac6c3cc80fb073ef08971e6ff10b006d73235c89af7a8e4c",
+          "pdfPage": 1,
+          "start": 2484,
+          "end": 5024,
+          "textSha256": "c415f1cc2815c2878c47e080ea03993d6742ea26ac4cab65b12490be4f4fc7b5",
+          "quoteExactInPage": true,
+          "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+        }
+      },
+      {
+        "ref": "e14",
+        "kind": "primary",
+        "sourceId": "ev:870335ae78a31a46d2d4ba742e8f18db",
+        "paperId": "astro-ph/0703099",
+        "sourceSha256": "28e721a5792cbc14109eea0fc79fa043512fc234e82703ee8932a5e07c5a90ce",
+        "sourceContext": {
+          "path": "papers/79d81f12efe58fd79488/reading-order.json",
+          "fileSha256": "1e6b709da6832a46ac6c3cc80fb073ef08971e6ff10b006d73235c89af7a8e4c",
+          "pdfPage": 1,
+          "start": 99,
+          "end": 3491,
+          "textSha256": "9d50906e3de68bf9b7c0293225e27ddf4cc1d810470a5491ab2748379202fe6f",
+          "quoteExactInPage": true,
+          "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+        }
+      }
+    ],
+    "decisionId": "decision:kk-uhecr-boundary-placement"
+  },
+  "placementContentSha256": "2c1dacf31bd836f12323894a6c0b9ae928a7aac50d3b79934ba3b060d967239a",
+  "scopeContentSha256": "83e21d8303d089c102bb5f6d5b62e5590b6e991954f34ec46cc308545bd63a5e",
+  "cohort": {
+    "unitIds": [
+      "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+      "unit:8bb9290e0c6baf0fb1ad7c21c15591676b37660343311852ca5a04b453c20cc8",
+      "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+      "unit:c667eaad26bf24f79ac000d31da08a2e1f6be8c980569251185cfd41bfdc3ae2",
+      "unit:d5031ab16d8b871bddd917aa4e9de3e7203c9cda1499e4fcfe9a5f463cd4a4ac"
+    ],
+    "unitIdsSha256": "b15de282e457ad3c831a601740249d3628e22a18c1443283840e3422a7c8d07b",
+    "independentEntryDestinationIds": [
+      "q-historical-uhecr-suppression"
+    ]
+  },
+  "evidenceAgreement": "Coordinator primary-source adjudication; original broad disposition exclude changed to alternate in challenge, so this is not represented as independently identical placement.",
+  "invariants": {
+    "previousFourUnitApprovalPreserved": true,
+    "previousSevenRoutesPreserved": true,
+    "newKKtoUHECRScientificRoutes": 0,
+    "sourceEquivalences": 0,
+    "fullAtlasAdmission": false
+  },
+  "readingLimit": "Only the supplied v2 abstract/introduction windows; significance calculation, figures, unique cutoff mechanism and gravity-scale interpretation are not verified."
+}

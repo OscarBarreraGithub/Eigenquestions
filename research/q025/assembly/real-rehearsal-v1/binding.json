@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "q025-rehearsal-binding/1",
+  "component": {
+    "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+    "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+  },
+  "organizationAdjudication": {
+    "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-organization-adjudication.json",
+    "sha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512"
+  },
+  "componentReceipts": {
+    "admissionReceipt": {
+      "path": "../../../../evaluation/full-pass/admissions-v1/kk-contribution-admission.json",
+      "sha256": "3e724e9877924b1ed6b3e84b7d4f7455c5a1f60f4965e1f3c51f54909cd66b19"
+    },
+    "scopeAdjudicationReceipt": {
+      "path": "../../../../evaluation/recovery/kk-scope-adjudication.json",
+      "sha256": "e6f9f10d8a2c751b76028aa2575e0b5560b256fb5675f0ef3e2bfebb08faf677"
+    },
+    "organizationAdjudicationReceipt": {
+      "path": "../../../../evaluation/full-pass/organization-placement-v1/kk-organization-adjudication.json",
+      "sha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512"
+    },
+    "boundaryExtensionAdjudicationReceipt": {
+      "path": "../../../../evaluation/full-pass/organization-placement-v1/kk-uhecr-extension-adjudication.json",
+      "sha256": "5d4e369546b79ab8d10406087ebdd50f880686360c5642aed4ff5874a4b5438a"
+    }
+  },
+  "packet": {
+    "path": "research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/input/aggregate.json",
+    "sha256": "7d983ab44a0c62a87627a530f13e38ea60455bcd9a11b319c1b0c78feb797ace",
+    "acceptedContentSha256": "bdb58903444779bb3c8536f7163b443e9382f4e761bacd199a3eb193361b7a04"
+  },
+  "receipt": {
+    "path": "research/q025/assembly/outputs/kk-uhecr-rehearsal-v2/input/aggregate-admission.json",
+    "sha256": "9026d16f200bfae9d59db82ef705469571bc86a804188edddafc05b49a8311fa"
+  },
+  "originalBinsSha256": "e831a4b087a78670e68f68ddef991ccb146f08043fd02d20f163499bf8d56955",
+  "scriptSha256": "e4403249ca419db418b4c5bab83e71e8f5a09f146e6833e667aa93c34144ff2d",
+  "scientificCoverageComplete": false
+}
