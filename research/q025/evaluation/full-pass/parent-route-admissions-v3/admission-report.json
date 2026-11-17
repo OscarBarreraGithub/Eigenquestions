@@ -1,0 +1,32 @@
+{
+  "component": {
+    "path": "research/q025/evaluation/full-pass/native-local/parent-route-admissions-v3/admitted-component.json",
+    "sha256": "727906676131a80c860aec3d1b79eb3907f66b95f6c2cf5d430a8bde417c10fc"
+  },
+  "componentBytes": 665621,
+  "receipt": {
+    "path": "research/q025/evaluation/full-pass/parent-route-admissions-v3/class-admission.json",
+    "sha256": "a1883fc1645341e1cb752c93c82439dc9aa415ce092f45115380c55b6f511700"
+  },
+  "counts": {
+    "independentObservations": 53,
+    "scientificArcs": 53,
+    "nativeObservationTypes": {
+      "comparison": 6,
+      "narrows": 47
+    },
+    "scientificArcTypes": {
+      "comparison": 6,
+      "narrower": 47
+    }
+  },
+  "reviewArtifactCount": 16,
+  "newlyEnabledDirectionSensitiveObservationsNotAdmitted": 9,
+  "newOptionalDirectionObservationsOutsideFrozenOrientation": 6,
+  "alreadyAdmittedObservationsExcluded": 6,
+  "compiler": {
+    "path": "research/q025/evaluation/full-pass/parent-route-admissions-v3/compile.py",
+    "sha256": "f3e57f9abb0c47b77d49a441ea5e45fa667f8ef6ef0f4d33906fb6ccd5a9e64d"
+  },
+  "noAutomaticAliasesHomesOrMass": true
+}

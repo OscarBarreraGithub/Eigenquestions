@@ -1,0 +1,436 @@
+{
+  "receipt": {
+    "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+    "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+  },
+  "supersessionMeaning": "Only the six unresolved connection disagreements are resolved; original identity screens and all historical rows remain retained. No other nomination is resolved.",
+  "items": [
+    {
+      "nominationId": "n4794",
+      "variantRef": "attempt1:comparisonReviews:n4794",
+      "left": "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+      "right": "q025-candidate-region:5f91a1accabb39a167183aaa",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n4794",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n4794",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1183 centers cloud dynamics and light-field signals; c1577 centers conditional weak-gravity diagnostics.",
+          "Spin or gravitational-wave boson constraints do not automatically constrain the charged spectrum required by a WGC formulation."
+        ],
+        "reason": "The target change is explicit. Spectral or relaxation methods could connect selected questions after matching field charges, backgrounds and assumptions; superradiance membership alone supplies no WGC implication.",
+        "refs": [
+          "c1183",
+          "c1577"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n4794",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1183 targets light-field clouds and their signals; c1577 targets conditional weak-gravity constraints and neighboring diagnostics.",
+          "Boson spin or gravitational-wave constraints need not concern a charged-particle spectrum."
+        ],
+        "reason": "The definitions distinguish observational cloud questions from weak-gravity tests. Spectral or relaxation methods could connect them only after checking field charges, background, growth assumptions and the proposed conjectural implication.",
+        "refs": [
+          "c1183",
+          "c1577"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt1:comparisonReviews:n4794",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The alternate removes comparison from scientificConnections, retaining only shared_method and conditional_application.",
+          "The different_scoped_targets identity judgment remains unchanged; the conflict concerns the explicit scientific connection."
+        ],
+        "reason": "Removing the comparison route changes a completed connection judgment. The distinct cloud-probe and weak-gravity targets do not make comparison redundant with method reuse or conditional application. Preserve the selected judgment and withhold the alternate for adjudication.",
+        "refs": [
+          "c1183",
+          "c1577"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n5103",
+      "variantRef": "attempt1:comparisonReviews:n5103",
+      "left": "q025-candidate-region:9454e2dc275dec5e822bba03",
+      "right": "q025-candidate-region:0373a22d5bfba4144b34728b",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n5103",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n5103",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1201 asks about charge processes and lifetimes; c1480 asks about corrected equilibria and thermodynamic calculations.",
+          "Zero-temperature equilibrium shifts do not establish dynamical accessibility or emission."
+        ],
+        "reason": "The definitions distinguish the targets. A corrected solution may supply input to a discharge calculation only with a specified matter sector, approximation and dynamical prescription.",
+        "refs": [
+          "c1201",
+          "c1480"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n5103",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1201 targets charge evolution and proposed spectrum conditions; c1480 targets corrected geometry and equilibrium thermodynamics.",
+          "Static corrected extremality and entropy do not determine a discharge timescale."
+        ],
+        "reason": "The definitions permit a changed-target decision. Corrected equilibria can be inputs to charge-evolution models only with compatible charge normalization, approximation and emission physics.",
+        "refs": [
+          "c1201",
+          "c1480"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt1:comparisonReviews:n5103",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The alternate removes comparison from scientificConnections and retains only conditional_application.",
+          "The distinct process-versus-equilibrium identity judgment is unchanged."
+        ],
+        "reason": "The alternate withdraws an explicit comparison judgment even though both readings preserve the same conditional equilibrium-to-discharge application. This is a material connection change and remains withheld; the selected comparison is not replaced.",
+        "refs": [
+          "c1201",
+          "c1480"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n5953",
+      "variantRef": "attempt1:comparisonReviews:n5953",
+      "left": "q025-candidate-region:1b676e04cbd94e2caf104916",
+      "right": "q025-candidate-region:9cc6623edc9d8c83bc264832",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n5953",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n5953",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1282 centers thermodynamic entropy–extremality responses; c1345 centers modes, damping and classical dynamics.",
+          "Fixed thermodynamic variables and horizon-response endpoints differ from fixed-mode and time-normalization choices."
+        ],
+        "reason": "The definitions distinguish these targets. Thermodynamic input could inform a specified spectral calculation, but no universal relaxation or entropy-to-mode relation is established here.",
+        "refs": [
+          "c1282",
+          "c1345"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n5953",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1282 centers entropy–extremality responses; c1345 centers perturbation spectra and classical motion.",
+          "Thermodynamic derivatives, damping times and orbital Lyapunov exponents use different observables and limits."
+        ],
+        "reason": "The definitions support separate targets. Thermodynamic data could constrain a spectral comparison only with the exact relaxation proposal, time convention and mode limit supplied.",
+        "refs": [
+          "c1282",
+          "c1345"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt1:comparisonReviews:n5953",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected row permits thermodynamic input to a specified spectral calculation without requiring a relaxation proposal.",
+          "The alternate states that a spectral comparison is possible only with the exact relaxation proposal supplied, adding a prerequisite despite retaining the same connection labels."
+        ],
+        "reason": "As written, the alternate narrows the application premise. c1345 includes spectra and classical response beyond conjectural relaxation tests, and c1282 supplies no family-wide relaxation premise. The extra requirement must remain explicit and withheld rather than silently restricting the selected conditional interface.",
+        "refs": [
+          "c1282",
+          "c1345"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application"
+      ],
+      "specificRejectedPromotion": "family-wide relaxation prerequisite"
+    },
+    {
+      "nominationId": "n467",
+      "variantRef": "attempt0:comparisonReviews:n467",
+      "left": "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+      "right": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n467",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n467",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "shared_method"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_relation_review",
+        "definingDifferences": [
+          "Microscopic support for slow evolution versus apparent-phantom inference.",
+          "Mechanism control versus the definition of effective dark energy."
+        ],
+        "reason": "The u3114 description joins steep-potential accommodation to effective phantom behavior and poles. That compound source can contribute to both questions. Recover the paired reasons identifying each facet; a background mechanism does not establish microscopic control, and scalar w must remain distinct from inferred w.",
+        "refs": [
+          "c57",
+          "c306",
+          "u3114"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n467",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_relation_review",
+        "definingDifferences": [
+          "Microscopic support for slow evolution versus apparent-phantom inference",
+          "Construction control versus definitions of scalar and effective w"
+        ],
+        "reason": "The coupled-quintessence description contains both steep-potential accommodation and effective-w behavior. That makes a conditional application plausible, not the scopes identical. Retrieve its paired contribution reasons to distinguish the construction-facing facet from the inference mechanism; the description establishes neither microscopic control nor observational validation.",
+        "refs": [
+          "c57",
+          "c306",
+          "u3114"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt0:comparisonReviews:n467",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected connection set contains conditional_application and shared_method; the alternate retains conditional_application but replaces shared_method with comparison."
+        ],
+        "reason": "Identity and the conditional construction-to-inference application agree, but the alternate changes the recorded scientific connection judgment. A comparison and a shared method are not interchangeable assertions, even if both could ultimately be supported. Preserve the selected record and withhold this alternative for adjudication.",
+        "refs": [
+          "c57",
+          "c306",
+          "u3114"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n475",
+      "variantRef": "attempt0:comparisonReviews:n475",
+      "left": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "right": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "identityScreen": "specialization_candidate",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "specializes_right",
+      "admittedRouteId": "navigation:screen-conflict:n475",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n475",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "broader_question"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "General background evolution and inference versus apparent-phantom histories and poles.",
+          "A broad history question versus specific inference conventions."
+        ],
+        "reason": "Descriptions place apparent-phantom mechanisms within a narrower part of background/inference work. Check paired reasons for that specialization while retaining the distinction between coupling-induced effective w and constant-w fitting of climbing quintessence. Shared histories do not make their inferred quantities interchangeable.",
+        "refs": [
+          "c58",
+          "c306",
+          "u3114",
+          "u3617",
+          "u1669"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n475",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "General background histories and inference versus apparent-phantom mechanisms",
+          "Canonical scalar evolution versus interaction-dependent or distance-fitted effective quantities"
+        ],
+        "reason": "Descriptions make apparent-phantom behavior a candidate narrower question within background inference. Its contributing mechanisms remain different: coupled effective w and constant-w distance fitting cannot inherit one crossing convention. Use the existing contribution reasons to decide the specialization without treating all background models as phantom mechanisms.",
+        "refs": [
+          "c58",
+          "c306",
+          "u3114",
+          "u3617",
+          "u1669"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt0:comparisonReviews:n475",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected connection set contains shared_method and broader_question; the alternate replaces broader_question with conditional_application while retaining the specialization candidate."
+        ],
+        "reason": "The identity assessment and equation-of-state qualifications remain compatible, but the alternate substitutes a conditional application for the selected broader organizing relation. Those connections can coexist but are not the same recorded judgment. The change remains withheld for downstream adjudication.",
+        "refs": [
+          "c58",
+          "c306",
+          "u3114",
+          "u3617",
+          "u1669"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n478",
+      "variantRef": "attempt0:comparisonReviews:n478",
+      "left": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "right": "q025-candidate-question:f23ce27773b0d5af5ed5ce55",
+      "identityScreen": "specialization_candidate",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "overlap",
+      "admittedRouteId": "navigation:screen-conflict:n478",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n478",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "broader_question"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "Broad evolution/inference versus identifiability and CPL representation.",
+          "General coupled histories versus canonical mapping and proposed theory-specific extensions."
+        ],
+        "reason": "The descriptions support a narrower reconstruction/CPL question within much of c58's inference coverage. Check paired reasons for the shared canonical setting and the proposed extensions. CPL expansion matching is not an interaction-induced equation of state, and extensions cannot inherit canonical restrictions without their own premises.",
+        "refs": [
+          "c58",
+          "c351",
+          "u4975",
+          "u2103",
+          "u742",
+          "u4735"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n478",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "General cosmic evolution and inference versus identifiability and CPL representation",
+          "Broad interacting backgrounds versus explicitly bounded canonical reconstruction"
+        ],
+        "reason": "The reconstruction and CPL descriptions support a narrower inference question within the broader background overview. Proposed beyond-canonical reconstruction and electromagnetic couplings need their own premises. Retrieve the shared reconstruction reasons and repair c351's incomplete-looking assessment before an exact reuse decision.",
+        "refs": [
+          "c58",
+          "c351",
+          "u4975",
+          "u2103",
+          "u742",
+          "u4735"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt0:comparisonReviews:n478",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected connection set contains shared_method and broader_question; the alternate substitutes conditional_application for broader_question while retaining the specialization candidate."
+        ],
+        "reason": "Both preserve the narrower reconstruction/CPL target and source-specific extension premises. Nevertheless, the changed connection set replaces an organizing-question judgment with an application judgment. The additional assessment-repair caution does not reconcile that difference; retain the selected record and withhold the alternative.",
+        "refs": [
+          "c58",
+          "c351",
+          "u4975",
+          "u2103",
+          "u742",
+          "u4735"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": "whole-scope containment"
+    }
+  ]
+}

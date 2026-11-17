@@ -10,8 +10,14 @@ export function validateOrganizationalAccess({row,record,destinations,placements
   if(row.type!=='related_question'||row.provenance?.navigationBasis!=='same_source_organizational_access'||!meta||meta.countScope!=='scope_wide')fail('wrong semantic discriminator');
   if(!record||record.id!==row.id||meta.supportCertificate.recordId!==row.id||record.source!==row.source||record.target!==row.target||record.certificateSha256!==meta.certificateSha256||certificateHash(record)!==meta.certificateSha256)fail('certificate or exact route binding changed');
   const ds=new Map(destinations.map(d=>[d.id,d])),source=ds.get(row.source),target=ds.get(row.target);
-  if(source?.kind!=='region'||!target||source.id===target.id)fail('source must be a distinct admitted region');
+  if(!['region','question'].includes(source?.kind)||!target||source.id===target.id)fail('source must be a distinct admitted scientific scope');
   if(target.kind!=='question'&&!(source.id===exception[0]&&target.id===exception[1]))fail('unapproved nonquestion target');
+  const policyClass=source.kind==='question'?'fine_home_to_question':target.kind==='question'?'broad_home_to_question':'explicit_region_exception';
+  // Historical broad certificates predate this additive discriminator. Fine
+  // homes require an explicit new class on both the route and its certificate;
+  // their source attribution never becomes containment or allocation.
+  if(source.kind==='question'&&(record.policyClass!==policyClass||meta.policyClass!==policyClass))fail('fine home requires explicit approved policy class');
+  if(record.policyClass!==undefined&&record.policyClass!==policyClass||meta.policyClass!==undefined&&meta.policyClass!==policyClass)fail('policy class disagrees with exact endpoint kinds');
   for(const [key,d]of [['source',source],['target',target]])if(record.endpointBindings[key].scopeContentSha256!==scopeHash(d)||record.endpointBindings[key].id!==d.id||record.endpointBindings[key].kind!==d.kind)fail('current endpoint scope binding changed');
   const alias=new Map();for(const g of identityResolution.groups)for(const id of g.memberIds)alias.set(id,g.destinationId);
   const canonical=id=>alias.get(id)||id,homes=new Map(placements.map(p=>[p.decisionId+'\n'+p.unitId,p])),roles=new Map(contributions.map(r=>[r.decisionId+'\n'+r.unitId+'\n'+r.destinationId+'\n'+r.role,r]));

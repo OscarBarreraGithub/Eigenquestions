@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "q025-placement-successor-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 140,
+  "unstartedProposalChallengePairs": 67,
+  "externalCompletedProposalsReused": 6,
+  "sourceFamilies": 73,
+  "distinctSourceQuestions": 2220,
+  "failedProposalsAndBlockedChallengesExcluded": 4,
+  "initialConcurrency": 8,
+  "maxAuthorizedConcurrency": 32,
+  "sourceOnly": true,
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "maximumResponseCharacters": 120000,
+  "maxDependentPriorResponseCharacters": 120000,
+  "maxConservativeContextEstimateTokens": 164761,
+  "dispatchGuardTokens": 220000,
+  "nativeLaunches": 0,
+  "scientificAdmission": false,
+  "tests": {
+    "python": 18,
+    "node": 8,
+    "requestVerification": 140
+  },
+  "scientificPolicyReview": "Evaluation owner read nullable-marker wrapper and instruction amendment, confirmed no target/science inference or unknown/overwrite bypass.",
+  "campaignSha256": "db119e179b3ae07d65528f5914cc57a2ea7388364161db6f6b5c7fcea346ed35",
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/README.md",
+      "bytes": 3525,
+      "sha256": "031bbb2c5198c06ad9f6827d6b529e854f1c2e1660b1405959fd01f9dd4c8c6a"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/INSTRUCTIONS.md",
+      "bytes": 5566,
+      "sha256": "9f807b5c117d54bb81b95174d8d9abf2e292704967829c80217eae3aa36b08d7"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/contract.py",
+      "bytes": 1663,
+      "sha256": "0940bfc7f94d843cc8129e3dc4ab02e8c6fdfeb9b8d0fd2d248260f189517fc8"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/materialize.py",
+      "bytes": 7113,
+      "sha256": "f15e88303da259d08634213e42b62a160647132b0e4aa73911f07cf1125d1989"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/prepare.py",
+      "bytes": 4465,
+      "sha256": "539b53c39be1547baf843356fb13801dd72a71f7029a4659a25a523e814941fa"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/preflight.py",
+      "bytes": 3000,
+      "sha256": "1af353cd54dae601b72e9391d00cee692db7fcb6d85547b88f2a9692a05d73ec"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/runner.mjs",
+      "bytes": 26000,
+      "sha256": "e9cbb380b27f0371490a0fcbb77d7296b6d9df190bc9c34ebc480b0503bc2355"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/runner.test.mjs",
+      "bytes": 3853,
+      "sha256": "6e337a49a8f408e4d94d0ca4a2910708dfce0471b98b4d6833bfc60f111d64d1"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/test_contract.py",
+      "bytes": 11455,
+      "sha256": "8343fd85fde5b9a56069997bf83d49c4554b46be083282380d5cb98b1ac5415d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/manifest.json",
+      "bytes": 570448,
+      "sha256": "2e2fac22880cff44c0a01b2917d2cf49dfe418b77fc5c997b66bf975f6cbb135"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/partition.json",
+      "bytes": 10056,
+      "sha256": "7dffcfd6a806efa1c01886a13bd2b399c8ae80282d981590b3568a40d983f91b"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/source-audit.json",
+      "bytes": 129,
+      "sha256": "260f8352ab2a61646640a42d1d189da9db9bd0eb30ddedf60d4a21bc97a1be4b"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/preflight.json",
+      "bytes": 78897,
+      "sha256": "aec74a072e524c3d21020a1728e722aac052ef75c73ab0349b1a134754a3500a"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-successors-v1/verification.json",
+      "bytes": 806,
+      "sha256": "788d748a7aad7d93f1513e79c0f6d5125cfd56b85067db777d710428817b0d73"
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/placement-successors-v1/runner.mjs --run --enable",
+  "requirements": [
+    "Original placement-continuation-v1 control stays disabled; source jobs must remain unstarted.",
+    "Root coordinates combined48 ceiling with orientation.",
+    "Two failed proposals require separate locked-tail recovery; no silent completion."
+  ]
+}

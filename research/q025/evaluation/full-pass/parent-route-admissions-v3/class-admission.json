@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "q025-parent-reassertion-class-authorization/1",
+  "authority": "root",
+  "decision": "Approve the 59 safe-type formerly endpoint-pending observations under the existing independent reassertion class after exact current scopes become admitted. Six already admitted b518 observations are excluded, leaving 53 additive narrower/comparison arcs. No new reading or individual explicit-link verdict is invented; direction-sensitive candidates remain pending.",
+  "inputs": {
+    "classProposal": {
+      "path": "research/q025/evaluation/full-pass/parent-route-admissions-v1/class-proposal.json",
+      "sha256": "f866c25bca4d12708e3ae2a60c456dd739bee3080ee55feabf5fb7bd3c00e225"
+    },
+    "scopeGapAdmission": {
+      "path": "research/q025/evaluation/full-pass/scope-gap-admissions-v1/component.json",
+      "sha256": "5e0b47da221d61b5056890435bca4b8ef0200a73c92d17cffebff5931672bcaf"
+    },
+    "candidateInventory": {
+      "path": "research/q025/evaluation/full-pass/native-local/parent-route-admissions-v3/class-candidates.json",
+      "sha256": "afd5f7b4ad87374c825f1c2354d43e8a841d9457171aa82a408532b12e655d0e"
+    },
+    "admittedScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "typeMap": {
+    "narrows": "narrower",
+    "related": "related_question",
+    "comparison": "comparison",
+    "premise_check": "premise_check"
+  },
+  "counts": {
+    "independentObservations": 53,
+    "scientificArcs": 53,
+    "nativeObservationTypes": {
+      "comparison": 6,
+      "narrows": 47
+    },
+    "scientificArcTypes": {
+      "comparison": 6,
+      "narrower": 47
+    }
+  },
+  "requiredLimits": [
+    "Both complete scoped rationales, citation metadata and pinned independent artifacts remain attached.",
+    "No newer explicit linkReviews field is invented.",
+    "Incomplete/provenance-only, unadmitted endpoint, changed endpoint/type and unapproved direction-sensitive types remain held.",
+    "Public outgoing title is exact admitted target title; no reverse action title is invented.",
+    "Global canonical remapping requires a fresh exact scope/type binding and containment DAG revalidation.",
+    "Repeated observations do not duplicate scientific assertions or source mass."
+  ],
+  "navigationHashes": {
+    "decision:parent-reasserted:d4a816e01278a671facd4c98": "55be84dcffe899b6da1315120e3f3691f566d7d58c9c352c23f0f371fc5436b5",
+    "decision:parent-reasserted:ca4e1226fea2bff0ff0387fb": "1c1643b87b73d33c16e705ab3b59ab930019afa6fb08248162b55087301ecff5",
+    "decision:parent-reasserted:dd7641fdcab3c72dd1988353": "78b69bc3471565cd4343d5bdee67281b9168a8a3fee8f0ae63d5165297d2aa70",
+    "decision:parent-reasserted:c636752074ec7f8927f9dc25": "9e1f5b8ce85d97f7f4172937cc778ad49f05a184ec13fa865a865d2e4855f250",
+    "decision:parent-reasserted:cb1309448a052f86901d396b": "89b1f1cb275c50126100f2ba53d586a0de610bdb227331ffaec37e9a8d96dd5f",
+    "decision:parent-reasserted:7a68861ef5bc950eb2e1127a": "720e570a0cbbfc4ff6e0fb5becaba53c046864780516ca7f162bd5529c468441",
+    "decision:parent-reasserted:feaecaf96f7372d8ca854cd5": "cda545a4628005ee5e250e129f8fd4ec29b5023f18bfc1aec6faf5d1bd987404",
+    "decision:parent-reasserted:8c9a2d8e2fd161f0a1f02dce": "56ca14666e76ebb5a7d2936ae7d9664b95c46c0a3a49f82c0c88720992aa9a51",
+    "decision:parent-reasserted:7e3e31ff11080c7c37e633bf": "4b4060317bbdd27ef5f7786388a253464f17d82060998e52872c0a89f20de0be",
+    "decision:parent-reasserted:0d759fdb2077928a7a86845d": "1211580fb6bcb672fa58d99521f18cec4a19e2ec88384ad6ab07e8adc2ed81b4",
+    "decision:parent-reasserted:19b806763155df914ceff9c3": "348325817563015c295b6a2386f2bab13405dd0ac78ae9761047f69dbc8e58b2",
+    "decision:parent-reasserted:71d2256caaeeec05be7600b1": "56e35fff1bc8134e0eab4593e23a206dbc08ff41842c76646cae991cf06231f8",
+    "decision:parent-reasserted:13733ae31bbc7dd267c594e5": "76cf13ba81e7fc85965fbb6daa8d1b08b66d333ba709111bf9feccbd83c6a9d2",
+    "decision:parent-reasserted:4d1ddc1d007d5ed2893b2252": "72a5e6f8139b2c4f23fe9031282906ae259f9108c2757eb6191b9e4248463f20",
+    "decision:parent-reasserted:4fcf7ce80d806ce41942be3e": "625eddb217c0394fe6e9abd9d4a56a311a91f11557d54df8eec71f2d7fca1f7e",
+    "decision:parent-reasserted:d464a3d5abcbd71a7aa66a9c": "95944a65cafe2bd174ffba5dd04a18359eaf0fbe5ac549a155fc62c148d7dc7d",
+    "decision:parent-reasserted:c3d6158ab48659e71dd19f86": "f5946709d0272979bdd550362eccb62539613694b1fd24795cdff341ddde485c",
+    "decision:parent-reasserted:079f10217c5beb33b72307d6": "701818c410996e3f5be04300c2052b56294e09be2bef2fcbe4f914ac83c26483",
+    "decision:parent-reasserted:97502e4a646a9db0972b0d8a": "9d1c81da2acfe5ca7eeee0e5b859e95c71aeb7981abd96fb974e66010f0f9c6d",
+    "decision:parent-reasserted:f05e9c30e7c26d94bf489c09": "96d3a2241e819d9f6fb9702b5f37c68e02775c526c6e7453e9602ef05fafc1ba",
+    "decision:parent-reasserted:736aeb64ca5082458e43835e": "837af74e05c9921cb2823143331f658558056f0f29c6dca5d1807380da39da44",
+    "decision:parent-reasserted:745c23d9c415aae3436e59b1": "86f7f1985a54e905327742316282c8f483d8194d6ae82b05455dcfc2878df1db",
+    "decision:parent-reasserted:21d894794ed4fd82a2bf6bcc": "71cac05f0d7a8f82749737e0c7f82c25a718005fe2def879d5b50f817c60d846",
+    "decision:parent-reasserted:4eed7006d4ae9f52da7d744f": "d2d8ef43857ac64f3cfc83f561eb0aeb95ea1e23294a3e0bdc8c95f92fb229e1",
+    "decision:parent-reasserted:bed8597239dfbdd1260ed4f6": "38d81e5168304f15b5c4c18d5ecebfb315caed8317ee30b3b72979ce175d6a7f",
+    "decision:parent-reasserted:2e1e1b0ae5999442a7e66ce3": "88c8322b0e805deced84c49c3927e1238e7413c928e8bffe496cfe997ff04074",
+    "decision:parent-reasserted:4d7eb7d6f19bb108b5a9950e": "c8cb48ad75869ce89095dba27690acd1113dcccb1be858d9928d46a77f5683cf",
+    "decision:parent-reasserted:366fc3db9d1f8ad567d2f10d": "f430c6eab5abc0de39ef87d851926be8a9581484e1b0cd8bad519ea2abcbd3cd",
+    "decision:parent-reasserted:ee978d7e02a3b787b1de5bb2": "e2826a4ef0ac1b009d0d6bf7e207b645e42f668697b397e26ffc1d1f0c375b38",
+    "decision:parent-reasserted:5de7589c5985af633094105a": "e2ec65539f7dde1b59fabfc3fee25c720518f11da19f11fa4d660e0c4e45d350",
+    "decision:parent-reasserted:74ca6db41992928257c4a0ab": "46efda71b8a30ecd38f6e4597124838ec54a9c14a9db16448b85ba1ff0a2527d",
+    "decision:parent-reasserted:c8ca0a4fe8f398ade592eabb": "4a981b0d35f6d801157765f0f969b38f34b4b3d50a751736b5ab748c5fcee402",
+    "decision:parent-reasserted:6ffe77b62c1b633719f2b2f7": "280a6a90d2b183da1d9a3ba90759ec82b2bd10dc70ea0a5da07df2570577eb2c",
+    "decision:parent-reasserted:b0d0d87e11900571745b2320": "e9f768c00b81f5cb84142f1218741e23dc5c5d9a74f85756dc680aea08ec46dc",
+    "decision:parent-reasserted:05939928a6b3b2b3e461b4b6": "7ea39f0d7eab4c2064c02ff3d450451e3e962a03187acc2556a37f87f2b26b93",
+    "decision:parent-reasserted:1f6887dc3d84ebd1598df0ed": "02bd5ada8109e0845148a459f299bc6787b664272570be8baeb117d714dfc8c1",
+    "decision:parent-reasserted:c58ddd9d8d280d8a7d2ba69d": "4e3c50a4966ea10c03a39098c7f79f354f404a7dfbc3dba8987412f2e0f0d34f",
+    "decision:parent-reasserted:76645077ab344d222daed2dc": "6d53bf2dcb1331daba0e3c97eea6633a72f19e6ddc2a25bc28504951bd95a869",
+    "decision:parent-reasserted:d4c93c509e7ea1eef770cf02": "b5053c4362f2d3b150059b8cf65e28d4513a956110eeea86210ff638f4dad65b",
+    "decision:parent-reasserted:9956d9a21ae8c742a8e8cdec": "189632b0b3d7b39836b8abfea9a78d82a7461b85b12359b3da8a792223a38990",
+    "decision:parent-reasserted:0e1926994a1ab74a0571819d": "22349e974c487ed079705c16ded4dd7843aa47229e4355b7d57691d3a4da6afb",
+    "decision:parent-reasserted:9381faaf6115e67be2942ab8": "08d3878758a0333d64bd848d3c5d0ef9d54be7b9cdaa27d646e41597dc43807d",
+    "decision:parent-reasserted:66d7f9be97676ce7f27610f9": "dae63c935157456c1dda5b4cb4e3710b50fe4becf2a123830448c0fda97d6613",
+    "decision:parent-reasserted:f1ef6e11c6aaa8f2358b1562": "fc347eb03396b99d91940d0f8cebfdc77e9bafd20c70dcd4954aee77a1e3351f",
+    "decision:parent-reasserted:20739f514e74c4b571079b7c": "1a5f94da20eed153865ae34e0b572e7b2321cc76cbb6a7460dce65acce2b1aa2",
+    "decision:parent-reasserted:9543bdbd2c7ac60e01830bf7": "d219a3a195a14d06adef0fcd8d4d25593a3f9793125a00057037ba98efafbd5b",
+    "decision:parent-reasserted:3366ce157732e46503735a8b": "318c70a361d0eadbef375a216413a0106e172d46370f5fc91c33afb1c479baae",
+    "decision:parent-reasserted:2f7fcee33279111d5c237237": "0abc47aba2dc90af6d63ef5e5229063925ff5364829a6816c69305b9a73c1f71",
+    "decision:parent-reasserted:9251a8e8683a21bf76d6a3d1": "5e62b3ac30f388618990c7d2f7c297c6d1e6539c9110fdffee361b0ebd517745",
+    "decision:parent-reasserted:b5b3988a51058e6394b4fffc": "0be8cf90eaa638d884962fa666ba538eee56f5e0d554170e7b5aebcee617a946",
+    "decision:parent-reasserted:16d3dc951b4fd6f00de96254": "279c632ca5ecea90ae85ccfbffccd1e4e0a49d9222b026b2e78bb83e90705908",
+    "decision:parent-reasserted:7bd1a120207a0a19fe9bf075": "bb0083e65e127cb28a478ad809774b3be2084742ddd53d49e5095dc0c210a8c3",
+    "decision:parent-reasserted:6b8466d9bc24e6e2b7acb59e": "c67de20e1650b17995e049cc998ba057ed71f916a201d167a5cc55b4bd335572"
+  },
+  "newPrimaryReading": false,
+  "sourceRolesHomesAliasesAdded": false
+}

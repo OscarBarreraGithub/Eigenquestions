@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "q025-placement-tail-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 4,
+  "missingTailCalls": 2,
+  "independentChallenges": 2,
+  "lockedPlacementRows": 62,
+  "initialConcurrency": 2,
+  "maxAuthorizedConcurrency": 2,
+  "sourceOnly": true,
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "maximumResponseCharacters": 120000,
+  "maxAssembledPriorCharacters": 183373,
+  "maxConservativeContextEstimateTokens": 161481,
+  "dispatchGuardTokens": 220000,
+  "nativeLaunches": 0,
+  "scientificAdmission": false,
+  "tests": {
+    "python": 8,
+    "node": 7,
+    "requestVerification": 4
+  },
+  "scientificPolicyReview": "Evaluation owner read both TAIL-INSTRUCTIONS and full adapter, approved exact locked-prefix preservation and independent challenge with no scientific changes.",
+  "campaignSha256": "521e591bbdd748f6af6617b73f3d9b6f9d4a291e786b6a7dfd2ef0f7fde9c143",
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/README.md",
+      "bytes": 3140,
+      "sha256": "976eacbfba81ab58c21e68978a24febf5b9416992db2d1b9adcd0fedcd9a059d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/INSTRUCTIONS.md",
+      "bytes": 5399,
+      "sha256": "4443f67815cf96dca9c20b73020ce222ce77d638adbd8dc2afb27ec054246fab"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/TAIL-INSTRUCTIONS.md",
+      "bytes": 1915,
+      "sha256": "cc0e215a5ac38b5cc469e64ac7c5617409e72d416a61fbf96b7085efa6475d0d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/contract.py",
+      "bytes": 4556,
+      "sha256": "2b987cc15e879dced34b4a5b36da59b97f29267a7c2add947ec3a4893dab7053"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/materialize.py",
+      "bytes": 3474,
+      "sha256": "fc1f519e78a62e032efb18eb0f549b6d7fd33e6ec7c73f9b93297208a261a1e9"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/prepare.py",
+      "bytes": 3443,
+      "sha256": "2f5e8b90353abcc57416cb72c6c011319180002f5eac8925b260c080bab232a6"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/preflight.py",
+      "bytes": 2514,
+      "sha256": "65b818310e35c0a9aecaa2fd2ed2da2b966094f2c32b7118478e05dde8a16cd0"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/runner.mjs",
+      "bytes": 25363,
+      "sha256": "b8829cddf98ee544799fdb3ff5c8a2a5c143e8e448d6e509732d257b799087fc"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/runner.test.mjs",
+      "bytes": 3924,
+      "sha256": "2c01ad83cfd81f6d8508f7394a92250fdd0bbba0d4df805feca5b630949e9b1c"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/test_contract.py",
+      "bytes": 3993,
+      "sha256": "559a66f96e2111c15e400dbca9f499ec18ed74206bdc41878b39702cca8e7008"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/manifest.json",
+      "bytes": 26935,
+      "sha256": "33acecdb65c07a4952009fc0a1efc456667fd687250d098abb4cea85ed2eba3b"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/locked-prefix-audit.json",
+      "bytes": 1044,
+      "sha256": "c06bc3fdf90e6bf927c96aa8d3b25d41c435b417130b9f7075062b4309b3a1d3"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/preflight.json",
+      "bytes": 1057,
+      "sha256": "5d973209952a7778dadc080bf5890e975f6d20e9ce4ab277e23b99aa92f7ace3"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-tail-recovery-v1/verification.json",
+      "bytes": 372,
+      "sha256": "9e52984187ce137ba9796983dfb090c22c3296645696ac90e73125c6a30a232d"
+    }
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/placement-tail-recovery-v1/runner.mjs --run --enable",
+  "requirements": [
+    "Reserve two slots within combined48; e.g. placement30 + orientation16 + tail2.",
+    "Original failed jobs and all running campaign inputs remain unchanged.",
+    "No automatic retry or scientific admission."
+  ]
+}

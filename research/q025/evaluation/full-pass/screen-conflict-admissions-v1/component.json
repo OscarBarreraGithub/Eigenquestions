@@ -1,0 +1,2868 @@
+{
+  "schemaVersion": "q025-screen-conflict-admitted-successor/1",
+  "destinations": [
+    {
+      "id": "q025-candidate-region:9454e2dc275dec5e822bba03",
+      "kind": "region",
+      "title": "Charged black holes: retention, discharge and extremality",
+      "question": "How do charge carriers, gravitational dynamics and thermodynamics govern black-hole charge retention, discharge and extremal limits, and what spectrum or consistency conditions are proposed from them?",
+      "summary": "The original numerical set mixes physical processes, conjectural requirements, consistency tests, methods and applications. No original prose scope was supplied for independent textual assessment. This proposed organization preserves those differences while retaining ordinary and pre-Swampland work.",
+      "scope": {
+        "systems": [
+          "Black holes carrying continuous, discrete or otherwise specified conserved charges",
+          "Charged matter, scalar fields and proposed light towers",
+          "Asymptotically flat, de Sitter and anti-de Sitter settings where explicitly identified",
+          "Charged branes as a stated extension"
+        ],
+        "targets": [
+          "Charge storage and return",
+          "Discharge kinematics, rates and lifetimes",
+          "Extremality, entropy consistency and overcharging",
+          "Related horizon thermodynamics, forces, field excursions and cosmological applications"
+        ],
+        "regimes": [
+          "Extremal, near-extremal and nonextremal regimes remain distinct",
+          "Classical, semiclassical, perturbative EFT and strong quantum-fluctuation treatments remain distinct"
+        ],
+        "assumptions": [
+          "Universal discharge, remnant avoidance, cosmic censorship and distance conjectures are source-specific hypotheses or questions",
+          "Kinematic permission does not establish a nonzero decay rate or a short lifetime"
+        ],
+        "conventions": [
+          "Retain source-specific charge metrics, mass definitions, saturation conditions and normalization ambiguities"
+        ],
+        "includes": [
+          "Conventional charged-field and evaporation calculations",
+          "Explicitly labeled neighboring questions with independent targets"
+        ],
+        "excludes": [
+          "Treating numerical proximity as scientific equivalence",
+          "Treating all charged black holes as necessarily unstable",
+          "Singlet portal model building and white-hole dynamics as core black-hole-discharge questions"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 58,
+        "excerptCheckedCount": 10,
+        "readingLimit": "Descriptions, bounded supplied excerpts and labeled source-object context only. No full-paper, image, numerical or current-status verification was performed.",
+        "sourceReadingScope": "Exact paired representatives and bounded historical excerpts; coordinator read the complete scope and inherited assessment, not the primary papers anew."
+      },
+      "evidenceIds": [
+        "unit:0d6e960e72bca88185dda6b524682a894dd2fbdcef7130c4a65006db9cb6663f",
+        "unit:143d93388147d279b650be4b61634a1631aa2be664cfb3aa810025ca8e3984f7",
+        "unit:1834f4b5e0ec8ae541bf2af110d283008c3197872ea91eb59958386dca077eb9",
+        "unit:1a4b6b75844cc50b4421f0f0c2c54e836c240836e86362590c4cc2c89e5f268b",
+        "unit:1ad7e1448faa2822223e5bfa33c744c6a2076e14289fbd244e85c213fb578476",
+        "unit:2072546c33c7beab8e62e690504370dc9e8cb749bd0ea68b412c643706ca940e",
+        "unit:265f636e5b8c4af14debd6b2cbec78178e9b65f33cdcae183e62dc36da13766e",
+        "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+        "unit:3120acdf8712ea2a085f4f7fc5b0aadcb5dec534e94228d84eaf4cd44bd31c61",
+        "unit:3c8e3edc0617fdf6f99991a291884bf52d86a543efbc494ebb93486c824d470c",
+        "unit:44a1ca5f443bbf0d189876dfc9dc435b49c7bf3732a0bfc7b5a43ec242884d03",
+        "unit:47f20c13555b6a24e036eb69dac9e33374893a5dd73e32257e2e2d23a39ca6c6",
+        "unit:48d159e6ec1b6e90f62ea33493ecc393688701e840a04f196b4fe7ed0fe76373",
+        "unit:49f038a6240393ef3562478a459444ca77c77d934ad799f75e4708cb5e957cab",
+        "unit:4c32bdfa28be69aa88fae99dfa39e46313efca7eb0a52a634655680b45e567b0",
+        "unit:52e3584c514ebebe470005d57fd1e9beb298f6e6b66be25969930ceb01d253a1",
+        "unit:530da9a14202edd3f640458385ba13f8bb5818132ec972130e5836d253d4a239",
+        "unit:565b7ff08372b2e5678b6addd4274268ae7a4773323149e8b064129b9013008c",
+        "unit:5875ad92d475ee3b8193c14295d78bcbb755ff270ad9cde807dc5d0c2a130957",
+        "unit:5eb7269d133bcc124e5f2978561dfaf43be90ea823d6a8ac7c5284bc5b02f9d4",
+        "unit:60176c056a981821ae51ac8415d8413e091f389281336bf6b558de555075ac93",
+        "unit:628ddeb6d1147c1586be4269d21e3008f4cee6841751649478a2383137fba1ae",
+        "unit:62b0fc57ba710c6a81d38c5fa4efe1e4bd57e1d8d6d3c04802355eb9d68fca00",
+        "unit:677b609b049f341afd42fb330c4de6b855d17323c43de47a19079f48a18aa4c3",
+        "unit:68b2460dbd5e441bfa56c8a9dfb9ce0ee2a84d74f21591cdc3ecd5e4763aa332",
+        "unit:6c60987ceda9c57485fc5104c2484ef87a196893d0ae66d1fff69c54e03d98fd",
+        "unit:6df39bcb6b52192e783e45e332d170619d74452ddfa32f036f52c1457ca2c8e1",
+        "unit:6fe9b12c0029cb6df18bcb3e8b769d27239e24bb1a599c4ff136a4a671b34ea5",
+        "unit:721996feece6b9126b562fae0456d931908b41d1caff084c2532a2f90d0c7537",
+        "unit:721e755cfa00e72412262ca696dee1be27d2f117b5661c9f9e4b68db0e9d322e",
+        "unit:72adc931d1154a2532da4df175555681ba6f4398e90b9d459a0751c90029c4cf",
+        "unit:72bbb8d97766ebab58410a0c0b1cea282137820056cabaf3c12c763d7b5ac8c3",
+        "unit:7df1c85da845450c9716b165c05aa684929f21e5fec2536297b438c8c216a6b1",
+        "unit:8223ed8ebb386b7371b4da04d99a06fbb6fd076fca118d4bbd5ea3b42f9d4d20",
+        "unit:82a99483cb65e6f9ef40b859c9cdc8503d00d8230cdc5641a19c3b1bccfd7bb0",
+        "unit:8f15f6385386378b356ad6e3313e4da862585485372f2311c4a2e2ac92ffe4ab",
+        "unit:95609cc4e7bb836fab3f8d5763087c674eec09ef7452e10e98b4254798c27011",
+        "unit:99e6cb62f73ec8c5d20696492e826550b8b8310f6460ee4effff2a9f77e4a3ea",
+        "unit:a031fc2d256129f061136749fbade74e97986eb3eabacbcc514bfc8b00ed4a46",
+        "unit:a5d8b5b4b53946f24f3b04fecbfcdc0a8caf1b001f97da321d8e15a33638657e",
+        "unit:a727b64eab87223cc4d4ac4151fdddb01bfa16692c58e7b096151cda1be54fdf",
+        "unit:aa187c3dd3581f687242bc9e00d3c89aba683ff9177b0014ae3df06a6b1eace8",
+        "unit:aab79ee6f2a343e96318f32a41936dd346556077c12d2c3927112d255ad8b3de",
+        "unit:aec57e70b80e9bdc7e512dbde8ef185526f6c385bca773378758644114e61b3d",
+        "unit:afcb4402d62a090a6e6dcaf9aceb57af1da8a5526c38f6e16bbc43044f580997",
+        "unit:b1e385cc48b784981ee54d5147073e605f6f8b58bced0582512d2ddbdebd158a",
+        "unit:b3b0f8f1f4818b59a2950deea42af23fd0ec4532d6d475ba3c37dae542d64c30",
+        "unit:b595bc30dfbeb3610478f1f561421de0c24500efb36e372387a9357cedae59e5",
+        "unit:b60bdb72c08ffc5ad3d28ff091ddc05bcc76edf0c54e64ea1e5dbb4277b5b7e3",
+        "unit:b8eeb04259e98f50dddd3f2b07a0adf79cb2d75e0d24509dc3d4649af2eae94e",
+        "unit:c1bad2ece74ad8f47e53e931f6a5cfca1ac211dc1c368843e46be3d629665b2f",
+        "unit:c392c2786cf154d281bc04b2155bb1493eef379545d168bc8322bfb97b56c934",
+        "unit:c7ba1a37fc98ee63474d7ae2e0ce4f894585426dada668e990ef6e1f75c01fdb",
+        "unit:d8413d25e3c4b1bb2699f405d7a0f9de45b24b6b5003944fa1bc83b0f59e9538",
+        "unit:e3bab4a9180ade0203f4e0a68a6acdf8868aaa8e6eea84e3b8dd9810bee72e17",
+        "unit:ebe88f5466f4479a35649d43d9643c65bdcc0e36cab1fd4c7450032da8680838",
+        "unit:f310cc62291d0ad9f437d30c8ec3785fc47aca44dde7189d98d5912091cc6017",
+        "unit:f5bcdc4630739e02c9d07476a826ec968a003aaf31d015e207f051b7b925d757"
+      ],
+      "methods": [],
+      "aliases": [],
+      "scopeDecisionId": "decision:screen-conflict-scope:9454e2dc275dec5e822bba03",
+      "provenance": {
+        "recordId": "leaf-1b3b48ae03dbe168d677-challenge:r",
+        "reviewIds": [
+          "leaf-1b3b48ae03dbe168d677-proposal",
+          "leaf-1b3b48ae03dbe168d677-challenge"
+        ],
+        "originalIndependentAssessment": {
+          "id": "r",
+          "decision": "supported_with_limits",
+          "scopeChange": "same",
+          "replacement": "",
+          "note": "Retain the exact prior region. Numerical membership alone does not establish a common mechanism, premise or question. Its explicit neighboring scopes and alternate homes make the family usable; it is not a universal discharge principle.",
+          "refs": [
+            "d0",
+            "d4",
+            "d6",
+            "d13",
+            "d25",
+            "d34",
+            "d42",
+            "e2",
+            "e4",
+            "e8",
+            "e20"
+          ]
+        },
+        "originalReadingLimit": "Descriptions, bounded supplied excerpts and labeled source-object context only. This region and its cards are new proposals requiring later independent review; no full-paper, image, numerical or current-status verification was performed.",
+        "admissionBasis": "explicit_root_navigation_scope_adjudication",
+        "scopeScientificDefinitionUnchanged": true,
+        "noUniversalDischargePrinciple": true,
+        "noNewSourceOrDescendantAdmission": true
+      },
+      "scopeContentSha256": "e147fd943566a01846df6e2e28486396bc2dc277cdac113953b8e44d5a8d8365"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:screen-conflict:n4794",
+      "source": "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+      "target": "q025-candidate-region:5f91a1accabb39a167183aaa",
+      "type": "comparison",
+      "title": "Weak gravity, black-hole bounds and neighboring diagnostics",
+      "rationale": "Compare light-field cloud signals with conditional weak-gravity diagnostics.",
+      "qualification": "Cloud signals or spin constraints do not by themselves test the charged spectrum of a specified weak-gravity formulation. Shared methods and conditional applications remain nominations, not admitted scientific claims.",
+      "evidenceIds": [
+        "unit:0117a9cf3f76cc8d96d54767bed479ad69e7ca2f0a2489c0bba309109c13e946",
+        "unit:0420386896116997f9d93c655a9a0fb3b27bbb2a274ad18abef8bc4c3dc3fe0d",
+        "unit:1213e00a2683350694097421a39bff85087934d8a6c8c8b5432c50a5334506e8",
+        "unit:17bdc8a426ac6b6b065b7e1cb157370aeed8a77c52758b49a6330e9def3cfb56",
+        "unit:1a53d58f3915072098c87122a494b17aa46de6f14fdbd2c0cc9a70184483bdb0",
+        "unit:1e0b62fef6d88368f14aa9f84041a33d5f8b936c7b9e126d935c8f502e4d1e44",
+        "unit:2294e2535ad9cbcc8a710083374c23fa24e5d7dae4413c76901664d015c9c527",
+        "unit:250f00a77454639daab4d868b8fbf4201fb055c349e01ce92146b2043a656345",
+        "unit:25b08e923faccd30417be78d70b65751bff47f9afa89ec8cc12f21cdd11b6aba",
+        "unit:266c8804aef50dd02be675a0980896f44a5e8e4da543bb193d6c1ea373e907d8",
+        "unit:276adf2e98150b2c186a8579dcc80deb499b90809192a919238990efea0089d6",
+        "unit:2a2c060a46d220877bd5228dfda3f59b0a5a9e3b16caa1f41e43aa1a093298ad",
+        "unit:2b1b860fbdb83c7d8c55b6f81c97a2ced236f791c884a2daa85528579985b2f7",
+        "unit:2bdf6897d3ad965723709b3de07b4376f98a144c39d28a99e15696afa0673655",
+        "unit:2c57554bd891179447c68ade7c563016eb986b9f3a7fd71ae6e8448d2ca8a71b",
+        "unit:33795b828c5d509854c6ec3adce7eeee65ea986fb28dc301a1390891b2de3c71",
+        "unit:35a216e6c5501f63c4009a8bdc97b17298648c6a87de5530f62c4873a5aeb9db",
+        "unit:3ab86e61e8814610ec2787793b95ec264381823425e0b04d029bb9a3ca53ca59",
+        "unit:3ff699bc6587ebbe1237f6282e32360be69c5148170a34d55491650fe330050a",
+        "unit:4212b356374ee46c6eaae28709a8a879683f90f4691236e3c6073843250f65cc",
+        "unit:442450ed577c0ace11aed790b64aa09b9cb6701356ca17f277f10a0e54c9ca3b",
+        "unit:47f20c13555b6a24e036eb69dac9e33374893a5dd73e32257e2e2d23a39ca6c6",
+        "unit:4815ffb5b30606a1aa43bd5d25b7609dc8685ddec78bd8b43a2fbd6229321a99",
+        "unit:4a8b876bcba99634b4c95779f37fa0547a65d27c6bbf4010a534aafe14bed149",
+        "unit:4bea2236adce2a83cf3c451f430db2b31ccbb60826ec94caf64e9a0ca2613854",
+        "unit:4e2cab08e7f0df6be0448a25a839294e700e472b95d20785a81b881d554b05f1",
+        "unit:4e8aff51cfadc15ced0de3baa6d5794543d998151b82590318c26746e7a80cfb",
+        "unit:50ae26e7178dc7c8152a1eb463d1a62ab05d5fe5152cfa680c672feab1c5408a",
+        "unit:5107683aa5078cfb208f0295f4a0d5c5399428d73b3e61aa6838241082db58de",
+        "unit:5188ce81d62d67277a73c7069ddfd7c21b6038edf540a0a0f0c7eb3bc7f0da31",
+        "unit:533b87e308dfdcfc3a347bf4efed71607bebe1c1b14e945d4c4bf5b27190c9fc",
+        "unit:57efaacada3863df7e123e58e578da23f20a5e64026a365781eb3ad5232b873d",
+        "unit:59ac709063854ee50babdf7c25b724f03fbcf7aa288fc732235c6ecbedcd97dd",
+        "unit:6254a0d609b810a26b3a951611cd0ad87c34c5ed96e5cab7a245ac3e6a38b94c",
+        "unit:62b40ad157d793c9cc78f21fa8d1d19ae7adab53275014bd7e8a60c51b0b2171",
+        "unit:63eaf4c1dd6b6aa06f6e83ceed9c4254299f6278e0ca399a33dc39fa2898ea1d",
+        "unit:69ab822f9ef72c6e77724c7e855a82a64f800d947b2c9bd535fa649d760447bc",
+        "unit:6b80cef545935f21b527b5ceeb703dafa0329cb3b10cadfe77a906ff93929c8c",
+        "unit:7509711d28ea068af122a682e1a69d0f317098085664dc2a7929fb6c9f62e68f",
+        "unit:753eb80972aeb4eef8bed36c3cb2d5095c7adbe4b7dcf803204ab2b1475b8eba",
+        "unit:78f8c006ee532a8f2f71ede7991935e6ff0cb89fa0bd684233b37250ad31efaf",
+        "unit:7eab9a098f85c6a0b7562d4142c361bcaf441b882f40d53761b48e1cb315dc17",
+        "unit:8ae09dace2d4af58ff11886bc22142df89fcfa8ed88ab3af85e43b27273d84cb",
+        "unit:8c95002112050360fd76dd930e1e653b08a02969e99c77000bf3c6d1a9032505",
+        "unit:9191adcddf262538f4a5c2f8acf3f1530bceb4b4c1276da25cf3d50b8e566fe5",
+        "unit:94794b970e2c6ee6f19e94eefdc28cc8ff8f029cb53bf01ebd46e00bb64e8ff4",
+        "unit:9f82c7e6ecaccd2d0c5e41eb0688af2055cabd987e8e27800b862e41a8704433",
+        "unit:a2166410499a2bef7c018bf486d7539e60be7b0619b4bffd63e6fb544c597dc0",
+        "unit:a241ceeb60f8ce44b604d840e35480933137033c69cba89afcb21797c8fce2c7",
+        "unit:a3529ebf11deefb232a45e387c3826c342bf9168ed78b2093e2ae96feb51fb79",
+        "unit:a3df2663033601cc3412d9f5a1ad0f07255ce84ed88f69bcef1921cf237a2a3d",
+        "unit:b29e943f46599a933462f1a4d376e1ef14b2f6708aac265ad11131c6b8790d62",
+        "unit:b302e962d78c38c66e4c7b6b748fceb724c9457299310651bfa90dc64ce4190a",
+        "unit:b502c3d7a4c574777a3aff1ab878a16ee135a693de189664b41c0189004c3659",
+        "unit:be3c6edb12ec861b9845aca564c31c0ac1bfce92770620a25ca7b058cc7906bc",
+        "unit:c21c27956bcaf785e9e22220849c3b2ef508a04eee76456f52b4199d0422b106",
+        "unit:c53fe0cb63661e4735a97407619f188f8e9d897c8a059f35f5ecead70e743130",
+        "unit:c542faa4b1b9322025c6645622489f285cf811fad163096d8a2ce58e2ff47fb6",
+        "unit:c6214d47eef85c8576b1d85fbb1ce2a25ab523cd0429710e3a182400ba1c2397",
+        "unit:c6563221c2c1dca457447c30242889f9167ce8b510d99c43cf82a1f86f103018",
+        "unit:c968f06d50228fe212cb7e45816b7f35e3444357e758e2832990902058a57ac6",
+        "unit:cc67b01b92cc0c69e48900ed71b3aa6a7e229bcdd620425ee89d7f7a1ffa12e1",
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+        "unit:cf77a2f729303877f62ebf6a57f2e63cfa0a7f89da85b8e9a0f155568982b217",
+        "unit:d06b2c47e3f97274183d8bda455ea3fa831af1448dca3d2c9f8882b42c598930",
+        "unit:d22c24711af895746971fbd84b326f858447ea7119bfe47f18062cd62b0d3901",
+        "unit:dc31b1e4e5ac9c0d62ed98a3a4d88240c5c55f56653e92e52d59c32647cfbc65",
+        "unit:e5217d6bfd5a06bb7a32126b865514eacd2c783cfccf3c2e79aaa94240038adb",
+        "unit:e722ad5b450f745a3b93641c4229c3d871bdac170eb7dc52217d33a0a1c6b264",
+        "unit:e7a65f8d645fbdd101fa0033714297e9cb79a940dacd4ffc3e645c1f498dd6ad",
+        "unit:ea2129ac6e7dfd542549a7202edfba610e6440b0b5f7335908058d5f5ce19294",
+        "unit:ecf9f9b202f60b0c0ca316429727217b4caf4f64191a741564d505447c9ccb97",
+        "unit:ef3d845a857d7254b7c1aecfbe4be69bc2c547574efd300ab012ca5b8b78c32d",
+        "unit:efb3e8a7ab876f220ebbeb63b3c90d95796d05249052b7f51c30295b4ba0f7f6",
+        "unit:fd43742ca58f46da5f51bf854f14e8cbd18802b75920ca2975df42affd04e2b5"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+          "scopeContentSha256": "c27e7c690d53caa33e3da863b071c125439ece276a7a296d2a3538f6632d34c1",
+          "definitionSha256": "d37fd1e504a663720694648db8f1bd1b458e9473bcd26eca3358d54b9d26e7d8"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:5f91a1accabb39a167183aaa",
+          "scopeContentSha256": "545e7e7627a7e9d8266d887e83425d4902da19d72bef776cd3488b61936df845",
+          "definitionSha256": "f9841731decea0afacdb241d368004b615fbaddc02f68ea350cfd6cc82a59752"
+        }
+      ],
+      "decisionId": "decision:screen-conflict:n4794",
+      "provenance": {
+        "screenNominationId": "n4794",
+        "variantRef": "attempt1:comparisonReviews:n4794",
+        "readingBasis": "coordinator_complete_definition_review",
+        "freshPrimaryReading": false,
+        "pairedPerUnitNotesReadForThisDecision": false,
+        "pairedLinkVerdict": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "originalSelectedScreen": {
+          "ref": "n4794",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "shared_method",
+            "conditional_application",
+            "comparison"
+          ],
+          "basis": "scope_definition",
+          "priority": "definition_decision_candidate",
+          "definingDifferences": [
+            "c1183 centers cloud dynamics and light-field signals; c1577 centers conditional weak-gravity diagnostics.",
+            "Spin or gravitational-wave boson constraints do not automatically constrain the charged spectrum required by a WGC formulation."
+          ],
+          "reason": "The target change is explicit. Spectral or relaxation methods could connect selected questions after matching field charges, backgrounds and assumptions; superradiance membership alone supplies no WGC implication.",
+          "refs": [
+            "c1183",
+            "c1577"
+          ]
+        },
+        "originalAlternateScreen": {
+          "ref": "n4794",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "shared_method",
+            "conditional_application"
+          ],
+          "basis": "scope_definition",
+          "priority": "definition_decision_candidate",
+          "definingDifferences": [
+            "c1183 targets light-field clouds and their signals; c1577 targets conditional weak-gravity constraints and neighboring diagnostics.",
+            "Boson spin or gravitational-wave constraints need not concern a charged-particle spectrum."
+          ],
+          "reason": "The definitions distinguish observational cloud questions from weak-gravity tests. Spectral or relaxation methods could connect them only after checking field charges, background, growth assumptions and the proposed conjectural implication.",
+          "refs": [
+            "c1183",
+            "c1577"
+          ]
+        },
+        "originalConflictAssessment": {
+          "variantRef": "attempt1:comparisonReviews:n4794",
+          "judgment": "material_conflict",
+          "definingDifferences": [
+            "The alternate removes comparison from scientificConnections, retaining only shared_method and conditional_application.",
+            "The different_scoped_targets identity judgment remains unchanged; the conflict concerns the explicit scientific connection."
+          ],
+          "reason": "Removing the comparison route changes a completed connection judgment. The distinct cloud-probe and weak-gravity targets do not make comparison redundant with method reuse or conditional application. Preserve the selected judgment and withhold the alternate for adjudication.",
+          "refs": [
+            "c1183",
+            "c1577"
+          ]
+        },
+        "historicalScopeAssessments": [
+          {
+            "ref": "c1183",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The numerical proposal alone establishes no scientific unity. The exact prior region is supported as a heterogeneous family with explicit neighboring routes. Alternate dispositions concern the narrower superradiance core, not eligibility for the broader family; ordinary and pre-Swampland questions remain eligible."
+            }
+          },
+          {
+            "ref": "c1577",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The original numerical selection does not establish a common physical predicate. The exact prior region is nevertheless supported as a broad navigation family because it preserves heterogeneous questions, conditional interpretations and alternate homes."
+            }
+          }
+        ],
+        "inputPins": {
+          "packet": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/packet.actual.json",
+            "sha256": "094c92872d86c9181fd92a2ad186f1b3eaf58960f48e9aaae93ac6ff631a4f79"
+          },
+          "reply": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/reply.json",
+            "sha256": "d73e23dbb3a237b7a97cf3e6481ca4b0a60f17846e3376f4ce70e3690615abd2"
+          },
+          "normalization": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/normalization.json",
+            "sha256": "fadc3eac22d691cb8dc68691e28deefad7af1d5facb0cb343d190404d931cb3e"
+          },
+          "receipt": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/receipt.json",
+            "sha256": "7b47f5fb14eb213908430c24a4ed96e5790793c5a508c2ddd0c67d801ab38e54"
+          }
+        },
+        "titleReadingDirection": "outgoing_only"
+      }
+    },
+    {
+      "id": "navigation:screen-conflict:n5103",
+      "source": "q025-candidate-region:9454e2dc275dec5e822bba03",
+      "target": "q025-candidate-region:0373a22d5bfba4144b34728b",
+      "type": "comparison",
+      "title": "Black-hole corrections, thermodynamics and adjoining structures",
+      "rationale": "Compare charge retention and discharge processes with corrected equilibrium and thermodynamic questions.",
+      "qualification": "Equilibrium or extremality corrections do not establish dynamical accessibility, a nonzero emission rate or a short lifetime. Matter sector, approximation and dynamics remain source-specific.",
+      "evidenceIds": [
+        "unit:0d6e960e72bca88185dda6b524682a894dd2fbdcef7130c4a65006db9cb6663f",
+        "unit:143d93388147d279b650be4b61634a1631aa2be664cfb3aa810025ca8e3984f7",
+        "unit:151822cebd530bc89ef31bc2293f2213b585ebef17202aaa220318cf5d97b739",
+        "unit:1834f4b5e0ec8ae541bf2af110d283008c3197872ea91eb59958386dca077eb9",
+        "unit:1877ac824b12f923a22b9a1410a474675bcab4fcc7fee2a93c55f9d96742d23a",
+        "unit:1a4b6b75844cc50b4421f0f0c2c54e836c240836e86362590c4cc2c89e5f268b",
+        "unit:1ad7e1448faa2822223e5bfa33c744c6a2076e14289fbd244e85c213fb578476",
+        "unit:1efd9f9c192ab47eb9d6b64ea349f9a6c0b2cf5d7672b12b7dafd61e379548a7",
+        "unit:2072546c33c7beab8e62e690504370dc9e8cb749bd0ea68b412c643706ca940e",
+        "unit:25e50cf0d0c93ce5a51d4da0f884796d5145450e7798d5c79585492c25c5a652",
+        "unit:265f636e5b8c4af14debd6b2cbec78178e9b65f33cdcae183e62dc36da13766e",
+        "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+        "unit:3120acdf8712ea2a085f4f7fc5b0aadcb5dec534e94228d84eaf4cd44bd31c61",
+        "unit:3517381b23ba2e7e6ed1783006dfe7e66e3769b21ebc122f0ff3369e7c59ea22",
+        "unit:3a270e0aeff8114e04b2252be47b23163f3375a232f890db0ae0c73850f08fe9",
+        "unit:3c106070bf074f6507e76f297d665fec11c195d39b6edf65e83ca0a5905723f8",
+        "unit:3c8e3edc0617fdf6f99991a291884bf52d86a543efbc494ebb93486c824d470c",
+        "unit:3f984b792760fc7c233a7b05279a99cf4c2f2a0d6c5c0a4530e3e38748dae8d3",
+        "unit:44a1ca5f443bbf0d189876dfc9dc435b49c7bf3732a0bfc7b5a43ec242884d03",
+        "unit:47f20c13555b6a24e036eb69dac9e33374893a5dd73e32257e2e2d23a39ca6c6",
+        "unit:48d159e6ec1b6e90f62ea33493ecc393688701e840a04f196b4fe7ed0fe76373",
+        "unit:49f038a6240393ef3562478a459444ca77c77d934ad799f75e4708cb5e957cab",
+        "unit:4c32bdfa28be69aa88fae99dfa39e46313efca7eb0a52a634655680b45e567b0",
+        "unit:4eed395343818bfba203c6fb50a1692618ec3ad5b5c9c362928a4cb25d471ef7",
+        "unit:52e3584c514ebebe470005d57fd1e9beb298f6e6b66be25969930ceb01d253a1",
+        "unit:530da9a14202edd3f640458385ba13f8bb5818132ec972130e5836d253d4a239",
+        "unit:5311dc99f3430f7032763d85160d29683df4356ea8bdf483093010dd804882fd",
+        "unit:55793d616bd78fdb5fd72de6dd8be224c096f26641468c99c8869dad9ea3126e",
+        "unit:565b7ff08372b2e5678b6addd4274268ae7a4773323149e8b064129b9013008c",
+        "unit:5875ad92d475ee3b8193c14295d78bcbb755ff270ad9cde807dc5d0c2a130957",
+        "unit:5c65d0cc3602f62da727f036ccdefaed1719e834b500725b75902f372f9d3e66",
+        "unit:5e772a318ef7be8c945f9d319d01674f0415ff74d9c34fc08b5bab13c69de57a",
+        "unit:5e8532e5d51877e6508933ce812aee19d40f5c30fc314fa643ab478e9470eb0a",
+        "unit:5ead4ae79a9f4c448d9f47daddc72047adc7d0385aa0c7a0aef9e117ce97a12c",
+        "unit:5eb7269d133bcc124e5f2978561dfaf43be90ea823d6a8ac7c5284bc5b02f9d4",
+        "unit:60176c056a981821ae51ac8415d8413e091f389281336bf6b558de555075ac93",
+        "unit:618c7476e9bd17d716b6730a0c83a5b14174deb00690e4bdd359630f74f131ed",
+        "unit:628ddeb6d1147c1586be4269d21e3008f4cee6841751649478a2383137fba1ae",
+        "unit:62b0fc57ba710c6a81d38c5fa4efe1e4bd57e1d8d6d3c04802355eb9d68fca00",
+        "unit:632375f47b6ebe7abe302950673fb2c489271d92fc2110cd14ac0990dcb709a5",
+        "unit:6686c0f595e92020810dcd791a1fc5ab5ee933267f487569b762fc37a24dbf96",
+        "unit:677b609b049f341afd42fb330c4de6b855d17323c43de47a19079f48a18aa4c3",
+        "unit:68b2460dbd5e441bfa56c8a9dfb9ce0ee2a84d74f21591cdc3ecd5e4763aa332",
+        "unit:6c60987ceda9c57485fc5104c2484ef87a196893d0ae66d1fff69c54e03d98fd",
+        "unit:6df39bcb6b52192e783e45e332d170619d74452ddfa32f036f52c1457ca2c8e1",
+        "unit:6fe9b12c0029cb6df18bcb3e8b769d27239e24bb1a599c4ff136a4a671b34ea5",
+        "unit:721996feece6b9126b562fae0456d931908b41d1caff084c2532a2f90d0c7537",
+        "unit:721e755cfa00e72412262ca696dee1be27d2f117b5661c9f9e4b68db0e9d322e",
+        "unit:72adc931d1154a2532da4df175555681ba6f4398e90b9d459a0751c90029c4cf",
+        "unit:72bbb8d97766ebab58410a0c0b1cea282137820056cabaf3c12c763d7b5ac8c3",
+        "unit:745f35375ebfb12aece3f15c491f2ecd90af4e669e1107e37754ca972cc5f180",
+        "unit:787534e2e35e019673c656715a983d3413316961ea455fd7e07a57627a3fe3dd",
+        "unit:7a51a318f853da645a4e7c073f452e8b31664afe3cf0f9fa153d19c330037177",
+        "unit:7df1c85da845450c9716b165c05aa684929f21e5fec2536297b438c8c216a6b1",
+        "unit:7f74ed53aa9e88488adf9350f6c34e4c409b716f24a0b2def99253e7842a7b56",
+        "unit:8223ed8ebb386b7371b4da04d99a06fbb6fd076fca118d4bbd5ea3b42f9d4d20",
+        "unit:82a99483cb65e6f9ef40b859c9cdc8503d00d8230cdc5641a19c3b1bccfd7bb0",
+        "unit:8f15f6385386378b356ad6e3313e4da862585485372f2311c4a2e2ac92ffe4ab",
+        "unit:95609cc4e7bb836fab3f8d5763087c674eec09ef7452e10e98b4254798c27011",
+        "unit:99e6cb62f73ec8c5d20696492e826550b8b8310f6460ee4effff2a9f77e4a3ea",
+        "unit:a031fc2d256129f061136749fbade74e97986eb3eabacbcc514bfc8b00ed4a46",
+        "unit:a5d8b5b4b53946f24f3b04fecbfcdc0a8caf1b001f97da321d8e15a33638657e",
+        "unit:a727b64eab87223cc4d4ac4151fdddb01bfa16692c58e7b096151cda1be54fdf",
+        "unit:aa187c3dd3581f687242bc9e00d3c89aba683ff9177b0014ae3df06a6b1eace8",
+        "unit:aab79ee6f2a343e96318f32a41936dd346556077c12d2c3927112d255ad8b3de",
+        "unit:accfe2a19c4fb08ce0eb7fdd83f5012cde08774653f070f81705669e75537fb6",
+        "unit:aec57e70b80e9bdc7e512dbde8ef185526f6c385bca773378758644114e61b3d",
+        "unit:afcb4402d62a090a6e6dcaf9aceb57af1da8a5526c38f6e16bbc43044f580997",
+        "unit:b1e385cc48b784981ee54d5147073e605f6f8b58bced0582512d2ddbdebd158a",
+        "unit:b35ae44c6ba74a9966e60b6bc994be69e207b51b2d01e515329ee1674f058fcd",
+        "unit:b3b0f8f1f4818b59a2950deea42af23fd0ec4532d6d475ba3c37dae542d64c30",
+        "unit:b5505445a85f89950ba6f38d799d36a1a46dac4f03dffa2e386a69b4c2895fb8",
+        "unit:b58a3ad71c793111d5d8d7025b3a3347bcf56652af65c3684c18af99e2480f56",
+        "unit:b595bc30dfbeb3610478f1f561421de0c24500efb36e372387a9357cedae59e5",
+        "unit:b60bdb72c08ffc5ad3d28ff091ddc05bcc76edf0c54e64ea1e5dbb4277b5b7e3",
+        "unit:b83d41617038331d16fae81216e62872b17f5b98219d20a94a085a90f61e26cb",
+        "unit:b8eeb04259e98f50dddd3f2b07a0adf79cb2d75e0d24509dc3d4649af2eae94e",
+        "unit:bb0076de91c75000347da475dde66347547beff9291ae679c16b5b82ddc329fe",
+        "unit:bb6e38375672c2460f470d98ff71dc7fab8eb1ac1065293d909e84faf63c58d7",
+        "unit:c1bad2ece74ad8f47e53e931f6a5cfca1ac211dc1c368843e46be3d629665b2f",
+        "unit:c392c2786cf154d281bc04b2155bb1493eef379545d168bc8322bfb97b56c934",
+        "unit:c7ba1a37fc98ee63474d7ae2e0ce4f894585426dada668e990ef6e1f75c01fdb",
+        "unit:d4362492b6339b25a09c8fe17e66561967023cb288122938666ca4ff4d8fb342",
+        "unit:d8413d25e3c4b1bb2699f405d7a0f9de45b24b6b5003944fa1bc83b0f59e9538",
+        "unit:daf87ad1bc9dfc6cf3bac84c3ba668ee1e75508787f5b6e0d0bada7ecc2f2052",
+        "unit:deb140f8a9d9eebacd7cd647cd5eda20c50b3319aac96e371ee35bee877f32e1",
+        "unit:e3bab4a9180ade0203f4e0a68a6acdf8868aaa8e6eea84e3b8dd9810bee72e17",
+        "unit:e59966e2a780d074cdfedf192144ac3d89a945343f15ab2340ac6dcf73d719c8",
+        "unit:e6e5d5c6881f6a1312249f0dd0e6a27b39b6f4c813374b8d7966db881c4e1409",
+        "unit:eb1997d2fb75c5bf865bea781a0327dc3e8bca4a01cd4d523428103d4c7c6c83",
+        "unit:ebe88f5466f4479a35649d43d9643c65bdcc0e36cab1fd4c7450032da8680838",
+        "unit:f27f3ad38a3e91b0411be91b0a858ea14ae312c4dbd914b70018f4fd15e3cfcc",
+        "unit:f310cc62291d0ad9f437d30c8ec3785fc47aca44dde7189d98d5912091cc6017",
+        "unit:f5bcdc4630739e02c9d07476a826ec968a003aaf31d015e207f051b7b925d757",
+        "unit:f9459fa6a0698d7fb5eb5597ac1d3f3adcd0dacbbe7f34945a11fbe510d58ebc",
+        "unit:fb1cc9efcd8034ac80f79c9ea04dd515ecea5e6333bb0a019cec796868c71d74",
+        "unit:ff6e5c9f362ef2405a4c290978ce050944e9987a99ee38ce1ae9521bb42b2327"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:9454e2dc275dec5e822bba03",
+          "scopeContentSha256": "e147fd943566a01846df6e2e28486396bc2dc277cdac113953b8e44d5a8d8365",
+          "definitionSha256": "fe5625a7c4232916a4dde2b6bf0a8ec1c023810d7d846b140be0039aabaafa44"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:0373a22d5bfba4144b34728b",
+          "scopeContentSha256": "a3a2579d115a1464f96eb7bb79e1cb85ffbd506856b1563c8355b3c516c8a5a0",
+          "definitionSha256": "61e5c1d2f0d960082115fff4bca5eb1cecae30752bc8d0de65be86b209d8b8c0"
+        }
+      ],
+      "decisionId": "decision:screen-conflict:n5103",
+      "provenance": {
+        "screenNominationId": "n5103",
+        "variantRef": "attempt1:comparisonReviews:n5103",
+        "readingBasis": "coordinator_complete_definition_review",
+        "freshPrimaryReading": false,
+        "pairedPerUnitNotesReadForThisDecision": false,
+        "pairedLinkVerdict": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "originalSelectedScreen": {
+          "ref": "n5103",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "conditional_application",
+            "comparison"
+          ],
+          "basis": "scope_definition",
+          "priority": "definition_decision_candidate",
+          "definingDifferences": [
+            "c1201 asks about charge processes and lifetimes; c1480 asks about corrected equilibria and thermodynamic calculations.",
+            "Zero-temperature equilibrium shifts do not establish dynamical accessibility or emission."
+          ],
+          "reason": "The definitions distinguish the targets. A corrected solution may supply input to a discharge calculation only with a specified matter sector, approximation and dynamical prescription.",
+          "refs": [
+            "c1201",
+            "c1480"
+          ]
+        },
+        "originalAlternateScreen": {
+          "ref": "n5103",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "conditional_application"
+          ],
+          "basis": "scope_definition",
+          "priority": "definition_decision_candidate",
+          "definingDifferences": [
+            "c1201 targets charge evolution and proposed spectrum conditions; c1480 targets corrected geometry and equilibrium thermodynamics.",
+            "Static corrected extremality and entropy do not determine a discharge timescale."
+          ],
+          "reason": "The definitions permit a changed-target decision. Corrected equilibria can be inputs to charge-evolution models only with compatible charge normalization, approximation and emission physics.",
+          "refs": [
+            "c1201",
+            "c1480"
+          ]
+        },
+        "originalConflictAssessment": {
+          "variantRef": "attempt1:comparisonReviews:n5103",
+          "judgment": "material_conflict",
+          "definingDifferences": [
+            "The alternate removes comparison from scientificConnections and retains only conditional_application.",
+            "The distinct process-versus-equilibrium identity judgment is unchanged."
+          ],
+          "reason": "The alternate withdraws an explicit comparison judgment even though both readings preserve the same conditional equilibrium-to-discharge application. This is a material connection change and remains withheld; the selected comparison is not replaced.",
+          "refs": [
+            "c1201",
+            "c1480"
+          ]
+        },
+        "historicalScopeAssessments": [
+          {
+            "ref": "c1201",
+            "priorReadingAssessment": {
+              "decision": "supported_with_limits",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "Retain the exact prior region. Numerical membership alone does not establish a common mechanism, premise or question. Its explicit neighboring scopes and alternate homes make the family usable; it is not a universal discharge principle."
+            }
+          },
+          {
+            "ref": "c1480",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The original scope already distinguishes a broad neighborhood from a single question and preserves alternate homes. The evidence supports that scope, but cannot validate the numerical partition, an exclusive boundary or shared physical premises."
+            }
+          }
+        ],
+        "inputPins": {
+          "packet": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/packet.actual.json",
+            "sha256": "094c92872d86c9181fd92a2ad186f1b3eaf58960f48e9aaae93ac6ff631a4f79"
+          },
+          "reply": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/reply.json",
+            "sha256": "d73e23dbb3a237b7a97cf3e6481ca4b0a60f17846e3376f4ce70e3690615abd2"
+          },
+          "normalization": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/normalization.json",
+            "sha256": "fadc3eac22d691cb8dc68691e28deefad7af1d5facb0cb343d190404d931cb3e"
+          },
+          "receipt": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/receipt.json",
+            "sha256": "7b47f5fb14eb213908430c24a4ed96e5790793c5a508c2ddd0c67d801ab38e54"
+          }
+        },
+        "titleReadingDirection": "outgoing_only"
+      }
+    },
+    {
+      "id": "navigation:screen-conflict:n5953",
+      "source": "q025-candidate-region:1b676e04cbd94e2caf104916",
+      "target": "q025-candidate-region:9cc6623edc9d8c83bc264832",
+      "type": "comparison",
+      "title": "Black-hole spectra, classical response and extremality",
+      "rationale": "Compare thermodynamic entropy–extremality responses with spectra, damping and classical response.",
+      "qualification": "Thermodynamic variables, mode labels and time normalizations remain distinct. No family-wide relaxation prerequisite or universal entropy-to-mode relation is admitted.",
+      "evidenceIds": [
+        "unit:054a3aaa4e3655b7ef0555bfba63a5cd29ea65e6b526ee56432bc2fcf85fb217",
+        "unit:05cd4f24969a052c34c8179054503d486871b3aed4b1e1a358d1eb5d420df862",
+        "unit:0702b8a1df85cd2f038bbf2cb02964037dd5c07a76a319b8f3fc3068e4beb9dc",
+        "unit:09b1d263ea0af87c59b8c615e1c5b7fba1883f740987a48a0df536be7390498c",
+        "unit:0b54fd0f5f3814f2dfffd0c39c24992549b88467d27d245c5a1710aef6be0409",
+        "unit:0f3f7ba9a79195a39e0ff616b7a71ead79494c7eec1ade776956b1782aab311a",
+        "unit:13e2b7935927f018ba049a3bf0464f3e0cbaac9f97924169e07217318918aa2f",
+        "unit:1b8e3370fa7859f2ec7f276df2829f99d5e3d778d3e3f3396691a06ea2253548",
+        "unit:1c6d9de4bce931fdd7703796693240c867e543d658214a42846ae5b2f411ce61",
+        "unit:2b3919215dc1fca229981ae3e7b23c3934cb596808b4edc4a419fc5185b8abaf",
+        "unit:2cffb9faa09377ebdb32ba5c63683b146eb96e11aeb144b60b3ac3fc4bd423ae",
+        "unit:316b6aba761439e7ba6e17cf62f24d43ea17ff33e0023bf9773e840882d386ba",
+        "unit:33c0d814c0b006cb08912b3f8bebb7b3656b611be8ea7d2b001ea9098c40936d",
+        "unit:3947265a02602d4ead1f5677bb7f9cf93b83dd37f3af973db538c2343acfe91a",
+        "unit:3c6fe1a3fbb93d537c10542256e163cc61ec0d243746307a6a6053def1ad0966",
+        "unit:43527b6acc9949962f85a2cb17ce8564be00d0dc88fcfe207376f9f97b0abc53",
+        "unit:455807e282f0deb83d24bab745c7579007c06b300820d3b13a54d19b168a9543",
+        "unit:4937f4fa356cf3c51cbb209dfaa28b355c1a4416025532245377d7f61c6dbb60",
+        "unit:4bea2236adce2a83cf3c451f430db2b31ccbb60826ec94caf64e9a0ca2613854",
+        "unit:4f0d1fc376ea4ae4f6e4db123c48391a5a9dd5cb1e02ee44f763cb5d8973334c",
+        "unit:5783724fc808522c2af61b13b75cf4729a590d52ffb40088d43573abb197d4c6",
+        "unit:57a7a2acf4ccbf7274c833c50127cdbf73951f3ee6f2fcc4e268829fb231e490",
+        "unit:61c8e0b22962446471f9a1fd2596a8c42b4f9d2f8adbb0365a087b2487dc82ea",
+        "unit:6c9b99404221e9a3f9f6a31fd5345f7e6f40f9cdfe0fc8bc88457e067defde70",
+        "unit:746648263d181074a402dd7e7b541e73c68a2669b150300a24df9fe061f4db9d",
+        "unit:753eb80972aeb4eef8bed36c3cb2d5095c7adbe4b7dcf803204ab2b1475b8eba",
+        "unit:7bf4bd3a8935302c15057334958e89cdfed7cf4a5930f6a2ba758513eec88130",
+        "unit:8645df96e1d5a104c77d9fd0bdb5a08073bfedec34d3951354a6e84eedbcadb4",
+        "unit:86f7b3a864a3e0c9e09f00890cabd3db247b8fa0247fdec394f405ab7ad2a123",
+        "unit:88df84f42743eece8af1fa6e459123a00c600f2576ea257b282fa55b0c00f028",
+        "unit:9a8af3668541b2fe297df0e6b321c5a00f6bf829c6daac0c9c5116444be5642b",
+        "unit:b32f2bfc3e7e02031176bc3b4f7bd584734d74365f81b2b3656c004990e5bb02",
+        "unit:b5505445a85f89950ba6f38d799d36a1a46dac4f03dffa2e386a69b4c2895fb8",
+        "unit:b97e6a826ab6cdc44a171bf65cccd053ec7f897a2bdb522ae8e185dbc5b08693",
+        "unit:bafc4b56732941e2a932db04d2397cd6650889120d1309550cb23ff4059e06f8",
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+        "unit:d39ec96e47b495cb46c0adbd42b4804910fdc2511938c586a37113fbf9da13ef",
+        "unit:d3f5b55db4a44f1242a1e7d55aa8537cef7c92ac8fdf3ab106110092aee93643",
+        "unit:d7329c96948bb1c45bad844bb1e9569b94ff66c1afd943be70e980acc24a4f2d",
+        "unit:d8efc3c113d9682ae66c3f4f2a4291e4ae73e03ca649880fde809a5da49d2d12",
+        "unit:da3b42fb5f4247edfd1bd072b8701216486945905a8766c825f60e221ca0ce61",
+        "unit:df55ebc8a474485011f53ee5b3441b949228d4863fe885a7baea3ea4b38b809a",
+        "unit:e65f0f92d80d7795671289baaa75914a7f57286a542b6231f2c5245d5322f92e",
+        "unit:e8031fc404e3674cecf9260727208dd068349f5eaed7ca729a465c859af2255b",
+        "unit:f2107ba4391515831703f47d5d2f16773f60be9737f4c55764ce5ceeb6fd5603",
+        "unit:f95d9b3737fce20c95c6061f117c58dd0a1291c50c409ba305b980cd11933d97",
+        "unit:fad110e33ac2d5f343c53205a222cd4554d93b78d0d090e9aab6a174e51dfc34",
+        "unit:fbc21f1bbe6b9d93460c81b998bfdeec6d15061b26c6abe7a25b081bb1691970",
+        "unit:fc9c1cda908566f5795739de21dabe0301edc2180530d8e6e8ff42a8212b6836"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:1b676e04cbd94e2caf104916",
+          "scopeContentSha256": "01d0bfe6c2911b558a4743ba8c0d38de189dd724a13f75fd9607dc42078f87bd",
+          "definitionSha256": "2b7db5cf6f07f00716368ea4db887625888381c8d6c49864beadaa3aa91ae3f1"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:9cc6623edc9d8c83bc264832",
+          "scopeContentSha256": "db10961658d1435226a720a302a772a7824b36d2e61e2be786e0c17da8ee575f",
+          "definitionSha256": "9da9fe5cbe8ba418aaefab2fcd2bc5f201e09e402968a7dae11337ec7c27fd7c"
+        }
+      ],
+      "decisionId": "decision:screen-conflict:n5953",
+      "provenance": {
+        "screenNominationId": "n5953",
+        "variantRef": "attempt1:comparisonReviews:n5953",
+        "readingBasis": "coordinator_complete_definition_review",
+        "freshPrimaryReading": false,
+        "pairedPerUnitNotesReadForThisDecision": false,
+        "pairedLinkVerdict": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "originalSelectedScreen": {
+          "ref": "n5953",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "conditional_application",
+            "comparison"
+          ],
+          "basis": "scope_definition",
+          "priority": "definition_decision_candidate",
+          "definingDifferences": [
+            "c1282 centers thermodynamic entropy–extremality responses; c1345 centers modes, damping and classical dynamics.",
+            "Fixed thermodynamic variables and horizon-response endpoints differ from fixed-mode and time-normalization choices."
+          ],
+          "reason": "The definitions distinguish these targets. Thermodynamic input could inform a specified spectral calculation, but no universal relaxation or entropy-to-mode relation is established here.",
+          "refs": [
+            "c1282",
+            "c1345"
+          ]
+        },
+        "originalAlternateScreen": {
+          "ref": "n5953",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "conditional_application",
+            "comparison"
+          ],
+          "basis": "scope_definition",
+          "priority": "definition_decision_candidate",
+          "definingDifferences": [
+            "c1282 centers entropy–extremality responses; c1345 centers perturbation spectra and classical motion.",
+            "Thermodynamic derivatives, damping times and orbital Lyapunov exponents use different observables and limits."
+          ],
+          "reason": "The definitions support separate targets. Thermodynamic data could constrain a spectral comparison only with the exact relaxation proposal, time convention and mode limit supplied.",
+          "refs": [
+            "c1282",
+            "c1345"
+          ]
+        },
+        "originalConflictAssessment": {
+          "variantRef": "attempt1:comparisonReviews:n5953",
+          "judgment": "material_conflict",
+          "definingDifferences": [
+            "The selected row permits thermodynamic input to a specified spectral calculation without requiring a relaxation proposal.",
+            "The alternate states that a spectral comparison is possible only with the exact relaxation proposal supplied, adding a prerequisite despite retaining the same connection labels."
+          ],
+          "reason": "As written, the alternate narrows the application premise. c1345 includes spectra and classical response beyond conjectural relaxation tests, and c1282 supplies no family-wide relaxation premise. The extra requirement must remain explicit and withheld rather than silently restricting the selected conditional interface.",
+          "refs": [
+            "c1282",
+            "c1345"
+          ]
+        },
+        "historicalScopeAssessments": [
+          {
+            "ref": "c1282",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "Retain the exact prior region. Its broad navigation scope accommodates ordinary thermodynamics and alternate targets without claiming equivalence. The nu"
+            }
+          },
+          {
+            "ref": "c1345",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The numerical cluster alone supplies no physical equivalence. The exact prior region is nevertheless supported as a broad navigational family with explicitly separate adjacent homes. Charge, near-extremality, dimension and conjectural bounds cannot be imposed family-wide."
+            }
+          }
+        ],
+        "inputPins": {
+          "packet": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/packet.actual.json",
+            "sha256": "094c92872d86c9181fd92a2ad186f1b3eaf58960f48e9aaae93ac6ff631a4f79"
+          },
+          "reply": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/reply.json",
+            "sha256": "d73e23dbb3a237b7a97cf3e6481ca4b0a60f17846e3376f4ce70e3690615abd2"
+          },
+          "normalization": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/normalization.json",
+            "sha256": "fadc3eac22d691cb8dc68691e28deefad7af1d5facb0cb343d190404d931cb3e"
+          },
+          "receipt": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/receipt.json",
+            "sha256": "7b47f5fb14eb213908430c24a4ed96e5790793c5a508c2ddd0c67d801ab38e54"
+          }
+        },
+        "titleReadingDirection": "outgoing_only"
+      }
+    },
+    {
+      "id": "navigation:screen-conflict:n467",
+      "source": "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+      "target": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "type": "comparison",
+      "title": "Apparent phantom behavior",
+      "rationale": "Compare microscopic rolling construction and control with apparent-phantom inference.",
+      "qualification": "Microscopic scalar dynamics and inferred dark-energy behavior have different targets. A compound source may address both; scalar w and inferred w must remain distinct. No shared-method theorem follows.",
+      "evidenceIds": [
+        "unit:04bbd27e171530f1ca15b8becbfbeffffb614e8898f98cab5e356e060126335f",
+        "unit:0f13418e42f0666e4419ea74f45268921d28697ed1fda939a3f5b1d18791f79e",
+        "unit:30e469dad86f2093687b4ce209e575cf9975924d40b859ab9ce3377e8915c306",
+        "unit:3b1a6221c38c552b6572952dca1d8c882c950608c4dac0afe750e24b0de76868",
+        "unit:4998e7350d955aa68185a0db9d187f6dd0cf69f937ce83a92490a71f3980b597",
+        "unit:4c0de05c6db76aa4a3fc01a44dbca59527f6c8724ba8f138060e7f9516ebb781",
+        "unit:4ea455d25f925a2ba8a956f05b4f002e50bf678ed2b309e51bd58ab2cfecd11e",
+        "unit:597932033244fa69c82f19bfb04cd5e6042ef92b2cef58d932dcac367494dceb",
+        "unit:5f1f3a30968231eccb353d2672e0cb39fb4d94b0d58ade3628f5c0819ca1bc8f",
+        "unit:6be0ecc7820d5e13c5e215d806fb3daa52adb13f979b5d088ad899c85097eb82",
+        "unit:871ddd3cecae3861f7949fd676086290a5175f4698a407ee72e3c35d0264d575",
+        "unit:8b8691d111d78239dfebb4f1295fdb40c5a4c6bcd312819477396cedc278eb47",
+        "unit:a2d315adcc6a6218212c056887892e7ff120e5d9cb11e66de3c9b693b65af474",
+        "unit:a7fbef7e8a557f6a9cdb88206bb7f578e8db0da283b8b3319707d6caab402123",
+        "unit:a86c20191a1dc1779510b965f7169dd574e12b81ebc6b47306051b1d11dbd0f9",
+        "unit:b1cf19af5cf136fbb49041ad43db6f95143cad70f3ae72000c29746dd813c79a",
+        "unit:bff5f38896802d1c22a015771b36398fd9925228457e3cf6424900f472bc9bc9",
+        "unit:ce3f118987da1eca9c5b5c26d112ed8f5c0f184cec476453d0e026bd7be505c8",
+        "unit:d6bf0b556994a0d99310a91945144814a89448a5e45f7c830627a63fd1d807c1",
+        "unit:df03aadc4b99d143164b10bdcc0851d80e5716b2ed1a9c7b093777528c222206"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+          "scopeContentSha256": "0b12990174fac44b92532be67665101d789a75310dcfa732ef46c9285eb95205",
+          "definitionSha256": "56347c4c71d0de13411e8a85527f7cf12d3f0c10ce4e25c30d473a340a247b3e"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+          "scopeContentSha256": "c879bdebfa26c7e040d4e54f07a442b33b7dcd585faca7f9c96b73ebe6e0927d",
+          "definitionSha256": "a807e905414e3c1fb08fc6556e61f89364fa2573b5b33d051a9ef1ceae694038"
+        }
+      ],
+      "decisionId": "decision:screen-conflict:n467",
+      "provenance": {
+        "screenNominationId": "n467",
+        "variantRef": "attempt0:comparisonReviews:n467",
+        "readingBasis": "coordinator_complete_definition_review",
+        "freshPrimaryReading": false,
+        "pairedPerUnitNotesReadForThisDecision": false,
+        "pairedLinkVerdict": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "originalSelectedScreen": {
+          "ref": "n467",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "conditional_application",
+            "shared_method"
+          ],
+          "basis": "description_checked",
+          "priority": "rich_relation_review",
+          "definingDifferences": [
+            "Microscopic support for slow evolution versus apparent-phantom inference.",
+            "Mechanism control versus the definition of effective dark energy."
+          ],
+          "reason": "The u3114 description joins steep-potential accommodation to effective phantom behavior and poles. That compound source can contribute to both questions. Recover the paired reasons identifying each facet; a background mechanism does not establish microscopic control, and scalar w must remain distinct from inferred w.",
+          "refs": [
+            "c57",
+            "c306",
+            "u3114"
+          ]
+        },
+        "originalAlternateScreen": {
+          "ref": "n467",
+          "identityScreen": "different_scoped_targets",
+          "scientificConnections": [
+            "conditional_application",
+            "comparison"
+          ],
+          "basis": "description_checked",
+          "priority": "rich_relation_review",
+          "definingDifferences": [
+            "Microscopic support for slow evolution versus apparent-phantom inference",
+            "Construction control versus definitions of scalar and effective w"
+          ],
+          "reason": "The coupled-quintessence description contains both steep-potential accommodation and effective-w behavior. That makes a conditional application plausible, not the scopes identical. Retrieve its paired contribution reasons to distinguish the construction-facing facet from the inference mechanism; the description establishes neither microscopic control nor observational validation.",
+          "refs": [
+            "c57",
+            "c306",
+            "u3114"
+          ]
+        },
+        "originalConflictAssessment": {
+          "variantRef": "attempt0:comparisonReviews:n467",
+          "judgment": "material_conflict",
+          "definingDifferences": [
+            "The selected connection set contains conditional_application and shared_method; the alternate retains conditional_application but replaces shared_method with comparison."
+          ],
+          "reason": "Identity and the conditional construction-to-inference application agree, but the alternate changes the recorded scientific connection judgment. A comparison and a shared method are not interchangeable assertions, even if both could ultimately be supported. Preserve the selected record and withhold this alternative for adjudication.",
+          "refs": [
+            "c57",
+            "c306",
+            "u3114"
+          ]
+        },
+        "historicalScopeAssessments": [
+          {
+            "ref": "c306",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The supplied sources support distinct effective-phantom mechanisms and inference conventions. The card properly separates scalar kinetics, inferred dark energy, constant-w distance fitting and effective poles, while withholding universal interaction or stability conclusions."
+            }
+          },
+          {
+            "ref": "c57",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The question accommodates different mechanisms without equating small slopes with gauge slowing. Descriptions and the conditional axion excerpt support candidate construction questions, not certified ultraviolet realizations; dynamical uplifting remains adjacent context."
+            }
+          }
+        ],
+        "inputPins": {
+          "packet": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/packet.actual.json",
+            "sha256": "8cc72216a23e5d930cca2571ac47ca7229de2c41705abb47a7608d60406518b2"
+          },
+          "reply": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/reply.json",
+            "sha256": "16ccd592b47cb25778942f71a9a33c0c98267d608e2411c6afd2e86ab5172298"
+          },
+          "normalization": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/normalization.json",
+            "sha256": "3eff8bb4dcd8a4d1771a90d4c455459ecaafdebb8ccb61b0cd45454e7a79f9a8"
+          },
+          "receipt": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/receipt.json",
+            "sha256": "cfaf353eb508da4598c6faaa56310fb1ebca37440af1afbcb1d590f357995eb9"
+          }
+        },
+        "titleReadingDirection": "outgoing_only"
+      }
+    },
+    {
+      "id": "navigation:screen-conflict:n475",
+      "source": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "target": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "type": "narrower",
+      "title": "Apparent phantom behavior",
+      "rationale": "Apparent-phantom histories and poles form a scoped inference question within broader background evolution and observational inference.",
+      "qualification": "Retain the noninteracting-CDM inference convention, the distinction between scalar and inferred equations of state, coupling-induced effective w versus constant-w fitting, and source-date conditions. This is organizational narrowing, not a shared-method theorem.",
+      "evidenceIds": [
+        "unit:1db3427f5e01897af82ffb70341402a5903a4ba2804954ea09a6398a0f6f8816",
+        "unit:32c76a3dc827cd85202ac3b6c42f7b7d8f6d6c2ab3ad9142f2ee9eb607b4d4b4",
+        "unit:3b1a6221c38c552b6572952dca1d8c882c950608c4dac0afe750e24b0de76868",
+        "unit:4998e7350d955aa68185a0db9d187f6dd0cf69f937ce83a92490a71f3980b597",
+        "unit:4c0de05c6db76aa4a3fc01a44dbca59527f6c8724ba8f138060e7f9516ebb781",
+        "unit:4ea455d25f925a2ba8a956f05b4f002e50bf678ed2b309e51bd58ab2cfecd11e",
+        "unit:5f1f3a30968231eccb353d2672e0cb39fb4d94b0d58ade3628f5c0819ca1bc8f",
+        "unit:6081a1b036118c5b586f8cac8b8ff923f48f5408baa0fa576c17535d73d16ba7",
+        "unit:6a562fcb3f25b9ea7c981d6374a41848f4179fe3dba2f1a86ec0d452a09b0364",
+        "unit:860161140522f3b1f26142c3d8735b290a8a4cb2e1d684d88b369dd1064f3138",
+        "unit:871ddd3cecae3861f7949fd676086290a5175f4698a407ee72e3c35d0264d575",
+        "unit:887ed383780181a434c1c2d3ef1536c2e488cfa02cea83390310c90e1d085749",
+        "unit:8b8691d111d78239dfebb4f1295fdb40c5a4c6bcd312819477396cedc278eb47",
+        "unit:a2d315adcc6a6218212c056887892e7ff120e5d9cb11e66de3c9b693b65af474",
+        "unit:a7fbef7e8a557f6a9cdb88206bb7f578e8db0da283b8b3319707d6caab402123",
+        "unit:acc5e23bc2409d650a891c6737176fe601245c73bee1218e1c7fd918a01c4b20",
+        "unit:b0a10a242143873e59ba2d7f08fd905bc49dfacec461eeee485fdb7cf2d748e3",
+        "unit:b25a1afc039080d5e2a7b3fbb390ce16604e2cf7b726f019e5aac919ee19377b",
+        "unit:bf99c7e3ba1c57e54212667656b9210bfefca360519cd5b1e9c2f1442d0f2f8f",
+        "unit:bff5f38896802d1c22a015771b36398fd9925228457e3cf6424900f472bc9bc9",
+        "unit:ccc46b79310e36a2cb8ad72afac190e35647e06a48443af8db1593a1f224931d",
+        "unit:cf5d992980e77e2c29936f1c1086725207f3d11567c24bcaec83400cc91664bc",
+        "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+          "scopeContentSha256": "cf4b878f8c8a9e621142d4757c68c105582cb223b4ed08afbca88ce0cbdf5a8a",
+          "definitionSha256": "140ca8e4154ee522cfeb3e8835eb31bfbf4af5579f596bbd087ccb92d6112ef9"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+          "scopeContentSha256": "c879bdebfa26c7e040d4e54f07a442b33b7dcd585faca7f9c96b73ebe6e0927d",
+          "definitionSha256": "a807e905414e3c1fb08fc6556e61f89364fa2573b5b33d051a9ef1ceae694038"
+        }
+      ],
+      "decisionId": "decision:screen-conflict:n475",
+      "provenance": {
+        "screenNominationId": "n475",
+        "variantRef": "attempt0:comparisonReviews:n475",
+        "readingBasis": "coordinator_complete_definition_review",
+        "freshPrimaryReading": false,
+        "pairedPerUnitNotesReadForThisDecision": false,
+        "pairedLinkVerdict": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "originalSelectedScreen": {
+          "ref": "n475",
+          "identityScreen": "specialization_candidate",
+          "scientificConnections": [
+            "shared_method",
+            "broader_question"
+          ],
+          "basis": "description_checked",
+          "priority": "rich_scope_review",
+          "definingDifferences": [
+            "General background evolution and inference versus apparent-phantom histories and poles.",
+            "A broad history question versus specific inference conventions."
+          ],
+          "reason": "Descriptions place apparent-phantom mechanisms within a narrower part of background/inference work. Check paired reasons for that specialization while retaining the distinction between coupling-induced effective w and constant-w fitting of climbing quintessence. Shared histories do not make their inferred quantities interchangeable.",
+          "refs": [
+            "c58",
+            "c306",
+            "u3114",
+            "u3617",
+            "u1669"
+          ]
+        },
+        "originalAlternateScreen": {
+          "ref": "n475",
+          "identityScreen": "specialization_candidate",
+          "scientificConnections": [
+            "shared_method",
+            "conditional_application"
+          ],
+          "basis": "description_checked",
+          "priority": "rich_scope_review",
+          "definingDifferences": [
+            "General background histories and inference versus apparent-phantom mechanisms",
+            "Canonical scalar evolution versus interaction-dependent or distance-fitted effective quantities"
+          ],
+          "reason": "Descriptions make apparent-phantom behavior a candidate narrower question within background inference. Its contributing mechanisms remain different: coupled effective w and constant-w distance fitting cannot inherit one crossing convention. Use the existing contribution reasons to decide the specialization without treating all background models as phantom mechanisms.",
+          "refs": [
+            "c58",
+            "c306",
+            "u3114",
+            "u3617",
+            "u1669"
+          ]
+        },
+        "originalConflictAssessment": {
+          "variantRef": "attempt0:comparisonReviews:n475",
+          "judgment": "material_conflict",
+          "definingDifferences": [
+            "The selected connection set contains shared_method and broader_question; the alternate replaces broader_question with conditional_application while retaining the specialization candidate."
+          ],
+          "reason": "The identity assessment and equation-of-state qualifications remain compatible, but the alternate substitutes a conditional application for the selected broader organizing relation. Those connections can coexist but are not the same recorded judgment. The change remains withheld for downstream adjudication.",
+          "refs": [
+            "c58",
+            "c306",
+            "u3114",
+            "u3617",
+            "u1669"
+          ]
+        },
+        "historicalScopeAssessments": [
+          {
+            "ref": "c306",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The supplied sources support distinct effective-phantom mechanisms and inference conventions. The card properly separates scalar kinetics, inferred dark energy, constant-w distance fitting and effective poles, while withholding universal interaction or stability conclusions."
+            }
+          },
+          {
+            "ref": "c58",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "Boundary dependence and field-origin degeneracy are directly supported. The scope correctly separates coupled effective phantom behavior from the scalar equation of state and preserves negative or inconclusive observational results."
+            }
+          }
+        ],
+        "inputPins": {
+          "packet": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/packet.actual.json",
+            "sha256": "8cc72216a23e5d930cca2571ac47ca7229de2c41705abb47a7608d60406518b2"
+          },
+          "reply": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/reply.json",
+            "sha256": "16ccd592b47cb25778942f71a9a33c0c98267d608e2411c6afd2e86ab5172298"
+          },
+          "normalization": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/normalization.json",
+            "sha256": "3eff8bb4dcd8a4d1771a90d4c455459ecaafdebb8ccb61b0cd45454e7a79f9a8"
+          },
+          "receipt": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/receipt.json",
+            "sha256": "cfaf353eb508da4598c6faaa56310fb1ebca37440af1afbcb1d590f357995eb9"
+          }
+        },
+        "titleReadingDirection": "outgoing_only"
+      }
+    },
+    {
+      "id": "navigation:screen-conflict:n478",
+      "source": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "target": "q025-candidate-question:f23ce27773b0d5af5ed5ce55",
+      "type": "comparison",
+      "title": "Reconstruction and CPL interpretation",
+      "rationale": "Compare general background inference with reconstruction, identifiability and CPL representation.",
+      "qualification": "The shared canonical setting permits comparison and overlap. Proposed beyond-canonical extensions need independent premises, so whole-scope containment is not admitted. CPL expansion matching is not an interaction-induced equation of state.",
+      "evidenceIds": [
+        "unit:1db3427f5e01897af82ffb70341402a5903a4ba2804954ea09a6398a0f6f8816",
+        "unit:202e6ec43555beedfcf41aed9d6ab187a5f0e2abf05a15181619cdad76ed6b65",
+        "unit:32c76a3dc827cd85202ac3b6c42f7b7d8f6d6c2ab3ad9142f2ee9eb607b4d4b4",
+        "unit:3b1a6221c38c552b6572952dca1d8c882c950608c4dac0afe750e24b0de76868",
+        "unit:4bbb9e9371dcd0288290b1ef4ee0a0fb559f101cf0ec4e5af23ae6642733f7e1",
+        "unit:4ea455d25f925a2ba8a956f05b4f002e50bf678ed2b309e51bd58ab2cfecd11e",
+        "unit:5d3abb4e9d1936973db6cc4f2926528e9a9b400670cda263c0da5f924991823a",
+        "unit:5f1f3a30968231eccb353d2672e0cb39fb4d94b0d58ade3628f5c0819ca1bc8f",
+        "unit:6081a1b036118c5b586f8cac8b8ff923f48f5408baa0fa576c17535d73d16ba7",
+        "unit:6a562fcb3f25b9ea7c981d6374a41848f4179fe3dba2f1a86ec0d452a09b0364",
+        "unit:860161140522f3b1f26142c3d8735b290a8a4cb2e1d684d88b369dd1064f3138",
+        "unit:887ed383780181a434c1c2d3ef1536c2e488cfa02cea83390310c90e1d085749",
+        "unit:8b8691d111d78239dfebb4f1295fdb40c5a4c6bcd312819477396cedc278eb47",
+        "unit:9a46687f77a7d1b805cec6d0a210216920b0a3df4fe3099b9de9d95a1ac5f882",
+        "unit:a2d315adcc6a6218212c056887892e7ff120e5d9cb11e66de3c9b693b65af474",
+        "unit:acc5e23bc2409d650a891c6737176fe601245c73bee1218e1c7fd918a01c4b20",
+        "unit:b0a10a242143873e59ba2d7f08fd905bc49dfacec461eeee485fdb7cf2d748e3",
+        "unit:b25a1afc039080d5e2a7b3fbb390ce16604e2cf7b726f019e5aac919ee19377b",
+        "unit:bf99c7e3ba1c57e54212667656b9210bfefca360519cd5b1e9c2f1442d0f2f8f",
+        "unit:bff5f38896802d1c22a015771b36398fd9925228457e3cf6424900f472bc9bc9",
+        "unit:ccc46b79310e36a2cb8ad72afac190e35647e06a48443af8db1593a1f224931d",
+        "unit:cf5d992980e77e2c29936f1c1086725207f3d11567c24bcaec83400cc91664bc",
+        "unit:d3fbb7bee46ed75d94c928d6133a137b3b98323ef89bf06ff6f720e8fede32ec",
+        "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+        "unit:ec7b75f28f2cecdefc1b075782c1b877b39e51a02b063d8be45c5ba384f38ca1"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+          "scopeContentSha256": "cf4b878f8c8a9e621142d4757c68c105582cb223b4ed08afbca88ce0cbdf5a8a",
+          "definitionSha256": "140ca8e4154ee522cfeb3e8835eb31bfbf4af5579f596bbd087ccb92d6112ef9"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:f23ce27773b0d5af5ed5ce55",
+          "scopeContentSha256": "eac2f79694fc95787a5cf9d64d551fefd5a831efeb40e79d7bc52245dd4da3d3",
+          "definitionSha256": "41eae8a7437167a8b56eecfa52d3c5ae9874e09e93406b63f953e1c778ec7936"
+        }
+      ],
+      "decisionId": "decision:screen-conflict:n478",
+      "provenance": {
+        "screenNominationId": "n478",
+        "variantRef": "attempt0:comparisonReviews:n478",
+        "readingBasis": "coordinator_complete_definition_review",
+        "freshPrimaryReading": false,
+        "pairedPerUnitNotesReadForThisDecision": false,
+        "pairedLinkVerdict": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "originalSelectedScreen": {
+          "ref": "n478",
+          "identityScreen": "specialization_candidate",
+          "scientificConnections": [
+            "shared_method",
+            "broader_question"
+          ],
+          "basis": "description_checked",
+          "priority": "rich_scope_review",
+          "definingDifferences": [
+            "Broad evolution/inference versus identifiability and CPL representation.",
+            "General coupled histories versus canonical mapping and proposed theory-specific extensions."
+          ],
+          "reason": "The descriptions support a narrower reconstruction/CPL question within much of c58's inference coverage. Check paired reasons for the shared canonical setting and the proposed extensions. CPL expansion matching is not an interaction-induced equation of state, and extensions cannot inherit canonical restrictions without their own premises.",
+          "refs": [
+            "c58",
+            "c351",
+            "u4975",
+            "u2103",
+            "u742",
+            "u4735"
+          ]
+        },
+        "originalAlternateScreen": {
+          "ref": "n478",
+          "identityScreen": "specialization_candidate",
+          "scientificConnections": [
+            "shared_method",
+            "conditional_application"
+          ],
+          "basis": "description_checked",
+          "priority": "rich_scope_review",
+          "definingDifferences": [
+            "General cosmic evolution and inference versus identifiability and CPL representation",
+            "Broad interacting backgrounds versus explicitly bounded canonical reconstruction"
+          ],
+          "reason": "The reconstruction and CPL descriptions support a narrower inference question within the broader background overview. Proposed beyond-canonical reconstruction and electromagnetic couplings need their own premises. Retrieve the shared reconstruction reasons and repair c351's incomplete-looking assessment before an exact reuse decision.",
+          "refs": [
+            "c58",
+            "c351",
+            "u4975",
+            "u2103",
+            "u742",
+            "u4735"
+          ]
+        },
+        "originalConflictAssessment": {
+          "variantRef": "attempt0:comparisonReviews:n478",
+          "judgment": "material_conflict",
+          "definingDifferences": [
+            "The selected connection set contains shared_method and broader_question; the alternate substitutes conditional_application for broader_question while retaining the specialization candidate."
+          ],
+          "reason": "Both preserve the narrower reconstruction/CPL target and source-specific extension premises. Nevertheless, the changed connection set replaces an organizing-question judgment with an application judgment. The additional assessment-repair caution does not reconcile that difference; retain the selected record and withhold the alternative.",
+          "refs": [
+            "c58",
+            "c351",
+            "u4975",
+            "u2103",
+            "u742",
+            "u4735"
+          ]
+        },
+        "historicalScopeAssessments": [
+          {
+            "ref": "c351",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "The excerpts support boundary-data dependence, field-origin nonuniqueness and expansion-based CPL mapping. They also justify separating fitted phantom"
+            }
+          },
+          {
+            "ref": "c58",
+            "priorReadingAssessment": {
+              "decision": "supported_as_written",
+              "scopeChange": "same",
+              "replacement": "",
+              "note": "Boundary dependence and field-origin degeneracy are directly supported. The scope correctly separates coupled effective phantom behavior from the scalar equation of state and preserves negative or inconclusive observational results."
+            }
+          }
+        ],
+        "inputPins": {
+          "packet": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/packet.actual.json",
+            "sha256": "8cc72216a23e5d930cca2571ac47ca7229de2c41705abb47a7608d60406518b2"
+          },
+          "reply": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/reply.json",
+            "sha256": "16ccd592b47cb25778942f71a9a33c0c98267d608e2411c6afd2e86ab5172298"
+          },
+          "normalization": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/normalization.json",
+            "sha256": "3eff8bb4dcd8a4d1771a90d4c455459ecaafdebb8ccb61b0cd45454e7a79f9a8"
+          },
+          "receipt": {
+            "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/receipt.json",
+            "sha256": "cfaf353eb508da4598c6faaa56310fb1ebca37440af1afbcb1d590f357995eb9"
+          }
+        },
+        "titleReadingDirection": "outgoing_only"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:screen-conflict-scope:9454e2dc275dec5e822bba03",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:9454e2dc275dec5e822bba03"
+      ],
+      "challengerAgreement": "supported_with_limits",
+      "scopeAgreement": "unchanged_science_with_explicit_coordinator_scope_admission",
+      "sourceReviewIds": [
+        "leaf-1b3b48ae03dbe168d677-proposal",
+        "leaf-1b3b48ae03dbe168d677-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "d1",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:a727b64eab87223cc4d4ac4151fdddb01bfa16692c58e7b096151cda1be54fdf",
+          "textSha256": "2073c9c362b8e7101971d93ffde61ab2da4fc7751714eed0cdc020cd3bee241b"
+        },
+        {
+          "localRef": "d2",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:677b609b049f341afd42fb330c4de6b855d17323c43de47a19079f48a18aa4c3",
+          "textSha256": "6140d93230a411a78fdb90014883a0482ed7be5761adbb3132370f1d93ec67c6"
+        },
+        {
+          "localRef": "d3",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:6fe9b12c0029cb6df18bcb3e8b769d27239e24bb1a599c4ff136a4a671b34ea5",
+          "textSha256": "72eb2a56cd207064c60785419d0e627f89a322dc53cfdba2ca33115cf344518a"
+        },
+        {
+          "localRef": "d4",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:530da9a14202edd3f640458385ba13f8bb5818132ec972130e5836d253d4a239",
+          "textSha256": "849198fa460029ab9e7554ab43b407061c0aa7515696242a4153a6634db5919d"
+        },
+        {
+          "localRef": "d5",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:a031fc2d256129f061136749fbade74e97986eb3eabacbcc514bfc8b00ed4a46",
+          "textSha256": "ff8f82eb50aa22eb88e5cc3a614c95c52fb29a92f52407f3107e6c598f2f8bf9"
+        },
+        {
+          "localRef": "e8",
+          "kind": "primary",
+          "sourceId": "ev:4958bfcba0f47f83cdd395f1dd995414",
+          "paperId": "1503.04783",
+          "sourceSha256": "31aea704796123a9dd71113eb94220292544613e3e2fd31fec878186c83b2b62",
+          "sourceContext": {
+            "path": "papers/1d18dc5634f23a5b4edd/reading-order.json",
+            "fileSha256": "51e61bc6eb3a170065108b5f9b8b6620c73a870bb0f645a17203006fb7954ebe",
+            "pdfPage": 5,
+            "start": 0,
+            "end": 2666,
+            "textSha256": "04b901fd8a47b02786cd6317766ff7e479c555d9f4eba51f45ab2f3879eef090",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e21",
+          "kind": "primary",
+          "sourceId": "ev:d623473110674ea4171267222aeb24ec",
+          "paperId": "1503.04783",
+          "sourceSha256": "31aea704796123a9dd71113eb94220292544613e3e2fd31fec878186c83b2b62",
+          "sourceContext": {
+            "path": "papers/1d18dc5634f23a5b4edd/reading-order.json",
+            "fileSha256": "51e61bc6eb3a170065108b5f9b8b6620c73a870bb0f645a17203006fb7954ebe",
+            "pdfPage": 6,
+            "start": 0,
+            "end": 1821,
+            "textSha256": "287a0bc64b0fcdbaf89c44ea90addd4e53c785700f3f5c4391dd9b8372a33d69",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e13",
+          "kind": "primary",
+          "sourceId": "ev:8cca8dc8a8a8d6c00fbf541fedd30c56",
+          "paperId": "1503.04783",
+          "sourceSha256": "31aea704796123a9dd71113eb94220292544613e3e2fd31fec878186c83b2b62",
+          "sourceContext": {
+            "path": "papers/1d18dc5634f23a5b4edd/reading-order.json",
+            "fileSha256": "51e61bc6eb3a170065108b5f9b8b6620c73a870bb0f645a17203006fb7954ebe",
+            "pdfPage": 7,
+            "start": 0,
+            "end": 1673,
+            "textSha256": "8e26e70e22b0a48cdd0c60e04665d33c9670a53a38130aaada312d775c02ff83",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d6",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:aec57e70b80e9bdc7e512dbde8ef185526f6c385bca773378758644114e61b3d",
+          "textSha256": "e73661b47b687d6ab26e2a3036c037872f4958735ea2187fb47218a7a48fca00"
+        },
+        {
+          "localRef": "d7",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:c7ba1a37fc98ee63474d7ae2e0ce4f894585426dada668e990ef6e1f75c01fdb",
+          "textSha256": "1f0aa154d7cf0f56c3c1cca25098a2b787eb4ef9548954186617bacd9e5cf2d1"
+        },
+        {
+          "localRef": "d8",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:68b2460dbd5e441bfa56c8a9dfb9ce0ee2a84d74f21591cdc3ecd5e4763aa332",
+          "textSha256": "f88824dfdd08efa28a48793a9c90e71fd9173001e10f84add598b9ce6bee8322"
+        },
+        {
+          "localRef": "e9",
+          "kind": "primary",
+          "sourceId": "ev:54accceedf52767c11a77917f762c43d",
+          "paperId": "1706.08257",
+          "sourceSha256": "81837e3d00e8661ebab5b00816832f425dd94efc6557e9e4ab95ea7b9bd2b113",
+          "sourceContext": {
+            "path": "papers/ee2e32fdade8c327655e/reading-order.json",
+            "fileSha256": "1b227ff39643ca72f60807dee182d0cfdfebfbca3241fd2a2c6b54765548c3f9",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "48a3f995b7e1892574e32a794647cac23876abf415062b55fcac78217a734e7a",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e22",
+          "kind": "primary",
+          "sourceId": "ev:d9cc2df797fe482678daba38b78f88f9",
+          "paperId": "1706.08257",
+          "sourceSha256": "81837e3d00e8661ebab5b00816832f425dd94efc6557e9e4ab95ea7b9bd2b113",
+          "sourceContext": {
+            "path": "papers/ee2e32fdade8c327655e/reading-order.json",
+            "fileSha256": "1b227ff39643ca72f60807dee182d0cfdfebfbca3241fd2a2c6b54765548c3f9",
+            "pdfPage": 17,
+            "start": 0,
+            "end": 2198,
+            "textSha256": "3b3ce0e61934ad7238adbd3ba743f66d61b063703661dfb630e1365e9508bb73",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e12",
+          "kind": "primary",
+          "sourceId": "ev:7e7c01e9e6cae3b781d0cb68173e3f16",
+          "paperId": "1706.08257",
+          "sourceSha256": "81837e3d00e8661ebab5b00816832f425dd94efc6557e9e4ab95ea7b9bd2b113",
+          "sourceContext": {
+            "path": "papers/ee2e32fdade8c327655e/reading-order.json",
+            "fileSha256": "1b227ff39643ca72f60807dee182d0cfdfebfbca3241fd2a2c6b54765548c3f9",
+            "pdfPage": 5,
+            "start": 80,
+            "end": 2085,
+            "textSha256": "6f26662b0701c67ff0745e7e5e4047e7244a0b923877e28c7dd2fec7a015fae0",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d9",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:7df1c85da845450c9716b165c05aa684929f21e5fec2536297b438c8c216a6b1",
+          "textSha256": "e742c62fbf3c6ee84b5d5497ab2d09f773b73e5171a6e7778b1b9ff3d2157ac9"
+        },
+        {
+          "localRef": "d10",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:f310cc62291d0ad9f437d30c8ec3785fc47aca44dde7189d98d5912091cc6017",
+          "textSha256": "cf6f8689f8075dbf1f2ae89e21e33654ad20c926a77047e57e588c52c8d5d6ea"
+        },
+        {
+          "localRef": "d11",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:3120acdf8712ea2a085f4f7fc5b0aadcb5dec534e94228d84eaf4cd44bd31c61",
+          "textSha256": "fa6894ce7931e94e93c71dc5852924a397c0d41c6eff32fca680bba289a859a4"
+        },
+        {
+          "localRef": "e23",
+          "kind": "primary",
+          "sourceId": "ev:dfc6a5f5e285ebcfe3f539440af9ffe2",
+          "paperId": "1804.07322",
+          "sourceSha256": "050e07613832359e5bbeb679e66f94c6232147a08f2e4b2489190a968713bdfd",
+          "sourceContext": {
+            "path": "papers/4a3c6396f6684d1e3a36/reading-order.json",
+            "fileSha256": "1d6ce1ff3f334697bbce9813d6391a6f3844d598c5ac5374dd4a483672ce99d8",
+            "pdfPage": 5,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "a82352b7a7470447ee553e462d737ac3964516a575affc5259466bc7468d86e7",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e5",
+          "kind": "primary",
+          "sourceId": "ev:3592490ccca6875191ae137d9f5cf9c0",
+          "paperId": "1804.07322",
+          "sourceSha256": "050e07613832359e5bbeb679e66f94c6232147a08f2e4b2489190a968713bdfd",
+          "sourceContext": {
+            "path": "papers/4a3c6396f6684d1e3a36/reading-order.json",
+            "fileSha256": "1d6ce1ff3f334697bbce9813d6391a6f3844d598c5ac5374dd4a483672ce99d8",
+            "pdfPage": 6,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "43eb69207900a679ebf8c816589dd4cdc0291aaf6e1425486dd6d102cf71e86d",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d12",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:82a99483cb65e6f9ef40b859c9cdc8503d00d8230cdc5641a19c3b1bccfd7bb0",
+          "textSha256": "0a58c3114f6163cd0a10a03e993cf000371cc4a9d35b3181238bbccdeb98b630"
+        },
+        {
+          "localRef": "d13",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:44a1ca5f443bbf0d189876dfc9dc435b49c7bf3732a0bfc7b5a43ec242884d03",
+          "textSha256": "d75bfa058faa3ecc8812ba905b713cf0637d569dd8da2c148a6c144eb89258ee"
+        },
+        {
+          "localRef": "d14",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:49f038a6240393ef3562478a459444ca77c77d934ad799f75e4708cb5e957cab",
+          "textSha256": "53a84893aae3332caedd7cbdc154e2505ab4db7eb72d9a64429bbfb861564cd7"
+        },
+        {
+          "localRef": "d15",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:0d6e960e72bca88185dda6b524682a894dd2fbdcef7130c4a65006db9cb6663f",
+          "textSha256": "af794c0ac377a5c882e7f875504f1ce605a18b053af3795f831e7f7629307d86"
+        },
+        {
+          "localRef": "d16",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:721e755cfa00e72412262ca696dee1be27d2f117b5661c9f9e4b68db0e9d322e",
+          "textSha256": "55ca4dbeda842768996353c3fd67da301d656c8544e366d718c1f2da4753c282"
+        },
+        {
+          "localRef": "d17",
+          "kind": "description",
+          "unitIndex": 17,
+          "unitId": "unit:95609cc4e7bb836fab3f8d5763087c674eec09ef7452e10e98b4254798c27011",
+          "textSha256": "5b32d38324f2eab0db234c381fa510a2d4366a24f0703dcdd1b52d8a2d275767"
+        },
+        {
+          "localRef": "e4",
+          "kind": "primary",
+          "sourceId": "ev:2e92aba269dbf5befc21f13a6c611143",
+          "paperId": "1908.10452",
+          "sourceSha256": "6c2e27baa165d4726b2dd158695488565d4ac40d2ed7da997aa7e06a1033f57d",
+          "sourceContext": {
+            "path": "papers/867b44adf22d6939ec05/reading-order.json",
+            "fileSha256": "2cff926dd4e6b07041da5cb48787f39d6540a97b26a511e5b09b3106f213fce7",
+            "pdfPage": 28,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "68de273396597709858ea1cc64295533f08509394c638be24f7dc226449489fe",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e3",
+          "kind": "primary",
+          "sourceId": "ev:26c691580e27c77e70229bbe78ab836b",
+          "paperId": "1908.10452",
+          "sourceSha256": "6c2e27baa165d4726b2dd158695488565d4ac40d2ed7da997aa7e06a1033f57d",
+          "sourceContext": {
+            "path": "papers/867b44adf22d6939ec05/reading-order.json",
+            "fileSha256": "2cff926dd4e6b07041da5cb48787f39d6540a97b26a511e5b09b3106f213fce7",
+            "pdfPage": 12,
+            "start": 474,
+            "end": 2329,
+            "textSha256": "55d1d6c2cdcfc5fd55fc72b68d6be22c3a8bb781120fb4fbac31945e2035d7b7",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e24",
+          "kind": "primary",
+          "sourceId": "ev:e122f16f473394d728bd059df8d14cc3",
+          "paperId": "1908.10452",
+          "sourceSha256": "6c2e27baa165d4726b2dd158695488565d4ac40d2ed7da997aa7e06a1033f57d",
+          "sourceContext": {
+            "path": "papers/867b44adf22d6939ec05/reading-order.json",
+            "fileSha256": "2cff926dd4e6b07041da5cb48787f39d6540a97b26a511e5b09b3106f213fce7",
+            "pdfPage": 12,
+            "start": 0,
+            "end": 2329,
+            "textSha256": "137f13de188eed478ea0bef9b40f6686436d9f76d0c2751bf2a316190b51a8e0",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d18",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:b1e385cc48b784981ee54d5147073e605f6f8b58bced0582512d2ddbdebd158a",
+          "textSha256": "de0303860f673a7c6941d9416f857de8f4eb28a6a5623891a069dcb51fa65359"
+        },
+        {
+          "localRef": "d19",
+          "kind": "description",
+          "unitIndex": 19,
+          "unitId": "unit:e3bab4a9180ade0203f4e0a68a6acdf8868aaa8e6eea84e3b8dd9810bee72e17",
+          "textSha256": "3674359a9fb21497d7799dac860f6e88f59db33838f290c363b993fad37489f7"
+        },
+        {
+          "localRef": "d20",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:afcb4402d62a090a6e6dcaf9aceb57af1da8a5526c38f6e16bbc43044f580997",
+          "textSha256": "0c6726139a9855601532140df334fb6c89c9987f58d55dbb0e61f73b1cd793c1"
+        },
+        {
+          "localRef": "d21",
+          "kind": "description",
+          "unitIndex": 21,
+          "unitId": "unit:628ddeb6d1147c1586be4269d21e3008f4cee6841751649478a2383137fba1ae",
+          "textSha256": "5f5bfaf80f3c763b51ee9498047d9a967c91d4e757eee153e284fc5db8b86819"
+        },
+        {
+          "localRef": "d22",
+          "kind": "description",
+          "unitIndex": 22,
+          "unitId": "unit:b60bdb72c08ffc5ad3d28ff091ddc05bcc76edf0c54e64ea1e5dbb4277b5b7e3",
+          "textSha256": "efe987c3d6423766fdae62ff5f45b40946ddea7ba919cf0a46f6dca27b4a4290"
+        },
+        {
+          "localRef": "d23",
+          "kind": "description",
+          "unitIndex": 23,
+          "unitId": "unit:3c8e3edc0617fdf6f99991a291884bf52d86a543efbc494ebb93486c824d470c",
+          "textSha256": "af7ae8b4a9ba3cdcfd678f2d752e8618d72c85b597137505214ab67ffd80c16f"
+        },
+        {
+          "localRef": "d24",
+          "kind": "description",
+          "unitIndex": 24,
+          "unitId": "unit:1834f4b5e0ec8ae541bf2af110d283008c3197872ea91eb59958386dca077eb9",
+          "textSha256": "7bb269c6564fecc8f489aef67ece41d7a47f49076122c408d356c8e52b388925"
+        },
+        {
+          "localRef": "d25",
+          "kind": "description",
+          "unitIndex": 25,
+          "unitId": "unit:b3b0f8f1f4818b59a2950deea42af23fd0ec4532d6d475ba3c37dae542d64c30",
+          "textSha256": "6f2f7e8efcee48f7ff8787f59ba31f1401e7797fc5291c4c82a9c8a12191732d"
+        },
+        {
+          "localRef": "d26",
+          "kind": "description",
+          "unitIndex": 26,
+          "unitId": "unit:aa187c3dd3581f687242bc9e00d3c89aba683ff9177b0014ae3df06a6b1eace8",
+          "textSha256": "87d9df70d5c14dc0361a322096ddd58e9a2e617a87fc2b26abdc11047111de94"
+        },
+        {
+          "localRef": "d27",
+          "kind": "description",
+          "unitIndex": 27,
+          "unitId": "unit:b8eeb04259e98f50dddd3f2b07a0adf79cb2d75e0d24509dc3d4649af2eae94e",
+          "textSha256": "724174b9f51c28f403a252e2b68e852a192df98a367663b19db2d2cb5e64fcde"
+        },
+        {
+          "localRef": "d28",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:aab79ee6f2a343e96318f32a41936dd346556077c12d2c3927112d255ad8b3de",
+          "textSha256": "9addb50dccf58601b2d03adc5e3690c5c2621273523d455ec344d6cc7194dac0"
+        },
+        {
+          "localRef": "d29",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:60176c056a981821ae51ac8415d8413e091f389281336bf6b558de555075ac93",
+          "textSha256": "35ecaf3d61785da3a609b869d3153f912aae5e745aea471d70a7e018b11417ef"
+        },
+        {
+          "localRef": "d30",
+          "kind": "description",
+          "unitIndex": 30,
+          "unitId": "unit:1a4b6b75844cc50b4421f0f0c2c54e836c240836e86362590c4cc2c89e5f268b",
+          "textSha256": "c4c594bd3ccb9a3b157f5f4c45f1f67dfa795c14fec0a2f9c7e9d73e8e4a3eed"
+        },
+        {
+          "localRef": "d31",
+          "kind": "description",
+          "unitIndex": 31,
+          "unitId": "unit:721996feece6b9126b562fae0456d931908b41d1caff084c2532a2f90d0c7537",
+          "textSha256": "4eedb5cb160a9b06dac049082d7d605e8fbc6e449541a0c1d4ddfd171aed440b"
+        },
+        {
+          "localRef": "d32",
+          "kind": "description",
+          "unitIndex": 32,
+          "unitId": "unit:4c32bdfa28be69aa88fae99dfa39e46313efca7eb0a52a634655680b45e567b0",
+          "textSha256": "2e4b0597ca2548e7be7783da1aa14f53b606b53e53c3026ef71a11a19d698bbc"
+        },
+        {
+          "localRef": "d33",
+          "kind": "description",
+          "unitIndex": 33,
+          "unitId": "unit:99e6cb62f73ec8c5d20696492e826550b8b8310f6460ee4effff2a9f77e4a3ea",
+          "textSha256": "8e1554829a61ee9e8053b2d2583a73a3fac57b124a41d177de2e1be91b4ba87c"
+        },
+        {
+          "localRef": "d34",
+          "kind": "description",
+          "unitIndex": 34,
+          "unitId": "unit:1ad7e1448faa2822223e5bfa33c744c6a2076e14289fbd244e85c213fb578476",
+          "textSha256": "40eeaec57babd510697c3874b3903e61545c69f81c140f970efdc514bc4272c6"
+        },
+        {
+          "localRef": "d35",
+          "kind": "description",
+          "unitIndex": 35,
+          "unitId": "unit:c1bad2ece74ad8f47e53e931f6a5cfca1ac211dc1c368843e46be3d629665b2f",
+          "textSha256": "234103b586a92d063deee2c7d88bed1bf31324bf0c5c7bea9abdf72a47951452"
+        },
+        {
+          "localRef": "d36",
+          "kind": "description",
+          "unitIndex": 36,
+          "unitId": "unit:48d159e6ec1b6e90f62ea33493ecc393688701e840a04f196b4fe7ed0fe76373",
+          "textSha256": "f940a3d5c9184c77d1fc69bb28a9d8c7f68dd1e4f41aa7d64d9dd3649745e226"
+        },
+        {
+          "localRef": "e7",
+          "kind": "primary",
+          "sourceId": "ev:4711c5a4ffcbfe3d1d95324279a0abb4",
+          "paperId": "2409.02197",
+          "sourceSha256": "fd240d26a72cdfebf6b61a59cf5d4f32306d3b6b76eebf67ab23133c8e29a095",
+          "sourceContext": {
+            "path": "papers/4c5fda5bd6dbe25a02de/reading-order.json",
+            "fileSha256": "8bb8ed0325ce6429ef692e5b87574e3d49ba3ad1a37e93f6f0ba1a2d9e48326f",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 1295,
+            "textSha256": "2d337dfb76a9fa227a9a072daba1c055652d12f2d3395f18ccf182c5a8c45245",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e16",
+          "kind": "primary",
+          "sourceId": "ev:969988f26a1dac10a0c17da226416e90",
+          "paperId": "2409.02197",
+          "sourceSha256": "fd240d26a72cdfebf6b61a59cf5d4f32306d3b6b76eebf67ab23133c8e29a095",
+          "sourceContext": {
+            "path": "papers/4c5fda5bd6dbe25a02de/reading-order.json",
+            "fileSha256": "8bb8ed0325ce6429ef692e5b87574e3d49ba3ad1a37e93f6f0ba1a2d9e48326f",
+            "pdfPage": 2,
+            "start": 114,
+            "end": 2112,
+            "textSha256": "c231f44503b80daf21e49444daea3b38a54145b63258ff0307c264173d4d1b1e",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d37",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:72bbb8d97766ebab58410a0c0b1cea282137820056cabaf3c12c763d7b5ac8c3",
+          "textSha256": "1be0d2157f1de29202b71a06a548764970c8a5d3556ef1b35d7514137c1ab11f"
+        },
+        {
+          "localRef": "d38",
+          "kind": "description",
+          "unitIndex": 38,
+          "unitId": "unit:565b7ff08372b2e5678b6addd4274268ae7a4773323149e8b064129b9013008c",
+          "textSha256": "75103ddde781c6d9983fd08ff73e4c8c8b919fbb6e63445cf9a3ef49774213a7"
+        },
+        {
+          "localRef": "d39",
+          "kind": "description",
+          "unitIndex": 39,
+          "unitId": "unit:5875ad92d475ee3b8193c14295d78bcbb755ff270ad9cde807dc5d0c2a130957",
+          "textSha256": "04c29c3ceb22ace4d866d2320dd7fac4ee41f651620b9dbd23914f53fc2da448"
+        },
+        {
+          "localRef": "d40",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:ebe88f5466f4479a35649d43d9643c65bdcc0e36cab1fd4c7450032da8680838",
+          "textSha256": "fbcf826e9d49208ec0f1861712287d306ea6ecd1e7dba143d1641feb0be3c312"
+        },
+        {
+          "localRef": "d41",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:8223ed8ebb386b7371b4da04d99a06fbb6fd076fca118d4bbd5ea3b42f9d4d20",
+          "textSha256": "fb7bfd975d29cf50fa7801f48c3c9c60b0fc6f3bb24013505426551a1312108e"
+        },
+        {
+          "localRef": "d43",
+          "kind": "description",
+          "unitIndex": 43,
+          "unitId": "unit:6c60987ceda9c57485fc5104c2484ef87a196893d0ae66d1fff69c54e03d98fd",
+          "textSha256": "0db6d4797e96f00028f86cd267c13d1f9cb85e3f9b8563a5d68824983a5271a8"
+        },
+        {
+          "localRef": "d44",
+          "kind": "description",
+          "unitIndex": 44,
+          "unitId": "unit:62b0fc57ba710c6a81d38c5fa4efe1e4bd57e1d8d6d3c04802355eb9d68fca00",
+          "textSha256": "458634e1e12f7aa6e165c624c2a594f6f34b35cc841f5c60165fde3a30e505ad"
+        },
+        {
+          "localRef": "d45",
+          "kind": "description",
+          "unitIndex": 45,
+          "unitId": "unit:f5bcdc4630739e02c9d07476a826ec968a003aaf31d015e207f051b7b925d757",
+          "textSha256": "3dc43574ff2b8d2532eeabb506ec12c035bb9f48023ea1cc569846e39f9d9816"
+        },
+        {
+          "localRef": "e2",
+          "kind": "primary",
+          "sourceId": "ev:205915e2861c14901e00ae73146b846c",
+          "paperId": "2606.14016",
+          "sourceSha256": "e8ac2143e8742cdf15dc4de5184a3b67ac9fd9ed45c865230cb7f58bc722aeb0",
+          "sourceContext": {
+            "path": "papers/11d029ca1f55fff2bc0f/reading-order.json",
+            "fileSha256": "4ab6150e7b38274bba3601b3df8e8dd8d8da1c3253295562b0e386a3a6a7a105",
+            "pdfPage": 3,
+            "start": 1291,
+            "end": 4100,
+            "textSha256": "41e369b3aa9c23d0b5e424e7cba6d6396fd3fc6dd92f29534cdc1dcadc286bb8",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e11",
+          "kind": "primary",
+          "sourceId": "ev:58ab6b27c1f48d80407cdab0266a923d",
+          "paperId": "2606.14016",
+          "sourceSha256": "e8ac2143e8742cdf15dc4de5184a3b67ac9fd9ed45c865230cb7f58bc722aeb0",
+          "sourceContext": {
+            "path": "papers/11d029ca1f55fff2bc0f/reading-order.json",
+            "fileSha256": "4ab6150e7b38274bba3601b3df8e8dd8d8da1c3253295562b0e386a3a6a7a105",
+            "pdfPage": 3,
+            "start": 97,
+            "end": 3490,
+            "textSha256": "00de2a6daa892e35ce353aea1c5f529b687c9f27a8a0d854a78833dc9c75051f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d46",
+          "kind": "description",
+          "unitIndex": 46,
+          "unitId": "unit:2072546c33c7beab8e62e690504370dc9e8cb749bd0ea68b412c643706ca940e",
+          "textSha256": "d5591b89598659be725c5ce3267fa710b73c6847a7d6d21909e510c63f299906"
+        },
+        {
+          "localRef": "d47",
+          "kind": "description",
+          "unitIndex": 47,
+          "unitId": "unit:143d93388147d279b650be4b61634a1631aa2be664cfb3aa810025ca8e3984f7",
+          "textSha256": "8055fe2facbb708367f53be719a64eb52785a0afe41b74da19acea5aa1685077"
+        },
+        {
+          "localRef": "d48",
+          "kind": "description",
+          "unitIndex": 48,
+          "unitId": "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+          "textSha256": "0263839122cb788cf4597ad39e67f90a9d52610329eb1b7a1e7cb45cea032615"
+        },
+        {
+          "localRef": "e15",
+          "kind": "primary",
+          "sourceId": "ev:8eef4a2254346031026bbe574b318ed7",
+          "paperId": "2608.24557",
+          "sourceSha256": "39d2a82e6ff811e1987f1c0ef39b4a356a37ffc3f6f3ede7fd7804c04fdcc22e",
+          "sourceContext": {
+            "path": "papers/057e0b3ea326242cd2d8/reading-order.json",
+            "fileSha256": "6ea3862c20cc06317bae2f6870c17c7616a03aef916018e2e661042b7af6cd06",
+            "pdfPage": 3,
+            "start": 100,
+            "end": 2626,
+            "textSha256": "9fb0433662753305de96645e177e22009332627fc7c63a37678b8730c5b71c92",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e25",
+          "kind": "primary",
+          "sourceId": "ev:e9833a3b11c35ccbdc107b84f5fb425f",
+          "paperId": "2608.24557",
+          "sourceSha256": "39d2a82e6ff811e1987f1c0ef39b4a356a37ffc3f6f3ede7fd7804c04fdcc22e",
+          "sourceContext": {
+            "path": "papers/057e0b3ea326242cd2d8/reading-order.json",
+            "fileSha256": "6ea3862c20cc06317bae2f6870c17c7616a03aef916018e2e661042b7af6cd06",
+            "pdfPage": 18,
+            "start": 106,
+            "end": 2137,
+            "textSha256": "49ad79c9a6fc0c2848320775007320dd98a1bddb2253fe6f05fca8ed6f5af5b5",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d49",
+          "kind": "description",
+          "unitIndex": 49,
+          "unitId": "unit:72adc931d1154a2532da4df175555681ba6f4398e90b9d459a0751c90029c4cf",
+          "textSha256": "ea26304059bee126ed75547fc07c7b748f5ec3c088d29ab6874b86ec0dc33f87"
+        },
+        {
+          "localRef": "d50",
+          "kind": "description",
+          "unitIndex": 50,
+          "unitId": "unit:52e3584c514ebebe470005d57fd1e9beb298f6e6b66be25969930ceb01d253a1",
+          "textSha256": "1abd9e626c42705c34f930abd2bf283bc22af73d3b0f3eb3a4e8ee8ab8018d66"
+        },
+        {
+          "localRef": "d51",
+          "kind": "description",
+          "unitIndex": 51,
+          "unitId": "unit:a5d8b5b4b53946f24f3b04fecbfcdc0a8caf1b001f97da321d8e15a33638657e",
+          "textSha256": "3efff26655c7877bcffdc67472ce364a0310664f9cf8315d8480bf6f56392c53"
+        },
+        {
+          "localRef": "d52",
+          "kind": "description",
+          "unitIndex": 52,
+          "unitId": "unit:b595bc30dfbeb3610478f1f561421de0c24500efb36e372387a9357cedae59e5",
+          "textSha256": "777b25193d8600a4d75a9fb70f11a8a6fbf5e4475b2bba1e0380b9067a2cd8f0"
+        },
+        {
+          "localRef": "d53",
+          "kind": "description",
+          "unitIndex": 53,
+          "unitId": "unit:d8413d25e3c4b1bb2699f405d7a0f9de45b24b6b5003944fa1bc83b0f59e9538",
+          "textSha256": "d441674e8d85dc92ebdf72602cd08ea50cdb06cc3c4ee6bafbac92c5dfe460a9"
+        },
+        {
+          "localRef": "d54",
+          "kind": "description",
+          "unitIndex": 54,
+          "unitId": "unit:265f636e5b8c4af14debd6b2cbec78178e9b65f33cdcae183e62dc36da13766e",
+          "textSha256": "7a92ac1cd7fb9b831902096fc6f6566022e5e9ece382ccfced7c73e96dad88cb"
+        },
+        {
+          "localRef": "d55",
+          "kind": "description",
+          "unitIndex": 55,
+          "unitId": "unit:8f15f6385386378b356ad6e3313e4da862585485372f2311c4a2e2ac92ffe4ab",
+          "textSha256": "a213751d626d5f30516d64a619eb6b7ed8505415fee3286d8df8ca2c10cbb3e4"
+        },
+        {
+          "localRef": "d56",
+          "kind": "description",
+          "unitIndex": 56,
+          "unitId": "unit:c392c2786cf154d281bc04b2155bb1493eef379545d168bc8322bfb97b56c934",
+          "textSha256": "7eddb50c96a79fe216ee9d700fffb4cf2bf1ca7fa4b206187716870366910d84"
+        },
+        {
+          "localRef": "d57",
+          "kind": "description",
+          "unitIndex": 57,
+          "unitId": "unit:5eb7269d133bcc124e5f2978561dfaf43be90ea823d6a8ac7c5284bc5b02f9d4",
+          "textSha256": "312d0629174d4bfc0679b43de99e37f556524d79143d2237977f56e00982c985"
+        },
+        {
+          "localRef": "e0",
+          "kind": "primary",
+          "sourceId": "ev:1060456b5360164346c8ee2b6f230d03",
+          "paperId": "hep-th/0601001",
+          "sourceSha256": "b76dc07e0a021855cac69db0df8b6d836c1ba678929680374c08b8ef4e3943c4",
+          "sourceContext": {
+            "path": "papers/08b1eee013ee32ca4559/reading-order.json",
+            "fileSha256": "1ac8e2cf120dd1b69afd154a4f5b2df7e6e10c6182b15f7eff8a87d5a50b09d0",
+            "pdfPage": 17,
+            "start": 0,
+            "end": 2464,
+            "textSha256": "ad154db60b4ac10a3b6c77a7966256af355901d7fa11eac85ce60e251d6a600f",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e10",
+          "kind": "primary",
+          "sourceId": "ev:55562cc0a628bf7659cb3ac6187e71af",
+          "paperId": "hep-th/0601001",
+          "sourceSha256": "b76dc07e0a021855cac69db0df8b6d836c1ba678929680374c08b8ef4e3943c4",
+          "sourceContext": {
+            "path": "papers/08b1eee013ee32ca4559/reading-order.json",
+            "fileSha256": "1ac8e2cf120dd1b69afd154a4f5b2df7e6e10c6182b15f7eff8a87d5a50b09d0",
+            "pdfPage": 17,
+            "start": 0,
+            "end": 2464,
+            "textSha256": "ad154db60b4ac10a3b6c77a7966256af355901d7fa11eac85ce60e251d6a600f",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e6",
+          "kind": "primary",
+          "sourceId": "ev:386e6f8a76c251091228d53960043d0c",
+          "paperId": "hep-th/0601001",
+          "sourceSha256": "b76dc07e0a021855cac69db0df8b6d836c1ba678929680374c08b8ef4e3943c4",
+          "sourceContext": {
+            "path": "papers/08b1eee013ee32ca4559/reading-order.json",
+            "fileSha256": "1ac8e2cf120dd1b69afd154a4f5b2df7e6e10c6182b15f7eff8a87d5a50b09d0",
+            "pdfPage": 17,
+            "start": 0,
+            "end": 2464,
+            "textSha256": "ad154db60b4ac10a3b6c77a7966256af355901d7fa11eac85ce60e251d6a600f",
+            "quoteExactInPage": false,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d58",
+          "kind": "description",
+          "unitIndex": 58,
+          "unitId": "unit:6df39bcb6b52192e783e45e332d170619d74452ddfa32f036f52c1457ca2c8e1",
+          "textSha256": "ab3ac4692346f48997301a438cd5efb313c15530369bff30f4a4873b7041b0c5"
+        },
+        {
+          "localRef": "e1",
+          "kind": "primary",
+          "sourceId": "ev:1f1434d9d2cbd15930fc26fea60dc807",
+          "paperId": "1906.04858",
+          "sourceSha256": "c38d318ee524d5e3610875e9005b8c5a441faae234f502a96149e4b3c043a72b",
+          "sourceContext": {
+            "path": "papers/fef2c18101fd8d0ea76e/reading-order.json",
+            "fileSha256": "9e29b91ea99be6f579c692a3df0677979749ef7e7d35bae8b879cdb6dc6d3a7d",
+            "pdfPage": 1,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "ca482e523fb3c934b13e36c4d2d7a3c4c376a55aafbcb508c7e244d1de68fda5",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e14",
+          "kind": "primary",
+          "sourceId": "ev:8dd945d20e245e2e6e76648ac44589b4",
+          "paperId": "1906.04858",
+          "sourceSha256": "c38d318ee524d5e3610875e9005b8c5a441faae234f502a96149e4b3c043a72b",
+          "sourceContext": {
+            "path": "papers/fef2c18101fd8d0ea76e/reading-order.json",
+            "fileSha256": "9e29b91ea99be6f579c692a3df0677979749ef7e7d35bae8b879cdb6dc6d3a7d",
+            "pdfPage": 1,
+            "start": 104,
+            "end": 3503,
+            "textSha256": "19f386aeb0ee1d08a287a844312aebbf5605b05e7519cc1c6039b146775f8264",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e20",
+          "kind": "primary",
+          "sourceId": "ev:d15c23fd65c94c6f3d925581abd58d4b",
+          "paperId": "1906.04858",
+          "sourceSha256": "c38d318ee524d5e3610875e9005b8c5a441faae234f502a96149e4b3c043a72b",
+          "sourceContext": {
+            "path": "papers/fef2c18101fd8d0ea76e/reading-order.json",
+            "fileSha256": "9e29b91ea99be6f579c692a3df0677979749ef7e7d35bae8b879cdb6dc6d3a7d",
+            "pdfPage": 2,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "ae5ee166a2353562f8e63c40cdb22aef93b4659bd3cc7dbd6a4fc976a46c99e8",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "d59",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:47f20c13555b6a24e036eb69dac9e33374893a5dd73e32257e2e2d23a39ca6c6",
+          "textSha256": "5eccd82bbb6ea2e7d6aa21f666038bbec56e93748392e5d8ad2324b7d0203003"
+        },
+        {
+          "localRef": "e17",
+          "kind": "primary",
+          "sourceId": "ev:a6fc4e3b0b0091067efd4a256eaf5bd0",
+          "paperId": "1610.01533",
+          "sourceSha256": "d657ea017b1fbd70ec35f800afe7d4a8fd828149b44e7289c09c403f9e6d0b48",
+          "sourceContext": {
+            "path": "papers/2d4156bc28c704bea044/reading-order.json",
+            "fileSha256": "f0737b6458a5d1be5b4421bbbb5d749607e9de976aecb67c23c1663cad4ba4fa",
+            "pdfPage": 4,
+            "start": 0,
+            "end": 2715,
+            "textSha256": "2cf56e7d9fd268b084e90a2c51573fce1417f9ce5aa2849373ac1c0434683284",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e18",
+          "kind": "primary",
+          "sourceId": "ev:c38998db58c0dfc88712abe516506e86",
+          "paperId": "1610.01533",
+          "sourceSha256": "d657ea017b1fbd70ec35f800afe7d4a8fd828149b44e7289c09c403f9e6d0b48",
+          "sourceContext": {
+            "path": "papers/2d4156bc28c704bea044/reading-order.json",
+            "fileSha256": "f0737b6458a5d1be5b4421bbbb5d749607e9de976aecb67c23c1663cad4ba4fa",
+            "pdfPage": 5,
+            "start": 0,
+            "end": 2662,
+            "textSha256": "c795f6db711e9b51a16fa91d63e32fef0ee8e136a63e1deb533d4ea6970be6eb",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e19",
+          "kind": "primary",
+          "sourceId": "ev:cfd94c2f9767777780b62082ad325f3f",
+          "paperId": "1610.01533",
+          "sourceSha256": "d657ea017b1fbd70ec35f800afe7d4a8fd828149b44e7289c09c403f9e6d0b48",
+          "sourceContext": {
+            "path": "papers/2d4156bc28c704bea044/reading-order.json",
+            "fileSha256": "f0737b6458a5d1be5b4421bbbb5d749607e9de976aecb67c23c1663cad4ba4fa",
+            "pdfPage": 2,
+            "start": 147,
+            "end": 3147,
+            "textSha256": "aad2b69d6cfb16e8984063a9365b25072a909554ff0f119eb9facf0f446865eb",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "scopeContentSha256": "e147fd943566a01846df6e2e28486396bc2dc277cdac113953b8e44d5a8d8365",
+      "adjudication": {
+        "status": "accepted_explicit_scope",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    },
+    {
+      "id": "decision:screen-conflict:n4794",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+        "q025-candidate-region:5f91a1accabb39a167183aaa"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "160e942fe30fa58249fbc5884b7c118c28bb55984b93f7c447cf41993a2d3f9c",
+      "sourceScopeContentSha256": "c27e7c690d53caa33e3da863b071c125439ece276a7a296d2a3538f6632d34c1",
+      "targetScopeContentSha256": "545e7e7627a7e9d8266d887e83425d4902da19d72bef776cd3488b61936df845",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "sourceEvidenceAgreement": "definition_level_coordinator_adjudication_not_paired_link_verdict",
+      "sourceReviewIds": [
+        "screen-completion:d73e23dbb3a237b7a97cf3e6"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+          "scopeContentSha256": "c27e7c690d53caa33e3da863b071c125439ece276a7a296d2a3538f6632d34c1",
+          "definitionSha256": "d37fd1e504a663720694648db8f1bd1b458e9473bcd26eca3358d54b9d26e7d8"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:5f91a1accabb39a167183aaa",
+          "scopeContentSha256": "545e7e7627a7e9d8266d887e83425d4902da19d72bef776cd3488b61936df845",
+          "definitionSha256": "f9841731decea0afacdb241d368004b615fbaddc02f68ea350cfd6cc82a59752"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    },
+    {
+      "id": "decision:screen-conflict:n5103",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:9454e2dc275dec5e822bba03",
+        "q025-candidate-region:0373a22d5bfba4144b34728b"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "2d26915fa0b6e935b177f1be4d7f95b4e411e33b2a8e112155732b65413be833",
+      "sourceScopeContentSha256": "e147fd943566a01846df6e2e28486396bc2dc277cdac113953b8e44d5a8d8365",
+      "targetScopeContentSha256": "a3a2579d115a1464f96eb7bb79e1cb85ffbd506856b1563c8355b3c516c8a5a0",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "sourceEvidenceAgreement": "definition_level_coordinator_adjudication_not_paired_link_verdict",
+      "sourceReviewIds": [
+        "screen-completion:d73e23dbb3a237b7a97cf3e6"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:9454e2dc275dec5e822bba03",
+          "scopeContentSha256": "e147fd943566a01846df6e2e28486396bc2dc277cdac113953b8e44d5a8d8365",
+          "definitionSha256": "fe5625a7c4232916a4dde2b6bf0a8ec1c023810d7d846b140be0039aabaafa44"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:0373a22d5bfba4144b34728b",
+          "scopeContentSha256": "a3a2579d115a1464f96eb7bb79e1cb85ffbd506856b1563c8355b3c516c8a5a0",
+          "definitionSha256": "61e5c1d2f0d960082115fff4bca5eb1cecae30752bc8d0de65be86b209d8b8c0"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    },
+    {
+      "id": "decision:screen-conflict:n5953",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:1b676e04cbd94e2caf104916",
+        "q025-candidate-region:9cc6623edc9d8c83bc264832"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "e5cc670aa53cacc860cbbaa4a921606530686ec91559fb4753e13a394429ddff",
+      "sourceScopeContentSha256": "01d0bfe6c2911b558a4743ba8c0d38de189dd724a13f75fd9607dc42078f87bd",
+      "targetScopeContentSha256": "db10961658d1435226a720a302a772a7824b36d2e61e2be786e0c17da8ee575f",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "sourceEvidenceAgreement": "definition_level_coordinator_adjudication_not_paired_link_verdict",
+      "sourceReviewIds": [
+        "screen-completion:d73e23dbb3a237b7a97cf3e6"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:1b676e04cbd94e2caf104916",
+          "scopeContentSha256": "01d0bfe6c2911b558a4743ba8c0d38de189dd724a13f75fd9607dc42078f87bd",
+          "definitionSha256": "2b7db5cf6f07f00716368ea4db887625888381c8d6c49864beadaa3aa91ae3f1"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-region:9cc6623edc9d8c83bc264832",
+          "scopeContentSha256": "db10961658d1435226a720a302a772a7824b36d2e61e2be786e0c17da8ee575f",
+          "definitionSha256": "9da9fe5cbe8ba418aaefab2fcd2bc5f201e09e402968a7dae11337ec7c27fd7c"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    },
+    {
+      "id": "decision:screen-conflict:n467",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+        "q025-candidate-question:c2d09be6e44cc5f905ad1da7"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "507a2d985a830db71605ed46fc1c4211b9bc8f3ae5ebeb218ef24c7bac5a0ef1",
+      "sourceScopeContentSha256": "0b12990174fac44b92532be67665101d789a75310dcfa732ef46c9285eb95205",
+      "targetScopeContentSha256": "c879bdebfa26c7e040d4e54f07a442b33b7dcd585faca7f9c96b73ebe6e0927d",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "sourceEvidenceAgreement": "definition_level_coordinator_adjudication_not_paired_link_verdict",
+      "sourceReviewIds": [
+        "screen-completion:16ccd592b47cb25778942f71"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+          "scopeContentSha256": "0b12990174fac44b92532be67665101d789a75310dcfa732ef46c9285eb95205",
+          "definitionSha256": "56347c4c71d0de13411e8a85527f7cf12d3f0c10ce4e25c30d473a340a247b3e"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+          "scopeContentSha256": "c879bdebfa26c7e040d4e54f07a442b33b7dcd585faca7f9c96b73ebe6e0927d",
+          "definitionSha256": "a807e905414e3c1fb08fc6556e61f89364fa2573b5b33d051a9ef1ceae694038"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    },
+    {
+      "id": "decision:screen-conflict:n475",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+        "q025-candidate-question:c2d09be6e44cc5f905ad1da7"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "4d6dff70bf06ee690198fbaabaac6e8b7a616de434373f91c05bbf2cd2b65ad4",
+      "sourceScopeContentSha256": "cf4b878f8c8a9e621142d4757c68c105582cb223b4ed08afbca88ce0cbdf5a8a",
+      "targetScopeContentSha256": "c879bdebfa26c7e040d4e54f07a442b33b7dcd585faca7f9c96b73ebe6e0927d",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "sourceEvidenceAgreement": "definition_level_coordinator_adjudication_not_paired_link_verdict",
+      "sourceReviewIds": [
+        "screen-completion:16ccd592b47cb25778942f71"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+          "scopeContentSha256": "cf4b878f8c8a9e621142d4757c68c105582cb223b4ed08afbca88ce0cbdf5a8a",
+          "definitionSha256": "140ca8e4154ee522cfeb3e8835eb31bfbf4af5579f596bbd087ccb92d6112ef9"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+          "scopeContentSha256": "c879bdebfa26c7e040d4e54f07a442b33b7dcd585faca7f9c96b73ebe6e0927d",
+          "definitionSha256": "a807e905414e3c1fb08fc6556e61f89364fa2573b5b33d051a9ef1ceae694038"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    },
+    {
+      "id": "decision:screen-conflict:n478",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+        "q025-candidate-question:f23ce27773b0d5af5ed5ce55"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "fa7a2311abb39f963e0e350183530148607f7f7bb9a397f2d6ab03d5ab456ecb",
+      "sourceScopeContentSha256": "cf4b878f8c8a9e621142d4757c68c105582cb223b4ed08afbca88ce0cbdf5a8a",
+      "targetScopeContentSha256": "eac2f79694fc95787a5cf9d64d551fefd5a831efeb40e79d7bc52245dd4da3d3",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "sourceEvidenceAgreement": "definition_level_coordinator_adjudication_not_paired_link_verdict",
+      "sourceReviewIds": [
+        "screen-completion:16ccd592b47cb25778942f71"
+      ],
+      "evidenceRefs": [
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+          "scopeContentSha256": "cf4b878f8c8a9e621142d4757c68c105582cb223b4ed08afbca88ce0cbdf5a8a",
+          "definitionSha256": "140ca8e4154ee522cfeb3e8835eb31bfbf4af5579f596bbd087ccb92d6112ef9"
+        },
+        {
+          "kind": "admitted_scope_definition",
+          "candidateId": "q025-candidate-question:f23ce27773b0d5af5ed5ce55",
+          "scopeContentSha256": "eac2f79694fc95787a5cf9d64d551fefd5a831efeb40e79d7bc52245dd4da3d3",
+          "definitionSha256": "41eae8a7437167a8b56eecfa52d3c5ae9874e09e93406b63f953e1c778ec7936"
+        }
+      ],
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+          "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+        }
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "leaf-1b3b48ae03dbe168d677-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-1b3b48ae03dbe168d677-proposal/reply.json",
+      "sha256": "ed761b1dbcb4941d714c72a557608fc349b5f2a7c0dac846361eb1e0b7192c2c",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-1b3b48ae03dbe168d677-proposal/receipt.json",
+      "receiptSha256": "f178ba41a17a1f7e9008069dfa99ea6552057378dc4d0cc792386ea1676845b6",
+      "kind": "original_independent_scope_review"
+    },
+    {
+      "id": "leaf-1b3b48ae03dbe168d677-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-1b3b48ae03dbe168d677-challenge/reply.json",
+      "sha256": "922e13c6eddf1a653a8124056f65be59a20b1bf8b0cd58b20dd9948add21cd1f",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/full-leaf-wave-v3/jobs/leaf-1b3b48ae03dbe168d677-challenge/receipt.json",
+      "receiptSha256": "4f95de926b85a004ddc87be2c77002f8e74b5a7e37b0e222d9e63e6d930b9e11",
+      "kind": "original_independent_scope_review"
+    },
+    {
+      "id": "screen-completion:d73e23dbb3a237b7a97cf3e6",
+      "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/reply.json",
+      "sha256": "d73e23dbb3a237b7a97cf3e6481ca4b0a60f17846e3376f4ce70e3690615abd2",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0039-screen-completion/receipt.json",
+      "receiptSha256": "7b47f5fb14eb213908430c24a4ed96e5790793c5a508c2ddd0c67d801ab38e54",
+      "kind": "single_scope_description_screen_with_variant_review",
+      "independentLinkVerdict": false
+    },
+    {
+      "id": "screen-completion:16ccd592b47cb25778942f71",
+      "path": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/reply.json",
+      "sha256": "16ccd592b47cb25778942f71a9a33c0c98267d608e2411c6afd2e86ab5172298",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/screen-recovery-v1/jobs/canonical-continuation-v4-0047-screen-completion/receipt.json",
+      "receiptSha256": "cfaf353eb508da4598c6faaa56310fb1ebca37440af1afbcb1d590f357995eb9",
+      "kind": "single_scope_description_screen_with_variant_review",
+      "independentLinkVerdict": false
+    }
+  ],
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/screen-conflict-admissions-v1/receipt.json",
+    "sha256": "10fcb0d7f244c0f2d7aca329ef9d66bcec68807b30f81fbb404b5a65d5539a9f"
+  },
+  "sourceContributions": [],
+  "placements": [],
+  "aliases": [],
+  "typedCanonicalOperations": [],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "coordinator",
+      "status": "current",
+      "left": "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+      "right": "q025-candidate-region:5f91a1accabb39a167183aaa",
+      "relation": "distinct",
+      "reason": "Cloud signals or spin constraints do not by themselves test the charged spectrum of a specified weak-gravity formulation. Shared methods and conditional applications remain nominations, not admitted scientific claims.",
+      "nominationId": "n4794",
+      "noEqualityAdmitted": true
+    },
+    {
+      "stage": "coordinator",
+      "status": "current",
+      "left": "q025-candidate-region:9454e2dc275dec5e822bba03",
+      "right": "q025-candidate-region:0373a22d5bfba4144b34728b",
+      "relation": "distinct",
+      "reason": "Equilibrium or extremality corrections do not establish dynamical accessibility, a nonzero emission rate or a short lifetime. Matter sector, approximation and dynamics remain source-specific.",
+      "nominationId": "n5103",
+      "noEqualityAdmitted": true
+    },
+    {
+      "stage": "coordinator",
+      "status": "current",
+      "left": "q025-candidate-region:1b676e04cbd94e2caf104916",
+      "right": "q025-candidate-region:9cc6623edc9d8c83bc264832",
+      "relation": "distinct",
+      "reason": "Thermodynamic variables, mode labels and time normalizations remain distinct. No family-wide relaxation prerequisite or universal entropy-to-mode relation is admitted.",
+      "nominationId": "n5953",
+      "noEqualityAdmitted": true
+    },
+    {
+      "stage": "coordinator",
+      "status": "current",
+      "left": "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+      "right": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "relation": "distinct",
+      "reason": "Microscopic scalar dynamics and inferred dark-energy behavior have different targets. A compound source may address both; scalar w and inferred w must remain distinct. No shared-method theorem follows.",
+      "nominationId": "n467",
+      "noEqualityAdmitted": true
+    },
+    {
+      "stage": "coordinator",
+      "status": "current",
+      "left": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "right": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "relation": "specializes_right",
+      "reason": "Retain the noninteracting-CDM inference convention, the distinction between scalar and inferred equations of state, coupling-induced effective w versus constant-w fitting, and source-date conditions. This is organizational narrowing, not a shared-method theorem.",
+      "nominationId": "n475",
+      "noEqualityAdmitted": true
+    },
+    {
+      "stage": "coordinator",
+      "status": "current",
+      "left": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "right": "q025-candidate-question:f23ce27773b0d5af5ed5ce55",
+      "relation": "overlap",
+      "reason": "The shared canonical setting permits comparison and overlap. Proposed beyond-canonical extensions need independent premises, so whole-scope containment is not admitted. CPL expansion matching is not an interaction-induced equation of state.",
+      "nominationId": "n478",
+      "noEqualityAdmitted": true
+    }
+  ],
+  "screenConstraintSuccessors": [
+    {
+      "nominationId": "n4794",
+      "variantRef": "attempt1:comparisonReviews:n4794",
+      "left": "q025-candidate-region:4b1b43798f4cff47d094ef0a",
+      "right": "q025-candidate-region:5f91a1accabb39a167183aaa",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n4794",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n4794",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1183 centers cloud dynamics and light-field signals; c1577 centers conditional weak-gravity diagnostics.",
+          "Spin or gravitational-wave boson constraints do not automatically constrain the charged spectrum required by a WGC formulation."
+        ],
+        "reason": "The target change is explicit. Spectral or relaxation methods could connect selected questions after matching field charges, backgrounds and assumptions; superradiance membership alone supplies no WGC implication.",
+        "refs": [
+          "c1183",
+          "c1577"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n4794",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1183 targets light-field clouds and their signals; c1577 targets conditional weak-gravity constraints and neighboring diagnostics.",
+          "Boson spin or gravitational-wave constraints need not concern a charged-particle spectrum."
+        ],
+        "reason": "The definitions distinguish observational cloud questions from weak-gravity tests. Spectral or relaxation methods could connect them only after checking field charges, background, growth assumptions and the proposed conjectural implication.",
+        "refs": [
+          "c1183",
+          "c1577"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt1:comparisonReviews:n4794",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The alternate removes comparison from scientificConnections, retaining only shared_method and conditional_application.",
+          "The different_scoped_targets identity judgment remains unchanged; the conflict concerns the explicit scientific connection."
+        ],
+        "reason": "Removing the comparison route changes a completed connection judgment. The distinct cloud-probe and weak-gravity targets do not make comparison redundant with method reuse or conditional application. Preserve the selected judgment and withhold the alternate for adjudication.",
+        "refs": [
+          "c1183",
+          "c1577"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n5103",
+      "variantRef": "attempt1:comparisonReviews:n5103",
+      "left": "q025-candidate-region:9454e2dc275dec5e822bba03",
+      "right": "q025-candidate-region:0373a22d5bfba4144b34728b",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n5103",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n5103",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1201 asks about charge processes and lifetimes; c1480 asks about corrected equilibria and thermodynamic calculations.",
+          "Zero-temperature equilibrium shifts do not establish dynamical accessibility or emission."
+        ],
+        "reason": "The definitions distinguish the targets. A corrected solution may supply input to a discharge calculation only with a specified matter sector, approximation and dynamical prescription.",
+        "refs": [
+          "c1201",
+          "c1480"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n5103",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1201 targets charge evolution and proposed spectrum conditions; c1480 targets corrected geometry and equilibrium thermodynamics.",
+          "Static corrected extremality and entropy do not determine a discharge timescale."
+        ],
+        "reason": "The definitions permit a changed-target decision. Corrected equilibria can be inputs to charge-evolution models only with compatible charge normalization, approximation and emission physics.",
+        "refs": [
+          "c1201",
+          "c1480"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt1:comparisonReviews:n5103",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The alternate removes comparison from scientificConnections and retains only conditional_application.",
+          "The distinct process-versus-equilibrium identity judgment is unchanged."
+        ],
+        "reason": "The alternate withdraws an explicit comparison judgment even though both readings preserve the same conditional equilibrium-to-discharge application. This is a material connection change and remains withheld; the selected comparison is not replaced.",
+        "refs": [
+          "c1201",
+          "c1480"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n5953",
+      "variantRef": "attempt1:comparisonReviews:n5953",
+      "left": "q025-candidate-region:1b676e04cbd94e2caf104916",
+      "right": "q025-candidate-region:9cc6623edc9d8c83bc264832",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n5953",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n5953",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1282 centers thermodynamic entropy–extremality responses; c1345 centers modes, damping and classical dynamics.",
+          "Fixed thermodynamic variables and horizon-response endpoints differ from fixed-mode and time-normalization choices."
+        ],
+        "reason": "The definitions distinguish these targets. Thermodynamic input could inform a specified spectral calculation, but no universal relaxation or entropy-to-mode relation is established here.",
+        "refs": [
+          "c1282",
+          "c1345"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n5953",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "scope_definition",
+        "priority": "definition_decision_candidate",
+        "definingDifferences": [
+          "c1282 centers entropy–extremality responses; c1345 centers perturbation spectra and classical motion.",
+          "Thermodynamic derivatives, damping times and orbital Lyapunov exponents use different observables and limits."
+        ],
+        "reason": "The definitions support separate targets. Thermodynamic data could constrain a spectral comparison only with the exact relaxation proposal, time convention and mode limit supplied.",
+        "refs": [
+          "c1282",
+          "c1345"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt1:comparisonReviews:n5953",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected row permits thermodynamic input to a specified spectral calculation without requiring a relaxation proposal.",
+          "The alternate states that a spectral comparison is possible only with the exact relaxation proposal supplied, adding a prerequisite despite retaining the same connection labels."
+        ],
+        "reason": "As written, the alternate narrows the application premise. c1345 includes spectra and classical response beyond conjectural relaxation tests, and c1282 supplies no family-wide relaxation premise. The extra requirement must remain explicit and withheld rather than silently restricting the selected conditional interface.",
+        "refs": [
+          "c1282",
+          "c1345"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application"
+      ],
+      "specificRejectedPromotion": "family-wide relaxation prerequisite"
+    },
+    {
+      "nominationId": "n467",
+      "variantRef": "attempt0:comparisonReviews:n467",
+      "left": "q025-candidate-question:cb9d8ed82c9b8b3f697be05f",
+      "right": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "identityScreen": "different_scoped_targets",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "distinct",
+      "admittedRouteId": "navigation:screen-conflict:n467",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n467",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "shared_method"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_relation_review",
+        "definingDifferences": [
+          "Microscopic support for slow evolution versus apparent-phantom inference.",
+          "Mechanism control versus the definition of effective dark energy."
+        ],
+        "reason": "The u3114 description joins steep-potential accommodation to effective phantom behavior and poles. That compound source can contribute to both questions. Recover the paired reasons identifying each facet; a background mechanism does not establish microscopic control, and scalar w must remain distinct from inferred w.",
+        "refs": [
+          "c57",
+          "c306",
+          "u3114"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n467",
+        "identityScreen": "different_scoped_targets",
+        "scientificConnections": [
+          "conditional_application",
+          "comparison"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_relation_review",
+        "definingDifferences": [
+          "Microscopic support for slow evolution versus apparent-phantom inference",
+          "Construction control versus definitions of scalar and effective w"
+        ],
+        "reason": "The coupled-quintessence description contains both steep-potential accommodation and effective-w behavior. That makes a conditional application plausible, not the scopes identical. Retrieve its paired contribution reasons to distinguish the construction-facing facet from the inference mechanism; the description establishes neither microscopic control nor observational validation.",
+        "refs": [
+          "c57",
+          "c306",
+          "u3114"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt0:comparisonReviews:n467",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected connection set contains conditional_application and shared_method; the alternate retains conditional_application but replaces shared_method with comparison."
+        ],
+        "reason": "Identity and the conditional construction-to-inference application agree, but the alternate changes the recorded scientific connection judgment. A comparison and a shared method are not interchangeable assertions, even if both could ultimately be supported. Preserve the selected record and withhold this alternative for adjudication.",
+        "refs": [
+          "c57",
+          "c306",
+          "u3114"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n475",
+      "variantRef": "attempt0:comparisonReviews:n475",
+      "left": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "right": "q025-candidate-question:c2d09be6e44cc5f905ad1da7",
+      "identityScreen": "specialization_candidate",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "specializes_right",
+      "admittedRouteId": "navigation:screen-conflict:n475",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n475",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "broader_question"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "General background evolution and inference versus apparent-phantom histories and poles.",
+          "A broad history question versus specific inference conventions."
+        ],
+        "reason": "Descriptions place apparent-phantom mechanisms within a narrower part of background/inference work. Check paired reasons for that specialization while retaining the distinction between coupling-induced effective w and constant-w fitting of climbing quintessence. Shared histories do not make their inferred quantities interchangeable.",
+        "refs": [
+          "c58",
+          "c306",
+          "u3114",
+          "u3617",
+          "u1669"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n475",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "General background histories and inference versus apparent-phantom mechanisms",
+          "Canonical scalar evolution versus interaction-dependent or distance-fitted effective quantities"
+        ],
+        "reason": "Descriptions make apparent-phantom behavior a candidate narrower question within background inference. Its contributing mechanisms remain different: coupled effective w and constant-w distance fitting cannot inherit one crossing convention. Use the existing contribution reasons to decide the specialization without treating all background models as phantom mechanisms.",
+        "refs": [
+          "c58",
+          "c306",
+          "u3114",
+          "u3617",
+          "u1669"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt0:comparisonReviews:n475",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected connection set contains shared_method and broader_question; the alternate replaces broader_question with conditional_application while retaining the specialization candidate."
+        ],
+        "reason": "The identity assessment and equation-of-state qualifications remain compatible, but the alternate substitutes a conditional application for the selected broader organizing relation. Those connections can coexist but are not the same recorded judgment. The change remains withheld for downstream adjudication.",
+        "refs": [
+          "c58",
+          "c306",
+          "u3114",
+          "u3617",
+          "u1669"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": null
+    },
+    {
+      "nominationId": "n478",
+      "variantRef": "attempt0:comparisonReviews:n478",
+      "left": "q025-candidate-question:1cb68c84f4e26bf3ade9917a",
+      "right": "q025-candidate-question:f23ce27773b0d5af5ed5ce55",
+      "identityScreen": "specialization_candidate",
+      "identityScreenChanged": false,
+      "status": "coordinator_resolved_connection_only",
+      "currentRelation": "overlap",
+      "admittedRouteId": "navigation:screen-conflict:n478",
+      "noAliasOrUnion": true,
+      "originalSelectedScreen": {
+        "ref": "n478",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "broader_question"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "Broad evolution/inference versus identifiability and CPL representation.",
+          "General coupled histories versus canonical mapping and proposed theory-specific extensions."
+        ],
+        "reason": "The descriptions support a narrower reconstruction/CPL question within much of c58's inference coverage. Check paired reasons for the shared canonical setting and the proposed extensions. CPL expansion matching is not an interaction-induced equation of state, and extensions cannot inherit canonical restrictions without their own premises.",
+        "refs": [
+          "c58",
+          "c351",
+          "u4975",
+          "u2103",
+          "u742",
+          "u4735"
+        ]
+      },
+      "originalAlternateScreen": {
+        "ref": "n478",
+        "identityScreen": "specialization_candidate",
+        "scientificConnections": [
+          "shared_method",
+          "conditional_application"
+        ],
+        "basis": "description_checked",
+        "priority": "rich_scope_review",
+        "definingDifferences": [
+          "General cosmic evolution and inference versus identifiability and CPL representation",
+          "Broad interacting backgrounds versus explicitly bounded canonical reconstruction"
+        ],
+        "reason": "The reconstruction and CPL descriptions support a narrower inference question within the broader background overview. Proposed beyond-canonical reconstruction and electromagnetic couplings need their own premises. Retrieve the shared reconstruction reasons and repair c351's incomplete-looking assessment before an exact reuse decision.",
+        "refs": [
+          "c58",
+          "c351",
+          "u4975",
+          "u2103",
+          "u742",
+          "u4735"
+        ]
+      },
+      "originalConflictAssessment": {
+        "variantRef": "attempt0:comparisonReviews:n478",
+        "judgment": "material_conflict",
+        "definingDifferences": [
+          "The selected connection set contains shared_method and broader_question; the alternate substitutes conditional_application for broader_question while retaining the specialization candidate."
+        ],
+        "reason": "Both preserve the narrower reconstruction/CPL target and source-specific extension premises. Nevertheless, the changed connection set replaces an organizing-question judgment with an application judgment. The additional assessment-repair caution does not reconcile that difference; retain the selected record and withhold the alternative.",
+        "refs": [
+          "c58",
+          "c351",
+          "u4975",
+          "u2103",
+          "u742",
+          "u4735"
+        ]
+      },
+      "conditionalNominationsRemainUnadmitted": [
+        "conditional_application",
+        "shared_method"
+      ],
+      "specificRejectedPromotion": "whole-scope containment"
+    }
+  ],
+  "fullAtlasAdmission": false
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "q025-orientation-incremental-admission-cut/1",
+  "cut": "cut-01",
+  "families": [
+    {
+      "familyId": "parent-orientation-00",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-00-component.json",
+        "sha256": "661bc0f763305efc04903f9ac9c615bfe0acd72a5ee617019661b14b35a1bf85"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-00-admission.json",
+        "sha256": "b2cb26b01d19d1bc4aaf4a17670c485625dbdcc1e730f2781f0101a60a615444"
+      },
+      "originalRelations": 39,
+      "counts": {
+        "accepted_exact_paired_route": 39
+      },
+      "typeCounts": {
+        "method_for": 21,
+        "application_of": 10,
+        "narrower": 5,
+        "related_question": 2,
+        "premise_check": 1
+      }
+    },
+    {
+      "familyId": "parent-orientation-01",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-01-component.json",
+        "sha256": "0190d38bbd1678da4e6c6a6967915f57b2e71b59f00b0ee46942aedbb33493c5"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-01-admission.json",
+        "sha256": "e5b579c6453438df01c75fb223ce334927a4cb85ef7de4320c4c9928f1ced961"
+      },
+      "originalRelations": 31,
+      "counts": {
+        "accepted_exact_paired_route": 31
+      },
+      "typeCounts": {
+        "method_for": 13,
+        "related_question": 2,
+        "application_of": 10,
+        "premise_check": 3,
+        "narrower": 3
+      }
+    },
+    {
+      "familyId": "parent-orientation-02",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-02-component.json",
+        "sha256": "99a50935fb0e206d6879246cb402d6c147138be2b0ffb6810e5d915ec73be976"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-02-admission.json",
+        "sha256": "1cf10a97a989cad267e20e21f904f9e5dd350330e39849e55bfa593eb14f72e7"
+      },
+      "originalRelations": 34,
+      "counts": {
+        "accepted_exact_paired_route": 33,
+        "jointly_withheld": 1
+      },
+      "typeCounts": {
+        "method_for": 11,
+        "premise_check": 7,
+        "narrower": 5,
+        "application_of": 8,
+        "related_question": 2
+      }
+    },
+    {
+      "familyId": "parent-orientation-03",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-03-component.json",
+        "sha256": "049a13392eac34ed091d5e6db0c124121375cc12c6c98c95a4ef38f39bfdb2be"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/parent-orientation-03-admission.json",
+        "sha256": "19f6e852e0d4ea77decc8d8332763ee444112cf4574173afb8e041470c4bc988"
+      },
+      "originalRelations": 32,
+      "counts": {
+        "accepted_exact_paired_route": 32
+      },
+      "typeCounts": {
+        "premise_check": 4,
+        "method_for": 12,
+        "application_of": 5,
+        "narrower": 7,
+        "related_question": 4
+      }
+    }
+  ],
+  "pairCount": 4,
+  "acceptedRelations": 135,
+  "jointlyWithheld": 1,
+  "replacementsNeedingCoordinator": 0,
+  "exceptions": {
+    "path": "research/q025/evaluation/full-pass/native-local/orientation-admissions-v1/cut-01-exceptions.json",
+    "sha256": "e93a3c5b1c57bf7a5707f2da31c3294e33c5793cb8dac2f58ceff6581b9a0f03"
+  },
+  "compiler": {
+    "path": "research/q025/evaluation/full-pass/orientation-admissions-v1/compile.py",
+    "sha256": "3a04f8aea9739f30d7188bb6dd1bab0115624f84e29e3286926530725a9ec312"
+  },
+  "remainingFamilies": [
+    "parent-orientation-04",
+    "parent-orientation-05",
+    "parent-orientation-06",
+    "parent-orientation-07",
+    "parent-orientation-08",
+    "parent-orientation-09",
+    "parent-orientation-10",
+    "parent-orientation-11",
+    "parent-orientation-12",
+    "parent-orientation-13",
+    "parent-orientation-14",
+    "parent-orientation-15"
+  ],
+  "noSourceRoleHomeAliasOrPhysicalResult": true
+}

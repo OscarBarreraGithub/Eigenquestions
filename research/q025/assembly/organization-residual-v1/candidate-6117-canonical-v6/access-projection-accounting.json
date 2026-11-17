@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "q025-access-canonical-projection-accounting/1",
+  "before": 1334,
+  "after": 1329,
+  "selfRoutesSuppressedByExactIdentity": [
+    {
+      "id": "organizational-access:6133ac0f44b6e1c329a1c4ad",
+      "source": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+      "target": "q025-candidate-question:b6a72d6d11c8f9c783284067",
+      "canonicalDestinationId": "q025-candidate-question:b6a72d6d11c8f9c783284067",
+      "policyClass": "fine_home_to_question"
+    },
+    {
+      "id": "organizational-access:b80744414ddc82f68520ecb2",
+      "source": "q025-candidate-question:b6a72d6d11c8f9c783284067",
+      "target": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+      "canonicalDestinationId": "q025-candidate-question:b6a72d6d11c8f9c783284067",
+      "policyClass": "fine_home_to_question"
+    }
+  ],
+  "mergedEndpointGroups": [
+    {
+      "source": "q025-candidate-region:53207929d52445f818c87366",
+      "target": "q025-candidate-question:b6a72d6d11c8f9c783284067",
+      "originalRouteIds": [
+        "organizational-access:62bc4bd78b70ae0c7a3b99bc",
+        "organizational-access:324d12c75881d03c188a884f"
+      ]
+    },
+    {
+      "source": "q025-candidate-region:e208cc23fdee87a2938d71d0",
+      "target": "q025-candidate-question:891203df753b324531020eb9",
+      "originalRouteIds": [
+        "organizational-access:53f6d54bc8317522907c9457",
+        "organizational-access:e32e58e5e536396763a92177"
+      ]
+    },
+    {
+      "source": "q025-candidate-region:e52fcb6489b7f044e70ddb7d",
+      "target": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "originalRouteIds": [
+        "organizational-access:f7b594a14bb9ca2a372076c7",
+        "organizational-access:333b5dca45b55e804a1271c2"
+      ]
+    }
+  ],
+  "unexplainedMissingPairs": 0,
+  "meaning": "Certificates were rejoined from exact current homes and original positive-role observations. Duplicate canonical endpoint pairs are one organizational route; every observation proof remains in the new certificate and original input is pinned."
+}

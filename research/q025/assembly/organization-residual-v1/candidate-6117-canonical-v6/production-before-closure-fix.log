@@ -1,0 +1,12 @@
+file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/canonical-projection.mjs:4
+const fail=message=>{throw Error('Canonical projection: '+message);};
+                           ^
+
+Error: Canonical projection: projected containment is not a true source subset
+    at fail (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/canonical-projection.mjs:4:28)
+    at projectCanonicalCatalog (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/canonical-projection.mjs:53:152)
+    at assembleAccepted (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/accepted.mjs:225:19)
+    at runAssembly (file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/assemble.mjs:32:19)
+    at async file:///Users/emmy/Documents/Eigenquestions-atlas/research/q025/assembly/assemble.mjs:64:102
+
+Node.js v26.7.0

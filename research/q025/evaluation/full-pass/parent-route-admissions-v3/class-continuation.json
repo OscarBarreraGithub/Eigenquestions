@@ -1,0 +1,120 @@
+{
+  "sourceAudit": {
+    "path": "research/q025/evaluation/full-pass/native-local/parent-route-admissions-v1/route-audit.json",
+    "sha256": "9574642e410aac2084cb91de784ec7ecdce3384d40433823cb7c83d962560332"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/scope-gap-admissions-v1/component.json",
+      "sha256": "5e0b47da221d61b5056890435bca4b8ef0200a73c92d17cffebff5931672bcaf"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  ],
+  "sameClassDefinition": {
+    "path": "research/q025/evaluation/full-pass/parent-route-admissions-v1/class-proposal.json",
+    "sha256": "f866c25bca4d12708e3ae2a60c456dd739bee3080ee55feabf5fb7bd3c00e225"
+  },
+  "safeTypeObservationsBeforeDedup": 59,
+  "newAdditiveObservations": 53,
+  "types": {
+    "comparison": 6,
+    "narrows": 47
+  },
+  "held": [
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:0",
+      "flags": [
+        "already_admitted_observation"
+      ]
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:1",
+      "flags": [
+        "already_admitted_observation"
+      ]
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:2",
+      "flags": [
+        "already_admitted_observation"
+      ]
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:5",
+      "flags": [
+        "already_admitted_observation"
+      ]
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:7",
+      "flags": [
+        "already_admitted_observation"
+      ]
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:8",
+      "flags": [
+        "already_admitted_observation"
+      ]
+    }
+  ],
+  "directionSensitiveNotAdmitted": [
+    {
+      "id": "parent-3ad8848c0af01da6b749-challenge:link:9",
+      "type": "method",
+      "alreadyInFrozenOrientation": false
+    },
+    {
+      "id": "parent-3ad8848c0af01da6b749-challenge:link:10",
+      "type": "application",
+      "alreadyInFrozenOrientation": false
+    },
+    {
+      "id": "parent-3ad8848c0af01da6b749-challenge:link:11",
+      "type": "method",
+      "alreadyInFrozenOrientation": false
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:3",
+      "type": "method",
+      "alreadyInFrozenOrientation": true
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:4",
+      "type": "method",
+      "alreadyInFrozenOrientation": true
+    },
+    {
+      "id": "parent-b518fa2038910d956e04-challenge:link:6",
+      "type": "application",
+      "alreadyInFrozenOrientation": true
+    },
+    {
+      "id": "successor-parent-0f746a8c818c4fa5bc2d-challenge:link:13",
+      "type": "premise_check",
+      "alreadyInFrozenOrientation": false
+    },
+    {
+      "id": "successor-parent-73840db6800ed57ab471-challenge:link:2",
+      "type": "method",
+      "alreadyInFrozenOrientation": false
+    },
+    {
+      "id": "successor-parent-73840db6800ed57ab471-challenge:link:6",
+      "type": "application",
+      "alreadyInFrozenOrientation": false
+    }
+  ],
+  "noNewModelCampaign": true,
+  "exactCandidateInventory": {
+    "path": "research/q025/evaluation/full-pass/native-local/parent-route-admissions-v3/class-candidates.json",
+    "sha256": "afd5f7b4ad87374c825f1c2354d43e8a841d9457171aa82a408532b12e655d0e"
+  }
+}

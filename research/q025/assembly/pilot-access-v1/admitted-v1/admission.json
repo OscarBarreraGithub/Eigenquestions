@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "q025-explicit-pilot-navigation-admission/1",
+  "status": "accepted_explicit_navigation",
+  "adjudicator": "root",
+  "input": {
+    "path": "research/q025/assembly/pilot-access-v1/proposal.json",
+    "sha256": "efcd5e8938e68b606df005a7cea2a7444529ef7704dfc89adc2c1797766a1adb"
+  },
+  "authority": "Root approved the exact six routes after reading all complete endpoint definitions, three whole source questions and both annotations. Three related_question and three comparison arcs retain their types and qualifications. Incoming access uses the canonical source title and makes no converse claim.",
+  "routes": [
+    {
+      "id": "navigation:pilot-access:0",
+      "navigationContentSha256": "ca4cf6294a34df588f223518b00cc15279f0ca4d26c09c8c6b55e26f6f7c60da",
+      "sourceScopeContentSha256": "b57275e8f49c4ae0f8d2f94ba9d351f8b437ff9b5e0f97213cbe1a5dcf3df462",
+      "targetScopeContentSha256": "5d0bf0bb3a163dc1354aa1fc0024b8d07a94054fe294e9400a54bcf9b985cfc7"
+    },
+    {
+      "id": "navigation:pilot-access:1",
+      "navigationContentSha256": "387f898644b7b3c748d08f964d549f748c9b525613b8516bdb53b993d5e2391b",
+      "sourceScopeContentSha256": "5d0bf0bb3a163dc1354aa1fc0024b8d07a94054fe294e9400a54bcf9b985cfc7",
+      "targetScopeContentSha256": "6ae0fdecac69ef3eea93000607006efe0d48316a195521ecbc4ef5c66a196e7c"
+    },
+    {
+      "id": "navigation:pilot-access:2",
+      "navigationContentSha256": "e34db0cb61c48d1e2e67d9aaa175f4620d3250d2222a74ec109be40d183c7cd0",
+      "sourceScopeContentSha256": "bc9de156cb4ad7a7ebf6ea66eca3534ec69ac93d4d36958a390255557e38e621",
+      "targetScopeContentSha256": "87d5462be5176e41f7ac0b1663c42da367e6a4665143ff4490f2ceda4c6c1628"
+    },
+    {
+      "id": "navigation:pilot-access:3",
+      "navigationContentSha256": "45f8d757134905449cec4c2d4cd656758357b9ec66d54f4254be924877f56ca7",
+      "sourceScopeContentSha256": "87d5462be5176e41f7ac0b1663c42da367e6a4665143ff4490f2ceda4c6c1628",
+      "targetScopeContentSha256": "b72120f90e80c8290f6ea0c025b4d2afeae38105e0fcf11341081b2208a64df9"
+    },
+    {
+      "id": "navigation:pilot-access:4",
+      "navigationContentSha256": "aa03434ff185864c66ad3340b32d04c004a1a692642e63e668596bbee38d09c6",
+      "sourceScopeContentSha256": "b57275e8f49c4ae0f8d2f94ba9d351f8b437ff9b5e0f97213cbe1a5dcf3df462",
+      "targetScopeContentSha256": "fb5d0eef53e2718d59431c25c358ff7d95d3f0cc13472bd3b8d92756118b0b72"
+    },
+    {
+      "id": "navigation:pilot-access:5",
+      "navigationContentSha256": "bb8fced7ba3d1ed3377b0b077c59e617feea26152115c310895016d4e3225201",
+      "sourceScopeContentSha256": "fb5d0eef53e2718d59431c25c358ff7d95d3f0cc13472bd3b8d92756118b0b72",
+      "targetScopeContentSha256": "f165322c8fb743ab1c6dd566dcc371e848b50a2aafa01a691a50d84a6809d33a"
+    }
+  ],
+  "limitations": [
+    "Tower activation/content conditions use the complete admitted target scope, not guessed endings.",
+    "GMGHS workflow exclusion remains original review history.",
+    "No source role, home, H mass, USING or atomic source identity is added.",
+    "The204fine-home incidence proposal remains separately pending, not approved by these6routes."
+  ]
+}
