@@ -1,0 +1,338 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "strong-scope-bundle-10",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-10-challenge/packet.actual.json",
+      "sha256": "df9d8134d1af130a6cc48e9777c23be0c124048f9df0f5da7e6021fce31721e5"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-10-proposal/reply.json",
+      "sha256": "04d16dad83af35b8ac50f9e516e101f8b2dbd442ea5187b997f5937cb362a85c"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-10-challenge/reply.json",
+      "sha256": "c4fc0fcc41152a9092dde1d0cf1b3fe1f6467f8abb4a43463970dd2b4eb73628"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-10-proposal/receipt.json",
+      "sha256": "6245533eabb784e920b8f8f034cdeff81adf1c0fca9435133fc0b0e872e6b27e"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-10-challenge/receipt.json",
+      "sha256": "05f0c2214e797cc874bf283b10a2e8d1857039ab088a9f00b4136bd50092fb98"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-10-challenge/normalization.json",
+      "sha256": "d13c1cddd915326247d50f39b44157564a62c953ba9178c8b38d76f0e8f9a5f8"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {},
+  "operationHashes": {
+    "operation:navigation-v3:strong-scope-bundle-10:pd1": "bc48a4faeb6a9e621a6265da57f3f90d70c12c9f90621cc3b4db590310e90c32",
+    "operation:navigation-v3:strong-scope-bundle-10:pd3": "c17e8501e97caac567df37b2836a67ca2729fee5262192bb022688ff1edc5dc6",
+    "operation:navigation-v3:strong-scope-bundle-10:pd5": "4e3e89ace2c8ff73976cfe36d2ac082a8eb96172e5cb807ce868f048d682d92e"
+  },
+  "navigationHashes": {
+    "decision:navigation-v3:strong-scope-bundle-10:route:pn1": "788e1f52cae94d69386748a3e90e41d0f4c700c7c4e0639fc39506ee8b914b4d",
+    "decision:navigation-v3:strong-scope-bundle-10:route:pn2": "db0b716573ccc3d1cf3e6b311e4e08e45a4f663fa2fe18d7aeef9c9a10a3f127",
+    "decision:navigation-v3:strong-scope-bundle-10:route:pn4": "185fc730d4885f1b4a8436d29a91cf44bfcc129cb08ddb8ccac6a9b2866405f4",
+    "decision:navigation-v3:strong-scope-bundle-10:route:pn5": "872fbb0ea7bd3c4b9663c69272040156224557234cfb479188c1f8f03c97c5c2",
+    "decision:navigation-v3:strong-scope-bundle-10:route:pn7": "86935090a72e95472457fbbb12bcd71110e124fc74541ebb465eb533d620e621",
+    "decision:navigation-v3:strong-scope-bundle-10:route:pn8": "130ce74df7015145946c1d7e98a8d11b9257628de94b596c3805598dbff755e1"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "Assessment uses the supplied complete definitions, 27 whole descriptions and 31 paired attribution contexts. No actual primary windows, external sources or tools were used.",
+    "Inherited reading assessments are cited through current c* or n* refs. Historical nested excerpt IDs are not current evidence, and missing or incomplete passages have not been reconstructed.",
+    "Supported prior objects are retained exactly through these reviews; unchanged decisions and routes are not serialized again. The prior newQuestions and sourceContributions arrays are empty.",
+    "All original definitions and reading limits remain intact. Organizational support does not independently admit c0, c2 or c9, whose supplied statuses still require adjudication.",
+    "Common-target reuse covers the stated central overlap, not full-scope equivalence, complete containment, physical-statement equivalence or wholesale source migration.",
+    "Existing source roles and compound source objects remain unchanged. Omitted assignments receive no new role; no home, mass, atomic decomposition or global uniqueness is established.",
+    "Retained routes assert organizational relationships supported by definitions and descriptions, not new physical dependencies, successful constructions, universal bounds or current observational conclusions."
+  ],
+  "unresolved": [
+    "Independent admission of c0, c2 and c9 remains outside these organizational decisions.",
+    "Full-scope identity remains unestablished for c1/c10, c3/c8 and c5/c6; common-target reuse does not erase their boundary differences.",
+    "Compound-target reconciliation remains open where flagged, including u10, u18, u19, u22 and u24. Shared public destinations would not resolve their internal atomic identity."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 3,
+    "publicRoutes": 6,
+    "confirmedSourceRoles": 0,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "excludedOriginalRows": [
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd0",
+        "operation": "specializes",
+        "members": [
+          "c0",
+          "c7"
+        ],
+        "target": "c7",
+        "definingDifferences": [
+          "c0 restricts its central cosmological systems to string theory, explicitly string-inspired models and cosmic-string physics.",
+          "c7 also explicitly accommodates higher-dimensional gravity and supersymmetric constructions without requiring a string embedding, alongside additional qualified neighboring systems."
+        ],
+        "reason": "Use c7 as the broader cosmological organizer and retain c0 as its string-focused branch. c0's dilaton, winding, thermal, quantum-description and defect directions remain intact, including qualified boundary routes. The shared lecture witness establishes overlapping survey coverage, not equivalent mechanisms or complete source identity. This relationship does not settle c0's pending admission.",
+        "refs": [
+          "c0",
+          "c7",
+          "u24",
+          "n27",
+          "n28"
+        ]
+      },
+      "judgment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete definitions support a string-focused branch within c7's broader cosmological systems. Dilaton, thermal, defect and quantum-description targets remain covered without identifying their mechanisms. The shared lecture supports overlapping announced coverage, not identity or successful remedies. c0's admission remains separate.",
+        "refs": [
+          "c0",
+          "c7",
+          "u24",
+          "n27",
+          "n28"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:0a82e3502db88bea123bdd0e"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd2",
+        "operation": "specializes",
+        "members": [
+          "c11",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "c11 centers string and brane formulations, dualities, quantum consistency and effective physics.",
+          "c2 additionally organizes general gravitational descriptions, gauge-sector anomaly constructions, nongravitational classifications and conditional background-completion questions."
+        ],
+        "reason": "The stated systems and targets of c11 fit within c2's broader descriptions-and-consistency family. Retain c11's source-specific quantization, tension limits and qualified neighboring systems rather than identifying them with general quantum gravity. This is a relationship between the supplied definitions; the c11 witnesses do not independently verify c2's wider inherited coverage or resolve its pending admission.",
+        "refs": [
+          "c2",
+          "c11",
+          "u7",
+          "n1",
+          "u8",
+          "n2",
+          "u11",
+          "n0"
+        ]
+      },
+      "judgment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The formulation, duality, consistency and effective-physics targets of c11 fit c2's broader stated question. Its asymmetric-vacuum, exterior-charge and emergence witnesses remain separate tests; none verifies c2's wider completion or anomaly coverage. Specialization does not imply a fundamental-string embedding for neighboring systems or admit c2.",
+        "refs": [
+          "c2",
+          "c11",
+          "u11",
+          "n0",
+          "u7",
+          "n1",
+          "u8",
+          "n2"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:2826f594e622ec820a3a006c"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd4",
+        "operation": "specializes",
+        "members": [
+          "c9",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c9 specifies Type II, heterotic and related supergravity stabilization, metastable-vacuum, survival and thermal-history questions.",
+          "c4 explicitly covers the broader string/M-theory construction-and-control family, including precursor geometry, required field content, embedding and charge budgets, mediation and other physical applications."
+        ],
+        "reason": "Reuse c4 as the broader organizer while retaining c9's construction, control and cosmological-viability family. Ordinary stabilization and geometric boundary questions remain eligible within c9 without requiring a nonnegative-energy endpoint. The shared LVS witness supports that qualification; the additional c4 witnesses do not by themselves establish a difference or a successful uplift. No equivalence is inferred, and c9's pending admission remains separate.",
+        "refs": [
+          "c4",
+          "c9",
+          "u23",
+          "n3",
+          "n26",
+          "u22",
+          "n24",
+          "u26",
+          "n25"
+        ]
+      },
+      "judgment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Specialization is supported by c9's construction-and-cosmological-viability focus within c4's wider field-control and physical-application scope. Both already permit string/M-theory and ordinary stabilization; neither the M-theory label nor a positive-energy requirement supplies the distinction. The shared LVS witness preserves geometric precursor eligibility without proving all-moduli stability or a general classification. The complete definitions suffice despite c9's incomplete inherited rationale.",
+        "refs": [
+          "c4",
+          "c9",
+          "u23",
+          "n3",
+          "n26",
+          "u22",
+          "n24",
+          "u26",
+          "n25"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:ee0f349eb0f97bd0d67454e9"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn0",
+        "source": "c7",
+        "target": "c0",
+        "type": "narrower",
+        "title": "Explore string cosmologies and cosmic-string signals",
+        "qualification": "Restrict the central cosmological setting to string theory, explicitly string-inspired constructions and cosmic-string physics. Dilaton/winding evolution, thermal or inflationary perturbation mechanisms, and defect dynamics remain separate. Field-theory strings are not identified with fundamental strings; isolated-string and compactification-scalar neighbors retain qualified access.",
+        "reason": "c0 supplies a concrete string-focused direction within c7's broader cosmological systems without requiring their mechanisms or source statements to agree.",
+        "refs": [
+          "c0",
+          "c7",
+          "u24",
+          "n27",
+          "n28"
+        ]
+      },
+      "judgment": {
+        "ref": "pn0",
+        "verdict": "supported_as_written",
+        "reason": "The direction c7 → c0 correctly moves from broader cosmology to the string-focused branch. Its qualification preserves distinct dilaton, thermal, inflationary and defect mechanisms and keeps neighboring systems qualified. The lecture witness establishes survey coverage only; retaining the route does not settle c0's admission.",
+        "refs": [
+          "c0",
+          "c7",
+          "u24",
+          "n27",
+          "n28"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:0a82e3502db88bea123bdd0e"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn3",
+        "source": "c2",
+        "target": "c11",
+        "type": "narrower",
+        "title": "Study string and brane formulations and dualities",
+        "qualification": "Focus on the specified string and brane descriptions while retaining distinct perturbative, proposed nonperturbative, classical and semiclassical regimes. Asymmetric-vacuum consistency, exterior-charge stability and five-dimensional emergence diagnostics remain separate questions; adjacent systems acquire no automatic fundamental-string embedding.",
+        "reason": "c11 provides the formulation-and-duality branch of the broader consistency question. Its supplied witnesses illustrate distinct tests rather than a universal conclusion.",
+        "refs": [
+          "c2",
+          "c11",
+          "u11",
+          "n0",
+          "u7",
+          "n1",
+          "u8",
+          "n2"
+        ]
+      },
+      "judgment": {
+        "ref": "pn3",
+        "verdict": "supported_as_written",
+        "reason": "The direction c2 → c11 correctly narrows to string and brane formulations. Its examples remain independent consistency questions, with distinct quantization and approximation regimes. Emergence diagnostics are not promoted to a universal theorem, and neighboring systems acquire no automatic fundamental-string embedding.",
+        "refs": [
+          "c2",
+          "c11",
+          "u11",
+          "n0",
+          "u7",
+          "n1",
+          "u8",
+          "n2"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:2826f594e622ec820a3a006c"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn6",
+        "source": "c4",
+        "target": "c9",
+        "type": "narrower",
+        "title": "Test metastable vacua and their survival",
+        "qualification": "Focus on model-specific stabilization, metastable nonnegative-energy construction, control and cosmological survival. Ordinary stabilization and geometric admissibility remain eligible without an uplift endpoint. Positive energy, perturbative stability, decay lifetime and microscopic control are separate tests; zero-temperature and thermal histories remain distinct.",
+        "reason": "c9 supplies a focused construction-and-viability branch within c4's wider physical-application scope. The shared LVS witness preserves geometric precursor questions without converting them into de Sitter mechanisms or all-moduli stability results.",
+        "refs": [
+          "c4",
+          "c9",
+          "u23",
+          "n3",
+          "n26"
+        ]
+      },
+      "judgment": {
+        "ref": "pn6",
+        "verdict": "supported_as_written",
+        "reason": "The direction c4 → c9 matches the retained specialization. The qualification prevents the metastable-vacuum title from excluding ordinary stabilization and geometric precursors. Positive energy, perturbative stability, lifetime, microscopic control and thermal history remain separate tests, and the LVS witness supplies no all-moduli stability proof. c9's admission remains separate.",
+        "refs": [
+          "c4",
+          "c9",
+          "u23",
+          "n3",
+          "n26"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:ee0f349eb0f97bd0d67454e9"
+      ]
+    }
+  ],
+  "unadmittedChallengeObjects": {
+    "newQuestions": [],
+    "decisions": [],
+    "navigation": [],
+    "sourceContributions": []
+  },
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

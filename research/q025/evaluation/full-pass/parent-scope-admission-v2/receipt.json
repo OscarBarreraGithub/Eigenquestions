@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "q025-parent-scope-admission/2",
+  "authority": "root_explicit_parent_scope_adjudication_and_authorized_current_status_copyedit",
+  "inputs": {
+    "priorScopeFragment": {
+      "path": "research/q025/evaluation/full-pass/parent-adjudication-v1/parent-admission-components.json",
+      "sha256": "45a35581b9af9889372ddc8a3daad24ce1eee9439967587d78e12cab4d6c5602"
+    },
+    "originalAdjudication": {
+      "path": "research/q025/evaluation/full-pass/parent-adjudication-v1/adjudication-receipt.json",
+      "sha256": "db735a56d086a29fbae0aa57e8356356a3ae89cd0afa0a00948bb4163832ecce"
+    }
+  },
+  "destinationId": "q025-candidate-region:62d736e5f22beae93d504a44",
+  "oldScopeContentSha256": "628cfd7d174648b8f3712678d704876e1cf32de49160ec8a7f3c4484268b466d",
+  "newScopeContentSha256": "f7451bdf519a5e3b3a89e6e6722e0ae0f8660a0ad25db5e32ecba81abae841eb",
+  "copyedit": {
+    "field": "readingCoverage.readingLimit",
+    "original": "Only the supplied contrast descriptions, bounded primary text, exact graph context and attributed child records were assessed. Descendant descriptions were not independently reread. No images, complete papers, numerical replication or later-status checks were available. Preserve child reading limits and source dates, including 1112.3338v4 stamped 17 Apr 2012 with a title-page date of 18 Apr 2012, and 2006.06694v2 dated 18 Sep 2020. The current region is a new proposal requiring later independent review or explicit coordinator adjudication.",
+    "current": "Only the supplied contrast descriptions, bounded primary text, exact graph context and attributed child records were assessed. Descendant descriptions were not independently reread. No images, complete papers, numerical replication or later-status checks were available. Preserve child reading limits and source dates, including 1112.3338v4 stamped 17 Apr 2012 with a title-page date of 18 Apr 2012, and 2006.06694v2 dated 18 Sep 2020.",
+    "removedHistoricalWorkflowSentence": "The current region is a new proposal requiring later independent review or explicit coordinator adjudication.",
+    "scientificQualificationsChanged": false,
+    "authority": "Root instructed that a final admitted record must not retain obsolete new-proposal-requires-later-review status; preserve it historically with an exact copyedit binding."
+  },
+  "scopeAdmissionBasis": "Existing explicit coordinator adjudication of unchanged independently supported scope with actual reading limits; no whole-descendant or full-paper reading claim.",
+  "excluded": [
+    "No parent-batch containment is inferred.",
+    "No home, mass, alias, source role or further public route is admitted.",
+    "Factor repairs and their own original/adopted statuses remain separate."
+  ]
+}

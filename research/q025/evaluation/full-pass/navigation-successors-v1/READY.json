@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "q025-navigation-successor-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 1,
+  "maxAuthorizedConcurrency": 1,
+  "deterministicProposalAdoption": true,
+  "originalNativeFailurePreserved": true,
+  "originalScientificContentChanged": false,
+  "currentAuthoredScopeContextUses": 9,
+  "freshPrimaryReading": false,
+  "sourceQuestions": 32,
+  "pairedAnnotations": 37,
+  "nominatedPairs": 16,
+  "scopes": 7,
+  "maxResponseCharacters": 80000,
+  "budgetBasis": "Original frozen distance request response bound retained; no per-string caps.",
+  "contextEstimateTokens": 91085,
+  "dispatchGuardTokens": 220000,
+  "nativeLaunches": 0,
+  "scientificAdmission": false,
+  "tests": {
+    "ownPython": 6,
+    "sharedScientificPython": 5,
+    "node": 7,
+    "preparedVerification": 1
+  },
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/README.md",
+      "sha256": "f0c4435c4747ddbc9194225a5813d5e5f47bc4f0d16234e9da0546eb3b5ed073",
+      "bytes": 3322
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/INSTRUCTIONS.md",
+      "sha256": "edff98cdef5e7bf7656b1ca9d0383e333260a8fbfa22f7f6084961504ab57619",
+      "bytes": 7081
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/contract.py",
+      "sha256": "fbc48658ed7e9740f05725c7c38a9ab9b7b550908a7d4f29f29b83fc9cdccae0",
+      "bytes": 668
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/materialize.py",
+      "sha256": "c294b78c5262011633aa1826a7976a41cdc154386123fa95b87a2112d0039b44",
+      "bytes": 3320
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/prepare.py",
+      "sha256": "326562949294bf7c1539b530f3e6a59901f9f1f3e46fa71265a542e31e59ef44",
+      "bytes": 6442
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/preflight.py",
+      "sha256": "43826653a0079ed7fc1bd932000de0d201bf6729f4b53632ae069c4b572f80b1",
+      "bytes": 1959
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/runner.mjs",
+      "sha256": "32ade4150119bb87bd97caa1f940df847f5ad9bc041611dbba4b0798f795385d",
+      "bytes": 25355
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/runner.test.mjs",
+      "sha256": "0a90175911223d137ff9b4b54edf041b25db586ab331c314f3ccf889e96bd47c",
+      "bytes": 3362
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/test_successor.py",
+      "sha256": "61c304d8dd3662b40d66b566c5e70b9e45cc27fb4f87ae3d4a0d7f1bd10dbd71",
+      "bytes": 3092
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/adoption.json",
+      "sha256": "aad7f5ab661b4c91a9697e9f76571bc7316a20dbe635aaa1fb15b7186ffb6bdf",
+      "bytes": 2047
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/manifest.json",
+      "sha256": "9fa82fd732ea8fab32a66bede75661fbaf6408d38ec7501db024dd110e978e28",
+      "bytes": 23641
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/preflight.json",
+      "sha256": "84191248a6e2d084fda140f85408d2921c9fa7d3c81a83cde8a7996b0b17dc01",
+      "bytes": 861
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/navigation-successors-v1/verification.json",
+      "sha256": "3febd9408919bc6455443c9a751cb1673fa97da4046a6ec772f0a7c7586e8ced",
+      "bytes": 2319
+    }
+  ],
+  "campaignSha256": "a5c1396e006bcc733e670c61cbd3a481492d773d96e93cf2f1a2f483a2bada52",
+  "launchCommand": "node research/q025/evaluation/full-pass/navigation-successors-v1/runner.mjs --run --enable",
+  "limits": [
+    "Context registration does not prove scientific scope or add source evidence.",
+    "Only independent challenge is prepared; no original proposal reread or automatic redispatch.",
+    "Scientific admission and global identity/route conflict checks remain separate."
+  ]
+}

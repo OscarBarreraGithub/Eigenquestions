@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "distance-and-emergence",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/packet.actual.json",
+      "sha256": "e96e2bb284bb92082cdae96f215fe5de76ee517365f5b05f152570b9ce4ca209"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/adopted/distance-proposal-authored-context/reply.json",
+      "sha256": "e6a0e6a0068f3db44c30d1ec6edef5e305458c03b2955d9a68376f8cdc132dcf"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/reply.json",
+      "sha256": "71580857d45ce41355f71a6efb9faa10db34cbc3195f17615d258a06b72aad8c"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/adopted/distance-proposal-authored-context/receipt.json",
+      "sha256": "64a386d7addbcf80bbb563cec96367ec5eba25bf93f921801b6190386b742e13"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/receipt.json",
+      "sha256": "2d334ed8e234e0b459490f8a5e5e16a9dea5ed8ef49a7d371ff797afbeb80454"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/normalization.json",
+      "sha256": "467ef2b63d9c5e759669f5bdb8404ef0878b5653aed251f85c37a2532a811c8e"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  },
+  "scopeHashes": {
+    "q025-candidate-question:32fb14ab6798cddd2cde3f5d": "594dc89c7e49b39a3a50358f39b6283e92e2ecdc0389830e98f215129590b8cf"
+  },
+  "roleHashes": {
+    "decision:navigation-v2:distance-and-emergence:role:0": "fcb28e8577d5087d57a1bc876e4a0ce44782e2717fd863c91c1b9d3081cddf10"
+  },
+  "operationHashes": {
+    "operation:navigation-v2:distance-and-emergence:pd0": "f6049822fab4af97b26f9187d994091ddc32cb6dc5765d8b47e14edac2cee9b5",
+    "operation:navigation-v2:distance-and-emergence:pd1": "5177e9797c96fc6f829b1b030d720a52731a9afdb5b54367fbecfc5539080bc8",
+    "operation:navigation-v2:distance-and-emergence:pd2": "0669f816bceded6f0351f902aa493f4e298787d483c86131198ccdeccfd678cc",
+    "operation:navigation-v2:distance-and-emergence:pd3": "eed6f3a7c1f06aa56e9738c65bf3835a6c5a44cc57b149aca4c06e1bb8c4370e",
+    "operation:navigation-v2:distance-and-emergence:pd4": "7f25983da58ed6542a17863bd181878b41f81478f13013bce36de02594f710a5",
+    "operation:navigation-v2:distance-and-emergence:pd5": "c4d09a27fd5eee10b391af079d9b4ab7430f1822acdc3df626aac10ce883d333",
+    "operation:navigation-v2:distance-and-emergence:pd6": "28f3fa0c97726f92f17b113ab093f074b943d46e1f0d058c49ca043e5febf9c6",
+    "operation:navigation-v2:distance-and-emergence:pd7": "f5fc19e0ac8de4a476afaa693bf8d43c9ffae752bd5bdee6f023f616ac1fd5bf",
+    "operation:navigation-v2:distance-and-emergence:pd8": "1de99d041d12109ca02b1f65581c6493039d91c7ee3345661d5f5b6cc680b9e3"
+  },
+  "navigationHashes": {
+    "decision:navigation-v2:distance-and-emergence:route:pn0": "fff222b9a449090ed5ed385596efcac89f57a12795d5730d6d65cb1b722c48bb",
+    "decision:navigation-v2:distance-and-emergence:route:pn1": "a2ffb86ae9a7aba4868beefec22d7232f06bec35ad14f4decdc193ffd7127127",
+    "decision:navigation-v2:distance-and-emergence:route:pn2": "de95f7edb84535fc6d3f0b45641dcfb99918a19f049c88ab01c41e212406337d",
+    "decision:navigation-v2:distance-and-emergence:route:pn3": "1940a9614be4a3c0b2dff7446c367ef4cded2f1a434adacc55e5db9df3b8bfb3",
+    "decision:navigation-v2:distance-and-emergence:route:pn4": "bccbec948c3a80b1d711486cb9247da5d092a71daec2474fbb9cea912d2d2296",
+    "decision:navigation-v2:distance-and-emergence:route:pn5": "2bd1b8ec85eb2fbe9f415ff186b2a8aa85db1d52dacc236c2f119346412ef590",
+    "decision:navigation-v2:distance-and-emergence:route:pn6": "f9cf39e5ced2f8fa45a91e8df66e89a6f11cc7ad1211ba6fe642eb7604c7d9e9",
+    "decision:navigation-v2:distance-and-emergence:route:pn7": "66d78214b9197b6b0e46571fecea80ed716d1805aa43f3dc529058498b74fba6",
+    "decision:navigation-v2:distance-and-emergence:route:pn8": "bd043de723afa4402f7c8c5aef15dac1c3a544d5649f9fb46908f2ed6316284a",
+    "decision:navigation-v2:distance-and-emergence:route:pn9": "cf7e10d5ffbf79af0f878ead17de52cba2983ec2a905a3f9a35eeb8175af3596"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "The evidence array is empty. This review uses supplied complete definitions, whole descriptions and inherited paired assessments; no primary text was reread and no proof or numerical sweep was independently checked.",
+    "The packet supplies 32 of 147 distinct prior contribution sources and 37 paired contexts. The other 115 sources and omitted assignments are not reassessed. Common-target decisions and navigation create no new source roles.",
+    "Historical citations inside prior assessments remain historical. Current citations use their enclosing c* or n* records; l* records supply navigation proposals, not independent physical evidence.",
+    "Some inherited notes are clipped, including c3's admission explanation. The complete admitted definition and intact supplied statements support the organizational review; missing wording is not reconstructed or treated as a new premise.",
+    "All prior definitions, decisions, routes and the sole new source role are retained through explicit supported_as_written reviews. The empty change arrays introduce no replacements or additional roles.",
+    "Question organization, source contribution, physical implication, canonical identity and organizational homes remain separate. No source identity, global uniqueness or home/mass allocation is admitted.",
+    "Reviewed route titles apply to their specified outgoing arcs only. No reverse title or additional reverse relation is inferred."
+  ],
+  "unresolved": [
+    "The packet does not establish exact equivalence for c0/c1, c2/c3 or c4/c5. Their shared targets are resolved organizationally while their distinct targets, regimes and reading limits remain.",
+    "The trajectory correspondence between u30's membrane-exception question and u4's later conditional obstruction is not established. No retraction, unconditional exclusion or application relation follows.",
+    "u7 leaves universal existence of a suitable weak massless higher-form sector, force matching and leading-tower status unproved. The inherited n18 assessment also distinguishes fields massive away from the endpoint from those permitting the stated large-black-hole test; the retained route asserts comparison only.",
+    "The kinetic metric and physical fluctuation or mass-matrix analyses missing in u16/u29 remain missing. Geometric spectral information is not promoted to a verified physical proper-distance test.",
+    "The Type IIA weak-string identification, proposed TCS lift and Class B extension remain unresolved. A controlled worldsheet is not automatically an identified critical emergent string, and finite-distance tensionlessness does not establish the questioned infinite non-BPS tower.",
+    "General string uniqueness and complete limit classifications remain conjectural or setting-bounded. Finite internal volume alone does not establish the cited equi-dimensional premise.",
+    "u25's candidate theories and defining premises remain underspecified. u23's method extensions and physical realization of proposed spectra, and u10's foundational necessity question, remain unresolved."
+  ],
+  "counts": {
+    "newScopes": 1,
+    "typedOperations": 9,
+    "publicRoutes": 10,
+    "confirmedSourceRoles": 1,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "q025-placement-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 152,
+  "proposalChallengePairs": 76,
+  "distinctSourceQuestions": 2313,
+  "excludedPilotSourceQuestions": 87,
+  "reservedSourceTextsOpened": 0,
+  "maxAuthorizedConcurrency": 32,
+  "initialConcurrency": 8,
+  "sourceOnly": true,
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "maximumResponseCharacters": 120000,
+  "maxDependentPriorResponseCharacters": 120000,
+  "maxConservativeContextEstimateTokens": 164663,
+  "dispatchGuardTokens": 220000,
+  "nativeLaunches": 0,
+  "scientificAdmission": false,
+  "fullAtlasCoverageClaim": false,
+  "tests": {
+    "python": 15,
+    "node": 7,
+    "preparedRequestVerification": 152
+  },
+  "scientificPolicyReview": "Unchanged completed-pilot instructions and validator. Geometry owns packet semantics; coordinator admits exact outputs.",
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/README.md",
+      "sha256": "d159cb3d7b9d544b7d77b96030b2383a878af51bce2f403e96d872b55fc9f9e0",
+      "bytes": 4013
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/INSTRUCTIONS.md",
+      "sha256": "4aec502284f7bb6a6904a253421744b366d3c1428a12088cbc372abf86dd8e1f",
+      "bytes": 5280
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/contract.py",
+      "sha256": "c51c8d8512c7834152f00cf5a495a1813b38ea2b32184a1c2412c6b8b69b95a1",
+      "bytes": 8760
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/materialize.py",
+      "sha256": "e845654014171dc7d804bc00f3653bd82ccbe109163d064418e77e82e1c8fe36",
+      "bytes": 6899
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/prepare.py",
+      "sha256": "082d5842ebd20f512cf76b62f3761a5e637372faa6cbb49639216df704eb7da9",
+      "bytes": 4864
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/preflight.py",
+      "sha256": "a811877eb2947e25c35286d88b511da3a1c4e258ff9486b64d84d1baa0ca5b0c",
+      "bytes": 2934
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/runner.mjs",
+      "sha256": "c07bb1659d3fc9e6b597d116c5b5ab5c8b6d12e1df3c31ca434fc7df9bec7a05",
+      "bytes": 25362
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/runner.test.mjs",
+      "sha256": "e04f91d9a8b3c24f80acf7700dffb3896e94b6bf77d80e5948d6e14bca7afc5b",
+      "bytes": 3443
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/test_contract.py",
+      "sha256": "f372a9c53b18151174f0df87a404b43eec97e50d11615fc821520084f6c9cc11",
+      "bytes": 9743
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/manifest.json",
+      "sha256": "f1ececdcda1e6f5fbadc38a25527a982c18c8291751a7818f7c1fdb3af42e169",
+      "bytes": 544165
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/source-audit.json",
+      "sha256": "781b3322f0a9efb54088dfe83f81212fc495e2d7cd8a03867fba77ce1399ae7f",
+      "bytes": 14680
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/preflight.json",
+      "sha256": "7f6aec46bf9b0a980d96fd105aa88b9081f0a5db9199c4e5e3b9fd3042d7b273",
+      "bytes": 83990
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/placement-continuation-v1/verification.json",
+      "sha256": "55ac1fd766edcf079e21f6bba990a143ff1079557887d63787a7ce727c9fd4b5",
+      "bytes": 1061
+    }
+  ],
+  "campaignSha256": "195f0ef13156bcb6f4d7eaaf505454b933364281c98cce08d6f3d932d10cdd13",
+  "delivery": {
+    "path": "research/q025/assembly/placement-continuation-v1/delivery.json",
+    "sha256": "97cccd69e480ee985ad80d359d50b611e8c66ac798ffaeb5d4cf49e4200a50e4"
+  },
+  "limits": [
+    "No newly supplied primary pages; inherited annotations retain scope.",
+    "Exact span checks do not prove whole scientific coverage.",
+    "New scopes require global inventory lookup before admission.",
+    "Compound unions, revisions and consequential missing premises require coordinator scrutiny.",
+    "Output-density forecast is not guaranteed model completion."
+  ],
+  "launchCommand": "node research/q025/evaluation/full-pass/placement-continuation-v1/runner.mjs --run --enable"
+}

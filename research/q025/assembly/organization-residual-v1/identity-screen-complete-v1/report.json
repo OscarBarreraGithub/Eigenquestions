@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "q025-identity-complete-screen-audit/1",
+  "status": "three_groups_clear_of_all_current_admitted_and_pending_screen_constraints",
+  "completeInventory": {
+    "path": "research/q025/assembly/organization-residual-v1/identity-screen-complete-v1/inventory.local.json",
+    "sha256": "06489a700b826e0d4a96e97d764bf8aaaf3f34d298035f3ff0ca24ac325fbe49"
+  },
+  "inputPins": [
+    {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/combined-screen-intake.json",
+      "sha256": "0ef92b332f653470b6bd2583a0df8b3d8b5094d21c9805de35eb80141e9a005d"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/native-local/canonical-completion-census-v1/inventory.json",
+      "sha256": "2c715b85a0987ddbb9c7a95f197a99645307fe1af8aec796416c1785e352ec5f"
+    }
+  ],
+  "verifiedOriginalScreenFiles": 484,
+  "logicalScreenCalls": 121,
+  "screenComparisons": 8282,
+  "originalNominationIds": 8298,
+  "variantConflictsRetained": 6,
+  "screenConstraintsPending": 8280,
+  "currentAdmittedComparisons": 267,
+  "historicalConstraints": 147,
+  "groups": [
+    {
+      "operationId": "operation:canonical-pilot:statistics:pd0",
+      "members": [
+        "q025-candidate-question:0fe511cad863493858f2321b",
+        "q025-candidate-question:647f4b3de8eb982fbd1db9af"
+      ],
+      "screenHits": 33,
+      "internalScreenHits": [],
+      "variantConflicts": 0,
+      "currentConstraintConflicts": 0,
+      "homeRows": 3,
+      "homeDestinationChanges": 0
+    },
+    {
+      "operationId": "operation:navigation-amplitude:cd0",
+      "members": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "screenHits": 13,
+      "internalScreenHits": [
+        {
+          "comparisonId": "3ad34bef918f95bb8815b9f7",
+          "disposition": "resolved_by_exact_root_admitted_whole_group_source_decision",
+          "resolvingOperationIds": [
+            "operation:navigation-amplitude:cd0"
+          ]
+        }
+      ],
+      "variantConflicts": 0,
+      "currentConstraintConflicts": 0,
+      "homeRows": 0,
+      "homeDestinationChanges": 0
+    },
+    {
+      "operationId": "operation:navigation-kk:pd0",
+      "members": [
+        "q025-candidate-question:3f58b634e6f7439e502be440",
+        "q-kk-decay-linear-cosmology"
+      ],
+      "screenHits": 15,
+      "internalScreenHits": [
+        {
+          "comparisonId": "006788baaba825bd6fa5a1a0",
+          "disposition": "resolved_by_exact_root_admitted_whole_group_source_decision",
+          "resolvingOperationIds": [
+            "operation:navigation-kk:pd0"
+          ]
+        }
+      ],
+      "variantConflicts": 0,
+      "currentConstraintConflicts": 0,
+      "homeRows": 1,
+      "homeDestinationChanges": 0
+    }
+  ],
+  "groupIntake": {
+    "path": "research/q025/assembly/organization-residual-v1/identity-screen-complete-v1/group-intake.json",
+    "sha256": "aef0d6c57a8c5fd2559e37bf75c46e9b41c0cf283fbc93140de869e212c25508"
+  },
+  "automaticAliases": 0,
+  "automaticMassTransfer": 0,
+  "scriptSha256": "86743e79deb4d05d0d229ec42d7028caf0f8b20c27fe728e4b326be923c771b9"
+}

@@ -367,6 +367,7 @@ function renderColumns() {
         const content = el('span', 'direction-content'); content.append(el('h3', '', label));
         if(info.sourceTitle && !fullLabel.includes(info.sourceTitle))content.append(el('span','direction-source direction-source-title',displayExcerpt(info.sourceTitle,72)));
         const meta=el('span','direction-meta');if(!direction.metadataOnly)meta.append(el('span','direction-kind',info.kind),document.createTextNode(` · ${direction.sourceCount || direction.memberIds?.length || direction.evidenceIds.length} ${direction.selector?'listed descriptions':'sources'}`));
+        if(direction.routeCount>1)meta.append(el('span','direction-route-count',` · ${direction.routeCount} recorded routes`));
         if(followed)meta.append(el('span','direction-state','Followed'));
         if(revisit>=0)meta.append(el('span','direction-state',`Return to step ${stepNumber(revisit)}`));
         if(meta.childNodes.length)content.append(meta);

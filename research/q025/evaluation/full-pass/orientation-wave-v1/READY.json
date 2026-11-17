@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "q025-orientation-ready/1",
+  "status": "READY_FOR_ROOT_VERIFICATION_NOT_LAUNCHED",
+  "nativeJobs": 32,
+  "proposalChallengePairs": 16,
+  "originalRoutes": 491,
+  "initialConcurrency": 4,
+  "maxAuthorizedConcurrency": 16,
+  "sourceOnly": true,
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "maximumResponseCharacters": 80000,
+  "maxDependentPriorResponseCharacters": 80000,
+  "maxConservativeContextEstimateTokens": 107382,
+  "dispatchGuardTokens": 220000,
+  "nativeLaunches": 0,
+  "scientificAdmission": false,
+  "tests": {
+    "python": 11,
+    "node": 7,
+    "preparedRequestVerification": 32
+  },
+  "scientificPolicyReview": "Evaluation owner independently read full instructions/contract and confirmed exact direction, withheld, prior retention/replacement and context-only semantics; no changes requested.",
+  "files": [
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/README.md",
+      "sha256": "3be659672ed8ce721244ffab21bdaa50d73c6924c83e76fa0b55bf4eb8546f34",
+      "bytes": 2986
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/INSTRUCTIONS.md",
+      "sha256": "098505386a34cdec2556a33516f134fc5fcfa4d486267a7abb732a60b9937995",
+      "bytes": 5953
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/contract.py",
+      "sha256": "d713eebf70c43bc8b8082bba3db216389b6a919839ba22b89576cea3b50c62ba",
+      "bytes": 5336
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/materialize.py",
+      "sha256": "22c2fd3d3d066f12f4f615a98df4661c40808bc4ed0437c9a875fd530f87a72b",
+      "bytes": 4679
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/prepare.py",
+      "sha256": "71668710c2340e319bcddd276763998547e860b419268f98304446398bf8bb7c",
+      "bytes": 3909
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/preflight.py",
+      "sha256": "1e737f5d26ea23f81fdef424ae9ab5c67693efd39fed4d41f4df51abd56bccb2",
+      "bytes": 2924
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/runner.mjs",
+      "sha256": "ca8a97bcbc92796c3e1011341292d891368982678b19527d6ac8b8e2d64e469c",
+      "bytes": 25366
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/runner.test.mjs",
+      "sha256": "accae0a4dd641ff145d4b59df25588450bbde93b31139ca6146baebcc54eb3da",
+      "bytes": 3435
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/test_contract.py",
+      "sha256": "229fbbd6c2794189af4dd90ea8673664c881b396a052f65df4bc3c7585a81399",
+      "bytes": 6017
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/manifest.json",
+      "sha256": "9494bb3efd7a42234be4045ea1ff02e661929dded009d6e1523c1757bd8e8fe6",
+      "bytes": 126779
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/source-audit.json",
+      "sha256": "066eafa17a9ce3726d22e75fecbaaa6bf9c884618dd781055a57f4c4eb4ba6f0",
+      "bytes": 2138
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/preflight.json",
+      "sha256": "e86dc3537d9454459cfc9ebe96b7d2f75beeee1756c399406a4da91c8d9c546c",
+      "bytes": 17681
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/orientation-wave-v1/verification.json",
+      "sha256": "246c41219f0f7e65d3869992a194b007235d09a5e7c65decc146970491ec3e6e",
+      "bytes": 562
+    }
+  ],
+  "campaignSha256": "f107b52ebce9e776bea4e503590a2bf81f35764bb5424c45743654f9fd8cf0e6",
+  "sourceDesign": {
+    "path": "research/q025/evaluation/full-pass/orientation-design-v1/design-index.json",
+    "sha256": "88748052eebe067a9476dfb7011267430f307997f25ca7636a2267edb3c5be4b"
+  },
+  "scientificContract": {
+    "path": "research/q025/evaluation/full-pass/orientation-design-v1/SCIENTIFIC-CONTRACT.md",
+    "sha256": "e3a158b2404eeddeaf794b9080900aba17ddc4a7039d968c2afe137faa8fce61"
+  },
+  "launchCommand": "node research/q025/evaluation/full-pass/orientation-wave-v1/runner.mjs --run --enable",
+  "limits": [
+    "No new primary text or full per-unit attribution notes.",
+    "Representation checks do not establish physical applicability.",
+    "Revised/withheld routes require coordinator scrutiny; exact independent agreements still need global endpoint/canonical/DAG gates."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "artifactHashesVerified": 7,
+  "jobId": 61538830,
+  "localNontrivialCharts": {
+    "charts": 79,
+    "medianNeighborRecall": 0.9714285714285714,
+    "medianStress": 0.41639546552048884,
+    "limitation": "k=5 recall for charts<=6 is tautologically1; those are excluded from this statistic."
+  },
+  "retrievalRows": [
+    {
+      "relationId": "scientific:production-002",
+      "partition": "development_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        6
+      ],
+      "coupledRanks": [
+        1
+      ]
+    },
+    {
+      "relationId": "scientific:production-015",
+      "partition": "development_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        73
+      ],
+      "coupledRanks": [
+        1
+      ]
+    },
+    {
+      "relationId": "scientific:production-026",
+      "partition": "development_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        3
+      ],
+      "coupledRanks": [
+        1
+      ]
+    },
+    {
+      "relationId": "scientific:production-075",
+      "partition": "development_injected",
+      "pairs": 2,
+      "baselineRanks": [
+        138,
+        142
+      ],
+      "coupledRanks": [
+        1,
+        1
+      ]
+    },
+    {
+      "relationId": "scientific:production-094",
+      "partition": "development_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        37
+      ],
+      "coupledRanks": [
+        2
+      ]
+    },
+    {
+      "relationId": "scientific:production-114",
+      "partition": "development_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        3
+      ],
+      "coupledRanks": [
+        1
+      ]
+    },
+    {
+      "relationId": "scientific:production-011",
+      "partition": "withheld_not_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        45
+      ],
+      "coupledRanks": [
+        45
+      ]
+    },
+    {
+      "relationId": "scientific:production-021",
+      "partition": "withheld_not_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        8
+      ],
+      "coupledRanks": [
+        8
+      ]
+    },
+    {
+      "relationId": "scientific:production-091",
+      "partition": "withheld_not_injected",
+      "pairs": 10,
+      "baselineRanks": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ],
+      "coupledRanks": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ]
+    },
+    {
+      "relationId": "scientific:production-097",
+      "partition": "withheld_not_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        17
+      ],
+      "coupledRanks": [
+        17
+      ]
+    },
+    {
+      "relationId": "scientific:production-108",
+      "partition": "withheld_not_injected",
+      "pairs": 1,
+      "baselineRanks": [
+        1
+      ],
+      "coupledRanks": [
+        1
+      ]
+    }
+  ],
+  "decision": "Keep the selected W unchanged for now: sparse coupling has no held-out gain in this cohort; retain exact typed method follow actions. Prefer local detail; do not use a flat global fit or direct-residual broad positions as a faithful all-source chart."
+}

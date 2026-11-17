@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "consistent-reductions-and-actions",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/packet.actual.json",
+      "sha256": "400882abaf0da5e9cae42526cd91955e8365a9134c2fb4b448e63071f676763f"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-proposal/reply.json",
+      "sha256": "b77c4ef661f9a1a7d574d2fbb172f8a99f8fc6c43b9acee51ec5346ad00b3e50"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/reply.json",
+      "sha256": "3ced6e2b7032a54329b9bc2ce8cd88f6016c8970b462feb13a2497d5778128e4"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-proposal/receipt.json",
+      "sha256": "ee11ed8b3a60d802479ebbe83d943556bd81b5fcbe7d3fdfe672427c383bc76a"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/receipt.json",
+      "sha256": "72ee5195d8d9aff654ffed6f7f08405b38f5badf8284506e6ed4943fe5fb5196"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/normalization.json",
+      "sha256": "bc8c1fd3db520471e96e0116c960e85f14d2a29f4e5d9c839cc36beeac5e7ae9"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {
+    "decision:navigation-v2:consistent-reductions-and-actions:role:0": "605c6c857d0c558d1f8bc23f75e7f1f942c1fae2be6638e6bb07a3471f86fc9e",
+    "decision:navigation-v2:consistent-reductions-and-actions:role:1": "286eef739d7ea803e9639e451f5eda8d4e3d1c58b3fa7be93d6b0f7fd8fba916"
+  },
+  "operationHashes": {
+    "operation:navigation-v2:consistent-reductions-and-actions:pd0": "6f5b3479a30a4d4b2d7ae033c97a3d2b34fe3ebcb7472ee83ddebf85792f5d99",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd1": "85d340f8e49d81c1268fd6124653ce0629758b3bb1b1659d048b3210e53e56c7",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd2": "9d607ac2013da3c2c0fdece9f24ff61493745254c0245717a54d4d4e9b2c0eee",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd3": "ea66367c1c512c4c6886e9536b86aa1983a2915726d3b9bb4dcb1cab62df9c2c",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd4": "84c1128650b4f518806b7b10f17f5b6b8ebc23e77a2a3795164cc8100d4890cf",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd5": "d71d63e56d7801ffcb5990452227e0f87e8a1221042b4c323af291eae9326374",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd6": "cae467dbddedff939bc03d4010f0e358fa878a75ff4c2098c2d3b359a855e7f1",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd7": "612269f747d6d0bc921fc0a9d0e3efd50812153aed272476bb79479bf3ac3934",
+    "operation:navigation-v2:consistent-reductions-and-actions:pd8": "44c4c2a64bcdcf1223d9618963ab149f63cbd8b7c2bfcbfdce96143821778a6d"
+  },
+  "navigationHashes": {
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn0": "0906f8b181dd37be6b38c8c7293c10982f3f0ae55ff3ffb0f0653eb1a660325e",
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn1": "2824325fd8c33cbc966eaa339247474bed05504ad3380daf967b139b4e648b81",
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn2": "dc0edc79f462002ed7d425edd68a93f7e7407d21d0ff2143f495cc87551037d3",
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn3": "381fa9269f291f7a7b546adf088de1b5e97c8720f3f31dffb4c9fd85f95829fe",
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn4": "e9e4b09b3e521e7a24821ab18d9f3b079de47ab1b357779aaff27c005475d30b",
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn5": "42517608eac55b726ecd42f439d82a72cea808c6fa75ade19e83badad46e7d93",
+    "decision:navigation-v2:consistent-reductions-and-actions:route:pn6": "130614b555b24be881c4fd112cc4524140e6d77fa30fa2e01c2779dcecc5d26a"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "The evidence array contains no primary windows. This review uses exact definitions, supplied whole descriptions and inherited assessments cited through current c* and n* refs; l* refs identify proposed graph context only.",
+    "All six definitions and their reading limits remain unchanged. Organizational specialization and common-target reuse establish neither physical-statement equivalence nor automatic source-role transfer.",
+    "The packet supplies 24 selected witnesses from 162 distinct prior contribution sources. Unselected assignments and complete inherited role tables are not reassessed.",
+    "Both prior proposed source roles are explicitly confirmed by index. No additional sourceContributions are introduced, and omitted rows receive no new target role.",
+    "Truncated inherited notes are not completed by inference. Reported bounds, quantization failures and source corrections remain inherited qualifications rather than fresh primary findings.",
+    "No source is split or rewritten. No global uniqueness, source home, membership mass or admission of unresolved descendants follows."
+  ],
+  "unresolved": [
+    "Necessary circle-origin tests, algebraic compatibility, potentials and flux dictionaries do not supply sufficient uplift criteria on this evidence.",
+    "Differential realization, global lattice conditions, low-energy completeness, flux quantization and localized backreaction remain construction-specific questions.",
+    "The inherited half-maximal AdS5 matter bound and open differential-existence questions remain restricted to that classification and are not independently reverified.",
+    "Atomic reconciliation of compound sources, including u6 and u17, remains open."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 9,
+    "publicRoutes": 7,
+    "confirmedSourceRoles": 2,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

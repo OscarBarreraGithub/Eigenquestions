@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "de-sitter-organization",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v4/adopted/de-sitter-authored-disposition-challenge/packet.actual.json",
+      "sha256": "372e52d58d411bfedd616f02bb22b165ee5a092971140422ea8fa92893d19389"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/de-sitter-organization-proposal/reply.json",
+      "sha256": "30674083eb2fb70b23979bb88c1eb5104b24f54a5d3d17064e1b2caa72d3d03d"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v4/adopted/de-sitter-authored-disposition-challenge/reply.json",
+      "sha256": "05cd83d45a83986513ca8a42ec753e7625de3ede9fe826b0438a5125e9fecd07"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/de-sitter-organization-proposal/receipt.json",
+      "sha256": "b8fdb10e9fd7f3248c0df769de75e150980776f2cd9474abc6924ba84d69db87"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v4/adopted/de-sitter-authored-disposition-challenge/receipt.json",
+      "sha256": "8e7ece4d49c8a40be30583b263230ddaaa65433ccccecd5e6f0653c34b46394d"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-recovery-v4/adopted/de-sitter-authored-disposition-challenge/normalization.json",
+      "sha256": "7504c34f5a00b441bdac5a50a9469eaab29232a0b9248076c21121d712a20d2b"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  },
+  "scopeHashes": {
+    "q025-candidate-question:3d5c2b4ed57cefc85bb9a422": "1f348cab8fcb7081a6fb142faa239ec4d8ce85e6031349fff85e8ffaa14e81e2"
+  },
+  "roleHashes": {
+    "decision:navigation-v2:de-sitter-organization:role:0": "0ffd87793c28c3aacd438a7777feda2ed7b86ca3e33b9231484ac7447d0a5a1d",
+    "decision:navigation-v2:de-sitter-organization:role:1": "5311d962fbc8ecad97e17481c5ac76e62bf8d442f1f7efa8f232597fb456592e",
+    "decision:navigation-v2:de-sitter-organization:role:2": "010f3b12bcabc39652b55aff481d0fef010fb521403ea825c22cd5fc68566f3b",
+    "decision:navigation-v2:de-sitter-organization:role:3": "6a3c1dd7e8b90210bf6df21ba909db3e2c05540835536f81e9012a96e746def8",
+    "decision:navigation-v2:de-sitter-organization:role:4": "3115314dde8ab231a76b480d7044892bce36ac413bc0caf3aed07a4fa8d3c928",
+    "decision:navigation-v2:de-sitter-organization:role:5": "85c6242fc3645bf4e6fc8a6efd9954a516f68db0cbeb8811e4499e63106d98ec",
+    "decision:navigation-v2:de-sitter-organization:role:6": "dd3475a30fdbbdf710a4f38632c5492ab7f74083d13ad04eb98ab146e5633335",
+    "decision:navigation-v2:de-sitter-organization:role:7": "ec00847802e40aefe3b63a808cce2fb6e747caf9edfc50f0682be72139574e57",
+    "decision:navigation-v2:de-sitter-organization:role:8": "9c263db332a711710a036efc502383cce23e61aa9ca7a1706c12b968b30283cc",
+    "decision:navigation-v2:de-sitter-organization:role:9": "819c955dd4c7a5d3f714349edcef75708650994a13ee22701274ccd9c13198c1",
+    "decision:navigation-v2:de-sitter-organization:role:10": "ff35e7c45ee580dc35169f61f8524e569e45ec3d0a9fe9b435952083993f2296",
+    "decision:navigation-v2:de-sitter-organization:role:11": "65812dc13f716d14d841c98817c46c419ae173d75ed6b92f872e503b25675da8"
+  },
+  "operationHashes": {
+    "operation:navigation-v2:de-sitter-organization:pd0": "6c6882be6d861cd359b82741e0f85369b19cfe80dda2c564081689b1d7169877",
+    "operation:navigation-v2:de-sitter-organization:pd1": "626f0b1a079933803c99640787c40bdca52cc9e5e1d080d20d50d7e319df30fb",
+    "operation:navigation-v2:de-sitter-organization:pd2": "4e004868e21be9c0486be2cf8ea7a1215255b7ada7de33a1b251085253eab293",
+    "operation:navigation-v2:de-sitter-organization:pd3": "0a917bf38a760c23cb03fad2451363071bbe14e2467e36bba02c5272b8f523cc",
+    "operation:navigation-v2:de-sitter-organization:pd4": "58ca58cf8e11a953837a1bcb5b631d98ae843f2d606e8900c2756e05890c6ae0",
+    "operation:navigation-v2:de-sitter-organization:pd5": "bec8f14c619ca24a56739298dc29e21ae7b55249402b1c6f94ca7fafa1707dc5",
+    "operation:navigation-v2:de-sitter-organization:pd6": "209e03500e5dc252a70689c0ac3f64e53612841b8c6fc412c0f0de1bc3af3c82",
+    "operation:navigation-v2:de-sitter-organization:pd7": "211b89cb5b43c2bc78e9523bf4c146b25baa28c2020036b98accd65b63d888fb",
+    "operation:navigation-v2:de-sitter-organization:pd8": "dd9763c6ae9d52889cc4a94bdba96d92b4743297ad6ba58eade7ecf0b17b223b",
+    "operation:navigation-v2:de-sitter-organization:pd9": "20dba3c2d41e82574c63c9faec687e0e3d6a67cf0fec07ba23d681168aca4bdf",
+    "operation:navigation-v2:de-sitter-organization:pd10": "5ba18fcabca48c4cfa7119794200404a1b4f1866b69056410f3ad0133c4284e6"
+  },
+  "navigationHashes": {
+    "decision:navigation-v2:de-sitter-organization:route:pn0": "f86b2a922a8c264589de892295359d19bf8e12f8603bfbebcfe311ff22892734",
+    "decision:navigation-v2:de-sitter-organization:route:pn1": "8be5c1b023b030af076e9ff3a8813a0b7a90af99cdd87fef127f7230955126e8",
+    "decision:navigation-v2:de-sitter-organization:route:pn2": "65ae3468ea74559851459a880e3da9ba73ac2fd1da78b12eabf6914be9abb3a7",
+    "decision:navigation-v2:de-sitter-organization:route:pn3": "04263157b0d4cc0a71cbb058f9c838fb89d7e075864ce642934263657e5da285",
+    "decision:navigation-v2:de-sitter-organization:route:pn4": "fc90ddea926256daa37ae76edfab326bb8e30494a01be1bf903d38ee15a2aff4",
+    "decision:navigation-v2:de-sitter-organization:route:pn5": "3b6fab784bb7992af4d7580d85d76891d69999d34b95c451be64279e74edcfc5"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No actual primary windows are supplied. This review uses exact definitions, whole descriptions and enclosing c*/n* assessments; historical citations nested inside those assessments are not current evidence.",
+    "The packet supplies 27 selected witnesses from 69 distinct prior contribution sources. Unselected assignments and omitted inherited role rows are not reassessed or transferred.",
+    "All eight original definitions and reading limits remain unchanged. pq0 is independently supported as the exact prior new definition, not as a replacement for another scope.",
+    "Supported reviews retain the exact prior decisions, navigation and new source roles. Empty change arrays do not remove those supported objects.",
+    "Some inherited notes are incomplete; no missing continuation supplies evidence. Reported physical results retain their source-local dates and qualifications.",
+    "No full-paper verification, present-day status check, global uniqueness, atomic source identity, organizational home or mass is established. Public routes connect questions, not review regions or source objects."
+  ],
+  "unresolved": [
+    "Complete scope equivalence among c0–c3 remains unestablished. Common-target reuse preserves their remaining systems, regimes and adjacent questions.",
+    "Exact destinations for unprovided cosmological, axionic, cosmic-string, pure-supergravity and other adjacent targets remain outside this packet; their existing coverage is retained.",
+    "No physical implication or transferred premise is established between u6's higher-codimension/sign-condition question and u8's F-theory-derived construction.",
+    "Static u2, evolving u3, supporting-field question u18 and state-representation target u22 retain distinct premises; shared destinations do not identify them.",
+    "Convergence, anomaly consistency, corrected duality, Wilsonian integration, state construction and conditional classical control remain unresolved wherever the supplied assessments leave them open."
+  ],
+  "counts": {
+    "newScopes": 1,
+    "typedOperations": 11,
+    "publicRoutes": 6,
+    "confirmedSourceRoles": 12,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

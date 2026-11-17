@@ -1,0 +1,4591 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [
+    {
+      "id": "q025-candidate-question:c073ce5ebda7456546a71118",
+      "kind": "question",
+      "title": "CFT criteria for perturbatively local AdS EFT",
+      "question": "Which properties of CFT data permit a perturbative local AdS effective theory with a cutoff parametrically above the curvature scale?",
+      "summary": "Isolates the three-part locality criterion from broader questions about gravitational duals, interaction exclusions and compactification hierarchies.",
+      "scope": {
+        "systems": [
+          "CFT data proposed to describe a perturbative local AdS EFT"
+        ],
+        "targets": [
+          "Conditions for perturbative bulk locality",
+          "An EFT cutoff parametrically above curvature"
+        ],
+        "regimes": [
+          "Perturbative AdS effective descriptions"
+        ],
+        "assumptions": [
+          "The announced criterion combines a perturbative expansion, an approximate Fock space with finitely many low-dimension generators, and polynomially bounded Mellin behavior.",
+          "The source's necessity and sufficiency claim is not independently proved here."
+        ],
+        "conventions": [
+          "A gravitational dual need not admit a finite-field local EFT.",
+          "A cutoff above curvature is distinct from a compactification mass gap."
+        ],
+        "includes": [
+          "The criterion as a question about applicability of a controlled bulk description"
+        ],
+        "excludes": [
+          "A classification of all CFTs",
+          "A universal scale-separation obstruction",
+          "Identification of the separate higher-spin interaction restrictions with the locality criterion"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "New narrower definition supported by u0 and the inherited assessments in c2, c11, n0 and n42. The 1 August 2012 v1 excerpt previously assessed announces the criterion; no primary window or proof is supplied in this packet.",
+        "readingBasis": "Supplied complete descriptions and inherited paired scope/attribution notes; only exact own-paper primary windows cited by both native reviewers count as excerpt reading.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1"
+      ],
+      "methods": [
+        "Perturbative CFT spectral organization",
+        "Mellin-amplitude boundedness"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-v3:strong-scope-bundle-05:scope:pq0",
+      "provenance": {
+        "localRef": "pq0",
+        "reviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "admissionBasis": "exact_explicit_independent_agreement_under_root_authorized_policy",
+        "newScientificDefinition": true
+      },
+      "scopeContentSha256": "dbb3e4bc983798801d3cf40b79679ac407b18f5ede4bbf4582f63198dd008599"
+    },
+    {
+      "id": "q025-candidate-question:5712feb81e448688e3572680",
+      "kind": "question",
+      "title": "BP lattice counts and minimum cosmological constants",
+      "question": "When does the Bousso–Polchinski volume approximation fail, how can lattice counting improve low-Λ estimates, and which minimum-Λ convention does each estimate use?",
+      "summary": "Connects count reliability and flux occupation while preserving the difference between minimum nonnegative and minimum strictly positive cosmological constant.",
+      "scope": {
+        "systems": [
+          "Bousso–Polchinski flux lattices"
+        ],
+        "targets": [
+          "Lattice counts beyond volume estimates",
+          "Low-Λ abundance and flux occupation",
+          "Source-specific estimates of minimum nonnegative or minimum strictly positive Λ"
+        ],
+        "regimes": [
+          "Regions where the usual volume approximation fails",
+          "Very thin cosmological-constant shells where specified"
+        ],
+        "assumptions": [
+          "The lattice, counting region and any imposed bounds must remain source-specific.",
+          "The thin-shell formulation is not imposed on every result in the broader BP counting description."
+        ],
+        "conventions": [
+          "u7 targets minimum nonnegative Λ; u8 targets minimum strictly positive Λ.",
+          "A continuum estimate is not automatically an exact lattice count."
+        ],
+        "includes": [
+          "Comparison of counting approximations and their stated domains"
+        ],
+        "excludes": [
+          "Equivalence of the two minimum-Λ targets",
+          "A universal vacuum measure",
+          "Global finiteness conclusions",
+          "Established moduli-stabilization failure inferred from counting alone"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 2,
+        "excerptCheckedCount": 0,
+        "readingLimit": "New narrower definition based on whole descriptions u7 and u8 and the inherited distinctions in c8, n33 and n34. No counting derivation, error certification or quantitative relation between the two minimum conventions is supplied.",
+        "readingBasis": "Supplied complete descriptions and inherited paired scope/attribution notes; only exact own-paper primary windows cited by both native reviewers count as excerpt reading.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+        "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f"
+      ],
+      "methods": [
+        "Flux-lattice counting",
+        "Comparison with continuum volume estimates"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-v3:strong-scope-bundle-05:scope:pq1",
+      "provenance": {
+        "localRef": "pq1",
+        "reviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "admissionBasis": "exact_explicit_independent_agreement_under_root_authorized_policy",
+        "newScientificDefinition": true
+      },
+      "scopeContentSha256": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724"
+    },
+    {
+      "id": "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3",
+      "kind": "question",
+      "title": "Damping admissible inflationary excitations",
+      "question": "How rapidly does inflation suppress observable consequences of initial quantum excitations that are compatible with the EFT and already support the inflationary regime?",
+      "summary": "Separates conditional loss of initial-state memory from the probability of starting inflation and from environmental decoherence.",
+      "scope": {
+        "systems": [
+          "Inflationary quantum excitations in a controlled EFT"
+        ],
+        "targets": [
+          "Suppression of observable initial-state dependence",
+          "Memory-loss timescales"
+        ],
+        "regimes": [
+          "Inflationary expansion",
+          "Weakly coupled EFT treatment of admissible initial states"
+        ],
+        "assumptions": [
+          "The damping claim concerns surviving EFT-admissible states that already support inflation.",
+          "Admissibility and support of the background are conditions, not outcomes established for arbitrary initial states."
+        ],
+        "conventions": [
+          "Loss of observable excitation is distinct from environmental decoherence.",
+          "A damping timescale does not determine the probability that inflation begins."
+        ],
+        "includes": [
+          "Conditional persistence or suppression of observable initial-state memory"
+        ],
+        "excludes": [
+          "Generic-state survival or inflationary onset probabilities",
+          "Universal ultraviolet insensitivity",
+          "The source's separate contracting-background comparison"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "New narrower definition based on u27 and the inherited excerpt assessment in c5 and n6. No primary window is supplied here, and no numerical damping time is independently checked. The contracting comparison remains in the broader source scope.",
+        "readingBasis": "Supplied complete descriptions and inherited paired scope/attribution notes; only exact own-paper primary windows cited by both native reviewers count as excerpt reading.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6"
+      ],
+      "methods": [
+        "Evolution of EFT-compatible initial excitations",
+        "Expansion-induced suppression of observable state dependence"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-v3:strong-scope-bundle-05:scope:pq2",
+      "provenance": {
+        "localRef": "pq2",
+        "reviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "admissionBasis": "exact_explicit_independent_agreement_under_root_authorized_policy",
+        "newScientificDefinition": true
+      },
+      "scopeContentSha256": "fe18ecee2c249c68e1a9081d9d240c05405cd2ffd0a7321150ce0656d38c69a1"
+    }
+  ],
+  "sourceContributions": [
+    {
+      "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+      "destinationId": "q025-candidate-question:c073ce5ebda7456546a71118",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The local-EFT-criterion branch directly addresses pq0. This new role does not move or identify the source's separate higher-spin interaction target. Independent confirmation: u0 directly addresses pq0's perturbative-locality and cutoff target. The role is limited to that branch; its separate higher-spin restrictions retain their broader destinations and qualifications.",
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa",
+          "paperId": "1208.0337"
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:role:0"
+    },
+    {
+      "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+      "destinationId": "q025-candidate-question:5712feb81e448688e3572680",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "Addresses BP counting beyond the volume estimate, flux occupation and minimum nonnegative Λ. It is not assigned u8's strictly positive convention or a universal thin-shell premise. Independent confirmation: u7 addresses BP counting beyond volume estimates, occupation and minimum nonnegative Λ. The role correctly avoids assigning u8's strictly positive minimum or making thin shells a universal premise.",
+      "evidenceRefs": [
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454",
+          "paperId": "1003.6011"
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:role:1"
+    },
+    {
+      "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+      "destinationId": "q025-candidate-question:5712feb81e448688e3572680",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "Addresses very thin-shell lattice counts, flux occupation and minimum strictly positive Λ. Possible stabilization difficulties remain a separate conditional implication. Independent confirmation: u8 addresses thin-shell lattice counts, occupation and minimum strictly positive Λ. The role preserves possible stabilization difficulties as a separate conditional implication rather than a certified counting result.",
+      "evidenceRefs": [
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b",
+          "paperId": "1012.4947"
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:role:2"
+    },
+    {
+      "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+      "destinationId": "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "Only the inflationary damping branch is assigned to pq2, with the inherited surviving EFT-admissible-state restriction. The contracting comparison is not incorporated into this narrower target. Independent confirmation: u27's inflationary branch addresses pq2 with the restriction established by c5 and n6. The assignment leaves its contracting-background comparison intact and adds no damping timescale or role at c6.",
+      "evidenceRefs": [
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe",
+          "paperId": "1802.09554"
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:role:3"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn0",
+      "source": "q025-candidate-question:1bb053304be3775d8c79d2f4",
+      "target": "q025-candidate-question:ee233163e41eed46b2433010",
+      "type": "comparison",
+      "title": "Test axion quintessence assumptions",
+      "qualification": "Compare flatness, potential amplitude and initial conditions. The single-cosine tension requires its stated prefactor and relevant-instanton bound; electroweak and many-axion alternatives need separate checks. The joint inflation/quintessence branch additionally requires unchanged parameters and retains historical data benchmarks.",
+      "rationale": "Provides a concrete next question within the shared dark-energy target while preserving c10's additional assumptions and joint-epoch task.",
+      "evidenceIds": [
+        "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+        "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+        "unit:f292ab0dcc1705ec766ea8e97e3f4cb614ca8f3332f6da09002666ca9e7dc5da"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-971fa8dc901b31a1c07e-challenge:p2",
+          "candidateId": "q025-candidate-question:1bb053304be3775d8c79d2f4"
+        },
+        {
+          "localRef": "c10",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8e1e582d082b0be81d54-challenge:p5",
+          "candidateId": "q025-candidate-question:ee233163e41eed46b2433010"
+        },
+        {
+          "localRef": "u25",
+          "kind": "description",
+          "unitIndex": 26,
+          "unitId": "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+          "textSha256": "71672107904f7bcf83852749c271fd67650d3ecc55db7d8b399c702bcf9d96c5"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 23,
+          "unitId": "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+          "textSha256": "473ad03fd1f6ede3acef30b0adbb2f2bbf9963c0482066100eebd9509cf8c32a"
+        },
+        {
+          "localRef": "u35",
+          "kind": "description",
+          "unitIndex": 24,
+          "unitId": "unit:f292ab0dcc1705ec766ea8e97e3f4cb614ca8f3332f6da09002666ca9e7dc5da",
+          "textSha256": "fedcb3506104609465d67b412348c611581dc211a2c68bb261b48c3a09d790cf"
+        },
+        {
+          "localRef": "n22",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n23",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f292ab0dcc1705ec766ea8e97e3f4cb614ca8f3332f6da09002666ca9e7dc5da",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "A comparison from the broad axionic dark-energy question to potential and initial-condition tests is supported. The route explicitly preserves the relevant-instanton/prefactor premises, separate alternative constructions and unchanged-parameter joint epochs; it does not claim containment.",
+          "refs": [
+            "c0",
+            "c10",
+            "u25",
+            "u30",
+            "u35",
+            "n22",
+            "n23",
+            "n24"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn1",
+      "source": "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+      "target": "q025-candidate-question:e686cfbdc5894823cdcd1c30",
+      "type": "comparison",
+      "title": "Compare long-range forces and scattering criteria",
+      "qualification": "Massless scalar exchange and neutral massive-scalar threshold scattering use different observables. The threshold prescription assumes flat spacetime, frozen spectators and small external kinetic energies. Horizon mediator selection and repulsive-force criteria are not automatically equivalent to either prescription.",
+      "rationale": "Moves from formulation distinctions to concrete alternative comparison regimes without asserting a common inequality.",
+      "evidenceIds": [
+        "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+        "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+        "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+        "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-777289df84203d433c78-challenge:p3",
+          "candidateId": "q025-candidate-question:1c0707643dd3d6c558ee5b6a"
+        },
+        {
+          "localRef": "c9",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bada8f0b6f9749c30c67-challenge:p3",
+          "candidateId": "q025-candidate-question:e686cfbdc5894823cdcd1c30"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+          "textSha256": "a562e359f6a4f1059fc045159b6e55f7562ed7bf1ded7c9d263f721691333e5e"
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+          "textSha256": "40405b1c67ed072bc409a397eed78cdcf015c1b2b894266fdceda173e349a1c4"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+          "textSha256": "137a7be37e80558657a83116380fdc224ea6dad0953e8f549e3fb16a98918755"
+        },
+        {
+          "localRef": "u24",
+          "kind": "description",
+          "unitIndex": 45,
+          "unitId": "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8",
+          "textSha256": "7d2f5d758247ec5f2e894e3ad8bafaa8840dc758c4b70e1d6c1f854a1ae9d6b0"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n30",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n32",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "u16 and u5 supply concrete long-range and threshold-scattering alternatives. The route retains flat spacetime, frozen spectators and small kinetic energies and distinguishes horizon selection and repulsive-force criteria without claiming equivalent inequalities.",
+          "refs": [
+            "c1",
+            "c9",
+            "u5",
+            "u11",
+            "u16",
+            "u24",
+            "n19",
+            "n20",
+            "n30",
+            "n32"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn2",
+      "source": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+      "target": "q025-candidate-question:1e336be02213b690c67114dd",
+      "type": "comparison",
+      "title": "Compare interaction tests with geometric control",
+      "qualification": "Partial scalar-interaction exclusions and perturbative-locality criteria differ from graviton-localization and compactification-hierarchy tests. A cutoff above curvature is not a compactification mass gap; brane-decoupling and species-scale arguments retain their stated conditions.",
+      "rationale": "Admits the concrete comparison suggested by l2 while preserving the full scope differences.",
+      "evidenceIds": [
+        "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+        "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+        "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+          "textSha256": "34a1ec050a9df223133039c7d6de35ed9ce88e7c9b8827870fbfe5911c0a2898"
+        },
+        {
+          "localRef": "u28",
+          "kind": "description",
+          "unitIndex": 46,
+          "unitId": "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d",
+          "textSha256": "adf0763c2d58c1b482b1f08959fd9c94b4355c514d8145aa1e07f5717afca83c"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n40",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+          "targetCandidateId": "q025-candidate-question:1e336be02213b690c67114dd",
+          "candidateId": "successor2-parent-0b9505226b0fcc606395-challenge:link:18",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "The direction matches the comparison nominated in l2. The title gives a concrete next question, and the qualification preserves interaction/geometric differences and conditional hierarchy premises. This compares tasks; it asserts no physical implication between their bounds.",
+          "refs": [
+            "c11",
+            "c2",
+            "u0",
+            "u3",
+            "u28",
+            "n3",
+            "n40",
+            "l2"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn3",
+      "source": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+      "target": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+      "type": "comparison",
+      "title": "Distinguish counts, indices and finiteness",
+      "qualification": "Keep the counted object, quotient, geometry and charge regime explicit. Signed indices, isolated points and connected components are different outputs; fixed-family bounds do not establish global finiteness. Description-supported claims retain their missing-hypothesis and completeness limits.",
+      "rationale": "Makes the finiteness and count-convention questions accessible from enumeration and search without equating their answers or evidential strength.",
+      "evidenceIds": [
+        "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+        "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+        "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+          "textSha256": "fb46477b47c09be9e40ce363837b1a15a02c145c77f6a3116a1accd600ebc776"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+          "textSha256": "edf884344a5286d5d951d663be22cbcafb292530fbca6d6e6494af8004121855"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 27,
+          "unitId": "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223",
+          "textSha256": "5ba1fcd671fec0dbab737e190fe942eaab44ddd44053af4493d3853492ceed51"
+        },
+        {
+          "localRef": "n10",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+          "reviewId": "leaf-2ad258bc94836dc637e4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n36",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+          "targetCandidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:28",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "The comparison realizes l0 using c8's explicit count, index, component and finiteness distinctions. Its qualification preserves geometry, quotient, charge regime and missing-hypothesis limits rather than treating search results as certified counts.",
+          "refs": [
+            "c3",
+            "c8",
+            "u19",
+            "u26",
+            "u33",
+            "n10",
+            "n35",
+            "n36",
+            "l0"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn4",
+      "source": "q025-candidate-question:24e1b09b901c1be54e4d61ee",
+      "target": "q025-candidate-question:83e35ef679868008269066eb",
+      "type": "narrower",
+      "title": "Examine the conditional thermal mass bound",
+      "qualification": "Restrict to near-ultracold Nariai throats, vacuum-energy dominance, equilibrium Boltzmann-suppressed charges and the stated coupling domain. Rapid discharge means order-one charge loss within a Hubble time; conduction is independent of the photon-fusion estimate. Collapse uses homogeneous models. The c=1, g*=2 benchmarks and logarithmic normalization are not universal; B−L applications additionally require an unbroken sufficiently light gauge sector. Announced phenomenology is not independently validated here.",
+      "rationale": "Provides the narrower constraint question from the broader mechanism question while retaining every consequential applicability restriction.",
+      "evidenceIds": [
+        "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-87d7993188bba7a3ec4c-challenge:p5",
+          "candidateId": "q025-candidate-question:24e1b09b901c1be54e4d61ee"
+        },
+        {
+          "localRef": "c7",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9aec4ca94b068f477af8-challenge:p7",
+          "candidateId": "q025-candidate-question:83e35ef679868008269066eb"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "textSha256": "f9f2091cb7048e22e6d4a2af58123cdc1c67b6f2b7f801530cb0387604838ab5"
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "reviewId": "leaf-87d7993188bba7a3ec4c-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "reviewId": "leaf-9aec4ca94b068f477af8-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "The broader-to-narrower direction follows the written scopes. The route retains Boltzmann suppression, coupling applicability, charge-loss criterion, independent conduction, homogeneous evolution, benchmark sensitivity and the extra B−L premises. It does not require a new physical relation beyond those inherited qualifications.",
+          "refs": [
+            "c4",
+            "c7",
+            "u10",
+            "n21",
+            "n28"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn5",
+      "source": "q025-candidate-question:265bd371fe1997a8c8287c76",
+      "target": "q025-candidate-question:530e8cb46259544847e705a1",
+      "type": "related_question",
+      "title": "Explore ultraviolet prescriptions for primordial fluctuations",
+      "qualification": "Compare initial-state observables with modified propagation, finite-time prescriptions and conditional censorship implementations. Their consistency conditions remain source-specific. Damping is not decoherence or censorship, and historical observational comparisons are not current fits.",
+      "rationale": "Admits the bounded overlap in l1 without claiming containment or equivalence of the complete scopes.",
+      "evidenceIds": [
+        "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+        "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+        "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 100,
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "textSha256": "867c91767b2689e22ea807500dfc7e95a8e5a9857a33e21cc2736ec733d748e5"
+        },
+        {
+          "localRef": "u18",
+          "kind": "description",
+          "unitIndex": 22,
+          "unitId": "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+          "textSha256": "1a76fee6691def76114a30f95e40f160bae1d722c14c2ccb27d1e77d430bffa4"
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "textSha256": "d070a11b591bca008deb70c75fd202fe208b4d628946cffbf640a253d7755d80"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:265bd371fe1997a8c8287c76",
+          "targetCandidateId": "q025-candidate-question:530e8cb46259544847e705a1",
+          "candidateId": "successor-parent-e216581a59d87c4cff7a-challenge:link:28",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn5",
+      "provenance": {
+        "nativeRouteId": "pn5",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn5",
+          "verdict": "supported_as_written",
+          "reason": "The related-question arc is supported by shared robustness and observable-state targets and the bounded overlap in l1. It neither asserts containment nor identifies damping, decoherence and censorship.",
+          "refs": [
+            "c5",
+            "c6",
+            "u14",
+            "u18",
+            "u23",
+            "n12",
+            "n14",
+            "n16",
+            "l1"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn6",
+      "source": "q025-candidate-question:1e336be02213b690c67114dd",
+      "target": "q025-candidate-question:c073ce5ebda7456546a71118",
+      "type": "narrower",
+      "title": "Inspect the CFT criteria for local bulk EFT",
+      "qualification": "Focus on perturbativity, finitely generated low-dimension Fock-space structure and polynomial Mellin boundedness. The target is an EFT cutoff above curvature, not a universal compactification hierarchy; the announced criterion is not proved by this packet.",
+      "rationale": "Offers a precise locality question within the broader classification and geometric-control scope.",
+      "evidenceIds": [
+        "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n42",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn6",
+      "provenance": {
+        "nativeRouteId": "pn6",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn6",
+          "verdict": "supported_as_written",
+          "reason": "c2 explicitly contains the locality criterion, so the broader-to-narrower arc is licensed. The route distinguishes cutoff control from compactification hierarchy and retains the absence of an independently checked proof.",
+          "refs": [
+            "c2",
+            "u0",
+            "n42"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn7",
+      "source": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+      "target": "q025-candidate-question:c073ce5ebda7456546a71118",
+      "type": "narrower",
+      "title": "Isolate the perturbative locality criterion",
+      "qualification": "The three-part criterion concerns a controlled local AdS EFT. Separate scalar and higher-spin interaction restrictions, including their loopholes, remain outside this narrower question. Necessity and sufficiency are source-announced.",
+      "rationale": "Separates the shared locality target from c11's additional interaction and dual-type tests.",
+      "evidenceIds": [
+        "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn7",
+      "provenance": {
+        "nativeRouteId": "pn7",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn7",
+          "verdict": "supported_as_written",
+          "reason": "The route correctly isolates c11's locality target while leaving scalar and higher-spin restrictions outside pq0. The announced status of necessity and sufficiency remains explicit.",
+          "refs": [
+            "c11",
+            "u0",
+            "n0"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn8",
+      "source": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+      "target": "q025-candidate-question:5712feb81e448688e3572680",
+      "type": "narrower",
+      "title": "Check BP counts beyond the volume approximation",
+      "qualification": "Restrict to the specified BP lattice and counting region. Very thin shells belong to the stated formulation, and minimum nonnegative Λ remains distinct from minimum strictly positive Λ. No exact-count or search-completeness guarantee is supplied.",
+      "rationale": "Gives a concrete approximation question within the broader enumeration and search program.",
+      "evidenceIds": [
+        "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+        "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn8",
+      "provenance": {
+        "nativeRouteId": "pn8",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn8",
+          "verdict": "supported_as_written",
+          "reason": "A specified BP lattice-counting question fits within c3's enumeration and approximation scope. The qualification preserves source-specific shells and minimum conventions, and the arc does not transfer u7/u8 contributions to c3.",
+          "refs": [
+            "c3",
+            "c8",
+            "u7",
+            "u8",
+            "n33",
+            "n34"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn9",
+      "source": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+      "target": "q025-candidate-question:5712feb81e448688e3572680",
+      "type": "narrower",
+      "title": "Separate the two minimum-Λ counting targets",
+      "qualification": "Compare BP counts and occupation estimates while retaining u7's nonnegative and u8's strictly positive minimum conventions. The shared destination establishes neither identical minima nor a quantitative relation between them.",
+      "rationale": "Turns an explicit convention distinction in c8 into an accessible narrower question.",
+      "evidenceIds": [
+        "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+        "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn9",
+      "provenance": {
+        "nativeRouteId": "pn9",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn9",
+          "verdict": "supported_as_written",
+          "reason": "The route makes c8's explicit minimum-Λ distinction accessible through pq1. Its qualification correctly permits a shared public destination while withholding equality or a quantitative relation between the minima.",
+          "refs": [
+            "c8",
+            "u7",
+            "u8",
+            "n33",
+            "n34"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn10",
+      "source": "q025-candidate-question:265bd371fe1997a8c8287c76",
+      "target": "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3",
+      "type": "narrower",
+      "title": "Ask how fast admissible excitations fade",
+      "qualification": "The damping question assumes EFT-compatible states that already support inflation. It does not determine generic-state survival, inflationary onset probabilities or environmental decoherence; the contracting comparison remains separate.",
+      "rationale": "Exposes the controlled memory-loss question while preserving its essential initial-state restriction.",
+      "evidenceIds": [
+        "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn10",
+      "provenance": {
+        "nativeRouteId": "pn10",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn10",
+          "verdict": "supported_as_written",
+          "reason": "The route selects the admissible-state memory-loss question already in c5 and preserves the surviving-background premise. Onset probability, decoherence and contraction are explicitly kept separate.",
+          "refs": [
+            "c5",
+            "u27",
+            "n6"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v3:strong-scope-bundle-05:pn11",
+      "source": "q025-candidate-question:530e8cb46259544847e705a1",
+      "target": "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3",
+      "type": "narrower",
+      "title": "Examine controlled initial-state relaxation",
+      "qualification": "Specialize state relaxation to admissible inflationary EFT excitations. This restriction is not imposed on every propagation or quantum-cosmology prescription, and the damping result does not establish a censorship bound or universal ultraviolet insensitivity.",
+      "rationale": "Supplies a concrete relaxation destination within c6 without transferring its premises to unrelated branches.",
+      "evidenceIds": [
+        "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v3:strong-scope-bundle-05:route:pn11",
+      "provenance": {
+        "nativeRouteId": "pn11",
+        "sourceReviewIds": [
+          "strong-scope-bundle-05-navigation-proposal",
+          "strong-scope-bundle-05-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn11",
+          "verdict": "supported_as_written",
+          "reason": "c6's state-relaxation target supports the narrower destination. The qualification confines the EFT-admissibility premise to this branch and avoids deriving censorship or universal ultraviolet insensitivity from damping.",
+          "refs": [
+            "c6",
+            "c5",
+            "u27",
+            "n6"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:scope:pq0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:c073ce5ebda7456546a71118"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n42",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "independentAssessment": {
+        "ref": "pq0",
+        "kind": "new_question",
+        "verdict": "supported_as_written",
+        "reason": "Both existing definitions explicitly contain the three-part perturbative-locality target, and u0 directly supplies the cutoff-above-curvature question. The new definition preserves the distinction from compactification gaps and higher-spin restrictions and correctly labels necessity/sufficiency as announced, not independently proved.",
+        "refs": [
+          "c2",
+          "c11",
+          "u0",
+          "n0",
+          "n42"
+        ]
+      },
+      "scopeContentSha256": "dbb3e4bc983798801d3cf40b79679ac407b18f5ede4bbf4582f63198dd008599",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:scope:pq1",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:5712feb81e448688e3572680"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "independentAssessment": {
+        "ref": "pq1",
+        "kind": "new_question",
+        "verdict": "supported_as_written",
+        "reason": "The two descriptions support a shared BP counting-and-approximation question. The definition preserves nonnegative versus strictly positive minima and source-specific thin-shell conditions; a single public destination therefore does not merge the underlying targets or certify counts.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "scopeContentSha256": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:scope:pq2",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "independentAssessment": {
+        "ref": "pq2",
+        "kind": "new_question",
+        "verdict": "supported_as_written",
+        "reason": "u27 supplies the damping question, while c5 and n6 supply the essential surviving EFT-admissible-state restriction. The definition excludes arbitrary-state onset, decoherence and the separate contracting comparison without inventing a numerical timescale.",
+        "refs": [
+          "c5",
+          "c6",
+          "u27",
+          "n6"
+        ]
+      },
+      "scopeContentSha256": "fe18ecee2c249c68e1a9081d9d240c05405cd2ffd0a7321150ce0656d38c69a1",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+        "q025-candidate-question:c073ce5ebda7456546a71118"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa",
+          "paperId": "1208.0337"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u0",
+        "questionRef": "pq0",
+        "role": "addresses",
+        "reason": "The local-EFT-criterion branch directly addresses pq0. This new role does not move or identify the source's separate higher-spin interaction target.",
+        "refs": [
+          "u0",
+          "c2",
+          "c11",
+          "n0",
+          "n42"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "u0 directly addresses pq0's perturbative-locality and cutoff target. The role is limited to that branch; its separate higher-spin restrictions retain their broader destinations and qualifications.",
+        "refs": [
+          "u0",
+          "c2",
+          "c11",
+          "n0",
+          "n42"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n42",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "dbb3e4bc983798801d3cf40b79679ac407b18f5ede4bbf4582f63198dd008599",
+      "contributionContentSha256": "488b7ac5b0a2bd208e61b334258cf7619b6429609b319f7490f7b46bb7cb9203",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:role:1",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+        "q025-candidate-question:5712feb81e448688e3572680"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454",
+          "paperId": "1003.6011"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u7",
+        "questionRef": "pq1",
+        "role": "addresses",
+        "reason": "Addresses BP counting beyond the volume estimate, flux occupation and minimum nonnegative Λ. It is not assigned u8's strictly positive convention or a universal thin-shell premise.",
+        "refs": [
+          "u7",
+          "c8",
+          "n33"
+        ]
+      },
+      "independentAssessment": {
+        "index": 1,
+        "verdict": "supported_as_written",
+        "reason": "u7 addresses BP counting beyond volume estimates, occupation and minimum nonnegative Λ. The role correctly avoids assigning u8's strictly positive minimum or making thin shells a universal premise.",
+        "refs": [
+          "u7",
+          "c8",
+          "n33"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724",
+      "contributionContentSha256": "1bc3d2fc89f857ca8c7432d6ee865f05bfc8154e5f1dd66aa658f415a72ae2e0",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:role:2",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+        "q025-candidate-question:5712feb81e448688e3572680"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b",
+          "paperId": "1012.4947"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u8",
+        "questionRef": "pq1",
+        "role": "addresses",
+        "reason": "Addresses very thin-shell lattice counts, flux occupation and minimum strictly positive Λ. Possible stabilization difficulties remain a separate conditional implication.",
+        "refs": [
+          "u8",
+          "c8",
+          "n34"
+        ]
+      },
+      "independentAssessment": {
+        "index": 2,
+        "verdict": "supported_as_written",
+        "reason": "u8 addresses thin-shell lattice counts, occupation and minimum strictly positive Λ. The role preserves possible stabilization difficulties as a separate conditional implication rather than a certified counting result.",
+        "refs": [
+          "u8",
+          "c8",
+          "n34"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724",
+      "contributionContentSha256": "20126fea4a0cf2b4ca045ae65da8c8ee28242fd5c9f1426207a1d850758a4d40",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:role:3",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+        "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe",
+          "paperId": "1802.09554"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u27",
+        "questionRef": "pq2",
+        "role": "addresses",
+        "reason": "Only the inflationary damping branch is assigned to pq2, with the inherited surviving EFT-admissible-state restriction. The contracting comparison is not incorporated into this narrower target.",
+        "refs": [
+          "u27",
+          "c5",
+          "n6"
+        ]
+      },
+      "independentAssessment": {
+        "index": 3,
+        "verdict": "supported_as_written",
+        "reason": "u27's inflationary branch addresses pq2 with the restriction established by c5 and n6. The assignment leaves its contracting-background comparison intact and adds no damping timescale or role at c6.",
+        "refs": [
+          "u27",
+          "c5",
+          "n6"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "fe18ecee2c249c68e1a9081d9d240c05405cd2ffd0a7321150ce0656d38c69a1",
+      "contributionContentSha256": "fd18f038c7b00fdf8a1926f084d6fbdb5854c71e01852a678744095094580e2e",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1bb053304be3775d8c79d2f4",
+        "q025-candidate-question:ee233163e41eed46b2433010"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "b52c134e99205c37854bd437e04dfa8800ede0e120cd8768d828041f99b8e1ff",
+      "sourceScopeContentSha256": "3bcaae1677a5787b6959ff12e20fdf4fdac340a88a1e90fbbd03cb3955c9bf77",
+      "targetScopeContentSha256": "788310ab6fbe1251ee3beec77ed790f63af16ffe53bb925cb882c785b99c50c2",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-971fa8dc901b31a1c07e-challenge:p2",
+          "candidateId": "q025-candidate-question:1bb053304be3775d8c79d2f4"
+        },
+        {
+          "localRef": "c10",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8e1e582d082b0be81d54-challenge:p5",
+          "candidateId": "q025-candidate-question:ee233163e41eed46b2433010"
+        },
+        {
+          "localRef": "u25",
+          "kind": "description",
+          "unitIndex": 26,
+          "unitId": "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+          "textSha256": "71672107904f7bcf83852749c271fd67650d3ecc55db7d8b399c702bcf9d96c5"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 23,
+          "unitId": "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+          "textSha256": "473ad03fd1f6ede3acef30b0adbb2f2bbf9963c0482066100eebd9509cf8c32a"
+        },
+        {
+          "localRef": "u35",
+          "kind": "description",
+          "unitIndex": 24,
+          "unitId": "unit:f292ab0dcc1705ec766ea8e97e3f4cb614ca8f3332f6da09002666ca9e7dc5da",
+          "textSha256": "fedcb3506104609465d67b412348c611581dc211a2c68bb261b48c3a09d790cf"
+        },
+        {
+          "localRef": "n22",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n23",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f292ab0dcc1705ec766ea8e97e3f4cb614ca8f3332f6da09002666ca9e7dc5da",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+        "q025-candidate-question:e686cfbdc5894823cdcd1c30"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "7c55cee21d372f86142e48039193512f25969eef04be269c8621c0782f9a405a",
+      "sourceScopeContentSha256": "3b49a3733afa1550d3a69352690f0b293726769ba7e4e0fd16c2274cf7a2d7fe",
+      "targetScopeContentSha256": "973a5f7e59ca702b49c9bce1a653d2fc014899ed63e371a12ac07787024f3684",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-777289df84203d433c78-challenge:p3",
+          "candidateId": "q025-candidate-question:1c0707643dd3d6c558ee5b6a"
+        },
+        {
+          "localRef": "c9",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bada8f0b6f9749c30c67-challenge:p3",
+          "candidateId": "q025-candidate-question:e686cfbdc5894823cdcd1c30"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+          "textSha256": "a562e359f6a4f1059fc045159b6e55f7562ed7bf1ded7c9d263f721691333e5e"
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+          "textSha256": "40405b1c67ed072bc409a397eed78cdcf015c1b2b894266fdceda173e349a1c4"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+          "textSha256": "137a7be37e80558657a83116380fdc224ea6dad0953e8f549e3fb16a98918755"
+        },
+        {
+          "localRef": "u24",
+          "kind": "description",
+          "unitIndex": 45,
+          "unitId": "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8",
+          "textSha256": "7d2f5d758247ec5f2e894e3ad8bafaa8840dc758c4b70e1d6c1f854a1ae9d6b0"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n30",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n32",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+        "q025-candidate-question:1e336be02213b690c67114dd"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "f932e62e4a5d9aae29050c30f9ef9a449c3d71d5d66e8e060fd463e02ccdc224",
+      "sourceScopeContentSha256": "f0944c65443f285a09e03e14a703b7b277b6b6750c8af804923442c6ded09d2c",
+      "targetScopeContentSha256": "a2e26551486b4d982f7483e82b79df7bc4face601e8ac1005b13b09a00627180",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+          "textSha256": "34a1ec050a9df223133039c7d6de35ed9ce88e7c9b8827870fbfe5911c0a2898"
+        },
+        {
+          "localRef": "u28",
+          "kind": "description",
+          "unitIndex": 46,
+          "unitId": "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d",
+          "textSha256": "adf0763c2d58c1b482b1f08959fd9c94b4355c514d8145aa1e07f5717afca83c"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n40",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+          "targetCandidateId": "q025-candidate-question:1e336be02213b690c67114dd",
+          "candidateId": "successor2-parent-0b9505226b0fcc606395-challenge:link:18",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "19b4fb3d088bac3192ab773db3d6c17dd31423c97f40c434e3aac2d8afac1771",
+      "sourceScopeContentSha256": "0803bedf81de4b45584e56bff7f0f6803f6c28fdd5a90eadc465c5ff65941431",
+      "targetScopeContentSha256": "9a395f0831ebab38e6b884d312d71b90e73c95eaf7a6c4e2fd4051a08a7c7063",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+          "textSha256": "fb46477b47c09be9e40ce363837b1a15a02c145c77f6a3116a1accd600ebc776"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+          "textSha256": "edf884344a5286d5d951d663be22cbcafb292530fbca6d6e6494af8004121855"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 27,
+          "unitId": "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223",
+          "textSha256": "5ba1fcd671fec0dbab737e190fe942eaab44ddd44053af4493d3853492ceed51"
+        },
+        {
+          "localRef": "n10",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+          "reviewId": "leaf-2ad258bc94836dc637e4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n36",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+          "targetCandidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:28",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:24e1b09b901c1be54e4d61ee",
+        "q025-candidate-question:83e35ef679868008269066eb"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "fea43d39acee1a98d3bef8296bbf2982d505a7aa87b13c4d8181ea8521cf4090",
+      "sourceScopeContentSha256": "ebe582ac37f66779e803555a18ae4bb3d9419ccb63294045b8749805b4ba3ec7",
+      "targetScopeContentSha256": "42105af45d50b7374cfc3930fd1ce437b26b3656cd582a20cdbe23a02bb4177b",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-87d7993188bba7a3ec4c-challenge:p5",
+          "candidateId": "q025-candidate-question:24e1b09b901c1be54e4d61ee"
+        },
+        {
+          "localRef": "c7",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9aec4ca94b068f477af8-challenge:p7",
+          "candidateId": "q025-candidate-question:83e35ef679868008269066eb"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "textSha256": "f9f2091cb7048e22e6d4a2af58123cdc1c67b6f2b7f801530cb0387604838ab5"
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "reviewId": "leaf-87d7993188bba7a3ec4c-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "reviewId": "leaf-9aec4ca94b068f477af8-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn5",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:265bd371fe1997a8c8287c76",
+        "q025-candidate-question:530e8cb46259544847e705a1"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "b93a83daa41dbe2fcda050bd0d69e7a9143282e14c43a04cc4890ef36ce06b13",
+      "sourceScopeContentSha256": "523159e08cba403accc3f0d480776f86e407ee15237df0429b4f505115fa0dce",
+      "targetScopeContentSha256": "8dceafc78407881af364026aeafdc7324ccd5c45d492ddc35cb89671371f2ca1",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 100,
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "textSha256": "867c91767b2689e22ea807500dfc7e95a8e5a9857a33e21cc2736ec733d748e5"
+        },
+        {
+          "localRef": "u18",
+          "kind": "description",
+          "unitIndex": 22,
+          "unitId": "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+          "textSha256": "1a76fee6691def76114a30f95e40f160bae1d722c14c2ccb27d1e77d430bffa4"
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "textSha256": "d070a11b591bca008deb70c75fd202fe208b4d628946cffbf640a253d7755d80"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:265bd371fe1997a8c8287c76",
+          "targetCandidateId": "q025-candidate-question:530e8cb46259544847e705a1",
+          "candidateId": "successor-parent-e216581a59d87c4cff7a-challenge:link:28",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn6",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1e336be02213b690c67114dd",
+        "q025-candidate-question:c073ce5ebda7456546a71118"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "ff09579450ce0e209a32edb8941e80813e710730201ab2606d873bd89dfacbe1",
+      "sourceScopeContentSha256": "a2e26551486b4d982f7483e82b79df7bc4face601e8ac1005b13b09a00627180",
+      "targetScopeContentSha256": "dbb3e4bc983798801d3cf40b79679ac407b18f5ede4bbf4582f63198dd008599",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n42",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn7",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+        "q025-candidate-question:c073ce5ebda7456546a71118"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "c00770f89f8eee19e39894ba2893b212fe8481a4b861850bae3e4c84bf1428a1",
+      "sourceScopeContentSha256": "f0944c65443f285a09e03e14a703b7b277b6b6750c8af804923442c6ded09d2c",
+      "targetScopeContentSha256": "dbb3e4bc983798801d3cf40b79679ac407b18f5ede4bbf4582f63198dd008599",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn8",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+        "q025-candidate-question:5712feb81e448688e3572680"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "bd9ad90edb91f68939df91c63fa69344ea63fe193fda7c32d12dd13a36b9811f",
+      "sourceScopeContentSha256": "0803bedf81de4b45584e56bff7f0f6803f6c28fdd5a90eadc465c5ff65941431",
+      "targetScopeContentSha256": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn9",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+        "q025-candidate-question:5712feb81e448688e3572680"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "4db3cc6c7092660557fb66a8cd510b5963ee621a0def41f22b70ec5ce91c7aa6",
+      "sourceScopeContentSha256": "9a395f0831ebab38e6b884d312d71b90e73c95eaf7a6c4e2fd4051a08a7c7063",
+      "targetScopeContentSha256": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn10",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:265bd371fe1997a8c8287c76",
+        "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "dfa291473127d4fd81e4b908794b0b5cd544d528ce8b4b806123246cce3776ed",
+      "sourceScopeContentSha256": "523159e08cba403accc3f0d480776f86e407ee15237df0429b4f505115fa0dce",
+      "targetScopeContentSha256": "fe18ecee2c249c68e1a9081d9d240c05405cd2ffd0a7321150ce0656d38c69a1",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "decision:navigation-v3:strong-scope-bundle-05:route:pn11",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:530e8cb46259544847e705a1",
+        "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "d916f926aa6906425988d21904d65a021a327d26fcd95d2a1348baf8e7d349d4",
+      "sourceScopeContentSha256": "8dceafc78407881af364026aeafdc7324ccd5c45d492ddc35cb89671371f2ca1",
+      "targetScopeContentSha256": "fe18ecee2c249c68e1a9081d9d240c05405cd2ffd0a7321150ce0656d38c69a1",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "strong-scope-bundle-05-navigation-proposal",
+        "challengeReviewId": "strong-scope-bundle-05-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "strong-scope-bundle-05-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-proposal/reply.json",
+      "sha256": "01bdb51e8998b62fca1889f343f2cd9cc1f7c43e05e6b5c7f7a83d1f3e23923d",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-proposal/receipt.json",
+      "receiptSha256": "870389d8f5edb0b2d679fd2b0688797a08a1101ce7e7b82e246f68dbc6e81477",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-proposal/normalization.json",
+        "sha256": "eef9d5969ed08d9f1d48e8b8b15e5d803ae32dad26daff7be436e34147ce8f97"
+      }
+    },
+    {
+      "id": "strong-scope-bundle-05-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/reply.json",
+      "sha256": "fac1a708f7f18ce9537114ed56195bcd381ddcfb306f150456cc06cf57b98c6f",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/receipt.json",
+      "receiptSha256": "00167359bc22f0951df6295ef1ed526d825f6885fb6d9af283baa74059c12033",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/normalization.json",
+        "sha256": "01d56d1a59e603ea214652c9ce4685fa4f57b46e0704341a8d37df89548a4ea7"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "common_target",
+        "members": [
+          "c0",
+          "c10"
+        ],
+        "target": "c0",
+        "definingDifferences": [
+          "c0 includes axiodilaton-carried energy, positive-offset dynamics, small-constant construction and restricted acceleration endpoints.",
+          "c10 retains potential-generating-instanton and prefactor assumptions, multiplicity and initial-condition questions, and unchanged-parameter inflation/quintessence."
+        ],
+        "reason": "Reuse c0 for the shared axionic dark-energy organizing target. Retain c10 as a distinct complete destination: its joint-epoch requirement is not contained in c0's late-time question, and its restricted cosine tension is not a premise for all c0 constructions. This organization neither equates the source statements nor transfers their roles.",
+        "refs": [
+          "c0",
+          "c10",
+          "u6",
+          "u12",
+          "u13",
+          "u25",
+          "u30",
+          "u35",
+          "n22",
+          "n24",
+          "n25",
+          "n26",
+          "n27"
+        ]
+      },
+      "nativeOperationValueSha256": "f2d8ea8c5081a078a7e8feb64762971c5d26b90c8bfd12d046bdc130df643b15",
+      "members": [
+        "q025-candidate-question:1bb053304be3775d8c79d2f4",
+        "q025-candidate-question:ee233163e41eed46b2433010"
+      ],
+      "target": "q025-candidate-question:1bb053304be3775d8c79d2f4",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c0 is a sound existing organizer for the shared late-time target. The decision expressly retains c10's full joint-epoch and restricted-potential scope, so it asserts neither complete containment nor equivalence and does not transfer source roles.",
+        "refs": [
+          "c0",
+          "c10",
+          "u6",
+          "u12",
+          "u25",
+          "u30",
+          "u35",
+          "n22",
+          "n24",
+          "n25",
+          "n27"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-971fa8dc901b31a1c07e-challenge:p2",
+          "candidateId": "q025-candidate-question:1bb053304be3775d8c79d2f4"
+        },
+        {
+          "localRef": "c10",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8e1e582d082b0be81d54-challenge:p5",
+          "candidateId": "q025-candidate-question:ee233163e41eed46b2433010"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:3e128e2c27707a02e0bdeac7f67e0c0dbf99dcf847fc8a5389cab4ad4912c1cc",
+          "textSha256": "0ccd5735882510ca2438f7cfed4e15148cbab398a015e6c3de64c02f600351c3"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:72974bff513caee0be6ab196fde77f7a1983e83429c71c02f79f4517bc01d622",
+          "textSha256": "6c447274abacd8b82dc89d8646e6b1d86eff397ab4fa77ad5ea6167ac5aaf1a0"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:7b659e6dd57affcf8dd80c69aefb44a1f6e79a8eb5ee669142037b654379da9f",
+          "textSha256": "77765b24116ad62d02487c264d2d17deb04193019168daed0408518c4ae12257"
+        },
+        {
+          "localRef": "u25",
+          "kind": "description",
+          "unitIndex": 26,
+          "unitId": "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+          "textSha256": "71672107904f7bcf83852749c271fd67650d3ecc55db7d8b399c702bcf9d96c5"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 23,
+          "unitId": "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+          "textSha256": "473ad03fd1f6ede3acef30b0adbb2f2bbf9963c0482066100eebd9509cf8c32a"
+        },
+        {
+          "localRef": "u35",
+          "kind": "description",
+          "unitIndex": 24,
+          "unitId": "unit:f292ab0dcc1705ec766ea8e97e3f4cb614ca8f3332f6da09002666ca9e7dc5da",
+          "textSha256": "fedcb3506104609465d67b412348c611581dc211a2c68bb261b48c3a09d790cf"
+        },
+        {
+          "localRef": "n22",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cd3d86dc325f086555b0647b37a8bd44b5b393d10540674f23b21bab18b12996",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c42e4c3ccbf820a5df4a7428a47b4eee4fba7245bd7e17d0c9aa81014d08bcca",
+          "reviewId": "leaf-8e1e582d082b0be81d54-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:72974bff513caee0be6ab196fde77f7a1983e83429c71c02f79f4517bc01d622",
+          "reviewId": "leaf-971fa8dc901b31a1c07e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7b659e6dd57affcf8dd80c69aefb44a1f6e79a8eb5ee669142037b654379da9f",
+          "reviewId": "leaf-971fa8dc901b31a1c07e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n27",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3e128e2c27707a02e0bdeac7f67e0c0dbf99dcf847fc8a5389cab4ad4912c1cc",
+          "reviewId": "leaf-971fa8dc901b31a1c07e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "common_target",
+        "members": [
+          "c1",
+          "c9"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "c1 explicitly distinguishes state-mass derivatives, self-potential derivatives, horizon mediator selection and repulsive-force criteria.",
+          "c9 includes charged and neutral sectors, threshold and arbitrary-energy prescriptions, pair production, coupling corrections, multifield geometry and solitons."
+        ],
+        "reason": "Reuse c1 for the shared task of formulating scalar–gravity comparisons and specifying their domains. Preserve c9's complete testing and application scope as a distinct destination. Neither the organizing question nor the shared terminology establishes equivalence among the inequalities or observables.",
+        "refs": [
+          "c1",
+          "c9",
+          "u4",
+          "u5",
+          "u11",
+          "u16",
+          "u24",
+          "u31",
+          "u37",
+          "n17",
+          "n18",
+          "n19",
+          "n20",
+          "n30",
+          "n31",
+          "n32"
+        ]
+      },
+      "nativeOperationValueSha256": "52ea8648e16453c6cdd6d111b425f7b8748f7c7436c4a7bd6a3ba22ea9dde476",
+      "members": [
+        "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+        "q025-candidate-question:e686cfbdc5894823cdcd1c30"
+      ],
+      "target": "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c1 supplies the shared formulation-and-domain question. Retaining c9 separately is necessary because horizon selection, potential derivatives, charged forces and scattering prescriptions have different systems and regimes; the common-target operation preserves those differences.",
+        "refs": [
+          "c1",
+          "c9",
+          "u4",
+          "u5",
+          "u11",
+          "u16",
+          "u24",
+          "u37",
+          "n18",
+          "n19",
+          "n20",
+          "n30",
+          "n31",
+          "n32"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-777289df84203d433c78-challenge:p3",
+          "candidateId": "q025-candidate-question:1c0707643dd3d6c558ee5b6a"
+        },
+        {
+          "localRef": "c9",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bada8f0b6f9749c30c67-challenge:p3",
+          "candidateId": "q025-candidate-question:e686cfbdc5894823cdcd1c30"
+        },
+        {
+          "localRef": "u4",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:37e1a1bef645990b64bb69d64371e27ea6346c9dffedd3f26a80193155c340ac",
+          "textSha256": "ce07491a3ea3453eed292bdc55f0b5a5ac34715ce34055c78c72268ee152823c"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+          "textSha256": "a562e359f6a4f1059fc045159b6e55f7562ed7bf1ded7c9d263f721691333e5e"
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+          "textSha256": "40405b1c67ed072bc409a397eed78cdcf015c1b2b894266fdceda173e349a1c4"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+          "textSha256": "137a7be37e80558657a83116380fdc224ea6dad0953e8f549e3fb16a98918755"
+        },
+        {
+          "localRef": "u24",
+          "kind": "description",
+          "unitIndex": 45,
+          "unitId": "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8",
+          "textSha256": "7d2f5d758247ec5f2e894e3ad8bafaa8840dc758c4b70e1d6c1f854a1ae9d6b0"
+        },
+        {
+          "localRef": "u31",
+          "kind": "description",
+          "unitIndex": 27,
+          "unitId": "unit:dbb9485a225b2430e8be3ebba03b1ec654b60104333862d9f62631c272b35af4",
+          "textSha256": "1536ae03b467233874d78e190119468f7409100d45ba14ea86f0a9288b49c914"
+        },
+        {
+          "localRef": "u37",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:f8736151ecc8ee4a19bd1fccefcc36f7c51bb42468b0fbfb872d7ca107331c42",
+          "textSha256": "1d2da6c8043b38e10c78c690b969c3a4424f8db5271fb72716b069e134e66229"
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:dbb9485a225b2430e8be3ebba03b1ec654b60104333862d9f62631c272b35af4",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:37e1a1bef645990b64bb69d64371e27ea6346c9dffedd3f26a80193155c340ac",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:69d038447a9890865532db22a99c4e9b1a4155160480492601f5d8b1cf9b0568",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c0653333dae3a67fa83fe536e0c76d7a480a4f571cf24baf021b8e6cdeb8f1f8",
+          "reviewId": "leaf-777289df84203d433c78-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n30",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f8736151ecc8ee4a19bd1fccefcc36f7c51bb42468b0fbfb872d7ca107331c42",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n32",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3a812b007310f39981c1db0955bea8cb50867ddf95deb82d6d7d9e353eb5bbd6",
+          "reviewId": "leaf-bada8f0b6f9749c30c67-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "comparison",
+        "members": [
+          "c2",
+          "c11"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "c2 explicitly includes geometric graviton localization, compactification hierarchies and conditional brane-decoupling or species-scale tests.",
+          "c11 explicitly includes partial scalar-interaction exclusions, bootstrap consistency and source-specific obstructions to finite-field descriptions."
+        ],
+        "reason": "Retain both complete scopes. Their shared dual-classification and perturbative-locality questions support comparison and a common narrower locality destination, but do not establish equality or complete containment of their additional branches.",
+        "refs": [
+          "c2",
+          "c11",
+          "u0",
+          "u1",
+          "u3",
+          "u9",
+          "u21",
+          "u28",
+          "n0",
+          "n3",
+          "n4",
+          "n40",
+          "n41",
+          "n42",
+          "l2"
+        ]
+      },
+      "nativeOperationValueSha256": "9a60f5c242502aeca5d86ed77a445424e1a98b06306efbf25493bde52fc8fa28",
+      "members": [
+        "q025-candidate-question:1e336be02213b690c67114dd",
+        "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+      ],
+      "target": "q025-candidate-question:1e336be02213b690c67114dd",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Shared u0 and u21 support locality and dual-type overlap, while u3 and u28 witness distinct interaction and geometric branches. Comparison is justified; whole-scope equality or containment is not.",
+        "refs": [
+          "c2",
+          "c11",
+          "u0",
+          "u3",
+          "u21",
+          "u28",
+          "n0",
+          "n3",
+          "n4",
+          "n40",
+          "n41",
+          "n42",
+          "l2"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:1f89bed6074d75a18d3bc6ebb63b2fa26bc141ab2384d3a06cff84d7433407e1",
+          "textSha256": "7d72e38d8480ecd95ab32a73b7bb15a8552fcd7d3562716cb56033389a5fe549"
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+          "textSha256": "34a1ec050a9df223133039c7d6de35ed9ce88e7c9b8827870fbfe5911c0a2898"
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 17,
+          "unitId": "unit:517db97acb55316be35d66e182bad471cdd832af33e4cdde1cd7049a6c4c5c17",
+          "textSha256": "108fcdd7788d65034771e1e4fdcbb9fd6acbc9587b83045ba5aec8a7d42888cd"
+        },
+        {
+          "localRef": "u21",
+          "kind": "description",
+          "unitIndex": 34,
+          "unitId": "unit:bbee2f5750936c8b66b7bf9be8180258da113ce395f869707caf682f1f933d10",
+          "textSha256": "66247b1e73410c7fc1db42fb27193226ba90838d60b7273663b05df409bf3b43"
+        },
+        {
+          "localRef": "u28",
+          "kind": "description",
+          "unitIndex": 46,
+          "unitId": "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d",
+          "textSha256": "adf0763c2d58c1b482b1f08959fd9c94b4355c514d8145aa1e07f5717afca83c"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:36e32b09834c5e312c413871c5c43843dbe877ec013019b77569900dc796bf19",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bbee2f5750936c8b66b7bf9be8180258da113ce395f869707caf682f1f933d10",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n40",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c934cb230b244fe18976a0b8c42d1e2c438b17f2c9b3c1f0140075e137a2861d",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n41",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bbee2f5750936c8b66b7bf9be8180258da113ce395f869707caf682f1f933d10",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n42",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+          "targetCandidateId": "q025-candidate-question:1e336be02213b690c67114dd",
+          "candidateId": "successor2-parent-0b9505226b0fcc606395-challenge:link:18",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "comparison",
+        "members": [
+          "c3",
+          "c8"
+        ],
+        "target": "c8",
+        "definingDifferences": [
+          "c3 includes search algorithms, D-brane configurations and explicitly unbounded-charge studies.",
+          "c8 includes signed indices, connected-component counts, degeneration limits and broader global-finiteness questions."
+        ],
+        "reason": "Retain both scopes and their counting-convention restrictions. Their overlap supports comparison and a shared BP-counting subquestion, but neither complete definition contains the other. Retain c8 with its stated description-level limits; posing its finiteness questions does not certify their answers.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "u17",
+          "u19",
+          "u26",
+          "u29",
+          "u33",
+          "n9",
+          "n10",
+          "n11",
+          "n33",
+          "n34",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "nativeOperationValueSha256": "01aad684c0af64cb11dafa31af3d51c9e94aebdb6b25ebe679d7e434d4084031",
+      "members": [
+        "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ],
+      "target": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The definitions share counting and approximation questions but retain independent algorithmic, brane, index, component and global-finiteness branches. c8 can be retained as a question with its stated evidence limits; no verified finiteness result is implied.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "u19",
+          "u26",
+          "u33",
+          "n10",
+          "n33",
+          "n34",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "u17",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:91d0ad1797239ed607e106a149888d5ef43fce563dad7afbaf7e6b1141e4bf96",
+          "textSha256": "f3949851187099e6154a9d4ca9d4c143eff52105da12862c47cbf285a65fab83"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+          "textSha256": "fb46477b47c09be9e40ce363837b1a15a02c145c77f6a3116a1accd600ebc776"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+          "textSha256": "edf884344a5286d5d951d663be22cbcafb292530fbca6d6e6494af8004121855"
+        },
+        {
+          "localRef": "u29",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:c989b3b7a7f975eb0c803d00792f434e890709c23852484cfd96b794e5467c26",
+          "textSha256": "647527c16d1c3fff782f24fed5ccf5132ea1076a22713cfb61b34bedf3b7f601"
+        },
+        {
+          "localRef": "u33",
+          "kind": "description",
+          "unitIndex": 27,
+          "unitId": "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223",
+          "textSha256": "5ba1fcd671fec0dbab737e190fe942eaab44ddd44053af4493d3853492ceed51"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:91d0ad1797239ed607e106a149888d5ef43fce563dad7afbaf7e6b1141e4bf96",
+          "reviewId": "leaf-2ad258bc94836dc637e4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n10",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b55c030cb3a24e2a9d3159266ce477dd62742558d985eaefb28608ea25d83deb",
+          "reviewId": "leaf-2ad258bc94836dc637e4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c989b3b7a7f975eb0c803d00792f434e890709c23852484cfd96b794e5467c26",
+          "reviewId": "leaf-2ad258bc94836dc637e4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c518029af2b4b2b0263ede0dd2917955a86faae2983fda7551c53811bdeffb7d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n36",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e5137b7007ef0315283ea5017b1117043f0cf4f5c85775630cf68558f6f92223",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+          "targetCandidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:28",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "specializes",
+        "members": [
+          "c7",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c7 concentrates on the discharge criterion and conditional constraints and explicitly restricts the charged population to the Boltzmann-suppressed regime.",
+          "c4 also asks directly about screening, conduction and thermally assisted production; its written equilibrium regime does not explicitly impose that population restriction."
+        ],
+        "reason": "Use c4 as the existing broader mechanism-and-bound destination and retain c7 as its explicitly restricted constraint question. Their shared source and operational criterion support this organization, but equilibrium alone does not establish identical written regimes. This does not validate c4's mass bound outside c7's restricted domain. Both original reading limits remain intact.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "nativeOperationValueSha256": "ee6895ceadafc9c47ee76bf1ccc04be814d31917e17c351d1ad7e8df1aa195a4",
+      "members": [
+        "q025-candidate-question:83e35ef679868008269066eb",
+        "q025-candidate-question:24e1b09b901c1be54e4d61ee"
+      ],
+      "target": "q025-candidate-question:24e1b09b901c1be54e4d61ee",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete written definitions support narrower-first ordering: c7 focuses the shared conditional constraint on explicitly Boltzmann-suppressed carriers. Equilibrium alone does not erase that written restriction. The decision correctly avoids treating broader mechanism coverage as an extension of the physical bound and preserves both reading limits.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-87d7993188bba7a3ec4c-challenge:p5",
+          "candidateId": "q025-candidate-question:24e1b09b901c1be54e4d61ee"
+        },
+        {
+          "localRef": "c7",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9aec4ca94b068f477af8-challenge:p7",
+          "candidateId": "q025-candidate-question:83e35ef679868008269066eb"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "textSha256": "f9f2091cb7048e22e6d4a2af58123cdc1c67b6f2b7f801530cb0387604838ab5"
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "reviewId": "leaf-87d7993188bba7a3ec4c-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6260e0e141321b5108335e18494f7cc739fd304c1862ccd9ac79a67a094ff5d1",
+          "reviewId": "leaf-9aec4ca94b068f477af8-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "comparison",
+        "members": [
+          "c5",
+          "c6"
+        ],
+        "target": "c6",
+        "definingDifferences": [
+          "c5 explicitly includes excited spectators, admissible-state damping, backreaction and contracting-background comparisons.",
+          "c6 includes broader propagation and commutation modifications, quantum-cosmology prescriptions and conditional censorship applications."
+        ],
+        "reason": "Retain both definitions. Shared robustness and excited-state witnesses support a related-question route and a common narrower damping question, not whole-scope identity. The admissible-state restriction belongs to the damping claim; censorship and observable-signature questions do not inherit it automatically.",
+        "refs": [
+          "c5",
+          "c6",
+          "u2",
+          "u14",
+          "u18",
+          "u23",
+          "u27",
+          "u32",
+          "u36",
+          "n5",
+          "n6",
+          "n8",
+          "n12",
+          "n13",
+          "n14",
+          "n15",
+          "n16",
+          "l1"
+        ]
+      },
+      "nativeOperationValueSha256": "94e8487aab0ea1521b0db93d9e8afd936da356b99401687a9d86bd192e41e8e2",
+      "members": [
+        "q025-candidate-question:265bd371fe1997a8c8287c76",
+        "q025-candidate-question:530e8cb46259544847e705a1"
+      ],
+      "target": "q025-candidate-question:530e8cb46259544847e705a1",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd5",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Shared u14 and u23 establish overlap, while the full definitions and u27, u2 and u18 preserve different damping, preparation and censorship tasks. Comparison does not impose the damping admissibility premise on other state or propagation questions.",
+        "refs": [
+          "c5",
+          "c6",
+          "u2",
+          "u14",
+          "u18",
+          "u23",
+          "u27",
+          "n5",
+          "n6",
+          "n8",
+          "n12",
+          "n13",
+          "n14",
+          "n16",
+          "l1"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:1faeab12445a23b2cf27c2260701526d80a5651f01aa1c51b39618646ceac23b",
+          "textSha256": "80baa22439ae8ab23f08878193dd2f06c5e4c8b83488d9dd6eee79e1c2a0c90d"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 100,
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "textSha256": "867c91767b2689e22ea807500dfc7e95a8e5a9857a33e21cc2736ec733d748e5"
+        },
+        {
+          "localRef": "u18",
+          "kind": "description",
+          "unitIndex": 22,
+          "unitId": "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+          "textSha256": "1a76fee6691def76114a30f95e40f160bae1d722c14c2ccb27d1e77d430bffa4"
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "textSha256": "d070a11b591bca008deb70c75fd202fe208b4d628946cffbf640a253d7755d80"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "u32",
+          "kind": "description",
+          "unitIndex": 17,
+          "unitId": "unit:e27b7a1c270a6a9a9df44ce4ff89dbc63942ffdc186aa8edd46ee250bd83ea26",
+          "textSha256": "7ca856435c76a7f9ba55c55ef5614218ec34cd3cd2294f35b0859037e57d7271"
+        },
+        {
+          "localRef": "u36",
+          "kind": "description",
+          "unitIndex": 48,
+          "unitId": "unit:f566259e0576e1127e179440e99919ef0915dbc682ee951975719a0cd0ee4f49",
+          "textSha256": "743560d9bf482459fe683d1da84afd68e62da9688ecba973c5fd519cbf171cff"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bf7a3f7051d78debe2078ca945a826df58e3421a064511b9ce8db859c8cda024",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:1faeab12445a23b2cf27c2260701526d80a5651f01aa1c51b39618646ceac23b",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b0f7bc9b4d6d1431b11d387a4c24d385542d33b98192cb805e7696bec1fa6ec3",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f566259e0576e1127e179440e99919ef0915dbc682ee951975719a0cd0ee4f49",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:811f0cd0e6a8dc24a2f2e2b763c0837b65b9e0227ee249adacc415663181a248",
+          "reviewId": "leaf-568a730d23db86e13f19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:265bd371fe1997a8c8287c76",
+          "targetCandidateId": "q025-candidate-question:530e8cb46259544847e705a1",
+          "candidateId": "successor-parent-e216581a59d87c4cff7a-challenge:link:28",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "pq0 isolates perturbative local-EFT criteria and the cutoff-to-curvature hierarchy; c2 also covers dual classification, graviton spectra and conditional compactification tests."
+        ],
+        "reason": "The complete c2 definition explicitly contains this narrower locality target. The relation organizes questions and does not verify the announced criterion.",
+        "refs": [
+          "c2",
+          "u0",
+          "n42"
+        ]
+      },
+      "nativeOperationValueSha256": "540774d38ecec4690eb23930d9143a0fb8156d8a7584189f06dbcba87784c031",
+      "members": [
+        "q025-candidate-question:c073ce5ebda7456546a71118",
+        "q025-candidate-question:1e336be02213b690c67114dd"
+      ],
+      "target": "q025-candidate-question:1e336be02213b690c67114dd",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c2 explicitly includes perturbative local-EFT criteria and cutoff control. pq0 isolates that target, leaving classification, localization and conditional compactification tests in the broader question. The specialization direction is correct.",
+        "refs": [
+          "c2",
+          "u0",
+          "n42"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-f46b1ed2fe897b8169bc-challenge:p3",
+          "candidateId": "q025-candidate-question:1e336be02213b690c67114dd"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n42",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-f46b1ed2fe897b8169bc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd7",
+      "nativeOperation": {
+        "id": "pd7",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c11"
+        ],
+        "target": "c11",
+        "definingDifferences": [
+          "pq0 isolates the locality criterion; c11 additionally asks about allowed interactions, multiple bulk components and deformation-induced masses."
+        ],
+        "reason": "The locality criterion is an explicit subquestion of c11. Its separate higher-spin and scalar-interaction branches remain intact.",
+        "refs": [
+          "c11",
+          "u0",
+          "n0"
+        ]
+      },
+      "nativeOperationValueSha256": "b0730cd393beef6087b742c8386dbd933fd84c183f78cb865fc0f8b8c5e65495",
+      "members": [
+        "q025-candidate-question:c073ce5ebda7456546a71118",
+        "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+      ],
+      "target": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c11 explicitly states the three-part locality criterion. pq0 selects it without incorporating the additional interaction exclusions, dual-component questions or mass generation.",
+        "refs": [
+          "c11",
+          "u0",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c11",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-07c5faf6babeb0673e5b-challenge:p0",
+          "candidateId": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "textSha256": "a00ac4253856fc70f7b579427b4d89b79f5fc9fce55e369b765bcddbbadc03fa"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:18a5e8212ad5a926d0d74e3d177808c9d0355569608ac3ebfa2c3dbc03554fd1",
+          "reviewId": "leaf-07c5faf6babeb0673e5b-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd8",
+      "nativeOperation": {
+        "id": "pd8",
+        "operation": "specializes",
+        "members": [
+          "pq1",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "pq1 concerns a specified flux-lattice counting problem and its low-Λ estimates; c3 also includes branes, optimization, other charge regimes and topological bounds."
+        ],
+        "reason": "c3 can organize the narrower lattice-counting and approximation question without receiving new source roles by inheritance.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "nativeOperationValueSha256": "0d3cdb6abcdca41fa7e5da52b725c8d5c50042b135671f9a905d80d8b63c212f",
+      "members": [
+        "q025-candidate-question:5712feb81e448688e3572680",
+        "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+      ],
+      "target": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd8",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Specified flux lattices, count approximations and distributions are within c3. The BP question is therefore a sound specialization even though its selected witnesses were attributed to c8; containment adds no u7/u8 role at c3.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-2ad258bc94836dc637e4-challenge:p2",
+          "candidateId": "q025-candidate-question:23afe5edb99a839a6bd60ad8"
+        },
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd9",
+      "nativeOperation": {
+        "id": "pd9",
+        "operation": "specializes",
+        "members": [
+          "pq1",
+          "c8"
+        ],
+        "target": "c8",
+        "definingDifferences": [
+          "pq1 concerns BP lattice estimates and explicit minimum-Λ conventions; c8 also covers indices, accumulation, component counts and global finiteness."
+        ],
+        "reason": "The exact c8 definition already includes this count-reliability target and preserves the two distinct minimum conventions.",
+        "refs": [
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "nativeOperationValueSha256": "cc5264cd9d804645b344f168e347794bd4bc3be94614419b5be40b597cebf915",
+      "members": [
+        "q025-candidate-question:5712feb81e448688e3572680",
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ],
+      "target": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd9",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c8 expressly includes continuum-count checks and the nonnegative/strictly positive minimum distinction. pq1 narrows these to BP lattice estimates without extending them to component or global finiteness.",
+        "refs": [
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c8",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-d13b20f32a6b348a6afc-challenge:p1",
+          "candidateId": "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "textSha256": "1d544a082eef0afa2fb2ef40d176b7905b6d8d43d93bce46dfbdc7cb74453454"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 7,
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "textSha256": "1a4d7ac08908042c30e5991c460a53d3222ab828683824c4895ca0eabe8c147b"
+        },
+        {
+          "localRef": "n33",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:41135c4acb7efa885e8f4b23a8988918f52b1f2f2da458ab4ae587ed7916410d",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45162bef371508fe437d35d4586b9d4d87532392305e69369455264970a28c7f",
+          "reviewId": "leaf-d13b20f32a6b348a6afc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd10",
+      "nativeOperation": {
+        "id": "pd10",
+        "operation": "specializes",
+        "members": [
+          "pq2",
+          "c5"
+        ],
+        "target": "c5",
+        "definingDifferences": [
+          "pq2 concerns damping of admissible excitations during inflation; c5 also includes intentional spectator excitation, other ultraviolet effects and contraction."
+        ],
+        "reason": "c5 explicitly contains the restricted memory-loss question. The narrower definition preserves its surviving-state premise and leaves the contracting comparison outside pq2.",
+        "refs": [
+          "c5",
+          "u27",
+          "n6"
+        ]
+      },
+      "nativeOperationValueSha256": "a022a1acd46cab3a12ed3e4598b8d886e9292a1504342a89498d4506cf1aeb4c",
+      "members": [
+        "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3",
+        "q025-candidate-question:265bd371fe1997a8c8287c76"
+      ],
+      "target": "q025-candidate-question:265bd371fe1997a8c8287c76",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd10",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The admissible-state damping question and its surviving-state premise are explicit in c5 and n6. pq2 selects the inflationary branch while the broader destination retains spectators, other ultraviolet effects and contraction.",
+        "refs": [
+          "c5",
+          "u27",
+          "n6"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    },
+    {
+      "id": "operation:navigation-v3:strong-scope-bundle-05:pd11",
+      "nativeOperation": {
+        "id": "pd11",
+        "operation": "specializes",
+        "members": [
+          "pq2",
+          "c6"
+        ],
+        "target": "c6",
+        "definingDifferences": [
+          "pq2 restricts state relaxation to admissible inflationary EFT excitations; c6 also includes modified propagation, finite-time prescriptions and conditional censorship applications."
+        ],
+        "reason": "State relaxation is an explicit c6 target, so this restricted question supplies a useful narrower destination. The restriction is local to pq2 and is not imposed on every c6 source.",
+        "refs": [
+          "c6",
+          "c5",
+          "u27",
+          "n6"
+        ]
+      },
+      "nativeOperationValueSha256": "9b08c83a4f5d4d30011a9be53dc7e6e4a25fbe879734e414efbb934418564f1f",
+      "members": [
+        "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3",
+        "q025-candidate-question:530e8cb46259544847e705a1"
+      ],
+      "target": "q025-candidate-question:530e8cb46259544847e705a1",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd11",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "State relaxation is an explicit c6 target, allowing the restricted damping question as a specialization. Its admissibility condition is supported by c5 and n6 and remains local to pq2; no new u27 role at c6 follows.",
+        "refs": [
+          "c6",
+          "c5",
+          "u27",
+          "n6"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-568a730d23db86e13f19-challenge:p4",
+          "candidateId": "q025-candidate-question:530e8cb46259544847e705a1"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ddd8c662faffd2b9587-challenge:p1",
+          "candidateId": "q025-candidate-question:265bd371fe1997a8c8287c76"
+        },
+        {
+          "localRef": "u27",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "textSha256": "1481fa58aaf938779141508297e2f664f2f9ba3320c598d82f72eae38f5a1cbe"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c5eb98d28de194ba19467078f0e9a621005b86392759056d9d7bb21a56b3e2c6",
+          "reviewId": "leaf-1ddd8c662faffd2b9587-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+        "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:1bb053304be3775d8c79d2f4",
+      "right": "q025-candidate-question:ee233163e41eed46b2433010",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c10",
+        "relation": "overlap",
+        "reason": "Shared axionic dark-energy organization does not erase c0's additional mechanisms or c10's restricted instanton and joint-epoch targets.",
+        "refs": [
+          "c0",
+          "c10",
+          "u25",
+          "u30",
+          "n22",
+          "n24",
+          "n25",
+          "n27"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+      "right": "q025-candidate-question:e686cfbdc5894823cdcd1c30",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c9",
+        "relation": "overlap",
+        "reason": "Both formulate scalar–gravity comparisons, but their full observables, mediator selections, systems and regimes differ.",
+        "refs": [
+          "c1",
+          "c9",
+          "u5",
+          "u11",
+          "u16",
+          "u24",
+          "n18",
+          "n19",
+          "n20",
+          "n32"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:1e336be02213b690c67114dd",
+      "right": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c11",
+        "relation": "overlap",
+        "reason": "Shared locality and dual-type questions do not identify geometric hierarchy tests with partial interaction exclusions.",
+        "refs": [
+          "c2",
+          "c11",
+          "u0",
+          "u3",
+          "u21",
+          "u28",
+          "n3",
+          "n40",
+          "l2"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+      "right": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c8",
+        "relation": "overlap",
+        "reason": "Their common count-and-approximation target does not equate algorithmic searches, brane bounds, indices, connected components or global finiteness.",
+        "refs": [
+          "c3",
+          "c8",
+          "u19",
+          "u26",
+          "n10",
+          "n33",
+          "n34",
+          "n35",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:24e1b09b901c1be54e4d61ee",
+      "right": "q025-candidate-question:83e35ef679868008269066eb",
+      "relation": "specializes_right",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c7",
+        "relation": "specializes_right",
+        "reason": "c7 is the constraint-focused, explicitly Boltzmann-suppressed subquestion of c4's mechanism-and-bound question. No extension of the physical bound beyond that domain follows.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:265bd371fe1997a8c8287c76",
+      "right": "q025-candidate-question:530e8cb46259544847e705a1",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c5",
+        "right": "c6",
+        "relation": "overlap",
+        "reason": "Robustness and initial-state observables overlap, while spectators, contraction, propagation modifications and quantum-cosmology prescriptions prevent complete equivalence.",
+        "refs": [
+          "c5",
+          "c6",
+          "u14",
+          "u18",
+          "u23",
+          "u27",
+          "n6",
+          "n14",
+          "n16",
+          "l1"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:1bb053304be3775d8c79d2f4",
+      "right": "q025-candidate-question:ee233163e41eed46b2433010",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c10",
+        "relation": "overlap",
+        "reason": "Shared axionic dark-energy questions permit common-target organization. Axiodilaton energy, offset dynamics and restricted endpoint bounds differ from the instanton/prefactor and unchanged-parameter joint-epoch tasks; neither complete scope is identified with the other.",
+        "refs": [
+          "c0",
+          "c10",
+          "u6",
+          "u12",
+          "u25",
+          "u30",
+          "n22",
+          "n24",
+          "n25",
+          "n27"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+      "right": "q025-candidate-question:e686cfbdc5894823cdcd1c30",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c9",
+        "relation": "overlap",
+        "reason": "Both organize scalar–gravity criteria, but horizon mediator selection and derivative conventions do not exhaust the charged/neutral, scattering, coupling-correction and multifield branches. Shared organization establishes no equivalent inequality.",
+        "refs": [
+          "c1",
+          "c9",
+          "u4",
+          "u5",
+          "u11",
+          "u16",
+          "u24",
+          "n18",
+          "n19",
+          "n20",
+          "n30",
+          "n32"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:1e336be02213b690c67114dd",
+      "right": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c11",
+        "relation": "overlap",
+        "reason": "The dual-type and locality targets overlap. Geometric localization and conditional hierarchy tests remain distinct from partial interaction exclusions and bootstrap tests; complete containment is not established.",
+        "refs": [
+          "c2",
+          "c11",
+          "u0",
+          "u3",
+          "u21",
+          "u28",
+          "n3",
+          "n4",
+          "n40",
+          "n42",
+          "l2"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+      "right": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c8",
+        "relation": "overlap",
+        "reason": "Counting and approximation questions overlap, while search algorithms, brane configurations and unbounded-charge studies differ from indices, component bounds, degeneration and global-finiteness questions.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "u19",
+          "u26",
+          "u33",
+          "n10",
+          "n33",
+          "n34",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:24e1b09b901c1be54e4d61ee",
+      "right": "q025-candidate-question:83e35ef679868008269066eb",
+      "relation": "specializes_right",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c7",
+        "relation": "specializes_right",
+        "reason": "As written, c7 restricts the shared discharge-and-constraint target to a Boltzmann-suppressed equilibrium population; c4 also directly asks about mechanisms without that explicit population restriction. This is question containment, not evidence that the mass bound applies outside c7's domain.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:265bd371fe1997a8c8287c76",
+      "right": "q025-candidate-question:530e8cb46259544847e705a1",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c5",
+        "right": "c6",
+        "relation": "overlap",
+        "reason": "Shared robustness and excited-state questions do not equate spectator excitation and contracting-background damping with propagation changes, quantum-cosmology prescriptions or conditional censorship implementations.",
+        "refs": [
+          "c5",
+          "c6",
+          "u14",
+          "u18",
+          "u23",
+          "u27",
+          "n5",
+          "n6",
+          "n8",
+          "n13",
+          "n14",
+          "n16",
+          "l1"
+        ]
+      },
+      "sourceReviewIds": [
+        "strong-scope-bundle-05-navigation-proposal",
+        "strong-scope-bundle-05-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:1bb053304be3775d8c79d2f4",
+    "c1": "q025-candidate-question:1c0707643dd3d6c558ee5b6a",
+    "c2": "q025-candidate-question:1e336be02213b690c67114dd",
+    "c3": "q025-candidate-question:23afe5edb99a839a6bd60ad8",
+    "c4": "q025-candidate-question:24e1b09b901c1be54e4d61ee",
+    "c5": "q025-candidate-question:265bd371fe1997a8c8287c76",
+    "c6": "q025-candidate-question:530e8cb46259544847e705a1",
+    "c7": "q025-candidate-question:83e35ef679868008269066eb",
+    "c8": "q025-candidate-question:cc6407d4ae9b11e139f5bd22",
+    "c9": "q025-candidate-question:e686cfbdc5894823cdcd1c30",
+    "c10": "q025-candidate-question:ee233163e41eed46b2433010",
+    "c11": "q025-candidate-question:f2d9f1c4d20ccb21b752aa1e",
+    "pq0": "q025-candidate-question:c073ce5ebda7456546a71118",
+    "pq1": "q025-candidate-question:5712feb81e448688e3572680",
+    "pq2": "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    },
+    {
+      "path": "research/q025/evaluation/full-pass/scope-gap-admissions-v1/component.json",
+      "sha256": "5e0b47da221d61b5056890435bca4b8ef0200a73c92d17cffebff5931672bcaf"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v4/strong-scope-bundle-05-admission.json",
+    "sha256": "5160e65bcd66439f852547026278ac2fede98962ee3ffc738ea6f3e5e8c0dd80"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u0",
+      "questionRefs": [
+        "c2",
+        "c11",
+        "pq0"
+      ],
+      "reason": "Preserve the separate locality-criterion and higher-spin interaction branches. The retained new role at pq0 covers only the criterion branch.",
+      "refs": [
+        "u0",
+        "c2",
+        "c11",
+        "n0",
+        "n42"
+      ]
+    },
+    {
+      "unitRef": "u7",
+      "questionRefs": [
+        "c8",
+        "pq1"
+      ],
+      "reason": "Counting, occupation and minimum nonnegative Λ remain distinguishable outputs. Their common destination does not identify them with u8's strictly positive minimum.",
+      "refs": [
+        "u7",
+        "c8",
+        "n33"
+      ]
+    },
+    {
+      "unitRef": "u8",
+      "questionRefs": [
+        "c8",
+        "pq1"
+      ],
+      "reason": "Preserve thin-shell counting, occupation and minimum strictly positive Λ, with possible stabilization difficulties remaining a conditional implication.",
+      "refs": [
+        "u8",
+        "c8",
+        "n34"
+      ]
+    },
+    {
+      "unitRef": "u27",
+      "questionRefs": [
+        "c5",
+        "pq2"
+      ],
+      "reason": "Preserve inflationary damping and the contracting-background comparison as separate source branches. Only the inflationary branch contributes to pq2.",
+      "refs": [
+        "u27",
+        "c5",
+        "n6"
+      ]
+    },
+    {
+      "unitRef": "u10",
+      "questionRefs": [
+        "c4",
+        "c7"
+      ],
+      "reason": "Conduction, assisted creation, homogeneous contraction and conditional constraints remain distinct internal targets. Question containment establishes no atomic identity among them.",
+      "refs": [
+        "u10",
+        "c4",
+        "c7",
+        "n21",
+        "n28"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "pendingExceptions": [],
+  "pendingChallengeObjects": {},
+  "rootAdjudicatedReplacements": [],
+  "supersedesAdmissionSnapshot": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v3/strong-scope-bundle-05-component.json",
+    "sha256": "2df4788f206cb03954ba3d7bf83e798d38aed6736f013e503d0bacd17147ec47"
+  },
+  "supersessionMeaning": "Earlier admitted public scientific rows remain unchanged; previously held rows are enabled only by separate endpoint-scope admission or exact root adjudication. Historical rejected proposals and the earlier snapshot remain retained.",
+  "fullAtlasAdmission": false
+}

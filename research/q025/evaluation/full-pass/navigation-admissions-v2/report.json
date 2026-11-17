@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "q025-navigation-wave-agreement-report/2",
+  "families": [
+    {
+      "family": "axion-vector-production",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/axion-vector-production-component.json",
+        "sha256": "7bd26dd8532c333cf9354c44fc82e194a59c2dd4b30ab124bcf1b3abbf6f762e"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/axion-vector-production-admission.json",
+        "sha256": "f8c34153031262f2ed9818888a6d5422ea09ed87689ab3c7e16c9177b3a22659"
+      },
+      "counts": {
+        "newScopes": 2,
+        "typedOperations": 4,
+        "publicRoutes": 3,
+        "confirmedSourceRoles": 2,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 2,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [
+        {
+          "operationId": "operation:navigation-v2:axion-vector-production:pd0",
+          "memberDestinationIds": [
+            "q025-candidate-question:49d3e894f117509cb5f6a9f2",
+            "q025-candidate-question:891203df753b324531020eb9"
+          ],
+          "canonicalDestinationId": "q025-candidate-question:891203df753b324531020eb9",
+          "status": "local_group_supported_global_whole_group_gate_pending",
+          "retainedReadingLimits": [
+            {
+              "destinationId": "q025-candidate-question:49d3e894f117509cb5f6a9f2",
+              "readingLimit": "Bounded 2018 and 2019 source passages; the announced benchmark and viable ranges are not independently reproduced."
+            },
+            {
+              "destinationId": "q025-candidate-question:891203df753b324531020eb9",
+              "readingLimit": "Bounded 2018 and 2019-version excerpts support the mechanisms and their differing requirements; they do not establish equivalence or viability throughout all parameter space."
+            }
+          ],
+          "sourceStatementIdentityEstablished": false,
+          "automaticHomeTransfer": false
+        }
+      ],
+      "summary": "Support reuse of c1 as the canonical overview, both narrower questions, and all three qualified navigation routes. Every prior definition, decision and new source role is retained through explicit review.",
+      "unresolved": [],
+      "readingLimits": [
+        "No actual primary windows are supplied. This review reuses complete definitions, whole descriptions and their target-specific inherited assessments; historical nested citations are not current evidence IDs.",
+        "Retained c0 reading limit: Bounded 2018 and 2019 source passages; the announced benchmark and viable ranges are not independently reproduced.",
+        "Retained c1 reading limit: Bounded 2018 and 2019-version excerpts support the mechanisms and their differing requirements; they do not establish equivalence or viability throughout all parameter space.",
+        "Canonical overview equivalence does not establish equivalence of the constructions, their physical statements or their viable parameter regions. No new coupling criterion, mass reach, backreaction bound, depletion rate or WGC obstruction is established.",
+        "Only the two previously proposed narrower-target source roles are assessed here. Existing contribution tables and out-of-packet boundary assignments are not regenerated or reassigned. Global uniqueness, source identity, organizational homes and mass are not established.",
+        "Route titles are approved outgoing choices only. The comparison route asserts only its stated direction; no reverse route or incoming-title override is added."
+      ],
+      "newDefinitions": [
+        {
+          "id": "q025-candidate-question:42f0331dd20ca2ee24482e63",
+          "title": "Very light vector dark matter from axion misalignment"
+        },
+        {
+          "id": "q025-candidate-question:950f397cc22787451c607c3e",
+          "title": "Vector dark matter with residual-axion depletion"
+        }
+      ],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:49d3e894f117509cb5f6a9f2",
+          "title": "Dark photons from axion oscillations"
+        },
+        "c1": {
+          "id": "q025-candidate-question:891203df753b324531020eb9",
+          "title": "Vector dark matter from axion oscillations"
+        },
+        "pq0": {
+          "id": "q025-candidate-question:42f0331dd20ca2ee24482e63",
+          "title": "Very light vector dark matter from axion misalignment"
+        },
+        "pq1": {
+          "id": "q025-candidate-question:950f397cc22787451c607c3e",
+          "title": "Vector dark matter with residual-axion depletion"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "calabi-yau-periods-and-bps",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-component.json",
+        "sha256": "c5ec266277fe0f86ed990d2b4948f2fedd8a43d626ffdb050ca2c5c95aaa8649"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      },
+      "counts": {
+        "newScopes": 0,
+        "typedOperations": 8,
+        "publicRoutes": 7,
+        "confirmedSourceRoles": 2,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 2,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [],
+      "summary": "Support all eight prior decisions, seven navigation routes and two added source roles at the supplied evidence level. Retain the five definitions and reuse c4 as their existing parent. The overlapping amplitude and period questions remain distinct; the qualified mirror-to-enumerative method route connects them without an equivalence merge.",
+      "unresolved": [
+        "A route identifying selected-state weak-gravity bounds with topological BPS-index counting remains unsupported.",
+        "A general asymptotic-Hodge method route from c2 to c1 remains unsupported; the retained method bridge uses the specific mirror calculations represented by c3.",
+        "Physical-versus-motivic realizability and invariant matching beyond the tractable models remain questions, not established premises for further application routes.",
+        "No route from special Kähler period calculations to construction of internal Ricci-flat metrics is established."
+      ],
+      "readingLimits": [
+        "No primary windows are supplied. These judgments reuse complete definitions, whole descriptions and inherited scope or attribution assessments; they do not freshly verify formulas or derivations.",
+        "Historical references nested in inherited reviews are not current evidence IDs. Citations use enclosing c*, n* and l* records or supplied u* descriptions.",
+        "The packet contains 18 selected witnesses from 45 distinct prior contribution sources. Unselected assignments and omitted inherited role rows are not reassessed or given new target roles.",
+        "There are no prior new questions to review. Supported assessments retain the exact eight prior decisions, seven navigation objects and two source-role rows; they are not reserialized here.",
+        "All five definitions and reading limits remain unchanged. Compound-source mappings preserve multiple internal targets and do not establish atomic identity, global uniqueness, homes or mass.",
+        "Navigation titles remain reviewed outgoing choices only. No separately titled incoming choices are admitted."
+      ],
+      "newDefinitions": [],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+          "title": "Topological amplitudes and their BPS interpretation"
+        },
+        "c1": {
+          "id": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "title": "Curve invariants and topological amplitudes"
+        },
+        "c2": {
+          "id": "q025-candidate-question:af30c367be77504492951c97",
+          "title": "Periods and special geometry"
+        },
+        "c3": {
+          "id": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "title": "Computing Calabi–Yau special geometry"
+        },
+        "c4": {
+          "id": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "title": "Calabi–Yau geometry, computation and compactification physics"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "ads-kk-scale-control",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-component.json",
+        "sha256": "4cd0d9760aea4f4bb67c12f9c89ec919d6d3e1d793db669de5fe59f11089289c"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      },
+      "counts": {
+        "newScopes": 0,
+        "typedOperations": 2,
+        "publicRoutes": 3,
+        "confirmedSourceRoles": 0,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 0,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [],
+      "summary": "Support both prior decisions and all three navigation routes unchanged. Reuse c2 for the shared geometric hierarchy target while retaining c0 and c1 as overlapping, distinct questions. The retained graph connects c3 to c2, then offers construction and spectral/control comparisons. No definitions or source roles change.",
+      "unresolved": [
+        "Whether particular candidates satisfy particular spectral restrictions, survive localization or possess a complete parametric KK gap requires evidence absent from this packet.",
+        "Compound-target decomposition remains open, including the separate branches of u2, charge proposal and dated critique of u9, effective-action and inflation targets of u13, modulus/KK targets of u12, and geometric/Wilsonian targets of u15."
+      ],
+      "readingLimits": [
+        "This review reuses complete definitions, supplied whole descriptions and inherited assessments through current c* and n* containers. No primary windows are supplied; historical excerpt IDs are not current evidence.",
+        "All prior definitions, reading limits, compound source objects and inherited contribution rows remain unchanged. The prior proposal contains no new questions or source roles requiring individual review.",
+        "The 18 selected witnesses and 25 paired contexts do not reassess all 66 distinct prior contribution sources. Empty sourceContributions adds no target assignments.",
+        "Source-specific dimensions, supersymmetry, flux and volume conventions, scaling restrictions and source treatment remain binding. No general fixed-flux or spectator prescription is established.",
+        "Actual KK masses, selected spin-2 or test-scalar diagnostics, average internal radii and modulus masses remain distinct. Large volume, weak coupling or a reduced potential alone does not establish complete spectral or localized control.",
+        "The f28 shorthand has no standalone definition in this packet. Explicit scope exclusions are preserved without reconstructing additional content.",
+        "The retained routes approve only their stated outgoing arcs and titles. They establish no reverse physical implication, organizational home, source atomicity or global uniqueness."
+      ],
+      "newDefinitions": [],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+          "title": "AdS/KK hierarchy and control"
+        },
+        "c1": {
+          "id": "q025-candidate-question:746588a70cd01ac07e0ef706",
+          "title": "Constructing controlled geometric scale separation"
+        },
+        "c2": {
+          "id": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "title": "Controlled geometric KK/AdS separation"
+        },
+        "c3": {
+          "id": "q025-candidate-region:30e42c20fef58dd627023a94",
+          "title": "Compactification vacua, effective theories and stability"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "dark-energy-histories",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-component.json",
+        "sha256": "6d58960b4fb1913689d71f484c0c6dca08a1a377fcc7a1d97d3374b6f6732fe9"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      },
+      "counts": {
+        "newScopes": 0,
+        "typedOperations": 8,
+        "publicRoutes": 8,
+        "confirmedSourceRoles": 0,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 0,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [],
+      "summary": "Support all eight prior decisions and eight navigation rows unchanged. Retain five distinct scopes, reuse c1 and c3 for their shared targets, and preserve the connected graph without asserting equivalence, transferring source roles or adding definitions.",
+      "unresolved": [
+        "The fine identities of the setting statements u9 and u22 remain unresolved; support for a broader inference question does not make either a standalone canonical question.",
+        "Complete narrower definitions for the destinations associated with u7 and u12 are absent. Their microscopic/apparent-phantom alternatives and linked background/perturbation targets remain preserved without new routes or roles.",
+        "No result-transfer relation is established between conditional reconstruction and scaling stability, between pre-BBN freeze-out and late-time acceleration, or between apparent phantom behavior and improved joint fit quality."
+      ],
+      "readingLimits": [
+        "No primary windows are supplied. This review reuses exact definitions, whole descriptions and attributed prior assessments; it does not freshly verify equations, likelihoods, stability, viability or crossing behavior.",
+        "The 24 selected source witnesses and 25 paired contexts do not constitute a review of all 62 distinct prior contribution sources. Inherited role tables remain unchanged; no source-role transfer follows from common-target reuse.",
+        "Current c*, n*, u* and l* references identify the supplied evidence and route context. Historical citations nested inside assessments are not current evidence IDs.",
+        "The prior proposal contains no new definitions or new source-role rows, so those review categories are empty. Explicit support retains the exact eight prior decisions and eight prior navigation rows without repetition.",
+        "Compound-source rows preserve bounded existing access, not exhaustive replacement assignments or atomic identities. No organizational home, mass allocation or global uniqueness is established.",
+        "Reviewed navigation titles apply only to their outgoing choices. Incoming choices retain canonical neighbor titles."
+      ],
+      "newDefinitions": [],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+          "title": "Dark-energy histories and inference"
+        },
+        "c1": {
+          "id": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+          "title": "Inferring dark-energy histories"
+        },
+        "c2": {
+          "id": "q025-candidate-question:1666a2058189eda606293478",
+          "title": "Interacting dark sectors and scaling"
+        },
+        "c3": {
+          "id": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+          "title": "Couplings within the dark sector"
+        },
+        "c4": {
+          "id": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "title": "Dark-energy mechanisms, inference and conditional consistency"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "consistent-reductions-and-actions",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-component.json",
+        "sha256": "a8691509c5d5a9abdb8769a2b677db88ac88cbc2918ba57ff2dbdb2481e4e6e5"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      },
+      "counts": {
+        "newScopes": 0,
+        "typedOperations": 9,
+        "publicRoutes": 7,
+        "confirmedSourceRoles": 2,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 2,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [],
+      "summary": "Support all nine prior decisions, seven navigation routes and two proposed source roles. Retain the six exact definitions: c4 → c0 → c1 and c5 → c3 → c2 form connected branches through the qualified comparison, premise-check and related-question routes. No replacement definition or full-scope merger is needed.",
+      "unresolved": [
+        "Necessary circle-origin tests, algebraic compatibility, potentials and flux dictionaries do not supply sufficient uplift criteria on this evidence.",
+        "Differential realization, global lattice conditions, low-energy completeness, flux quantization and localized backreaction remain construction-specific questions.",
+        "The inherited half-maximal AdS5 matter bound and open differential-existence questions remain restricted to that classification and are not independently reverified.",
+        "Atomic reconciliation of compound sources, including u6 and u17, remains open."
+      ],
+      "readingLimits": [
+        "The evidence array contains no primary windows. This review uses exact definitions, supplied whole descriptions and inherited assessments cited through current c* and n* refs; l* refs identify proposed graph context only.",
+        "All six definitions and their reading limits remain unchanged. Organizational specialization and common-target reuse establish neither physical-statement equivalence nor automatic source-role transfer.",
+        "The packet supplies 24 selected witnesses from 162 distinct prior contribution sources. Unselected assignments and complete inherited role tables are not reassessed.",
+        "Both prior proposed source roles are explicitly confirmed by index. No additional sourceContributions are introduced, and omitted rows receive no new target role.",
+        "Truncated inherited notes are not completed by inference. Reported bounds, quantization failures and source corrections remain inherited qualifications rather than fresh primary findings.",
+        "No source is split or rewritten. No global uniqueness, source home, membership mass or admission of unresolved descendants follows."
+      ],
+      "newDefinitions": [],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:11fac3e3216724977778f4e2",
+          "title": "Reductions, truncations and higher-dimensional realization"
+        },
+        "c1": {
+          "id": "q025-candidate-question:e356a66ea835237726bb7474",
+          "title": "Consistent reductions and higher-dimensional origins"
+        },
+        "c2": {
+          "id": "q025-candidate-question:98ed3765c22addab01ecc561",
+          "title": "Effective actions, gaugings and flux potentials"
+        },
+        "c3": {
+          "id": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "title": "Effective actions and flux dictionaries"
+        },
+        "c4": {
+          "id": "q025-candidate-question:2ad902d8305bb29bbade4879",
+          "title": "Compactifications, effective actions and vacua"
+        },
+        "c5": {
+          "id": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+          "title": "Flux compactifications, effective dynamics and vacuum questions"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "entropy-and-extremality",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-component.json",
+        "sha256": "0bd99cf8875fb2251cd195d0630454377bbebc8ba1ad33cfdc95786203339a1b"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      },
+      "counts": {
+        "newScopes": 2,
+        "typedOperations": 4,
+        "publicRoutes": 3,
+        "confirmedSourceRoles": 2,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 2,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [
+        {
+          "operationId": "operation:navigation-v2:entropy-and-extremality:pd0",
+          "memberDestinationIds": [
+            "q025-candidate-question:2ed35c0e62570949d976b307",
+            "q025-candidate-question:4a96ce81d3c4841657c6029d"
+          ],
+          "canonicalDestinationId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+          "status": "local_group_supported_global_whole_group_gate_pending",
+          "retainedReadingLimits": [
+            {
+              "destinationId": "q025-candidate-question:2ed35c0e62570949d976b307",
+              "readingLimit": "Only an abstract and overlapping introductory text are supplied. They announce calculations and interpretations; the relations and claimed universality are not independently checked."
+            },
+            {
+              "destinationId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+              "readingLimit": "Abstract and motivation from 2011.14366 support the announced targets and selected claims. The detailed calculations needed to establish the proposed universal relations are not supplied."
+            }
+          ],
+          "sourceStatementIdentityEstablished": false,
+          "automaticHomeTransfer": false
+        }
+      ],
+      "summary": "Retain the proposal: reuse c1 for c0 and c1, preserve the two distinct narrower questions, and retain all three navigation routes. The evidence supports question organization and announced source targets; it does not verify the thermodynamic relations or their WGC-like interpretation.",
+      "unresolved": [
+        "A premise_check, application_of or method route between response relations and the WGC-like interpretation remains unlicensed without primary evidence identifying the relevant premise or inferential mechanism. Their explicit joint investigation supports only the retained related_question route."
+      ],
+      "readingLimits": [
+        "No actual primary windows are supplied. This review reuses complete definitions, the supplied whole description and mapped prior assessments; it does not freshly verify any thermodynamic relation or WGC-like behavior.",
+        "Preserved c0 reading limit: Only an abstract and overlapping introductory text are supplied. They announce calculations and interpretations; the relations and claimed universality are not independently checked.",
+        "Preserved c1 reading limit: Abstract and motivation from 2011.14366 support the announced targets and selected claims. The detailed calculations needed to establish the proposed universal relations are not supplied.",
+        "n0 supports inherited attribution through its explicit c0 mapping; n1 through its explicit c1 mapping. Nested historical references are not current evidence IDs, and n0's historical comparison assignment does not independently establish a role at c1.",
+        "Ensemble details, derivative prescriptions, deformation normalization, entropy and extremality conventions, and quantitative mass–charge criteria are not supplied here. No change to them or equality of physical statements is inferred.",
+        "Supported prior definitions, decisions, routes and source roles are retained exactly through their reviews. No additional source roles are assigned. This bounded review establishes neither complete source-assignment coverage, global uniqueness, atomic source identity, organizational homes nor mass."
+      ],
+      "newDefinitions": [
+        {
+          "id": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+          "title": "Thermodynamic responses to cosmological deformation"
+        },
+        {
+          "id": "q025-candidate-question:51d213e52260433a1885e2e3",
+          "title": "Assessing the WGC-like interpretation"
+        }
+      ],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:2ed35c0e62570949d976b307",
+          "title": "Entropy–extremality response to AdS deformations"
+        },
+        "c1": {
+          "id": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+          "title": "Entropy–extremality relations under cosmological deformation"
+        },
+        "pq0": {
+          "id": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+          "title": "Thermodynamic responses to cosmological deformation"
+        },
+        "pq1": {
+          "id": "q025-candidate-question:51d213e52260433a1885e2e3",
+          "title": "Assessing the WGC-like interpretation"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "de-sitter-organization",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/de-sitter-organization-component.json",
+        "sha256": "52dc6d27d587b0ab7bd98be81b32c708007e21ba371606763274a64cfc1e950e"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/de-sitter-organization-admission.json",
+        "sha256": "c12872cf2304168f663092654b4ae34f66023591718d507dc468ac34110a58ac"
+      },
+      "counts": {
+        "newScopes": 1,
+        "typedOperations": 11,
+        "publicRoutes": 6,
+        "confirmedSourceRoles": 12,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 12,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [],
+      "summary": "Retain c4 as the shared existence/interpretation destination, connected to pq0, c5, c6 and c7 by the six qualified proposal routes. All prior definitions, decisions, routes and new source roles are supported within their stated reading limits. Preserve the four regions without full-scope union or automatic source reassignment.",
+      "unresolved": [
+        "Complete scope equivalence among c0–c3 remains unestablished. Common-target reuse preserves their remaining systems, regimes and adjacent questions.",
+        "Exact destinations for unprovided cosmological, axionic, cosmic-string, pure-supergravity and other adjacent targets remain outside this packet; their existing coverage is retained.",
+        "No physical implication or transferred premise is established between u6's higher-codimension/sign-condition question and u8's F-theory-derived construction.",
+        "Static u2, evolving u3, supporting-field question u18 and state-representation target u22 retain distinct premises; shared destinations do not identify them.",
+        "Convergence, anomaly consistency, corrected duality, Wilsonian integration, state construction and conditional classical control remain unresolved wherever the supplied assessments leave them open."
+      ],
+      "readingLimits": [
+        "No actual primary windows are supplied. This review uses exact definitions, whole descriptions and enclosing c*/n* assessments; historical citations nested inside those assessments are not current evidence.",
+        "The packet supplies 27 selected witnesses from 69 distinct prior contribution sources. Unselected assignments and omitted inherited role rows are not reassessed or transferred.",
+        "All eight original definitions and reading limits remain unchanged. pq0 is independently supported as the exact prior new definition, not as a replacement for another scope.",
+        "Supported reviews retain the exact prior decisions, navigation and new source roles. Empty change arrays do not remove those supported objects.",
+        "Some inherited notes are incomplete; no missing continuation supplies evidence. Reported physical results retain their source-local dates and qualifications.",
+        "No full-paper verification, present-day status check, global uniqueness, atomic source identity, organizational home or mass is established. Public routes connect questions, not review regions or source objects."
+      ],
+      "newDefinitions": [
+        {
+          "id": "q025-candidate-question:3d5c2b4ed57cefc85bb9a422",
+          "title": "Finite and parametric control of classical type II de Sitter"
+        }
+      ],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-region:9340c76876dcc74d64b994c3",
+          "title": "De Sitter constructions, control and obstructions"
+        },
+        "c1": {
+          "id": "q025-candidate-region:4358a34a0cf4ae04154d032c",
+          "title": "De Sitter constructions, obstructions and effective control"
+        },
+        "c2": {
+          "id": "q025-candidate-region:55df2e33e2601c5ad035fd02",
+          "title": "De Sitter compactifications: existence, stability and control"
+        },
+        "c3": {
+          "id": "q025-candidate-region:1a284aee5a8a7637c41d3c4d",
+          "title": "De Sitter compactifications: construction, obstruction and control"
+        },
+        "c4": {
+          "id": "q025-candidate-question:f3e94d63ca3765fb7aaec3a0",
+          "title": "Existence and interpretation of de Sitter backgrounds"
+        },
+        "c5": {
+          "id": "q025-candidate-question:4db14b8fbb552f4f281fed9c",
+          "title": "Effective control of compactification backgrounds"
+        },
+        "c6": {
+          "id": "q025-candidate-question:7675a53bd22b622819d7b5e6",
+          "title": "Stability and decay"
+        },
+        "c7": {
+          "id": "q025-candidate-question:cbec67884d8051e3e85220e5",
+          "title": "Vacuum multiplicity, distributions and predictivity"
+        },
+        "pq0": {
+          "id": "q025-candidate-question:3d5c2b4ed57cefc85bb9a422",
+          "title": "Finite and parametric control of classical type II de Sitter"
+        }
+      },
+      "noFreshPrimaryReading": true
+    },
+    {
+      "family": "distance-and-emergence",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-component.json",
+        "sha256": "cf83573c1b8753f6ce2ca2f39e5ca4dc91a2ee24fd3c5b6c36cebea918a8ee73"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      },
+      "counts": {
+        "newScopes": 1,
+        "typedOperations": 9,
+        "publicRoutes": 10,
+        "confirmedSourceRoles": 1,
+        "homes": 0,
+        "installedAliases": 0
+      },
+      "roleBasis": {
+        "description_checked": 1,
+        "source_excerpt_checked": 0
+      },
+      "localEqualityGroups": [],
+      "summary": "Support the proposal's nine decisions, ten navigation routes and bounded five-dimensional question pq0. Retain all seven existing scopes; reuse c4 and c2 only for their stated common targets. No full-scope equivalence is established. The retained graph connects completion criteria, distance bounds, limiting spectra, worldsheet questions and concrete five-dimensional diagnostics without transferring source roles.",
+      "unresolved": [
+        "The packet does not establish exact equivalence for c0/c1, c2/c3 or c4/c5. Their shared targets are resolved organizationally while their distinct targets, regimes and reading limits remain.",
+        "The trajectory correspondence between u30's membrane-exception question and u4's later conditional obstruction is not established. No retraction, unconditional exclusion or application relation follows.",
+        "u7 leaves universal existence of a suitable weak massless higher-form sector, force matching and leading-tower status unproved. The inherited n18 assessment also distinguishes fields massive away from the endpoint from those permitting the stated large-black-hole test; the retained route asserts comparison only.",
+        "The kinetic metric and physical fluctuation or mass-matrix analyses missing in u16/u29 remain missing. Geometric spectral information is not promoted to a verified physical proper-distance test.",
+        "The Type IIA weak-string identification, proposed TCS lift and Class B extension remain unresolved. A controlled worldsheet is not automatically an identified critical emergent string, and finite-distance tensionlessness does not establish the questioned infinite non-BPS tower.",
+        "General string uniqueness and complete limit classifications remain conjectural or setting-bounded. Finite internal volume alone does not establish the cited equi-dimensional premise.",
+        "u25's candidate theories and defining premises remain underspecified. u23's method extensions and physical realization of proposed spectra, and u10's foundational necessity question, remain unresolved."
+      ],
+      "readingLimits": [
+        "The evidence array is empty. This review uses supplied complete definitions, whole descriptions and inherited paired assessments; no primary text was reread and no proof or numerical sweep was independently checked.",
+        "The packet supplies 32 of 147 distinct prior contribution sources and 37 paired contexts. The other 115 sources and omitted assignments are not reassessed. Common-target decisions and navigation create no new source roles.",
+        "Historical citations inside prior assessments remain historical. Current citations use their enclosing c* or n* records; l* records supply navigation proposals, not independent physical evidence.",
+        "Some inherited notes are clipped, including c3's admission explanation. The complete admitted definition and intact supplied statements support the organizational review; missing wording is not reconstructed or treated as a new premise.",
+        "All prior definitions, decisions, routes and the sole new source role are retained through explicit supported_as_written reviews. The empty change arrays introduce no replacements or additional roles.",
+        "Question organization, source contribution, physical implication, canonical identity and organizational homes remain separate. No source identity, global uniqueness or home/mass allocation is admitted.",
+        "Reviewed route titles apply to their specified outgoing arcs only. No reverse title or additional reverse relation is inferred."
+      ],
+      "newDefinitions": [
+        {
+          "id": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+          "title": "Five-dimensional diagnostics of strings versus decompactification"
+        }
+      ],
+      "scopeRefs": {
+        "c0": {
+          "id": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+          "title": "Weak strings and asymptotic limits"
+        },
+        "c1": {
+          "id": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+          "title": "Asymptotic strings, decompactification and dual descriptions"
+        },
+        "c2": {
+          "id": "q025-candidate-question:d292e0749341c9b371266594",
+          "title": "Distance, towers and EFT validity"
+        },
+        "c3": {
+          "id": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+          "title": "Distance limits and tower decay"
+        },
+        "c4": {
+          "id": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+          "title": "Physical towers and limiting descriptions"
+        },
+        "c5": {
+          "id": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+          "title": "Light-tower identity and limiting compactifications"
+        },
+        "c6": {
+          "id": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "title": "Selecting EFTs compatible with quantum gravity"
+        },
+        "pq0": {
+          "id": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+          "title": "Five-dimensional diagnostics of strings versus decompactification"
+        }
+      },
+      "noFreshPrimaryReading": true
+    }
+  ],
+  "counts": {
+    "newScopes": 6,
+    "typedOperations": 55,
+    "publicRoutes": 47,
+    "confirmedSourceRoles": 21,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "globalGroupGatePending": 2,
+  "readableJourneyReviewStillRequired": true
+}

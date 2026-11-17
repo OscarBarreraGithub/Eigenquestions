@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "strong-scope-bundle-04",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-04-challenge/packet.actual.json",
+      "sha256": "0c03c0fbe87cc92efa1310d901e1d8737941f244db21a618a8ceab7f08014f5a"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-04-proposal/reply.json",
+      "sha256": "44836ba289e4d0c0bea1c9e039aca8aa388775a6495a7da0c899f9565971f128"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-04-challenge/reply.json",
+      "sha256": "383f01e453400586ad6b4115acb70c95d8f3d763aa32c05bd03131152187a911"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-04-proposal/receipt.json",
+      "sha256": "1a69d462abe2df10b729e5cb290c9168457a397b2fd520ca493e33b396d00c02"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-04-challenge/receipt.json",
+      "sha256": "493740ff7487743ccc61e2636a67763f972b9ec8810fd4af2b7be114dff25602"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-04-challenge/normalization.json",
+      "sha256": "86bb28d89f342923f91418a01b8916b951532cb1b03f6de975484c90df8436ac"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {
+    "decision:navigation-v3:strong-scope-bundle-04:role:0": "23aca545fdab919a127d89a17e17351886e3d49c95d95d8aa2a8950a47c4ec6f",
+    "decision:navigation-v3:strong-scope-bundle-04:role:1": "c4e7a3210a09fcadf4edce472f90dd0947695d4b881b03cd81a4d44dffbc66b1",
+    "decision:navigation-v3:strong-scope-bundle-04:role:2": "0405947023349ae09c4580d34c2e0411a12140c0a5214dd53fc812d2e4c96b73"
+  },
+  "operationHashes": {
+    "operation:navigation-v3:strong-scope-bundle-04:pd0": "322d257754a4cb65a8805bd233750bcc6d1905277a06cd35736cbfed3cfdce4a",
+    "operation:navigation-v3:strong-scope-bundle-04:pd1": "ab596c2effb927216c9caa1825bd7b28da41e5cac6f96c7926baafd13955d0b6",
+    "operation:navigation-v3:strong-scope-bundle-04:pd2": "39d60a487bf3a4f4d9634d8051798ab1c3dd4d6cc3d16c63a78e86085afa8d59",
+    "operation:navigation-v3:strong-scope-bundle-04:pd3": "494caca67df978c403067933e530109b4801bfb3119401ca31a0d12ee1481aa7",
+    "operation:navigation-v3:strong-scope-bundle-04:pd4": "fc03389b02b23a6e22c7f1fecc1396f162fa73ebb3541aa03879a94da987eee3",
+    "operation:navigation-v3:strong-scope-bundle-04:pd5": "b47e9fa6da05cc611689367a1dfd925cf48fd8aec51956b548a02f447c9ea611"
+  },
+  "navigationHashes": {
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn0": "b73a1d29cf0dbef30a38d3b8ba9e203afc87d485053a1d5210e21f8564e51ac2",
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn1": "40a3e9e9bda4647dc0d293ae4f8eed86242b68e91a4ea10f509dab4b7422cfe9",
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn3": "1ce7debcb1cf1b001326e49be332617521ad1cc9f43571c7390968489ee38a48",
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn4": "1420db8d0c0cef1a47204ef0b3fab9309b7e13233d3fc1a357edaa0571638323",
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn5": "101b55d20870971402c8f5717d23866da118920d55514d093d9512baf6ce3a2a",
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn6": "568781382c6a88db231c1528850bd1b55862dc1520dbd8988a73e74c2cc3a95a",
+    "decision:navigation-v3:strong-scope-bundle-04:route:pn7": "309dbd0fb51fbecba8d48957deb8db4e044234c4b942d3cfc1bc393a59d33f06"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No actual primary windows are supplied. This review uses complete definitions, whole descriptions and inherited assessments through their enclosing current c* and n* refs; nested historical citations are not current evidence.",
+    "The 48 descriptions and 53 paired contexts are selected witnesses for 168 distinct prior contribution sources. Unselected assignments are not reassessed, and omitted contribution rows acquire no new target role.",
+    "The c3 inherited assessment and several attribution notes are incomplete. Only their visible content, complete definitions and supplied descriptions are used; missing conclusions are not reconstructed.",
+    "Supported prior decisions, navigation rows and source-role rows are retained exactly without reserialization. There were no prior new definitions to assess. All original reading limits remain unchanged.",
+    "Common-target reuse is limited to the stated shared facets. It establishes neither full-scope equivalence, source-statement equivalence, global uniqueness nor organizational placement."
+  ],
+  "unresolved": [
+    "Fine atomic reconciliation of compound witnesses including u31, u22, u30, u44 and u24 remains open; their source objects and other existing contributions remain unchanged.",
+    "u3 supplies only a rolling-scalar and causal-patch-entropy setting, so its precise question and physical entropy relation remain unresolved.",
+    "The c6 convergence, anomaly, corrected-duality, Wilsonian and state-construction limitations remain unresolved; specialization supplies no missing calculation.",
+    "The packet does not establish thermal dominance or strong dissipation as requirements for every additionally damped c11 scenario. The replacement route checks only assumptions explicitly invoked by the model."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 6,
+    "publicRoutes": 7,
+    "confirmedSourceRoles": 3,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "excludedOriginalRows": [
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn2",
+        "source": "c11",
+        "target": "c1",
+        "type": "premise_check",
+        "title": "Check thermal and dissipative consistency",
+        "qualification": "For the warm or damped branches, test the stated dissipation law, thermal dominance and required strength independently of observational agreement. Thermal trapping remains a separate mechanism; thermal perturbations provide no automatic TCC exemption, and later-stage relaxation differs from imposing TCC throughout.",
+        "reason": "c11's conditional viability question requires model-specific thermal consistency, which c1 explicitly investigates and u25 makes an independent test.",
+        "refs": [
+          "c11",
+          "c1",
+          "u25",
+          "u21",
+          "u11",
+          "u34",
+          "n13",
+          "n15",
+          "n33",
+          "n34"
+        ]
+      },
+      "judgment": {
+        "ref": "pn2",
+        "verdict": "revise",
+        "reason": "The premise-check direction is useful, but applying thermal-dominance checks to 'warm or damped branches' can transfer a thermal premise to unspecified additional damping. c11 and u11 do not license that universal requirement. Replace with cn0, which checks thermal dominance and dissipation strength only when invoked by the model.",
+        "refs": [
+          "c1",
+          "c11",
+          "u11",
+          "u21",
+          "u25",
+          "u34",
+          "n13",
+          "n15",
+          "n33",
+          "n34"
+        ]
+      },
+      "missingAdmittedTargets": []
+    }
+  ],
+  "unadmittedChallengeObjects": {
+    "newQuestions": [],
+    "decisions": [],
+    "navigation": [
+      {
+        "id": "cn0",
+        "source": "c11",
+        "target": "c1",
+        "type": "premise_check",
+        "title": "Check the model's thermal and dissipative assumptions",
+        "qualification": "For a warm or dissipative scenario, check the consistency conditions its mechanism actually invokes. Test thermal dominance or a specified dissipation strength only where assumed; additional damping alone establishes neither requirement. Thermal trapping remains a distinct mechanism. Thermal perturbations provide no automatic TCC exemption, and relaxing TCC for later stages differs from imposing it throughout.",
+        "reason": "c1 provides model-specific consistency questions relevant to c11's conditional viability tests. The tachyon and RS-II witnesses illustrate such checks without exporting their thermal or strong-dissipation premises to every c11 model.",
+        "refs": [
+          "c11",
+          "c1",
+          "u11",
+          "u21",
+          "u25",
+          "u34",
+          "n13",
+          "n15",
+          "n33",
+          "n34"
+        ]
+      }
+    ],
+    "sourceContributions": []
+  },
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": "q025-fine-home-access-examples/1",
+  "status": "pending_class_admission",
+  "inputs": [
+    {
+      "path": "research/q025/assembly/organization-residual-v1/candidate-6030-connected-v4/aggregate.local.json",
+      "sha256": "4abc67fe749fba793259e71ca751ccfdc0faa62311e4fc86881ec8c120c6c056",
+      "bytes": 94857570
+    },
+    {
+      "path": "research/q025/assembly/placement-pilot-review-v1/admitted-v1/component.local.json",
+      "sha256": "4f0f5ec0af6d1d713c2ee29d2034b1a0f427d760d5ebbfb29988856d09259d7a",
+      "bytes": 279083
+    },
+    {
+      "path": "research/q025/assembly/pilot-access-v1/candidate-certificates.local.json",
+      "sha256": "116466146c5be9709e41ac7b737609599aaec8defb89289773f20e732148fc89",
+      "bytes": 164731
+    }
+  ],
+  "examples": [
+    {
+      "case": "Whole GMGHS composite to an emission component; no identification with classical protection",
+      "source": "q025-placement-question:856e4acd8e8641c79d0405f3",
+      "target": "q025-candidate-question:d9e9e00415abb7105f05f79c",
+      "sourceScope": {
+        "id": "q025-placement-question:856e4acd8e8641c79d0405f3",
+        "kind": "question",
+        "title": "GMGHS overcharging protection and conditional SDC-tower discharge",
+        "question": "Does third-order backreaction protect near-extremal GMGHS black holes against overcharging despite a finite-temperature extremal limit, and can an SDC tower enable dynamical discharge while relaxing the thermodynamic WGC bound?",
+        "summary": "Preserves one composite source question with distinct classical backreaction and conditional tower mechanisms.",
+        "scope": {
+          "systems": [
+            "Near-extremal GMGHS black holes",
+            "Proposed SDC towers relevant to their discharge"
+          ],
+          "targets": [
+            "Third-order backreaction protection against overcharging",
+            "The role of the finite-temperature extremal limit",
+            "Conditional dynamical discharge supplied by an SDC tower",
+            "Relaxation of the thermodynamic WGC bound"
+          ],
+          "regimes": [
+            "Near-extremal configurations examined through third order",
+            "The finite-temperature extremal limit",
+            "Conditional tower activation and discharge"
+          ],
+          "assumptions": [
+            "Classical overcharging protection and tower-driven discharge are separate mechanisms",
+            "Tower activation and suitable charged tower content require separate conditions",
+            "Relaxation of a thermodynamic bound does not itself establish a dynamical discharge mechanism"
+          ],
+          "conventions": [
+            "Do not replace the stated finite-temperature extremal limit with a zero-temperature limit",
+            "Keep thermodynamic bounds, classical protection and dynamical discharge distinct"
+          ],
+          "includes": [
+            "Both branches of the unchanged GMGHS question within one composite home",
+            "Conditional assessment of how a tower mechanism relates to the thermodynamic bound"
+          ],
+          "excludes": [
+            "An unconditional claim that an SDC tower activates or carries the required charge",
+            "Identification of classical censorship protection with dynamical discharge",
+            "Reconstruction of the missing endings of the historical annotations",
+            "Transplantation of de Sitter first-law results into the GMGHS setting"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 1,
+          "excerptCheckedCount": 0,
+          "readingLimit": "Based on the complete u5 description, the intact portions of both exact r0 annotations and the supplied admitted definitions. The terminal annotation fragments remain incomplete, and the historical identity marker is not resolved. No primary text is supplied or reread. These limits do not prevent defining the stated composite question, but no tower spectrum, activation criterion or censorship result is verified.",
+          "sourceReadingScope": "Complete exact source description and both historical annotations; independently retained proposed scope. No new primary reading or proof verification."
+        },
+        "scopeContentSha256": "fb5d0eef53e2718d59431c25c358ff7d95d3f0cc13472bd3b8d92756118b0b72"
+      },
+      "targetScope": {
+        "id": "q025-candidate-question:d9e9e00415abb7105f05f79c",
+        "kind": "question",
+        "title": "Emission mechanisms and long-lived charge",
+        "question": "What determines charged-black-hole emission, discharge rates and lifetimes across the specified geometries and matter sectors?",
+        "summary": "Connects thermal emission, pair production, tunneling and quantum backreaction without identifying their approximations or thresholds.",
+        "scope": {
+          "systems": [
+            "Charged black holes and charged quantum fields",
+            "Confining charged matter",
+            "Dark charged matter"
+          ],
+          "targets": [
+            "Emission spectra and rates",
+            "Spatial production profiles",
+            "Charge retention",
+            "Evaporation histories"
+          ],
+          "regimes": [
+            "Nonextremal through near-extremal and extremal limits",
+            "Whole exterior versus near-horizon treatments"
+          ],
+          "assumptions": [
+            "Matter content, backreaction and asymptotic boundary conditions must be specified"
+          ],
+          "conventions": [
+            "A long lifetime does not mean exact stability"
+          ],
+          "includes": [
+            "Ordinary spontaneous-discharge calculations",
+            "Suppression mechanisms"
+          ],
+          "excludes": [
+            "Inferring discharge rates from a WGC inequality alone"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 24,
+          "excerptCheckedCount": 3,
+          "readingLimit": "Most mechanisms are description-level targets. The supplied spatial-profile abstract and introduction announce results but do not expose a complete rate derivation.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "scopeContentSha256": "b72120f90e80c8290f6ea0c025b4d2afeae38105e0fcf11341081b2208a64df9"
+      },
+      "sourceQuestion": {
+        "unitId": "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+        "paperId": "2608.24557",
+        "description": "Does third-order backreaction protect near-extremal GMGHS black holes against overcharging despite their finite-temperature extremal limit, and can an SDC tower provide dynamical discharge while relaxing the thermodynamic WGC bound?",
+        "textSha256": "0263839122cb788cf4597ad39e67f90a9d52610329eb1b7a1e7cb45cea032615"
+      },
+      "completeRouteWitnessCount": 1,
+      "selectedWitnessObservations": [
+        {
+          "home": {
+            "unitId": "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+            "destinationId": "q025-placement-question:856e4acd8e8641c79d0405f3",
+            "role": "member",
+            "status": "accepted",
+            "basis": "description_checked",
+            "allocationWeight": 1,
+            "reason": "Keeps third-order GMGHS overcharging protection, the finite-temperature extremal limit, and conditional SDC-tower discharge with a relaxed thermodynamic WGC bound in one composite question.",
+            "qualification": "n2 covers every stated target: near-extremal third-order overcharging protection, the finite-temperature extremal limit, conditional SDC-tower discharge and relaxation of the thermodynamic WGC bound. q3 and q4 cover tower and emission aspects but leave the classical GMGHS protection target uncovered; q0's de Sitter setting cannot supply it. The complete description supports this composite home without reconstructing either truncated annotation or assuming that a suitable tower exists.",
+            "evidenceRefs": [
+              {
+                "kind": "description",
+                "unitId": "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+                "textSha256": "0263839122cb788cf4597ad39e67f90a9d52610329eb1b7a1e7cb45cea032615"
+              }
+            ],
+            "decisionId": "decision:placement-pilot:home:absent:u5:n2"
+          },
+          "homeDecisionId": "decision:placement-pilot:home:absent:u5:n2",
+          "homeScopeSha256": "fb5d0eef53e2718d59431c25c358ff7d95d3f0cc13472bd3b8d92756118b0b72",
+          "placementHash": "990b7cfc06f9c8994e2332817a4fa390b73d3263a5e01c0b7688ab4c87997408",
+          "contribution": {
+            "unitId": "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+            "destinationId": "q025-candidate-question:d9e9e00415abb7105f05f79c",
+            "role": "specializes",
+            "basis": "source_excerpt_checked",
+            "decisionId": "decision:source-contribution:0345cce9293131ca038b2cf6",
+            "qualification": "Original proposal qualification: Classical third-order protection and conditional tower discharge/entropy are separate mechanisms; the relaxed test-particle bound does not remove charged-tower- Independent challenge qualification: Classical third-order protection and conditional tower discharge/entropy remain separate mechanisms. A relaxed probe bound does not remove the charged-tower"
+          },
+          "contributionDecisionId": "decision:source-contribution:0345cce9293131ca038b2cf6",
+          "contributionScopeSha256": "b72120f90e80c8290f6ea0c025b4d2afeae38105e0fcf11341081b2208a64df9",
+          "contributionHash": "a83bcf5fb446304238bfcba0043eb4a4e14859e2faca6a6fc05b449074833c99",
+          "pairedSourceReading": {
+            "decisionId": "decision:source-contribution:0345cce9293131ca038b2cf6",
+            "recordId": "leaf-1b3b48ae03dbe168d677-challenge:p2",
+            "proposalReviewId": "leaf-1b3b48ae03dbe168d677-proposal",
+            "challengeReviewId": "leaf-1b3b48ae03dbe168d677-challenge",
+            "proposalBasis": "excerpt",
+            "challengeBasis": "excerpt",
+            "commonBasis": "source_excerpt_checked",
+            "proposalNote": "Classical third-order protection and conditional tower discharge/entropy are separate mechanisms; the relaxed test-particle bound does not remove charged-tower-",
+            "challengeNote": "Classical third-order protection and conditional tower discharge/entropy remain separate mechanisms. A relaxed probe bound does not remove the charged-tower",
+            "dispositionAgreement": true,
+            "factorIdentityAndPlacementAgreementNotInferred": true,
+            "unresolvedFactorQualificationsNotPromoted": true
+          },
+          "sourceReviewIds": [
+            "leaf-1b3b48ae03dbe168d677-proposal",
+            "leaf-1b3b48ae03dbe168d677-challenge"
+          ],
+          "sourceEvidenceRefs": [
+            {
+              "localRef": "d48",
+              "kind": "description",
+              "unitIndex": 48,
+              "unitId": "unit:2a292d9c1f609e6b7b62503b0606bbb682b3d64055262aad8acfa0e6be8c76b6",
+              "textSha256": "0263839122cb788cf4597ad39e67f90a9d52610329eb1b7a1e7cb45cea032615"
+            },
+            {
+              "localRef": "e15",
+              "kind": "primary",
+              "sourceId": "ev:8eef4a2254346031026bbe574b318ed7",
+              "paperId": "2608.24557",
+              "sourceSha256": "39d2a82e6ff811e1987f1c0ef39b4a356a37ffc3f6f3ede7fd7804c04fdcc22e",
+              "sourceContext": {
+                "path": "papers/057e0b3ea326242cd2d8/reading-order.json",
+                "fileSha256": "6ea3862c20cc06317bae2f6870c17c7616a03aef916018e2e661042b7af6cd06",
+                "pdfPage": 3,
+                "start": 100,
+                "end": 2626,
+                "textSha256": "9fb0433662753305de96645e177e22009332627fc7c63a37678b8730c5b71c92",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            },
+            {
+              "localRef": "e25",
+              "kind": "primary",
+              "sourceId": "ev:e9833a3b11c35ccbdc107b84f5fb425f",
+              "paperId": "2608.24557",
+              "sourceSha256": "39d2a82e6ff811e1987f1c0ef39b4a356a37ffc3f6f3ede7fd7804c04fdcc22e",
+              "sourceContext": {
+                "path": "papers/057e0b3ea326242cd2d8/reading-order.json",
+                "fileSha256": "6ea3862c20cc06317bae2f6870c17c7616a03aef916018e2e661042b7af6cd06",
+                "pdfPage": 18,
+                "start": 106,
+                "end": 2137,
+                "textSha256": "49ad79c9a6fc0c2848320775007320dd98a1bddb2253fe6f05fca8ed6f5af5b5",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            }
+          ],
+          "homeAdmission": {
+            "status": "accepted_explicit_placement",
+            "receipt": {
+              "path": "research/q025/assembly/placement-pilot-review-v1/admitted-v1/admission.json",
+              "sha256": "bc0f5545efd2d0dfc09239a354e9596043f8dd62f9566492f93539258112af66"
+            }
+          },
+          "contributionAdjudication": null
+        }
+      ],
+      "noImplicationContainmentMassUsingOrEquivalence": true
+    },
+    {
+      "case": "Linear cosmology to inherited production context; access must not become a production home",
+      "source": "q-kk-decay-linear-cosmology",
+      "target": "q-kk-graviton-thermal-production",
+      "sourceScope": {
+        "id": "q-kk-decay-linear-cosmology",
+        "kind": "question",
+        "title": "What do repeated KK decays do to linear structure?",
+        "question": "Within the specified repeated-decay KK-graviton model, how do daughter recoil and the changing mass distribution affect linear cosmological perturbations?",
+        "summary": "Repeated decays change the tower mass distribution and give daughters recoil velocities. The linear cosmology calculation assumes a specified decay history and does not establish the cascade microphysics.",
+        "scope": {
+          "systems": [
+            "A cosmological KK-graviton dark-matter tower"
+          ],
+          "targets": [
+            "Linear matter and CMB perturbations",
+            "Recoil constraints and their conditional parameter interpretation"
+          ],
+          "regimes": [
+            "Nonrelativistic population",
+            "Linear cosmological perturbations",
+            "Source-era CMB, BAO and cosmic-shear analysis"
+          ],
+          "assumptions": [
+            "Repeated intra-tower decay evolution",
+            "Simplified daughter distribution dominated by approximately symmetric decays",
+            "Small released mass difference"
+          ],
+          "conventions": [
+            "The source's kick parameter is a combination of model parameters",
+            "Its reported confidence limit is a dated author result"
+          ],
+          "includes": [
+            "Daughter recoil",
+            "Changing mass population",
+            "Conditional structure suppression"
+          ],
+          "excludes": [
+            "Nonlinear structure predictions or a demonstrated resolution of the S8 tension",
+            "Unconditional viability of the cascade",
+            "Visible-energy injection as the primary target"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 3,
+          "excerptCheckedCount": 2,
+          "readingLimit": "The model assumptions and abstract's reported kick constraint were read. Perturbation equations, likelihood implementation and numerical constraints were not independently checked.",
+          "sourceReadingScope": "Supplied descriptions and bounded primary excerpts only; no full-paper or figure verification."
+        },
+        "scopeContentSha256": "69fa9f0f6b17e46e71e526415368140409596c60de30144cfed2ae7227905815"
+      },
+      "targetScope": {
+        "id": "q-kk-graviton-thermal-production",
+        "kind": "question",
+        "title": "How does a hot brane produce KK gravitons?",
+        "question": "Can a hot Standard Model brane gravitationally produce the KK-graviton abundance needed in the Dark Dimension setting, for specified initial brane temperature and bulk population?",
+        "summary": "A hot Standard Model brane can populate a KK-graviton tower in the specified scenario. The initial abundance question is separate from whether the population survives as dark matter.",
+        "scope": {
+          "systems": [
+            "Standard Model brane and KK-graviton tower"
+          ],
+          "targets": [
+            "Initial tower population",
+            "Produced abundance"
+          ],
+          "regimes": [
+            "Early-universe hot-brane production in the specified Dark Dimension setup"
+          ],
+          "assumptions": [
+            "Specified initial brane temperature",
+            "Bulk initially essentially unexcited in the arXiv:2311.05318 setup",
+            "Gravitational brane coupling"
+          ],
+          "conventions": [
+            "An initially adequate abundance does not establish viable late-time dark matter"
+          ],
+          "includes": [
+            "Brane-to-bulk production",
+            "Initial mass population"
+          ],
+          "excludes": [
+            "All gravitational or nonthermal dark-matter production",
+            "Independent validation of a fast subsequent cascade",
+            "UHECR spectral measurements"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 4,
+          "excerptCheckedCount": 3,
+          "readingLimit": "No production integral or abundance calculation was checked. The source excerpts state inherited production assumptions and claimed abundances; the late-time cascade is disputed elsewhere in this packet.",
+          "sourceReadingScope": "Supplied descriptions and bounded primary excerpts only; no full-paper or figure verification."
+        },
+        "scopeContentSha256": "4275a9582722b9f5f77acde6fa53b419bb1c605de0527ff97df850153fc7d5fa"
+      },
+      "sourceQuestion": {
+        "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+        "paperId": "2311.05318",
+        "description": "What linear cosmological signatures arise from repeated decays within a dark-matter KK-graviton tower, and what do CMB, BAO and weak-lensing data imply for its kick velocity and Dark Dimension parameters?",
+        "textSha256": "d9fc482c4e4edaf9b5e3f5a8913f61a8f87a9b9997d8900b9abbc8907049ef1c"
+      },
+      "completeRouteWitnessCount": 1,
+      "selectedWitnessObservations": [
+        {
+          "home": {
+            "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+            "destinationId": "q-kk-decay-linear-cosmology",
+            "role": "member",
+            "status": "accepted",
+            "basis": "source_excerpt_checked",
+            "allocationWeight": 1,
+            "workRelation": "on",
+            "qualification": "The direct scientific target is linear cosmological perturbations and recoil constraints. Its hot-brane production contribution is inherited context and receives no organizational home.",
+            "evidenceRefs": [
+              {
+                "ref": "d62",
+                "kind": "description",
+                "unitIndex": 62,
+                "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+                "textSha256": "d9fc482c4e4edaf9b5e3f5a8913f61a8f87a9b9997d8900b9abbc8907049ef1c"
+              },
+              {
+                "ref": "e5",
+                "kind": "primary",
+                "sourceId": "ev:2fad585ea0fd6a9e881beb23831ceaa7",
+                "paperId": "2311.05318",
+                "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+                "sourceContext": {
+                  "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                  "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                  "pdfPage": 5,
+                  "start": 92,
+                  "end": 3490,
+                  "textSha256": "61c3e56df1d3e250b6c058bf036fe06e39f281e0111f2c5b8b38423b4af22398",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              },
+              {
+                "ref": "e17",
+                "kind": "primary",
+                "sourceId": "ev:98101f0d696c278269902e9cbb5320e0",
+                "paperId": "2311.05318",
+                "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+                "sourceContext": {
+                  "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                  "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                  "pdfPage": 3,
+                  "start": 0,
+                  "end": 3000,
+                  "textSha256": "f0e4c6eec8d6d63ebf4b8ca921034d36a649eb3ac4b7d8e95c99a321fe6d2a37",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              },
+              {
+                "ref": "e21",
+                "kind": "primary",
+                "sourceId": "ev:bbf52e208ce8497a6b71719219ba7d85",
+                "paperId": "2311.05318",
+                "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+                "sourceContext": {
+                  "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                  "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                  "pdfPage": 1,
+                  "start": 0,
+                  "end": 1673,
+                  "textSha256": "7f3a9c3dff1be519144f71674fae6fab4ecf7c7d625152e8fe85d4abbf95c382",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              }
+            ],
+            "decisionId": "decision:kk-placement:2"
+          },
+          "homeDecisionId": "decision:kk-placement:2",
+          "homeScopeSha256": "69fa9f0f6b17e46e71e526415368140409596c60de30144cfed2ae7227905815",
+          "placementHash": "9636f53ed94d11a3177b9e0a05f301da80f6346a06610c8a9c0a0c091fe0789d",
+          "contribution": {
+            "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+            "destinationId": "q-kk-graviton-thermal-production",
+            "role": "instantiates",
+            "basis": "source_excerpt_checked",
+            "decisionId": "decision:kk-contribution:087b369b22d118b410558194"
+          },
+          "contributionDecisionId": "decision:kk-contribution:087b369b22d118b410558194",
+          "contributionScopeSha256": "4275a9582722b9f5f77acde6fa53b419bb1c605de0527ff97df850153fc7d5fa",
+          "contributionHash": "f9b0376371093a76ee1be5d392795146e5af8ffe0b9ea0d86522246eeb53145b",
+          "pairedSourceReading": null,
+          "sourceReviewIds": [
+            "kk-normalized-original",
+            "kk-compact-challenge"
+          ],
+          "sourceEvidenceRefs": [
+            {
+              "ref": "d62",
+              "kind": "description",
+              "unitIndex": 62,
+              "unitId": "unit:be7aae21bb2419d0869faff0e2d1c1e653b0e8e75d40ce2e657fb8fb7495284a",
+              "textSha256": "d9fc482c4e4edaf9b5e3f5a8913f61a8f87a9b9997d8900b9abbc8907049ef1c"
+            },
+            {
+              "ref": "e5",
+              "kind": "primary",
+              "sourceId": "ev:2fad585ea0fd6a9e881beb23831ceaa7",
+              "paperId": "2311.05318",
+              "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+              "sourceContext": {
+                "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                "pdfPage": 5,
+                "start": 92,
+                "end": 3490,
+                "textSha256": "61c3e56df1d3e250b6c058bf036fe06e39f281e0111f2c5b8b38423b4af22398",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            },
+            {
+              "ref": "e17",
+              "kind": "primary",
+              "sourceId": "ev:98101f0d696c278269902e9cbb5320e0",
+              "paperId": "2311.05318",
+              "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+              "sourceContext": {
+                "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                "pdfPage": 3,
+                "start": 0,
+                "end": 3000,
+                "textSha256": "f0e4c6eec8d6d63ebf4b8ca921034d36a649eb3ac4b7d8e95c99a321fe6d2a37",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            },
+            {
+              "ref": "e21",
+              "kind": "primary",
+              "sourceId": "ev:bbf52e208ce8497a6b71719219ba7d85",
+              "paperId": "2311.05318",
+              "sourceSha256": "5e86e533b2f8f00ae0864f03f12ce5d448bac05c49793705c07efa39bc149903",
+              "sourceContext": {
+                "path": "papers/fab9bf3fee6db124cc91/reading-order.json",
+                "fileSha256": "bba1f3f7366677016355706e27db014e6ad9156af892761f097b3ed5a48c5014",
+                "pdfPage": 1,
+                "start": 0,
+                "end": 1673,
+                "textSha256": "7f3a9c3dff1be519144f71674fae6fab4ecf7c7d625152e8fe85d4abbf95c382",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            }
+          ],
+          "homeAdmission": {
+            "status": "accepted_explicit_placement",
+            "receipt": {
+              "path": "../../../evaluation/full-pass/organization-placement-v1/kk-organization-adjudication.json",
+              "sha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512"
+            }
+          },
+          "contributionAdjudication": null
+        }
+      ],
+      "noImplicationContainmentMassUsingOrEquivalence": true
+    },
+    {
+      "case": "Threshold dynamics to a conditional bound sibling; original compound allocation remains normalized",
+      "source": "q-kk-graviton-threshold-decay",
+      "target": "q-flat-darkdimension-freezein-bounds",
+      "sourceScope": {
+        "id": "q-kk-graviton-threshold-decay",
+        "kind": "question",
+        "title": "How fast can a KK graviton decay near threshold?",
+        "question": "How does an intra-tower KK-graviton decay amplitude and rate scale with daughter momentum near threshold, and which background or coupling assumptions control that scaling?",
+        "summary": "A supplied 2026 analysis reports a d-wave rate proportional to the fifth power of daughter momentum near threshold. Its derivation and full domain of generality remain outside the reading performed here.",
+        "scope": {
+          "systems": [
+            "Parent and daughter KK gravitons"
+          ],
+          "targets": [
+            "Threshold amplitude and rate scaling",
+            "Partial-wave interpretation and stated generality"
+          ],
+          "regimes": [
+            "Near-threshold two-body decay",
+            "Source-specific five-dimensional gravitational settings"
+          ],
+          "assumptions": [
+            "Source-specific gravitational action, couplings and background",
+            "Generality beyond the supplied setting remains to be checked"
+          ],
+          "conventions": [
+            "Compare daughter momentum in the parent rest frame",
+            "Distinguish amplitude scaling from phase-space-inclusive rate scaling"
+          ],
+          "includes": [
+            "Momentum versus parent-mass scaling",
+            "Reported cancellation and partial-wave explanations"
+          ],
+          "excludes": [
+            "A universal theorem for every geometry, field content or higher-derivative theory",
+            "Automatic identity of subsequent cosmological conclusions"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 3,
+          "excerptCheckedCount": 1,
+          "readingLimit": "arXiv:2610.01825 supplies abstract/introduction statements and the opening of the decay section, not the proof. arXiv:2609.36234 supplies only a description; agreement of derivations or broad generality cannot be certified.",
+          "sourceReadingScope": "Supplied descriptions and bounded primary excerpts only; no full-paper or figure verification."
+        },
+        "scopeContentSha256": "206baf6ffa291d6327e37311f13fe1f436e0f87e304acc8b238ed4a8eb39fef7"
+      },
+      "targetScope": {
+        "id": "q-flat-darkdimension-freezein-bounds",
+        "kind": "question",
+        "title": "What flat-dimension bounds survive suppressed KK cascades?",
+        "question": "In a flat dark dimension with threshold-suppressed KK-graviton cascades, what observational constraints follow from the irreducibly produced population even if it is not all dark matter?",
+        "summary": "A flat-dimension analysis argues that unavoidable production and visible decays constrain reheating and radius even when KK gravitons do not constitute all dark matter. Its numerical exclusion remains an attributed result.",
+        "scope": {
+          "systems": [
+            "KK gravitons in a flat dark dimension",
+            "Standard Model brane and visible decay products"
+          ],
+          "targets": [
+            "Reheating upper bounds",
+            "Compatibility with lower reheating bounds",
+            "Radius constraints"
+          ],
+          "regimes": [
+            "Source-specific freeze-in and decay cosmology",
+            "A subdominant KK population is allowed"
+          ],
+          "assumptions": [
+            "Flat dark dimension",
+            "Reported threshold suppression",
+            "Specified brane coupling and thermal history",
+            "Applicable BBN and CMB reheating floors"
+          ],
+          "conventions": [
+            "arXiv:2610.01825 uses m_KK=1/R and the four-dimensional reduced Planck mass",
+            "Earlier visible-decay constraints use their own mass histories and coupling parameters"
+          ],
+          "includes": [
+            "Irreducible production",
+            "Visible decay products",
+            "Conditional radius exclusion"
+          ],
+          "excludes": [
+            "All warped or multidimensional models",
+            "An independently checked numerical exclusion curve",
+            "Automatic replacement of every earlier conditional phenomenological calculation"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 6,
+          "excerptCheckedCount": 2,
+          "readingLimit": "The source reports exclusion of flat radii approximately R≥0.2 micrometres under its assumptions. The calculation, exclusion figure and adopted reheating bounds are outside the supplied window. Comparison sources do not establish that exclusion independently.",
+          "sourceReadingScope": "Supplied descriptions and bounded primary excerpts only; no full-paper or figure verification."
+        },
+        "scopeContentSha256": "a4505fda8d88e59e71ea43415520a4dbfca1bea3fb5e31137f5ee0d9042678c4"
+      },
+      "sourceQuestion": {
+        "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+        "paperId": "2610.01825",
+        "description": "What is the near-threshold partial-wave suppression of intra-tower KK graviton decays, and does the resulting cascade rate permit dark-dimension graviton dark matter or evade bounds from unavoidable freeze-in production?",
+        "textSha256": "b15227ab24b6d9e9aa2221056c9eaf81216f3e71f3bd75f708ef906dd9496512"
+      },
+      "completeRouteWitnessCount": 1,
+      "selectedWitnessObservations": [
+        {
+          "home": {
+            "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+            "destinationId": "q-kk-graviton-threshold-decay",
+            "role": "overlap",
+            "status": "accepted",
+            "basis": "source_excerpt_checked",
+            "allocationWeight": 0.5,
+            "workRelation": "on",
+            "qualification": "The immutable source explicitly asks for near-threshold partial-wave suppression and its cascade rate.",
+            "evidenceRefs": [
+              {
+                "ref": "d12",
+                "kind": "description",
+                "unitIndex": 12,
+                "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+                "textSha256": "b15227ab24b6d9e9aa2221056c9eaf81216f3e71f3bd75f708ef906dd9496512"
+              },
+              {
+                "ref": "e7",
+                "kind": "primary",
+                "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+                "paperId": "2610.01825",
+                "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+                "sourceContext": {
+                  "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                  "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                  "pdfPage": 1,
+                  "start": 1305,
+                  "end": 4703,
+                  "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              },
+              {
+                "ref": "e12",
+                "kind": "primary",
+                "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+                "paperId": "2610.01825",
+                "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+                "sourceContext": {
+                  "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                  "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                  "pdfPage": 1,
+                  "start": 2504,
+                  "end": 4949,
+                  "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              },
+              {
+                "ref": "e25",
+                "kind": "primary",
+                "sourceId": "ev:fac9569d8f192e54850486112c7fe0d8",
+                "paperId": "2610.01825",
+                "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+                "sourceContext": {
+                  "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                  "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                  "pdfPage": 1,
+                  "start": 0,
+                  "end": 3000,
+                  "textSha256": "f047caa6711ddcf0dab834ac0976f6f55b1f49660dd4bcadb530252e9ef74864",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              }
+            ],
+            "decisionId": "decision:kk-placement:0"
+          },
+          "homeDecisionId": "decision:kk-placement:0",
+          "homeScopeSha256": "206baf6ffa291d6327e37311f13fe1f436e0f87e304acc8b238ed4a8eb39fef7",
+          "placementHash": "d7ef758344acda330bd1d1026876dc5f7480ac3cc7070fb9ab142da89cd2ef22",
+          "contribution": {
+            "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+            "destinationId": "q-flat-darkdimension-freezein-bounds",
+            "role": "addresses",
+            "basis": "source_excerpt_checked",
+            "decisionId": "decision:kk-contribution:61d7ae95739a3893af1a5739"
+          },
+          "contributionDecisionId": "decision:kk-contribution:61d7ae95739a3893af1a5739",
+          "contributionScopeSha256": "a4505fda8d88e59e71ea43415520a4dbfca1bea3fb5e31137f5ee0d9042678c4",
+          "contributionHash": "bb4e627a3ac248d9bde8ea9ccbb5eae15c1cb1adc2ad475827445b2cbd2afc6c",
+          "pairedSourceReading": null,
+          "sourceReviewIds": [
+            "kk-normalized-original",
+            "kk-compact-challenge"
+          ],
+          "sourceEvidenceRefs": [
+            {
+              "ref": "d12",
+              "kind": "description",
+              "unitIndex": 12,
+              "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+              "textSha256": "b15227ab24b6d9e9aa2221056c9eaf81216f3e71f3bd75f708ef906dd9496512"
+            },
+            {
+              "ref": "e7",
+              "kind": "primary",
+              "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+              "paperId": "2610.01825",
+              "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+              "sourceContext": {
+                "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                "pdfPage": 1,
+                "start": 1305,
+                "end": 4703,
+                "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            },
+            {
+              "ref": "e12",
+              "kind": "primary",
+              "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+              "paperId": "2610.01825",
+              "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+              "sourceContext": {
+                "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                "pdfPage": 1,
+                "start": 2504,
+                "end": 4949,
+                "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            },
+            {
+              "ref": "e25",
+              "kind": "primary",
+              "sourceId": "ev:fac9569d8f192e54850486112c7fe0d8",
+              "paperId": "2610.01825",
+              "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+              "sourceContext": {
+                "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                "pdfPage": 1,
+                "start": 0,
+                "end": 3000,
+                "textSha256": "f047caa6711ddcf0dab834ac0976f6f55b1f49660dd4bcadb530252e9ef74864",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+              }
+            }
+          ],
+          "homeAdmission": {
+            "status": "accepted_explicit_placement",
+            "receipt": {
+              "path": "../../../evaluation/full-pass/organization-placement-v1/kk-organization-adjudication.json",
+              "sha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512"
+            }
+          },
+          "contributionAdjudication": null
+        },
+        {
+          "home": {
+            "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+            "destinationId": "q-kk-graviton-threshold-decay",
+            "role": "overlap",
+            "status": "accepted",
+            "basis": "source_excerpt_checked",
+            "allocationWeight": 0.5,
+            "workRelation": "on",
+            "qualification": "The immutable source explicitly asks for near-threshold partial-wave suppression and its cascade rate.",
+            "evidenceRefs": [
+              {
+                "ref": "d12",
+                "kind": "description",
+                "unitIndex": 12,
+                "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+                "textSha256": "b15227ab24b6d9e9aa2221056c9eaf81216f3e71f3bd75f708ef906dd9496512"
+              },
+              {
+                "ref": "e7",
+                "kind": "primary",
+                "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+                "paperId": "2610.01825",
+                "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+                "sourceContext": {
+                  "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                  "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                  "pdfPage": 1,
+                  "start": 1305,
+                  "end": 4703,
+                  "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              },
+              {
+                "ref": "e12",
+                "kind": "primary",
+                "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+                "paperId": "2610.01825",
+                "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+                "sourceContext": {
+                  "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                  "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                  "pdfPage": 1,
+                  "start": 2504,
+                  "end": 4949,
+                  "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              },
+              {
+                "ref": "e25",
+                "kind": "primary",
+                "sourceId": "ev:fac9569d8f192e54850486112c7fe0d8",
+                "paperId": "2610.01825",
+                "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+                "sourceContext": {
+                  "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                  "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                  "pdfPage": 1,
+                  "start": 0,
+                  "end": 3000,
+                  "textSha256": "f047caa6711ddcf0dab834ac0976f6f55b1f49660dd4bcadb530252e9ef74864",
+                  "quoteExactInPage": true,
+                  "scope": "Bounded archived primary reading-order context; no images or full-paper verification."
+                }
+              }
+            ],
+            "decisionId": "decision:kk-placement:0"
+          },
+          "homeDecisionId": "decision:kk-placement:0",
+          "homeScopeSha256": "206baf6ffa291d6327e37311f13fe1f436e0f87e304acc8b238ed4a8eb39fef7",
+          "placementHash": "d7ef758344acda330bd1d1026876dc5f7480ac3cc7070fb9ab142da89cd2ef22",
+          "contribution": {
+            "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+            "destinationId": "q-flat-darkdimension-freezein-bounds",
+            "role": "addresses",
+            "basis": "source_excerpt_checked",
+            "qualification": "Confirm the separate flat-dimension freeze-in component, allowing KK gravitons not to supply dark matter. Reheating and radius exclusions remain source-attributed and depend on the specified production, coupling and reheating floors. Independent confirmation: u1 explicitly addresses the distinct flat-dimension irreducible-population bounds, including another source of dark matter. The role retains production, coupling and reheating assumptions and attributed numerical conclusions.",
+            "decisionId": "decision:navigation-kk:role:5"
+          },
+          "contributionDecisionId": "decision:navigation-kk:role:5",
+          "contributionScopeSha256": "a4505fda8d88e59e71ea43415520a4dbfca1bea3fb5e31137f5ee0d9042678c4",
+          "contributionHash": "3d27d1c3681f3f7724e394acac1f5a9274ecc69ddff660738543f5f2408a507b",
+          "pairedSourceReading": null,
+          "sourceReviewIds": [
+            "kk-navigation-original-proposal",
+            "kk-navigation-derived-whole-challenge"
+          ],
+          "sourceEvidenceRefs": [
+            {
+              "localRef": "u1",
+              "kind": "description",
+              "unitIndex": 7,
+              "unitId": "unit:263db4b147b8e930ef44a07d47a9c50ff4d9d9c8278f1780cf79f7a9280f0346",
+              "textSha256": "b15227ab24b6d9e9aa2221056c9eaf81216f3e71f3bd75f708ef906dd9496512",
+              "paperId": "2610.01825"
+            },
+            {
+              "localRef": "e9",
+              "kind": "primary",
+              "sourceId": "ev:43d9cfd4b680cd2a138a8de5c3a9ecfb",
+              "paperId": "2610.01825",
+              "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+              "sourceContext": {
+                "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                "pdfPage": 1,
+                "start": 1305,
+                "end": 4703,
+                "textSha256": "3aa90f5a74b09d2df2fe6b0bc7a52adc2b6b49a1cef673ae8af87b1f14c4001c",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            },
+            {
+              "localRef": "e12",
+              "kind": "primary",
+              "sourceId": "ev:721039277fa8e9c964b594ebb5f55380",
+              "paperId": "2610.01825",
+              "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+              "sourceContext": {
+                "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                "pdfPage": 1,
+                "start": 2504,
+                "end": 4949,
+                "textSha256": "29ce938132d71992b518d50f08598cbd98eedc2c07ebd29ba46218038ef6e6d8",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            },
+            {
+              "localRef": "e25",
+              "kind": "primary",
+              "sourceId": "ev:fac9569d8f192e54850486112c7fe0d8",
+              "paperId": "2610.01825",
+              "sourceSha256": "69997129c1776bb28cbbfe61d9b0c2ff158b360650faaf74e6b729e1e6eb533e",
+              "sourceContext": {
+                "path": "papers/3768bbe41c392cde3687/reading-order.json",
+                "fileSha256": "d527adb4895b727deb2b6788b1ac8275e29c3f42a83fa31e4d7d1c1ffbe45095",
+                "pdfPage": 1,
+                "start": 0,
+                "end": 3000,
+                "textSha256": "f047caa6711ddcf0dab834ac0976f6f55b1f49660dd4bcadb530252e9ef74864",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            }
+          ],
+          "homeAdmission": {
+            "status": "accepted_explicit_placement",
+            "receipt": {
+              "path": "../../../evaluation/full-pass/organization-placement-v1/kk-organization-adjudication.json",
+              "sha256": "5edf011616c98fbf1da360c145cbcba504414f91b97b1fb2bc09302d5a423512"
+            }
+          },
+          "contributionAdjudication": null
+        }
+      ],
+      "noImplicationContainmentMassUsingOrEquivalence": true
+    },
+    {
+      "case": "A DS/dS-specific question can return to a broader entropy/matter question without identity or a global bound",
+      "source": "q025-candidate-question:9f2cd5823705dacaa300c317",
+      "target": "q025-candidate-question:04c847fe67298273745ff0b1",
+      "sourceScope": {
+        "id": "q025-candidate-question:9f2cd5823705dacaa300c317",
+        "kind": "question",
+        "title": "Conditional matter and distance bounds in DS/dS",
+        "question": "Within proposed DS/dS holography, when can comparisons of entanglement with horizon entropy constrain matter deformations or scalar and geometric displacement?",
+        "summary": "A usable conditional question. Entropy reproduction, an assumed ceiling and a distance-conjecture interpretation require separate assessments.",
+        "scope": {
+          "systems": [
+            "D-dimensional geometries with d=D−1 de Sitter slices",
+            "Two cutoff CFT sectors coupled to lower-dimensional gravity"
+          ],
+          "targets": [
+            "Matter-deformation consistency criteria",
+            "Scalar and geometric displacement",
+            "Validity of global versus static-patch entropy comparisons"
+          ],
+          "regimes": [
+            "Classical extremal-area calculations",
+            "Warped geometries retaining radial horizons",
+            "Explicit D=4 free massless scalar example"
+          ],
+          "assumptions": [
+            "Proposed DS/dS correspondence",
+            "Specified entanglement is subject to a proposed horizon-entropy ceiling",
+            "The thesis's quantitative inequality is not supplied"
+          ],
+          "conventions": [
+            "The displacement example includes the warp-maximum modulus A(0)",
+            "A bounded A(0) projection does not by itself establish a bound on every trajectory length"
+          ],
+          "includes": [
+            "Testing the ceiling and its tracing domain",
+            "Comparison with other scalar-range arguments"
+          ],
+          "excludes": [
+            "An independently established exclusion of all matter",
+            "A derived exponentially light tower",
+            "Automatic equivalence of the thesis criterion and other DS/dS inequalities"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 8,
+          "excerptCheckedCount": 3,
+          "readingLimit": "1910.03594v4 is dated 24 February 2020, with text dated 25 February. Its excerpt supplies an example and a generalization argument, not an independently checked general theorem. The 2012.10109 abstracts do not supply the inequality or its full assumptions.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "scopeContentSha256": "4cdf4423522012a35926cc245bb174874a37a8416e243f7ca2345640f0ef742a"
+      },
+      "targetScope": {
+        "id": "q025-candidate-question:04c847fe67298273745ff0b1",
+        "kind": "question",
+        "title": "De Sitter entropy and proposed matter constraints",
+        "question": "Within specified de Sitter holographic constructions, how can horizon entropy be represented as entanglement, and can proposed entropy consistency conditions constrain matter?",
+        "summary": "Preserves DS/dS matter questions, equal-entropy surface interpretation and distinct dS4 boundary, wedge and defect constructions.",
+        "scope": {
+          "systems": [
+            "DS/dS with coupled cutoff CFTs",
+            "Assumed dS4 dual descriptions using disconnected boundaries or bulk wedges",
+            "Orbifold-induced two-dimensional defects"
+          ],
+          "targets": [
+            "De Sitter horizon entropy",
+            "Validity of proposed matter consistency conditions",
+            "Interpretation of equal-entropy surface families",
+            "Conformal descriptions of horizon entropy"
+          ],
+          "regimes": [
+            "Source-specific DS/dS settings",
+            "Four-dimensional de Sitter with antipodal and replica constructions"
+          ],
+          "assumptions": [
+            "DS/dS and the assumed two-copy Euclidean-CFT dual are different frameworks",
+            "The thesis matter criterion is a proposal challenged by its reported matter behavior",
+            "Imported Swampland claims are historical motivation rather than premises"
+          ],
+          "conventions": [
+            "The German abstract specifies NEC-satisfying matter; the English abstract uses the less precise phrase reasonable matter",
+            "No quantitative matter bound can be reconstructed from the supplied pages"
+          ],
+          "includes": [
+            "Source-specific consistency questions despite the outside-probe selection labels"
+          ],
+          "excludes": [
+            "An independently established matter-exclusion theorem",
+            "A common microscopic duality inferred for all de Sitter constructions"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 4,
+          "excerptCheckedCount": 2,
+          "readingLimit": "Thesis abstracts and introductory passages support announced aims, assumptions and reported outcomes. They do not establish the quantitative bound, its independent premises or complete entropy derivations.",
+          "sourceReadingScope": "Exact paired descriptions and same own-paper primary windows. Representative broad membership supports scope only; no source home or proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "scopeContentSha256": "b0fba089c16abfe6ca7dfba8bec8319091fcbd4dc7a30b641a21cdd0e4048dba"
+      },
+      "sourceQuestion": {
+        "unitId": "unit:22836f172f28aefee5e7f76432fcc12b31629ad251180161b300541816f158b2",
+        "paperId": "1904.02170",
+        "description": "Does entanglement in the two coupled CFTs of DS/dS account for de Sitter horizon entropy, and does requiring an entropy ceiling restrict bulk matter?",
+        "textSha256": "28154363f257bb01e57268a4cdcaf4241e88a8f75d51d9e08cbe1ff4e40c3f23"
+      },
+      "completeRouteWitnessCount": 1,
+      "selectedWitnessObservations": [
+        {
+          "home": {
+            "unitId": "unit:22836f172f28aefee5e7f76432fcc12b31629ad251180161b300541816f158b2",
+            "destinationId": "q025-candidate-question:9f2cd5823705dacaa300c317",
+            "role": "member",
+            "status": "accepted",
+            "basis": "description_checked",
+            "allocationWeight": 1,
+            "reason": "The DS/dS-specific definition covers entropy reproduction, the proposed horizon ceiling and the validity of global versus static-patch comparisons for matter restrictions.",
+            "qualification": "q46's full definition explicitly distinguishes entropy reproduction, an assumed ceiling and its interpretation, and includes the coupled-CFT system and global/static-patch comparison. It therefore covers both independent targets of this source, rather than only the matter-bound component. q1 also covers the whole question but spans additional holographic constructions; q46 is more specific to the stated DS/dS ceiling inquiry. Its additional displacement examples need not be imposed on this source. Equal undeformed areas do not identify tracing operations or establish a universal global-observer ceiling.",
+            "evidenceRefs": [
+              {
+                "kind": "description",
+                "unitId": "unit:22836f172f28aefee5e7f76432fcc12b31629ad251180161b300541816f158b2",
+                "textSha256": "28154363f257bb01e57268a4cdcaf4241e88a8f75d51d9e08cbe1ff4e40c3f23"
+              }
+            ],
+            "decisionId": "decision:placement-pilot:home:competing:u16:q46"
+          },
+          "homeDecisionId": "decision:placement-pilot:home:competing:u16:q46",
+          "homeScopeSha256": "4cdf4423522012a35926cc245bb174874a37a8416e243f7ca2345640f0ef742a",
+          "placementHash": "a45856267a974cfce78e3723eb171b0467a11b153d91e47f9f8b4b8782406c82",
+          "contribution": {
+            "unitId": "unit:22836f172f28aefee5e7f76432fcc12b31629ad251180161b300541816f158b2",
+            "destinationId": "q025-candidate-question:04c847fe67298273745ff0b1",
+            "role": "addresses",
+            "basis": "description_checked",
+            "decisionId": "decision:source-contribution:6cb9d3ab68952304c6e2c059",
+            "qualification": "Original proposal qualification: Horizon-entropy accounting and validity of a matter ceiling are distinct targets requiring fine reconciliation. Independent challenge qualification: Horizon-entropy accounting and validity of a matter ceiling require separate fine reconciliation."
+          },
+          "contributionDecisionId": "decision:source-contribution:6cb9d3ab68952304c6e2c059",
+          "contributionScopeSha256": "b0fba089c16abfe6ca7dfba8bec8319091fcbd4dc7a30b641a21cdd0e4048dba",
+          "contributionHash": "97984705332052a265bc6486812e8a8c6b5cf20430db9388820ed6ff5ed41c1a",
+          "pairedSourceReading": {
+            "decisionId": "decision:source-contribution:6cb9d3ab68952304c6e2c059",
+            "recordId": "leaf-de6c996ab0f533ff9545-challenge:p6",
+            "proposalReviewId": "leaf-de6c996ab0f533ff9545-proposal",
+            "challengeReviewId": "leaf-de6c996ab0f533ff9545-challenge",
+            "proposalBasis": "description",
+            "challengeBasis": "description",
+            "commonBasis": "description_checked",
+            "proposalNote": "Horizon-entropy accounting and validity of a matter ceiling are distinct targets requiring fine reconciliation.",
+            "challengeNote": "Horizon-entropy accounting and validity of a matter ceiling require separate fine reconciliation.",
+            "dispositionAgreement": true,
+            "factorIdentityAndPlacementAgreementNotInferred": true,
+            "unresolvedFactorQualificationsNotPromoted": true
+          },
+          "sourceReviewIds": [
+            "leaf-de6c996ab0f533ff9545-proposal",
+            "leaf-de6c996ab0f533ff9545-challenge"
+          ],
+          "sourceEvidenceRefs": [
+            {
+              "localRef": "d20",
+              "kind": "description",
+              "unitIndex": 20,
+              "unitId": "unit:22836f172f28aefee5e7f76432fcc12b31629ad251180161b300541816f158b2",
+              "textSha256": "28154363f257bb01e57268a4cdcaf4241e88a8f75d51d9e08cbe1ff4e40c3f23"
+            }
+          ],
+          "homeAdmission": {
+            "status": "accepted_explicit_placement",
+            "receipt": {
+              "path": "research/q025/assembly/placement-pilot-review-v1/admitted-v1/admission.json",
+              "sha256": "bc0f5545efd2d0dfc09239a354e9596043f8dd62f9566492f93539258112af66"
+            }
+          },
+          "contributionAdjudication": null
+        }
+      ],
+      "noImplicationContainmentMassUsingOrEquivalence": true
+    },
+    {
+      "case": "A compound lecture home exposes a positive component while source-era claims remain dated",
+      "source": "q025-candidate-question:6aaa9013e706aa371167686a",
+      "target": "q025-candidate-question:6713a07b5b30dacb0268a4bf",
+      "sourceScope": {
+        "id": "q025-candidate-question:6aaa9013e706aa371167686a",
+        "kind": "question",
+        "title": "String moduli, vacuum energy and cosmological computation",
+        "question": "How can string or supergravity moduli support inflation and small vacuum energy, and how can their noncanonical multifield evolution be made tractable?",
+        "summary": "This alternate home preserves general string-cosmology lectures and computational model building, including distinct inflationary and dark-energy demonstrations.",
+        "scope": {
+          "systems": [
+            "Supergravity moduli with noncanonical kinetic terms",
+            "Mobile-D3 and KKLT-based demonstrations",
+            "String compactifications, branes and moduli"
+          ],
+          "targets": [
+            "Small cosmological constant and dark energy",
+            "Moduli stabilization and inflaton-potential obstacles",
+            "Cosmological evolution and observational signatures"
+          ],
+          "regimes": [
+            "Inflationary and dark-energy applications, separately specified"
+          ],
+          "assumptions": [
+            "Specific potentials and kinetic structures belong to their demonstrations",
+            "The lecture's fifth-force discussion concerns its stated quintessence argument and source-era bounds"
+          ],
+          "conventions": [
+            "No later Swampland criterion is required for eligibility"
+          ],
+          "includes": [
+            "Symbolic potential construction",
+            "Numerical multifield evolution",
+            "Multiple reviewed inflation mechanisms"
+          ],
+          "excludes": [
+            "A single fine identity for all lecture topics",
+            "Identification with the running-vacuum mechanism",
+            "Updating historical observational bounds"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 2,
+          "excerptCheckedCount": 1,
+          "readingLimit": "The computational source is description-only. The lecture evidence consists of bounded pages and a contents list, not verification of all reviewed models.",
+          "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "scopeContentSha256": "b37bdd38e7429b64ac5ab1ee36bfe80c6cf00ecbc2315f9a31855f4333fd8138"
+      },
+      "targetScope": {
+        "id": "q025-candidate-question:6713a07b5b30dacb0268a4bf",
+        "kind": "question",
+        "title": "Inflation and alternative origins of structure",
+        "question": "Which string or string-inspired mechanisms can produce viable early expansion and primordial fluctuations, with what prerequisites and observational consequences?",
+        "summary": "Includes inflationary and alternative scenarios without identifying their causal mechanisms or perturbation calculations.",
+        "scope": {
+          "systems": [
+            "String inflaton models",
+            "Brane and axion constructions",
+            "Bouncing, emergent and pre-big-bang scenarios",
+            "Anomaly-driven running-vacuum models"
+          ],
+          "targets": [
+            "Early-universe causal problems",
+            "Inflationary dynamics",
+            "Primordial correlations"
+          ],
+          "regimes": [
+            "Source-specific early-universe phases"
+          ],
+          "assumptions": [
+            "A background solution does not by itself establish a viable perturbation spectrum."
+          ],
+          "conventions": [],
+          "includes": [
+            "Initial conditions",
+            "Potential regularity",
+            "Mass spectra",
+            "Constraints on particular scenarios"
+          ],
+          "excludes": [
+            "A single shared inflationary mechanism",
+            "Treating alternatives as equivalent to extended inflation"
+          ]
+        },
+        "readingCoverage": {
+          "descriptionCheckedCount": 20,
+          "excerptCheckedCount": 4,
+          "readingLimit": "Descriptions and bounded review passages establish questions and proposed mechanisms, not complete viability.",
+          "sourceReadingScope": "Pinned paired source reviews; counted excerpts are only same-source primary windows explicitly shared by both reviewers. No full-paper/proof verification is inferred.",
+          "inheritedParentCoverage": null
+        },
+        "scopeContentSha256": "a6915af7571edbdff254263025ab5c962d0d3a5a1febee2c303270069e42dbe1"
+      },
+      "sourceQuestion": {
+        "unitId": "unit:3cef1fb2590aee2936780b41e9adee31c76b5a6b77c279306a97e3f7778e46da",
+        "paperId": "hep-th/0612129",
+        "description": "These lectures review how string theory might accommodate a small cosmological constant and inflation, emphasizing moduli stabilization, obstacles to flat inflaton potentials, possible remedies, and observational signatures.",
+        "textSha256": "6cc987d9a613796846db12afe3b42ec1d89e3de5e94d6605b6c74b14734a1f0b"
+      },
+      "completeRouteWitnessCount": 1,
+      "selectedWitnessObservations": [
+        {
+          "home": {
+            "unitId": "unit:3cef1fb2590aee2936780b41e9adee31c76b5a6b77c279306a97e3f7778e46da",
+            "destinationId": "q025-candidate-question:6aaa9013e706aa371167686a",
+            "role": "member",
+            "status": "accepted",
+            "basis": "description_checked",
+            "allocationWeight": 1,
+            "reason": "Explicitly preserves string-cosmology lectures spanning small vacuum energy, inflation, stabilization, potential obstacles, remedies and signatures.",
+            "qualification": "q31 explicitly preserves the complete lecture program: small vacuum energy, inflation, stabilization, potential obstacles, remedies and signatures. Its exclusion of a single fine identity for all lecture topics does not exclude the intact composite survey. q29, q18 and q41 omit the independent small-vacuum-energy inquiry. A cosmic-string signature is only one component. Historical force bounds remain dated, and announced coverage does not verify the reviewed remedies.",
+            "evidenceRefs": [
+              {
+                "kind": "description",
+                "unitId": "unit:3cef1fb2590aee2936780b41e9adee31c76b5a6b77c279306a97e3f7778e46da",
+                "textSha256": "6cc987d9a613796846db12afe3b42ec1d89e3de5e94d6605b6c74b14734a1f0b"
+              }
+            ],
+            "decisionId": "decision:placement-pilot:home:competing:u7:q31"
+          },
+          "homeDecisionId": "decision:placement-pilot:home:competing:u7:q31",
+          "homeScopeSha256": "b37bdd38e7429b64ac5ab1ee36bfe80c6cf00ecbc2315f9a31855f4333fd8138",
+          "placementHash": "2b9defb4f0922fe04c64c6196a6cf6438e0d3c27cae95235c148ff5ed5059c18",
+          "contribution": {
+            "unitId": "unit:3cef1fb2590aee2936780b41e9adee31c76b5a6b77c279306a97e3f7778e46da",
+            "destinationId": "q025-candidate-question:6713a07b5b30dacb0268a4bf",
+            "role": "addresses",
+            "basis": "source_excerpt_checked",
+            "decisionId": "decision:source-contribution:020bf0a7d95908715a0c22b4"
+          },
+          "contributionDecisionId": "decision:source-contribution:020bf0a7d95908715a0c22b4",
+          "contributionScopeSha256": "a6915af7571edbdff254263025ab5c962d0d3a5a1febee2c303270069e42dbe1",
+          "contributionHash": "edfed4e01fd7b87abbb6621fda5396336bb34a38d309d758de45f6cfc50dc5bc",
+          "pairedSourceReading": {
+            "decisionId": "decision:source-contribution:020bf0a7d95908715a0c22b4",
+            "recordId": "leaf-0c43e24ef1344f8f7623-challenge:p2",
+            "proposalReviewId": "leaf-0c43e24ef1344f8f7623-proposal",
+            "challengeReviewId": "leaf-0c43e24ef1344f8f7623-challenge",
+            "proposalBasis": "excerpt",
+            "challengeBasis": "excerpt",
+            "commonBasis": "source_excerpt_checked",
+            "commonPrimaryWindowCount": 3,
+            "proposalNote": "Compound lectures on vacuum energy and inflation; the fifth-force discussion and experimental numbers remain source-era context.",
+            "challengeNote": "Compound vacuum-energy and inflation lectures; fifth-force numbers and observational prospects remain source-era context.",
+            "dispositionAgreement": true,
+            "factorIdentityAndPlacementAgreementNotInferred": true,
+            "publicationStatus": "scope/contribution admission only; canonical reconciliation, exact homes, routes and editorial status remain separate"
+          },
+          "sourceReviewIds": [
+            "leaf-0c43e24ef1344f8f7623-proposal",
+            "leaf-0c43e24ef1344f8f7623-challenge"
+          ],
+          "sourceEvidenceRefs": [
+            {
+              "localRef": "d46",
+              "kind": "description",
+              "unitIndex": 46,
+              "unitId": "unit:3cef1fb2590aee2936780b41e9adee31c76b5a6b77c279306a97e3f7778e46da",
+              "textSha256": "6cc987d9a613796846db12afe3b42ec1d89e3de5e94d6605b6c74b14734a1f0b"
+            },
+            {
+              "localRef": "e9",
+              "kind": "primary",
+              "sourceId": "ev:479709da7b0565762ae80098e8872263",
+              "paperId": "hep-th/0612129",
+              "sourceSha256": "b928e1970e0663665bf5f1dc6560e8bec2ce19648b0166ee2e740ab17be387dc",
+              "sourceContext": {
+                "path": "papers/9e3b65fa924d85cb29f7/reading-order.json",
+                "fileSha256": "fdee7d5134b8d428d394a9770af1a7e992ffe2b2f15770d411aa4bc1005d5988",
+                "pdfPage": 15,
+                "start": 0,
+                "end": 2393,
+                "textSha256": "d418ffc8c05e0bbae1cf077f9e2d94112db012340a54a83a5779743616202eca",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            },
+            {
+              "localRef": "e12",
+              "kind": "primary",
+              "sourceId": "ev:62f49ee8e8a82ce94588f3b1f2ab2f95",
+              "paperId": "hep-th/0612129",
+              "sourceSha256": "b928e1970e0663665bf5f1dc6560e8bec2ce19648b0166ee2e740ab17be387dc",
+              "sourceContext": {
+                "path": "papers/9e3b65fa924d85cb29f7/reading-order.json",
+                "fileSha256": "fdee7d5134b8d428d394a9770af1a7e992ffe2b2f15770d411aa4bc1005d5988",
+                "pdfPage": 3,
+                "start": 0,
+                "end": 796,
+                "textSha256": "54e81229f435c7cea300f012cc56902556fc702f6f63cd4d1da53452403899f7",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            },
+            {
+              "localRef": "e15",
+              "kind": "primary",
+              "sourceId": "ev:97564ff6e8f39bb975ed1d2ce35c5879",
+              "paperId": "hep-th/0612129",
+              "sourceSha256": "b928e1970e0663665bf5f1dc6560e8bec2ce19648b0166ee2e740ab17be387dc",
+              "sourceContext": {
+                "path": "papers/9e3b65fa924d85cb29f7/reading-order.json",
+                "fileSha256": "fdee7d5134b8d428d394a9770af1a7e992ffe2b2f15770d411aa4bc1005d5988",
+                "pdfPage": 5,
+                "start": 0,
+                "end": 1721,
+                "textSha256": "6851be5b22ec413c1d1bc9adc047e842297468a22d3ec9cd9dd7c30403d7638a",
+                "quoteExactInPage": true,
+                "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+              }
+            }
+          ],
+          "homeAdmission": {
+            "status": "accepted_explicit_placement",
+            "receipt": {
+              "path": "research/q025/assembly/placement-pilot-review-v1/admitted-v1/admission.json",
+              "sha256": "bc0f5545efd2d0dfc09239a354e9596043f8dd62f9566492f93539258112af66"
+            }
+          },
+          "contributionAdjudication": null
+        }
+      ],
+      "noImplicationContainmentMassUsingOrEquivalence": true
+    }
+  ],
+  "scope": "Each witness is an exact accepted direct question home plus accepted positive role by the identical source unit. This extends organizational access only; method/boundary/comparison roles remain excluded. All204 candidate route supports remain in the pinned certificate file."
+}

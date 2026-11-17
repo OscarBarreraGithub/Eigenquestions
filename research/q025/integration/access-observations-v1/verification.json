@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "q025-runtime-verification/1",
+  "observedAt": "2026-11-17T15:25:32.546818+00:00",
+  "passed": true,
+  "commands": [
+    {
+      "command": "node research/q025/integration/access-observations-v1/real-observation-check.mjs",
+      "exitCode": 0,
+      "result": {
+        "observations": 38,
+        "distinctScopedRelationships": 32,
+        "repeatedRelationships": 6,
+        "destinations": 6
+      }
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "assets": 110
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "tests": 95,
+      "passed": 95
+    },
+    {
+      "command": "npm run check:site",
+      "exitCode": 0,
+      "verifiedAtlasFiles": 0
+    }
+  ],
+  "limits": [
+    "Retained baseline build, not installation of the partial research candidate.",
+    "No new browser or public HTTPS claim."
+  ],
+  "knownResolvedDuringEditing": [
+    "Generated adapter hash was stale until regenerated.",
+    "Initial real-observation expectation understated repeated relationships; the exact old/new component join yields six, not four."
+  ]
+}

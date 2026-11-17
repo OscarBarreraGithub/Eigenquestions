@@ -1,0 +1,631 @@
+{
+  "status": "production_component_identity_and_same_source_predicate_gates_passed",
+  "scientificScopeCount": 1660,
+  "nonselfRouteCount": 2523,
+  "nodesWithRepeatedTargets": 83,
+  "duplicateChoiceSlots": 130,
+  "maxEdgeChoices": 18,
+  "maxUniqueDestinations": 18,
+  "examples": [
+    {
+      "id": "q025-candidate-region:7961ee3cebdb154299e78b58",
+      "title": "Dark sectors: candidates, cosmic histories and tests",
+      "edgeChoices": 17,
+      "uniqueDestinations": 12,
+      "repeatedTargets": [
+        {
+          "id": "q025-candidate-question:3807e422776615534282c7e2",
+          "title": "Candidates and cosmic origins",
+          "routes": [
+            {
+              "id": "navigation:kk:pn0",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Explore dark-matter candidates and their cosmic origins"
+            },
+            {
+              "id": "navigation:parent-reasserted:bf885073019236217c390a37",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Candidates and cosmic origins"
+            },
+            {
+              "id": "organizational-access:ab801d0b16f524d2b05f4d1d",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:190bdf4415c78268d594ff95",
+          "title": "Extra dimensions and conditional quantum-gravity tests",
+          "routes": [
+            {
+              "id": "navigation:kk:pn1",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Explore extra dimensions and conditional consistency tests"
+            },
+            {
+              "id": "navigation:parent-reasserted:07e5b8e74574196a4fcade23",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Extra dimensions and conditional quantum-gravity tests"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+          "title": "Cosmological survival and depletion of dark relics",
+          "routes": [
+            {
+              "id": "navigation:kk:pn2",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "What lets a relic persist, and what depletes it?"
+            },
+            {
+              "id": "navigation:parent-reasserted:c086a3832f9c241d492e3bb2",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Cosmological survival and depletion of dark relics"
+            },
+            {
+              "id": "organizational-access:49d2f79fe2cd13f3bdd7d695",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q025-candidate-question:3807e422776615534282c7e2",
+      "title": "Candidates and cosmic origins",
+      "edgeChoices": 18,
+      "uniqueDestinations": 13,
+      "repeatedTargets": [
+        {
+          "id": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "title": "Dark sectors: candidates, cosmic histories and tests",
+          "routes": [
+            {
+              "id": "navigation:kk:pn0",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Explore dark-matter candidates and their cosmic origins"
+            },
+            {
+              "id": "navigation:parent-reasserted:bf885073019236217c390a37",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Candidates and cosmic origins"
+            },
+            {
+              "id": "organizational-access:ab801d0b16f524d2b05f4d1d",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:f19bee7b8e7cec3d7887c150",
+          "title": "Producing viable dark-matter relics",
+          "routes": [
+            {
+              "id": "navigation:kk:pn3",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "How is the candidate's abundance and momentum distribution produced?"
+            },
+            {
+              "id": "navigation:parent-reasserted:3b509bae35e54acab338d19f",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Producing viable dark-matter relics"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+          "title": "Cosmological survival and depletion of dark relics",
+          "routes": [
+            {
+              "id": "navigation:kk:pn4",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Can the proposed population survive its later evolution?"
+            },
+            {
+              "id": "navigation:parent-reasserted:8d63045bbda17ee7189b4fd7",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Cosmological survival and depletion of dark relics"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-region:f174f5f3658af4e764385fd2",
+          "title": "Particle sectors, scalar dynamics and cosmological tests",
+          "routes": [
+            {
+              "id": "navigation:parent-reasserted:a6dda0e2b5e6f8da649efa9a",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Candidates and cosmic origins"
+            },
+            {
+              "id": "organizational-access:099541f91457daa33e602416",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q025-candidate-question:190bdf4415c78268d594ff95",
+      "title": "Extra dimensions and conditional quantum-gravity tests",
+      "edgeChoices": 10,
+      "uniqueDestinations": 6,
+      "repeatedTargets": [
+        {
+          "id": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "title": "Dark sectors: candidates, cosmic histories and tests",
+          "routes": [
+            {
+              "id": "navigation:kk:pn1",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Explore extra dimensions and conditional consistency tests"
+            },
+            {
+              "id": "navigation:parent-reasserted:07e5b8e74574196a4fcade23",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Extra dimensions and conditional quantum-gravity tests"
+            }
+          ]
+        },
+        {
+          "id": "q-kk-graviton-thermal-production",
+          "title": "How does a hot brane produce KK gravitons?",
+          "routes": [
+            {
+              "id": "navigation:kk:pn7",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Study hot-brane production in the Dark Dimension setup"
+            },
+            {
+              "id": "navigation:kk:pn21",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Revisit the extra-dimensional assumptions behind production"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:fc582eff749d1936943465cf",
+          "title": "Stellar production and cooling bounds on extra dimensions",
+          "routes": [
+            {
+              "id": "navigation:kk:pn11",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "How do stars test KK production and extra dimensions?"
+            },
+            {
+              "id": "navigation:kk:pn19",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Which extra-dimensional construction is being tested?"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:bdfb6100643885f4cae8dc2f",
+          "title": "Contested EFT matching of Dark Dimension vacuum energy",
+          "routes": [
+            {
+              "id": "navigation:kk:pn12",
+              "type": "premise_check",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Can the proposed vacuum-energy relation be matched to EFT?"
+            },
+            {
+              "id": "navigation:kk:pn20",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Explore the constructions that invoke this matching relation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q025-candidate-question:62dacb9af0517b2a3ba9ed97",
+      "title": "Cosmological survival and depletion of dark relics",
+      "edgeChoices": 10,
+      "uniqueDestinations": 6,
+      "repeatedTargets": [
+        {
+          "id": "q025-candidate-region:7961ee3cebdb154299e78b58",
+          "title": "Dark sectors: candidates, cosmic histories and tests",
+          "routes": [
+            {
+              "id": "navigation:kk:pn2",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "What lets a relic persist, and what depletes it?"
+            },
+            {
+              "id": "navigation:parent-reasserted:c086a3832f9c241d492e3bb2",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Cosmological survival and depletion of dark relics"
+            },
+            {
+              "id": "organizational-access:49d2f79fe2cd13f3bdd7d695",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:3807e422776615534282c7e2",
+          "title": "Candidates and cosmic origins",
+          "routes": [
+            {
+              "id": "navigation:kk:pn4",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Can the proposed population survive its later evolution?"
+            },
+            {
+              "id": "navigation:parent-reasserted:8d63045bbda17ee7189b4fd7",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Cosmological survival and depletion of dark relics"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "routes": [
+            {
+              "id": "navigation:kk:pn8",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Can KK cascades preserve a relic population?"
+            },
+            {
+              "id": "navigation:kk:pn17",
+              "type": "related_question",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Compare other ways relic populations persist or disappear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "title": "Flux compactifications, effective dynamics and vacuum questions",
+      "edgeChoices": 15,
+      "uniqueDestinations": 11,
+      "repeatedTargets": [
+        {
+          "id": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "title": "Effective actions and flux dictionaries",
+          "routes": [
+            {
+              "id": "navigation:v2:consistent-reductions-and-actions:pn0",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Encode compactification data in actions and flux dictionaries"
+            },
+            {
+              "id": "navigation:parent-reasserted:63d59f1d44e693468e123799",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Effective actions and flux dictionaries"
+            },
+            {
+              "id": "organizational-access:a9a68f15555940e980f7536a",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:0d4a3d719967008093cb97e1",
+          "title": "Flux constraints, quantization and sources",
+          "routes": [
+            {
+              "id": "navigation:parent-reasserted:a83294bbb2f0d7d1d538e516",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Flux constraints, quantization and sources"
+            },
+            {
+              "id": "organizational-access:ff0d07238ba2ae6f002231a3",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:99c03ddc6db63b6ea6e037be",
+          "title": "Tadpole cost of stabilization",
+          "routes": [
+            {
+              "id": "navigation:parent-reasserted:62759e513cb1c2ca537d1002",
+              "type": "narrower",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Tadpole cost of stabilization"
+            },
+            {
+              "id": "organizational-access:004679907b099bb5128962eb",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "same_source_organizational_access",
+              "title": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q-kk-graviton-thermal-production",
+      "title": "How does a hot brane produce KK gravitons?",
+      "edgeChoices": 7,
+      "uniqueDestinations": 4,
+      "repeatedTargets": [
+        {
+          "id": "q-kk-decay-linear-cosmology",
+          "title": "What do repeated KK decays do to linear structure?",
+          "routes": [
+            {
+              "id": "navigation:kk:4",
+              "type": "premise_check",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Which initial KK population does the cosmology assume?"
+            },
+            {
+              "id": "navigation:kk:5",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "What linear signatures follow for a specified decaying population?"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:f19bee7b8e7cec3d7887c150",
+          "title": "Producing viable dark-matter relics",
+          "routes": [
+            {
+              "id": "navigation:kk:pn6",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Can a hot Standard Model brane populate a KK tower?"
+            },
+            {
+              "id": "navigation:kk:pn18",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Compare other ways to produce a dark relic"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:190bdf4415c78268d594ff95",
+          "title": "Extra dimensions and conditional quantum-gravity tests",
+          "routes": [
+            {
+              "id": "navigation:kk:pn7",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Study hot-brane production in the Dark Dimension setup"
+            },
+            {
+              "id": "navigation:kk:pn21",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Revisit the extra-dimensional assumptions behind production"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q-kk-graviton-threshold-decay",
+      "title": "How fast can a KK graviton decay near threshold?",
+      "edgeChoices": 9,
+      "uniqueDestinations": 6,
+      "repeatedTargets": [
+        {
+          "id": "q-flat-darkdimension-freezein-bounds",
+          "title": "What flat-dimension bounds survive suppressed KK cascades?",
+          "routes": [
+            {
+              "id": "navigation:kk:1",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "What flat-model bounds follow from suppressed cascades?"
+            },
+            {
+              "id": "navigation:kk:6",
+              "type": "premise_check",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Which threshold suppression underlies the flat-model bound?"
+            }
+          ]
+        },
+        {
+          "id": "q-kk-decay-linear-cosmology",
+          "title": "What do repeated KK decays do to linear structure?",
+          "routes": [
+            {
+              "id": "navigation:kk:2",
+              "type": "comparison",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "How does the conditional recoil model depend on the decay history?"
+            },
+            {
+              "id": "navigation:kk:3",
+              "type": "premise_check",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Is the assumed repeated-decay history microscopically supported?"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:3837596ccc94dbb619230dc6",
+          "title": "Threshold KK cascades, dark matter and irreducible freeze-in",
+          "routes": [
+            {
+              "id": "navigation:kk:pn9",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Isolate the near-threshold decay law"
+            },
+            {
+              "id": "navigation:kk:pn16",
+              "type": "related_question",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "What does the threshold law mean for KK relic viability?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "title": "Controlled geometric KK/AdS separation",
+      "edgeChoices": 13,
+      "uniqueDestinations": 10,
+      "repeatedTargets": [
+        {
+          "id": "q025-candidate-region:30e42c20fef58dd627023a94",
+          "title": "Compactification vacua, effective theories and stability",
+          "routes": [
+            {
+              "id": "navigation:v2:ads-kk-scale-control:pn0",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Can internal KK modes decouple from AdS curvature?"
+            },
+            {
+              "id": "navigation:parent-reasserted:4223205864886c4dabb45b98",
+              "type": "narrower",
+              "direction": "incoming",
+              "basis": "explicit_scientific_navigation",
+              "title": "Controlled geometric KK/AdS separation"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:746588a70cd01ac07e0ef706",
+          "title": "Constructing controlled geometric scale separation",
+          "routes": [
+            {
+              "id": "navigation:v2:ads-kk-scale-control:pn1",
+              "type": "comparison",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Which constructions also meet their stabilization requirements?"
+            },
+            {
+              "id": "navigation:parent-reasserted:d314a0409b548c0dec47e7b1",
+              "type": "comparison",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Constructing controlled geometric scale separation"
+            }
+          ]
+        },
+        {
+          "id": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+          "title": "AdS/KK hierarchy and control",
+          "routes": [
+            {
+              "id": "navigation:v2:ads-kk-scale-control:pn2",
+              "type": "comparison",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "Compare spectral restrictions, M-theory and KKLT candidates"
+            },
+            {
+              "id": "navigation:parent-reasserted:f931128587284327d657208e",
+              "type": "comparison",
+              "direction": "outgoing",
+              "basis": "explicit_scientific_navigation",
+              "title": "AdS/KK hierarchy and control"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "preserveEveryTypedRoute": true
+}

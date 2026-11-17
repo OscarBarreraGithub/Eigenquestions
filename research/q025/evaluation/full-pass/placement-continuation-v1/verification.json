@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "q025-placement-continuation-verification/1",
+  "createdAt": "2026-11-17T15:54:56.262598+00:00",
+  "nativeLaunches": 0,
+  "pythonTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "nodeTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "preparedRequestsVerified": 152,
+  "preflight": {
+    "actualMaterializations": 152,
+    "maxPriorResponseCharacters": 120000,
+    "maxConservativeTokens": 164663,
+    "dispatchGuardTokens": 220000
+  },
+  "scientificPolicyUnchanged": {
+    "contract.py": {
+      "sha256": "c51c8d8512c7834152f00cf5a495a1813b38ea2b32184a1c2412c6b8b69b95a1",
+      "sameAsPilot": true
+    },
+    "INSTRUCTIONS.md": {
+      "sha256": "4aec502284f7bb6a6904a253421744b366d3c1428a12088cbc372abf86dd8e1f",
+      "sameAsPilot": true
+    }
+  },
+  "failedPreparationLineage": {
+    "reason": "Pilot-only direct ID lookup rejected an admitted alias in packet0012/u19/r1.",
+    "repair": "Resolve only via pinned canonical projection; retain old annotations.",
+    "nativeLaunches": 0
+  },
+  "runtimeJobsContainOnlyRequests": true
+}

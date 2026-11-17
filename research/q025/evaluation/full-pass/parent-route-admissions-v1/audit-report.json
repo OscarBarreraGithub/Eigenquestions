@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "q025-parent-route-agreement-audit/1",
+  "input": {
+    "path": "research/q025/evaluation/full-pass/reconciliation-v1/parent-navigation-candidates-v6-20261117T144302Z.json",
+    "sha256": "fc8468a287b3515541e71932fe9769f77710d754e1834a5143d420e0d86eb91e"
+  },
+  "total": 2932,
+  "classes": {
+    "endpoint_scope_not_admitted": 356,
+    "provenance_or_source_object_endpoint": 649,
+    "independent_reworded_statement_requires_condition_comparison": 1819,
+    "new_or_changed_endpoint_type": 56,
+    "exact_statement_and_reference_metadata_reasserted": 51,
+    "same_statement_evidence_changed_or_referenced_differently": 1
+  },
+  "byType": {
+    "endpoint_scope_not_admitted": {
+      "narrows": 179,
+      "method": 30,
+      "comparison": 79,
+      "application": 22,
+      "related": 36,
+      "premise_check": 10
+    },
+    "exact_statement_and_reference_metadata_reasserted": {
+      "narrows": 18,
+      "related": 7,
+      "comparison": 14,
+      "application": 8,
+      "method": 3,
+      "premise_check": 1
+    },
+    "independent_reworded_statement_requires_condition_comparison": {
+      "related": 405,
+      "method": 212,
+      "comparison": 436,
+      "premise_check": 80,
+      "application": 226,
+      "narrows": 459,
+      "broadens": 1
+    },
+    "new_or_changed_endpoint_type": {
+      "comparison": 14,
+      "related": 32,
+      "narrows": 4,
+      "premise_check": 1,
+      "method": 4,
+      "application": 1
+    },
+    "provenance_or_source_object_endpoint": {
+      "narrows": 184,
+      "source_context": 413,
+      "comparison": 21,
+      "method": 13,
+      "application": 12,
+      "related": 6
+    },
+    "same_statement_evidence_changed_or_referenced_differently": {
+      "narrows": 1
+    }
+  },
+  "originalContract": "Separate source-only parent challenge reauthors a final links list and its own rationale/evidence under explicit target/method/application instructions; it has explicit per-card reviews but no per-link verdict field. Re-authored complete reasoning is evidence of independent assessment; mere shared endpoint/type is insufficient.",
+  "admission": false,
+  "privateRows": {
+    "path": "research/q025/evaluation/full-pass/native-local/parent-route-admissions-v1/route-audit.json",
+    "sha256": "9574642e410aac2084cb91de784ec7ecdce3384d40433823cb7c83d962560332",
+    "bytes": 15493304
+  }
+}

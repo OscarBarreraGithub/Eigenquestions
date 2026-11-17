@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "q025-navigation-admissions-checkpoint/2",
+  "journeyIntake": {
+    "path": "research/q025/evaluation/full-pass/native-local/navigation-admissions-v2/journeys.json",
+    "sha256": "a58ae66c703c95e9ca2d18f9b4afab4ee7d1bab8954fd53ba41f9776708f6584"
+  },
+  "journeyIntakeBytes": 178880,
+  "report": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/report.json",
+    "sha256": "a62edb5e79bce3f881fa673b7c200584dbc9c9604708a9025967777fdd602d2f"
+  },
+  "counts": {
+    "newScopes": 6,
+    "typedOperations": 55,
+    "publicRoutes": 47,
+    "confirmedSourceRoles": 21,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "components": [
+    {
+      "family": "axion-vector-production",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/axion-vector-production-component.json",
+        "sha256": "7bd26dd8532c333cf9354c44fc82e194a59c2dd4b30ab124bcf1b3abbf6f762e"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/axion-vector-production-admission.json",
+        "sha256": "f8c34153031262f2ed9818888a6d5422ea09ed87689ab3c7e16c9177b3a22659"
+      }
+    },
+    {
+      "family": "calabi-yau-periods-and-bps",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-component.json",
+        "sha256": "c5ec266277fe0f86ed990d2b4948f2fedd8a43d626ffdb050ca2c5c95aaa8649"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "family": "ads-kk-scale-control",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-component.json",
+        "sha256": "4cd0d9760aea4f4bb67c12f9c89ec919d6d3e1d793db669de5fe59f11089289c"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      }
+    },
+    {
+      "family": "dark-energy-histories",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-component.json",
+        "sha256": "6d58960b4fb1913689d71f484c0c6dca08a1a377fcc7a1d97d3374b6f6732fe9"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "family": "consistent-reductions-and-actions",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-component.json",
+        "sha256": "a8691509c5d5a9abdb8769a2b677db88ac88cbc2918ba57ff2dbdb2481e4e6e5"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "family": "entropy-and-extremality",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-component.json",
+        "sha256": "0bd99cf8875fb2251cd195d0630454377bbebc8ba1ad33cfdc95786203339a1b"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "family": "de-sitter-organization",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/de-sitter-organization-component.json",
+        "sha256": "52dc6d27d587b0ab7bd98be81b32c708007e21ba371606763274a64cfc1e950e"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/de-sitter-organization-admission.json",
+        "sha256": "c12872cf2304168f663092654b4ae34f66023591718d507dc468ac34110a58ac"
+      }
+    },
+    {
+      "family": "distance-and-emergence",
+      "component": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-component.json",
+        "sha256": "cf83573c1b8753f6ce2ca2f39e5ca4dc91a2ee24fd3c5b6c36cebea918a8ee73"
+      },
+      "receipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    }
+  ],
+  "tests": "12 Node production hash/independence/reference/negative checks passed; 5 de Sitter derivation regression checks passed.",
+  "noNewModelTurns": true,
+  "freshPrimaryReading": false,
+  "globalGroupsPending": 2,
+  "exceptions": [
+    "No changed or rejected native scientific row in these eight whole challenges.",
+    "Distance prior-generated-scope citation and de Sitter optional authored disposition required preserved deterministic representation recoveries.",
+    "Inherited incomplete earlier annotations remain limitations, never silently completed.",
+    "Axion/vector and entropy/extremality equalities remain local group candidates until authoritative global conflict gate.",
+    "One dark-energy overview route uses exact admitted scope definitions, with inherited endpoint support explicitly distinguished from newly read witness descriptions."
+  ]
+}

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {destinationPresentation,validateDisplayEditorial} from '../../lib/protocol/display-editorial.mjs';
+import {destinationPresentation,destinationPreview,validateDisplayEditorial} from '../../lib/protocol/display-editorial.mjs';
 import {renderAtlasPanel} from '../../web/atlas-panel.mjs';
 
 const examples=JSON.parse(await readFile(new URL('../../research/q025/integration/presentation-v1/examples.json',import.meta.url),'utf8'));
@@ -44,4 +44,14 @@ test('browser places workflow history outside physical assumptions in a closed d
     assert.ok(!text(scope).includes(record.displayEditorial.relocations[0].originalText));assert.ok(text(scope).includes(record.displayEditorial.readingLimit.text));
     assert.ok(all.some(node=>node.textContent===record.displayEditorial.summary.text));
   }finally{for(const [key,value]of Object.entries(previous))if(value===undefined)delete globalThis[key];else globalThis[key]=value;}
+});
+
+test('compact navigation selects the unchanged scoped question and preserves raw review history',()=>{
+  for(const record of examples.records){
+    const original=JSON.stringify(record);
+    assert.equal(destinationPreview(record).summary,record.question);
+    assert.equal(JSON.stringify(record),original);
+  }
+  assert.equal(destinationPreview({title:'Physics',summary:'Classification vocabulary',metadataOnly:true}).summary,'Classification vocabulary');
+  assert.equal(destinationPreview({title:'Exact question title',summary:'Original review history'}).summary,'Exact question title');
 });

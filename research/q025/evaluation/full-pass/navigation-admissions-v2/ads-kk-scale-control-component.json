@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [],
+  "sourceContributions": [],
+  "relations": [
+    {
+      "id": "navigation:v2:ads-kk-scale-control:pn0",
+      "source": "q025-candidate-region:30e42c20fef58dd627023a94",
+      "target": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "type": "narrower",
+      "title": "Can internal KK modes decouple from AdS curvature?",
+      "qualification": "Retain dimension, supersymmetry, quantized flux constraints and source treatment. Curvature estimates, selected spectral sectors and large bulk radii do not by themselves certify a complete KK gap or localized control.",
+      "rationale": "Selects the region's explicit geometric hierarchy/control target. The current definitions support the route; l0 records the earlier proposal without independently admitting it.",
+      "evidenceIds": [
+        "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+        "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+        "unit:e934cddef50d5f6f02086b4afe8ac459732213ee183e490f8ff42289915b405e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "parent-032f7db703bb514040cc-challenge:r",
+          "candidateId": "q025-candidate-region:30e42c20fef58dd627023a94"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:30e42c20fef58dd627023a94",
+          "targetCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "candidateId": "parent-032f7db703bb514040cc-challenge:link:7",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e934cddef50d5f6f02086b4afe8ac459732213ee183e490f8ff42289915b405e",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:ads-kk-scale-control:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "ads-kk-scale-control-navigation-proposal",
+          "ads-kk-scale-control-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The c3-to-c2 direction correctly offers a narrower question about an explicit regional target. Its title is readable, and its qualification preserves flux admissibility, source treatment and the distinction between partial diagnostics and complete spectral/localization control. Support comes from current definitions; l0 supplies historical route context only.",
+          "refs": [
+            "c3",
+            "c2",
+            "l0",
+            "u5",
+            "n15",
+            "u15",
+            "n19",
+            "u4",
+            "n20"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:ads-kk-scale-control:pn1",
+      "source": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "target": "q025-candidate-question:746588a70cd01ac07e0ef706",
+      "type": "comparison",
+      "title": "Which constructions also meet their stabilization requirements?",
+      "qualification": "Compare the specified type II, type I, heterotic and modified Freund–Rubin settings in their own dimensions. Preserve each construction's stabilized fields, source charges and coupling regime; geometric KK separation alone does not settle scalar masses or localized control.",
+      "rationale": "Offers a construction-focused continuation of the shared hierarchy question while preserving the nonidentical framework coverage and joint requirements.",
+      "evidenceIds": [
+        "unit:62084b0d512e60bfb6d61b4aef3e8f3ea6cf19f63b1d1d1548f20234b015259e",
+        "unit:c9097d30b51c77d81ef95b468fde19333ae785dc0ed19d4ec8eeeba100161de5",
+        "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-6fd2ff4266c7a7ef4bf4-challenge:p0",
+          "candidateId": "q025-candidate-question:746588a70cd01ac07e0ef706"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "targetCandidateId": "q025-candidate-question:746588a70cd01ac07e0ef706",
+          "candidateId": "parent-3ad8848c0af01da6b749-challenge:link:13",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:62084b0d512e60bfb6d61b4aef3e8f3ea6cf19f63b1d1d1548f20234b015259e",
+          "textSha256": "36408f0410d747de72e35fa9b4098abd470a4559b56b56308061996cb3be5751"
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:62084b0d512e60bfb6d61b4aef3e8f3ea6cf19f63b1d1d1548f20234b015259e",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:c9097d30b51c77d81ef95b468fde19333ae785dc0ed19d4ec8eeeba100161de5",
+          "textSha256": "58ed028998cb830021fee4de99776f7fd74273cda21f23e260a049f9ca784412"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c9097d30b51c77d81ef95b468fde19333ae785dc0ed19d4ec8eeeba100161de5",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 60,
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "textSha256": "aa2ab0f3636477155a3f147f98be4863ac8a062bbdcfcf90f69ed06d70ca61f9"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:ads-kk-scale-control:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "ads-kk-scale-control-navigation-proposal",
+          "ads-kk-scale-control-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "The comparison from c2 to c1 offers a useful construction-focused continuation without asserting containment. The destination definition supports its framework range, while the paired notes preserve joint brane-dual requirements, qualified localization and heterotic control limitations. The interrogative title does not claim these requirements have been met.",
+          "refs": [
+            "c2",
+            "c1",
+            "l1",
+            "u7",
+            "n7",
+            "u14",
+            "n8",
+            "u16",
+            "n12",
+            "n21"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:ads-kk-scale-control:pn2",
+      "source": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "target": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+      "type": "comparison",
+      "title": "Compare spectral restrictions, M-theory and KKLT candidates",
+      "qualification": "Keep c0's AdS3/4 settings and adjacent AdS2 horizon comparison distinct. A light spin-2 mode is a family-specific hierarchy diagnostic; bounds cannot be transferred across changed assumptions, and neither total volume nor a partial spectral test certifies every internal KK scale.",
+      "rationale": "Connects the physical-KK question to the overlapping hierarchy/control question with its additional candidate settings and spectral emphasis, without equating their full scopes.",
+      "evidenceIds": [
+        "unit:2c7ced13a97f845e75bfcb434755ddfb84f873b01a57c46c86773a84846caeef",
+        "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+        "unit:5c497e6fd82091d7773d87faa5b46919398f100c880cac7f0907b56688d3a775"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-04442f0e58623f0db643-challenge:p1",
+          "candidateId": "q025-candidate-question:50954f05a9d7ea3b25af096a"
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "targetCandidateId": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+          "candidateId": "parent-3ad8848c0af01da6b749-challenge:link:14",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:2c7ced13a97f845e75bfcb434755ddfb84f873b01a57c46c86773a84846caeef",
+          "textSha256": "70f6c5d61e8f7a81a5a222ef0bc1f7e38a025836b93dc0dd8d731f7370cd2cfc"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2c7ced13a97f845e75bfcb434755ddfb84f873b01a57c46c86773a84846caeef",
+          "reviewId": "leaf-04442f0e58623f0db643-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "textSha256": "94d0be0a69d2dc1b2d97ed71569d8471f565e5adc8d0307cd2347db1ea6c9f67"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:5c497e6fd82091d7773d87faa5b46919398f100c880cac7f0907b56688d3a775",
+          "textSha256": "fd1baa45e4902f159a3448c948839640e8751974b58f3f6b82b50c300d894291"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c497e6fd82091d7773d87faa5b46919398f100c880cac7f0907b56688d3a775",
+          "reviewId": "leaf-04442f0e58623f0db643-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:ads-kk-scale-control:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "ads-kk-scale-control-navigation-proposal",
+          "ads-kk-scale-control-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "The comparison from c2 to c0 is licensed by their overlapping hierarchy target and c0's explicit M-theory/KKLT and spectral coverage. Its qualification correctly preserves dimensional treatment and family-specific diagnostics without transferring bounds. Reusing those declared settings does not add individual source roles or certify their physical claims.",
+          "refs": [
+            "c2",
+            "c0",
+            "l2",
+            "u0",
+            "n3",
+            "u5",
+            "n15",
+            "u6",
+            "n2"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v2:ads-kk-scale-control:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:30e42c20fef58dd627023a94",
+        "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "86fdb46cd664d7e0f4caa2bd5e20dbec981961aeabe4acdeef3d7c20e4347d98",
+      "sourceScopeContentSha256": "347fee2f1bd0ea394bafca055d49ebaf5e2ec572becb105f85372571b2bc46cd",
+      "targetScopeContentSha256": "ab31c979113b80aa3f10cabf458a728321f6f6edcfe214864404101a2ecea357",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "ads-kk-scale-control-navigation-proposal",
+        "challengeReviewId": "ads-kk-scale-control-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "parent-032f7db703bb514040cc-challenge:r",
+          "candidateId": "q025-candidate-region:30e42c20fef58dd627023a94"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:30e42c20fef58dd627023a94",
+          "targetCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "candidateId": "parent-032f7db703bb514040cc-challenge:link:7",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e934cddef50d5f6f02086b4afe8ac459732213ee183e490f8ff42289915b405e",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:ads-kk-scale-control:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+        "q025-candidate-question:746588a70cd01ac07e0ef706"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "346d869387b8da2478b9fbfa7a2cc7195cb1e4c3f0e602dc31ffd58efad87341",
+      "sourceScopeContentSha256": "ab31c979113b80aa3f10cabf458a728321f6f6edcfe214864404101a2ecea357",
+      "targetScopeContentSha256": "47922b2514470313491350aeeb4fc0eeb32f7b7fbe3c99296b439fde67790196",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "ads-kk-scale-control-navigation-proposal",
+        "challengeReviewId": "ads-kk-scale-control-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-6fd2ff4266c7a7ef4bf4-challenge:p0",
+          "candidateId": "q025-candidate-question:746588a70cd01ac07e0ef706"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "targetCandidateId": "q025-candidate-question:746588a70cd01ac07e0ef706",
+          "candidateId": "parent-3ad8848c0af01da6b749-challenge:link:13",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:62084b0d512e60bfb6d61b4aef3e8f3ea6cf19f63b1d1d1548f20234b015259e",
+          "textSha256": "36408f0410d747de72e35fa9b4098abd470a4559b56b56308061996cb3be5751"
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:62084b0d512e60bfb6d61b4aef3e8f3ea6cf19f63b1d1d1548f20234b015259e",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:c9097d30b51c77d81ef95b468fde19333ae785dc0ed19d4ec8eeeba100161de5",
+          "textSha256": "58ed028998cb830021fee4de99776f7fd74273cda21f23e260a049f9ca784412"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c9097d30b51c77d81ef95b468fde19333ae785dc0ed19d4ec8eeeba100161de5",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 60,
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "textSha256": "aa2ab0f3636477155a3f147f98be4863ac8a062bbdcfcf90f69ed06d70ca61f9"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:ads-kk-scale-control:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+        "q025-candidate-question:50954f05a9d7ea3b25af096a"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "42c7f9c15245619dbf5f4cdfe106c039e2c4dc2973cba24807414f6ab8c921e8",
+      "sourceScopeContentSha256": "ab31c979113b80aa3f10cabf458a728321f6f6edcfe214864404101a2ecea357",
+      "targetScopeContentSha256": "6a7480f93c9a29effcd94e0d1ea3a90266d3fecf4d602a59ce1a378c1058f022",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "ads-kk-scale-control-navigation-proposal",
+        "challengeReviewId": "ads-kk-scale-control-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-04442f0e58623f0db643-challenge:p1",
+          "candidateId": "q025-candidate-question:50954f05a9d7ea3b25af096a"
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "targetCandidateId": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+          "candidateId": "parent-3ad8848c0af01da6b749-challenge:link:14",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:2c7ced13a97f845e75bfcb434755ddfb84f873b01a57c46c86773a84846caeef",
+          "textSha256": "70f6c5d61e8f7a81a5a222ef0bc1f7e38a025836b93dc0dd8d731f7370cd2cfc"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2c7ced13a97f845e75bfcb434755ddfb84f873b01a57c46c86773a84846caeef",
+          "reviewId": "leaf-04442f0e58623f0db643-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "textSha256": "94d0be0a69d2dc1b2d97ed71569d8471f565e5adc8d0307cd2347db1ea6c9f67"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:5c497e6fd82091d7773d87faa5b46919398f100c880cac7f0907b56688d3a775",
+          "textSha256": "fd1baa45e4902f159a3448c948839640e8751974b58f3f6b82b50c300d894291"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c497e6fd82091d7773d87faa5b46919398f100c880cac7f0907b56688d3a775",
+          "reviewId": "leaf-04442f0e58623f0db643-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "ads-kk-scale-control-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/ads-kk-scale-control-proposal/reply.json",
+      "sha256": "e806794d9ad309b623b73fd8e6a12092f649f7ef185f6d62703abbfb243e9d08",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/ads-kk-scale-control-proposal/receipt.json",
+      "receiptSha256": "c1717be250635e3fce299a2fbd1c8847139e6d2866aac33a3fa58035eeb27a55",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/ads-kk-scale-control-proposal/normalization.json",
+        "sha256": "2286602ea8aeb37016993485f85eebd9e1b259f3406dac251718c03fcec7588d"
+      }
+    },
+    {
+      "id": "ads-kk-scale-control-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/ads-kk-scale-control-challenge/reply.json",
+      "sha256": "45ee3f13338056154d8e15a86a750b02ec226c59642467c2d6810692cec7ddce",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/ads-kk-scale-control-challenge/receipt.json",
+      "receiptSha256": "27a6c8f5a1f02ca315b3091bad7dc9450d55088eb691d8a459d2c86c38744513",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/ads-kk-scale-control-challenge/normalization.json",
+        "sha256": "f181f8e797d3829571a29d42b8926c34b627677e5c816735533b96986218bb2e"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v2:ads-kk-scale-control:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "common_target",
+        "members": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "c0 explicitly includes M-theory and KKLT-type descriptions, emphasizes AdS3/4, and treats AdS2 horizons as adjacent comparisons.",
+          "c1 emphasizes constructions with source-specific stabilization requirements, includes type I and modified Freund–Rubin dual pairs, and permits explicitly connected no-scale construction context.",
+          "c2 covers supplied AdS2–AdS6 examples and emphasizes physical KK diagnostics, admissible flux scaling and restricted obstructions.",
+          "The actual lightest KK mass, spin-2 tests, test-scalar asymptotics, average internal radii and modulus masses remain distinct diagnostics or targets."
+        ],
+        "reason": "The definitions share the controlled parametric internal-KK/AdS target; u4 supplies a concrete common witness with attribution to all three. Reuse c2 for that shared component without declaring complete scope equivalence or containment of c0 and c1 in c2. Their exact definitions, reading limits and existing contributions remain intact. Construction claims, restrictions and control tests are not thereby equivalent physical statements.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2",
+          "u4",
+          "n5",
+          "n11",
+          "n20",
+          "n3",
+          "n15",
+          "n18",
+          "n19",
+          "n21"
+        ]
+      },
+      "nativeOperationValueSha256": "bb8de2150ca5ac0ae7b7e990ebaa277d64dae31933f01734118abe5b687f275f",
+      "members": [
+        "q025-candidate-question:50954f05a9d7ea3b25af096a",
+        "q025-candidate-question:746588a70cd01ac07e0ef706",
+        "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+      ],
+      "target": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete definitions share the controlled parametric internal-KK/AdS target, and u4 has separately mapped contributions to all three. The decision correctly distinguishes common-target reuse from equivalence or containment and preserves the real differences in systems, dimensions, stabilization and spectral diagnostics. No replacement definition or source-role transfer is needed.",
+        "refs": [
+          "c0",
+          "c1",
+          "c2",
+          "u4",
+          "n5",
+          "n11",
+          "n20",
+          "n3",
+          "n15",
+          "n18",
+          "n19",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-04442f0e58623f0db643-challenge:p1",
+          "candidateId": "q025-candidate-question:50954f05a9d7ea3b25af096a"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-6fd2ff4266c7a7ef4bf4-challenge:p0",
+          "candidateId": "q025-candidate-question:746588a70cd01ac07e0ef706"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "u4",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+          "textSha256": "8579808dd6cce4883f7cbcb6afe2aa072aed6dcbeb55ffecfe0084bfe2548cc6"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+          "reviewId": "leaf-04442f0e58623f0db643-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+          "reviewId": "leaf-6fd2ff4266c7a7ef4bf4-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:564c546addbcc07be350f269ec6d26357d0c88dd4934dd009b1f575475bb7381",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2c7ced13a97f845e75bfcb434755ddfb84f873b01a57c46c86773a84846caeef",
+          "reviewId": "leaf-04442f0e58623f0db643-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:566bab49279fecec97511945784f722b340083e352ab4abb2d198fdccce98d3a",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a7213e005778086953020c257c8c1837c29119e74e61917ab2ed5ebf1be86e63",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:e934cddef50d5f6f02086b4afe8ac459732213ee183e490f8ff42289915b405e",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f83165e390c51b48339b7b864228eb70d8177255a25415de24ed228e74fa17c0",
+          "reviewId": "leaf-ea65aa3aa0acd8b2e111-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:ads-kk-scale-control:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "specializes",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c2 asks specifically about controlled geometric KK/AdS separation.",
+          "c3 also includes vacuum classification, effective actions, scalar spectra, stability and decay questions under their own assumptions."
+        ],
+        "reason": "Geometric KK hierarchy and approximation control are explicit targets within c3. The complete current definitions support this narrower relation independently of the historical routing proposal. Region membership does not make gauging classification or bubble suppression evidence for a KK hierarchy, and does not admit unsupplied child revisions.",
+        "refs": [
+          "c2",
+          "c3",
+          "l0",
+          "u1",
+          "n24",
+          "u3",
+          "n23"
+        ]
+      },
+      "nativeOperationValueSha256": "269f893637ab96ce18cc4c1d3d698d7fc2c3ae345adc5edb3d2e420bc7c03714",
+      "members": [
+        "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+        "q025-candidate-region:30e42c20fef58dd627023a94"
+      ],
+      "target": "q025-candidate-region:30e42c20fef58dd627023a94",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The definitions directly support c2 as narrower than c3: geometric KK hierarchy and approximation control are explicit regional targets. Members are correctly ordered narrower then broader, with c3 as target. The qualification against inferring hierarchy from gauging or bubble questions is supported by their distinct descriptions.",
+        "refs": [
+          "c2",
+          "c3",
+          "l0",
+          "u3",
+          "n23",
+          "u1",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-ea65aa3aa0acd8b2e111-challenge:p0",
+          "candidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "parent-032f7db703bb514040cc-challenge:r",
+          "candidateId": "q025-candidate-region:30e42c20fef58dd627023a94"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:30e42c20fef58dd627023a94",
+          "targetCandidateId": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+          "candidateId": "parent-032f7db703bb514040cc-challenge:link:7",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:2df68cc360d9803367e006001b21a7bff4856ea790d4dd173a8196c7644cfe59",
+          "textSha256": "3b6364063001b2b7fb2292609be1032016003e582e8e654660c55953992b46de"
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2df68cc360d9803367e006001b21a7bff4856ea790d4dd173a8196c7644cfe59",
+          "reviewId": "parent-032f7db703bb514040cc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:45ef74aceef210d62a6384e200f077d1cdabaf7e7f313293da00366634d068e2",
+          "textSha256": "49bbbe6b90232be1a16fd4f899d67644df6654e2c0a0788f8a55886eaa61ef10"
+        },
+        {
+          "localRef": "n23",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:45ef74aceef210d62a6384e200f077d1cdabaf7e7f313293da00366634d068e2",
+          "reviewId": "parent-032f7db703bb514040cc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+        "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+      "right": "q025-candidate-question:746588a70cd01ac07e0ef706",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "They share the hierarchy/control target, including the IIB AdS3 witness, but differ in system coverage, dimensional treatment and stabilization requirements. Neither full equivalence nor full containment is established.",
+        "refs": [
+          "c0",
+          "c1",
+          "u4",
+          "n5",
+          "n11",
+          "n7",
+          "n10"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+      "right": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Reuse c2 for their common geometric target while preserving c0's M-theory/KKLT context and adjacent AdS2 treatment, and c2's wider stated dimensional range. Spin-2 and test-scalar witnesses do not establish interchangeable spectral claims.",
+        "refs": [
+          "c0",
+          "c2",
+          "u4",
+          "n5",
+          "n20",
+          "u0",
+          "n3",
+          "u5",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:746588a70cd01ac07e0ef706",
+      "right": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Shared IIB, heterotic and AdS2 construction witnesses support common-target organization. c1's framework and stabilization requirements and c2's dimensional and diagnostic coverage prevent full-scope equivalence or an established subset relation.",
+        "refs": [
+          "c1",
+          "c2",
+          "u4",
+          "n11",
+          "n20",
+          "u16",
+          "n12",
+          "n21",
+          "u15",
+          "n14",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "right": "q025-candidate-region:30e42c20fef58dd627023a94",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "The geometric hierarchy/control question is explicitly contained within the broader compactification region; the region's other targets remain separate.",
+        "refs": [
+          "c2",
+          "c3",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+      "right": "q025-candidate-question:746588a70cd01ac07e0ef706",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "The controlled parametric KK/AdS target and IIB AdS3 witness overlap. However, c0 retains M-theory/KKLT settings and adjacent AdS2 horizons, while c1 includes type I, heterotic and modified Freund–Rubin constructions with source-specific stabilization requirements. Neither equivalence nor full containment follows.",
+        "refs": [
+          "c0",
+          "c1",
+          "u4",
+          "n5",
+          "n11",
+          "u7",
+          "n7"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+      "right": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Their common geometric hierarchy target supports reuse of c2 without merging definitions. c0's candidate settings and dimensional treatment differ from c2's supplied AdS2–AdS6 coverage. Spin-2 tests, test-scalar asymptotics and complete KK spectra remain distinct.",
+        "refs": [
+          "c0",
+          "c2",
+          "u4",
+          "n5",
+          "n20",
+          "u0",
+          "n3",
+          "u5",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:746588a70cd01ac07e0ef706",
+      "right": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Shared IIB, heterotic and AdS2 witnesses establish a common hierarchy question. c1's construction frameworks and stabilization requirements do not coincide with c2's dimensional range and physical-KK diagnostics. The packet establishes neither complete equivalence nor a subset relation.",
+        "refs": [
+          "c1",
+          "c2",
+          "u4",
+          "n11",
+          "n20",
+          "u16",
+          "n12",
+          "n21",
+          "u15",
+          "n14",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+      "right": "q025-candidate-region:30e42c20fef58dd627023a94",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "Controlled geometric KK/AdS separation is an explicit target within c3's broader compactification region. Other regional targets, including gauging classification and bubble suppression, remain separate questions.",
+        "refs": [
+          "c2",
+          "c3",
+          "l0",
+          "u3",
+          "n23",
+          "u1",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "ads-kk-scale-control-navigation-proposal",
+        "ads-kk-scale-control-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:50954f05a9d7ea3b25af096a",
+    "c1": "q025-candidate-question:746588a70cd01ac07e0ef706",
+    "c2": "q025-candidate-question:1f9b1d5cdab35624dd6346e3",
+    "c3": "q025-candidate-region:30e42c20fef58dd627023a94"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/ads-kk-scale-control-admission.json",
+    "sha256": "47fdbfd282713109c920dc5e142b9c1e74dc3abd26fcf389bac0d38a90697d7b"
+  },
+  "compoundAnnotations": [],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

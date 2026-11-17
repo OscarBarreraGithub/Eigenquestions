@@ -1,0 +1,3169 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [],
+  "sourceContributions": [
+    {
+      "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+      "destinationId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The torsion/flux prepotential and possible four-dimensional reduction facets address encoding and reduction justification. Full ten-dimensional organization remains a separate internal target; eight selected supercharges do not impose N=1 orientifold scope, and gauge-invariance constraints do not certify a universal consistent truncation. Independent confirmation: u16's geometry, prepotential and possible-reduction targets directly address c3's encoding-and-justification question. This confirms the new destination by comparing the description with c3, not by transferring the c0 or c2 attribution. The separate ten-dimensional target, selected supersymmetry and consistency limitations are preserved.",
+      "evidenceRefs": [
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67",
+          "paperId": "hep-th/0505264"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:role:0"
+    },
+    {
+      "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+      "destinationId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The supplied review description spans flux geometry, effective potentials, stabilization, corrections and vacuum statistics. This supports the region's announced coverage; proposed de Sitter coverage does not establish a verified construction. Independent confirmation: u7 directly spans c5's flux geometry, effective potentials, stabilization, corrections and statistical questions. The role is supported as announced review coverage; neither the description nor the inherited abstract assessment verifies a proposed de Sitter construction.",
+      "evidenceRefs": [
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523",
+          "paperId": "hep-th/0509003"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:role:1"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn0",
+      "source": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "target": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "type": "narrower",
+      "title": "Encode compactification data in actions and flux dictionaries",
+      "qualification": "Follow the effective-dynamics branch across the target's stated dimensions and supersymmetries. Formal encodings and reliable finite light-field reductions remain distinct.",
+      "rationale": "The region explicitly includes effective actions and consistency; c3 supplies the existing focused question.",
+      "evidenceIds": [
+        "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+        "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+          "targetCandidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:6",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The broader-to-narrower direction is correct: c5's effective-dynamics branch leads to c3. The title describes the destination, and the qualification preserves dimensions, supersymmetries and the distinction between formal encodings and reliable finite reductions.",
+          "refs": [
+            "c5",
+            "c3",
+            "l0",
+            "u7",
+            "n29",
+            "u14",
+            "n25"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn1",
+      "source": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "target": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "type": "narrower",
+      "title": "Determine retained-field couplings and flux potentials",
+      "qualification": "Keep the stated field content, open-string sectors, form-field formulations and dimensional regimes explicit, including the distinct six-dimensional N=(1,1) branch. An action or potential does not establish vacuum stability or string realization.",
+      "rationale": "c2 develops the action-and-supergravity-data branch of c3 while retaining the scope distinctions identified by the comparison candidate.",
+      "evidenceIds": [
+        "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+        "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8cbd232bf6adad063a61-challenge:p2",
+          "candidateId": "q025-candidate-question:98ed3765c22addab01ecc561"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "targetCandidateId": "q025-candidate-question:98ed3765c22addab01ecc561",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:16",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+          "textSha256": "9b77f2edc1fc291e87c0f2b4078d68a615ad9c68cfd00ae5fb0adf1f2eaa9f3c"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67"
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "c3 can organize c2's detailed action-and-supergravity-data branch. The route explicitly retains open-string sectors, form formulations and the distinct six-dimensional regime, and does not infer stability or realization from a potential. Its narrower type is justified by the definitions rather than inherited from l1.",
+          "refs": [
+            "c3",
+            "c2",
+            "l1",
+            "u8",
+            "n20",
+            "u16",
+            "n21"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn2",
+      "source": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "target": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "type": "narrower",
+      "title": "Derive reductions and test higher-dimensional origins",
+      "qualification": "Separate effective-action derivation, necessary origin tests, algebraic compatibility and explicit consistent truncations. Massive-mode retention does not by itself establish low-energy completeness or controlled phenomenology.",
+      "rationale": "c0 isolates the reduction-and-realization branch already distinguished within c4.",
+      "evidenceIds": [
+        "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+        "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p3",
+          "candidateId": "q025-candidate-question:2ad902d8305bb29bbade4879"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:2ad902d8305bb29bbade4879",
+          "targetCandidateId": "q025-candidate-question:11fac3e3216724977778f4e2",
+          "candidateId": "parent-51a62d0da6201c295801-challenge:link:19",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "textSha256": "69e087f5946c2b8427f403882564e2ecf907dfe184c7b68fa579843c33370888"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "textSha256": "e8ec3115be3c89d2a146767159855bae9b1142fe39ddf3d3f3e513dc23a14b54"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "The route correctly runs from broad construction and interpretation to reduction and origin questions. Its qualification preserves necessary versus sufficient tests and prevents massive-mode truncations from acquiring an automatic low-energy or phenomenological interpretation.",
+          "refs": [
+            "c4",
+            "c0",
+            "l2",
+            "u1",
+            "n3",
+            "u19",
+            "n6"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn3",
+      "source": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "target": "q025-candidate-question:e356a66ea835237726bb7474",
+      "type": "narrower",
+      "title": "Which finite reductions are consistent, and what can they retain?",
+      "qualification": "Check nonlinear consistency, retained modes, source content and global identifications under the chosen construction's hypotheses. AdS5 matter bounds remain classification-specific; necessary origin tests are not sufficient uplift criteria.",
+      "rationale": "c1 provides the focused consistency-and-realization question within c0's broader treatment of reductions.",
+      "evidenceIds": [
+        "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+        "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+        "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "textSha256": "5cb1191011ab6fd36d5ea02f10fc67361fa9431b7da367ed215c4753699f8c20"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "textSha256": "2ac335610e97a904d3abfd53398753a6ffd75ae57ab040ae4444307bb778af93"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "textSha256": "69e087f5946c2b8427f403882564e2ecf907dfe184c7b68fa579843c33370888"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "The broader reduction question leads correctly to finite consistency and retained content. Source/global conditions and the classification-specific nature of AdS5 matter bounds remain explicit; the route does not turn necessary origin conditions into sufficient constructions.",
+          "refs": [
+            "c0",
+            "c1",
+            "u22",
+            "n4",
+            "n12",
+            "u9",
+            "n11",
+            "u1",
+            "n3"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn4",
+      "source": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "target": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "type": "comparison",
+      "title": "Compare higher-dimensional origins with effective-theory encodings",
+      "qualification": "Compare reduction constructions and origin tests with actions, gauging maps and formal supersymmetry descriptions. A common encoding need not supply a reliable finite spectrum or an uplift.",
+      "rationale": "The overlapping questions offer complementary next steps while retaining their different targets and premises.",
+      "evidenceIds": [
+        "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+        "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+        "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6",
+          "textSha256": "e45a4fb7690738377b18c72a6a6dbcdce65384304b6a727eff389be25e52f497"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "The directed comparison offers a useful move from higher-dimensional origins to effective encodings. Its qualification preserves the difference between common descriptions, reliable finite spectra and actual uplifts without asserting a new physical implication.",
+          "refs": [
+            "c0",
+            "c3",
+            "u16",
+            "n5",
+            "u14",
+            "n25",
+            "u20",
+            "n2"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn5",
+      "source": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "target": "q025-candidate-question:e356a66ea835237726bb7474",
+      "type": "premise_check",
+      "title": "Does the encoding define a consistent higher-dimensional reduction?",
+      "qualification": "Use this check when a formal encoding or dictionary is claimed to define a finite consistent reduction or an uplift of its solutions. Formal supersymmetry data alone need not make that claim; consistency, low-energy completeness and source/global realization require separate assessments.",
+      "rationale": "c3 explicitly asks when reductions are justified, and c1 supplies the existing consistency question needed for that conditional interpretation.",
+      "evidenceIds": [
+        "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+        "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+        "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "textSha256": "2ac335610e97a904d3abfd53398753a6ffd75ae57ab040ae4444307bb778af93"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u21",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "textSha256": "f60e84a04f6905f0df48256207006290587c9005f905f721e33e3d6d03ac165c"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn5",
+      "provenance": {
+        "nativeRouteId": "pn5",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn5",
+          "verdict": "supported_as_written",
+          "reason": "The premise-check direction is correct: a c3 interpretation claiming a finite consistent reduction leads to c1's consistency inquiry. The explicit condition keeps formal supersymmetry descriptions eligible without that claim and separates consistency from completeness and global/source realization.",
+          "refs": [
+            "c3",
+            "c1",
+            "u14",
+            "n25",
+            "u9",
+            "n11",
+            "u21",
+            "n8"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:consistent-reductions-and-actions:pn6",
+      "source": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "target": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "type": "related_question",
+      "title": "Explore compactification vacua, control and phenomenology",
+      "qualification": "Extend the inquiry to construction and physical interpretation, including source-specific supersymmetry breaking. No common flux content, control regime, stabilization mechanism or vacuum measure is implied.",
+      "rationale": "The region's application directions connect to c4's existing broad construction and interpretation question without asserting containment.",
+      "evidenceIds": [
+        "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+        "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+        "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p3",
+          "candidateId": "q025-candidate-question:2ad902d8305bb29bbade4879"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "textSha256": "397bd92a19f6ffc07d495b938882bf6b2a0a540a8ef9a1d477a9eaa374446662"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc",
+          "textSha256": "7c2695941d09d141c01dcf5aa3c05d963aad9bdbad4efd7c678f8553fd5290ad"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:consistent-reductions-and-actions:route:pn6",
+      "provenance": {
+        "nativeRouteId": "pn6",
+        "sourceReviewIds": [
+          "consistent-reductions-and-actions-navigation-proposal",
+          "consistent-reductions-and-actions-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn6",
+          "verdict": "supported_as_written",
+          "reason": "The related-question arc connects the region to concrete construction, control and phenomenological questions. Its title and qualification support this outgoing choice without asserting containment, a universal stabilization mechanism or a common measure.",
+          "refs": [
+            "c5",
+            "c4",
+            "u7",
+            "n29",
+            "u11",
+            "n15",
+            "u13",
+            "n13"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67",
+          "paperId": "hep-th/0505264"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u16",
+        "questionRef": "c3",
+        "role": "addresses",
+        "reason": "The torsion/flux prepotential and possible four-dimensional reduction facets address encoding and reduction justification. Full ten-dimensional organization remains a separate internal target; eight selected supercharges do not impose N=1 orientifold scope, and gauge-invariance constraints do not certify a universal consistent truncation.",
+        "refs": [
+          "u16",
+          "n5",
+          "n21",
+          "c3"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "u16's geometry, prepotential and possible-reduction targets directly address c3's encoding-and-justification question. This confirms the new destination by comparing the description with c3, not by transferring the c0 or c2 attribution. The separate ten-dimensional target, selected supersymmetry and consistency limitations are preserved.",
+        "refs": [
+          "u16",
+          "c3",
+          "n5",
+          "n21"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        }
+      ],
+      "scopeContentSha256": "4e19a9237cd58f90eb66c1567ecf47f5f7ffd98597bc1b85abf88910accda59b",
+      "contributionContentSha256": "605c6c857d0c558d1f8bc23f75e7f1f942c1fae2be6638e6bb07a3471f86fc9e",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:role:1",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+        "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523",
+          "paperId": "hep-th/0509003"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u7",
+        "questionRef": "c5",
+        "role": "addresses",
+        "reason": "The supplied review description spans flux geometry, effective potentials, stabilization, corrections and vacuum statistics. This supports the region's announced coverage; proposed de Sitter coverage does not establish a verified construction.",
+        "refs": [
+          "u7",
+          "n29",
+          "c5"
+        ]
+      },
+      "independentAssessment": {
+        "index": 1,
+        "verdict": "supported_as_written",
+        "reason": "u7 directly spans c5's flux geometry, effective potentials, stabilization, corrections and statistical questions. The role is supported as announced review coverage; neither the description nor the inherited abstract assessment verifies a proposed de Sitter construction.",
+        "refs": [
+          "u7",
+          "c5",
+          "n29"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        }
+      ],
+      "scopeContentSha256": "7acdaa5f19d4934ab89870fd38b7d1346da914c4cf053fb2251023a05da19cd5",
+      "contributionContentSha256": "286eef739d7ea803e9639e451f5eda8d4e3d1c58b3fa7be93d6b0f7fd8fba916",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "0906f8b181dd37be6b38c8c7293c10982f3f0ae55ff3ffb0f0653eb1a660325e",
+      "sourceScopeContentSha256": "7acdaa5f19d4934ab89870fd38b7d1346da914c4cf053fb2251023a05da19cd5",
+      "targetScopeContentSha256": "4e19a9237cd58f90eb66c1567ecf47f5f7ffd98597bc1b85abf88910accda59b",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+          "targetCandidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:6",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+        "q025-candidate-question:98ed3765c22addab01ecc561"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "2824325fd8c33cbc966eaa339247474bed05504ad3380daf967b139b4e648b81",
+      "sourceScopeContentSha256": "4e19a9237cd58f90eb66c1567ecf47f5f7ffd98597bc1b85abf88910accda59b",
+      "targetScopeContentSha256": "9543b65d9a1439deaa78ae876a65c9f9dcd74a6e37a37f015b1e694b4c56ad28",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8cbd232bf6adad063a61-challenge:p2",
+          "candidateId": "q025-candidate-question:98ed3765c22addab01ecc561"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "targetCandidateId": "q025-candidate-question:98ed3765c22addab01ecc561",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:16",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+          "textSha256": "9b77f2edc1fc291e87c0f2b4078d68a615ad9c68cfd00ae5fb0adf1f2eaa9f3c"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67"
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:2ad902d8305bb29bbade4879",
+        "q025-candidate-question:11fac3e3216724977778f4e2"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "dc0edc79f462002ed7d425edd68a93f7e7407d21d0ff2143f495cc87551037d3",
+      "sourceScopeContentSha256": "34ee02e46df75f341a05b8f9ff94fa07ef9337aa4cb3490f572270b5ef329fd2",
+      "targetScopeContentSha256": "d8a362309cb60e2161e79312c5029214700426d3561031aef6b71ee7cdf3743c",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p3",
+          "candidateId": "q025-candidate-question:2ad902d8305bb29bbade4879"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:2ad902d8305bb29bbade4879",
+          "targetCandidateId": "q025-candidate-question:11fac3e3216724977778f4e2",
+          "candidateId": "parent-51a62d0da6201c295801-challenge:link:19",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "textSha256": "69e087f5946c2b8427f403882564e2ecf907dfe184c7b68fa579843c33370888"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "textSha256": "e8ec3115be3c89d2a146767159855bae9b1142fe39ddf3d3f3e513dc23a14b54"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:11fac3e3216724977778f4e2",
+        "q025-candidate-question:e356a66ea835237726bb7474"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "381fa9269f291f7a7b546adf088de1b5e97c8720f3f31dffb4c9fd85f95829fe",
+      "sourceScopeContentSha256": "d8a362309cb60e2161e79312c5029214700426d3561031aef6b71ee7cdf3743c",
+      "targetScopeContentSha256": "c5b23ca2b5de4041591e0e32909f8aaaffc767201b4076264d56789e51b3e64e",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "textSha256": "5cb1191011ab6fd36d5ea02f10fc67361fa9431b7da367ed215c4753699f8c20"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "textSha256": "2ac335610e97a904d3abfd53398753a6ffd75ae57ab040ae4444307bb778af93"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "textSha256": "69e087f5946c2b8427f403882564e2ecf907dfe184c7b68fa579843c33370888"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:11fac3e3216724977778f4e2",
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "e9e4b09b3e521e7a24821ab18d9f3b079de47ab1b357779aaff27c005475d30b",
+      "sourceScopeContentSha256": "d8a362309cb60e2161e79312c5029214700426d3561031aef6b71ee7cdf3743c",
+      "targetScopeContentSha256": "4e19a9237cd58f90eb66c1567ecf47f5f7ffd98597bc1b85abf88910accda59b",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6",
+          "textSha256": "e45a4fb7690738377b18c72a6a6dbcdce65384304b6a727eff389be25e52f497"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn5",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+        "q025-candidate-question:e356a66ea835237726bb7474"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "premise_check",
+      "navigationContentSha256": "42517608eac55b726ecd42f439d82a72cea808c6fa75ade19e83badad46e7d93",
+      "sourceScopeContentSha256": "4e19a9237cd58f90eb66c1567ecf47f5f7ffd98597bc1b85abf88910accda59b",
+      "targetScopeContentSha256": "c5b23ca2b5de4041591e0e32909f8aaaffc767201b4076264d56789e51b3e64e",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "textSha256": "2ac335610e97a904d3abfd53398753a6ffd75ae57ab040ae4444307bb778af93"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u21",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "textSha256": "f60e84a04f6905f0df48256207006290587c9005f905f721e33e3d6d03ac165c"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:consistent-reductions-and-actions:route:pn6",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+        "q025-candidate-question:2ad902d8305bb29bbade4879"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "130614b555b24be881c4fd112cc4524140e6d77fa30fa2e01c2779dcecc5d26a",
+      "sourceScopeContentSha256": "7acdaa5f19d4934ab89870fd38b7d1346da914c4cf053fb2251023a05da19cd5",
+      "targetScopeContentSha256": "34ee02e46df75f341a05b8f9ff94fa07ef9337aa4cb3490f572270b5ef329fd2",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "consistent-reductions-and-actions-navigation-proposal",
+        "challengeReviewId": "consistent-reductions-and-actions-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p3",
+          "candidateId": "q025-candidate-question:2ad902d8305bb29bbade4879"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "textSha256": "397bd92a19f6ffc07d495b938882bf6b2a0a540a8ef9a1d477a9eaa374446662"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc",
+          "textSha256": "7c2695941d09d141c01dcf5aa3c05d963aad9bdbad4efd7c678f8553fd5290ad"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "consistent-reductions-and-actions-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-proposal/reply.json",
+      "sha256": "b77c4ef661f9a1a7d574d2fbb172f8a99f8fc6c43b9acee51ec5346ad00b3e50",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-proposal/receipt.json",
+      "receiptSha256": "ee11ed8b3a60d802479ebbe83d943556bd81b5fcbe7d3fdfe672427c383bc76a",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-proposal/normalization.json",
+        "sha256": "1464143516896159a2980afc2aebaccf1c46491277c353b4583035a382c9d444"
+      }
+    },
+    {
+      "id": "consistent-reductions-and-actions-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/reply.json",
+      "sha256": "3ced6e2b7032a54329b9bc2ce8cd88f6016c8970b462feb13a2497d5778128e4",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/receipt.json",
+      "receiptSha256": "72ee5195d8d9aff654ffed6f7f08405b38f5badf8284506e6ed4943fe5fb5196",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/consistent-reductions-and-actions-challenge/normalization.json",
+        "sha256": "bc8c1fd3db520471e96e0116c960e85f14d2a29f4e5d9c839cc36beeac5e7ae9"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "specializes",
+        "members": [
+          "c1",
+          "c0"
+        ],
+        "target": "c0",
+        "definingDifferences": [
+          "c0 includes effective-action derivation and necessary or algebraic origin tests.",
+          "c1 concentrates on consistency of finite reductions, retained modes, nonlinear ansätze and source/global realization."
+        ],
+        "reason": "The consistency-and-realization question is a narrower branch of c0's reduction-and-origin question. Shared AdS5 and tri-Sasakian witnesses support that organization, while the circle-origin witness preserves c0's necessary-condition branch. Both exact definitions and reading limits remain unchanged.",
+        "refs": [
+          "c0",
+          "c1",
+          "u1",
+          "n3",
+          "u19",
+          "n6",
+          "n10",
+          "u22",
+          "n4",
+          "n12",
+          "u9",
+          "n11"
+        ]
+      },
+      "nativeOperationValueSha256": "6f5b3479a30a4d4b2d7ae033c97a3d2b34fe3ebcb7472ee83ddebf85792f5d99",
+      "members": [
+        "q025-candidate-question:e356a66ea835237726bb7474",
+        "q025-candidate-question:11fac3e3216724977778f4e2"
+      ],
+      "target": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c0 explicitly combines effective derivation, necessary tests, algebraic lists and consistent constructions; c1 focuses on the consistency-and-realization branch. Shared truncation witnesses support this organization without making their hypotheses universal or transferring source assignments.",
+        "refs": [
+          "c0",
+          "c1",
+          "u1",
+          "n3",
+          "u19",
+          "n6",
+          "n10",
+          "u22",
+          "n4",
+          "n12"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "textSha256": "69e087f5946c2b8427f403882564e2ecf907dfe184c7b68fa579843c33370888"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "textSha256": "e8ec3115be3c89d2a146767159855bae9b1142fe39ddf3d3f3e513dc23a14b54"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n10",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "textSha256": "5cb1191011ab6fd36d5ea02f10fc67361fa9431b7da367ed215c4753699f8c20"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:f01689b48c8df9f02a33b4e18d1a83b973c07aebdd7af5adf05ed8f0216ebcd3",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "textSha256": "2ac335610e97a904d3abfd53398753a6ffd75ae57ab040ae4444307bb778af93"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "common_target",
+        "members": [
+          "c0",
+          "c2"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c0 also asks which reductions and higher-dimensional realizations exist.",
+          "c2 emphasizes retained-field potentials, coordinates, kinetic functions, auxiliary fields and flux dictionaries."
+        ],
+        "reason": "Reuse c3 for their shared action-and-encoding facet. The torsionful type-II witness connects couplings and possible reductions while retaining full ten-dimensional organization as a separate internal target. This common destination neither merges c0 with c2 nor transfers their complete source assignments.",
+        "refs": [
+          "c0",
+          "c2",
+          "c3",
+          "u16",
+          "n5",
+          "n21"
+        ]
+      },
+      "nativeOperationValueSha256": "85d340f8e49d81c1268fd6124653ce0629758b3bb1b1659d048b3210e53e56c7",
+      "members": [
+        "q025-candidate-question:11fac3e3216724977778f4e2",
+        "q025-candidate-question:98ed3765c22addab01ecc561"
+      ],
+      "target": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c3 explicitly covers actions, flux-to-gauging maps and reduction justification, making it a suitable existing destination for the shared facet. u16 connects couplings and possible reductions, while its ten-dimensional organization remains distinct. This supports common-target organization, not full-scope equivalence.",
+        "refs": [
+          "c0",
+          "c2",
+          "c3",
+          "u16",
+          "n5",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8cbd232bf6adad063a61-challenge:p2",
+          "candidateId": "q025-candidate-question:98ed3765c22addab01ecc561"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "comparison",
+        "members": [
+          "c0",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c0 foregrounds theories obtained by reductions and tests or constructions of higher-dimensional origins.",
+          "c3 also admits formal supersymmetry encodings before a reliable finite light-field description is identified."
+        ],
+        "reason": "The questions overlap on reduced actions and reduction justification, but their complete targets are not interchangeable. Compare construction and origin tests with encoding and dictionary justification; the packet does not establish a common sufficiency criterion.",
+        "refs": [
+          "c0",
+          "c3",
+          "u1",
+          "n3",
+          "u20",
+          "n2",
+          "u14",
+          "n25"
+        ]
+      },
+      "nativeOperationValueSha256": "9d607ac2013da3c2c0fdece9f24ff61493745254c0245717a54d4d4e9b2c0eee",
+      "members": [
+        "q025-candidate-question:11fac3e3216724977778f4e2",
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+      ],
+      "target": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The exact definitions support a comparison between reduction/origin questions and encoding/justification questions. u14 preserves formal supersymmetry descriptions before a reliable finite light-field basis, while u1 preserves necessary origin tests. No shared sufficiency criterion follows.",
+        "refs": [
+          "c0",
+          "c3",
+          "u14",
+          "n25",
+          "u1",
+          "n3"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 4,
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "textSha256": "69e087f5946c2b8427f403882564e2ecf907dfe184c7b68fa579843c33370888"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:21566519271e2447b13403d6db9c7cfba8d467ae5799e6ce96711b660fdbba79",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6",
+          "textSha256": "e45a4fb7690738377b18c72a6a6dbcdce65384304b6a727eff389be25e52f497"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c349479bfe7c4fcd2c135b9110efc8ecf1fb3c8439eb5c139414136a8e6907a6",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "specializes",
+        "members": [
+          "c0",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c0 isolates reduction, truncation and higher-dimensional realization.",
+          "c4 additionally covers vacuum construction, stabilization, control and phenomenological interpretation."
+        ],
+        "reason": "c4 explicitly separates reduction, consistency and solution lifting within its broader effective-physics question. c0 supplies that branch without making consistency a guarantee of low-energy completeness or controlled phenomenology.",
+        "refs": [
+          "c0",
+          "c4",
+          "l2",
+          "u11",
+          "n15",
+          "u2",
+          "n1",
+          "u19",
+          "n6"
+        ]
+      },
+      "nativeOperationValueSha256": "ea66367c1c512c4c6886e9536b86aa1983a2915726d3b9bb4dcb1cab62df9c2c",
+      "members": [
+        "q025-candidate-question:11fac3e3216724977778f4e2",
+        "q025-candidate-question:2ad902d8305bb29bbade4879"
+      ],
+      "target": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c4 explicitly includes effective-action derivation, consistent truncation and solution lifting as separate targets. It can therefore organize c0 while retaining construction, control and phenomenological questions beyond that branch. Its control discussion does not require every c0 truncation to be a complete low-energy theory.",
+        "refs": [
+          "c0",
+          "c4",
+          "l2",
+          "u11",
+          "n15",
+          "u19",
+          "n6"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1ac6a9be121832bace66-challenge:p1",
+          "candidateId": "q025-candidate-question:11fac3e3216724977778f4e2"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p3",
+          "candidateId": "q025-candidate-question:2ad902d8305bb29bbade4879"
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:2ad902d8305bb29bbade4879",
+          "targetCandidateId": "q025-candidate-question:11fac3e3216724977778f4e2",
+          "candidateId": "parent-51a62d0da6201c295801-challenge:link:19",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "textSha256": "397bd92a19f6ffc07d495b938882bf6b2a0a540a8ef9a1d477a9eaa374446662"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:243e1765db0b437e821445c88d6f927f7a0e13b474055912cc74166c5d24512d",
+          "textSha256": "92ed813e7339d5d782f2bbbeee59893f00846aa53b0da2510db6c6ece1e73f26"
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:243e1765db0b437e821445c88d6f927f7a0e13b474055912cc74166c5d24512d",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "textSha256": "e8ec3115be3c89d2a146767159855bae9b1142fe39ddf3d3f3e513dc23a14b54"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c3466a9b26ae4c64485920567f36952239837ca7740c8d3a3b2290bc38a494d9",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "comparison",
+        "members": [
+          "c1",
+          "c2"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "c1 asks whether finite reductions and their higher-dimensional interpretations are consistent.",
+          "c2 asks how stated fields and flux data determine actions, gaugings and potentials."
+        ],
+        "reason": "Retained matter and gauging data provide an overlap, but calculating an action and establishing a consistent uplift are different tasks. A consistency check becomes relevant when an action is proposed as a consistent higher-dimensional reduction; c2 does not impose that claim on every formulation.",
+        "refs": [
+          "c1",
+          "c2",
+          "u21",
+          "n8",
+          "u16",
+          "n5",
+          "n21"
+        ]
+      },
+      "nativeOperationValueSha256": "84c1128650b4f518806b7b10f17f5b6b8ebc23e77a2a3795164cc8100d4890cf",
+      "members": [
+        "q025-candidate-question:e356a66ea835237726bb7474",
+        "q025-candidate-question:98ed3765c22addab01ecc561"
+      ],
+      "target": "q025-candidate-question:e356a66ea835237726bb7474",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The distinction between deriving retained-field data and establishing nonlinear consistency or realization is explicit in both definitions. The restricted-source interpretation gap supplies a relevant contrast, without proving that every c2 action must satisfy a consistent-truncation requirement.",
+        "refs": [
+          "c1",
+          "c2",
+          "u21",
+          "n8",
+          "u16",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8cbd232bf6adad063a61-challenge:p2",
+          "candidateId": "q025-candidate-question:98ed3765c22addab01ecc561"
+        },
+        {
+          "localRef": "u21",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "textSha256": "f60e84a04f6905f0df48256207006290587c9005f905f721e33e3d6d03ac165c"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 81,
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "textSha256": "07333849b8cfb720e4a87a49bc90b6565f1d400139968b70598104013d38fa67"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-1ac6a9be121832bace66-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:acaa5a673376b66c4a70d5477bdc8c298a68465fffaf6b7084434f824b16be39",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "common_target",
+        "members": [
+          "c1",
+          "c3"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "c3 includes formal encodings and dictionary justification without presuming a finite light-field truncation.",
+          "c1 explicitly investigates finite-reduction consistency, retained massive modes and source/global realization."
+        ],
+        "reason": "Reuse c1 for the finite-reduction consistency facet of c3 when that claim is being made. Formal warped supersymmetry data remain within c3 without acquiring an automatic consistency, completeness or uplift claim.",
+        "refs": [
+          "c1",
+          "c3",
+          "u14",
+          "n25",
+          "u9",
+          "n11",
+          "u21",
+          "n8"
+        ]
+      },
+      "nativeOperationValueSha256": "d71d63e56d7801ffcb5990452227e0f87e8a1221042b4c323af291eae9326374",
+      "members": [
+        "q025-candidate-question:e356a66ea835237726bb7474",
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+      ],
+      "target": "q025-candidate-question:e356a66ea835237726bb7474",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd5",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Reduction consistency is an explicit c3 target, and c1 is an existing destination for that conditional facet. Reuse preserves c3's formal encodings and keeps finite consistency, spectral completeness and source/global interpretation separate.",
+        "refs": [
+          "c1",
+          "c3",
+          "u14",
+          "n25",
+          "u9",
+          "n11",
+          "u21",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-20c5327b935823b2fe6a-challenge:p1",
+          "candidateId": "q025-candidate-question:e356a66ea835237726bb7474"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "textSha256": "2ac335610e97a904d3abfd53398753a6ffd75ae57ab040ae4444307bb778af93"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:5c57d59057069b1b90c14541005c44710d3ff3e04d6481d6499fde71bc400e1b",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u21",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "textSha256": "f60e84a04f6905f0df48256207006290587c9005f905f721e33e3d6d03ac165c"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:d3e4f4baa2fb42e27b549d2effcf9264a0466217d450f067e5fed1a4ecb1302d",
+          "reviewId": "leaf-20c5327b935823b2fe6a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "specializes",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c2 concentrates on stated retained-field actions, potentials and detailed supergravity data.",
+          "c3 additionally asks whether encodings and reductions are justified and permits formulations without an established finite light-field basis."
+        ],
+        "reason": "c3's String/M-theory action and gauging question across dimensions can organize c2's more specific action-and-potential question. Preserve c2's open-string, form-field and six-dimensional branches. The shared source's boundary role for c2 and addresses role for c3 remain distinct.",
+        "refs": [
+          "c2",
+          "c3",
+          "l1",
+          "u14",
+          "n25",
+          "u18",
+          "n22",
+          "n24",
+          "u8",
+          "n20"
+        ]
+      },
+      "nativeOperationValueSha256": "cae467dbddedff939bc03d4010f0e358fa878a75ff4c2098c2d3b359a855e7f1",
+      "members": [
+        "q025-candidate-question:98ed3765c22addab01ecc561",
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+      ],
+      "target": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c3's action-and-encoding question spans dimensions and does not require an established finite light basis; it can organize c2's detailed retained-data question. The open-string, form-field and six-dimensional branches fit that breadth. This specialization follows from the definitions; l1 by itself supplies only a comparison candidate.",
+        "refs": [
+          "c2",
+          "c3",
+          "l1",
+          "u14",
+          "n25",
+          "u18",
+          "n22",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8cbd232bf6adad063a61-challenge:p2",
+          "candidateId": "q025-candidate-question:98ed3765c22addab01ecc561"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "targetCandidateId": "q025-candidate-question:98ed3765c22addab01ecc561",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:16",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u14",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "textSha256": "15610f372c0742aa168a9278b04d4410d5cb43328748d77b76239c5382d4e8d7"
+        },
+        {
+          "localRef": "n25",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:9213e56426a0b7531c5cbbc6b9887280710a9064bda7909af4251918b23b572d",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u18",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:bd48bd219645f652e460185834983f9cbf417afa56c8e1b80b1dfcfe6273e558",
+          "textSha256": "7897fe0bf189bbbbbedcefbc0dc248d31c9e6854155bd51e7606c88d8d6e30b1"
+        },
+        {
+          "localRef": "n22",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bd48bd219645f652e460185834983f9cbf417afa56c8e1b80b1dfcfe6273e558",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bd48bd219645f652e460185834983f9cbf417afa56c8e1b80b1dfcfe6273e558",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+          "textSha256": "9b77f2edc1fc291e87c0f2b4078d68a615ad9c68cfd00ae5fb0adf1f2eaa9f3c"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:56a1f40d01c2f0f9fd6a550b0be7fe9318b52593cb7a27a0de4042b0c02ca94a",
+          "reviewId": "leaf-8cbd232bf6adad063a61-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd7",
+      "nativeOperation": {
+        "id": "pd7",
+        "operation": "specializes",
+        "members": [
+          "c3",
+          "c5"
+        ],
+        "target": "c5",
+        "definingDifferences": [
+          "c3 isolates effective actions, flux dictionaries and reduction justification.",
+          "c5 also organizes geometry, source consistency, vacua, charge costs, ensembles and applications."
+        ],
+        "reason": "The existing scientific region explicitly supplies an effective-dynamics branch. Reuse c3 for that branch, retaining its dimensional breadth and formal-versus-finite distinction. This organization does not admit unreviewed descendant claims.",
+        "refs": [
+          "c3",
+          "c5",
+          "l0",
+          "u7",
+          "n29",
+          "u18",
+          "n24",
+          "n28"
+        ]
+      },
+      "nativeOperationValueSha256": "612269f747d6d0bc921fc0a9d0e3efd50812153aed272476bb79479bf3ac3934",
+      "members": [
+        "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+        "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+      ],
+      "target": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c5 explicitly includes effective actions, approximation questions and compactification consistency, with dimensional and formal-description distinctions preserved. c3 is a focused branch of that scientific region. Neither the link candidate nor the selected review witness admits unreviewed descendants.",
+        "refs": [
+          "c3",
+          "c5",
+          "l0",
+          "u7",
+          "n29",
+          "u18",
+          "n24",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-c3339e1f151b5c739eb5-challenge:p1",
+          "candidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+          "targetCandidateId": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+          "candidateId": "parent-30cfd228b7769fd058dc-challenge:link:6",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u18",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:bd48bd219645f652e460185834983f9cbf417afa56c8e1b80b1dfcfe6273e558",
+          "textSha256": "7897fe0bf189bbbbbedcefbc0dc248d31c9e6854155bd51e7606c88d8d6e30b1"
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bd48bd219645f652e460185834983f9cbf417afa56c8e1b80b1dfcfe6273e558",
+          "reviewId": "leaf-c3339e1f151b5c739eb5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:bd48bd219645f652e460185834983f9cbf417afa56c8e1b80b1dfcfe6273e558",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:consistent-reductions-and-actions:pd8",
+      "nativeOperation": {
+        "id": "pd8",
+        "operation": "comparison",
+        "members": [
+          "c4",
+          "c5"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c4 foregrounds compactification construction, controlled effective physics and phenomenological interpretation.",
+          "c5 additionally organizes flux constraints, charge costs, ensembles and adjacent quantum questions."
+        ],
+        "reason": "A related-question route connects the region to construction, vacuum and phenomenological questions already covered by c4. Their overlapping breadth does not establish full containment or a shared control regime.",
+        "refs": [
+          "c4",
+          "c5",
+          "u7",
+          "n29",
+          "u11",
+          "n15",
+          "u13",
+          "n13"
+        ]
+      },
+      "nativeOperationValueSha256": "44c4c2a64bcdcf1223d9618963ab149f63cbd8b7c2bfcbfdce96143821778a6d",
+      "members": [
+        "q025-candidate-question:2ad902d8305bb29bbade4879",
+        "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+      ],
+      "target": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd8",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Construction, vacua and physical interpretation provide a useful connection between c5 and c4. The distinct ensemble, quantum-adjacent and phenomenological coverage supports comparison rather than asserting complete containment or a shared control regime.",
+        "refs": [
+          "c4",
+          "c5",
+          "u7",
+          "n29",
+          "u11",
+          "n15",
+          "u13",
+          "n13"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-248bde69de2c0409078e-challenge:p3",
+          "candidateId": "q025-candidate-question:2ad902d8305bb29bbade4879"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "parent-30cfd228b7769fd058dc-challenge:r",
+          "candidateId": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "textSha256": "63c137606ce408a2af45a5986b3d7fd61b6913e533209db10ec4e8982bede523"
+        },
+        {
+          "localRef": "n29",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4ecd4b5e6fc56c1a4cfa49d4f5aa9c740b22f6419ed43a2951fdcf9fb264d03b",
+          "reviewId": "parent-30cfd228b7769fd058dc-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 16,
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "textSha256": "397bd92a19f6ffc07d495b938882bf6b2a0a540a8ef9a1d477a9eaa374446662"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:699d1c26b65d492cfd75f3e58dcb1b57fa7c5493217a577042353b61c637a9e9",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc",
+          "textSha256": "7c2695941d09d141c01dcf5aa3c05d963aad9bdbad4efd7c678f8553fd5290ad"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:82522e3c91ab0fb20db03b11bab8c143cb2d9701bc62b996dcd0eb9a2ac423cc",
+          "reviewId": "leaf-248bde69de2c0409078e-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+        "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:e356a66ea835237726bb7474",
+      "relation": "specializes_right",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "specializes_right",
+        "reason": "c1 isolates consistent finite reductions and their realization within c0's broader reduction-and-origin question. Necessary and algebraic tests remain distinct from sufficient constructions.",
+        "refs": [
+          "c0",
+          "c1",
+          "u1",
+          "n3",
+          "u19",
+          "n6",
+          "n10",
+          "u22",
+          "n4",
+          "n12"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Their action-and-coupling facet can use c3; c0's origin tests and c2's detailed retained-field data prevent full-scope equivalence.",
+        "refs": [
+          "c0",
+          "c2",
+          "c3",
+          "u16",
+          "n5",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Reduction and action questions overlap, while explicit origin tests and formal encodings without a reliable finite basis remain distinct.",
+        "refs": [
+          "c0",
+          "c3",
+          "u1",
+          "n3",
+          "u14",
+          "n25"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "c0 is the dimensional-reduction and realization branch explicitly included in c4's broader construction and interpretation question.",
+        "refs": [
+          "c0",
+          "c4",
+          "l2",
+          "u11",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:e356a66ea835237726bb7474",
+      "right": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Retained matter and gaugings overlap, but action data alone do not answer nonlinear consistency, source content or global realization questions.",
+        "refs": [
+          "c1",
+          "c2",
+          "u21",
+          "n8",
+          "u16",
+          "n5",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:e356a66ea835237726bb7474",
+      "right": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Reuse c1 for c3's conditional finite-reduction consistency inquiry; preserve c3's formal encodings and c1's explicit massive-mode, source and global questions.",
+        "refs": [
+          "c1",
+          "c3",
+          "u14",
+          "n25",
+          "u9",
+          "n11"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "right": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "The retained-field action and potential question is a narrower branch of c3's encoding-and-justification question across dimensions. Open-string and form-field coverage is retained.",
+        "refs": [
+          "c2",
+          "c3",
+          "l1",
+          "u14",
+          "n25",
+          "u18",
+          "n22",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "right": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c5",
+        "relation": "specializes_left",
+        "reason": "Actions and reduction justification form one explicit branch of the existing region, which also covers construction, costs, ensembles and applications.",
+        "refs": [
+          "c3",
+          "c5",
+          "l0",
+          "u7",
+          "n29"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "right": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Construction, effective dynamics and vacuum interpretation overlap; the definitions do not establish full equivalence or containment.",
+        "refs": [
+          "c4",
+          "c5",
+          "u7",
+          "n29",
+          "u11",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:e356a66ea835237726bb7474",
+      "relation": "specializes_right",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "specializes_right",
+        "reason": "c1 isolates finite-reduction consistency and higher-dimensional interpretation within c0's broader reduction-and-origin inquiry. c0 also retains effective derivation and necessary or algebraic tests that do not establish consistent uplifts.",
+        "refs": [
+          "c0",
+          "c1",
+          "u1",
+          "n3",
+          "u19",
+          "n6",
+          "n10",
+          "u22",
+          "n4",
+          "n12"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Their action-and-coupling facet can use c3. Origin tests and truncation constructions in c0 remain distinct from c2's detailed retained-field actions, potentials and supergravity data.",
+        "refs": [
+          "c0",
+          "c2",
+          "c3",
+          "u16",
+          "n5",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Both address reductions and actions, but c0 retains origin tests and explicit realizations while c3 also permits formal encodings before a reliable finite light-field basis is identified.",
+        "refs": [
+          "c0",
+          "c3",
+          "u1",
+          "n3",
+          "u14",
+          "n25",
+          "u20",
+          "n2"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:11fac3e3216724977778f4e2",
+      "right": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "c4 explicitly separates reduction, consistent truncation and solution lifting within its broader construction-and-interpretation question. Organizing c0 there does not impose low-energy completeness or controlled phenomenology on every truncation.",
+        "refs": [
+          "c0",
+          "c4",
+          "l2",
+          "u11",
+          "n15",
+          "u19",
+          "n6"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:e356a66ea835237726bb7474",
+      "right": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Retained matter and gaugings overlap. Deriving an action does not settle nonlinear consistency, source content or global realization; those checks apply when that higher-dimensional interpretation is claimed.",
+        "refs": [
+          "c1",
+          "c2",
+          "u21",
+          "n8",
+          "u16",
+          "n21"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:e356a66ea835237726bb7474",
+      "right": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "c1 is reusable for c3's finite-reduction consistency facet. Neither complete scope contains the other as established here: c3 permits formal encodings, while c1 explicitly targets massive retained modes and source/global realization.",
+        "refs": [
+          "c1",
+          "c3",
+          "u14",
+          "n25",
+          "u9",
+          "n11",
+          "u21",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:98ed3765c22addab01ecc561",
+      "right": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "specializes_left",
+        "reason": "c3's encoding-and-justification question across dimensions can organize c2's retained-field action and potential question. Open-string sectors, form formulations and the six-dimensional branch remain part of c2; specialization does not restrict it to four-dimensional N=1 theories.",
+        "refs": [
+          "c2",
+          "c3",
+          "l1",
+          "u14",
+          "n25",
+          "u18",
+          "n22",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+      "right": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c5",
+        "relation": "specializes_left",
+        "reason": "c3 supplies the effective-action and reduction-justification branch explicitly included in the scientific region. The region additionally covers geometry, source constraints, vacuum construction, costs, ensembles and applications.",
+        "refs": [
+          "c3",
+          "c5",
+          "l0",
+          "u7",
+          "n29"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:2ad902d8305bb29bbade4879",
+      "right": "q025-candidate-region:6d76d85d1e34d2ab20751fc0",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Construction, effective dynamics and vacuum interpretation overlap. Their distinct phenomenological, ensemble and adjacent quantum directions do not establish complete containment or equivalence.",
+        "refs": [
+          "c4",
+          "c5",
+          "u11",
+          "n15",
+          "u7",
+          "n29"
+        ]
+      },
+      "sourceReviewIds": [
+        "consistent-reductions-and-actions-navigation-proposal",
+        "consistent-reductions-and-actions-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:11fac3e3216724977778f4e2",
+    "c1": "q025-candidate-question:e356a66ea835237726bb7474",
+    "c2": "q025-candidate-question:98ed3765c22addab01ecc561",
+    "c3": "q025-candidate-question:850ca5650c2b1fe3e990cc72",
+    "c4": "q025-candidate-question:2ad902d8305bb29bbade4879",
+    "c5": "q025-candidate-region:6d76d85d1e34d2ab20751fc0"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/consistent-reductions-and-actions-admission.json",
+    "sha256": "416960b93b638fd36b4a2b58bbcc46bac4699fa38a7522107b83f32dc542681c"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u16",
+      "questionRefs": [
+        "c0",
+        "c2",
+        "c3"
+      ],
+      "reason": "Preserve ten-dimensional organization, torsion/flux couplings and possible four-dimensional reductions as distinct internal targets. The confirmed c3 role does not impose N=1 orientifold scope or certify a universal consistent truncation.",
+      "refs": [
+        "u16",
+        "n5",
+        "n21",
+        "c3"
+      ]
+    },
+    {
+      "unitRef": "u19",
+      "questionRefs": [
+        "c0",
+        "c1"
+      ],
+      "reason": "Preserve truncation, gauged theory, vacua and subtruncations in one source. The retained N=4 theory and N=3 vacuum remain distinct under the inherited assessment.",
+      "refs": [
+        "u19",
+        "n6",
+        "n10"
+      ]
+    },
+    {
+      "unitRef": "u10",
+      "questionRefs": [
+        "c1"
+      ],
+      "reason": "Retain both interaction/breaking and source-inclusive classification targets. The c1 contribution covers classification without verifying the proposed mechanism.",
+      "refs": [
+        "u10",
+        "n7",
+        "c1"
+      ]
+    },
+    {
+      "unitRef": "u15",
+      "questionRefs": [
+        "c1"
+      ],
+      "reason": "Retain coset-vacuum classification, wall connections and proposed G2-holonomy interpolation. The realization contribution does not establish every proposed connection.",
+      "refs": [
+        "u15",
+        "n9",
+        "c1"
+      ]
+    },
+    {
+      "unitRef": "u6",
+      "questionRefs": [
+        "c2"
+      ],
+      "reason": "Preserve consistency, realization and potential targets with the inherited corrected-quantization failure and unresolved localized-backreaction qualifications.",
+      "refs": [
+        "u6",
+        "n17",
+        "n27",
+        "c2"
+      ]
+    },
+    {
+      "unitRef": "u17",
+      "questionRefs": [
+        "c2"
+      ],
+      "reason": "Preserve consistency, D-terms, stabilization, construction and quantization as internal targets. The c2 contribution neither adds realization roles nor establishes atomic identity with u6.",
+      "refs": [
+        "u17",
+        "n18",
+        "c2"
+      ]
+    },
+    {
+      "unitRef": "u18",
+      "questionRefs": [
+        "c2",
+        "c3"
+      ],
+      "reason": "Retain the distinct boundary contribution to c2 and addressing contribution to c3. Source-inclusive consistency does not establish general fully localized solutions or quantitative control.",
+      "refs": [
+        "u18",
+        "n22",
+        "n24"
+      ]
+    },
+    {
+      "unitRef": "u3",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Preserve D=4,6,8 worldsheet classification with at least eight right-moving supercharges and the effective-theory compatibility comparison. The c3 comparison does not become an uplift construction.",
+      "refs": [
+        "u3",
+        "n26",
+        "c3"
+      ]
+    },
+    {
+      "unitRef": "u4",
+      "questionRefs": [
+        "c4"
+      ],
+      "reason": "Keep symplectic dualities, arbitrary electric-magnetic membrane charges and back-reacted BPS walls together without adding an action-dictionary role elsewhere.",
+      "refs": [
+        "u4",
+        "n16",
+        "c4"
+      ]
+    },
+    {
+      "unitRef": "u13",
+      "questionRefs": [
+        "c4"
+      ],
+      "reason": "Keep the FI-supported anisotropic background and proposed isotropic supersymmetric limit as linked internal targets.",
+      "refs": [
+        "u13",
+        "n13",
+        "c4"
+      ]
+    },
+    {
+      "unitRef": "u7",
+      "questionRefs": [
+        "c5"
+      ],
+      "reason": "The broader destination accommodates geometry, dynamics, stabilization, corrections and statistics without settling atomic decomposition or verifying proposed de Sitter constructions.",
+      "refs": [
+        "u7",
+        "n29",
+        "c5"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

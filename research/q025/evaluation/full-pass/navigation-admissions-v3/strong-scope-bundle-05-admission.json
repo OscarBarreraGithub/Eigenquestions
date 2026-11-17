@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "strong-scope-bundle-05",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/packet.actual.json",
+      "sha256": "77b159b97db481849313efa289b08a1d1fba97b6cfc1b6427e13dd2df7bca26a"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-proposal/reply.json",
+      "sha256": "01bdb51e8998b62fca1889f343f2cd9cc1f7c43e05e6b5c7f7a83d1f3e23923d"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/reply.json",
+      "sha256": "fac1a708f7f18ce9537114ed56195bcd381ddcfb306f150456cc06cf57b98c6f"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-proposal/receipt.json",
+      "sha256": "870389d8f5edb0b2d679fd2b0688797a08a1101ce7e7b82e246f68dbc6e81477"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/receipt.json",
+      "sha256": "00167359bc22f0951df6295ef1ed526d825f6885fb6d9af283baa74059c12033"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-05-challenge/normalization.json",
+      "sha256": "01d56d1a59e603ea214652c9ce4685fa4f57b46e0704341a8d37df89548a4ea7"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "scopeHashes": {
+    "q025-candidate-question:c073ce5ebda7456546a71118": "dbb3e4bc983798801d3cf40b79679ac407b18f5ede4bbf4582f63198dd008599",
+    "q025-candidate-question:5712feb81e448688e3572680": "2206c6d8f3c9c32bd61f80a1fb88834d20ddfd13b9d6f24ac6d857031c685724",
+    "q025-candidate-question:c539cd6d9e549c4c5b0ee3e3": "fe18ecee2c249c68e1a9081d9d240c05405cd2ffd0a7321150ce0656d38c69a1"
+  },
+  "roleHashes": {
+    "decision:navigation-v3:strong-scope-bundle-05:role:0": "488b7ac5b0a2bd208e61b334258cf7619b6429609b319f7490f7b46bb7cb9203",
+    "decision:navigation-v3:strong-scope-bundle-05:role:1": "1bc3d2fc89f857ca8c7432d6ee865f05bfc8154e5f1dd66aa658f415a72ae2e0",
+    "decision:navigation-v3:strong-scope-bundle-05:role:2": "20126fea4a0cf2b4ca045ae65da8c8ee28242fd5c9f1426207a1d850758a4d40",
+    "decision:navigation-v3:strong-scope-bundle-05:role:3": "fd18f038c7b00fdf8a1926f084d6fbdb5854c71e01852a678744095094580e2e"
+  },
+  "operationHashes": {
+    "operation:navigation-v3:strong-scope-bundle-05:pd0": "f2d8ea8c5081a078a7e8feb64762971c5d26b90c8bfd12d046bdc130df643b15",
+    "operation:navigation-v3:strong-scope-bundle-05:pd1": "52ea8648e16453c6cdd6d111b425f7b8748f7c7436c4a7bd6a3ba22ea9dde476",
+    "operation:navigation-v3:strong-scope-bundle-05:pd2": "9a60f5c242502aeca5d86ed77a445424e1a98b06306efbf25493bde52fc8fa28",
+    "operation:navigation-v3:strong-scope-bundle-05:pd5": "94e8487aab0ea1521b0db93d9e8afd936da356b99401687a9d86bd192e41e8e2",
+    "operation:navigation-v3:strong-scope-bundle-05:pd6": "540774d38ecec4690eb23930d9143a0fb8156d8a7584189f06dbcba87784c031",
+    "operation:navigation-v3:strong-scope-bundle-05:pd7": "b0730cd393beef6087b742c8386dbd933fd84c183f78cb865fc0f8b8c5e65495",
+    "operation:navigation-v3:strong-scope-bundle-05:pd8": "0d3cdb6abcdca41fa7e5da52b725c8d5c50042b135671f9a905d80d8b63c212f",
+    "operation:navigation-v3:strong-scope-bundle-05:pd10": "a022a1acd46cab3a12ed3e4598b8d886e9292a1504342a89498d4506cf1aeb4c",
+    "operation:navigation-v3:strong-scope-bundle-05:pd11": "9b08c83a4f5d4d30011a9be53dc7e6e4a25fbe879734e414efbb934418564f1f"
+  },
+  "navigationHashes": {
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn0": "b52c134e99205c37854bd437e04dfa8800ede0e120cd8768d828041f99b8e1ff",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn1": "7c55cee21d372f86142e48039193512f25969eef04be269c8621c0782f9a405a",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn2": "f932e62e4a5d9aae29050c30f9ef9a449c3d71d5d66e8e060fd463e02ccdc224",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn5": "b93a83daa41dbe2fcda050bd0d69e7a9143282e14c43a04cc4890ef36ce06b13",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn6": "ff09579450ce0e209a32edb8941e80813e710730201ab2606d873bd89dfacbe1",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn7": "c00770f89f8eee19e39894ba2893b212fe8481a4b861850bae3e4c84bf1428a1",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn8": "bd9ad90edb91f68939df91c63fa69344ea63fe193fda7c32d12dd13a36b9811f",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn10": "dfa291473127d4fd81e4b908794b0b5cd544d528ce8b4b806123246cce3776ed",
+    "decision:navigation-v3:strong-scope-bundle-05:route:pn11": "d916f926aa6906425988d21904d65a021a327d26fcd95d2a1348baf8e7d349d4"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No primary windows are supplied. All assessments reuse the exact definitions, whole descriptions and inherited readings through current c*, u* and n* refs. Nested historical citations are not current evidence.",
+    "All original definitions and reading limits remain unchanged. The three retained pq* objects are expressly new narrower definitions, not replacements.",
+    "The packet supplies 38 of 105 distinct prior contribution sources. The other 67 sources and the complete inherited assignment tables are not reassessed.",
+    "Explicit support retains the exact three prior definitions, twelve decisions, twelve navigation rows and four new source roles. Empty change arrays do not withdraw those supported objects.",
+    "No source roles are added by this challenge. Common-target organization, specialization, navigation and compound-source destination lists do not propagate contributions.",
+    "Compound-source lists preserve relevant destinations and internal distinctions; they are not exhaustive reassignment tables.",
+    "The graph organizes questions without establishing physical-statement equivalence, proof validity, current observational fits, source identity, organizational homes, mass assignments or global uniqueness.",
+    "The six components remain separate. Navigation support covers the stated directed outgoing choices; it does not independently license reverse arcs or reverse-choice titles."
+  ],
+  "unresolved": [
+    "Whether c4 was intended to restrict every relevant calculation to c7's Boltzmann-suppressed regime cannot be settled from this packet. The retained specialization does not extend the mass bound; full equivalence would require resolving that premise and preserving both reading limits.",
+    "Equivalence among scalar mass-gradient, self-potential, horizon-force, long-range-force and scattering prescriptions remains unestablished. u37's multifield K-theory application remains future work.",
+    "No physical implication is established between an AdS EFT cutoff hierarchy, a compactification mass gap and the conditional brane or species-scale tests.",
+    "Counting completeness, full finiteness hypotheses and relations between the two minimum-Λ conventions remain unverified. Charge balance and necessary supersymmetry conditions alone do not certify the desired counts or configurations.",
+    "u13 remains a construction setting whose independent canonical-question status and cosmological viability are unresolved.",
+    "No quantitative implication is established from admissible-state damping to arbitrary-state inflationary onset, environmental decoherence, censorship or a present-day observable signal."
+  ],
+  "counts": {
+    "newScopes": 3,
+    "typedOperations": 9,
+    "publicRoutes": 9,
+    "confirmedSourceRoles": 4,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "excludedOriginalRows": [
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd3",
+        "operation": "comparison",
+        "members": [
+          "c3",
+          "c8"
+        ],
+        "target": "c8",
+        "definingDifferences": [
+          "c3 includes search algorithms, D-brane configurations and explicitly unbounded-charge studies.",
+          "c8 includes signed indices, connected-component counts, degeneration limits and broader global-finiteness questions."
+        ],
+        "reason": "Retain both scopes and their counting-convention restrictions. Their overlap supports comparison and a shared BP-counting subquestion, but neither complete definition contains the other. Retain c8 with its stated description-level limits; posing its finiteness questions does not certify their answers.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "u17",
+          "u19",
+          "u26",
+          "u29",
+          "u33",
+          "n9",
+          "n10",
+          "n11",
+          "n33",
+          "n34",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "judgment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The definitions share counting and approximation questions but retain independent algorithmic, brane, index, component and global-finiteness branches. c8 can be retained as a question with its stated evidence limits; no verified finiteness result is implied.",
+        "refs": [
+          "c3",
+          "c8",
+          "u7",
+          "u8",
+          "u19",
+          "u26",
+          "u33",
+          "n10",
+          "n33",
+          "n34",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd4",
+        "operation": "specializes",
+        "members": [
+          "c7",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c7 concentrates on the discharge criterion and conditional constraints and explicitly restricts the charged population to the Boltzmann-suppressed regime.",
+          "c4 also asks directly about screening, conduction and thermally assisted production; its written equilibrium regime does not explicitly impose that population restriction."
+        ],
+        "reason": "Use c4 as the existing broader mechanism-and-bound destination and retain c7 as its explicitly restricted constraint question. Their shared source and operational criterion support this organization, but equilibrium alone does not establish identical written regimes. This does not validate c4's mass bound outside c7's restricted domain. Both original reading limits remain intact.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "judgment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete written definitions support narrower-first ordering: c7 focuses the shared conditional constraint on explicitly Boltzmann-suppressed carriers. Equilibrium alone does not erase that written restriction. The decision correctly avoids treating broader mechanism coverage as an extension of the physical bound and preserves both reading limits.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-question:83e35ef679868008269066eb"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd9",
+        "operation": "specializes",
+        "members": [
+          "pq1",
+          "c8"
+        ],
+        "target": "c8",
+        "definingDifferences": [
+          "pq1 concerns BP lattice estimates and explicit minimum-Λ conventions; c8 also covers indices, accumulation, component counts and global finiteness."
+        ],
+        "reason": "The exact c8 definition already includes this count-reliability target and preserves the two distinct minimum conventions.",
+        "refs": [
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "judgment": {
+        "ref": "pd9",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c8 expressly includes continuum-count checks and the nonnegative/strictly positive minimum distinction. pq1 narrows these to BP lattice estimates without extending them to component or global finiteness.",
+        "refs": [
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn3",
+        "source": "c3",
+        "target": "c8",
+        "type": "comparison",
+        "title": "Distinguish counts, indices and finiteness",
+        "qualification": "Keep the counted object, quotient, geometry and charge regime explicit. Signed indices, isolated points and connected components are different outputs; fixed-family bounds do not establish global finiteness. Description-supported claims retain their missing-hypothesis and completeness limits.",
+        "reason": "Makes the finiteness and count-convention questions accessible from enumeration and search without equating their answers or evidential strength.",
+        "refs": [
+          "c3",
+          "c8",
+          "u19",
+          "u26",
+          "u33",
+          "n10",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "judgment": {
+        "ref": "pn3",
+        "verdict": "supported_as_written",
+        "reason": "The comparison realizes l0 using c8's explicit count, index, component and finiteness distinctions. Its qualification preserves geometry, quotient, charge regime and missing-hypothesis limits rather than treating search results as certified counts.",
+        "refs": [
+          "c3",
+          "c8",
+          "u19",
+          "u26",
+          "u33",
+          "n10",
+          "n35",
+          "n36",
+          "l0"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn4",
+        "source": "c4",
+        "target": "c7",
+        "type": "narrower",
+        "title": "Examine the conditional thermal mass bound",
+        "qualification": "Restrict to near-ultracold Nariai throats, vacuum-energy dominance, equilibrium Boltzmann-suppressed charges and the stated coupling domain. Rapid discharge means order-one charge loss within a Hubble time; conduction is independent of the photon-fusion estimate. Collapse uses homogeneous models. The c=1, g*=2 benchmarks and logarithmic normalization are not universal; B−L applications additionally require an unbroken sufficiently light gauge sector. Announced phenomenology is not independently validated here.",
+        "reason": "Provides the narrower constraint question from the broader mechanism question while retaining every consequential applicability restriction.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "judgment": {
+        "ref": "pn4",
+        "verdict": "supported_as_written",
+        "reason": "The broader-to-narrower direction follows the written scopes. The route retains Boltzmann suppression, coupling applicability, charge-loss criterion, independent conduction, homogeneous evolution, benchmark sensitivity and the extra B−L premises. It does not require a new physical relation beyond those inherited qualifications.",
+        "refs": [
+          "c4",
+          "c7",
+          "u10",
+          "n21",
+          "n28"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-question:83e35ef679868008269066eb"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn9",
+        "source": "c8",
+        "target": "pq1",
+        "type": "narrower",
+        "title": "Separate the two minimum-Λ counting targets",
+        "qualification": "Compare BP counts and occupation estimates while retaining u7's nonnegative and u8's strictly positive minimum conventions. The shared destination establishes neither identical minima nor a quantitative relation between them.",
+        "reason": "Turns an explicit convention distinction in c8 into an accessible narrower question.",
+        "refs": [
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "judgment": {
+        "ref": "pn9",
+        "verdict": "supported_as_written",
+        "reason": "The route makes c8's explicit minimum-Λ distinction accessible through pq1. Its qualification correctly permits a shared public destination while withholding equality or a quantitative relation between the minima.",
+        "refs": [
+          "c8",
+          "u7",
+          "u8",
+          "n33",
+          "n34"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-question:cc6407d4ae9b11e139f5bd22"
+      ]
+    }
+  ],
+  "unadmittedChallengeObjects": {
+    "newQuestions": [],
+    "decisions": [],
+    "navigation": [],
+    "sourceContributions": []
+  },
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

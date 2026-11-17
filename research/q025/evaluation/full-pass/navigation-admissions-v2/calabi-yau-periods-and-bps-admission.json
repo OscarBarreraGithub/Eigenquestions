@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "calabi-yau-periods-and-bps",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/packet.actual.json",
+      "sha256": "19a49c585e018be77cc6432fe9e0e7bd24bf364bf622c28cb673434cc9039c80"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-proposal/reply.json",
+      "sha256": "7b503a25c0734fbd37f7a32f6524c3456cf5002572e437ad3b30026f802ed7fd"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/reply.json",
+      "sha256": "54c92a0576e04d4442a1ec071093cf8af201b1f4645fdd9db3c146bffa95a5e0"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-proposal/receipt.json",
+      "sha256": "866372725f6240db0e65768bd1c9e4dd1faa455363f8af5b88ef0d48993f096c"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/receipt.json",
+      "sha256": "cd7cd14d3d22a806c0b5e8d398e7b6fe09e4a20861ca8feeebdd5aa9aee4d9c6"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/normalization.json",
+      "sha256": "ca28a0b80e891364b66af7ee540770650c65294c0a3c3149c4a823193b76585a"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {
+    "decision:navigation-v2:calabi-yau-periods-and-bps:role:0": "3e89903a553a71d91dcfc4a25e7694190431d1ae053b49ad1768a1ada4bf4b48",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:role:1": "5253c92645189bda1f8dfd003b240d5fc11554558d3f1d05fe2077eeeabc1fbf"
+  },
+  "operationHashes": {
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd0": "5d1299e676644aa15c372dc2c252454485c82abdbb48d094e125e9a7fe0db27e",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd1": "f255e2e336cb03920d473ee215347e106bda4174930fd4082ed6c5501f3c946a",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd2": "d955eb5c201016fcdc77a1a60a167e2441d36a634e3342f7b97e8fd03d59078f",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd3": "d73a5f9a2d0034ff6116cf439191a2f732c55426b7703c01d5e8383cb38214dd",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd4": "dee530be7aa0922a95957869b22c4830c55cfd8c723797113bbe6a81c6a2d26f",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd5": "1561e2245ef451c90f0e755b3384492b4e10bc084d651bfc49eeeab90e00e691",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd6": "e489b08595c6e1ef21e3544f329eed41cd08095ac9f902f563e5d506399cc78b",
+    "operation:navigation-v2:calabi-yau-periods-and-bps:pd7": "acc3918a63f9b0f325c5b06102697950eff2d99464b98f27b3c52b0f03c647db"
+  },
+  "navigationHashes": {
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn0": "5389d61b3fe54e3a8c4cf509503476ad3fa5a4708e0f67de706e98a1c54d23d9",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn1": "ff3d67b6e965b63231f8af5f887966137c758c0417ec0f5515f7fdaa3f937d4d",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn2": "cb9d1d4dbccdde6486e3ef2cdaf1dbc5305142ee2b5eb168dc35dde00bfe210c",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn3": "8b2d39e586f2db3268c092d7d7266268951193f004a87a18d3ed63862737d5fe",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn4": "eecfada0546e10005a676771b0af811fc8c44730190944b7b320e9991dfba9fb",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn5": "bfd49c3cf9ed5d612642cba95fac1d96afb704a67eae9e06033880bacbe8d621",
+    "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn6": "00524f539810a59b051b9fb2691aa22b95b44895f37fc81cb108bf8a2b4a3102"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No primary windows are supplied. These judgments reuse complete definitions, whole descriptions and inherited scope or attribution assessments; they do not freshly verify formulas or derivations.",
+    "Historical references nested in inherited reviews are not current evidence IDs. Citations use enclosing c*, n* and l* records or supplied u* descriptions.",
+    "The packet contains 18 selected witnesses from 45 distinct prior contribution sources. Unselected assignments and omitted inherited role rows are not reassessed or given new target roles.",
+    "There are no prior new questions to review. Supported assessments retain the exact eight prior decisions, seven navigation objects and two source-role rows; they are not reserialized here.",
+    "All five definitions and reading limits remain unchanged. Compound-source mappings preserve multiple internal targets and do not establish atomic identity, global uniqueness, homes or mass.",
+    "Navigation titles remain reviewed outgoing choices only. No separately titled incoming choices are admitted."
+  ],
+  "unresolved": [
+    "A route identifying selected-state weak-gravity bounds with topological BPS-index counting remains unsupported.",
+    "A general asymptotic-Hodge method route from c2 to c1 remains unsupported; the retained method bridge uses the specific mirror calculations represented by c3.",
+    "Physical-versus-motivic realizability and invariant matching beyond the tractable models remain questions, not established premises for further application routes.",
+    "No route from special Kähler period calculations to construction of internal Ricci-flat metrics is established."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 8,
+    "publicRoutes": 7,
+    "confirmedSourceRoles": 2,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

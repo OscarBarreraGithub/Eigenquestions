@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "strong-scope-bundle-03",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-03-challenge/packet.actual.json",
+      "sha256": "68708ff68be3dd3e51ba0405f90d2c8e260f4a4af61f55ee2c6220c2cd2414c3"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-03-proposal/reply.json",
+      "sha256": "4c9b3fd1e25ef66d58fa45b92ddc98b82d471cc5bd27672900796395d2a76e8d"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-03-challenge/reply.json",
+      "sha256": "63c34371996249be211d2cdef882b1d946281da21319041243f36e8139df26f2"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-03-proposal/receipt.json",
+      "sha256": "b5cc28c793cbcbf74ff2bd1d0fc51054f4d7398c81739912612bab95b2bf493d"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-03-challenge/receipt.json",
+      "sha256": "5ace20fc131b8071659761c7e0107f3338f98fba226fefb3ea256f12c1e643d9"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-03-challenge/normalization.json",
+      "sha256": "7245d8dd43b6388050efdfd2c033c4c4b77df2f76478047f5e0e4e4aeeebf7c1"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {},
+  "operationHashes": {
+    "operation:navigation-v3:strong-scope-bundle-03:pd0": "8f481d1587f6002c9760693e56c420cbcbdf48b9408fd9ac33199a59fef3bd99",
+    "operation:navigation-v3:strong-scope-bundle-03:pd1": "8a1c3c8fc0aa3c4b6f0e37432e91dbc2a4eca79a854deb0751b29ea1d6500cf6",
+    "operation:navigation-v3:strong-scope-bundle-03:pd2": "9c6d512dba0bdd2b7fdcb76a52694c4dadc669d72080b0e41b495afe93e50f26",
+    "operation:navigation-v3:strong-scope-bundle-03:pd5": "43fb1836f9553866e75456a3f24d51731efdcfc8e78359011306b51cc0f71fee",
+    "operation:navigation-v3:strong-scope-bundle-03:pd6": "b2bace7936917839832308dd29313902e4e802d96734212150c36e468920c377"
+  },
+  "navigationHashes": {
+    "decision:navigation-v3:strong-scope-bundle-03:route:pn0": "c3cf611954719d5ba962cefb4b1fe70b6eec298fc01ed2bea75a9327d6c910ac",
+    "decision:navigation-v3:strong-scope-bundle-03:route:pn1": "1412c742dbc23860f6f7bfd2d2f98121cf8d5e30c7773864a49fabe496e5bd14",
+    "decision:navigation-v3:strong-scope-bundle-03:route:pn2": "d35ae8eb0cba821e6f94f3452b253c308c552bd40ef022225244a0625ee9ee55",
+    "decision:navigation-v3:strong-scope-bundle-03:route:pn5": "e85991c74aa7171405ac4aaa4abd45fbd110b7324347cd4b338601779458998b",
+    "decision:navigation-v3:strong-scope-bundle-03:route:pn6": "5afb4f80d50d8fc26db5526db044fdcba4c7f6f3f6fb4ce054683f70e974ac29"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No primary windows, source objects or relations are supplied. These judgments reuse complete definitions, whole descriptions and attributed prior assessments; they do not freshly verify physical results or introduce new dynamical premises.",
+    "Coverage is 35 selected descriptions and 38 paired contexts against 106 distinct prior contribution sources. Unselected assignments and descendant physics are not reassessed.",
+    "Current c* and n* references identify inherited assessments. Nested historical evidence IDs are not current primary evidence.",
+    "Supported prior decisions and navigation rows are retained exactly, without reserialization. The prior proposal contains no new questions or source-role rows requiring review.",
+    "All definitions and reading limits remain unchanged. c5's supported-with-limits status, unvalidated numerical boundary and pending child adjudications are preserved.",
+    "No source roles are added or retargeted. Existing compound records retain their internal targets and premise sets; omitted role rows receive no new assignment.",
+    "The effective graph retains only the four nominated components. These organizational judgments establish no home, mass, atomic source identity, global uniqueness or cross-component scientific relation."
+  ],
+  "unresolved": [
+    "DGKT-CFI count/grouping warnings, fixed-flux control and ten-dimensional consistency remain unresolved; the inherited report of an obeyed but unsaturated four-dimensional bound is not independently recalculated.",
+    "The general P(X,φ) entropy extension and inherited Gauss–Bonnet scalar-tilt discrepancy remain unresolved. Restricted coupling results do not establish cutoff or full stability control, and lower-bound suppression does not certify an actual small excursion.",
+    "Fine decomposition remains open for compound charge-return, evaporation/resolution/strong-coupling, hierarchy/decoherence and other witnesses. The classical-holography setting witness does not determine one atomic question.",
+    "The de Sitter GEC witness's ambiguous destination and c10's unidentified AdS-version item receive no new destination or physical-method relation. GEC, anomalies and holographic renormalisability remain separately assessed conditions.",
+    "Original numerical membership and pending child scope or assignment revisions are not admitted through support for a broad region."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 5,
+    "publicRoutes": 5,
+    "confirmedSourceRoles": 0,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "excludedOriginalRows": [
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd3",
+        "operation": "common_target",
+        "members": [
+          "c5",
+          "c6"
+        ],
+        "target": "c6",
+        "definingDifferences": [
+          "c5 centers flux construction, charge consistency, hierarchy diagnostics and conditional cutoff, distance and dual-realizability tests.",
+          "c6 explicitly develops gauging classification, gravitational bubbles, spin-structure permission, decay channels and dynamical protection."
+        ],
+        "reason": "Reuse c6 for the shared compactification-vacuum and effective-description question. The additional diagnostic and decay directions prevent treating the complete definitions as interchangeable. Retain c5 with its inherited limits; neither organization nor parent support admits pending children or validates numerical membership.",
+        "refs": [
+          "c5",
+          "c6",
+          "u19",
+          "n32",
+          "u17",
+          "n33",
+          "u13",
+          "n34"
+        ]
+      },
+      "judgment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c6 can organize the shared construction and effective-description targets without absorbing c5's conditional diagnostics into every contribution. Explicit bubble and gauging questions justify retaining distinct scopes. c5's inherited limits and unresolved child statuses are preserved.",
+        "refs": [
+          "c5",
+          "c6",
+          "u19",
+          "n32",
+          "u17",
+          "n33",
+          "u13",
+          "n34"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:30898744388e6013c0be7322"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd4",
+        "operation": "specializes",
+        "members": [
+          "c9",
+          "c5"
+        ],
+        "target": "c5",
+        "definingDifferences": [
+          "c9 focuses the flux-vacuum question on localized sources, moduli, KK information and light-graviton effective descriptions in its specified compactification settings.",
+          "c5 additionally organizes a wider set of theories, conditional cutoff and distance diagnostics, and explicitly exotic-signature comparisons."
+        ],
+        "reason": "c9 is a narrower flux and effective-gravity direction within c5. Its light-graviton questions fit c5's spectral scope without identifying an isolated graviton mass with a KK gap. Preserve c9's dimensions, approximation limits and alternate comparison settings.",
+        "refs": [
+          "c5",
+          "c9",
+          "u3",
+          "n2",
+          "u7",
+          "n0",
+          "u9",
+          "n1",
+          "u19",
+          "n3"
+        ]
+      },
+      "judgment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c5 explicitly includes localized-source control, spectra, light gravitons and strong-coupling alternatives, accommodating c9's distinctive directions. Its wider theory and conditional-test scope supports the ordered specialization. This establishes question organization, not a KK/light-graviton scale identification.",
+        "refs": [
+          "c5",
+          "c9",
+          "u3",
+          "n2",
+          "u7",
+          "n0",
+          "u9",
+          "n1",
+          "u19",
+          "n3"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:30898744388e6013c0be7322"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn3",
+        "source": "c6",
+        "target": "c5",
+        "type": "related_question",
+        "title": "Examine flux hierarchies and conditional consistency tests",
+        "qualification": "Construction, charge cancellation, hierarchy and effective-description tests remain distinct. Cutoff, distance and proposed dual-realizability tests are conditional. Bubble topology and dynamical decay suppression are separate questions; truncated or smeared descriptions do not establish full string consistency.",
+        "reason": "The route selects c5's flux-centered diagnostic questions from the shared compactification inquiry while preserving c6's independently scoped decay and protection directions.",
+        "refs": [
+          "c6",
+          "c5",
+          "u19",
+          "n32",
+          "u13",
+          "n34",
+          "u17",
+          "n33"
+        ]
+      },
+      "judgment": {
+        "ref": "pn3",
+        "verdict": "supported_as_written",
+        "reason": "The title selects c5's explicit hierarchy and conditional-test targets. related_question matches the shared-target decision while separating construction, diagnostic consistency and bubble suppression. The route supplies no new physical relation among those tests.",
+        "refs": [
+          "c6",
+          "c5",
+          "u19",
+          "n32",
+          "u17",
+          "n33",
+          "u13",
+          "n34"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:30898744388e6013c0be7322"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn4",
+        "source": "c5",
+        "target": "c9",
+        "type": "narrower",
+        "title": "Study localized sources, KK spectra and light gravitons",
+        "qualification": "Keep dimensions, supersymmetry, frames and approximation orders source-specific. Compactification radii, curvature radii, KK gaps and isolated light-graviton masses are distinct. O6 core resolution and essential string corrections remain alternatives; announced AdS3 construction claims do not verify full spectra or localized control.",
+        "reason": "c9 provides the more focused flux-vacuum direction represented by global modulus identifications, localized cores, light-graviton constructions and AdS3 hierarchy questions.",
+        "refs": [
+          "c5",
+          "c9",
+          "u3",
+          "n2",
+          "u7",
+          "n0",
+          "u9",
+          "n1",
+          "u19",
+          "n3"
+        ]
+      },
+      "judgment": {
+        "ref": "pn4",
+        "verdict": "supported_as_written",
+        "reason": "The broader-to-narrower direction matches pd4, and the source/core, modulus and graviton witnesses make the choice concrete. Its qualifications preserve distinct spectral scales and leave O6 alternatives and announced AdS3 control claims unresolved.",
+        "refs": [
+          "c5",
+          "c9",
+          "u3",
+          "n2",
+          "u7",
+          "n0",
+          "u9",
+          "n1",
+          "u19",
+          "n3",
+          "n32"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:30898744388e6013c0be7322"
+      ]
+    }
+  ],
+  "unadmittedChallengeObjects": {
+    "newQuestions": [],
+    "decisions": [],
+    "navigation": [],
+    "sourceContributions": []
+  },
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

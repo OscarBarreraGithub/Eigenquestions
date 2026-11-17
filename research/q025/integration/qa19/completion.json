@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "q025-qa19-completion/1",
+  "jobId": "61546342",
+  "state": "FAILED",
+  "exitCode": "1:0",
+  "elapsed": "00:06:42",
+  "browserStarted": false,
+  "buildSucceeded": true,
+  "builtFiles": 15513,
+  "builtMiBReported": 571.7,
+  "failure": "Isolated package omitted an existing public repository documentation target required by site-check: research/q025/integration/qa10/report.json.",
+  "classification": "QA source packaging gap; no browser/runtime failure established.",
+  "originalJobReceiptSha256": "dd0917be9aa17d3ab83f2c2b080f06722519357a6036b2fffb583dfc14988ebd",
+  "logs": [
+    {
+      "path": "research/q025/integration/qa19/build.log",
+      "sha256": "1824f7438c94b602a42de1f5710faff0cd7ab3c3c676dabe024a163a3928b53e"
+    },
+    {
+      "path": "research/q025/integration/qa19/site-check.log",
+      "sha256": "b09ad164a26c433b9253325b6147ac6521f1843dd0eab1374a9abf547151e1ec"
+    },
+    {
+      "path": "research/q025/integration/qa19/slurm-61546342.out",
+      "sha256": "953ec46fb06c9e60011abf75c0903a5aad9570c075969a9b9533b9de461af518"
+    },
+    {
+      "path": "research/q025/integration/qa19/slurm-61546342.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "successor": "qa20 adds only exact public repository documentation targets; runtime and candidate data unchanged.",
+  "privateCredentialUrls": "No bridge/browser started; copied logs contain no bridge token."
+}

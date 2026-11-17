@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "strong-scope-bundle-01",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-01-challenge/packet.actual.json",
+      "sha256": "aaa674b58ea597f51a88c4ce3e7fea7c5bc7a1a5e9246f5b7d4e5de1dd9118b6"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-01-proposal/reply.json",
+      "sha256": "2791ed90e17f3cb5719b8be20474aaf5e7f49ddecb5cdd1c3d4c23abc78af241"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-01-challenge/reply.json",
+      "sha256": "2efcf6fc32e1a334fe3ece2f24754261c3ba3d6f13dc7387930044102525928b"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-01-proposal/receipt.json",
+      "sha256": "88ac11a1186d0125e6eede1c451200eebcd8adf3b2bc753dc1e50951a7cb2840"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-01-challenge/receipt.json",
+      "sha256": "0910f3daa04381b6d01314980f93ed8c9cefea87a515008c281e439273c1c0b8"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-01-challenge/normalization.json",
+      "sha256": "60aa2f36de77399fabe07b81224f3014b453727ea1ab8984078b5bb1a27ca0b7"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {
+    "decision:navigation-v3:strong-scope-bundle-01:role:0": "3e3d8afd4fe89663a58aa55e5fd12f41743753009998e3a9e37601978ff378d9",
+    "decision:navigation-v3:strong-scope-bundle-01:role:1": "d66910a1e4d712887e51de27ed0638321aef97c2ae0f9ab5f262f560d5c47748"
+  },
+  "operationHashes": {
+    "operation:navigation-v3:strong-scope-bundle-01:pd0": "bf20bfde865c32ff48a84cb56ffd6756cbc1d44fd75b23798341836e9ffdda6f",
+    "operation:navigation-v3:strong-scope-bundle-01:pd1": "a3b3cf52fcdf1ec6ebf1c918f69d94914549284ed0b65b76f90276b5d54344de",
+    "operation:navigation-v3:strong-scope-bundle-01:pd2": "ab6f5a164d57c9d411abefd256887a13286420f454ea1d1f9f83b7e4546a749c",
+    "operation:navigation-v3:strong-scope-bundle-01:pd3": "fdb9c63ad4c20fb2156df0578c1908f2271ef2d5971d322964f7624b13270236",
+    "operation:navigation-v3:strong-scope-bundle-01:pd4": "df871380b20116ff557d211b6df9901c0a960b0f3a3c71845869b606280bbbed",
+    "operation:navigation-v3:strong-scope-bundle-01:pd5": "3817077a27fe37bd9d3ae037a659135801d63be26b92c3bd75d392bd79ed0d36"
+  },
+  "navigationHashes": {
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn0": "a884f362019f1e02ec1384416fe266d7b72cdfcdbb5012cac0d15ededa101552",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn1": "d0a63f18f4a070849838f9e06b7cfc2ee1f82727410501452c74c4c742be424d",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn2": "c69b63d7780f85299ca3e8e36ababaf846e979fc43f14a08381911224a08d96f",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn3": "6517208102147fd98144230ea82ed1f2181a48331d8e0faac045f867c368828a",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn4": "7c5497f3ac003fba4374f5b9d364bad44640807a56663e643aeea44d8b1e02ff",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn5": "404f6864a4f21e016ff25a2bd603196177826b71b6f093bf7816c086ff18617e",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn7": "4ff0eefd9e401748610d0be7d0ccdecec9aad0161fd44610c3c7fda911369a73",
+    "decision:navigation-v3:strong-scope-bundle-01:route:pn8": "5addeb78f86862521087973a1c940a3d8bcb9423dba7c4509b658bb905af1749"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No primary windows, source objects or physical relations are supplied. Evidence consists of exact definitions, whole descriptions and inherited assessments cited through their enclosing current c* or n* refs. Nested historical citations are not fresh evidence.",
+    "The 39 selected descriptions and 56 paired contexts do not constitute reassessment of all 117 distinct prior contribution sources. Unselected assignments and omitted existing roles receive no new target role.",
+    "c10 and c11 retain their limits_require_adjudication status. Supported routes concern their supplied question definitions; neither those routes nor common-target reuse admits pending or reserved descendants.",
+    "The two prior destination confirmations are retained through explicit sourceContributionReviews. No additional source roles are authored, and the compound-source mappings do not create roles or settle atomic identity.",
+    "All supported prior decisions and navigation rows remain exact prior objects. No replacement definition, full-scope equivalence group, transitive union, source home, mass assignment or global uniqueness finding is introduced.",
+    "The graph retains only supplied, qualified connections. In particular, links between the regional and conditional-testing components have explicit native-route or definition support; co-batching itself supplies no scientific adjacency.",
+    "No new physical formula, universal exclusion, current observational fit, complete-history result or ultraviolet-completion claim is established."
+  ],
+  "unresolved": [
+    "u17 retains separate cutoff-universality and conditional species-scale targets. Its complete existing destination is absent, so no public species-scale application route or replacement definition is admitted.",
+    "The inherited Gauss–Bonnet tilt conflict, unestablished inflationary drainon rescue and undefined multifield derivative prescription remain unresolved; diagnostic access does not repair these premises.",
+    "Stage-dependent censorship prescriptions, complete-history claims for hyperinflation and pending or reserved descendants retain their original evidential limits. The supplied descriptions do not settle them."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 6,
+    "publicRoutes": 8,
+    "confirmedSourceRoles": 2,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "excludedOriginalRows": [
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd6",
+        "operation": "common_target",
+        "members": [
+          "c8",
+          "c11"
+        ],
+        "target": "c8",
+        "definingDifferences": [
+          "c8 organizes mechanisms and consistency of accelerated phases, including de Sitter particle and horizon systems.",
+          "c11 expressly includes transitions, postinflationary outputs, classical nonsingular comparisons and research-resource context, with reserved descendants still outstanding."
+        ],
+        "reason": "Reuse the admitted c8 destination for the shared accelerated-cosmology mechanisms and tests. Preserve c11's additional neighboring targets and limited support separately. Common access does not admit its reserved descendants or turn resource questions into constraints on physical models.",
+        "refs": [
+          "c8",
+          "c11",
+          "u0",
+          "u2",
+          "u5",
+          "n30",
+          "n32",
+          "n33",
+          "n47"
+        ]
+      },
+      "judgment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The exact regions support shared accelerated-cosmology access at admitted c8. The decision preserves c11's additional contextual branches and outstanding limits; shared access neither equates state weighting with saddle allowability nor admits reserved descendants.",
+        "refs": [
+          "c8",
+          "c11",
+          "u0",
+          "u2",
+          "u5",
+          "n30",
+          "n32",
+          "n33",
+          "n47"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:fb43300e7ba5681745d9331b"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd7",
+        "operation": "common_target",
+        "members": [
+          "c9",
+          "c10"
+        ],
+        "target": "c9",
+        "definingDifferences": [
+          "c9 explicitly includes action accounting, entropy or information restrictions and postinflationary energy transfer.",
+          "c10 separately names localized-source methods among neighboring routes and retains a different attributed descendant record."
+        ],
+        "reason": "Reuse admitted c9 for the shared dynamics, primordial-signal and effective-description target. The nearly matching central questions support common access, but their boundary coverage and outstanding child records do not establish complete equivalence or strict containment. Keep c10's original limits attached.",
+        "refs": [
+          "c9",
+          "c10",
+          "u37",
+          "u7",
+          "n46",
+          "n48",
+          "n52"
+        ]
+      },
+      "judgment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The central dynamics, spectra and control questions align sufficiently for reuse of c9. Different neighboring targets and attributed coverage justify common-target organization rather than equivalence or strict containment.",
+        "refs": [
+          "c9",
+          "c10",
+          "u37",
+          "u7",
+          "n46",
+          "n48",
+          "n52"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:e3c867c46139e156f816e00f"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd8",
+        "operation": "common_target",
+        "members": [
+          "c9",
+          "c11"
+        ],
+        "target": "c9",
+        "definingDifferences": [
+          "c9 develops perturbation conversion, trajectories, action accounting and abstract-geometry routes.",
+          "c11 develops construction, transitions, early-to-late matching and research-resource comparisons, with unresolved descendant admission."
+        ],
+        "reason": "Use c9 for their common inflationary mechanisms, predictions and control question. Retain c11's additional accelerated-cosmology and contextual branches, including its separate common-target access through c8. Neither reuse licenses a universal parentage claim or transfers pending child assignments.",
+        "refs": [
+          "c9",
+          "c11",
+          "u5",
+          "u35",
+          "u37",
+          "n47",
+          "n48",
+          "n49"
+        ]
+      },
+      "judgment": {
+        "ref": "pd8",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c9 provides a sound shared inflationary destination. Retaining c11's separate accelerated-cosmology and contextual branches avoids expanding c9 or identifying c8 with c9 through their common access from c11.",
+        "refs": [
+          "c8",
+          "c9",
+          "c11",
+          "u5",
+          "u35",
+          "u37",
+          "n47",
+          "n48",
+          "n49"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:fb43300e7ba5681745d9331b"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn6",
+        "source": "c10",
+        "target": "c4",
+        "type": "narrower",
+        "title": "What do conjectural tests permit us to infer?",
+        "qualification": "This direction concerns models that explicitly adopt particular inequalities. It does not make conjectures premises of every inflationary mechanism, and preserves source-specific perturbation, domain and normalization requirements.",
+        "reason": "The exact broad definition includes conditional consistency tests; the supplied navigation candidate supports this narrower direction.",
+        "refs": [
+          "c10",
+          "c4",
+          "u37",
+          "n46",
+          "l0"
+        ]
+      },
+      "judgment": {
+        "ref": "pn6",
+        "verdict": "supported_as_written",
+        "reason": "c10 expressly includes conditional consistency tests, and l0 supplies the matching direction. This question-level narrowing does not change c10's outstanding scope-adjudication or descendant status.",
+        "refs": [
+          "c10",
+          "c4",
+          "u37",
+          "n46",
+          "l0"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:e3c867c46139e156f816e00f"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn9",
+        "source": "c3",
+        "target": "c11",
+        "type": "method_for",
+        "title": "Apply qualified checks to cosmological constructions",
+        "qualification": "Use source-specific conjectural, geometric or EFT checks only for constructions to which they apply. Passing one check does not establish dynamical viability, observational agreement, coupling necessity or ultraviolet completion.",
+        "reason": "The inherited method connection supports method-to-question access in the required direction. It does not make every construction in the broader region an application of one common diagnostic.",
+        "refs": [
+          "c3",
+          "c11",
+          "u6",
+          "u26",
+          "u33",
+          "n42",
+          "n43",
+          "n44",
+          "l3"
+        ]
+      },
+      "judgment": {
+        "ref": "pn9",
+        "verdict": "supported_as_written",
+        "reason": "Method-to-question direction is correct. The route explicitly limits diagnostic use to applicable constructions and does not make every c11 branch an application or resolve its pending descendants.",
+        "refs": [
+          "c3",
+          "c11",
+          "u6",
+          "u26",
+          "u33",
+          "n42",
+          "n43",
+          "n44",
+          "l3"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:fb43300e7ba5681745d9331b"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn10",
+        "source": "c11",
+        "target": "c8",
+        "type": "related_question",
+        "title": "Explore accelerated phases and de Sitter systems",
+        "qualification": "Inflation, late acceleration, horizon or particle questions and microscopic constructions retain different systems and regimes. Classical nonsingular and research-resource comparisons are not thereby included in every accelerated-phase test.",
+        "reason": "Exposes the shared accelerated-cosmology target through an admitted destination while preserving c11's additional boundaries.",
+        "refs": [
+          "c8",
+          "c11",
+          "u0",
+          "u2",
+          "n30",
+          "n33"
+        ]
+      },
+      "judgment": {
+        "ref": "pn10",
+        "verdict": "supported_as_written",
+        "reason": "Related-question access to admitted c8 is supported by the shared accelerated-phase target. The qualification preserves different quantum-state questions and excludes automatic absorption of c11's nonsingular and resource branches.",
+        "refs": [
+          "c8",
+          "c11",
+          "u0",
+          "u2",
+          "n30",
+          "n33"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:fb43300e7ba5681745d9331b"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn11",
+        "source": "c11",
+        "target": "c9",
+        "type": "related_question",
+        "title": "Follow trajectories to primordial signals and EFT limits",
+        "qualification": "Background construction, perturbation generation, energy transfer and effective-theory control require separate evidence. Action-accounting and alternative-origin branches are qualified neighbors, not universal requirements on each model.",
+        "reason": "Provides common access to the dynamics and prediction target without equating the regions' complete contextual branches or descendant coverage.",
+        "refs": [
+          "c9",
+          "c11",
+          "u5",
+          "u35",
+          "u37",
+          "n47",
+          "n48",
+          "n49"
+        ]
+      },
+      "judgment": {
+        "ref": "pn11",
+        "verdict": "supported_as_written",
+        "reason": "The common dynamics and prediction target supports this explicit arc to c9. Separate evidence requirements and qualified neighboring branches prevent a containment or complete-equivalence inference.",
+        "refs": [
+          "c9",
+          "c11",
+          "u5",
+          "u35",
+          "u37",
+          "n47",
+          "n48",
+          "n49"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:fb43300e7ba5681745d9331b"
+      ]
+    }
+  ],
+  "unadmittedChallengeObjects": {
+    "newQuestions": [],
+    "decisions": [],
+    "navigation": [],
+    "sourceContributions": []
+  },
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

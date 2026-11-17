@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "observedAt": "2026-11-17T15:31:21.062805+00:00",
+  "ownPythonTests": 6,
+  "sharedScientificPythonTests": 5,
+  "nodeTests": 7,
+  "nativeLaunches": 0,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/q025/evaluation/full-pass/navigation-successors-v1",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.081s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/q025/evaluation/full-pass/navigation-contract-v3",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.016s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "research/q025/evaluation/full-pass/navigation-successors-v1/runner.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "\u2714 outside-string whitespace guard preserves strings and escapes across deltas (1.430125ms)\n\u2714 native JSON-RPC framing preserves multibyte text split at every UTF-8 byte (1.62975ms)\n\u2714 quota errors pause; ordinary network reconnect is not a separate scientific dispatch (0.205834ms)\n\u2714 one independent challenge request verifies without native calls (59.380666ms)\n\u2714 single-sourced response/context budget and shared quota pause remain enforced (0.220791ms)\n\u2714 instruction budget comes from the actual request exactly once (0.088083ms)\n\u2714 actual completed prior objects are included in the bounded challenge preflight (0.12225ms)\n\u2139 tests 7\n\u2139 suites 0\n\u2139 pass 7\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 101.198083\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "research/q025/evaluation/full-pass/navigation-successors-v1/runner.mjs",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"prepared_inputs_verified\",\"jobs\":1,\"nativeLaunches\":0}\n",
+      "stderr": ""
+    }
+  ]
+}

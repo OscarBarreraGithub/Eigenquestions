@@ -1,0 +1,575 @@
+{
+  "status": "complete",
+  "membershipSha256": "dc47a47589a0ce3f75741985458ecb76528eeb8e89cf373b1879db4e93cc7794",
+  "sourceCount": 6030,
+  "atomCount": 1255,
+  "paperMassPolicy": "cohort_renormalized_one_mass_per_represented_paper",
+  "globalTwoModes": {
+    "distanceStress": 0.5369065273329242,
+    "topFiveNeighborRecall": 0.06788844621513944,
+    "degenerateTarget": false
+  },
+  "globalMetricFit": {
+    "distanceStress": 0.3275427977534024,
+    "topFiveNeighborRecall": 0.034262948207171316,
+    "degenerateTarget": false
+  },
+  "chosenGlobalInitialization": 0,
+  "globalIterations": 1200,
+  "broadOverview": {
+    "nodes": 185,
+    "directSourceCoverage": 2562,
+    "fractionOfCohort": 0.4248756218905473,
+    "distanceStress": 0.9261164881643739,
+    "topFiveNeighborRecall": 0.13945945945945945,
+    "degenerateTarget": false,
+    "limitation": "Direct broad residual-family membership only; this is not a complete all-source parent closure."
+  },
+  "localDetail": {
+    "charts": 181,
+    "representedNodeCounts": {
+      "min": 2.0,
+      "median": 6.0,
+      "p90": 9.0,
+      "max": 15.0
+    },
+    "stress": {
+      "min": 0.0,
+      "median": 0.30580280081841565,
+      "p90": 0.4831530173836115,
+      "max": 0.6073505745291579
+    },
+    "neighborRecall": {
+      "min": 0.6000000000000001,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "limitations": "Each local chart has its own axes. Only actual direct homes or fully represented positive-support centroids are plotted; the latter add no H mass."
+  },
+  "sparseDisplay": {
+    "edges": 6448,
+    "fullOffDiagonalPairs": 195533,
+    "retainedOffDiagonalFlowFraction": 0.3846632951813115,
+    "fullFlowRetainedNumerically": true
+  },
+  "methodCoupling": {
+    "policy": "Fixedeta0.1symmetric incident-budget addition from independently reviewed uses_method only; exact method endpoints followed by explicitly contextual same-paper Q projection. No implication or Q applicability.",
+    "developmentRelations": [
+      "scientific:production-001",
+      "scientific:production-002",
+      "scientific:production-003",
+      "scientific:production-009",
+      "scientific:production-014",
+      "scientific:production-015",
+      "scientific:production-026",
+      "scientific:production-075",
+      "scientific:production-094",
+      "scientific:production-103",
+      "scientific:production-114"
+    ],
+    "withheldRelations": [
+      "scientific:production-006",
+      "scientific:production-007",
+      "scientific:production-011",
+      "scientific:production-021",
+      "scientific:production-029",
+      "scientific:production-030",
+      "scientific:production-079",
+      "scientific:production-081",
+      "scientific:production-091",
+      "scientific:production-097",
+      "scientific:production-105",
+      "scientific:production-108"
+    ],
+    "unmappedControl": "scientific:production-020 remains absent from R if endpoints unmapped",
+    "affectedQuestionVertices": 10,
+    "addedIncidentFraction": {
+      "min": 0.05722617899018442,
+      "median": 0.09335078393600049,
+      "p90": 0.1,
+      "max": 0.1
+    },
+    "coarseFlowRelativeL1Change": 0.0003373694955694907,
+    "randomQuestionTop10Retention": 0.9995,
+    "relationEvaluations": [
+      {
+        "relationId": "scientific:production-001",
+        "partition": "development_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-002",
+        "partition": "development_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:50ae26e7178dc7c8152a1eb463d1a62ab05d5fe5152cfa680c672feab1c5408a",
+            "target": "unit:c968f06d50228fe212cb7e45816b7f35e3444357e758e2832990902058a57ac6",
+            "rank": 6,
+            "weight": 0.031000463815246487
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:50ae26e7178dc7c8152a1eb463d1a62ab05d5fe5152cfa680c672feab1c5408a",
+            "target": "unit:c968f06d50228fe212cb7e45816b7f35e3444357e758e2832990902058a57ac6",
+            "rank": 1,
+            "weight": 0.07080765324508992
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-003",
+        "partition": "development_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-009",
+        "partition": "development_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-014",
+        "partition": "development_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-015",
+        "partition": "development_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:ea57c2e5caa9a514bfac605a1a0aca449ac76a8e6bfc6cd24072274cceb4c1f2",
+            "target": "unit:390c68f6c2db311a9aec2199ff93167888150ba112d3b3ea23df05e3cf17b5da",
+            "rank": 73,
+            "weight": 0.0016021420480673437
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:ea57c2e5caa9a514bfac605a1a0aca449ac76a8e6bfc6cd24072274cceb4c1f2",
+            "target": "unit:390c68f6c2db311a9aec2199ff93167888150ba112d3b3ea23df05e3cf17b5da",
+            "rank": 1,
+            "weight": 0.06528368363303827
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-026",
+        "partition": "development_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:2bc6461a15f9c1c9b31c409e32777bc9fa894db1ea7c49be62265268d5ed0527",
+            "target": "unit:026a3371db87e42b2026e6ea21390dfdd99f6f45389cd6fdb1c9e4479d9e4778",
+            "rank": 3,
+            "weight": 0.03687116666422287
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:2bc6461a15f9c1c9b31c409e32777bc9fa894db1ea7c49be62265268d5ed0527",
+            "target": "unit:026a3371db87e42b2026e6ea21390dfdd99f6f45389cd6fdb1c9e4479d9e4778",
+            "rank": 1,
+            "weight": 0.11757494778923111
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-075",
+        "partition": "development_injected",
+        "representedQuestionPairs": 2,
+        "baseline": [
+          {
+            "source": "unit:dc7237c897118679e0fcf982d274a5adb0b73295170468320b187dfb055b9dd4",
+            "target": "unit:ddea64b1288cc4b3b574818e4163a94a1e87994ae8836a63691d4fc46602f0da",
+            "rank": 138,
+            "weight": 0.0005619295531859378
+          },
+          {
+            "source": "unit:ef705210e19e2989458b7407b52276fc329e5ed5e51d3870370c64298384f546",
+            "target": "unit:ddea64b1288cc4b3b574818e4163a94a1e87994ae8836a63691d4fc46602f0da",
+            "rank": 142,
+            "weight": 0.0005619295531859378
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:dc7237c897118679e0fcf982d274a5adb0b73295170468320b187dfb055b9dd4",
+            "target": "unit:ddea64b1288cc4b3b574818e4163a94a1e87994ae8836a63691d4fc46602f0da",
+            "rank": 1,
+            "weight": 0.034952327984908355
+          },
+          {
+            "source": "unit:ef705210e19e2989458b7407b52276fc329e5ed5e51d3870370c64298384f546",
+            "target": "unit:ddea64b1288cc4b3b574818e4163a94a1e87994ae8836a63691d4fc46602f0da",
+            "rank": 1,
+            "weight": 0.034952327984908355
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-094",
+        "partition": "development_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:1213e00a2683350694097421a39bff85087934d8a6c8c8b5432c50a5334506e8",
+            "target": "unit:50ae26e7178dc7c8152a1eb463d1a62ab05d5fe5152cfa680c672feab1c5408a",
+            "rank": 37,
+            "weight": 0.00796330574178233
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:1213e00a2683350694097421a39bff85087934d8a6c8c8b5432c50a5334506e8",
+            "target": "unit:50ae26e7178dc7c8152a1eb463d1a62ab05d5fe5152cfa680c672feab1c5408a",
+            "rank": 2,
+            "weight": 0.03450143202834462
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-103",
+        "partition": "development_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-114",
+        "partition": "development_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:1213e00a2683350694097421a39bff85087934d8a6c8c8b5432c50a5334506e8",
+            "target": "unit:c968f06d50228fe212cb7e45816b7f35e3444357e758e2832990902058a57ac6",
+            "rank": 3,
+            "weight": 0.024004765382179525
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:1213e00a2683350694097421a39bff85087934d8a6c8c8b5432c50a5334506e8",
+            "target": "unit:c968f06d50228fe212cb7e45816b7f35e3444357e758e2832990902058a57ac6",
+            "rank": 1,
+            "weight": 0.07064730154153864
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-006",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-007",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-011",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:6254a0d609b810a26b3a951611cd0ad87c34c5ed96e5cab7a245ac3e6a38b94c",
+            "target": "unit:78f8c006ee532a8f2f71ede7991935e6ff0cb89fa0bd684233b37250ad31efaf",
+            "rank": 45,
+            "weight": 0.008435834392750587
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:6254a0d609b810a26b3a951611cd0ad87c34c5ed96e5cab7a245ac3e6a38b94c",
+            "target": "unit:78f8c006ee532a8f2f71ede7991935e6ff0cb89fa0bd684233b37250ad31efaf",
+            "rank": 45,
+            "weight": 0.008435834392750587
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-021",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:0775780d9b0a5a5c84013136f8322752b624a4e24e364a853333cc915b4c7c5e",
+            "target": "unit:56951e61e08b90005cb2b98bc4c15c5fd3f160a73df655753cd23d3197ebf187",
+            "rank": 8,
+            "weight": 0.024245817490830334
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:0775780d9b0a5a5c84013136f8322752b624a4e24e364a853333cc915b4c7c5e",
+            "target": "unit:56951e61e08b90005cb2b98bc4c15c5fd3f160a73df655753cd23d3197ebf187",
+            "rank": 8,
+            "weight": 0.024245817490830334
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-029",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-030",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-079",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-081",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-091",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 10,
+        "baseline": [
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:e926ef65c6ba572a5c422c374e94758a1281bad0bb13b7b1e91bcb5e012eb331",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:7d7148663011ec95f0a8732700970db8330bbfba4a2973d9daa9890faa32efbe",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:c2ec6fe7d0010dba5dad7ac3017e27fba7315410f1c28d14cbb2a39f4b6be0a3",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:c8ff7d877113e695a54a7c79f6f80f42455669614b76098919f65d31bfac7b63",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:42f47e1974630bdf19b2e21cf8e7d21675a7c71d9b52241dbf1ac435d76fa9ba",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:cbb701371bfff8799687b11c7e2ae173eb77790e8695364fc0d41555c86df4ac",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:20da1980688a5fb1eaef978e174ce77ff3c6aebef6d6fd7fd3855d33fd52f4e0",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:fa6731910e7ba395d83eba349c5a4b0eb625cebf3a5d85bd1d192d94ccfe5779",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:a1cf41feb9ff4216719296e75d7351bea56a20bdda22feb37859fab46cc4f063",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:87afe2c571ef4ae309e28297d03888307da6a1b2143375130b477f0df80040c3",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:e926ef65c6ba572a5c422c374e94758a1281bad0bb13b7b1e91bcb5e012eb331",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:7d7148663011ec95f0a8732700970db8330bbfba4a2973d9daa9890faa32efbe",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:c2ec6fe7d0010dba5dad7ac3017e27fba7315410f1c28d14cbb2a39f4b6be0a3",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:c8ff7d877113e695a54a7c79f6f80f42455669614b76098919f65d31bfac7b63",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:42f47e1974630bdf19b2e21cf8e7d21675a7c71d9b52241dbf1ac435d76fa9ba",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:cbb701371bfff8799687b11c7e2ae173eb77790e8695364fc0d41555c86df4ac",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:20da1980688a5fb1eaef978e174ce77ff3c6aebef6d6fd7fd3855d33fd52f4e0",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:fa6731910e7ba395d83eba349c5a4b0eb625cebf3a5d85bd1d192d94ccfe5779",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          },
+          {
+            "source": "unit:ccf1b6b78dc294aeaaebd22febf16a8ec73d74e5b4b34a629c3c6b3ada3c7811",
+            "target": "unit:a1cf41feb9ff4216719296e75d7351bea56a20bdda22feb37859fab46cc4f063",
+            "rank": 228,
+            "weight": 0.0002615769089993212
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-097",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:5297e29d8d427a9c3be0ba6e3961266cf210e0e6b4fe1364c3d890526a2b0a51",
+            "target": "unit:7af54f9c618807e9f65d1e09023ce3623054055ba525c517692bd3a1feff1f7e",
+            "rank": 17,
+            "weight": 0.01324482455263164
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:5297e29d8d427a9c3be0ba6e3961266cf210e0e6b4fe1364c3d890526a2b0a51",
+            "target": "unit:7af54f9c618807e9f65d1e09023ce3623054055ba525c517692bd3a1feff1f7e",
+            "rank": 17,
+            "weight": 0.01324482455263164
+          }
+        ]
+      },
+      {
+        "relationId": "scientific:production-105",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 0,
+        "baseline": [],
+        "coupled": []
+      },
+      {
+        "relationId": "scientific:production-108",
+        "partition": "withheld_not_injected",
+        "representedQuestionPairs": 1,
+        "baseline": [
+          {
+            "source": "unit:6254a0d609b810a26b3a951611cd0ad87c34c5ed96e5cab7a245ac3e6a38b94c",
+            "target": "unit:e722ad5b450f745a3b93641c4229c3d871bdac170eb7dc52217d33a0a1c6b264",
+            "rank": 1,
+            "weight": 0.047638765080333205
+          }
+        ],
+        "coupled": [
+          {
+            "source": "unit:6254a0d609b810a26b3a951611cd0ad87c34c5ed96e5cab7a245ac3e6a38b94c",
+            "target": "unit:e722ad5b450f745a3b93641c4229c3d871bdac170eb7dc52217d33a0a1c6b264",
+            "rank": 1,
+            "weight": 0.047638765080333205
+          }
+        ]
+      }
+    ],
+    "interpretation": "Injected-route rank gains are constraint fit, not generalization. Withheld pairs and unrelated row retention govern whether any exploratory coupling gain is defensible."
+  },
+  "referenceSelection": {
+    "referenceQuestionCount": 8473,
+    "selectedQuestionCount": 6030,
+    "affinityPolicy": "full pinned multiview operator, then induced cohort subgraph",
+    "flowMassPolicy": "Metropolis flow is recomputed from the selected graph and selected paper-balanced masses; full-corpus outside flow is not retained.",
+    "selectedSourceFullOffDiagonalAffinity": 5437.933562891081,
+    "retainedWithinSelectionOffDiagonalAffinity": 3993.9880050502925,
+    "retainedAffinityFraction": 0.7344679663439813,
+    "perSourceRetainedFraction": {
+      "min": 0.32750714056978525,
+      "mean": 0.7320192664780892,
+      "max": 0.9463969818223389
+    }
+  },
+  "referenceFiles": {
+    "geometry-minilm-physical_question/units.jsonl": {
+      "sha256": "03917639e5c309de0091f22bb97b538bdd470770119e5fec55981c1ed6318398",
+      "bytes": 44631021
+    },
+    "geometry-minilm-physical_question/affinity.npz": {
+      "sha256": "516b9f3974023edae147519b0741059aa4a3705d5dc7288a2e5594a0708923bb",
+      "bytes": 3003727
+    },
+    "geometry-qwen-4b-raw-physical_question/units.jsonl": {
+      "sha256": "03917639e5c309de0091f22bb97b538bdd470770119e5fec55981c1ed6318398",
+      "bytes": 44631021
+    },
+    "geometry-qwen-4b-raw-physical_question/affinity.npz": {
+      "sha256": "94ee2fec48fa495d3ae0c8baa023e281fb67db44b3272d8ca6157a5f23157c45",
+      "bytes": 3190327
+    },
+    "geometry-minilm-method/units.jsonl": {
+      "sha256": "6ab2bf87ee6b8dc1b15fab1e030cefaa90bcfc76d2ed4f1fbaf40b48ae49406d",
+      "bytes": 89079823
+    },
+    "geometry-minilm-method/affinity.npz": {
+      "sha256": "3cf1f6b01406a72ea3d0bcf1fb3e15458955c32a8e31f185f7df223afbd5231a",
+      "bytes": 6541565
+    }
+  },
+  "runtimeSeconds": 99.31968784332275
+}

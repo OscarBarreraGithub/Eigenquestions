@@ -1,0 +1,3944 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [
+    {
+      "id": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "kind": "question",
+      "title": "Five-dimensional diagnostics of strings versus decompactification",
+      "question": "In five-dimensional supergravity, how can gauge-coupling asymptotics and charged BPS indices distinguish decompactification from emergent-string limits, and do the tested Calabi–Yau compactifications satisfy the associated geometric predictions?",
+      "summary": "Keeps the bottom-up coupling argument and top-down spectrum tests together while distinguishing their evidence and conclusions.",
+      "scope": {
+        "systems": [
+          "Five-dimensional supergravity with the supplied cubic-prepotential argument",
+          "M-theory compactifications on the tested Calabi–Yau threefolds"
+        ],
+        "targets": [
+          "Distinguishing decompactification from emergent-string limits",
+          "Testing associated geometric predictions with charged BPS/GV indices"
+        ],
+        "regimes": [
+          "The source-specified asymptotic limits in five dimensions"
+        ],
+        "assumptions": [
+          "The Emergent String Conjecture is tested rather than established universally",
+          "Bottom-up coupling arguments and top-down index tests remain separate evidence routes"
+        ],
+        "conventions": [
+          "Keep the five-dimensional setting and the source's limiting trajectories explicit",
+          "Reported agreement in tested geometries does not establish a classification of every limit"
+        ],
+        "includes": [
+          "The source's combined diagnostic and geometric-testing questions"
+        ],
+        "excludes": [
+          "A universal proof of string emergence",
+          "An independent audit of the reported CICY sweep",
+          "Identification of a controlled worldsheet from coupling asymptotics alone"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "New narrower definition based on u0 and the inherited assessments attached to c0, c1, c4, n8, n19 and n26. No primary window is supplied here. Reported Calabi–Yau agreement supports a setting-specific test; neither the sweep nor a universal conjecture is independently verified.",
+        "readingBasis": "Supplied complete descriptions and inherited paired scope/attribution notes; only exact own-paper primary windows cited by both native reviewers count as excerpt reading.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2"
+      ],
+      "methods": [
+        "Gauge-coupling asymptotics",
+        "Cubic-prepotential analysis",
+        "Charged BPS/GV-index tests"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-v2:distance-and-emergence:scope:pq0",
+      "provenance": {
+        "localRef": "pq0",
+        "reviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "admissionBasis": "exact_explicit_independent_agreement_under_root_authorized_policy",
+        "newScientificDefinition": true
+      },
+      "scopeContentSha256": "594dc89c7e49b39a3a50358f39b6283e92e2ecdc0389830e98f215129590b8cf"
+    }
+  ],
+  "sourceContributions": [
+    {
+      "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+      "destinationId": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The whole unit asks both the five-dimensional limit-diagnosis question and the Calabi–Yau geometric-testing question. The new destination retains both, separates cubic-EFT arguments from BPS/GV tests, and treats reported agreement as bounded evidence. Existing roles at c0, c1 and c4 are unchanged. Independent confirmation: u0 explicitly asks both questions retained by pq0. The addresses role is supported by the whole description and its three separately mapped contexts, with cubic-EFT and BPS/GV evidence distinguished and reported agreement bounded. Retain this exact prior role; no other source receives a changed target.",
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739",
+          "paperId": "2309.10024"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:role:0"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:v2:distance-and-emergence:pn0",
+      "source": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+      "target": "q025-candidate-question:d292e0749341c9b371266594",
+      "type": "narrower",
+      "title": "Test completion through distance, towers and EFT limits",
+      "qualification": "This is one proposed consistency direction. Ordinary, refined and sharpened distance statements remain distinct; failure of a fixed EFT does not by itself rule out a completion.",
+      "rationale": "c2 is a concrete narrower question within c6's completion-selection program. The supplied parent candidate supports this direction.",
+      "evidenceIds": [
+        "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1bda1fe5f1a713de5462-challenge:p0",
+          "candidateId": "q025-candidate-question:a4f67137d6a4a477cc097c6a"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893",
+          "textSha256": "5d0a687405a4a129aa50a2e87696184884adbcb0ede13dfdfd02895d528d29fb"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893",
+          "reviewId": "leaf-1bda1fe5f1a713de5462-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l3",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "targetCandidateId": "q025-candidate-question:d292e0749341c9b371266594",
+          "candidateId": "successor2-parent-5eef7911f1a80cb73c18-challenge:link:25",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The c6→c2 direction correctly runs from broader completion selection to a narrower distance–tower consistency question. The title is concrete, and the qualification prevents fixed-EFT failure from becoming a completion obstruction.",
+          "refs": [
+            "c6",
+            "c2",
+            "u10",
+            "n2",
+            "l3"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn1",
+      "source": "q025-candidate-question:d292e0749341c9b371266594",
+      "target": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "type": "comparison",
+      "title": "Compare onset bounds with envelopes and special triggers",
+      "qualification": "Finite-region onset and absolute masses differ from fixed envelopes, trajectory conditions and special zero-mass triggers. A trigger does not automatically establish infinite geodesic distance.",
+      "rationale": "The shared distance–tower target supports a comparison while the complete definitions prevent equivalence.",
+      "evidenceIds": [
+        "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+        "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bea4433b3d92cecb48c7-challenge:p0",
+          "candidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+          "textSha256": "7641ffdae9bc84927d4cc1737774b325197eeff220e6ec589416de6ddc523346"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563",
+          "textSha256": "3c54a9f5a4e978aa0af506827bf7465c6b1703b57f275a6504d8726f70a3418b"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:d292e0749341c9b371266594",
+          "targetCandidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+          "candidateId": "parent-2cf7cf7591d39055bca1-challenge:link:20",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "The comparison gives a useful next question while preserving onset, absolute-mass, envelope and special-trigger distinctions. It neither treats c3 as fully contained in c2 nor supplies missing infinite-distance premises.",
+          "refs": [
+            "c2",
+            "c3",
+            "u8",
+            "u16",
+            "n12",
+            "n28",
+            "l2"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn2",
+      "source": "q025-candidate-question:d292e0749341c9b371266594",
+      "target": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "type": "comparison",
+      "title": "Ask whether the tower signals a string or extra dimensions",
+      "qualification": "Tower existence or exponential lightening alone does not identify a weak string, establish uniqueness or prove equi-dimensionality. Finite internal volume is insufficient for the cited equi-dimensional criterion.",
+      "rationale": "u26 has distinct supplied contributions to both destinations, supporting a comparison between tower restrictions and the further identification question.",
+      "evidenceIds": [
+        "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "The route asks the additional identification question after tower restrictions. Its comparison type and explicit equi-dimensional, uniqueness and finite-volume qualifications avoid an unsupported physical implication.",
+          "refs": [
+            "c2",
+            "c1",
+            "u26",
+            "n13",
+            "n24"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn3",
+      "source": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "target": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "type": "narrower",
+      "title": "Classify leading strings and decompactification at asymptotic limits",
+      "qualification": "Focus on the source-specified infinite-distance and weak-coupling branch. Keep dimension, spectrum, reference scale and quantum accessibility explicit; uniqueness remains a proposal.",
+      "rationale": "c1 narrows c4's broader physical-tower and limiting-regime question to asymptotic leading descriptions.",
+      "evidenceIds": [
+        "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+        "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "The c4→c1 direction correctly exposes an asymptotic leading-description branch of the broader limiting-spectrum question. The route retains source-specific dimensions, spectra, scales and quantum accessibility; uniqueness remains a question.",
+          "refs": [
+            "c4",
+            "c1",
+            "u26",
+            "u0",
+            "n24",
+            "n26"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn4",
+      "source": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "target": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "type": "comparison",
+      "title": "Compare asymptotic strings with other boundary spectra",
+      "qualification": "The destination also examines finite-distance alternatives and separate SCFT cusps. Tensionlessness need not establish an infinite massless non-BPS tower, and SCFT distance is not automatically gravitational distance.",
+      "rationale": "This retains the useful supplied comparison to boundary questions beyond c1's asymptotic classification branch.",
+      "evidenceIds": [
+        "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+        "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e",
+          "textSha256": "8213c911e74dd4a835d98d02b39183511226c2c66009867b42cf755118eb95e1"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+          "textSha256": "513f8cf75158596480cbfac6a64af34fd8368e7711f88b126ab964ddd22d9542"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+          "targetCandidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+          "candidateId": "parent-2cf7cf7591d39055bca1-challenge:link:16",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "This explicitly reviewed comparison offers access to boundary spectra outside c1's focal asymptotic branch. Finite-distance tensionlessness and nongravitational SCFT distance remain qualified alternatives; the arc is not inferred by reversing containment.",
+          "refs": [
+            "c1",
+            "c4",
+            "u13",
+            "u6",
+            "n20",
+            "n14",
+            "l0"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn5",
+      "source": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "target": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "type": "comparison",
+      "title": "Compare competing towers along quantum and coupling paths",
+      "qualification": "Specify the coupling path, frame and reference scale before comparing towers. Quantum-volume growth alone does not prove decompactification; the membrane obstruction is conditional, and finite-geometry or large-D comparisons have separate premises.",
+      "rationale": "The supplied comparison connects leading-description questions to concrete competition and accessibility issues without resolving the earlier membrane-exception question.",
+      "evidenceIds": [
+        "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+        "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+        "unit:f248474915c717e6122e6f37fe1774ac5d988ec8889d78340311ad0dda1c9cec",
+        "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge:p2",
+          "candidateId": "q025-candidate-question:f0194c1ae166dcb82da0a36c"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+          "textSha256": "647d6eaf762fc635b8a50cf05caaef5da00b485c69157362131097f68fbc3f82"
+        },
+        {
+          "localRef": "u28",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:f248474915c717e6122e6f37fe1774ac5d988ec8889d78340311ad0dda1c9cec",
+          "textSha256": "ff1c71c3db9a6dab3c8c02b76b84f5f9898a3ef83dd3e91864e83eb24c53362a"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b",
+          "textSha256": "b4f2dcd04d13b9d3781f0b521e8ce3f1d7e35eab9e1715ec56125d44424c06da"
+        },
+        {
+          "localRef": "u4",
+          "kind": "description",
+          "unitIndex": 31,
+          "unitId": "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+          "textSha256": "33971826a788a038630bcea3078bf908514e9a1e83c3cee5c41f9f72e41f4b5a"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n36",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+          "targetCandidateId": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+          "candidateId": "parent-2cf7cf7591d39055bca1-challenge:link:17",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn5",
+      "provenance": {
+        "nativeRouteId": "pn5",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn5",
+          "verdict": "supported_as_written",
+          "reason": "The comparison usefully moves from leading descriptions to path-dependent competition and quantum accessibility. It preserves scale and frame conditions, the conditional membrane obstruction and the separate premises of finite-geometry and large-D comparisons.",
+          "refs": [
+            "c1",
+            "c5",
+            "u15",
+            "u28",
+            "u30",
+            "u4",
+            "n33",
+            "n34",
+            "n35",
+            "n36",
+            "l1"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn6",
+      "source": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "target": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "type": "comparison",
+      "title": "Compare worldsheet control with the leading asymptotic description",
+      "qualification": "A weak sigma model for a wrapped EFT string does not by itself establish a unique critical emergent string or exclude decompactification. Unresolved Type IIA identifications and source-specific trajectories remain explicit.",
+      "rationale": "The definitions share a string/decompactification question but ask different questions about control and leading status.",
+      "evidenceIds": [
+        "unit:60fda2fa93af519b7964403dde9c27133d61f7e61f7b16d950765805ee641b09",
+        "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+        "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 35,
+          "unitId": "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+          "textSha256": "1b9e2d6f8d8c755447dbc291bc7be233e8a58d98d3af34922c29d95ebe6d2fdc"
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 19,
+          "unitId": "unit:60fda2fa93af519b7964403dde9c27133d61f7e61f7b16d950765805ee641b09",
+          "textSha256": "fc0535660787969247cbe69449471fcf854e40f87c08f6531f9b593c33bf51a7"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:60fda2fa93af519b7964403dde9c27133d61f7e61f7b16d950765805ee641b09",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn6",
+      "provenance": {
+        "nativeRouteId": "pn6",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn6",
+          "verdict": "supported_as_written",
+          "reason": "The route compares worldsheet control with the distinct leading-description question. Its qualification follows the supplied scopes' separation of EFT strings, critical emergent strings and unresolved identifications; it asserts no new worldsheet criterion.",
+          "refs": [
+            "c0",
+            "c1",
+            "u19",
+            "u9",
+            "u26",
+            "n6",
+            "n4",
+            "n24"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn7",
+      "source": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "target": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "type": "narrower",
+      "title": "Explore five-dimensional coupling and BPS-index diagnostics",
+      "qualification": "Restrict to the supplied five-dimensional argument and tested Calabi–Yau geometries. Separate cubic-EFT reasoning from top-down index tests; reported agreement does not establish universal uniqueness.",
+      "rationale": "The source's existing specialization of c1 supports a concrete diagnostic destination.",
+      "evidenceIds": [
+        "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn7",
+      "provenance": {
+        "nativeRouteId": "pn7",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn7",
+          "verdict": "supported_as_written",
+          "reason": "The c1→pq0 direction correctly provides a concrete narrower diagnostic question. The route distinguishes bottom-up coupling reasoning from top-down tests and limits the reported agreement to the supplied setting.",
+          "refs": [
+            "c1",
+            "pq0",
+            "u0",
+            "n26"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn8",
+      "source": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "target": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "type": "narrower",
+      "title": "Distinguish strings from decompactification in five dimensions",
+      "qualification": "Use coupling asymptotics and charged BPS/GV tests in their stated setting. These are diagnostic and geometric tests, not a universal worldsheet-control criterion.",
+      "rationale": "The five-dimensional diagnostic branch is already explicit in c0 and can share the same narrower destination used by c1.",
+      "evidenceIds": [
+        "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn8",
+      "provenance": {
+        "nativeRouteId": "pn8",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn8",
+          "verdict": "supported_as_written",
+          "reason": "The c0→pq0 direction exposes c0's explicit five-dimensional branch and reuses the same bounded destination as pn7. The qualification correctly prevents these diagnostics from becoming a universal worldsheet-control test.",
+          "refs": [
+            "c0",
+            "pq0",
+            "u0",
+            "n8"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:distance-and-emergence:pn9",
+      "source": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "target": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "type": "comparison",
+      "title": "Compare decay-rate questions with physical-sector identification",
+      "qualification": "For the higher-form extremality route, sector existence and force matching are independent requirements. The charged tower may be subleading; neither universal existence nor a quantitative decay bound follows from this comparison.",
+      "rationale": "The exact paired notes for u7 support comparing the quantitative program with the physical-spectrum questions it leaves open.",
+      "evidenceIds": [
+        "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bea4433b3d92cecb48c7-challenge:p0",
+          "candidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 17,
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "textSha256": "e8627f42bcdb4543b2abc74e405f57c9e14e6be4014182bd8eb35b597391c6c4"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:distance-and-emergence:route:pn9",
+      "provenance": {
+        "nativeRouteId": "pn9",
+        "sourceReviewIds": [
+          "distance-and-emergence-navigation-proposal",
+          "distance-and-emergence-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn9",
+          "verdict": "supported_as_written",
+          "reason": "The comparison links decay-rate questions to physical-sector identification without asserting that the higher-form route applies universally. Its qualification preserves independent existence and force-matching requirements and permits a subleading charged tower; no quantitative bound is inferred.",
+          "refs": [
+            "c3",
+            "c4",
+            "u7",
+            "n18",
+            "n31"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:scope:pq0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "independentAssessment": {
+        "ref": "pq0",
+        "kind": "new_question",
+        "verdict": "supported_as_written",
+        "reason": "u0 supplies both diagnostic and geometric-testing targets. The inherited assessments support the five-dimensional cubic-prepotential and BPS/GV distinction. The definition preserves those routes, bounds the tested setting and explicitly disclaims fresh primary reading, an audited sweep and universal validity. Its representation repair supplies no additional scientific support.",
+        "refs": [
+          "u0",
+          "c0",
+          "c1",
+          "c4",
+          "n8",
+          "n19",
+          "n26"
+        ]
+      },
+      "scopeContentSha256": "594dc89c7e49b39a3a50358f39b6283e92e2ecdc0389830e98f215129590b8cf",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739",
+          "paperId": "2309.10024"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u0",
+        "questionRef": "pq0",
+        "role": "addresses",
+        "reason": "The whole unit asks both the five-dimensional limit-diagnosis question and the Calabi–Yau geometric-testing question. The new destination retains both, separates cubic-EFT arguments from BPS/GV tests, and treats reported agreement as bounded evidence. Existing roles at c0, c1 and c4 are unchanged.",
+        "refs": [
+          "u0",
+          "pq0",
+          "n8",
+          "n19",
+          "n26"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "u0 explicitly asks both questions retained by pq0. The addresses role is supported by the whole description and its three separately mapped contexts, with cubic-EFT and BPS/GV evidence distinguished and reported agreement bounded. Retain this exact prior role; no other source receives a changed target.",
+        "refs": [
+          "u0",
+          "pq0",
+          "n8",
+          "n19",
+          "n26"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "594dc89c7e49b39a3a50358f39b6283e92e2ecdc0389830e98f215129590b8cf",
+      "contributionContentSha256": "fcb28e8577d5087d57a1bc876e4a0ce44782e2717fd863c91c1b9d3081cddf10",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+        "q025-candidate-question:d292e0749341c9b371266594"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "fff222b9a449090ed5ed385596efcac89f57a12795d5730d6d65cb1b722c48bb",
+      "sourceScopeContentSha256": "b3bb9a1ebbd3bde977ca4596d60d79c76ed658ac7f508b38dcc836602f200d50",
+      "targetScopeContentSha256": "597d41c02e08201f63c8ea2e357b53bb31030a5fd8a010f7b4b1bc03c2122b9e",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1bda1fe5f1a713de5462-challenge:p0",
+          "candidateId": "q025-candidate-question:a4f67137d6a4a477cc097c6a"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893",
+          "textSha256": "5d0a687405a4a129aa50a2e87696184884adbcb0ede13dfdfd02895d528d29fb"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893",
+          "reviewId": "leaf-1bda1fe5f1a713de5462-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l3",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "targetCandidateId": "q025-candidate-question:d292e0749341c9b371266594",
+          "candidateId": "successor2-parent-5eef7911f1a80cb73c18-challenge:link:25",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:d292e0749341c9b371266594",
+        "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "a2ffb86ae9a7aba4868beefec22d7232f06bec35ad14f4decdc193ffd7127127",
+      "sourceScopeContentSha256": "597d41c02e08201f63c8ea2e357b53bb31030a5fd8a010f7b4b1bc03c2122b9e",
+      "targetScopeContentSha256": "3cacd2910b0b2c9715bfeef7cd32ff5c8cc02ea0bcfbd633aace37e86b9fd832",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bea4433b3d92cecb48c7-challenge:p0",
+          "candidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+          "textSha256": "7641ffdae9bc84927d4cc1737774b325197eeff220e6ec589416de6ddc523346"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563",
+          "textSha256": "3c54a9f5a4e978aa0af506827bf7465c6b1703b57f275a6504d8726f70a3418b"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:d292e0749341c9b371266594",
+          "targetCandidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+          "candidateId": "parent-2cf7cf7591d39055bca1-challenge:link:20",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:d292e0749341c9b371266594",
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "de95f7edb84535fc6d3f0b45641dcfb99918a19f049c88ab01c41e212406337d",
+      "sourceScopeContentSha256": "597d41c02e08201f63c8ea2e357b53bb31030a5fd8a010f7b4b1bc03c2122b9e",
+      "targetScopeContentSha256": "22971055a165bf3dcf548a5d71342dba5262aa3e6e68e78ec0c6de29d41abffc",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:8e4149c7991f4ca5156a5299",
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "1940a9614be4a3c0b2dff7446c367ef4cded2f1a434adacc55e5db9df3b8bfb3",
+      "sourceScopeContentSha256": "7805495be663950d1765ec8d9d598a5501e9bccf3e9b1f5fc9d8014c3eea041d",
+      "targetScopeContentSha256": "22971055a165bf3dcf548a5d71342dba5262aa3e6e68e78ec0c6de29d41abffc",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+        "q025-candidate-question:8e4149c7991f4ca5156a5299"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "bccbec948c3a80b1d711486cb9247da5d092a71daec2474fbb9cea912d2d2296",
+      "sourceScopeContentSha256": "22971055a165bf3dcf548a5d71342dba5262aa3e6e68e78ec0c6de29d41abffc",
+      "targetScopeContentSha256": "7805495be663950d1765ec8d9d598a5501e9bccf3e9b1f5fc9d8014c3eea041d",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e",
+          "textSha256": "8213c911e74dd4a835d98d02b39183511226c2c66009867b42cf755118eb95e1"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+          "textSha256": "513f8cf75158596480cbfac6a64af34fd8368e7711f88b126ab964ddd22d9542"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+          "targetCandidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+          "candidateId": "parent-2cf7cf7591d39055bca1-challenge:link:16",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn5",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+        "q025-candidate-question:f0194c1ae166dcb82da0a36c"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "2bd1b8ec85eb2fbe9f415ff186b2a8aa85db1d52dacc236c2f119346412ef590",
+      "sourceScopeContentSha256": "22971055a165bf3dcf548a5d71342dba5262aa3e6e68e78ec0c6de29d41abffc",
+      "targetScopeContentSha256": "897066c5a268c07da1de571c5e2a0a9de192f9e8ec524f3533cf9f87446c1cac",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge:p2",
+          "candidateId": "q025-candidate-question:f0194c1ae166dcb82da0a36c"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+          "textSha256": "647d6eaf762fc635b8a50cf05caaef5da00b485c69157362131097f68fbc3f82"
+        },
+        {
+          "localRef": "u28",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:f248474915c717e6122e6f37fe1774ac5d988ec8889d78340311ad0dda1c9cec",
+          "textSha256": "ff1c71c3db9a6dab3c8c02b76b84f5f9898a3ef83dd3e91864e83eb24c53362a"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b",
+          "textSha256": "b4f2dcd04d13b9d3781f0b521e8ce3f1d7e35eab9e1715ec56125d44424c06da"
+        },
+        {
+          "localRef": "u4",
+          "kind": "description",
+          "unitIndex": 31,
+          "unitId": "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+          "textSha256": "33971826a788a038630bcea3078bf908514e9a1e83c3cee5c41f9f72e41f4b5a"
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n36",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+          "targetCandidateId": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+          "candidateId": "parent-2cf7cf7591d39055bca1-challenge:link:17",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn6",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:3a00d832e32b48298c0a9b77",
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "f9cf39e5ced2f8fa45a91e8df66e89a6f11cc7ad1211ba6fe642eb7604c7d9e9",
+      "sourceScopeContentSha256": "536f4eb600a627dfda465ef6b1bb3ed514e9204548669146c2086149e15268cd",
+      "targetScopeContentSha256": "22971055a165bf3dcf548a5d71342dba5262aa3e6e68e78ec0c6de29d41abffc",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 35,
+          "unitId": "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+          "textSha256": "1b9e2d6f8d8c755447dbc291bc7be233e8a58d98d3af34922c29d95ebe6d2fdc"
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 19,
+          "unitId": "unit:60fda2fa93af519b7964403dde9c27133d61f7e61f7b16d950765805ee641b09",
+          "textSha256": "fc0535660787969247cbe69449471fcf854e40f87c08f6531f9b593c33bf51a7"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:60fda2fa93af519b7964403dde9c27133d61f7e61f7b16d950765805ee641b09",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn7",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "66d78214b9197b6b0e46571fecea80ed716d1805aa43f3dc529058498b74fba6",
+      "sourceScopeContentSha256": "22971055a165bf3dcf548a5d71342dba5262aa3e6e68e78ec0c6de29d41abffc",
+      "targetScopeContentSha256": "594dc89c7e49b39a3a50358f39b6283e92e2ecdc0389830e98f215129590b8cf",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn8",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:3a00d832e32b48298c0a9b77",
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "bd043de723afa4402f7c8c5aef15dac1c3a544d5649f9fb46908f2ed6316284a",
+      "sourceScopeContentSha256": "536f4eb600a627dfda465ef6b1bb3ed514e9204548669146c2086149e15268cd",
+      "targetScopeContentSha256": "594dc89c7e49b39a3a50358f39b6283e92e2ecdc0389830e98f215129590b8cf",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:distance-and-emergence:route:pn9",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+        "q025-candidate-question:8e4149c7991f4ca5156a5299"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "cf7e10d5ffbf79af0f878ead17de52cba2983ec2a905a3f9a35eeb8175af3596",
+      "sourceScopeContentSha256": "3cacd2910b0b2c9715bfeef7cd32ff5c8cc02ea0bcfbd633aace37e86b9fd832",
+      "targetScopeContentSha256": "7805495be663950d1765ec8d9d598a5501e9bccf3e9b1f5fc9d8014c3eea041d",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "distance-and-emergence-navigation-proposal",
+        "challengeReviewId": "distance-and-emergence-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bea4433b3d92cecb48c7-challenge:p0",
+          "candidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 17,
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "textSha256": "e8627f42bcdb4543b2abc74e405f57c9e14e6be4014182bd8eb35b597391c6c4"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "distance-and-emergence-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/adopted/distance-proposal-authored-context/reply.json",
+      "sha256": "e6a0e6a0068f3db44c30d1ec6edef5e305458c03b2955d9a68376f8cdc132dcf",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/adopted/distance-proposal-authored-context/receipt.json",
+      "receiptSha256": "64a386d7addbcf80bbb563cec96367ec5eba25bf93f921801b6190386b742e13",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/adopted/distance-proposal-authored-context/normalization.json",
+        "sha256": "139acf45c65986102690400121f23b3e342fdd64e1f9d822e55236be545007f1"
+      }
+    },
+    {
+      "id": "distance-and-emergence-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/reply.json",
+      "sha256": "71580857d45ce41355f71a6efb9faa10db34cbc3195f17615d258a06b72aad8c",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/receipt.json",
+      "receiptSha256": "2d334ed8e234e0b459490f8a5e5e16a9dea5ed8ef49a7d371ff797afbeb80454",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-successors-v1/jobs/distance-and-emergence-independent-challenge/normalization.json",
+        "sha256": "467ef2b63d9c5e759669f5bdb8404ef0878b5653aed251f85c37a2532a811c8e"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "common_target",
+        "members": [
+          "c0",
+          "c1",
+          "c4",
+          "c5"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c0 includes wrapped-brane worldsheet control, nearly tensionless limits and unresolved weak-string identifications.",
+          "c1 asks about leading asymptotic descriptions, effective dimension and possible uniqueness.",
+          "c4 includes physical-spectrum checks, finite-distance alternatives and separate SCFT comparisons.",
+          "c5 retains coupling paths, quantum obstruction, competing extended objects and finite-geometry or large-D comparisons."
+        ],
+        "reason": "The shared target is identifying the physical description of a limiting compactification, including strings versus decompactification. Existing c4 already expresses that target. Reuse it for organization while retaining the other exact destinations and all their qualifications. This does not absorb every worldsheet or comparison branch into c4, equate the scopes, or transfer source roles automatically.",
+        "refs": [
+          "c0",
+          "c1",
+          "c4",
+          "c5",
+          "u0",
+          "u9",
+          "u19",
+          "u15",
+          "u28",
+          "u30",
+          "u4",
+          "n6",
+          "n19",
+          "n24",
+          "n34",
+          "n35",
+          "n36"
+        ]
+      },
+      "nativeOperationValueSha256": "f6049822fab4af97b26f9187d994091ddc32cb6dc5765d8b47e14edac2cee9b5",
+      "members": [
+        "q025-candidate-question:3a00d832e32b48298c0a9b77",
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+        "q025-candidate-question:8e4149c7991f4ca5156a5299",
+        "q025-candidate-question:f0194c1ae166dcb82da0a36c"
+      ],
+      "target": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c4 already asks the shared limiting-description question. The decision expressly preserves the complete other scopes and excludes blanket absorption of worldsheet or comparison branches. This supports common-target reuse without equivalence, containment of every branch or automatic role transfer.",
+        "refs": [
+          "c0",
+          "c1",
+          "c4",
+          "c5",
+          "u0",
+          "u19",
+          "u15",
+          "n6",
+          "n19",
+          "n34",
+          "n35",
+          "n36"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "c5",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge:p2",
+          "candidateId": "q025-candidate-question:f0194c1ae166dcb82da0a36c"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 19,
+          "unitId": "unit:60fda2fa93af519b7964403dde9c27133d61f7e61f7b16d950765805ee641b09",
+          "textSha256": "fc0535660787969247cbe69449471fcf854e40f87c08f6531f9b593c33bf51a7"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 35,
+          "unitId": "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+          "textSha256": "1b9e2d6f8d8c755447dbc291bc7be233e8a58d98d3af34922c29d95ebe6d2fdc"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+          "textSha256": "647d6eaf762fc635b8a50cf05caaef5da00b485c69157362131097f68fbc3f82"
+        },
+        {
+          "localRef": "u28",
+          "kind": "description",
+          "unitIndex": 5,
+          "unitId": "unit:f248474915c717e6122e6f37fe1774ac5d988ec8889d78340311ad0dda1c9cec",
+          "textSha256": "ff1c71c3db9a6dab3c8c02b76b84f5f9898a3ef83dd3e91864e83eb24c53362a"
+        },
+        {
+          "localRef": "u30",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b",
+          "textSha256": "b4f2dcd04d13b9d3781f0b521e8ce3f1d7e35eab9e1715ec56125d44424c06da"
+        },
+        {
+          "localRef": "u4",
+          "kind": "description",
+          "unitIndex": 31,
+          "unitId": "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+          "textSha256": "33971826a788a038630bcea3078bf908514e9a1e83c3cee5c41f9f72e41f4b5a"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:caf09c31de4c1f59f1bb9b95a124b65def3af492434891dd9f9b7f2efe0c3bbe",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n34",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a0e1121d1cb8d53bd561b63aba562c525ae2d93a0576d59dbad1842e5f222542",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n35",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ff07ef3ceaea434a36ce7a73250261e4b0f8a0082eba724f2db8a020c7d69a2b",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n36",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2b01ba5e21cab3e12bf5afa37dccf7e4bee97447b291fd23ada4e331f1abb0d7",
+          "reviewId": "leaf-fbb34bbe2dcb2a8c4f2a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "common_target",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "c2 explicitly separates finite-region onset, absolute masses and tower-induced EFT cutoffs.",
+          "c3 separately retains fixed envelopes, trajectory restrictions and special zero-mass triggers whose ordinary distance premises may be unverified.",
+          "The scopes preserve different formulations and reading limits; neither is an exact replacement for the other."
+        ],
+        "reason": "Reuse c2 for the shared question of distance-dependent tower existence, rates and EFT consequences. Retain c3 as a distinct destination for its quantitative formulations and trigger comparisons. The complete definitions support this organization without treating every special trigger as infinite geodesic distance or every relative suppression as an absolutely light tower.",
+        "refs": [
+          "c2",
+          "c3",
+          "u8",
+          "u24",
+          "u16",
+          "u17",
+          "u11",
+          "n12",
+          "n28",
+          "n30"
+        ]
+      },
+      "nativeOperationValueSha256": "5177e9797c96fc6f829b1b030d720a52731a9afdb5b54367fbecfc5539080bc8",
+      "members": [
+        "q025-candidate-question:d292e0749341c9b371266594",
+        "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+      ],
+      "target": "q025-candidate-question:d292e0749341c9b371266594",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete definitions share distance-dependent tower existence, quantitative behavior and EFT consequences. Their onset, absolute-mass, envelope and special-trigger branches remain materially distinct. Reusing c2 for the shared target while retaining c3 is supported; an exact merge would not be.",
+        "refs": [
+          "c2",
+          "c3",
+          "u8",
+          "u16",
+          "u11",
+          "n12",
+          "n28",
+          "n30"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bea4433b3d92cecb48c7-challenge:p0",
+          "candidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+          "textSha256": "7641ffdae9bc84927d4cc1737774b325197eeff220e6ec589416de6ddc523346"
+        },
+        {
+          "localRef": "u24",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:ded8cabecabf0d691931fe8fa0609900678148e719771bb6342f88e6cb14e28a",
+          "textSha256": "bf33d18773a58e72d6a98b37b74ba6f61c330c6c62b981696313f7139e62a3cc"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563",
+          "textSha256": "3c54a9f5a4e978aa0af506827bf7465c6b1703b57f275a6504d8726f70a3418b"
+        },
+        {
+          "localRef": "u17",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:ae10fb233cad18ae4744b74097ff23e8b9e90a1da5dace947393494f82210373",
+          "textSha256": "86d5bccee8747574c6f97ee1adac85d3f6f0a5eea80164fa023342651f6bb737"
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:7af944051d3b7c4312583ad6760577d2daa097b1d3d3e3e4609c0423485d6e73",
+          "textSha256": "7fc442b70f956bdf99f3d9f16f68782cc5af163eaba1b62f96f7c7580b824c07"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:571c78dd8db9a7928cc3d5ca711740a7c7650021fbfa9bb4462a941fa35ce16d",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n28",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a5fc5563f783fbbb8994e9f871ab582c02837e61fe4ec99d33e38ba73f9a0563",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n30",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7af944051d3b7c4312583ad6760577d2daa097b1d3d3e3e4609c0423485d6e73",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "specializes",
+        "members": [
+          "c1",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c1 focuses on asymptotic or weak-coupling string/decompactification descriptions and their possible uniqueness.",
+          "c4 also considers finite-distance alternatives, other limiting regimes and nongravitational SCFT comparisons."
+        ],
+        "reason": "The asymptotic leading-description question is a narrower branch of c4's physical-tower and limiting-description program. This organizational specialization retains c1's conjectural uniqueness question; it does not derive uniqueness from c4 or identify every physical tower with a critical string.",
+        "refs": [
+          "c1",
+          "c4",
+          "u0",
+          "u26",
+          "u6",
+          "u13",
+          "n14",
+          "n20",
+          "n24",
+          "n26"
+        ]
+      },
+      "nativeOperationValueSha256": "0669f816bceded6f0351f902aa493f4e298787d483c86131198ccdeccfd678cc",
+      "members": [
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+        "q025-candidate-question:8e4149c7991f4ca5156a5299"
+      ],
+      "target": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c4's question about towers and their limiting descriptions can organize c1's more focused asymptotic leading-description question, including whether that description is unique. The ordering and broader target are correct. This is question-level specialization, with conjectural uniqueness retained rather than inferred.",
+        "refs": [
+          "c1",
+          "c4",
+          "u26",
+          "u0",
+          "u6",
+          "n14",
+          "n24",
+          "n26"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+          "textSha256": "513f8cf75158596480cbfac6a64af34fd8368e7711f88b126ab964ddd22d9542"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 11,
+          "unitId": "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e",
+          "textSha256": "8213c911e74dd4a835d98d02b39183511226c2c66009867b42cf755118eb95e1"
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3949b3aa6d882b450cf301677a2be789ba9deb1b9841383efaa93cec680efc3c",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:899dfc82da145a9f887be1bb5dd403c23af1b62b05e4e6e46cf7b235f04eea8e",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "specializes",
+        "members": [
+          "c2",
+          "c6"
+        ],
+        "target": "c6",
+        "definingDifferences": [
+          "c2 studies scalar distance, light towers and EFT validity.",
+          "c6 asks the broader completion-compatibility question across proposed restrictions and construction evidence."
+        ],
+        "reason": "Distance and tower restrictions provide a specific direction within the completion-selection question. Their conjectural status and finite-region qualifications remain intact; a failure of a particular EFT description is not automatically a proof that no quantum-gravity completion exists.",
+        "refs": [
+          "c2",
+          "c6",
+          "u10",
+          "u24",
+          "n2",
+          "n9",
+          "l3"
+        ]
+      },
+      "nativeOperationValueSha256": "eed6f3a7c1f06aa56e9738c65bf3835a6c5a44cc57b149aca4c06e1bb8c4370e",
+      "members": [
+        "q025-candidate-question:d292e0749341c9b371266594",
+        "q025-candidate-question:a4f67137d6a4a477cc097c6a"
+      ],
+      "target": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c6 includes assessing proposed completion restrictions and their evidence. c2 supplies a particular such direction. The decision correctly distinguishes failure of a fixed EFT from exclusion of all quantum-gravity completions and orders the narrower member first.",
+        "refs": [
+          "c2",
+          "c6",
+          "u10",
+          "u24",
+          "n2",
+          "n9",
+          "l3"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c6",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-1bda1fe5f1a713de5462-challenge:p0",
+          "candidateId": "q025-candidate-question:a4f67137d6a4a477cc097c6a"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893",
+          "textSha256": "5d0a687405a4a129aa50a2e87696184884adbcb0ede13dfdfd02895d528d29fb"
+        },
+        {
+          "localRef": "u24",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:ded8cabecabf0d691931fe8fa0609900678148e719771bb6342f88e6cb14e28a",
+          "textSha256": "bf33d18773a58e72d6a98b37b74ba6f61c330c6c62b981696313f7139e62a3cc"
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:65017cb41a9b8621dda3f38dbcbe0a14c3bbb9b4a9167f24d007e0a0c0f46893",
+          "reviewId": "leaf-1bda1fe5f1a713de5462-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ded8cabecabf0d691931fe8fa0609900678148e719771bb6342f88e6cb14e28a",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l3",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+          "targetCandidateId": "q025-candidate-question:d292e0749341c9b371266594",
+          "candidateId": "successor2-parent-5eef7911f1a80cb73c18-challenge:link:25",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c0"
+        ],
+        "target": "c0",
+        "definingDifferences": [
+          "pq0 fixes the five-dimensional coupling and BPS-index diagnostic setting.",
+          "c0 additionally covers other weak-string identifications and worldsheet-control questions."
+        ],
+        "reason": "The new definition makes c0's explicitly included five-dimensional diagnostic branch directly accessible without changing c0 or treating its other branches as equivalent.",
+        "refs": [
+          "pq0",
+          "c0",
+          "u0",
+          "n8"
+        ]
+      },
+      "nativeOperationValueSha256": "7f25983da58ed6542a17863bd181878b41f81478f13013bce36de02594f710a5",
+      "members": [
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+        "q025-candidate-question:3a00d832e32b48298c0a9b77"
+      ],
+      "target": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Five-dimensional diagnostics are explicitly included in c0. pq0 exposes that bounded branch and retains its two evidence routes without changing the broader worldsheet or weak-string questions.",
+        "refs": [
+          "pq0",
+          "c0",
+          "u0",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-3de3f7d3229146ca8e58-challenge:p6",
+          "candidateId": "q025-candidate-question:3a00d832e32b48298c0a9b77"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n8",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-3de3f7d3229146ca8e58-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "pq0 restricts the setting and diagnostic methods to the supplied five-dimensional analysis and Calabi–Yau tests.",
+          "c1 includes other dimensions, dual descriptions, unresolved extensions and general uniqueness proposals."
+        ],
+        "reason": "The diagnostic question specializes c1's classification program. Its reported evidence does not answer the universal uniqueness question or establish the equi-dimensional premise for every limit.",
+        "refs": [
+          "pq0",
+          "c1",
+          "u0",
+          "n26"
+        ]
+      },
+      "nativeOperationValueSha256": "c4d09a27fd5eee10b391af079d9b4ab7430f1822acdc3df626aac10ce883d333",
+      "members": [
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+      ],
+      "target": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd5",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The attributed u0 specialization of c1 supports the same bounded diagnostic destination. The restriction to five dimensions and tested Calabi–Yau settings is substantive; no general uniqueness or equi-dimensional conclusion is added.",
+        "refs": [
+          "pq0",
+          "c1",
+          "u0",
+          "n26"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n26",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "pq0 asks about specified five-dimensional diagnostic and geometric tests.",
+          "c4 includes a broader range of physical towers, boundary types and comparison settings."
+        ],
+        "reason": "The combined diagnostic and geometric-testing question is a source-supported specialization of c4. Keeping its two internal targets together does not make them one physical statement.",
+        "refs": [
+          "pq0",
+          "c4",
+          "u0",
+          "n19"
+        ]
+      },
+      "nativeOperationValueSha256": "28f3fa0c97726f92f17b113ab093f074b943d46e1f0d058c49ca043e5febf9c6",
+      "members": [
+        "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+        "q025-candidate-question:8e4149c7991f4ca5156a5299"
+      ],
+      "target": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "u0 directly addresses c4's limiting-description program. pq0 narrows the systems and tests while preserving diagnosis and geometric testing as distinct internal targets. The compound source need not be split to support this specialization.",
+        "refs": [
+          "pq0",
+          "c4",
+          "u0",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "pq0",
+          "kind": "prior_authored_scope",
+          "objectValueSha256": "9c079b8a3faa095422a1e8ddc57670f3d006727ab6e6139b1a9412976cb4272c",
+          "notPrimary": true,
+          "notIndependentSourceEvidence": true
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 42,
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "textSha256": "b839d43c589a477882b7e23cd04af016c466f1249c06d808d70a544baa012739"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05d37b3589812aac5cfe2a2d399e1de59230c7be2005ed67f256bf51c1609de2",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd7",
+      "nativeOperation": {
+        "id": "pd7",
+        "operation": "comparison",
+        "members": [
+          "c2",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "c2 concerns tower existence, quantitative behavior and EFT consequences.",
+          "c1 concerns string identity, effective dimension and possible uniqueness."
+        ],
+        "reason": "Compare the distance–tower program with the additional identification problem. u26 is attributed to both destinations, but its equi-dimensional uniqueness proposal supplies no unconditional inference from a light tower to a unique string description.",
+        "refs": [
+          "c2",
+          "c1",
+          "u26",
+          "n13",
+          "n24"
+        ]
+      },
+      "nativeOperationValueSha256": "f5fc19e0ac8de4a476afaa693bf8d43c9ffae752bd5bdee6f023f616ac1fd5bf",
+      "members": [
+        "q025-candidate-question:d292e0749341c9b371266594",
+        "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+      ],
+      "target": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The two separately mapped u26 contexts support a comparison between tower restrictions and leading-string identification. The decision retains the additional uniqueness and equi-dimensional conditions and asserts no inference from lightening alone.",
+        "refs": [
+          "c2",
+          "c1",
+          "u26",
+          "n13",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-5eb6694dc3244f2b8e19-challenge:p0",
+          "candidateId": "q025-candidate-question:d292e0749341c9b371266594"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-adcc4556537d69777acf-challenge:p0",
+          "candidateId": "q025-candidate-question:fe41d31ca6db8d7e995d4b58"
+        },
+        {
+          "localRef": "u26",
+          "kind": "description",
+          "unitIndex": 59,
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "textSha256": "262f5ac29344ed9b72cd24ccda94b09cad3d363b4283237c6e0129707b18e340"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-5eb6694dc3244f2b8e19-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n24",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ecaac504888cef30a68ac68c2500e8a18ea93f9f002d8979ab8939da1d5e93bf",
+          "reviewId": "leaf-adcc4556537d69777acf-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:distance-and-emergence:pd8",
+      "nativeOperation": {
+        "id": "pd8",
+        "operation": "comparison",
+        "members": [
+          "c3",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c3 asks for distance conditions and quantitative mass behavior.",
+          "c4 asks which physical sectors and towers actually exist and what regimes they describe."
+        ],
+        "reason": "The shared higher-form witness supports comparing a decay-rate program with its spectrum questions. Sector existence and force matching remain independent requirements, and the charged tower need not lead. This licenses a qualified comparison, not a universal extremality-to-decay implication.",
+        "refs": [
+          "c3",
+          "c4",
+          "u7",
+          "n18",
+          "n31"
+        ]
+      },
+      "nativeOperationValueSha256": "1de99d041d12109ca02b1f65581c6493039d91c7ee3345661d5f5b6cc680b9e3",
+      "members": [
+        "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+        "q025-candidate-question:8e4149c7991f4ca5156a5299"
+      ],
+      "target": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd8",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The mapped u7 contexts support comparing quantitative decay questions with unresolved physical-sector requirements. The decision keeps sector existence, force matching and leading status separate and admits only comparison, not an extremality-to-decay theorem.",
+        "refs": [
+          "c3",
+          "c4",
+          "u7",
+          "n18",
+          "n31"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-bea4433b3d92cecb48c7-challenge:p0",
+          "candidateId": "q025-candidate-question:0cfe4a3951d071f1ddc2d078"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-8682907465d027e5a8b0-challenge:p0",
+          "candidateId": "q025-candidate-question:8e4149c7991f4ca5156a5299"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 17,
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "textSha256": "e8627f42bcdb4543b2abc74e405f57c9e14e6be4014182bd8eb35b597391c6c4"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "reviewId": "leaf-8682907465d027e5a8b0-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n31",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:52aadd573c21334fc996ec94283afef5ba6e7bc0ad18575c6918c1ff0c46276d",
+          "reviewId": "leaf-bea4433b3d92cecb48c7-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+        "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Both ask about weak strings versus decompactification, but worldsheet control and nearly tensionless wrapped-brane questions do not have the same target and regime as leading asymptotic descriptions and uniqueness.",
+        "refs": [
+          "c0",
+          "c1",
+          "u19",
+          "u9",
+          "u26",
+          "n4",
+          "n6",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:d292e0749341c9b371266594",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "different",
+        "reason": "A weak-string or controlled-worldsheet identification is distinct from tower existence, distance rates and EFT onset. A light tower alone does not supply that identification.",
+        "refs": [
+          "c0",
+          "c2",
+          "u19",
+          "u24",
+          "u8"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Worldsheet and weak-string control are not quantitative distance laws, fixed envelopes or special zero-mass triggers. Shared limiting language does not equalize their premises.",
+        "refs": [
+          "c0",
+          "c3",
+          "u19",
+          "u16",
+          "n6",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "overlap",
+        "reason": "Their limiting-description branch can use c4, but c0's worldsheet-control questions and c4's finite-distance or SCFT alternatives prevent full-scope equivalence or blanket containment.",
+        "refs": [
+          "c0",
+          "c4",
+          "u0",
+          "u19",
+          "u6",
+          "n8",
+          "n14",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Weak-string identification intersects tower competition, but worldsheet control differs from frame-dependent masses, quantum obstruction and large-D comparisons.",
+        "refs": [
+          "c0",
+          "c5",
+          "u19",
+          "u15",
+          "u28",
+          "n6",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:d292e0749341c9b371266594",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "different",
+        "reason": "The shared u26 contribution does not equate tower/EFT restrictions with string identity or uniqueness. The latter has additional equi-dimensional and spectral conditions.",
+        "refs": [
+          "c1",
+          "c2",
+          "u26",
+          "n13",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Leading string or higher-dimensional descriptions differ from mass-profile restrictions and special triggers. Neither decay-rate information nor a zero-mass trigger fixes string identity.",
+        "refs": [
+          "c1",
+          "c3",
+          "u26",
+          "u17"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "c1 supplies the asymptotic leading-description branch of c4. Its uniqueness question remains conjectural, while c4 also retains finite-distance and nongravitational alternatives.",
+        "refs": [
+          "c1",
+          "c4",
+          "u26",
+          "u6",
+          "n14",
+          "n24",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Both concern limiting descriptions, but c5's path, frame and nonstandard comparison branches are not interchangeable with c1's uniqueness question. The earlier membrane-exception question is not equated with the later conditional obstruction.",
+        "refs": [
+          "c1",
+          "c5",
+          "u15",
+          "u30",
+          "u4",
+          "n25",
+          "n34",
+          "n35",
+          "n36"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "The ordinary distance–tower target is shared. Finite-region absolute-mass and onset questions differ from fixed-envelope formulations and special triggers with potentially unverified distance premises, so c2 is an organizational reuse rather than an exact substitute.",
+        "refs": [
+          "c2",
+          "c3",
+          "u8",
+          "u16",
+          "u11",
+          "n12",
+          "n28",
+          "n30",
+          "l2"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Tower existence, rates and EFT cutoffs differ from identifying a physical tower and classifying its limiting description. c4 also includes alternatives outside ordinary gravitational infinite-distance premises.",
+        "refs": [
+          "c2",
+          "c4",
+          "u24",
+          "u6",
+          "u31",
+          "n14",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Distance-based tower and cutoff restrictions do not settle path-dependent competition or quantum accessibility. c5 explicitly retains finite-geometry and large-D comparisons that are not automatically proper-distance limits.",
+        "refs": [
+          "c2",
+          "c5",
+          "u15",
+          "u28",
+          "u29",
+          "n32",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c6",
+        "relation": "specializes_left",
+        "reason": "Distance, towers and EFT validity form a particular completion-consistency direction. Their proposals do not exhaust or independently resolve the broader completion problem.",
+        "refs": [
+          "c2",
+          "c6",
+          "u10",
+          "n2",
+          "l3"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Quantitative distance behavior and physical-sector identification are distinct targets. The higher-form method witness does not establish universal sector existence, leading status or a decay law.",
+        "refs": [
+          "c3",
+          "c4",
+          "u7",
+          "n18",
+          "n31"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Mass-profile restrictions require the relevant physical distance and spectrum; tower competition and geometric mass dependence do not provide those missing ingredients. Frame and large-D qualifications remain distinct.",
+        "refs": [
+          "c3",
+          "c5",
+          "u16",
+          "u29",
+          "u28",
+          "n28",
+          "n32",
+          "n33"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Reuse c4 for their common compactification-limit identification target. Finite-distance/SCFT alternatives and quantum, frame, finite-geometry or large-D branches remain distinct; neither complete definition replaces the other.",
+        "refs": [
+          "c4",
+          "c5",
+          "u6",
+          "u15",
+          "u29",
+          "n14",
+          "n32",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "right": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c0",
+        "relation": "specializes_left",
+        "reason": "The five-dimensional diagnostic question is an explicitly included branch of c0, without its other worldsheet and weak-string-identification settings.",
+        "refs": [
+          "pq0",
+          "c0",
+          "u0",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "right": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c1",
+        "relation": "specializes_left",
+        "reason": "The specified diagnostic and Calabi–Yau tests narrow c1's asymptotic classification program without answering general uniqueness.",
+        "refs": [
+          "pq0",
+          "c1",
+          "u0",
+          "n26"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "The five-dimensional setting and its two evidence routes narrow c4's physical-tower and limiting-description question.",
+        "refs": [
+          "pq0",
+          "c4",
+          "u0",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Weak-string identification and decompactification are shared targets. Wrapped-string worldsheet control and nearly tensionless limits differ from leading asymptotic descriptions and uniqueness; neither complete scope replaces the other.",
+        "refs": [
+          "c0",
+          "c1",
+          "u9",
+          "u19",
+          "u26",
+          "n4",
+          "n6",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:d292e0749341c9b371266594",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Weak-string and worldsheet identification differs from distance-dependent tower existence, onset and EFT cutoffs. Establishing a tower does not supply the string interpretation.",
+        "refs": [
+          "c0",
+          "c2",
+          "u19",
+          "u24",
+          "u8",
+          "n6",
+          "n12"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Worldsheet control and weak-string identification do not share the complete targets or premises of quantitative mass profiles, fixed envelopes and special zero-mass triggers.",
+        "refs": [
+          "c0",
+          "c3",
+          "u19",
+          "u16",
+          "n6",
+          "n28"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c4",
+        "relation": "overlap",
+        "reason": "The limiting-description branch supports common-target organization through c4. Independent worldsheet-control questions and finite-distance or SCFT comparisons prevent full equivalence or blanket containment.",
+        "refs": [
+          "c0",
+          "c4",
+          "u0",
+          "u19",
+          "u6",
+          "n8",
+          "n14",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Weak-string identification intersects competition among limiting objects. Worldsheet control, coupling-path dependence, quantum obstruction and nonstandard dimension comparisons remain distinct questions.",
+        "refs": [
+          "c0",
+          "c5",
+          "u19",
+          "u15",
+          "u28",
+          "n6",
+          "n33",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:d292e0749341c9b371266594",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Tower existence and EFT consequences do not determine a leading string description or its uniqueness. The shared u26 retains additional equi-dimensional and setting-specific conditions.",
+        "refs": [
+          "c1",
+          "c2",
+          "u26",
+          "n13",
+          "n24"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Leading string or higher-dimensional descriptions differ from quantitative decay restrictions and special triggers. Neither a mass profile nor a zero-mass trigger establishes string identity.",
+        "refs": [
+          "c1",
+          "c3",
+          "u26",
+          "u17",
+          "n24",
+          "n27"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "As an organizational question, c1 restricts the limiting-description program to asymptotic or weak-coupling leading descriptions and their possible uniqueness. c4 also retains finite-distance alternatives and separate nongravitational comparisons. This containment does not establish uniqueness.",
+        "refs": [
+          "c1",
+          "c4",
+          "u26",
+          "u0",
+          "u6",
+          "n14",
+          "n24",
+          "n26"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "Both examine limiting descriptions, but c5's frame, coupling-path, quantum-accessibility and comparison branches are not equivalent to c1's classification and uniqueness question. The membrane-exception and conditional-obstruction questions remain distinct.",
+        "refs": [
+          "c1",
+          "c5",
+          "u15",
+          "u30",
+          "u4",
+          "n25",
+          "n34",
+          "n35",
+          "n36"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Distance-dependent tower existence and quantitative restrictions supply a common target. Finite-region onset and absolute-mass questions differ from fixed envelopes and special triggers whose ordinary distance premises may be unverified. Retain both definitions and reading limits.",
+        "refs": [
+          "c2",
+          "c3",
+          "u8",
+          "u16",
+          "u11",
+          "n12",
+          "n28",
+          "n30"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Distance-based tower and cutoff restrictions differ from physical-spectrum identification and classification of limiting regimes. Shared tower questions do not erase c4's finite-distance and nongravitational alternatives.",
+        "refs": [
+          "c2",
+          "c4",
+          "u24",
+          "u6",
+          "u31",
+          "n14",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Distance and EFT restrictions do not settle which competing object dominates or whether a candidate trajectory is quantum mechanically accessible. Finite-geometry and large-D comparisons are not automatically proper-distance tests.",
+        "refs": [
+          "c2",
+          "c5",
+          "u15",
+          "u28",
+          "u29",
+          "n32",
+          "n33",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:d292e0749341c9b371266594",
+      "right": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c6",
+        "relation": "specializes_left",
+        "reason": "Distance, tower and EFT questions form a particular consistency direction within completion selection. Proposed restrictions and failure of a fixed EFT do not by themselves establish a completion obstruction.",
+        "refs": [
+          "c2",
+          "c6",
+          "u10",
+          "u24",
+          "n2",
+          "n9",
+          "l3"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "different",
+        "reason": "Quantitative distance behavior differs from identifying suitable physical sectors and their effective descriptions. The higher-form witness leaves sector existence, force matching and leading-tower status separate.",
+        "refs": [
+          "c3",
+          "c4",
+          "u7",
+          "n18",
+          "n31"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c5",
+        "relation": "different",
+        "reason": "Mass-profile restrictions require a physical metric and spectrum. Frame-dependent tower comparisons and geometric mass dependence do not supply missing kinetic normalization or mass-mixing analysis.",
+        "refs": [
+          "c3",
+          "c5",
+          "u16",
+          "u29",
+          "u28",
+          "n28",
+          "n32",
+          "n33"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "right": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c4",
+        "right": "c5",
+        "relation": "overlap",
+        "reason": "The common limiting-compactification identification target can use c4. Its boundary and SCFT comparisons differ from c5's quantum, frame, finite-geometry and large-D branches; neither complete scope substitutes for the other.",
+        "refs": [
+          "c4",
+          "c5",
+          "u6",
+          "u15",
+          "u29",
+          "n14",
+          "n32",
+          "n34"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "right": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c0",
+        "relation": "specializes_left",
+        "reason": "The specified five-dimensional diagnosis and geometric tests narrow an explicitly included branch of c0 while leaving its other weak-string and worldsheet questions intact.",
+        "refs": [
+          "pq0",
+          "c0",
+          "u0",
+          "n8"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "right": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c1",
+        "relation": "specializes_left",
+        "reason": "The five-dimensional setting and tested Calabi–Yau realizations narrow c1's classification question without establishing general uniqueness or equi-dimensionality.",
+        "refs": [
+          "pq0",
+          "c1",
+          "u0",
+          "n26"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:32fb14ab6798cddd2cde3f5d",
+      "right": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "The specified coupling diagnostics and BPS/GV tests narrow c4's physical-tower and limiting-description program. Their distinct internal targets remain intact.",
+        "refs": [
+          "pq0",
+          "c4",
+          "u0",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "distance-and-emergence-navigation-proposal",
+        "distance-and-emergence-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:3a00d832e32b48298c0a9b77",
+    "c1": "q025-candidate-question:fe41d31ca6db8d7e995d4b58",
+    "c2": "q025-candidate-question:d292e0749341c9b371266594",
+    "c3": "q025-candidate-question:0cfe4a3951d071f1ddc2d078",
+    "c4": "q025-candidate-question:8e4149c7991f4ca5156a5299",
+    "c5": "q025-candidate-question:f0194c1ae166dcb82da0a36c",
+    "c6": "q025-candidate-question:a4f67137d6a4a477cc097c6a",
+    "pq0": "q025-candidate-question:32fb14ab6798cddd2cde3f5d"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/distance-and-emergence-admission.json",
+    "sha256": "e18b9904be129a98420b871834bb9bab5bd7dc92464ecdf16c8061457bf020c6"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u0",
+      "questionRefs": [
+        "pq0"
+      ],
+      "reason": "Retain one source and one narrower destination containing both limit diagnosis and geometric testing. Cubic-EFT reasoning and top-down index evidence remain separate; existing broader contributions are unchanged.",
+      "refs": [
+        "u0",
+        "n8",
+        "n19",
+        "n26"
+      ]
+    },
+    {
+      "unitRef": "u1",
+      "questionRefs": [
+        "c4"
+      ],
+      "reason": "Retain the combined KK-identification and metric-emergence source with its existing c4 access. This does not assign a new metric-emergence role or identify the two targets.",
+      "refs": [
+        "u1",
+        "n17",
+        "c4"
+      ]
+    },
+    {
+      "unitRef": "u3",
+      "questionRefs": [
+        "c4"
+      ],
+      "reason": "Finite-coupling persistence and dual-frame identification remain distinct internal targets. Record only the existing comparison access, without reconstructing an unsupplied destination.",
+      "refs": [
+        "u3",
+        "n16",
+        "c4"
+      ]
+    },
+    {
+      "unitRef": "u10",
+      "questionRefs": [
+        "c6"
+      ],
+      "reason": "Infrared completion diagnostics and the foundational necessity of moduli or towers remain separate targets in the unchanged source. Existing c6 access does not resolve their compound identity.",
+      "refs": [
+        "u10",
+        "n2",
+        "c6"
+      ]
+    },
+    {
+      "unitRef": "u11",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Existence, charges, cutoff and metric relation remain together in the source. Existing c3 specialization does not establish atomic identity or a new emergence contribution.",
+      "refs": [
+        "u11",
+        "n30",
+        "c3"
+      ]
+    },
+    {
+      "unitRef": "u15",
+      "questionRefs": [
+        "c5"
+      ],
+      "reason": "Quantum-volume growth, decompactification, finite Planck scale and competition among towers remain distinct path-dependent targets within the unchanged source.",
+      "refs": [
+        "u15",
+        "n34",
+        "c5"
+      ]
+    },
+    {
+      "unitRef": "u20",
+      "questionRefs": [
+        "c2"
+      ],
+      "reason": "Physical tower existence and generation of a divergent metric remain distinct. Preserve existing c2 access without replacing the unsupplied emergence destination or transferring its role.",
+      "refs": [
+        "u20",
+        "n11",
+        "c2"
+      ]
+    },
+    {
+      "unitRef": "u22",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Axionic-symmetry obstruction and emergence of distance remain separate proposed interpretations. Existing comparison access establishes neither a general mechanism nor an emergent-metric loop calculation.",
+      "refs": [
+        "u22",
+        "n29",
+        "c3"
+      ]
+    },
+    {
+      "unitRef": "u23",
+      "questionRefs": [
+        "c6"
+      ],
+      "reason": "Consistency-method extensions and physical realization of extremal-functional spectra remain separate unresolved targets. Preserve the existing boundary role without absorbing the unsupplied method destination.",
+      "refs": [
+        "u23",
+        "n3",
+        "c6"
+      ]
+    },
+    {
+      "unitRef": "u26",
+      "questionRefs": [
+        "c1",
+        "c2"
+      ],
+      "reason": "Retain the general uniqueness proposal and restricted Calabi–Yau realization question with their distinct existing contributions. Shared access does not prove universality or make finite volume sufficient for equi-dimensionality.",
+      "refs": [
+        "u26",
+        "n13",
+        "n24",
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "unitRef": "u31",
+      "questionRefs": [
+        "c4"
+      ],
+      "reason": "Geometric tower identification and proposed generation of distance and weak coupling remain distinct internal targets. Existing c4 access does not establish successful integration-out emergence.",
+      "refs": [
+        "u31",
+        "n15",
+        "c4"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

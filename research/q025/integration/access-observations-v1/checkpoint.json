@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "q025-integration-checkpoint/1",
+  "wave": "L",
+  "status": "frozen_for_root_checkpoint",
+  "files": [
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "sha256": "7cd773adf30775b855931bb29f4ddb37a7f070a8a028d049eb64237742c91114",
+      "bytes": 64077
+    },
+    {
+      "path": "lib/geometry/prepared-identity.mjs",
+      "sha256": "d309e94832db4cf248e56ef579882eeb34fe5202c00946c183a05fb98c336c24",
+      "bytes": 178
+    },
+    {
+      "path": "lib/protocol/mcp.mjs",
+      "sha256": "e6c66e8ca61101c01e309fa4bedc6699c37606e8e83ccb37d48f450ba88f570c",
+      "bytes": 9414
+    },
+    {
+      "path": "web/atlas-panel.mjs",
+      "sha256": "40144ca7cf03a2c6061b68072168e91f96eb4e9f1470567ca2c77ecfcf36e779",
+      "bytes": 19183
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "sha256": "2a4a08fabde180f9b77bc5a839b0da8e007df7b56203f40cdf3ea9146280264e",
+      "bytes": 18447
+    },
+    {
+      "path": "docs/navigation-contract.md",
+      "sha256": "15a1ee905ae1ec50eb7c664cd4592a9f619ac1a9031565035cfb33b2ab4c54d5",
+      "bytes": 26604
+    },
+    {
+      "path": "tests/integration/access-observations.test.mjs",
+      "sha256": "690b54d729c5d988c77d4292d997ad399f32fccac598c82759a4d4ad1de5c29d",
+      "bytes": 5988
+    },
+    {
+      "path": "tests/integration/source-contributions-display.test.mjs",
+      "sha256": "fdfe7f0810a83cbf934c2e3946d0ab8d072ef7753e2cf11e94e4505053a09f22",
+      "bytes": 3815
+    },
+    {
+      "path": "tests/integration/static-atlas-discovery.test.mjs",
+      "sha256": "663736989aab8c516d88d06d7e28ca2d6ba83c4db0975dda8d778008e25aa62c",
+      "bytes": 8732
+    },
+    {
+      "path": "research/q025/integration/access-observations-v1/real-observation-check.mjs",
+      "sha256": "7816ef4a930d0bd9527470965bf63e94776579776e661b64c65beb8faa7df3b0",
+      "bytes": 4269
+    },
+    {
+      "path": "research/q025/integration/access-observations-v1/real-observation-report.json",
+      "sha256": "45aa7e5bed5f60a8fba10aff2fb68fb0c3d6858dac4ec94af79b0d991b76cb4c",
+      "bytes": 2626
+    },
+    {
+      "path": "research/q025/integration/access-observations-v1/README.md",
+      "sha256": "6d995b161c251cd2b2d70d8ab667fbb3e532fae0861a26c743abe86f0d2d2dd2",
+      "bytes": 2797
+    },
+    {
+      "path": "research/q025/integration/access-observations-v1/verification.json",
+      "sha256": "6e3a58c3e467d965e68af778384cc7485603a97f5134d2f6eeca6990ae31983f",
+      "bytes": 1108
+    }
+  ],
+  "tests": {
+    "runtimeTestsPassed": 95,
+    "build": true,
+    "siteCheck": true,
+    "actualObservationRows": 38,
+    "actualRelationships": 32
+  },
+  "nativeCampaignInputsChanged": false,
+  "publicInstallationChanged": false,
+  "browserProof": "Pending actual partial-candidate QA; prior Wave K browser receipt remains unchanged."
+}

@@ -1,0 +1,1532 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [
+    {
+      "id": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "kind": "question",
+      "title": "Thermodynamic responses to cosmological deformation",
+      "question": "Which modified thermodynamic quantities, entropy–extremality relations and other conjugate-variable relations follow from the specified small constant cosmological-term deformation in the selected AdS black holes?",
+      "summary": "A new narrower definition for the response-calculation component of c1.",
+      "scope": {
+        "systems": [
+          "Selected AdS black holes",
+          "Perfect-fluid surroundings",
+          "Magnetically charged Bardeen AdS examples"
+        ],
+        "targets": [
+          "Modified thermodynamic quantities",
+          "Entropy–extremality relations",
+          "Relations involving other thermodynamic conjugates"
+        ],
+        "regimes": [
+          "The specified small constant deformation of the cosmological part of the action"
+        ],
+        "assumptions": [
+          "Selected examples do not establish universality over AdS black holes",
+          "No BPS premise is supplied"
+        ],
+        "conventions": [
+          "Retain the source-specific ensemble, deformation parameter, entropy and extremality conventions; no additional convention is imposed",
+          "The deformation is not identified with generic higher-derivative corrections"
+        ],
+        "includes": [
+          "First-law response calculations",
+          "Extensions involving fluid parameters and magnetic charge"
+        ],
+        "excludes": [
+          "Assessment of the WGC-like interpretation as a standalone target",
+          "A general universality proof",
+          "Supersymmetric attractor or protected-index claims"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "New definition restricted from c0 and c1 using their reviewed definitions, u0 and the mapped attribution notes. Their abstract/introduction limits remain: calculations are announced, while detailed relations and universality are not independently checked. No primary window is supplied here.",
+        "readingBasis": "Supplied complete descriptions and inherited paired scope/attribution notes; only exact own-paper primary windows cited by both native reviewers count as excerpt reading.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581"
+      ],
+      "methods": [
+        "Small action deformation",
+        "Thermodynamic differentiation",
+        "First-law relations"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-v2:entropy-and-extremality:scope:pq0",
+      "provenance": {
+        "localRef": "pq0",
+        "reviewIds": [
+          "entropy-and-extremality-navigation-proposal",
+          "entropy-and-extremality-navigation-independent-challenge"
+        ],
+        "admissionBasis": "exact_explicit_independent_agreement_under_root_authorized_policy",
+        "newScientificDefinition": true
+      },
+      "scopeContentSha256": "8c6eda46f2100eb7e5e3a6e64d2847da938e6f866ab91787e2607aaf46060720"
+    },
+    {
+      "id": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "kind": "question",
+      "title": "Assessing the WGC-like interpretation",
+      "question": "What supports interpreting the corrected mass–charge behavior under the specified small constant cosmological-term deformation as WGC-like in the selected AdS black holes?",
+      "summary": "A new narrower definition for assessing the interpretation already included in c1.",
+      "scope": {
+        "systems": [
+          "Selected AdS black holes",
+          "Perfect-fluid surroundings",
+          "Magnetically charged Bardeen AdS examples"
+        ],
+        "targets": [
+          "Support and limits of the proposed WGC-like interpretation of corrected mass–charge behavior"
+        ],
+        "regimes": [
+          "The specified small constant deformation of the cosmological part of the action"
+        ],
+        "assumptions": [
+          "WGC-like behavior is an interpretation to assess",
+          "Selected examples do not establish universal WGC validity",
+          "No BPS premise is supplied"
+        ],
+        "conventions": [
+          "Mass-to-charge and charge-to-mass wording does not supply a common normalization or numerical bound",
+          "Retain each example's thermodynamic, entropy and extremality conventions",
+          "The deformation is not identified with generic higher-derivative corrections"
+        ],
+        "includes": [
+          "Assessment of the source's interpretation alongside its announced thermodynamic responses"
+        ],
+        "excludes": [
+          "Derivation of the response relations as a standalone target",
+          "An automatic inference from an entropy derivative identity to a quantum-gravity bound",
+          "A general proof of the WGC",
+          "Supersymmetric attractor or protected-index claims"
+        ]
+      },
+      "scientificStatus": "source_reviewed_scope_with_explicit_limits",
+      "readingCoverage": {
+        "descriptionCheckedCount": 1,
+        "excerptCheckedCount": 0,
+        "readingLimit": "New definition restricted from c0 and c1 using their reviewed definitions, u0 and the mapped attribution notes. The inherited abstract/introduction evidence announces the interpretation; neither detailed calculations nor a normalized WGC criterion are supplied for independent checking. No primary window is supplied here.",
+        "readingBasis": "Supplied complete descriptions and inherited paired scope/attribution notes; only exact own-paper primary windows cited by both native reviewers count as excerpt reading.",
+        "scopeSupportNotPhysicalResultVerification": true,
+        "globalCanonicalUniquenessEstablished": false
+      },
+      "evidenceIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581"
+      ],
+      "methods": [
+        "Assessment of the stated thermodynamic interpretation"
+      ],
+      "aliases": [],
+      "scopeDecisionId": "decision:navigation-v2:entropy-and-extremality:scope:pq1",
+      "provenance": {
+        "localRef": "pq1",
+        "reviewIds": [
+          "entropy-and-extremality-navigation-proposal",
+          "entropy-and-extremality-navigation-independent-challenge"
+        ],
+        "admissionBasis": "exact_explicit_independent_agreement_under_root_authorized_policy",
+        "newScientificDefinition": true
+      },
+      "scopeContentSha256": "0ceffd294181da4dbecfcaabcdd772f6ae9c95f6960987a1605c1f5705147b4a"
+    }
+  ],
+  "sourceContributions": [
+    {
+      "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+      "destinationId": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The whole description explicitly asks about entropy–extremality responses and extensions to other conjugates under the specified cosmological deformation. This confirms an announced target, not independently verified calculations. Independent confirmation: u0 explicitly addresses entropy–extremality responses and extensions to other conjugates. The role at pq0 concerns the announced calculation target, with no claim that this packet verifies the calculations.",
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc",
+          "paperId": "2011.14366"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:entropy-and-extremality:role:0"
+    },
+    {
+      "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+      "destinationId": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "role": "addresses",
+      "basis": "description_checked",
+      "qualification": "The whole description explicitly asks whether corrected mass-to-charge behavior supports a WGC-like interpretation. The inherited notes retain this interpretation without asserting universal validity. Independent confirmation: u0 explicitly asks whether corrected mass-to-charge behavior supports a WGC-like interpretation. This directly supports addresses at pq1 while preserving the interpretation's unverified and nonuniversal status.",
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc",
+          "paperId": "2011.14366"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:entropy-and-extremality:role:1"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:v2:entropy-and-extremality:pn0",
+      "source": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "target": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "type": "narrower",
+      "title": "Examine the entropy and conjugate responses",
+      "qualification": "For the selected AdS examples and specified small constant cosmological-term deformation; the announced relations and their universality remain unverified.",
+      "rationale": "This selects the explicit response-calculation component of the existing broader question.",
+      "evidenceIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:entropy-and-extremality:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "entropy-and-extremality-navigation-proposal",
+          "entropy-and-extremality-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The broader-to-narrower direction is correct. The title selects the explicit entropy and conjugate-response component, and the qualification preserves the selected examples, specified deformation and unverified status of the announced relations.",
+          "refs": [
+            "c0",
+            "c1",
+            "u0",
+            "n0",
+            "n1"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:entropy-and-extremality:pn1",
+      "source": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "target": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "type": "narrower",
+      "title": "Assess the proposed WGC-like interpretation",
+      "qualification": "For the same selected examples and deformation; no universal WGC claim, BPS premise or common charge–mass normalization is adopted.",
+      "rationale": "This selects the interpretation assessment already included in the broader question.",
+      "evidenceIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:entropy-and-extremality:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "entropy-and-extremality-navigation-proposal",
+          "entropy-and-extremality-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "This correctly leads from c1 to its interpretation-assessment component. Its qualification does not assume universal WGC validity, supersymmetry or a common charge–mass normalization.",
+          "refs": [
+            "c0",
+            "c1",
+            "u0",
+            "n0",
+            "n1"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:entropy-and-extremality:pn2",
+      "source": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "target": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "type": "related_question",
+      "title": "What supports the WGC-like reading?",
+      "qualification": "The source investigates both targets under the same cosmological deformation. An entropy derivative identity alone is not admitted as a quantum-gravity bound, and no implication between the targets is asserted.",
+      "rationale": "The whole description supports moving from the calculation question to its separately stated interpretive question without claiming a demonstrated physical connection.",
+      "evidenceIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:entropy-and-extremality:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "entropy-and-extremality-navigation-proposal",
+          "entropy-and-extremality-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "u0 explicitly investigates both targets under the same deformation, supporting this directed related-question choice. The route expressly withholds implication and does not turn the response question into a demonstrated method or premise for the interpretation.",
+          "refs": [
+            "u0",
+            "c0",
+            "c1",
+            "n0",
+            "n1"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:scope:pq0",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:450e8e5a5838a796c971a3bb"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "independentAssessment": {
+        "ref": "pq0",
+        "kind": "new_question",
+        "verdict": "supported_as_written",
+        "reason": "This explicit new definition isolates modified quantities, entropy–extremality relations and other conjugate responses already present in the existing investigation. Its restrictions preserve the systems and deformation, introduce no ensemble or derivative prescription, and retain both inherited reading limits.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "scopeContentSha256": "8c6eda46f2100eb7e5e3a6e64d2847da938e6f866ab91787e2607aaf46060720",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:scope:pq1",
+      "type": "scope_acceptance",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:51d213e52260433a1885e2e3"
+      ],
+      "challengerAgreement": "supported_as_written",
+      "scopeAgreement": "unchanged",
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "independentAssessment": {
+        "ref": "pq1",
+        "kind": "new_question",
+        "verdict": "supported_as_written",
+        "reason": "The interpretation is an explicit assessment target in both definitions and the whole description. The narrower question preserves its conditional evidentiary status, avoids inventing a normalized bound, and carries forward the abstract/introduction limits without treating an entropy identity as a WGC result.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "scopeContentSha256": "0ceffd294181da4dbecfcaabcdd772f6ae9c95f6960987a1605c1f5705147b4a",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+        "q025-candidate-question:450e8e5a5838a796c971a3bb"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "entropy-and-extremality-navigation-proposal",
+        "challengeReviewId": "entropy-and-extremality-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc",
+          "paperId": "2011.14366"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u0",
+        "questionRef": "pq0",
+        "role": "addresses",
+        "reason": "The whole description explicitly asks about entropy–extremality responses and extensions to other conjugates under the specified cosmological deformation. This confirms an announced target, not independently verified calculations.",
+        "refs": [
+          "u0",
+          "c0",
+          "c1",
+          "n0",
+          "n1"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "u0 explicitly addresses entropy–extremality responses and extensions to other conjugates. The role at pq0 concerns the announced calculation target, with no claim that this packet verifies the calculations.",
+        "refs": [
+          "u0",
+          "c0",
+          "c1",
+          "n0",
+          "n1"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "8c6eda46f2100eb7e5e3a6e64d2847da938e6f866ab91787e2607aaf46060720",
+      "contributionContentSha256": "d26c112f8c5dbd8cd33f3264dcc5c82122a5133c1d1fc6799dbc852e63ed6fae",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:role:1",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+        "q025-candidate-question:51d213e52260433a1885e2e3"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "entropy-and-extremality-navigation-proposal",
+        "challengeReviewId": "entropy-and-extremality-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc",
+          "paperId": "2011.14366"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u0",
+        "questionRef": "pq1",
+        "role": "addresses",
+        "reason": "The whole description explicitly asks whether corrected mass-to-charge behavior supports a WGC-like interpretation. The inherited notes retain this interpretation without asserting universal validity.",
+        "refs": [
+          "u0",
+          "c0",
+          "c1",
+          "n0",
+          "n1"
+        ]
+      },
+      "independentAssessment": {
+        "index": 1,
+        "verdict": "supported_as_written",
+        "reason": "u0 explicitly asks whether corrected mass-to-charge behavior supports a WGC-like interpretation. This directly supports addresses at pq1 while preserving the interpretation's unverified and nonuniversal status.",
+        "refs": [
+          "u0",
+          "c0",
+          "c1",
+          "n0",
+          "n1"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "0ceffd294181da4dbecfcaabcdd772f6ae9c95f6960987a1605c1f5705147b4a",
+      "contributionContentSha256": "669e02f8cfbdd6ce780048c6229daa84449a25d2e6f707861768d52427d480dd",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:4a96ce81d3c4841657c6029d",
+        "q025-candidate-question:450e8e5a5838a796c971a3bb"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "8c8910eaa086c0a9b3e2749b45da76497f254b59d8c8ae314eacf00fd3a2616c",
+      "sourceScopeContentSha256": "fcf39c2ff3618a38bae962ddbaaf6f38d47447f6b3640f7e3d08680e5ed8de19",
+      "targetScopeContentSha256": "8c6eda46f2100eb7e5e3a6e64d2847da938e6f866ab91787e2607aaf46060720",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "entropy-and-extremality-navigation-proposal",
+        "challengeReviewId": "entropy-and-extremality-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:4a96ce81d3c4841657c6029d",
+        "q025-candidate-question:51d213e52260433a1885e2e3"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "ed65483c98285ce360390ffbdc2ddf5db659a8158bd51ce3102c66ea64de6d1e",
+      "sourceScopeContentSha256": "fcf39c2ff3618a38bae962ddbaaf6f38d47447f6b3640f7e3d08680e5ed8de19",
+      "targetScopeContentSha256": "0ceffd294181da4dbecfcaabcdd772f6ae9c95f6960987a1605c1f5705147b4a",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "entropy-and-extremality-navigation-proposal",
+        "challengeReviewId": "entropy-and-extremality-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:entropy-and-extremality:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:450e8e5a5838a796c971a3bb",
+        "q025-candidate-question:51d213e52260433a1885e2e3"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "2540a26c5161b96cc55d1891a54af9ca610d70983aeed5ecaba8f789c7d6e307",
+      "sourceScopeContentSha256": "8c6eda46f2100eb7e5e3a6e64d2847da938e6f866ab91787e2607aaf46060720",
+      "targetScopeContentSha256": "0ceffd294181da4dbecfcaabcdd772f6ae9c95f6960987a1605c1f5705147b4a",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "entropy-and-extremality-navigation-proposal",
+        "challengeReviewId": "entropy-and-extremality-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "entropy-and-extremality-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-proposal/reply.json",
+      "sha256": "a40f02a407910d60678c6cfadb1984fb7cb7b146bd6797e5c0d58b704d69b59e",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-proposal/receipt.json",
+      "receiptSha256": "7ed1fd4cc0474a44abadc773de1d060603db5e911081dfad6bb82a5d3fcd12c7",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-proposal/normalization.json",
+        "sha256": "a709bee32aaa7efb503b8d4b07e19e1bf0eafc419e04029bd532a99831bfbdda"
+      }
+    },
+    {
+      "id": "entropy-and-extremality-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/reply.json",
+      "sha256": "718c1ba6ff68a3631c070056d427b6aa692b492f1dc8bf9484c4ef78980f9358",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/receipt.json",
+      "receiptSha256": "88a3a9d821e78cc027b31eb29b7a775804e18358ec9ce607eccf0923ea8d6b05",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/normalization.json",
+        "sha256": "dbfd510646242878eb68f76b85c8065d3bc2928aa3a33bdaecbe7097af9639f5"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v2:entropy-and-extremality:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "same_scoped_question",
+        "members": [
+          "c0",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [],
+        "reason": "Both definitions cover the same selected AdS systems, small constant cosmological-term deformation, thermodynamic responses, additional conjugates and separately assessed WGC-like interpretation. Modified quantities in c0 belong to the response calculation already included in c1. Foregrounding the interpretation and reversing the ratio wording introduces no stipulated normalization, premise or regime difference. Reuse c1 unchanged, retaining both reading limits. This identifies scoped questions, not formulas or physical claims. The pending comparison l0 therefore needs no public self-route.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1",
+          "l0"
+        ]
+      },
+      "nativeOperationValueSha256": "350839a0a50e6b4294932e19980a88b063dc806c7a3f6cea2f91d149f259b0e4",
+      "members": [
+        "q025-candidate-question:2ed35c0e62570949d976b307",
+        "q025-candidate-question:4a96ce81d3c4841657c6029d"
+      ],
+      "target": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete investigation targets, selected systems and deformation regime agree. c0's explicit modified-quantity wording and absent-BPS qualification do not add a separate target or premise to c1. The ratio wording is not a specified quantitative criterion. Reusing c1 therefore requires no changed definition, while both reading limits remain operative. The provisional l0 comparison becomes unnecessary between equivalent destinations.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:2ed35c0e62570949d976b307",
+          "targetCandidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+          "candidateId": "parent-0177419a6060a2f477fb-challenge:link:51",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:entropy-and-extremality:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "specializes",
+        "members": [
+          "pq0",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "pq0 restricts the compound target to thermodynamic response calculations, leaving WGC-like interpretation assessment outside its standalone target."
+        ],
+        "reason": "The existing broader question explicitly includes entropy–extremality and other conjugate-variable relations. The narrower definition preserves its systems and deformation regime without adding a physical premise.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "nativeOperationValueSha256": "7d7cccf2f2c03d2ebe741989fc16bed3f4a8cc3b9c3ac789b0415b079ee18b0c",
+      "members": [
+        "q025-candidate-question:450e8e5a5838a796c971a3bb",
+        "q025-candidate-question:4a96ce81d3c4841657c6029d"
+      ],
+      "target": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "pq0 restricts the broader investigation to its explicit thermodynamic calculation component. The narrower-first member order and broader target c1 are correct, and no new physical premise is required.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:entropy-and-extremality:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "specializes",
+        "members": [
+          "pq1",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "pq1 restricts the compound target to assessing the WGC-like interpretation of corrected mass–charge behavior."
+        ],
+        "reason": "The interpretation is already an explicit assessment target in both existing definitions. Isolating it does not assume that the response relations establish a WGC bound.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "nativeOperationValueSha256": "b4050051255f0bc2a0d071003d426c4978b1c173fa2c1058abdd88361229ee67",
+      "members": [
+        "q025-candidate-question:51d213e52260433a1885e2e3",
+        "q025-candidate-question:4a96ce81d3c4841657c6029d"
+      ],
+      "target": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "pq1 restricts c1 to its explicit WGC-like interpretation assessment. It does not require that the interpretation succeed. The specialization direction and target are correct.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:entropy-and-extremality:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "shared_parent_distinct",
+        "members": [
+          "pq0",
+          "pq1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "pq0 asks which thermodynamic response relations follow; pq1 asks what supports a proposed interpretation of corrected mass–charge behavior."
+        ],
+        "reason": "The descriptions and attribution notes explicitly preserve calculation and interpretation as compound targets. c1 organizes both without equating them or establishing an inferential bridge.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "nativeOperationValueSha256": "4274700e0ff293f8c43346568435d40b58481d236302bf93973cb0b091a03fca",
+      "members": [
+        "q025-candidate-question:450e8e5a5838a796c971a3bb",
+        "q025-candidate-question:51d213e52260433a1885e2e3"
+      ],
+      "target": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The whole description and mapped attribution notes distinguish response calculations from interpretation assessment. Existing c1 already contains both, so it can organize these distinct questions without a new abstract parent or an asserted inferential bridge.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-203fd6a716a0a1f60d6f-challenge:p7",
+          "candidateId": "q025-candidate-question:2ed35c0e62570949d976b307"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a3352e6028241d142f5d-challenge:p6",
+          "candidateId": "q025-candidate-question:4a96ce81d3c4841657c6029d"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 14,
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "textSha256": "e8856871240afd65c442d813c1c0d7d749cf50c919e677fec9e41683182f50cc"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-203fd6a716a0a1f60d6f-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:ce218425438c65ebef30f49a95be4b87b000be3b6c6c61929636bf176c29b581",
+          "reviewId": "leaf-a3352e6028241d142f5d-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+        "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [
+    {
+      "operationId": "operation:navigation-v2:entropy-and-extremality:pd0",
+      "memberDestinationIds": [
+        "q025-candidate-question:2ed35c0e62570949d976b307",
+        "q025-candidate-question:4a96ce81d3c4841657c6029d"
+      ],
+      "canonicalDestinationId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "status": "local_group_supported_global_whole_group_gate_pending",
+      "retainedReadingLimits": [
+        {
+          "destinationId": "q025-candidate-question:2ed35c0e62570949d976b307",
+          "readingLimit": "Only an abstract and overlapping introductory text are supplied. They announce calculations and interpretations; the relations and claimed universality are not independently checked."
+        },
+        {
+          "destinationId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+          "readingLimit": "Abstract and motivation from 2011.14366 support the announced targets and selected claims. The detailed calculations needed to establish the proposed universal relations are not supplied."
+        }
+      ],
+      "sourceStatementIdentityEstablished": false,
+      "automaticHomeTransfer": false
+    }
+  ],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:2ed35c0e62570949d976b307",
+      "right": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "same_scoped_question",
+        "reason": "The nominated pair agrees in complete investigation target, selected systems and deformation regime. Differences in emphasis and unspecified ratio wording do not define different scoped questions.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "right": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c1",
+        "relation": "specializes_left",
+        "reason": "Thermodynamic response calculations are an explicit component of the broader question.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "right": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq1",
+        "right": "c1",
+        "relation": "specializes_left",
+        "reason": "Assessment of the WGC-like interpretation is an explicit component of the broader question.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "right": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "pq1",
+        "relation": "different",
+        "reason": "Establishing response relations and assessing their proposed WGC-like interpretation are distinct targets despite their shared systems and deformation.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:2ed35c0e62570949d976b307",
+      "right": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "relation": "same_scoped_question",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "same_scoped_question",
+        "reason": "Both cover the selected AdS examples, the same small constant cosmological-term deformation, thermodynamic responses and additional conjugates, and assessment of the WGC-like interpretation. Modified quantities are already part of c1's thermodynamic investigation. Reciprocal ratio wording supplies neither a distinct normalization nor a different investigation target; no numerical bound or inequality is equated.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "right": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "c1",
+        "relation": "specializes_left",
+        "reason": "pq0 selects the response-calculation component while preserving the selected systems, deformation regime and evidentiary limits.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "right": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "pq1",
+        "right": "c1",
+        "relation": "specializes_left",
+        "reason": "pq1 selects assessment of the interpretation already included in c1, without assuming that the response relations establish a WGC criterion.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+      "right": "q025-candidate-question:51d213e52260433a1885e2e3",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "pq0",
+        "right": "pq1",
+        "relation": "different",
+        "reason": "Determining thermodynamic response relations and assessing a proposed WGC-like interpretation are distinct targets. Their shared examples and deformation do not establish equivalence or implication.",
+        "refs": [
+          "c0",
+          "c1",
+          "u0",
+          "n0",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "entropy-and-extremality-navigation-proposal",
+        "entropy-and-extremality-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:2ed35c0e62570949d976b307",
+    "c1": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+    "pq0": "q025-candidate-question:450e8e5a5838a796c971a3bb",
+    "pq1": "q025-candidate-question:51d213e52260433a1885e2e3"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/entropy-and-extremality-admission.json",
+    "sha256": "22cc11710ae2586b84a2933489f855dcf73bc1d67335b83382303b6601789f70"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u0",
+      "questionRefs": [
+        "c1",
+        "pq0",
+        "pq1"
+      ],
+      "reason": "Keep u0 unchanged as one compound source. c1 retains its full investigation, while the narrower destinations expose its distinct calculation and interpretation targets. These assignments do not settle atomic source identity.",
+      "refs": [
+        "u0",
+        "c0",
+        "c1",
+        "n0",
+        "n1"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

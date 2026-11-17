@@ -148,3 +148,12 @@ test('typed contributions stay outside membership, navigation and USING, with ex
   assert.equal(view.atlas.membershipCount,2);assert.equal(nav.sources('shared',{workRelation:'using'}).total,1);assert.deepEqual(nav.connections('shared'),baseline.connections('shared'));assert.ok(!view.nodes.some(n=>n.id==='source-c'));assert.deepEqual(view.atlas.destination.sourceContributions,[row]);createCapsule({session:nav.createSession({selector}),view});
   for(const change of [{role:'using'},{workRelation:'using'},{destinationId:'left'},{scopeContentSha256:'not-a-hash'},{provenance:{doesNotAssertMethodApplicability:false}}]){const bad=structuredClone(atlas);Object.assign(bad.catalog.destinations.find(d=>d.id==='shared').sourceContributions[0],change);assert.throws(()=>validateAtlas(bad.manifest,bad.catalog),/contribution|scope binding/);}
 });
+
+test('foreground choices and lexical results use scientific questions while exact raw summaries remain available',()=>{
+  const atlas=atlasFixture();
+  for(const record of atlas.catalog.destinations)record.summary='No original verbal scientific scope was supplied; numerical parent review history.';
+  const original=JSON.stringify(atlas.catalog),nav=createAtlasNavigator(atlas),view=nav.computeView(nav.createSession().states[0]);
+  for(const direction of view.directions)assert.equal(direction.summary,nav.destination(direction.selector.destinationId).question);
+  const result=nav.search('shared alias')[0];assert.equal(result.summary,result.question);
+  assert.match(nav.destination('shared').summary,/No original verbal/);assert.equal(JSON.stringify(atlas.catalog),original);
+});

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/1",
+  "destinations": [],
+  "relations": [
+    {
+      "id": "navigation:parent-statistics-explicit-comparison",
+      "source": "q025-candidate-question:cbec67884d8051e3e85220e5",
+      "target": "q025-candidate-question:58f6fb87027c039a6a7d3928",
+      "type": "comparison",
+      "title": "Statistical rarity and uplift-induced mixing",
+      "rationale": "The population/discretuum question enumerates Swiss-cheese, sphere and isotropic-IIB systems, while the other concerns conditional Type-IIA random-Hessian search probabilities and mixing. No subset is established; both question identities are retained.",
+      "qualification": "Trial-and-error Hessian probabilities differ from vacuum-population distributions; the IIA system and mixing target also exceed this card's specified ensembles.",
+      "evidenceIds": [
+        "unit:186da3931017fddf28e82cb04ec8a81de3e2815d1d2a18599fc38542d9f7372a",
+        "unit:225686e3711b95bfbd209681b2e29b34f4e29cd5ec94708d24883f8435cca1e4",
+        "unit:29347bb9ce38dc5829437015bab31988f5335c632397e281cb2d1cf8a8a1dafb",
+        "unit:9e159759d6a0d6214e46d3c03d38df508e889f09dbfb114aa31d504a14ad835a",
+        "unit:9fa7646f92a68189cf548aecbd812e4016efe220f204ee4662dec03d89ab3843",
+        "unit:a83c7372568e19dc70aae371bcbbf7df811fef4d7a2530a020b971ba3928d48e"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "x0_4",
+          "kind": "attributed_child_question",
+          "childRegionId": "multiview_preserve_candidates:region:917023476c8ed7e389e0",
+          "candidateId": "q025-candidate-question:cbec67884d8051e3e85220e5",
+          "scopeStatus": "independently_supported",
+          "primaryReadingClaim": false
+        },
+        {
+          "localRef": "x5_0",
+          "kind": "attributed_child_question",
+          "childRegionId": "multiview_preserve_candidates:region:9362f80cb5012707a1cc",
+          "candidateId": "q025-candidate-question:58f6fb87027c039a6a7d3928",
+          "scopeStatus": "independently_supported",
+          "primaryReadingClaim": false
+        },
+        {
+          "localRef": "e18",
+          "kind": "primary",
+          "sourceId": "ev:f36eef004b3bfe51338e1a26956cb2a4",
+          "paperId": "1112.3338",
+          "sourceSha256": "063b827f07d8a69d571772f84eb7228c7d365e8403fba8b51bb75b225b069d1a",
+          "sourceContext": {
+            "path": "papers/2999d1d39432df860d21/reading-order.json",
+            "fileSha256": "9ed8341ff9ff6d008644e74744ad919cc25a6767b384db1cef607eab7ae19e89",
+            "pdfPage": 3,
+            "start": 1278,
+            "end": 3108,
+            "textSha256": "99ce6c778c02ac03c6152041df32947520c67c4a77a1fa0fd4eb63b6cb145f27",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e20",
+          "kind": "primary",
+          "sourceId": "ev:fba7ed865cdcab7dcdb9718cdd02b987",
+          "paperId": "1112.3338",
+          "sourceSha256": "063b827f07d8a69d571772f84eb7228c7d365e8403fba8b51bb75b225b069d1a",
+          "sourceContext": {
+            "path": "papers/2999d1d39432df860d21/reading-order.json",
+            "fileSha256": "9ed8341ff9ff6d008644e74744ad919cc25a6767b384db1cef607eab7ae19e89",
+            "pdfPage": 17,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "5e202cba7310c8f3bde08a17a2d05380f634ac62f39e4d5f9a88eaa5a896a292",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ],
+      "decisionId": "decision:parent-statistics-explicit-comparison",
+      "provenance": {
+        "originalProposal": {
+          "source": "x0_4",
+          "target": "x5_0",
+          "type": "narrows",
+          "reason": "Reuse the same statistical-rarity question through the ensemble route; do not create a second route-dependent copy.",
+          "refs": [
+            "x0_4",
+            "x5_0",
+            "e1",
+            "e18"
+          ]
+        },
+        "challengerCorrection": {
+          "source": "x0_4",
+          "target": "x5_0",
+          "type": "comparison",
+          "reason": "Trial-and-error Hessian probabilities differ from vacuum-population distributions; the IIA system and mixing target also exceed this card's specified ensembles.",
+          "refs": [
+            "x0_4",
+            "x5_0",
+            "e18",
+            "e20"
+          ]
+        },
+        "oldExplicitAdjudication": {
+          "path": "research/q025/evaluation/full-pass/parent-adjudication-v1/adjudication-receipt.json",
+          "sha256": "db735a56d086a29fbae0aa57e8356356a3ae89cd0afa0a00948bb4163832ecce"
+        },
+        "readingLimit": "Root inspected the exact scopes and supplied1112.3338 archived pp3/17 text; no full calculation or image verification.",
+        "evidenceIdBasis": "inherited_admitted_endpoint_support",
+        "rootBoundedPrimaryReadPreserved": true,
+        "noNewPrimaryReadingByCompiler": true,
+        "titleReadingDirection": "outgoing_only",
+        "sourceQuestionEquivalence": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:parent-statistics-explicit-comparison",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:cbec67884d8051e3e85220e5",
+        "q025-candidate-question:58f6fb87027c039a6a7d3928"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "90e12e360222970092a6a61e869b3044536950774f13dcb438dd63b46d69844c",
+      "sourceScopeContentSha256": "cd223b7bb9ce8471d2482cf212a5f59407f512128f603dbe008d0a75795e27b1",
+      "targetScopeContentSha256": "1831a66a2fedf027e430bae006c7efe003af6362f06e57308e1366e07cbeabc2",
+      "challengerAgreement": "coordinator_adjudicated_navigation",
+      "adjudication": {
+        "status": "accepted_explicit_navigation",
+        "receipt": {
+          "path": "research/q025/evaluation/full-pass/parent-route-admissions-v2/statistics-receipt.json",
+          "sha256": "46ba677ae6e26a62496d6960653275632d515d7b31479a6e3367a28485c6f270"
+        }
+      },
+      "sourceReviewIds": [
+        "parent-b518-scope-proposal",
+        "parent-b518-scope-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "x0_4",
+          "kind": "attributed_child_question",
+          "childRegionId": "multiview_preserve_candidates:region:917023476c8ed7e389e0",
+          "candidateId": "q025-candidate-question:cbec67884d8051e3e85220e5",
+          "scopeStatus": "independently_supported",
+          "primaryReadingClaim": false
+        },
+        {
+          "localRef": "x5_0",
+          "kind": "attributed_child_question",
+          "childRegionId": "multiview_preserve_candidates:region:9362f80cb5012707a1cc",
+          "candidateId": "q025-candidate-question:58f6fb87027c039a6a7d3928",
+          "scopeStatus": "independently_supported",
+          "primaryReadingClaim": false
+        },
+        {
+          "localRef": "e18",
+          "kind": "primary",
+          "sourceId": "ev:f36eef004b3bfe51338e1a26956cb2a4",
+          "paperId": "1112.3338",
+          "sourceSha256": "063b827f07d8a69d571772f84eb7228c7d365e8403fba8b51bb75b225b069d1a",
+          "sourceContext": {
+            "path": "papers/2999d1d39432df860d21/reading-order.json",
+            "fileSha256": "9ed8341ff9ff6d008644e74744ad919cc25a6767b384db1cef607eab7ae19e89",
+            "pdfPage": 3,
+            "start": 1278,
+            "end": 3108,
+            "textSha256": "99ce6c778c02ac03c6152041df32947520c67c4a77a1fa0fd4eb63b6cb145f27",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        },
+        {
+          "localRef": "e20",
+          "kind": "primary",
+          "sourceId": "ev:fba7ed865cdcab7dcdb9718cdd02b987",
+          "paperId": "1112.3338",
+          "sourceSha256": "063b827f07d8a69d571772f84eb7228c7d365e8403fba8b51bb75b225b069d1a",
+          "sourceContext": {
+            "path": "papers/2999d1d39432df860d21/reading-order.json",
+            "fileSha256": "9ed8341ff9ff6d008644e74744ad919cc25a6767b384db1cef607eab7ae19e89",
+            "pdfPage": 17,
+            "start": 0,
+            "end": 3000,
+            "textSha256": "5e202cba7310c8f3bde08a17a2d05380f634ac62f39e4d5f9a88eaa5a896a292",
+            "quoteExactInPage": true,
+            "scope": "Bounded archived primary text; no equation-image or full-paper certification."
+          }
+        }
+      ]
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "parent-b518-scope-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/parent-pilot-v1/jobs/parent-b518fa2038910d956e04-proposal/reply.json",
+      "sha256": "5fe65cb11a8cece114c8251b3211fde1dc929900bbd739d3f641dc2b00617505",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/parent-pilot-v1/jobs/parent-b518fa2038910d956e04-proposal/receipt.json",
+      "receiptSha256": "385494ee693a01edb637a7b0fa718d5e66fb4372a6bd18a8f14640012be8f031"
+    },
+    {
+      "id": "parent-b518-scope-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/parent-pilot-v1/jobs/parent-b518fa2038910d956e04-challenge/reply.json",
+      "sha256": "7a85148d0923a4c87f1b28f8a516e5b993c902aa4d9270c311efefc92ffe5a45",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/parent-pilot-v1/jobs/parent-b518fa2038910d956e04-challenge/receipt.json",
+      "receiptSha256": "14981d007d270118a261eb230c86861b4cf5e861d009b597015d40d98f0ffa2c"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/parent-route-admissions-v2/statistics-receipt.json",
+    "sha256": "46ba677ae6e26a62496d6960653275632d515d7b31479a6e3367a28485c6f270"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "sourceContributions": [],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

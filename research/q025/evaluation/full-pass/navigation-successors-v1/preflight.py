@@ -1,0 +1,9 @@
+import json,os,shutil
+from pathlib import Path
+import contract
+from materialize import read,dump,sha,materialize
+B=Path(__file__).resolve().parent;F=B.parent;E=F.parent;L=F/'native-local/navigation-successors-v1'
+def utf16(x):return len(x.encode('utf-16-le'))//2
+def main():
+ work=L/f'preflight-run-{len(list(L.glob("preflight-run-*")))+1:03d}';work.mkdir();jid='distance-and-emergence-independent-challenge';d=work/'jobs'/jid;d.mkdir(parents=True);shutil.copyfile(L/'jobs'/jid/'request.json',d/'request.json');request=read(d/'request.json');materialize(d/'request.json',work);prompt=(d/'prompt-base.actual.txt').read_text();schema=json.dumps(contract.SCHEMA,separators=(',',':'));budget={'actualPromptCharacters':utf16(prompt),'schemaCharacters':utf16(schema),'maxResponseCharacters':request['maxOutputCharacters'],'reasoningAndProtocolHeadroomTokens':16000,'dispatchGuardTokens':220000};budget['conservativeCombinedTokens']=(budget['actualPromptCharacters']+budget['schemaCharacters']+budget['maxResponseCharacters']+2)//3+16000;assert budget['conservativeCombinedTokens']<=budget['dispatchGuardTokens'];p=read(d/'packet.actual.json');dump(B/'preflight.json',{'schemaVersion':'q025-navigation-successor-preflight/1','fixtureRuntime':os.path.relpath(work,E),'packetSha256':sha(d/'packet.actual.json'),'promptSha256':sha(d/'prompt-base.actual.txt'),'adoptedReceiptSha256':request['adoptedReceiptSha256'],'priorReplyValueSha256':contract.shared.base.vh(p['priorReview']),'budget':budget,'sources':len(p['units']),'pairedAnnotations':len(p['pairedUnitContext']),'primaryWindows':0,'scopeDefinitions':len(p['scopes']),'priorQuestions':len(p['priorReview']['newQuestions']),'priorDecisions':len(p['priorReview']['decisions']),'priorNavigation':len(p['priorReview']['navigation']),'priorRoles':len(p['priorReview']['sourceContributions']),'nativeLaunches':0});print(json.dumps({'materialized':1,'budget':budget,'nativeLaunches':0}))
+if __name__=='__main__':main()

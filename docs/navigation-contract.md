@@ -293,3 +293,24 @@ relation `title` labels its outgoing choice; only an explicitly reviewed
 the canonical neighbor title. The connection read preserves its canonical
 neighbor `title`, exact recorded outgoing `routeTitle`, and traversal-specific
 `choiceTitle`. Arrival always uses the unchanged destination title and question.
+
+
+Dated Q-025 addition: separately admitted source-contribution observations retain their exact decision, qualification, evidence and scope binding. Observation identity is `(decisionId, unitId, role)` within a destination. `sourceContributionObservationCount` counts rows; `sourceContributionRelationshipCount` counts distinct `(unitId, role)` pairs. The source read API retains `total` as the paged observation count and exposes `observationCount` and `relationshipCount`. Repeated observations add neither membership mass nor USING applicability.
+
+Organizational shared-source access uses `type: related_question` with `provenance.navigationBasis: same_source_organizational_access`. Its `organizationalAccess` record pins the support certificate and policy, reports `uniqueWitnessCount` with `countScope: scope_wide`, and remains distinct from scientific narrower, premise, application and method routes. Scientific choices precede these access links; exact source facets follow them. Incoming traversal retains the original endpoints and canonical neighbor title. Witness counts remain scope-wide under source filters and do not establish containment, identity, physical implication or method applicability. Zero-membership supported destinations remain navigable. Full qualifications and decision provenance are available from the immutable certificate; every link remains available through paged connections.
+
+
+Exact, admitted destination-ID redirects are separate from lexical title aliases. Optional `catalog.destinationAliases` maps an absent former ID directly to an active canonical destination in the same immutable atlas version; chains, cycles, overwritten active IDs and unknown targets are rejected. Preparation, selector resolution, source/connection reads and shared session identity all use that canonical ID. Previous atlas versions and their original computation identities remain unchanged. Canonical detail carries `scopedIdentity` with its group/decision/inventory binding, exact `originalDefinitions`, and unchanged `retainedReadingLimits`; the browser and static pages expose these in a closed history disclosure. A former static page links to that canonical record. This scoped-question identity does not assert equivalence of underlying source statements or transfer membership mass.
+
+Compact prepared choices and lexical search previews use the exact scoped question
+(or its exact title fallback), rather than a historical review summary. This field
+selection does not change a scientific definition or its hash. Full summaries and
+reading records remain available in destination details; approved, scope-bound
+display annotations continue to separate workflow history from physical premises.
+
+The foreground contains one choice per canonical destination. Its highest-priority
+recorded route supplies the existing action ID and reviewed outgoing label (or
+canonical neighbor title for an unlabeled incoming route). `relations` retains
+every exact directed reason, qualification and access certificate; `routeCount`
+reports that count. The full connection collection and its relation count are
+unchanged. This grouping does not compose, invert or merge scientific relations.

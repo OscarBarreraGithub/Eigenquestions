@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "entropy-and-extremality",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/packet.actual.json",
+      "sha256": "f6e8e5771be8ce1566e7e701be33bb2d8e33f6297216ee6a0f5f42dfae07c51d"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-proposal/reply.json",
+      "sha256": "a40f02a407910d60678c6cfadb1984fb7cb7b146bd6797e5c0d58b704d69b59e"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/reply.json",
+      "sha256": "718c1ba6ff68a3631c070056d427b6aa692b492f1dc8bf9484c4ef78980f9358"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-proposal/receipt.json",
+      "sha256": "7ed1fd4cc0474a44abadc773de1d060603db5e911081dfad6bb82a5d3fcd12c7"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/receipt.json",
+      "sha256": "88a3a9d821e78cc027b31eb29b7a775804e18358ec9ce607eccf0923ea8d6b05"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/entropy-and-extremality-challenge/normalization.json",
+      "sha256": "dbfd510646242878eb68f76b85c8065d3bc2928aa3a33bdaecbe7097af9639f5"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  },
+  "scopeHashes": {
+    "q025-candidate-question:450e8e5a5838a796c971a3bb": "8c6eda46f2100eb7e5e3a6e64d2847da938e6f866ab91787e2607aaf46060720",
+    "q025-candidate-question:51d213e52260433a1885e2e3": "0ceffd294181da4dbecfcaabcdd772f6ae9c95f6960987a1605c1f5705147b4a"
+  },
+  "roleHashes": {
+    "decision:navigation-v2:entropy-and-extremality:role:0": "d26c112f8c5dbd8cd33f3264dcc5c82122a5133c1d1fc6799dbc852e63ed6fae",
+    "decision:navigation-v2:entropy-and-extremality:role:1": "669e02f8cfbdd6ce780048c6229daa84449a25d2e6f707861768d52427d480dd"
+  },
+  "operationHashes": {
+    "operation:navigation-v2:entropy-and-extremality:pd0": "350839a0a50e6b4294932e19980a88b063dc806c7a3f6cea2f91d149f259b0e4",
+    "operation:navigation-v2:entropy-and-extremality:pd1": "7d7cccf2f2c03d2ebe741989fc16bed3f4a8cc3b9c3ac789b0415b079ee18b0c",
+    "operation:navigation-v2:entropy-and-extremality:pd2": "b4050051255f0bc2a0d071003d426c4978b1c173fa2c1058abdd88361229ee67",
+    "operation:navigation-v2:entropy-and-extremality:pd3": "4274700e0ff293f8c43346568435d40b58481d236302bf93973cb0b091a03fca"
+  },
+  "navigationHashes": {
+    "decision:navigation-v2:entropy-and-extremality:route:pn0": "8c8910eaa086c0a9b3e2749b45da76497f254b59d8c8ae314eacf00fd3a2616c",
+    "decision:navigation-v2:entropy-and-extremality:route:pn1": "ed65483c98285ce360390ffbdc2ddf5db659a8158bd51ce3102c66ea64de6d1e",
+    "decision:navigation-v2:entropy-and-extremality:route:pn2": "2540a26c5161b96cc55d1891a54af9ca610d70983aeed5ecaba8f789c7d6e307"
+  },
+  "localEqualityGroups": [
+    {
+      "operationId": "operation:navigation-v2:entropy-and-extremality:pd0",
+      "memberDestinationIds": [
+        "q025-candidate-question:2ed35c0e62570949d976b307",
+        "q025-candidate-question:4a96ce81d3c4841657c6029d"
+      ],
+      "canonicalDestinationId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+      "status": "local_group_supported_global_whole_group_gate_pending",
+      "retainedReadingLimits": [
+        {
+          "destinationId": "q025-candidate-question:2ed35c0e62570949d976b307",
+          "readingLimit": "Only an abstract and overlapping introductory text are supplied. They announce calculations and interpretations; the relations and claimed universality are not independently checked."
+        },
+        {
+          "destinationId": "q025-candidate-question:4a96ce81d3c4841657c6029d",
+          "readingLimit": "Abstract and motivation from 2011.14366 support the announced targets and selected claims. The detailed calculations needed to establish the proposed universal relations are not supplied."
+        }
+      ],
+      "sourceStatementIdentityEstablished": false,
+      "automaticHomeTransfer": false
+    }
+  ],
+  "preservedLimitations": [
+    "No actual primary windows are supplied. This review reuses complete definitions, the supplied whole description and mapped prior assessments; it does not freshly verify any thermodynamic relation or WGC-like behavior.",
+    "Preserved c0 reading limit: Only an abstract and overlapping introductory text are supplied. They announce calculations and interpretations; the relations and claimed universality are not independently checked.",
+    "Preserved c1 reading limit: Abstract and motivation from 2011.14366 support the announced targets and selected claims. The detailed calculations needed to establish the proposed universal relations are not supplied.",
+    "n0 supports inherited attribution through its explicit c0 mapping; n1 through its explicit c1 mapping. Nested historical references are not current evidence IDs, and n0's historical comparison assignment does not independently establish a role at c1.",
+    "Ensemble details, derivative prescriptions, deformation normalization, entropy and extremality conventions, and quantitative mass–charge criteria are not supplied here. No change to them or equality of physical statements is inferred.",
+    "Supported prior definitions, decisions, routes and source roles are retained exactly through their reviews. No additional source roles are assigned. This bounded review establishes neither complete source-assignment coverage, global uniqueness, atomic source identity, organizational homes nor mass."
+  ],
+  "unresolved": [
+    "A premise_check, application_of or method route between response relations and the WGC-like interpretation remains unlicensed without primary evidence identifying the relevant premise or inferential mechanism. Their explicit joint investigation supports only the retained related_question route."
+  ],
+  "counts": {
+    "newScopes": 2,
+    "typedOperations": 4,
+    "publicRoutes": 3,
+    "confirmedSourceRoles": 2,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

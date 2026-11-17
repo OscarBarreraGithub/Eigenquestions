@@ -64,6 +64,7 @@ export async function checkSite(directory = path.join(root, 'dist')) {
       const catalog=await readFile(path.join(atlasDirectory,prepared.files.catalog.path));assert.equal(createHash('sha256').update(catalog).digest('hex'),prepared.files.catalog.sha256,'Prepared catalog hash mismatch');verifiedAtlasFiles+=2;
       const loaded=await loadAtlas(atlasDirectory,{readText:filename=>readFile(filename,'utf8')}),navigator=createAtlasNavigator(loaded);await navigator.prepareSearch?.();
       const assetSet=new Set(entries);for(const destination of loaded.catalog.destinations)assert.ok(assetSet.has(`atlas/${entry.atlasId}/${entry.atlasVersion}/${destination.id}.html`),`Prepared atlas lacks static readable destination ${destination.id}`);
+      for(const oldId of Object.keys(loaded.catalog.destinationAliases||{}))assert.ok(assetSet.has(`atlas/${entry.atlasId}/${entry.atlasVersion}/${oldId}.html`),`Prepared atlas lacks readable former-destination page ${oldId}`);
     }
   }
   const config = await readFile(path.join(root, 'wrangler.toml'), 'utf8');

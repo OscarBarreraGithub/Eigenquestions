@@ -1,0 +1,3390 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [],
+  "sourceContributions": [
+    {
+      "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+      "destinationId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "role": "specializes",
+      "basis": "description_checked",
+      "qualification": "Confirm a direct contribution to the existing broad destination: period reconstruction, selected-state BPS bounds and flux stabilization are separate parts of this compound program. Observable-dependent exponential corrections remain essential where required; no uniform truncation is inferred. Independent confirmation: u8 directly specializes c4's period, bound and stabilization program. The attribution preserves those separate targets, selected-state restrictions and observable-dependent corrections; it does not transfer every contribution to c2 or c3.",
+      "evidenceRefs": [
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce",
+          "paperId": "2207.00303"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:role:0"
+    },
+    {
+      "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+      "destinationId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "role": "specializes",
+      "basis": "description_checked",
+      "qualification": "Confirm the internal Ricci-flat metric approximation branch. The bounded survey compares conventional and learned methods; it does not certify completed spectra, normalized interactions or uniformly accurate compactification predictions. Availability claims retain the supplied source date. Independent confirmation: u1 directly specializes c4's internal-metric branch. Its bounded survey and approximation target support this role without certifying spectra, normalized interactions or uniform compactification accuracy; dated availability claims remain dated.",
+      "evidenceRefs": [
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "textSha256": "0c93ce381c42ced485d9c9109dcded49e1b74a8d96681410c6a0e455252d21ca",
+          "paperId": "2312.17125"
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:role:1"
+    }
+  ],
+  "relations": [
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn0",
+      "source": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "target": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "type": "narrower",
+      "title": "Compute periods, mirror maps and moduli couplings",
+      "qualification": "Use the stated hypersurface or complete-intersection families and deformation sectors. Polynomial coverage is not full deformation coverage; moduli-space metrics are distinct from internal Ricci-flat metrics.",
+      "rationale": "The existing parent explicitly includes special geometry, and the supplied calculations support this narrower computational direction.",
+      "evidenceIds": [
+        "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+        "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+        "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+        "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "textSha256": "98ad70d89950b4c84cf2b0ac95048e37fb1e8d5e2765b56846692a460efd4a80"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 36,
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "textSha256": "5d2115398eca83e1eaf90c87de297adc233710300ba1a5196e3e527060542ad2"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "targetCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:3",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The broader-to-narrower direction follows the explicit definitions. Its title exposes useful computations, while the qualification preserves model and deformation restrictions and the distinction between moduli and internal metrics.",
+          "refs": [
+            "c4",
+            "c3",
+            "u0",
+            "u2",
+            "u7",
+            "u12",
+            "n9",
+            "n15",
+            "n16",
+            "n17",
+            "l0"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn1",
+      "source": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "target": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "type": "narrower",
+      "title": "Define and constrain curve invariants",
+      "qualification": "Keep local and compact constructions, invariant definitions, genus and refinement separate. Smooth local Fano and suitable singular-surface cases retain different assumptions; subtraction questions do not establish coordinate-independent regularization.",
+      "rationale": "Curve invariants and topological amplitudes form an explicit narrower target within c4.",
+      "evidenceIds": [
+        "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+        "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "textSha256": "12c06bebed06a92fe9fed76ddffaff2287bc050347691b9855d3e5170ca505e1"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:4",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "c1 is an explicit narrower direction of c4. The route retains invariant definitions, local-versus-compact scope, genus, refinement and the unresolved coordinate-independence of subtraction.",
+          "refs": [
+            "c4",
+            "c1",
+            "u6",
+            "u15",
+            "n12",
+            "n18",
+            "l1"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn2",
+      "source": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "target": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "type": "narrower",
+      "title": "Compute topological amplitudes and interpret BPS data",
+      "qualification": "Preserve each construction's domain: large-Calabi–Yau isolated-sphere assumptions for the cited one-loop interpretation, noncompact toric scope for the vertex, and resolved-conifold scope for the supplied resummation question. Protected amplitudes do not certify general scattering.",
+      "rationale": "The existing parent includes topological quantum corrections and protected compactification observables, while c0 supplies their computational and interpretive direction.",
+      "evidenceIds": [
+        "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+        "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+        "unit:d7d23971e1a6ecf64d786f5585d30b1eaaf5a080cbe0a5dc1fd1150396d8bfdc"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "textSha256": "e334b7766e6ee7a4f96ed331e84d53f9bf75740c7960ca6ce786b4610d8028a9"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "textSha256": "e838258edbc58a3d658f65cded62609f33acc885c05e8ac61e5d61b7da5eb0a1"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:d7d23971e1a6ecf64d786f5585d30b1eaaf5a080cbe0a5dc1fd1150396d8bfdc",
+          "textSha256": "b8cfcd85538067b6a628f5dd4a3e80cdab7d72ddf4442f6f6450b556a2ab7cfb"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:d7d23971e1a6ecf64d786f5585d30b1eaaf5a080cbe0a5dc1fd1150396d8bfdc",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "c4 explicitly includes the amplitude and protected-observable direction. One-loop and vertex restrictions are reused from c0's supported scope; selected descriptions support the counting and conifold branches without extending their domains.",
+          "refs": [
+            "c4",
+            "c0",
+            "u5",
+            "u10",
+            "u16",
+            "n0",
+            "n1",
+            "n2"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn3",
+      "source": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "target": "q025-candidate-question:af30c367be77504492951c97",
+      "type": "narrower",
+      "title": "Study periods near degenerations",
+      "qualification": "Retain specified deformation families, threefold or fourfold settings and observable-dependent exponential corrections. Formal special geometries remain an alternate realizability comparison, not established compactifications; Hodge-operator components are not a physical small-parameter expansion.",
+      "rationale": "Period geometry and degenerations are explicit directions within c4. The formal branch remains a qualified comparison boundary within the destination.",
+      "evidenceIds": [
+        "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+        "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+        "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "Period geometry and degenerations are narrower directions of c4. The route preserves observable-dependent corrections and treats formal realizability as an alternate comparison boundary, with no claim that all formal geometries are compactifications.",
+          "refs": [
+            "c4",
+            "c2",
+            "u2",
+            "u8",
+            "u13",
+            "n4",
+            "n6",
+            "n7"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn4",
+      "source": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "target": "q025-candidate-question:af30c367be77504492951c97",
+      "type": "related_question",
+      "title": "Explore asymptotic periods and realizability questions",
+      "qualification": "The overlap includes Fermat period pairing and parts of the asymptotic-period program. Additional operator and realizability questions are not consequences of every explicit mirror calculation, and physical and motivic realizability are not asserted equal.",
+      "rationale": "The shared witnesses support a useful neighboring question while the complete scopes remain distinct.",
+      "evidenceIds": [
+        "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+        "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+        "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "targetCandidateId": "q025-candidate-question:af30c367be77504492951c97",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:15",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "The shared Fermat and asymptotic-period contributions justify this related-question arc. Its qualification avoids implying that explicit computations settle operator or realizability questions.",
+          "refs": [
+            "c3",
+            "c2",
+            "u2",
+            "u8",
+            "u13",
+            "n4",
+            "n6",
+            "n7",
+            "n9",
+            "n19",
+            "l2"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn5",
+      "source": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "target": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "type": "method_for",
+      "title": "Use mirror calculations for instanton invariants",
+      "qualification": "Apply only in the specified two-parameter, toric-hypersurface or complete-intersection settings. Preserve continuous instanton families in the two-parameter examples and distinguish genus-zero outputs from genus-one predictions. This route supplies no universal refined, higher-genus or regularization method.",
+      "rationale": "The supplied sources explicitly connect period and mirror calculations to instanton data. Method-to-target direction is method_for; the historical application wording does not justify reversing application_of semantics.",
+      "evidenceIds": [
+        "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+        "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+        "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "textSha256": "98ad70d89950b4c84cf2b0ac95048e37fb1e8d5e2765b56846692a460efd4a80"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 36,
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "textSha256": "5d2115398eca83e1eaf90c87de297adc233710300ba1a5196e3e527060542ad2"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l3",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:16",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn5",
+      "provenance": {
+        "nativeRouteId": "pn5",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn5",
+          "verdict": "supported_as_written",
+          "reason": "The descriptions explicitly support mirror or period methods for instanton data. method_for correctly runs from c3 to c1, with model, continuous-family and genus restrictions and no universal refined, higher-genus or regularization claim.",
+          "refs": [
+            "c3",
+            "c1",
+            "u0",
+            "u7",
+            "u12",
+            "n15",
+            "n16",
+            "n17",
+            "n21",
+            "l3"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:calabi-yau-periods-and-bps:pn6",
+      "source": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "target": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "type": "comparison",
+      "title": "Compare BPS interpretations with invariant definitions",
+      "qualification": "Compare only the overlapping amplitude and enumerative questions. GW-type, GV and refined data require their own definitions; BPS interpretation, anomaly constraints and subtraction prescriptions are not interchangeable. Local, compact and genus restrictions remain explicit.",
+      "rationale": "This preserves the useful supplied comparison without equating full scopes or claiming a universal conversion between physical and enumerative statements.",
+      "evidenceIds": [
+        "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+        "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+        "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+        "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "textSha256": "e334b7766e6ee7a4f96ed331e84d53f9bf75740c7960ca6ce786b4610d8028a9"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "textSha256": "12c06bebed06a92fe9fed76ddffaff2287bc050347691b9855d3e5170ca505e1"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "textSha256": "e838258edbc58a3d658f65cded62609f33acc885c05e8ac61e5d61b7da5eb0a1"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l4",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-8d2b5fd7cc13cefc77fe-challenge:link:47",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn6",
+      "provenance": {
+        "nativeRouteId": "pn6",
+        "sourceReviewIds": [
+          "calabi-yau-periods-and-bps-navigation-proposal",
+          "calabi-yau-periods-and-bps-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn6",
+          "verdict": "supported_as_written",
+          "reason": "The overlapping amplitude and enumerative questions support this directed comparison. Its wording keeps GW-type, GV and refined definitions distinct and asserts no universal conversion from BPS interpretations to invariant or subtraction prescriptions.",
+          "refs": [
+            "c0",
+            "c1",
+            "u5",
+            "u6",
+            "u10",
+            "u15",
+            "n0",
+            "n2",
+            "n12",
+            "n18",
+            "l4"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:role:0",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+        "q025-candidate-region:ab32fe5068d3093c0140abe9"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce",
+          "paperId": "2207.00303"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u8",
+        "questionRef": "c4",
+        "role": "specializes",
+        "reason": "Confirm a direct contribution to the existing broad destination: period reconstruction, selected-state BPS bounds and flux stabilization are separate parts of this compound program. Observable-dependent exponential corrections remain essential where required; no uniform truncation is inferred.",
+        "refs": [
+          "u8",
+          "c4",
+          "n6",
+          "n19",
+          "n20"
+        ]
+      },
+      "independentAssessment": {
+        "index": 0,
+        "verdict": "supported_as_written",
+        "reason": "u8 directly specializes c4's period, bound and stabilization program. The attribution preserves those separate targets, selected-state restrictions and observable-dependent corrections; it does not transfer every contribution to c2 or c3.",
+        "refs": [
+          "u8",
+          "c4",
+          "n6",
+          "n19",
+          "n20"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "contributionContentSha256": "3e89903a553a71d91dcfc4a25e7694190431d1ae053b49ad1768a1ada4bf4b48",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:role:1",
+      "type": "source_contribution",
+      "status": "accepted",
+      "subjectIds": [
+        "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+        "q025-candidate-region:ab32fe5068d3093c0140abe9"
+      ],
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "textSha256": "0c93ce381c42ced485d9c9109dcded49e1b74a8d96681410c6a0e455252d21ca",
+          "paperId": "2312.17125"
+        }
+      ],
+      "originalRole": {
+        "unitRef": "u1",
+        "questionRef": "c4",
+        "role": "specializes",
+        "reason": "Confirm the internal Ricci-flat metric approximation branch. The bounded survey compares conventional and learned methods; it does not certify completed spectra, normalized interactions or uniformly accurate compactification predictions. Availability claims retain the supplied source date.",
+        "refs": [
+          "u1",
+          "c4",
+          "n5",
+          "n22"
+        ]
+      },
+      "independentAssessment": {
+        "index": 1,
+        "verdict": "supported_as_written",
+        "reason": "u1 directly specializes c4's internal-metric branch. Its bounded survey and approximation target support this role without certifying spectra, normalized interactions or uniform compactification accuracy; dated availability claims remain dated.",
+        "refs": [
+          "u1",
+          "c4",
+          "n5",
+          "n22"
+        ]
+      },
+      "contextRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n22",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        }
+      ],
+      "scopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "contributionContentSha256": "5253c92645189bda1f8dfd003b240d5fc11554558d3f1d05fe2077eeeabc1fbf",
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:ab32fe5068d3093c0140abe9",
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "5389d61b3fe54e3a8c4cf509503476ad3fa5a4708e0f67de706e98a1c54d23d9",
+      "sourceScopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "targetScopeContentSha256": "ffdcdfd43bf16c41d677b405ceb912250a1923a77812c9d1330dc83c149354e4",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "textSha256": "98ad70d89950b4c84cf2b0ac95048e37fb1e8d5e2765b56846692a460efd4a80"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 36,
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "textSha256": "5d2115398eca83e1eaf90c87de297adc233710300ba1a5196e3e527060542ad2"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "targetCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:3",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:ab32fe5068d3093c0140abe9",
+        "q025-candidate-question:853de7f0a8e55cb55e507432"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "ff3d67b6e965b63231f8af5f887966137c758c0417ec0f5515f7fdaa3f937d4d",
+      "sourceScopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "targetScopeContentSha256": "1191edf288d92ccd85517cd18375cb8a461efbb866a004d1bb799b1c84f3f849",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "textSha256": "12c06bebed06a92fe9fed76ddffaff2287bc050347691b9855d3e5170ca505e1"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:4",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:ab32fe5068d3093c0140abe9",
+        "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "cb9d1d4dbccdde6486e3ef2cdaf1dbc5305142ee2b5eb168dc35dde00bfe210c",
+      "sourceScopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "targetScopeContentSha256": "88ab7ec54de259c7ab27f917a6e3f8db89b9e545682f21aa89a76a355c2cb02b",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "textSha256": "e334b7766e6ee7a4f96ed331e84d53f9bf75740c7960ca6ce786b4610d8028a9"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "textSha256": "e838258edbc58a3d658f65cded62609f33acc885c05e8ac61e5d61b7da5eb0a1"
+        },
+        {
+          "localRef": "u16",
+          "kind": "description",
+          "unitIndex": 28,
+          "unitId": "unit:d7d23971e1a6ecf64d786f5585d30b1eaaf5a080cbe0a5dc1fd1150396d8bfdc",
+          "textSha256": "b8cfcd85538067b6a628f5dd4a3e80cdab7d72ddf4442f6f6450b556a2ab7cfb"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:d7d23971e1a6ecf64d786f5585d30b1eaaf5a080cbe0a5dc1fd1150396d8bfdc",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:ab32fe5068d3093c0140abe9",
+        "q025-candidate-question:af30c367be77504492951c97"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "8b2d39e586f2db3268c092d7d7266268951193f004a87a18d3ed63862737d5fe",
+      "sourceScopeContentSha256": "2aaa3916150d9c40eb23087fe71c0dabf37597ff3dd1a43473e1e63c8e828df0",
+      "targetScopeContentSha256": "84bd20b185001dedc6d191f23ea8a8e8a7f87be8ef9d307c6c054b89682d892d",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+        "q025-candidate-question:af30c367be77504492951c97"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "eecfada0546e10005a676771b0af811fc8c44730190944b7b320e9991dfba9fb",
+      "sourceScopeContentSha256": "ffdcdfd43bf16c41d677b405ceb912250a1923a77812c9d1330dc83c149354e4",
+      "targetScopeContentSha256": "84bd20b185001dedc6d191f23ea8a8e8a7f87be8ef9d307c6c054b89682d892d",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "targetCandidateId": "q025-candidate-question:af30c367be77504492951c97",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:15",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn5",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+        "q025-candidate-question:853de7f0a8e55cb55e507432"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "method_for",
+      "navigationContentSha256": "bfd49c3cf9ed5d612642cba95fac1d96afb704a67eae9e06033880bacbe8d621",
+      "sourceScopeContentSha256": "ffdcdfd43bf16c41d677b405ceb912250a1923a77812c9d1330dc83c149354e4",
+      "targetScopeContentSha256": "1191edf288d92ccd85517cd18375cb8a461efbb866a004d1bb799b1c84f3f849",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "textSha256": "98ad70d89950b4c84cf2b0ac95048e37fb1e8d5e2765b56846692a460efd4a80"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 36,
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "textSha256": "5d2115398eca83e1eaf90c87de297adc233710300ba1a5196e3e527060542ad2"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l3",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:16",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:calabi-yau-periods-and-bps:route:pn6",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+        "q025-candidate-question:853de7f0a8e55cb55e507432"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "00524f539810a59b051b9fb2691aa22b95b44895f37fc81cb108bf8a2b4a3102",
+      "sourceScopeContentSha256": "88ab7ec54de259c7ab27f917a6e3f8db89b9e545682f21aa89a76a355c2cb02b",
+      "targetScopeContentSha256": "1191edf288d92ccd85517cd18375cb8a461efbb866a004d1bb799b1c84f3f849",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "calabi-yau-periods-and-bps-navigation-proposal",
+        "challengeReviewId": "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "textSha256": "e334b7766e6ee7a4f96ed331e84d53f9bf75740c7960ca6ce786b4610d8028a9"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "textSha256": "12c06bebed06a92fe9fed76ddffaff2287bc050347691b9855d3e5170ca505e1"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "textSha256": "e838258edbc58a3d658f65cded62609f33acc885c05e8ac61e5d61b7da5eb0a1"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l4",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-8d2b5fd7cc13cefc77fe-challenge:link:47",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "calabi-yau-periods-and-bps-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-proposal/reply.json",
+      "sha256": "7b503a25c0734fbd37f7a32f6524c3456cf5002572e437ad3b30026f802ed7fd",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-proposal/receipt.json",
+      "receiptSha256": "866372725f6240db0e65768bd1c9e4dd1faa455363f8af5b88ef0d48993f096c",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-proposal/normalization.json",
+        "sha256": "638f2c9ea291ba84615081b60aadc4c006d4e9d0f215dab0fdfde81648b52b12"
+      }
+    },
+    {
+      "id": "calabi-yau-periods-and-bps-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/reply.json",
+      "sha256": "54c92a0576e04d4442a1ec071093cf8af201b1f4645fdd9db3c146bffa95a5e0",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/receipt.json",
+      "receiptSha256": "cd7cd14d3d22a806c0b5e8d398e7b6fe09e4a20861ca8feeebdd5aa9aee4d9c6",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/calabi-yau-periods-and-bps-challenge/normalization.json",
+        "sha256": "ca28a0b80e891364b66af7ee540770650c65294c0a3c3149c4a823193b76585a"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "shared_parent_distinct",
+        "members": [
+          "c0",
+          "c1"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c0 includes wrapped-brane BPS interpretation, protected spacetime observables and quantum or statistical descriptions.",
+          "c1 includes invariant definitions, quantum cohomology, anomaly constraints and subtraction prescriptions.",
+          "Their local, compact, refined and genus-specific branches do not have interchangeable premises."
+        ],
+        "reason": "The shared amplitude and enumerative targets justify comparison and organization under existing c4. They do not establish full-scope equivalence or containment of either complete question in the other. Retain c0 for its interpretive program and c1 for its definition-and-constraint program.",
+        "refs": [
+          "c0",
+          "c1",
+          "c4",
+          "u5",
+          "u10",
+          "u6",
+          "u15",
+          "n0",
+          "n2",
+          "n12",
+          "n18",
+          "l4"
+        ]
+      },
+      "nativeOperationValueSha256": "5d1299e676644aa15c372dc2c252454485c82abdbb48d094e125e9a7fe0db27e",
+      "members": [
+        "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+        "q025-candidate-question:853de7f0a8e55cb55e507432"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The definitions share amplitude and enumerative targets but retain material differences in interpretation, definitions and regularization. Existing c4 supplies an organizational parent without merging these programs.",
+        "refs": [
+          "c0",
+          "c1",
+          "c4",
+          "u5",
+          "u6",
+          "u10",
+          "u15",
+          "n0",
+          "n2",
+          "n12",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "textSha256": "e334b7766e6ee7a4f96ed331e84d53f9bf75740c7960ca6ce786b4610d8028a9"
+        },
+        {
+          "localRef": "u10",
+          "kind": "description",
+          "unitIndex": 29,
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "textSha256": "e838258edbc58a3d658f65cded62609f33acc885c05e8ac61e5d61b7da5eb0a1"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "textSha256": "12c06bebed06a92fe9fed76ddffaff2287bc050347691b9855d3e5170ca505e1"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n2",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:55609489a8990f86061f49417d67adb04f5a804e4f4a33d9a6aa4031c3123937",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l4",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-8d2b5fd7cc13cefc77fe-challenge:link:47",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "shared_parent_distinct",
+        "members": [
+          "c0",
+          "c2"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "Topological amplitudes and enumerative or BPS data differ from period pairing, field-space geometry and Hodge-theoretic operators.",
+          "c2 also retains a formal-realizability comparison boundary.",
+          "The selected-state bounds in compound u8 are not the topological BPS-index target of c0."
+        ],
+        "reason": "Both fit c4, but the supplied evidence does not establish a general route from asymptotic periods or weak-gravity bounds to topological BPS counting. Keep these scoped questions distinct.",
+        "refs": [
+          "c0",
+          "c2",
+          "c4",
+          "u5",
+          "u8",
+          "u13",
+          "n0",
+          "n4",
+          "n6",
+          "n20"
+        ]
+      },
+      "nativeOperationValueSha256": "f255e2e336cb03920d473ee215347e106bda4174930fd4082ed6c5501f3c946a",
+      "members": [
+        "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+        "q025-candidate-question:af30c367be77504492951c97"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c4 accommodates both programs. The selected-state BPS-bound contribution of u8 supplies no identification with c0's topological BPS indices, so retaining distinct targets is warranted.",
+        "refs": [
+          "c0",
+          "c2",
+          "c4",
+          "u5",
+          "u8",
+          "u13",
+          "n6",
+          "n20"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 18,
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "textSha256": "e334b7766e6ee7a4f96ed331e84d53f9bf75740c7960ca6ce786b4610d8028a9"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2ee491ecbe35b797fcf4f5f237cc1e6f3cee0b191b6f6f778ed3ab506fa3d2e9",
+          "reviewId": "leaf-02b834cc1fe57554842a-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "shared_parent_distinct",
+        "members": [
+          "c0",
+          "c3"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c0 asks for amplitudes, enumerative information and protected BPS interpretations.",
+          "c3 asks for periods, moduli metrics, mirror maps, prepotentials and Yukawa couplings in specified families.",
+          "Shared mirror methods do not make their complete output questions equivalent."
+        ],
+        "reason": "Reuse c4 for their common geometric context while retaining both destinations. The packet supports particular mirror-to-enumerative connections through c1, not a universal special-geometry-to-BPS implication.",
+        "refs": [
+          "c0",
+          "c3",
+          "c4",
+          "u0",
+          "u2",
+          "u9",
+          "n9",
+          "n10",
+          "n15"
+        ]
+      },
+      "nativeOperationValueSha256": "d955eb5c201016fcdc77a1a60a167e2441d36a634e3342f7b97e8fd03d59078f",
+      "members": [
+        "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Explicit periods, metrics and couplings differ from the full amplitude-and-BPS program. Shared mirror methods support the stated common context without a universal physical implication.",
+        "refs": [
+          "c0",
+          "c3",
+          "c4",
+          "u0",
+          "u2",
+          "u9",
+          "n9",
+          "n10",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-02b834cc1fe57554842a-challenge:p0",
+          "candidateId": "q025-candidate-question:6a9d9c1d809f904f41b8f560"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:514e9fbcafd6f182ff959a6f4ccd8339fef63f96bd87be6784404499d2d7b740",
+          "textSha256": "b1cdb4e99f75320c197651b0d67795de4bba47171af1dbf43ab6e074eae18129"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n10",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:514e9fbcafd6f182ff959a6f4ccd8339fef63f96bd87be6784404499d2d7b740",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "shared_parent_distinct",
+        "members": [
+          "c1",
+          "c2"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c1 concerns curve invariants, topological amplitudes and their definitions or constraints.",
+          "c2 concerns period pairing, degeneration asymptotics and formal realizability.",
+          "Local Picard–Fuchs calculations and asymptotic Hodge methods are not interchangeable computational premises."
+        ],
+        "reason": "These are distinct directions within c4. Shared period terminology does not establish an enumerative application of every c2 method; the supported computational bridge is the qualified c3-to-c1 route.",
+        "refs": [
+          "c1",
+          "c2",
+          "c4",
+          "u2",
+          "u8",
+          "u13",
+          "u15",
+          "n4",
+          "n7",
+          "n18"
+        ]
+      },
+      "nativeOperationValueSha256": "d73a5f9a2d0034ff6116cf439191a2f732c55426b7703c01d5e8383cb38214dd",
+      "members": [
+        "q025-candidate-question:853de7f0a8e55cb55e507432",
+        "q025-candidate-question:af30c367be77504492951c97"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Invariant and regularization questions remain distinct from period pairing, asymptotic operators and realizability. Neither the definitions nor selected witnesses license a general Hodge-to-enumerative conversion.",
+        "refs": [
+          "c1",
+          "c2",
+          "c4",
+          "u8",
+          "u13",
+          "u15",
+          "n4",
+          "n6",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "method_bridge",
+        "members": [
+          "c3",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "Period and mirror calculations supply methods and geometric outputs; invariant definitions and genus-dependent enumerative outputs remain separate targets.",
+          "Two-parameter hypersurfaces, toric hypersurfaces and complete intersections retain their respective model restrictions.",
+          "Genus-zero calculations and genus-one predictions remain distinct."
+        ],
+        "reason": "u0, u12 and u7 explicitly link mirror or period calculations to instanton information. Admit c3 as a method direction for c1, preserving continuous-instanton-family qualifications in u0. The historical application label must not become an application_of arc from method to application.",
+        "refs": [
+          "c1",
+          "c3",
+          "u0",
+          "u7",
+          "u12",
+          "n15",
+          "n16",
+          "n17",
+          "n21",
+          "l3"
+        ]
+      },
+      "nativeOperationValueSha256": "dee530be7aa0922a95957869b22c4830c55cfd8c723797113bbe6a81c6a2d26f",
+      "members": [
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+        "q025-candidate-question:853de7f0a8e55cb55e507432"
+      ],
+      "target": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "u0, u7 and u12 explicitly connect period or mirror calculations to instanton information. The bridge preserves their model and genus restrictions, including continuous instanton families, and correctly distinguishes method direction from application_of.",
+        "refs": [
+          "c1",
+          "c3",
+          "u0",
+          "u7",
+          "u12",
+          "n15",
+          "n16",
+          "n17",
+          "n21",
+          "l3"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u7",
+          "kind": "description",
+          "unitIndex": 37,
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "textSha256": "98ad70d89950b4c84cf2b0ac95048e37fb1e8d5e2765b56846692a460efd4a80"
+        },
+        {
+          "localRef": "u12",
+          "kind": "description",
+          "unitIndex": 36,
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "textSha256": "5d2115398eca83e1eaf90c87de297adc233710300ba1a5196e3e527060542ad2"
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n16",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:926b345c92affb58b9589a950142ae23a51f3801b52561f92b8ad7ae0109f605",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:394ea8d3adc525d1ea1ed5942e57d7dc169767d9f191f15bf489878004e5cbca",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n21",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l3",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:16",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "specializes",
+        "members": [
+          "c1",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c1 selects curve-invariant and topological-amplitude questions from c4's broader geometry and compactification program.",
+          "Its local, compact, refined, genus and regularization distinctions remain intact."
+        ],
+        "reason": "The existing parent explicitly includes these targets. Reuse it without enlarging c1 or treating adjacent curve-moduli intersection theory as a Calabi–Yau target-space calculation.",
+        "refs": [
+          "c1",
+          "c4",
+          "u0",
+          "u6",
+          "u15",
+          "n12",
+          "n15",
+          "n18",
+          "l1"
+        ]
+      },
+      "nativeOperationValueSha256": "1561e2245ef451c90f0e755b3384492b4e10bc084d651bfc49eeeab90e00e691",
+      "members": [
+        "q025-candidate-question:853de7f0a8e55cb55e507432",
+        "q025-candidate-region:ab32fe5068d3093c0140abe9"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd5",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c4 explicitly includes curve invariants and topological amplitudes. The narrower-first member order and broader target are correct, and the adjacent curve-moduli method is not promoted into a Calabi–Yau calculation.",
+        "refs": [
+          "c1",
+          "c4",
+          "u6",
+          "u15",
+          "n12",
+          "n18",
+          "l1"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p1",
+          "candidateId": "q025-candidate-question:853de7f0a8e55cb55e507432"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u6",
+          "kind": "description",
+          "unitIndex": 20,
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "textSha256": "12c06bebed06a92fe9fed76ddffaff2287bc050347691b9855d3e5170ca505e1"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "textSha256": "7f0c73db29bbb19ae442dca7191d75f103e389a18ea7047dab97f3f0b12027e2"
+        },
+        {
+          "localRef": "n12",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:3930d3016d5fce2f6edd9af5dfe2beadbfce9dc299691f330b50846041efae6f",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:cb95eb9c9a2e4dfc478e7da2079600014e592a8c9f790932d740b44550510a13",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "targetCandidateId": "q025-candidate-question:853de7f0a8e55cb55e507432",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:4",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "shared_parent_distinct",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c2 includes asymptotic Hodge operators and the separate physical-versus-motivic realizability question.",
+          "c3 includes broader explicit mirror, prepotential and Yukawa computations across additional model classes.",
+          "Their shared Fermat and asymptotic-period contributions do not exhaust either definition."
+        ],
+        "reason": "The exact Fermat witness supports both existing destinations, but agreement on that contribution is not agreement on their full scopes. Keep c3 as the reusable destination for explicit computations and c2 for its period, degeneration and comparison program; organize both under c4.",
+        "refs": [
+          "c2",
+          "c3",
+          "c4",
+          "u2",
+          "u8",
+          "u9",
+          "u13",
+          "u17",
+          "n4",
+          "n6",
+          "n7",
+          "n9",
+          "n10",
+          "n13",
+          "n19",
+          "l2"
+        ]
+      },
+      "nativeOperationValueSha256": "e489b08595c6e1ef21e3544f329eed41cd08095ac9f902f563e5d506399cc78b",
+      "members": [
+        "q025-candidate-question:af30c367be77504492951c97",
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The shared Fermat witness and portions of u8 establish overlap, not complete agreement. c2's formal-realizability and operator branches and c3's additional computations justify retaining both unchanged destinations under c4.",
+        "refs": [
+          "c2",
+          "c3",
+          "c4",
+          "u2",
+          "u8",
+          "u9",
+          "u13",
+          "u17",
+          "n4",
+          "n7",
+          "n9",
+          "n10",
+          "n13",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-9f316e5cd9cfe1d3bd13-challenge:p3",
+          "candidateId": "q025-candidate-question:af30c367be77504492951c97"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "textSha256": "dca7fd64b03fee3206aca2cb0907fb91afdcc045dcd9fc29e3cb9fe3c26c54ce"
+        },
+        {
+          "localRef": "u9",
+          "kind": "description",
+          "unitIndex": 15,
+          "unitId": "unit:514e9fbcafd6f182ff959a6f4ccd8339fef63f96bd87be6784404499d2d7b740",
+          "textSha256": "b1cdb4e99f75320c197651b0d67795de4bba47171af1dbf43ab6e074eae18129"
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 9,
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "textSha256": "84ad63b5e4d6c78188492cdebcfbe01a174479093c93e3e335e5cecd86afa288"
+        },
+        {
+          "localRef": "u17",
+          "kind": "description",
+          "unitIndex": 21,
+          "unitId": "unit:eb93831a574a4443eebb99ed809a2b21834d853534607a4e594cd9ac01cbcfcb",
+          "textSha256": "98c97ba0a40679a5d06d2e316e236392b8af215002711b2c6e0b9e5322266837"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:b4dae808e46351372059513b88c424f8265f556298a35ac21c221330c3405f38",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n6",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n7",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n10",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:514e9fbcafd6f182ff959a6f4ccd8339fef63f96bd87be6784404499d2d7b740",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:eb93831a574a4443eebb99ed809a2b21834d853534607a4e594cd9ac01cbcfcb",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4fea73399af306abbbb987fd962c91e5e3a816fd2eb6185f24ed0b4d82214a75",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l2",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "targetCandidateId": "q025-candidate-question:af30c367be77504492951c97",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:15",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:calabi-yau-periods-and-bps:pd7",
+      "nativeOperation": {
+        "id": "pd7",
+        "operation": "specializes",
+        "members": [
+          "c3",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c3 selects explicit special-geometry computations from the wider construction, metric, quantum and compactification questions of c4.",
+          "Effective moduli-space geometry remains distinct from internal Ricci-flat metric approximation."
+        ],
+        "reason": "The parent explicitly accommodates c3's targets. The metric survey supplies a useful contrast, not a premise that period calculations construct internal metrics.",
+        "refs": [
+          "c3",
+          "c4",
+          "u0",
+          "u1",
+          "u2",
+          "n5",
+          "n9",
+          "n15",
+          "n22",
+          "l0"
+        ]
+      },
+      "nativeOperationValueSha256": "acc3918a63f9b0f325c5b06102697950eff2d99464b98f27b3c52b0f03c647db",
+      "members": [
+        "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+        "q025-candidate-region:ab32fe5068d3093c0140abe9"
+      ],
+      "target": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "Special-geometry computations are explicit within c4. The narrower-first ordering is correct, and the metric-survey contrast preserves the distinction between field-space geometry and internal metric approximation.",
+        "refs": [
+          "c3",
+          "c4",
+          "u1",
+          "u2",
+          "n5",
+          "n9",
+          "n22",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-a346db48b7ff939db512-challenge:p0",
+          "candidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-fc8db97ee042e05990a1-challenge:r",
+          "candidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "textSha256": "412ba6ab5661932d7a1d1ca5603e36f5df8a4f5e9746300a04eab0b19e809065"
+        },
+        {
+          "localRef": "u1",
+          "kind": "description",
+          "unitIndex": 2,
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "textSha256": "0c93ce381c42ced485d9c9109dcded49e1b74a8d96681410c6a0e455252d21ca"
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 8,
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "textSha256": "5f6fbe92bee0cc7d775fd98e46338689a9254e07abf411e5d071dfe0a1cad655"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "reviewId": "leaf-9f316e5cd9cfe1d3bd13-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0ab89e9b3e058896b7c2ce5a4532d38d77d794d6b411df04b66072275988539a",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n15",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:05bbd28d938b41d04f3cff01ca15658911eecbbf83ffcc4791b18b3856f6b669",
+          "reviewId": "leaf-a346db48b7ff939db512-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "n22",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:0a7ff058e6bf3f5324228adfae4ca6d086ba813b0d29aa8e34d2d0cb3134aca8",
+          "reviewId": "parent-fc8db97ee042e05990a1-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+          "targetCandidateId": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+          "candidateId": "parent-fc8db97ee042e05990a1-challenge:link:3",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+        "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "right": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Shared amplitude and enumerative targets coexist with distinct BPS-interpretation, definition and regularization branches. Neither full equivalence nor full containment is established.",
+        "refs": [
+          "c0",
+          "c1",
+          "u5",
+          "u6",
+          "u10",
+          "u15",
+          "n0",
+          "n2",
+          "n12",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "right": "q025-candidate-question:af30c367be77504492951c97",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Topological BPS information and period or Hodge geometry are different scoped targets. u8's selected-state bounds do not identify them; different does not imply disjoint mathematics.",
+        "refs": [
+          "c0",
+          "c2",
+          "u5",
+          "u8",
+          "n0",
+          "n6",
+          "n20"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "right": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Amplitude and BPS interpretation differs from the specified metric, period and coupling computations. Shared mirror methods do not establish full-scope identity.",
+        "refs": [
+          "c0",
+          "c3",
+          "u0",
+          "u2",
+          "u9",
+          "n9",
+          "n10",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "right": "q025-candidate-question:af30c367be77504492951c97",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Invariant definitions and topological amplitudes differ from period pairing, degeneration operators and realizability. No general conversion between these targets is supplied.",
+        "refs": [
+          "c1",
+          "c2",
+          "u2",
+          "u8",
+          "u13",
+          "u15",
+          "n4",
+          "n7",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "right": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Specified mirror calculations produce enumerative outputs, but invariant definitions and regularization extend beyond c3, while moduli metrics and mirror constructions extend beyond c1.",
+        "refs": [
+          "c1",
+          "c3",
+          "u0",
+          "u7",
+          "u12",
+          "u15",
+          "n15",
+          "n16",
+          "n17",
+          "n18",
+          "l3"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "right": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "Curve invariants and topological amplitudes are an explicit narrower direction within the existing Calabi–Yau parent, with all source-specific restrictions retained.",
+        "refs": [
+          "c1",
+          "c4",
+          "l1"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:af30c367be77504492951c97",
+      "right": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Fermat period pairing and parts of the asymptotic-period program coincide as contributions. Formal realizability, operator methods, additional model classes and coupling targets prevent full-scope equivalence.",
+        "refs": [
+          "c2",
+          "c3",
+          "u2",
+          "u8",
+          "u9",
+          "u13",
+          "u17",
+          "n4",
+          "n7",
+          "n9",
+          "n10",
+          "n13",
+          "n19",
+          "l2"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "right": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "Explicit special-geometry computations narrow the parent's broader geometric and physical program; they do not subsume internal metric calculations.",
+        "refs": [
+          "c3",
+          "c4",
+          "u1",
+          "n22",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "right": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Amplitude and enumerative targets overlap, but the complete BPS-interpretation and invariant-definition, anomaly and subtraction programs do not coincide. Neither full-scope equivalence nor containment is established.",
+        "refs": [
+          "c0",
+          "c1",
+          "u5",
+          "u6",
+          "u10",
+          "u15",
+          "n0",
+          "n2",
+          "n12",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "right": "q025-candidate-question:af30c367be77504492951c97",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Topological amplitudes and BPS counting differ from period pairing, asymptotic operators and realizability questions. The selected-state bounds in u8 do not identify these targets.",
+        "refs": [
+          "c0",
+          "c2",
+          "u5",
+          "u8",
+          "u13",
+          "n4",
+          "n6",
+          "n20"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+      "right": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "different",
+        "reason": "Protected amplitude and BPS interpretation is a different scoped program from explicit periods, moduli metrics and couplings. Shared mirror methods permit connections without establishing identity.",
+        "refs": [
+          "c0",
+          "c3",
+          "u0",
+          "u2",
+          "u9",
+          "n9",
+          "n10",
+          "n15"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "right": "q025-candidate-question:af30c367be77504492951c97",
+      "relation": "different",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "different",
+        "reason": "Invariant definitions and topological amplitudes differ from period pairing, degeneration operators and formal realizability. The packet supplies no general conversion between their methods or outputs.",
+        "refs": [
+          "c1",
+          "c2",
+          "u8",
+          "u13",
+          "u15",
+          "n4",
+          "n6",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "right": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Specified mirror calculations contribute instanton data to both programs. The complete invariant-definition and regularization scope differs from the complete metric, mirror-construction and coupling scope.",
+        "refs": [
+          "c1",
+          "c3",
+          "u0",
+          "u7",
+          "u12",
+          "u15",
+          "n15",
+          "n16",
+          "n17",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:853de7f0a8e55cb55e507432",
+      "right": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "Curve invariants and topological amplitudes are an explicit narrower direction of c4, retaining the local, compact, genus, refinement and regularization qualifications.",
+        "refs": [
+          "c1",
+          "c4",
+          "l1"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:af30c367be77504492951c97",
+      "right": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Shared Fermat pairing and asymptotic-period contributions do not exhaust either definition. Formal realizability and operator methods in c2, and additional model classes and coupling computations in c3, prevent full-scope equivalence.",
+        "refs": [
+          "c2",
+          "c3",
+          "u2",
+          "u8",
+          "u9",
+          "u13",
+          "u17",
+          "n4",
+          "n7",
+          "n9",
+          "n10",
+          "n13",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+      "right": "q025-candidate-region:ab32fe5068d3093c0140abe9",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "Explicit special-geometry computations narrow c4's broader geometric and compactification program. This containment does not identify moduli-space geometry with internal Ricci-flat metrics.",
+        "refs": [
+          "c3",
+          "c4",
+          "u1",
+          "n22",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "calabi-yau-periods-and-bps-navigation-proposal",
+        "calabi-yau-periods-and-bps-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:6a9d9c1d809f904f41b8f560",
+    "c1": "q025-candidate-question:853de7f0a8e55cb55e507432",
+    "c2": "q025-candidate-question:af30c367be77504492951c97",
+    "c3": "q025-candidate-question:0601142aff7dcb4e3f7fe71f",
+    "c4": "q025-candidate-region:ab32fe5068d3093c0140abe9"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/calabi-yau-periods-and-bps-admission.json",
+    "sha256": "d5dae11e9cf2b75b8eb52e175351729a5caadaa51354e0ca45a3fdbe69888f37"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u8",
+      "questionRefs": [
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "reason": "Preserve period reconstruction, selected-state BPS bounds and flux stabilization as distinct contributions of the unchanged source. c2 and c3 expose period geometry; c4 accommodates the combined program. Required exponential corrections remain observable-dependent.",
+      "refs": [
+        "u8",
+        "c2",
+        "c3",
+        "c4",
+        "n6",
+        "n19",
+        "n20"
+      ]
+    },
+    {
+      "unitRef": "u0",
+      "questionRefs": [
+        "c3",
+        "c1"
+      ],
+      "reason": "Preserve boundary geometry, mirror maps and separate genus-zero and genus-one outputs in the two explicit models, including their continuous-instanton-family qualification.",
+      "refs": [
+        "u0",
+        "c1",
+        "c3",
+        "n15",
+        "n21"
+      ]
+    },
+    {
+      "unitRef": "u5",
+      "questionRefs": [
+        "c0"
+      ],
+      "reason": "All-genus indices, CHL tests and gravity-decoupled refined limits remain distinct internal targets. A single broad destination does not establish atomic identity.",
+      "refs": [
+        "u5",
+        "c0",
+        "n0"
+      ]
+    },
+    {
+      "unitRef": "u16",
+      "questionRefs": [
+        "c0"
+      ],
+      "reason": "Preserve cusp and large-volume geometry, Tate–Shafarevich structure and discrete-charge counting as linked contributions. Existing assignments to destinations outside this packet remain untouched.",
+      "refs": [
+        "u16",
+        "c0",
+        "n1"
+      ]
+    },
+    {
+      "unitRef": "u9",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Polynomial-deformation geometry and the mirror GLSM partition-function comparison remain linked targets; neither equality nor atomicity is newly established.",
+      "refs": [
+        "u9",
+        "c3",
+        "n10"
+      ]
+    },
+    {
+      "unitRef": "u6",
+      "questionRefs": [
+        "c1"
+      ],
+      "reason": "Refined-invariant definition and calculation, anomaly comparison and geometric counting retain their separate targets in compact elliptic threefolds.",
+      "refs": [
+        "u6",
+        "c1",
+        "n12"
+      ]
+    },
+    {
+      "unitRef": "u17",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Analytic genus-one and K3 periods, mirror-map inversion and boundary distances remain linked targets. Their conjectural relevance does not confirm the refined distance conjecture.",
+      "refs": [
+        "u17",
+        "c3",
+        "n13"
+      ]
+    },
+    {
+      "unitRef": "u12",
+      "questionRefs": [
+        "c3",
+        "c1"
+      ],
+      "reason": "Mirror construction and coupling or instanton-invariant calculations remain separate contributions. Shared period methods do not identify this source with other multiparameter studies.",
+      "refs": [
+        "u12",
+        "c1",
+        "c3",
+        "n16"
+      ]
+    },
+    {
+      "unitRef": "u7",
+      "questionRefs": [
+        "c3",
+        "c1"
+      ],
+      "reason": "Periods, mirror maps, corrected couplings and prepotentials remain linked to distinct genus-one predictions in the specified complete-intersection setting.",
+      "refs": [
+        "u7",
+        "c1",
+        "c3",
+        "n17"
+      ]
+    },
+    {
+      "unitRef": "u15",
+      "questionRefs": [
+        "c1",
+        "c3"
+      ],
+      "reason": "Preserve definitions, A/B calculations and enumerative interpretation, with different qualifications for smooth Fano and suitable singular surfaces. The inherited c3 contribution remains method-only.",
+      "refs": [
+        "u15",
+        "c1",
+        "c3",
+        "n18"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

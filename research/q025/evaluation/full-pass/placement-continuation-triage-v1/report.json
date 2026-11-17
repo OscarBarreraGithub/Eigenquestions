@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "q025-placement-whitespace-forensics/1",
+  "cases": [
+    {
+      "jobId": "placement-continuation-0002-proposal",
+      "error": "Degenerate raw JSON whitespace run exceeded4096 characters",
+      "originalPins": [
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0002-proposal/receipt.json",
+          "sha256": "d3b6a9d0960c0f92565aaa2412a68a1646626c32c5ef23ec4a1a482da0ab8a5c"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0002-proposal/request.json",
+          "sha256": "7029e006f9c615c32056968e47d0196a11e6775289a2f0bc378e6896fa0590b7"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0002-proposal/packet.actual.json",
+          "sha256": "c7e7f4cc906979d9cda8a98c27a940b63b9be101b0777f632e6d323930a61464"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0002-proposal/reply.stream.raw.txt",
+          "sha256": "725e6d6041da886fa41877207719e6f4fa29dedd9f45b80a95d6891dd21e6519"
+        }
+      ],
+      "streamCharacters": 77641,
+      "streamBytes": 77671,
+      "streamTruncated": false,
+      "trailingWhitespaceCharacters": 4213,
+      "tabs": 0,
+      "singleVersionObjectStart": true,
+      "fullJsonParses": false,
+      "completeFields": {
+        "version": "str",
+        "familyId": "str",
+        "stage": "str",
+        "summary": "str",
+        "placements": 32
+      },
+      "completeArrayPrefixes": {
+        "newScopes": 0
+      },
+      "expectedSourceRows": 32,
+      "completePlacementRows": 32,
+      "completePlacementRefs": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "u6",
+        "u7",
+        "u8",
+        "u9",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16",
+        "u17",
+        "u18",
+        "u19",
+        "u20",
+        "u21",
+        "u22",
+        "u23",
+        "u24",
+        "u25",
+        "u26",
+        "u27",
+        "u28",
+        "u29",
+        "u30",
+        "u31"
+      ],
+      "placementRowSchemaAndAllPriorAnnotationsValid": true,
+      "placementStatuses": {
+        "existing_homes": 31,
+        "new_scope_proposed": 1,
+        "unresolved": 0
+      },
+      "selectedNewScopeRefs": [
+        "n0"
+      ],
+      "partialFirstNewScopeCompleteFields": [
+        "id",
+        "kind",
+        "title",
+        "question",
+        "summary",
+        "scope",
+        "methods",
+        "readingCoverage",
+        "refs"
+      ],
+      "partialFirstNewScopeId": "n0",
+      "missingFirstNewScopeFields": [
+        "revisesRef"
+      ],
+      "missingTopLevelFields": [
+        "limitations",
+        "newScopes",
+        "priorPlacementReviews",
+        "priorScopeReviews",
+        "unresolved"
+      ],
+      "privateExtraction": {
+        "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-triage-v1/placement-continuation-0002-proposal/extracted-prefix.json",
+        "sha256": "194f2f179a4273e73280e8bf0b26e6b3b8f767a7788caa560d6e1d73fe5de94c"
+      },
+      "completeScientificValidation": false,
+      "adoption": false,
+      "newNativeCalls": 0,
+      "parseFailure": {
+        "message": "Expecting ',' delimiter",
+        "characterOffset": 77641
+      }
+    },
+    {
+      "jobId": "placement-continuation-0007-proposal",
+      "error": "Degenerate raw JSON whitespace run exceeded4096 characters",
+      "originalPins": [
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0007-proposal/receipt.json",
+          "sha256": "e092ceac389c88ad239f2f926214f7ff68e5fb93defd2bbb525094cddac1c9bd"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0007-proposal/request.json",
+          "sha256": "43c556811535daa818e20fabf611b4dce20668ccf651fe3af81ea1ddf9063829"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0007-proposal/packet.actual.json",
+          "sha256": "62b81ac2b29c9ba003eaba38e81dc5453869f139b821a7124699d4803bcb6379"
+        },
+        {
+          "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-v1/jobs/placement-continuation-0007-proposal/reply.stream.raw.txt",
+          "sha256": "2b7dd586fcc26ead427fcb9c4098545540c01031bba03af6e7aad23b44905f9b"
+        }
+      ],
+      "streamCharacters": 68382,
+      "streamBytes": 68420,
+      "streamTruncated": false,
+      "trailingWhitespaceCharacters": 4776,
+      "tabs": 4775,
+      "singleVersionObjectStart": true,
+      "fullJsonParses": false,
+      "completeFields": {
+        "version": "str",
+        "familyId": "str",
+        "stage": "str",
+        "summary": "str",
+        "placements": 30
+      },
+      "completeArrayPrefixes": {
+        "newScopes": 0
+      },
+      "expectedSourceRows": 30,
+      "completePlacementRows": 30,
+      "completePlacementRefs": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "u5",
+        "u6",
+        "u7",
+        "u8",
+        "u9",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16",
+        "u17",
+        "u18",
+        "u19",
+        "u20",
+        "u21",
+        "u22",
+        "u23",
+        "u24",
+        "u25",
+        "u26",
+        "u27",
+        "u28",
+        "u29"
+      ],
+      "placementRowSchemaAndAllPriorAnnotationsValid": true,
+      "placementStatuses": {
+        "existing_homes": 29,
+        "new_scope_proposed": 1,
+        "unresolved": 0
+      },
+      "selectedNewScopeRefs": [
+        "n0"
+      ],
+      "partialFirstNewScopeCompleteFields": [
+        "id",
+        "kind",
+        "title",
+        "question",
+        "summary",
+        "scope",
+        "methods",
+        "readingCoverage",
+        "refs"
+      ],
+      "partialFirstNewScopeId": "n0",
+      "missingFirstNewScopeFields": [
+        "revisesRef"
+      ],
+      "missingTopLevelFields": [
+        "limitations",
+        "newScopes",
+        "priorPlacementReviews",
+        "priorScopeReviews",
+        "unresolved"
+      ],
+      "privateExtraction": {
+        "path": "research/q025/evaluation/full-pass/native-local/placement-continuation-triage-v1/placement-continuation-0007-proposal/extracted-prefix.json",
+        "sha256": "60b815f5aa9f89bde0c88eb426896af3ded4b4047d13e696842bb23b48664e1c"
+      },
+      "completeScientificValidation": false,
+      "adoption": false,
+      "newNativeCalls": 0,
+      "parseFailure": {
+        "message": "Expecting ',' delimiter",
+        "characterOffset": 68382
+      }
+    }
+  ],
+  "parser": {
+    "path": "research/q025/evaluation/full-pass/canonical-recovery-v2/extract_prefix.py",
+    "sha256": "5aacf8eb6b7023dd15b33da3f09b4524eccf32b09e4378a5622e974cd2f5fb4a",
+    "execution": "Only parse_attempt function AST executed; original module top-level never imported."
+  },
+  "interpretation": "Outside-string whitespace loop within a single response stream. Complete source-placement rows retained; missing substantive/required fields are not inferred. No retry, adoption or scientific admission.",
+  "originalFilesChanged": false,
+  "nativeLaunches": 0
+}

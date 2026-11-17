@@ -1,0 +1,2534 @@
+{
+  "schemaVersion": "q025-navigation-admitted-delta/2",
+  "destinations": [],
+  "sourceContributions": [],
+  "relations": [
+    {
+      "id": "navigation:v2:dark-energy-histories:pn0",
+      "source": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "target": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "type": "narrower",
+      "title": "What can cosmological observations determine?",
+      "qualification": "Inference depends on source-specific windows, matter allocation, reconstruction priors and prescribed histories. Archived fits do not establish current observational validation.",
+      "rationale": "c1 gives a concrete inference direction within the supplied broader region; the exact endpoint definitions support the nominated route.",
+      "evidenceIds": [
+        "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+        "unit:17ce6a8c558247f5d1babb1f7b675efcc62a404687ac8380c8458f643cfa24b9",
+        "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+        "unit:1d991528537c30eea8bb179079e2da8f6f0ebc83144e9a906e7dfa6179962f02",
+        "unit:1f3a44d5c43400920c65d02390ca364343e4c9b4dd746dd61439f8dd4cdf680b",
+        "unit:22c21ca871bd81d8f096b1b1792a59f08ccccb442a914dfade862288e1ccfbb4",
+        "unit:31271d7dfca4fe764442d0aa4e4801816261e32a4eae883b87aef7d1e0748704",
+        "unit:3ce597e198d727b29270b1010d378cb7e69a79d091bbb00bb22bd87570bcf8fe",
+        "unit:3d994014aaf88ac04db134c38b6908054d6a9f340c1bf7e922de4709ee42cd1c",
+        "unit:4fb0631119e19948090cfce6f4de34d798b58a6b8de8a44dd26a4b632fbc39bc",
+        "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+        "unit:665eecd6756068b3556af19cf7ec19e605e6b2f88eb5a28cf85b9a1e2440a62d",
+        "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+        "unit:6b2130ad6e7b0e47e7506c23e438d0b9f422fc271081de5f71663fca7df987e7",
+        "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+        "unit:845e803c48654d712dc6eaf284c0c6c1c55eb0163af14e3a57f9681214936dce",
+        "unit:8622e1b046ad7758b7a2e489de32ec77b84b8f58531ea38343f9a699d14febd6",
+        "unit:8dbd5c3383317914b8e2f51b50b5f81b97c5590bba6322976ef4214b4e8c24fd",
+        "unit:8dfeb4f2701afdceb4409038dbee8c405856e17e281a0c1faf8cc627ac2b9542",
+        "unit:901c5fab7695b54466b6a37c27b993da70a4ca9134d5b9d07d6c9b70300cf760",
+        "unit:ad3d22473312b5e18cad347b59aa11b8287ee5ab98f8ed90ee566fb78441a4a5",
+        "unit:b53e13f9d30f2970b0a9171f1ab65a507b587ff40b3cc4aa2f7650369f08db1f",
+        "unit:b608be96ec00e275288357f876c88b0f1fd8ec3be6a67705025229b6bf767613",
+        "unit:b63d3da3b6ce278b8f181c21560d3525dd134e594326f9551ddde0ebec0b6385",
+        "unit:b9bac0cd5f769d330250fc015c3d2f7ba13fc06f6d1a53e3ab004d781ba58865",
+        "unit:d270782bac26220422ff24d42ded24f1fcc35784c97d2da1569e5025061d8a90",
+        "unit:f1cedb4fe828b30a905a1fddaf9f5ca95a51ff00999aadd22f202f5c99ab5542",
+        "unit:ffa164e65727d11206e8bc77e800dd904d519f93275ff3ce7eb3214a7e97f7df"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-31256938ec369089ee3f-challenge:r",
+          "candidateId": "q025-candidate-region:5fb081b9efa119868d87802b"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "targetCandidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+          "candidateId": "parent-31256938ec369089ee3f-challenge:link:5",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn0",
+      "provenance": {
+        "nativeRouteId": "pn0",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn0",
+          "verdict": "supported_as_written",
+          "reason": "The broader-to-narrower direction matches the complete definitions. The title offers c1's inference question, and the qualification preserves matter allocation, priors, observational windows and the distinction between archived fits and present validation.",
+          "refs": [
+            "c4",
+            "c1",
+            "l0"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "inherited_admitted_endpoint_scope_support",
+        "inheritedEvidenceIsNotFreshReading": true
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn1",
+      "source": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "target": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "type": "narrower",
+      "title": "How do dark-sector interactions change expansion and clustering?",
+      "qualification": "Coupling laws, signs and coupled species remain model-specific. Pre-BBN applications enter only as boundary contributions, and review breadth does not establish universal viability.",
+      "rationale": "c3 supplies the region's focused interaction question without equating its mechanisms.",
+      "evidenceIds": [
+        "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+        "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-31256938ec369089ee3f-challenge:r",
+          "candidateId": "q025-candidate-region:5fb081b9efa119868d87802b"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "targetCandidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+          "candidateId": "parent-31256938ec369089ee3f-challenge:link:7",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "textSha256": "f9b0eb59c34a11e56dbdfa3598398ab22c67333cc325586d63d603ff3f703d55"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+          "textSha256": "b2828745ddec188edd8760ec673911e3469812996eb10960cf3864fc1ba6d34f"
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn1",
+      "provenance": {
+        "nativeRouteId": "pn1",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn1",
+          "verdict": "supported_as_written",
+          "reason": "c3 is a focused interaction question within c4. The route preserves model-dependent laws and species, review-level viability limits and the pre-BBN boundary role; it asserts no common mechanism.",
+          "refs": [
+            "c4",
+            "c3",
+            "l1",
+            "u20",
+            "n11",
+            "u2",
+            "n14"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn2",
+      "source": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "target": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "type": "related_question",
+      "title": "How do potentials and initial conditions generate candidate histories?",
+      "qualification": "A potential alone does not fix a scalar history. Boundary conditions and matter-era restrictions remain substantive; the cited 2021 reconstruction retains z ∈ [0,1.5] and field-origin ambiguity.",
+      "rationale": "Readers can move from inference to c0's prediction and boundary-data targets without treating the two complete scopes as nested or equivalent.",
+      "evidenceIds": [
+        "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+          "textSha256": "43ca33640a5dded2d2aeb4028654c06ad78eb2a8d0b955cecd852a433eaac14c"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn2",
+      "provenance": {
+        "nativeRouteId": "pn2",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn2",
+          "verdict": "supported_as_written",
+          "reason": "The move from inference to prediction and boundary conditions is licensed by c0 and u22. related_question correctly avoids nesting the full scopes. The reconstruction interval and field-origin qualification are retained from c0's existing assessment.",
+          "refs": [
+            "c1",
+            "c0",
+            "u22",
+            "n5"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn3",
+      "source": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "target": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "type": "related_question",
+      "title": "Which inferred features depend on priors and matter allocation?",
+      "qualification": "Canonical dynamics applies only where specified. Chaplygin matter-budget alternatives, reconstruction priors and coupled-history assumptions remain distinct; expansion alone does not uniquely identify arbitrary coupling and equation-of-state functions.",
+      "rationale": "The shared inference target has an existing destination that explicitly exposes these conditional interpretations.",
+      "evidenceIds": [
+        "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+        "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+          "textSha256": "ad04617a61200994d11e309d25d3cfd88ed07edac4ec809eda6c289ab2113a07"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn3",
+      "provenance": {
+        "nativeRouteId": "pn3",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn3",
+          "verdict": "supported_as_written",
+          "reason": "c1 explicitly supplies the matter-allocation and conditional-identifiability questions that readers of c0 can pursue. The route keeps Chaplygin budget alternatives and coupled-history assumptions distinct and makes no prior-free reconstruction claim.",
+          "refs": [
+            "c0",
+            "c1",
+            "u0",
+            "n9",
+            "u15",
+            "n19"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn4",
+      "source": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "target": "q025-candidate-question:1666a2058189eda606293478",
+      "type": "related_question",
+      "title": "Can selected interactions produce stable accelerated scaling?",
+      "qualification": "Scaling, density ratios and force histories depend on the chosen interaction and matter content. No universal coincidence solution follows, and normalized-phase-space singularities are not automatically spacetime singularities.",
+      "rationale": "c2 preserves a useful dynamical direction from the interaction overview. A related-question route avoids asserting complete containment of its additional targets.",
+      "evidenceIds": [
+        "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+        "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "textSha256": "6bc7d21b0b4e6f97d634f41e8149582c5b75614220b063a86893cd4eb41fd5a4"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+          "textSha256": "f146c93dbd9e0eaf26fe2d87bc210df0bd18209d305a8816121fce9e84b75986"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn4",
+      "provenance": {
+        "nativeRouteId": "pn4",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn4",
+          "verdict": "supported_as_written",
+          "reason": "u23 supplies the concrete accelerated-scaling question and u8 supplies related force-history targets within c2. related_question preserves c2's additional scope; the qualification avoids universal coincidence or spacetime-singularity claims.",
+          "refs": [
+            "c3",
+            "c2",
+            "u23",
+            "n0",
+            "u8",
+            "n3"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn5",
+      "source": "q025-candidate-question:1666a2058189eda606293478",
+      "target": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "type": "related_question",
+      "title": "Explore other coupling laws and their observational tests",
+      "qualification": "Conformal, disformal, mass-varying and energy-transfer descriptions retain their own dictionaries. Observational discrimination, coupling suppression and stability are separate questions; parameters and conclusions are not transferred between models.",
+      "rationale": "c3 offers broader interaction mechanisms and inference targets beyond c2's emphasis on scaling, composition and forces.",
+      "evidenceIds": [
+        "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+        "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+          "textSha256": "6083a0ce95270d5fde9f3614dce216958367cfdb5a9cdcbd4aa1d298d739657d"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "textSha256": "f9b0eb59c34a11e56dbdfa3598398ab22c67333cc325586d63d603ff3f703d55"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn5",
+      "provenance": {
+        "nativeRouteId": "pn5",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn5",
+          "verdict": "supported_as_written",
+          "reason": "c3 offers interaction dictionaries and inference targets beyond c2's emphasis. u19 and u20 support this comparative direction while the qualification prevents transferring parameters, stability or observational conclusions across models.",
+          "refs": [
+            "c2",
+            "c3",
+            "u19",
+            "n13",
+            "u20",
+            "n11"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn6",
+      "source": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "target": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "type": "related_question",
+      "title": "What can expansion reconstruct when one dark-sector history is supplied?",
+      "qualification": "In the supplied conditional inversion, either the equation-of-state history or coupling history is prescribed. General-fluid inversion and canonical realization are alternatives; perturbations are not reconstructed.",
+      "rationale": "u15 explicitly connects both destinations and provides a concrete inference question following the study of interactions.",
+      "evidenceIds": [
+        "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+        "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+          "textSha256": "ef2c435210b782514f295e66660c93d6f073ac501360c9976c1b6210e5c3e560"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn6",
+      "provenance": {
+        "nativeRouteId": "pn6",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn6",
+          "verdict": "supported_as_written",
+          "reason": "u15 and n19 explicitly connect the two endpoints through conditional background inversion. The route accurately requires one prescribed history and preserves the fluid/canonical alternatives and absence of perturbation reconstruction. It makes no inverted application claim.",
+          "refs": [
+            "c3",
+            "c1",
+            "u15",
+            "n19",
+            "u3",
+            "n20"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    },
+    {
+      "id": "navigation:v2:dark-energy-histories:pn7",
+      "source": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "target": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "type": "comparison",
+      "title": "Compare fitted H0 with apparent phantom behavior",
+      "qualification": "The supplied same-paper targets distinguish low-redshift fit quality from effective phantom behavior of a canonical coupled scalar. Present normalization fixes a nonphantom effective value today; possible behavior away from today is not a demonstrated global crossing. A higher fitted H0 does not establish an acceptable joint fit.",
+      "rationale": "The paired source descriptions support this concrete comparison while retaining distinct statistical and mechanism questions.",
+      "evidenceIds": [
+        "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+        "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+        "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+          "textSha256": "fabb290146b115b17311b3b2c38b0343ebb029cf637ecf49554b7bea58f59a65"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 38,
+          "unitId": "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+          "textSha256": "4b092681427d1e376db43d3472190415db40461267a9c6ed95f6a59336df6834"
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 39,
+          "unitId": "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+          "textSha256": "b1781a03be63eedf3e69e335825778e37d82a9b15e9ad163e955f09aa512421e"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "decisionId": "decision:navigation-v2:dark-energy-histories:route:pn7",
+      "provenance": {
+        "nativeRouteId": "pn7",
+        "sourceReviewIds": [
+          "dark-energy-histories-navigation-proposal",
+          "dark-energy-histories-navigation-independent-challenge"
+        ],
+        "titleReadingDirection": "outgoing_only",
+        "independentAssessment": {
+          "ref": "pn7",
+          "verdict": "supported_as_written",
+          "reason": "The supplied descriptions and paired notes support comparison of distinct same-paper fit and effective-equation-of-state targets. The qualification retains the nonphantom present value, unproved global crossing and independent joint-fit requirement; no causal improvement in H0 inference is asserted.",
+          "refs": [
+            "c0",
+            "c3",
+            "u5",
+            "n4",
+            "u11",
+            "n17",
+            "u13",
+            "n18"
+          ]
+        },
+        "freshPrimaryReading": false,
+        "evidenceIdBasis": "direct_supplied_description_refs",
+        "inheritedEvidenceIsNotFreshReading": false
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn0",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:5fb081b9efa119868d87802b",
+        "q025-candidate-question:b3160206dff6f0006b81a9a6"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "8249c03e73a48e3fd3094ab4305fdce9cdd30fff6a8963ac14420bf631af9dbc",
+      "sourceScopeContentSha256": "e3597f5a457ca5808fdb96bf1f4e3ec39a3b6aea61419a005cc7333f7ca5f72f",
+      "targetScopeContentSha256": "adb5d31dd329431521ed5321fd138dbfb86e5c2aaeebab9116b92f32e0b1e624",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-31256938ec369089ee3f-challenge:r",
+          "candidateId": "q025-candidate-region:5fb081b9efa119868d87802b"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "targetCandidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+          "candidateId": "parent-31256938ec369089ee3f-challenge:link:5",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn1",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-region:5fb081b9efa119868d87802b",
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "narrower",
+      "navigationContentSha256": "4e484239483a7b90acbe2a73d037246f4013e02aab77fe9f41beb3c6c72acfdf",
+      "sourceScopeContentSha256": "e3597f5a457ca5808fdb96bf1f4e3ec39a3b6aea61419a005cc7333f7ca5f72f",
+      "targetScopeContentSha256": "9e6ec0835cf776869f2ef959d40f868dad23f0473ac918f4c0685aa03b014c78",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-31256938ec369089ee3f-challenge:r",
+          "candidateId": "q025-candidate-region:5fb081b9efa119868d87802b"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "targetCandidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+          "candidateId": "parent-31256938ec369089ee3f-challenge:link:7",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "textSha256": "f9b0eb59c34a11e56dbdfa3598398ab22c67333cc325586d63d603ff3f703d55"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+          "textSha256": "b2828745ddec188edd8760ec673911e3469812996eb10960cf3864fc1ba6d34f"
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn2",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:b3160206dff6f0006b81a9a6",
+        "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "9fa0775cf6a893e73350091195211a09e9f8952f52c16b3fa50b20563d3808f7",
+      "sourceScopeContentSha256": "adb5d31dd329431521ed5321fd138dbfb86e5c2aaeebab9116b92f32e0b1e624",
+      "targetScopeContentSha256": "e7bfdb347122b88b4493cb61c8710d7d4a59d83dfaafed946ad077d25fd8bedb",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+          "textSha256": "43ca33640a5dded2d2aeb4028654c06ad78eb2a8d0b955cecd852a433eaac14c"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn3",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+        "q025-candidate-question:b3160206dff6f0006b81a9a6"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "e918c03358417e242154cf1da94ccc177c5e6461eab908a8799e9eb305af8b2d",
+      "sourceScopeContentSha256": "e7bfdb347122b88b4493cb61c8710d7d4a59d83dfaafed946ad077d25fd8bedb",
+      "targetScopeContentSha256": "adb5d31dd329431521ed5321fd138dbfb86e5c2aaeebab9116b92f32e0b1e624",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+          "textSha256": "ad04617a61200994d11e309d25d3cfd88ed07edac4ec809eda6c289ab2113a07"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn4",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+        "q025-candidate-question:1666a2058189eda606293478"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "77da90a5aebb42728e62d52c0e6bc0f5de4909307084f07a609fa1124d2814ff",
+      "sourceScopeContentSha256": "9e6ec0835cf776869f2ef959d40f868dad23f0473ac918f4c0685aa03b014c78",
+      "targetScopeContentSha256": "c23bc74291b4cc0aeb220a6c9867e079687095bee43176878ece40f87254e8a9",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "textSha256": "6bc7d21b0b4e6f97d634f41e8149582c5b75614220b063a86893cd4eb41fd5a4"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+          "textSha256": "f146c93dbd9e0eaf26fe2d87bc210df0bd18209d305a8816121fce9e84b75986"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn5",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:1666a2058189eda606293478",
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "eed7c3d7250d6bd2358fe511a9393e84b8e941d746be55d4b692c93d07da1bf3",
+      "sourceScopeContentSha256": "c23bc74291b4cc0aeb220a6c9867e079687095bee43176878ece40f87254e8a9",
+      "targetScopeContentSha256": "9e6ec0835cf776869f2ef959d40f868dad23f0473ac918f4c0685aa03b014c78",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+          "textSha256": "6083a0ce95270d5fde9f3614dce216958367cfdb5a9cdcbd4aa1d298d739657d"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "textSha256": "f9b0eb59c34a11e56dbdfa3598398ab22c67333cc325586d63d603ff3f703d55"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn6",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+        "q025-candidate-question:b3160206dff6f0006b81a9a6"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "related_question",
+      "navigationContentSha256": "6951727d51aed2bb49db9ff85b7e78208cd200b27f85798244cd90153a46038d",
+      "sourceScopeContentSha256": "9e6ec0835cf776869f2ef959d40f868dad23f0473ac918f4c0685aa03b014c78",
+      "targetScopeContentSha256": "adb5d31dd329431521ed5321fd138dbfb86e5c2aaeebab9116b92f32e0b1e624",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+          "textSha256": "ef2c435210b782514f295e66660c93d6f073ac501360c9976c1b6210e5c3e560"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "decision:navigation-v2:dark-energy-histories:route:pn7",
+      "type": "navigation",
+      "status": "accepted",
+      "subjectIds": [
+        "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+      ],
+      "relationUse": "public_navigation",
+      "relationType": "comparison",
+      "navigationContentSha256": "d161165eb345bce4154698b405f1b130054ef36c2ee8cd5b29cb14cdf3a4320d",
+      "sourceScopeContentSha256": "e7bfdb347122b88b4493cb61c8710d7d4a59d83dfaafed946ad077d25fd8bedb",
+      "targetScopeContentSha256": "9e6ec0835cf776869f2ef959d40f868dad23f0473ac918f4c0685aa03b014c78",
+      "challengerAgreement": "independently_agreed",
+      "reviewAgreement": {
+        "proposalReviewId": "dark-energy-histories-navigation-proposal",
+        "challengeReviewId": "dark-energy-histories-navigation-independent-challenge"
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+          "textSha256": "fabb290146b115b17311b3b2c38b0343ebb029cf637ecf49554b7bea58f59a65"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 38,
+          "unitId": "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+          "textSha256": "4b092681427d1e376db43d3472190415db40461267a9c6ed95f6a59336df6834"
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 39,
+          "unitId": "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+          "textSha256": "b1781a03be63eedf3e69e335825778e37d82a9b15e9ad163e955f09aa512421e"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "coordinatorAdmissionReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    }
+  ],
+  "reviewRegistry": [
+    {
+      "id": "dark-energy-histories-navigation-proposal",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-proposal/reply.json",
+      "sha256": "5d5f628668adb794d9d92d573134f76f603c2ae2f407dfad4c99429bd4c42f8d",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-proposal/receipt.json",
+      "receiptSha256": "52ed141895523dc8d5976e1f1b56f0da34ce6c6d53c2a82181fada1cddcd99a1",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-proposal/normalization.json",
+        "sha256": "8018296280fc28a48706f9704941b4921773b72cf4650e85a1bde6fef5fddaee"
+      }
+    },
+    {
+      "id": "dark-energy-histories-navigation-independent-challenge",
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/reply.json",
+      "sha256": "395cdc6f7ee0caf413706b30de5ae2a1c05bab800ca8e5631785d6edf563f9ce",
+      "receiptPath": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/receipt.json",
+      "receiptSha256": "e21efa955642ff6b5ac5ee27e7bdb99f12d9e50787b5f31e4f723bfa5fce58f4",
+      "kind": "pinned_complete_scientific_review",
+      "nativeOrDerivedStatus": "complete",
+      "normalization": {
+        "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/normalization.json",
+        "sha256": "7cf0105532fb94618c50a8b62810e4f6aea547f27c98c53d08228ced4c832b58"
+      }
+    }
+  ],
+  "typedCanonicalOperations": [
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd0",
+      "nativeOperation": {
+        "id": "pd0",
+        "operation": "common_target",
+        "members": [
+          "c0",
+          "c1"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "c0 includes analytic prediction, potential and boundary-condition dependence, and initial-condition sampling.",
+          "c1 explicitly includes matter allocation, component dictionaries, signed effective densities and conditional identifiability of coupled histories."
+        ],
+        "reason": "Use the unchanged c1 destination for their shared observational-inference question. Its complete scope is not equivalent to c0, and it does not absorb c0's full prediction target. Retain both definitions and reading limits; this reuse transfers no source assignments.",
+        "refs": [
+          "c0",
+          "c1",
+          "u22",
+          "n5",
+          "u0",
+          "n9",
+          "u15",
+          "n19"
+        ]
+      },
+      "nativeOperationValueSha256": "c73eb4274d1cc0f9ad6d85f2104c564f77e65767c57de4a270dc01955dff5a36",
+      "members": [
+        "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+        "q025-candidate-question:b3160206dff6f0006b81a9a6"
+      ],
+      "target": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd0",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The complete definitions share an inference target but contain substantive different extensions. c1 already supplies the conditional-inference destination; retaining c0 and both reading limits makes common-target reuse appropriate without equivalence or source reassignment.",
+        "refs": [
+          "c0",
+          "c1",
+          "u22",
+          "n5",
+          "u0",
+          "n9",
+          "u15",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "u22",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+          "textSha256": "43ca33640a5dded2d2aeb4028654c06ad78eb2a8d0b955cecd852a433eaac14c"
+        },
+        {
+          "localRef": "n5",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:dee9557b2f592a80a5e4a0a70eab3066fd6d94dfd4cc9fa3f453e89da7a9f234",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u0",
+          "kind": "description",
+          "unitIndex": 3,
+          "unitId": "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+          "textSha256": "ad04617a61200994d11e309d25d3cfd88ed07edac4ec809eda6c289ab2113a07"
+        },
+        {
+          "localRef": "n9",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:120c2cb0b711c90fe2146fad6110c576a6d9f5bb61a2282eb9193a32adbc0781",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd1",
+      "nativeOperation": {
+        "id": "pd1",
+        "operation": "comparison",
+        "members": [
+          "c0",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "c0 asks about predicted or reconstructed histories and observational discrimination.",
+          "c2 asks about interaction-dependent scaling, composition, forces and dynamical behavior."
+        ],
+        "reason": "The coupled PST witness addresses c0 and specializes c2, supporting a route between history tests and interaction dynamics. These remain distinct questions; the witness supplies no universal coupling law or scaling result.",
+        "refs": [
+          "c0",
+          "c2",
+          "u18",
+          "n1"
+        ]
+      },
+      "nativeOperationValueSha256": "58b870d5ef3257580e8361e6b7399e88ed2509f0f63467325a3733592da4cb45",
+      "members": [
+        "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+        "q025-candidate-question:1666a2058189eda606293478"
+      ],
+      "target": "q025-candidate-question:1666a2058189eda606293478",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "n1 explicitly maps the same PST witness to c0 as addresses and c2 as specializes. This supports the bounded comparison between observational histories and interaction dynamics, without supplying a universal coupling or scaling result.",
+        "refs": [
+          "c0",
+          "c2",
+          "u18",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "u18",
+          "kind": "description",
+          "unitIndex": 1,
+          "unitId": "unit:a2a19d1f7a904b42706919a86bf8b2493b98d3b9ed5575fc89583c8eba64ae8f",
+          "textSha256": "86ec599f30560d898560af4aa0edaf36533e8a685a99a4117d51d584fb7e27d0"
+        },
+        {
+          "localRef": "n1",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a2a19d1f7a904b42706919a86bf8b2493b98d3b9ed5575fc89583c8eba64ae8f",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd2",
+      "nativeOperation": {
+        "id": "pd2",
+        "operation": "comparison",
+        "members": [
+          "c0",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "Fitted expansion histories and fit quality are distinct from the mechanisms producing an effective equation of state.",
+          "c3 also includes coupling reconstruction, density-sign changes and clustering."
+        ],
+        "reason": "The same paper supplies a low-redshift H0 question and separate coupled-background and apparent-phantom targets. Compare these without identifying them: an increased fitted H0 does not establish an acceptable joint fit, and the local phantom analysis does not establish a global crossing.",
+        "refs": [
+          "c0",
+          "c3",
+          "u5",
+          "n4",
+          "u11",
+          "n17",
+          "u13",
+          "n18"
+        ]
+      },
+      "nativeOperationValueSha256": "e0b8b10ee76081894a4a547ce4cdee4eb8acc76a4d27be3b7c558e5789dda314",
+      "members": [
+        "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+      ],
+      "target": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd2",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The supplied same-paper descriptions distinguish H0 fitting, the coupled background setting and apparent phantom behavior. The decision preserves both consequential limits: higher fitted H0 is not an acceptable joint fit, and the local phantom analysis does not establish global crossing.",
+        "refs": [
+          "c0",
+          "c3",
+          "u5",
+          "n4",
+          "u11",
+          "n17",
+          "u13",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c0",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p0",
+          "candidateId": "q025-candidate-question:a04d5ca049ff9c0177a5dd80"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u5",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+          "textSha256": "fabb290146b115b17311b3b2c38b0343ebb029cf637ecf49554b7bea58f59a65"
+        },
+        {
+          "localRef": "n4",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:2354b78d6e59edddc763d0c2c00417cb1b787f65a7fb9bcd16095eb4af5ba9b8",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u11",
+          "kind": "description",
+          "unitIndex": 38,
+          "unitId": "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+          "textSha256": "4b092681427d1e376db43d3472190415db40461267a9c6ed95f6a59336df6834"
+        },
+        {
+          "localRef": "n17",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:6118d7e96a4f864fc3e782183eb3e43d7a4be73f346ab0d364dfb0f008a67775",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u13",
+          "kind": "description",
+          "unitIndex": 39,
+          "unitId": "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+          "textSha256": "b1781a03be63eedf3e69e335825778e37d82a9b15e9ad163e955f09aa512421e"
+        },
+        {
+          "localRef": "n18",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:68f4f4ffd4d4a71a068438e8dc7381a0d17df877d59b41d9ef0d979d4ed7d79b",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd3",
+      "nativeOperation": {
+        "id": "pd3",
+        "operation": "comparison",
+        "members": [
+          "c1",
+          "c2"
+        ],
+        "target": "c2",
+        "definingDifferences": [
+          "c1 asks what observations identify under specified reconstruction choices.",
+          "c2 includes model-specific stable scaling, force histories, density ratios and normalized-phase-space behavior."
+        ],
+        "reason": "Expansion and growth provide overlapping subject matter, but conditional inversion and dynamical stability are different targets. Comparing u15 with u23 does not establish that a reconstructed history is a stable scaling solution or resolves coincidence.",
+        "refs": [
+          "c1",
+          "c2",
+          "u15",
+          "n19",
+          "u23",
+          "n0"
+        ]
+      },
+      "nativeOperationValueSha256": "9b44d5211f8d1afce1f33e3a56ab56e6c0b9bac862a2fb37ae083872ed04a3b5",
+      "members": [
+        "q025-candidate-question:b3160206dff6f0006b81a9a6",
+        "q025-candidate-question:1666a2058189eda606293478"
+      ],
+      "target": "q025-candidate-question:1666a2058189eda606293478",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd3",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The definitions support comparison of inference with dynamical viability. u15 concerns conditional inversion and u23 concerns stable accelerated scaling; the decision expressly avoids making either result imply the other.",
+        "refs": [
+          "c1",
+          "c2",
+          "u15",
+          "n19",
+          "u23",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "textSha256": "6bc7d21b0b4e6f97d634f41e8149582c5b75614220b063a86893cd4eb41fd5a4"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd4",
+      "nativeOperation": {
+        "id": "pd4",
+        "operation": "method_bridge",
+        "members": [
+          "c1",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c1 covers inference across scalar and effective descriptions.",
+          "c3 covers interaction mechanisms and their dynamical and observational consequences."
+        ],
+        "reason": "u15 explicitly addresses both scopes through conditional background inversion: supplying either the equation-of-state history or coupling history enables reconstruction of the other. General-fluid inversion and canonical realization remain alternatives; no perturbation reconstruction or simultaneous unique recovery of arbitrary functions follows.",
+        "refs": [
+          "c1",
+          "c3",
+          "u15",
+          "n19",
+          "u3",
+          "n20"
+        ]
+      },
+      "nativeOperationValueSha256": "1e44f7982a69efee3e45ec12fecd03506b633287c83d3e03e0e51408d2a0c469",
+      "members": [
+        "q025-candidate-question:b3160206dff6f0006b81a9a6",
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+      ],
+      "target": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "n19 explicitly attributes conditional background reconstruction to both c1 and c3. Its prescribed-history requirement, alternative fluid/canonical premises and absence of perturbation reconstruction support the qualified method bridge as written.",
+        "refs": [
+          "c1",
+          "c3",
+          "u15",
+          "n19",
+          "u3",
+          "n20"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u15",
+          "kind": "description",
+          "unitIndex": 40,
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "textSha256": "569e3d1b7d9927a30ad9076fd655fcbfdd6a4a0addd5ff37157c22008f770b63"
+        },
+        {
+          "localRef": "n19",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:7451f5bda7b338ca10496dce52f7d8d27a1f7af6a837a399dfd50ed064e8be9c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u3",
+          "kind": "description",
+          "unitIndex": 41,
+          "unitId": "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+          "textSha256": "ef2c435210b782514f295e66660c93d6f073ac501360c9976c1b6210e5c3e560"
+        },
+        {
+          "localRef": "n20",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:1d179d9ec0eeb226883411ac325737a1080d4d6be30e418be0a8b6f5aabd7ebc",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd5",
+      "nativeOperation": {
+        "id": "pd5",
+        "operation": "specializes",
+        "members": [
+          "c1",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c1 concentrates on observational inference and conditional identifiability within c4's wider mechanisms-and-consistency family."
+        ],
+        "reason": "The exact definitions support the proposed parent-to-inference route. This is question-level organization, not verification of every descendant result or source placement.",
+        "refs": [
+          "c1",
+          "c4",
+          "l0"
+        ]
+      },
+      "nativeOperationValueSha256": "a79635e75ca7c004b6d8db34258131b3b20f5861d266df5903ae0c4d80ba2b0b",
+      "members": [
+        "q025-candidate-question:b3160206dff6f0006b81a9a6",
+        "q025-candidate-region:5fb081b9efa119868d87802b"
+      ],
+      "target": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd5",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c4 explicitly includes inference, reconstructed representations and conditional tests, encompassing c1's narrower question. Member order and broader target are correct. l0 supplies route context rather than independent physical evidence.",
+        "refs": [
+          "c1",
+          "c4",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c1",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p1",
+          "candidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-31256938ec369089ee3f-challenge:r",
+          "candidateId": "q025-candidate-region:5fb081b9efa119868d87802b"
+        },
+        {
+          "localRef": "l0",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "targetCandidateId": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+          "candidateId": "parent-31256938ec369089ee3f-challenge:link:5",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd6",
+      "nativeOperation": {
+        "id": "pd6",
+        "operation": "common_target",
+        "members": [
+          "c2",
+          "c3"
+        ],
+        "target": "c3",
+        "definingDifferences": [
+          "c2 emphasizes composition, accelerated scaling, future density ratios, forces and normalized-phase-space singularities.",
+          "c3 explicitly includes conformal and disformal dictionaries, effective phantom behavior, density-sign changes and coupling inference."
+        ],
+        "reason": "Reuse unchanged c3 for the shared question about cosmological consequences of dark-sector interactions. Retain c2's dynamical targets separately; the supplied definitions do not justify complete equivalence or automatic containment of all its extensions. Review breadth supplies neither a common interaction law nor common stability.",
+        "refs": [
+          "c2",
+          "c3",
+          "u23",
+          "n0",
+          "u8",
+          "n3",
+          "u20",
+          "n11",
+          "u19",
+          "n13"
+        ]
+      },
+      "nativeOperationValueSha256": "4a75ec4fea4faa62ba92d67409b0bf31e5b65ed59c765d641c0c514ab523aa13",
+      "members": [
+        "q025-candidate-question:1666a2058189eda606293478",
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+      ],
+      "target": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd6",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "c3 is an existing destination for shared interaction consequences. c2's composition and phase-space extensions and c3's metric-coupling and inversion extensions prevent full equivalence. The review witness supports the overview without establishing common dynamics or stability.",
+        "refs": [
+          "c2",
+          "c3",
+          "u23",
+          "n0",
+          "u8",
+          "n3",
+          "u20",
+          "n11",
+          "u19",
+          "n13"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c2",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-45dcaa67fd021056a4f5-challenge:p1",
+          "candidateId": "q025-candidate-question:1666a2058189eda606293478"
+        },
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "u23",
+          "kind": "description",
+          "unitIndex": 0,
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "textSha256": "6bc7d21b0b4e6f97d634f41e8149582c5b75614220b063a86893cd4eb41fd5a4"
+        },
+        {
+          "localRef": "n0",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:fbd339f4ff7e3dbfa59a7ce6d7bad0b10bdf6ff36a085fee114fc959ff710a5c",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u8",
+          "kind": "description",
+          "unitIndex": 6,
+          "unitId": "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+          "textSha256": "f146c93dbd9e0eaf26fe2d87bc210df0bd18209d305a8816121fce9e84b75986"
+        },
+        {
+          "localRef": "n3",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:4a2ba00f804c46f0735102b8115241a161829b3f0a621229e8f2808cc13c0484",
+          "reviewId": "leaf-45dcaa67fd021056a4f5-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u20",
+          "kind": "description",
+          "unitIndex": 10,
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "textSha256": "f9b0eb59c34a11e56dbdfa3598398ab22c67333cc325586d63d603ff3f703d55"
+        },
+        {
+          "localRef": "n11",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:c1c77923b9f2dfb80489268b8dec3ff650cb3bf91d0a85423ec126eba532afb5",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u19",
+          "kind": "description",
+          "unitIndex": 12,
+          "unitId": "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+          "textSha256": "6083a0ce95270d5fde9f3614dce216958367cfdb5a9cdcbd4aa1d298d739657d"
+        },
+        {
+          "localRef": "n13",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:a9e0c48735f61cc319bc51a28f93a76770ea00687cb03075f730cfe3d43b8ba4",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    },
+    {
+      "id": "operation:navigation-v2:dark-energy-histories:pd7",
+      "nativeOperation": {
+        "id": "pd7",
+        "operation": "specializes",
+        "members": [
+          "c3",
+          "c4"
+        ],
+        "target": "c4",
+        "definingDifferences": [
+          "c3 focuses on interacting dark sectors within c4's broader collection of mechanisms, representations, inference and conditional tests."
+        ],
+        "reason": "The exact scopes support the proposed parent-to-interactions route. Preserve c3's source-specific coupling dictionaries and its explicit boundary treatment of early-universe applications.",
+        "refs": [
+          "c3",
+          "c4",
+          "l1",
+          "u2",
+          "n14"
+        ]
+      },
+      "nativeOperationValueSha256": "ea379af48a1306204a7da14d32b677572b8969a01ff3e1a79db2276f44973615",
+      "members": [
+        "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+        "q025-candidate-region:5fb081b9efa119868d87802b"
+      ],
+      "target": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "admissionBasis": "exact_explicit_independent_agreement_under_root_policy",
+      "independentAssessment": {
+        "ref": "pd7",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The region explicitly encompasses interacting scalar/fluid sectors and their observational interpretation. Its early-universe provision is compatible with c3's boundary qualification. Member order and broader target are correct.",
+        "refs": [
+          "c3",
+          "c4",
+          "l1",
+          "u2",
+          "n14"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ],
+      "evidenceRefs": [
+        {
+          "localRef": "c3",
+          "kind": "reviewed_scope",
+          "recordId": "leaf-e983c122c2a533d08364-challenge:p2",
+          "candidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5"
+        },
+        {
+          "localRef": "c4",
+          "kind": "reviewed_scope",
+          "recordId": "parent-31256938ec369089ee3f-challenge:r",
+          "candidateId": "q025-candidate-region:5fb081b9efa119868d87802b"
+        },
+        {
+          "localRef": "l1",
+          "kind": "inherited_navigation_candidate",
+          "sourceCandidateId": "q025-candidate-region:5fb081b9efa119868d87802b",
+          "targetCandidateId": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+          "candidateId": "parent-31256938ec369089ee3f-challenge:link:7",
+          "notPrimary": true
+        },
+        {
+          "localRef": "u2",
+          "kind": "description",
+          "unitIndex": 13,
+          "unitId": "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+          "textSha256": "b2828745ddec188edd8760ec673911e3469812996eb10960cf3864fc1ba6d34f"
+        },
+        {
+          "localRef": "n14",
+          "kind": "paired_attribution_context",
+          "unitId": "unit:19e623c2554071ebaa406431820c702bc6c37b730bb9b5ee2af3176e226da49c",
+          "reviewId": "leaf-e983c122c2a533d08364-challenge",
+          "notPrimary": true
+        }
+      ],
+      "status": "accepted_typed_operation_subject_to_global_conflict_gate",
+      "publicNavigationAutomaticallyCreated": false,
+      "sourceStatementEquivalenceAsserted": false,
+      "adjudicationReceipt": {
+        "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+        "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+      }
+    }
+  ],
+  "canonicalGroupCandidates": [],
+  "completeLocalPairConstraints": [
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "right": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "Shared history inference supports reuse of c1, but prediction and initial-condition targets differ from component-allocation and inverse-problem targets. No full-scope equivalence.",
+        "refs": [
+          "c0",
+          "c1",
+          "u22",
+          "n5",
+          "u0",
+          "n9",
+          "u15",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "right": "q025-candidate-question:1666a2058189eda606293478",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Coupled expansion and growth tests overlap; general history inference and interaction-dependent scaling, forces and dynamical behavior remain distinct.",
+        "refs": [
+          "c0",
+          "c2",
+          "u18",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "right": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Interaction-dependent histories connect the scopes, but fitted H0, fit quality and effective phantom behavior are separate targets even within one paper.",
+        "refs": [
+          "c0",
+          "c3",
+          "u5",
+          "n4",
+          "u11",
+          "n17",
+          "u13",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "right": "q025-candidate-question:1666a2058189eda606293478",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Both concern expansion and growth, but conditional observational inference does not settle model-specific scaling stability or phase-space behavior.",
+        "refs": [
+          "c1",
+          "c2",
+          "u15",
+          "n19",
+          "u23",
+          "n0"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "right": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Conditional coupled-background inversion is explicitly shared. Neither the full inference scope nor the full interaction-mechanism scope equals the other.",
+        "refs": [
+          "c1",
+          "c3",
+          "u15",
+          "n19",
+          "u3",
+          "n20"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "right": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "Conditional dark-energy inference is a narrower question within the supplied mechanisms, inference and consistency region.",
+        "refs": [
+          "c1",
+          "c4",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:1666a2058189eda606293478",
+      "right": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Interaction consequences provide a reusable common target, while composition and phase-space extensions differ from metric-coupling and inversion extensions. Do not union the scopes.",
+        "refs": [
+          "c2",
+          "c3",
+          "u23",
+          "n0",
+          "u20",
+          "n11",
+          "u19",
+          "n13"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "proposal",
+      "status": "historical_retained",
+      "left": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "right": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "The interacting-sector question lies within the broader region, including its explicitly qualified early-universe boundary access.",
+        "refs": [
+          "c3",
+          "c4",
+          "l1",
+          "u2",
+          "n14"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "right": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c1",
+        "relation": "overlap",
+        "reason": "History inference is shared, but c0 also targets analytic prediction and initial-condition dependence, while c1 explicitly treats matter allocation, component dictionaries and conditional identifiability. Reusing c1 for inference does not absorb c0.",
+        "refs": [
+          "c0",
+          "c1",
+          "u22",
+          "n5",
+          "u0",
+          "n9",
+          "u15",
+          "n19"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "right": "q025-candidate-question:1666a2058189eda606293478",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "The coupled PST witness connects expansion and growth tests to interaction dynamics. History prediction and discrimination remain distinct from scaling, forces, composition and phase-space behavior.",
+        "refs": [
+          "c0",
+          "c2",
+          "u18",
+          "n1"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+      "right": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c0",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Coupled histories connect the questions, but low-redshift H0 inference and fit quality are distinct from effective phantom behavior and other interaction mechanisms. Shared paper provenance does not equate these targets.",
+        "refs": [
+          "c0",
+          "c3",
+          "u5",
+          "n4",
+          "u11",
+          "n17",
+          "u13",
+          "n18"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "right": "q025-candidate-question:1666a2058189eda606293478",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c2",
+        "relation": "overlap",
+        "reason": "Expansion and growth connect the scopes. Conditional reconstruction does not establish accelerated-scaling stability, acceptable force histories or resolution of coincidence.",
+        "refs": [
+          "c1",
+          "c2",
+          "u15",
+          "n19",
+          "u23",
+          "n0",
+          "u8",
+          "n3"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "right": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Conditional coupled-background inversion explicitly addresses both questions. The wider inference scope and the wider interaction-mechanism scope remain distinct; general-fluid and canonical realizations retain different premises.",
+        "refs": [
+          "c1",
+          "c3",
+          "u15",
+          "n19",
+          "u3",
+          "n20"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+      "right": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c1",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "Conditional inference of dark-energy properties is contained in the region's explicit inference and representation targets. This is question-level organization with source-specific assumptions preserved.",
+        "refs": [
+          "c1",
+          "c4",
+          "l0"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:1666a2058189eda606293478",
+      "right": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "relation": "overlap",
+      "nativeConstraint": {
+        "left": "c2",
+        "right": "c3",
+        "relation": "overlap",
+        "reason": "Cosmological consequences of interactions supply a common target. Composition, future density ratios and normalized-phase-space behavior differ from metric-coupling dictionaries, effective phantom behavior and inversion. Neither full equivalence nor wholesale containment is established.",
+        "refs": [
+          "c2",
+          "c3",
+          "u23",
+          "n0",
+          "u8",
+          "n3",
+          "u20",
+          "n11",
+          "u19",
+          "n13"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    },
+    {
+      "stage": "challenge",
+      "status": "current",
+      "left": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+      "right": "q025-candidate-region:5fb081b9efa119868d87802b",
+      "relation": "specializes_left",
+      "nativeConstraint": {
+        "left": "c3",
+        "right": "c4",
+        "relation": "specializes_left",
+        "reason": "The region explicitly includes interacting dark sectors and their inference. Its early-universe provision accommodates c3's boundary access without turning pre-BBN freeze-out into a late-acceleration result.",
+        "refs": [
+          "c3",
+          "c4",
+          "l1",
+          "u2",
+          "n14"
+        ]
+      },
+      "sourceReviewIds": [
+        "dark-energy-histories-navigation-proposal",
+        "dark-energy-histories-navigation-independent-challenge"
+      ]
+    }
+  ],
+  "sourceScopeBindings": {
+    "c0": "q025-candidate-question:a04d5ca049ff9c0177a5dd80",
+    "c1": "q025-candidate-question:b3160206dff6f0006b81a9a6",
+    "c2": "q025-candidate-question:1666a2058189eda606293478",
+    "c3": "q025-candidate-question:b95a5d67b2f154bc9029b3d5",
+    "c4": "q025-candidate-region:5fb081b9efa119868d87802b"
+  },
+  "scopeInputs": [
+    {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  ],
+  "admissionReceipt": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v2/dark-energy-histories-admission.json",
+    "sha256": "fde09abba2662e2b37e537db50130472106efec366122bc9156e4085afe733c4"
+  },
+  "compoundAnnotations": [
+    {
+      "unitRef": "u8",
+      "questionRefs": [
+        "c2"
+      ],
+      "reason": "Preserve existing access for the whole source. Early force suppression, expansion and structure constraints, and slowing on a steeper potential remain linked but distinguishable targets.",
+      "refs": [
+        "u8",
+        "n3",
+        "c2"
+      ]
+    },
+    {
+      "unitRef": "u10",
+      "questionRefs": [
+        "c0",
+        "c2"
+      ],
+      "reason": "Preserve observational-discrimination access through c0 and coincidence-motivation comparison through c2. The description specifies no interaction; naturalness remains a distinct target whose other access is unchanged.",
+      "refs": [
+        "u10",
+        "n6",
+        "c0",
+        "c2"
+      ]
+    },
+    {
+      "unitRef": "u15",
+      "questionRefs": [
+        "c1",
+        "c3"
+      ],
+      "reason": "Keep conditional inversion and scalar-potential diagnostics together without identifying general-fluid inversion with canonical realization. Either the coupling or equation-of-state history must be supplied; shared destinations do not settle atomic identity.",
+      "refs": [
+        "u15",
+        "n19",
+        "c1",
+        "c3"
+      ]
+    },
+    {
+      "unitRef": "u19",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Retain discrimination, suppression of conformal interactions and negative-disformal stability as distinct subtargets within one public destination. No result transfers automatically between them.",
+      "refs": [
+        "u19",
+        "n13",
+        "c3"
+      ]
+    },
+    {
+      "unitRef": "u20",
+      "questionRefs": [
+        "c3"
+      ],
+      "reason": "Retain the multi-model review and its expansion, scaling, coincidence and structure-formation targets. The listed effects need not coexist in each model; other inherited destinations remain unchanged.",
+      "refs": [
+        "u20",
+        "n11",
+        "c3"
+      ]
+    }
+  ],
+  "placements": [],
+  "aliases": [],
+  "fullAtlasAdmission": false
+}

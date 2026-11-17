@@ -1,0 +1,308 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "strong-scope-bundle-11",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-11-challenge/packet.actual.json",
+      "sha256": "64d93a991e872616dfd46925800ed91c8cb9482522f72b7ee6a0b0a5923be9f7"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-11-proposal/reply.json",
+      "sha256": "c0a85a33a88db7b200bc65c84665d7882c9850f12b82391fb204640aef3728fb"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-11-challenge/reply.json",
+      "sha256": "254478ac601857cd8136abed109f0405c6ba75abf60b9df56cb8987be0cfb328"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-11-proposal/receipt.json",
+      "sha256": "97fe04e7f1fc3b7d7466c69d55fc1c1a84a9acef024197cc1fb630ed7e7e34d7"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-11-challenge/receipt.json",
+      "sha256": "30f47aed2f8b31d29fdc7e3581e2ad5c47a221cc130e0cc297d681c3f28537b2"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v3/jobs/strong-scope-bundle-11-challenge/normalization.json",
+      "sha256": "6ae4a25d8e06a658d88de72a357d30341e35eef5b2a7ab72bd3a984dac9c975e"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    },
+    "stableScopes": {
+      "path": "research/q025/evaluation/full-pass/organization-placement-v1/kk-uhecr-admitted-rehearsal-component.json",
+      "sha256": "56527cde2a8401ff35198ed071ea749b3c2de93350c7b5568a0b10b7e0d7ddee"
+    },
+    "previouslyAdjudicatedParent": {
+      "path": "research/q025/evaluation/full-pass/parent-scope-admission-v2/component.json",
+      "sha256": "7dc3b71e2fda4de3ee3875b8f5630774ee8c624a80d5c5658fe4e2e4942a2a76"
+    }
+  },
+  "scopeHashes": {
+    "q025-candidate-question:d8080558b76d6f32dcf66f53": "8e27beb9d5eab0e08ce1d715dd843cb3e1a20d1b11826b60193fc32cc724cfa9"
+  },
+  "roleHashes": {
+    "decision:navigation-v3:strong-scope-bundle-11:role:0": "89b5c3e035d2fef73d7afdefdcacf8a2b3443975213579bf9ca90e9b906bab27"
+  },
+  "operationHashes": {
+    "operation:navigation-v3:strong-scope-bundle-11:pd0": "a04f0d3f102e81a7e1e89adb5a4a6c1ba8cbed25db15f918798e2741d4da8a6f",
+    "operation:navigation-v3:strong-scope-bundle-11:pd2": "d70b893426e62ab138e5b06c479f1d2647736c121526d51f95fcec0ce420f3ca",
+    "operation:navigation-v3:strong-scope-bundle-11:pd3": "8831675481f25692cae45b334139fbaa316cdbb2de84ae5d7f6799213acae70d",
+    "operation:navigation-v3:strong-scope-bundle-11:pd5": "903a71ee157f817bef53ceaa58f70aea04480acf2b190baf47fd61ed6201cb6d",
+    "operation:navigation-v3:strong-scope-bundle-11:pd6": "2e7d4fdca1531938b7607b6b4543a512ce6c5acd845b833be698947c60dbf7c1"
+  },
+  "navigationHashes": {
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn0": "f944405faed7c89054ce6ae199842ed01363c0c0157f2a0747186752b53919a1",
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn1": "39c39a3d670cd11ffacd8448c4b7cf02c69c42736ee32e5ae78059a54678a0e4",
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn2": "d746d5f54121c673c2ae76ad4c52847a5848e2c72c5d5388f7655609a5cce772",
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn3": "01a18bceb1c7ffa06647ba143529c26ff1119ed48c786eb35f1717aca1e61a11",
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn4": "e553a21a0ad95d9eb878d1ff69c56c3464ccdddf0f4d76480c492136aed56bcd",
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn5": "a2ac1b135df841032a93b1d88d02f80d3be5b8f283cd557670c77d9b05edb95b",
+    "decision:navigation-v3:strong-scope-bundle-11:route:pn8": "c0277f15f4f2bd967bdef4e488d42efd892a09ad9858c77be20c5b7a55fcd9bc"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No current primary windows, source objects or extracted relations are supplied. This review uses exact definitions, 30 whole descriptions and 33 paired attribution contexts; it does not independently verify calculations or physical conclusions.",
+    "Historical citations inside prior assessments and attribution notes are not current evidence IDs. Citations here identify the enclosing c* or n* record and current u* description.",
+    "The existing contribution tables are not fully reassessed. Omitted rows receive no new target role, and common-target reuse does not transfer source assignments.",
+    "Every retained scope keeps its exact reading limit, source-date qualifications and pending-descendant restrictions. c8 and c9 retain their stated adjudication limits.",
+    "Several inherited notes are incomplete sentences. Missing text is not reconstructed or used as evidence.",
+    "Navigation assessments support only the explicitly qualified arcs. They establish no home, mass, source identity, global uniqueness or connection between the six independent components."
+  ],
+  "unresolved": [
+    "Complete c1/c8 equivalence remains unestablished, particularly for independent relic-population targets and neighboring-method boundaries. cd0 settles shared organization without asserting exclusions on either side.",
+    "c8 and c9 retain outstanding scope-adjudication limits; supported comparisons and common-target reuse do not admit pending descendants.",
+    "The historical fine PBH destination referenced within n22 lacks a complete supplied definition. pq0 remains a supported new definition without a historical-identity or uniqueness claim.",
+    "Existing compound-target uncertainties remain open, including PBH survival/signals/conjectural tests, KK threshold/viability/non-dark-matter freeze-in questions, and the other attributed compound sources."
+  ],
+  "counts": {
+    "newScopes": 1,
+    "typedOperations": 5,
+    "publicRoutes": 7,
+    "confirmedSourceRoles": 1,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "excludedOriginalRows": [
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd1",
+        "operation": "same_scoped_question",
+        "members": [
+          "c1",
+          "c8"
+        ],
+        "target": "c1",
+        "definingDifferences": [],
+        "reason": "Both organize source-qualified dark-matter and dark-sector candidates, origins, subsequent dynamics, interactions and tests, with theoretical consistency conditional and neighboring cosmology separately routed. Persistence and acceptable instability in c1 articulate c8's stability and dynamics without adding a stable-only or viability premise. The more explicit method routes in c1 remain neighboring routes rather than new candidate requirements. Reuse c1 without changing either definition or either exact reading limit. The subjective review and distinct PBH/KK histories do not become equivalent source statements; c8's pending status and all contribution qualifications remain unchanged.",
+        "refs": [
+          "c1",
+          "c8",
+          "u20",
+          "u23",
+          "u28",
+          "n7",
+          "n21",
+          "n22",
+          "n23"
+        ]
+      },
+      "judgment": {
+        "ref": "pd1",
+        "kind": "decision",
+        "verdict": "revise",
+        "reason": "Persistence is compatible with c8's stability and dynamics, but compatibility does not establish complete scope agreement. c1 expressly covers broader relic-population and neighboring-method access; n23 distinguishes non-dark-matter freeze-in constraints from candidate viability. The shared review does not settle that boundary, and omitted c8 assignments cannot be inferred. Replace equivalence with cd0's common-target reuse while retaining both exact records.",
+        "refs": [
+          "c1",
+          "c8",
+          "u20",
+          "u23",
+          "n7",
+          "n21",
+          "n23"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:b158f80b6c1808f1550fae42"
+      ]
+    },
+    {
+      "kind": "operation",
+      "original": {
+        "id": "pd4",
+        "operation": "comparison",
+        "members": [
+          "c5",
+          "c9"
+        ],
+        "target": "c9",
+        "definingDifferences": [
+          "c9 explicitly develops entanglement, microscopic entropy accounts, information recovery and qualified inflationary or closed-cosmology extensions.",
+          "c5 explicitly retains matter spectra, scalar extrema, thermodynamics and the accretion source's matter-dominated regime.",
+          "The supplied definitions do not establish complete agreement of these extended targets and regimes."
+        ],
+        "reason": "Quantum descriptions, observable access, field/state dynamics and horizons provide a substantial intersection. The additional regimes and independently stated targets prevent full-scope identification on this packet. The c5 witnesses preserve a compound infrared-screening agenda, an announced excited-state construction and perturbation-dependent near-Nariai behavior; they do not independently validate c9's additional branches. Retain both exact records and propose comparisons without resolving c9's admission limits.",
+        "refs": [
+          "c5",
+          "c9",
+          "u7",
+          "u8",
+          "u10",
+          "n11",
+          "n12",
+          "n13"
+        ]
+      },
+      "judgment": {
+        "ref": "pd4",
+        "kind": "decision",
+        "verdict": "supported_as_written",
+        "reason": "The substantial de Sitter intersection supports comparison. The exact definitions separately specify entropy/information extensions, matter spectra and cosmological regimes, so complete agreement is unestablished. The c5 witnesses do not independently validate c9's additional branches or resolve its status.",
+        "refs": [
+          "c5",
+          "c9",
+          "u7",
+          "u8",
+          "u10",
+          "n11",
+          "n12",
+          "n13"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:c446301260e1912962348702"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn6",
+        "source": "c5",
+        "target": "c9",
+        "type": "comparison",
+        "title": "Explore entropy, entanglement and information recovery",
+        "qualification": "Finite entropy, finite state-space dimension and an entropy ceiling remain separate propositions. Inflationary and closed-cosmology extensions retain their own assumptions and do not reclassify c5's matter-dominated accretion regime.",
+        "reason": "The reviewed c9 definition offers an explicit entropy-and-information comparison to c5's quantum-description and horizon-dynamics questions. Its additional branches are supported here through the definition, not freshly read primary calculations.",
+        "refs": [
+          "c5",
+          "c9"
+        ]
+      },
+      "judgment": {
+        "ref": "pn6",
+        "verdict": "supported_as_written",
+        "reason": "The reviewed c9 definition explicitly supplies entropy, entanglement and information-recovery targets. The route distinguishes entropy propositions and cosmological extensions and accurately discloses definition-level support. Supporting this comparison leaves c9's adjudication limits unchanged.",
+        "refs": [
+          "c5",
+          "c9"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:c446301260e1912962348702"
+      ]
+    },
+    {
+      "kind": "navigation",
+      "original": {
+        "id": "pn7",
+        "source": "c9",
+        "target": "c5",
+        "type": "comparison",
+        "title": "Examine field, state and near-Nariai stability",
+        "qualification": "The infrared longevity/screening agenda, excited-state de Sitter over supersymmetric Minkowski, and one-loop near-degenerate Schwarzschild–de Sitter perturbations are separate tests. No universal instability, completed construction or fully derived no-boundary mode selection is certified.",
+        "reason": "c5 supplies a concrete field-and-horizon-dynamics direction while preserving the witnesses' distinct state, background and perturbation assumptions.",
+        "refs": [
+          "c5",
+          "c9",
+          "u7",
+          "u8",
+          "u10",
+          "n11",
+          "n12",
+          "n13"
+        ]
+      },
+      "judgment": {
+        "ref": "pn7",
+        "verdict": "supported_as_written",
+        "reason": "The three c5 witnesses provide readable field, state and horizon directions. The route preserves their different premises and accurately limits infrared-instability, excited-state-construction and no-boundary-selection claims.",
+        "refs": [
+          "c5",
+          "c9",
+          "u7",
+          "u8",
+          "u10",
+          "n11",
+          "n12",
+          "n13"
+        ]
+      },
+      "missingAdmittedTargets": [
+        "q025-candidate-region:c446301260e1912962348702"
+      ]
+    }
+  ],
+  "unadmittedChallengeObjects": {
+    "newQuestions": [],
+    "decisions": [
+      {
+        "id": "cd0",
+        "operation": "common_target",
+        "members": [
+          "c1",
+          "c8"
+        ],
+        "target": "c1",
+        "definingDifferences": [
+          "c8 frames its question around dark-matter candidates and their compatibility with source-examined conditions; c1 frames dark-sector constituents, cosmic histories, persistence and relic-population tests.",
+          "c1 explicitly includes independent force tests, empirical cosmic-ray spectra and EFT matching through neighboring routes. c8 explicitly identifies neighboring cosmology; complete correspondence of these boundaries is not established."
+        ],
+        "reason": "The definitions support reusing c1 for the shared candidate, history, dynamics and testing target. Persistence can articulate c8's stability coverage, but this alone does not establish complete equivalence. The c1 attribution for u23 distinguishes dark-matter viability from constraints on a non-dark-matter freeze-in population; the shared subjective review does not resolve every boundary. This does not establish that c8 excludes such work. Retain c8's exact scope and pending status without asserting equality, containment or source-role transfer.",
+        "refs": [
+          "c1",
+          "c8",
+          "u20",
+          "u23",
+          "u28",
+          "n7",
+          "n21",
+          "n22",
+          "n23"
+        ]
+      }
+    ],
+    "navigation": [
+      {
+        "id": "cn0",
+        "source": "c8",
+        "target": "c1",
+        "type": "comparison",
+        "title": "Explore survival, depletion and relic-population tests",
+        "qualification": "Dark-charge PBH survival and near-threshold KK cascades use distinct systems and histories. Constraints on an unavoidable freeze-in population can remain relevant without that population constituting dark matter. Candidate viability, abundance, persistence and signals require separate assessments.",
+        "reason": "c1 provides an existing destination for the shared candidate/history/testing target and explicitly develops these persistence questions. This arc permits useful reuse without equating the full c1 and c8 scopes or transferring their source roles.",
+        "refs": [
+          "c1",
+          "c8",
+          "u20",
+          "u23",
+          "u28",
+          "n7",
+          "n21",
+          "n22",
+          "n23"
+        ]
+      }
+    ],
+    "sourceContributions": []
+  },
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

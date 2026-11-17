@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "q025-navigation-policy-admission/2",
+  "family": "dark-energy-histories",
+  "status": "exact_paired_agreements_admitted_subject_to_global_identity_and_DAG_gates",
+  "policyAuthorization": {
+    "path": "research/q025/evaluation/full-pass/navigation-admissions-v1/agreement-policy-authorization.json",
+    "sha256": "f639981348cd26cb0baf0ae53181d4c6fe120eef7c50055883f96f6d2b142e81"
+  },
+  "inputs": {
+    "packet": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/packet.actual.json",
+      "sha256": "b04aa4d3f1f23c531402a1ecc979ddfb1561459515bc165524120c36889a2ee0"
+    },
+    "proposal": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-proposal/reply.json",
+      "sha256": "5d5f628668adb794d9d92d573134f76f603c2ae2f407dfad4c99429bd4c42f8d"
+    },
+    "challenge": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/reply.json",
+      "sha256": "395cdc6f7ee0caf413706b30de5ae2a1c05bab800ca8e5631785d6edf563f9ce"
+    },
+    "proposalReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-proposal/receipt.json",
+      "sha256": "52ed141895523dc8d5976e1f1b56f0da34ce6c6d53c2a82181fada1cddcd99a1"
+    },
+    "challengeReceipt": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/receipt.json",
+      "sha256": "e21efa955642ff6b5ac5ee27e7bdb99f12d9e50787b5f31e4f723bfa5fce58f4"
+    },
+    "normalization": {
+      "path": "research/q025/evaluation/full-pass/native-local/navigation-wave-v2/jobs/dark-energy-histories-challenge/normalization.json",
+      "sha256": "7cf0105532fb94618c50a8b62810e4f6aea547f27c98c53d08228ced4c832b58"
+    },
+    "existingScopes": {
+      "path": "research/q025/evaluation/full-pass/admissions-v5/supported-scope-role-component-v5.json",
+      "sha256": "a722560d7acf4b3cd661188d5ed29d70a5a4f39d0b67a65995f21b66353c32aa"
+    }
+  },
+  "scopeHashes": {},
+  "roleHashes": {},
+  "operationHashes": {
+    "operation:navigation-v2:dark-energy-histories:pd0": "c73eb4274d1cc0f9ad6d85f2104c564f77e65767c57de4a270dc01955dff5a36",
+    "operation:navigation-v2:dark-energy-histories:pd1": "58b870d5ef3257580e8361e6b7399e88ed2509f0f63467325a3733592da4cb45",
+    "operation:navigation-v2:dark-energy-histories:pd2": "e0b8b10ee76081894a4a547ce4cdee4eb8acc76a4d27be3b7c558e5789dda314",
+    "operation:navigation-v2:dark-energy-histories:pd3": "9b44d5211f8d1afce1f33e3a56ab56e6c0b9bac862a2fb37ae083872ed04a3b5",
+    "operation:navigation-v2:dark-energy-histories:pd4": "1e44f7982a69efee3e45ec12fecd03506b633287c83d3e03e0e51408d2a0c469",
+    "operation:navigation-v2:dark-energy-histories:pd5": "a79635e75ca7c004b6d8db34258131b3b20f5861d266df5903ae0c4d80ba2b0b",
+    "operation:navigation-v2:dark-energy-histories:pd6": "4a75ec4fea4faa62ba92d67409b0bf31e5b65ed59c765d641c0c514ab523aa13",
+    "operation:navigation-v2:dark-energy-histories:pd7": "ea379af48a1306204a7da14d32b677572b8969a01ff3e1a79db2276f44973615"
+  },
+  "navigationHashes": {
+    "decision:navigation-v2:dark-energy-histories:route:pn0": "8249c03e73a48e3fd3094ab4305fdce9cdd30fff6a8963ac14420bf631af9dbc",
+    "decision:navigation-v2:dark-energy-histories:route:pn1": "4e484239483a7b90acbe2a73d037246f4013e02aab77fe9f41beb3c6c72acfdf",
+    "decision:navigation-v2:dark-energy-histories:route:pn2": "9fa0775cf6a893e73350091195211a09e9f8952f52c16b3fa50b20563d3808f7",
+    "decision:navigation-v2:dark-energy-histories:route:pn3": "e918c03358417e242154cf1da94ccc177c5e6461eab908a8799e9eb305af8b2d",
+    "decision:navigation-v2:dark-energy-histories:route:pn4": "77da90a5aebb42728e62d52c0e6bc0f5de4909307084f07a609fa1124d2814ff",
+    "decision:navigation-v2:dark-energy-histories:route:pn5": "eed7c3d7250d6bd2358fe511a9393e84b8e941d746be55d4b692c93d07da1bf3",
+    "decision:navigation-v2:dark-energy-histories:route:pn6": "6951727d51aed2bb49db9ff85b7e78208cd200b27f85798244cd90153a46038d",
+    "decision:navigation-v2:dark-energy-histories:route:pn7": "d161165eb345bce4154698b405f1b130054ef36c2ee8cd5b29cb14cdf3a4320d"
+  },
+  "localEqualityGroups": [],
+  "preservedLimitations": [
+    "No primary windows are supplied. This review reuses exact definitions, whole descriptions and attributed prior assessments; it does not freshly verify equations, likelihoods, stability, viability or crossing behavior.",
+    "The 24 selected source witnesses and 25 paired contexts do not constitute a review of all 62 distinct prior contribution sources. Inherited role tables remain unchanged; no source-role transfer follows from common-target reuse.",
+    "Current c*, n*, u* and l* references identify the supplied evidence and route context. Historical citations nested inside assessments are not current evidence IDs.",
+    "The prior proposal contains no new definitions or new source-role rows, so those review categories are empty. Explicit support retains the exact eight prior decisions and eight prior navigation rows without repetition.",
+    "Compound-source rows preserve bounded existing access, not exhaustive replacement assignments or atomic identities. No organizational home, mass allocation or global uniqueness is established.",
+    "Reviewed navigation titles apply only to their outgoing choices. Incoming choices retain canonical neighbor titles."
+  ],
+  "unresolved": [
+    "The fine identities of the setting statements u9 and u22 remain unresolved; support for a broader inference question does not make either a standalone canonical question.",
+    "Complete narrower definitions for the destinations associated with u7 and u12 are absent. Their microscopic/apparent-phantom alternatives and linked background/perturbation targets remain preserved without new routes or roles.",
+    "No result-transfer relation is established between conditional reconstruction and scaling stability, between pre-BBN freeze-out and late-time acceleration, or between apparent phantom behavior and improved joint fit quality."
+  ],
+  "counts": {
+    "newScopes": 0,
+    "typedOperations": 8,
+    "publicRoutes": 8,
+    "confirmedSourceRoles": 0,
+    "homes": 0,
+    "installedAliases": 0
+  },
+  "noFreshPrimaryReading": true,
+  "newModelsRunByCompiler": 0,
+  "sourceQuestionIdentityNotInferred": true
+}

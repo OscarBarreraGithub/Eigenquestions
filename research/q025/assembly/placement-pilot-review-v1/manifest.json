@@ -1,0 +1,30 @@
+{
+  "script": {
+    "path": "research/q025/assembly/placement-pilot-review-v1/build.py",
+    "sha256": "ac4463903fa57a652fd7d1a67fc21794a1f2d54ba1566b694a7773c0b26ce96e",
+    "bytes": 8278
+  },
+  "intake": {
+    "path": "research/q025/assembly/placement-pilot-review-v1/intake.json",
+    "sha256": "eac1e1b749eca67cfb90990c66d121e521ffe491f7e672f0219de5b504e266df",
+    "bytes": 238367
+  },
+  "readable": {
+    "path": "research/q025/assembly/placement-pilot-review-v1/REVIEW.md",
+    "sha256": "da083fded310cb0e9dee30f45641f2922fa43e5d6669024a22b16df5ad0ed4af",
+    "bytes": 54455
+  },
+  "inputs": {
+    "mechanicalIntake": {
+      "path": "research/q025/integration/placement-pilot-intake-v1/intake-20261117T153723Z.json",
+      "sha256": "826b443251375a7d9bae282c352fab1328a414cc00d2dda0b693cf1afb7d47dd",
+      "bytes": 346787
+    },
+    "currentAdmittedAggregate": {
+      "path": "research/q025/assembly/organization-residual-v1/candidate-6030-canonical-v3/aggregate.local.json",
+      "sha256": "4e2c978cb757b637ee49680d53e38ee93d311ed6a88757773c4bc61222ae1110",
+      "bytes": 102299645
+    }
+  },
+  "status": "pending_coordinator_admission"
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "q025-real-alias-preview-check/1",
+  "passed": true,
+  "partialCandidate": true,
+  "publicInstall": false,
+  "redirects": [
+    {
+      "formerId": "q025-candidate-question:647f4b3de8eb982fbd1db9af",
+      "canonicalId": "q025-candidate-question:0fe511cad863493858f2321b",
+      "stateId": "state-fc4410024d349456",
+      "originalDefinitions": [
+        "q025-candidate-question:0fe511cad863493858f2321b",
+        "q025-candidate-question:647f4b3de8eb982fbd1db9af"
+      ],
+      "readingLimitsPreserved": true
+    },
+    {
+      "formerId": "q025-candidate-question:39594f3f2592c9816c879036",
+      "canonicalId": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "stateId": "state-2961e7cbb84c1637",
+      "originalDefinitions": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "readingLimitsPreserved": true
+    },
+    {
+      "formerId": "q025-candidate-question:44cfc530ee4b7053d438805d",
+      "canonicalId": "q025-candidate-question:0e226d69a7c3bb82fb9345a2",
+      "stateId": "state-2961e7cbb84c1637",
+      "originalDefinitions": [
+        "q025-candidate-question:39594f3f2592c9816c879036",
+        "q025-candidate-question:44cfc530ee4b7053d438805d",
+        "q025-candidate-question:0e226d69a7c3bb82fb9345a2"
+      ],
+      "readingLimitsPreserved": true
+    },
+    {
+      "formerId": "q025-candidate-question:3f58b634e6f7439e502be440",
+      "canonicalId": "q-kk-decay-linear-cosmology",
+      "stateId": "state-9951bc0c245cbfb0",
+      "originalDefinitions": [
+        "q025-candidate-question:3f58b634e6f7439e502be440",
+        "q-kk-decay-linear-cosmology"
+      ],
+      "readingLimitsPreserved": true
+    }
+  ],
+  "broadParentChoices": [
+    {
+      "currentId": "q025-candidate-question:161ab9fa038592a6586e54e1",
+      "targetId": "q025-candidate-region:f87c99e7c23e7d82e9d1db78",
+      "choiceTitle": "Particle scales, supersymmetry and cosmological viability",
+      "subtitle": "How do proposed mechanisms for particle scales, supersymmetry breaking and moduli dynamics connect spectra, scalar vacua and cosmological histories, and which observations or conditional consistency tests constrain them?",
+      "rawReviewHistoryRetained": "No original verbal scientific scope accompanies the numerical parent, so there is no original scientific statement to endorse. The child scopes support distinct directions for hierarchy mechanisms, mediation, vacuum structure, cosmology and tests. Their numerical ancestry does not establish equivalent questions or require every neighboring topic to become a core member."
+    }
+  ],
+  "search": [
+    {
+      "destinationId": "q025-candidate-region:f87c99e7c23e7d82e9d1db78",
+      "title": "Particle scales, supersymmetry and cosmological viability",
+      "subtitle": "How do proposed mechanisms for particle scales, supersymmetry breaking and moduli dynamics connect spectra, scalar vacua and cosmological histories, and which observations or conditional consistency tests constrain them?",
+      "lookupKind": "title-and-alias-lookup"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "research/q025/assembly/outputs/organization-candidate-6030-connected-v4/manifest.json",
+      "sha256": "e7d79cc32992decac93f59342a46fed7d740bc7b991fad79b399eec9a9d08883"
+    },
+    {
+      "path": "research/q025/assembly/outputs/organization-candidate-6030-connected-v4/catalog.json",
+      "sha256": "8e15d479cfaaf8f3ad3c3cd2de63bf5706d9e4e7010afc7b1498b763cd09a3d0"
+    }
+  ],
+  "runtime": [
+    {
+      "path": "lib/geometry/prepared-atlas.mjs",
+      "sha256": "46fa70d53de15a99c741529ddadf80396e5290a854ea197e6f80f5e982b9574c"
+    },
+    {
+      "path": "lib/protocol/display-editorial.mjs",
+      "sha256": "257ce95468c3c8aa6c3abce2bbb21244c748b0059ed13c63f0294d04cbec3b00"
+    }
+  ],
+  "limits": [
+    "Read-only shared runtime check on the actual partial candidate; no browser or public HTTPS claim.",
+    "Compact previews select the exact scientific question. Raw scientific definitions, scope hashes and reading records remain unchanged.",
+    "This does not admit identities or broaden the four already admitted redirect entries."
+  ]
+}

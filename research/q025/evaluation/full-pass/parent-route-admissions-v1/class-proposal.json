@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "q025-parent-route-class-proposal/1",
+  "input": {
+    "path": "research/q025/evaluation/full-pass/native-local/parent-route-admissions-v1/route-audit.json",
+    "sha256": "9574642e410aac2084cb91de784ec7ecdce3384d40433823cb7c83d962560332"
+  },
+  "candidateIndependentReassertions": 1340,
+  "uniqueDirectedTypedEdges": 1337,
+  "candidateCounts": {
+    "related": 412,
+    "comparison": 450,
+    "narrows": 478
+  },
+  "heldAfterPairedAdmittedEndpointFilter": 531,
+  "holdReasons": {
+    "direction_or_application_semantics_needs_explicit_decision": 531
+  },
+  "narrowerCyclesDetected": [],
+  "representativeCandidateIds": [
+    "parent-00602c541f9d268ad95f-challenge:link:14",
+    "parent-00602c541f9d268ad95f-challenge:link:22",
+    "parent-00ca19aeee603cb16151-challenge:link:4",
+    "parent-10605e3e73b1e2b3809f-challenge:link:9",
+    "parent-278f3b8c9fe4a9756c61-challenge:link:6",
+    "parent-278f3b8c9fe4a9756c61-challenge:link:24",
+    "parent-2ad7ce9c04412b41bc1c-challenge:link:45",
+    "parent-570548e969849fcc2e72-challenge:link:29",
+    "parent-d52c5745cd04bfaaf51d-challenge:link:22",
+    "successor2-parent-c8776465ed44d9e65c4c-challenge:link:17"
+  ],
+  "policyStatus": "awaiting_root_coordinator_class_authorization",
+  "scientificReadingBasis": "The independent parent challenge separately authors a complete final scoped link with its own rationale and citations under its original instructions. Both endpoint definitions are independently admitted. This is not a retroactive supported_as_written field or agreement inferred from endpoint presence. Both complete statements and evidence lineages remain attached.",
+  "proposedTypeMap": {
+    "narrows": "narrower",
+    "related": "related_question",
+    "comparison": "comparison"
+  },
+  "strictExclusions": [
+    "649source/provenance endpoints",
+    "356unadmitted endpoint scopes",
+    "56new/changed endpoint-type rows among admitted scopes",
+    "method/application/premise_check/broadens require separate direction/applicability decision",
+    "Possible unfinished or explicitly provenance-only statements remain held",
+    "Cycles cannot become accepted containment"
+  ],
+  "readingLimit": "No new primary reading or scientific-result verification. Source-local conditions are inherited from exact endpoint scopes and both full route statements. Conservative use of canonical target title supplies an already-reviewed outgoing label, not an invented action phrase."
+}
